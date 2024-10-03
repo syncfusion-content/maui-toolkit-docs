@@ -2,7 +2,7 @@
 layout: post
 title: Migration from Xamarin to .NET MAUI Chart control | Syncfusion
 description: This section explains the features available in the .NET MAUI Chart (SfPyramidChart) control over Xamarin SfChart.
-platform: MAUI
+platform: maui-toolkit
 control: SfPyramidChart
 documentation: ug
 ---

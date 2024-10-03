@@ -2,7 +2,7 @@
 layout: post
 title: Downloading Syncfusion .NET MAUI Mac installer - Syncfusion
 description: Learn here about the how to download Syncfusion .NET MAUI mac installer packages from syncfusion website.
-platform: MAUI
+platform: maui-toolkit
 control: Installation and Deployment
 documentation: ug
 

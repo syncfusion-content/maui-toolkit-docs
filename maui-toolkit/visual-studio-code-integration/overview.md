@@ -2,7 +2,7 @@
 layout: post
 title: Syncfusion .NET MAUI Extension for Visual Studio Code | Syncfusion
 description: Learn here all about introduction on Syncfusion .NET MAUI extension for Visual Studio Code which made integration made ease.
-platform: MAUI
+platform: maui-toolkit
 component: Common
 documentation: ug
 ---

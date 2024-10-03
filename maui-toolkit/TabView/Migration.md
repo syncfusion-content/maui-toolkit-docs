@@ -2,7 +2,7 @@
 layout: post
 title: Migrating from Xamarin SfTabView to .NET MAUI SfTabView | Syncfusion 
 description: Learn here all about Migrating from Syncfusion Xamarin TabView to Syncfusion .NET MAUI TabView control and more.
-platform: MAUI
+platform: maui-toolkit
 control: SfTabView
 documentation: ug
 ---  

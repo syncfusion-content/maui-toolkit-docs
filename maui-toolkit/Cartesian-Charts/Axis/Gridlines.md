@@ -2,7 +2,7 @@
 layout: post
 title: Axis grid lines in .NET MAUI Chart control | Syncfusion
 description: Learn here all about the chart axis grid lines and its customization in syncfusion .NET MAUI Chart(SfCartesianChart).
-platform: maui
+platform: maui-toolkit
 control: SfCartesianChart
 documentation: ug
 keywords: .net maui chart grid lines, .net maui chart grid customization, syncfusion maui chart grid lines, cartesian chart grid lines maui, .net maui chart axis grid lines, customize grid lines .net maui chart.

@@ -2,7 +2,7 @@
 layout: post
 title: Tooltip in .NET MAUI Chart control | Syncfusion
 description: Learn here all about how to enable tooltips and customize them in the Syncfusion .NET MAUI Chart (SfPolarChart) control.
-platform: maui
+platform: maui-toolkit
 control: SfPolarChart
 documentation: ug
 ---

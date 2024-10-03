@@ -2,7 +2,7 @@
 layout: post
 title: About .NET MAUI Chart Control | Syncfusion
 description: Learn here all about the introduction of Syncfusion .NET MAUI Chart (SfPolarChart) control with key features and more.
-platform: maui
+platform: maui-toolkit
 control: SfPolarChart
 documentation: ug
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: Methods in .NET MAUI Effects View control | Syncfusion
 description: Learn here all about Methods support in Syncfusion .NET MAUI Effects View (SfEffectsView) control and more.
-platform: maui
+platform: maui-toolkit
 control: Effects View
 documentation: ug
 ---

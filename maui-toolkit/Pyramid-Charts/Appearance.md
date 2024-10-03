@@ -2,7 +2,7 @@
 layout: post
 title: Appearance in .NET MAUI Chart control  Syncfusion
 description: Learn here all about appearance customization in .NET MAUI Chart (SfPyramidChart), its elements and more.
-platform: maui
+platform: maui-toolkit
 control: SfPyramidChart
 documentation: ug
 ---

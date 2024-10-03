@@ -2,7 +2,7 @@
 layout: post
 title: Migrate from Syncfusion Xamarin SfShimmer to .NET MAUI SfShimmer
 description: Learn here all about Migrating from Syncfusion Xamarin Shimmer to Syncfusion .NET MAUI Shimmer control.
-platform: maui
+platform: maui-toolkit
 control: SfShimmer
 documentation: ug
 ---  

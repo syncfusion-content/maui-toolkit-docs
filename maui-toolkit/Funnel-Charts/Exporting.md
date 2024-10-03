@@ -2,7 +2,7 @@
 layout: post
 title: Exporting in .NET MAUI Chart control | Syncfusion
 description: Learn here how to export the chart view as an image and stream in the Syncfusion .NET MAUI Chart (SfFunnelChart) control.
-platform: maui
+platform: maui-toolkit
 control: SfFunnelChart
 documentation: ug
 ---

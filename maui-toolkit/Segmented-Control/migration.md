@@ -2,7 +2,7 @@
 layout: post
 title: Migrate from Xamarin to .NET MAUI Segmented Control | Syncfusion
 description: Learn about Migrating from Syncfusion Xamarin.Forms Segmented control to .NET MAUI Segmented control.
-platform: maui
+platform: maui-toolkit
 control: Segmented (SfSegmented) control
 documentation: ug
 ---

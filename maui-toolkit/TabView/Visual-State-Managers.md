@@ -2,7 +2,7 @@
 layout: post
 title: Visual state manager in .NET MAUI Tab View (SfTabView) | Syncfusion
 description: Learn here all about handling of visual state manager in Syncfusion .NET MAUI Tab View (SfTabView) control and more.
-platform: MAUI
+platform: maui-toolkit
 control: TabView
 documentation: ug
 ---

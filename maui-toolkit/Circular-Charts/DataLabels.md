@@ -2,7 +2,7 @@
 layout: post
 title: Data label in .NET MAUI Chart control | .NET MAUI | Syncfusion
 description: This section explains about how to configure the data labels and its features in .NET MAUI Chart (SfCircularChart).
-platform: maui
+platform: maui-toolkit
 control: SfCircularChart
 documentation: ug
 ---

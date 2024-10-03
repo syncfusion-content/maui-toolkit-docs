@@ -2,7 +2,7 @@
 layout: post
 title: Create Projects using Project Templates via Extensions | Syncfusion
 description: Learn here about how to create syncfusion .NET MAUI application using Syncfusion .NET MAUI Extension for Visual Studio Code.
-platform: MAUI
+platform: maui-toolkit
 component: Common
 documentation: ug
 ---

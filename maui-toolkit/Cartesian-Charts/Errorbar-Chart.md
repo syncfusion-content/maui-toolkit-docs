@@ -2,7 +2,7 @@
 layout: post
 title: Error Bar Chart in .NET MAUI Chart Control | Syncfusion
 description: Learn here all about error bar chart support in Syncfusion .NET MAUI Chart (SfCartesianChart) control.
-platform: maui
+platform: maui-toolkit
 control: SfCartesianChart
 documentation: ug
 keywords: .net maui error bar chart, error bar chart customization .net maui, syncfusion maui error bar chart, cartesian error bar chart maui, .net maui chart error bar visualization, .net maui uncertainty chart.

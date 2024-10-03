@@ -2,7 +2,7 @@
 layout: post
 title: Migration from Xamarin to .NET MAUI Chart control | Syncfusion
 description: This section explains the features available in the .NET MAUI Chart (SfCartesianChart) control over Xamarin SfChart.
-platform: MAUI
+platform: maui-toolkit
 control: SfCartesianChart
 documentation: ug
 keywords: migrate from xamarin.Forms sfChart to .net maui sfCartesianChart, transitioning from xamarin.Forms sfChart to .net maui sfCartesianChart, move from xamarin.Forms sfChart to .net maui sfCartesianChart, upgrading xamarin.Forms s to .net maui sfCartesianChart.

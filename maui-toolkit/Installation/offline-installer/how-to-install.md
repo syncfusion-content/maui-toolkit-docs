@@ -2,7 +2,7 @@
 layout: post
 title: Installing Syncfusion .NET MAUI installer - Syncfusion
 description: Learn here about the how to install Syncfusion .NET MAUI offline installer after downloading from our syncfusion website.
-platform: MAUI
+platform: maui-toolkit
 control: Installation and Deployment
 documentation: ug
 

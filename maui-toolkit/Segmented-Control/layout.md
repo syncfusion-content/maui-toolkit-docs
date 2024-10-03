@@ -2,7 +2,7 @@
 layout: post
 title: Layout in .NET MAUI Segmented Control | Syncfusion
 description: Learn about the Layout support Syncfusion .NET MAUI Segmented control (SfSegmentedControl).
-platform: maui
+platform: maui-toolkit
 control: Segmented (SfSegmented) control
 documentation: ug
 ---

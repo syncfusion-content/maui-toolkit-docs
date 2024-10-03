@@ -2,7 +2,7 @@
 layout: post
 title: Getting Started with .NET MAUI PullToRefresh control | Syncfusion
 description: Learn here about getting started with Syncfusion .NET MAUI PullToRefresh (SfPullToRefresh) control, its elements, and more.
-platform: MAUI
+platform: maui-toolkit
 control: SfPullToRefresh
 documentation: ug
 ---

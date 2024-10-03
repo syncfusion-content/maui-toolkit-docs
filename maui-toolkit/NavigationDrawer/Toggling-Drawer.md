@@ -2,7 +2,7 @@
 layout: post
 title: Toggle methods in .NET MAUI Navigation Drawer | Syncfusion
 description: Learn here all about Toggle methods support in Syncfusion .NET MAUI Navigation Drawer (SfNavigationDrawer) control and more.
-platform: maui
+platform: maui-toolkit
 control: NavigationDrawer
 documentation: ug
 ---

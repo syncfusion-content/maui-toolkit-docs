@@ -2,7 +2,7 @@
 layout: post
 title: Overview of Syncfusion .NET MAUI Extension for Visual Studio | Syncfusion
 description: Learn here all about introduction on Syncfusion .NET MAUI extension for Visual Studio which made integration ease.
-platform: MAUI
+platform: maui-toolkit
 component: Syncfusion Extensions
 documentation: ug
 ---

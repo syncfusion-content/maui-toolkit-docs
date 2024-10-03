@@ -2,7 +2,7 @@
 layout: post
 title: Selection in .NET MAUI Chart control | Syncfusion
 description: Learn here all about selection and multi-selection support in Syncfusion .NET MAUI Chart (SfCartesianChart) control.
-platform: maui
+platform: maui-toolkit
 control: SfCartesianChart
 documentation: ug
 keywords: .net maui chart selection, maui chart selection, .net maui chart selection customization, syncfusion maui chart selection, .net maui chart highlighting, .net maui chart highlighting visualization.
