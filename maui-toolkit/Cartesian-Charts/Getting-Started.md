@@ -143,7 +143,7 @@ N> Add namespace of `ViewModel` class to your XAML Page, if you prefer to set `B
 
 {% tabs %} 
 
-{% highlight xaml %} 
+{% highlight xaml %}
 
 <ContentPage
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
@@ -159,7 +159,7 @@ N> Add namespace of `ViewModel` class to your XAML Page, if you prefer to set `B
 
 {% endhighlight %}
 
-{% highlight C# %} 
+{% highlight c# %}
 
 this.BindingContext = new ViewModel();
 
@@ -173,7 +173,7 @@ this.BindingContext = new ViewModel();
 
 {% tabs %} 
 
-{% highlight xaml %} 
+{% highlight xaml %}
 
 <chart:SfCartesianChart>                            
     <chart:SfCartesianChart.XAxes>
@@ -186,7 +186,7 @@ this.BindingContext = new ViewModel();
 
 {% endhighlight %}
 
-{% highlight C# %} 
+{% highlight c# %}
 
 SfCartesianChart chart = new SfCartesianChart();
 CategoryAxis primaryAxis = new CategoryAxis();
