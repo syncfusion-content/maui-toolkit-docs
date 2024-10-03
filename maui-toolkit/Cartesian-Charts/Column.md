@@ -122,7 +122,7 @@ By default, all the column series which have the same x and y axes are placed si
 
 {% tabs %}
 
- {% highlight xaml %}
+{% highlight xaml %}
 
 <chart:SfCartesianChart EnableSideBySideSeriesPlacement="False">
     <chart:SfCartesianChart.XAxes>
@@ -143,7 +143,7 @@ By default, all the column series which have the same x and y axes are placed si
                         Width="0.2"/>                    
 </chart:SfCartesianChart>
 
-  {% endhighlight %}
+{% endhighlight %}
 
 {% highlight c# %}
     
