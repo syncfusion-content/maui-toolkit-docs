@@ -2,7 +2,7 @@
 layout: post
 title: Appearance in .NET MAUI Chart control  Syncfusion
 description: Learn here all about appearance customization in .NET MAUI Chart (SfCircularChart), its elements and more.
-platform: maui
+platform: maui-toolkit
 control: SfCircularChart
 documentation: ug
 ---

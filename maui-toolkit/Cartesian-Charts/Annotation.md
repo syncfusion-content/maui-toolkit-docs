@@ -2,7 +2,7 @@
 layout: post
 title: Annotations in .NET MAUI Chart control | Syncfusion
 description: Learn here all about annotation support and its features in Syncfusion .NET MAUI Chart (SfCartesianChart) control.
-platform: maui
+platform: maui-toolkit
 control: SfCartesianChart
 documentation: ug
 keywords: .net maui chart annotations, .net maui annotations customization, syncfusion maui chart annotations, .net maui chart text annotation, .net maui chart shape annotation,  .net maui chart view annotation.
@@ -100,7 +100,7 @@ When there are multiple axes, annotations can be added to a particular axis usin
 
 {% tabs %}
 
- {% highlight xaml %}
+{% highlight xaml %}
 
 <chart:SfCartesianChart>
     ...
@@ -114,7 +114,7 @@ When there are multiple axes, annotations can be added to a particular axis usin
     </chart:SfCartesianChart.Annotations>
 </chart:SfCartesianChart>
 
- {% endhighlight %}
+{% endhighlight %}
 
 {% highlight c# %}
 
@@ -152,7 +152,7 @@ The [TextAnnotation](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Charts.
 
 {% tabs %}
 
- {% highlight xaml %}
+{% highlight xaml %}
 
 <chart:SfCartesianChart>
     ...
@@ -161,7 +161,7 @@ The [TextAnnotation](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Charts.
     </chart:SfCartesianChart.Annotations>
 </chart:SfCartesianChart>
 
- {% endhighlight %}
+{% endhighlight %}
 
 {% highlight c# %}
 
@@ -222,7 +222,7 @@ The [RectangleAnnotation](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Ch
 
 {% tabs %}
 
- {% highlight xaml %}
+{% highlight xaml %}
 
 <chart:SfCartesianChart>
     ...
@@ -259,7 +259,7 @@ The [EllipseAnnotation](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Char
 
 {% tabs %}
 
- {% highlight xaml %}
+{% highlight xaml %}
 
 <chart:SfCartesianChart>
     ...
@@ -300,7 +300,7 @@ The [LineAnnotation](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Charts.
 
 {% tabs %}
 
- {% highlight xaml %}
+{% highlight xaml %}
 
 <chart:SfCartesianChart>
     ...
@@ -338,7 +338,7 @@ The [VerticalLineAnnotation](https://help.syncfusion.com/cr/maui/Syncfusion.Maui
 
 {% tabs %}
 
- {% highlight xaml %}
+{% highlight xaml %}
 
 <chart:SfCartesianChart>
     ...
@@ -379,7 +379,7 @@ The [VerticalLineAnnotation](https://help.syncfusion.com/cr/maui/Syncfusion.Maui
 
 {% tabs %}
 
- {% highlight xaml %}
+{% highlight xaml %}
 
 <chart:SfCartesianChart>
     ...
@@ -433,7 +433,7 @@ To display a single-headed arrow, set the [LineCap](https://help.syncfusion.com/
 
 {% tabs %}
 
- {% highlight xaml %}
+{% highlight xaml %}
 
 <chart:SfCartesianChart>
     ...

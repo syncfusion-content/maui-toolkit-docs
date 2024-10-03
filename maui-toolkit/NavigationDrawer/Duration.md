@@ -2,7 +2,7 @@
 layout: post
 title: Animation Duration in .NET MAUI Navigation Drawer control | Syncfusion
 description: Learn about Animation Duration support in Syncfusion .NET MAUI Navigation Drawer (SfNavigationDrawer) control and more.
-platform: maui
+platform: maui-toolkit
 control: SfNavigationDrawer
 documentation: ug
 ---

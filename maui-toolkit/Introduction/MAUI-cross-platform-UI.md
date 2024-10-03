@@ -2,7 +2,7 @@
 layout: post
 title: Syncfusion Essential Studio .NET MAUI Cross Platform UI
 description: The Syncfusion .NET MAUI cross platform ui controls are an ideal choice for developing cross platform applications in Android, iOS, MacCatalyst and WinUI.
-platform: maui
+platform: maui-toolkit
 control: .NET MAUI
 documentation: ug
 ---

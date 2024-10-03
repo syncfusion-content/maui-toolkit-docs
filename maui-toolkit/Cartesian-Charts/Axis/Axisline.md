@@ -2,7 +2,7 @@
 layout: post
 title: Axis line in .NET MAUI Chart control | Syncfusion
 description: Learn here all about the chart axis line and its customization in Syncfusion .NET MAUI Chart (SfCartesianChart) control.
-platform: maui
+platform: maui-toolkit
 control: SfCartesianChart
 documentation: ug
 keywords: .net maui chart axis line, .net maui chart axis customization, .net maui chart axisline guide, maui chart axis line settings, syncfusion maui chart axis line, .net maui chart axis styling, customize axis line .net maui chart.

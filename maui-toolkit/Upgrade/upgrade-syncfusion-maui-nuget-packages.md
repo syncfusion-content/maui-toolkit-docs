@@ -2,7 +2,7 @@
 layout: post
 title: Upgrade Syncfusion Maui NuGet packages to a latest version
 description: Learn here about the how to upgrading Syncfusion Maui NuGet packages to a latest version using NuGet manager and package manager UI.
-platform: maui
+platform: maui-toolkit
 component: Common
 documentation: ug
 ---

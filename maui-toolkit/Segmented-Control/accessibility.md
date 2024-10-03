@@ -2,7 +2,7 @@
 layout: post
 title: Accessibility in .NET MAUI Segmented Control | Syncfusion
 description: Learn here about Accessibility support with the Syncfusion .NET MAUI Segmented Control (SfSegmentedControl).
-platform: maui
+platform: maui-toolkit
 control: SfSegmentedControl
 documentation: ug
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: Customize each axis chart label using the callback event | Syncfusion
 description: Learn here all about to customize each chart axis label using the callback event in Syncfusion .NET MAUI Chart (SfCartesianChart) control.
-platform: maui
+platform: maui-toolkit
 control: SfCartesianChart
 documentation: ug
 keywords: .net maui chart customize axis label callback, .net maui chart axis label callback event, sfcartesianchart axis label callback customization in .net maui, sfcartesianchart custom axis label event handling in .net maui.

@@ -2,7 +2,7 @@
 layout: post
 title: About .NET MAUI Chart Control | Syncfusion
 description: Learn here all about introduction of Syncfusion .NET MAUI Chart(SfFunnelChart) control with key features and more
-platform: maui
+platform: maui-toolkit
 control: SfFunnelChart
 documentation: ug
 ---

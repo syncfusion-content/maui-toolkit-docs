@@ -2,7 +2,7 @@
 layout: post
 title: Stacked Area Chart in .NET MAUI Chart control | Syncfusion
 description: Learn here all about stacked area chart support in Syncfusion .NET MAUI Chart (SfCartesianChart) control.
-platform: maui
+platform: maui-toolkit
 control: SfCartesianChart
 documentation: ug
 keywords: .net maui stacked area chart, maui stacked area chart, stacked area chart customization .net maui, syncfusion maui stacked area chart, cartesian stacked area chart maui, .net maui chart stacked area visualization, .net maui cumulative area chart.

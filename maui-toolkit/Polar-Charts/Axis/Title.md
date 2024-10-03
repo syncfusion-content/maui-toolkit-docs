@@ -2,7 +2,7 @@
 layout: post
 title: Title for axis in .NET MAUI Chart Control | Syncfusion
 description: Learn here all about chart axis title, title style, title template, and its customization in the Syncfusion .NET MAUI chart (SfPolarChart).
-platform: maui
+platform: maui-toolkit
 control: SfPolarChart
 documentation: ug
 ---

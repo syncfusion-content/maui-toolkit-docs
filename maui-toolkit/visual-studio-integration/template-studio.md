@@ -2,7 +2,7 @@
 layout: post
 title: Template Studio in .NET MAUI - Syncfusion
 description: Learn here about how to create the .NET MAUI application using Syncusion .NET MAUI Components with the help of template studio.
-platform: MAUI
+platform: maui-toolkit
 component: Syncfusion Extensions
 documentation: ug
 ---

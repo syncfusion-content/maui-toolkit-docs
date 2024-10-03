@@ -2,7 +2,7 @@
 layout: post
 title: Histogram Chart in .NET MAUI Chart Control | Syncfusion
 description: Learn here all about the Histogram chart and its type in Syncfusion .NET MAUI Chart (SfCartesianChart) control. 
-platform: maui
+platform: maui-toolkit
 control: SfCartesianChart
 documentation: ug
 keywords: .net maui histogram chart, histogram chart customization .net maui, syncfusion maui histogram chart, cartesian histogram chart maui, .net maui chart histogram , .net maui frequency distribution chart.

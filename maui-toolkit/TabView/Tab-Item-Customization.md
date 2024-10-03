@@ -2,7 +2,7 @@
 layout: post
 title: Display Type in .NET MAUI Tab View (SfTabView) control | Syncfusion
 description: Learn here all about color and font customization in Syncfusion .NET MAUI Tab View (SfTabView) control.
-platform: maui
+platform: maui-toolkit
 control: Tab View
 documentation: ug
 ---

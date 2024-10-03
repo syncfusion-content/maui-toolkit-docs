@@ -2,7 +2,7 @@
 layout: post
 title: Stacked Line Chart in .NET MAUI Chart control | Syncfusion
 description: Learn here all about stacked line chart support in Syncfusion .NET MAUI Chart (SfCartesianChart) control.
-platform: maui
+platform: maui-toolkit
 control: SfCartesianChart
 documentation: ug
 ---

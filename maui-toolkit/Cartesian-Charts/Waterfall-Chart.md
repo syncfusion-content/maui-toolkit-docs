@@ -2,7 +2,7 @@
 layout: post
 title: Waterfall Chart in .NET MAUI Chart control | Syncfusion
 description: Learn here all about the Waterfall Series chart and its features in Syncfusion .NET MAUI Chart (SfCartesianChart) control.
-platform: maui
+platform: maui-toolkit
 control: SfCartesianChart
 documentation: ug
 Keywords: .net maui waterfall chart, .net maui bridge chart, waterfall chart customization .net maui, syncfusion maui waterfall chart, cartesian waterfall chart maui, .net maui chart waterfall visualization.

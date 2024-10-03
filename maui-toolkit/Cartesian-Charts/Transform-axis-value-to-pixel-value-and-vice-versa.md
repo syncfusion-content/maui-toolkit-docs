@@ -2,7 +2,7 @@
 layout: post
 title: Transform axis value to pixel value and vice-versa | Syncfusion
 description: Learn here all about to transform axis value to pixel value and vice-versa in SfCartesianChart in Syncfusion .NET MAUI Chart (SfCartesianChart) control.
-platform: maui
+platform: maui-toolkit
 control: SfCartesianChart
 documentation: ug
 keywords: .net maui chart transform axis value to pixel, maui chart axis value to pixel conversion, .net maui chart axis pixel to value, syncfusion maui chart axis coordinate transformation, sfCartesianChart axis value to pixel conversion in .net maui

@@ -2,7 +2,7 @@
 layout: post
 title: About .NET MAUI Shimmer control | Syncfusion
 description: Learn here about the overview of Syncfusion .NET MAUI Shimmer (SfShimmer) control, its basic features, elements and more.
-platform: maui
+platform: maui-toolkit
 control: SfShimmer
 documentation: ug
 ---

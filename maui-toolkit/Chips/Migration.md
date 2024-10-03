@@ -2,7 +2,7 @@
 layout: post
 title: Migrating from Xamarin to .NET MAUI Chips | Syncfusion 
 description: Learn all about Migrating from Syncfusion Xamarin Chips to Syncfusion .NET MAUI Chips control and more here.
-platform: maui
+platform: maui-toolkit
 control: SfChips
 documentation: ug
 ---  

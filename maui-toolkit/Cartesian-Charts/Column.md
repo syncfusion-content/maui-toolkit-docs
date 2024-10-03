@@ -2,7 +2,7 @@
 layout: post
 title: Column Chart in .NET MAUI Chart control | Syncfusion
 description: Learn here all about column and bar chart support in Syncfusion .NET MAUI Chart (SfCartesianChart) control.
-platform: maui
+platform: maui-toolkit
 control: SfCartesianChart
 documentation: ug
 keywords: .net maui column chart, column chart customization .net maui, syncfusion maui column chart, cartesian column chart maui, .net maui chart column visualization
@@ -122,7 +122,7 @@ By default, all the column series which have the same x and y axes are placed si
 
 {% tabs %}
 
- {% highlight xaml %}
+{% highlight xaml %}
 
 <chart:SfCartesianChart EnableSideBySideSeriesPlacement="False">
     <chart:SfCartesianChart.XAxes>
@@ -143,7 +143,7 @@ By default, all the column series which have the same x and y axes are placed si
                         Width="0.2"/>                    
 </chart:SfCartesianChart>
 
-  {% endhighlight %}
+{% endhighlight %}
 
 {% highlight c# %}
     

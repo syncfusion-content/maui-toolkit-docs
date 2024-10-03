@@ -2,7 +2,7 @@
 layout: post
 title: Downloading Syncfusion .NET MAUI web installer - Syncfusion
 description: Learn here about the how to download Syncfusion .NET MAUI web installer from our syncfusion website with license.
-platform: MAUI
+platform: maui-toolkit
 control: Installation and Deployment
 documentation: ug
 

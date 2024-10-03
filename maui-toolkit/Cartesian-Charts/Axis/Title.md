@@ -2,7 +2,7 @@
 layout: post
 title: Title for axis in .NET MAUI Chart control | Syncfusion
 description: This section explains about chart axis title, title style, title template and its customization in .NET MAUI chart (SfCartesianChart).
-platform: maui
+platform: maui-toolkit
 control: SfCartesianChart
 documentation: ug
 keywords: .net maui cartesian charts, .net maui axis title, cartesian chart axis title, syncfusion cartesian charts maui, maui chart axis labeling, .net maui chart axis title, cartesian chart axis title guide maui, .net maui sfCartesianChart axis title.
