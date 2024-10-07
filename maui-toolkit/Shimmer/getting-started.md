@@ -9,17 +9,12 @@ documentation: ug
 
 # Getting started of .NET MAUI Shimmer
 
-This section explains how to add the [.NET MAUI Shimmer](https://www.syncfusion.com/maui-controls/maui-shimmer) control. Follow the steps below to add a .NET MAUI Shimmer control to your project.
-
-To get start quickly with our .NET MAUI Shimmer, you can check the below video.
-
-{% youtube
-"youtube:https://www.youtube.com/watch?v=NGGQhUA9Bu0"%}
+This section explains how to add the `.NET MAUI Shimmer` control. Follow the steps below to add a .NET MAUI Shimmer control to your project.
 
 ## Prerequisites
 
 Before proceeding, ensure the following are set up:
-1. Install [.NET 7 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/7.0) or later is installed.
+1. Install [.NET 8 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/8.0) or later is installed.
 2. Set up a .NET MAUI environment with Visual Studio 2022 (v17.3 or later) or Visual Studio Code. For Visual Studio Code users, ensure that the .NET MAUI workload is installed and configured as described [here.](https://learn.microsoft.com/en-us/dotnet/maui/get-started/installation?view=net-maui-8.0&tabs=visual-studio-code)
 
 ## Step 1: Create a New .NET MAUI Project
@@ -37,20 +32,33 @@ Before proceeding, ensure the following are set up:
 3. Select the project location, type the project name and press **Enter**.
 4. Then choose **Create project.**
 
-## Step 2: Install the Syncfusion .NET MAUI Core NuGet Package
+## Step 2: Install the Syncfusion .NET MAUI Toolkit NuGet Package
 
-1. In **Solution Explorer,** right-click the project and choose **Manage NuGet Packages.**
-2. Search for [Syncfusion.Maui.Core](https://www.nuget.org/packages/Syncfusion.Maui.Core/) and install the latest version.
+### Visual Studio
+
+1. In **Solution Explorer**, right-click the project and choose **Manage NuGet Packages**.
+2. Search for `Syncfusion.Maui.Toolkit` and install the latest version.
 3. Ensure the necessary dependencies are installed correctly, and the project is restored.
+
+### Visual Studio Code
+
+1. Press <kbd>Ctrl</kbd> + <kbd>`</kbd> (backtick) to open the integrated terminal in Visual Studio Code.
+2. Ensure you're in the project root directory where your `.csproj` file is located.
+3. Run the following command to install the Syncfusion MAUI Expander NuGet package:
+
+   `sh:dotnet add package Syncfusion.Maui.Toolkit`
+4. To ensure all dependencies are installed, run:
+
+   `sh:dotnet restore`
 
 ## Step 3: Register the handler
 
-The [Syncfusion.Maui.Core](https://www.nuget.org/packages/Syncfusion.Maui.Core/) NuGet is a dependent package for all Syncfusion controls of .NET MAUI. In the **MauiProgram.cs** file, register the handler for Syncfusion core.
+In the **MauiProgram.cs** file, register the handler for Syncfusion Toolkit.
 
 {% tabs %}
 {% highlight C# tabtitle="MauiProgram.cs" hl_lines="1 10" %}
 
-using Syncfusion.Maui.Core.Hosting;
+using Syncfusion.Maui.Toolkit.Hosting;
 namespace GettingStarted
 {
     public static class MauiProgram
@@ -59,7 +67,7 @@ namespace GettingStarted
         {
             var builder = MauiApp.CreateBuilder();
 
-            builder.ConfigureSyncfusionCore();
+            builder.ConfigureSyncfusionToolkit();
             builder
             .UseMauiApp<App>()
             .ConfigureFonts(fonts =>
@@ -77,15 +85,15 @@ namespace GettingStarted
 
 ## Step 4: Add .NET MAUI Shimmer control
 
-1. To initialize the control, import the `Syncfusion.Maui.Shimmer` namespace into your code.
-2. Initialize [SfShimmer](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Shimmer.SfShimmer.html).
+1. To initialize the control, import the `Syncfusion.Maui.Toolkit.Shimmer` namespace into your code.
+2. Initialize `SfShimmer`.
 
 {% tabs %}
 {% highlight xaml tabtitle="XAML" hl_lines="3 5" %}
 
 <ContentPage   
     . . .
-    xmlns:shimmer="clr-namespace:Syncfusion.Maui.Shimmer;assembly=Syncfusion.Maui.Core">
+    xmlns:shimmer="clr-namespace:Syncfusion.Maui.Toolkit.Shimmer;assembly=Syncfusion.Maui.Toolkit">
 
     <shimmer:SfShimmer />
 </ContentPage>
@@ -93,7 +101,7 @@ namespace GettingStarted
 {% endhighlight %}
 {% highlight c# tabtitle="C#" hl_lines="1 9 10" %}
 
-using Syncfusion.Maui.Shimmer;
+using Syncfusion.Maui.Toolkit.Shimmer;
 . . .
 
 public partial class MainPage : ContentPage
@@ -111,12 +119,12 @@ public partial class MainPage : ContentPage
 
 ## Change different shimmer views
 
-The [.NET MAUI Shimmer](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Shimmer.SfShimmer.html) control provides seven different shimmer types of views. It can be assigned to the control using the [Type](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Shimmer.SfShimmer.html#Syncfusion_Maui_Shimmer_SfShimmer_Type) property. By default, the control is assigned to the [CirclePersona](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Shimmer.ShimmerType.html#Syncfusion_Maui_Shimmer_ShimmerType_CirclePersona) view.
+The `.NET MAUI Shimmer` control provides seven different shimmer types of views. It can be assigned to the control using the `Type` property. By default, the control is assigned to the `CirclePersona` view.
 
 {% tabs %}
 {% highlight xaml tabtitle="XAML" hl_lines="2" %}
 
-<shimmer:SfShimmer x:Name="shimmer" VerticalOptions="Fill"
+<shimmer:SfShimmer VerticalOptions="Fill"
                    Type="CirclePersona">
     <StackLayout>
         <Label
@@ -130,7 +138,7 @@ The [.NET MAUI Shimmer](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Shim
 {% endhighlight %}
 {% highlight c# tabtitle="C#" hl_lines="3" %}
 
-SfShimmer shimmer = new SfShimmer()
+   SfShimmer shimmer = new SfShimmer()
    {
       Type = ShimmerType.CirclePersona,
       VerticalOptions = LayoutOptions.Fill,
@@ -149,13 +157,14 @@ SfShimmer shimmer = new SfShimmer()
 
 ## Loading shimmer content
 
-Shimmer content is loaded when the [`IsActive`](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Shimmer.SfShimmer.html#Syncfusion_Maui_Shimmer_SfShimmer_IsActive) property of the [`SfShimmer`](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Shimmer.SfShimmer.html) is disabled.
+Shimmer content is loaded when the `IsActive` property of the `SfShimmer` is disabled.
 
 {% tabs %} 
 
 {% highlight xaml %} 
 
-        <shimmer:SfShimmer x:Name="shimmer" VerticalOptions="FillAndExpand" IsActive ="false">
+        <shimmer:SfShimmer VerticalOptions="FillAndExpand" 
+                           IsActive ="false">
                 <shimmer:SfShimmer.Content>
                      <StackLayout>
                         <Label Text="Content is loaded!"/>
@@ -181,5 +190,3 @@ Shimmer content is loaded when the [`IsActive`](https://help.syncfusion.com/cr/m
 {% endhighlight %}
 
 {% endtabs %}
-
-N> You can refer to our [.NET MAUI Shimmer](https://www.syncfusion.com/maui-controls/maui-shimmer) feature tour page for its groundbreaking feature representations. You can also explore our [.NET MAUI Shimmer Example](https://github.com/syncfusion/maui-demos/tree/master/MAUI/Shimmer) that shows you how to render the Shimmer in .NET MAUI.
