@@ -71,7 +71,8 @@ In the **MauiProgram.cs** file, register the handler for Syncfusion Toolkit.
 {% highlight C# tabtitle="MauiProgram.cs"  %}
 
     
-    using Syncfusion.Maui.Core.Hosting;
+    using Syncfusion.Maui.Toolkit.Hosting;
+
     public static class MauiProgram
     {
 	    public static MauiApp CreateMauiApp()
@@ -121,8 +122,8 @@ public partial class MainPage : ContentPage
     public MainPage()
     {
         InitializeComponent();
-        SfSegmentedControl SegmentedControl = new SfSegmentedControl();
-        this.Content = SegmentedControl;
+        SfSegmentedControl segmentedControl = new SfSegmentedControl();
+        this.Content = segmentedControl;
     }
 }
 
@@ -161,15 +162,15 @@ public partial class MainPage : ContentPage
     public MainPage()
     {
         InitializeComponent();
-          SfSegmentedControl SegmentedControl = new SfSegmentedControl();
-          SegmentedControl.ItemsSource = new List<SfSegmentItem>
+          SfSegmentedControl segmentedControl = new SfSegmentedControl();
+          segmentedControl.ItemsSource = new List<SfSegmentItem>
           {
             new SfSegmentItem { Text = "Day" },
             new SfSegmentItem { Text = "Week" },
             new SfSegmentItem { Text = "Month" },
             new SfSegmentItem { Text = "Year" }
          };
-        this.Content = SegmentedControl;
+        this.Content = segmentedControl;
     }
 }
 
