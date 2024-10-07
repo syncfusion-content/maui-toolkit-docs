@@ -126,7 +126,7 @@ namespace NavigationDrawerGettingStarted
 
 {% highlight c# %}
 
-   using Syncfusion.Maui.Toolkit.NavigationDrawer;
+    using Syncfusion.Maui.Toolkit.NavigationDrawer;
     namespace NavigationDrawerGettingStarted
     {
         public partial class MainPage : ContentPage
