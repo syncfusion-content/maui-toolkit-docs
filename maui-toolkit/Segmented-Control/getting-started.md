@@ -42,7 +42,7 @@ Before proceeding, ensure the following are setup:
 
 ### Visual Studio Code
 
-1. Press `Ctrl + (backtick)` to open the integrated terminal in Visual Studio Code.
+1. Press ``Ctrl + '(backtick)`` to open the integrated terminal in Visual Studio Code.
 2. Ensure you're in the project root directory where your .csproj file is located.
 3. Run the following command to install the Syncfusion .NET MAUI Toolkit NuGet package:
   
