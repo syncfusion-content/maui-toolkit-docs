@@ -34,7 +34,7 @@ Before proceeding, ensure the following are in place:
 3. Select the project location, type the project name and press Enter.
 4. Then choose **Create project**
 
-## Step 2: Install the Syncfusion MAUI TextInputLayout NuGet Package
+## Step 2: Install the Syncfusion MAUI Toolkit NuGet Package
 
 ### Visual Studio
 
