@@ -71,7 +71,7 @@ Before proceeding, ensure the following are set up:
 
 In the MauiProgram.cs file, register the handler for Syncfusion Toolkit.
 
-{% highlight c# hl_lines="6 17" %}
+{% highlight c# %}
 using Microsoft.Maui;
 using Microsoft.Maui.Hosting;
 using Microsoft.Maui.Controls.Compatibility;
