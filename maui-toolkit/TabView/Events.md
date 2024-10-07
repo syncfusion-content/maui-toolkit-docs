@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Events in .NET MAUI Tab View (SfTabView) | Syncfusion
-description: Learn about Events in the Syncfusion .NET MAUI Tab View (SfTabView) control, its elements, and more.
+title: Events in .NET MAUI Tab View (SfTabView) Control | Syncfusion
+description: Explore event handling in the Syncfusion .NET MAUI Tab View (SfTabView) control. Learn how to use TabItemTapped, SelectionChanging, and SelectionChanged events to enhance user interaction and control behavior.
 platform: maui-toolkit
 control: Tab View control (SfTabView)
 documentation: ug

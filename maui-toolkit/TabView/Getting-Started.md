@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting started with .NET MAUI Tab View (SfTabView) | Syncfusion
-description: Learn here all about getting started with Syncfusion .NET MAUI Tab View (SfTabView) control, its elements and more.
+title: Getting started with .NET MAUI Tab View (SfTabView) Control | Syncfusion
+description: Learn how to set up, configure, and use the Syncfusion .NET MAUI Tab View (SfTabView) control in your cross-platform applications.
 platform: maui-toolkit
 control: Tab View control (SfTabView)
 documentation: ug
