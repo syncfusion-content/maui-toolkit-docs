@@ -53,7 +53,7 @@ using Microsoft.Maui.Hosting;
 using Microsoft.Maui.Controls.Compatibility;
 using Microsoft.Maui.Controls.Hosting;
 using Microsoft.Maui.Controls.Xaml;
-using Syncfusion.Maui.Core.Hosting;
+using Syncfusion.Maui.Toolkit.Hosting;
 
 namespace TabViewMauiSample
 {
@@ -64,7 +64,7 @@ namespace TabViewMauiSample
             var builder = MauiApp.CreateBuilder();
             builder
             .UseMauiApp<App>()
-            .ConfigureSyncfusionCore()
+            .ConfigureSyncfusionToolkit()
             .ConfigureFonts(fonts =>
             {
                 fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
@@ -90,7 +90,7 @@ namespace TabViewMauiSample
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage 
             ...
-            xmlns:tabView="clr-namespace:Syncfusion.Maui.TabView;assembly=Syncfusion.Maui.TabView">
+            xmlns:tabView="clr-namespace:Syncfusion.Maui.Toolkit.TabView;assembly=Syncfusion.Maui.Toolkit">
     <ContentPage.Content> 
         <tabView:SfTabView /> 
     </ContentPage.Content>  
@@ -100,7 +100,7 @@ namespace TabViewMauiSample
 
 {% highlight C# %}
 
-using Syncfusion.Maui.TabView;
+using Syncfusion.Maui.Toolkit.TabView;
 namespace TabViewGettingStarted
 {
     public partial class MainPage : ContentPage
@@ -130,7 +130,7 @@ Tab items can be added to the control using the [Items](https://help.syncfusion.
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
             x:Class="TabViewMauiSample.MainPage"
-            xmlns:tabView="clr-namespace:Syncfusion.Maui.TabView;assembly=Syncfusion.Maui.TabView"
+            xmlns:tabView="clr-namespace:Syncfusion.Maui.Toolkit.TabView;assembly=Syncfusion.Maui.Toolkit"
             BackgroundColor="{DynamicResource PageBackgroundColor}">
     <ContentPage.Content> 
         <tabView:SfTabView x:Name="tabView">
@@ -186,17 +186,17 @@ Tab items can be added to the control using the [Items](https://help.syncfusion.
 
 {% highlight C# %}
 
-using Syncfusion.Maui.TabView;
+using Syncfusion.Maui.Toolkit.TabView;
 
 namespace TabViewMauiSample
 {
-	public partial class TabView : ContentPage
+	public partial class MainPage : ContentPage
 	{
         SfTabView tabView;
-		public TabView ()
+		public MainPage()
 		{
 			InitializeComponent ();
-            var tabView = new SfTabView();
+            tabView = new SfTabView();
             Grid allContactsGrid = new Grid { BackgroundColor = Colors.Red };
             var favorites = new ListView
             {
@@ -297,14 +297,6 @@ public class Model: INotifyPropertyChanged
     }
 }
 
-{% endhighlight %}
-
-{% endtabs %}
-
-{% tabs %}
-
-{% highlight C# %}
-
 public class TabItemsSourceViewModel:INotifyPropertyChanged
 {
     public event PropertyChangedEventHandler PropertyChanged;
@@ -335,26 +327,22 @@ public class TabItemsSourceViewModel:INotifyPropertyChanged
         TabItems.Add(new Model() { Name = "Tye" });
         TabItems.Add(new Model() { Name = "Nora" });
         TabItems.Add(new Model() { Name = "Sebastian" });
-        
     }
-
 }
 
 {% endhighlight %}
 
 {% endtabs %}
 
-The following code example binds the collection to the `ItemsSource` property of `SfTabView`.
-
 {% tabs %}
 
 {% highlight xaml %}
 
-    <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ItemTemplateSample.MainPage"
              xmlns:local="clr-namespace:ItemTemplateSample"
-             xmlns:tabView="clr-namespace:Syncfusion.Maui.TabView;assembly=Syncfusion.Maui.TabView"
+             xmlns:tabView="clr-namespace:Syncfusion.Maui.Toolkit.TabView;assembly=Syncfusion.Maui.Toolkit"
              BackgroundColor="{DynamicResource SecondaryColor}" >
 
     <ContentPage.BindingContext>
@@ -362,9 +350,7 @@ The following code example binds the collection to the `ItemsSource` property of
     </ContentPage.BindingContext>
     <tabView:SfTabView ItemsSource="{Binding TabItems}" >
     </tabView:SfTabView>
-
-    </ContentPage>
-
+</ContentPage>
   
 {% endhighlight %}
 
@@ -417,7 +403,6 @@ namespace ItemTemplateSample;
 
 public partial class MainPage : ContentPage
 {
-	
     TabItemsSourceViewModel model;
     SfTabView tabView;
 	public MainPage()
@@ -452,14 +437,14 @@ By defining the `ContentItemTemplate` of the `SfTabView`, a custom user interfac
 
     <tabView:SfTabView ItemsSource="{Binding TabItems}" >
         <tabView:SfTabView.HeaderItemTemplate>
-                <DataTemplate >
-                    <Label  Padding="5,10,10,10"  Text="{Binding Name}"/>
-                 </DataTemplate>
-            </tabView:SfTabView.HeaderItemTemplate>
-             <tabView:SfTabView.ContentItemTemplate>
-                <DataTemplate>
-                     <Label TextColor="Black"  Text="{Binding Name}" />
-               </DataTemplate>
+            <DataTemplate>
+                <Label Padding="5,10,10,10" Text="{Binding Name}"/>
+            </DataTemplate>                
+        </tabView:SfTabView.HeaderItemTemplate>
+        <tabView:SfTabView.ContentItemTemplate>
+            <DataTemplate>
+                <Label TextColor="Black" Text="{Binding Name}" />
+            </DataTemplate>
         </tabView:SfTabView.ContentItemTemplate>
     </tabView:SfTabView>
     
@@ -471,7 +456,6 @@ namespace ItemTemplateSample;
 
 public partial class MainPage : ContentPage
 {
-
     TabItemsSourceViewModel model;
     SfTabView tabView;
     public MainPage()
@@ -483,7 +467,7 @@ public partial class MainPage : ContentPage
         tabView.ItemsSource = model.TabItems;
         tabView.HeaderItemTemplate = new DataTemplate(() =>
         {
-            var nameLabel = new Label { Padding = new Thickness("5,10,10,10")};
+            var nameLabel = new Label { Padding = new Thickness(5,10,10,10)};
             nameLabel.SetBinding(Label.TextProperty, "Name");
             
             return nameLabel;

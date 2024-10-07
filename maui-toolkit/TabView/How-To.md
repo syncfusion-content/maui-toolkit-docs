@@ -38,15 +38,15 @@ Indicates whether the tab item is active or not. This property can be used to ge
 
 {% highlight C# %}
 
-    tabView.SelectionChanged += Index_Changed;
-    private void Index_Changed(object sender, TabSelectionChangedEventArgs e)
+tabView.SelectionChanged += Index_Changed;
+private void Index_Changed(object sender, TabSelectionChangedEventArgs e)
+{
+    bool itemSelection = tab1.IsSelected;
+    if (itemSelection)
     {
-        bool itemSelection = tab1.IsSelected;
-        if (itemSelection)
-        {
-            tab1.FontSize = 26;
-        }
+        tab1.FontSize = 26;
     }
+}
 
 {% endhighlight %}
 

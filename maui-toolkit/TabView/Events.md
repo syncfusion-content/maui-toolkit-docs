@@ -28,7 +28,9 @@ The [`TabItemTapped`](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.TabVie
 
 {% highlight C# %}
 
-tabView.SelectionChanged += TabView_TabItemTapped;
+//Initialize SfTabView class instance.
+SfTabView tabView = new SfTabView();
+tabView.TabItemTapped += TabView_TabItemTapped;
 private void TabView_TabItemTapped(object sender, TabItemTappedEventArgs e)
 {
    // Acces the Selected Tab Item Property
@@ -60,6 +62,8 @@ The [`SelectionChanging`](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Ta
 
 {% highlight C# %}
 
+//Initialize SfTabView class instance.
+SfTabView tabView = new SfTabView();
 tabView.SelectionChanging += TabView_SelectionChanging;
 private void TabView_SelectionChanging(object sender, SelectionChangingEventArgs e)
 {
@@ -92,6 +96,8 @@ The [`SelectionChanged`](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Tab
 
 {% highlight C# %}
 
+//Initialize SfTabView class instance.
+SfTabView tabView = new SfTabView();
 tabView.SelectionChanged += TabView_SelectionChanged;
 private void TabView_SelectionChanged(object sender, TabSelectionChangedEventArgs e)
 {

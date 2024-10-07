@@ -33,7 +33,7 @@ The Tab View can be changed by setting the [HeaderDisplayMode](https://help.sync
 
 {% highlight C# %}
 
-SfTabView tabView = new SfTabView
+SfTabView tabView = new SfTabView()
 {
     HeaderDisplayMode = TabBarDisplayMode.Default
 };
@@ -55,6 +55,7 @@ SfTabItem tabItem3 = new SfTabItem
 tabView.Items.Add(tabItem1);
 tabView.Items.Add(tabItem2);
 tabView.Items.Add(tabItem3);
+this.Content = tabView;
 
 {% endhighlight %}
 
