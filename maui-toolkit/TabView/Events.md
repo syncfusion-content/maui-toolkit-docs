@@ -1,41 +1,45 @@
 ---
 layout: post
 title: Events in .NET MAUI Tab View (SfTabView) | Syncfusion
-description: Learn about Event support in the Syncfusion .NET MAUI Tab View (SfTabView) control, its elements, and more.
+description: Learn about Events in the Syncfusion .NET MAUI Tab View (SfTabView) control, its elements, and more.
 platform: maui-toolkit
-control: SfTabView
+control: Tab View control (SfTabView)
 documentation: ug
 ---
 
-# Events in .NET MAUI Tab  View
+# Events in .NET MAUI Tab View
 
 This section provides information about the events available in the .NET MAUI Tab View control.
 
 ## Tab Item Tapped event
 
-The [`TabItemTapped`](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.TabView.SfTabView.html#Syncfusion_Maui_TabView_SfTabView_TabItemTapped) event will be triggered whenever tapping the Tab.The [`TabItemTappedEventArgs`](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.TabView.TabItemTappedEventArgs.html) provides the following properties:
+The [TabItemTapped](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SfTabView.html#Syncfusion_Maui_Toolkit_TabView_SfTabView_TabItemTapped) event will be triggered whenever tapping the Tab.The [`TabItemTappedEventArgs`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.TabItemTappedEventArgs.html) provides the following properties:
 
-* [`TabItem`](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.TabView.TabItemTappedEventArgs.html#Syncfusion_Maui_TabView_TabItemTappedEventArgs_TabItem) : Gets the selected tab item of Tab View control.
-* [`Cancel`](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.TabView.TabItemTappedEventArgs.html#Syncfusion_Maui_TabView_TabItemTappedEventArgs_Cancel) : Gets or sets a value indicating whether the event should be canceled.
+* [TabItem](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.TabItemTappedEventArgs.html#Syncfusion_Maui_Toolkit_TabView_TabItemTappedEventArgs_TabItem) : Gets the selected tab item of Tab View control.
+* [Cancel](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.TabItemTappedEventArgs.html#Syncfusion_Maui_Toolkit_TabView_TabItemTappedEventArgs_Cancel) : Gets or sets a value indicating whether the event should be canceled.
 
 {% tabs %}
 
 {% highlight xaml %}
 
-<tabView:SfTabView x:Name="tabView" TabItemTapped="TabView_TabItemTapped" />
+<tabView:SfTabView x:Name="tabView" TabItemTapped="TabView_TabItemTapped"/>
 
 {% endhighlight %}
 
 {% highlight C# %}
 
-tabView.SelectionChanged += TabView_TabItemTapped;
-private void TabView_TabItemTapped(object sender, TabItemTappedEventArgs e)
-{
-   // Acces the Selected Tab Item Property
-    e.TabItem.FontSize = 26;
+tabView.TabItemTapped += TabView_TabItemTapped;
 
-   // Cancel the event if needed
-    e.Cancel = true;
+private void TabView_TabItemTapped(object? sender, TabItemTappedEventArgs e)
+{
+    if (e.TabItem != null)
+    {
+        // Acces the Selected Tab Item Property
+        e.TabItem.FontSize = 26;
+
+        // Cancel the event if needed
+        e.Cancel = true;
+    }
 }
 
 {% endhighlight %}
@@ -44,29 +48,29 @@ private void TabView_TabItemTapped(object sender, TabItemTappedEventArgs e)
 
 ## Selection Changing event
 
-The [`SelectionChanging`](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.TabView.SfTabView.html#Syncfusion_Maui_TabView_SfTabView_SelectionChanging) event notifies before the selection changes, tapping the tab header, and dynamically setting the [`SelectedIndex`](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.TabView.SfTabView.html?tabs=tabid-1#Syncfusion_Maui_TabView_SfTabView_SelectedIndex) property of SfTabView. The [`SelectionChangingEventArgs`](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.TabView.SelectionChangingEventArgs.html) provides the following properties:
+The [SelectionChanging](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SfTabView.html#Syncfusion_Maui_Toolkit_TabView_SfTabView_SelectionChanging) event notifies before the selection changes, tapping the tab header, and dynamically setting the [`SelectedIndex`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SfTabView.html?tabs=tabid-1#Syncfusion_Maui_Toolkit_TabView_SfTabView_SelectedIndex) property of SfTabView. The [`SelectionChangingEventArgs`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SelectionChangingEventArgs.html) provides the following properties:
 
-* [`Index`](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.TabView.SelectionChangingEventArgs.html#Syncfusion_Maui_TabView_SelectionChangingEventArgs_Index) - Gets the index value of the item that is about to be selected. 
-
+* [Index](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SelectionChangingEventArgs.html#Syncfusion_Maui_Toolkit_TabView_SelectionChangingEventArgs_Index) - Gets the index value of the item that is about to be selected.
 * `Cancel` - Gets or sets a boolean value indicating whether the selection of the tab item should be canceled.
 
 {% tabs %}
 
 {% highlight xaml %}
 
-<tabView:SfTabView x:Name="tabView" SelectionChanging="TabView_SelectionChanging" />
+<tabView:SfTabView x:Name="tabView" SelectionChanging="TabView_SelectionChanging"/>
 	
 {% endhighlight %}
 
 {% highlight C# %}
 
 tabView.SelectionChanging += TabView_SelectionChanging;
-private void TabView_SelectionChanging(object sender, SelectionChangingEventArgs e)
+
+private void TabView_SelectionChanging(object? sender, SelectionChangingEventArgs e)
 {
     // Access the index value of the item that is being selected.
-    var selectionChangingIndex =  e.Index;
+    var selectionChangingIndex = e.Index;
 
-    // if we set Cancel as true then the tabbed item could not selected.
+    // If we set Cancel to true, the tab item will not be selected.
     e.Cancel = true;
 }
 
@@ -76,17 +80,17 @@ private void TabView_SelectionChanging(object sender, SelectionChangingEventArgs
 
 ## Selection Changed event
 
-The [`SelectionChanged`](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.TabView.SfTabView.html#Syncfusion_Maui_TabView_SfTabView_SelectionChanged) event is used to notify when the selection is changed by swiping or dynamically setting the [`SelectedIndex`](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.TabView.SfTabView.html?tabs=tabid-1#Syncfusion_Maui_TabView_SfTabView_SelectedIndex) property of SfTabView. The [`TabSelectionChangedEventArgs`](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.TabView.TabSelectionChangedEventArgs.html) provides the following properties:
+The [SelectionChanged](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SfTabView.html#Syncfusion_Maui_Toolkit_TabView_SfTabView_SelectionChanged) event is used to notify when the selection is changed by swiping or dynamically setting the [`SelectedIndex`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SfTabView.html?tabs=tabid-1#Syncfusion_Maui_Toolkit_TabView_SfTabView_SelectedIndex) property of SfTabView. The [`TabSelectionChangedEventArgs`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.TabSelectionChangedEventArgs.html) provides the following properties:
 
-* [`NewValue`](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.TabView.TabSelectionChangedEventArgs.html#Syncfusion_Maui_TabView_TabSelectionChangedEventArgs_NewIndex) : Gets the index of currently selected tab item.
-* [`OldValue`](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.TabView.TabSelectionChangedEventArgs.html#Syncfusion_Maui_TabView_TabSelectionChangedEventArgs_OldIndex) : Gets the index of previously selected tab item.
-* [`Handled `](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.TabView.TabSelectionChangedEventArgs.html#Syncfusion_Maui_TabView_TabSelectionChangedEventArgs_Handled) : Gets or sets a value indicating whether the SelectionChanged event is handled.
+* [NewValue](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.TabSelectionChangedEventArgs.html#Syncfusion_Maui_Toolkit_TabView_TabSelectionChangedEventArgs_NewIndex) : Gets the index of currently selected tab item.
+* [OldValue](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.TabSelectionChangedEventArgs.html#Syncfusion_Maui_Toolkit_TabView_TabSelectionChangedEventArgs_OldIndex) : Gets the index of previously selected tab item.
+* [Handled](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.TabSelectionChangedEventArgs.html#Syncfusion_Maui_Toolkit_TabView_TabSelectionChangedEventArgs_Handled) : Gets or sets a value indicating whether the SelectionChanged event is handled.
 
 {% tabs %}
 
 {% highlight xaml %}
 
-<tabView:SfTabView x:Name="tabView" SelectionChanged="TabView_SelectionChanged" />
+<tabView:SfTabView x:Name="tabView" SelectionChanged="TabView_SelectionChanged"/>
 	
 {% endhighlight %}
 
@@ -99,7 +103,7 @@ private void TabView_SelectionChanged(object sender, TabSelectionChangedEventArg
     double newValue = e.NewIndex;
     double oldValue = e.OldIndex;
 
-    // if we set handled true other SelectionChanged event can't trigger
+    // If we set Handled to true, it indicates that the event has been handled.
     e.Handled = true;
 }
 

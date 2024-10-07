@@ -14,29 +14,29 @@ This section guides you through setting up and configuring a [Tab View](https://
 ## Prerequisites
 
 Before proceeding, ensure the following are setup:
-1. Install [.NET 8 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/8.0) or later is installed.
-2. Set up a .NET MAUI environment with Visual Studio 2022 (v17.8 or later) or Visual Studio Code. For Visual Studio Code users, ensure that the .NET MAUI workload is installed and configured as described [here.](https://learn.microsoft.com/en-us/dotnet/maui/get-started/installation?view=net-maui-8.0&tabs=visual-studio-code)
+1. Ensure [.NET 8 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/8.0) or later is installed.
+2. Set up a .NET MAUI environment with Visual Studio 2022 (v17.8 or later) or Visual Studio Code. For Visual Studio Code users, ensure that the .NET MAUI workload is installed and configured as described [here](https://learn.microsoft.com/en-us/dotnet/maui/get-started/installation?view=net-maui-8.0&tabs=visual-studio-code).
 
 ## Step 1: Create a New .NET MAUI Project
 
 ### Visual Studio
 
 1. Go to **File > New > Project** and choose the **.NET MAUI App** template.
-2. Name the project and choose a location. Then click **Next**.
+2. Name the project and choose a location. Click **Next**.
 3. Select the .NET framework version and click **Create**.
 
 ### Visual Studio Code
 
-1. Open the command palette by pressing `Ctrl+Shift+P` and type **.NET:New Project** and enter.
+1. Open the command palette by pressing `Ctrl+Shift+P` and type **.NET: New Project** and press **Enter**.
 2. Choose the **.NET MAUI App** template.
-3. Select the project location, type the project name and press **Enter**.
-4. Then choose **Create project.**
+3. Select the project location, type the project name, and press **Enter**.
+4. Choose **Create project**.
 
 ## Step 2: Install the Syncfusion .NET MAUI Toolkit Package
 
 ### Visual Studio
 
-1. In **Solution Explorer,** right-click the project and choose **Manage NuGet Packages.**
+1. In **Solution Explorer**, right-click the project and choose **Manage NuGet Packages**.
 2. Search for [Syncfusion.Maui.Toolkit](https://www.nuget.org/packages/Syncfusion.Maui.Toolkit/) and install the latest version.
 3. Ensure the necessary dependencies are installed correctly, and the project is restored.
 
@@ -104,7 +104,7 @@ In the **MauiProgram.cs** file, register the handler for Syncfusion Toolkit.
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage 
             ...
-            xmlns:tabView="clr-namespace:Syncfusion.Maui.Toolkit.TabView;assembly=Syncfusion.Maui.Toolkit.TabView">
+            xmlns:tabView="clr-namespace:Syncfusion.Maui.Toolkit.TabView;assembly=Syncfusion.Maui.Toolkit">
     <ContentPage.Content> 
         <tabView:SfTabView /> 
     </ContentPage.Content>  
@@ -144,7 +144,7 @@ Tab items can be added to the control using the [Items](https://help.syncfusion.
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
             x:Class="TabViewMauiSample.MainPage"
-            xmlns:tabView="clr-namespace:Syncfusion.Maui.Toolkit.TabView;assembly=Syncfusion.Maui.Toolkit.TabView"
+            xmlns:tabView="clr-namespace:Syncfusion.Maui.Toolkit.TabView;assembly=Syncfusion.Maui.Toolkit"
             BackgroundColor="{DynamicResource PageBackgroundColor}">
     <ContentPage.Content> 
         <tabView:SfTabView x:Name="tabView">
@@ -298,7 +298,7 @@ public class Model: INotifyPropertyChanged
         set
         {
             name = value;
-            OnPropertyChanged("Name");
+            OnPropertyChanged(nameof(Name));
         }
     }
 }
@@ -311,7 +311,7 @@ public class Model: INotifyPropertyChanged
 
 {% highlight C# %}
 
-public class TabItemsSourceViewModel:INotifyPropertyChanged
+public class TabItemsSourceViewModel : INotifyPropertyChanged
 {
     private ObservableCollection<Model> tabItems;
     public event PropertyChangedEventHandler PropertyChanged;
@@ -329,7 +329,7 @@ public class TabItemsSourceViewModel:INotifyPropertyChanged
         set
         {
             tabItems = value;
-            OnPropertyChanged("TabItems");
+            OnPropertyChanged(nameof(TabItems));
         }
     }
     public TabItemsSourceViewModel()
@@ -358,7 +358,7 @@ The following code example binds the collection to the `ItemsSource` property of
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ItemTemplateSample.MainPage"
              xmlns:local="clr-namespace:ItemTemplateSample"
-             xmlns:tabView="clr-namespace:Syncfusion.Maui.Toolkit.TabView;assembly=Syncfusion.Maui.Toolkit.TabView"
+             xmlns:tabView="clr-namespace:Syncfusion.Maui.Toolkit.TabView;assembly=Syncfusion.Maui.Toolkit"
              BackgroundColor="{DynamicResource SecondaryColor}" >
 
     <ContentPage.BindingContext>
@@ -403,7 +403,7 @@ By defining the `HeaderItemTemplate` of the `SfTabView`, a custom user interface
 
 {% highlight xaml %}
 
-    <tabView:SfTabView ItemsSource="{Binding TabItems}" >
+    <tabView:SfTabView ItemsSource="{Binding TabItems}">
         <tabView:SfTabView.HeaderItemTemplate>
                 <DataTemplate >
                     <Label  Padding="5,10,10,10"  Text="{Binding Name}"/>
@@ -428,7 +428,7 @@ public partial class MainPage : ContentPage
 		tabView.ItemsSource = model.TabItems;
 		tabView.HeaderItemTemplate = new DataTemplate(() =>
 		{
-			var nameLabel = new Label { Padding = new Thickness("5,10,10,10")};
+			var nameLabel = new Label { Padding = new Thickness(5,10,10,10)};
             nameLabel.SetBinding(Label.TextProperty, "Name");
 		    
 			return nameLabel;
@@ -449,7 +449,7 @@ By defining the `ContentItemTemplate` of the `SfTabView`, a custom user interfac
 
 {% highlight xaml %}
 
-    <tabView:SfTabView ItemsSource="{Binding TabItems}" >
+    <tabView:SfTabView ItemsSource="{Binding TabItems}">
         <tabView:SfTabView.HeaderItemTemplate>
                 <DataTemplate >
                     <Label  Padding="5,10,10,10"  Text="{Binding Name}"/>
@@ -479,7 +479,7 @@ public partial class MainPage : ContentPage
         tabView.ItemsSource = model.TabItems;
         tabView.HeaderItemTemplate = new DataTemplate(() =>
         {
-            var nameLabel = new Label { Padding = new Thickness("5,10,10,10")};
+            var nameLabel = new Label { Padding = new Thickness(5,10,10,10)};
             nameLabel.SetBinding(Label.TextProperty, "Name");
             
             return nameLabel;
