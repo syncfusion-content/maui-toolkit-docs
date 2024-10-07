@@ -3,7 +3,7 @@ layout: post
 title: Getting Started with .NET MAUI Segmented control | Syncfusion
 description: Learn about getting started with Syncfusion .NET MAUI Segmented control (SfSegmentedControl) in mobile and desktop applications from a single shared codebase.
 platform: maui-toolkit
-control: Segmented (SfSegmented) control
+control: Segmented control (SfSegmented)
 documentation: ug
 ---
 
@@ -68,7 +68,7 @@ Before proceeding, ensure the following are setup:
 In the **MauiProgram.cs** file, register the handler for Syncfusion Toolkit.
 
 {% tabs %}
-{% highlight C# tabtitle="MauiProgram.cs" hl_lines="1 8" %}
+{% highlight C# tabtitle="MauiProgram.cs"  %}
 
     
     using Syncfusion.Maui.Core.Hosting;
@@ -103,9 +103,9 @@ In the **MauiProgram.cs** file, register the handler for Syncfusion Toolkit.
 
 <ContentPage   
             
-    xmlns:SegmentedControl="clr-namespace:Syncfusion.Maui.Toolkit.SegmentedControl;assembly=Syncfusion.Maui.Toolkit"
+    xmlns:segmentedControl="clr-namespace:Syncfusion.Maui.Toolkit.SegmentedControl;assembly=Syncfusion.Maui.Toolkit"
 
-        <SegmentedControl:SfSegmentedControl />
+        <segmentedControl:SfSegmentedControl />
 
 </ContentPage>
 
@@ -137,17 +137,17 @@ You can use `ItemsSource` property of `SfSegmentedControl` to populate the segme
 {% highlight XAML %}
 
 <ContentPage   
-    xmlns:SegmentedControl="clr-namespace:Syncfusion.Maui.Toolkit.SegmentedControl;assembly=Syncfusion.Maui.Toolkit">
-    <SegmentedControl:SfSegmentedControl x:Name="segmentedControl">
-        <SegmentedControl:SfSegmentedControl.ItemsSource>
+    xmlns:segmentedControl="clr-namespace:Syncfusion.Maui.Toolkit.SegmentedControl;assembly=Syncfusion.Maui.Toolkit">
+    <segmentedControl:SfSegmentedControl x:Name="segmentedControl">
+        <segmentedControl:SfSegmentedControl.ItemsSource>
             <x:Array Type="{x:Type x:String}">
                 <x:String>Day</x:String>
                 <x:String>Week</x:String>
                 <x:String>Month</x:String>
                 <x:String>Year</x:String>
             </x:Array>
-        </SegmentedControl:SfSegmentedControl.ItemsSource>
-    </SegmentedControl:SfSegmentedControl>
+        </segmentedControl:SfSegmentedControl.ItemsSource>
+    </segmentedControl:SfSegmentedControl>
 </ContentPage>
 
 {% endhighlight %}
