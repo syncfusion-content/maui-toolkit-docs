@@ -46,10 +46,23 @@ Before proceeding, ensure the following are set up:
 2. Ensure you're in the project root directory where your `.csproj` file is located.
 3. Run the following command to install the Syncfusion MAUI Expander NuGet package:
 
-   `sh:dotnet add package Syncfusion.Maui.Toolkit`
+{% tabs %}
+{% highlight sh %}
+
+dotnet add package Syncfusion.Maui.Toolkit
+
+{% endhighlight %}
+{% endtabs %}
+
 4. To ensure all dependencies are installed, run:
 
-   `sh:dotnet restore`
+{% tabs %}
+{% highlight sh %}
+
+   dotnet restore
+
+{% endhighlight %}
+{% endtabs %}
 
 ## Step 3: Register the handler
 
