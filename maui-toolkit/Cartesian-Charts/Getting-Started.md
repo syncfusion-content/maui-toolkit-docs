@@ -8,7 +8,7 @@ documentation: ug
 keywords: .net maui cartesian chart, .net maui charting, cartesian chart maui, syncfusion cartesian chart maui, maui chart control, .net maui data visualization, cartesian chart example maui.
 ---
 
-# Getting Started with .NET MAUI Chart
+# Getting Started with .NET MAUI Cartesian Chart
 
 This section explains how to populate the Cartesian chart with data, a title, data labels, a legend, and tooltips, as well as the essential aspects for getting started with the SfCartesianChart.
 
@@ -103,9 +103,9 @@ In the **MauiProgram.cs** file, register the handler for Syncfusion Toolkit.
 
 {% endtabs %}
 
-## Step 4: Add .NET MAUI Cartesian chart
+## Step 4: Add .NET MAUI Cartesian Chart
 
-1. Import the `Syncfusion.Maui.Charts` namespace into your code.
+1. Import the `Syncfusion.Maui.Toolkit.Charts` namespace into your code.
 2. Initialize an instance of the `SfCartesianChart` control.
 
 {% tabs %}
