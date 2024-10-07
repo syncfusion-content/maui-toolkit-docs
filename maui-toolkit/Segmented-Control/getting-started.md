@@ -9,12 +9,7 @@ documentation: ug
 
 # Getting Started with the .NET MAUI Segmented Control
 
-This section provides a quick overview of how to get started with the [.NET MAUI Segmented control (SfSegmentedControl)](https://www.syncfusion.com/maui-controls/maui-segmented-control) for .NET MAUI and a walk-through to configure the .NET MAUI Segmented control in a real-time scenario. Follow the steps below to add .NET MAUI Segmented control to your project.
-
-To get start quickly with our .NET MAUI Segment, you can check the below video.
-
-{% youtube
-"youtube:https://youtu.be/CVFBv5eE_RY?si=amYxmTkb0uCwHWIr"%}
+This section provides a quick overview of how to get started with the .NET MAUI Segmented control (SfSegmentedControl) for .NET MAUI and a walk-through to configure the .NET MAUI Segmented control in a real-time scenario. Follow the steps below to add .NET MAUI Segmented control to your project.
 
 ## Prerequisites
 
@@ -47,7 +42,7 @@ Before proceeding, ensure the following are setup:
 
 ### Visual Studio Code
 
-1. Press `Ctrl + `` (backtick) to open the integrated terminal in Visual Studio Code.
+1. Press `Ctrl + (backtick)` to open the integrated terminal in Visual Studio Code.
 2. Ensure you're in the project root directory where your .csproj file is located.
 3. Run the following command to install the Syncfusion .NET MAUI Toolkit NuGet package:
   
