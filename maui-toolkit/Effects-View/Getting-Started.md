@@ -47,20 +47,25 @@ Before proceeding, ensure the following are set up:
 3. Run the following command to install the Syncfusion .NET MAUI Toolkit NuGet package:
   
 {% tabs %}
+
 {% highlight sh  %}
 
     dotnet add package Syncfusion.Maui.Toolkit
 
 {% endhighlight %}
+
 {% endtabs %}
+
 4. To ensure all dependencies are installed, run:
 
 {% tabs %}
+
 {% highlight sh  %}
 
     dotnet restore
     
 {% endhighlight %}
+
 {% endtabs %}
 
 ## Step 3: Register the handler
