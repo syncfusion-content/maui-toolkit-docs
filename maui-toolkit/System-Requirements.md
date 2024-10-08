@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Installation and Deployment process for Syncfusion .NET MAUI Toolkit
-description: Describes about system requirements to install the Syncfusion .NET MAUI Toolkit Components and list of supported platforms. 
+description: Describes about system requirements to install the Syncfusion .NET MAUI Toolkit package and list of supported platforms. 
 platform: maui-toolkit
 control: Installation and Deployment
 documentation: ug
