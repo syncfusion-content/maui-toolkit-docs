@@ -29,7 +29,7 @@ The **NuGet Package Manager UI** llows you to search for, install, uninstall, an
 
 3. Select the **Syncfusion.Maui.Toolkit** package, choose the appropriate version, and click **Install**. Accept the license terms to complete the installation.
 
-4. Once the installation is complete, your application will have all the necessary **Syncfusion assemblies** required to begin developing using the [Syncfusion .NET MAUI Toolkit components](https://www.syncfusion.com/maui-controls).
+4. Once the installation is complete, your application will have all the necessary **Syncfusion assemblies** required to begin developing using the **Syncfusion .NET MAUI Toolkit components**.
 
 ## Installation using Dotnet (.NET) CLI
 
