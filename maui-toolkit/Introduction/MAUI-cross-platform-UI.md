@@ -11,7 +11,7 @@ documentation: ug
 
 The Syncfusion Toolkit for .NET MAUI is an ideal choice for developing rich cross platform applications with .NET from a single shared code base. You can build more responsive, interactive, and creative application that run on multiple platforms and devices with various form factors. Some of the cool features and customization options makes the controls a perfect one for your cross-platform application.
 
-Syncfusion .NET MAUI controls support following platforms,
+Syncfusion Toolkit for .NET MAUI support following platforms,
 
 * Android
 * iOS
@@ -134,7 +134,7 @@ You can find the platforms supported by each .NET MAUI control as below.
 			NAVIGATION<br/>
 		</td>
 		<td>
-			<a href="/maui-toolkit/NavigationDrawer/Overview">NavigationDrawer</a><br/>
+			<a href="/maui-toolkit/NavigationDrawer/Overview">Navigation Drawer</a><br/>
 		</td>
 		<td>
 		Yes<br/>

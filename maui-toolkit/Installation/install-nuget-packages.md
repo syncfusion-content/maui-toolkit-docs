@@ -27,8 +27,6 @@ The **NuGet Package Manager UI** llows you to search for, install, uninstall, an
 
     N> Ensure that [nuget.org](https://api.nuget.org/v3/index.json) is selected as the package source. If not, follow the [instructions](https://learn.microsoft.com/en-us/nuget/consume-packages/install-use-packages-visual-studio#package-sources) to configure it.
 
-    ![Maui NuGet Packages Search](images/NuGetsearch.png)
-
 3. Select the **Syncfusion.Maui.Toolkit** package, choose the appropriate version, and click **Install**. Accept the license terms to complete the installation.
 
 4. Once the installation is complete, your application will have all the necessary **Syncfusion assemblies** required to begin developing using the [Syncfusion .NET MAUI Toolkit components](https://www.syncfusion.com/maui-controls).
@@ -47,6 +45,7 @@ Follow the below instructions to use the dotnet CLI command to install the Syncf
 
 
     N>  By default, the latest version will be installed. To specify a version, use the -v parameter:
+	
 	```dotnet add package Syncfusion.Maui.Toolkit -v 1.0.0```
 
 3. After installation, inspect the `.csproj` file of your project to confirm the package has been added.
@@ -70,3 +69,5 @@ The **Package Manager Console**  provides an efficient way to install the **Sync
 3. Once the installation completes, the console will display confirmation, and your application will now have access to the **Syncfusion .NET MAUI Toolkit components**.
 
 4. Your application is now ready to leverage the high-performance and responsive components of the **Syncfusion .NET MAUI Toolkit**.
+
+
