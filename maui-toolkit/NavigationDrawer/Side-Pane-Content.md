@@ -32,28 +32,40 @@ As the name suggests, it is displayed at the top of the drawer. The [DrawerHeade
         <navigationdrawer:DrawerSettings>
             <navigationdrawer:DrawerSettings.DrawerHeaderView>
                 <Grid BackgroundColor="#6750A4">
-                    <VerticalStackLayout VerticalOptions="Center"
-                                         HorizontalOptions="Center">
-                        <Label Text="Header View"/>
-                    </VerticalStackLayout>
+                    <Label Text="Header View"
+                            TextColor="White"
+                            HorizontalOptions="Center"
+                            VerticalOptions="Center"/>
                 </Grid>
             </navigationdrawer:DrawerSettings.DrawerHeaderView>
         </navigationdrawer:DrawerSettings>
     </navigationdrawer:SfNavigationDrawer.DrawerSettings>
 </navigationdrawer:SfNavigationDrawer>
 
-
 {% endhighlight %}
 
 {% highlight c# %}
 
-SfNavigationDrawer navigationDrawer = new SfNavigationDrawer();
-DrawerSettings drawerSettings = new DrawerSettings()
-{
-    DrawerWidth = 250,
-};
-navigationDrawer.DrawerSettings = drawerSettings;
-this.Content = navigationDrawer;
+  SfNavigationDrawer navigationDrawer = new SfNavigationDrawer();
+  DrawerSettings drawerSettings = new DrawerSettings();
+
+  Grid headerGrid = new Grid()
+  {
+      BackgroundColor = Color.FromArgb("#6750A4"),
+  };
+
+  Label headerLabel = new Label()
+  {
+      Text = "Header View",
+      TextColor = Colors.White,
+      HorizontalOptions = LayoutOptions.Center,
+      VerticalOptions = LayoutOptions.Center,
+  };
+
+  headerGrid.Children.Add(headerLabel);
+  drawerSettings.DrawerHeaderView = headerGrid;
+  navigationDrawer.DrawerSettings = drawerSettings;
+  this.Content = navigationDrawer;
   
 {% endhighlight %}
 
@@ -76,10 +88,10 @@ N> The [DrawerHeaderView](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion
         <navigationdrawer:DrawerSettings DrawerHeaderHeight="150">
             <navigationdrawer:DrawerSettings.DrawerHeaderView>
                 <Grid BackgroundColor="#6750A4">
-                    <VerticalStackLayout VerticalOptions="Center"
-                                         HorizontalOptions="Center">
-                        <Label Text="Header View"/>
-                    </VerticalStackLayout>
+                    <Label Text="Header View"
+                            TextColor="White"
+                            HorizontalOptions="Center"
+                            VerticalOptions="Center"/>
                 </Grid>
             </navigationdrawer:DrawerSettings.DrawerHeaderView>
         </navigationdrawer:DrawerSettings>
@@ -94,8 +106,23 @@ SfNavigationDrawer navigationDrawer = new SfNavigationDrawer();
 DrawerSettings drawerSettings = new DrawerSettings()
 {
     DrawerHeaderHeight = 150,
-    DrawerWidth = 250,
 };
+
+Grid headerGrid = new Grid()
+{
+    BackgroundColor = Color.FromArgb("#6750A4"),
+};
+
+Label headerLabel = new Label()
+{
+    Text = "Header View",
+    TextColor = Colors.White,
+    HorizontalOptions = LayoutOptions.Center,
+    VerticalOptions = LayoutOptions.Center,
+};
+
+headerGrid.Children.Add(headerLabel);
+drawerSettings.DrawerHeaderView = headerGrid;
 navigationDrawer.DrawerSettings = drawerSettings;
 this.Content = navigationDrawer;
 
@@ -118,10 +145,10 @@ As the name suggests, it is displayed at the bottom of the drawer. The [DrawerFo
         <navigationdrawer:DrawerSettings>
             <navigationdrawer:DrawerSettings.DrawerFooterView>
                 <Grid BackgroundColor="#6750A4">
-                    <VerticalStackLayout VerticalOptions="Center"
-                                         HorizontalOptions="Center">
-                        <Label Text="Footer View"/>
-                    </VerticalStackLayout>
+                    <Label Text="Footer View"
+                        TextColor="White"
+                        HorizontalOptions="Center"
+                        VerticalOptions="Center"/>
                 </Grid>
             </navigationdrawer:DrawerSettings.DrawerFooterView>
         </navigationdrawer:DrawerSettings>
@@ -133,10 +160,23 @@ As the name suggests, it is displayed at the bottom of the drawer. The [DrawerFo
 {% highlight c# %}
 
 SfNavigationDrawer navigationDrawer = new SfNavigationDrawer();
-DrawerSettings drawerSettings = new DrawerSettings()
+DrawerSettings drawerSettings = new DrawerSettings();
+
+Grid footerGrid = new Grid()
 {
-    DrawerWidth = 250,
+    BackgroundColor = Color.FromArgb("#6750A4"),
 };
+
+Label footerLabel = new Label()
+{
+    Text = "Footer View",
+    TextColor = Colors.White,
+    HorizontalOptions = LayoutOptions.Center,
+    VerticalOptions = LayoutOptions.Center,
+};
+
+footerGrid.Children.Add(footerLabel);
+drawerSettings.DrawerFooterView = footerGrid;
 navigationDrawer.DrawerSettings = drawerSettings;
 this.Content = navigationDrawer;
 
@@ -161,10 +201,10 @@ N> The [DrawerFooterView](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion
         <navigationdrawer:DrawerSettings DrawerFooterHeight="150">
             <navigationdrawer:DrawerSettings.DrawerFooterView>
                 <Grid BackgroundColor="#6750A4">
-                    <VerticalStackLayout VerticalOptions="Center"
-                                         HorizontalOptions="Center">
-                        <Label Text="Footer View"/>
-                    </VerticalStackLayout>
+                    <Label Text="Footer View"
+                           TextColor="White"
+                           HorizontalOptions="Center"
+                           VerticalOptions="Center"/>
                 </Grid>
             </navigationdrawer:DrawerSettings.DrawerFooterView>
         </navigationdrawer:DrawerSettings>
@@ -179,8 +219,23 @@ SfNavigationDrawer navigationDrawer = new SfNavigationDrawer();
 DrawerSettings drawerSettings = new DrawerSettings()
 {
     DrawerFooterHeight = 150,
-    DrawerWidth = 250,
-};  
+};
+
+Grid footerGrid = new Grid()
+{
+    BackgroundColor = Color.FromArgb("#6750A4"),
+};
+
+Label footerLabel = new Label()
+{
+    Text = "Footer View",
+    TextColor = Colors.White,
+    HorizontalOptions = LayoutOptions.Center,
+    VerticalOptions = LayoutOptions.Center,
+};
+
+footerGrid.Children.Add(footerLabel);
+drawerSettings.DrawerFooterView = footerGrid;
 navigationDrawer.DrawerSettings = drawerSettings;
 this.Content = navigationDrawer;
   
@@ -203,10 +258,10 @@ The main content of the drawer is displayed between the header and footer conten
         <navigationdrawer:DrawerSettings>
             <navigationdrawer:DrawerSettings.DrawerContentView>
                 <Grid BackgroundColor="#6750A4">
-                    <VerticalStackLayout VerticalOptions="Center"
-                     HorizontalOptions="Center">
-                        <Label Text="Drawer Content"/>
-                    </VerticalStackLayout>
+                    <Label Text="Drawer Content"
+                           TextColor="White"
+                           HorizontalOptions="Center"
+                           VerticalOptions="Center"/>
                 </Grid>
             </navigationdrawer:DrawerSettings.DrawerContentView>
         </navigationdrawer:DrawerSettings>
@@ -218,10 +273,23 @@ The main content of the drawer is displayed between the header and footer conten
 {% highlight c# %}
         
 SfNavigationDrawer navigationDrawer = new SfNavigationDrawer();
-DrawerSettings drawerSettings = new DrawerSettings()
+DrawerSettings drawerSettings = new DrawerSettings();
+
+Grid contentGrid = new Grid()
 {
-    DrawerWidth = 250,
+    BackgroundColor = Color.FromArgb("#6750A4"),
 };
+
+Label contentLabel = new Label()
+{
+    Text = "Drawer Content",
+    TextColor = Colors.White,
+    HorizontalOptions = LayoutOptions.Center,
+    VerticalOptions = LayoutOptions.Center,
+};
+
+contentGrid.Children.Add(contentLabel);
+drawerSettings.DrawerContentView = contentGrid;
 navigationDrawer.DrawerSettings = drawerSettings;
 this.Content = navigationDrawer;
   
