@@ -10,7 +10,7 @@ keywords: .net maui text input layout, syncfusion text input layout, text input 
 
 # Getting Started with .NET MAUI TextInputLayout
 
-This section guides you through setting up and configuring a `TextInputLayout` in your .NET MAUI application. Follow the steps below to add a basic TextInputLayout to your project.
+This section guides you through setting up and configuring a [Text Input Layout](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TextInputLayout.SfTextInputLayout.html) in your .NET MAUI application. Follow the steps below to add a basic TextInputLayout to your project.
 
 ## Prerequisites
 
@@ -46,7 +46,7 @@ Before proceeding, ensure the following are in place:
 
 1. Press <kbd>Ctrl</kbd> + <kbd>`</kbd> (backtick) to open the integrated terminal in Visual Studio Code.
 2. Ensure you're in the project root directory where your `.csproj` file is located.
-3. Run the following command to install the Syncfusion MAUI Expander NuGet package:
+3. Run the following command to install the Syncfusion MAUI Toolkit NuGet package:
 
 {% tabs %}
 {% highlight sh %}
@@ -106,7 +106,7 @@ Step 1: Add the NuGet to the project as discussed in the above reference section
 
 Step 2: Add the namespace as shown in the following code sample.
 
-Add the following namespace to add `.NET MAUI Text Input Layout`.
+Add the following namespace to add [.NET MAUI Text Input Layout](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TextInputLayout.SfTextInputLayout.html).
 
 {% tabs %}
 
@@ -150,7 +150,7 @@ inputLayout.Content = new Entry();
 {% endtabs %}
 
 ### Adding hint
-Floating label for the text input layout can be added by setting the `Hint` property. Visibility of the hint can be collapsed by setting the `ShowHint` property to `false.` By default, this property is set to `true.`
+Floating label for the text input layout can be added by setting the [Hint](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TextInputLayout.SfTextInputLayout.html#Syncfusion_Maui_Toolkit_TextInputLayout_SfTextInputLayout_Hint) property. Visibility of the hint can be collapsed by setting the [ShowHint](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TextInputLayout.SfTextInputLayout.html#Syncfusion_Maui_Toolkit_TextInputLayout_SfTextInputLayout_ShowHint) property to `false.` By default, this property is set to `true.`
 
 {% tabs %} 
 
@@ -180,7 +180,7 @@ Run the project, and check if you get the following output to ensure that the pr
 
 ## Enabling password visibility toggle
 
-The password visibility toggle is used to show or hide the visibility of characters in the input view added to the control. You can enable this toggle by setting the `EnablePasswordVisibilityToggle` property to `true.`
+The password visibility toggle is used to show or hide the visibility of characters in the input view added to the control. You can enable this toggle by setting the [EnablePasswordVisibilityToggle](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TextInputLayout.SfTextInputLayout.html#Syncfusion_Maui_Toolkit_TextInputLayout_SfTextInputLayout_EnablePasswordVisibilityToggle) property to `true.`
 
 {% tabs %} 
 
