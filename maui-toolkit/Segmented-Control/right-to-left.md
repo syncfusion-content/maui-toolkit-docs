@@ -3,26 +3,30 @@ layout: post
 title: Right To Left FlowDirection in .NET MAUI Segmented control | Syncfusion
 description: Learn about Right To Left support in Syncfusion .NET MAUI Segmented control (SfSegmentedControl).
 platform: maui-toolkit
-control: Segmented (SfSegmented) control
+control: Segmented control
 documentation: ug
 ---
  
 # Right To Left Flow Direction in .NET MAUI Segmented control (SfSegmentedControl)
 
-The [SfSegmentedControl](https://www.syncfusion.com/maui-controls/maui-segmented-control) supports changing the flow direction of items rendering in the right-to-left order by setting the `FlowDirection` to `RightToLeft`.
+The `SfSegmentedControl` supports changing the flow direction of items rendering in the right-to-left order by setting the `FlowDirection` to `RightToLeft`.
 
 {% tabs %}
 {% highlight xaml tabtitle="MainPage.xaml" %}
 <ContentPage 
 ...
-xmlns:buttons="clr-namespace:Syncfusion.Maui.Buttons;assembly=Syncfusion.Maui.Buttons">
-    <buttons:SfSegmentedControl x:Name="segmentedControl"
+xmlns:segmentedControl="clr-namespace:Syncfusion.Maui.Toolkit.SegmentedControl;assembly=Syncfusion.Maui.Toolkit">
+    <segmentedControl:SfSegmentedControl x:Name="segmentedControl"
                                 FlowDirection="RightToLeft">
-    </buttons:SfSegmentedControl>
+    </segmentedControl:SfSegmentedControl>
 </ContentPage>
 
 {% endhighlight %}
 {% highlight c# tabtitle="MainPage.xaml.cs" %}
+
+using Syncfusion.Maui.Toolkit.SegmentedControl;
+
+. . .
 
 SfSegmentedControl segmentedControl = new SfSegmentedControl();
 segmentedControl.FlowDirection = FlowDirection.RightToLeft;
