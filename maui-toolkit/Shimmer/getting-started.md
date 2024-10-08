@@ -69,29 +69,26 @@ dotnet add package Syncfusion.Maui.Toolkit
 In the **MauiProgram.cs** file, register the handler for Syncfusion Toolkit.
 
 {% tabs %}
-{% highlight C# tabtitle="MauiProgram.cs" hl_lines="1 10" %}
+{% highlight C# tabtitle="MauiProgram.cs" hl_lines="1 9" %}    
+    using Syncfusion.Maui.Toolkit.Hosting;
 
-using Syncfusion.Maui.Toolkit.Hosting;
-namespace GettingStarted
-{
     public static class MauiProgram
     {
-        public static MauiApp CreateMauiApp()
-        {
-            var builder = MauiApp.CreateBuilder();
+	    public static MauiApp CreateMauiApp()
+	    {
+	        var builder = MauiApp.CreateBuilder();
+		    builder
+			    .ConfigureSyncfusionToolkit()
+			    .UseMauiApp<App>()
+			    .ConfigureFonts(fonts =>
+			    {
+				    fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
+				    fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
+			    });
 
-            builder.ConfigureSyncfusionToolkit();
-            builder
-            .UseMauiApp<App>()
-            .ConfigureFonts(fonts =>
-            {
-                fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
-            });
-
-            return builder.Build();
-        }
+		    return builder.Build();
+	    }
     }
-}
 
 {% endhighlight %}
 {% endtabs %}
