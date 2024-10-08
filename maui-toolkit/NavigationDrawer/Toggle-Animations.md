@@ -6,17 +6,18 @@ platform: maui-toolkit
 control: NavigationDrawer
 documentation: ug
 ---
+
 # Setting Toggle Animations in .NET MAUI Navigation Drawer
 
-The drawer toggling animation can be changed using the [Transition](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.NavigationDrawer.DrawerSettings.html#Syncfusion_Maui_NavigationDrawer_DrawerSettings_Transition) property, and it can be set to three different values. Which are:
+The drawer toggling animation can be changed using the [Transition](https://helpstaging.syncfusion.com:14038/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NavigationDrawer.DrawerSettings.html#Syncfusion_Maui_Toolkit_NavigationDrawer_DrawerSettings_Transition) property, and it can be set to three different values. Which are:
 
-* [SlideOnTop](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.NavigationDrawer.Transition.html#Syncfusion_Maui_NavigationDrawer_Transition_SlideOnTop)
+* [SlideOnTop](https://helpstaging.syncfusion.com:14038/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NavigationDrawer.Transition.html#Syncfusion_Maui_Toolkit_NavigationDrawer_Transition_SlideOnTop)
 
-* [Push](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.NavigationDrawer.Transition.html#Syncfusion_Maui_NavigationDrawer_Transition_Push)
+* [Push](https://helpstaging.syncfusion.com:14038/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NavigationDrawer.Transition.html#Syncfusion_Maui_Toolkit_NavigationDrawer_Transition_Push)
 
-* [Reveal](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.NavigationDrawer.Transition.html#Syncfusion_Maui_NavigationDrawer_Transition_Reveal)
+* [Reveal](https://helpstaging.syncfusion.com:14038/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NavigationDrawer.Transition.html#Syncfusion_Maui_Toolkit_NavigationDrawer_Transition_Reveal)
 
-N> The default animation is [SlideOnTop](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.NavigationDrawer.Transition.html#Syncfusion_Maui_NavigationDrawer_Transition_SlideOnTop).
+N> The default animation is [SlideOnTop](https://helpstaging.syncfusion.com:14038/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NavigationDrawer.Transition.html#Syncfusion_Maui_Toolkit_NavigationDrawer_Transition_SlideOnTop).
 
 ## SlideOnTop
 
