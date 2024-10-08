@@ -107,7 +107,7 @@ In the **MauiProgram.cs** file, register the handler for Syncfusion Toolkit.
             ...
             xmlns:tabView="clr-namespace:Syncfusion.Maui.Toolkit.TabView;assembly=Syncfusion.Maui.Toolkit">
     <ContentPage.Content> 
-        <tabView:SfTabView /> 
+        <tabView:SfTabView/> 
     </ContentPage.Content>  
 </ContentPage>
 	
@@ -369,7 +369,7 @@ Now that we have our `Model` and `ViewModel` set up, we can bind the TabItems co
              BackgroundColor="{DynamicResource SecondaryColor}" >
 
     <ContentPage.BindingContext>
-        <local:TabItemsSourceViewModel />
+        <local:TabItemsSourceViewModel/>
     </ContentPage.BindingContext>
     <tabView:SfTabView ItemsSource="{Binding TabItems}" >
     </tabView:SfTabView>
@@ -412,8 +412,8 @@ The [HeaderItemTemplate](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.
 
     <tabView:SfTabView ItemsSource="{Binding TabItems}">
         <tabView:SfTabView.HeaderItemTemplate>
-                <DataTemplate >
-                    <Label  Padding="5,10,10,10"  Text="{Binding Name}"/>
+                <DataTemplate>
+                    <Label Padding="5,10,10,10" Text="{Binding Name}"/>
                  </DataTemplate>
             </tabView:SfTabView.HeaderItemTemplate>
     </tabView:SfTabView>
@@ -458,13 +458,13 @@ The [ContentItemTemplate](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion
 
     <tabView:SfTabView ItemsSource="{Binding TabItems}">
         <tabView:SfTabView.HeaderItemTemplate>
-                <DataTemplate >
-                    <Label  Padding="5,10,10,10"  Text="{Binding Name}"/>
+                <DataTemplate>
+                    <Label Padding="5,10,10,10" Text="{Binding Name}"/>
                  </DataTemplate>
             </tabView:SfTabView.HeaderItemTemplate>
              <tabView:SfTabView.ContentItemTemplate>
                 <DataTemplate>
-                     <Label TextColor="Black"  Text="{Binding Name}" />
+                     <Label TextColor="Black" Text="{Binding Name}"/>
                </DataTemplate>
         </tabView:SfTabView.ContentItemTemplate>
     </tabView:SfTabView>
@@ -507,4 +507,5 @@ public partial class MainPage : ContentPage
 
 The following image demonstrates the `SfTabView` displaying custom tab headers and content using `HeaderItemTemplate` and `ContentItemTemplate`.
 
-![Item Template](images/ItemTemplate.png)
+![.NET MAUI Tab View Item Template](images/ItemTemplate.png)
+
