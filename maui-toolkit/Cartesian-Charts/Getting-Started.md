@@ -196,7 +196,7 @@ N> If you prefer to set the `BindingContext` in XAML, make sure to add the appro
 {% highlight xaml %}
 
 <ContentPage
-    
+    . . .
     x:Class="ChartGettingStarted.MainPage"
     xmlns:chart="clr-namespace:Syncfusion.Maui.Toolkit.Charts;assembly=Syncfusion.Maui.Toolkit"
     xmlns:model="clr-namespace:ChartGettingStarted">
