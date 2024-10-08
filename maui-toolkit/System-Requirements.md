@@ -1,48 +1,46 @@
 ---
 layout: post
-title: Installation and Deployment process for Syncfusion .NET MAUI products
-description: Describes about system requirements to install the Syncfusion .NET MAUI Components and list of supported platforms. 
+title: Installation and Deployment process for Syncfusion .NET MAUI Toolkit
+description: Describes about system requirements to install the Syncfusion .NET MAUI Toolkit Components and list of supported platforms. 
 platform: maui-toolkit
 control: Installation and Deployment
 documentation: ug
 
 ---
 
-# System Requirements for .NET MAUI
+# System Requirements for .NET MAUI Toolkit
 
-The system requirements for using our Syncfusion .NET MAUI platform are as follows
+To use Syncfusion's .NET MAUI Toolkit effectively, ensure your system meets the following requirements:
 
 ### Operating Systems
 
-* Windows 11 version 21H2 or higher: Home, Pro, Pro Education, Pro for Workstations, Enterprise, and Education
-* Windows 10 version 1909 or higher: Home, Professional, Education, and Enterprise.
-* Windows Server 2022: Standard and Datacenter.
-* Windows Server 2019: Standard and Datacenter.
-* Windows Server 2016: Standard and Datacenter.
+* Windows 11: Version 21H2 or higher (Home, Pro, Education, Enterprise)
+* Windows 10: Version 1909 or higher (Home, Professional, Education, Enterprise)
+* Windows Server: 2022, 2019, and 2016 (Standard and Datacenter)
 
 ### Hardware Environment
 
 * Processor: x86 or x64
-* RAM : 4 GB (minimum), 16 GB (recommended)
-* Hard disc: up to 210 GB of free space will be required.
+* RAM: 4 GB (minimum), 16 GB (recommended)
+* Storage: Up to 210 GB of free disk space is recommended for optimal development.
 
 ### Development Environment
 
-Our .NET MAUI components are compatible with the following development environments:
+Our .NET MAUI Toolkit components are compatible with the following development environments:
 
-* Visual Studio 2022 17.9.0 Preview 1.0.
 * Visual Studio 2022 17.8.0.
-* Visual Studio Code. (Refer to this [link](https://devblogs.microsoft.com/visualstudio/announcing-the-dotnet-maui-extension-for-visual-studio-code/))
+* Visual Studio Code. ([Refer to this](https://devblogs.microsoft.com/visualstudio/announcing-the-dotnet-maui-extension-for-visual-studio-code/))
 
-### .NET 8.0 Support
+* Visual Studio 2022 (version 17.8.0 or higher): Full support for building, debugging, and deploying .NET MAUI applications.
+* Visual Studio Code: Supported for lightweight development and supported through extensions (see more details here [link](https://devblogs.microsoft.com/visualstudio/announcing-the-dotnet-maui-extension-for-visual-studio-code/)).
 
-Our Syncfusion .NET MAUI controls supports in .NET 7.0 and .NET 8.0.
+### .NET Framework Support
+
+Syncfusion .NET MAUI Toolkit supports .NET 8.0 and .NET 9.0.
 
 ### Supported Platforms
 
-.NET Multi-platform App UI (.NET MAUI) apps can be written for the following platforms:
-
-* Android 5.0 (API 21) or higher.
-* iOS 11 or higher, using the latest release of Xcode.
-* macOS 10.15 or higher, using Mac Catalyst.
-* Windows 11 and Windows 10 version 1809 or higher, using [Windows UI Library (WinUI) 3](https://learn.microsoft.com/en-us/windows/apps/winui/winui3/).
+* Android: 5.0 (API 21) or higher
+* iOS: 11 or higher (requires the latest release of Xcode)
+* macOS: 10.15 or higher, using Mac Catalyst
+* Windows 10: Version 1809 or higher, using WinUI 3
