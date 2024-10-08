@@ -9,20 +9,16 @@ documentation: ug
 
 # Getting Started with .NET MAUI Chips
 
-This section guides you through setting up and configuring a [Chips](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Core.SfChip.html) in your .NET MAUI application. Follow the steps below to add a basic Chips to your project.
-
-To quickly get started with the .NET MAUI Chips, watch this video.
-
-{% youtube "https://www.youtube.com/watch?v=hr4GmmvS9EE" %}
+This section provides instructions for setting up and configuring Chips control (SfChip) in your .NET MAUI application. Follow the steps below to integrate a basic Chips component into your project.
 
 ## Prerequisites
 
-Before proceeding, ensure the following are in place:
+Before proceeding, ensure the following are setup:
 
-1. Install [.NET 7 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/7.0) or later.
+1. Install [.NET 8 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/8.0) or later.
 2. Set up a .NET MAUI environment with Visual Studio 2022 (v17.3 or later) or Visual Studio Code. For Visual Studio Code users, ensure that the .NET MAUI workload is installed and configured as described [here](https://learn.microsoft.com/en-us/dotnet/maui/get-started/installation?view=net-maui-8.0&tabs=visual-studio-code).
 
-## Step 1: Create a New MAUI Project
+## Step 1: Create a New .NET MAUI Project
 
 ### Visual Studio
 
@@ -34,29 +30,46 @@ Before proceeding, ensure the following are in place:
 
 1. Open the Command Palette by pressing **Ctrl+Shift+P** and type **.NET:New Project** and press Enter.
 2. Choose the **.NET MAUI App** template.
-3. Select the project location, type the project name and press Enter.
+3. Select the project location, type the project name and press **Enter**.
 4. Then choose **Create project**
 
-## Step 2: Install the Syncfusion MAUI Core NuGet Package
+## Step 2: Install the Syncfusion .NET MAUI Toolkit Package
 
+### Visual Studio
 1. In **Solution Explorer**, right-click the project and choose **Manage NuGet Packages**.
-2. Search for [Syncfusion.Maui.Core](https://www.nuget.org/packages/Syncfusion.Maui.Core) and install the latest version.
+2. Search for [Syncfusion.Maui.Toolkit](https://www.nuget.org/packages/Syncfusion.Maui.Toolkit/) and install the latest version.
 3. Ensure the necessary dependencies are installed correctly, and the project is restored.
+
+### Visual Studio Code
+1. Press <kbd>Ctrl</kbd> + <kbd>`</kbd> (backtick) to open the integrated terminal in Visual Studio Code.
+2. Ensure you're in the project root directory where your .csproj file is located.
+3. Run the following command to install the Syncfusion .NET MAUI Toolkit NuGet package:
+
+{% tabs %}
+{% highlight sh  %}
+
+    dotnet add package Syncfusion.Maui.Toolkit
+
+{% endhighlight %}
+{% endtabs %}
+4. To ensure all dependencies are installed, run:
+
+{% tabs %}
+{% highlight sh  %}
+
+    dotnet restore
+
+{% endhighlight %}
+{% endtabs %}
 
 ## Step 3: Register the Handler 
 
-[Syncfusion.Maui.Core](https://www.nuget.org/packages/Syncfusion.Maui.Core) nuget is a dependent package for all Syncfusion controls of .NET MAUI. In the **MauiProgram.cs file**, register the handler for Syncfusion core.
+In the **MauiProgram.cs file**, register the handler for Syncfusion Toolkit.
 
 {% highlight c# hl_lines="6 17" %}
-using Microsoft.Maui;
-using Microsoft.Maui.Hosting;
-using Microsoft.Maui.Controls.Compatibility;
-using Microsoft.Maui.Controls.Hosting;
-using Microsoft.Maui.Controls.Xaml;
-using Syncfusion.Maui.Core.Hosting;
 
-namespace AutocompleteSample
-{
+using Syncfusion.Maui.Toolkit.Hosting;
+
     public static class MauiProgram
     {
         public static MauiApp CreateMauiApp()
@@ -64,7 +77,7 @@ namespace AutocompleteSample
             var builder = MauiApp.CreateBuilder();
             builder
             .UseMauiApp<App>()
-            .ConfigureSyncfusionCore()
+            .ConfigureSyncfusionToolkit()
             .ConfigureFonts(fonts =>
             {
                 fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
@@ -73,27 +86,26 @@ namespace AutocompleteSample
             return builder.Build();
         }      
     }
-}   
-
+   
 {% endhighlight %} 
 
-## Step 4: Add a Basic Chips control
+## Step 4: Add a .NET MAUI Chips control
 
-Step 1: Add the NuGet to the project
+Step 1. To initialize the control, import the `Syncfusion.Maui.Toolkit.Chips` namespace into your code.
 
-Step 2: Add the namespace as shown in the following code snippet
+Step 2. Initialize `SfChip` class.
 
 {% tabs %}
 
 {% highlight xaml %}
-
-    xmlns:chip="clr-namespace:Syncfusion.Maui.Core;assembly=Syncfusion.Maui.Core"
 	
+	xmlns:ChipControl="clr-namespace:Syncfusion.Maui.Toolkit.Chips;assembly=Syncfusion.Maui.Toolkit"
+       
 {% endhighlight %}
 
 {% highlight c# %}
 
-    using Syncfusion.Maui.Core;
+    using Syncfusion.Maui.Toolkit.Chips;
 
 {% endhighlight %}
 
@@ -108,7 +120,7 @@ Step 3: Set the control to content in `ContentPage.`
 {% highlight xaml %}
 
 <ContentPage.Content>    
-    <chip:SfChip x:Name="chips" />
+    <ChipControl:SfChip x:Name="chips" />
 </ContentPage.Content>
 
 {% endhighlight %}
@@ -132,7 +144,7 @@ Initialize an empty [`SfChipGroup`] as shown in the following code snippet
 
 <ContentPage.Content>
 	<Grid>
-		<chip:SfChipGroup/>
+		<ChipControl:SfChipGroup/>
 	</Grid>
 </ContentPage.Content>
 
@@ -141,7 +153,7 @@ Initialize an empty [`SfChipGroup`] as shown in the following code snippet
 
 {% highlight c# %}
 
-using Syncfusion.Maui.Core;
+using Syncfusion.Maui.Toolkit.Chips;
 
 	Grid grid = new Grid();
 	SfChipGroup chipGroup = new SfChipGroup();
@@ -162,14 +174,14 @@ The chips control creates chip for each object and arranges chips in a StackLayo
 
 <ContentPage.Content>
 	<Grid>
-		<chip:SfChipGroup DisplayMemberPath="Name">
-			<chip:SfChipGroup.ChipLayout>
+		<ChipControl:SfChipGroup DisplayMemberPath="Name">
+			<ChipControl:SfChipGroup.ChipLayout>
 				<FlexLayout 
 					HorizontalOptions="Start" 
 					VerticalOptions="Center" 
 					/> 
-			</chip:SfChipGroup.ChipLayout>
-		</chip:SfChipGroup> 
+			</ChipControl:SfChipGroup.ChipLayout>
+		</ChipControl:SfChipGroup> 
 	</Grid>
 </ContentPage.Content>
 
@@ -177,7 +189,7 @@ The chips control creates chip for each object and arranges chips in a StackLayo
 
 {% highlight c# %}
 
-using Syncfusion.Maui.Core;
+using Syncfusion.Maui.Toolkit.Chips;
 
 	Grid grid = new Grid();
 	SfChipGroup chipGroup = new SfChipGroup();
@@ -267,7 +279,7 @@ Create an instance of ViewModel class,and then set it as the `BindingContext`. B
 </ContentPage.BindingContext>
 <ContentPage.Content>
 	<Grid>
-		<chip:SfChipGroup 
+		<ChipControl:SfChipGroup 
 			ItemsSource="{Binding Employees}" 
 			ChipPadding="8,8,0,0" 
 			DisplayMemberPath="Name"
@@ -275,7 +287,7 @@ Create an instance of ViewModel class,and then set it as the `BindingContext`. B
 			ChipTextColor="Black"
 			HorizontalOptions="Start" 
 			VerticalOptions="Center">
-		</chip:SfChipGroup>  
+		</ChipControl:SfChipGroup>  
 	</Grid>
 </ContentPage.Content>
 
@@ -283,7 +295,7 @@ Create an instance of ViewModel class,and then set it as the `BindingContext`. B
 
 {% highlight c# %}
 
-using Syncfusion.Maui.Core;
+using Syncfusion.Maui.Toolkit.Chips;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
 
@@ -308,10 +320,10 @@ using System.ComponentModel;
 
 ## Set types of chip group
 
-The functionality of chips control differ based on its [ChipType](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Core.SfChipGroup.html#Syncfusion_Maui_Core_SfChipGroup_ChipType) property.
+The functionality of chips control differ based on its `ChipType` property.
 By default type of chips control have Input type. Input chip types have close button, using it chip can be can removed dynamically from children and the layout.
 
-The following code example uses the [Action](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Core.SfChipsType.html#Syncfusion_Maui_Core_SfChipsType_Action) type. In Action type, [Command](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Core.SfChip.html#Syncfusion_Maui_Core_SfChip_Command) property of [SfChipGroup](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Core.SfChipGroup.html) is executed when any chip in the group is tapped. Here the Employee name of corresponding chip is set as label text when the Command is executed.
+The following code example uses the `Action` type. In Action type, `Command` property of `SfChipGroup` is executed when any chip in the group is tapped. Here the Employee name of corresponding chip is set as label text when the Command is executed.
 
 {% tabs %}
 
@@ -322,12 +334,12 @@ The following code example uses the [Action](https://help.syncfusion.com/cr/maui
 </ContentPage.BindingContext>
 <ContentPage.Content>
 	<StackLayout>
-		<chip:SfChipGroup
+		<ChipControl:SfChipGroup
 			Command="{Binding ActionCommand}" 
 			ItemsSource="{Binding Employees}"
 			DisplayMemberPath="Name"
 			ChipType="Action">
-		</chip:SfChipGroup>
+		</ChipControl:SfChipGroup>
 		<StackLayout Orientation="Horizontal">
 		<Label 
 			Text="Name:" 
