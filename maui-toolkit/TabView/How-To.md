@@ -20,7 +20,8 @@ Using the [SelectedIndex](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion
 {% endhighlight %}
 
 {% highlight C# %}
-    tabView.SelectedIndex = 2;
+    SfTabView tabView = new SfTabView();
+	tabView.SelectedIndex = 2;
 {% endhighlight %}
 {% endtabs %}
 
@@ -33,19 +34,21 @@ Indicates whether the tab item is active or not. This property can be used to ge
 {% tabs %}
 
 {% highlight xaml %}
-    <tabView:SfTabView x:Name="tabView" SelectionChanged="Index_Changed"/>
+    <tabView:SfTabView x:Name="tabView" SelectionChanged="TabView_SelectionIndexChanged"/>
 {% endhighlight %}
 
 {% highlight C# %}
 
-    tabView.SelectionChanged += Index_Changed;
-    private void Index_Changed(object sender, TabSelectionChangedEventArgs e)
+    SfTabView tabView = new SfTabView();
+	tabView.SelectionChanged += TabView_SelectionIndexChanged;
+    private void TabView_SelectionIndexChanged(object sender, TabSelectionChangedEventArgs e)
     {
-        bool itemSelection = tab1.IsSelected;
-        if (itemSelection)
-        {
-            tab1.FontSize = 26;
-        }
+		SfTabItem tabItem = tabView.Items[e.NewIndex];
+		bool itemSelection = tabItem.IsSelected;
+		if (itemSelection)
+		{
+			tabItem.FontSize = 26;
+		}
     }
 
 {% endhighlight %}
