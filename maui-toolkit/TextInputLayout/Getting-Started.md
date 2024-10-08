@@ -70,35 +70,30 @@ Before proceeding, ensure the following are in place:
 
 In the **MauiProgram.cs file**, register the handler for Syncfusion Toolkit.
 
-{% highlight c# hl_lines="6 17" %}   
-using Microsoft.Maui;
-using Microsoft.Maui.Hosting;
-using Microsoft.Maui.Controls.Compatibility;
-using Microsoft.Maui.Controls.Hosting;
-using Microsoft.Maui.Controls.Xaml;
-using Syncfusion.Maui.Toolkit.Hosting;
+{% tabs %}
+{% highlight C# tabtitle="MauiProgram.cs" hl_lines="1 9" %}    
+    using Syncfusion.Maui.Toolkit.Hosting;
 
-namespace TextInputLayoutSample
-{
-  public static class MauiProgram
-  {
-	public static MauiApp CreateMauiApp()
-	{
-		var builder = MauiApp.CreateBuilder();
-		builder
-		.UseMauiApp<App>()
-		.ConfigureSyncfusionToolkit()
-		.ConfigureFonts(fonts =>
-		{
-			fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
-		});
+    public static class MauiProgram
+    {
+	    public static MauiApp CreateMauiApp()
+	    {
+	        var builder = MauiApp.CreateBuilder();
+		    builder
+			    .ConfigureSyncfusionToolkit()
+			    .UseMauiApp<App>()
+			    .ConfigureFonts(fonts =>
+			    {
+				    fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
+				    fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
+			    });
 
-		return builder.Build();
-	 }
-  }
-}     
+		    return builder.Build();
+	    }
+    }
 
 {% endhighlight %}
+{% endtabs %}
 
 ## Step 4: Add a Basic TextInputLayout
 
