@@ -15,7 +15,7 @@ This section guides you through setting up and configuring a `Effects View` in y
 Before proceeding, ensure the following are set up:
 
 1. Install [.NET 8 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/8.0) or later is installed.
-2. Set up a .NET MAUI environment with Visual Studio 2022 (v17.3 or later) or Visual Studio Code. For Visual Studio Code users, ensure that the .NET MAUI workload is installed and configured as described [here.](https://learn.microsoft.com/en-us/dotnet/maui/get-started/installation?view=net-maui-8.0&tabs=visual-studio-code).
+2. Set up a .NET MAUI environment with Visual Studio 2022 (v17.8 or later) or Visual Studio Code. For Visual Studio Code users, ensure that the .NET MAUI workload is installed and configured as described [here.](https://learn.microsoft.com/en-us/dotnet/maui/get-started/installation?view=net-maui-8.0&tabs=visual-studio-code).
 
 ## Step 1: Create a New MAUI Project
 
@@ -47,20 +47,25 @@ Before proceeding, ensure the following are set up:
 3. Run the following command to install the Syncfusion .NET MAUI Toolkit NuGet package:
   
 {% tabs %}
+
 {% highlight sh  %}
 
     dotnet add package Syncfusion.Maui.Toolkit
 
 {% endhighlight %}
+
 {% endtabs %}
+
 4. To ensure all dependencies are installed, run:
 
 {% tabs %}
+
 {% highlight sh  %}
 
     dotnet restore
     
 {% endhighlight %}
+
 {% endtabs %}
 
 ## Step 3: Register the handler
@@ -68,9 +73,7 @@ Before proceeding, ensure the following are set up:
 In the **MauiProgram.cs** file, register the handler for Syncfusion Toolkit.
 
 {% tabs %}
-{% highlight C# tabtitle="MauiProgram.cs"  %}
-
-    
+{% highlight C# tabtitle="MauiProgram.cs" hl_lines="1 9" %}
     using Syncfusion.Maui.Toolkit.Hosting;
 
     public static class MauiProgram

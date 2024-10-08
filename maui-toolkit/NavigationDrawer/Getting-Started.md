@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started with .NET MAUI Navigation Drawer
 
-This section provides a quick overview of how to get started with the .NET MAUI Navigation Drawer for .NET MAUI and a walk-through to configure the .NET MAUI Navigation Drawer in a real-time scenario. Follow the steps below to add .NET MAUI Navigation Drawer to your project.
+This section provides a quick overview of how to get started with the [NavigationDrawer](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NavigationDrawer.SfNavigationDrawer.html) for .NET MAUI and a walk-through to configure the .NET MAUI Navigation Drawer in a real-time scenario. Follow the steps below to add .NET MAUI Navigation Drawer to your project.
 
 To quickly get started with the .NET MAUI Navigation Drawer, watch this video.
 
@@ -20,7 +20,7 @@ To quickly get started with the .NET MAUI Navigation Drawer, watch this video.
 Before proceeding, ensure the following are set up:
 
 1. Install [.NET 8 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/8.0) or later is installed.
-2. Set up a .NET MAUI environment with Visual Studio 2022 (v17.3 or later) or Visual Studio Code. For Visual Studio Code users, ensure that the .NET MAUI workload is installed and configured as described [here.](https://learn.microsoft.com/en-us/dotnet/maui/get-started/installation?view=net-maui-8.0&tabs=visual-studio-code).
+2. Set up a .NET MAUI environment with Visual Studio 2022 (v17.8 or later) or Visual Studio Code. For Visual Studio Code users, ensure that the .NET MAUI workload is installed and configured as described [here.](https://learn.microsoft.com/en-us/dotnet/maui/get-started/installation?view=net-maui-8.0&tabs=visual-studio-code).
 
 ## Step 1: Create a New MAUI Project
 
@@ -41,7 +41,7 @@ Before proceeding, ensure the following are set up:
 
 ### Visual Studio:
 1. In **Solution Explorer,** right-click the project and choose **Manage NuGet Packages.**
-2. Search for Syncfusion.Maui.Toolkit and install the latest version.
+2. Search for [Syncfusion.Maui.Toolkit](https://www.nuget.org/packages/Syncfusion.Maui.Toolkit/) and install the latest version.
 3. Ensure the necessary dependencies are installed correctly, and the project is restored.
 
 ### Visual Studio Code:
@@ -50,62 +50,60 @@ Before proceeding, ensure the following are set up:
 3. Run the following command to install the Syncfusion .NET MAUI Toolkit NuGet package:
 
 {% tabs %}
-{% highlight sh  %}
+
+{% highlight sh %}
 
     dotnet add package Syncfusion.Maui.Toolkit
 
 {% endhighlight %}
+
 {% endtabs %}
 
 4. To ensure all dependencies are installed, run:
 
 {% tabs %}
-{% highlight sh  %}
+
+{% highlight sh %}
 
     dotnet restore
 
 {% endhighlight %}
+
 {% endtabs %}
 
 ## Step 3: Register the handler
 
 In the MauiProgram.cs file, register the handler for Syncfusion Toolkit.
 
-{% highlight c# %}
-using Microsoft.Maui;
-using Microsoft.Maui.Hosting;
-using Microsoft.Maui.Controls.Compatibility;
-using Microsoft.Maui.Controls.Hosting;
-using Microsoft.Maui.Controls.Xaml;
-using Syncfusion.Maui.Toolkit.Hosting;
+{% tabs %}
+{% highlight C# tabtitle="MauiProgram.cs" hl_lines="1 9" %}    
+    using Syncfusion.Maui.Toolkit.Hosting;
 
-namespace NavigationDrawerGettingStarted
-{
     public static class MauiProgram
     {
-    public static MauiApp CreateMauiApp()
-    {
-        var builder = MauiApp.CreateBuilder();
-        builder
-        .UseMauiApp<App>()
-        .ConfigureSyncfusionToolkit()
-        .ConfigureFonts(fonts =>
-        {
-            fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
-        });
+	    public static MauiApp CreateMauiApp()
+	    {
+	        var builder = MauiApp.CreateBuilder();
+		    builder
+			    .ConfigureSyncfusionToolkit()
+			    .UseMauiApp<App>()
+			    .ConfigureFonts(fonts =>
+			    {
+				    fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
+				    fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
+			    });
 
-        return builder.Build();
-        }      
+		    return builder.Build();
+	    }
     }
-}     
-
-{% endhighlight %} 
+{% endhighlight %}
+{% endtabs %} 
 
 ## Step 4: Add a Basic NavigationDrawer
 
 1. To initialize the control, import the `Syncfusion.Maui.Toolkit.NavigationDrawer` namespace into your code.
 
-2. Initialize `SfNavigationDrawer` class
+2. Initialize [SfNavigationDrawer](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NavigationDrawer.SfNavigationDrawer.html)
 
 {% tabs %}
 
@@ -146,11 +144,11 @@ namespace NavigationDrawerGettingStarted
 
 {% endtabs %}
 
-N> It is mandatory to set `ContentView` for `SfNavigationDrawer` on initializing.
+N> It is mandatory to set [ContentView](help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NavigationDrawer.SfNavigationDrawer.html#Syncfusion_Maui_Toolkit_NavigationDrawer_SfNavigationDrawer_ContentView) for [SfNavigationDrawer](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NavigationDrawer.SfNavigationDrawer.html) on initializing.
 
 ## Adjust Drawer Size
 
-The default position of the navigation pane is on the left, so change the drawer width to 250 by using the `DrawerWidth` property.
+The default position of the navigation pane is on the left, so change the drawer width to 250 by using the [DrawerWidth](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NavigationDrawer.DrawerSettings.html#Syncfusion_Maui_Toolkit_NavigationDrawer_DrawerSettings_DrawerWidth) property.
 
 {% tabs %}	
 {% highlight xaml %}
@@ -192,11 +190,11 @@ public partial class NavigationDrawerPage : ContentPage
 {% endtabs %}
 
 
-N> To change the side of the navigation pane, utilize the `Position` property. Adjust the drawer height in the Top and Bottom positions using the `DrawerHeight` property.
+N> To change the side of the navigation pane, utilize the [Position](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NavigationDrawer.DrawerSettings.html#Syncfusion_Maui_Toolkit_NavigationDrawer_DrawerSettings_Position) property. Adjust the drawer height in the Top and Bottom positions using the [DrawerHeight](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NavigationDrawer.DrawerSettings.html#Syncfusion_Maui_Toolkit_NavigationDrawer_DrawerSettings_DrawerHeight) property.
 
 ## Add Hamburger Menu for Toggling Drawer
 
-Create an ImageButton and set the required image to the `Source` property. To ensure the image appears correctly, place the image in the `Resources/Images` directory. Subscribe Clicked event of the button and invoke the `ToggleDrawer()` method to toggle the drawer. Properly align the layout of `ContentView` to position the hamburger icon at the top left, as demonstrated in the following code.
+Create an ImageButton and set the required image to the `Source` property. To ensure the image appears correctly, place the image in the `Resources/Images` directory. Subscribe Clicked event of the button and invoke the [ToggleDrawer()](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NavigationDrawer.SfNavigationDrawer.html#Syncfusion_Maui_Toolkit_NavigationDrawer_SfNavigationDrawer_ToggleDrawer) method to toggle the drawer. Properly align the layout of [ContentView](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NavigationDrawer.SfNavigationDrawer.html#Syncfusion_Maui_Toolkit_NavigationDrawer_SfNavigationDrawer_ContentView) to position the hamburger icon at the top left, as demonstrated in the following code.
 
 {% tabs %}	
 
@@ -331,7 +329,7 @@ public partial class NavigationDrawerPage : ContentPage
 
 ## Set ListView as Drawer Content
 
-Create a ListView with items and set it as `DrawerContentView`.
+Create a ListView with items and set it as [DrawerContentView](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NavigationDrawer.DrawerSettings.html#Syncfusion_Maui_Toolkit_NavigationDrawer_DrawerSettings_DrawerContentView).
 
 {% tabs %}	
 
