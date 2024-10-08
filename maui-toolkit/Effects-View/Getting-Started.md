@@ -9,17 +9,13 @@ documentation: ug
 
 # Getting Started with .NET MAUI Effects View
 
-This section guides you through setting up and configuring a [Effects View](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Core.SfEffectsView.html?tabs=tabid-1) in your .NET MAUI application. Follow the steps below to add [Effects View](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Core.SfEffectsView.html?tabs=tabid-1) to your project.
-
-To quickly get started with the .NET MAUI Effects View, watch this video.
-
-{% youtube "https://www.youtube.com/watch?v=IOieyRMCuAo" %}
+This section guides you through setting up and configuring a `Effects View` in your .NET MAUI application. Follow the steps below to add `Effects View` to your project.
 
 ## Prerequisites
 Before proceeding, ensure the following are set up:
 
-1. Install [.NET 7 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/7.0) or later is installed.
-2. Set up a .NET MAUI environment with Visual Studio 2022 (v17.3 or later) or Visual Studio Code. For Visual Studio Code users, ensure that the .NET MAUI workload is installed and configured as described [here.](https://learn.microsoft.com/en-us/dotnet/maui/get-started/installation?view=net-maui-8.0&tabs=visual-studio-code).
+1. Install [.NET 8 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/8.0) or later is installed.
+2. Set up a .NET MAUI environment with Visual Studio 2022 (v17.8 or later) or Visual Studio Code. For Visual Studio Code users, ensure that the .NET MAUI workload is installed and configured as described [here.](https://learn.microsoft.com/en-us/dotnet/maui/get-started/installation?view=net-maui-8.0&tabs=visual-studio-code).
 
 ## Step 1: Create a New MAUI Project
 
@@ -36,50 +32,75 @@ Before proceeding, ensure the following are set up:
 3. Select the project location, type the project name and press **Enter.**
 4. Then choose **Create project.**
 
-## Step 2: Install the Syncfusion MAUI Core NuGet Package
+## Step 2: Install the Syncfusion .NET MAUI Toolkit Package
 
-1.  In **Solution Explorer,** right-click the project and choose **Manage NuGet Packages.**
-2.  Search for [Syncfusion.Maui.Core](https://www.nuget.org/packages/Syncfusion.Maui.Core/) and install the latest version.
-3.  Ensure the necessary dependencies are installed correctly, and the project is restored.
+### Visual Studio
 
-## Step 3: Register the handler 
+1. In **Solution Explorer,** right-click the project and choose **Manage NuGet Packages.**
+2. Search for [Syncfusion.Maui.Toolkit](https://www.nuget.org/packages/Syncfusion.Maui.Toolkit/) and install the latest version.
+3. Ensure the necessary dependencies are installed correctly, and the project is restored.
 
-[Syncfusion.Maui.Core](https://www.nuget.org/packages/Syncfusion.Maui.Core/) NuGet is a dependent package for all Syncfusion controls of .NET MAUI. In the MauiProgram.cs file, register the handler for Syncfusion core.
+### Visual Studio Code
 
-{% highlight C# hl_lines="6 17" %}
-using Microsoft.Maui;
-using Microsoft.Maui.Hosting;
-using Microsoft.Maui.Controls.Compatibility;
-using Microsoft.Maui.Controls.Hosting;
-using Microsoft.Maui.Controls.Xaml;
-using Syncfusion.Maui.Core.Hosting;
+1. Press <kbd>Ctrl</kbd> + <kbd>`</kbd> (backtick) to open the integrated terminal in Visual Studio Code.
+2. Ensure you're in the project root directory where your .csproj file is located.
+3. Run the following command to install the Syncfusion .NET MAUI Toolkit NuGet package:
+  
+{% tabs %}
 
-namespace EffectsViewMauiSample
-{
-  public static class MauiProgram
-  {
-	public static MauiApp CreateMauiApp()
-	{
-		var builder = MauiApp.CreateBuilder();
-		builder
-		.UseMauiApp<App>()
-		.ConfigureSyncfusionCore()
-		.ConfigureFonts(fonts =>
-		{
-			fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
-		});
-		return builder.Build();
-	}  
-  }
-}     
+{% highlight sh  %}
 
-{% endhighlight %} 
+    dotnet add package Syncfusion.Maui.Toolkit
 
-## Step 4: Add a Basic Effects View
+{% endhighlight %}
 
-1. To initialize the control, import the Core namespace into your code.
+{% endtabs %}
 
-2. Initialize [SfEffectsView](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Core.SfEffectsView.html?tabs=tabid-1)
+4. To ensure all dependencies are installed, run:
+
+{% tabs %}
+
+{% highlight sh  %}
+
+    dotnet restore
+    
+{% endhighlight %}
+
+{% endtabs %}
+
+## Step 3: Register the handler
+
+In the **MauiProgram.cs** file, register the handler for Syncfusion Toolkit.
+
+{% tabs %}
+{% highlight C# tabtitle="MauiProgram.cs" hl_lines="1 9" %}
+    using Syncfusion.Maui.Toolkit.Hosting;
+
+    public static class MauiProgram
+    {
+	    public static MauiApp CreateMauiApp()
+	    {
+	        var builder = MauiApp.CreateBuilder();
+		    builder
+			    .ConfigureSyncfusionToolkit()
+			    .UseMauiApp<App>()
+			    .ConfigureFonts(fonts =>
+			    {
+				    fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
+				    fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
+			    });
+
+		    return builder.Build();
+	    }
+    }
+
+{% endhighlight %}
+{% endtabs %}
+
+## Step 4: Add a Effects View
+
+1. To initialize the control, import the `Syncfusion.Maui.Toolkit.EffectsView` namespace into your code.
+2. Initialize `SfEffectsView` class.
 
 {% tabs %}
 
@@ -87,7 +108,7 @@ namespace EffectsViewMauiSample
 
 <ContentPage 
             ...
-            xmlns:effectsView="clr-namespace:Syncfusion.Maui.Core;assembly=Syncfusion.Maui.Core">
+            xmlns:effectsView="clr-namespace:Syncfusion.Maui.Toolkit.EffectsView;assembly=Syncfusion.Maui.Toolkit">
     <ContentPage.Content> 
 	 	<effectsView:SfEffectsView /> 
 	</ContentPage.Content> 
@@ -97,22 +118,17 @@ namespace EffectsViewMauiSample
 
 {% highlight C# %}
 
-using Syncfusion.Maui.Core;
+using Syncfusion.Maui.Toolkit.EffectsView;
 
-namespace EffectsViewMauiSample   
-{  
 	public partial class MainPage : ContentPage                  
 	{ 
-	    SfEffectsView effectsView;
-
 		public MainPage()   
 		{   
 			InitializeComponent();       
-			effectsView = new SfEffectsView(); 
+			SfEffectsView effectsView = new SfEffectsView(); 
 			this.Content = effectsView;  
 		}  
 	}  
-}  
 
 {% endhighlight %}
 
@@ -120,4 +136,3 @@ namespace EffectsViewMauiSample
 
 ![Effects View Initialization](Getting-Started_images/RippleEffect.gif)
 
-N> You can refer to our [.NET MAUI Effects View](https://www.syncfusion.com/maui-controls/maui-effects-view) feature tour page for its groundbreaking feature representations. You can also explore our [.NET MAUI Effects View Example](https://github.com/syncfusion/maui-demos/tree/master/MAUI/EffectsView) that shows you how to render the Effects View in .NET MAUI.

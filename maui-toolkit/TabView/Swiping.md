@@ -14,11 +14,12 @@ The `EnableSwiping` property of `SfTabView` allows users to switch between tab c
 {% tabs %}
 
 {% highlight xaml %}
-    <tabView:SfTabView EnableSwiping="True">
+    <tabView:SfTabView EnableSwiping="True"/>
 {% endhighlight %}
 
 {% highlight C# %}
-     tabView.EnableSwiping = true;
+     SfTabView tabView = new SfTabView();
+	 tabView.EnableSwiping = true;
 {% endhighlight %}
 
 {% endtabs %}

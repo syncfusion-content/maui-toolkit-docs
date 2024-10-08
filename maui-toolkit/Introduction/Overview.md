@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Overview of Syncfusion Essential Studio .NET MAUI products
-description: Basic overview about the list of available features on Syncfusion .NET MAUI components and steps to use the guide.
+title: Overview of Syncfusion Essential Studio .NET MAUI Toolkit
+description: Basic overview about the list of available features on Syncfusion .NET MAUI Toolkit package and steps to use the guide.
 platform: maui-toolkit
 control: Overview
 documentation: ug
 ---
 
-# Welcome to Syncfusion Essential Studio for .NET MAUI
+# Welcome to Syncfusion Toolkit for .NET MAUI
 
-Essential Studio for .NET MAUI is a comprehensive collection of .NET MAUI components for building modern Mobile and Desktop applications. It includes our first set of .NET MAUI UI controls such as Charts, Gauge, and Tab View.
+Syncfusion Toolkit for .NET MAUI is a comprehensive collection of .NET MAUI components for building modern Mobile and Desktop applications. It includes our first set of .NET MAUI UI controls such as Charts, Navigation Drawer, and Tab View.
 
 ## How to read this user guide most effectively
 
@@ -18,14 +18,8 @@ Essential Studio for .NET MAUI is a comprehensive collection of .NET MAUI compon
 * After you have integrated the component into your application, you would likely need additional information on specific features and API. Search the specific topic by using the search box available at the top of the user guide.
 * Another valuable resource is the API reference that provides detailed information on the classes and their members.
 
-## Additional help resources
-
-The Knowledge Base section contains responses to some of the most frequently asked questions by customers in the past. You can search for topics that are not covered in the user guide.
-
-Similar to the Knowledge Base, the Forum section also contains responses to questions of other customers asked in the past.
-
 ## Support and feedback
 
-If you are unable to find the information that you are looking for in the self-help resources mentioned above, please contact us by creating a [support ticket](https://support.syncfusion.com/create).
+If you are unable to find the information that you are looking for in the self-help resources mentioned above, please contact us by creating a [support ticket](https://mauitoolkit.syncfusion.com/create).
 
-Do not see what you need? Please request it in our [feedback portal](https://www.syncfusion.com/feedback/maui).
+Do not see what you need? Please request it in our [feedback portal](https://www.syncfusion.com/feedback/maui-toolkit).

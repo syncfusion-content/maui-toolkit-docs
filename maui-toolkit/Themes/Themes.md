@@ -7,7 +7,7 @@ control: General
 documentation: ug
 ---
 
-# Applying Themes in Maui Controls
+# Applying Themes in Maui Toolkit Controls
 
 Syncfusion themes allow you to apply colors across all the Syncfusion controls with a uniform approach and provide a consistent look and feel to your applications. This section covers the following topics: 
 
@@ -35,7 +35,7 @@ When using more number of Syncfusion controls in an application, to make the pro
 {% highlight xaml %}
 
 <Application xmlns:base="clr-namespace:SampleBrowser.Maui.Base;assembly=SampleBrowser.Maui.Base"
-             xmlns:syncTheme="clr-namespace:Syncfusion.Maui.Themes;assembly=Syncfusion.Maui.Core"
+             xmlns:syncTheme="clr-namespace:Syncfusion.Maui.Toolkit.Themes;assembly=Syncfusion.Maui.Toolkit"
              x:Class="SampleBrowser.Maui.App"
              ...>
 <Application.Resources>
@@ -67,7 +67,7 @@ In addition to the primary keys, the theme resource dictionary also contains the
 
 {% highlight xaml %}
 
-<Application xmlns:syncTheme="clr-namespace:Syncfusion.Maui.Themes;assembly=Syncfusion.Maui.Core"
+<Application xmlns:syncTheme="clr-namespace:Syncfusion.Maui.Toolkit.Themes;assembly=Syncfusion.Maui.Toolkit"
              ...>
 <Application.Resources>
     <ResourceDictionary>
@@ -99,7 +99,7 @@ Using this approach, you can create your own theme for all the controls or speci
 
 {% highlight xaml %}
 
-<Application xmlns:syncTheme="clr-namespace:Syncfusion.Maui.Themes;assembly=Syncfusion.Maui.Core"
+<Application xmlns:syncTheme="clr-namespace:Syncfusion.Maui.Toolkit.Themes;assembly=Syncfusion.Maui.Toolkit"
              ...>
  <Application.Resources>
     <ResourceDictionary>

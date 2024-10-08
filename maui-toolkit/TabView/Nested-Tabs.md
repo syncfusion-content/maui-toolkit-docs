@@ -1,7 +1,7 @@
 ---
 layout: post
-title: NestedTab in .NET MAUI Tab View (SfTabView) control | Syncfusion
-description: Learn here about the nested tab support in Syncfusion .NET MAUI Tab View (SfTabView) control and code sample.
+title: Nested Tabs in .NET MAUI Tab View (SfTabView) control | Syncfusion
+description: Learn here about the nested tab support in Syncfusion .NET MAUI Tab View (SfTabView) control with code examples.
 platform: maui-toolkit
 control: Tab View
 documentation: ug
@@ -9,11 +9,9 @@ documentation: ug
 
 # Nested tab in .NET MAUI Tab View (SfTabView)
 
-Nested tab items can be configured in Tab View using the [Items](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.TabView.SfTabView.html#Syncfusion_Maui_TabView_SfTabView_Items) property of [SfTabView](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.TabView.SfTabView.html), which holds the nested collection of [SfTabItem](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.TabView.SfTabItem.html) by [TabItemsCollection](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.TabView.TabItemCollection.html).
+The .NET MAUI Tab View (SfTabView) control supports nested tabs, allowing you to create a hierarchical structure of tab items. You can configure nested tab items in the Tab View using the [Items](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SfTabView.html#Syncfusion_Maui_Toolkit_TabView_SfTabView_Items) property of [SfTabView](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SfTabView.html). This property holds a [TabItemCollection](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.TabItemCollection.html), which can contain multiple [SfTabItem](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SfTabItem.html) instances.
 
-To get start quickly with Nested tab view in .NET MAUI TabView, you can check on this video:
-
-{% youtube "https://www.youtube.com/watch?v=batfDt1S8Mc&ab_channel=Syncfusion%2CInc" %}
+The following example demonstrates how to create nested tabs in the `SfTabView` control. In this sample, we will create a main tab view with three tabs: "Photos", "Collections", and "Explore". The "Photos" tab will contain a nested tab view with four sub-tabs: "Camera", "Video", "Screenshots", and "Wallpaper".
 
 {% tabs %}
 
@@ -22,72 +20,70 @@ To get start quickly with Nested tab view in .NET MAUI TabView, you can check on
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="TabViewMauiSample.MainPage"
-             xmlns:tabView="clr-namespace:Syncfusion.Maui.TabView;assembly=Syncfusion.Maui.TabView"
+             xmlns:tabView="clr-namespace:Syncfusion.Maui.Toolkit.TabView;assembly=Syncfusion.Maui.Toolkit.TabView"
              BackgroundColor="{DynamicResource SecondaryColor}">
     <ContentPage.Content>
         <Grid>
             <tabView:SfTabView x:Name="tabView"
-                                TabBarBackground="#FDF8F6"
-                                TabWidthMode="SizeToContent"
-                                TabBarPlacement="Top"
-                                BackgroundColor="Transparent"
-                                IndicatorBackground="#6200EE"
-                                IndicatorPlacement="Top" >
+                                    TabBarBackground="#FDF8F6"
+                                    TabWidthMode="SizeToContent"
+                                    TabBarPlacement="Top"
+                                    BackgroundColor="Transparent"
+                                    IndicatorBackground="#6200EE"
+                                    IndicatorPlacement="Top" >
                 <tabView:SfTabView.Items>
+                    <!-- Main tab: Photos -->
                     <tabView:SfTabItem Header="Photos">
                         <tabView:SfTabItem.Content>
                             <Grid BackgroundColor="Blue">
                                 <tabView:SfTabView x:Name="nestedTabView"
-                                                    TabBarBackground="#FDF8F6"
-                                                    TabWidthMode="Default"
-                                                    TabBarPlacement="Bottom"
-                                                    BackgroundColor="Transparent"
-                                                    IndicatorBackground="#6200EE"
-                                                    IndicatorPlacement="Top" >
-                                        <tabView:SfTabView.Items>
-                                            <tabView:SfTabItem Header="Camera">
-                                                <tabView:SfTabItem.Content>
-                                                    <Grid BackgroundColor="Blue">
-                                                      ...  
-                                                    </Grid>
-                                                </tabView:SfTabItem.Content>
-                                            </tabView:SfTabItem>
-
-                                            <tabView:SfTabItem Header="Video">
-                                                <tabView:SfTabItem.Content>
-                                                    <Grid BackgroundColor="Blue">
-                                                       ...   
-                                                    </Grid>
-                                                </tabView:SfTabItem.Content>
-                                            </tabView:SfTabItem>
-
-                                            <tabView:SfTabItem Header="Screenshots">
-                                                <tabView:SfTabItem.Content>
-                                                    <Grid BackgroundColor="Blue">
-                                                        ...   
-                                                    </Grid>
-                                                </tabView:SfTabItem.Content>
-                                            </tabView:SfTabItem>
-
-                                            <tabView:SfTabItem Header="Wallpaper">
-                                                <tabView:SfTabItem.Content>
-                                                    <Grid BackgroundColor="Blue">
-                                                       ...   
-                                                    </Grid>
-                                                </tabView:SfTabItem.Content>
-                                            </tabView:SfTabItem>
-                                        </tabView:SfTabView.Items>
-                                    </tabView:SfTabView>
+                                                        TabBarBackground="#FDF8F6"
+                                                        TabWidthMode="Default"
+                                                        TabBarPlacement="Bottom"
+                                                        BackgroundColor="Transparent"
+                                                        IndicatorBackground="#6200EE"
+                                                        IndicatorPlacement="Top" >
+                                    <tabView:SfTabView.Items>
+                                        <!-- Nested tab: Camera -->
+                                        <tabView:SfTabItem Header="Camera">
+                                            <tabView:SfTabItem.Content>
+                                                <Grid BackgroundColor="Blue">
+                                                </Grid>
+                                            </tabView:SfTabItem.Content>
+                                        </tabView:SfTabItem>
+                                        <!-- Nested tab: Video -->
+                                        <tabView:SfTabItem Header="Video">
+                                            <tabView:SfTabItem.Content>
+                                                <Grid BackgroundColor="Blue">
+                                                </Grid>
+                                            </tabView:SfTabItem.Content>
+                                        </tabView:SfTabItem>
+                                        <!-- Nested tab: Screenshots -->
+                                        <tabView:SfTabItem Header="Screenshots">
+                                            <tabView:SfTabItem.Content>
+                                                <Grid BackgroundColor="Blue">
+                                                </Grid>
+                                            </tabView:SfTabItem.Content>
+                                        </tabView:SfTabItem>
+                                        <!-- Nested tab: Wallpaper -->
+                                        <tabView:SfTabItem Header="Wallpaper">
+                                            <tabView:SfTabItem.Content>
+                                                <Grid BackgroundColor="Blue">
+                                                </Grid>
+                                            </tabView:SfTabItem.Content>
+                                        </tabView:SfTabItem>
+                                    </tabView:SfTabView.Items>
+                                </tabView:SfTabView>
                             </Grid>
                         </tabView:SfTabItem.Content>
                     </tabView:SfTabItem>
-
+                    <!-- Main tab: Collections -->
                     <tabView:SfTabItem Header="Collections">
                         <tabView:SfTabItem.Content>
                             <Grid BackgroundColor="Red"/>
                         </tabView:SfTabItem.Content>
                     </tabView:SfTabItem>
-
+                    <!-- Main tab: Explore -->
                     <tabView:SfTabItem Header="Explore">
                         <tabView:SfTabItem.Content>
                             <Grid BackgroundColor="Green"/>
@@ -103,14 +99,18 @@ To get start quickly with Nested tab view in .NET MAUI TabView, you can check on
 
 {% highlight C# %}
 public partial class MainPage : ContentPage
-{
-    SfTabView tabView;
-    SfTabView nestedTabView;
+{ 
     public MainPage()
     {
         InitializeComponent();
-        tabView = new SfTabView();
-        nestedTabView = new SfTabView();
+
+        // Create main TabView
+        SfTabView tabView = new SfTabView();
+
+        // Create nested TabView
+        SfTabView nestedTabView = new SfTabView();
+
+        // Configure main TabView
         var tabItems = new TabItemCollection
         {
             new SfTabItem()
@@ -123,7 +123,7 @@ public partial class MainPage : ContentPage
                 Header = "Collections",
                 Content = new ListView()
                 {
-                    //// code
+                    // Add your items here.
                 },
             },
             new SfTabItem()
@@ -131,42 +131,7 @@ public partial class MainPage : ContentPage
                 Header = "Explore",
                 Content = new ListView()
                 {
-                    //// code
-                },
-            }
-        };
-        var nestedTabItems = new TabItemCollection
-        {
-            new SfTabItem()
-            {
-                Header = "Camera",
-                Content = new ListView()
-                {
-                    //// code
-                },
-            },
-            new SfTabItem()
-            {
-                Header = "Video",
-                Content = new ListView()
-                {
-                    //// code
-                },
-            },
-            new SfTabItem()
-            {
-                Header = "Screenshots",
-                Content = new ListView()
-                {
-                    //// code
-                },
-            },
-            new SfTabItem()
-            {
-                Header = "Wallpaper",
-                Content = new ListView()
-                {
-                    //// code
+                     // Add your items here.
                 },
             }
         };
@@ -177,6 +142,44 @@ public partial class MainPage : ContentPage
         tabView.IndicatorPlacement = TabIndicatorPlacement.Top;
         tabView.TabBarBackground = new SolidColorBrush(Color.FromArgb("#FDF8F6"));
         tabView.IndicatorBackground = new SolidColorBrush(Color.FromArgb("#6200EE"));
+
+        // Configure nested TabView
+        var nestedTabItems = new TabItemCollection
+        {
+            new SfTabItem()
+            {
+                Header = "Camera",
+                Content = new ListView()
+                {
+                     // Add your items here.
+                },
+            },
+            new SfTabItem()
+            {
+                Header = "Video",
+                Content = new ListView()
+                {
+                     // Add your items here.
+                },
+            },
+            new SfTabItem()
+            {
+                Header = "Screenshots",
+                Content = new ListView()
+                {
+                     // Add your items here.
+                },
+            },
+            new SfTabItem()
+            {
+                Header = "Wallpaper",
+                Content = new ListView()
+                {
+                     // Add your items here.
+                },
+            }
+        };
+
         nestedTabView.Items = nestedTabItems;
         nestedTabView.TabBarPlacement = TabBarPlacement.Bottom;
         nestedTabView.IndicatorPlacement = TabIndicatorPlacement.Top;
@@ -189,6 +192,6 @@ public partial class MainPage : ContentPage
 {% endhighlight %}
 {% endtabs %}
 
-![NestedTab](images/Nested_Tab.png)
+The following image illustrates the nested tab structure:
 
-N> View [sample](https://github.com/SyncfusionExamples/maui-tabview-samples/tree/main/NestedTabViewSample) in GitHub
+![NestedTab](images/Nested_Tab.png)
