@@ -34,14 +34,22 @@ The [DrawerHeight](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.T
 	
 {% highlight c# %} 
 
- SfNavigationDrawer navigationDrawer = new SfNavigationDrawer();
- DrawerSettings drawerSettings = new DrawerSettings()
- {
-     Position = Position.Top,
-     DrawerHeight = 50,
- };
- navigationDrawer.DrawerSettings = drawerSettings;
- this.Content = navigationDrawer;
+  SfNavigationDrawer navigationDrawer = new SfNavigationDrawer();
+  DrawerSettings drawerSettings = new DrawerSettings()
+  {
+      Position = Position.Top,
+      DrawerHeight = 50,
+  };
+
+  Label headerLabel = new Label()
+  {
+      Text = "This is a brief content used to demonstrate the DrawerHeight property.",
+  };
+
+  drawerSettings.DrawerHeaderView = headerLabel;
+
+  navigationDrawer.DrawerSettings = drawerSettings;
+  this.Content = navigationDrawer;
 
 {% endhighlight %}
 
@@ -73,15 +81,23 @@ The [DrawerWidth](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.To
 	
 {% highlight c# %} 
 
-SfNavigationDrawer navigationDrawer = new SfNavigationDrawer();
-DrawerSettings drawerSettings = new DrawerSettings()
-{
-    Position = Position.Left,
-    DrawerWidth = 250,
-    DrawerHeaderHeight = 75,
-};
-navigationDrawer.DrawerSettings = drawerSettings;
-this.Content = navigationDrawer;
+ SfNavigationDrawer navigationDrawer = new SfNavigationDrawer();
+ DrawerSettings drawerSettings = new DrawerSettings()
+ {
+     Position = Position.Left,
+     DrawerWidth = 250,
+     DrawerHeaderHeight = 75,
+ };
+
+ Label headerLabel = new Label()
+ {
+     Text = "This is a brief content used to demonstrate the DrawerHeight property.",
+ };
+
+ drawerSettings.DrawerHeaderView = headerLabel;
+
+ navigationDrawer.DrawerSettings = drawerSettings;
+ this.Content = navigationDrawer;
 
 {% endhighlight %}
 
