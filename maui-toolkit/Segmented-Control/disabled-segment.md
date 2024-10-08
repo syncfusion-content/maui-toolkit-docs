@@ -13,12 +13,12 @@ This section describes the features of the Segmented Control that help with disa
 
 ## Enable or Disable segment
 
-Restrict selection and interaction of segment items by setting the [IsEnabled](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Buttons.SfSegmentItem.html#Syncfusion_Maui_Buttons_SfSegmentItem_IsEnabled) property of [SfSegmentItem](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Buttons.SfSegmentItem.html) to `false`. The value of `IsEnabled` property is `true` by default.
+Restrict selection and interaction of segment items by setting the [IsEnabled](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SegmentedControl.SfSegmentItem.html#Syncfusion_Maui_Toolkit_SegmentedControl_SfSegmentItem_IsEnabled) property of [SfSegmentItem](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SegmentedControl.SfSegmentItem.html) to `false`. The value of `IsEnabled` property is `true` by default.
 
 {% tabs %}
 {% highlight C# tabtitle="MainPage.xaml.cs"%}
 
-using Syncfusion.Maui.Buttons;
+using Syncfusion.Maui.Toolkit.SegmentedControl;
 . . .
 
 public partial class MainPage : ContentPage
@@ -46,27 +46,27 @@ public partial class MainPage : ContentPage
 ![Disabled segment in .NET MAUI Segmented control.](images/disabled-segment/disabled-segment.png)
 
 ### Programmatically Enable or Disable segment using Method
-Set the enabled state of a specific segment at the specified index using the [SetSegmentEnabled](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Buttons.SfSegmentedControl.html#Syncfusion_Maui_Buttons_SfSegmentedControl_SetSegmentEnabled_System_Int32_System_Boolean_) method of [SfSegmentedControl](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Buttons.SfSegmentedControl.html).
+Set the enabled state of a specific segment at the specified index using the [SetSegmentEnabled](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SegmentedControl.html#Syncfusion_Maui_Toolkit_SegmentedControl_SetSegmentEnabled_System_Int32_System_Boolean_) method of [SfSegmentedControl](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SegmentedControl.html).
 
 {% tabs %}
 {% highlight XAML %}
 
 <ContentPage
     xmlns:local="clr-namespace:SfSegmentSample"
-    xmlns:buttons="clr-namespace:Syncfusion.Maui.Buttons;assembly=Syncfusion.Maui.Buttons">
+    xmlns:segmentedControl="clr-namespace:Syncfusion.Maui.Toolkit.SegmentedControl;assembly=Syncfusion.Maui.Toolkit.SegmentedControl">
     <ContentPage.BindingContext>
         <local:ViewModel/>
     </ContentPage.BindingContext>
 
-    <buttons:SfSegmentedControl x:Name="segmentedControl"
+    <segmentedControl:SfSegmentedControl x:Name="segmentedControl"
                                 ItemsSource="{Binding SegmentItems}">
-    </buttons:SfSegmentedControl>
+    </segmentedControl:SfSegmentedControl>
 </ContentPage>
 
 {% endhighlight %}
 {% highlight C# %}
 
-using Syncfusion.Maui.Buttons;
+using Syncfusion.Maui.Toolkit.SegmentedControl;
 . . .
 
 public partial class MainPage : ContentPage
@@ -116,22 +116,22 @@ You can customize the disabled segment text color and background of the segmente
 
 ### Customizing the disabled segment text color
 
-Use the [DisabledSegmentTextColor](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Buttons.SfSegmentedControl.html#Syncfusion_Maui_Buttons_SfSegmentedControl_DisabledSegmentTextColor) property of [SfSegmentedControl](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Buttons.SfSegmentedControl.html) to customize the disabled segment text color of the segmented control.
+Use the [DisabledSegmentTextColor](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SegmentedControl.html#Syncfusion_Maui_Toolkit_SegmentedControl_DisabledSegmentTextColor) property of [SfSegmentedControl](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SegmentedControl.html) to customize the disabled segment text color of the segmented control.
 
 {% tabs %}
 {% highlight XAML %}
 
 <ContentPage
-    xmlns:buttons="clr-namespace:Syncfusion.Maui.Buttons;assembly=Syncfusion.Maui.Buttons">
-    <buttons:SfSegmentedControl x:Name="segmentedControl"
+    xmlns:segmentedControl="clr-namespace:Syncfusion.Maui.Toolkit.SegmentedControl;assembly=Syncfusion.Maui.Toolkit.SegmentedControl">
+    <segmentedControl:SfSegmentedControl x:Name="segmentedControl"
                                 DisabledSegmentTextColor="Red">
-    </buttons:SfSegmentedControl>
+    </segmentedControl:SfSegmentedControl>
 </ContentPage>
 
 {% endhighlight %}
 {% highlight C# %}
 
-using Syncfusion.Maui.Buttons;
+using Syncfusion.Maui.Toolkit.SegmentedControl;
 . . .
 
 public partial class MainPage : ContentPage
@@ -155,22 +155,22 @@ N> The `DisabledSegmentTextColor` will be applicable only when the `IsEnabled` p
 
 ### Customizing the disabled segment background
 
-Use the [DisabledSegmentBackground](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Buttons.SfSegmentedControl.html#Syncfusion_Maui_Buttons_SfSegmentedControl_DisabledSegmentBackground) property of [SfSegmentedControl](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Buttons.SfSegmentedControl.html) to customize the disabled segment background of the segmented control.
+Use the [DisabledSegmentBackground](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SegmentedControl.html#Syncfusion_Maui_Toolkit_SegmentedControl_DisabledSegmentBackground) property of [SfSegmentedControl](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SegmentedControl.html) to customize the disabled segment background of the segmented control.
 
 {% tabs %}
 {% highlight XAML %}
 
 <ContentPage
-    xmlns:buttons="clr-namespace:Syncfusion.Maui.Buttons;assembly=Syncfusion.Maui.Buttons">
-    <buttons:SfSegmentedControl x:Name="segmentedControl"
+    xmlns:segmentedControl="clr-namespace:Syncfusion.Maui.Toolkit.SegmentedControl;assembly=Syncfusion.Maui.Toolkit.SegmentedControl">
+    <segmentedControl:SfSegmentedControl x:Name="segmentedControl"
                                 DisabledSegmentBackground="LightGray">
-    </buttons:SfSegmentedControl>
+    </segmentedControl:SfSegmentedControl>
 </ContentPage>
 
 {% endhighlight %}
 {% highlight C# %}
 
-using Syncfusion.Maui.Buttons;
+using Syncfusion.Maui.Toolkit.SegmentedControl;
 . . .
 
 public partial class MainPage : ContentPage

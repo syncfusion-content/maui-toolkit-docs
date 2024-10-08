@@ -3,7 +3,7 @@ layout: post
 title: Create Segment Content in .NET MAUI Segmented Control | Syncfusion
 description: Learn about to manage the segment content in Syncfusion .NET MAUI Segmented control (SfSegmentedControl).
 platform: maui-toolkit
-control: Segmented (SfSegmented) control
+control: Segmented control
 documentation: ug
 ---
  
@@ -19,19 +19,19 @@ Create segmented control with segments having the given text.
 
 <ContentPage   
     xmlns:local="clr-namespace:SfSegmentSample"
-    xmlns:buttons="clr-namespace:Syncfusion.Maui.Buttons;assembly=Syncfusion.Maui.Buttons">
+    xmlns:segmentedControl="clr-namespace:Syncfusion.Maui.Toolkit.SegmentedControl;assembly=Syncfusion.Maui.Toolkit">
     <ContentPage.BindingContext>
         <local:ViewModel/>
     </ContentPage.BindingContext>
-    <buttons:SfSegmentedControl x:Name="segmentedControl"
+    <segmentedControl:SfSegmentedControl x:Name="segmentedControl"
                                 ItemsSource="{Binding SegmentItems}">
-    </buttons:SfSegmentedControl>
+    </segmentedControl:SfSegmentedControl>
 </ContentPage>
 
 {% endhighlight %}
 {% highlight C# %}
 
-using Syncfusion.Maui.Buttons;
+using Syncfusion.Maui.Toolkit.SegmentedControl;
 . . .
 
 public partial class MainPage : ContentPage
@@ -79,26 +79,26 @@ public class ViewModel
 ![Display text in .NET MAUI Segmented control.](images/populating-segment-items/text.png)
 
 ## Image
-Create a segmented control with segments that contain the provided images by using the [SfSegmentItem](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Buttons.SfSegmentItem.html) collection, which is bound to the [Itemssource](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Buttons.SfSegmentedControl.html#Syncfusion_Maui_Buttons_SfSegmentedControl_ItemsSource) property.
+Create a segmented control with segments that contain the provided images by using the [SfSegmentItem](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SegmentedControl.SfSegmentItem.html) collection, which is bound to the [Itemssource](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SegmentedControl.html#Syncfusion_Maui_Toolkit_SegmentedControl_ItemsSource) property.
 
 {% tabs %}
 {% highlight XAML %}
 
 <ContentPage   
     xmlns:local="clr-namespace:SfSegmentSample"
-    xmlns:buttons="clr-namespace:Syncfusion.Maui.Buttons;assembly=Syncfusion.Maui.Buttons">
+    xmlns:segmentedControl="clr-namespace:Syncfusion.Maui.Toolkit.SegmentedControl;assembly=Syncfusion.Maui.Toolkit">
     <ContentPage.BindingContext>
         <local:ViewModel/>
     </ContentPage.BindingContext>
-        <buttons:SfSegmentedControl x:Name="segmentedControl"
+        <segmentedControl:SfSegmentedControl x:Name="segmentedControl"
                                     ItemsSource="{Binding SegmentItems}">
-    </buttons:SfSegmentedControl>
+    </segmentedControl:SfSegmentedControl>
 </ContentPage>
 
 {% endhighlight %}
 {% highlight C# %}
 
-using Syncfusion.Maui.Buttons;
+using Syncfusion.Maui.Toolkit.SegmentedControl;
 . . .
 
 public partial class MainPage : ContentPage
@@ -153,19 +153,19 @@ Display images and text in the segmented items of the control.
 
 <ContentPage   
     xmlns:local="clr-namespace:SfSegmentSample"
-    xmlns:buttons="clr-namespace:Syncfusion.Maui.Buttons;assembly=Syncfusion.Maui.Buttons">
+    xmlns:segmentedControl="clr-namespace:Syncfusion.Maui.Toolkit.SegmentedControl;assembly=Syncfusion.Maui.Toolkit">
     <ContentPage.BindingContext>
         <local:ViewModel/>
     </ContentPage.BindingContext>
-    <buttons:SfSegmentedControl x:Name="segmentedControl"
+    <segmentedControl:SfSegmentedControl x:Name="segmentedControl"
                                     ItemsSource="{Binding SegmentItems}">
-    </buttons:SfSegmentedControl>
+    </segmentedControl:SfSegmentedControl>
 </ContentPage>
 
 {% endhighlight %}
 {% highlight C# %}
 
-using Syncfusion.Maui.Buttons;
+using Syncfusion.Maui.Toolkit.SegmentedControl;
 . . .
 
 public partial class MainPage : ContentPage
@@ -220,19 +220,19 @@ Display custom font with text in the segmented items of the control.
 
 <ContentPage   
     xmlns:local="clr-namespace:SfSegmentSample"
-    xmlns:buttons="clr-namespace:Syncfusion.Maui.Buttons;assembly=Syncfusion.Maui.Buttons">
+    xmlns:segmentedControl="clr-namespace:Syncfusion.Maui.Toolkit.SegmentedControl;assembly=Syncfusion.Maui.Toolkit">
     <ContentPage.BindingContext>
         <local:ViewModel/>
     </ContentPage.BindingContext>
-    <buttons:SfSegmentedControl x:Name="segmentedControl"
+    <segmentedControl:SfSegmentedControl x:Name="segmentedControl"
                                     ItemsSource="{Binding SegmentItems}">
-    </buttons:SfSegmentedControl>
+    </segmentedControl:SfSegmentedControl>
 </ContentPage>
 
 {% endhighlight %}
 {% highlight C# %}
 
-using Syncfusion.Maui.Buttons;
+using Syncfusion.Maui.Toolkit.SegmentedControl;
 . . .
 
 public partial class MainPage : ContentPage
