@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started with .NET MAUI Effects View
 
-This section guides you through setting up and configuring a `Effects View` in your .NET MAUI application. Follow the steps below to add `Effects View` to your project.
+This section guides you through setting up and configuring a [Effects View](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.EffectsView.SfEffectsView.html) in your .NET MAUI application. Follow the steps below to add `Effects View` to your project.
 
 ## Prerequisites
 Before proceeding, ensure the following are set up:
@@ -100,7 +100,7 @@ In the **MauiProgram.cs** file, register the handler for Syncfusion Toolkit.
 ## Step 4: Add a Effects View
 
 1. To initialize the control, import the `Syncfusion.Maui.Toolkit.EffectsView` namespace into your code.
-2. Initialize `SfEffectsView` class.
+2. Initialize [SfEffectsView](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.EffectsView.SfEffectsView.html) class.
 
 {% tabs %}
 
