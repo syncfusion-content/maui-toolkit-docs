@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting started of .NET MAUI Shimmer
 
-This section explains how to add the `.NET MAUI Shimmer` control. Follow the steps below to add a .NET MAUI Shimmer control to your project.
+This section explains how to add the [.NET MAUI Shimmer](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Shimmer.SfShimmer.html) control. Follow the steps below to add a .NET MAUI Shimmer control to your project.
 
 ## Prerequisites
 
@@ -44,7 +44,7 @@ Before proceeding, ensure the following are set up:
 
 1. Press <kbd>Ctrl</kbd> + <kbd>`</kbd> (backtick) to open the integrated terminal in Visual Studio Code.
 2. Ensure you're in the project root directory where your `.csproj` file is located.
-3. Run the following command to install the Syncfusion MAUI Expander NuGet package:
+3. Run the following command to install the Syncfusion MAUI Toolkit NuGet package:
 
 {% tabs %}
 {% highlight sh %}
@@ -99,7 +99,7 @@ namespace GettingStarted
 ## Step 4: Add .NET MAUI Shimmer control
 
 1. To initialize the control, import the `Syncfusion.Maui.Toolkit.Shimmer` namespace into your code.
-2. Initialize `SfShimmer`.
+2. Initialize [SfShimmer](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Shimmer.SfShimmer.html).
 
 {% tabs %}
 {% highlight xaml tabtitle="XAML" hl_lines="3 5" %}
@@ -132,7 +132,7 @@ public partial class MainPage : ContentPage
 
 ## Change different shimmer views
 
-The `.NET MAUI Shimmer` control provides seven different shimmer types of views. It can be assigned to the control using the `Type` property. By default, the control is assigned to the `CirclePersona` view.
+The `.NET MAUI Shimmer` control provides seven different shimmer types of views. It can be assigned to the control using the [Type](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Shimmer.SfShimmer.html#Syncfusion_Maui_Toolkit_Shimmer_SfShimmer_Type) property. By default, the control is assigned to the [CirclePersona](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Shimmer.ShimmerType.html#Syncfusion_Maui_Toolkit_Shimmer_ShimmerType_CirclePersona) view.
 
 {% tabs %}
 {% highlight xaml tabtitle="XAML" hl_lines="2" %}
@@ -170,7 +170,7 @@ The `.NET MAUI Shimmer` control provides seven different shimmer types of views.
 
 ## Loading shimmer content
 
-Shimmer content is loaded when the `IsActive` property of the `SfShimmer` is disabled.
+Shimmer content is loaded when the [`IsActive`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Shimmer.SfShimmer.html#Syncfusion_Maui_Toolkit_Shimmer_SfShimmer_IsActive) property of the [`SfShimmer`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Shimmer.SfShimmer.html) is disabled.
 
 {% tabs %} 
 
