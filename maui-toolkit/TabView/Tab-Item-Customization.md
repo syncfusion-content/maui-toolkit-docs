@@ -265,7 +265,7 @@ The following image shows a tab item with the specified image text spacing:
 
 ## Text Color Customization 
 
-The [TextColor](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SfTabItem.html#Syncfusion_Maui_Toolkit_TabView_SfTabItem_TextColor) property allows you to customize the color of the text displayed in the tab item.
+The [TextColor](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SfTabItem.html#Syncfusion_Maui_Toolkit_TabView_SfTabItem_TextColor) property allows you to customize the color of the text displayed in the tab item. Below are examples demonstrating how to set the `TextColor` property in both XAML and C#.
 
 {% tabs %}
 
@@ -288,6 +288,8 @@ var tabItems = new TabItemCollection
 
 {% endtabs %}
 
+The following image shows a tab item with the specified text color:
+
 ![Tab Image TextColor](images/TextColor.png) 
 
 ## Font Customization 
@@ -296,7 +298,7 @@ Font customization allows you to modify the appearance of the text in tab items.
 
 ### Font Family
 
-The [FontFamily](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SfTabItem.html#Syncfusion_Maui_Toolkit_TabView_SfTabItem_FontFamily) property sets the font family of the tab item text.
+The [FontFamily](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SfTabItem.html#Syncfusion_Maui_Toolkit_TabView_SfTabItem_FontFamily) property sets the font family of the tab item text. Below are examples demonstrating how to set the `FontFamily` property in both XAML and C#.
 
 {% tabs %}
 
@@ -319,11 +321,13 @@ var tabItems = new TabItemCollection
 
 {% endtabs %}
 
+The following image shows a tab item with the specified font family:
+
 ![TabItem FontFamily](images/FontFamily.png) 
 
 ### Font Attributes
 
-The [FontAttributes](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SfTabItem.html#Syncfusion_Maui_Toolkit_TabView_SfTabItem_FontAttributes) defines the font style (e.g., bold, italic) of the tab item text.
+The [FontAttributes](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SfTabItem.html#Syncfusion_Maui_Toolkit_TabView_SfTabItem_FontAttributes) defines the font style (e.g., bold, italic) of the tab item text. Below are examples demonstrating how to set the `FontAttributes` property in both XAML and C#.
 
 {% tabs %}
 
@@ -346,11 +350,13 @@ var tabItems = new TabItemCollection
 
 {% endtabs %}
 
+The following image shows a tab item with the specified font attributes:
+
 ![Tab Item FontAttribute](images/FontAttributes.png) 
 
 ### Font Size
 
-The [FontSize](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SfTabItem.html#Syncfusion_Maui_Toolkit_TabView_SfTabItem_FontSize) property specifies the size of the text in the tab item.
+The [FontSize](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SfTabItem.html#Syncfusion_Maui_Toolkit_TabView_SfTabItem_FontSize) property specifies the size of the text in the tab item. Below are examples demonstrating how to set the `FontSize` property in both XAML and C#.
 
 {% tabs %}
 
@@ -373,6 +379,8 @@ var tabItems = new TabItemCollection
 
 {% endtabs %}
 
+The following image shows a tab item with the specified font size:
+
 ![Tab Item FontSize](images/FontSize.png)
 
 ## Tab Header Padding
@@ -380,6 +388,8 @@ var tabItems = new TabItemCollection
 The [TabHeaderPadding](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SfTabView.html#Syncfusion_Maui_Toolkit_TabView_SfTabView_TabHeaderPadding) property in [SfTabView](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SfTabView.html) allows you to add padding to the tab header.
 
 N> The `TabHeaderPadding` property is only applicable when [TabWidthMode](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SfTabView.html#Syncfusion_Maui_Toolkit_TabView_SfTabView_TabWidthMode) is set to [SizeToContent](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.TabWidthMode.html#Syncfusion_Maui_Toolkit_TabView_TabWidthMode_SizeToContent).
+
+Below are examples demonstrating how to set the `TabHeaderPadding` property in both XAML and C#.
 
 {% tabs %}
 
@@ -397,11 +407,15 @@ tabView.TabHeaderPadding = new Thickness(5, 10, 5, 10);
 
 {% endtabs %}
 
-![Image Text Spacing](images/TabViewHeaderItem_Padding.png)
+The following image shows a tab item with the specified header padding:
 
-## Scroll buttons on Header
+![Tab Header Padding](images/TabViewHeaderItem_Padding.png)
+
+## Scroll Buttons on Header
 
 Scroll buttons are used to navigate through the items in the header of the tab view by adjusting the [IsScrollButtonEnabled](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SfTabView.html#Syncfusion_Maui_Toolkit_TabView_SfTabView_IsScrollButtonEnabled) property of [SfTabView](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SfTabView.html?tabs=tabid-1). These buttons are particularly useful when you have many tabs that exceed the available width of the tab view.
+
+Below are examples demonstrating how to enable scroll buttons in both XAML and C#.
 
 {% tabs %}
 
@@ -418,10 +432,15 @@ tabView.IsScrollButtonEnabled = true;
 
 {% endtabs %}
 
+The following image shows the tab view with scroll buttons enabled:
+
 ![TabView Scroll Mode](images/TabViewScroll.gif) 
-## Font auto scaling enabled
+
+## Font Auto Scaling Enabled
 
 The [FontAutoScalingEnabled](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SfTabItem.html#Syncfusion_Maui_Toolkit_TabView_SfTabItem_FontAutoScalingEnabled) property allows you to enable or disable automatic font scaling for the tab headers. When enabled, this feature adjusts the font size of the tab headers based on the text size settings of the operating system. The default value of the `FontAutoScalingEnabled` property is `false.`
+
+Below are examples demonstrating how to enable font auto scaling in both XAML and C#.
 
 {% tabs %}
 
@@ -438,9 +457,11 @@ tabView.FontAutoScalingEnabled = true;
 
 {% endtabs %}
 
-## Content transition duration
+## Content Transition Duration
 
 You can customize the animation duration when switching between tabs in the Tab View by setting the [ContentTransitionDuration](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SfTabView.html#Syncfusion_Maui_Toolkit_TabView_SfTabView_ContentTransitionDuration) property. This property affects the smooth transition of content when the [SelectedIndex](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SfTabView.html#Syncfusion_Maui_Toolkit_TabView_SfTabView_SelectedIndex) changes.
+
+Below are examples demonstrating how to set the content transition duration in both XAML and C#.
 
 {% tabs %}
 
