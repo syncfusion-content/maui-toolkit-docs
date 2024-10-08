@@ -9,9 +9,9 @@ documentation: ug
 
 # Configure the appearance of Tab Item in .NET MAUI Tab View (SfTabView)
 
-A tab item consists of the following elements that can be customized.
+A tab item consists of the several elements that can be customized to enhance its appearance and functionality. This guide will walk you through the various customization options available for tab items in [SfTabView](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SfTabView.html).
 
-## Adding image in tab item
+## Customizable Elements of a Tab Item
 
 ### Header
 
@@ -38,11 +38,13 @@ var tabItems = new TabItemCollection
 
 {% endtabs %}
 
+The following image shows a tab item with the header text:
+
 ![Tab Item Header](images/Tab-Width-Mode-Default.png) 
 
 ### Image Source 
 
-The [ImageSource](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SfTabItem.html#Syncfusion_Maui_Toolkit_TabView_SfTabItem_ImageSource) Specifies the image to be displayed in the tab item.
+You can add an image to a tab item to enhance its visual appeal. The [ImageSource](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SfTabItem.html#Syncfusion_Maui_Toolkit_TabView_SfTabItem_ImageSource) specifies the image to be displayed in the tab item.
 
 {% tabs %}
 
@@ -67,11 +69,13 @@ var tabItems = new TabItemCollection
 
 {% endtabs %}
 
+The following image shows a tab item with an image source:
+
 ![Tab Item ImageSource](images/Image-Position-Left.png) 
 
 ### Content 
 
-The assigned view will get displayed in the main area of the tab view.
+The `Content` property allows you to assign a view that will be displayed in the main area of the tab view.
 
 {% tabs %}
 
@@ -104,17 +108,19 @@ var tabItems = new TabItemCollection
 
 {% endtabs %}
 
+The following image shows a tab item with its content:
+
 ![Tab Item Content](images/TabItem_Content.png) 
 
-## Image position options 
+## Image Position Options 
 
-The .NET MAUI Tab View provides four options that determine how the image in the tab aligns relative to the text. The options are left, top, right and bottom. It can be achieved using the [ImagePosition](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SfTabItem.html#Syncfusion_Maui_Toolkit_TabView_SfTabItem_ImagePosition) property of [SfTabItem](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SfTabItem.html) of type [ImagePosition](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SfTabItem.html#Syncfusion_Maui_Toolkit_TabView_SfTabItem_ImagePosition).
+The .NET MAUI Tab View provides four options that determine how the image in the tab aligns relative to the text. The options are left, top, right, and bottom. You can set this alignment using the [ImagePosition](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SfTabItem.html#Syncfusion_Maui_Toolkit_TabView_SfTabItem_ImagePosition) property of the [SfTabItem](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SfTabItem.html) class.
 
-N> Each tab item can be set with different image positions. Visual State Manager can be used to apply same value to all tabs.
+N> Each tab item can have a different image position. You can use the Visual State Manager to apply the same image position to all tabs.
 
 ### Top
 
-The image will be placed above the text vertically.
+When the `ImagePosition` property is set to `Top`, the image will be placed above the text, aligned vertically.
 
 {% tabs %}
 
@@ -137,11 +143,13 @@ var tabItems = new TabItemCollection
 
 {% endtabs %}
 
+The following image shows the tab item with the image positioned to the top of the text:
+
 ![Image Position Top](images/Image-Position-Top.png) 
 
 ### Bottom
 
-The image will be placed below the text vertically.
+When the `ImagePosition` property is set to `Bottom`, the image will be placed below the text, aligned vertically.
 
 {% tabs %}
 
@@ -164,11 +172,13 @@ var tabItems = new TabItemCollection
 
 {% endtabs %}
 
+The following image shows the tab item with the image positioned to the bottom of the text:
+
 ![Image Position Bottom](images/Image-Position-Bottom.png) 
 
 ### Left
 
-The image will be placed before the text horizontally.
+When the `ImagePosition` property is set to `Left`, the image will be placed before the text, aligned horizontally.
 
 {% tabs %}
 
@@ -191,11 +201,13 @@ var tabItems = new TabItemCollection
 
 {% endtabs %}
 
+The following image shows the tab item with the image positioned to the left of the text:
+
 ![Image Position Left](images/Image-Position-Left.png) 
 
 ### Right
 
-The image will be placed to the right side of the text horizontally.
+When the `ImagePosition` property is set to `Right`, the image will be placed to the right side of the text, aligned horizontally.
 
 {% tabs %}
 
@@ -218,11 +230,13 @@ var tabItems = new TabItemCollection
 
 {% endtabs %}
 
+The following image shows the tab item with the image positioned to the right of the text:
+
 ![Image Position Right](images/Image-Position-Right.png) 
 
 ## Image Text Spacing
 
-The [ImageTextSpacing](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SfTabItem.html#Syncfusion_Maui_Toolkit_TabView_SfTabItem_ImageTextSpacing) property in `SfTabItem` allows you to set the spacing between the image and the text of the tab item. This property is particularly useful when you want to fine-tune the layout of tab items that contain both an image and text.
+The [ImageTextSpacing](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SfTabItem.html#Syncfusion_Maui_Toolkit_TabView_SfTabItem_ImageTextSpacing) property in [SfTabItem](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SfTabItem.html) allows you to set the spacing between the image and the text of the tab item. This property is particularly useful when you want to fine-tune the layout of tab items that contain both an image and text.
 
 {% tabs %}
 
@@ -244,6 +258,8 @@ var tabItems = new TabItemCollection
 {% endhighlight %}
 
 {% endtabs %}
+
+The following image shows a tab item with the specified image text spacing:
 
 ![Image Text Spacing](images/Image-Text-Spacing.png)
 
