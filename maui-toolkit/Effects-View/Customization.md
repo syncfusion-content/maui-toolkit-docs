@@ -9,22 +9,29 @@ documentation: ug
 
 # Customization in .NET MAUI Effects View (SfEffectsView)
 
-The [SfEffectsView](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Core.SfEffects.html) control provides support to customize the animation duration, color, and more. This section explains how to customize the effects view control.
+The [SfEffectsView](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.EffectsView.SfEffects.html) control provides support to customize the animation duration, color, and more. This section explains how to customize the effects view control.
 
 ## RippleAnimationDuration
 
-The [RippleAnimationDuration](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Core.SfEffectsView.html#Syncfusion_Maui_Core_SfEffectsView_RippleAnimationDuration) property of [SfEffectsView](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Core.SfEffects.html) is used to customize the duration of ripple animation.
+The [RippleAnimationDuration](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.EffectsView.SfEffectsView.html#Syncfusion_Maui_Toolkit_EffectsView_SfEffectsView_RippleAnimationDuration) property of [SfEffectsView](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.EffectsView.SfEffects.html) is used to customize the duration of ripple animation.
 
 {% tabs %} 
 
 {% highlight xaml %} 
 
-<syncEffectsView:SfEffectsView RippleAnimationDuration="800">
-</syncEffectsView:SfEffectsView>
+<ContentPage 
+            ...
+            xmlns:effectsView="clr-namespace:Syncfusion.Maui.Toolkit.EffectsView;assembly=Syncfusion.Maui.Toolkit">
+    <ContentPage.Content> 
+	 	<effectsView:SfEffectsView RippleAnimationDuration="800" /> 
+	</ContentPage.Content> 
+</ContentPage>
 
 {% endhighlight %}
 
 {% highlight C# %} 
+
+using Syncfusion.Maui.Toolkit.EffectsView;
 
 var effectsView = new SfEffectsView()
 {
@@ -37,21 +44,28 @@ var effectsView = new SfEffectsView()
 
 ## ScaleAnimationDuration
 
-The [ScaleAnimationDuration](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Core.SfEffectsView.html#Syncfusion_Maui_Core_SfEffectsView_ScaleAnimationDuration) property of [SfEffectsView](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Core.SfEffects.html) is used to customize the duration of scale animation.
+The [ScaleAnimationDuration](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.EffectsView.SfEffectsView.html#Syncfusion_Maui_Toolkit_EffectsView_SfEffectsView_ScaleAnimationDuration) property of [SfEffectsView](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.EffectsView.SfEffects.html) is used to customize the duration of scale animation.
 
 {% tabs %} 
 
 {% highlight xaml %} 
 
-<syncEffectsView:SfEffectsView
-    ScaleAnimationDuration="800"
+<ContentPage 
+            ...
+    xmlns:effectsView="clr-namespace:Syncfusion.Maui.Toolkit.EffectsView;assembly=Syncfusion.Maui.Toolkit">
+    <ContentPage.Content> 
+	 	<effectsView:SfEffectsView 
+        ScaleAnimationDuration="800"
     LongPressEffects="Scale"
-    ScaleFactor="0.85">
-</syncEffectsView:SfEffectsView>
+    ScaleFactor="0.85"/>
+	</ContentPage.Content> 
+</ContentPage>
 
 {% endhighlight %}
 
 {% highlight C# %} 
+
+using Syncfusion.Maui.Toolkit.EffectsView;
 
 var effectsView = new SfEffectsView()
 {
@@ -66,21 +80,28 @@ var effectsView = new SfEffectsView()
 
 ## RotationAnimationDuration
 
-The [RotationAnimationDuration](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Core.SfEffectsView.html#Syncfusion_Maui_Core_SfEffectsView_RotationAnimationDuration) property of [SfEffectsView](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Core.SfEffects.html) is used to customize the duration of rotation animation.
+The [RotationAnimationDuration](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.EffectsView.SfEffectsView.html#Syncfusion_Maui_Toolkit_EffectsView_SfEffectsView_RotationAnimationDuration) property of [SfEffectsView](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.EffectsView.SfEffects.html) is used to customize the duration of rotation animation.
 
 {% tabs %} 
 
 {% highlight xaml %} 
 
-<syncEffectsView:SfEffectsView
+<ContentPage 
+            ...
+    xmlns:effectsView="clr-namespace:Syncfusion.Maui.Toolkit.EffectsView;assembly=Syncfusion.Maui.Toolkit">
+    <ContentPage.Content> 
+	 	<effectsView:SfEffectsView 
     RotationAnimationDuration="800"
     Angle="180"
-    TouchDownEffects="Rotation">
-</syncEffectsView:SfEffectsView>
+    TouchDownEffects="Rotation"/>
+	</ContentPage.Content> 
+</ContentPage>
 
 {% endhighlight %}
 
 {% highlight C# %} 
+
+using Syncfusion.Maui.Toolkit.EffectsView;
 
 var effectsView = new SfEffectsView()
 {
@@ -95,18 +116,25 @@ var effectsView = new SfEffectsView()
 
 ## InitialRippleFactor
 
-The [InitialRippleFactor](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Core.SfEffectsView.html#Syncfusion_Maui_Core_SfEffectsView_InitialRippleFactor) property of [SfEffectsView](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Core.SfEffectsView.html) is used to customize the radius of the ripple when ripple animation starts.
+The [InitialRippleFactor](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.EffectsView.SfEffectsView.html#Syncfusion_Maui_Toolkit_EffectsView_SfEffectsView_InitialRippleFactor) property of [SfEffectsView](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.EffectsView.SfEffectsView.html) is used to customize the radius of the ripple when ripple animation starts.
 
 {% tabs %} 
 
 {% highlight xaml %} 
 
-<syncEffectsView:SfEffectsView InitialRippleFactor="0.1">
-</syncEffectsView:SfEffectsView>
+<ContentPage 
+            ...
+    xmlns:effectsView="clr-namespace:Syncfusion.Maui.Toolkit.EffectsView;assembly=Syncfusion.Maui.Toolkit">
+    <ContentPage.Content> 
+	 	<effectsView:SfEffectsView InitialRippleFactor="0.1"/>
+	</ContentPage.Content> 
+</ContentPage>
 
 {% endhighlight %}
 
 {% highlight C# %} 
+
+using Syncfusion.Maui.Toolkit.EffectsView;
 
 var effectsView = new SfEffectsView
 {
@@ -121,22 +149,29 @@ var effectsView = new SfEffectsView
 
 ## ScaleFactor
 
-The [ScaleFactor](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Core.SfEffectsView.html#Syncfusion_Maui_Core_SfEffectsView_ScaleFactor) property of [SfEffectsView](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Core.SfEffectsView.html) is used to customize the scale of the view.
+The [ScaleFactor](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.EffectsView.SfEffectsView.html#Syncfusion_Maui_Toolkit_EffectsView_SfEffectsView_ScaleFactor) property of [SfEffectsView](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.EffectsView.SfEffectsView.html) is used to customize the scale of the view.
 
 {% tabs %} 
 
 {% highlight xaml %} 
 
- <syncEffectsView:SfEffectsView
+<ContentPage 
+            ...
+    xmlns:effectsView="clr-namespace:Syncfusion.Maui.Toolkit.EffectsView;assembly=Syncfusion.Maui.Toolkit">
+    <ContentPage.Content> 
+	 	<effectsView:SfEffectsView
      ScaleFactor="0.85"
      LongPressEffects="Scale"
      TouchDownEffects="None"
-     TouchUpEffects="None">
- </syncEffectsView:SfEffectsView>
+     TouchUpEffects="None"/>
+	</ContentPage.Content> 
+</ContentPage>
 
 {% endhighlight %}
 
 {% highlight C# %} 
+
+using Syncfusion.Maui.Toolkit.EffectsView;
 
 var effectsView = new SfEffectsView
 {
@@ -154,20 +189,27 @@ var effectsView = new SfEffectsView
 
 ## HighlightBackground
 
-The [HighlightBackground](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Core.SfEffectsView.html#Syncfusion_Maui_Core_SfEffectsView_HighlightBackground) property of [SfEffectsView](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Core.SfEffectsView.html) is used to customize the color of highlight effect.
+The [HighlightBackground](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.EffectsView.SfEffectsView.html#Syncfusion_Maui_Toolkit_EffectsView_SfEffectsView_HighlightBackground) property of [SfEffectsView](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.EffectsView.SfEffectsView.html) is used to customize the color of highlight effect.
 
 {% tabs %} 
 
 {% highlight xaml %} 
 
-<syncEffectsView:SfEffectsView
+<ContentPage 
+            ...
+    xmlns:effectsView="clr-namespace:Syncfusion.Maui.Toolkit.EffectsView;assembly=Syncfusion.Maui.Toolkit">
+    <ContentPage.Content> 
+	 	<effectsView:SfEffectsView
      HighlightBackground="#2196F3"
-     TouchDownEffects="Highlight">
- </syncEffectsView:SfEffectsView>
+     TouchDownEffects="Highlight"/>
+	</ContentPage.Content> 
+</ContentPage>
 
 {% endhighlight %}
 
 {% highlight C# %} 
+
+using Syncfusion.Maui.Toolkit.EffectsView;
 
 var effectsView = new SfEffectsView
 {
@@ -183,18 +225,25 @@ var effectsView = new SfEffectsView
 
 ## RippleBackground
 
-The [RippleBackground](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Core.SfEffectsView.html#Syncfusion_Maui_Core_SfEffectsView_RippleBackground) property of [SfEffectsView](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Core.SfEffectsView.html) is used to customize the color of ripple.
+The [RippleBackground](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.EffectsView.SfEffectsView.html#Syncfusion_Maui_Toolkit_EffectsView_SfEffectsView_RippleBackground) property of [SfEffectsView](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.EffectsView.SfEffectsView.html) is used to customize the color of ripple.
 
 {% tabs %} 
 
 {% highlight xaml %} 
 
-<syncEffectsView:SfEffectsView RippleBackground="#2196F3">
-</syncEffectsView:SfEffectsView>
+<ContentPage 
+            ...
+    xmlns:effectsView="clr-namespace:Syncfusion.Maui.Toolkit.EffectsView;assembly=Syncfusion.Maui.Toolkit">
+    <ContentPage.Content> 
+	 	<effectsView:SfEffectsView RippleBackground="#2196F3"/>
+	</ContentPage.Content> 
+</ContentPage>
 
 {% endhighlight %}
 
 {% highlight C# %} 
+
+using Syncfusion.Maui.Toolkit.EffectsView;
 
 var effectsView = new SfEffectsView
 {
@@ -209,20 +258,27 @@ var effectsView = new SfEffectsView
 
 ## SelectionBackground
 
-The [SelectionBackground](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Core.SfEffectsView.html#Syncfusion_Maui_Core_SfEffectsView_SelectionBackground) property of [SfEffectsView](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Core.SfEffectsView.html) is used to customize the color of selection effect.
+The [SelectionBackground](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.EffectsView.SfEffectsView.html#Syncfusion_Maui_Toolkit_EffectsView_SfEffectsView_SelectionBackground) property of [SfEffectsView](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.EffectsView.SfEffectsView.html) is used to customize the color of selection effect.
 
 {% tabs %} 
 
 {% highlight xaml %} 
 
-<syncEffectsView:SfEffectsView
+<ContentPage 
+            ...
+    xmlns:effectsView="clr-namespace:Syncfusion.Maui.Toolkit.EffectsView;assembly=Syncfusion.Maui.Toolkit">
+    <ContentPage.Content> 
+	 	<effectsView:SfEffectsView
     LongPressEffects="Selection"
-    SelectionBackground="#2196F3">
-</syncEffectsView:SfEffectsView>
+    SelectionBackground="#2196F3"/>
+	</ContentPage.Content> 
+</ContentPage>
 
 {% endhighlight %}
 
 {% highlight C# %} 
+
+using Syncfusion.Maui.Toolkit.EffectsView;
 
 var effectsView = new SfEffectsView
 {
@@ -238,20 +294,27 @@ var effectsView = new SfEffectsView
 
 ## Angle
 
-The [Angle](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Core.SfEffectsView.html#Syncfusion_Maui_Core_SfEffectsView_Angle) property of [SfEffectsView](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Core.SfEffectsView.html?tabs=tabid-1) is used to customize the rotation angle.
+The [Angle](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.EffectsView.SfEffectsView.html#Syncfusion_Maui_Toolkit_EffectsView_SfEffectsView_Angle) property of [SfEffectsView](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.EffectsView.SfEffectsView.html?tabs=tabid-1) is used to customize the rotation angle.
 
 {% tabs %} 
 
 {% highlight xaml %} 
 
-<syncEffectsView:SfEffectsView
+<ContentPage 
+            ...
+    xmlns:effectsView="clr-namespace:Syncfusion.Maui.Toolkit.EffectsView;assembly=Syncfusion.Maui.Toolkit">
+    <ContentPage.Content> 
+	 	<effectsView:SfEffectsView
     Angle="180"
-    TouchDownEffects="Ripple,Rotation">
-</syncEffectsView:SfEffectsView>
+    TouchDownEffects="Ripple,Rotation"/>
+	</ContentPage.Content> 
+</ContentPage>
 
 {% endhighlight %}
 
 {% highlight C# %} 
+
+using Syncfusion.Maui.Toolkit.EffectsView;
 
 var effectsView = new SfEffectsView
 {

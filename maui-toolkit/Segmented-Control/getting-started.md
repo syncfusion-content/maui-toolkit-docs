@@ -3,7 +3,7 @@ layout: post
 title: Getting Started with .NET MAUI Segmented control | Syncfusion
 description: Learn about getting started with Syncfusion .NET MAUI Segmented control (SfSegmentedControl) in mobile and desktop applications from a single shared codebase.
 platform: maui-toolkit
-control: Segmented control (SfSegmented)
+control: Segmented control
 documentation: ug
 ---
 
@@ -100,7 +100,7 @@ In the **MauiProgram.cs** file, register the handler for Syncfusion Toolkit.
 ## Step 4: Add .NET MAUI Segmented Control
 
 1. To initialize the control, import the `Syncfusion.Maui.Toolkit.SegmentedControl` namespace into your code.
-2. Initialize `SfSegmentedControl` class.
+2. Initialize [SfSegmentedControl](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SegmentedControl.SfSegmentedControl.html) class.
 
 {% tabs %}
 {% highlight XAML %}
@@ -135,7 +135,7 @@ public partial class MainPage : ContentPage
 
 ## Step 5: Populating segmented items
 
-You can use `ItemsSource` property of `SfSegmentedControl` to populate the segmented items.
+You can use [ItemsSource](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SegmentedControl.SfSegmentedControl.html#Syncfusion_Maui_Toolkit_SegmentedControl_SfSegmentedControl_ItemsSource ) property of [SfSegmentedControl](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SegmentedControl.SfSegmentedControl.html) to populate the segmented items.
 
 {% tabs %}
 {% highlight XAML %}
