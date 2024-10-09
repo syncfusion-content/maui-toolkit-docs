@@ -40,7 +40,7 @@ var tabItems = new TabItemCollection
 
 The following image shows a tab item with the header text:
 
-![Tab Item Header](images/Tab-Width-Mode-Default.png) 
+![.NET MAUI Tab Item Header](images/Tab-Width-Mode-Default.png) 
 
 ### Image Source 
 
@@ -71,7 +71,7 @@ var tabItems = new TabItemCollection
 
 The following image shows a tab item with an image source:
 
-![Tab Item ImageSource](images/Image-Position-Left.png) 
+![.NET MAUI Tab Item ImageSource](images/Image-Position-Left.png) 
 
 ### Content 
 
@@ -110,7 +110,7 @@ var tabItems = new TabItemCollection
 
 The following image shows a tab item with its content:
 
-![Tab Item Content](images/TabItem_Content.png) 
+![.NET MAUI Tab Item Content](images/TabItem_Content.png) 
 
 ## Image Position Options 
 
@@ -145,7 +145,7 @@ var tabItems = new TabItemCollection
 
 The following image shows the tab item with the image positioned to the top of the text:
 
-![Image Position Top](images/Image-Position-Top.png) 
+![.NET MAUI Image Position Top](images/Image-Position-Top.png) 
 
 ### Bottom
 
@@ -174,7 +174,7 @@ var tabItems = new TabItemCollection
 
 The following image shows the tab item with the image positioned to the bottom of the text:
 
-![Image Position Bottom](images/Image-Position-Bottom.png) 
+![.NET MAUI Image Position Bottom](images/Image-Position-Bottom.png) 
 
 ### Left
 
@@ -203,7 +203,7 @@ var tabItems = new TabItemCollection
 
 The following image shows the tab item with the image positioned to the left of the text:
 
-![Image Position Left](images/Image-Position-Left.png) 
+![.NET MAUI Image Position Left](images/Image-Position-Left.png) 
 
 ### Right
 
@@ -232,7 +232,7 @@ var tabItems = new TabItemCollection
 
 The following image shows the tab item with the image positioned to the right of the text:
 
-![Image Position Right](images/Image-Position-Right.png) 
+![.NET MAUI Image Position Right](images/Image-Position-Right.png) 
 
 ## Image Text Spacing
 
@@ -261,7 +261,7 @@ var tabItems = new TabItemCollection
 
 The following image shows a tab item with the specified image text spacing:
 
-![Image Text Spacing](images/Image-Text-Spacing.png)
+![.NET MAUI Image Text Spacing](images/Image-Text-Spacing.png)
 
 ## Text Color Customization 
 
@@ -290,7 +290,7 @@ var tabItems = new TabItemCollection
 
 The following image shows a tab item with the specified text color:
 
-![Tab Image TextColor](images/TextColor.png) 
+![.NET MAUI Tab Image TextColor](images/TextColor.png) 
 
 ## Font Customization 
 
@@ -323,7 +323,7 @@ var tabItems = new TabItemCollection
 
 The following image shows a tab item with the specified font family:
 
-![TabItem FontFamily](images/FontFamily.png) 
+![.NET MAUI TabItem FontFamily](images/FontFamily.png) 
 
 ### Font Attributes
 
@@ -352,7 +352,7 @@ var tabItems = new TabItemCollection
 
 The following image shows a tab item with the specified font attributes:
 
-![Tab Item FontAttribute](images/FontAttributes.png) 
+![.NET MAUI Tab Item FontAttribute](images/FontAttributes.png) 
 
 ### Font Size
 
@@ -381,7 +381,7 @@ var tabItems = new TabItemCollection
 
 The following image shows a tab item with the specified font size:
 
-![Tab Item FontSize](images/FontSize.png)
+![.NET MAUI Tab Item FontSize](images/FontSize.png)
 
 ## Tab Header Padding
 
@@ -409,7 +409,7 @@ tabView.TabHeaderPadding = new Thickness(5, 10, 5, 10);
 
 The following image shows a tab item with the specified header padding:
 
-![Tab Header Padding](images/TabViewHeaderItem_Padding.png)
+![.NET MAUI Tab Header Padding](images/TabViewHeaderItem_Padding.png)
 
 ## Scroll Buttons on Header
 
@@ -434,7 +434,7 @@ tabView.IsScrollButtonEnabled = true;
 
 The following image shows the tab view with scroll buttons enabled:
 
-![TabView Scroll Mode](images/TabViewScroll.gif) 
+![.NET MAUI Tab View Scroll Mode](images/TabViewScroll.gif) 
 
 ## Font Auto Scaling Enabled
 

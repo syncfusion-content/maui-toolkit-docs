@@ -7,7 +7,7 @@ control: Tab View
 documentation: ug
 ---
 
-# Nested tab in .NET MAUI Tab View (SfTabView)
+# Nested Tabs in .NET MAUI Tab View (SfTabView)
 
 The .NET MAUI Tab View (SfTabView) control supports nested tabs, allowing you to create a hierarchical structure of tab items. You can configure nested tab items in the Tab View using the [Items](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SfTabView.html#Syncfusion_Maui_Toolkit_TabView_SfTabView_Items) property of [SfTabView](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SfTabView.html). This property holds a [TabItemCollection](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.TabItemCollection.html), which can contain multiple [SfTabItem](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SfTabItem.html) instances.
 
@@ -16,7 +16,6 @@ The following example demonstrates how to create nested tabs in the `SfTabView` 
 {% tabs %}
 
 {% highlight xaml %}
-
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="TabViewMauiSample.MainPage"
@@ -94,7 +93,6 @@ The following example demonstrates how to create nested tabs in the `SfTabView` 
         </Grid>
     </ContentPage.Content>
 </ContentPage>
-
 {% endhighlight %}
 
 {% highlight C# %}
@@ -110,7 +108,7 @@ public partial class MainPage : ContentPage
         // Create nested TabView
         SfTabView nestedTabView = new SfTabView();
 
-        // Configure main TabView
+        // Configure main TabView items
         var tabItems = new TabItemCollection
         {
             new SfTabItem()
@@ -143,7 +141,7 @@ public partial class MainPage : ContentPage
         tabView.TabBarBackground = new SolidColorBrush(Color.FromArgb("#FDF8F6"));
         tabView.IndicatorBackground = new SolidColorBrush(Color.FromArgb("#6200EE"));
 
-        // Configure nested TabView
+        // Configure nested TabView items
         var nestedTabItems = new TabItemCollection
         {
             new SfTabItem()
@@ -194,4 +192,4 @@ public partial class MainPage : ContentPage
 
 The following image illustrates the nested tab structure:
 
-![NestedTab](images/Nested_Tab.png)
+![Nested Tabs in .NET MAUI Tab View](images/Nested_Tab.png)
