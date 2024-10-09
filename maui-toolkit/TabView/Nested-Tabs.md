@@ -9,9 +9,9 @@ documentation: ug
 
 # Nested Tabs in .NET MAUI Tab View (SfTabView)
 
-The .NET MAUI Tab View (SfTabView) control supports nested tabs, allowing you to create a hierarchical structure of tab items. You can configure nested tab items in the Tab View using the [Items](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SfTabView.html#Syncfusion_Maui_Toolkit_TabView_SfTabView_Items) property of [SfTabView](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SfTabView.html). This property holds a [TabItemCollection](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.TabItemCollection.html), which can contain multiple [SfTabItem](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SfTabItem.html) instances.
+The .NET MAUI Tab View (SfTabView) control supports nested tabs, allowing you to create a hierarchical structure of tab items. You can configure nested tab items in the tab view using the [Items](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SfTabView.html#Syncfusion_Maui_Toolkit_TabView_SfTabView_Items) property of [SfTabView](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SfTabView.html). This property holds a [TabItemCollection](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.TabItemCollection.html), which can contain multiple [SfTabItem](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SfTabItem.html) instances.
 
-The following example demonstrates how to create nested tabs in the `SfTabView` control. In this sample, we will create a main tab view with three tabs: "Photos", "Collections", and "Explore". The "Photos" tab will contain a nested tab view with four sub-tabs: "Camera", "Video", "Screenshots", and "Wallpaper".
+The following example demonstrates how to create nested tabs in the `SfTabView` control. In this sample, we will create a main tab view with three tabs: **Photos**, **Collections**, and **Explore**. The **Photos** tab will contain a nested tab view with four sub-tabs: **Camera**, **Video**, **Screenshots**, and **Wallpaper**.
 
 {% tabs %}
 
@@ -102,13 +102,13 @@ public partial class MainPage : ContentPage
     {
         InitializeComponent();
 
-        // Create main TabView
+        // Create main tab view
         SfTabView tabView = new SfTabView();
 
-        // Create nested TabView
+        // Create nested tab view
         SfTabView nestedTabView = new SfTabView();
 
-        // Configure main TabView items
+        // Configure main tab view items
         var tabItems = new TabItemCollection
         {
             new SfTabItem()
@@ -141,7 +141,7 @@ public partial class MainPage : ContentPage
         tabView.TabBarBackground = new SolidColorBrush(Color.FromArgb("#FDF8F6"));
         tabView.IndicatorBackground = new SolidColorBrush(Color.FromArgb("#6200EE"));
 
-        // Configure nested TabView items
+        // Configure nested tab view items
         var nestedTabItems = new TabItemCollection
         {
             new SfTabItem()

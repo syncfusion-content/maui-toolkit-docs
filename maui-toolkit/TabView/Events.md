@@ -11,7 +11,7 @@ documentation: ug
 
 This section provides information about the events available in the .NET MAUI Tab View control.
 
-## Tab Item Tapped event
+## Tab Item tapped event
 
 The [TabItemTapped](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SfTabView.html#Syncfusion_Maui_Toolkit_TabView_SfTabView_TabItemTapped) event will be triggered whenever tapping the Tab.The [TabItemTappedEventArgs](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.TabItemTappedEventArgs.html) provides the following properties:
 
@@ -46,7 +46,7 @@ private void TabView_TabItemTapped(object? sender, TabItemTappedEventArgs e)
 
 {% endtabs %}
 
-## Selection Changing event
+## Selection changing event
 
 The [SelectionChanging](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SfTabView.html#Syncfusion_Maui_Toolkit_TabView_SfTabView_SelectionChanging) event notifies before the selection changes, tapping the tab header, and dynamically setting the [SelectedIndex](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SfTabView.html?tabs=tabid-1#Syncfusion_Maui_Toolkit_TabView_SfTabView_SelectedIndex) property of SfTabView. The [SelectionChangingEventArgs](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SelectionChangingEventArgs.html) provides the following properties:
 
@@ -78,7 +78,7 @@ private void TabView_SelectionChanging(object? sender, SelectionChangingEventArg
 
 {% endtabs %}
 
-## Selection Changed event
+## Selection changed event
 
 The [SelectionChanged](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SfTabView.html#Syncfusion_Maui_Toolkit_TabView_SfTabView_SelectionChanged) event is used to notify when the selection is changed by swiping or dynamically setting the [SelectedIndex](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SfTabView.html?tabs=tabid-1#Syncfusion_Maui_Toolkit_TabView_SfTabView_SelectedIndex) property of SfTabView. The [TabSelectionChangedEventArgs](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.TabSelectionChangedEventArgs.html) provides the following properties:
 

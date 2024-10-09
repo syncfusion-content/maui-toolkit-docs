@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Header display mode in .NET MAUI Tab View control | Syncfusion
-description: Learn here all about header display mode support in Syncfusion .NET MAUI Tab View (SfTabView) control and more.
+description: Learn about header display mode support in Syncfusion .NET MAUI Tab View (SfTabView) control and more.
 platform: maui-toolkit
 control: TabView
 documentation: ug
@@ -9,15 +9,17 @@ documentation: ug
 
 # Header display mode in .NET MAUI Tab View control (SfTabView)
 
-By default, the [.NET MAUI Tab View](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SfTabView.html) control displays the title of each Tab Item. It can be changed to any of the following types:
+By default, the [Tab View](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SfTabView.html) control displays the title of each Tab Item. This display can be customized to any of the following types:
 
 * Default
 * Image
 * Text
 
-![Image for HeaderDisplayMode](images/Header-Display-Mode.png)
+![.NET MAUI TabView header display modes](images/Header-Display-Mode.png)
 
-The Tab View can be changed by setting the [HeaderDisplayMode](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SfTabView.html#Syncfusion_Maui_Toolkit_TabView_SfTabView_HeaderDisplayMode) property of [.NET MAUI Tab View](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.html).
+You can change the tab view's header display mode by setting the [HeaderDisplayMode](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SfTabView.html#Syncfusion_Maui_Toolkit_TabView_SfTabView_HeaderDisplayMode) property of the [Tab View](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.html).
+
+Below are examples of how to use this property in XAML and C#:
 
 {% tabs %}
 
@@ -60,5 +62,4 @@ tabView.Items.Add(tabItem3);
 
 {% endtabs %}
 
-N> The [HeaderDisplayMode](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SfTabView.html#Syncfusion_Maui_Toolkit_TabView_SfTabView_HeaderDisplayMode) will only apply if both a [Header](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SfTabItem.html#Syncfusion_Maui_Toolkit_TabView_SfTabItem_Header) and an [ImageSource](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SfTabItem.html#Syncfusion_Maui_Toolkit_TabView_SfTabItem_ImageSource) are provided for the Tab Item. If either the [Header](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SfTabItem.html#Syncfusion_Maui_Toolkit_TabView_SfTabItem_Header) or [ImageSource](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SfTabItem.html#Syncfusion_Maui_Toolkit_TabView_SfTabItem_ImageSource) is missing, the Tab Item will automatically apply the Default mode.
-
+N> The [HeaderDisplayMode](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SfTabView.html#Syncfusion_Maui_Toolkit_TabView_SfTabView_HeaderDisplayMode) property will only apply if both a [Header](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SfTabItem.html#Syncfusion_Maui_Toolkit_TabView_SfTabItem_Header) and an [ImageSource](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SfTabItem.html#Syncfusion_Maui_Toolkit_TabView_SfTabItem_ImageSource) are provided for the tab item. If either the [Header](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SfTabItem.html#Syncfusion_Maui_Toolkit_TabView_SfTabItem_Header) or [ImageSource](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SfTabItem.html#Syncfusion_Maui_Toolkit_TabView_SfTabItem_ImageSource) is missing, the tab item will automatically apply the default mode.
