@@ -19,12 +19,19 @@ The [TouchDownEffects](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Ma
 
 {% highlight xaml %} 
 
-<syncEffectsView:SfEffectsView TouchDownEffects="Ripple">
-</syncEffectsView:SfEffectsView>
+<ContentPage 
+    ...
+    xmlns:effectsView="clr-namespace:Syncfusion.Maui.Toolkit.EffectsView;assembly=Syncfusion.Maui.Toolkit">
+    <ContentPage.Content> 
+	 	<effectsView:SfEffectsView TouchDownEffects="Ripple"/>
+	</ContentPage.Content> 
+</ContentPage>
 
 {% endhighlight %}
 
 {% highlight C# %} 
+
+using Syncfusion.Maui.Toolkit.EffectsView;
 
 var effectsView = new SfEffectsView
 {
@@ -43,12 +50,19 @@ The [LongPressEffects](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Ma
 
 {% highlight xaml %} 
 
-<syncEffectsView:SfEffectsView LongPressEffects="Ripple">
-</syncEffectsView:SfEffectsView>
+<ContentPage 
+    ...
+    xmlns:effectsView="clr-namespace:Syncfusion.Maui.Toolkit.EffectsView;assembly=Syncfusion.Maui.Toolkit">
+    <ContentPage.Content> 
+	 	<effectsView:SfEffectsView LongPressEffects="Ripple"/>
+	</ContentPage.Content> 
+</ContentPage>
 
 {% endhighlight %}
 
 {% highlight C# %} 
+
+using Syncfusion.Maui.Toolkit.EffectsView;
 
 var effectsView = new SfEffectsView
 {
@@ -67,12 +81,19 @@ The [TouchUpEffects](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui
 
 {% highlight xaml %} 
 
-<syncEffectsView:SfEffectsView TouchUpEffects="Ripple">
-</syncEffectsView:SfEffectsView>
+<ContentPage 
+    ...
+    xmlns:effectsView="clr-namespace:Syncfusion.Maui.Toolkit.EffectsView;assembly=Syncfusion.Maui.Toolkit">
+    <ContentPage.Content> 
+	 	<effectsView:SfEffectsView TouchUpEffects="Ripple"/>
+	</ContentPage.Content> 
+</ContentPage>
 
 {% endhighlight %}
 
 {% highlight C# %} 
+
+using Syncfusion.Maui.Toolkit.EffectsView;
 
 var effectsView = new SfEffectsView
 {
