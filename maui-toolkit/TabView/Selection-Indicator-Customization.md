@@ -7,15 +7,15 @@ control: Tab View
 documentation: ug
 ---
 
-# Customize the Selection Indicator in .NET MAUI Tab View (SfTabView)
+# Customize the selection indicator in .NET MAUI Tab View (SfTabView)
 
 ## Placement options
 
-The .NET MAUI Tab View provides three options for determining how selection indicator aligns relative to the tab header item. The options are top, bottom, and fill. This can be done by setting the [IndicatorPlacement](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SfTabView.html#Syncfusion_Maui_Toolkit_TabView_SfTabView_IndicatorPlacement) property of SfTabView.
+The .NET MAUI Tab View provides three options for aligning the selection indicator relative to the tab header item: top, bottom, and fill. You can set the alignment by configuring the [IndicatorPlacement](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SfTabView.html#Syncfusion_Maui_Toolkit_TabView_SfTabView_IndicatorPlacement) property.
 
 ### Top
 
-The indicator will be placed at the top of the selected tab.
+The selection indicator will be positioned at the top of the selected tab. You can set this using the `IndicatorPlacement` property, as shown in the following code snippets:
 
 {% tabs %}
 
@@ -30,11 +30,13 @@ tabView.IndicatorPlacement = TabIndicatorPlacement.Top;
 
 {% endtabs %}
 
-![Tab Image Position Top.](images/Selection-Indicator-placement-Top.png) 
+The following image shows the selection indicator placed at the top of the tab header:
+
+![.NET MAUI TabView Indicator Placement Top](images/Selection-Indicator-placement-Top.png) 
 
 ### Bottom
 
-The indicator will be placed at the bottom of the selected tab.
+The selection indicator will be positioned at the bottom of the selected tab. You can set this using the `IndicatorPlacement` property, as shown in the following code snippets:
 
 {% tabs %}
 
@@ -49,11 +51,13 @@ tabView.IndicatorPlacement = TabIndicatorPlacement.Bottom;
 
 {% endtabs %}
 
-![Tab Image Position Bottom.](images/Selection-Indicator-placement-Bottom.png) 
+The following image shows the selection indicator placed at the bottom of the tab header:
+
+![.NET MAUI TabView Indicator Placement Bottom](images/Selection-Indicator-placement-Bottom.png) 
 
 ### Fill
 
-The indicator will fill the selected tab.
+The selection indicator will fill the selected tab. You can set this using the `IndicatorPlacement` property, as shown in the following code snippets:
 
 {% tabs %}
 
@@ -68,15 +72,17 @@ tabView.IndicatorPlacement = TabIndicatorPlacement.Fill;
 
 {% endtabs %}
 
-![Tab Image Position Fill.](images/Selection-Indicator-placement-Fill.png) 
+The following image shows the selection indicator filling the entire tab header:
 
-## Background Customization
+![.NET MAUI TabView Indicator Placement Fill](images/Selection-Indicator-placement-Fill.png) 
 
-The background of the indicator can be customized using the [IndicatorBackground](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SfTabView.html#Syncfusion_Maui_Toolkit_TabView_SfTabView_IndicatorBackground) property of SfTabView.
+## Background customization
 
-### Solid Color 
+The background of the indicator can be customized using the [IndicatorBackground](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SfTabView.html#Syncfusion_Maui_Toolkit_TabView_SfTabView_IndicatorBackground) property of `SfTabView`.
 
-The SolidColorBrush class defines the color property of [IndicatorBackground](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SfTabView.html#Syncfusion_Maui_Toolkit_TabView_SfTabView_IndicatorBackground), which represents the color of the selection indicator background.
+### Solid color 
+
+You can customize the selection indicator's background color using the [`IndicatorBackground`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SfTabView.html#Syncfusion_Maui_Toolkit_TabView_SfTabView_IndicatorBackground) property of `SfTabView`. Below are examples of how to set a solid background color using this property in XAML and C#:
 
 {% tabs %}
 
@@ -86,16 +92,18 @@ The SolidColorBrush class defines the color property of [IndicatorBackground](ht
 
 {% highlight C# %}
 SfTabView tabView = new SfTabView();
-tabView.TabBarBackground = Colors.LightBlue;
+tabView.IndicatorBackground = Colors.LightBlue;
 {% endhighlight %}
 
 {% endtabs %}
 
-![Selection Indicator Background.](images/Selection-Indicator-background.png) 
+The following image shows the selection indicator background customization:
 
-### Gradient Color 
+![.NET MAUI TabView Selection Indicator Background](images/Selection-Indicator-background.png) 
 
-The background can be customized with a linear gradient and radial gradient as like below example.
+### Gradient color 
+
+You can customize the selection indicator's background using linear or radial gradients. Below are examples of how to apply these gradients:
 
 {% tabs %}
 {% highlight xaml %}
@@ -133,11 +141,17 @@ tabView.IndicatorBackground = gradientBrush;
 {% endhighlight %}
 {% endtabs %}
 
-![Selection Indicator Gradient](images/Selection-Indicator-gradient-background.png) 
+The following image shows the selection indicator with a gradient background:
 
-## Indicator Width Mode
+![.NET MAUI TabView Selection Indicator Gradient](images/Selection-Indicator-gradient-background.png) 
 
-The [IndicatorWidthMode](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SfTabView.html#Syncfusion_Maui_Toolkit_TabView_SfTabView_IndicatorWidthMode) property allows customization of the width of the indicator. By default, the `IndicatorWidthMode` property is set to [Fit](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.IndicatorWidthMode.html#Syncfusion_Maui_Toolkit_TabView_IndicatorWidthMode_Fit), which adjusts the indicator width to fit the content of the header item. You can change the width size based on the header item by setting the `IndicatorWidthMode` property to [Stretch](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.IndicatorWidthMode.html#Syncfusion_Maui_Toolkit_TabView_IndicatorWidthMode_Stretch).
+## Indicator width modes
+
+The [IndicatorWidthMode](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SfTabView.html#Syncfusion_Maui_Toolkit_TabView_SfTabView_IndicatorWidthMode) property allows you to customize the width of the selection indicator. By default, this property is set to [Fit](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.IndicatorWidthMode.html#Syncfusion_Maui_Toolkit_TabView_IndicatorWidthMode_Fit), which adjusts the indicator width to fit the content of the header item. You can change the width to stretch across the entire header item by setting the `IndicatorWidthMode` property to [Stretch](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.IndicatorWidthMode.html#Syncfusion_Maui_Toolkit_TabView_IndicatorWidthMode_Stretch).
+
+### Fit mode
+
+In Fit mode, the indicator width adjusts to fit the content of the header item. The following examples demonstrate how to set the `IndicatorWidthMode` property to `Fit`:
 
 {% tabs %}
 
@@ -152,7 +166,13 @@ The [IndicatorWidthMode](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.
 
 {% endtabs %}
 
-![Selection Indicator Background.](images/IndicatorWidthMode_Fit.png) 
+The following image shows the selection indicator with the width mode set to `Fit`:
+
+![.NET MAUI TabView Selection Indicator Background](images/IndicatorWidthMode_Fit.png) 
+
+### Stretch mode
+
+In Stretch mode, the indicator width stretches to cover the entire header item. The following examples demonstrate how to set the `IndicatorWidthMode` property to `Stretch`:
 
 {% tabs %}
 
@@ -167,10 +187,13 @@ The [IndicatorWidthMode](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.
 
 {% endtabs %}
 
-![Selection Indicator Background.](images/IndicatorWidthMode_Stretch.png) 
+The following image shows the selection indicator with the width mode set to `Stretch`:
 
-## Indicator's corner radius
-You can customize the corner radius of the selection indicator using the [IndicatorCornerRadius](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SfTabView.html#Syncfusion_Maui_Toolkit_TabView_SfTabView_IndicatorCornerRadius) property in the Tab View.
+![.NET MAUI TabView Selection Indicator Background](images/IndicatorWidthMode_Stretch.png) 
+
+## Indicator corner radius
+
+You can customize the corner radius of the selection indicator using the [IndicatorCornerRadius](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SfTabView.html#Syncfusion_Maui_Toolkit_TabView_SfTabView_IndicatorCornerRadius) property in the `SfTabView`.
 
 {% tabs %}
 
@@ -185,4 +208,6 @@ You can customize the corner radius of the selection indicator using the [Indica
 
 {% endtabs %} 
 
-![Selection Indicator Corner Radius.](images/IndicatorCornerRadius.png) 
+The following image shows the selection indicator with the corner radius:
+
+![.NET MAUI TabView Selection Indicator Corner Radius](images/IndicatorCornerRadius.png) 

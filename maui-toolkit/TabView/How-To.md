@@ -11,7 +11,7 @@ documentation: ug
 
 ## Programmatically select the tab item
 
-Using the [SelectedIndex](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SfTabView.html#Syncfusion_Maui_Toolkit_TabView_SfTabView_SelectedIndex) property of SfTabView, we can programmatically select the tab item as like in the below code snippet.
+You can programmatically select a tab item using the [SelectedIndex](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SfTabView.html#Syncfusion_Maui_Toolkit_TabView_SfTabView_SelectedIndex) property of `SfTabView`, as shown in the following code snippet.
 
 {% tabs %}
 
@@ -25,11 +25,13 @@ Using the [SelectedIndex](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion
 {% endhighlight %}
 {% endtabs %}
 
-![SelectedIndex in SfTabView](images/SelectedIndexTabView.png)
+The following image shows the tab item selected programmatically using the `SelectedIndex` property:
 
-## Get the selected tab item using IsSelected
+![Tab item selected programmatically in .NET MAUI TabView](images/SelectedIndexTabView.png)
 
-Indicates whether the tab item is active or not. This property can be used to get selected item of tab view as like below code snippet.
+## Get the selected tab item
+
+The [IsSelected](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SfTabItem.html#Syncfusion_Maui_Toolkit_TabView_SfTabItem_IsSelected) property indicates whether a tab item is active. You can use this property to determine the selected item in the tab view, as shown in the following code snippet.
 
 {% tabs %}
 
@@ -44,8 +46,8 @@ Indicates whether the tab item is active or not. This property can be used to ge
     private void TabView_SelectionIndexChanged(object sender, TabSelectionChangedEventArgs e)
     {
 		SfTabItem tabItem = tabView.Items[e.NewIndex];
-		bool itemSelection = tabItem.IsSelected;
-		if (itemSelection)
+		bool isTabItemSelected = tabItem.IsSelected;
+		if (isTabItemSelected)
 		{
 			tabItem.FontSize = 26;
 		}
@@ -55,4 +57,6 @@ Indicates whether the tab item is active or not. This property can be used to ge
 
 {% endtabs %}
 
-![IsSelected TabItem](images/SelectedIndex.png)
+The following image shows a tab item selected in the .NET MAUI TabView:
+
+![Selected tab item in .NET MAUI TabView](images/SelectedIndex.png)
