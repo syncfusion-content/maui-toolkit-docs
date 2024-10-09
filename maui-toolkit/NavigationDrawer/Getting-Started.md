@@ -39,12 +39,12 @@ Before proceeding, ensure the following are set up:
 
 ## Step 2: Install the Syncfusion MAUI Toolkit Package
 
-### Visual Studio:
+### Visual Studio
 1. In **Solution Explorer,** right-click the project and choose **Manage NuGet Packages.**
 2. Search for [Syncfusion.Maui.Toolkit](https://www.nuget.org/packages/Syncfusion.Maui.Toolkit/) and install the latest version.
 3. Ensure the necessary dependencies are installed correctly, and the project is restored.
 
-### Visual Studio Code:
+### Visual Studio Code
 1. Press <kbd>Ctrl</kbd> + <kbd>`</kbd> (backtick) to open the integrated terminal in Visual Studio Code.
 2. Ensure you're in the project root directory where your .csproj file is located.
 3. Run the following command to install the Syncfusion .NET MAUI Toolkit NuGet package:
@@ -59,7 +59,7 @@ Before proceeding, ensure the following are set up:
 
 {% endtabs %}
 
-4. To ensure all dependencies are installed, run:
+4.To ensure all dependencies are installed, run:
 
 {% tabs %}
 
