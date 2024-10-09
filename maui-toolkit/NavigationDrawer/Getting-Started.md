@@ -59,7 +59,7 @@ Before proceeding, ensure the following are set up:
 
 {% endtabs %}
 
-4. To ensure all dependencies are installed, run:
+4.To ensure all dependencies are installed, run:
 
 {% tabs %}
 
