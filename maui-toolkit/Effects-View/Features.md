@@ -19,14 +19,21 @@ By enabling the [FadeOutRipple](https://help.syncfusion.com/cr/maui-toolkit/Sync
 
 {% highlight xaml %} 
 
-    <syncEffectsView:SfEffectsView
-    FadeOutRipple="True"
-    RippleAnimationDuration="1000">
-    </syncEffectsView:SfEffectsView>
+<ContentPage 
+    ...
+    xmlns:effectsView="clr-namespace:Syncfusion.Maui.Toolkit.EffectsView;assembly=Syncfusion.Maui.Toolkit">
+    <ContentPage.Content> 
+	 	<effectsView:SfEffectsView
+    				 FadeOutRipple="True"
+    				 RippleAnimationDuration="1000"/>
+	</ContentPage.Content> 
+</ContentPage>
 
 {% endhighlight %}
 
 {% highlight C# %} 
+
+using Syncfusion.Maui.Toolkit.EffectsView;
 
      var effectsView = new SfEffectsView
     {
@@ -48,13 +55,19 @@ Enabling the [IsSelected](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion
 
 {% highlight xaml %} 
 
-    <syncEffectsView:SfEffectsView
-    IsSelected="true">
-    </syncEffectsView:SfEffectsView>
+<ContentPage 
+    ...
+    xmlns:effectsView="clr-namespace:Syncfusion.Maui.Toolkit.EffectsView;assembly=Syncfusion.Maui.Toolkit">
+    <ContentPage.Content> 
+	 	<effectsView:SfEffectsView IsSelected="true"/>
+	</ContentPage.Content> 
+</ContentPage>
 
 {% endhighlight %}
 
 {% highlight C# %} 
+
+using Syncfusion.Maui.Toolkit.EffectsView;
 
     var effectsView = new SfEffectsView
     {
@@ -73,12 +86,20 @@ Enabling the [ShouldIgnoreTouches](https://help.syncfusion.com/cr/maui-toolkit/S
 
 {% highlight xaml %} 
 
-     <syncEffectsView:SfEffectsView ShouldIgnoreTouches="true">
-     </syncEffectsView:SfEffectsView>
+<ContentPage 
+    ...
+    xmlns:effectsView="clr-namespace:Syncfusion.Maui.Toolkit.EffectsView;assembly=Syncfusion.Maui.Toolkit">
+    <ContentPage.Content> 
+	 	<effectsView:SfEffectsView
+    				 ShouldIgnoreTouches="true"/>
+	</ContentPage.Content> 
+</ContentPage>
 
 {% endhighlight %}
 
 {% highlight C# %} 
+
+using Syncfusion.Maui.Toolkit.EffectsView;
 
     var effectsView = new SfEffectsView
     {

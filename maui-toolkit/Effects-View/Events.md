@@ -17,14 +17,21 @@ The [AnimationCompleted](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.
 
 {% highlight xaml %} 
 
-    <syncEffectsView:SfEffectsView
+<ContentPage 
+    ...
+    xmlns:effectsView="clr-namespace:Syncfusion.Maui.Toolkit.EffectsView;assembly=Syncfusion.Maui.Toolkit">
+    <ContentPage.Content> 
+	 	<effectsView:SfEffectsView
     TouchDownEffects="Ripple"
-    AnimationCompleted="AnimationCompleted">
-    </syncEffectsView:SfEffectsView>
+    AnimationCompleted="AnimationCompleted"/>
+	</ContentPage.Content> 
+</ContentPage>
   
 {% endhighlight %}
 
 {% highlight C# %} 
+
+using Syncfusion.Maui.Toolkit.EffectsView;
 
     public partial class MainPage : ContentPage
     {
@@ -63,16 +70,23 @@ The [SelectionChanged](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Ma
 
 {% highlight xaml %} 
 
-<syncEffectsView:SfEffectsView
+<ContentPage 
+    ...
+    xmlns:effectsView="clr-namespace:Syncfusion.Maui.Toolkit.EffectsView;assembly=Syncfusion.Maui.Toolkit">
+    <ContentPage.Content> 
+	 	<effectsView:SfEffectsView
     LongPressEffects="Selection"
     SelectionChanged="SelectionChanged"
     TouchDownEffects="None"
-    TouchUpEffects="None">
-</syncEffectsView:SfEffectsView>
-  
+    TouchUpEffects="None"/>
+	</ContentPage.Content> 
+</ContentPage>
+
 {% endhighlight %}
 
 {% highlight C# %} 
+
+using Syncfusion.Maui.Toolkit.EffectsView;
 
 public partial class MainPage : ContentPage
 {
