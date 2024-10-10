@@ -175,6 +175,7 @@ To load more items programmatically, the [LoadMore](https://help.syncfusion.com/
 <StackLayout>
     <carousel:SfCarousel x:Name="carousel"
                          ItemsSource="{Binding ImageCollection}"
+                         ItemTemplate="{StaticResource itemTemplate}"
                          ViewMode="Default"
                          LoadMoreItemsCount="2" />
     <Button Text="LoadMore Method" 

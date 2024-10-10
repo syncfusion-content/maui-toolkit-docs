@@ -17,6 +17,7 @@ The Carousel items can be populated in the view in a stacked linear layout by se
 
 <carousel:SfCarousel x:Name="carousel"  
                      ItemsSource="{Binding ImageCollection}" 
+                     ItemTemplate="{StaticResource itemTemplate}"
                      ViewMode="Linear"/>
 	
 {% endhighlight %}
@@ -25,6 +26,7 @@ The Carousel items can be populated in the view in a stacked linear layout by se
 
 SfCarousel carousel = new SfCarousel();
 carousel.SetBinding(SfCarousel.ItemsSourceProperty, "ImageCollection");
+carousel.ItemTemplate = itemTemplate;
 carousel.ViewMode = ViewMode.Linear;
 
 {% endhighlight %}
