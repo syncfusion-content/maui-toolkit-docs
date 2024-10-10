@@ -11,7 +11,7 @@ documentation: ug
 
 ## Built-in types
 
-Syncfusion [.NET MAUI Shimmer](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Shimmer.SfShimmer.html?tabs=tabid-1%2Ctabid-5%2Ctabid-3%2Ctabid-7%2Ctabid-17%2Ctabid-13%2Ctabid-9%2Ctabid-15%2Ctabid-11) (SfShimmer) control provides seven built-in shimmer view types such as CirclePersona, SquarePersona, Profile, Article, Video, Feed, and Shopping.
+Syncfusion [.NET MAUI Shimmer](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Shimmer.SfShimmer.html) (SfShimmer) control provides seven built-in shimmer view types such as CirclePersona, SquarePersona, Profile, Article, Video, Feed, and Shopping.
 
    ![Types of view in .NET MAUI Shimmer.](images/overview/maui-multiple-shimmer-views.gif)
 
