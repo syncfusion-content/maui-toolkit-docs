@@ -69,23 +69,25 @@ In the **MauiProgram.cs file**, register the handler for Syncfusion Toolkit.
 
 {% highlight c# hl_lines="1 10" %}
 
-    using Syncfusion.Maui.Toolkit.Hosting;
-    public static class MauiProgram
-    {
-        public static MauiApp CreateMauiApp()
-        {
-            var builder = MauiApp.CreateBuilder();
-            builder
-            .UseMauiApp<App>()
-            .ConfigureSyncfusionToolkit()
-            .ConfigureFonts(fonts =>
-            {
-                fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
-            });
+using Syncfusion.Maui.Toolkit.Hosting;
 
-            return builder.Build();
-        }      
-    }
+public static class MauiProgram
+{
+
+	public static MauiApp CreateMauiApp()
+	{
+		var builder = MauiApp.CreateBuilder();
+		builder
+		.UseMauiApp<App>()
+		.ConfigureSyncfusionToolkit()
+		.ConfigureFonts(fonts =>
+		{
+			fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
+		});
+
+		return builder.Build();
+	}      
+}
    
 {% endhighlight %} 
 
