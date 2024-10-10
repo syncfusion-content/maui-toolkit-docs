@@ -71,8 +71,8 @@ In the **MauiProgram.cs file**, register the handler for Syncfusion Toolkit.
 
 using Syncfusion.Maui.Toolkit.Hosting;
 
-    public static class MauiProgram
-    {
+public static class MauiProgram
+{
         public static MauiApp CreateMauiApp()
         {
             var builder = MauiApp.CreateBuilder();
@@ -86,7 +86,7 @@ using Syncfusion.Maui.Toolkit.Hosting;
 
             return builder.Build();
         }      
-    }
+}
    
 {% endhighlight %} 
 
