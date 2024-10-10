@@ -16,37 +16,37 @@ This section guides you through setting up and configuring a [Text Input Layout]
 
 Before proceeding, ensure the following are in place:
 
-1. Install [.NET 8 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/8.0) or later.
-2. Set up a .NET MAUI environment with Visual Studio 2022 (v17.8 or later) or Visual Studio Code. For Visual Studio Code users, ensure that the .NET MAUI workload is installed and configured as described [here](https://learn.microsoft.com/en-us/dotnet/maui/get-started/installation?view=net-maui-8.0&tabs=visual-studio-code).
+ 1. Install [.NET 8 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/8.0) or later.
+ 2. Set up a .NET MAUI environment with Visual Studio 2022 (v17.8 or later) or Visual Studio Code. For Visual Studio Code users, ensure that the .NET MAUI workload is installed and configured as described [here](https://learn.microsoft.com/en-us/dotnet/maui/get-started/installation?view=net-maui-8.0&tabs=visual-studio-code).
 
 ## Step 1: Create a New MAUI Project
 
 ### Visual Studio
 
-1. Go to **File > New > Project** and choose the **.NET MAUI App** template.
-2. Name the project and choose a location. Then, click **Next**.
-3. Select the .NET framework version and click **Create**.
+ 1. Go to **File > New > Project** and choose the **.NET MAUI App** template.
+ 2. Name the project and choose a location. Then, click **Next**.
+ 3. Select the .NET framework version and click **Create**.
 
 ### Visual Studio Code
 
-1. Open the Command Palette by pressing **Ctrl+Shift+P** and type **.NET:New Project** and press Enter.
-2. Choose the **.NET MAUI App** template.
-3. Select the project location, type the project name and press Enter.
-4. Then choose **Create project**
+ 1. Open the Command Palette by pressing **Ctrl+Shift+P** and type **.NET:New Project** and press Enter.
+ 2. Choose the **.NET MAUI App** template.
+ 3. Select the project location, type the project name and press Enter.
+ 4. Then choose **Create project**
 
 ## Step 2: Install the Syncfusion MAUI Toolkit NuGet Package
 
 ### Visual Studio
 
-1. In **Solution Explorer**, right-click the project and choose **Manage NuGet Packages**.
-2. Search for [Syncfusion.Maui.Toolkit](https://www.nuget.org/packages/Syncfusion.Maui.Toolkit/) and install the latest version.
-3. Ensure the necessary dependencies are installed correctly, and the project is restored.
+ 1. In **Solution Explorer**, right-click the project and choose **Manage NuGet Packages**.
+ 2. Search for [Syncfusion.Maui.Toolkit](https://www.nuget.org/packages/Syncfusion.Maui.Toolkit/) and install the latest version.
+ 3. Ensure the necessary dependencies are installed correctly, and the project is restored.
 
 ### Visual Studio Code
 
-1. Press <kbd>Ctrl</kbd> + <kbd>`</kbd> (backtick) to open the integrated terminal in Visual Studio Code.
-2. Ensure you're in the project root directory where your `.csproj` file is located.
-3. Run the following command to install the Syncfusion MAUI Toolkit NuGet package:
+ 1. Press <kbd>Ctrl</kbd> + <kbd>`</kbd> (backtick) to open the integrated terminal in Visual Studio Code.
+ 2. Ensure you're in the project root directory where your `.csproj` file is located.
+ 3. Run the following command to install the Syncfusion MAUI Toolkit NuGet package:
 
 {% tabs %}
 {% highlight sh %}
@@ -56,7 +56,7 @@ Before proceeding, ensure the following are in place:
 {% endhighlight %}
 {% endtabs %}
 
-4. To ensure all dependencies are installed, run:
+ 4. To ensure all dependencies are installed, run:
 
 {% tabs %}
 {% highlight sh %}
@@ -72,26 +72,25 @@ In the **MauiProgram.cs file**, register the handler for Syncfusion Toolkit.
 
 {% tabs %}
 {% highlight C# tabtitle="MauiProgram.cs" hl_lines="1 9" %}    
-    using Syncfusion.Maui.Toolkit.Hosting;
+using Syncfusion.Maui.Toolkit.Hosting;
 
-    public static class MauiProgram
-    {
-	    public static MauiApp CreateMauiApp()
-	    {
-	        var builder = MauiApp.CreateBuilder();
-		    builder
-			    .ConfigureSyncfusionToolkit()
-			    .UseMauiApp<App>()
-			    .ConfigureFonts(fonts =>
-			    {
-				    fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
-				    fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
-			    });
+public static class MauiProgram
+{
+	public static MauiApp CreateMauiApp()
+	{
+	    var builder = MauiApp.CreateBuilder();
+		builder
+			.ConfigureSyncfusionToolkit()
+			.UseMauiApp<App>()
+			.ConfigureFonts(fonts =>
+			{
+				fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
+				fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
+			});
 
-		    return builder.Build();
-	    }
-    }
-
+		return builder.Build();
+	}
+}
 {% endhighlight %}
 {% endtabs %}
 
@@ -171,7 +170,7 @@ When focusing on the input view, the hint label will be moved to the top positio
 
 Run the project, and check if you get the following output to ensure that the project has been appropriately configured to add the text input layout control.
 
-![Adding hint](images/GettingStarted/GettingStarted.png)
+![Hint text in .NET MAUI TextInputLayout.](images/GettingStarted/GettingStarted.png)
 
 ## Enabling password visibility toggle
 
@@ -199,6 +198,6 @@ inputLayout.Content = new Entry() { Text = "1234" };
 
 {% endtabs %}
 
-![Enable password toggling image](images/GettingStarted/PasswordGettingStarted.png)
+![Password toggle button in .NET MAUI TextInputLayout.](images/GettingStarted/PasswordGettingStarted.png)
 
 N> Password visibility toggle can be enabled only for [Entry](https://learn.microsoft.com/en-us/dotnet/maui/user-interface/controls/entry) control.
