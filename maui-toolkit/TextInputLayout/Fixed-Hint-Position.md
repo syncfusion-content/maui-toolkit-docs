@@ -24,9 +24,10 @@ The hint label position of the input view will be set always at the top for the 
 {% highlight xaml %} 
 
 <inputLayout:SfTextInputLayout Hint="Name"
-                               IsHintAlwaysFloated="true" 
-                               ContainerType="Filled">
-        <Entry />
+                       IsHintAlwaysFloated="true" 
+                       ContainerType="Outlined"
+                       HelperText="Enter your name">
+    <Entry />
 </inputLayout:SfTextInputLayout>
 
 {% endhighlight %}
@@ -43,7 +44,7 @@ inputLayout.Content = new Entry();
 
 {% endtabs %}
 
-![.NET MAUI TextInputLayout with filled container type](images/FixedHintPosition/HintPositionFilled.png)
+![.NET MAUI TextInputLayout with filled container type.](images/FixedHintPosition/HintPositionFilled.png)
 
 ## Outlined
 
@@ -54,10 +55,10 @@ The hint label position of the input view will be set always at the top for the 
 {% highlight xaml %} 
 
 <inputLayout:SfTextInputLayout Hint="Name"
-                               IsHintAlwaysFloated="true" 
-                               ContainerType="Outlined"
-                               HelperText="Enter your name">
-        <Entry />
+                       IsHintAlwaysFloated="true" 
+                       ContainerType="Outlined"
+                       HelperText="Enter your name">
+    <Entry />
 </inputLayout:SfTextInputLayout>
  
 {% endhighlight %}
@@ -74,7 +75,7 @@ inputLayout.Content = new Entry();
 
 {% endtabs %}
 
-![.NET MAUI TextInputLayout with outlined container type](images/FixedHintPosition/HintPositionOutlined.png)
+![.NET MAUI TextInputLayout with outlined container type.](images/FixedHintPosition/HintPositionOutlined.png)
 
 ## None
 
@@ -88,7 +89,7 @@ The hint label position of the input view will be set always at the top for the 
                                IsHintAlwaysFloated="true" 
                                ContainerType="None"
                                HelperText="Enter your name">
-        <Entry />
+    <Entry />
 </inputLayout:SfTextInputLayout> 
  
 {% endhighlight %}
@@ -105,4 +106,4 @@ inputLayout.Content = new Entry();
 
 {% endtabs %}
 
-![.NET MAUI TextInputLayout without container background](images/FixedHintPosition/HintPositionNone.png)
+![.NET MAUI TextInputLayout without container background.](images/FixedHintPosition/HintPositionNone.png)

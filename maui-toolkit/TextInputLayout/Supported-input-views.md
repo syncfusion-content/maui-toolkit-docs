@@ -40,7 +40,7 @@ inputLayout.Content = new Entry();
 
 {% endtabs %}
 
-![Entry](images/SupportedInputViews/Entry.png)
+![Entry in .NET MAUI TextInputLayout.](images/SupportedInputViews/Entry.png)
 
 ## Editor
 
@@ -53,7 +53,7 @@ To enter multi-line text input, add [`Editor`](https://learn.microsoft.com/en-us
 <inputLayout:SfTextInputLayout Hint="About TextInputLayout" 
                                HelperText="Enter the brief description of the text input layout"
                                ContainerType="Outlined">
-   <Editor AutoSize="TextChanges" />
+   <Editor />
 </inputLayout:SfTextInputLayout>  
 
 {% endhighlight %}
@@ -69,7 +69,7 @@ inputLayout.Content = new Editor();
 
 {% endtabs %}
 
-![Editor](images/SupportedInputViews/Editor.jpg)
+![Editor in .NET MAUI TextInputLayout.](images/SupportedInputViews/Editor.jpg)
 
 ## Picker
 
@@ -111,7 +111,7 @@ inputLayout.Content = picker;
 {% endhighlight %}
 {% endtabs %}
 
-![Picker](images/SupportedInputViews/Picker.jpg)
+![Picker in .NET MAUI TextInputLayout.](images/SupportedInputViews/Picker.jpg)
 
 N> Windows platform will not support `.NET MAUI Picker` as input view of the text input layout.
 
@@ -142,7 +142,7 @@ inputLayout.Content = new TimePicker();
 {% endhighlight %}
 {% endtabs %}
 
-![TimePicker](images/SupportedInputViews/TimePicker.jpg)
+![TimePicker in .NET MAUI TextInputLayout.](images/SupportedInputViews/TimePicker.jpg)
 
 N> Windows platform will not support `.NET MAUI TimePicker` as input view of the text input layout.
 
@@ -173,7 +173,7 @@ inputLayout.Content = new DatePicker();
 {% endhighlight %}
 {% endtabs %}
 
-![DatePicker](images/SupportedInputViews/DatePicker.jpg)
+![DatePicker in .NET MAUI TextInputLayout.](images/SupportedInputViews/DatePicker.jpg)
 
 N> Windows platform will not support `.NET MAUI DatePicker` as input view of the text input layout.
 

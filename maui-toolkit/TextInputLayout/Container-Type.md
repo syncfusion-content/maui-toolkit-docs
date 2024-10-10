@@ -38,7 +38,7 @@ inputLayout.Content = new Entry() { Text = "John" };
 
 {% endtabs %}
 
-![.NET MAUI TextInputLayout with Filled container type](images/ContainerType/Filled_Focused.jpg)
+![.NET MAUI TextInputLayout with Filled container type.](images/ContainerType/Filled_Focused.jpg)
 
 ## Outlined
 
@@ -53,7 +53,6 @@ When setting the [ContainerType](https://help.syncfusion.com/cr/maui-toolkit/Syn
     <Entry Text="John" />
 </inputLayout:SfTextInputLayout>  
  
-
 {% endhighlight %}
 
 {% highlight C# %} 
@@ -67,7 +66,7 @@ inputLayout.Content = new Entry() { Text = "John" };
 
 {% endtabs %}
 
-![.NET MAUI TextInputLayout with Outlined container type](images/ContainerType/Outlined.png)
+![.NET MAUI TextInputLayout with Outlined container type.](images/ContainerType/Outlined.png)
 
 ### Customize the corner radius of the outline border 
 
@@ -97,7 +96,7 @@ inputLayout.Content = new Entry();
 
 {% endtabs %}
 
-![.NET MAUI TextInputLayout with OutlineCornerRadius](images/ContainerType/CornerRadius.png)
+![.NET MAUI TextInputLayout with OutlineCornerRadius.](images/ContainerType/CornerRadius.png)
 
 >**NOTE**
 It is applicable for the outline border when setting the container type to `Outlined`.
@@ -132,7 +131,7 @@ inputLayout.Content = new Entry();
 
 {% endtabs %}
 
-![Padding customization around the text input view](images/ContainerType/padingg.png)
+![Padding customization around the text input view.](images/ContainerType/padingg.png)
 
 ## None
 
@@ -147,7 +146,6 @@ When setting the [ContainerType](https://help.syncfusion.com/cr/maui-toolkit/Syn
     <Entry Text="John" />
 </inputLayout:SfTextInputLayout>  
  
-
 {% endhighlight %}
 
 {% highlight C# %} 
@@ -161,4 +159,4 @@ inputLayout.Content = new Entry() { Text = "John" };
 
 {% endtabs %}
 
-![.NET MAUI TextInputLayout without container background](images/ContainerType/None_focused.jpg)
+![.NET MAUI TextInputLayout without container background.](images/ContainerType/None_focused.jpg)

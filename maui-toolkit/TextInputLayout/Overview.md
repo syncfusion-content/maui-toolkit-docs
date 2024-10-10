@@ -13,7 +13,7 @@ keywords: .net maui text input layout, syncfusion text input layout, text input 
 The text input layout adds decorative elements like floating labels, icons, and assistive labels on top of input views such as [`Entry`](https://learn.microsoft.com/en-us/dotnet/maui/user-interface/controls/entry) and [`Editor`](https://learn.microsoft.com/en-us/dotnet/maui/user-interface/controls/editor) controls.
 
 
-![The customizable text input layout control for .NET MAUI](images/Overview/net_maui_text_input_layout.gif)
+![.NET MAUI TextInputLayout control.](images/Overview/net_maui_text_input_layout.gif)
 
 ## Key features
 

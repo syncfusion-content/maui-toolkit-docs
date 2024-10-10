@@ -11,16 +11,16 @@ documentation: ug
 
 ## Built-in types
 
-Syncfusion [.NET MAUI Shimmer](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Shimmer.SfShimmer.html) (SfShimmer) control provides seven built-in shimmer view types such as CirclePersona, SquarePersona, Profile, Article, Video, Feed, and Shopping.
+Syncfusion [.NET MAUI Shimmer](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Shimmer.SfShimmer.html?tabs=tabid-1%2Ctabid-5%2Ctabid-3%2Ctabid-7%2Ctabid-17%2Ctabid-13%2Ctabid-9%2Ctabid-15%2Ctabid-11) (SfShimmer) control provides seven built-in shimmer view types such as CirclePersona, SquarePersona, Profile, Article, Video, Feed, and Shopping.
 
-   ![Multiple Shimmer View in .NET MAUI.](images/overview/maui-multiple-shimmer-views.gif)
+   ![Types of view in .NET MAUI Shimmer.](images/overview/maui-multiple-shimmer-views.gif)
 
-The built-in shimmer types can be used by setting the [Type](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Shimmer.SfShimmer.html#Syncfusion_Maui_Shimmer_SfShimmer_Type) of `SfShimmer`. By default, the [CirclePersona](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Shimmer.ShimmerType.html#Syncfusion_Maui_Shimmer_ShimmerType_CirclePersona) is initially rendered.
+The built-in shimmer types can be used by setting the [Type](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Shimmer.SfShimmer.html#Syncfusion_Maui_Toolkit_Shimmer_SfShimmer_Type) of `SfShimmer`. By default, the [CirclePersona](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Shimmer.ShimmerType.html#Syncfusion_Maui_Toolkit_Shimmer_ShimmerType_CirclePersona) is initially rendered.
 
 {% tabs %}
 {% highlight xaml tabtitle="XAML" hl_lines="2" %}
 
-<shimmer:SfShimmer x:Name="shimmer" VerticalOptions="FillAndExpand" 
+<shimmer:SfShimmer VerticalOptions="FillAndExpand" 
                    Type="CirclePersona">
       <StackLayout>
          <Label 
@@ -35,16 +35,16 @@ The built-in shimmer types can be used by setting the [Type](https://help.syncfu
 {% highlight c# tabtitle="C#" hl_lines="3" %}
 
 SfShimmer shimmer = new SfShimmer()
+{
+   Type = ShimmerType.CirclePersona,
+   VerticalOptions = LayoutOptions.Fill,
+   Content = new Label
    {
-      Type = ShimmerType.CirclePersona,
-      VerticalOptions = LayoutOptions.Fill,
-      Content = new Label
-      {
-         Text = "Content is loaded!!"
-      }
-   };
+      Text = "Content is loaded!!"
+   }
+};
 
-   this.Content = shimmer;
+this.Content = shimmer;
 
 {% endhighlight %}
 {% endtabs %}

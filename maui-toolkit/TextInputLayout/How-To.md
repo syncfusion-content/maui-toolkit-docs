@@ -39,4 +39,4 @@ inputLayout.InputView = new Entry();
 
 {% endtabs %}
 
-![Set stoke thickness in .NET MAUI TextInputLayout](images/HowTo/StrokeThickness.png)
+![Stoke thickness of .NET MAUI TextInputLayout.](images/HowTo/StrokeThickness.png)

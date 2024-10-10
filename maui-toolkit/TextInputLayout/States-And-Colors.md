@@ -99,7 +99,7 @@ inputLayout.Style = style;
 
 {% endtabs %}
 
-![VisualStates in .NET MAUI TextInputLayout](images/StatesAndColors/States.png)
+![Visual states in .NET MAUI TextInputLayout.](images/StatesAndColors/States.png)
 
 ## Disabled state
 
@@ -127,7 +127,7 @@ inputLayout.Content = new Entry();
 
 {% endtabs %}
 
-![.NET MAUI TextInputLayout in disabled state](images/StatesAndColors/Disabled.jpg)
+![.NET MAUI TextInputLayout in disabled state.](images/StatesAndColors/Disabled.jpg)
 
 
 ## Container color
@@ -163,7 +163,7 @@ inputLayout.Content = new Entry() { Text = "John" };
 
 {% endtabs %}
 
-![Container background in .NET MAUI TextInputLayout](images/StatesAndColors/FilledContainerBackground.png)
+![Container background in .NET MAUI TextInputLayout.](images/StatesAndColors/FilledContainerBackground.png)
 
 ### Outlined
 
@@ -244,4 +244,4 @@ inputLayout.ErrorLabelStyle = new LabelStyle() { TextColor = Color.Maroon };
 
 {% endtabs %}
 
-![UI customization in .NET MAUI TextInputLayout](images/StatesAndColors/AssistiveColors.png)
+![UI customization in .NET MAUI TextInputLayout.](images/StatesAndColors/AssistiveColors.png)

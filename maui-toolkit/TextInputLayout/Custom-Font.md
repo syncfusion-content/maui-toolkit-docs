@@ -46,7 +46,7 @@ inputLayout.Content = new Entry();
 
 {% endtabs %}
 
-![Hint label style in .NET MAUI TextInputLayout](images/CustomFont/HintLabelStyle.png)
+![Hint label style in .NET MAUI TextInputLayout.](images/CustomFont/HintLabelStyle.png)
 
 ## Helper text
 
@@ -81,7 +81,7 @@ inputLayout.Content = new Entry();
 
 {% endtabs %}
 
-![Helper label style in .NET MAUI TextInputLayout](images/CustomFont/HelperLabelStyle.png)
+![Helper label style in .NET MAUI TextInputLayout.](images/CustomFont/HelperLabelStyle.png)
 
 ## Error text
 
@@ -118,4 +118,4 @@ inputLayout.Content = new Entry();
 
 {% endtabs %}
 
-![Error label style in .NET MAUI TextInputLayout](images/CustomFont/ErrorLabelStyle.png)
+![Error label style in .NET MAUI TextInputLayout.](images/CustomFont/ErrorLabelStyle.png)

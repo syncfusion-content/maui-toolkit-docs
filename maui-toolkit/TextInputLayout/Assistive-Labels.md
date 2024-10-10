@@ -40,7 +40,7 @@ inputLayout.Content = new Entry();
 
 The visibility of the helper text can be disabled by setting the [ShowHelperText](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TextInputLayout.SfTextInputLayout.html#Syncfusion_Maui_Toolkit_TextInputLayout_SfTextInputLayout_ShowHelperText) property to false. By default, it is set to true.
 
-![Helper text in .NET MAUI TextInputLayout](images/AssistiveLabels/Maui-TextInputLayout-HelperText.jpg)
+![Helper text in .NET MAUI TextInputLayout.](images/AssistiveLabels/Maui-TextInputLayout-HelperText.jpg)
 
 ## Error message
 
@@ -73,7 +73,7 @@ inputLayout.Content = new Entry();
 
 {% endtabs %}
 
-![Error text in .NET MAUI TextInputLayout](images/AssistiveLabels/Maui-TextInputLayout-ErrorLabel.jpg)
+![Error text in .NET MAUI TextInputLayout.](images/AssistiveLabels/Maui-TextInputLayout-ErrorLabel.jpg)
 
 N> Error validations should be done in the application level.
 
@@ -106,7 +106,7 @@ inputLayout.Content = new Entry();
 
 {% endtabs %}
 
-![TextInputLayout with maximum character length](images/AssistiveLabels/MaxCharCount.png)
+![.NET MAUI TextInputLayout with maximum character length.](images/AssistiveLabels/MaxCharCount.png)
 
 N> When character count reaches the maximum character length, the error color will be applied to hint, border, and counter label.
 
@@ -138,4 +138,4 @@ inputLayout.Content = new Entry();
 
 {% endtabs %}
 
-![Reserve space for assistive label image in TextInputLayout](images/AssistiveLabels/ReserveSpace.png)
+![Reserve space for assistive label image in .NET MAUI TextInputLayout.](images/AssistiveLabels/ReserveSpace.png)

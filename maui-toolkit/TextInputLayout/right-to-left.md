@@ -36,5 +36,5 @@ inputLayout.Content = new Entry();
 {% endhighlight %}
 {% endtabs %}
 
-![.NET MAUI TextInputLayout with right to left direction](images/RightToLeft/RTL.png)
+![.NET MAUI TextInputLayout with right to left direction.](images/RightToLeft/RTL.png)
 
