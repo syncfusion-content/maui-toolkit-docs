@@ -17,25 +17,25 @@ Create the instance for `FontImageSource` and set to `ImageSource` property of S
 
 {% highlight xaml %}
 
-   <chip:SfChip x:Name="chip" 
-                Text="Syncfusion" 
-                ShowIcon="True"
-                FontSize="17"
-                TextColor="White"
-                BackgroundColor="#512dcd"
-                WidthRequest="120"
-                HeightRequest="40"
-                ImageSize="15"
-                Padding="0,0,0,2">
-        <chip:SfChip.ImageSource>
-            <FontImageSource Glyph="&#xEB52;" 
-                             Size="12"
-                             Color="White"
-                             FontFamily="Segoe MDL2 Assets"
-                             >
-            </FontImageSource>
-        </chip:SfChip.ImageSource>
-    </chip:SfChip>
+<ChipControl:SfChip x:Name="chip" 
+            Text="Syncfusion" 
+            ShowIcon="True"
+            FontSize="17"
+            TextColor="White"
+            BackgroundColor="#512dcd"
+            WidthRequest="120"
+            HeightRequest="40"
+            ImageSize="15"
+            Padding="0,0,0,2">
+    <ChipControl:SfChip.ImageSource>
+        <FontImageSource Glyph="&#xEB52;" 
+                            Size="12"
+                            Color="White"
+                            FontFamily="Segoe MDL2 Assets"
+                            >
+        </FontImageSource>
+    </ChipControl:SfChip.ImageSource>
+</ChipControl:SfChip>
 
 {% endhighlight %}
 
