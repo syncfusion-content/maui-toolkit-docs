@@ -110,9 +110,7 @@ namespace CarouselSample
 
 {% highlight C# %}
 
-using Syncfusion.SfCarousel.XForms;
-using System.Collections.Generic;
-using Xamarin.Forms;
+using Syncfusion.Maui.Toolkit.Carousel;
 
 namespace CarouselSample
 {
@@ -149,83 +147,5 @@ namespace CarouselSample
 
 {% endhighlight %}
 {% endtabs %}
-
-## Through Carousel Item
-
-Different views can be provided to every item through the [ItemContent](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Carousel.SfCarouselItem.html#Syncfusion_Maui_Carousel_SfCarouselItem_ItemContent) property in the [SfCarouselItem](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Carousel.SfCarouselItem.html) class.
-
-{% highlight C# %}
-
-using Syncfusion.Maui.Carousel;
-using System.Collections.ObjectModel;
-
-namespace CarouselSample
-{
-    public partial class MainPage : ContentPage
-    {
-        public MainPage()
-        {
-            InitializeComponent();
-            SfCarousel carousel = new SfCarousel()
-            {
-                ItemWidth = 170,
-                ItemHeight = 250
-            };
-
-            ObservableCollection<SfCarouselItem> carouselItems = new ObservableCollection<SfCarouselItem>();
-
-            carouselItems.Add(new SfCarouselItem() { ItemContent = new Image() { Source = "carousel_person1.png", Aspect = Aspect.Fill } });
-            carouselItems.Add(new SfCarouselItem() { ItemContent = new Image() { Source = "carousel_person2.png", Aspect = Aspect.Fill } });
-            carouselItems.Add(new SfCarouselItem() { ItemContent = new Image() { Source = "carousel_person3.png", Aspect = Aspect.Fill } });
-            carouselItems.Add(new SfCarouselItem() { ItemContent = new Image() { Source = "carousel_person4.png", Aspect = Aspect.Fill } });
-            carouselItems.Add(new SfCarouselItem() { ItemContent = new Image() { Source = "carousel_person5.png", Aspect = Aspect.Fill } });
-
-            carousel.ItemsSource = carouselItems;
-
-            this.Content = carousel;
-        }
-    }
-}
-
-{% endhighlight %}
-
-and also carousel provides a support to display only the Image data with [ImageName](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Carousel.SfCarouselItem.html#Syncfusion_Maui_Carousel_SfCarouselItem_ImageName) property in [SfCarouselItem](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Carousel.SfCarouselItem.html) class.
-
-{% highlight C# %}
-
-using Syncfusion.Maui.Carousel;
-using System.Collections.ObjectModel;
-
-namespace CarouselSample
-{
-    public partial class MainPage : ContentPage
-    {
-        public MainPage()
-        {
-            InitializeComponent();
-            SfCarousel carousel = new SfCarousel()
-            {
-                ItemWidth = 170,
-                ItemHeight = 250
-            };
-
-            ObservableCollection<SfCarouselItem> carouselItems = new ObservableCollection<SfCarouselItem>();
-            carouselItems.Add(new SfCarouselItem() { ImageName = "carousel_person1.png" });
-            carouselItems.Add(new SfCarouselItem() { ImageName = "carousel_person2.png" });
-            carouselItems.Add(new SfCarouselItem() { ImageName = "carousel_person3.png" });
-            carouselItems.Add(new SfCarouselItem() { ImageName = "carousel_person4.png" });
-            carouselItems.Add(new SfCarouselItem() { ImageName = "carousel_person5.png" });
-
-            carousel.ItemsSource = carouselItems;
-
-            this.Content = carousel;
-        }
-    }
-}
-
-{% endhighlight %}
-
-
-Similarly, every item can be created and customized in case a different carousel item view is needed.
 
 
