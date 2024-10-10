@@ -36,7 +36,7 @@ To enable the data point selection, create an instance of the series [SelectionB
 SfCircularChart chart = new SfCircularChart();
 
 DataPointSelectionBehavior selection = new DataPointSelectionBehavior();
-selection.SelectionBrush="#314A6E";
+selection.SelectionBrush = Color.FromHex("#314A6E");
 
 DoughnutSeries series = new DoughnutSeries();
 series.SelectionBehavior = selection;

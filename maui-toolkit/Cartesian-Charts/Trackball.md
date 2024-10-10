@@ -78,6 +78,7 @@ SfCartesianChart chart = new SfCartesianChart();
 ChartTrackballBehavior trackball = new ChartTrackballBehavior();
 trackball.ShowLine = true;
 trackball.DisplayMode = LabelDisplayMode.NearestPoint;
+chart.TrackballBehavior= trackball;
 . . . 
 
 {% endhighlight %}
@@ -114,6 +115,7 @@ SfCartesianChart chart = new SfCartesianChart();
 ...
 ChartTrackballBehavior trackball = new ChartTrackballBehavior();
 trackball.ActivationMode = ChartTrackballActivationMode.LongPress;
+chart.TrackballBehavior= trackball;
 . . . 
 
 {% endhighlight %}
@@ -164,12 +166,19 @@ The [LabelStyle](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Too
 
 SfCartesianChart chart = new SfCartesianChart();
 . . .
-ChartLabelStyle labelStyle = new ChartLabelStyle();
-labelStyle.Background = Colors.LightBlue;
-labelStyle.FontSize = 15;
-labelStyle.CornerRadius = 5;
-labelStyle.StrokeWidth = 2;
-labelStyle.Stroke = Colors.Gray;
+ChartTrackballBehavior trackball = new ChartTrackballBehavior();
+
+ChartLabelStyle labelStyle = new ChartLabelStyle
+{
+    Background = Color.LightBlue,
+    FontSize = 15,
+    CornerRadius = 5,
+    StrokeWidth = 2,
+    Stroke = Color.Gray
+};
+
+trackballBehavior.LabelStyle = labelStyle;
+chart.TrackballBehavior= trackball;
 
 this.Content = chart;
 
@@ -204,9 +213,13 @@ this.Content = chart;
 
 SfCartesianChart chart = new SfCartesianChart();
 . . .
+
+ChartTrackballBehavior trackball = new ChartTrackballBehavior();
 ChartLineStyle lineStyle = new ChartLineStyle();
 lineStyle.Stroke = Colors.Gray;
 lineStyle.StrokeDashArray = 4;
+trackballBehavior.LineStyle = lineStyle;
+chart.TrackballBehavior= trackball;
 
 this.Content = chart;
             

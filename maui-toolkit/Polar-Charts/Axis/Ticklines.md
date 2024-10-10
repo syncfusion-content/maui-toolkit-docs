@@ -119,13 +119,22 @@ SfPolarChart chart = new SfPolarChart();
 . . .
 NumericalAxis primaryAxis = new NumericalAxis();
 chart.PrimaryAxis = primaryAxis;
-NumericalAxis secondaryAxis = new NumericalAxis();
-numerical.MajorTickStyle.StrokeWidth = 1;
-numerical.MajorTickStyle.Stroke = Colors.Red;
-numerical.MajorTickStyle.TickSize = 10;
-numerical.MinorTicksPerInterval = 4;
-numerical.MinorTickStyle.StrokeWidth = 1;
-numerical.MinorTickStyle.Stroke = Colors.Red;
+
+NumericalAxis secondaryAxis = new NumericalAxis
+{
+    MajorTickStyle = new ChartAxisTickStyle
+    {
+        Stroke = Color.Red,
+        StrokeWidth = 1,
+        TickSize = 10
+    },
+    MinorTickStyle = new ChartAxisTickStyle
+    {
+        Stroke = Color.Red,
+        StrokeWidth = 1
+    }
+};
+
 chart.SecondaryAxis = secondaryAxis;
 
 {% endhighlight %}

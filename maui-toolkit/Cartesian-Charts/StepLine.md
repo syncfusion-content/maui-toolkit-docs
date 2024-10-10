@@ -174,7 +174,7 @@ The [IsTransposed](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.T
 
 SfCartesianChart chart = new SfCartesianChart();
 
-chart.isTransposed = True;
+chart.IsTransposed = True;
 
 DatetimeAxis primaryAxis = new DatetimeAxis();
 chart.XAxes.Add(primaryAxis);

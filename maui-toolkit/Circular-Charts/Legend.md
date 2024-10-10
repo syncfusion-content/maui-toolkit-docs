@@ -134,12 +134,18 @@ The appearance of the legend label can be customized using the [`LabelStyle`](ht
 
 {% highlight c# %}
 
-chart.Legend = new ChartLegend();
-chart.Legend.LabelStyle.TextColor = Color.Blue;
-chart.Legend.LabelStyle.FontSize = 18;
-chart.Legend.LabelStyle.FontAttributes = FontAttributes.Bold;
-chart.Legend.LabelStyle.Margin = 5;
-chart.Legend.LabelStyle.FontFamily = "PlaywriteAR-Regular";
+ChartLegend legend = new ChartLegend();
+ChartLegendLabelStyle labelStyle = new ChartLegendLabelStyle
+{
+    TextColor = Color.Blue,
+    Margin = new Thickness(5),
+    FontSize = 18,
+    FontAttributes = FontAttributes.Bold,
+    FontFamily = "PlaywriteAR-Regular"
+};
+legend.LabelStyle = labelStyle;
+
+chart.Legend = legend;
 
 {% endhighlight %}
 

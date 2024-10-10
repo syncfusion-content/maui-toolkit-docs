@@ -255,9 +255,9 @@ The outlier value in the box plot can be viewed by enabling the [ShowOutlier](ht
     </chart:SfCartesianChart.YAxes>  
 
     <chart:BoxAndWhiskerSeries ItemsSource="{Binding BoxWhiskerData}"
-                                XBindingPath="Department"
-                                YBindingPath="Age"
-                                ShowOutlier="False"/>
+                               XBindingPath="Department"
+                               YBindingPath="Age"
+                               ShowOutlier="False"/>
 
 </chart:SfCartesianChart>
 

@@ -133,11 +133,16 @@ The [`Label`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolki
 {% highlight c# %}
 
 chart.Legend = new ChartLegend();
-chart.Legend.LabelStyle.TextColor = Color.Blue;
-chart.Legend.LabelStyle.FontSize = 18;
-chart.Legend.LabelStyle.FontAttributes = FontAttributes.Bold;
-chart.Legend.LabelStyle.Margin = 5;
-chart.Legend.LabelStyle.FontFamily = "PlaywriteAR-Regular";
+ChartLegendLabelStyle labelStyle = new ChartLegendLabelStyle
+{
+    TextColor = Color.Blue,
+    Margin = new Thickness(5),
+    FontSize = 18,
+    FontAttributes = FontAttributes.Bold,
+    FontFamily = "PlaywriteAR-Regular"
+};
+
+legend.LabelStyle = labelStyle;
 
 {% endhighlight %}
 
@@ -223,8 +228,7 @@ The visibility of series can be controlled by tapping the legend item using the 
 
 <chart:SfCartesianChart>
     <chart:SfCartesianChart.Legend>
-        <chart:ChartLegend           
-          ToggleSeriesVisibility="True">
+        <chart:ChartLegend ToggleSeriesVisibility="True">
         </chart:ChartLegend>
     </chart:SfCartesianChart.Legend>
 </chart:SfCartesianChart>
@@ -336,8 +340,7 @@ N> The BindingContext of the template is the corresponding underlying legend ite
                 <Rectangle HeightRequest="12" 
                            WidthRequest="12" Margin="3"
                            Background="{Binding IconBrush}"/>
-                <Label Text="{Binding Text}" 
-                       Margin="3"/>
+                <Label Text="{Binding Text}" Margin="3"/>
             </StackLayout>
         </DataTemplate>
     </chart:SfCartesianChart.Resources>  
