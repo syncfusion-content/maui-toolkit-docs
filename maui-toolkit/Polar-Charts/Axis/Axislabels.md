@@ -82,7 +82,7 @@ The chart axis supports customizing the rendering position of the edge labels us
 <chart:SfPolarChart>
     . . .
     <chart:SfPolarChart.SecondaryAxis>
-        <chart:DateTimeAxis EdgeLabelsDrawingMode="Center"/>
+        <chart:NumericalAxis EdgeLabelsDrawingMode="Center"/>
     </chart:SfPolarChart.SecondaryAxis>
 </chart:SfPolarChart>
 
@@ -92,7 +92,7 @@ The chart axis supports customizing the rendering position of the edge labels us
 
 SfPolarChart chart = new SfPolarChart();
 . . . 
-DateTimeAxis secondaryAxis = new DateTimeAxis()
+NumericalAxis secondaryAxis = new NumericalAxis()
 {
     EdgeLabelsDrawingMode = EdgeLabelsDrawingMode.Center
 };

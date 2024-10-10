@@ -53,10 +53,6 @@ chart.YAxes.Add(secondaryAxis);
 
 ![NumericalAxis interval support in MAUI Chart](Axis_Images/maui_chart_axis_types.jpg)
 
-To customize the [NumericalAxis](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Charts.NumericalAxis.html) in .NET MAUI Cartesian Charts, you can check the below video.
-
-{% youtube "https://www.youtube.com/watch?v=BJAEtUZSK_c" %}
-
 ### Interval
 
 Axis interval can be customized by using the [Interval](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Charts.NumericalAxis.html#Syncfusion_Maui_Charts_NumericalAxis_Interval) property. By default, interval will be calculated based on the minimum and maximum value of the provided data.
@@ -155,10 +151,6 @@ chart.XAxes.Add(primaryAxis);
 {% endtabs %}
 
 ![CategoryAxis support in MAUI Chart](Axis_Images/maui_chart_category_axis.jpg)
-
-To customize the [CategoryAxis](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Charts.CategoryAxis.html) in .NET MAUI Cartesian Charts, you can check the below video.
-
-{% youtube "https://www.youtube.com/watch?v=D_8MHoglBVI" %}
 
 ### Label placement
 
@@ -329,10 +321,6 @@ chart.XAxes.Add(primaryAxis);
 
 {% endtabs %}
 
-![DateTimeCategoryAxis support in MAUI Chart](Axis_Images/maui_chart_datetime_axis.jpg)
-
-To customize the [DateTimeAxis](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Charts.DateTimeAxis.html) in .NET MAUI Cartesian Charts, you can check the below video.
-
 {% youtube "https://www.youtube.com/watch?v=Z_ZIJ1zlVg0" %}
 
 ### Interval
@@ -441,10 +429,6 @@ chart.YAxes.Add(secondaryAxis);
 
 ![LogarithmicAxis support in MAUI Chart](Axis_Images/maui_chart_logarithmic_axis.jpg)
 
-To customize the [LogarithmicAxis](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Charts.LogarithmicAxis.html) in .NET MAUI Cartesian Charts, you can check the below video.
-
-{% youtube "https://www.youtube.com/watch?v=HWPRuTYThDc" %}
-
 ### Interval
 
 Axis interval can be customized using the [Interval](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Charts.LogarithmicAxis.html#Syncfusion_Maui_Charts_LogarithmicAxis_Interval) property of the axis. By default, interval will be calculated based on the minimum and maximum value of the provided data. And the default value of the interval is 1. 
@@ -529,10 +513,6 @@ chart.YAxes.Add(new LogarithmicAxis()
 
 ![LogarithmicAxis base customization in MAUI Chart](Axis_Images/maui_chart_logarithmic_axis_base.jpg)
 
-To customize the [ChartAxis](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Charts.ChartAxis.html) in .NET MAUI Cartesian Charts, you can check the below video.
-
-{% youtube "https://www.youtube.com/watch?v=IGLyuQS18iQ" %}
-
 ## Inversed
 
 Axis can be inverted by using the [IsInversed](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Charts.ChartAxis.html#Syncfusion_Maui_Charts_ChartAxis_IsInversed) property. The default value of this property is `False`.
@@ -602,11 +582,6 @@ By default, The 0th index value of XAxes and YAxes is used to plot all of the se
 
 {% highlight xaml %}
 
-<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:sys="clr-namespace:System;assembly=mscorlib"
-             xmlns:chart="clr-namespace:Syncfusion.Maui.Charts;assembly=Syncfusion.Maui.Charts">
-
     <chart:SfCartesianChart>
         . . .
         <chart:SfCartesianChart.XAxes>
@@ -619,32 +594,16 @@ By default, The 0th index value of XAxes and YAxes is used to plot all of the se
         <chart:ColumnSeries ItemsSource="{Binding Data1}" 
                             XBindingPath="Date"
                             YBindingPath="Value" YAxisName="series_YAxis"/>
-        <chart:SplineSeries ItemsSource="{Binding Data}" 
+        <chart:SplineSeries ItemsSource="{Binding Data2}" 
                             XBindingPath="Date"
                             YBindingPath="Value"/>
     </chart:SfCartesianChart>
-</ContentPage>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
 SfCartesianChart chart = new SfCartesianChart();
-. . .
-
-ColumnSeries series1 = new ColumnSeries()
-{
-    ItemsSource = new ViewModel().Demands,
-    XBindingPath = "Demand",
-    YBindingPath = "Year2011"
-};
-
-SplineSeries series2 = new SplineSeries()
-{
-    ItemsSource = new ViewModel().Demands,
-    XBindingPath = "Date",
-    YBindingPath = "Year2011",
-};
 
 DateTimeAxis primaryAxis = new DateTimeAxis()
 {
@@ -652,15 +611,30 @@ DateTimeAxis primaryAxis = new DateTimeAxis()
 };
 chart.XAxes.Add(primaryAxis);
 
-NumericalAxis secondaryAxis = new NumericalAxis()
+NumericalAxis secondaryAxis1 = new NumericalAxis()
 {
     CrossesAt = double.MaxValue,
     ShowMajorGridLines = false
 };
-secondaryAxis.Name = "series_YAxis";
-chart.YAxes.Add(secondaryAxis);
-NumericalAxis secondaryAxis1 = new NumericalAxis();
+secondaryAxis1.Name = "series_YAxis";
 chart.YAxes.Add(secondaryAxis1);
+NumericalAxis secondaryAxis2 = new NumericalAxis();
+chart.YAxes.Add(secondaryAxis2);
+
+ColumnSeries series1 = new ColumnSeries()
+{
+    ItemsSource = new ViewModel().Data1,
+    XBindingPath = "Date",
+    YBindingPath = "Value"
+};
+
+SplineSeries series2 = new SplineSeries()
+{
+    ItemsSource = new ViewModel().Data2,
+    XBindingPath = "Date",
+    YBindingPath = "Value",
+};
+
 series1.YAxisName = "series_YAxis";
 
 chart.Series.Add(series1);
@@ -774,7 +748,7 @@ For the crossing in date time horizontal axis, date object should be provided as
 <chart:SfCartesianChart>
     
     <chart:SfCartesianChart.XAxes>
-        <chart:DateTimeAxis/>
+        <chart:DateTimeAxis CrossesAt= "2021/01/01"/>
     </chart:SfCartesianChart.XAxes>
 
     <chart:SfCartesianChart.yAxes>
@@ -788,10 +762,10 @@ For the crossing in date time horizontal axis, date object should be provided as
 {% highlight c# %}
 
 SfCartesianChart chart = new SfCartesianChart();
-NumericalAxis primaryAxis = new NumericalAxis();
+DateTimeAxis primaryAxis = new DateTimeAxis();
+primaryAxis.CrossesAt = new DateTime(2021, 01, 01);;
 chart.XAxes.Add(primaryAxis);
 NumericalAxis secondaryAxis = new NumericalAxis();
-secondaryAxis.CrossesAt = new DateTime(2021, 01, 01);;
 chart.YAxes.Add(secondaryAxis);
 
 {% endhighlight %}

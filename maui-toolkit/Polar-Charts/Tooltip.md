@@ -103,8 +103,10 @@ The [Duration](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Charts.ChartT
 
 SfPolarChart chart = new SfPolarChart();
 . . .
-chart.TooltipBehavior = new ChartTooltipBehavior();
-chart.TooltipBehavior.Duration = 5000;
+chart.TooltipBehavior = new ChartTooltipBehavior()
+{
+  Duration = 5000,
+};
 
 PolarAreaSeries series = new PolarAreaSeries()
 {

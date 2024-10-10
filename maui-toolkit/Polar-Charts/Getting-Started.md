@@ -391,7 +391,7 @@ Tooltips are used to display information about a segment when a user hovers over
 
 {% highlight C# %}
 
-PolarLineSeries  series1 = new PolarLineSeries();
+PolarLineSeries series = new PolarLineSeries();
 series1.EnableTooltip = true;
 
 {% endhighlight %}
@@ -408,7 +408,7 @@ The following code example gives you the complete code of above configurations.
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     x:Class="ChartGettingStarted.MainPage"
-    xmlns:chart="clr-namespace:Syncfusion.Maui.Charts;assembly=Syncfusion.Maui.Charts"
+    xmlns:chart="clr-namespace:Syncfusion.Maui.Toolkit.Charts;assembly=Syncfusion.Maui.Toolkit"
     xmlns:model="clr-namespace:ChartGettingStarted">
 
     <ContentPage.BindingContext>
@@ -451,7 +451,8 @@ The following code example gives you the complete code of above configurations.
 
 {% highlight C# %}
 
-using Syncfusion.Maui.Charts;
+using Syncfusion.Maui.Toolkit.Charts;
+
 namespace ChartGettingStarted
 {
     public partial class MainPage : ContentPage

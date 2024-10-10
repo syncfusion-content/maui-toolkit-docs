@@ -10,10 +10,10 @@ keywords: .net maui chart transform axis value to pixel, maui chart axis value t
 
 # Transform axis value to pixel value and vice-versa
 
-[`SfCartesianChart`](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Charts.SfCartesianChart.html?tabs=tabid-1) offers two utility methods to transform the pixel into a chart point and vice-versa.
+[`SfCartesianChart`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html?tabs=tabid-1) offers two utility methods to transform the pixel into a chart point and vice-versa.
 
-* [`ValueToPoint(ChartAxis axis,double value)`](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Charts.SfCartesianChart.html#Syncfusion_Maui_Charts_SfCartesianChart_ValueToPoint_Syncfusion_Maui_Charts_ChartAxis_System_Double_) - Converts the data point value to the screen point.
-* [`PointToValue(ChartAxis axis,double x, double y)`](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Charts.SfCartesianChart.html#Syncfusion_Maui_Charts_SfCartesianChart_PointToValue_Syncfusion_Maui_Charts_ChartAxis_System_Double_System_Double_) - Converts the screen point to the chart value.
+* [`ValueToPoint(ChartAxis axis,double value)`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html#Syncfusion_Maui_Charts_SfCartesianChart_ValueToPoint_Syncfusion_Maui_Charts_ChartAxis_System_Double_) - Converts the data point value to the screen point.
+* [`PointToValue(ChartAxis axis,double x, double y)`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html#Syncfusion_Maui_Charts_SfCartesianChart_PointToValue_Syncfusion_Maui_Charts_ChartAxis_System_Double_System_Double_) - Converts the screen point to the chart value.
 
 {% tabs %}
 

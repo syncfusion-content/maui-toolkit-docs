@@ -378,7 +378,6 @@ The following code example gives you the complete code of above configurations.
 
 {% highlight C# %}
 
-using Syncfusion.Maui.Charts;
 . . .
 public partial class MainPage : ContentPage
 {   

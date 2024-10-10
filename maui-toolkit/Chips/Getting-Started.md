@@ -16,7 +16,7 @@ This section provides instructions for setting up and configuring Chips control 
 Before proceeding, ensure the following are setup:
 
 1. Install [.NET 8 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/8.0) or later.
-2. Set up a .NET MAUI environment with Visual Studio 2022 (v17.3 or later) or Visual Studio Code. For Visual Studio Code users, ensure that the .NET MAUI workload is installed and configured as described [here](https://learn.microsoft.com/en-us/dotnet/maui/get-started/installation?view=net-maui-8.0&tabs=visual-studio-code).
+2. Set up a .NET MAUI environment with Visual Studio 2022 (v17.8 or later) or Visual Studio Code. For Visual Studio Code users, ensure that the .NET MAUI workload is installed and configured as described [here](https://learn.microsoft.com/en-us/dotnet/maui/get-started/installation?view=net-maui-8.0&tabs=visual-studio-code).
 
 ## Step 1: Create a New .NET MAUI Project
 
@@ -52,7 +52,8 @@ Before proceeding, ensure the following are setup:
 
 {% endhighlight %}
 {% endtabs %}
-4. To ensure all dependencies are installed, run:
+
+4.To ensure all dependencies are installed, run:
 
 {% tabs %}
 {% highlight sh  %}
@@ -66,26 +67,25 @@ Before proceeding, ensure the following are setup:
 
 In the **MauiProgram.cs file**, register the handler for Syncfusion Toolkit.
 
-{% highlight c# hl_lines="6 17" %}
+{% highlight c# hl_lines="1 10" %}
 
 using Syncfusion.Maui.Toolkit.Hosting;
+public static class MauiProgram
+{
+	public static MauiApp CreateMauiApp()
+	{
+		var builder = MauiApp.CreateBuilder();
+		builder
+		.UseMauiApp<App>()
+		.ConfigureSyncfusionToolkit()
+		.ConfigureFonts(fonts =>
+		{
+			fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
+		});
 
-    public static class MauiProgram
-    {
-        public static MauiApp CreateMauiApp()
-        {
-            var builder = MauiApp.CreateBuilder();
-            builder
-            .UseMauiApp<App>()
-            .ConfigureSyncfusionToolkit()
-            .ConfigureFonts(fonts =>
-            {
-                fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
-            });
-
-            return builder.Build();
-        }      
-    }
+		return builder.Build();
+	}      
+}
    
 {% endhighlight %} 
 
@@ -136,7 +136,7 @@ Content = chips;
 
 ## For SfChipGroup
 
-Initialize an empty [`SfChipGroup`] as shown in the following code snippet
+Initialize an empty `SfChipGroup` as shown in the following code snippet
 
 {% tabs %}
 
@@ -154,11 +154,10 @@ Initialize an empty [`SfChipGroup`] as shown in the following code snippet
 {% highlight c# %}
 
 using Syncfusion.Maui.Toolkit.Chips;
-
-	Grid grid = new Grid();
-	SfChipGroup chipGroup = new SfChipGroup();
-	grid.Children.Add(chipGroup);
-	this.Content = grid;
+Grid grid = new Grid();
+SfChipGroup chipGroup = new SfChipGroup();
+grid.Children.Add(chipGroup);
+this.Content = grid;
 		
 {% endhighlight %}
 
@@ -166,7 +165,7 @@ using Syncfusion.Maui.Toolkit.Chips;
 
 ## Set layout for the control
 
-The chips control creates chip for each object and arranges chips in a StackLayout with horizontal orientation. Any layout can be used to arrange the chips in the chips control.In the following example, the `FlexLayout` has been used. 
+The chips control creates chip for each object and arranges chips in a StackLayout with horizontal orientation. Any layout can be used to arrange the chips in the chips control. In the following example, the `FlexLayout` has been used. 
 
 {% tabs %}
 
@@ -190,18 +189,17 @@ The chips control creates chip for each object and arranges chips in a StackLayo
 {% highlight c# %}
 
 using Syncfusion.Maui.Toolkit.Chips;
-
-	Grid grid = new Grid();
-	SfChipGroup chipGroup = new SfChipGroup();
-	chipGroup.DispalyMemberpath="Name",
-	grid.Children.Add(chipGroup);
-	FlexLayout layout = new FlexLayout()
+Grid grid = new Grid();
+SfChipGroup chipGroup = new SfChipGroup();
+chipGroup.DispalyMemberPath="Name";
+grid.Children.Add(chipGroup);
+FlexLayout layout = new FlexLayout()
 	{
 		HorizontalOptions = LayoutOptions.Start,
 		VerticalOptions = LayoutOptions.Center,
 	};
-	chipGroup.ChipLayout = layout;
-	this.Content = grid;
+chipGroup.ChipLayout = layout;
+this.Content = grid;
 		
 {% endhighlight %}
 
@@ -299,18 +297,18 @@ using Syncfusion.Maui.Toolkit.Chips;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
 
-	Grid grid = new Grid();
-	SfChipGroup chipGroup = new SfChipGroup();
-	grid.Children.Add(chipGroup);
-	this.BindingContext = new ViewModel();
-	chipGroup.SetBinding(SfChipGroup.ItemsSourceProperty, "Employees");
-	chipGroup.DisplayMemberPath = "Name";
-	chipGroup.HorizontalOptions = LayoutOptions.Start;
-	chipGroup.VerticalOptions = LayoutOptions.Center;
-	chipGroup.ChipTextColor = Colors.Black;
-	chipGroup.ChiBackground = Colors.White;
-	chipGroup.ChipPadding = new Thickness(8, 8, 0, 0);
-	this.Content = grid;
+Grid grid = new Grid();
+SfChipGroup chipGroup = new SfChipGroup();
+grid.Children.Add(chipGroup);
+this.BindingContext = new ViewModel();
+chipGroup.SetBinding(SfChipGroup.ItemsSourceProperty, "Employees");
+chipGroup.DisplayMemberPath = "Name";
+chipGroup.HorizontalOptions = LayoutOptions.Start;
+chipGroup.VerticalOptions = LayoutOptions.Center;
+chipGroup.ChipTextColor = Colors.Black;
+chipGroup.ChipBackground = Colors.White;
+chipGroup.ChipPadding = new Thickness(8, 8, 0, 0);
+this.Content = grid;
 		
 {% endhighlight %}
 
@@ -352,10 +350,7 @@ The following code example uses the `Action` type. In Action type, `Command` pro
 		</StackLayout>
 	</StackLayout>  
 </ContentPage.Content>
-
-
 {% endhighlight %}
-
 {% highlight c# %}
 
 using System;
