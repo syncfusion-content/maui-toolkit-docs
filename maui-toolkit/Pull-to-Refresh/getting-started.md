@@ -34,7 +34,7 @@ Before proceeding, ensure the following are in place:
  
 ## Step 2: Install the Syncfusion .NET MAUI Toolkit Package
  
- ### Visual Studio
+### Visual Studio
 1. In **Solution Explorer**, right-click the project and choose **Manage NuGet Packages**.
 2. Search for [Syncfusion.Maui.Toolkit](https://www.nuget.org/packages/Syncfusion.Maui.Toolkit/) and install the latest version.
 3. Ensure the necessary dependencies are installed correctly, and the project is restored.
@@ -71,22 +71,22 @@ In the **MauiProgram.cs file**, register the handler for Syncfusion Toolkit.
 
     using Syncfusion.Maui.Toolkit.Hosting;
 
-        public class MauiProgram 
+    public class MauiProgram 
+    {
+        public static MauiApp CreateMauiApp()
         {
-            public static MauiApp CreateMauiApp()
+            var builder = MauiApp.CreateBuilder();
+            builder
+            .UseMauiApp<App>()
+            .ConfigureFonts(fonts =>
             {
-                var builder = MauiApp.CreateBuilder();
-                builder
-                    .UseMauiApp<App>()
-                    .ConfigureFonts(fonts =>
-                    {
-                        fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
-                    });
+                fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
+            });
 
-                builder.ConfigureSyncfusionToolkit();
-                return builder.Build();
-            }
+            builder.ConfigureSyncfusionToolkit();
+            return builder.Build();
         }
+    }
 
 {% endhighlight %} 
 {% endtabs %}
@@ -101,8 +101,8 @@ Step 2. Initialize `SfPullToRefresh` class.
 {% highlight xaml tabtitle="MainPage.xaml" hl_lines="3" %}
 
     <ContentPage 
-            .....
-            xmlns:PullToRefreshControl="clr-namespace:Syncfusion.Maui.Toolkit.PullToRefresh;assembly=Syncfusion.Maui.Toolkit">
+        .....
+        xmlns:PullToRefreshControl="clr-namespace:Syncfusion.Maui.Toolkit.PullToRefresh;assembly=Syncfusion.Maui.Toolkit">
         <ContentPage.Content> 
             <PullToRefreshControl:SfPullToRefresh />
         </ContentPage.Content> 
@@ -136,11 +136,8 @@ To show the progress indicator while updating the view, set `IsRefreshing` prope
 {% tabs %}
 {% highlight xaml tabtitle="MainPage.xaml" hl_lines="7 11" %}
 
-    <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-                xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-                x:Class="GettingStarted.MainPage"
-                xmlns:PullToRefreshControl="clr-namespace:Syncfusion.Maui.Toolkit.PullToRefresh;assembly=Syncfusion.Maui.Toolkit">
-
+    <ContentPage xmlns:PullToRefreshControl="clr-namespace:Syncfusion.Maui.Toolkit.PullToRefresh;assembly=Syncfusion.Maui.Toolkit">
+            ..........
         <PullToRefreshControl:SfPullToRefresh x:Name="pullToRefresh">
             <PullToRefreshControl:SfPullToRefresh.PullableContent>
                 <StackLayout>
@@ -153,21 +150,21 @@ To show the progress indicator while updating the view, set `IsRefreshing` prope
 {% endhighlight %}
 {% highlight c# tabtitle="MainPage.xaml.cs" hl_lines="12" %}
 
-        public partial class MainPage : ContentPage
+    public partial class MainPage : ContentPage
+    {
+        public MainPage()
         {
-            public MainPage()
-            {
-                InitializeComponent();
-                this.pullToRefresh.Refreshing += PullToRefresh_Refreshing;
-            }
-
-            private async void PullToRefresh_Refreshing(object sender, EventArgs e)
-            {
-                this.pullToRefresh.IsRefreshing = true;
-                await Task.Delay(2000);
-                this.pullToRefresh.IsRefreshing = false;
-            }
+            InitializeComponent();
+            this.pullToRefresh.Refreshing += PullToRefresh_Refreshing;
         }
+
+        private async void PullToRefresh_Refreshing(object sender, EventArgs e)
+        {
+            this.pullToRefresh.IsRefreshing = true;
+            await Task.Delay(2000);
+            this.pullToRefresh.IsRefreshing = false;
+        }
+    }
     
 
 {% endhighlight %}
