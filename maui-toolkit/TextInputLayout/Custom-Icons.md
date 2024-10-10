@@ -20,7 +20,7 @@ N> Refer to the following links to learn more about font icons:
 
 ## Leading view
 
-A label can be added as a leading icon for the input view by setting the `LeadingView` property. It can be positioned either inside or outside the container by setting the `LeadingViewPosition` property. By default, it is positioned `Outside`.
+A label can be added as a leading icon for the input view by setting the [LeadingView](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TextInputLayout.SfTextInputLayout.html#Syncfusion_Maui_Toolkit_TextInputLayout_SfTextInputLayout_LeadingView) property. It can be positioned either inside or outside the container by setting the [LeadingViewPosition](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TextInputLayout.SfTextInputLayout.html#Syncfusion_Maui_Toolkit_TextInputLayout_SfTextInputLayout_LeadingViewPosition) property. By default, it is positioned [Outside](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TextInputLayout.ViewPosition.html#Syncfusion_Maui_Toolkit_TextInputLayout_ViewPosition_Outside).
 
 {% tabs %} 
 
@@ -50,11 +50,11 @@ inputLayout.Content = new Entry();
 
 {% endtabs %}
 
-![Leading view position](images/CustomIcons/LeadingView.png)
+![.NET MAUI TextInputLayout with Leading view](images/CustomIcons/LeadingView.png)
 
 ## Trailing  view
 
-A label can be added as a trailing icon for the input view by setting the `TrailingView` property. It can be positioned either inside or outside the container of the input view by setting the `TrailingViewPosition` property. By default, it is positioned as `Inside`.
+A label can be added as a trailing icon for the input view by setting the [TrailingView](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TextInputLayout.SfTextInputLayout.html#Syncfusion_Maui_Toolkit_TextInputLayout_SfTextInputLayout_TrailingView) property. It can be positioned either inside or outside the container of the input view by setting the [TrailingViewPosition](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TextInputLayout.SfTextInputLayout.html#Syncfusion_Maui_Toolkit_TextInputLayout_SfTextInputLayout_TrailingViewPosition) property. By default, it is positioned as [Inside](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TextInputLayout.ViewPosition.html#Syncfusion_Maui_Toolkit_TextInputLayout_ViewPosition_Inside).
 
 {% tabs %}
 
@@ -84,12 +84,12 @@ inputLayout.Content = new Entry();
 
 {% endtabs %}
 
-![Trailing view position](images/CustomIcons/TrailingView.png)
+![.NET MAUI TextInputLayout with Trailing view](images/CustomIcons/TrailingView.png)
 
 
 ## Leading and trailing view visibility customization
 
-The `ShowLeadingView` and `ShowTrailingView` properties in the TextInputLayout can be used to control the visibility of the leading and trailing views, respectively.
+The [ShowLeadingView](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TextInputLayout.SfTextInputLayout.html#Syncfusion_Maui_Toolkit_TextInputLayout_SfTextInputLayout_ShowLeadingView) and [ShowTrailingView](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TextInputLayout.SfTextInputLayout.html#Syncfusion_Maui_Toolkit_TextInputLayout_SfTextInputLayout_ShowTrailingView) properties in the TextInputLayout can be used to control the visibility of the leading and trailing views, respectively.
 
 {% tabs %}
 
@@ -129,4 +129,4 @@ inputLayout.ShowTrailingView = false;
 
 {% endtabs %}
 
-![Visibility customisation](images/CustomIcons/LeadTrailCust.png)
+![Leading view and Trailing view in TextInputLayout](images/CustomIcons/LeadTrailCust.png)

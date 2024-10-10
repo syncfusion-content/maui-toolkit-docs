@@ -10,7 +10,7 @@ keywords: .net maui text input layout, syncfusion text input layout, text input 
 
 # Supported Input Views in .NET MAUI TextInputLayout (SfTextInputLayout)
 
-Input views can be added to the text input layout control by setting the `Content` property.
+Input views can be added to the text input layout control by setting the [Content](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SfContentView.html#Syncfusion_Maui_Toolkit_SfContentView_Content) property.
 
 ## Entry
 
@@ -32,7 +32,8 @@ To enter a single line text input, add [`Entry`](https://learn.microsoft.com/en-
 
 var inputLayout = new SfTextInputLayout();
 inputLayout.Hint = "Name"; 
-inputLayout.HelperText = "Enter your name"
+inputLayout.HelperText = "Enter your name";
+inputLayout.ContainerType = ContainerType.Outlined;
 inputLayout.Content = new Entry(); 
 
 {% endhighlight %}
@@ -60,7 +61,8 @@ To enter multi-line text input, add [`Editor`](https://learn.microsoft.com/en-us
 {% highlight C# %} 
 
 var inputLayout = new SfTextInputLayout();
-inputLayout.Hint = "Notes"; 
+inputLayout.Hint = "About TextInputLayout";
+inputLayout.HelperText = "Enter the brief description of the text input layout";
 inputLayout.Content = new Editor(); 
 
 {% endhighlight %}
@@ -78,8 +80,9 @@ To initialize the [Picker](https://learn.microsoft.com/en-us/dotnet/maui/user-in
 
 <inputLayout:SfTextInputLayout Hint="Fruit" 
                                HelperText="Select a fruit"
-                               ContainerType="Outlined" >
-   <picker:Picker SelectedItem="Apple">
+                               ContainerType="Outlined"
+                               ContainerBackground="Transparent">
+   <Picker SelectedItem="Apple">
         <Picker.ItemsSource>
             <x:Array Type="{x:Type x:String}">
                 <x:String>Apple</x:String>
@@ -87,7 +90,7 @@ To initialize the [Picker](https://learn.microsoft.com/en-us/dotnet/maui/user-in
                 <x:String>Strawberry</x:String>
             </x:Array>
         </Picker.ItemsSource>
-   </picker:Picker>
+   </Picker>
 </inputLayout:SfTextInputLayout> 
 
 {% endhighlight %}
@@ -121,8 +124,9 @@ To initialize the [TimePicker](https://learn.microsoft.com/en-us/dotnet/maui/use
 
  <inputLayout:SfTextInputLayout Hint="Time" 
                                HelperText="Select a start time"
-                               ContainerType="Outlined" >
-    <timepicker:TimePicker/>
+                               ContainerType="Outlined"
+                               ContainerBackground="Transparent">
+    <TimePicker/>
  </inputLayout:SfTextInputLayout>
 
 {% endhighlight %}
@@ -151,8 +155,9 @@ To initialize the [DatePicker]( https://learn.microsoft.com/en-us/dotnet/maui/us
 
 <inputLayout:SfTextInputLayout Hint="Date of Birth" 
                                HelperText="Select birth date"
-                               ContainerType="Outlined" >
-    <datepicker:DatePicker/>
+                               ContainerType="Outlined"
+                               ContainerBackground="Transparent">
+    <DatePicker/>
 </inputLayout:SfTextInputLayout> 
 
 {% endhighlight %}
