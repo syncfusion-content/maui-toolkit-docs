@@ -22,6 +22,8 @@ N> If the angle value is positive, then the rotation is in the clockwise directi
 {% highlight xaml %}
 
 <carousel:SfCarousel x:Name="carousel"
+                     ItemsSource="{Binding ImageCollection}"
+                     ItemTemplate="{StaticResource itemTemplate}"
                      ItemHeight="300"
                      ItemWidth="200"
                      RotationAngle="30"/>
@@ -38,6 +40,7 @@ SfCarousel carousel = new SfCarousel()
 };
 
 carousel.SetBinding(SfCarousel.ItemsSourceProperty, "ImageCollection");
+carousel.ItemTemplate = itemTemplate;
 
 {% endhighlight %}
 
@@ -54,6 +57,8 @@ Distance between the selected item and other items can be customized by using [S
 {% highlight xaml %}
 
 <carousel:SfCarousel x:Name="carousel"
+                     ItemsSource="{Binding ImageCollection}"
+                     ItemTemplate="{StaticResource itemTemplate}"
                      ItemHeight="170"
                      ItemWidth="270"
                      SelectedItemOffset="60"/>
@@ -71,6 +76,7 @@ SfCarousel carousel = new SfCarousel()
 };
 
 carousel.SetBinding(SfCarousel.ItemsSourceProperty, "ImageCollection");
+carousel.ItemTemplate = itemTemplate;
 
 {% endhighlight %}
 
@@ -89,6 +95,8 @@ N> The default offset value is 40 for desktop platforms and 18 for mobile platfo
 {% highlight xaml %}
 
 <carousel:SfCarousel x:Name="carousel"
+                     ItemsSource="{Binding ImageCollection}"
+                     ItemTemplate="{StaticResource itemTemplate}"
                      ItemHeight="170"
                      ItemWidth="270"
                      Offset="60"/>
@@ -106,6 +114,7 @@ SfCarousel carousel = new SfCarousel()
 };
 
 carousel.SetBinding(SfCarousel.ItemsSourceProperty, "ImageCollection");
+carousel.ItemTemplate = itemTemplate;
 
 {% endhighlight %}
 
@@ -123,6 +132,7 @@ The [ScaleOffset](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.To
 
 <carousel:SfCarousel x:Name="carousel"
                      ItemsSource="{Binding ImageCollection}"
+                     ItemTemplate="{StaticResource itemTemplate}"
                      ItemHeight="200"
                      ItemWidth="200"
                      ScaleOffset="0.5"/>
@@ -139,6 +149,7 @@ SfCarousel carousel = new SfCarousel()
 };
 
 carousel.SetBinding(SfCarousel.ItemsSourceProperty, "ImageCollection");
+carousel.ItemTemplate = itemTemplate;
 
 {% endhighlight %}
 
@@ -156,6 +167,7 @@ Spacing of all the items in Linear mode can be determined by using [ItemSpacing]
 
 <carousel:SfCarousel x:Name="carousel"
                      ItemsSource="{Binding ImageCollection}"
+                     ItemTemplate="{StaticResource itemTemplate}"
                      ItemHeight="200"
                      ItemWidth="200"
                      ItemSpacing="60"
@@ -174,6 +186,7 @@ SfCarousel carousel = new SfCarousel()
 };
 
 carousel.SetBinding(SfCarousel.ItemsSourceProperty, "ImageCollection");
+carousel.ItemTemplate = itemTemplate;
 
 {% endhighlight %}
 

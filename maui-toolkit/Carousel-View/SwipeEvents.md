@@ -27,6 +27,7 @@ The [SwipeEnded](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Too
     SwipeStarted="carousel_SwipeStarted"
     SwipeEnded="carousel_SwipeEnded"
     ItemsSource="{Binding ImageCollection}"
+    ItemTemplate="{StaticResource itemTemplate}"
     ItemHeight="200"
     ItemWidth="200"
     ItemSpacing="2"
