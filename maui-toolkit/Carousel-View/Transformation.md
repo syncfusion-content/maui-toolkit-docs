@@ -22,6 +22,8 @@ N> If the angle value is positive, then the rotation is in the clockwise directi
 {% highlight xaml %}
 
 <carousel:SfCarousel x:Name="carousel"
+                     ItemsSource="{Binding ImageCollection}"
+                     ItemTemplate="{StaticResource itemTemplate}"
                      ItemHeight="300"
                      ItemWidth="200"
                      RotationAngle="30"/>
@@ -38,6 +40,7 @@ SfCarousel carousel = new SfCarousel()
 };
 
 carousel.SetBinding(SfCarousel.ItemsSourceProperty, "ImageCollection");
+carousel.ItemTemplate = itemTemplate;
 
 {% endhighlight %}
 
