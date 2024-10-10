@@ -15,7 +15,7 @@ This section provides instructions for setting up and configuring PullToRefresh 
 Before proceeding, ensure the following are in place:
 
  1. Install [.NET 8 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/8.0) or later.
- 2. Set up a .NET MAUI environment with Visual Studio 2022 (v17.3 or later) or Visual Studio Code. For Visual Studio Code users, ensure that the .NET MAUI workload is installed and configured as described [here](https://learn.microsoft.com/en-us/dotnet/maui/get-started/installation?view=net-maui-8.0&tabs=visual-studio-code).
+ 2. Set up a .NET MAUI environment with Visual Studio 2022 (v17.8 or later) or Visual Studio Code. For Visual Studio Code users, ensure that the .NET MAUI workload is installed and configured as described [here](https://learn.microsoft.com/en-us/dotnet/maui/get-started/installation?view=net-maui-8.0&tabs=visual-studio-code).
 
 ## Step 1: Create a .NET MAUI project
 
@@ -51,7 +51,8 @@ Before proceeding, ensure the following are in place:
 
 {% endhighlight %}
 {% endtabs %}
-4. To ensure all dependencies are installed, run:
+
+4.To ensure all dependencies are installed, run:
 
 {% tabs %}
 {% highlight sh  %}
@@ -66,7 +67,7 @@ Before proceeding, ensure the following are in place:
 In the **MauiProgram.cs file**, register the handler for Syncfusion Toolkit.
 
 {% tabs %}
-{% highlight c# tabtitle="MauiProgram.cs" hl_lines="4 20" %}
+{% highlight c# tabtitle="MauiProgram.cs" hl_lines="1 15" %}
 
     using Syncfusion.Maui.Toolkit.Hosting;
 
@@ -82,7 +83,7 @@ In the **MauiProgram.cs file**, register the handler for Syncfusion Toolkit.
                         fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
                     });
 
-                builder.ConfigureSyncfusionCore();
+                builder.ConfigureSyncfusionToolkit();
                 return builder.Build();
             }
         }
@@ -99,9 +100,12 @@ Step 2. Initialize `SfPullToRefresh` class.
 {% tabs %}
 {% highlight xaml tabtitle="MainPage.xaml" hl_lines="3" %}
 
-    <ContentPage
-        xmlns:PullToRefreshControl="clr-namespace:Syncfusion.Maui.Toolkit.PullToRefresh;assembly=Syncfusion.Maui.Toolkit">
-        <PullToRefreshControl:SfPullToRefresh />
+    <ContentPage 
+            .....
+            xmlns:PullToRefreshControl="clr-namespace:Syncfusion.Maui.Toolkit.PullToRefresh;assembly=Syncfusion.Maui.Toolkit">
+        <ContentPage.Content> 
+            <PullToRefreshControl:SfPullToRefresh />
+        </ContentPage.Content> 
     </ContentPage>
 
 {% endhighlight %}
