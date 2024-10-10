@@ -16,7 +16,7 @@ This section provides instructions for setting up and configuring Chips control 
 Before proceeding, ensure the following are setup:
 
 1. Install [.NET 8 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/8.0) or later.
-2. Set up a .NET MAUI environment with Visual Studio 2022 (v17.3 or later) or Visual Studio Code. For Visual Studio Code users, ensure that the .NET MAUI workload is installed and configured as described [here](https://learn.microsoft.com/en-us/dotnet/maui/get-started/installation?view=net-maui-8.0&tabs=visual-studio-code).
+2. Set up a .NET MAUI environment with Visual Studio 2022 (v17.8 or later) or Visual Studio Code. For Visual Studio Code users, ensure that the .NET MAUI workload is installed and configured as described [here](https://learn.microsoft.com/en-us/dotnet/maui/get-started/installation?view=net-maui-8.0&tabs=visual-studio-code).
 
 ## Step 1: Create a New .NET MAUI Project
 
@@ -52,7 +52,8 @@ Before proceeding, ensure the following are setup:
 
 {% endhighlight %}
 {% endtabs %}
-4. To ensure all dependencies are installed, run:
+
+4.To ensure all dependencies are installed, run:
 
 {% tabs %}
 {% highlight sh  %}
@@ -66,7 +67,7 @@ Before proceeding, ensure the following are setup:
 
 In the **MauiProgram.cs file**, register the handler for Syncfusion Toolkit.
 
-{% highlight c# hl_lines="6 17" %}
+{% highlight c# hl_lines="1 10" %}
 
 using Syncfusion.Maui.Toolkit.Hosting;
 
@@ -166,7 +167,7 @@ using Syncfusion.Maui.Toolkit.Chips;
 
 ## Set layout for the control
 
-The chips control creates chip for each object and arranges chips in a StackLayout with horizontal orientation. Any layout can be used to arrange the chips in the chips control.In the following example, the `FlexLayout` has been used. 
+The chips control creates chip for each object and arranges chips in a StackLayout with horizontal orientation. Any layout can be used to arrange the chips in the chips control. In the following example, the `FlexLayout` has been used. 
 
 {% tabs %}
 
