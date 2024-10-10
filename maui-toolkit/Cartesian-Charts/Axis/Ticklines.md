@@ -103,9 +103,7 @@ Both major and minor tick lines can be customized by using the [MajorTickStyle](
     <chart:SfCartesianChart.XAxes>
         <chart:NumericalAxis MinorTicksPerInterval="4">
             <chart:NumericalAxis.MajorTickStyle>
-                <chart:ChartAxisTickStyle Stroke="Red"
-                                          StrokeWidth="1"
-                                          TickSize="10"/>
+                <chart:ChartAxisTickStyle Stroke="Red" StrokeWidth="1" TickSize="10"/>
             </chart:NumericalAxis.MajorTickStyle>
             
             <chart:NumericalAxis.MinorTickStyle>
@@ -125,14 +123,24 @@ Both major and minor tick lines can be customized by using the [MajorTickStyle](
 
 SfCartesianChart chart = new SfCartesianChart();
 . . .
-NumericalAxis numerical = new NumericalAxis();
-numerical.MajorTickStyle.StrokeWidth = 1;
-numerical.MajorTickStyle.Stroke = Colors.Red;
-numerical.MajorTickStyle.TickSize = 10;
-numerical.MinorTicksPerInterval = 4;
-numerical.MinorTickStyle.StrokeWidth = 1;
-numerical.MinorTickStyle.Stroke = Colors.Red;
-chart.XAxes.Add(numerical);
+
+NumericalAxis primaryAxis = new NumericalAxis
+{
+    MinorTicksPerInterval = 4,
+    MajorTickStyle = new ChartAxisTickStyle
+    {
+        Stroke = Color.Red,
+        StrokeWidth = 1,
+        TickSize = 10
+    },
+    MinorTickStyle = new ChartAxisTickStyle
+    {
+        Stroke = Color.Red,
+        StrokeWidth = 1
+    }
+};
+
+chart.XAxes.Add(primaryAxis);
 
 NumericalAxis secondaryAxis = new NumericalAxis();
 chart.YAxes.Add(secondaryAxis);
