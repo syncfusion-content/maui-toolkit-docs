@@ -69,8 +69,7 @@ In the **MauiProgram.cs file**, register the handler for Syncfusion Toolkit.
 
 {% highlight c# hl_lines="1 10" %}
 
-using Syncfusion.Maui.Toolkit.Hosting;
-
+    using Syncfusion.Maui.Toolkit.Hosting;
     public static class MauiProgram
     {
         public static MauiApp CreateMauiApp()
@@ -100,7 +99,7 @@ Step 2. Initialize `SfChip` class.
 
 {% highlight xaml %}
 	
-	xmlns:ChipControl="clr-namespace:Syncfusion.Maui.Toolkit.Chips;assembly=Syncfusion.Maui.Toolkit"
+	xmlns:ChipControl="clr-namespace:Syncfusion.Maui.Toolkit.Chips;assembl vbngyfny=Syncfusion.Maui.Toolkit"
        
 {% endhighlight %}
 
@@ -137,7 +136,7 @@ Content = chips;
 
 ## For SfChipGroup
 
-Initialize an empty [`SfChipGroup`] as shown in the following code snippet
+Initialize an empty `SfChipGroup` as shown in the following code snippet
 
 {% tabs %}
 
@@ -155,11 +154,10 @@ Initialize an empty [`SfChipGroup`] as shown in the following code snippet
 {% highlight c# %}
 
 using Syncfusion.Maui.Toolkit.Chips;
-
-	Grid grid = new Grid();
-	SfChipGroup chipGroup = new SfChipGroup();
-	grid.Children.Add(chipGroup);
-	this.Content = grid;
+Grid grid = new Grid();
+SfChipGroup chipGroup = new SfChipGroup();
+grid.Children.Add(chipGroup);
+this.Content = grid;
 		
 {% endhighlight %}
 
@@ -191,18 +189,17 @@ The chips control creates chip for each object and arranges chips in a StackLayo
 {% highlight c# %}
 
 using Syncfusion.Maui.Toolkit.Chips;
-
-	Grid grid = new Grid();
-	SfChipGroup chipGroup = new SfChipGroup();
-	chipGroup.DispalyMemberpath="Name",
-	grid.Children.Add(chipGroup);
-	FlexLayout layout = new FlexLayout()
+Grid grid = new Grid();
+SfChipGroup chipGroup = new SfChipGroup();
+chipGroup.DispalyMemberPath="Name";
+grid.Children.Add(chipGroup);
+FlexLayout layout = new FlexLayout()
 	{
 		HorizontalOptions = LayoutOptions.Start,
 		VerticalOptions = LayoutOptions.Center,
 	};
-	chipGroup.ChipLayout = layout;
-	this.Content = grid;
+chipGroup.ChipLayout = layout;
+this.Content = grid;
 		
 {% endhighlight %}
 
@@ -300,18 +297,18 @@ using Syncfusion.Maui.Toolkit.Chips;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
 
-	Grid grid = new Grid();
-	SfChipGroup chipGroup = new SfChipGroup();
-	grid.Children.Add(chipGroup);
-	this.BindingContext = new ViewModel();
-	chipGroup.SetBinding(SfChipGroup.ItemsSourceProperty, "Employees");
-	chipGroup.DisplayMemberPath = "Name";
-	chipGroup.HorizontalOptions = LayoutOptions.Start;
-	chipGroup.VerticalOptions = LayoutOptions.Center;
-	chipGroup.ChipTextColor = Colors.Black;
-	chipGroup.ChiBackground = Colors.White;
-	chipGroup.ChipPadding = new Thickness(8, 8, 0, 0);
-	this.Content = grid;
+Grid grid = new Grid();
+SfChipGroup chipGroup = new SfChipGroup();
+grid.Children.Add(chipGroup);
+this.BindingContext = new ViewModel();
+chipGroup.SetBinding(SfChipGroup.ItemsSourceProperty, "Employees");
+chipGroup.DisplayMemberPath = "Name";
+chipGroup.HorizontalOptions = LayoutOptions.Start;
+chipGroup.VerticalOptions = LayoutOptions.Center;
+chipGroup.ChipTextColor = Colors.Black;
+chipGroup.ChipBackground = Colors.White;
+chipGroup.ChipPadding = new Thickness(8, 8, 0, 0);
+this.Content = grid;
 		
 {% endhighlight %}
 
@@ -353,10 +350,7 @@ The following code example uses the `Action` type. In Action type, `Command` pro
 		</StackLayout>
 	</StackLayout>  
 </ContentPage.Content>
-
-
 {% endhighlight %}
-
 {% highlight c# %}
 
 using System;
