@@ -70,10 +70,8 @@ In the **MauiProgram.cs file**, register the handler for Syncfusion Toolkit.
 {% highlight c# hl_lines="1 10" %}
 
 using Syncfusion.Maui.Toolkit.Hosting;
-
 public static class MauiProgram
 {
-
 	public static MauiApp CreateMauiApp()
 	{
 		var builder = MauiApp.CreateBuilder();
@@ -101,7 +99,7 @@ Step 2. Initialize `SfChip` class.
 
 {% highlight xaml %}
 	
-	xmlns:ChipControl="clr-namespace:Syncfusion.Maui.Toolkit.Chips;assembl vbngyfny=Syncfusion.Maui.Toolkit"
+	xmlns:ChipControl="clr-namespace:Syncfusion.Maui.Toolkit.Chips;assembly=Syncfusion.Maui.Toolkit"
        
 {% endhighlight %}
 
