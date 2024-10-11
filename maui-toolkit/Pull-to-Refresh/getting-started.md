@@ -69,24 +69,24 @@ In the **MauiProgram.cs file**, register the handler for Syncfusion Toolkit.
 {% tabs %}
 {% highlight c# tabtitle="MauiProgram.cs" hl_lines="1 15" %}
 
-    using Syncfusion.Maui.Toolkit.Hosting;
+using Syncfusion.Maui.Toolkit.Hosting;
 
-    public class MauiProgram 
+public class MauiProgram 
+{
+    public static MauiApp CreateMauiApp()
     {
-        public static MauiApp CreateMauiApp()
+        var builder = MauiApp.CreateBuilder();
+        builder
+        .UseMauiApp<App>()
+        .ConfigureFonts(fonts =>
         {
-            var builder = MauiApp.CreateBuilder();
-            builder
-            .UseMauiApp<App>()
-            .ConfigureFonts(fonts =>
-            {
-                fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
-            });
+            fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
+        });
 
-            builder.ConfigureSyncfusionToolkit();
-            return builder.Build();
-        }
+        builder.ConfigureSyncfusionToolkit();
+        return builder.Build();
     }
+}
 
 {% endhighlight %} 
 {% endtabs %}
@@ -100,29 +100,29 @@ Step 2. Initialize `SfPullToRefresh` class.
 {% tabs %}
 {% highlight xaml tabtitle="MainPage.xaml" hl_lines="3" %}
 
-    <ContentPage 
-        .....
-        xmlns:PullToRefreshControl="clr-namespace:Syncfusion.Maui.Toolkit.PullToRefresh;assembly=Syncfusion.Maui.Toolkit">
-        <ContentPage.Content> 
-            <PullToRefreshControl:SfPullToRefresh />
-        </ContentPage.Content> 
-    </ContentPage>
+<ContentPage 
+    .....
+    xmlns:PullToRefreshControl="clr-namespace:Syncfusion.Maui.Toolkit.PullToRefresh;assembly=Syncfusion.Maui.Toolkit">
+    <ContentPage.Content> 
+        <PullToRefreshControl:SfPullToRefresh />
+    </ContentPage.Content> 
+</ContentPage>
 
 {% endhighlight %}
 {% highlight c# tabtitle="MainPage.xaml.cs" hl_lines="9" %}
 
-    using Syncfusion.Maui.Toolkit.PullToRefresh;
-    . . .
+using Syncfusion.Maui.Toolkit.PullToRefresh;
+. . .
 
-    public partial class MainPage : ContentPage
+public partial class MainPage : ContentPage
+{
+    public MainPage()
     {
-        public MainPage()
-        {
-            InitializeComponent();
-            SfPullToRefresh pullToRefresh = new SfPullToRefresh();
-            this.Content = pullToRefresh;
-        }
+        InitializeComponent();
+        SfPullToRefresh pullToRefresh = new SfPullToRefresh();
+        this.Content = pullToRefresh;
     }
+}
 
 {% endhighlight %}
 {% endtabs %}
@@ -136,36 +136,35 @@ To show the progress indicator while updating the view, set `IsRefreshing` prope
 {% tabs %}
 {% highlight xaml tabtitle="MainPage.xaml" hl_lines="7 11" %}
 
-    <ContentPage xmlns:PullToRefreshControl="clr-namespace:Syncfusion.Maui.Toolkit.PullToRefresh;assembly=Syncfusion.Maui.Toolkit">
-            ..........
-        <PullToRefreshControl:SfPullToRefresh x:Name="pullToRefresh">
-            <PullToRefreshControl:SfPullToRefresh.PullableContent>
-                <StackLayout>
-                    <Label Text="sample page" />
-                </StackLayout>
-            </PullToRefreshControl:SfPullToRefresh.PullableContent>
-        </PullToRefreshControl:SfPullToRefresh>
-    </ContentPage>
+<ContentPage xmlns:PullToRefreshControl="clr-namespace:Syncfusion.Maui.Toolkit.PullToRefresh;assembly=Syncfusion.Maui.Toolkit">
+        ..........
+    <PullToRefreshControl:SfPullToRefresh x:Name="pullToRefresh">
+        <PullToRefreshControl:SfPullToRefresh.PullableContent>
+            <StackLayout>
+                <Label Text="sample page" />
+            </StackLayout>
+        </PullToRefreshControl:SfPullToRefresh.PullableContent>
+    </PullToRefreshControl:SfPullToRefresh>
+</ContentPage>
 
 {% endhighlight %}
 {% highlight c# tabtitle="MainPage.xaml.cs" hl_lines="12" %}
 
-    public partial class MainPage : ContentPage
+public partial class MainPage : ContentPage
+{
+    public MainPage()
     {
-        public MainPage()
-        {
-            InitializeComponent();
-            this.pullToRefresh.Refreshing += PullToRefresh_Refreshing;
-        }
-
-        private async void PullToRefresh_Refreshing(object sender, EventArgs e)
-        {
-            this.pullToRefresh.IsRefreshing = true;
-            await Task.Delay(2000);
-            this.pullToRefresh.IsRefreshing = false;
-        }
+        InitializeComponent();
+        this.pullToRefresh.Refreshing += PullToRefresh_Refreshing;
     }
-    
+
+    private async void PullToRefresh_Refreshing(object sender, EventArgs e)
+    {
+        this.pullToRefresh.IsRefreshing = true;
+        await Task.Delay(2000);
+        this.pullToRefresh.IsRefreshing = false;
+    }
+}
 
 {% endhighlight %}
 {% endtabs %}
