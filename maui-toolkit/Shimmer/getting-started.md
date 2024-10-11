@@ -54,7 +54,7 @@ dotnet add package Syncfusion.Maui.Toolkit
 {% endhighlight %}
 {% endtabs %}
 
- 4. To ensure all dependencies are installed, run:
+4.To ensure all dependencies are installed, run:
 
 {% tabs %}
 {% highlight sh %}
