@@ -135,7 +135,7 @@ The appearance of the legend label can be customized using the [`LabelStyle`](ht
 {% highlight c# %}
 
 ChartLegend legend = new ChartLegend();
-ChartLegendLabelStyle labelStyle = new ChartLegendLabelStyle
+ChartLegendLabelStyle labelStyle = new ChartLegendLabelStyle()
 {
     TextColor = Color.Blue,
     Margin = new Thickness(5),

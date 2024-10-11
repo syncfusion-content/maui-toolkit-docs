@@ -168,7 +168,7 @@ SfCartesianChart chart = new SfCartesianChart();
 . . .
 ChartTrackballBehavior trackball = new ChartTrackballBehavior();
 
-ChartLabelStyle labelStyle = new ChartLabelStyle
+ChartLabelStyle labelStyle = new ChartLabelStyle()
 {
     Background = Color.LightBlue,
     FontSize = 15,
