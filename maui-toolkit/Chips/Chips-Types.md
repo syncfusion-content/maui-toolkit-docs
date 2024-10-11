@@ -205,7 +205,7 @@ public class EmployeeViewModel : INotifyPropertyChanged
 
 ### ChoiceMode
 
-`Single` - At least, one item must be in selected state and the selected item cannot be deselected, if [ChoiceMode](https://helpstaging.syncfusion.com:14038/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Chips.SfChipGroup.html#Syncfusion_Maui_Toolkit_Chips_SfChipGroup_ChoiceMode) is Single.
+`Single` - At least, one item must be in selected state and the selected item cannot be deselected, if [ChoiceMode](https://helpstaging.syncfusion.com:14038/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Chips.ChoiceMode.html) is Single.
 
 `SingleOrNone` - Unlike `Single` it is possible to deselect the selected item and keep all the items in deselected state.
 
