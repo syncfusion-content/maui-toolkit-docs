@@ -9,7 +9,7 @@ documentation : ug
 
 # How to perform an operation while changing the CarouselItem?
 
-We can perform the operation while changing the CarouselItem using the [SelectionChanged](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Carousel.SfCarousel.html#Syncfusion_Maui_Carousel_SfCarousel_SelectionChanged) event. The [SelectionChanged](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Carousel.SfCarousel.html#Syncfusion_Maui_Carousel_SfCarousel_SelectionChanged) event returns the OldItem and selected NewItem.
+We can perform the operation while changing the CarouselItem using the [SelectionChanged](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Carousel.SfCarousel.html#Syncfusion_Maui_Toolkit_Carousel_SfCarousel_SelectionChanged) event. The SelectionChanged event returns the OldItem and selected NewItem.
 
 {% tabs %}
 
@@ -17,6 +17,7 @@ We can perform the operation while changing the CarouselItem using the [Selectio
 
 <carousel:SfCarousel x:Name="carousel"
                      ItemsSource="{Binding ImageCollection}"
+                     ItemTemplate="{StaticResource itemTemplate}"
                      ItemHeight="200"
                      ItemWidth="200"
                      SelectionChanged="Carousel_SelectionChanged"/>
@@ -25,7 +26,7 @@ We can perform the operation while changing the CarouselItem using the [Selectio
 
 {% highlight C# %}
 
-private void Carousel_SelectionChanged(object sender, Syncfusion.Maui.Core.Carousel.SelectionChangedEventArgs e)
+private void Carousel_SelectionChanged(object sender, Syncfusion.Maui.Toolkit.Carousel.SelectionChangedEventArgs e)
 {
     int count = (sender as SfCarousel).SelectedIndex + 1;
     DisplayAlert("SelectionChanged", "Carousel item:" + count + " has Selected", "Ok");

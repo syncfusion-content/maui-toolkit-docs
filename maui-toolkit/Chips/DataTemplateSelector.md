@@ -19,14 +19,13 @@ Define a simple model class ChipModel with fields Text, CanSelect, ImageSource, 
 
 {% highlight C# %}
 
-    public class ChipViewModel
+public class ChipViewModel
+{
+    public ObservableCollection<ChipModel> Data { get; set; }
+    public ChipViewModel()
     {
-        public ObservableCollection<ChipModel> Data { get; set; }
-
-        public ChipViewModel()
-        {
-                Data = new ObservableCollection<ChipModel>()
-               {
+            Data = new ObservableCollection<ChipModel>()
+            {
                 new ChipModel(){Text ="Happy", CanSelect = true, ImageSource="Happy.png"},
                 new ChipModel(){Text ="Sad", CanSelect = false,ImageSource = "Sad.png"},
                 new ChipModel(){Text ="Love", CanSelect = true,ImageSource = "Love.png"},
@@ -35,17 +34,17 @@ Define a simple model class ChipModel with fields Text, CanSelect, ImageSource, 
                 new ChipModel(){Text ="Think", CanSelect = true,ImageSource="Thinking.png"},
                 new ChipModel(){Text ="Wink", CanSelect = true,ImageSource="Wink.png"},
                 new ChipModel(){Text ="Freeze", CanSelect = false,ImageSource="Freezing.png"},
-               };
-        }
-
+            };
     }
 
-    public class ChipModel
-    {
-        public bool CanSelect { get; set; }
-        public string Text { get; set; }
-        public ImageSource ImageSource { get; set; }
-    }
+}
+
+public class ChipModel
+{
+    public bool CanSelect { get; set; }
+    public string Text { get; set; }
+    public ImageSource ImageSource { get; set; }
+}
 
 {% endhighlight %}
 
@@ -60,13 +59,13 @@ Create a custom class by inheriting `DataTemplateSelector`, and override the `On
 
 public class ChipDataTemplateSelector : DataTemplateSelector
 {
-        public DataTemplate HappyEmojiTemplate { get; set; }
-        public DataTemplate SadEmojiTemplate { get; set; }
+    public DataTemplate HappyEmojiTemplate { get; set; }
+    public DataTemplate SadEmojiTemplate { get; set; }
 
-        protected override DataTemplate OnSelectTemplate(object item, BindableObject container)
-        {
-            return (item as ChipModel).CanSelect ? HappyEmojiTemplate : SadEmojiTemplate;
-        }
+    protected override DataTemplate OnSelectTemplate(object item, BindableObject container)
+    {
+        return (item as ChipModel).CanSelect ? HappyEmojiTemplate : SadEmojiTemplate;
+    }
 }
 
 {% endhighlight %}
@@ -74,43 +73,61 @@ public class ChipDataTemplateSelector : DataTemplateSelector
 
 ### Applying the data template selector
 
-Assign the already defined `DataTemplateSelector` to the [`ItemTemplate`](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Core.SfChipGroup.html#Syncfusion_Maui_Core_SfChipGroup_ItemTemplate) of the SfChipGroup in either XAML or C#.
+Assign the already defined `DataTemplateSelector` to the [`ItemTemplate`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Chips.SfChipGroup.html#Syncfusion_Maui_Toolkit_Chips_SfChipGroup_ItemTemplate) of the SfChipGroup in either XAML or C#.
 
 {% tabs %}
 {% highlight xaml %}
-             
-<ContentPage.Resources>
-    <ResourceDictionary>
-        <DataTemplate x:Key="happyTemplate">
-            <StackLayout>
-                <chip:SfChip HeightRequest="40" WidthRequest="120" Text="{Binding Text}" BackgroundColor="#00bdae" ShowIcon="True" ImageSource="{Binding ImageSource}"  ShowCloseButton="True" ShowSelectionIndicator="False" ImageAlignment="Left" CloseButtonColor="White"/>
-        </StackLayout>
-        </DataTemplate>
-        <DataTemplate x:Key="sadTemplate">
-            <StackLayout>
-                <chip:SfChip HeightRequest="40" WidthRequest="120" Text="{Binding Text}" BackgroundColor="#e56590" ShowIcon="True" ImageSource="{Binding ImageSource}"  ShowCloseButton="True" ShowSelectionIndicator="False" ImageAlignment="Left" CloseButtonColor="White"/>
-            </StackLayout>
-        </DataTemplate>
-        <local:ChipDataTemplateSelector x:Key="selector" 
-                                        HappyEmojiTemplate="{StaticResource happyTemplate}" 
-                                        SadEmojiTemplate="{StaticResource sadTemplate}"/>
-    </ResourceDictionary>
-</ContentPage.Resources>
 
-<ContentPage.BindingContext>
-    <local:ChipViewModel/>
-</ContentPage.BindingContext>
+<ContentPage>             
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <DataTemplate x:Key="happyTemplate">
+                <StackLayout>
+                    <ChipControl:SfChip HeightRequest="40" 
+                                        WidthRequest="120" 
+                                        Text="{Binding Text}" 
+                                        BackgroundColor="#00bdae" 
+                                        ShowIcon="True" 
+                                        ImageSource="{Binding ImageSource}"  
+                                        ShowCloseButton="True" 
+                                        ShowSelectionIndicator="False" 
+                                        ImageAlignment="Left" 
+                                        CloseButtonColor="White"/>
+                </StackLayout>
+            </DataTemplate>
+            <DataTemplate x:Key="sadTemplate">
+                <StackLayout>
+                    <ChipControl:SfChip HeightRequest="40"
+                                        WidthRequest="120" 
+                                        Text="{Binding Text}" 
+                                        BackgroundColor="#e56590" 
+                                        ShowIcon="True" 
+                                        ImageSource="{Binding ImageSource}"  
+                                        ShowCloseButton="True" 
+                                        ShowSelectionIndicator="False" 
+                                        ImageAlignment="Left" 
+                                        CloseButtonColor="White"/>
+                </StackLayout>
+            </DataTemplate>
+            <local:ChipDataTemplateSelector x:Key="selector" 
+                                            HappyEmojiTemplate="{StaticResource happyTemplate}" 
+                                            SadEmojiTemplate="{StaticResource sadTemplate}"/>
+        </ResourceDictionary>
+    </ContentPage.Resources>
 
-<chip: SfChipGroup x:Name="chipgroup"                                                           ChipBackground="Transparent"                                    
-ItemsSource="{Binding Data}" 
-ItemTemplate="{StaticResource selector}">
-    
-</chip:SfChipGroup>
-      
+    <ContentPage.BindingContext>
+        <local:ChipViewModel/>
+    </ContentPage.BindingContext>
+
+    <ChipControl:SfChipGroup x:Name="chipgroup" 
+                            ChipBackground="Transparent" 
+                            ItemsSource="{Binding Data}" 
+                            ItemTemplate="{StaticResource selector}">
+    </ChipControl:SfChipGroup>
 </ContentPage>
+
 {% endhighlight %}
 {% highlight c# %}
-
 SfChipGroup chipGroup = new SfChipGroup();
 chipGroup.ItemsSource = chipViewModel.Data;
 chipGroup.ItemTemplate = this.Resources["selector"] as DataTemplate;

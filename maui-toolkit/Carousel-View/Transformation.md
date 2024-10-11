@@ -9,11 +9,11 @@ documentation : ug
 
 # Transformation in .NET MAUI Carousel View (SfCarousel)
 
-The [Offset](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Carousel.SfCarousel.html#Syncfusion_Maui_Carousel_SfCarousel_Offset) between selected and unselected item can be customized in  [SfCarousel](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Carousel.SfCarousel.html) control. And also the items can be scaled to the specified value.
+The [Offset](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Carousel.SfCarousel.html#Syncfusion_Maui_Toolkit_Carousel_SfCarousel_Offset) between selected and unselected item can be customized in  [SfCarousel](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Carousel.SfCarousel.html) control. And also the items can be scaled to the specified value.
 
 ## Tilt Non Selected Items
 
-The [RotationAngle](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Carousel.SfCarousel.html#Syncfusion_Maui_Carousel_SfCarousel_RotationAngle) property in the [SfCarousel](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Carousel.SfCarousel.html) control is utilized to tilt all unselected items at a specified angle in the [Default](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Core.Carousel.ViewMode.html#Syncfusion_Maui_Core_Carousel_ViewMode_Default) mode.
+The [RotationAngle](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Carousel.SfCarousel.html#Syncfusion_Maui_Toolkit_Carousel_SfCarousel_RotationAngle) property in the [SfCarousel](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Carousel.SfCarousel.html) control is utilized to tilt all unselected items at a specified angle in the [Default](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Carousel.SfCarousel.ViewMode.html#Syncfusion_Maui_Toolkit_Carousel_SfCarousel_ViewMode_Default) mode.
 
 N> If the angle value is positive, then the rotation is in the clockwise direction. If the angle value is negative, the rotation is in the counterclockwise direction. 
 
@@ -22,6 +22,8 @@ N> If the angle value is positive, then the rotation is in the clockwise directi
 {% highlight xaml %}
 
 <carousel:SfCarousel x:Name="carousel"
+                     ItemsSource="{Binding ImageCollection}"
+                     ItemTemplate="{StaticResource itemTemplate}"
                      ItemHeight="300"
                      ItemWidth="200"
                      RotationAngle="30"/>
@@ -38,6 +40,7 @@ SfCarousel carousel = new SfCarousel()
 };
 
 carousel.SetBinding(SfCarousel.ItemsSourceProperty, "ImageCollection");
+carousel.ItemTemplate = itemTemplate;
 
 {% endhighlight %}
 
@@ -47,13 +50,15 @@ carousel.SetBinding(SfCarousel.ItemsSourceProperty, "ImageCollection");
 
 ## Set Gap between Selected Item
 
-Distance between the selected item and other items can be customized by using [SelectedItemOffset](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Carousel.SfCarousel.html#Syncfusion_Maui_Carousel_SfCarousel_SelectedItemOffset) property of the  [SfCarouse](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Carousel.SfCarousel.html) control in the Default mode.
+Distance between the selected item and other items can be customized by using [SelectedItemOffset](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Carousel.SfCarousel.html#Syncfusion_Maui_Toolkit_Carousel_SfCarousel_SelectedItemOffset) property of the  [SfCarouse](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Carousel.SfCarousel.html) control in the Default mode.
 
 {% tabs %}
 
 {% highlight xaml %}
 
 <carousel:SfCarousel x:Name="carousel"
+                     ItemsSource="{Binding ImageCollection}"
+                     ItemTemplate="{StaticResource itemTemplate}"
                      ItemHeight="170"
                      ItemWidth="270"
                      SelectedItemOffset="60"/>
@@ -71,6 +76,7 @@ SfCarousel carousel = new SfCarousel()
 };
 
 carousel.SetBinding(SfCarousel.ItemsSourceProperty, "ImageCollection");
+carousel.ItemTemplate = itemTemplate;
 
 {% endhighlight %}
 
@@ -80,7 +86,7 @@ carousel.SetBinding(SfCarousel.ItemsSourceProperty, "ImageCollection");
 
 ## Set Gap between unselected Items
 
-The [Offset](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Carousel.SfCarousel.html#Syncfusion_Maui_Carousel_SfCarousel_Offset) property is used to define the accurate distance between unselected items in the [SfCarousel](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Carousel.SfCarousel.html) panel in the Default mode.
+The [Offset](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Carousel.SfCarousel.html#Syncfusion_Maui_Toolkit_Carousel_SfCarousel_Offset) property is used to define the accurate distance between unselected items in the [SfCarousel](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Carousel.SfCarousel.html) panel in the Default mode.
 
 N> The default offset value is 40 for desktop platforms and 18 for mobile platforms.
 
@@ -89,6 +95,8 @@ N> The default offset value is 40 for desktop platforms and 18 for mobile platfo
 {% highlight xaml %}
 
 <carousel:SfCarousel x:Name="carousel"
+                     ItemsSource="{Binding ImageCollection}"
+                     ItemTemplate="{StaticResource itemTemplate}"
                      ItemHeight="170"
                      ItemWidth="270"
                      Offset="60"/>
@@ -106,6 +114,7 @@ SfCarousel carousel = new SfCarousel()
 };
 
 carousel.SetBinding(SfCarousel.ItemsSourceProperty, "ImageCollection");
+carousel.ItemTemplate = itemTemplate;
 
 {% endhighlight %}
 
@@ -115,7 +124,7 @@ carousel.SetBinding(SfCarousel.ItemsSourceProperty, "ImageCollection");
 
 ## Set Scaling for Carousel Items
 
-The [ScaleOffset](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Carousel.SfCarousel.html#Syncfusion_Maui_Carousel_SfCarousel_ScaleOffset) property in the  [SfCarousel](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Carousel.SfCarousel.html) control is used to scale all the items to the specified scale value in the Default mode.
+The [ScaleOffset](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Carousel.SfCarousel.html#Syncfusion_Maui_Toolkit_Carousel_SfCarousel_ScaleOffset) property in the  [SfCarousel](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Carousel.SfCarousel.html) control is used to scale all the items to the specified scale value in the Default mode.
 
 {% tabs %}
 
@@ -123,6 +132,7 @@ The [ScaleOffset](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Carousel.S
 
 <carousel:SfCarousel x:Name="carousel"
                      ItemsSource="{Binding ImageCollection}"
+                     ItemTemplate="{StaticResource itemTemplate}"
                      ItemHeight="200"
                      ItemWidth="200"
                      ScaleOffset="0.5"/>
@@ -139,6 +149,7 @@ SfCarousel carousel = new SfCarousel()
 };
 
 carousel.SetBinding(SfCarousel.ItemsSourceProperty, "ImageCollection");
+carousel.ItemTemplate = itemTemplate;
 
 {% endhighlight %}
 
@@ -148,7 +159,7 @@ carousel.SetBinding(SfCarousel.ItemsSourceProperty, "ImageCollection");
 
 ## Spacing between the Items in Linear mode
 
-Spacing of all the items in Linear mode can be determined by using [ItemSpacing](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Carousel.SfCarousel.html#Syncfusion_Maui_Carousel_SfCarousel_ItemSpacing) property.
+Spacing of all the items in Linear mode can be determined by using [ItemSpacing](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Carousel.SfCarousel.html#Syncfusion_Maui_Toolkit_Carousel_SfCarousel_ItemSpacing) property.
 
 {% tabs %}
 
@@ -156,6 +167,7 @@ Spacing of all the items in Linear mode can be determined by using [ItemSpacing]
 
 <carousel:SfCarousel x:Name="carousel"
                      ItemsSource="{Binding ImageCollection}"
+                     ItemTemplate="{StaticResource itemTemplate}"
                      ItemHeight="200"
                      ItemWidth="200"
                      ItemSpacing="60"
@@ -174,6 +186,7 @@ SfCarousel carousel = new SfCarousel()
 };
 
 carousel.SetBinding(SfCarousel.ItemsSourceProperty, "ImageCollection");
+carousel.ItemTemplate = itemTemplate;
 
 {% endhighlight %}
 

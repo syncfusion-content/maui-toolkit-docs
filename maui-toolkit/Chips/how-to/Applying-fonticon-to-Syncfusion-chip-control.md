@@ -9,7 +9,7 @@ documentation: ug
 
 # Setting the FontIcon to SfChip
 
-SfChip is supported to display the font icon by setting [`FontImageSource`] to its [ImageSource](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Core.SfChip.html#Syncfusion_Maui_Core_SfChip_ImageSource) property with following below steps.
+SfChip is supported to display the font icon by setting [`FontImageSource`] to its [ImageSource](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.ButtonBase.html#Syncfusion_Maui_Toolkit_ButtonBase_ImageSource) property with following below steps.
 
 Create the instance for `FontImageSource` and set to `ImageSource` property of SfChip as shown in the below code snippet.
 
@@ -17,25 +17,25 @@ Create the instance for `FontImageSource` and set to `ImageSource` property of S
 
 {% highlight xaml %}
 
-   <chip:SfChip x:Name="chip" 
-                Text="Syncfusion" 
-                ShowIcon="True"
-                FontSize="17"
-                TextColor="White"
-                BackgroundColor="#512dcd"
-                WidthRequest="120"
-                HeightRequest="40"
-                ImageSize="15"
-                Padding="0,0,0,2">
-        <chip:SfChip.ImageSource>
-            <FontImageSource Glyph="&#xEB52;" 
-                             Size="12"
-                             Color="White"
-                             FontFamily="Segoe MDL2 Assets"
-                             >
-            </FontImageSource>
-        </chip:SfChip.ImageSource>
-    </chip:SfChip>
+<ChipControl:SfChip x:Name="chip" 
+            Text="Syncfusion" 
+            ShowIcon="True"
+            FontSize="17"
+            TextColor="White"
+            BackgroundColor="#512dcd"
+            WidthRequest="120"
+            HeightRequest="40"
+            ImageSize="15"
+            Padding="0,0,0,2">
+    <ChipControl:SfChip.ImageSource>
+        <FontImageSource Glyph="&#xEB52;" 
+                            Size="12"
+                            Color="White"
+                            FontFamily="Segoe MDL2 Assets"
+                            >
+        </FontImageSource>
+    </ChipControl:SfChip.ImageSource>
+</ChipControl:SfChip>
 
 {% endhighlight %}
 

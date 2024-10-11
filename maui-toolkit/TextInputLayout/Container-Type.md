@@ -14,7 +14,7 @@ Containers improve the discoverability of input view by creating a contrast betw
 
 ## Filled
 
-The background of the input view will be filled with container color, and its stroke (at the bottom edge) color and thickness will be changed based on its states. It can be enabled by setting the [ContainerType](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Core.SfTextInputLayout.html#Syncfusion_Maui_Core_SfTextInputLayout_ContainerType) property to [Filled](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Core.ContainerType.html#Syncfusion_Maui_Core_ContainerType_Filled).
+The background of the input view will be filled with container color, and its stroke (at the bottom edge) color and thickness will be changed based on its states. It can be enabled by setting the [ContainerType](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TextInputLayout.SfTextInputLayout.html#Syncfusion_Maui_Toolkit_TextInputLayout_SfTextInputLayout_ContainerType) property to [Filled](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TextInputLayout.ContainerType.html#Syncfusion_Maui_Toolkit_TextInputLayout_ContainerType_Filled).
 
 {% tabs %} 
 
@@ -22,7 +22,7 @@ The background of the input view will be filled with container color, and its st
 
 <inputLayout:SfTextInputLayout Hint="Name"
                                ContainerType="Filled">
-    <Entry Text="John" />
+    <Entry Text="John"/>
 </inputLayout:SfTextInputLayout>  
 
 {% endhighlight %}
@@ -38,11 +38,11 @@ inputLayout.Content = new Entry() { Text = "John" };
 
 {% endtabs %}
 
-![Filled type](images/ContainerType/Filled_Focused.jpg)
+![.NET MAUI TextInputLayout with Filled container type.](images/ContainerType/Filled_Focused.jpg)
 
 ## Outlined
 
-When setting the [ContainerType](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Core.SfTextInputLayout.html#Syncfusion_Maui_Core_SfTextInputLayout_ContainerType) property to [Outlined](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Core.ContainerType.html#Syncfusion_Maui_Core_ContainerType_Outlined), the container will be covered with a rounded-corner border.
+When setting the [ContainerType](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TextInputLayout.SfTextInputLayout.html#Syncfusion_Maui_Toolkit_TextInputLayout_SfTextInputLayout_ContainerType) property to [Outlined](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TextInputLayout.ContainerType.html#Syncfusion_Maui_Toolkit_TextInputLayout_ContainerType_Outlined), the container will be covered with a rounded-corner border.
 
 {% tabs %} 
 
@@ -53,7 +53,6 @@ When setting the [ContainerType](https://help.syncfusion.com/cr/maui/Syncfusion.
     <Entry Text="John" />
 </inputLayout:SfTextInputLayout>  
  
-
 {% endhighlight %}
 
 {% highlight C# %} 
@@ -67,11 +66,11 @@ inputLayout.Content = new Entry() { Text = "John" };
 
 {% endtabs %}
 
-![Outlined type](images/ContainerType/Outlined.png)
+![.NET MAUI TextInputLayout with Outlined container type.](images/ContainerType/Outlined.png)
 
 ### Customize the corner radius of the outline border 
 
-When setting the [OutlineCornerRadius](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Core.SfTextInputLayout.html#Syncfusion_Maui_Core_SfTextInputLayout_OutlineCornerRadius) property to double value, the corner radius of the container will be changed.
+When setting the [OutlineCornerRadius](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TextInputLayout.SfTextInputLayout.html#Syncfusion_Maui_Toolkit_TextInputLayout_SfTextInputLayout_OutlineCornerRadius) property to double value, the corner radius of the container will be changed.
 
 {% tabs %}
 
@@ -97,14 +96,14 @@ inputLayout.Content = new Entry();
 
 {% endtabs %}
 
-![OutlineCornerRadius img](images/ContainerType/CornerRadius.png)
+![.NET MAUI TextInputLayout with OutlineCornerRadius.](images/ContainerType/CornerRadius.png)
 
 >**NOTE**
-It is applicable for the outline border when setting the container type to outlined.
+It is applicable for the outline border when setting the container type to `Outlined`.
 
 ### Custom Padding
 
-Spaces around the input view can be customized by setting the InputViewPadding property to [thickness](https://learn.microsoft.com/en-us/dotnet/api/microsoft.maui.thickness?view=net-maui-7.0) value.
+Spaces around the input view can be customized by setting the [InputViewPadding](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TextInputLayout.SfTextInputLayout.html#Syncfusion_Maui_Toolkit_TextInputLayout_SfTextInputLayout_InputViewPadding) property to [Thickness](https://learn.microsoft.com/en-us/dotnet/api/microsoft.maui.thickness?view=net-maui-8.0) value.
 
 {% tabs %} 
 
@@ -132,11 +131,11 @@ inputLayout.Content = new Entry();
 
 {% endtabs %}
 
-![Padding customization around the input view](images/ContainerType/padingg.png)
+![Padding customization around the text input view.](images/ContainerType/padingg.png)
 
 ## None
 
-When setting the [ContainerType](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Core.SfTextInputLayout.html#Syncfusion_Maui_Core_SfTextInputLayout_ContainerType) property to [None](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Core.ContainerType.html#Syncfusion_Maui_Core_ContainerType_None), the container will have an empty background and enough spacing.
+When setting the [ContainerType](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TextInputLayout.SfTextInputLayout.html#Syncfusion_Maui_Toolkit_TextInputLayout_SfTextInputLayout_ContainerType) property to [None](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TextInputLayout.ContainerType.html#Syncfusion_Maui_Toolkit_TextInputLayout_ContainerType_None), the container will have an empty background and enough spacing.
 
 {% tabs %} 
 
@@ -147,7 +146,6 @@ When setting the [ContainerType](https://help.syncfusion.com/cr/maui/Syncfusion.
     <Entry Text="John" />
 </inputLayout:SfTextInputLayout>  
  
-
 {% endhighlight %}
 
 {% highlight C# %} 
@@ -161,4 +159,4 @@ inputLayout.Content = new Entry() { Text = "John" };
 
 {% endtabs %}
 
-![None type](images/ContainerType/None_focused.jpg)
+![.NET MAUI TextInputLayout without container background.](images/ContainerType/None_focused.jpg)
