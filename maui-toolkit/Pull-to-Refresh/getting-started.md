@@ -36,7 +36,7 @@ Before proceeding, ensure the following are in place:
  
 ### Visual Studio
 1. In **Solution Explorer**, right-click the project and choose **Manage NuGet Packages**.
-2. Search for [Syncfusion.Maui.Toolkit](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.html) and install the latest version.
+2. Search for [Syncfusion.Maui.Toolkit](https://www.nuget.org/packages/Syncfusion.Maui.Toolkit/) and install the latest version.
 3. Ensure the necessary dependencies are installed correctly, and the project is restored.
 
 ### Visual Studio Code
@@ -174,6 +174,8 @@ public partial class MainPage : ContentPage
 Press **F5** to build and run the application. Once compiled, perform pull-to-refresh action on pullable content view to refresh the view.
 
 ![.NET MAUI PullToRefresh with slide on top transition mode](Images/getting-started//maui-pull-to-refresh-slideontop-mode.gif)
+
+N> [View sample in GitHub](https://github.com/SyncfusionExamples/getting-started-with-.net-maui-pull-to-refresh/tree/master).
 
 If we run the above sample with `TransitionMode` set to `Push`, the output will be as shown in the following.
 

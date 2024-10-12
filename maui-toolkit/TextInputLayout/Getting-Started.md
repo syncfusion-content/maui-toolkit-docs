@@ -56,7 +56,7 @@ Before proceeding, ensure the following are in place:
 {% endhighlight %}
 {% endtabs %}
 
-4.To ensure all dependencies are installed, run:
+ 4. To ensure all dependencies are installed, run:
 
 {% tabs %}
 {% highlight sh %}
