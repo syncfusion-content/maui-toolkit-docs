@@ -124,16 +124,16 @@ Both major and minor tick lines can be customized by using the [MajorTickStyle](
 SfCartesianChart chart = new SfCartesianChart();
 . . .
 
-NumericalAxis primaryAxis = new NumericalAxis
+NumericalAxis primaryAxis = new NumericalAxis()
 {
     MinorTicksPerInterval = 4,
-    MajorTickStyle = new ChartAxisTickStyle
+    MajorTickStyle = new ChartAxisTickStyle()
     {
         Stroke = Color.Red,
         StrokeWidth = 1,
         TickSize = 10
     },
-    MinorTickStyle = new ChartAxisTickStyle
+    MinorTickStyle = new ChartAxisTickStyle()
     {
         Stroke = Color.Red,
         StrokeWidth = 1

@@ -121,7 +121,7 @@ SfPyramidChart chart = new SfPyramidChart()
 };
 
 ChartLegend legend = new ChartLegend();
-ChartLegendLabelStyle labelStyle = new ChartLegendLabelStyle
+ChartLegendLabelStyle labelStyle = new ChartLegendLabelStyle()
 {
     TextColor = Color.Blue,
     Margin = new Thickness(5),

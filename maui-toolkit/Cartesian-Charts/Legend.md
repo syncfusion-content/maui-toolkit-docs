@@ -133,7 +133,7 @@ The [`Label`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolki
 {% highlight c# %}
 
 chart.Legend = new ChartLegend();
-ChartLegendLabelStyle labelStyle = new ChartLegendLabelStyle
+ChartLegendLabelStyle labelStyle = new ChartLegendLabelStyle()
 {
     TextColor = Color.Blue,
     Margin = new Thickness(5),
