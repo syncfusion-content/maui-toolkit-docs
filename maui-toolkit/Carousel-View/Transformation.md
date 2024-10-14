@@ -50,7 +50,7 @@ carousel.ItemTemplate = itemTemplate;
 
 ## Set Gap between Selected Item
 
-Distance between the selected item and other items can be customized by using [SelectedItemOffset](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Carousel.SfCarousel.html#Syncfusion_Maui_Toolkit_Carousel_SfCarousel_SelectedItemOffset) property of the  [SfCarouse](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Carousel.SfCarousel.html) control in the Default mode.
+Distance between the selected item and other items can be customized by using [SelectedItemOffset](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Carousel.SfCarousel.html#Syncfusion_Maui_Toolkit_Carousel_SfCarousel_SelectedItemOffset) property of the  [SfCarousel](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Carousel.SfCarousel.html) control in the Default mode.
 
 {% tabs %}
 
