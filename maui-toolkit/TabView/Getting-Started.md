@@ -26,15 +26,19 @@ Before proceeding, ensure the following are setup:
 </tr>
 <tr>
 <td>
-1. Go to <b>File > New > Project</b> and choose the <b>.NET MAUI App</b> template.
-2. Name the project and choose a location. Click <b>Next</b>.
-3. Select the .NET framework version and click <b>Create</b>.
+<ol>
+<li> Go to <b>File > New > Project</b> and choose the <b>.NET MAUI App</b> template.</li>
+<li> Name the project and choose a location. Click <b>Next</b>.</li>
+<li> Select the .NET framework version and click <b>Create</b>.</li>
+</ol>
 </td>
 <td>
-1. Open the command palette by pressing `Ctrl + Shift + P` and type <b>.NET: New Project<b> and press <b>Enter</b>.
-2. Choose the <b>.NET MAUI App</b> template.
-3. Select the project location, type the project name, and press <b>Enter</b>.
-4. Choose <b>Create project</b>.
+<ol>
+<li> Open the command palette by pressing `Ctrl + Shift + P` and type <b>.NET: New Project</b> and press <b>Enter</b>.</li>
+<li> Choose the <b>.NET MAUI App</b> template.</li>
+<li> Select the project location, type the project name, and press <b>Enter</b>.</li>
+<li> Choose <b>Create project</b>.</li>
+</ol>
 </td>
 </tr>
 </table>
