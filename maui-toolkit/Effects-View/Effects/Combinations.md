@@ -9,7 +9,7 @@ documentation: ug
 
 # Combination of Effects 
 
-The [SfEffectsView](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Core.SfEffectsView.html) control provides support to apply multiple [SfEffects](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Core.SfEffects.html) in combination. The following are some valid combinations of [SfEffects](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Core.SfEffects.html):
+The [SfEffectsView](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.EffectsView.SfEffectsView.html) control provides support to apply multiple [SfEffects](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.EffectsView.SfEffects.html) in combination. The following are some valid combinations of [SfEffects](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.EffectsView.SfEffects.html):
 
 ## Highlight and ripple
 
@@ -17,12 +17,19 @@ The [SfEffectsView](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Core.SfE
 
 {% highlight xaml %} 
 
-<syncEffectsView:SfEffectsView TouchDownEffects="Highlight,Ripple">
-</syncEffectsView:SfEffectsView>
+<ContentPage 
+            ...
+            xmlns:effectsView="clr-namespace:Syncfusion.Maui.Toolkit.EffectsView;assembly=Syncfusion.Maui.Toolkit">
+    <ContentPage.Content> 
+	 	<effectsView:SfEffectsView TouchDownEffects="Highlight,Ripple" /> 
+	</ContentPage.Content> 
+</ContentPage>
 
 {% endhighlight %}
 
 {% highlight C# %} 
+
+using Syncfusion.Maui.Toolkit.EffectsView;
 
 var effectsView = new SfEffectsView()
 {
@@ -39,14 +46,21 @@ var effectsView = new SfEffectsView()
 
 {% highlight xaml %} 
 
-<syncEffectsView:SfEffectsView
+<ContentPage 
+            ...
+            xmlns:effectsView="clr-namespace:Syncfusion.Maui.Toolkit.EffectsView;assembly=Syncfusion.Maui.Toolkit">
+    <ContentPage.Content> 
+	 	<effectsView:SfEffectsView
     LongPressEffects="Selection"
-    TouchDownEffects="Highlight">
-</syncEffectsView:SfEffectsView>
+    TouchDownEffects="Highlight" /> 
+	</ContentPage.Content> 
+</ContentPage>
 
 {% endhighlight %}
 
 {% highlight C# %} 
+
+using Syncfusion.Maui.Toolkit.EffectsView;
 
 var effectsView = new SfEffectsView()
 {
@@ -64,14 +78,21 @@ var effectsView = new SfEffectsView()
 
 {% highlight xaml %} 
 
-<syncEffectsView:SfEffectsView
+<ContentPage 
+            ...
+            xmlns:effectsView="clr-namespace:Syncfusion.Maui.Toolkit.EffectsView;assembly=Syncfusion.Maui.Toolkit">
+    <ContentPage.Content> 
+	 	<effectsView:SfEffectsView
     TouchDownEffects="Ripple"
-    TouchUpEffects="Selection">
-</syncEffectsView:SfEffectsView>
+    TouchUpEffects="Selection" /> 
+	</ContentPage.Content> 
+</ContentPage>
 
 {% endhighlight %}
 
 {% highlight C# %} 
+
+using Syncfusion.Maui.Toolkit.EffectsView;
 
 var effectsView = new SfEffectsView()
 {
@@ -89,14 +110,21 @@ var effectsView = new SfEffectsView()
 
 {% highlight xaml %} 
 
-<syncEffectsView:SfEffectsView
+<ContentPage 
+            ...
+            xmlns:effectsView="clr-namespace:Syncfusion.Maui.Toolkit.EffectsView;assembly=Syncfusion.Maui.Toolkit">
+    <ContentPage.Content> 
+	 	<effectsView:SfEffectsView
     LongPressEffects="Selection"
-    TouchDownEffects="Highlight,Ripple">
-</syncEffectsView:SfEffectsView>
+    TouchDownEffects="Highlight,Ripple" /> 
+	</ContentPage.Content> 
+</ContentPage>
 
 {% endhighlight %}
 
 {% highlight C# %} 
+
+using Syncfusion.Maui.Toolkit.EffectsView;
 
 var effectsView = new SfEffectsView()
 {
@@ -114,12 +142,19 @@ var effectsView = new SfEffectsView()
 
 {% highlight xaml %} 
 
- <syncEffectsView:SfEffectsView LongPressEffects="Scale,Selection">
-</syncEffectsView:SfEffectsView>
+<ContentPage 
+            ...
+            xmlns:effectsView="clr-namespace:Syncfusion.Maui.Toolkit.EffectsView;assembly=Syncfusion.Maui.Toolkit">
+    <ContentPage.Content> 
+	 	<effectsView:SfEffectsView LongPressEffects="Scale,Selection" /> 
+	</ContentPage.Content> 
+</ContentPage>
 
 {% endhighlight %}
 
 {% highlight C# %} 
+
+using Syncfusion.Maui.Toolkit.EffectsView;
 
 var effectsView = new SfEffectsView()
 {
