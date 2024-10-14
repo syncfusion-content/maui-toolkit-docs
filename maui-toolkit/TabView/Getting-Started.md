@@ -34,7 +34,7 @@ Before proceeding, ensure the following are setup:
 </td>
 <td>
 <ol>
-<li> Open the command palette by pressing <code>`Ctrl + Shift + P`</code> and type <b>.NET: New Project</b> and press <b>Enter</b>.</li>
+<li> Open the command palette by pressing <code>Ctrl + Shift + P</code> and type <b>.NET: New Project</b> and press <b>Enter</b>.</li>
 <li> Choose the <b>.NET MAUI App</b> template.</li>
 <li> Select the project location, type the project name, and press <b>Enter</b>.</li>
 <li> Choose <b>Create project</b>.</li>
@@ -61,9 +61,9 @@ Before proceeding, ensure the following are setup:
 <td>
 <ol>
 <li> Press <kbd>Ctrl</kbd> + <kbd>`</kbd> (backtick) to open the integrated terminal in Visual Studio Code.</li>
-<li> Ensure you're in the project root directory where your `.csproj` file is located.</li>
-<li> Run the command `dotnet add package Syncfusion.Maui.Toolkit` to install the Syncfusion .NET MAUI Toolkit NuGet package.</li>
-<li> To ensure all dependencies are installed, run `dotnet restore`.</li>
+<li> Ensure you're in the project root directory where your <code>.csproj</code> file is located.</li>
+<li> Run the command <code>dotnet add package Syncfusion.Maui.Toolkit</code> to install the Syncfusion .NET MAUI Toolkit NuGet package.</li>
+<li> To ensure all dependencies are installed, run <code>dotnet restore</code>.</li>
 </ol>
 </td>
 </tr>
