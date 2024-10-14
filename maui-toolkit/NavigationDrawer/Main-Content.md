@@ -148,5 +148,3 @@ public partial class NavigationDrawerPage : ContentPage
 N> It is mandatory to set [ContentView](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NavigationDrawer.SfNavigationDrawer.html#Syncfusion_Maui_Toolkit_NavigationDrawer_SfNavigationDrawer_ContentView) for [SfNavigationDrawer](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NavigationDrawer.SfNavigationDrawer.html) when initializing.
 
 ![contentview](Images/main-content/getting_main_content.png)
-
-You can find the complete sample from the [`GitHub`](https://github.com/SyncfusionExamples/.NET-MAUI-NavigationDrawer-MainContent) link.
