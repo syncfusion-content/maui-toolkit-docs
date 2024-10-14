@@ -19,36 +19,47 @@ Before proceeding, ensure the following are setup:
 
 ## Step 1: Create a new .NET MAUI project
 
-### Visual Studio
-
-1. Go to **File > New > Project** and choose the **.NET MAUI App** template.
-2. Name the project and choose a location. Click **Next**.
-3. Select the .NET framework version and click **Create**.
-
-### Visual Studio Code
-
-1. Open the command palette by pressing `Ctrl+Shift+P` and type **.NET: New Project** and press **Enter**.
-2. Choose the **.NET MAUI App** template.
-3. Select the project location, type the project name, and press **Enter**.
-4. Choose **Create project**.
+<table>
+<tr>
+<th> Visual Studio </th>
+<th> Visual Studio Code </th>
+</tr>
+<tr>
+<td>
+1. Go to <b>File > New > Project</b> and choose the <b>.NET MAUI App</b> template.
+2. Name the project and choose a location. Click <b>Next</b>.
+3. Select the .NET framework version and click <b>Create</b>.
+</td>
+<td>
+1. Open the command palette by pressing `Ctrl + Shift + P` and type <b>.NET: New Project<b> and press <b>Enter</b>.
+2. Choose the <b>.NET MAUI App</b> template.
+3. Select the project location, type the project name, and press <b>Enter</b>.
+4. Choose <b>Create project</b>.
+</td>
+</tr>
+</table>
 
 ## Step 2: Install the Syncfusion .NET MAUI Toolkit package
 
-### Visual Studio
-
-1. In **Solution Explorer**, right-click the project and choose **Manage NuGet Packages**.
+<table>
+<tr>
+<th> Visual Studio </th>
+<th> Visual Studio Code </th>
+</tr>
+<tr>
+<td>
+1. In <b>Solution Explorer</b>, right-click the project and choose <b>Manage NuGet Packages</b>.
 2. Search for [Syncfusion.Maui.Toolkit](https://www.nuget.org/packages/Syncfusion.Maui.Toolkit/) and install the latest version.
 3. Ensure the necessary dependencies are installed correctly, and the project is restored.
-
-### Visual Studio Code
-
+</td>
+<td>
 1. Press <kbd>Ctrl</kbd> + <kbd>`</kbd> (backtick) to open the integrated terminal in Visual Studio Code.
-
-2. Ensure you're in the project root directory where your .csproj file is located.
-
+2. Ensure you're in the project root directory where your `.csproj` file is located.
 3. Run the command `dotnet add package Syncfusion.Maui.Toolkit` to install the Syncfusion .NET MAUI Toolkit NuGet package.
-
-4. To ensure all dependencies are installed, run `dotnet restore`
+4. To ensure all dependencies are installed, run `dotnet restore`.
+</td>
+</tr>
+</table>
 
 ## Step 3: Register the handler
 
