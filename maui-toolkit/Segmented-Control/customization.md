@@ -51,7 +51,7 @@ public partial class MainPage : ContentPage
 {% endhighlight %}
 {% endtabs %}
 
-![Border color customization in .NET MAUI Segmented control.](images/customization/stroke.png)
+![Border color customization in .NET MAUI Segmented control.](images/customization/stroke.webp)
 
 ## Customize the border thickness
 
@@ -271,8 +271,7 @@ public partial class MainPage : ContentPage
 {% endhighlight %}
 {% endtabs %}
 
-![Segment item text style customization in .NET MAUI Segmented control.](images/customization/segment-item-text-style.png)
-
+![Segment item text style customization in .NET MAUI Segmented control.](images/customization/segment-item-text-style.webp)
 ## Customize the segment background
 You can customize the segmented background of the segmented control and each segment item.
 
@@ -317,7 +316,7 @@ public partial class MainPage : ContentPage
 {% endhighlight %}
 {% endtabs %}
 
-![Background customization in .NET MAUI Segmented control.](images/customization/segment-background.png)
+![Background customization in .NET MAUI Segmented control.](images/customization/segment-background.webp)
 
 ### Customize the segment background of each segment item
 

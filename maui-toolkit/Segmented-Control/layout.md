@@ -86,7 +86,7 @@ public partial class MainPage : ContentPage
 {% endhighlight %}
 {% endtabs %}
 
-![Change the segment item width in .NET MAUI Segmented control.](images/layout/segment-item-width.png)
+![Change the segment item width in .NET MAUI Segmented control.](images/layout/segment-item-width.webp)
 
 ## Change the segment height
 You can use the [SegmentHeight](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SegmentedControl.html#Syncfusion_Maui_Toolkit_SegmentedControl_SegmentHeight) property of [SfSegmentedControl](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SegmentedControl.html) to customize the segment height of the segmented control.
