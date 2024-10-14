@@ -34,7 +34,7 @@ Before proceeding, ensure the following are setup:
 </td>
 <td>
 <ol>
-<li> Open the command palette by pressing `Ctrl + Shift + P` and type <b>.NET: New Project</b> and press <b>Enter</b>.</li>
+<li> Open the command palette by pressing <code>`Ctrl + Shift + P`</code> and type <b>.NET: New Project</b> and press <b>Enter</b>.</li>
 <li> Choose the <b>.NET MAUI App</b> template.</li>
 <li> Select the project location, type the project name, and press <b>Enter</b>.</li>
 <li> Choose <b>Create project</b>.</li>
