@@ -1356,7 +1356,7 @@ This page lists the keys for each control and the element to which it is mapped 
     </tr>
 
     <tr>
-        <td rowspan="32">
+        <td rowspan="42">
             SfTabViewStyles 
             <br/>
             <br/>
