@@ -52,15 +52,19 @@ Before proceeding, ensure the following are setup:
 </tr>
 <tr>
 <td>
-1. In <b>Solution Explorer</b>, right-click the project and choose <b>Manage NuGet Packages</b>.
-2. Search for [Syncfusion.Maui.Toolkit](https://www.nuget.org/packages/Syncfusion.Maui.Toolkit/) and install the latest version.
-3. Ensure the necessary dependencies are installed correctly, and the project is restored.
+<ol>
+<li> In <b>Solution Explorer</b>, right-click the project and choose <b>Manage NuGet Packages</b>.</li>
+<li> Search for [Syncfusion.Maui.Toolkit](https://www.nuget.org/packages/Syncfusion.Maui.Toolkit/) and install the latest version.</li>
+<li> Ensure the necessary dependencies are installed correctly, and the project is restored.</li>
+</ol>
 </td>
 <td>
-1. Press <kbd>Ctrl</kbd> + <kbd>`</kbd> (backtick) to open the integrated terminal in Visual Studio Code.
-2. Ensure you're in the project root directory where your `.csproj` file is located.
-3. Run the command `dotnet add package Syncfusion.Maui.Toolkit` to install the Syncfusion .NET MAUI Toolkit NuGet package.
-4. To ensure all dependencies are installed, run `dotnet restore`.
+<ol>
+<li> Press <kbd>Ctrl</kbd> + <kbd>`</kbd> (backtick) to open the integrated terminal in Visual Studio Code.</li>
+<li> Ensure you're in the project root directory where your `.csproj` file is located.</li>
+<li> Run the command `dotnet add package Syncfusion.Maui.Toolkit` to install the Syncfusion .NET MAUI Toolkit NuGet package.</li>
+<li> To ensure all dependencies are installed, run `dotnet restore`.</li>
+</ol>
 </td>
 </tr>
 </table>
