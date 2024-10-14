@@ -54,7 +54,7 @@ Before proceeding, ensure the following are setup:
 <td>
 <ol>
 <li> In <b>Solution Explorer</b>, right-click the project and choose <b>Manage NuGet Packages</b>.</li>
-<li> Search for [Syncfusion.Maui.Toolkit](https://www.nuget.org/packages/Syncfusion.Maui.Toolkit/) and install the latest version.</li>
+<li> Search for <a href="https://www.nuget.org/packages/Syncfusion.Maui.Toolkit/">Syncfusion.Maui.Toolkit</a> and install the latest version.</li>
 <li> Ensure the necessary dependencies are installed correctly, and the project is restored.</li>
 </ol>
 </td>
