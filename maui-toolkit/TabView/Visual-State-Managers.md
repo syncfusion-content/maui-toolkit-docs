@@ -286,3 +286,5 @@ Additionally, the C# example demonstrates how to create a custom `CustomTabItem`
 By using the Visual State Manager, you can easily change the appearance of tab items based on their current state, providing visual feedback to users and enhancing the overall user experience. The following image demonstrating different visual states for tab items
 
 ![Visual state manager](images/Visual-state-manager.png)
+
+N> View [sample](https://github.com/SyncfusionExamples/maui-toolkit-samples/tree/master/TabView/VisualStateManagerTabView) in GitHub.
