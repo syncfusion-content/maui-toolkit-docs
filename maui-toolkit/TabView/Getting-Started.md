@@ -61,7 +61,7 @@ Before proceeding, ensure the following are setup:
 <td>
 <ol>
 <li> Press <kbd>Ctrl</kbd> + <kbd>`</kbd> (backtick) to open the integrated terminal in Visual Studio Code.</li>
-<li> Ensure you're in the project root directory where your <code>.csproj</code> file is located.</li>
+<li> Ensure you're in the project root directory where your <b>.csproj</b> file is located.</li>
 <li> Run the command <code>dotnet add package Syncfusion.Maui.Toolkit</code> to install the Syncfusion .NET MAUI Toolkit NuGet package.</li>
 <li> To ensure all dependencies are installed, run <code>dotnet restore</code>.</li>
 </ol>
