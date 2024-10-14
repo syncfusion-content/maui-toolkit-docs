@@ -9,20 +9,25 @@ documentation: ug
 
 # Highlight Effect in .NET MAUI Effects View (SfEffectsView)
 
-[SfEffects.Highlight](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Core.SfEffects.html#Syncfusion_Maui_Core_SfEffects_Highlight) is a smooth transition on the background color of [SfEffectsView](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Core.SfEffectsView.html)
+[SfEffects.Highlight](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.EffectsView.SfEffects.html#Syncfusion_Maui_Toolkit_EffectsView_SfEffects_Highlight) is a smooth transition on the background color of [SfEffectsView](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.EffectsView.SfEffectsView.html)
 
 {% tabs %} 
 
 {% highlight xaml %} 
 
-<syncEffectsView:SfEffectsView
-    TouchDownEffects="Highlight"
-    HighlightBackground="#FF0000">
-</syncEffectsView:SfEffectsView>
+<ContentPage 
+            ...
+            xmlns:effectsView="clr-namespace:Syncfusion.Maui.Toolkit.EffectsView;assembly=Syncfusion.Maui.Toolkit">
+    <ContentPage.Content> 
+	 	<effectsView:SfEffectsView  TouchDownEffects="Highlight"  HighlightBackground="#FF0000" /> 
+	</ContentPage.Content> 
+</ContentPage>
 
 {% endhighlight %}
 
 {% highlight C# %} 
+
+using Syncfusion.Maui.Toolkit.EffectsView;
 
 var effectsView = new SfEffectsView
 {

@@ -9,20 +9,27 @@ documentation: ug
 
 # Rotation Effect in .NET MAUI Effects View (SfEffectsView)
 
-[SfEffects.Rotation](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Core.SfEffects.html#Syncfusion_Maui_Core_SfEffects_Rotation) provides a circular movement to [SfEffectsView](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Core.SfEffectsView.html) around the center of the [SfEffectsView](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Core.SfEffectsView.html) based on the specified [Angle](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Core.SfEffectsView.html#Syncfusion_Maui_Core_SfEffectsView_Angle).
+[SfEffects.Rotation](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.EffectsView.SfEffects.html#Syncfusion_Maui_Toolkit_EffectsView_SfEffects_Rotation) provides a circular movement to [SfEffectsView](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.EffectsView.SfEffectsView.html) around the center of the [SfEffectsView](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.EffectsView.SfEffectsView.html) based on the specified [Angle](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.EffectsView.SfEffectsView.html#Syncfusion_Maui_Toolkit_EffectsView_SfEffectsView_Angle).
 
 {% tabs %} 
 
 {% highlight xaml %} 
 
-<syncEffectsView:SfEffectsView
+<ContentPage 
+            ...
+            xmlns:effectsView="clr-namespace:Syncfusion.Maui.Toolkit.EffectsView;assembly=Syncfusion.Maui.Toolkit">
+    <ContentPage.Content> 
+	 	<effectsView:SfEffectsView
     TouchDownEffects="Rotation"
-    Angle="180">
-</syncEffectsView:SfEffectsView>
+    Angle="180" /> 
+	</ContentPage.Content> 
+</ContentPage>
 
 {% endhighlight %}
 
 {% highlight C# %} 
+
+using Syncfusion.Maui.Toolkit.EffectsView;
 
 var effectsView = new SfEffectsView
 {
