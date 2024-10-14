@@ -7,17 +7,16 @@ control: SfCircularChart
 documentation: ug
 ---
 
-# .NET MAUI Chart Overview
+# .NET MAUI Circular Chart Overview
 
-Syncfusion .NET MAUI Charts (SfCircularChart) is used to create the chart with beautiful and enhanced UI visualization of data that are used in high-quality .NET MAUI applications.
+The Syncfusion Toolkit for .NET MAUI Circular Charts (`SfCircularChart`) provides a visually stunning and feature-rich way to display data in high-quality .NET MAUI applications. These charts allow for elegant visualization of data in various circular formats, making them perfect for displaying proportions and comparisons.
 
-## Key features
+## Key Features
 
-* Chart types - Supports two types of series such as pie and doughnut. Each series presents data in a unique way and it is designed to be more user-friendly.
+* **Chart Types**: Supports two series types—pie and doughnut. Each series presents data in a visually distinct way, making it both user-friendly and effective for conveying information.
 
-* User interaction - The circular chart selection, tooltips, and explode user interaction features significantly improves the end-user experience.
+* **User Interaction**: Enhances the user experience with features like selection, tooltips, and the ability to explode segments for better interaction and understanding.
 
-* Legends - Display additional information about the data points of chart series.
+* **Legends**: Provides legends to display additional context and details about the data points within the chart series.
 
-* Dynamic update - Updates the chart dynamically or lazily with live data that changes over seconds or minutes.
-
+* **Dynamic Update**: Offers dynamic or lazy updates to the chart, reflecting live data changes that occur over seconds or minutes, ensuring real-time data visualization.
