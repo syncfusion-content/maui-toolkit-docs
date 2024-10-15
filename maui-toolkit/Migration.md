@@ -1,11 +1,10 @@
 ---
 layout: post
-title: Migration Overview: Syncfusion .NET MAUI to Syncfusion Toolkit for .NET MAUI
+title: Migration from Syncfusion .NET MAUI to Syncfusion Toolkit for .NET MAUI
 description: Describes the necessary changes to easily update the existing Syncfusion .NET MAUI control to use the new toolkit with minimal code modifications.
 platform: maui-toolkit
 control: General
 documentation: ug
-
 ---
 
 # Migration Overview: Syncfusion .NET MAUI to Syncfusion Toolkit for .NET MAUI
