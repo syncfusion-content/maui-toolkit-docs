@@ -42,27 +42,10 @@ Before proceeding, ensure the following are set up:
 
 ### Visual Studio Code
 
- 1. Press <kbd>Ctrl</kbd> + <kbd>`</kbd> (backtick) to open the integrated terminal in Visual Studio Code.
- 2. Ensure you're in the project root directory where your `.csproj` file is located.
- 3. Run the following command to install the Syncfusion MAUI Toolkit NuGet package:
-
-{% tabs %}
-{% highlight sh %}
-
-dotnet add package Syncfusion.Maui.Toolkit
-
-{% endhighlight %}
-{% endtabs %}
-
-4.To ensure all dependencies are installed, run:
-
-{% tabs %}
-{% highlight sh %}
-
-   dotnet restore
-
-{% endhighlight %}
-{% endtabs %}
+1. Press <kbd>Ctrl</kbd> + <kbd>`</kbd> (backtick) to open the integrated terminal in Visual Studio Code.
+2. Ensure you're in the project root directory where your .csproj file is located.
+3. Run the command `dotnet add package Syncfusion.Maui.Toolkit` to install the Syncfusion .NET MAUI Toolkit NuGet package.
+4. To ensure all dependencies are installed, run `dotnet restore`.
 
 ## Step 3: Register the handler
 
