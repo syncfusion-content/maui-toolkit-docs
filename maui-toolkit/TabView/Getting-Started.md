@@ -53,25 +53,25 @@ In the **MauiProgram.cs** file, register the handler for Syncfusion Toolkit.
 
 {% tabs %}
 {% highlight C# tabtitle="MauiProgram.cs" hl_lines="1 9" %}    
-    using Syncfusion.Maui.Toolkit.Hosting;
+using Syncfusion.Maui.Toolkit.Hosting;
 
-    public static class MauiProgram
+public static class MauiProgram
+{
+    public static MauiApp CreateMauiApp()
     {
-	    public static MauiApp CreateMauiApp()
-	    {
-	        var builder = MauiApp.CreateBuilder();
-		    builder
-			    .ConfigureSyncfusionToolkit()
-			    .UseMauiApp<App>()
-			    .ConfigureFonts(fonts =>
-			    {
-				    fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
-				    fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
-			    });
+        var builder = MauiApp.CreateBuilder();
+        builder
+            .ConfigureSyncfusionToolkit()
+            .UseMauiApp<App>()
+            .ConfigureFonts(fonts =>
+            {
+                fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
+                fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
+            });
 
-		    return builder.Build();
-	    }
+        return builder.Build();
     }
+}
 {% endhighlight %}
 {% endtabs %} 
 
@@ -84,20 +84,21 @@ In the **MauiProgram.cs** file, register the handler for Syncfusion Toolkit.
 {% tabs %}
 
 {% highlight xaml %}
-
 <?xml version="1.0" encoding="utf-8" ?>
-<ContentPage 
-            ...
-            xmlns:tabView="clr-namespace:Syncfusion.Maui.Toolkit.TabView;assembly=Syncfusion.Maui.Toolkit">
-    <ContentPage.Content> 
-        <tabView:SfTabView/> 
-    </ContentPage.Content>  
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TabViewGettingStarted.MainPage"
+             xmlns:local="clr-namespace:TabViewGettingStarted"
+             xmlns:tabView="clr-namespace:Syncfusion.Maui.Toolkit.TabView;assembly=Syncfusion.Maui.Toolkit">
+    <!-- Define the content of the ContentPage -->
+    <ContentPage.Content>
+        <!-- Add a SfTabView control to the ContentPage -->
+        <tabView:SfTabView />
+    </ContentPage.Content>
 </ContentPage>
-	
 {% endhighlight %}
 
 {% highlight C# %}
-
 using Syncfusion.Maui.Toolkit.TabView;
 namespace TabViewGettingStarted
 {
@@ -105,13 +106,14 @@ namespace TabViewGettingStarted
     {
         public MainPage()
         {
-            InitializeComponent();           
-            SfTabView tabView = new SfTabView();   
-            this.Content = tabView; 
+            InitializeComponent();
+            // Create an instance of the SfTabView control
+            SfTabView tabView = new SfTabView();
+            // Set the Content property of the ContentPage to the newly created SfTabView instance
+            this.Content = tabView;
         }
-    }   
+    }
 }
-
 {% endhighlight %}
 
 {% endtabs %}
@@ -123,79 +125,86 @@ Tab items can be added to the control using the [Items](https://help.syncfusion.
 The following examples demonstrate how to add tab items to the `SfTabView` control using both XAML and C# approaches.
 
 {% tabs %}
-
 {% highlight xaml %}
-
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-            x:Class="TabViewMauiSample.MainPage"
-            xmlns:tabView="clr-namespace:Syncfusion.Maui.Toolkit.TabView;assembly=Syncfusion.Maui.Toolkit"
-            BackgroundColor="{DynamicResource PageBackgroundColor}">
-    <ContentPage.Content> 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TabViewGettingStarted.MainPage"
+             xmlns:tabView="clr-namespace:Syncfusion.Maui.Toolkit.TabView;assembly=Syncfusion.Maui.Toolkit"
+             BackgroundColor="{DynamicResource PageBackgroundColor}">
+    <ContentPage.Content>
         <tabView:SfTabView x:Name="tabView">
+            <!-- Define the items (tabs) of the SfTabView -->
             <tabView:SfTabView.Items>
+                <!-- First tab item with header "Call" -->
                 <tabView:SfTabItem Header="Call">
+                    <!-- Content of the "Call" tab: a Grid with a red background -->
                     <tabView:SfTabItem.Content>
                         <Grid BackgroundColor="Red" />
                     </tabView:SfTabItem.Content>
                 </tabView:SfTabItem>
-
+                <!-- Second tab item with header "Favorites" -->
                 <tabView:SfTabItem Header="Favorites">
-                     <tabView:SfTabItem.Content>
-                    <ListView RowHeight="50">
-                        <ListView.ItemsSource>
-                            <x:Array Type="{x:Type x:String}">
-                                <x:String>James</x:String>
-                                <x:String>Richard</x:String>
-                                <x:String>Michael</x:String>
-                                <x:String>Alex</x:String>
-                                <x:String>Clara</x:String>
-                            </x:Array>
-                        </ListView.ItemsSource>
-                        <ListView.ItemTemplate>
-                            <DataTemplate>
-                                <ViewCell>
-                                    <Grid Margin="10,5">
-                                        <Label
-                                            VerticalOptions="Start"
-                                            HorizontalOptions="Start"
-                                            TextColor="#666666"
-                                            FontSize="16"
-                                            Text="{Binding}"/>
-                                    </Grid>
-                                </ViewCell>
-                            </DataTemplate>
-                        </ListView.ItemTemplate>
-                    </ListView>
-                </tabView:SfTabItem.Content>
+                    <tabView:SfTabItem.Content>
+                        <!-- Content of the "Favorites" tab: a ListView with predefined items -->
+                        <ListView RowHeight="50">
+                            <ListView.ItemsSource>
+                                <!-- Define an array of strings as the data source for the ListView -->
+                                <x:Array Type="{x:Type x:String}">
+                                    <x:String>James</x:String>
+                                    <x:String>Richard</x:String>
+                                    <x:String>Michael</x:String>
+                                    <x:String>Alex</x:String>
+                                    <x:String>Clara</x:String>
+                                </x:Array>
+                            </ListView.ItemsSource>
+                            <ListView.ItemTemplate>
+                                <DataTemplate>
+                                    <ViewCell>
+                                        <!-- Define the layout for each item in the ListView -->
+                                        <Grid Margin="10,5">
+                                            <Label VerticalOptions="Start"
+                                                   HorizontalOptions="Start"
+                                                   TextColor="#666666"
+                                                   FontSize="16"
+                                                   Text="{Binding}" />
+                                        </Grid>
+                                    </ViewCell>
+                                </DataTemplate>
+                            </ListView.ItemTemplate>
+                        </ListView>
+                    </tabView:SfTabItem.Content>
                 </tabView:SfTabItem>
-
+                <!-- Third tab item with header "Contacts" -->
                 <tabView:SfTabItem Header="Contacts">
                     <tabView:SfTabItem.Content>
-                        <Grid BackgroundColor="Blue"/>
+                        <!-- Content of the "Contacts" tab: a Grid with a blue background -->
+                        <Grid BackgroundColor="Blue" />
                     </tabView:SfTabItem.Content>
                 </tabView:SfTabItem>
             </tabView:SfTabView.Items>
         </tabView:SfTabView>
-    </ContentPage.Content>  
+    </ContentPage.Content>
 </ContentPage>
-
 {% endhighlight %}
 
 {% highlight C# %}
-
 using Syncfusion.Maui.Toolkit.TabView;
-
-namespace TabViewMauiSample
+namespace TabViewGettingStarted
 {
-	public partial class TabView : ContentPage
-	{
-		public TabView ()
-		{
-			InitializeComponent ();
+    public partial class MainPage : ContentPage
+    {
+        public MainPage()
+        {
+            InitializeComponent();
+
+            // Create an instance of the SfTabView control
             SfTabView tabView = new SfTabView();
+
+            // Create a Grid with a red background for the "Call" tab
             Grid allContactsGrid = new Grid { BackgroundColor = Colors.Red };
+
+            // Create a ListView for the "Favorites" tab with predefined items
             var favorites = new ListView
             {
                 RowHeight = 50,
@@ -224,7 +233,11 @@ namespace TabViewMauiSample
                     };
                 })
             };
+
+            // Create a Grid with a blue background for the "Contacts" tab
             Grid contactsGrid = new Grid { BackgroundColor = Colors.Blue };
+
+            // Create a collection of tab items and add the previously created content to each tab
             var tabItems = new TabItemCollection
             {
                 new SfTabItem()
@@ -244,14 +257,16 @@ namespace TabViewMauiSample
                 }
             };
 
+            // Assign the collection of tab items to the SfTabView
             tabView.Items = tabItems;
+
+            // Set the Content property of the ContentPage to the SfTabView instance
             this.Content = tabView;
-		}
-	}
+        }
+    }
 }
 
 {% endhighlight %}
-
 {% endtabs %}
 
 N> View [sample](https://github.com/SyncfusionExamples/maui-toolkit-samples/tree/master/TabView/TabViewGettingStarted) in GitHub
@@ -264,118 +279,156 @@ Items can be added to the control using the `ItemsSource` property of [SfTabView
 
 Objects of any class can be given as items for `SfTabView` by using `ItemsSource`. The views corresponding to the objects can be set using the [HeaderItemTemplate](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SfTabView.html#Syncfusion_Maui_Toolkit_TabView_SfTabView_HeaderItemTemplate) for the header items and [ContentItemTemplate](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SfTabView.html#Syncfusion_Maui_Toolkit_TabView_SfTabView_ContentItemTemplate) for the content.
 
-Create a simple model class that uses `TabItems` collection property to represent the number of data objects. This class implements `INotifyPropertyChanged` to support property change notifications, which is crucial for data binding, as shown in the following code example:
+Create a **Model** class for data binding, that implements `INotifyPropertyChanged` to support property change notifications, as shown in the following code example:
 
 {% tabs %}
 
 {% highlight C# %}
 
-public class Model: INotifyPropertyChanged
-{
-    private string name;
-    public event PropertyChangedEventHandler PropertyChanged;
-
-    protected void OnPropertyChanged(string propertyName)
+    public class PersonModel : INotifyPropertyChanged
     {
-        var handler = PropertyChanged;
-        if (handler != null)
-            handler(this, new PropertyChangedEventArgs(propertyName));
-    }
+        private string name;
+		private string description;
 
-    public string Name
-    {
-        get { return name; }
-        set
+        // Event to notify when a property value changes
+        public event PropertyChangedEventHandler PropertyChanged;
+
+        // Method to raise the PropertyChanged event
+        protected void OnPropertyChanged(string propertyName)
         {
-            name = value;
-            OnPropertyChanged(nameof(Name));
+            PropertyChangedEventHandler handler = PropertyChanged;
+            if (handler != null)
+                handler(this, new PropertyChangedEventArgs(propertyName));
         }
+
+        // Property for the person's name
+        public string Name
+        {
+            get { return name; }
+            set
+            {
+                name = value;
+                // Notify that the Name property has changed
+                OnPropertyChanged(nameof(Name));
+            }
+        }
+		
+        // Property for the person's description
+        public string Description
+        {
+            get { return description; }
+            set
+            {
+                description = value;
+                // Notify that the Description property has changed
+                OnPropertyChanged(nameof(Description));
+            }
+        }		
     }
-}
 
 {% endhighlight %}
 
 {% endtabs %}
 
-Next, we will create a ViewModel class that will serve as the data source for our `SfTabView`. This class contains an `ObservableCollection` named `TabItems`, which will hold the data for each tab. The constructor initializes this collection with sample data.
+Next, we will create a **ViewModel** class that will serve as the data source for our `SfTabView`. This class contains an `ObservableCollection` named `TabItems`, which will hold the data for each tab. The constructor initializes this collection with sample data.
 
 {% tabs %}
 
 {% highlight C# %}
 
-public class TabItemsSourceViewModel : INotifyPropertyChanged
-{
-    private ObservableCollection<Model> tabItems;
-    public event PropertyChangedEventHandler PropertyChanged;
-
-    protected void OnPropertyChanged(string propertyName)
+    public class PersonViewModel : INotifyPropertyChanged
     {
-        var handler = PropertyChanged;
-        if (handler != null)
-            handler(this, new PropertyChangedEventArgs(propertyName));
-    }
+        private ObservableCollection<PersonModel> tabItems;
 
-    public ObservableCollection<Model> TabItems
-    {
-        get { return tabItems; }
-        set
+        // Event to notify when a property value changes
+        public event PropertyChangedEventHandler PropertyChanged;
+
+        // Method to raise the PropertyChanged event
+        protected void OnPropertyChanged(string propertyName)
         {
-            tabItems = value;
-            OnPropertyChanged(nameof(TabItems));
+            var handler = PropertyChanged;
+            if (handler != null)
+                handler(this, new PropertyChangedEventArgs(propertyName));
+        }
+
+        // Property for the collection of PersonModel items
+        public ObservableCollection<PersonModel> TabItems
+        {
+            get { return tabItems; }
+            set
+            {
+                tabItems = value;
+                // Notify that the TabItems property has changed
+                OnPropertyChanged(nameof(TabItems));
+            }
+        }
+
+        // Constructor to initialize the collection with some default values
+        public PersonViewModel()
+        {
+            TabItems = new ObservableCollection<PersonModel>();
+            TabItems.Add(new PersonModel() { Name = "Alexandar" , Description = "Alexandar is a creative fiction writer with a knack for weaving intricate plots and complex characters. His works span a variety of genres, but he excels in contemporary fiction. With a passion for exploring human emotions, Alexandar’s stories are known for their depth and ability to resonate with readers on a personal level." });
+            TabItems.Add(new PersonModel() { Name = "Gabriella", Description = "Create your description here..." });
+            TabItems.Add(new PersonModel() { Name = "Clara" , Description = "Create your description here..." });
+            TabItems.Add(new PersonModel() { Name = "Tye" , Description = "Create your description here..." });
+            TabItems.Add(new PersonModel() { Name = "Nora" , Description = "Create your description here..." });
+            TabItems.Add(new PersonModel() { Name = "Sebastian" , Description = "Create your description here..." });
         }
     }
-    public TabItemsSourceViewModel()
-    {
-        TabItems = new ObservableCollection<Model>();
-        TabItems.Add(new Model() { Name = "Alexandar" });
-        TabItems.Add(new Model() { Name = "Gabriella" });
-        TabItems.Add(new Model() { Name = "Clara"});
-        TabItems.Add(new Model() { Name = "Tye" });
-        TabItems.Add(new Model() { Name = "Nora" });
-        TabItems.Add(new Model() { Name = "Sebastian" });
-    }
-}
 
 {% endhighlight %}
 
 {% endtabs %}
 
-Now that we have our `Model` and `ViewModel` set up, we can bind the TabItems collection to the `ItemsSource` property of `SfTabView`. The following code examples demonstrate how to set up this binding in both XAML and C#:
+Now that we have our **Model** and **ViewModel** set up, we can bind the TabItems collection to the `ItemsSource` property of `SfTabView`. The following code examples demonstrate how to set up this binding in both XAML and C#:
 
 {% tabs %}
 
 {% highlight xaml %}
-    <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="ItemTemplateSample.MainPage"
-             xmlns:local="clr-namespace:ItemTemplateSample"
+             x:Class="TabViewGettingStarted.MainPage"
+             xmlns:local="clr-namespace:TabViewGettingStarted;assembly=TabViewGettingStarted"
              xmlns:tabView="clr-namespace:Syncfusion.Maui.Toolkit.TabView;assembly=Syncfusion.Maui.Toolkit"
-             BackgroundColor="{DynamicResource SecondaryColor}" >
+             BackgroundColor="{DynamicResource PageBackgroundColor}">
+    <!-- Set the BindingContext of the ContentPage to an instance of PersonViewModel -->
     <ContentPage.BindingContext>
-        <local:TabItemsSourceViewModel/>
+        <local:PersonViewModel />
     </ContentPage.BindingContext>
-    <tabView:SfTabView ItemsSource="{Binding TabItems}" >
-    </tabView:SfTabView>
-    </ContentPage>
+    <!-- Bind the ItemsSource of the SfTabView to the TabItems property of the PersonViewModel -->
+    <tabView:SfTabView ItemsSource="{Binding TabItems}" />
+</ContentPage>
 {% endhighlight %}
 
 {% highlight C# %}
 
 using Syncfusion.Maui.Toolkit.TabView;
 
-namespace ItemTemplateSample;
-
-public partial class MainPage : ContentPage
+namespace TabViewGettingStarted
 {
-	public MainPage()
-	{
-		InitializeComponent();
-		TabItemsSourceViewModel model = new TabItemsSourceViewModel();
-		this.BindingContext = model;
-		SfTabView tabView = new SfTabView();
-        tabView.ItemsSource = model.TabItems;
-		this.Content = tabView;
-    } 
+    public partial class MainPage : ContentPage
+    {
+        public MainPage()
+        {
+            InitializeComponent();
+
+            // Create an instance of the PersonViewModel
+            PersonViewModel viewModel = new PersonViewModel();
+
+            // Set the BindingContext of the ContentPage to the PersonViewModel instance
+            this.BindingContext = viewModel;
+
+            // Create an instance of the SfTabView control
+            SfTabView tabView = new SfTabView();
+
+            // Bind the ItemsSource of the SfTabView to the TabItems property of the PersonViewModel
+            tabView.ItemsSource = viewModel.TabItems;
+
+            // Set the Content property of the ContentPage to the SfTabView instance
+            this.Content = tabView;
+        }
+    }
 }
 
 {% endhighlight %}
@@ -389,46 +442,66 @@ The [HeaderItemTemplate](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.
 {% tabs %}
 
 {% highlight xaml %}
-    <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="ItemTemplateSample.MainPage"
-             xmlns:local="clr-namespace:ItemTemplateSample"
+             x:Class="TabViewGettingStarted.MainPage"
+             xmlns:local="clr-namespace:TabViewGettingStarted;assembly=TabViewGettingStarted"
              xmlns:tabView="clr-namespace:Syncfusion.Maui.Toolkit.TabView;assembly=Syncfusion.Maui.Toolkit">
+    <!-- Set the BindingContext of the ContentPage to an instance of PersonViewModel -->
     <ContentPage.BindingContext>
-        <local:TabItemsSourceViewModel/>
+        <local:PersonViewModel />
     </ContentPage.BindingContext>
+    <!-- Bind the ItemsSource of the SfTabView to the TabItems property of the PersonViewModel -->
     <tabView:SfTabView ItemsSource="{Binding TabItems}">
+        <!-- Define the template for the header items of the SfTabView -->
         <tabView:SfTabView.HeaderItemTemplate>
-                <DataTemplate>
-                    <Label Padding="5,10,10,10" Text="{Binding Name}"/>
-                 </DataTemplate>
-            </tabView:SfTabView.HeaderItemTemplate>
+            <DataTemplate>
+                <!-- Display the Name property of each PersonModel in a Label -->
+                <Label Padding="5,10,10,10"
+                       Text="{Binding Name}" />
+            </DataTemplate>
+        </tabView:SfTabView.HeaderItemTemplate>
     </tabView:SfTabView>
-    </ContentPage>
-    
+</ContentPage>
 {% endhighlight %}
 
 {% highlight C# %}
 
-namespace ItemTemplateSample;
-
-public partial class MainPage : ContentPage
+using Syncfusion.Maui.Toolkit.TabView;
+namespace TabViewGettingStarted
 {
-	public MainPage()
-	{
-		InitializeComponent();
-		TabItemsSourceViewModel model = new TabItemsSourceViewModel();
-		this.BindingContext = model;
-		SfTabView tabView = new SfTabView();
-		tabView.ItemsSource = model.TabItems;
-		tabView.HeaderItemTemplate = new DataTemplate(() =>
-		{
-			var nameLabel = new Label { Padding = new Thickness(5,10,10,10)};
-            nameLabel.SetBinding(Label.TextProperty, "Name");
-		    
-			return nameLabel;
-		});
-		this.Content = tabView;
+    public partial class MainPage : ContentPage
+    {
+        public MainPage()
+        {
+            InitializeComponent();
+
+            // Create an instance of the PersonViewModel
+            PersonViewModel viewModel = new PersonViewModel();
+
+            // Set the BindingContext of the ContentPage to the PersonViewModel instance
+            this.BindingContext = viewModel;
+
+            // Create an instance of the SfTabView control
+            SfTabView tabView = new SfTabView();
+
+            // Bind the ItemsSource of the SfTabView to the TabItems property of the PersonViewModel
+            tabView.ItemsSource = viewModel.TabItems;
+
+            // Define the template for the header items of the SfTabView
+            tabView.HeaderItemTemplate = new DataTemplate(() =>
+            {
+                var nameLabel = new Label { Padding = new Thickness(5, 10, 10, 10) };
+                // Bind the Text property of the Label to the Name property of the PersonModel
+                nameLabel.SetBinding(Label.TextProperty, "Name");
+
+                return nameLabel;
+            });
+
+            // Set the Content of the ContentPage to the SfTabView
+            this.Content = tabView;
+        }
     }
 }
 
@@ -443,56 +516,83 @@ The [ContentItemTemplate](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion
 {% tabs %}
 
 {% highlight xaml %}
-    <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="ItemTemplateSample.MainPage"
-             xmlns:local="clr-namespace:ItemTemplateSample"
+             x:Class="TabViewGettingStarted.MainPage"
+             xmlns:local="clr-namespace:TabViewGettingStarted;assembly=TabViewGettingStarted"
              xmlns:tabView="clr-namespace:Syncfusion.Maui.Toolkit.TabView;assembly=Syncfusion.Maui.Toolkit">
+    <!-- Set the BindingContext of the ContentPage to an instance of PersonViewModel -->
     <ContentPage.BindingContext>
-        <local:TabItemsSourceViewModel/>
+        <local:PersonViewModel />
     </ContentPage.BindingContext>
+    <!-- Bind the ItemsSource of the SfTabView to the TabItems property of the PersonViewModel -->
     <tabView:SfTabView ItemsSource="{Binding TabItems}">
+        <!-- Define the template for the header items of the SfTabView -->
         <tabView:SfTabView.HeaderItemTemplate>
-                <DataTemplate>
-                    <Label Padding="5,10,10,10" Text="{Binding Name}"/>
-                 </DataTemplate>
-            </tabView:SfTabView.HeaderItemTemplate>
-             <tabView:SfTabView.ContentItemTemplate>
-                <DataTemplate>
-                     <Label TextColor="Black" Text="{Binding Name}"/>
-               </DataTemplate>
+            <DataTemplate>
+                <!-- Display the Name property of each PersonModel in a Label -->
+                <Label Padding="5,10,10,10"
+                       Text="{Binding Name}" />
+            </DataTemplate>
+        </tabView:SfTabView.HeaderItemTemplate>
+        <!-- Define the template for the content items of the SfTabView -->
+        <tabView:SfTabView.ContentItemTemplate>
+            <DataTemplate>
+                <!-- Display the Description property of each PersonModel in a Label -->
+                <Label TextColor="Black"
+                       Text="{Binding Description}" />
+            </DataTemplate>
         </tabView:SfTabView.ContentItemTemplate>
     </tabView:SfTabView>
-    </ContentPage>
+</ContentPage>
 {% endhighlight %}
 
 {% highlight C# %}
 
-namespace ItemTemplateSample;
-
-public partial class MainPage : ContentPage
+using Syncfusion.Maui.Toolkit.TabView;
+namespace TabViewGettingStarted
 {
-    public MainPage()
+    public partial class MainPage : ContentPage
     {
-        InitializeComponent();
-        TabItemsSourceViewModel model = new TabItemsSourceViewModel();
-        this.BindingContext = model;
-        SfTabView tabView = new SfTabView();
-        tabView.ItemsSource = model.TabItems;
-        tabView.HeaderItemTemplate = new DataTemplate(() =>
+        public MainPage()
         {
-            var nameLabel = new Label { Padding = new Thickness(5,10,10,10)};
-            nameLabel.SetBinding(Label.TextProperty, "Name");
-            
-            return nameLabel;
-        });
-        tabView.ContentItemTemplate = new DataTemplate(() =>
-        {
-            var nameLabel = new Label { TextColor=Colors.Black };
-            nameLabel.SetBinding(Label.TextProperty, "Name");
-            return nameLabel;
-        });
-        this.Content = tabView;
+            InitializeComponent();
+
+            // Create an instance of the PersonViewModel
+            PersonViewModel viewModel = new PersonViewModel();
+
+            // Set the BindingContext of the ContentPage to the PersonViewModel instance
+            this.BindingContext = viewModel;
+
+            // Create an instance of the SfTabView control
+            SfTabView tabView = new SfTabView();
+
+            // Bind the ItemsSource of the SfTabView to the TabItems property of the PersonViewModel
+            tabView.ItemsSource = viewModel.TabItems;
+
+            // Define the template for the header items of the SfTabView
+            tabView.HeaderItemTemplate = new DataTemplate(() =>
+            {
+                var nameLabel = new Label { Padding = new Thickness(5, 10, 10, 10) };
+                // Bind the Text property of the Label to the Name property of the PersonModel
+                nameLabel.SetBinding(Label.TextProperty, "Name");
+
+                return nameLabel;
+            });
+
+            // Define the template for the content items of the SfTabView
+            tabView.ContentItemTemplate = new DataTemplate(() =>
+            {
+                var descriptionLabel = new Label { TextColor = Colors.Black };
+                // Bind the Text property of the Label to the Description property of the PersonModel
+                descriptionLabel.SetBinding(Label.TextProperty, "Description");
+                return descriptionLabel;
+            });
+
+            // Set the Content of the ContentPage to the SfTabView
+            this.Content = tabView;
+        }
     }
 }
 
@@ -503,4 +603,3 @@ public partial class MainPage : ContentPage
 The following image demonstrates the `SfTabView` displaying custom tab headers and content using `HeaderItemTemplate` and `ContentItemTemplate`.
 
 ![.NET MAUI Tab View Item Template](images/ItemTemplate.png)
-
