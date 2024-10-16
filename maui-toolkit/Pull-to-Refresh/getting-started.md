@@ -83,9 +83,7 @@ Step 2. Initialize `SfPullToRefresh` class.
 {% tabs %}
 {% highlight xaml tabtitle="MainPage.xaml" hl_lines="3" %}
 
-<ContentPage 
-    .....
-    xmlns:PullToRefreshControl="clr-namespace:Syncfusion.Maui.Toolkit.PullToRefresh;assembly=Syncfusion.Maui.Toolkit">
+<ContentPage xmlns:PullToRefreshControl="clr-namespace:Syncfusion.Maui.Toolkit.PullToRefresh;assembly=Syncfusion.Maui.Toolkit">
     <ContentPage.Content> 
         <PullToRefreshControl:SfPullToRefresh />
     </ContentPage.Content> 
@@ -119,8 +117,10 @@ To show the progress indicator while updating the view, set `IsRefreshing` prope
 {% tabs %}
 {% highlight xaml tabtitle="MainPage.xaml" hl_lines="7 11" %}
 
-<ContentPage xmlns:PullToRefreshControl="clr-namespace:Syncfusion.Maui.Toolkit.PullToRefresh;assembly=Syncfusion.Maui.Toolkit">
-        ..........
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GettingStarted.MainPage"
+             xmlns:PullToRefreshControl="clr-namespace:Syncfusion.Maui.Toolkit.PullToRefresh;assembly=Syncfusion.Maui.Toolkit">
     <PullToRefreshControl:SfPullToRefresh x:Name="pullToRefresh">
         <PullToRefreshControl:SfPullToRefresh.PullableContent>
             <StackLayout>
