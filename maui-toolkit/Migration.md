@@ -172,6 +172,6 @@ By preserving similar APIs and functionality, developers can easily update their
 <tr>
   <td>Common</td>
   <td><a href="https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Core.Hosting.AppHostBuilderExtensions.html#Syncfusion_Maui_Core_Hosting_AppHostBuilderExtensions_ConfigureSyncfusionCore_Microsoft_Maui_Hosting_MauiAppBuilder_">ConfigureSyncfusionCore()</a></td>
-  <td><a href="https://helpstaging.syncfusion.com:14038/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Hosting.AppHostBuilderExtensions.html#Syncfusion_Maui_Toolkit_Hosting_AppHostBuilderExtensions_ConfigureSyncfusionToolkit_Microsoft_Maui_Hosting_MauiAppBuilder_">ConfigureSyncfusionToolkit()</a></td>
+  <td><a href="https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Hosting.AppHostBuilderExtensions.html#Syncfusion_Maui_Toolkit_Hosting_AppHostBuilderExtensions_ConfigureSyncfusionToolkit_Microsoft_Maui_Hosting_MauiAppBuilder_">ConfigureSyncfusionToolkit()</a></td>
   <td>Configures the implemented handlers in <code>Syncfusion.Maui.Toolkit</code>.</td>
 </tr>

@@ -46,18 +46,6 @@ Before proceeding, ensure the following are set up:
 3. Run the command `dotnet add package Syncfusion.Maui.Toolkit` to install the Syncfusion .NET MAUI Toolkit NuGet package.
 4. To ensure all dependencies are installed, run `dotnet restore`.
 
-4.To ensure all dependencies are installed, run:
-
-{% tabs %}
-
-{% highlight sh %}
-
-    dotnet restore
-
-{% endhighlight %}
-
-{% endtabs %}
-
 ## Step 3: Register the handler
 
 In the MauiProgram.cs file, register the handler for Syncfusion Toolkit.
