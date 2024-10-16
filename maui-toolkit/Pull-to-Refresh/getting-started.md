@@ -158,8 +158,6 @@ Press **F5** to build and run the application. Once compiled, perform pull-to-re
 
 ![.NET MAUI PullToRefresh with slide on top transition mode](Images/getting-started//maui-pull-to-refresh-slideontop-mode.gif)
 
-N> [View sample in GitHub](https://github.com/SyncfusionExamples/getting-started-with-.net-maui-pull-to-refresh/tree/master).
-
 If we run the above sample with `TransitionMode` set to `Push`, the output will be as shown in the following.
 
 ![.NET MAUI PullToRefresh with slide on top transition mode](Images/getting-started//maui-pull-to-refresh-push-mode.gif).
