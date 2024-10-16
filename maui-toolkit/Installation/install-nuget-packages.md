@@ -17,11 +17,9 @@ NuGet is a package management system used in Visual Studio, simplifying the proc
 
 The **NuGet Package Manager UI** llows you to search for, install, uninstall, and update Syncfusion Maui Toolkit packages easily. Follow these steps to install the Syncfusion.Maui.Toolkit package in your MAUI application:
 
-1. Right-click on your MAUI application or solution in the Solution Explorer and select **Manage NuGet Packages...**
+1. Right-click on your MAUI application or solution in the Solution Explorer and select **Manage NuGet Packages...**.
 
-    ![Manage NuGet Packages add-in](images/ManageNuGet.png)
-
-    Alternatively, open the **Tools** menu, hover over **NuGet Package Manager**, and choose **Manage NuGet Packages for Solution...**
+	Alternatively, open the **Tools** menu, hover over **NuGet Package Manager**, and choose **Manage NuGet Packages for Solution...**
 
 2. In the **Manage NuGet Packages** window, navigate to the Browse tab and search for **Syncfusion.Maui.Toolkit**.
 
@@ -69,5 +67,3 @@ The **Package Manager Console**  provides an efficient way to install the **Sync
 3. Once the installation completes, the console will display confirmation, and your application will now have access to the **Syncfusion .NET MAUI Toolkit components**.
 
 4. Your application is now ready to leverage the high-performance and responsive components of the **Syncfusion .NET MAUI Toolkit**.
-
-
