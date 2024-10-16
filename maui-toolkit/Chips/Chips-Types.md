@@ -19,18 +19,18 @@ The following code demonstrates how to obtain an input-type chip.
 
 {% highlight xaml %}
 <ChipControl:SfChipGroup Margin="200,100,0,0"  
-                  ItemsSource="{Binding Employees}" 
-                  DisplayMemberPath="Name" 
-                  ChipType="Input">
-<ChipControl:SfChipGroup.InputView>
-<Entry x:Name="entry"
-	   VerticalOptions="Center" 
-       HeightRequest="40"
-	   FontSize="15" 
-	   WidthRequest="110" 
-	   Completed="Entry_Completed">
-</Entry>
-</ChipControl:SfChipGroup.InputView>
+                         ItemsSource="{Binding Employees}" 
+                         DisplayMemberPath="Name" 
+                         ChipType="Input">
+    <ChipControl:SfChipGroup.InputView>
+        <Entry x:Name="entry"
+               VerticalOptions="Center" 
+               HeightRequest="40"
+               FontSize="15" 
+               WidthRequest="110" 
+               Completed="Entry_Completed">
+        </Entry>
+    </ChipControl:SfChipGroup.InputView>
 </chip:SfChipGroup>
 
 {% endhighlight %}
@@ -196,7 +196,6 @@ public class EmployeeViewModel : INotifyPropertyChanged
         Employees.Add(new Employee() { Name = "Emilio Alvaro" });
         Employees.Add(new Employee() { Name = "Janet Leverling" });
     }
-
 }
 
 {% endhighlight %}
