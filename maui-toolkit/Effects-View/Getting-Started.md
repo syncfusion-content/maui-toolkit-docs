@@ -86,8 +86,7 @@ In the **MauiProgram.cs** file, register the handler for Syncfusion Toolkit.
 {% highlight xaml %}
 
 <ContentPage 
-            ...
-            xmlns:effectsView="clr-namespace:Syncfusion.Maui.Toolkit.EffectsView;assembly=Syncfusion.Maui.Toolkit">
+    xmlns:effectsView="clr-namespace:Syncfusion.Maui.Toolkit.EffectsView;assembly=Syncfusion.Maui.Toolkit">
     <ContentPage.Content> 
 	 	<effectsView:SfEffectsView /> 
 	</ContentPage.Content> 

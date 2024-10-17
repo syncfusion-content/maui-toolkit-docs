@@ -16,11 +16,12 @@ documentation: ug
 {% highlight xaml %} 
 
 <ContentPage 
-            ...
-            xmlns:effectsView="clr-namespace:Syncfusion.Maui.Toolkit.EffectsView;assembly=Syncfusion.Maui.Toolkit">
+    xmlns:effectsView="clr-namespace:Syncfusion.Maui.Toolkit.EffectsView;assembly=Syncfusion.Maui.Toolkit">
     <ContentPage.Content> 
-	 	<effectsView:SfEffectsView  TouchDownEffects="Highlight"  HighlightBackground="#FF0000" /> 
-	</ContentPage.Content> 
+	<effectsView:SfEffectsView  
+        TouchDownEffects="Highlight" 
+        HighlightBackground="#FF0000"/> 
+	</ContentPage.Content>  
 </ContentPage>
 
 {% endhighlight %}
@@ -34,6 +35,7 @@ var effectsView = new SfEffectsView
     TouchDownEffects = SfEffects.Highlight,
     HighlightBackground = new SolidColorBrush(Colors.Aqua)
 };
+this.Content = effectsView;  
 
 {% endhighlight %}
 
