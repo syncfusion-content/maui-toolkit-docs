@@ -22,15 +22,26 @@ The [ApplyEffects](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Core.SfEf
 
 {% tabs %} 
 
+{% highlight xaml %} 
+
+<Grid RowDefinitions="0.9*, 0.1*">
+        <syncEffectsView:SfEffectsView x:Name="EffectsView"
+                                    />
+        <Button Grid.Row="1"
+                Text="Save"
+                Clicked="OnApplyEffectsClicked" />
+    </Grid>
+
+{% endhighlight %}
+
 {% highlight C# %} 
 
 using Syncfusion.Maui.Toolkit.EffectsView;
 
-var effectsView = new SfEffectsView()
+private void OnApplyEffectsClicked(object sender, EventArgs e)
 {
-    this.effectsView.ApplyEffects(SfEffects.Ripple,RippleStartPosition.BottomRight);
-    this.effectsView.Angle = 180;
-};
+    this.EffectsView.ApplyEffects(EffectsView.SfEffects.Ripple, EffectsView.RippleStartPosition.BottomRight);
+}
 
 {% endhighlight %}
 
@@ -44,15 +55,27 @@ The [Reset](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Core.SfEffectsVi
 
 {% tabs %} 
 
+{% highlight xaml %} 
+
+<Grid RowDefinitions="0.9*, 0.1*">
+        <syncEffectsView:SfEffectsView x:Name="EffectsView"
+                                    />
+        <Button Grid.Row="1"
+                Text="Save"
+                Clicked="OnResetEffectsClicked" />
+    </Grid>
+
+{% endhighlight %}
+
 {% highlight C# %} 
 
 using Syncfusion.Maui.Toolkit.EffectsView;
 
-var effectsView = new SfEffectsView()
+private void OnResetEffectsClicked(object sender, EventArgs e)
 {
-    this.effectsView.ApplyEffects(SfEffects.Ripple,RippleStartPosition.BottomRight);
-    this.effectsView.Reset();
-};
+    this.EffectsView.ApplyEffects(EffectsView.SfEffects.Ripple, EffectsView.RippleStartPosition.BottomRight);
+    this.EffectsView.Reset();
+}
 
 {% endhighlight %}
 
