@@ -20,8 +20,8 @@ You can programmatically select a tab item using the [SelectedIndex](https://hel
 {% endhighlight %}
 
 {% highlight C# %}
-    SfTabView tabView = new SfTabView();
-	tabView.SelectedIndex = 2;
+SfTabView tabView = new SfTabView();
+tabView.SelectedIndex = 2;
 {% endhighlight %}
 {% endtabs %}
 
@@ -41,17 +41,17 @@ The [IsSelected](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Too
 
 {% highlight C# %}
 
-    SfTabView tabView = new SfTabView();
-	tabView.SelectionChanged += TabView_SelectionIndexChanged;
-    private void TabView_SelectionIndexChanged(object sender, TabSelectionChangedEventArgs e)
-    {
-		SfTabItem tabItem = tabView.Items[e.NewIndex];
-		bool isTabItemSelected = tabItem.IsSelected;
-		if (isTabItemSelected)
-		{
-			tabItem.FontSize = 26;
-		}
-    }
+SfTabView tabView = new SfTabView();
+tabView.SelectionChanged += TabView_SelectionIndexChanged;
+private void TabView_SelectionIndexChanged(object sender, TabSelectionChangedEventArgs e)
+{
+	SfTabItem tabItem = tabView.Items[e.NewIndex];
+	bool isTabItemSelected = tabItem.IsSelected;
+	if (isTabItemSelected)
+	{
+		tabItem.FontSize = 26;
+	}
+}
 
 {% endhighlight %}
 

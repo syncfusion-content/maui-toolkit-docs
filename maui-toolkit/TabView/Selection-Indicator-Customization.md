@@ -160,8 +160,8 @@ In Fit mode, the indicator width adjusts to fit the content of the header item. 
 {% endhighlight %}
 
 {% highlight C# %}
-     SfTabView tabView = new SfTabView();
-	 tabView.IndicatorWidthMode = IndicatorWidthMode.Fit;
+SfTabView tabView = new SfTabView();
+tabView.IndicatorWidthMode = IndicatorWidthMode.Fit;
 {% endhighlight %}
 
 {% endtabs %}
@@ -181,8 +181,8 @@ In Stretch mode, the indicator width stretches to cover the entire header item. 
 {% endhighlight %}
 
 {% highlight C# %}
-     SfTabView tabView = new SfTabView();
-	 tabView.IndicatorWidthMode = IndicatorWidthMode.Stretch;
+SfTabView tabView = new SfTabView();
+tabView.IndicatorWidthMode = IndicatorWidthMode.Stretch;
 {% endhighlight %}
 
 {% endtabs %}
@@ -202,8 +202,8 @@ You can customize the corner radius of the selection indicator using the [Indica
 {% endhighlight %}
 
 {% highlight C# %}
-     SfTabView tabView = new SfTabView();
-	 tabView.IndicatorCornerRadius  = 5;
+SfTabView tabView = new SfTabView();
+tabView.IndicatorCornerRadius  = 5;
 {% endhighlight %}
 
 {% endtabs %} 
