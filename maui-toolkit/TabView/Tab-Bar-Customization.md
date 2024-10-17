@@ -103,7 +103,7 @@ To set the horizontal text alignment of the tab header, use the following code:
 
 {% tabs %}
 
-{% highlight xaml %} 
+{% highlight xaml %}
 <!-- Define the SfTabView control with the header horizontal text alignment set to Center -->
 <tabView:SfTabView HeaderHorizontalTextAlignment="Center" />
 {% endhighlight %}
