@@ -19,8 +19,6 @@ The **NuGet Package Manager UI** llows you to search for, install, uninstall, an
 
 1. Right-click on your MAUI application or solution in the Solution Explorer and select **Manage NuGet Packages...**
 
-    ![Manage NuGet Packages add-in](images/ManageNuGet.png)
-
     Alternatively, open the **Tools** menu, hover over **NuGet Package Manager**, and choose **Manage NuGet Packages for Solution...**
 
 2. In the **Manage NuGet Packages** window, navigate to the Browse tab and search for **Syncfusion.Maui.Toolkit**.

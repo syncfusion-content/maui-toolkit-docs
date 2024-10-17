@@ -1356,7 +1356,7 @@ This page lists the keys for each control and the element to which it is mapped 
     </tr>
 
     <tr>
-        <td rowspan="32">
+        <td rowspan="42">
             SfTabViewStyles 
             <br/>
             <br/>
@@ -1405,6 +1405,18 @@ This page lists the keys for each control and the element to which it is mapped 
         </td>
     </tr>
     <tr>
+		<td>
+			SfTabViewActiveDisabledBackground  
+			<br/>
+			<br/>
+		</td>
+		<td>
+			Background color of the active SfTabView when disabled.
+			<br/>
+			<br/>
+		</td>
+	</tr>
+	<tr>
         <td>
             SfTabViewActiveIndicatorBackground  
             <br/>
@@ -1752,7 +1764,115 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
     </tr>
-     <tr>
+    <tr>
+		<td>
+			SfTabViewActiveHoveredFilledBackground  
+			<br/>
+			<br/>
+		</td>
+		<td>
+			Background color of the active filled SfTabView in hover state.
+			<br/>
+			<br/>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			SfTabViewDisabledTabBarBackground  
+			<br/>
+			<br/>
+		</td>
+		<td>
+			Background color of the SfTabView tab bar when disabled.
+			<br/>
+			<br/>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			SfTabViewInActiveFocusedBackground  
+			<br/>
+			<br/>
+		</td>
+		<td>
+			Background color of the inactive SfTabView in focus state.
+			<br/>
+			<br/>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			SfTabViewNormalFontSize  
+			<br/>
+			<br/>
+		</td>
+		<td>
+			Font size of the text in the SfTabView when in normal state.
+			<br/>
+			<br/>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			SfTabViewNormalTabBarBackground  
+			<br/>
+			<br/>
+		</td>
+		<td>
+			Background color of the SfTabView tab bar in normal state.
+			<br/>
+			<br/>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			SfTabViewScrollButtonBackground  
+			<br/>
+			<br/>
+		</td>
+		<td>
+			Background color of the SfTabView scroll button.
+			<br/>
+			<br/>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			SfTabViewScrollButtonDisabledIconColor  
+			<br/>
+			<br/>
+		</td>
+		<td>
+			Icon color of the SfTabView scroll button when disabled.
+			<br/>
+			<br/>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			SfTabViewScrollButtonIconColor  
+			<br/>
+			<br/>
+		</td>
+		<td>
+			Icon color of the SfTabView scroll button.
+			<br/>
+			<br/>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			SfTabViewInActiveNormalTextColor  
+			<br/>
+			<br/>
+		</td>
+		<td>
+			Text color of the inactive SfTabView in normal state.
+			<br/>
+			<br/>
+		</td>
+	</tr>
+	<tr>
         <td>
             SfTabViewDisabledFilledBackground
             <br/>

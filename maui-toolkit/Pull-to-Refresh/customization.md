@@ -18,18 +18,18 @@ The [PullableContent](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.PullTo
 {% tabs %}
 {% highlight xaml tabtitle="MainPage.xaml" hl_lines="6 11" %}
 
-    <syncfusion:SfPullToRefresh x:Name="pullToRefresh"
-                                PullingThreshold="120"
-                                RefreshViewHeight="30"
-                                RefreshViewThreshold="30"
-                                RefreshViewWidth="30">
-        <syncfusion:SfPullToRefresh.PullableContent>
-                <Label x:Name="Monthlabel" 
-                        TextColor="White" 
-                        HorizontalTextAlignment="Center"   
-                        VerticalTextAlignment="Start" />
-        </syncfusion:SfPullToRefresh.PullableContent>
-    </syncfusion:SfPullToRefresh>
+<PullToRefreshControl:SfPullToRefresh x:Name="pullToRefresh"
+                                      PullingThreshold="120"
+                                      RefreshViewHeight="30"
+                                      RefreshViewThreshold="30"
+                                      RefreshViewWidth="30">
+    <PullToRefreshControl:SfPullToRefresh.PullableContent>
+            <Label x:Name="Monthlabel" 
+                    TextColor="White" 
+                    HorizontalTextAlignment="Center"   
+                    VerticalTextAlignment="Start" />
+    </PullToRefreshControl:SfPullToRefresh.PullableContent>
+</PullToRefreshControl:SfPullToRefresh>
 
 {% endhighlight %}
 {% endtabs %}
@@ -46,13 +46,13 @@ The default transition is `SlideOnTop` that draws the RefreshView on top of the 
 {% tabs %}
 {% highlight xaml tabtitle="MainPage.xaml" hl_lines="2" %}
 
-    <syncfusion:SfPullToRefresh x:Name="pullToRefresh" 
-                                TransitionMode="SlideOnTop" />
+<PullToRefreshControl:SfPullToRefresh x:Name="pullToRefresh" 
+                                      TransitionMode="SlideOnTop" />
 
 {% endhighlight %}
 {% highlight c# tabtitle="MainPage.xaml.cs" %}
 
-    pullToRefresh.TransitionMode = PullToRefreshTransitionType.SlideOnTop;
+pullToRefresh.TransitionMode = PullToRefreshTransitionType.SlideOnTop;
 
 {% endhighlight %}
 {% endtabs %}
@@ -64,13 +64,13 @@ The following code example shows how to set the `TransitionMode` as `Push` to Pu
 {% tabs %}
 {% highlight xaml tabtitle="MainPage.xaml" hl_lines="2" %}
 
-    <syncfusion:SfPullToRefresh x:Name=" pullToRefresh" 
-                                TransitionMode="Push" />
+<PullToRefreshControl:SfPullToRefresh x:Name=" pullToRefresh" 
+                                      TransitionMode="Push" />
 
 {% endhighlight %}
 {% highlight c# tabtitle="MainPage.xaml.cs" %}
 
-    pullToRefresh.TransitionMode = PullToRefreshTransitionType.Push;
+pullToRefresh.TransitionMode = PullToRefreshTransitionType.Push;
 
 {% endhighlight %}
 {% endtabs %}
@@ -84,13 +84,13 @@ The threshold value for the refresh view, indicating the starting position of th
 {% tabs %}
 {% highlight xaml tabtitle="MainPage.xaml" hl_lines="2" %}
 
-    <syncfusion:SfPullToRefresh x:Name="pullToRefresh" 
-                                RefreshViewThreshold="50"/>
+<PullToRefreshControl:SfPullToRefresh x:Name="pullToRefresh" 
+                                      RefreshViewThreshold="50"/>
 
 {% endhighlight %}
 {% highlight c# tabtitle="MainPage.xaml.cs" %}
 
-    pullToRefresh.RefreshViewThreshold = 50d;
+pullToRefresh.RefreshViewThreshold = 50d;
 
 {% endhighlight %}
 {% endtabs %}
@@ -102,13 +102,13 @@ The threshold value for the refresh view, indicating the progress indicator's ma
 {% tabs %}
 {% highlight xaml tabtitle="MainPage.xaml" hl_lines="2" %}
 
-    <syncfusion:SfPullToRefresh x:Name="pullToRefresh" 
-                                PullingThreshold="200"/>
+<PullToRefreshControl:SfPullToRefresh x:Name="pullToRefresh" 
+                            PullingThreshold="200"/>
 
 {% endhighlight %}
 {% highlight c# tabtitle="MainPage.xaml.cs" %}
 
-    pullToRefresh.PullingThreshold = 200d;
+pullToRefresh.PullingThreshold = 200d;
 
 {% endhighlight %}
 {% endtabs %}
@@ -121,13 +121,13 @@ The view will get refresh while the [IsRefreshing](https://help.syncfusion.com/c
 {% tabs %}
 {% highlight xaml tabtitle="MainPage.xaml" hl_lines="2" %}
 
-    <syncfusion:SfPullToRefresh x:Name="pullToRefresh" 
-                                IsRefreshing="True"/>
+<PullToRefreshControl:SfPullToRefresh x:Name="pullToRefresh" 
+                                      IsRefreshing="True"/>
 
 {% endhighlight %}
 {% highlight c# tabtitle="MainPage.xaml.cs" %}
 
-    pullToRefresh.IsRefreshing = true;
+pullToRefresh.IsRefreshing = true;
 
 {% endhighlight %}
 {% endtabs %}
@@ -140,13 +140,13 @@ The color to the progress indicator's background.
 {% tabs %}
 {% highlight xaml tabtitle="MainPage.xaml" hl_lines="2" %}
 
-    <syncfusion:SfPullToRefresh x:Name="pullToRefresh" 
-                                ProgressBackground = "White"/>
+<PullToRefreshControl:SfPullToRefresh x:Name="pullToRefresh" 
+                                      ProgressBackground = "White"/>
 
 {% endhighlight %}
 {% highlight c# tabtitle="MainPage.xaml.cs" %}
 
-    pullToRefresh.ProgressBackground = Color.White;
+pullToRefresh.ProgressBackground = Color.White;
 
 {% endhighlight %}
 {% endtabs %}
@@ -159,13 +159,13 @@ The color to the progress indicator's arc.
 {% tabs %}
 {% highlight xaml tabtitle="MainPage.xaml" hl_lines="2" %}
 
-    <syncfusion:SfPullToRefresh x:Name="pullToRefresh" 
-                                ProgressColor = "Blue"/>
+<PullToRefreshControl:SfPullToRefresh x:Name="pullToRefresh" 
+                                      ProgressColor = "Blue"/>
 
 {% endhighlight %}
 {% highlight c# tabtitle="MainPage.xaml.cs" %}
 
-    pullToRefresh.ProgressColor = Color.Blue;
+pullToRefresh.ProgressColor = Color.Blue;
 
 {% endhighlight %}
 
@@ -179,13 +179,13 @@ The width of the progress indicator's arc.
 {% tabs %}
 {% highlight xaml tabtitle="MainPage.xaml" hl_lines="2" %}
 
-    <syncfusion:SfPullToRefresh x:Name="pullToRefresh" 
-                                ProgressThickness="5"/>
+<PullToRefreshControl:SfPullToRefresh x:Name="pullToRefresh" 
+                                      ProgressThickness="5"/>
 
 {% endhighlight %}
 {% highlight c# tabtitle="MainPage.xaml.cs" %}
 
-    pullToRefresh.ProgressThickness = 5d;
+pullToRefresh.ProgressThickness = 5d;
 
 {% endhighlight %}
 {% endtabs %}
@@ -198,13 +198,13 @@ The width of the refresh view.
 {% tabs %}
 {% highlight xaml tabtitle="MainPage.xaml" hl_lines="2" %}
 
-    <syncfusion:SfPullToRefresh x:Name="pullToRefresh" 
-                                RefreshViewWidth="50"/>
+<PullToRefreshControl:SfPullToRefresh x:Name="pullToRefresh" 
+                                      RefreshViewWidth="50"/>
 
 {% endhighlight %}
 {% highlight c# tabtitle="MainPage.xaml.cs" %}
 
-    pullToRefresh.RefreshViewWidth = 50d;
+pullToRefresh.RefreshViewWidth = 50d;
 
 {% endhighlight %}
 
@@ -218,13 +218,13 @@ The height to the refresh View.
 {% tabs %}
 {% highlight xaml tabtitle="MainPage.xaml" hl_lines="2" %}
 
-    <syncfusion:SfPullToRefresh x:Name="pullToRefresh" 
-                                RefreshViewHeight="50"/>
+<PullToRefreshControl:SfPullToRefresh x:Name="pullToRefresh" 
+                                      RefreshViewHeight="50"/>
 
 {% endhighlight %}
 {% highlight c# tabtitle="MainPage.xaml.cs" %}
 
-    pullToRefresh.RefreshViewHeight = 50d;
+pullToRefresh.RefreshViewHeight = 50d;
 
 {% endhighlight %}
 {% endtabs %}
@@ -239,7 +239,7 @@ The [StartRefreshing](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.PullTo
 {% tabs %}
 {% highlight c# tabtitle="MainPage.xaml.cs" %}
 
-    pullToRefresh.StartRefreshing();
+pullToRefresh.StartRefreshing();
 
 {% endhighlight %}
 {% endtabs %}
@@ -251,7 +251,7 @@ The [EndRefreshing](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.PullToRe
 {% tabs %}
 {% highlight c# tabtitle="MainPage.xaml.cs" %}
 
-    pullToRefresh.EndRefreshing();
+pullToRefresh.EndRefreshing();
 
 {% endhighlight %}
 {% endtabs %}

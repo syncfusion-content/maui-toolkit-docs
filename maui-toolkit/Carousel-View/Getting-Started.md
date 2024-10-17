@@ -44,24 +44,8 @@ Before proceeding, ensure the following are setup:
 
 1. Press <kbd>Ctrl</kbd> + <kbd>`</kbd> (backtick) to open the integrated terminal in Visual Studio Code.
 2. Ensure you're in the project root directory where your .csproj file is located.
-3. Run the following command to install the Syncfusion .NET MAUI Toolkit NuGet package:
-  
-{% tabs %}
-{% highlight sh  %}
-
-    dotnet add package Syncfusion.Maui.Toolkit
-
-{% endhighlight %}
-{% endtabs %}
-4. To ensure all dependencies are installed, run:
-
-{% tabs %}
-{% highlight sh  %}
-
-    dotnet restore
-    
-{% endhighlight %}
-{% endtabs %}
+3. Run the command `dotnet add package Syncfusion.Maui.Toolkit` to install the Syncfusion .NET MAUI Toolkit NuGet package.
+4. To ensure all dependencies are installed, run `dotnet restore`.
 
 ## Step 3: Register the handler
 
@@ -134,9 +118,7 @@ namespace CarouselGettingStarted
 
 ## Step 5: Populate Carousel Items in .NET MAUI Carousel
 
-Carousel items can be added to the control using the [ItemsSource](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Carousel.SfCarousel.html#Syncfusion_Maui_Toolkit_Carousel_SfCarousel_ItemsSource) property of [SfCarousel](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Carousel.SfCarousel.html).
-
-Objects of any class can be given as items for `SfCarousel` by using `ItemsSource`. The views corresponding to the objects can be set using the [ItemTemplate](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Carousel.SfCarousel.html#Syncfusion_Maui_Toolkit_Carousel_SfCarousel_ItemTemplate) for the content.
+Carousel items can be added to the control using the [ItemsSource](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Carousel.SfCarousel.html#Syncfusion_Maui_Toolkit_Carousel_SfCarousel_ItemsSource) property of [SfCarousel](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Carousel.SfCarousel.html). Objects of any class can be given as items for `SfCarousel` by using `ItemsSource`. The views corresponding to the objects can be set using the [ItemTemplate](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Carousel.SfCarousel.html#Syncfusion_Maui_Toolkit_Carousel_SfCarousel_ItemTemplate) for the content.
 
 Create a model class using the image collection property that is initialized with the required number of data objects, as shown in the following code example.
 

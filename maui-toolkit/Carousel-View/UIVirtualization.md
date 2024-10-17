@@ -17,9 +17,9 @@ The following property has been used in UIVirtualization support:
 
 ## EnableVirtualization
 
-The UI virtualization concept is implemented by enabling the [EnableVirtualization](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Carousel.SfCarousel.html#Syncfusion_Maui_Carousel_SfCarousel_EnableVirtualization) property in SfCarousel Linear mode.
+The UI virtualization concept is implemented by enabling the [EnableVirtualization](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Carousel.SfCarousel.html#Syncfusion_Maui_Toolkit_Carousel_SfCarousel_EnableVirtualization) property in SfCarousel Linear mode.
 
-N> The default value of the [EnableVirtualization](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Carousel.SfCarousel.html#Syncfusion_Maui_Carousel_SfCarousel_EnableVirtualization) property is false.
+N> The default value of the [EnableVirtualization](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Carousel.SfCarousel.html#Syncfusion_Maui_Toolkit_Carousel_SfCarousel_EnableVirtualization) property is false.
 
 {% tabs %}
 
@@ -27,6 +27,7 @@ N> The default value of the [EnableVirtualization](https://help.syncfusion.com/c
 
 <carousel:SfCarousel x:Name="carousel"
                      ItemsSource="{Binding ImageCollection}"
+                     ItemTemplate="{StaticResource itemTemplate}"
                      ItemHeight="200"
                      ItemWidth="200"
                      ItemSpacing="2"
@@ -48,6 +49,7 @@ SfCarousel carousel = new SfCarousel()
 };
 
 carousel.SetBinding(SfCarousel.ItemsSourceProperty, "ImageCollection");
+carousel.ItemTemplate = itemTemplate;
 
 {% endhighlight %}
 
@@ -55,4 +57,4 @@ carousel.SetBinding(SfCarousel.ItemsSourceProperty, "ImageCollection");
 
 ![UIVirtualization](images/UIVirtualization.png)
 
-Find the complete UIVirtualization sample from this [link](https://github.com/SyncfusionExamples/maui-carousel-samples/tree/master/UIVirtualization/VirtualizationSample).
+Find the complete UIVirtualization sample from this [link].

@@ -11,10 +11,6 @@ documentation: ug
 
 This section provides a quick overview of how to get started with the [NavigationDrawer](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NavigationDrawer.SfNavigationDrawer.html) for .NET MAUI and a walk-through to configure the .NET MAUI Navigation Drawer in a real-time scenario. Follow the steps below to add .NET MAUI Navigation Drawer to your project.
 
-To quickly get started with the .NET MAUI Navigation Drawer, watch this video.
-
-{% youtube "https://www.youtube.com/watch?v=fhVe129Hc6o" %}
-
 ## Prerequisites
 
 Before proceeding, ensure the following are set up:
@@ -47,17 +43,8 @@ Before proceeding, ensure the following are set up:
 ### Visual Studio Code
 1. Press <kbd>Ctrl</kbd> + <kbd>`</kbd> (backtick) to open the integrated terminal in Visual Studio Code.
 2. Ensure you're in the project root directory where your .csproj file is located.
-3. Run the following command to install the Syncfusion .NET MAUI Toolkit NuGet package:
-
-{% tabs %}
-
-{% highlight sh %}
-
-    dotnet add package Syncfusion.Maui.Toolkit
-
-{% endhighlight %}
-
-{% endtabs %}
+3. Run the command `dotnet add package Syncfusion.Maui.Toolkit` to install the Syncfusion .NET MAUI Toolkit NuGet package.
+4. To ensure all dependencies are installed, run `dotnet restore`.
 
 4.To ensure all dependencies are installed, run:
 
@@ -505,5 +492,3 @@ public partial class NavigationDrawerPage : ContentPage
 {% endtabs %}
 
 ![OverView Image for NavigationDrawer](Images/getting-started/gettingstarted.png)
-
-You can find the getting started sample from the [`GitHub`](https://github.com/SyncfusionExamples/Getting-started-sample-for-.NET-MAUI-NavigationDrawer) link.

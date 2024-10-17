@@ -14,55 +14,38 @@ This section explains how to add the [.NET MAUI Shimmer](https://help.syncfusion
 ## Prerequisites
 
 Before proceeding, ensure the following are set up:
-1. Install [.NET 8 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/8.0) or later is installed.
-2. Set up a .NET MAUI environment with Visual Studio 2022 (v17.8 or later) or Visual Studio Code. For Visual Studio Code users, ensure that the .NET MAUI workload is installed and configured as described [here.](https://learn.microsoft.com/en-us/dotnet/maui/get-started/installation?view=net-maui-8.0&tabs=visual-studio-code)
+ 1. Install [.NET 8 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/8.0) or later is installed.
+ 2. Set up a .NET MAUI environment with Visual Studio 2022 (v17.8 or later) or Visual Studio Code. For Visual Studio Code users, ensure that the .NET MAUI workload is installed and configured as described [here.](https://learn.microsoft.com/en-us/dotnet/maui/get-started/installation?view=net-maui-8.0&tabs=visual-studio-code)
 
 ## Step 1: Create a New .NET MAUI Project
 
 ### Visual Studio
 
-1. Go to **File > New > Project** and choose the **.NET MAUI App** template.
-2. Name the project and choose a location. Then click **Next**.
-3. Select the .NET framework version and click **Create**.
+ 1. Go to **File > New > Project** and choose the **.NET MAUI App** template.
+ 2. Name the project and choose a location. Then click **Next**.
+ 3. Select the .NET framework version and click **Create**.
 
 ### Visual Studio Code
 
-1. Open the command palette by pressing `Ctrl+Shift+P` and type **.NET:New Project** and enter.
-2. Choose the **.NET MAUI App** template.
-3. Select the project location, type the project name and press **Enter**.
-4. Then choose **Create project.**
+ 1. Open the command palette by pressing `Ctrl+Shift+P` and type **.NET:New Project** and enter.
+ 2. Choose the **.NET MAUI App** template.
+ 3. Select the project location, type the project name and press **Enter**.
+ 4. Then choose **Create project.**
 
 ## Step 2: Install the Syncfusion .NET MAUI Toolkit NuGet Package
 
 ### Visual Studio
 
-1. In **Solution Explorer**, right-click the project and choose **Manage NuGet Packages**.
-2. Search for [Syncfusion.Maui.Toolkit](https://www.nuget.org/packages/Syncfusion.Maui.Toolkit/) and install the latest version.
-3. Ensure the necessary dependencies are installed correctly, and the project is restored.
+ 1. In **Solution Explorer**, right-click the project and choose **Manage NuGet Packages**.
+ 2. Search for [Syncfusion.Maui.Toolkit](https://www.nuget.org/packages/Syncfusion.Maui.Toolkit/) and install the latest version.
+ 3. Ensure the necessary dependencies are installed correctly, and the project is restored.
 
 ### Visual Studio Code
 
 1. Press <kbd>Ctrl</kbd> + <kbd>`</kbd> (backtick) to open the integrated terminal in Visual Studio Code.
-2. Ensure you're in the project root directory where your `.csproj` file is located.
-3. Run the following command to install the Syncfusion MAUI Toolkit NuGet package:
-
-{% tabs %}
-{% highlight sh %}
-
-dotnet add package Syncfusion.Maui.Toolkit
-
-{% endhighlight %}
-{% endtabs %}
-
-4. To ensure all dependencies are installed, run:
-
-{% tabs %}
-{% highlight sh %}
-
-   dotnet restore
-
-{% endhighlight %}
-{% endtabs %}
+2. Ensure you're in the project root directory where your .csproj file is located.
+3. Run the command `dotnet add package Syncfusion.Maui.Toolkit` to install the Syncfusion .NET MAUI Toolkit NuGet package.
+4. To ensure all dependencies are installed, run `dotnet restore`.
 
 ## Step 3: Register the handler
 
@@ -70,33 +53,33 @@ In the **MauiProgram.cs** file, register the handler for Syncfusion Toolkit.
 
 {% tabs %}
 {% highlight C# tabtitle="MauiProgram.cs" hl_lines="1 9" %}    
-    using Syncfusion.Maui.Toolkit.Hosting;
+using Syncfusion.Maui.Toolkit.Hosting;
 
-    public static class MauiProgram
-    {
-	    public static MauiApp CreateMauiApp()
-	    {
-	        var builder = MauiApp.CreateBuilder();
-		    builder
-			    .ConfigureSyncfusionToolkit()
-			    .UseMauiApp<App>()
-			    .ConfigureFonts(fonts =>
-			    {
-				    fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
-				    fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
-			    });
+public static class MauiProgram
+{
+	public static MauiApp CreateMauiApp()
+	{
+	    var builder = MauiApp.CreateBuilder();
+		builder
+			.ConfigureSyncfusionToolkit()
+			.UseMauiApp<App>()
+			.ConfigureFonts(fonts =>
+			{
+				fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
+				fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
+			});
 
-		    return builder.Build();
-	    }
-    }
+		return builder.Build();
+	}
+}
 
 {% endhighlight %}
 {% endtabs %}
 
 ## Step 4: Add .NET MAUI Shimmer control
 
-1. To initialize the control, import the `Syncfusion.Maui.Toolkit.Shimmer` namespace into your code.
-2. Initialize [SfShimmer](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Shimmer.SfShimmer.html).
+ 1. To initialize the control, import the `Syncfusion.Maui.Toolkit.Shimmer` namespace into your code.
+ 2. Initialize [SfShimmer](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Shimmer.SfShimmer.html).
 
 {% tabs %}
 {% highlight xaml tabtitle="XAML" hl_lines="3 5" %}
@@ -148,22 +131,22 @@ The `.NET MAUI Shimmer` control provides seven different shimmer types of views.
 {% endhighlight %}
 {% highlight c# tabtitle="C#" hl_lines="3" %}
 
-   SfShimmer shimmer = new SfShimmer()
-   {
-      Type = ShimmerType.CirclePersona,
-      VerticalOptions = LayoutOptions.Fill,
-      Content = new Label
-      {
-         Text = "Content is loaded!!"
-      }
-   };
+SfShimmer shimmer = new SfShimmer()
+{
+    Type = ShimmerType.CirclePersona,
+    VerticalOptions = LayoutOptions.Fill,
+    Content = new Label
+    {
+        Text = "Content is loaded!!"
+    }
+};
 
-   this.Content = shimmer;
+this.Content = shimmer;
 
 {% endhighlight %}
 {% endtabs %}
 
-![Circle persona shimmer view in .NET MAUI.](images/overview/maui-circle-persona.gif)
+![Circle persona Shimmer view in .NET MAUI.](images/overview/maui-circle-persona.gif)
 
 ## Loading shimmer content
 
@@ -173,30 +156,29 @@ Shimmer content is loaded when the [`IsActive`](https://help.syncfusion.com/cr/m
 
 {% highlight xaml %} 
 
-        <shimmer:SfShimmer VerticalOptions="FillAndExpand" 
-                           IsActive ="false">
-                <shimmer:SfShimmer.Content>
-                     <StackLayout>
-                        <Label Text="Content is loaded!"/>
-                      </StackLayout>
-                </shimmer:SfShimmer.Content>
-        </shimmer:SfShimmer>
+<shimmer:SfShimmer VerticalOptions="FillAndExpand" 
+                   IsActive ="false">
+    <shimmer:SfShimmer.Content>
+        <StackLayout>
+            <Label Text="Content is loaded!"/>
+        </StackLayout>
+    </shimmer:SfShimmer.Content>
+</shimmer:SfShimmer>
 
 {% endhighlight %}
 
 {% highlight C# %} 
 
-            shimmer = new SfShimmer()
-            {
-                IsActive = false,
-                VerticalOptions = LayoutOptions.FillAndExpand,
-                Content = new Label
-                {
-                    Text = "Content is loaded!"
-                }
-            };
-            this.Content = shimmer;
+SfShimmer shimmer = new SfShimmer()
+{
+    IsActive = false,
+    VerticalOptions = LayoutOptions.FillAndExpand,
+    Content = new Label
+    {
+        Text = "Content is loaded!"
+    }
+};
+this.Content = shimmer;
 
 {% endhighlight %}
-
 {% endtabs %}
