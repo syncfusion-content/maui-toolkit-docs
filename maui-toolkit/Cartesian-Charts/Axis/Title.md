@@ -41,15 +41,20 @@ The [Title](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Charts.ChartAxis
 SfCartesianChart chart = new SfCartesianChart();
 . . .
 CategoryAxis primaryAxis = new CategoryAxis();
-primaryAxis.Title = new ChartAxisTitle();
-primaryAxis.Title.Text = "Category";
+primaryAxis.Title = new ChartAxisTitle()
+{
+    Text = "Category"
+};
 chart.XAxes.Add(primaryAxis);
 
 NumericalAxis secondaryAxis = new NumericalAxis();
-secondaryAxis.Title = new ChartAxisTitle();
-secondaryAxis.Title.Text = "Values";
+secondaryAxis.Title = new ChartAxisTitle()
+{
+    Text = "Values"
+};
 chart.YAxes.Add(secondaryAxis);
 
+this.Content = chart;
 {% endhighlight %}
 
 {% endtabs %}
@@ -98,10 +103,13 @@ SfCartesianChart chart = new SfCartesianChart();
 . . .
 CategoryAxis primaryAxis = new CategoryAxis();
 primaryAxis.LabelExtent = 60;
-primaryAxis.Title = new ChartAxisTitle();
-primaryAxis.Title.Text = "Category";
+primaryAxis.Title = new ChartAxisTitle()
+{
+    Text = "Category"
+};
 chart.XAxes.Add(primaryAxis);
 
+this.Content = chart;
 {% endhighlight %}
 
 {% endtabs %}

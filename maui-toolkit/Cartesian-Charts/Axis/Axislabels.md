@@ -45,6 +45,7 @@ NumericalAxis secondaryAxis = new NumericalAxis()
 
 chart.XAxes.Add(primaryAxis);
 chart.YAxes.Add(secondaryAxis);
+this.Content = chart;
 
 {% endhighlight %}
 
@@ -79,6 +80,7 @@ CategoryAxis primaryAxis = new CategoryAxis()
 };
 chart.XAxes.Add(primaryAxis);
 
+this.Content = chart;
 {% endhighlight %}
 
 {% endtabs %}
@@ -136,6 +138,7 @@ DateTimeAxis primaryAxis = new DateTimeAxis()
 };
 chart.XAxes.Add(primaryAxis);
 
+this.Content = chart;
 {% endhighlight %}
 
 {% endtabs %}
@@ -173,6 +176,7 @@ NumericalAxis primaryAxis = new NumericalAxis()
 };
 chart.XAxes.Add(primaryAxis);
 
+this.Content = chart;
 {% endhighlight %}
 
 {% endtabs %}
@@ -204,6 +208,7 @@ NumericalAxis primaryAxis = new NumericalAxis()
 };
 chart.XAxes.Add(primaryAxis);
 
+this.Content = chart;
 {% endhighlight %}
 
 {% endtabs %}
@@ -233,8 +238,9 @@ CategoryAxis primaryAxis = new CategoryAxis()
 {
     LabelsIntersectAction = AxisLabelsIntersectAction.MultipleRows,
 };
- chart.XAxes.Add(primaryAxis);
+chart.XAxes.Add(primaryAxis);
  
+this.Content = chart;
 {% endhighlight %}
 
 {% endtabs %}
