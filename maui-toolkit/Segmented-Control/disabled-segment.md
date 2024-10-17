@@ -16,7 +16,7 @@ This section describes the features of the Segmented Control that help with disa
 Restrict selection and interaction of segment items by setting the [IsEnabled](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SegmentedControl.SfSegmentItem.html#Syncfusion_Maui_Toolkit_SegmentedControl_SfSegmentItem_IsEnabled) property of [SfSegmentItem](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SegmentedControl.SfSegmentItem.html) to `false`. The value of `IsEnabled` property is `true` by default.
 
 {% tabs %}
-{% highlight C# tabtitle="MainPage.xaml.cs"%}
+{% highlight C# tabtitle="MainPage.xaml.cs" %}
 
 using Syncfusion.Maui.Toolkit.SegmentedControl;
 . . .

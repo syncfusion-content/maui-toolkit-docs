@@ -17,7 +17,7 @@ By enabling the [FadeOutRipple](https://help.syncfusion.com/cr/maui-toolkit/Sync
 
 {% tabs %} 
 
-{% highlight xaml %} 
+{% highlight xaml %}
 
 <ContentPage 
     xmlns:effectsView="clr-namespace:Syncfusion.Maui.Toolkit.EffectsView;assembly=Syncfusion.Maui.Toolkit">
@@ -30,7 +30,7 @@ By enabling the [FadeOutRipple](https://help.syncfusion.com/cr/maui-toolkit/Sync
 
 {% endhighlight %}
 
-{% highlight C# %} 
+{% highlight C# %}
 
 using Syncfusion.Maui.Toolkit.EffectsView;
 
@@ -54,7 +54,7 @@ Enabling the [IsSelected](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion
 
 {% tabs %} 
 
-{% highlight xaml %} 
+{% highlight xaml %}
 
 <ContentPage 
     xmlns:effectsView="clr-namespace:Syncfusion.Maui.Toolkit.EffectsView;assembly=Syncfusion.Maui.Toolkit">
@@ -65,7 +65,7 @@ Enabling the [IsSelected](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion
 
 {% endhighlight %}
 
-{% highlight C# %} 
+{% highlight C# %}
 
 using Syncfusion.Maui.Toolkit.EffectsView;
 
@@ -86,7 +86,7 @@ Enabling the [ShouldIgnoreTouches](https://help.syncfusion.com/cr/maui-toolkit/S
 
 {% tabs %} 
 
-{% highlight xaml %} 
+{% highlight xaml %}
 
 <ContentPage 
     xmlns:effectsView="clr-namespace:Syncfusion.Maui.Toolkit.EffectsView;assembly=Syncfusion.Maui.Toolkit">
@@ -97,7 +97,7 @@ Enabling the [ShouldIgnoreTouches](https://help.syncfusion.com/cr/maui-toolkit/S
 
 {% endhighlight %}
 
-{% highlight C# %} 
+{% highlight C# %}
 
 using Syncfusion.Maui.Toolkit.EffectsView;
 

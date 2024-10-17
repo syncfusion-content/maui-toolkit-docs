@@ -15,7 +15,7 @@ The [AnimationCompleted](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.
 
 {% tabs %} 
 
-{% highlight xaml %} 
+{% highlight xaml %}
 
 <ContentPage 
     xmlns:effectsView="clr-namespace:Syncfusion.Maui.Toolkit.EffectsView;assembly=Syncfusion.Maui.Toolkit">
@@ -28,7 +28,7 @@ The [AnimationCompleted](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.
   
 {% endhighlight %}
 
-{% highlight C# %} 
+{% highlight C# %}
 
 using Syncfusion.Maui.Toolkit.EffectsView;
 
@@ -67,7 +67,7 @@ The [SelectionChanged](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Ma
 
 {% tabs %} 
 
-{% highlight xaml %} 
+{% highlight xaml %}
 
 <ContentPage 
     xmlns:effectsView="clr-namespace:Syncfusion.Maui.Toolkit.EffectsView;assembly=Syncfusion.Maui.Toolkit">
@@ -82,7 +82,7 @@ The [SelectionChanged](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Ma
 
 {% endhighlight %}
 
-{% highlight C# %} 
+{% highlight C# %}
 
 using Syncfusion.Maui.Toolkit.EffectsView;
 

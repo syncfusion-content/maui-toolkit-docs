@@ -265,7 +265,7 @@ N> The `Background` property of `SelectionIndicatorSettings` is applicable only 
 Customize the selected segment background of each segment item using the [SelectedSegmentBackground](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SegmentedControl.SfSegmentItem.html#Syncfusion_Maui_Toolkit_SegmentedControl_SfSegmentItem_SelectedSegmentBackground) property of [SfSegmentItem](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SegmentedControl.SfSegmentItem.html).
 
 {% tabs %}
-{% highlight C# tabtitle="MainPage.xaml.cs"%}
+{% highlight C# tabtitle="MainPage.xaml.cs" %}
 
 using Syncfusion.Maui.Toolkit.SegmentedControl;
 . . .
@@ -341,7 +341,7 @@ public partial class MainPage : ContentPage
 Customize the selected segment text color of each segment item using the [SelectedSegmentTextColor](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SegmentedControl.SfSegmentItem.html#Syncfusion_Maui_Toolkit_SegmentedControl_SfSegmentItem_SelectedSegmentTextColor) property of [SfSegmentItem](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SegmentedControl.SfSegmentItem.html).
 
 {% tabs %}
-{% highlight C# tabtitle="MainPage.xaml.cs"%}
+{% highlight C# tabtitle="MainPage.xaml.cs" %}
 
 using Syncfusion.Maui.Toolkit.SegmentedControl;
 . . .

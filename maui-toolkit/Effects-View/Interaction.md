@@ -17,7 +17,7 @@ The [TouchDownEffects](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Ma
 
 {% tabs %} 
 
-{% highlight xaml %} 
+{% highlight xaml %}
 
 <ContentPage 
     xmlns:effectsView="clr-namespace:Syncfusion.Maui.Toolkit.EffectsView;assembly=Syncfusion.Maui.Toolkit">
@@ -28,7 +28,7 @@ The [TouchDownEffects](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Ma
 
 {% endhighlight %}
 
-{% highlight C# %} 
+{% highlight C# %}
 
 using Syncfusion.Maui.Toolkit.EffectsView;
 
@@ -49,7 +49,7 @@ The [LongPressEffects](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Ma
 
 {% tabs %} 
 
-{% highlight xaml %} 
+{% highlight xaml %}
 
 <ContentPage 
     xmlns:effectsView="clr-namespace:Syncfusion.Maui.Toolkit.EffectsView;assembly=Syncfusion.Maui.Toolkit">
@@ -60,7 +60,7 @@ The [LongPressEffects](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Ma
 
 {% endhighlight %}
 
-{% highlight C# %} 
+{% highlight C# %}
 
 using Syncfusion.Maui.Toolkit.EffectsView;
 
@@ -81,7 +81,7 @@ The [TouchUpEffects](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui
 
 {% tabs %} 
 
-{% highlight xaml %} 
+{% highlight xaml %}
 
 <ContentPage 
     xmlns:effectsView="clr-namespace:Syncfusion.Maui.Toolkit.EffectsView;assembly=Syncfusion.Maui.Toolkit">
@@ -92,7 +92,7 @@ The [TouchUpEffects](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui
 
 {% endhighlight %}
 
-{% highlight C# %} 
+{% highlight C# %}
 
 using Syncfusion.Maui.Toolkit.EffectsView;
 
