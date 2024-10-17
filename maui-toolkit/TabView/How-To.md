@@ -16,12 +16,16 @@ You can programmatically select a tab item using the [SelectedIndex](https://hel
 {% tabs %}
 
 {% highlight xaml %}
-   <tabView:SfTabView x:Name="tabView" SelectedIndex="2"/>
+<!-- Define the SfTabView control with a name and set the initially selected tab index to 2 -->
+<tabView:SfTabView x:Name="tabView"
+				   SelectedIndex="2" />
 {% endhighlight %}
 
 {% highlight C# %}
-    SfTabView tabView = new SfTabView();
-	tabView.SelectedIndex = 2;
+// Create an instance of the SfTabView control
+SfTabView tabView = new SfTabView();
+// Set the selected index of the SfTabView to 2
+tabView.SelectedIndex = 2;
 {% endhighlight %}
 {% endtabs %}
 
@@ -36,22 +40,33 @@ The [IsSelected](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Too
 {% tabs %}
 
 {% highlight xaml %}
-    <tabView:SfTabView x:Name="tabView" SelectionChanged="TabView_SelectionIndexChanged"/>
+<!-- Define the SfTabView control with a name and an event handler for the SelectionChanged event -->
+<tabView:SfTabView x:Name="tabView"
+				   SelectionChanged="TabView_SelectionIndexChanged" />
 {% endhighlight %}
 
 {% highlight C# %}
 
-    SfTabView tabView = new SfTabView();
-	tabView.SelectionChanged += TabView_SelectionIndexChanged;
-    private void TabView_SelectionIndexChanged(object sender, TabSelectionChangedEventArgs e)
-    {
-		SfTabItem tabItem = tabView.Items[e.NewIndex];
-		bool isTabItemSelected = tabItem.IsSelected;
-		if (isTabItemSelected)
-		{
-			tabItem.FontSize = 26;
-		}
-    }
+// Create an instance of the SfTabView control
+SfTabView tabView = new SfTabView();
+// Subscribe to the SelectionChanged event
+tabView.SelectionChanged += TabView_SelectionIndexChanged;
+
+// Event handler for the SelectionChanged event
+private void TabView_SelectionIndexChanged(object? sender, TabSelectionChangedEventArgs e)
+{
+	// Access the selected tab item using the new index
+	SfTabItem tabItem = tabView.Items[e.NewIndex];
+	
+	// Check if the tab item is selected
+	bool isTabItemSelected = tabItem.IsSelected;
+	
+	// If the tab item is selected, set its font size
+	if (isTabItemSelected)
+	{
+		tabItem.FontSize = 26;
+	}
+}
 
 {% endhighlight %}
 
