@@ -13,7 +13,7 @@ documentation: ug
 
 The [SwipeStarted](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Carousel.SfCarousel.html#Syncfusion_Maui_Toolkit_Carousel_SfCarousel_SwipeStarted) event will be triggered when the swipe gesture is started.
 
-[SwipeStartedEventArgs](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Carousel.SfCarousel.SwipeStartedEventArgs.html#Syncfusion_Maui_Toolkit_Carousel_SfCarousel_SwipeStartedEventArgs__ctor) contains the [IsSwipeLeft](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Carousel.SfCarousel.SwipeStartedEventArgs.html#Syncfusion_Maui_Toolkit_Carousel_SfCarousel_SwipeStartedEventArgs_IsSwipedLeft) value, which denotes whether the swipe direction is from the left side or not.
+[SwipeStartedEventArgs](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Carousel.SwipeStartedEventArgs.html) contains the [IsSwipeLeft](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Carousel.SwipeStartedEventArgs.html#Syncfusion_Maui_Toolkit_Carousel_SwipeStartedEventArgs_IsSwipedLeft) value, which denotes whether the swipe direction is from the left side or not.
 
 ## SwipeEnded Event
 
