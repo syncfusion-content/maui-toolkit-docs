@@ -18,14 +18,12 @@ Create segmented control with segments having the given text.
 {% highlight XAML %}
 
 <ContentPage   
-    xmlns:local="clr-namespace:SfSegmentSample"
+    xmlns:local="clr-namespace:SegmentSample"
     xmlns:segmentedControl="clr-namespace:Syncfusion.Maui.Toolkit.SegmentedControl;assembly=Syncfusion.Maui.Toolkit">
     <ContentPage.BindingContext>
         <local:ViewModel/>
     </ContentPage.BindingContext>
-    <segmentedControl:SfSegmentedControl x:Name="segmentedControl"
-                                ItemsSource="{Binding SegmentItems}">
-    </segmentedControl:SfSegmentedControl>
+    <segmentedControl:SfSegmentedControl ItemsSource="{Binding SegmentItems}"/>
 </ContentPage>
 
 {% endhighlight %}
@@ -36,8 +34,6 @@ using Syncfusion.Maui.Toolkit.SegmentedControl;
 
 public partial class MainPage : ContentPage
 {
-    List<SfSegmentItem> itemList = new List<SfSegmentItem>();
-
     public MainPage()
     {
         InitializeComponent();
@@ -53,23 +49,17 @@ public partial class MainPage : ContentPage
 
 public class ViewModel
 {
-    private List<SfSegmentItem> segmentItems;
+    public List<SfSegmentItem> SegmentItems { get; set; }
 
     public ViewModel()
     {
-        segmentItems = new List<SfSegmentItem>()
+        SegmentItems = new List<SfSegmentItem>()
         {
                 new SfSegmentItem() {Text="Day"},
                 new SfSegmentItem() {Text="Week"},
                 new SfSegmentItem() {Text="Month"},
                 new SfSegmentItem() {Text="Year"},
         };
-    }
-
-    public List<SfSegmentItem> SegmentItems
-    {
-        get { return segmentItems; }
-        set { segmentItems = value; }
     }
 }
 
@@ -85,14 +75,12 @@ Create a segmented control with segments that contain the provided images by usi
 {% highlight XAML %}
 
 <ContentPage   
-    xmlns:local="clr-namespace:SfSegmentSample"
+    xmlns:local="clr-namespace:SegmentSample"
     xmlns:segmentedControl="clr-namespace:Syncfusion.Maui.Toolkit.SegmentedControl;assembly=Syncfusion.Maui.Toolkit">
     <ContentPage.BindingContext>
         <local:ViewModel/>
     </ContentPage.BindingContext>
-        <segmentedControl:SfSegmentedControl x:Name="segmentedControl"
-                                    ItemsSource="{Binding SegmentItems}">
-    </segmentedControl:SfSegmentedControl>
+    <segmentedControl:SfSegmentedControl ItemsSource="{Binding SegmentItems}"/>
 </ContentPage>
 
 {% endhighlight %}
@@ -103,8 +91,6 @@ using Syncfusion.Maui.Toolkit.SegmentedControl;
 
 public partial class MainPage : ContentPage
 {
-    List<SfSegmentItem> itemList = new List<SfSegmentItem>();
-
     public MainPage()
     {
         InitializeComponent();
@@ -120,23 +106,17 @@ public partial class MainPage : ContentPage
 
 public class ViewModel
 {
-    private List<SfSegmentItem> segmentItems;
+    public List<SfSegmentItem> SegmentItems { get; set; }
 
     public ViewModel()
     {
-        segmentItems = new List<SfSegmentItem>()
+        SegmentItems = new List<SfSegmentItem>()
         {
                 new SfSegmentItem(){Text = "\ue700", TextStyle = new SegmentTextStyle{ FontSize = 20, FontFamily = "Date Picker Icon" } },
                 new SfSegmentItem(){Text = "\ue701", TextStyle = new SegmentTextStyle{ FontSize = 20, FontFamily = "Date Picker Icon" } },
                 new SfSegmentItem(){Text = "\ue702", TextStyle = new SegmentTextStyle{ FontSize = 20, FontFamily = "Date Picker Icon" } },
                 new SfSegmentItem(){Text = "\ue703", TextStyle = new SegmentTextStyle{ FontSize = 20, FontFamily = "Date Picker Icon" } },
         };
-    }
-
-    public List<SfSegmentItem> SegmentItems
-    {
-        get { return segmentItems; }
-        set { segmentItems = value; }
     }
 }
 
@@ -152,14 +132,12 @@ Display images and text in the segmented items of the control.
 {% highlight XAML %}
 
 <ContentPage   
-    xmlns:local="clr-namespace:SfSegmentSample"
+    xmlns:local="clr-namespace:SegmentSample"
     xmlns:segmentedControl="clr-namespace:Syncfusion.Maui.Toolkit.SegmentedControl;assembly=Syncfusion.Maui.Toolkit">
     <ContentPage.BindingContext>
         <local:ViewModel/>
     </ContentPage.BindingContext>
-    <segmentedControl:SfSegmentedControl x:Name="segmentedControl"
-                                    ItemsSource="{Binding SegmentItems}">
-    </segmentedControl:SfSegmentedControl>
+    <segmentedControl:SfSegmentedControl ItemsSource="{Binding SegmentItems}"/>
 </ContentPage>
 
 {% endhighlight %}
@@ -170,8 +148,6 @@ using Syncfusion.Maui.Toolkit.SegmentedControl;
 
 public partial class MainPage : ContentPage
 {
-    List<SfSegmentItem> itemList = new List<SfSegmentItem>();
-
     public MainPage()
     {
         InitializeComponent();
@@ -187,23 +163,17 @@ public partial class MainPage : ContentPage
 
 public class ViewModel
 {
-    private List<SfSegmentItem> segmentItems;
+    public List<SfSegmentItem> SegmentItems { get; set; }
 
     public ViewModel()
     {
-        segmentItems = new List<SfSegmentItem>()
+        SegmentItems = new List<SfSegmentItem>()
         {
             new SfSegmentItem() {  ImageSource="jackson.png", Text="Jack" },
             new SfSegmentItem() { ImageSource="liam.png", Text="Liam" },
             new SfSegmentItem() { ImageSource ="nora.png", Text="Nora" },
             new SfSegmentItem() { ImageSource ="lita.png" , Text="Lita" },
         };
-    }
-
-    public List<SfSegmentItem> SegmentItems
-    {
-        get { return segmentItems; }
-        set { segmentItems = value; }
     }
 }
 
@@ -219,13 +189,12 @@ Display custom font with text in the segmented items of the control.
 {% highlight XAML %}
 
 <ContentPage   
-    xmlns:local="clr-namespace:SfSegmentSample"
+    xmlns:local="clr-namespace:SegmentSample"
     xmlns:segmentedControl="clr-namespace:Syncfusion.Maui.Toolkit.SegmentedControl;assembly=Syncfusion.Maui.Toolkit">
     <ContentPage.BindingContext>
         <local:ViewModel/>
     </ContentPage.BindingContext>
-    <segmentedControl:SfSegmentedControl x:Name="segmentedControl"
-                                    ItemsSource="{Binding SegmentItems}">
+    <segmentedControl:SfSegmentedControl ItemsSource="{Binding SegmentItems}"/>
     </segmentedControl:SfSegmentedControl>
 </ContentPage>
 
@@ -253,23 +222,17 @@ public partial class MainPage : ContentPage
 
 public class ViewModel
 {
-    private List<SfSegmentItem> segmentItems;
+    public List<SfSegmentItem> SegmentItems { get; set; }
 
     public ViewModel()
     {
-        segmentItems = new List<SfSegmentItem>()
+        SegmentItems = new List<SfSegmentItem>()
         {
             new SfSegmentItem() { ImageSource = new FontImageSource() { Glyph = "\ue700", Size = 20, FontFamily = "Date Picker Icon", Color = Colors.Black}, Text = "Day"},
             new SfSegmentItem() { ImageSource = new FontImageSource() { Glyph = "\ue701", Size = 20, FontFamily = "Date Picker Icon",  Color = Colors.Black }, Text = "Week"},
             new SfSegmentItem() { ImageSource = new FontImageSource() { Glyph = "\ue701", Size = 20, FontFamily = "Date Picker Icon",  Color = Colors.Black}, Text = "Month"},
             new SfSegmentItem() { ImageSource = new FontImageSource() { Glyph = "\ue703", Size = 20, FontFamily = "Date Picker Icon",  Color = Colors.Black}, Text = "Year"},
         };
-    }
-
-    public List<SfSegmentItem> SegmentItems
-    {
-        get { return segmentItems; }
-        set { segmentItems = value; }
     }
 }
 
