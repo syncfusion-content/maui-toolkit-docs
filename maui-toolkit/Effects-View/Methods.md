@@ -20,8 +20,40 @@ The [ApplyEffects](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Core.SfEf
 * `rippleStartPoint` - point at which ripple animation starts. The default value is null.
 * `repeat` - bool value used to set whether to repeat the applied effect. The default value is false. Only [SfEffects.Ripple](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Core.SfEffects.html#Syncfusion_Maui_Core_SfEffects_Ripple) can be repeated.
 
+{% tabs %} 
+
+{% highlight C# %} 
+
+using Syncfusion.Maui.Toolkit.EffectsView;
+
+var effectsView = new SfEffectsView()
+{
+    this.effectsView.ApplyEffects(SfEffects.Ripple,RippleStartPosition.BottomRight);
+    this.effectsView.Angle = 180;
+};
+
+{% endhighlight %}
+
+{% endtabs %}
+
 N> The [SfEffects](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Core.SfEffects.html) applied using [ApplyEffects](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Core.SfEffectsView.html#Syncfusion_Maui_Core_SfEffectsView_ApplyEffects_Syncfusion_Maui_Core_SfEffects_Syncfusion_Maui_Core_RippleStartPosition_System_Nullable_System_Drawing_Point__System_Boolean_) method will not be removed automatically.
 
 ## Reset
 
 The [Reset](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Core.SfEffectsView.html#Syncfusion_Maui_Core_SfEffectsView_Reset) method is used to reset the [SfEffects.Highlight](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Core.SfEffects.html#Syncfusion_Maui_Core_SfEffects_Highlight) and [SfEffects.Ripple](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Core.SfEffects.html#Syncfusion_Maui_Core_SfEffects_Ripple) effects, which are applied using the `ApplyEffects` method.
+
+{% tabs %} 
+
+{% highlight C# %} 
+
+using Syncfusion.Maui.Toolkit.EffectsView;
+
+var effectsView = new SfEffectsView()
+{
+    this.effectsView.ApplyEffects(SfEffects.Ripple,RippleStartPosition.BottomRight);
+    this.effectsView.Reset();
+};
+
+{% endhighlight %}
+
+{% endtabs %}
