@@ -9,7 +9,7 @@ documentation: ug
 
 # Overview of .NET MAUI Shimmer (SfShimmer)
 
-The .NET MAUI Shimmer (SfShimmer) control can increase an application's responsiveness by displaying a shimmer effect while the content is loading or processing in the background.
+Syncfusion .NET MAUI Shimmer (SfShimmer) control can increase an application's responsiveness by displaying a shimmer effect while the content is loading or processing in the background.
 
 ## Key features
 

@@ -143,142 +143,142 @@ Additionally, the C# example demonstrates how to create a custom `CustomTabItem`
 
 {% highlight C# %}
 
-    public partial class MainPage : ContentPage
-    {
-        public MainPage()
-        {
-            InitializeComponent();
+public partial class MainPage : ContentPage
+{
+	public MainPage()
+	{
+		InitializeComponent();
 
-            SfTabView tabView = new SfTabView();
+		SfTabView tabView = new SfTabView();
 
-            ListView listView = new ListView
-            {
-                RowHeight = 50,
-                ItemsSource = new string[] { "James", "Richard", "Clara", "Michael", "Alex", "Clara" },
-                ItemTemplate = new DataTemplate(() =>
-                {
-                    var grid = new Grid
-                    {
-                        ColumnDefinitions =
-                        {
-                            new ColumnDefinition { Width = new GridLength(48) },
-                            new ColumnDefinition { Width = new GridLength(1, GridUnitType.Star) },
-                            new ColumnDefinition { Width = new GridLength(48) },
-                            new ColumnDefinition { Width = new GridLength(48) }
-                        },
-                        Margin = new Thickness(10, 5)
-                    };
+		ListView listView = new ListView
+		{
+			RowHeight = 50,
+			ItemsSource = new string[] { "James", "Richard", "Clara", "Michael", "Alex", "Clara" },
+			ItemTemplate = new DataTemplate(() =>
+			{
+				var grid = new Grid
+				{
+					ColumnDefinitions =
+					{
+						new ColumnDefinition { Width = new GridLength(48) },
+						new ColumnDefinition { Width = new GridLength(1, GridUnitType.Star) },
+						new ColumnDefinition { Width = new GridLength(48) },
+						new ColumnDefinition { Width = new GridLength(48) }
+					},
+					Margin = new Thickness(10, 5)
+				};
 
-                    var image1 = new Image
-                    {
-                        WidthRequest = 35,
-                        HeightRequest = 35,
-                        VerticalOptions = LayoutOptions.Center,
-                        HorizontalOptions = LayoutOptions.Center,
-                        Aspect = Aspect.AspectFit,
-                        Source = "contact_image"
-                    };
-                    var label = new Label
-                    {
-                        VerticalOptions = LayoutOptions.Center,
-                        HorizontalOptions = LayoutOptions.Start,
-                        Margin = new Thickness(5, 0),
-                        TextColor = Color.FromHex("#666666"),
-                        FontSize = 16
-                    };
-                    label.SetBinding(Label.TextProperty, ".");
-                    var image2 = new Image
-                    {
-                        WidthRequest = 35,
-                        HeightRequest = 35,
-                        VerticalOptions = LayoutOptions.Center,
-                        HorizontalOptions = LayoutOptions.Center,
-                        Aspect = Aspect.AspectFit,
-                        Source = "mail"
-                    };
-                    var image3 = new Image
-                    {
-                        WidthRequest = 35,
-                        HeightRequest = 35,
-                        VerticalOptions = LayoutOptions.Center,
-                        HorizontalOptions = LayoutOptions.Center,
-                        Aspect = Aspect.AspectFit,
-                        Source = "call1"
-                    };
+				var image1 = new Image
+				{
+					WidthRequest = 35,
+					HeightRequest = 35,
+					VerticalOptions = LayoutOptions.Center,
+					HorizontalOptions = LayoutOptions.Center,
+					Aspect = Aspect.AspectFit,
+					Source = "contact_image"
+				};
+				var label = new Label
+				{
+					VerticalOptions = LayoutOptions.Center,
+					HorizontalOptions = LayoutOptions.Start,
+					Margin = new Thickness(5, 0),
+					TextColor = Color.FromHex("#666666"),
+					FontSize = 16
+				};
+				label.SetBinding(Label.TextProperty, ".");
+				var image2 = new Image
+				{
+					WidthRequest = 35,
+					HeightRequest = 35,
+					VerticalOptions = LayoutOptions.Center,
+					HorizontalOptions = LayoutOptions.Center,
+					Aspect = Aspect.AspectFit,
+					Source = "mail"
+				};
+				var image3 = new Image
+				{
+					WidthRequest = 35,
+					HeightRequest = 35,
+					VerticalOptions = LayoutOptions.Center,
+					HorizontalOptions = LayoutOptions.Center,
+					Aspect = Aspect.AspectFit,
+					Source = "call1"
+				};
 
-                    Grid.SetColumn(image1, 0);
-                    Grid.SetColumn(label, 1);
-                    Grid.SetColumn(image2, 2);
-                    Grid.SetColumn(image3, 3);
+				Grid.SetColumn(image1, 0);
+				Grid.SetColumn(label, 1);
+				Grid.SetColumn(image2, 2);
+				Grid.SetColumn(image3, 3);
 
-                    grid.Children.Add(image1);
-                    grid.Children.Add(label);
-                    grid.Children.Add(image2);
-                    grid.Children.Add(image3);
+				grid.Children.Add(image1);
+				grid.Children.Add(label);
+				grid.Children.Add(image2);
+				grid.Children.Add(image3);
 
-                    return new ViewCell { View = grid };
-                })
-            };
+				return new ViewCell { View = grid };
+			})
+		};
 
-            Grid favoritesGrid = new Grid { };
-            favoritesGrid.Children.Add(listView);
-            Grid recentsGrid = new Grid { BackgroundColor = Colors.Green };
-            Grid contactsGrid = new Grid { BackgroundColor = Colors.Blue };
-            var tabItems = new TabItemCollection
-            {
-                new CustomTabItem()
-                {
-                    Header = "FAVOURITES",
-                    Content = favoritesGrid
-                },
-                new CustomTabItem()
-                {
-                    Header = "RECENTS",
-                    Content = recentsGrid
-                },
-                new CustomTabItem()
-                {
-                    Header = "CONTACTS",
-                    Content = contactsGrid
-                }
-            };
+		Grid favoritesGrid = new Grid { };
+		favoritesGrid.Children.Add(listView);
+		Grid recentsGrid = new Grid { BackgroundColor = Colors.Green };
+		Grid contactsGrid = new Grid { BackgroundColor = Colors.Blue };
+		var tabItems = new TabItemCollection
+		{
+			new CustomTabItem()
+			{
+				Header = "FAVOURITES",
+				Content = favoritesGrid
+			},
+			new CustomTabItem()
+			{
+				Header = "RECENTS",
+				Content = recentsGrid
+			},
+			new CustomTabItem()
+			{
+				Header = "CONTACTS",
+				Content = contactsGrid
+			}
+		};
 
-            tabView.Items = tabItems;
-            this.Content = tabView;
+		tabView.Items = tabItems;
+		this.Content = tabView;
 
-        }
-    }
+	}
+}
 
-    // We create a custom `CustomTabItem` class that inherits from `SfTabItem`. This class sets up the visual states programmatically, allowing for more dynamic control over the visual states.
+// We create a custom `CustomTabItem` class that inherits from `SfTabItem`. This class sets up the visual states programmatically, allowing for more dynamic control over the visual states.
 
-    public class CustomTabItem : SfTabItem
-    {
-        public CustomTabItem()
-        {
-            VisualStateGroupList visualStateGroupList = new VisualStateGroupList();
-            VisualStateGroup commonStateGroup = new VisualStateGroup();
+public class CustomTabItem : SfTabItem
+{
+	public CustomTabItem()
+	{
+		VisualStateGroupList visualStateGroupList = new VisualStateGroupList();
+		VisualStateGroup commonStateGroup = new VisualStateGroup();
 
-            VisualState normalState = new VisualState
-            {
-                Name = "Normal"
-            };
+		VisualState normalState = new VisualState
+		{
+			Name = "Normal"
+		};
 
-            normalState.Setters.Add(new Setter { Property = SfTabItem.TextColorProperty, Value = Colors.Black });
+		normalState.Setters.Add(new Setter { Property = SfTabItem.TextColorProperty, Value = Colors.Black });
 
-            VisualState selectedState = new VisualState
-            {
-                Name = "Selected"
-            };
-            selectedState.Setters.Add(new Setter { Property = SfTabItem.TextColorProperty, Value = Color.FromHex("#6750A4") });
+		VisualState selectedState = new VisualState
+		{
+			Name = "Selected"
+		};
+		selectedState.Setters.Add(new Setter { Property = SfTabItem.TextColorProperty, Value = Color.FromHex("#6750A4") });
 
-            commonStateGroup.States.Add(normalState);
-            commonStateGroup.States.Add(selectedState);
+		commonStateGroup.States.Add(normalState);
+		commonStateGroup.States.Add(selectedState);
 
-            visualStateGroupList.Add(commonStateGroup);
+		visualStateGroupList.Add(commonStateGroup);
 
-            VisualStateManager.SetVisualStateGroups(this, visualStateGroupList);
-        }
-    }
+		VisualStateManager.SetVisualStateGroups(this, visualStateGroupList);
+	}
+}
 {% endhighlight %}
 
 {% endtabs %}

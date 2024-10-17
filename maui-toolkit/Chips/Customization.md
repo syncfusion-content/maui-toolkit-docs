@@ -107,10 +107,10 @@ The [`CloseButtonColor`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.
 <ContentPage.Content>
     <StackLayout Margin="8,8,8,8" >
         <ChipControl:SfChip WidthRequest="100"
-                     HorizontalOptions="Center"
-                     VerticalOptions="Center"
-                     ShowCloseButton="true"
-                     CloseButtonColor="Red">
+                            HorizontalOptions="Center"
+                            VerticalOptions="Center"
+                            ShowCloseButton="true"
+                            CloseButtonColor="Red">
         </ChipControl:SfChip>  
     </StackLayout>
 </ContentPage.Content>
@@ -229,9 +229,9 @@ The [`Stroke`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolk
 <ContentPage.Content>
     <StackLayout Margin="8,8,8,8" >
         <ChipControl:SfChip WidthRequest="100"
-                     HorizontalOptions="Center"
-                     VerticalOptions="Center"
-                     Stroke="Black">
+                            HorizontalOptions="Center"
+                            VerticalOptions="Center"
+                            Stroke="Black">
         </ChipControl:SfChip>  
     </StackLayout>
 </ContentPage.Content>
@@ -597,9 +597,9 @@ The [`BackgroundImageSource`](https://help.syncfusion.com/cr/maui-toolkit/Syncfu
 <ContentPage.Content>
     <StackLayout Margin="8,8,8,8" >
         <ChipControl:SfChip WidthRequest="100"
-                     HorizontalOptions="Center"
-                     VerticalOptions="Center"
-                     BackgroundImageSource="lion.png">
+                            HorizontalOptions="Center"
+                            VerticalOptions="Center"
+                            BackgroundImageSource="lion.png">
         </ChipControl:SfChip>             
     </StackLayout>
 </ContentPage.Content>
@@ -840,17 +840,16 @@ The [`InputView`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.To
 </ContentPage.BindingContext>
 <ContentPage.Content>
     <ChipControl:SfChipGroup x:Name="chipGroup" 
-                            ItemsSource="{Binding Employees}"
-                            ChipPadding="8,8,0,0" 
-                            ChipType="Input"
-                            DisplayMemberPath="Name">
+                             ItemsSource="{Binding Employees}"
+                             ChipPadding="8,8,0,0" 
+                             ChipType="Input"
+                             DisplayMemberPath="Name">
         <ChipControl:SfChipGroup.InputView>
             <Entry x:Name="entry" 
-                Placeholder="Enter Name"
-                Margin="10,10,0,0" 
-                VerticalOptions="Center" 
-                WidthRequest="110"
-                />
+                   Placeholder="Enter Name"
+                   Margin="10,10,0,0" 
+                   VerticalOptions="Center" 
+                   WidthRequest="110"/>
         </ChipControl:SfChipGroup.InputView>
     </ChipControl:SfChipGroup>
 </ContentPage.Content>
@@ -890,11 +889,9 @@ The [`ChipBackground`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Ma
 </ContentPage.BindingContext>
 <ContentPage.Content>
     <StackLayout Margin="10,10,10,10">
-        <chip:SfChipGroup
-            ItemsSource="{Binding Employees}"
-            DisplayMemberPath="Name"
-            ChipBackground="#512dcd"
-            >
+        <chip:SfChipGroup ItemsSource="{Binding Employees}"
+                          DisplayMemberPath="Name"
+                          ChipBackground="#512dcd">
         </chip:SfChipGroup>
     </StackLayout>  
 </ContentPage.Content>
@@ -1052,9 +1049,9 @@ The [`ChipTextColor`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Mau
 </ContentPage.BindingContext>
 <ContentPage.Content>
     <StackLayout Margin="10,10,10,10">
-        <ChipControl:SfChipGroup    ItemsSource="{Binding Employees}"
-                                    DisplayMemberPath="Name"
-                                    ChipTextColor="Red">
+        <ChipControl:SfChipGroup ItemsSource="{Binding Employees}"
+                                 DisplayMemberPath="Name"
+                                 ChipTextColor="Red">
         </ChipControl:SfChipGroup>
     </StackLayout>  
 </ContentPage.Content>
@@ -1177,12 +1174,12 @@ The [SelectedChipTextColor](https://help.syncfusion.com/cr/maui-toolkit/Syncfusi
     <local:EmployeeViewModel/>
 </ContentPage.BindingContext>
 <ChipControl:SfChipGroup ItemsSource="{Binding Employees}"
-                        DisplayMemberPath="Name"
-                        ChipBackground="LightGray"
-                        ChipType="Filter"
-                        SelectionIndicatorColor="White"
-                        SelectedChipBackground="#512dcd"
-                        SelectedChipTextColor="White"/>
+                         DisplayMemberPath="Name"
+                         ChipBackground="LightGray"
+                         ChipType="Filter"
+                         SelectionIndicatorColor="White"
+                         SelectedChipBackground="#512dcd"
+                         SelectedChipTextColor="White"/>
     
 {% endhighlight %}
 
@@ -1220,9 +1217,9 @@ The [`ChipStroke`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.T
 <ContentPage.Content>
     <StackLayout Margin="10,10,10,10">
         <ChipControl:SfChipGroup ItemsSource="{Binding Employees}"
-                                DisplayMemberPath="Name"
-                                ChipStroke="Red"
-                                ChipBackground="LightYellow">
+                                 DisplayMemberPath="Name"
+                                 ChipStroke="Red"
+                                 ChipBackground="LightYellow">
         </ChipControl:SfChipGroup>
     </StackLayout>  
 </ContentPage.Content>
@@ -1264,8 +1261,8 @@ The [`ChipTextSize`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui
 <ContentPage.Content>
     <StackLayout Margin="8,8,0,0">
         <ChipControl:SfChipGroup ItemsSource="{Binding Employees}"
-                          DisplayMemberPath="Name"
-                          ChipTextSize="10">
+                                 DisplayMemberPath="Name"
+                                 ChipTextSize="10">
         </ChipControl:SfChipGroup>
     </StackLayout>  
 </ContentPage.Content>
@@ -1546,7 +1543,7 @@ chipGroup.ChipPadding = new Thickness(8, 8, 0, 0);
 this.Content = stack;
     
 [Model]
-public class Person
+public class Employee
 {
     public string Name
     {
@@ -1563,8 +1560,8 @@ public class Person
 [ViewModel]
 public class ViewModel : INotifyPropertyChanged
 {
-    private ObservableCollection<Person> employees;
-    public ObservableCollection<Person> Employees
+    private ObservableCollection<Employee> employees;
+    public ObservableCollection<Employee> Employees
     {
         get { return employees; }
         set { Employees = value; OnPropertyChanged("Employees"); }
@@ -1572,11 +1569,11 @@ public class ViewModel : INotifyPropertyChanged
 
     public ViewModel()
     {
-        employees = new ObservableCollection<Person>();
-        employees.Add(new Person() { Image = "jhon.png", Name = "John" });
-        employees.Add(new Person() { Image = "james.png", Name = "James" });
-        employees.Add(new Person() { Image = "alexandar.png", Name = "Alexandar" });
-        employees.Add(new Person() { Image = "liam.png", Name = "Liam" });
+        employees = new ObservableCollection<Employee>();
+        employees.Add(new Employee() { Image = "jhon.png", Name = "John" });
+        employees.Add(new Employee() { Image = "james.png", Name = "James" });
+        employees.Add(new Employee() { Image = "alexandar.png", Name = "Alexandar" });
+        employees.Add(new Employee() { Image = "liam.png", Name = "Liam" });
     }
 
     public event PropertyChangedEventHandler PropertyChanged;
@@ -1730,4 +1727,4 @@ N> The default value of ChipImageSize is [`18d`].
 
 ## IsSelected
 
-The [IsSelected](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Chips.SfChip.html#Syncfusion_Maui_Toolkit_Chips_SfChip_IsSelected) property in the [SfChip](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Chips.SfChip.html) is used to indicate whether a chip has been selected in `choice` and `filter` types.
+The [IsSelected](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Chips.SfChip.html#Syncfusion_Maui_Toolkit_Chips_SfChip_IsSelected) property in the [SfChip](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Core.SfChip.html) is used to indicate whether a chip has been selected in `choice` and `filter` types.

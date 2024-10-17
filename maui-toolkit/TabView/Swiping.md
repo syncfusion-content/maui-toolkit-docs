@@ -20,8 +20,8 @@ You can enable swiping by setting the `EnableSwiping` property to `true`, as sho
 {% endhighlight %}
 
 {% highlight C# %}
-     SfTabView tabView = new SfTabView();
-	 tabView.EnableSwiping = true;
+SfTabView tabView = new SfTabView();
+tabView.EnableSwiping = true;
 {% endhighlight %}
 
 {% endtabs %}
