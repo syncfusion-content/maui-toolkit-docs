@@ -25,35 +25,51 @@ Below are examples of how to use this property in XAML and C#:
 
 {% highlight xaml %}
 
+<!-- Define the SfTabView control with the default header display mode -->
 <tabView:SfTabView HeaderDisplayMode="Default">
-    <tabView:SfTabItem Header="Item1" ImageSource="avatar1.png" />
-    <tabView:SfTabItem Header="Item2" ImageSource="avatar2.png" />
-    <tabView:SfTabItem Header="Item3" ImageSource="avatar3.png" />
+	<!-- Define the first tab item with a header and an image source -->
+	<tabView:SfTabItem Header="Item1"
+					   ImageSource="avatar1.png" />
+	<!-- Define the second tab item with a header and an image source -->
+	<tabView:SfTabItem Header="Item2"
+					   ImageSource="avatar2.png" />
+	<!-- Define the third tab item with a header and an image source -->
+	<tabView:SfTabItem Header="Item3"
+					   ImageSource="avatar3.png" />
 </tabView:SfTabView>
 
 {% endhighlight %}
 
 {% highlight C# %}
 
+// Create an instance of the SfTabView control with default header display mode
 SfTabView tabView = new SfTabView
 {
-    HeaderDisplayMode = TabBarDisplayMode.Default
+	HeaderDisplayMode = TabBarDisplayMode.Default
 };
+
+// Create the first tab item with a header and image source
 SfTabItem tabItem1 = new SfTabItem
 {
-    Header = "Item1",
-    ImageSource = "avatar1.png"
+	Header = "Item1",
+	ImageSource = "avatar1.png"
 };
+
+// Create the second tab item with a header and image source
 SfTabItem tabItem2 = new SfTabItem
 {
-    Header = "Item2",
-    ImageSource = "avatar2.png"
+	Header = "Item2",
+	ImageSource = "avatar2.png"
 };
+
+// Create the third tab item with a header and image source
 SfTabItem tabItem3 = new SfTabItem
 {
-    Header = "Item3",
-    ImageSource = "avatar3.png"
+	Header = "Item3",
+	ImageSource = "avatar3.png"
 };
+
+// Add the tab items to the SfTabView control
 tabView.Items.Add(tabItem1);
 tabView.Items.Add(tabItem2);
 tabView.Items.Add(tabItem3);
