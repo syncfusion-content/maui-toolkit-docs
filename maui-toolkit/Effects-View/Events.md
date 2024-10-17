@@ -18,12 +18,11 @@ The [AnimationCompleted](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.
 {% highlight xaml %} 
 
 <ContentPage 
-    ...
     xmlns:effectsView="clr-namespace:Syncfusion.Maui.Toolkit.EffectsView;assembly=Syncfusion.Maui.Toolkit">
     <ContentPage.Content> 
-	 	<effectsView:SfEffectsView
-    TouchDownEffects="Ripple"
-    AnimationCompleted="AnimationCompleted"/>
+	<effectsView:SfEffectsView
+        TouchDownEffects="Ripple"
+        AnimationCompleted="AnimationCompleted"/>
 	</ContentPage.Content> 
 </ContentPage>
   
@@ -33,8 +32,8 @@ The [AnimationCompleted](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.
 
 using Syncfusion.Maui.Toolkit.EffectsView;
 
-    public partial class MainPage : ContentPage
-    {
+public partial class MainPage : ContentPage
+{
 
     public MainPage()
     {
@@ -45,14 +44,14 @@ using Syncfusion.Maui.Toolkit.EffectsView;
         };
 
         effectsView.AnimationCompleted += AnimationCompleted;
-        ...
+        this.Content = effectsView;
     }
 
     private void AnimationCompleted(object sender, EventArgs e)
     {
-        ...
+
     }
-    }
+}
 
 {% endhighlight %}
 
@@ -71,14 +70,13 @@ The [SelectionChanged](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Ma
 {% highlight xaml %} 
 
 <ContentPage 
-    ...
     xmlns:effectsView="clr-namespace:Syncfusion.Maui.Toolkit.EffectsView;assembly=Syncfusion.Maui.Toolkit">
     <ContentPage.Content> 
-	 	<effectsView:SfEffectsView
-    LongPressEffects="Selection"
-    SelectionChanged="SelectionChanged"
-    TouchDownEffects="None"
-    TouchUpEffects="None"/>
+	<effectsView:SfEffectsView
+        LongPressEffects="Selection"
+        SelectionChanged="SelectionChanged"
+        TouchDownEffects="None"
+        TouchUpEffects="None"/>
 	</ContentPage.Content> 
 </ContentPage>
 
@@ -90,7 +88,6 @@ using Syncfusion.Maui.Toolkit.EffectsView;
 
 public partial class MainPage : ContentPage
 {
-
     public MainPage()
     {
         InitializeComponent();
@@ -102,12 +99,12 @@ public partial class MainPage : ContentPage
         };
 
         effectsView.SelectionChanged += SelectionChanged;
-        ...
+        this.Content = effectsView;
     }
 
     private void SelectionChanged(object sender, EventArgs e)
     {
-        ...
+
     }
 }
 

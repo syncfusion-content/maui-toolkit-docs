@@ -21,8 +21,7 @@ Use the [SegmentWidth](https://help.syncfusion.com/cr/maui-toolkit-toolkit/Syncf
 
 <ContentPage
     xmlns:segmentedControl="clr-namespace:Syncfusion.Maui.Toolkit.SegmentedControl;assembly=Syncfusion.Maui.Toolkit.SegmentedControl">
-    <segmentedControl:SfSegmentedControl x:Name="segmentedControl"
-                                SegmentWidth="50">
+    <segmentedControl:SfSegmentedControl  SegmentWidth="50">
         <segmentedControl:SfSegmentedControl.ItemsSource>
             <x:Array Type="{x:Type x:String}">
                 <x:String>Day</x:String>
@@ -96,8 +95,7 @@ You can use the [SegmentHeight](https://help.syncfusion.com/cr/maui-toolkit/Sync
 
 <ContentPage
     xmlns:segmentedControl="clr-namespace:Syncfusion.Maui.Toolkit.SegmentedControl;assembly=Syncfusion.Maui.Toolkit.SegmentedControl">
-    <segmentedControl:SfSegmentedControl x:Name="segmentedControl"
-                                SegmentHeight="60">
+    <segmentedControl:SfSegmentedControl SegmentHeight="60">
         <segmentedControl:SfSegmentedControl.ItemsSource>
             <x:Array Type="{x:Type x:String}">
                 <x:String>Day</x:String>
@@ -139,8 +137,7 @@ Set the number of visible segments displayed in the [SfSegmentedControl](https:/
 
 <ContentPage
     xmlns:segmentedControl="clr-namespace:Syncfusion.Maui.Toolkit.SegmentedControl;assembly=Syncfusion.Maui.Toolkit.SegmentedControl">
-    <segmentedControl:SfSegmentedControl x:Name="segmentedControl"
-                                VisibleSegmentsCount="3">
+    <segmentedControl:SfSegmentedControl VisibleSegmentsCount="3">
         <segmentedControl:SfSegmentedControl.ItemsSource>
             <x:Array Type="{x:Type x:String}">
                 <x:String>Day</x:String>

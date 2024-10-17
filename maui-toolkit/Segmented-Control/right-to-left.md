@@ -14,19 +14,14 @@ The `SfSegmentedControl` supports changing the flow direction of items rendering
 {% tabs %}
 {% highlight xaml tabtitle="MainPage.xaml" %}
 <ContentPage 
-...
 xmlns:segmentedControl="clr-namespace:Syncfusion.Maui.Toolkit.SegmentedControl;assembly=Syncfusion.Maui.Toolkit">
-    <segmentedControl:SfSegmentedControl x:Name="segmentedControl"
-                                FlowDirection="RightToLeft">
-    </segmentedControl:SfSegmentedControl>
+    <segmentedControl:SfSegmentedControl x:Name="segmentedControl" FlowDirection="RightToLeft"/>
 </ContentPage>
 
 {% endhighlight %}
 {% highlight c# tabtitle="MainPage.xaml.cs" %}
 
 using Syncfusion.Maui.Toolkit.SegmentedControl;
-
-. . .
 
 SfSegmentedControl segmentedControl = new SfSegmentedControl();
 segmentedControl.FlowDirection = FlowDirection.RightToLeft;

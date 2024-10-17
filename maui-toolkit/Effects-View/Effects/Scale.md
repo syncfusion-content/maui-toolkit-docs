@@ -16,14 +16,13 @@ documentation: ug
 {% highlight xaml %} 
 
 <ContentPage 
-            ...
-            xmlns:effectsView="clr-namespace:Syncfusion.Maui.Toolkit.EffectsView;assembly=Syncfusion.Maui.Toolkit">
+    xmlns:effectsView="clr-namespace:Syncfusion.Maui.Toolkit.EffectsView;assembly=Syncfusion.Maui.Toolkit">
     <ContentPage.Content> 
-	 	<effectsView:SfEffectsView
-    ScaleFactor="0.85"
-    TouchDownEffects="None"
-    TouchUpEffects="None"
-    LongPressEffects="Scale" /> 
+	<effectsView:SfEffectsView
+        ScaleFactor="0.85"
+        TouchDownEffects="None"
+        TouchUpEffects="None"
+        LongPressEffects="Scale" /> 
 	</ContentPage.Content> 
 </ContentPage>
 
@@ -40,6 +39,7 @@ var effectsView = new SfEffectsView
     TouchUpEffects = SfEffects.None,
     LongPressEffects = SfEffects.Scale
 };
+this.Content = effectsView;  
 
 {% endhighlight %}
 

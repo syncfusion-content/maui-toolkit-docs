@@ -3,7 +3,7 @@ layout: post
 title: Disabled segmented item in .NET MAUI Segmented control | Syncfusion
 description: Learn about the Disabled segmented item in Syncfusion .NET MAUI Segmented control (SfSegmentedControl).
 platform: maui-toolkit
-control: Segmented (SfSegmented) control
+control: Segmented control
 documentation: ug
 ---
  
@@ -52,15 +52,12 @@ Set the enabled state of a specific segment at the specified index using the [Se
 {% highlight XAML %}
 
 <ContentPage
-    xmlns:local="clr-namespace:SfSegmentSample"
+    xmlns:local="clr-namespace:SegmentSample"
     xmlns:segmentedControl="clr-namespace:Syncfusion.Maui.Toolkit.SegmentedControl;assembly=Syncfusion.Maui.Toolkit.SegmentedControl">
     <ContentPage.BindingContext>
         <local:ViewModel/>
     </ContentPage.BindingContext>
-
-    <segmentedControl:SfSegmentedControl x:Name="segmentedControl"
-                                ItemsSource="{Binding SegmentItems}">
-    </segmentedControl:SfSegmentedControl>
+    <segmentedControl:SfSegmentedControl ItemsSource="{Binding SegmentItems}"/>
 </ContentPage>
 
 {% endhighlight %}
@@ -87,11 +84,11 @@ public partial class MainPage : ContentPage
 
 public class ViewModel
 {
-    private List<SfSegmentItem> segmentItems;
+   public List<SfSegmentItem> SegmentItems { get; set; }
 
     public ViewModel()
     {
-        segmentItems = new List<SfSegmentItem>()
+        SegmentItems = new List<SfSegmentItem>()
         {
                new SfSegmentItem() {Text = "XS"},
                new SfSegmentItem() {Text = "S"},
@@ -99,12 +96,6 @@ public class ViewModel
                new SfSegmentItem() {Text = "L"},
                new SfSegmentItem() {Text = "XL", IsEnabled = false},
         };
-    }
-
-    public List<SfSegmentItem> SegmentItems
-    {
-        get { return segmentItems; }
-        set { segmentItems = value; }
     }
 }
 
@@ -123,9 +114,7 @@ Use the [DisabledSegmentTextColor](https://help.syncfusion.com/cr/maui-toolkit/S
 
 <ContentPage
     xmlns:segmentedControl="clr-namespace:Syncfusion.Maui.Toolkit.SegmentedControl;assembly=Syncfusion.Maui.Toolkit.SegmentedControl">
-    <segmentedControl:SfSegmentedControl x:Name="segmentedControl"
-                                DisabledSegmentTextColor="Red">
-    </segmentedControl:SfSegmentedControl>
+    <segmentedControl:SfSegmentedControl DisabledSegmentTextColor="Red"/>
 </ContentPage>
 
 {% endhighlight %}
@@ -162,9 +151,7 @@ Use the [DisabledSegmentBackground](https://help.syncfusion.com/cr/maui-toolkit/
 
 <ContentPage
     xmlns:segmentedControl="clr-namespace:Syncfusion.Maui.Toolkit.SegmentedControl;assembly=Syncfusion.Maui.Toolkit.SegmentedControl">
-    <segmentedControl:SfSegmentedControl x:Name="segmentedControl"
-                                DisabledSegmentBackground="LightGray">
-    </segmentedControl:SfSegmentedControl>
+    <segmentedControl:SfSegmentedControl DisabledSegmentBackground="LightGray"/>
 </ContentPage>
 
 {% endhighlight %}

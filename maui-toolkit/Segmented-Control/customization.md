@@ -18,8 +18,7 @@ You can use the [Stroke](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.
 
 <ContentPage
     xmlns:segmentedControl="clr-namespace:Syncfusion.Maui.Toolkit.SegmentedControl;assembly=Syncfusion.Maui.Toolkit">
-    <segmentedControl:SfSegmentedControl 
-                                Stroke="Red">
+    <segmentedControl:SfSegmentedControl Stroke="Red">
         <segmentedControl:SfSegmentedControl.ItemsSource>
             <x:Array Type="{x:Type x:String}">
                 <x:String>Day</x:String>
@@ -62,8 +61,7 @@ You can use the [StrokeThickness](https://help.syncfusion.com/cr/maui-toolkit/Sy
 
 <ContentPage
     xmlns:segmentedControl="clr-namespace:Syncfusion.Maui.Toolkit.SegmentedControl;assembly=Syncfusion.Maui.Toolkit">
-    <segmentedControl:SfSegmentedControl x:Name="segmentedControl"
-                                StrokeThickness="2">
+    <segmentedControl:SfSegmentedControl StrokeThickness="2">
         <segmentedControl:SfSegmentedControl.ItemsSource>
             <x:Array Type="{x:Type x:String}">
                 <x:String>Day</x:String>
@@ -106,8 +104,7 @@ Use the [CornerRadius](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Ma
 
 <ContentPage
     xmlns:segmentedControl="clr-namespace:Syncfusion.Maui.Toolkit.SegmentedControl;assembly=Syncfusion.Maui.Toolkit">
-    <segmentedControl:SfSegmentedControl x:Name="segmentedControl"
-                                CornerRadius="5">
+    <segmentedControl:SfSegmentedControl CornerRadius="5">
         <segmentedControl:SfSegmentedControl.ItemsSource>
             <x:Array Type="{x:Type x:String}">
                 <x:String>Day</x:String>
@@ -152,8 +149,7 @@ Use the [SegmentCornerRadius](https://help.syncfusion.com/cr/maui-toolkit/Syncfu
 
 <ContentPage
     xmlns:segmentedControl="clr-namespace:Syncfusion.Maui.Toolkit.SegmentedControl;assembly=Syncfusion.Maui.Toolkit">
-    <segmentedControl:SfSegmentedControl x:Name="segmentedControl"
-                                SegmentCornerRadius="5">
+    <segmentedControl:SfSegmentedControl SegmentCornerRadius="5">
         <segmentedControl:SfSegmentedControl.ItemsSource>
             <x:Array Type="{x:Type x:String}">
                 <x:String>Day</x:String>
@@ -198,7 +194,7 @@ Use the [TextStyle](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.
 
 <ContentPage
     xmlns:segmentedControl="clr-namespace:Syncfusion.Maui.Toolkit.SegmentedControl;assembly=Syncfusion.Maui.Toolkit">
-    <segmentedControl:SfSegmentedControl x:Name="segmentedControl">
+    <segmentedControl:SfSegmentedControl>
         <segmentedControl:SfSegmentedControl.TextStyle>
             <segmentedControl:SegmentTextStyle TextColor="Red" FontAttributes="Italic" FontSize="20"/>
         </segmentedControl:SfSegmentedControl.TextStyle>
@@ -284,8 +280,7 @@ Use the [SegmentBackground](https://help.syncfusion.com/cr/maui-toolkit/Syncfusi
 
 <ContentPage
     xmlns:segmentedControl="clr-namespace:Syncfusion.Maui.Toolkit.SegmentedControl;assembly=Syncfusion.Maui.Toolkit">
-    <segmentedControl:SfSegmentedControl x:Name="segmentedControl"
-                                SegmentBackground="LightGray">
+    <segmentedControl:SfSegmentedControl SegmentBackground="LightGray">
         <segmentedControl:SfSegmentedControl.ItemsSource>
             <x:Array Type="{x:Type x:String}">
                 <x:String>Day</x:String>
@@ -361,7 +356,7 @@ Use the [SegmentTemplate](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion
 
 <ContentPage   
     xmlns:segmentedControl="clr-namespace:Syncfusion.Maui.Toolkit.SegmentedControl;assembly=Syncfusion.Maui.Toolkit">
-    <segmentedControl:SfSegmentedControl x:Name="segmentedControl">
+    <segmentedControl:SfSegmentedControl>
         <segmentedControl:SfSegmentedControl.ItemsSource>
             <x:Array Type="{x:Type x:String}">                
                 <x:String>Day</x:String>                

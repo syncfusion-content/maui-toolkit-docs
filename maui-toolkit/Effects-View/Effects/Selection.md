@@ -16,12 +16,11 @@ documentation: ug
 {% highlight xaml %} 
 
 <ContentPage 
-            ...
-            xmlns:effectsView="clr-namespace:Syncfusion.Maui.Toolkit.EffectsView;assembly=Syncfusion.Maui.Toolkit">
+    xmlns:effectsView="clr-namespace:Syncfusion.Maui.Toolkit.EffectsView;assembly=Syncfusion.Maui.Toolkit">
     <ContentPage.Content> 
-	 	<effectsView:SfEffectsView
-    LongPressEffects="Selection"
-    SelectionBackground="#FF0000" /> 
+	<effectsView:SfEffectsView
+        LongPressEffects="Selection"
+        SelectionBackground="#FF0000" /> 
 	</ContentPage.Content> 
 </ContentPage>
 
@@ -36,6 +35,7 @@ var effectsView = new SfEffectsView
     LongPressEffects = SfEffects.Selection,
     SelectionBackground = new SolidColorBrush(Colors.Aqua)
 };
+this.Content = effectsView;  
 
 {% endhighlight %}
 
