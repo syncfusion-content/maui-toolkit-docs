@@ -55,7 +55,7 @@ The [Reset](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Core.SfEffectsVi
 
 {% tabs %} 
 
-{% highlight xaml %} 
+{% highlight xaml %}
 
 <Grid RowDefinitions="0.9*, 0.1*">
         <syncEffectsView:SfEffectsView x:Name="EffectsView"
@@ -67,7 +67,7 @@ The [Reset](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Core.SfEffectsVi
 
 {% endhighlight %}
 
-{% highlight C# %} 
+{% highlight C# %}
 
 using Syncfusion.Maui.Toolkit.EffectsView;
 
