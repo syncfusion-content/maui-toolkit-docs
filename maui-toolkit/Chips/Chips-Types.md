@@ -11,7 +11,7 @@ documentation: ug
 
 ## Input
 
-Organizes the `.NET MAUI Chips` within a layout, enabling a close button for each chip. This close button allows for the removal of chips from both the layout and its children. Additionally, the layout includes an option at the end, enabling users to retrieve the chip text for creating new chips dynamically at runtime.
+Organizes the [.NET MAUI Chips](https://www.syncfusion.com/maui-controls/maui-chips) within a layout, enabling a close button for each chip. This close button allows for the removal of chips from both the layout and its children. Additionally, the layout includes an option at the end, enabling users to retrieve the chip text for creating new chips dynamically at runtime.
 
 The following code demonstrates how to obtain an input-type chip.
 
@@ -204,7 +204,7 @@ public class EmployeeViewModel : INotifyPropertyChanged
 
 ### ChoiceMode
 
-`Single` - At least, one item must be in selected state and the selected item cannot be deselected, if `ChoiceMode` is Single.
+`Single` - At least, one item must be in selected state and the selected item cannot be deselected, if [ChoiceMode](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Chips.ChoiceMode.html) is Single.
 
 `SingleOrNone` - Unlike `Single` it is possible to deselect the selected item and keep all the items in deselected state.
 
@@ -249,9 +249,9 @@ this.Content = grid;
 
 ## Filter
 
-Allows users to select more than one chip in a group of chips. The selected chips are indicated by selection indicator in this type. The selection indicator can be customized using the `SelectionIndicatorColor` property. Use the `SelectedItem` property to get the list of selected chips.
+Allows users to select more than one chip in a group of chips. The selected chips are indicated by selection indicator in this type. The selection indicator can be customized using the [SelectionIndicatorColor](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Chips.SfChipGroup.html#Syncfusion_Maui_Toolkit_Chips_SfChipGroup_SelectionIndicatorColor) property. Use the [SelectedItem](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Chips.SfChipGroup.html#Syncfusion_Maui_Toolkit_Chips_SfChipGroup_SelectedItem) property to get the list of selected chips.
 
-This selection changes are notified by using [SelectionChanging](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Core.SfChipGroup.html#Syncfusion_Maui_Core_SfChipGroup_SelectionChanging) and [SelectionChanged](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Core.SfChipGroup.html#Syncfusion_Maui_Core_SfChipGroup_SelectionChanged) events.
+This selection changes are notified by using [SelectionChanging](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Chips.SfChipGroup.html#Syncfusion_Maui_Toolkit_Chips_SfChipGroup_SelectionChanging) and [SelectionChanged](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Chips.SfChipGroup.html#Syncfusion_Maui_Toolkit_Chips_SfChipGroup_SelectionChanged) events.
 
 Here, Add visual states to set the ChipType to Filter.
 The following code illustrates how to get filter typed ChipGroup.
@@ -372,7 +372,7 @@ public class EmployeeViewModel : INotifyPropertyChanged
 
 ## Action
 
-Action type of [`SfChipGroup`](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Core.SfChipGroup.html#Syncfusion_Maui_Core_SfChipGroup_SelectionChanged) executes the [`Command`](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Core.SfChipGroup.html#Syncfusion_Maui_Core_SfChipGroup_Command) when clicking the chip in `SfChipGroup`. On its `Command` action, you can do our desired action.
+Action type of [`SfChipGroup`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Chips.SfChipGroup.html) executes the [`Command`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Chips.SfChipGroup.html#Syncfusion_Maui_Toolkit_Chips_SfChipGroup_Command) when clicking the chip in `SfChipGroup`. On its `Command` action, you can do our desired action.
 
 The `Command` will execute only for action typed `SfChipGroup`.
 
