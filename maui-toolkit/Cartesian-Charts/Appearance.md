@@ -13,17 +13,17 @@ The appearance of [SfCartesianChart](https://help.syncfusion.com/cr/maui-toolkit
 
 ## Applying PaletteBrushes for Chart
 
-By default, chart applies a set of predefined brushes to the series in a predefined order. [SfCartesianChart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html) provides [PaletteBrushes](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html#Syncfusion_Maui_Charts_SfCartesianChart_PaletteBrushes) property for applying various kinds of custom palettes brushes.
+By default, chart applies a set of predefined brushes to the series in a predefined order. [SfCartesianChart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html) provides [PaletteBrushes](hhttps://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html#Syncfusion_Maui_Toolkit_Charts_SfCartesianChart_PaletteBrushes) property for applying various kinds of custom palettes brushes.
 
 ### Custom PaletteBrushes
 
-[SfCartesianChart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html) provides support to define own brushes for the chart with preferred order by using the [PaletteBrushes](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html#Syncfusion_Maui_Charts_SfCartesianChart_PaletteBrushes) property, as shown in the following code example.
+[SfCartesianChart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html) provides support to define own brushes for the chart with preferred order by using the [PaletteBrushes](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html#Syncfusion_Maui_Toolkit_Charts_SfCartesianChart_PaletteBrushes) property, as shown in the following code example.
 
 {% tabs %}
 
 {% highlight xaml %}
 
-<chart:SfCartesianChart x:Name="chart" PaletteBrushes="{Binding CustomBrushes}">
+<chart:SfCartesianChart x:Name = "chart" PaletteBrushes = "{Binding CustomBrushes}">
 . . .
 </chart:SfCartesianChart>
 
@@ -32,13 +32,14 @@ By default, chart applies a set of predefined brushes to the series in a predefi
 {% highlight c# %}
 
 SfCartesianChart chart = new SfCartesianChart();
+. . .
 List<Brush> CustomBrushes = new List<Brush>();
 CustomBrushes.Add(new SolidColorBrush(Color.FromRgb(38, 198, 218)));
 CustomBrushes.Add(new SolidColorBrush(Color.FromRgb(0, 172, 193)));
 CustomBrushes.Add(new SolidColorBrush(Color.FromRgb(0, 151, 167)));
 CustomBrushes.Add(new SolidColorBrush(Color.FromRgb(0, 131, 143)));
 
-this.chart.PaletteBrushes = CustomBrushes;
+chart.PaletteBrushes = CustomBrushes;
 . . .
 this.Content = chart;
 
@@ -50,7 +51,7 @@ this.Content = chart;
 
 ## Applying PaletteBrushes for Series
 
-Cartesian chart provides support to set the palette to series for applying predefined brushes to the segment. The following code example shows you how to set the [PaletteBrushes](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartSeries.html#Syncfusion_Maui_Charts_ChartSeries_PaletteBrushes) for the series.
+Cartesian chart provides support to set the palette to series for applying predefined brushes to the segment. The following code example shows you how to set the [PaletteBrushes](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html#Syncfusion_Maui_Toolkit_Charts_SfCartesianChart_PaletteBrushes) for the series.
 
 {% tabs %}
 
@@ -58,10 +59,10 @@ Cartesian chart provides support to set the palette to series for applying prede
 
 <chart:SfCartesianChart>
     . . .
-    <chart:ColumnSeries ItemsSource="{Binding Data}"  
-                        XBindingPath="XValue" 
-                        YBindingPath="YValue" 
-                        PaletteBrushes="{Binding CustomBrushes}"/>
+    <chart:ColumnSeries ItemsSource = "{Binding Data}"  
+                        XBindingPath = "XValue" 
+                        YBindingPath = "YValue" 
+                        PaletteBrushes = "{Binding CustomBrushes}"/>
 </chart:SfCartesianChart>
 
 {% endhighlight %}
@@ -94,9 +95,9 @@ public class ViewModel
 
 ## Applying Gradient
 
-Gradient for the chart can be set by using the [PaletteBrushes](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartSeries.html#Syncfusion_Maui_Charts_ChartSeries_PaletteBrushes) property with the help of `LinearGradientBrush` or `RadialGradientBrush`.
+Gradient for the chart can be set by using the [PaletteBrushes](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html#Syncfusion_Maui_Toolkit_Charts_SfCartesianChart_PaletteBrushes) property with the help of `LinearGradientBrush` or `RadialGradientBrush`.
 
-The following code sample and screenshot illustrates how to apply the gradient brushes for the series using the [PaletteBrushes](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartSeries.html#Syncfusion_Maui_Charts_ChartSeries_PaletteBrushes) property.
+The following code sample and screenshot illustrates how to apply the gradient brushes for the series using the [PaletteBrushes](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html#Syncfusion_Maui_Toolkit_Charts_SfCartesianChart_PaletteBrushes) property.
 
 {% tabs %}
 
@@ -104,10 +105,10 @@ The following code sample and screenshot illustrates how to apply the gradient b
 
 <chart:SfCartesianChart>
     . . .
-    <chart:ColumnSeries ItemsSource="{Binding Data}"  
-                        XBindingPath="XValue" 
-                        YBindingPath="YValue" 
-                        PaletteBrushes="{Binding CustomBrushes}"/>
+    <chart:ColumnSeries ItemsSource = "{Binding Data}"  
+                        XBindingPath = "XValue" 
+                        YBindingPath = "YValue" 
+                        PaletteBrushes = "{Binding CustomBrushes}"/>
 </chart:SfCartesianChart>
 
 {% endhighlight %}
@@ -175,7 +176,7 @@ public class ViewModel
 
 ## Plotting Area Customization:
 
-[SfCartesianChart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html?tabs=tabid-1) allows you to add any view to the chart plot area, which is useful for adding any relevant data, a watermark, or a color gradient to the background of the chart.
+[SfCartesianChart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html) allows you to add any view to the chart plot area, which is useful for adding any relevant data, a watermark, or a color gradient to the background of the chart.
 
 {% tabs %}
 
@@ -184,19 +185,19 @@ public class ViewModel
 <chart:SfCartesianChart>
     <chart:SfCartesianChart.PlotAreaBackgroundView>
         <AbsoluteLayout>
-      	    <Label Text="Copyright @ 2001 - 2022 Syncfusion Inc"
-	           FontSize="18" AbsoluteLayout.LayoutBounds="1,1,-1,-1"
-		   AbsoluteLayout.LayoutFlags="PositionProportional"
-		   Opacity="0.4"/>
-       	    <Label Text="CONFIDENTIAL"
-		   Rotation="340"
-		   FontSize="80"
-		   FontAttributes="Bold,Italic"
-		   TextColor="Gray"
-		   Margin="10,0,0,0"
-		   AbsoluteLayout.LayoutBounds="0.5,0.5,-1,-1"
-		   AbsoluteLayout.LayoutFlags="PositionProportional"
-		   Opacity="0.3"/>
+      	    <Label Text = "Copyright @ 2001 - 2022 Syncfusion Inc"
+	           FontSize = "18" AbsoluteLayout.LayoutBounds = "1,1,-1,-1"
+		   AbsoluteLayout.LayoutFlags = "PositionProportional"
+		   Opacity = "0.4"/>
+       	    <Label Text = "CONFIDENTIAL"
+		   Rotation = "340"
+		   FontSize = "80"
+		   FontAttributes = "Bold,Italic"
+		   TextColor = "Gray"
+		   Margin = "10,0,0,0"
+		   AbsoluteLayout.LayoutBounds = "0.5,0.5,-1,-1"
+		   AbsoluteLayout.LayoutFlags = "PositionProportional"
+		   Opacity = "0.3"/>
         </AbsoluteLayout>
     </chart:SfCartesianChart.PlotAreaBackgroundView>
 </chart:SfCartesianChart>

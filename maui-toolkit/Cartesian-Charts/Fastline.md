@@ -12,9 +12,9 @@ Keywords: .net maui fast line chart, .net maui performance line chart, fast line
 
 ## Fast Line Chart
 
-The [FastLineSeries](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.FastLineSeries.html?tabs=tabid-1) is a special kind of line series that can render a collection with large number of datapoints. To render a fast line chart, create an instance of [FastLineSeries](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.FastLineSeries.html?tabs=tabid-1), and add it to the [Series](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html#Syncfusion_Maui_Charts_SfCartesianChart_Series) collection property of [SfCartesianChart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html?tabs=tabid-1). 
+The [FastLineSeries](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.FastLineSeries.html) is a special kind of line series that can render a collection with large number of datapoints. To render a fast line chart, create an instance of [FastLineSeries](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.FastLineSeries.html), and add it to the [Series](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html#Syncfusion_Maui_Toolkit_Charts_SfCartesianChart_Series) collection property of [SfCartesianChart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html). 
 
-N> The Cartesian chart has [Series](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html#Syncfusion_Maui_Charts_SfCartesianChart_Series) as its default content.
+N> The Cartesian chart has [Series](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html#Syncfusion_Maui_Toolkit_Charts_SfCartesianChart_Series) as its default content.
 
 {% tabs %}
 
@@ -29,9 +29,9 @@ N> The Cartesian chart has [Series](https://help.syncfusion.com/cr/maui-toolkit/
         <chart:NumericalAxis/>
     </chart:SfCartesianChart.YAxes>  
                 
-    <chart:FastLineSeries ItemsSource="{Binding Data}"
-                          XBindingPath="XValue"
-                          YBindingPath="YValue"/>
+    <chart:FastLineSeries ItemsSource = "{Binding Data}"
+                          XBindingPath = "XValue"
+                          YBindingPath = "YValue"/>
 </chart:SfCartesianChart>
 
 {% endhighlight %}
@@ -62,7 +62,7 @@ this.Content = chart;
 
 ### Dashed line
 
-The [StrokeDashArray](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.FastLineSeries.html#Syncfusion_Maui_Charts_FastLineSeries_StrokeDashArray) property of [FastLineSeries](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.FastLineSeries.html?tabs=tabid-1) is used to render the line with dashes. The odd value is considered as the rendering size, while the even value is considered as the gap.
+The [StrokeDashArray](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.FastLineSeries.html#Syncfusion_Maui_Toolkit_Charts_FastLineSeries_StrokeDashArray) property of [FastLineSeries](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.FastLineSeries.html) is used to render the line with dashes. The odd value is considered as the rendering size, while the even value is considered as the gap.
 
 {% tabs %}
 
@@ -84,10 +84,10 @@ The [StrokeDashArray](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Mau
         <chart:NumericalAxis/>
     </chart:SfCartesianChart.YAxes>  
 
-    <chart:FastLineSeries ItemsSource="{Binding Data}"
-                          XBindingPath="XValue"
-                          YBindingPath="YValue" 
-                          StrokeDashArray="{StaticResource dashArray}"/>
+    <chart:FastLineSeries ItemsSource = "{Binding Data}"
+                          XBindingPath = "XValue"
+                          YBindingPath = "YValue" 
+                          StrokeDashArray = "{StaticResource dashArray}"/>
 </chart:SfCartesianChart>
 
 {% endhighlight %}
@@ -125,7 +125,7 @@ this.Content = chart;
 
 ### Anti-aliasing
 
-There may be some jagged lines at the edges. This can be reduced by using the `EnableAntiAliasing` property.
+There may be some jagged lines at the edges. This can be reduced by using the [EnableAntiAliasing](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.FastLineSeries.html#Syncfusion_Maui_Toolkit_Charts_FastLineSeries_EnableAntiAliasing) property.
 
 {% tabs %}
 
@@ -133,10 +133,10 @@ There may be some jagged lines at the edges. This can be reduced by using the `E
 
 <chart:SfCartesianChart>
     ...
-    <chart:FastLineSeries EnableAntiAliasing="True"
-                          ItemsSource="{Binding Data}"
-                          XBindingPath="XValue"
-                          YBindingPath="YValue"/>
+    <chart:FastLineSeries EnableAntiAliasing = "True"
+                          ItemsSource = "{Binding Data}"
+                          XBindingPath = "XValue"
+                          YBindingPath = "YValue"/>
 </chart:SfCartesianChart>
 
 {% endhighlight %}

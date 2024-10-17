@@ -21,14 +21,14 @@ The [Title](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Charts.ChartAxis
     <chart:SfCartesianChart.XAxes>
         <chart:CategoryAxis>
             <chart:CategoryAxis.Title>
-                <chart:ChartAxisTitle Text="Category"/>
+                <chart:ChartAxisTitle Text = "Category"/>
             </chart:CategoryAxis.Title>
         </chart:CategoryAxis>
     </chart:SfCartesianChart.XAxes>
     <chart:SfCartesianChart.YAxes>
         <chart:NumericalAxis>
             <chart:NumericalAxis.Title>
-                <chart:ChartAxisTitle Text="Values"/>
+                <chart:ChartAxisTitle Text = "Values"/>
             </chart:NumericalAxis.Title>
         </chart:NumericalAxis>
     </chart:SfCartesianChart.YAxes>
@@ -87,9 +87,9 @@ The [LabelExtent](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Charts.Cha
 <chart:SfCartesianChart>
     . . .
     <chart:SfCartesianChart.XAxes>
-        <chart:CategoryAxis LabelExtent="60">
+        <chart:CategoryAxis LabelExtent = "60">
             <chart:CategoryAxis.Title>
-                <chart:ChartAxisTitle Text="Category"/>
+                <chart:ChartAxisTitle Text = "Category"/>
             </chart:CategoryAxis.Title>
         </chart:CategoryAxis>
     </chart:SfCartesianChart.XAxes>

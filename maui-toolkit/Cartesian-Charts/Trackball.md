@@ -14,11 +14,11 @@ Trackball, which allows you to show the tooltip for the nearest data points when
 
 ## Enable Trackball 
 
-To enable the trackball in the chart, create an instance of the [ChartTrackballBehavior](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartTrackballBehavior.html) and set it to the [TrackballBehavior](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html#Syncfusion_Maui_Charts_SfCartesianChart_TrackballBehavior) property. The following properties are used to show or hide the line and tooltip.
+To enable the trackball in the chart, create an instance of the [ChartTrackballBehavior](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartTrackballBehavior.html) and set it to the [TrackballBehavior](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html#Syncfusion_Maui_Toolkit_Charts_SfCartesianChart_TrackballBehavior) property. The following properties are used to show or hide the line and tooltip.
 
-* [ShowLabel](), of type `bool`, indicates the shows or hides the trackball label. The default value is `True`.
-* [ShowMarkers](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartTrackballBehavior.html#Syncfusion_Maui_Charts_ChartTrackballBehavior_ShowMarkers), of type `bool`, indicates the shows or hides trackball markers. The default value is `True`.
-* [ShowLine](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartTrackballBehavior.html#Syncfusion_Maui_Charts_ChartTrackballBehavior_ShowLine), of type `bool`, indicates the shows or hides the trackball line. The default value is `True`.
+* [ShowLabel](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartTrackballBehavior.html#Syncfusion_Maui_Toolkit_Charts_ChartTrackballBehavior_ShowLabel), of type `bool`, indicates the shows or hides the trackball label. The default value is `True`.
+* [ShowMarkers](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartTrackballBehavior.html#Syncfusion_Maui_Toolkit_Charts_ChartTrackballBehavior_ShowMarkershttps://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartTrackballBehavior.html#Syncfusion_Maui_Toolkit_Charts_ChartTrackballBehavior_ShowMarkers), of type `bool`, indicates the shows or hides trackball markers. The default value is `True`.
+* [ShowLine](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartTrackballBehavior.html#Syncfusion_Maui_Toolkit_Charts_ChartTrackballBehavior_ShowLine), of type `bool`, indicates the shows or hides the trackball line. The default value is `True`.
 
 
 {% tabs %}
@@ -50,7 +50,7 @@ this.Content = chart;
 
 ## Enable Label Display Mode
 
-The [DisplayMode](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartTrackballBehavior.html#Syncfusion_Maui_Charts_ChartTrackballBehavior_DisplayMode) property specifies whether a label should be displayed for all data points along the trackball line or only the nearest data point label. The following choices are available for this property.
+The [DisplayMode](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartTrackballBehavior.html#Syncfusion_Maui_Toolkit_Charts_ChartTrackballBehavior_DisplayMode) property specifies whether a label should be displayed for all data points along the trackball line or only the nearest data point label. The following choices are available for this property.
 
 * `FloatAllPoints` – Displays labels for all the data points along the vertical line.
 * `NearestPoint` – Displays a label for a single data point nearer to the touch point on the chart area.
@@ -63,8 +63,8 @@ The [DisplayMode](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.To
 <chart:SfCartesianChart>
     ...
     <chart:SfCartesianChart.TrackballBehavior>
-        <chart:ChartTrackballBehavior ShowLine="True" 
-                                      DisplayMode="NearestPoint"/>
+        <chart:ChartTrackballBehavior ShowLine = "True" 
+                                      DisplayMode = "NearestPoint"/>
     </chart:SfCartesianChart.TrackballBehavior>
     ...
 </chart:SfCartesianChart>
@@ -75,19 +75,21 @@ The [DisplayMode](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.To
 
 SfCartesianChart chart = new SfCartesianChart();
 ...
-ChartTrackballBehavior trackball = new ChartTrackballBehavior();
-trackball.ShowLine = true;
-trackball.DisplayMode = LabelDisplayMode.NearestPoint;
+ChartTrackballBehavior trackball = new ChartTrackballBehavior()
+{
+    ShowLine = true,
+    DisplayMode = LabelDisplayMode.NearestPoint
+};
 chart.TrackballBehavior= trackball;
 . . . 
-
+this.Content = chart;
 {% endhighlight %}
 
 {% endtabs %}
 
 ## Activation mode
 
-The [ActivationMode](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartTrackballBehavior.html#Syncfusion_Maui_Charts_ChartTrackballBehavior_ActivationMode) property is used to restrict the visibility of trackball based on the touch actions. 
+The [ActivationMode](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartTrackballBehavior.html#Syncfusion_Maui_Toolkit_Charts_ChartTrackballBehavior_ActivationMode) property is used to restrict the visibility of trackball based on the touch actions. 
 
 The ChartTrackballActivationMode enum contains the following values:
 
@@ -113,16 +115,18 @@ The ChartTrackballActivationMode enum contains the following values:
 
 SfCartesianChart chart = new SfCartesianChart();
 ...
-ChartTrackballBehavior trackball = new ChartTrackballBehavior();
-trackball.ActivationMode = ChartTrackballActivationMode.LongPress;
+ChartTrackballBehavior trackball = new ChartTrackballBehavior()
+{
+    ActivationMode = ChartTrackballActivationMode.LongPress
+};
 chart.TrackballBehavior= trackball;
 . . . 
-
+this.Content = chart;
 {% endhighlight %}
 
 {% endtabs %}
 
-N> The default value of [ActivationMode](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartTrackballBehavior.html#Syncfusion_Maui_Charts_ChartTrackballBehavior_ActivationMode) property is `ChartTrackballActivationMode.LongPress` for Android and iOS platform and default value for MacOS and Windows platform is `ChartTrackballActivationMode.TouchMove`.
+N> The default value of [ActivationMode](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartTrackballBehavior.html#Syncfusion_Maui_Toolkit_Charts_ChartTrackballBehavior_ActivationMode) property is `ChartTrackballActivationMode.LongPress` for Android and iOS platform and default value for MacOS and Windows platform is `ChartTrackballActivationMode.TouchMove`.
 
 N> On Windows, LongPress gestures are supported only through touch input, not with a mouse. Consequently, when ActivationMode is set to LongPress, the trackball activates only via touch interaction, not with a mouse interaction.
 
@@ -130,7 +134,7 @@ N> On Windows, LongPress gestures are supported only through touch input, not wi
 
 ### Trackball Labels customization
 
-The [LabelStyle](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartTrackballBehavior.html#Syncfusion_Maui_Charts_ChartTrackballBehavior_LabelStyle) property provides to customize the trackball labels. These options are:
+The [LabelStyle](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartTrackballBehavior.html#Syncfusion_Maui_Toolkit_Charts_ChartTrackballBehavior_LabelStyle) property provides to customize the trackball labels. These options are:
 
 * `Background`, of type `Brush`, used to change the label background color.
 * `Margin`, of type `Thickness`, used to change the margin of the label.
@@ -151,11 +155,11 @@ The [LabelStyle](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Too
 <chart:SfCartesianChart>
     ...
     <chart:ChartTrackballBehavior.LabelStyle>
-        <chart:ChartLabelStyle Background="LightBlue"   
-                               FontSize="15" 
-                               CornerRadius="5"
-                               StrokeWidth="2" 
-                               Stroke="Gray"/>
+        <chart:ChartLabelStyle Background = "LightBlue"   
+                               FontSize = "15" 
+                               CornerRadius = "5"
+                               StrokeWidth = "2" 
+                               Stroke = "Gray"/>
     </chart:ChartTrackballBehavior.LabelStyle>
     ...
 </chart:SfCartesianChart>
@@ -188,7 +192,7 @@ this.Content = chart;
 
 ### Trackball Line Customization
 
- The [LineStyle](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartTrackballBehavior.html#Syncfusion_Maui_Charts_ChartTrackballBehavior_LineStyle) property provides to customize the trackball line. These options are:
+ The [LineStyle](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartTrackballBehavior.html#Syncfusion_Maui_Toolkit_Charts_ChartTrackballBehavior_LineStyle) property provides to customize the trackball line. These options are:
 
 * `StrokeWidth`, of type `double`, used to change the stroke width of the line.
 * `Stroke`, of type `Brush`, used to change the stroke color of the line.
@@ -201,8 +205,8 @@ this.Content = chart;
 <chart:SfCartesianChart>
     ...
     <chart:ChartTrackballBehavior.LineStyle>
-        <chart:ChartLineStyle Stroke="Gray"   
-                              StrokeDashArray="4"/>     
+        <chart:ChartLineStyle Stroke = "Gray"   
+                              StrokeWidth= "4"/>     
     </chart:ChartTrackballBehavior.LineStyle>
     ...
 </chart:SfCartesianChart>
@@ -213,11 +217,12 @@ this.Content = chart;
 
 SfCartesianChart chart = new SfCartesianChart();
 . . .
-
 ChartTrackballBehavior trackball = new ChartTrackballBehavior();
-ChartLineStyle lineStyle = new ChartLineStyle();
-lineStyle.Stroke = Colors.Gray;
-lineStyle.StrokeDashArray = 4;
+ChartLineStyle lineStyle = new ChartLineStyle()
+{
+    Stroke = Colors.Gray,
+    StrokeWidth = 4
+};
 trackballBehavior.LineStyle = lineStyle;
 chart.TrackballBehavior= trackball;
 
@@ -229,7 +234,7 @@ this.Content = chart;
 
 ### Trackball Markers Customization
 
-The [MarkerSettings](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartTrackballBehavior.html#Syncfusion_Maui_Charts_ChartTrackballBehavior_MarkerSettings) property provides to customize the trackball markers. The trackball marker can be customized using the following properties.
+The [MarkerSettings](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartTrackballBehavior.html#Syncfusion_Maui_Toolkit_Charts_ChartTrackballBehavior_MarkerSettings) property provides to customize the trackball markers. The trackball marker can be customized using the following properties.
 
 * `Type`, of type `ShapeType`, used to set the marker shape type.
 * `Stroke`, of type `Brush`, used to change the marker border color.
@@ -244,12 +249,13 @@ The [MarkerSettings](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui
 
 <chart:SfCartesianChart>
     ...
-    <chart:ChartMarkerSettings Type="InvertedTriangle"  
-                               Fill="Brown" 
-                               Stroke="Red" 
-                               StrokeWidth="1.5"
-                               Width="15" 
-                               Height="15"/>
+    <chart:SfCartesianChart.TrackballBehavior>
+        <chart:ChartTrackballBehavior>
+                <chart:ChartTrackballBehavior.MarkerSettings>
+                    <chart:ChartMarkerSettings Height = "10" Width="10" Fill="Red"/>
+                </chart:ChartTrackballBehavior.MarkerSettings>
+        </chart:ChartTrackballBehavior>
+    </chart:SfCartesianChart.TrackballBehavior>
     ...
 </chart:SfCartesianChart>
 
@@ -259,14 +265,14 @@ The [MarkerSettings](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui
 
 SfCartesianChart chart = new SfCartesianChart();
 . . .
-ChartMarkerSettings markerStyle = new ChartMarkerSettings()
+var markerSettings = new ChartMarkerSettings()
 {
-    markerStyle.Type = ShapeType.InvertedTriangle,
-    markerStyle.Fill = Colors.Brown,
-    markerStyle.Stroke = Colors.Red,
-    markerStyle.StrokeWidth = 1.5,
-    markerStyle.Width = 15,
-    markerStyle.Height = 15,
+    Height = 10, Width = 10,
+    Fill = new SolidColorBrush(Colors.Red),
+};
+chart.TrackballBehavior = new ChartTrackballBehavior()
+{
+    MarkerSettings = markerSettings,
 };
 
 this.Content = chart;
@@ -277,7 +283,7 @@ this.Content = chart;
 
 ## Trackball Label Template
 
-Trackball labels can be customized by adding any view as its template by using [TrackballLabelTemplate](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxis.html#Syncfusion_Maui_Charts_ChartAxis_TrackballLabelTemplate) of [CartesianSeries](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.CartesianSeries.html).
+Trackball labels can be customized by adding any view as its template by using [TrackballLabelTemplate](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.CartesianSeries.html#Syncfusion_Maui_Toolkit_Charts_CartesianSeries_TrackballLabelTemplate) of [CartesianSeries](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.CartesianSeries.html).
 
 T> The `DataItem` can be used to access the data linked to the associated business model. The binding context for `TrackballLabelTemplate` is `TrackballPointInfo`, which provides the necessary data for the labels.
 
@@ -287,11 +293,11 @@ T> The `DataItem` can be used to access the data linked to the associated busine
 
 <chart:SfCartesianChart>
     <chart:SfCartesianChart.Resources>
-        <DataTemplate x:Key="trackballLabelTemplate">
+        <DataTemplate x:Key = "trackballLabelTemplate">
             <HorizontalStackLayout>
-                <Image Source="image.png" WidthRequest="20" HeightRequest="20"/>
-                <Label Text="{Binding Series.Label, StringFormat=' {0}'}" FontSize="12" HorizontalOptions="Center"  TextColor="White"/>
-                <Label Text="{Binding DataItem.YValues,StringFormat=': {0}M'}" FontSize="12" HorizontalOptions="Center" TextColor="White"/>
+                <Image Source = "image.png" WidthRequest = "20" HeightRequest = "20"/>
+                <Label Text = "{Binding Series.Label, StringFormat=' {0}'}" FontSize = "12" HorizontalOptions = "Center"  TextColor = "White"/>
+                <Label Text = "{Binding DataItem.YValues,StringFormat=': {0}M'}" FontSize = "12" HorizontalOptions = "Center" TextColor = "White"/>
             </HorizontalStackLayout>         
         </DataTemplate>
     </chart:SfCartesianChart.Resources>
@@ -326,7 +332,7 @@ T> The `DataItem` can be used to access the data linked to the associated busine
 SfCartesianChart chart = new SfCartesianChart();
 
 ChartTrackballBehavior trackball = new ChartTrackballBehavior();
-chart.TrackballBehavior= trackball;
+chart.TrackballBehavior = trackball;
 . . .
 LineSeries series1 = new LineSeries();
 series1.ItemsSource = new ViewModel().Data1;
@@ -350,14 +356,14 @@ DataTemplate trackballLabelTemplate = new DataTemplate(() =>
 {
     HorizontalStackLayout horizontalStackLayout = new HorizontalStackLayout();
 
-    Image image = new Image
+    Image image = new Image()
     {
         Source = "image.png",
         WidthRequest = 20,
         HeightRequest = 20
     };
 
-    Label label1 = new Label
+    Label label1 = new Label()
     {
         FontSize = 15,
         HorizontalOptions = LayoutOptions.Center,
@@ -365,7 +371,7 @@ DataTemplate trackballLabelTemplate = new DataTemplate(() =>
     };
     label1.SetBinding(Label.TextProperty, new Binding("Series.Label", stringFormat: " {0}"));
 
-    Label label2 = new Label
+    Label label2 = new Label()
     {
         FontSize = 15,
         HorizontalOptions = LayoutOptions.Center,
@@ -397,7 +403,7 @@ this.Content = chart;
 
 ## Trackball axis label template
 
-To customize the appearance of axis labels on the trackball, you can use the [TrackballLabelTemplate](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxis.html#Syncfusion_Maui_Charts_ChartAxis_TrackballLabelTemplate) property of the [ChartAxis](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxis.html).
+To customize the appearance of axis labels on the trackball, you can use the [TrackballLabelTemplate](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxis.html#Syncfusion_Maui_Toolkit_Charts_ChartAxis_TrackballLabelTemplate) property of the [ChartAxis](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxis.html).
 
 {% tabs %}
 
@@ -405,8 +411,9 @@ To customize the appearance of axis labels on the trackball, you can use the [Tr
 
 <chart:SfCartesianChart>
     <chart:SfCartesianChart.Resources>
-        <DataTemplate x:Key="axisLabelTemplate">
-            <Label WidthRequest="50" HeightRequest="20" HorizontalTextAlignment="Center" BackgroundColor="Blue" Text="{Binding ValueX}" TextColor="White" FontSize ="15"/>
+        <DataTemplate x:Key = "axisLabelTemplate">
+            <Label WidthRequest = "50" HeightRequest = "20" HorizontalTextAlignment = "Center" BackgroundColor = "Blue"
+                 Text = "{Binding Date}" TextColor = "White" FontSize = "15"/>
         </DataTemplate>
     </chart:SfCartesianChart.Resources>
 
@@ -415,12 +422,12 @@ To customize the appearance of axis labels on the trackball, you can use the [Tr
    </chart:SfCartesianChart.TrackballBehavior>
 
     <chart:SfCartesianChart.XAxes>
-        <chart:DateTimeAxis TrackballLabelTemplate="{StaticResource axisLabelTemplate}" ShowTrackballLabel="True"/>
+        <chart:DateTimeAxis TrackballLabelTemplate = "{StaticResource axisLabelTemplate}" ShowTrackballLabel = "True"/>
     </chart:SfCartesianChart.XAxes>  
 
-    <chart:LineSeries ItemsSource="{Binding Data}" 
-                      XBindingPath="Name"
-                      YBindingPath="Values"/>
+    <chart:LineSeries ItemsSource = "{Binding Data}" 
+                      XBindingPath = "Date"
+                      YBindingPath = "Values"/>
 </chart:SfCartesianChart>
 
 {% endhighlight %}
@@ -430,14 +437,14 @@ To customize the appearance of axis labels on the trackball, you can use the [Tr
 SfCartesianChart chart = new SfCartesianChart();
 
 ChartTrackballBehavior trackball = new ChartTrackballBehavior();
-chart.TrackballBehavior= trackball;
+chart.TrackballBehavior = trackball;
 
 DateTimeAxis primaryAxis = new DateTimeAxis();
 primaryAxis.ShowTrackballLabel = true;
 
 DataTemplate axisLabelTemplate = new DataTemplate(() =>
 {
-    var label = new Label
+    var label = new Label()
     {
         WidthRequest = 50,
         HeightRequest = 20,
@@ -446,7 +453,7 @@ DataTemplate axisLabelTemplate = new DataTemplate(() =>
         TextColor = Colors.White,
         FontSize = 15
     };
-    label.SetBinding(Label.TextProperty, "ValueX");
+    label.SetBinding(Label.TextProperty, "Date");
 
     return label;
 });
@@ -455,7 +462,7 @@ primaryAxis.TrackballLabelTemplate = axisLabelTemplate;
 . . .
 LineSeries series = new LineSeries();
 series.ItemsSource = new ViewModel().Data;
-series.XBindingPath = "Name";
+series.XBindingPath = "Date";
 series.YBindingPath = "Values";
 
 chart.Series.Add(series);
@@ -470,7 +477,7 @@ this.Content = chart;
 
 ## Show or Hide the Series Label
 
-The [CartesianSeries.ShowTrackballLabel](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.CartesianSeries.html#Syncfusion_Maui_Charts_CartesianSeries_ShowTrackballLabel) property is used to show or hide the series trackball label. The default value is `True`.
+The [ShowTrackballLabel](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.CartesianSeries.html#Syncfusion_Maui_Toolkit_Charts_CartesianSeries_ShowTrackballLabel) property is used to show or hide the series trackball label. The default value is `True`.
 
 {% tabs %}
 
@@ -478,10 +485,10 @@ The [CartesianSeries.ShowTrackballLabel](https://help.syncfusion.com/cr/maui-too
 
 <chart:SfCartesianChart>
     ...
-    <chart:LineSeries ShowTrackballLabel="False"
-                      ItemsSource="{Binding Data}" 
-                      XBindingPath="Name" 
-                      YBindingPath="Run"/>  
+    <chart:LineSeries ShowTrackballLabel = "False"
+                      ItemsSource = "{Binding Data}" 
+                      XBindingPath = "Name" 
+                      YBindingPath = "Run"/>  
 </chart:SfCartesianChart>
 
 {% endhighlight %}
@@ -499,6 +506,7 @@ LineSeries lineSeries = new LineSeries()
 
 };
 
+chart.Series.Add(lineSeries);
 this.Content = chart;
         
 {% endhighlight %}
@@ -507,7 +515,7 @@ this.Content = chart;
 
 ## Show or Hide Trackball Label in Axis
 
-When the trackball moves across the axis, this feature highlights the related axis label. The [ChartAxis.ShowTrackballLabel](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxis.html#Syncfusion_Maui_Charts_ChartAxis_ShowTrackballLabel) property is used to show or hide the axis's trackball label. The [ChartAxis.TrackballLabelStyle](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxis.html#Syncfusion_Maui_Charts_ChartAxis_TrackballLabelStyle) property is used to customize the appearance of the label. The default value of the [ChartAxis.ShowTrackballLabel](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxis.html#Syncfusion_Maui_Charts_ChartAxis_ShowTrackballLabel) is `False`.
+When the trackball moves across the axis, this feature highlights the related axis label. The [ShowTrackballLabel](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxis.html#Syncfusion_Maui_Toolkit_Charts_ChartAxis_ShowTrackballLabel) property is used to show or hide the axis's trackball label. The [TrackballLabelStyle](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxis.html#Syncfusion_Maui_Toolkit_Charts_ChartAxis_TrackballLabelStyle) property is used to customize the appearance of the label. The default value of the [ShowTrackballLabel](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxis.html#Syncfusion_Maui_Toolkit_Charts_ChartAxis_ShowTrackballLabel) is `False`.
 
 {% tabs %}
 
@@ -515,8 +523,7 @@ When the trackball moves across the axis, this feature highlights the related ax
 
 <chart:SfCartesianChart>
     ...
-    <chart:CategoryAxis  IsInversed="False" 
-                         ShowTrackballLabel="False"/> 
+    <chart:CategoryAxis ShowTrackballLabel = "False"/> 
 </chart:SfCartesianChart>
 
 {% endhighlight %}
@@ -527,7 +534,6 @@ SfCartesianChart chart = new SfCartesianChart();
 . . .
 CategoryAxis chartAxis = new CategoryAxis()
 {
-  chartAxis.IsInversed= false,
   chartAxis.ShowTrackballLabel = false
 }
 
@@ -539,17 +545,17 @@ this.Content = chart;
 
 ## Methods
 
-* `Show(x, y)` - The [Show](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartTrackballBehavior.html#Syncfusion_Maui_Charts_ChartTrackballBehavior_Show_System_Single_System_Single_) method is used to activate the trackball at the specified location.
-* `Hide()` - The [Hide](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartTrackballBehavior.html#Syncfusion_Maui_Charts_ChartTrackballBehavior_Hide) method hides the trackball that is visible in the chart.
+* `Show(x, y)` - The [Show](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartTrackballBehavior.html#Syncfusion_Maui_Toolkit_Charts_ChartTrackballBehavior_Show_System_Single_System_Single_) method is used to activate the trackball at the specified location.
+* `Hide()` - The [Hide](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartTrackballBehavior.html#Syncfusion_Maui_Toolkit_Charts_ChartTrackballBehavior_Hide) method hides the trackball that is visible in the chart.
 
 ## Events
 
 ### TrackballCreated
 
-The [`TrackballCreated`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html#Syncfusion_Maui_Charts_SfCartesianChart_TrackballCreated) event occurs when the trackball moves from one data point to another. This argument contains an object of the ChartPointsInfo. The following properties are available in the `ChartPointInfo` class to customize the appearance of the trackball label based on a condition.
+The [`TrackballCreated`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html#Syncfusion_Maui_Toolkit_Charts_SfCartesianChart_TrackballCreated) event occurs when the trackball moves from one data point to another. This argument contains an object of the ChartPointsInfo. The following properties are available in the `ChartPointInfo` class to customize the appearance of the trackball label based on a condition.
 
-* [Label](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.TrackballPointInfo.html#Syncfusion_Maui_Charts_TrackballPointInfo_Label) of type `string`: Used to change the text of the trackball label.
-* [LabelStyle](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.TrackballPointInfo.html#Syncfusion_Maui_Charts_TrackballPointInfo_LabelStyle) of type `ChartLabelStyle`: Used to customize the appearance of the trackball label.
-* [MarkerSettings](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.TrackballPointInfo.html#Syncfusion_Maui_Charts_TrackballPointInfo_MarkerSettings) of type `ChartMarkerSettings`: Used to customize the trackball markers.
-* [Series](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.TrackballPointInfo.html#Syncfusion_Maui_Charts_TrackballPointInfo_Series) of type `CartesianSeries`: Used to get the series of the data point in which the trackball is activated.
-* [DataItem](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.TrackballPointInfo.html#Syncfusion_Maui_Charts_TrackballPointInfo_DataItem) of type `object`: Used to get the data associated with the specific point where the trackball is activated.
+* [Label](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.TrackballPointInfo.html#Syncfusion_Maui_Toolkit_Charts_TrackballPointInfo_Label) of type `string`: Used to change the text of the trackball label.
+* [LabelStyle](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.TrackballPointInfo.html#Syncfusion_Maui_Toolkit_Charts_TrackballPointInfo_LabelStyle) of type `ChartLabelStyle`: Used to customize the appearance of the trackball label.
+* [MarkerSettings](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.TrackballPointInfo.html#Syncfusion_Maui_Toolkit_Charts_TrackballPointInfo_MarkerSettings) of type `ChartMarkerSettings`: Used to customize the trackball markers.
+* [Series](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.TrackballPointInfo.html#Syncfusion_Maui_Toolkit_Charts_TrackballPointInfo_Series) of type `CartesianSeries`: Used to get the series of the data point in which the trackball is activated.
+* [DataItem](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.TrackballPointInfo.html#Syncfusion_Maui_Toolkit_Charts_TrackballPointInfo_DataItem) of type `object`: Used to get the data associated with the specific point where the trackball is activated.

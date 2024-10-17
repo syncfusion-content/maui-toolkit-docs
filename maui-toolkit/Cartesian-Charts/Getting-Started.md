@@ -266,21 +266,21 @@ N> You need to set [XBindingPath](https://help.syncfusion.com/cr/maui-toolkit/Sy
     <chart:SfCartesianChart.XAxes>
         <chart:CategoryAxis>
             <chart:CategoryAxis.Title>
-                <chart:ChartAxisTitle Text="Name"/>
+                <chart:ChartAxisTitle Text = "Name"/>
             </chart:CategoryAxis.Title>
         </chart:CategoryAxis>
     </chart:SfCartesianChart.XAxes>
     <chart:SfCartesianChart.YAxes>
         <chart:NumericalAxis>
             <chart:NumericalAxis.Title>
-                <chart:ChartAxisTitle Text="Height(in cm)"/>
+                <chart:ChartAxisTitle Text = "Height(in cm)"/>
             </chart:NumericalAxis.Title>
         </chart:NumericalAxis>
     </chart:SfCartesianChart.YAxes>
 
-    <chart:ColumnSeries ItemsSource="{Binding Data}" 
-                        XBindingPath="Name" 
-                        YBindingPath="Height"/>
+    <chart:ColumnSeries ItemsSource = "{Binding Data}" 
+                        XBindingPath = "Name" 
+                        YBindingPath = "Height"/>
 </chart:SfCartesianChart>
 
 {% endhighlight %}
@@ -331,7 +331,7 @@ The title of the chart provide quick information to the user about the data bein
 
 <chart:SfCartesianChart>
   <chart:SfCartesianChart.Title>
-       <Label Text="Height Comparison"/>
+       <Label Text = "Height Comparison"/>
    </chart:SfCartesianChart.Title> 
 </chart:SfCartesianChart>
 
@@ -361,7 +361,7 @@ The [ShowDataLabels](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui
 
 <chart:SfCartesianChart>
     . . . 
-    <chart:ColumnSeries ShowDataLabels="True"/>
+    <chart:ColumnSeries ShowDataLabels = "True"/>
 </chart:SfCartesianChart>
 
 {% endhighlight %}
@@ -413,10 +413,10 @@ N> Additionally, set label for each series using the `Label` property of chart s
 
 <chart:SfCartesianChart>
     . . .
-    <chart:ColumnSeries Label="Height"
-                        ItemsSource="{Binding Data}"
-                        XBindingPath="Name" 
-                        YBindingPath="Height"/>
+    <chart:ColumnSeries Label = "Height"
+                        ItemsSource = "{Binding Data}"
+                        XBindingPath = "Name" 
+                        YBindingPath = "Height"/>
 </chart:SfCartesianChart>
 
 {% endhighlight %}
@@ -443,7 +443,7 @@ Tooltips are used to show information about the segment, when a user hovers over
 
 <chart:SfCartesianChart>
     ...
-    <chart:ColumnSeries EnableTooltip="True"/>
+    <chart:ColumnSeries EnableTooltip = "True"/>
     ...
 </chart:SfCartesianChart> 
 
@@ -487,7 +487,7 @@ The following code example gives you the complete code of above configurations.
     <chart:SfCartesianChart.XAxes>
         <chart:CategoryAxis>
             <chart:CategoryAxis.Title>
-                <chart:ChartAxisTitle Text="Name"/>
+                <chart:ChartAxisTitle Text = "Name"/>
             </chart:CategoryAxis.Title>
         </chart:CategoryAxis>
     </chart:SfCartesianChart.XAxes>
@@ -495,20 +495,20 @@ The following code example gives you the complete code of above configurations.
     <chart:SfCartesianChart.YAxes>
         <chart:NumericalAxis>
             <chart:NumericalAxis.Title>
-                <chart:ChartAxisTitle Text="Height(in cm)"/>
+                <chart:ChartAxisTitle Text = "Height(in cm)"/>
             </chart:NumericalAxis.Title>
         </chart:NumericalAxis>
     </chart:SfCartesianChart.YAxes>
 
     <!--Initialize the series for chart-->
-    <chart:ColumnSeries Label="Height" 
-                                    EnableTooltip="True"
-                                    ShowDataLabels="True"
-                                    ItemsSource="{Binding Data}"
-                                    XBindingPath="Name" 
-                                    YBindingPath="Height">
+    <chart:ColumnSeries Label = "Height" 
+                        EnableTooltip = "True"
+                        ShowDataLabels = "True"
+                        ItemsSource = "{Binding Data}"
+                        XBindingPath = "Name" 
+                        YBindingPath = "Height">
         <chart:ColumnSeries.DataLabelSettings>
-            <chart:CartesianDataLabelSettings LabelPlacement="Inner"/>
+            <chart:CartesianDataLabelSettings LabelPlacement = "Inner"/>
         </chart:ColumnSeries.DataLabelSettings>
     </chart:ColumnSeries>
 

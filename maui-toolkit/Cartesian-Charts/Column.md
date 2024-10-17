@@ -12,9 +12,9 @@ keywords: .net maui column chart, column chart customization .net maui, syncfusi
 
 ## Column Chart
 
-Column chart is used to plot discrete rectangles for the given data point values. To render a column chart, create an instance of [ColumnSeries](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ColumnSeries.html?tabs=tabid-1), and add it to the [Series](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html#Syncfusion_Maui_Charts_SfCartesianChart_Series) collection property of [SfCartesianChart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html?tabs=tabid-1).
+Column chart is used to plot discrete rectangles for the given data point values. To render a column chart, create an instance of [ColumnSeries](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ColumnSeries.html), and add it to the [Series](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html#Syncfusion_Maui_Toolkit_Charts_SfCartesianChart_Series) collection property of [SfCartesianChart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html).
 
-N> The Cartesian chart has [Series](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html#Syncfusion_Maui_Charts_SfCartesianChart_Series) as its default content.
+N> The Cartesian chart has [Series](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html#Syncfusion_Maui_Toolkit_Charts_SfCartesianChart_Series) as its default content.
 
 {% tabs %}
 
@@ -29,9 +29,9 @@ N> The Cartesian chart has [Series](https://help.syncfusion.com/cr/maui-toolkit/
         <chart:NumericalAxis/>
     </chart:SfCartesianChart.YAxes>   
 
-    <chart:ColumnSeries ItemsSource="{Binding Data}"
-                        XBindingPath="XValue"
-                        YBindingPath="YValue"/>
+    <chart:ColumnSeries ItemsSource = "{Binding Data}"
+                        XBindingPath = "XValue"
+                        YBindingPath = "YValue"/>
 </chart:SfCartesianChart>
 
 {% endhighlight %}
@@ -62,9 +62,9 @@ this.Content = chart;
 
 ## Spacing and Width
 
-The [Spacing](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ColumnSeries.html#Syncfusion_Maui_Charts_ColumnSeries_Spacing) property is used to change the spacing between two segments. The default value of spacing is 0, and the value ranges from 0 to 1. Here, 1 and 0 correspond to 100% and 0% of the available space, respectively. 
+The [Spacing](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ColumnSeries.html#Syncfusion_Maui_Toolkit_Charts_ColumnSeries_Spacing) property is used to change the spacing between two segments. The default value of spacing is 0, and the value ranges from 0 to 1. Here, 1 and 0 correspond to 100% and 0% of the available space, respectively. 
 
-The [Width](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ColumnSeries.html#Syncfusion_Maui_Charts_ColumnSeries_Width) property is used to change the width of the rectangle. The default value of the width is 0.8, and the value ranges from 0 to 1.
+The [Width](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ColumnSeries.html#Syncfusion_Maui_Toolkit_Charts_ColumnSeries_Width) property is used to change the width of the rectangle. The default value of the width is 0.8, and the value ranges from 0 to 1.
 
 {% tabs %}
 
@@ -80,11 +80,11 @@ The [Width](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.
         <chart:NumericalAxis/>
     </chart:SfCartesianChart.YAxes>  
 
-    <chart:ColumnSeries ItemsSource="{Binding Data}"
-						XBindingPath="XValue"
-						YBindingPath="YValue"
-						Spacing="0.5"
-						Width="0.6"/>
+    <chart:ColumnSeries ItemsSource = "{Binding Data}"
+			XBindingPath = "XValue"
+			YBindingPath = "YValue"
+			Spacing = "0.5"
+			Width = "0.6"/>
 
 </chart:SfCartesianChart>
 
@@ -118,7 +118,7 @@ this.Content = chart;
 
 ## Overlapped Placement
 
-By default, all the column series which have the same x and y axes are placed side by side in a chart. To place the series one over the other (overlapped), set the [EnableSideBySideSeriesPlacement](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html#Syncfusion_Maui_Charts_SfCartesianChart_EnableSideBySideSeriesPlacement) property of SfCartesianChart to false and configure the Width property to differentiate the series. The following code sample and screenshot illustrate the overlapped placement of the column series.
+By default, all the column series which have the same x and y axes are placed side by side in a chart. To place the series one over the other (overlapped), set the [EnableSideBySideSeriesPlacement](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html#Syncfusion_Maui_Toolkit_Charts_SfCartesianChart_EnableSideBySideSeriesPlacement) property of `SfCartesianChart` to `false` and configure the Width property to differentiate the series. The following code sample and screenshot illustrate the overlapped placement of the column series.
 
 {% tabs %}
 
@@ -133,14 +133,14 @@ By default, all the column series which have the same x and y axes are placed si
         <chart:NumericalAxis/>
     </chart:SfCartesianChart.YAxes>  
 
-    <chart:ColumnSeries ItemsSource="{Binding Data1}"
-                        XBindingPath="XValue"
-                        YBindingPath="YValue"/>
+    <chart:ColumnSeries ItemsSource = "{Binding Data1}"
+                        XBindingPath = "XValue"
+                        YBindingPath = "YValue"/>
                          
-    <chart:ColumnSeries ItemsSource="{Binding Data2}"
-                        XBindingPath="XValue"
-                        YBindingPath="YValue"
-                        Width="0.2"/>                    
+    <chart:ColumnSeries ItemsSource = "{Binding Data2}"
+                        XBindingPath = "XValue"
+                        YBindingPath = "YValue"
+                        Width = "0.2"/>                    
 </chart:SfCartesianChart>
 
 {% endhighlight %}

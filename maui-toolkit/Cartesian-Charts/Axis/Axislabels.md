@@ -27,7 +27,7 @@ The [LabelsPosition](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Charts.
     </chart:SfCartesianChart.XAxes>
 
     <chart:SfCartesianChart.YAxes>
-        <chart:NumericalAxis LabelsPosition="Inside"/>
+        <chart:NumericalAxis LabelsPosition = "Inside"/>
     </chart:SfCartesianChart.YAxes>
 </chart:SfCartesianChart>
 
@@ -64,7 +64,7 @@ The [LabelRotation](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Charts.C
 <chart:SfCartesianChart>
     . . .
     <chart:SfCartesianChart.XAxes>
-        <chart:CategoryAxis LabelRotation="90"/>
+        <chart:CategoryAxis LabelRotation = "90"/>
     </chart:SfCartesianChart.XAxes>
 </chart:SfCartesianChart>
 
@@ -122,7 +122,7 @@ Chart axis provides support to customize the rendering position of the edge labe
 <chart:SfCartesianChart>
     . . .
     <chart:SfCartesianChart.XAxes>
-        <chart:DateTimeAxis EdgeLabelsDrawingMode="Center"/>
+        <chart:DateTimeAxis EdgeLabelsDrawingMode = "Center"/>
     </chart:SfCartesianChart.XAxes>
 </chart:SfCartesianChart>
 
@@ -160,7 +160,7 @@ The visibility of the edge labels of the axis can be controlled using the [EdgeL
 <chart:SfCartesianChart>
     . . .
     <chart:SfCartesianChart.XAxes>
-        <chart:NumericalAxis EdgeLabelsVisibilityMode="AlwaysVisible"/>
+        <chart:NumericalAxis EdgeLabelsVisibilityMode = "AlwaysVisible"/>
     </chart:SfCartesianChart.XAxes>
 </chart:SfCartesianChart>
 
@@ -192,7 +192,7 @@ this.Content = chart;
 <chart:SfCartesianChart>
     . . .
     <chart:SfCartesianChart.XAxes>
-        <chart:NumericalAxis EdgeLabelsVisibilityMode="Visible"/>
+        <chart:NumericalAxis EdgeLabelsVisibilityMode = "Visible"/>
     </chart:SfCartesianChart.XAxes>
 </chart:SfCartesianChart>
 
@@ -224,7 +224,7 @@ Axis labels may overlap with each other based on chart dimensions and label size
 <chart:SfCartesianChart>
     . . .
     <chart:SfCartesianChart.XAxes>
-       <chart:CategoryAxis LabelsIntersectAction="MultipleRows"/>
+       <chart:CategoryAxis LabelsIntersectAction = "MultipleRows"/>
     </chart:SfCartesianChart.XAxes>
 </chart:SfCartesianChart>
 

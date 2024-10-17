@@ -39,7 +39,7 @@ By default, the [RangePadding](https://help.syncfusion.com/cr/maui/Syncfusion.Ma
 <chart:SfCartesianChart>
     . . .
     <chart:SfCartesianChart.XAxes>
-        <chart:NumericalAxis RangePadding="Additional"/>
+        <chart:NumericalAxis RangePadding = "Additional"/>
     </chart:SfCartesianChart.XAxes>
 
     <chart:SfCartesianChart.YAxes>
@@ -79,7 +79,7 @@ this.Content = chart;
 <chart:SfCartesianChart>
     . . .
     <chart:SfCartesianChart.XAxes>
-        <chart:NumericalAxis RangePadding="None"/>
+        <chart:NumericalAxis RangePadding = "None"/>
     </chart:SfCartesianChart.XAxes>
 
     <chart:SfCartesianChart.YAxes>
@@ -119,7 +119,7 @@ this.Content = chart;
 <chart:SfCartesianChart>
     . . .
     <chart:SfCartesianChart.XAxes>
-        <chart:NumericalAxis RangePadding="Round"/>
+        <chart:NumericalAxis RangePadding = "Round"/>
     </chart:SfCartesianChart.XAxes>
 
     <chart:SfCartesianChart.YAxes>
@@ -172,7 +172,7 @@ The [RangePadding](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Charts.Da
 <chart:SfCartesianChart>
     . . .
     <chart:SfCartesianChart.XAxes>
-        <chart:DateTimeAxis RangePadding="Additional"/>
+        <chart:DateTimeAxis RangePadding = "Additional"/>
     </chart:SfCartesianChart.XAxes>
 
     <chart:SfCartesianChart.YAxes>
@@ -213,7 +213,7 @@ this.Content = chart;
 <chart:SfCartesianChart>
     . . .
     <chart:SfCartesianChart.XAxes>
-        <chart:DateTimeAxis RangePadding="None"/>
+        <chart:DateTimeAxis RangePadding = "None"/>
     </chart:SfCartesianChart.XAxes>
 
     <chart:SfCartesianChart.YAxes>
@@ -253,7 +253,7 @@ this.Content = chart;
 <chart:SfCartesianChart>
     . . .
     <chart:SfCartesianChart.XAxes>
-        <chart:DateTimeAxis RangePadding="Round"/>
+        <chart:DateTimeAxis RangePadding = "Round"/>
     </chart:SfCartesianChart.XAxes>
 
     <chart:SfCartesianChart.YAxes>

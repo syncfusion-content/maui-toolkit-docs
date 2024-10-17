@@ -12,11 +12,11 @@ keywords: .net maui box and whisker chart, maui box and whisker chart, box and w
 
 ## Box and Whisker Chart
 
-Box plot chart is used to show the distribution of data within a population. To render a box plot chart, create an instance of [BoxAndWhiskerSeries](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.BoxAndWhiskerSeries.html), and add it to the [Series](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html#Syncfusion_Maui_Charts_SfCartesianChart_Series) collection property of [SfCartesianChart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html?tabs=tabid-1).
+Box plot chart is used to show the distribution of data within a population. To render a box plot chart, create an instance of [BoxAndWhiskerSeries](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.BoxAndWhiskerSeries.html), and add it to the [Series](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html#Syncfusion_Maui_Toolkit_Charts_SfCartesianChart_Series) collection property of [SfCartesianChart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html).
 
 Box plots are great for comparing the distribution of multiple datasets side by side. By comparing the median, quartiles, and range of the boxes, you can quickly identify differences in the center, spread, and skewness of the distributions. The following code illustrates how to define the series in chart.
 
-N> The Cartesian chart has [Series](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html#Syncfusion_Maui_Charts_SfCartesianChart_Series) as its default content.
+N> The Cartesian chart has [Series](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html#Syncfusion_Maui_Toolkit_Charts_SfCartesianChart_Series) as its default content.
 
 {% tabs %}
 
@@ -32,9 +32,9 @@ N> The Cartesian chart has [Series](https://help.syncfusion.com/cr/maui-toolkit/
         <chart:NumericalAxis/>
     </chart:SfCartesianChart.YAxes>   
 
-    <chart:BoxAndWhiskerSeries ItemsSource="{Binding BoxWhiskerData}"
-                               XBindingPath="Department"
-                               YBindingPath="Age"/>
+    <chart:BoxAndWhiskerSeries ItemsSource = "{Binding BoxWhiskerData}"
+                               XBindingPath = "Department"
+                               YBindingPath = "Age"/>
 
 </chart:SfCartesianChart>
 
@@ -65,18 +65,18 @@ this.Content = chart;
 ![BoxAndWhisker chart type in MAUI Chart](Chart-types-images/BoxBasicRendering.png)
 
 ## Customize the series Box mode
-The series box plotting mode can be changed by using [BoxPlotMode](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.BoxAndWhiskerSeries.html#Syncfusion_Maui_Charts_BoxAndWhiskerSeries_BoxPlotMode) property of [BoxAndWhiskerSeries](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.BoxAndWhiskerSeries.html). The plotting mode of series can be calculated as follows:
+The series box plotting mode can be changed by using [BoxPlotMode](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.BoxAndWhiskerSeries.html#Syncfusion_Maui_Toolkit_Charts_BoxAndWhiskerSeries_BoxPlotMode) property of [BoxAndWhiskerSeries](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.BoxAndWhiskerSeries.html). The plotting mode of series can be calculated as follows:
 
-* [`Exclusive`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.BoxPlotMode.html#Syncfusion_Maui_Charts_BoxPlotMode_Exclusive)- The quartile values are calculated by using the formula (N+1) * P (N count, P percentile) and its index value starts from 1 in the list.
+* [`Exclusive`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.BoxPlotMode.html#Syncfusion_Maui_Toolkit_Charts_BoxPlotMode_Exclusive)- The quartile values are calculated by using the formula (N+1) * P (N count, P percentile) and its index value starts from 1 in the list.
 
-* [`Inclusive`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.BoxPlotMode.html#Syncfusion_Maui_Charts_BoxPlotMode_Inclusive)- The quartile values are calculated by using the formula (N−1) * P (N count, P percentile) and its index value starts from 0 in the list.
+* [`Inclusive`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.BoxPlotMode.html#Syncfusion_Maui_Toolkit_Charts_BoxPlotMode_Inclusive)- The quartile values are calculated by using the formula (N−1) * P (N count, P percentile) and its index value starts from 0 in the list.
 
-* [`Normal`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.BoxPlotMode.html#Syncfusion_Maui_Charts_BoxPlotMode_Normal)- The quartile values are calculated by splitting the list and getting the median values.
+* [`Normal`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.BoxPlotMode.html#Syncfusion_Maui_Toolkit_Charts_BoxPlotMode_Normal)- The quartile values are calculated by splitting the list and getting the median values.
 
-By default, [BoxPlotMode](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.BoxAndWhiskerSeries.html#Syncfusion_Maui_Charts_BoxAndWhiskerSeries_BoxPlotMode) value is [Exclusive](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.BoxPlotMode.html#Syncfusion_Maui_Charts_BoxPlotMode_Exclusive).
+By default, [BoxPlotMode](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.BoxAndWhiskerSeries.html#Syncfusion_Maui_Toolkit_Charts_BoxAndWhiskerSeries_BoxPlotMode) value is [Exclusive](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.BoxPlotMode.html#Syncfusion_Maui_Toolkit_Charts_BoxPlotMode_Exclusive).
 
 ## Normal
-In Normal mode, the whiskers extend to the minimum and maximum data points within two times the standard deviation of the data. This method assumes that the data is normally distributed. The following code illustrate how to define property [BoxPlotMode](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.BoxAndWhiskerSeries.html#Syncfusion_Maui_Charts_BoxAndWhiskerSeries_BoxPlotMode) value as [Normal](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.BoxPlotMode.html#Syncfusion_Maui_Charts_BoxPlotMode_Normal).
+In Normal mode, the whiskers extend to the minimum and maximum data points within two times the standard deviation of the data. This method assumes that the data is normally distributed. The following code illustrate how to define property [BoxPlotMode](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.BoxAndWhiskerSeries.html#Syncfusion_Maui_Toolkit_Charts_BoxAndWhiskerSeries_BoxPlotMode) value as [Normal](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.BoxPlotMode.html#Syncfusion_Maui_Toolkit_Charts_BoxPlotMode_Normal).
 
 {% tabs %}
 
@@ -92,10 +92,10 @@ In Normal mode, the whiskers extend to the minimum and maximum data points withi
         <chart:NumericalAxis/>
     </chart:SfCartesianChart.YAxes>  
 
-    <chart:BoxAndWhiskerSeries ItemsSource="{Binding BoxWhiskerData}"
-                               XBindingPath="Department"
-                               YBindingPath="Age"
-                               BoxPlotMode="Normal"/>
+    <chart:BoxAndWhiskerSeries ItemsSource = "{Binding BoxWhiskerData}"
+                               XBindingPath = "Department"
+                               YBindingPath = "Age"
+                               BoxPlotMode = "Normal"/>
 
 </chart:SfCartesianChart>
 
@@ -127,7 +127,7 @@ this.Content = chart;
 ![BoxPlotMode Normal in MAUI Chart](Chart-types-images/BoxModeNormal.png)
 
 ## Inclusive
-In Inclusive mode, the whiskers extend to the minimum and maximum data points within 1.5 times the IQR. Any points beyond this range are considered outliers. The following code illustrate how to define property [BoxPlotMode](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.BoxAndWhiskerSeries.html#Syncfusion_Maui_Charts_BoxAndWhiskerSeries_BoxPlotMode) value as [Inclusive](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.BoxPlotMode.html#Syncfusion_Maui_Charts_BoxPlotMode_Inclusive).
+In Inclusive mode, the whiskers extend to the minimum and maximum data points within 1.5 times the IQR. Any points beyond this range are considered outliers. The following code illustrate how to define property [BoxPlotMode](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.BoxAndWhiskerSeries.html#Syncfusion_Maui_Toolkit_Charts_BoxAndWhiskerSeries_BoxPlotMode) value as [Inclusive](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.BoxPlotMode.html#Syncfusion_Maui_Toolkit_Charts_BoxPlotMode_Inclusive).
 
 {% tabs %}
 
@@ -143,10 +143,10 @@ In Inclusive mode, the whiskers extend to the minimum and maximum data points wi
         <chart:NumericalAxis/>
     </chart:SfCartesianChart.YAxes>  
 
-    <chart:BoxAndWhiskerSeries ItemsSource="{Binding BoxWhiskerData}"
-                               XBindingPath="Department"
-                               YBindingPath="Age"
-                               BoxPlotMode="Inclusive"/>
+    <chart:BoxAndWhiskerSeries ItemsSource = "{Binding BoxWhiskerData}"
+                               XBindingPath = "Department"
+                               YBindingPath = "Age"
+                               BoxPlotMode = "Inclusive"/>
 
 </chart:SfCartesianChart>
 
@@ -178,7 +178,7 @@ this.Content = chart;
 ![BoxPlotMode Inclusive in MAUI Chart](Chart-types-images/BoxModeInclusive.png)
 
 ## ShowMedian
-The Median values of given dataset is viewed by enabling the [ShowMedian](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.BoxAndWhiskerSeries.html#Syncfusion_Maui_Charts_BoxAndWhiskerSeries_ShowMedian) property of [BoxAndWhiskerSeries](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.BoxAndWhiskerSeries.html). By default, the ShowMedian property value is False. The following code illustrates how to enable the [ShowMedian](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.BoxAndWhiskerSeries.html#Syncfusion_Maui_Charts_BoxAndWhiskerSeries_ShowMedian) property.
+The Median values of given dataset is viewed by enabling the [ShowMedian](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.BoxAndWhiskerSeries.html#Syncfusion_Maui_Toolkit_Charts_BoxAndWhiskerSeries_ShowMedian) property of [BoxAndWhiskerSeries](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.BoxAndWhiskerSeries.html). By default, the ShowMedian property value is `False`. The following code illustrates how to enable the [ShowMedian](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.BoxAndWhiskerSeries.html#Syncfusion_Maui_Toolkit_Charts_BoxAndWhiskerSeries_ShowMedian) property.
 
 {% tabs %}
 
@@ -194,10 +194,10 @@ The Median values of given dataset is viewed by enabling the [ShowMedian](https:
         <chart:NumericalAxis/>
     </chart:SfCartesianChart.YAxes>  
 
-    <chart:BoxAndWhiskerSeries ItemsSource="{Binding BoxWhiskerData}"
-                               XBindingPath="Department"
-                               YBindingPath="Age"
-                               ShowMedian="True"/>
+    <chart:BoxAndWhiskerSeries ItemsSource = "{Binding BoxWhiskerData}"
+                               XBindingPath = "Department"
+                               YBindingPath = "Age"
+                               ShowMedian = "True"/>
 
 </chart:SfCartesianChart>
 
@@ -216,7 +216,7 @@ BoxAndWhiskerSeries series = new BoxAndWhiskerSeries()
     ItemsSource = new ViewModel().BoxWhiskerData,
     XBindingPath = "Department",
     YBindingPath = "Age",
-    ShowMedian = "True"
+    ShowMedian = true,
 };
 
 chart.Series.Add(series);
@@ -228,9 +228,7 @@ this.Content = chart;
 
 ![ShowMedian in MAUI chart](Chart-types-images/ShowMedian.png)
 
-N>
-
- * The middle number of data points is the median for the odd number of data points.
+N> * The middle number of data points is the median for the odd number of data points.
  * The average of the middle two numbers is a median for the even number of data points.
 
 
@@ -238,7 +236,7 @@ N>
 The outlier displays the outlier point that lies either under the lower whisker or above the upper whisker line. It is an observation numerically distant from the rest of the data.
 
 ## ShowOutlier
-The outlier value in the box plot can be viewed by enabling the [ShowOutlier](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.BoxAndWhiskerSeries.html#Syncfusion_Maui_Charts_BoxAndWhiskerSeries_ShowOutlier) property of [BoxAndWhiskerSeries](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.BoxAndWhiskerSeries.html).By default, [ShowOutlier](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.BoxAndWhiskerSeries.html#Syncfusion_Maui_Charts_BoxAndWhiskerSeries_ShowOutlier) value is true. The following code demonstrates how to disable the [ShowOutlier](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.BoxAndWhiskerSeries.html#Syncfusion_Maui_Charts_BoxAndWhiskerSeries_ShowOutlier) property.
+The outlier value in the box plot can be viewed by enabling the [ShowOutlier](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.BoxAndWhiskerSeries.html#Syncfusion_Maui_Toolkit_Charts_BoxAndWhiskerSeries_ShowOutlier) property of [BoxAndWhiskerSeries](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.BoxAndWhiskerSeries.html).By default, [ShowOutlier](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.BoxAndWhiskerSeries.html#Syncfusion_Maui_Toolkit_Charts_BoxAndWhiskerSeries_ShowOutlier) value is `true`. The following code demonstrates how to disable the [ShowOutlier](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.BoxAndWhiskerSeries.html#Syncfusion_Maui_Toolkit_Charts_BoxAndWhiskerSeries_ShowOutlier) property.
 
 {% tabs %}
 
@@ -254,10 +252,10 @@ The outlier value in the box plot can be viewed by enabling the [ShowOutlier](ht
         <chart:NumericalAxis/>
     </chart:SfCartesianChart.YAxes>  
 
-    <chart:BoxAndWhiskerSeries ItemsSource="{Binding BoxWhiskerData}"
-                               XBindingPath="Department"
-                               YBindingPath="Age"
-                               ShowOutlier="False"/>
+    <chart:BoxAndWhiskerSeries ItemsSource = "{Binding BoxWhiskerData}"
+                               XBindingPath = "Department"
+                               YBindingPath = "Age"
+                               ShowOutlier = "False"/>
 
 </chart:SfCartesianChart>
 
@@ -276,7 +274,7 @@ BoxAndWhiskerSeries series = new BoxAndWhiskerSeries()
     ItemsSource = new ViewModel().BoxWhiskerData,
     XBindingPath = "Department",
     YBindingPath = "Age",
-    ShowOutlier = "False"
+    ShowOutlier = false
 };
 
 chart.Series.Add(series);
@@ -290,9 +288,9 @@ this.Content = chart;
 
 ## OutlierShapeType
 
-The [OutlierShapeType](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.BoxAndWhiskerSeries.html#Syncfusion_Maui_Charts_BoxAndWhiskerSeries_OutlierShapeType) displays the outlier point with different symbols. The available symbols are Cross, Diamond, Circle, Hexagon, InvertedTriangle, Pentagon, Plus, Rectangle and Triangle. By default, [OutlierShapeType](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.BoxAndWhiskerSeries.html#Syncfusion_Maui_Charts_BoxAndWhiskerSeries_OutlierShapeType) value is [Circle](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ShapeType.html#Syncfusion_Maui_Charts_ShapeType_Circle).
+The [OutlierShapeType](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.BoxAndWhiskerSeries.html#Syncfusion_Maui_Toolkit_Charts_BoxAndWhiskerSeries_OutlierShapeType) displays the outlier point with different symbols. The available symbols are Cross, Diamond, Circle, Hexagon, InvertedTriangle, Pentagon, Plus, Rectangle and Triangle. By default, [OutlierShapeType](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.BoxAndWhiskerSeries.html#Syncfusion_Maui_Toolkit_Charts_BoxAndWhiskerSeries_OutlierShapeType) value is [Circle](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ShapeType.html#Syncfusion_Maui_Toolkit_Charts_ShapeType_Circle).
 
-The following code shows how to set the [OutlierShapeType](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.BoxAndWhiskerSeries.html#Syncfusion_Maui_Charts_BoxAndWhiskerSeries_OutlierShapeType) value as [Cross](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ShapeType.html#Syncfusion_Maui_Charts_ShapeType_Cross).
+The following code shows how to set the [OutlierShapeType](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.BoxAndWhiskerSeries.html#Syncfusion_Maui_Toolkit_Charts_BoxAndWhiskerSeries_OutlierShapeType) value as [Cross](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ShapeType.html#Syncfusion_Maui_Toolkit_Charts_ShapeType_Cross).
 
 {% tabs %}
 
@@ -308,10 +306,10 @@ The following code shows how to set the [OutlierShapeType](https://help.syncfusi
         <chart:NumericalAxis/>
     </chart:SfCartesianChart.YAxes>  
 
-    <chart:BoxAndWhiskerSeries ItemsSource="{Binding BoxWhiskerData}"
-                                XBindingPath="Department"
-                                YBindingPath="Age"
-                                OutlierShapeType="Cross"/>
+    <chart:BoxAndWhiskerSeries ItemsSource = "{Binding BoxWhiskerData}"
+                               XBindingPath = "Department"
+                               YBindingPath = "Age"
+                               OutlierShapeType = "Cross"/>
 
 </chart:SfCartesianChart>
 

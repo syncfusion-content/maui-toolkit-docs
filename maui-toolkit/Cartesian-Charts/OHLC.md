@@ -10,9 +10,9 @@ keywords: .net maui ohlc chart, .net maui chart ohlc type, ohlc chart customizat
 
 # OHLC Chart in .NET MAUI Chart
 
-OHLC (Open-High-Low-Close) charts are the type of financial charts used to represent the price movement of an asset over a specific period. OHLC charts consist of four data points: the opening price, the high price, the low price, and the closing price for each period. To render an OHLC chart, create an instance of [HiLoOpenCloseSeries](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.HiLoOpenCloseSeries.html), and add it to the [Series](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html#Syncfusion_Maui_Charts_SfCartesianChart_Series) collection property of the [SfCartesianChart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html?tabs=tabid-1).
+OHLC (Open-High-Low-Close) charts are the type of financial charts used to represent the price movement of an asset over a specific period. OHLC charts consist of four data points: the opening price, the high price, the low price, and the closing price for each period. To render an OHLC chart, create an instance of [HiLoOpenCloseSeries](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.HiLoOpenCloseSeries.html), and add it to the [Series](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html#Syncfusion_Maui_Toolkit_Charts_SfCartesianChart_Series) collection property of the [SfCartesianChart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html).
 
-N> The Cartesian chart has [Series](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html#Syncfusion_Maui_Charts_SfCartesianChart_Series) as its default content.
+N> The Cartesian chart has [Series](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html#Syncfusion_Maui_Toolkit_Charts_SfCartesianChart_Series) as its default content.
 
 A collection of five values is required to plot a point on an OHLC chart, including the X-value, open value, high value, low value, and close value. Use the following collection.
 
@@ -46,12 +46,12 @@ StockData.Add(new Model { Year = "2010", High = 50, Low = 40, Open = 40, Close =
         <chart:NumericalAxis/>
     </chart:SfCartesianChart.YAxes>   
 
-    <chart:HiLoOpenCloseSeries ItemsSource="{Binding StockData}"
-                               XBindingPath="Year"
-                               Open="Open"
-                               High="High"
-                               Low="Low"
-                               Close="Close"/>
+    <chart:HiLoOpenCloseSeries ItemsSource = "{Binding StockData}"
+                               XBindingPath = "Year"
+                               Open = "Open"
+                               High = "High"
+                               Low = "Low"
+                               Close = "Close"/>
 </chart:SfCartesianChart>
 
 {% endhighlight %}
@@ -85,7 +85,7 @@ this.Content = chart;
 
 ## Bull and Bear Color
 
-In the OHLC chart, the [BullishFill](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.FinancialSeriesBase.html#Syncfusion_Maui_Charts_FinancialSeriesBase_BullishFill) property is used to specify a fill color for the segments that indicates an increase in the stock price in the measured time interval, and the [BearishFill](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.FinancialSeriesBase.html#Syncfusion_Maui_Charts_FinancialSeriesBase_BearishFill) property is used to specify a fill color for the segments that indicates a decrease in the stock price in the measured time interval.
+In the OHLC chart, the [BullishFill](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.FinancialSeriesBase.html#Syncfusion_Maui_Toolkit_Charts_FinancialSeriesBase_BullishFill) property is used to specify a fill color for the segments that indicates an increase in the stock price in the measured time interval, and the [BearishFill](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.FinancialSeriesBase.html#Syncfusion_Maui_Toolkit_Charts_FinancialSeriesBase_BearishFill) property is used to specify a fill color for the segments that indicates a decrease in the stock price in the measured time interval.
 
 {% tabs %}
 
@@ -101,14 +101,14 @@ In the OHLC chart, the [BullishFill](https://help.syncfusion.com/cr/maui-toolkit
         <chart:NumericalAxis/>
     </chart:SfCartesianChart.YAxes>   
 
-    <chart:HiLoOpenCloseSeries ItemsSource="{Binding StockData}"
-                               XBindingPath="Year"
-                               Open="Open"
-                               High="High"
-                               Low="Low"
-                               Close="Close"
-                               BullishFill="Blue"
-                               BearishFill="Orange"/>
+    <chart:HiLoOpenCloseSeries ItemsSource = "{Binding StockData}"
+                               XBindingPath = "Year"
+                               Open = "Open"
+                               High = "High"
+                               Low = "Low"
+                               Close = "Close"
+                               BullishFill = "Blue"
+                               BearishFill = "Orange"/>
 
 </chart:SfCartesianChart>
 
