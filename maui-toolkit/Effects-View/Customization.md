@@ -16,6 +16,7 @@ The [SfEffectsView](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.
 The [RippleAnimationDuration](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.EffectsView.SfEffectsView.html#Syncfusion_Maui_Toolkit_EffectsView_SfEffectsView_RippleAnimationDuration) property of [SfEffectsView](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.EffectsView.SfEffects.html) is used to customize the duration of ripple animation.
 
 {% tabs %} 
+
 {% highlight xaml %} 
 
 <ContentPage 
@@ -26,6 +27,7 @@ The [RippleAnimationDuration](https://help.syncfusion.com/cr/maui-toolkit/Syncfu
 </ContentPage>
 
 {% endhighlight %}
+
 {% highlight C# %} 
 
 using Syncfusion.Maui.Toolkit.EffectsView;
@@ -38,6 +40,7 @@ var effectsView = new SfEffectsView()
 this.Content = effectsView;
 
 {% endhighlight %}
+
 {% endtabs %}
 
 ## ScaleAnimationDuration
