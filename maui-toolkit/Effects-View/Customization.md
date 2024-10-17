@@ -17,7 +17,7 @@ The [RippleAnimationDuration](https://help.syncfusion.com/cr/maui-toolkit/Syncfu
 
 {% tabs %} 
 
-{% highlight xaml %} 
+{% highlight xaml %}
 
 <ContentPage 
     xmlns:effectsView="clr-namespace:Syncfusion.Maui.Toolkit.EffectsView;assembly=Syncfusion.Maui.Toolkit">
@@ -28,7 +28,7 @@ The [RippleAnimationDuration](https://help.syncfusion.com/cr/maui-toolkit/Syncfu
 
 {% endhighlight %}
 
-{% highlight C# %} 
+{% highlight C# %}
 
 using Syncfusion.Maui.Toolkit.EffectsView;
 
