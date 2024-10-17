@@ -22,7 +22,7 @@ The [ApplyEffects](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Core.SfEf
 
 {% tabs %} 
 
-{% highlight xaml %} 
+{% highlight xaml %}
 
 <Grid RowDefinitions="0.9*, 0.1*">
         <syncEffectsView:SfEffectsView x:Name="EffectsView"
@@ -34,7 +34,7 @@ The [ApplyEffects](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Core.SfEf
 
 {% endhighlight %}
 
-{% highlight C# %} 
+{% highlight C# %}
 
 using Syncfusion.Maui.Toolkit.EffectsView;
 
