@@ -15,7 +15,7 @@ The [SfEffectsView](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.
 
 {% tabs %} 
 
-{% highlight xaml %} 
+{% highlight xaml %}
 
 <ContentPage 
             ...
@@ -27,7 +27,7 @@ The [SfEffectsView](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.
 
 {% endhighlight %}
 
-{% highlight C# %} 
+{% highlight C# %}
 
 using Syncfusion.Maui.Toolkit.EffectsView;
 
@@ -44,7 +44,7 @@ var effectsView = new SfEffectsView()
 
 {% tabs %} 
 
-{% highlight xaml %} 
+{% highlight xaml %}
 
 <ContentPage 
             ...
@@ -58,7 +58,7 @@ var effectsView = new SfEffectsView()
 
 {% endhighlight %}
 
-{% highlight C# %} 
+{% highlight C# %}
 
 using Syncfusion.Maui.Toolkit.EffectsView;
 
@@ -76,7 +76,7 @@ var effectsView = new SfEffectsView()
 
 {% tabs %} 
 
-{% highlight xaml %} 
+{% highlight xaml %}
 
 <ContentPage 
             ...
@@ -90,7 +90,7 @@ var effectsView = new SfEffectsView()
 
 {% endhighlight %}
 
-{% highlight C# %} 
+{% highlight C# %}
 
 using Syncfusion.Maui.Toolkit.EffectsView;
 
@@ -108,7 +108,7 @@ var effectsView = new SfEffectsView()
 
 {% tabs %} 
 
-{% highlight xaml %} 
+{% highlight xaml %}
 
 <ContentPage 
             ...
@@ -122,7 +122,7 @@ var effectsView = new SfEffectsView()
 
 {% endhighlight %}
 
-{% highlight C# %} 
+{% highlight C# %}
 
 using Syncfusion.Maui.Toolkit.EffectsView;
 
@@ -140,7 +140,7 @@ var effectsView = new SfEffectsView()
 
 {% tabs %} 
 
-{% highlight xaml %} 
+{% highlight xaml %}
 
 <ContentPage 
             ...
@@ -152,7 +152,7 @@ var effectsView = new SfEffectsView()
 
 {% endhighlight %}
 
-{% highlight C# %} 
+{% highlight C# %}
 
 using Syncfusion.Maui.Toolkit.EffectsView;
 
