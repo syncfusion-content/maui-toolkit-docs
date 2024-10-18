@@ -31,6 +31,7 @@ N> The circular chart has [Series](https://help.syncfusion.com/cr/maui-toolkit/S
 SfCircularChart chart = new SfCircularChart();
 
 DoughnutSeries series = new DoughnutSeries(); // Create a new instance of DoughnutSeries
+series.ItemsSource = (new SalesViewModel()).Data;
 series.XBindingPath = "Product"; // Set the XBindingPath to the "Product" property of the data source
 series.YBindingPath = "SalesRate"; // Set the YBindingPath to the "SalesRate" property of the data source
 
@@ -67,6 +68,7 @@ SfCircularChart chart = new SfCircularChart();
 
 // Create a new instance of DoughnutSeries
 DoughnutSeries series = new DoughnutSeries();
+series.ItemsSource = (new SalesViewModel()).Data;
 series.XBindingPath = "Product";
 series.YBindingPath = "SalesRate";
 series.InnerRadius = 0.7; // Set the inner radius of the doughnut chart (70% of the available space)
@@ -89,10 +91,10 @@ By using the [StartAngle](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion
 {% highlight xaml %}
 
 <chart:SfCircularChart>
-    <chart:DoughnutSeries StartAngle="180" EndAngle="360"
-                          ItemsSource="{Binding Data}"
+    <chart:DoughnutSeries ItemsSource="{Binding Data}"
                           XBindingPath="Product" 
-                          YBindingPath="SalesRate"/>
+                          YBindingPath="SalesRate"
+                          StartAngle="180" EndAngle="360"/>
 </chart:SfCircularChart>
     
 {% endhighlight %}
@@ -104,6 +106,7 @@ SfCircularChart chart = new SfCircularChart();
 
 // Create a new instance of DoughnutSeries
 DoughnutSeries series = new DoughnutSeries();
+series.ItemsSource = (new SalesViewModel()).Data;
 series.XBindingPath = "Product";
 series.YBindingPath = "SalesRate";
 series.StartAngle = 180; // Set the starting angle of the doughnut chart (in degrees)
@@ -155,6 +158,7 @@ SfCircularChart chart = new SfCircularChart();
 
 // Create a new DoughnutSeries
 DoughnutSeries series = new DoughnutSeries();
+series.ItemsSource = (new ViewModel()).Data;
 series.XBindingPath = "Name";
 series.YBindingPath = "Value";
 
@@ -167,7 +171,8 @@ Label value = new Label();
 value.Text = "357,580 km²";
 
 StackLayout layout = new StackLayout();
-
+layout.Children.Add(name);
+layout.Children.Add(value);
 border.Content = layout;
 
 series.CenterView = border; // Set the border (containing the labels) as the center view of the doughnut series

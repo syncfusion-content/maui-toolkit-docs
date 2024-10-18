@@ -26,10 +26,10 @@ Each data label can be represented by the following:
 
 <chart:SfCircularChart>
     . . .
-    <chart:PieSeries ShowDataLabels="True"
-                     ItemsSource="{Binding Data}"  
+    <chart:PieSeries ItemsSource="{Binding Data}"  
                      XBindingPath="Product" 
-                     YBindingPath="SalesRate"/>
+                     YBindingPath="SalesRate"
+                     ShowDataLabels="True"/>
     . . .
 </chart:SfCircularChart>
 
@@ -98,7 +98,7 @@ SfCircularChart chart = new SfCircularChart();
 . . .
 // Create a new PieSeries
 PieSeries series = new PieSeries();
-series.ItemsSource = new ViewModel().Data;
+series.ItemsSource = new SalesViewModel().Data;
 series.XBindingPath = "Product";
 series.YBindingPath = "SalesRate";
 series.ShowDataLabels = true;
@@ -151,8 +151,8 @@ When the [SmartLabelAlignment](https://help.syncfusion.com/cr/maui-toolkit/Syncf
     <chart:PieSeries ItemsSource="{Binding Data}"
                      LabelTemplate="{StaticResource labelTemplate}"
                      ShowDataLabels="True"
-                     XBindingPath="Product" 
-                     YBindingPath="SalesRate">
+                     XBindingPath="XValue" 
+                     YBindingPath="YValue">
         <chart:PieSeries.DataLabelSettings>
             <chart:CircularDataLabelSettings LabelPosition="Outside" SmartLabelAlignment="Shift">
             </chart:CircularDataLabelSettings>
@@ -170,8 +170,8 @@ SfCircularChart chart = new SfCircularChart();
 // Create a new PieSeries
 PieSeries series = new PieSeries();
 series.ItemsSource = new ViewModel().Data;
-series.XBindingPath = "Product";
-series.YBindingPath = "SalesRate";
+series.XBindingPath = "XValue";
+series.YBindingPath = "YValue";
 series.ShowDataLabels = true;
 
 DataTemplate labelTemplate = new DataTemplate(() =>
@@ -244,7 +244,7 @@ this.Content = chart;
 
 ## Formatting Label Context
 
-The content of the label can be customized using the [LabelContext](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.LabelContext.html) property. Following are the two options that are supported now,
+The content of the label can be customized using the [LabelContext](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartSeries.html#Syncfusion_Maui_Toolkit_Charts_ChartSeries_LabelContext) property. Following are the two options that are supported now,
 
 * [Percentage](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.LabelContext.html#Syncfusion_Maui_Toolkit_Charts_LabelContext_Percentage) - This will show the percentage value of corresponding data point Y value.
 
@@ -257,10 +257,10 @@ The content of the label can be customized using the [LabelContext](https://help
 <chart:SfCircularChart>
     . . .   
     <chart:PieSeries ItemsSource="{Binding Data}" 
-                     LabelContext="Percentage"
-                     ShowDataLabels="True"
                      XBindingPath="Product" 
-                     YBindingPath="SalesRate"/>  
+                     YBindingPath="SalesRate"
+                     LabelContext="Percentage"
+                     ShowDataLabels="True"/>  
 </chart:SfCircularChart>
 
 {% endhighlight %}
@@ -274,7 +274,7 @@ SfCircularChart chart = new SfCircularChart();
 // Create a new PieSeries
 PieSeries series = new PieSeries()
 {
-    ItemsSource = new ViewModel().Data,
+    ItemsSource = new SalesViewModel().Data,
     XBindingPath = "Product",
     YBindingPath = "SalesRate",
     ShowDataLabels = true,
@@ -312,10 +312,10 @@ The [SfCircularChart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Mau
     </chart:SfCircularChart.Resources>
 
     <chart:PieSeries ItemsSource="{Binding Data}" 
-                     ShowDataLabels="True"
-                     LabelTemplate="{StaticResource labelTemplate}"
                      XBindingPath="Product" 
-                     YBindingPath="SalesRate">
+                     YBindingPath="SalesRate"
+                     ShowDataLabels="True"
+                     LabelTemplate="{StaticResource labelTemplate}">
     </chart:PieSeries>
 
 </chart:SfCircularChart>
@@ -331,7 +331,7 @@ SfCircularChart chart = new SfCircularChart();
 
 // Create a new PieSeries
 PieSeries series = new PieSeries();
-series.ItemsSource = new ViewModel().Data;
+series.ItemsSource = new SalesViewModel().Data;
 series.XBindingPath = "Product";
 series.YBindingPath = "SalesRate";
 series.ShowDataLabels = true;
@@ -359,8 +359,8 @@ DataTemplate labelTemplate = new DataTemplate(() =>
         TextColor = Color.White,
         FontSize = 13,
     };
-
     salesRateLabel.SetBinding(Label.TextProperty, "Item.SalesRate");
+    
     horizontalStackLayout.Children.Add(productLabel);
     horizontalStackLayout.Children.Add(separatorLabel);
     horizontalStackLayout.Children.Add(salesRateLabel);
@@ -381,12 +381,12 @@ this.Content = chart;
 
 ## Connector line style
 
-The [ConnectorLineStyle]() is used to customize the appearance of the line that connects data labels positioned outside the chart series. The following [ConnectorLineStyle]() properties are used to customize the connector line.
+The [ConnectorLineSettings](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.CircularDataLabelSettings.html#Syncfusion_Maui_Toolkit_Charts_CircularDataLabelSettings_ConnectorLineSettings) is used to customize the appearance of the line that connects data labels positioned outside the chart series. The following [ConnectorLineStyle](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ConnectorLineStyle.html) properties are used to customize the connector line.
 
-* [Stroke]() – Gets or sets the stroke color of the connector line.
-* [StrokeWidth]() – Gets or sets the stroke thickness of the connector line.
-* [StrokeDashArray]() – Gets or sets the dashes for the connector line.
-* [ConnectorType]() - Gets or sets a value that specifies the connector type.
+* [Stroke](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartLineStyle.html#Syncfusion_Maui_Toolkit_Charts_ChartLineStyle_Stroke) – Gets or sets the stroke color of the connector line.
+* [StrokeWidth](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartLineStyle.html#Syncfusion_Maui_Toolkit_Charts_ChartLineStyle_StrokeWidth) – Gets or sets the stroke thickness of the connector line.
+* [StrokeDashArray](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartLineStyle.html#Syncfusion_Maui_Toolkit_Charts_ChartLineStyle_StrokeDashArray) – Gets or sets the dashes for the connector line.
+* [ConnectorType](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ConnectorLineStyle.html#Syncfusion_Maui_Toolkit_Charts_ConnectorLineStyle_ConnectorType) - Gets or sets a value that specifies the connector type.
 
 {% tabs %}
 
@@ -409,7 +409,7 @@ The [ConnectorLineStyle]() is used to customize the appearance of the line that 
                     <chart:ConnectorLineStyle StrokeDashArray="{StaticResource dashArray}" 
                                               ConnectorType="Curve" 
                                               Stroke="Black" 
-                                              StrokeWidth="3"></chart:ConnectorLineStyle>
+                                              StrokeWidth="3"/>
                 </chart:CircularDataLabelSettings.ConnectorLineSettings>
             </chart:CircularDataLabelSettings>
         </chart:PieSeries.DataLabelSettings>
@@ -449,7 +449,7 @@ var connectorLineStyle = new ConnectorLineStyle
 // Configure data label settings for the series
 series.DataLabelSettings = new CircularDataLabelSettings()
 {
-    LabelPosition = "Outside",              // Position labels outside the chart
+    LabelPosition = ChartDataLabelPosition.Outside,              // Position labels outside the chart
     ConnectorLineSettings = connectorLineStyle  // Apply the connector line style
 };
 

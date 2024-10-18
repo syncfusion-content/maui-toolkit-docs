@@ -25,11 +25,11 @@ Exploding a segment is used to pull attention to a specific area of the circular
     . . .
     <chart:DoughnutSeries x:Name="DoughnutSeries"
                           ItemsSource="{Binding Data}"
+                          XBindingPath="XValue"
+                          YBindingPath="YValue"
                           ExplodeIndex="2"
                           ExplodeRadius="10"
-                          ExplodeOnTouch="True"
-                          XBindingPath="Utilization"
-                          YBindingPath="ResponseTime"/>
+                          ExplodeOnTouch="True"/>
 </chart:SfCircularChart>
 
 {% endhighlight %}
@@ -43,8 +43,8 @@ SfCircularChart chart = new SfCircularChart();
 DoughnutSeries series = new DoughnutSeries()
 {
     ItemsSource = new ViewModel().Data,
-    XBindingPath = "Utilization",
-    YBindingPath = "ResponseTime",
+    XBindingPath = "XValue",
+    YBindingPath = "YValue",
     ExplodeIndex = 2, // Set the index of the segment to be exploded (0-based)
     ExplodeRadius = 10, // Set the radius of explosion in pixels
     ExplodeOnTouch = true // Enable exploding segments on touch
