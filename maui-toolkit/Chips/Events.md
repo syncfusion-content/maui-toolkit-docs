@@ -23,7 +23,7 @@ The [SelectionChanged](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Ma
  * [AddedItem] - Get the selected chip from `SfChipGroup`.
  * [RemovedItem] - Get the previous selected or deselected chip from `SfChipGroup`.
 
-N>  Currently, [Choice](https://helpstaging.syncfusion.com:14038/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Chips.SfChipsType.html#Syncfusion_Maui_Toolkit_Chips_SfChipsType_Choice) and [Filter](https://helpstaging.syncfusion.com:14038/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Chips.SfChipsType.html#Syncfusion_Maui_Toolkit_Chips_SfChipsType_Filter) types are only supported for `SelectionChanging` and `SelectionChanged` events.
+N>  Currently, [Choice](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Chips.SfChipsType.html#Syncfusion_Maui_Toolkit_Chips_SfChipsType_Choice) and [Filter](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Chips.SfChipsType.html#Syncfusion_Maui_Toolkit_Chips_SfChipsType_Filter) types are only supported for `SelectionChanging` and `SelectionChanged` events.
 
 ##  ChipClicked
 
