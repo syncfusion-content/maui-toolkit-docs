@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Comprehensive Guide to Syncfusion Essential Studio .NET MAUI Toolkit
-description: Overview about the Syncfusion .NET MAUI Toolkit, detailed steps on how to read the user guide effectively, and supported platforms
+title: Comprehensive Guide to Syncfusion Toolkit for .NET MAUI
+description: Overview of the Syncfusion .NET MAUI Toolkit, detailed steps on how to read the user guide effectively, and supported platforms
 platform: maui-toolkit
 control: Overview
 documentation: ug
