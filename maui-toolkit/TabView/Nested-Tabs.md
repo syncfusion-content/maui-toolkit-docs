@@ -206,4 +206,4 @@ The following image illustrates the nested tab structure:
 
 ![Nested Tabs in .NET MAUI Tab View](images/Nested_Tab.png)
 
-N> View [sample](https://github.com/SyncfusionExamples/maui-toolkit-samples/tree/master/TabView/NestedTabViewSample) in GitHub
+N> View [sample](https://github.com/SyncfusionExamples/maui-toolkit-samples/tree/master/TabView/NestedTabViewSample) in GitHub.

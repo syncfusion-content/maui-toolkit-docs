@@ -254,4 +254,4 @@ The following image shows the tab bar with a gradient color background.
 
 ![Tab Bar Gradient Color Bottom](images/TabBarGradientColor.png)
 
-N> View [sample](https://github.com/SyncfusionExamples/maui-toolkit-samples/tree/master/TabView/TabBarCustomization) in GitHub
+N> View [sample](https://github.com/SyncfusionExamples/maui-toolkit-samples/tree/master/TabView/TabBarCustomization) in GitHub.

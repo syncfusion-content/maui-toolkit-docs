@@ -269,7 +269,7 @@ namespace TabViewGettingStarted
 {% endhighlight %}
 {% endtabs %}
 
-N> View [sample](https://github.com/SyncfusionExamples/maui-toolkit-samples/tree/master/TabView/TabViewGettingStarted) in GitHub
+N> View [sample](https://github.com/SyncfusionExamples/maui-toolkit-samples/tree/master/TabView/TabViewGettingStarted) in GitHub.
 
 ## Populate tab items using ItemsSource
 
