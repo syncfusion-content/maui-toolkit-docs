@@ -19,7 +19,7 @@ The [PasswordVisibilityToggled](https://help.syncfusion.com/cr/maui-toolkit/Sync
 N> Ensure that [EnablePasswordVisibilityToggle](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TextInputLayout.SfTextInputLayout.html#Syncfusion_Maui_Toolkit_TextInputLayout_SfTextInputLayout_EnablePasswordVisibilityToggle) property is enabled for the `PasswordVisibilityToggled` event to function as expected.
 
 {% tabs %} 
-{% highlight xaml %} 
+{% highlight xaml %}
 
 <inputLayout:SfTextInputLayout  Hint="Password" 
                                 EnablePasswordVisibilityToggle="True"
@@ -29,7 +29,7 @@ N> Ensure that [EnablePasswordVisibilityToggle](https://help.syncfusion.com/cr/m
  
 {% endhighlight %}
 
-{% highlight C# %} 
+{% highlight C# %}
 
 var inputLayout = new SfTextInputLayout();
 inputLayout.Hint = "Password";
