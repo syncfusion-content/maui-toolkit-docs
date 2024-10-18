@@ -52,5 +52,3 @@ private async void carousel_SwipeEnded(object sender, System.EventArgs e)
 {% endhighlight %}
 
 {% endtabs %}
-
-![Carousel Swiping events]()
