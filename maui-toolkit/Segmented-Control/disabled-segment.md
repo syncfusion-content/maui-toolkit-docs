@@ -7,7 +7,7 @@ control: Segmented control
 documentation: ug
 ---
  
-# Disabled Segmented Item in .NET MAUI Segmented Control (SfSegmentedControl)
+# Disabled Segmented Item in .NET MAUI Segmented Control
 
 This section describes the features of the Segmented Control that help with disabling segmented item, customization of the disabled item, and associated operations.
 

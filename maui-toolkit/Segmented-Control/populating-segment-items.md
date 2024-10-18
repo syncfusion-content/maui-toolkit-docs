@@ -7,7 +7,7 @@ control: Segmented control
 documentation: ug
 ---
  
-# Create Segment Content in .NET MAUI Segmented Control (SfSegmentedControl)
+# Create Segment Content in .NET MAUI Segmented Control
 
 Depending on the application, different scenarios may require icons, text, or a combination of both for effective communication.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Appearance Customization of .NET MAUI Segmented Control (SfSegmentedControl) | Syncfusion
+title: Appearance Customization of .NET MAUI Segmented Control
 description: Learn about the appearance customization of Syncfusion .NET MAUI Segmented Control (SfSegmentedControl).
 platform: maui-toolkit
 control: Segmented control
 documentation: ug
 ---
  
-# Appearance Customization of .NET MAUI Segmented Control (SfSegmentedControl)
+# Appearance Customization of .NET MAUI Segmented Control
 The .NET MAUI Segmented control allows you to customize the background, text color, selection style, and more.
 
 ## Customize the border color
