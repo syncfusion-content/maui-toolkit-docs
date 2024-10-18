@@ -25,9 +25,17 @@ To add annotations, create an instance of any type of annotation and add it to t
 {% highlight xaml %}
 
 <chart:SfCartesianChart>
+    <!-- Other chart elements go here -->
     ...
+    <!-- Annotations section of the chart -->
     <chart:SfCartesianChart.Annotations>
-        <chart:EllipseAnnotation X1 = "2" X2 = "4" Y1 = "10" Y2 = "15" Text = "Ellipse"/>        
+        <!-- Ellipse annotation -->
+        <chart:EllipseAnnotation 
+            X1="2"  
+            X2="4"  
+            Y1="10" 
+            Y2="15" 
+            Text="Ellipse"/>        
     </chart:SfCartesianChart.Annotations>    
 </chart:SfCartesianChart>
 
@@ -35,18 +43,24 @@ To add annotations, create an instance of any type of annotation and add it to t
 
 {% highlight c# %}
 
+// Create a new SfCartesianChart instance
 SfCartesianChart chart = new SfCartesianChart();
 ...
+// Other chart elements go here
+// Create a new EllipseAnnotation
 var ellipse = new EllipseAnnotation()
 {
-    X1 = 2,
-    Y1 = 10,
-    X2 = 4,
-    Y2 = 15,
-    Text = "Ellipse"
+    X1 = 2,  // Set the X-coordinate of the start point
+    Y1 = 10, // Set the Y-coordinate of the start point
+    X2 = 4,  // Set the X-coordinate of the end point
+    Y2 = 15, // Set the Y-coordinate of the end point
+    Text = "Ellipse" // Set the text to display with the annotation
 };
 
+// Add the ellipse annotation to the chart's Annotations collection
 chart.Annotations.Add(ellipse);
+
+// Set the chart as the content of the current view
 this.Content = chart;
 
 {% endhighlight %}
@@ -74,18 +88,26 @@ this.Content = chart;
 
 {% highlight c# %}
     
+// Create a new SfCartesianChart object
 SfCartesianChart chart = new SfCartesianChart();     
+
+// Other chart elements go here
+
+// Create a new RectangleAnnotation object
 var rectangle = new RectangleAnnotation()
 {
     X1 = 0,
     Y1 = 100,
     X2 = 300,
     Y2 = 400,
-    CoordinateUnit = ChartCoordinateUnit.Pixel,
+    CoordinateUnit = ChartCoordinateUnit.Pixel,  // Set the coordinate unit to Pixel
     Text = "Pixel value"
 };
 
+// Add the rectangle annotation to the chart's Annotations collection
 chart.Annotations.Add(rectangle);
+
+// Set the Content of the current view to the chart
 this.Content = chart;
 
 {% endhighlight %}
@@ -118,27 +140,38 @@ When there are multiple axes, annotations can be added to a particular axis usin
 
 {% highlight c# %}
 
+// Create a new Cartesian chart
 SfCartesianChart chart = new SfCartesianChart();
+
+// Create and configure the first Y-axis
 NumericalAxis yAxis1 = new NumericalAxis();
 yAxis1.Minimum = 0;
 yAxis1.Maximum = 1;
 chart.YAxes.Add(yAxis1);
+
+// Create and configure the second Y-axis
 NumericalAxis yAxis2 = new NumericalAxis();
 yAxis2.Name = "YAxis";
-yAxis2.CrossesAt = double.MaxValue;
+yAxis2.CrossesAt = double.MaxValue; // Position the axis at the far right
 chart.YAxes.Add(yAxis2);
+
+// Create an ellipse annotation
 var ellipse = new EllipseAnnotation()
 {
-    X1 = 2,
-    Y1 = 10,
-    X2 = 4,
-    Y2 = 15,
-    Text = "Ellipse",
-    YAxisName = "YAxis"
+    X1 = 2, 
+    Y1 = 10, 
+    X2 = 4, 
+    Y2 = 15, 
+    Text = "Ellipse", 
+    YAxisName = "YAxis" // Specify which Y-axis to use for positioning
 };
 
+// Add the ellipse annotation to the chart
 chart.Annotations.Add(ellipse);
+
+// Set the chart as the content of the current view
 this.Content = chart;
+
 
 {% endhighlight %}
 
@@ -165,16 +198,25 @@ The [TextAnnotation](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui
 
 {% highlight c# %}
 
+// Create a new instance of SfCartesianChart
 SfCartesianChart chart = new SfCartesianChart();
+
+// Other chart elements go here
+
+// Create a new TextAnnotation object
 var text = new TextAnnotation()
 {
-    X1 = 2,
+    X1 = 2, 
     Y1 = 25,
-    Text = "Text Annotation"    
+    Text = "Text Annotation"  // Set the text content of the annotation    
 };
 
+// Add the TextAnnotation to the chart's Annotations collection
 chart.Annotations.Add(text);
+
+// Set the chart as the content of the current view/page
 this.Content = chart;
+
 
 {% endhighlight %}
 
