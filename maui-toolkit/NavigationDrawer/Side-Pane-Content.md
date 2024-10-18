@@ -46,26 +46,26 @@ As the name suggests, it is displayed at the top of the drawer. The [DrawerHeade
 
 {% highlight c# %}
 
-  SfNavigationDrawer navigationDrawer = new SfNavigationDrawer();
-  DrawerSettings drawerSettings = new DrawerSettings();
+SfNavigationDrawer navigationDrawer = new SfNavigationDrawer();
+DrawerSettings drawerSettings = new DrawerSettings();
 
-  Grid headerGrid = new Grid()
-  {
-      BackgroundColor = Color.FromArgb("#6750A4"),
-  };
+Grid headerGrid = new Grid()
+{
+    BackgroundColor = Color.FromArgb("#6750A4"),
+};
 
-  Label headerLabel = new Label()
-  {
-      Text = "Header View",
-      TextColor = Colors.White,
-      HorizontalOptions = LayoutOptions.Center,
-      VerticalOptions = LayoutOptions.Center,
-  };
+Label headerLabel = new Label()
+{
+    Text = "Header View",
+    TextColor = Colors.White,
+    HorizontalOptions = LayoutOptions.Center,
+    VerticalOptions = LayoutOptions.Center,
+};
 
-  headerGrid.Children.Add(headerLabel);
-  drawerSettings.DrawerHeaderView = headerGrid;
-  navigationDrawer.DrawerSettings = drawerSettings;
-  this.Content = navigationDrawer;
+headerGrid.Children.Add(headerLabel);
+drawerSettings.DrawerHeaderView = headerGrid;
+navigationDrawer.DrawerSettings = drawerSettings;
+this.Content = navigationDrawer;
   
 {% endhighlight %}
 

@@ -51,26 +51,26 @@ Before proceeding, ensure the following are set up:
 In the MauiProgram.cs file, register the handler for Syncfusion Toolkit.
 
 {% tabs %}
-{% highlight C# tabtitle="MauiProgram.cs" hl_lines="1 9" %}    
-    using Syncfusion.Maui.Toolkit.Hosting;
+{% highlight C# tabtitle="MauiProgram.cs" hl_lines="1 9" %}  
+using Syncfusion.Maui.Toolkit.Hosting;
 
-    public static class MauiProgram
+public static class MauiProgram
+{
+    public static MauiApp CreateMauiApp()
     {
-	    public static MauiApp CreateMauiApp()
-	    {
-	        var builder = MauiApp.CreateBuilder();
-		    builder
-			    .ConfigureSyncfusionToolkit()
-			    .UseMauiApp<App>()
-			    .ConfigureFonts(fonts =>
-			    {
-				    fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
-				    fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
-			    });
+        var builder = MauiApp.CreateBuilder();
+        builder
+            .ConfigureSyncfusionToolkit()
+            .UseMauiApp<App>()
+            .ConfigureFonts(fonts =>
+            {
+                fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
+                fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
+            });
 
-		    return builder.Build();
-	    }
+        return builder.Build();
     }
+}
 {% endhighlight %}
 {% endtabs %} 
 
@@ -85,7 +85,6 @@ In the MauiProgram.cs file, register the handler for Syncfusion Toolkit.
 {% highlight xaml %}
 
 <ContentPage
-    . . .    
     xmlns:navigationDrawer="clr-namespace:Syncfusion.Maui.Toolkit.NavigationDrawer;assembly=Syncfusion.Maui.Toolkit">
     <navigationDrawer:SfNavigationDrawer x:Name="navigationDrawer">
     <navigationDrawer:SfNavigationDrawer.ContentView>
@@ -99,27 +98,27 @@ In the MauiProgram.cs file, register the handler for Syncfusion Toolkit.
 
 {% highlight c# %}
 
-    using Syncfusion.Maui.Toolkit.NavigationDrawer;
-    namespace NavigationDrawerGettingStarted
+using Syncfusion.Maui.Toolkit.NavigationDrawer;
+namespace NavigationDrawerGettingStarted
+{
+    public partial class MainPage : ContentPage
     {
-        public partial class MainPage : ContentPage
+        public MainPage()
         {
-            public MainPage()
-            {
-                InitializeComponent();           
-                SfNavigationDrawer navigationDrawer = new SfNavigationDrawer();
-                Grid grid = new Grid();
-                navigationDrawer.ContentView = grid;
-                this.Content = navigationDrawer; 
-            }
-        }   
-    }
+            InitializeComponent();           
+            SfNavigationDrawer navigationDrawer = new SfNavigationDrawer();
+            Grid grid = new Grid();
+            navigationDrawer.ContentView = grid;
+            this.Content = navigationDrawer; 
+        }
+    }   
+}
 
 {% endhighlight %}
 
 {% endtabs %}
 
-N> It is mandatory to set [ContentView](help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NavigationDrawer.SfNavigationDrawer.html#Syncfusion_Maui_Toolkit_NavigationDrawer_SfNavigationDrawer_ContentView) for [SfNavigationDrawer](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NavigationDrawer.SfNavigationDrawer.html) on initializing.
+N> It is mandatory to set [ContentView](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NavigationDrawer.SfNavigationDrawer.html#Syncfusion_Maui_Toolkit_NavigationDrawer_SfNavigationDrawer_ContentView) for [SfNavigationDrawer](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NavigationDrawer.SfNavigationDrawer.html) on initializing.
 
 ## Adjust Drawer Size
 
@@ -138,7 +137,7 @@ The default position of the navigation pane is on the left, so change the drawer
 </navigationdrawer:SfNavigationDrawer>
 	
 {% endhighlight %}
-{% highlight c# %} 
+{% highlight c# %}
 
 using Syncfusion.Maui.Toolkit.NavigationDrawer;
 
@@ -171,7 +170,7 @@ N> To change the side of the navigation pane, utilize the [Position](https://hel
 
 Create an ImageButton and set the required image to the `Source` property. To ensure the image appears correctly, place the image in the `Resources/Images` directory. Subscribe Clicked event of the button and invoke the [ToggleDrawer()](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NavigationDrawer.SfNavigationDrawer.html#Syncfusion_Maui_Toolkit_NavigationDrawer_SfNavigationDrawer_ToggleDrawer) method to toggle the drawer. Properly align the layout of [ContentView](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NavigationDrawer.SfNavigationDrawer.html#Syncfusion_Maui_Toolkit_NavigationDrawer_SfNavigationDrawer_ContentView) to position the hamburger icon at the top left, as demonstrated in the following code.
 
-{% tabs %}	
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -211,7 +210,7 @@ Create an ImageButton and set the required image to the `Source` property. To en
 	
 {% endhighlight %}
 	
-{% highlight c# %} 
+{% highlight c# %}
 
 namespace NavigationDrawerGettingStarted;
 
@@ -219,9 +218,9 @@ public partial class NavigationDrawerPage : ContentPage
 {
     SfNavigationDrawer navigationDrawer;
     Label contentLabel;
-	public NavigationDrawerPage()
-	{
-		InitializeComponent();
+    public NavigationDrawerPage()
+    {
+        InitializeComponent();
         navigationDrawer = new SfNavigationDrawer();
         Grid grid = new Grid()
         {
@@ -234,10 +233,10 @@ public partial class NavigationDrawerPage : ContentPage
         };
 
         HorizontalStackLayout layout = new HorizontalStackLayout()
-        { 
+        {
             BackgroundColor = Color.FromArgb("#6750A4"),
             Spacing = 10,
-            Padding = new Thickness(5,0,0,0),
+            Padding = new Thickness(5, 0, 0, 0),
         };
 
         var hamburgerButton = new ImageButton
@@ -292,10 +291,10 @@ public partial class NavigationDrawerPage : ContentPage
 {% tabs %}
 {% highlight c# %}
     
-    private void hamburgerButton_Clicked(object sender, EventArgs e)
-    {
-        navigationDrawer.ToggleDrawer();
-    }
+private void hamburgerButton_Clicked(object sender, EventArgs e)
+{
+    navigationDrawer.ToggleDrawer();
+}
 
 {% endhighlight %}
 {% endtabs %}
@@ -306,7 +305,7 @@ public partial class NavigationDrawerPage : ContentPage
 
 Create a ListView with items and set it as [DrawerContentView](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NavigationDrawer.DrawerSettings.html#Syncfusion_Maui_Toolkit_NavigationDrawer_DrawerSettings_DrawerContentView).
 
-{% tabs %}	
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -389,9 +388,9 @@ namespace NavigationDrawerGettingStarted;
 public partial class NavigationDrawerPage : ContentPage
 {
     SfNavigationDrawer navigationDrawer;
-	public NavigationDrawerPage()
-	{
-		InitializeComponent();
+    public NavigationDrawerPage()
+    {
+        InitializeComponent();
         Grid headerGrid = new Grid()
         {
             RowDefinitions =
@@ -454,27 +453,27 @@ public partial class NavigationDrawerPage : ContentPage
 {% tabs %}
 {% highlight c# %}
     
-    private void hamburgerButton_Clicked(object sender, EventArgs e)
-    {
-        navigationDrawer.ToggleDrawer();
-    }
+private void hamburgerButton_Clicked(object sender, EventArgs e)
+{
+    navigationDrawer.ToggleDrawer();
+}
 
-    private void listView_ItemSelected(object sender, SelectedItemChangedEventArgs e)
-    {
-        if (e.SelectedItem.ToString() == "Home")
-            contentLabel.Text = "Home";
-        else if (e.SelectedItem.ToString() == "Profile")
-            contentLabel.Text = "Profile";
-        else if (e.SelectedItem.ToString() == "Inbox")
-            contentLabel.Text = "Inbox";
-        else if (e.SelectedItem.ToString() == "Out box")
-            contentLabel.Text = "Out box";
-        else if (e.SelectedItem.ToString() == "Sent")
-            contentLabel.Text = "Sent";
-        else if (e.SelectedItem.ToString() == "Draft")
-            contentLabel.Text = "The folder is empty";
-        navigationDrawer.ToggleDrawer();
-    }
+private void listView_ItemSelected(object sender, SelectedItemChangedEventArgs e)
+{
+    if (e.SelectedItem.ToString() == "Home")
+        contentLabel.Text = "Home";
+    else if (e.SelectedItem.ToString() == "Profile")
+        contentLabel.Text = "Profile";
+    else if (e.SelectedItem.ToString() == "Inbox")
+        contentLabel.Text = "Inbox";
+    else if (e.SelectedItem.ToString() == "Out box")
+        contentLabel.Text = "Out box";
+    else if (e.SelectedItem.ToString() == "Sent")
+        contentLabel.Text = "Sent";
+    else if (e.SelectedItem.ToString() == "Draft")
+        contentLabel.Text = "The folder is empty";
+    navigationDrawer.ToggleDrawer();
+}
 
 {% endhighlight %}
 {% endtabs %}
