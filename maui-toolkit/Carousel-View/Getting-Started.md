@@ -132,9 +132,9 @@ Create a model class using the image collection property that is initialized wit
 
 // Model
 
-public class ImageModel
+public class GalleryModel
 {
-    public ImageModel(string imageString)
+    public GalleryModel(string imageString)
     {
         ImageName = imageString;
     }
@@ -153,14 +153,14 @@ public class GalleryViewModel
 {
     public GalleryViewModel()
     {
-        ImageCollection.Add(new ImageModel("carousel_person1.png"));
-        ImageCollection.Add(new ImageModel("carousel_person2.png"));
-        ImageCollection.Add(new ImageModel("carousel_person3.png"));
-        ImageCollection.Add(new ImageModel("carousel_person4.png"));
-        ImageCollection.Add(new ImageModel("carousel_person5.png"));
+        ImageCollection.Add(new GalleryModel("carousel_person1.png"));
+        ImageCollection.Add(new GalleryModel("carousel_person2.png"));
+        ImageCollection.Add(new GalleryModel("carousel_person3.png"));
+        ImageCollection.Add(new GalleryModel("carousel_person4.png"));
+        ImageCollection.Add(new GalleryModel("carousel_person5.png"));
     }
-    private List<ImageModel> imageCollection = new List<ImageModel>();
-    public List<ImageModel> ImageCollection
+    private List<GalleryModel> imageCollection = new List<GalleryModel>();
+    public List<GalleryModel> ImageCollection
     {
         get { return imageCollection; }
         set { imageCollection = value; }
