@@ -27,14 +27,15 @@ N> The circular chart has [Series](https://help.syncfusion.com/cr/maui-toolkit/S
 
 {% highlight c# %}
 
+// Create a new instance of SfCircularChart
 SfCircularChart chart = new SfCircularChart();
 
-DoughnutSeries series = new DoughnutSeries();
-series.XBindingPath = "Product";
-series.YBindingPath = "SalesRate";
+DoughnutSeries series = new DoughnutSeries(); // Create a new instance of DoughnutSeries
+series.XBindingPath = "Product"; // Set the XBindingPath to the "Product" property of the data source
+series.YBindingPath = "SalesRate"; // Set the YBindingPath to the "SalesRate" property of the data source
 
-chart.Series.Add(series);
-this.Content = chart;
+chart.Series.Add(series); // Add the series to the chart's Series collection
+this.Content = chart; // Set the chart as the content of the current view
 
 {% endhighlight %}
 
@@ -61,11 +62,14 @@ The [InnerRadius](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.To
 
 {% highlight c# %}
 
+// Create a new instance of SfCircularChart
 SfCircularChart chart = new SfCircularChart();
+
+// Create a new instance of DoughnutSeries
 DoughnutSeries series = new DoughnutSeries();
 series.XBindingPath = "Product";
 series.YBindingPath = "SalesRate";
-series.InnerRadius = 0.7;
+series.InnerRadius = 0.7; // Set the inner radius of the doughnut chart (70% of the available space)
 
 chart.Series.Add(series);
 this.Content = chart;
@@ -95,12 +99,15 @@ By using the [StartAngle](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion
 
 {% highlight c# %}
 
+// Create a new instance of SfCircularChart
 SfCircularChart chart = new SfCircularChart();
+
+// Create a new instance of DoughnutSeries
 DoughnutSeries series = new DoughnutSeries();
 series.XBindingPath = "Product";
 series.YBindingPath = "SalesRate";
-series.StartAngle = 180;
-series.EndAngle = 360;
+series.StartAngle = 180; // Set the starting angle of the doughnut chart (in degrees)
+series.EndAngle = 360; // Set the ending angle of the doughnut chart (in degrees)
 
 chart.Series.Add(series);
 this.Content = chart;
@@ -143,20 +150,28 @@ The [CenterHoleSize](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui
 
 {% highlight c# %}
 
+// Create a new SfCircularChart
 SfCircularChart chart = new SfCircularChart();       
-DoughnutSeries series = new DoughnutSeries()
+
+// Create a new DoughnutSeries
+DoughnutSeries series = new DoughnutSeries();
 series.XBindingPath = "Name";
 series.YBindingPath = "Value";
 
-Border border = new Border();  
+Border border = new Border(); // Create a border to contain the center view content
+
 Label name = new Label();
 name.Text = "Total :";
-Label value = new Label()
+
+Label value = new Label();
 value.Text = "357,580 km²";
+
 StackLayout layout = new StackLayout();
 
 border.Content = layout;
-series.CenterView = border;
+
+series.CenterView = border; // Set the border (containing the labels) as the center view of the doughnut series
+
 chart.Series.Add(series);
 this.Content = chart;
 

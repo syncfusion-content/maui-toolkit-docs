@@ -36,16 +36,18 @@ Exploding a segment is used to pull attention to a specific area of the circular
 
 {% highlight c# %}
 
+// Create a new instance of SfCircularChart
 SfCircularChart chart = new SfCircularChart();
 . . .
+// Create a new DoughnutSeries
 DoughnutSeries series = new DoughnutSeries()
 {
     ItemsSource = new ViewModel().Data,
     XBindingPath = "Utilization",
     YBindingPath = "ResponseTime",
-    ExplodeIndex = 2,
-    ExplodeRadius = 10,
-    ExplodeOnTouch = true
+    ExplodeIndex = 2, // Set the index of the segment to be exploded (0-based)
+    ExplodeRadius = 10, // Set the radius of explosion in pixels
+    ExplodeOnTouch = true // Enable exploding segments on touch
 };
 
 chart.Series.Add(series);
@@ -78,14 +80,16 @@ By setting the [ExplodeAll](https://help.syncfusion.com/cr/maui-toolkit/Syncfusi
 
 {% highlight c# %}
 
+// Create a new instance of SfCircularChart
 SfCircularChart chart = new SfCircularChart();
 . . .
+// Create a new DoughnutSeries
 DoughnutSeries series = new DoughnutSeries()
 {
     ItemsSource = new ViewModel().Data,
     XBindingPath = "XValue",
     YBindingPath = "YValue",
-    ExplodeAll = true
+    ExplodeAll = true // Enable exploding for all segments in the doughnut chart
 };
 
 chart.Series.Add(series);

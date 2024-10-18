@@ -37,12 +37,19 @@ Each data label can be represented by the following:
 
 {% highlight c# %}
 
+// Create a new instance of SfCircularChart
 SfCircularChart chart = new SfCircularChart();
 . . .
+// Create a new instance of PieSeries
 PieSeries series = new PieSeries();
+// Enable data labels for this series
 series.ShowDataLabels = true;
 . . .
+// Add the configured series to the chart's Series collection
 chart.Series.Add(series);
+
+// Set the chart as the content of the current page/view
+this.Content = chart;
 
 {% endhighlight %}
 
@@ -86,20 +93,26 @@ The [LabelPosition](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.
 
 {% highlight c# %}
 
+// Create a new instance of SfCircularChart
 SfCircularChart chart = new SfCircularChart();
 . . .
+// Create a new PieSeries
 PieSeries series = new PieSeries();
 series.ItemsSource = new ViewModel().Data;
 series.XBindingPath = "Product";
 series.YBindingPath = "SalesRate";
 series.ShowDataLabels = true;
 
+// Configure the data label settings
 series.DataLabelSettings = new CircularDataLabelSettings()
 {
-    LabelPosition= ChartDataLabelPosition.Outside,
+    LabelPosition = ChartDataLabelPosition.Outside, // Position the data labels outside the pie slices
 };
 
+// Add the series to the chart's Series collection
 chart.Series.Add(series);
+
+// Set the chart as the content of the current page/view
 this.Content = chart;
 
 {% endhighlight %}
@@ -151,8 +164,10 @@ When the [SmartLabelAlignment](https://help.syncfusion.com/cr/maui-toolkit/Syncf
 
 {% highlight c# %}
 
+// Create a new instance of SfCircularChart
 SfCircularChart chart = new SfCircularChart();
 . . .
+// Create a new PieSeries
 PieSeries series = new PieSeries();
 series.ItemsSource = new ViewModel().Data;
 series.XBindingPath = "Product";
@@ -161,15 +176,16 @@ series.ShowDataLabels = true;
 
 DataTemplate labelTemplate = new DataTemplate(() =>
 {
-    ...
+    // ... (Custom label template definition goes here)
 });
 
 series.LabelTemplate = labelTemplate;
 
+// Configure data label settings for the series
 series.DataLabelSettings = new CircularDataLabelSettings()
 {
-    LabelPosition= ChartDataLabelPosition.Outside,
-    SmartLabelAlignment = SmartLabelAlignment.Shift,
+    LabelPosition = ChartDataLabelPosition.Outside, // Position the labels outside the chart
+    SmartLabelAlignment = SmartLabelAlignment.Shift, // Enable smart label alignment to shift labels for better visibility
 };
 
 chart.Series.Add(series);
@@ -202,16 +218,23 @@ this.Content = chart;
 
 {% highlight c# %}
 
+// Create a new instance of SfCircularChart
 SfCircularChart chart = new SfCircularChart();
 . . .
+// Create a new PieSeries
 PieSeries series = new PieSeries();
+
 series.ShowDataLabels = true;
+
+// Configure data label settings for the series
 series.DataLabelSettings = new CircularDataLabelSettings()
 {
+    // Use the series palette colors for data labels
     UseSeriesPalette = true,
 };
 
 chart.Series.Add(series);
+this.Content = chart;
 
 {% endhighlight %}
 
@@ -244,19 +267,23 @@ The content of the label can be customized using the [LabelContext](https://help
 
 {% highlight c# %}
 
+// Create a new instance of SfCircularChart
 SfCircularChart chart = new SfCircularChart();
-. . .
+// ... (other chart configurations)
+
+// Create a new PieSeries
 PieSeries series = new PieSeries()
 {
     ItemsSource = new ViewModel().Data,
     XBindingPath = "Product",
     YBindingPath = "SalesRate",
     ShowDataLabels = true,
-    LabelContext = LabelContext.Percentage
+    LabelContext = LabelContext.Percentage // Set the context for data labels to display percentages
 };
 
 chart.Series.Add(series);
 this.Content = chart;
+
         
 {% endhighlight %}
 
@@ -297,18 +324,22 @@ The [SfCircularChart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Mau
 
 {% highlight c# %}
 
+// Create a new SfCircularChart
 SfCircularChart chart = new SfCircularChart();
-. . .
+
+// ... (other chart configuration)
+
+// Create a new PieSeries
 PieSeries series = new PieSeries();
 series.ItemsSource = new ViewModel().Data;
 series.XBindingPath = "Product";
 series.YBindingPath = "SalesRate";
 series.ShowDataLabels = true;
 
+// Define a custom DataTemplate for data labels
 DataTemplate labelTemplate = new DataTemplate(() =>
 {
     var horizontalStackLayout = new HorizontalStackLayout { Spacing = 5 };
-
     var productLabel = new Label
     {
         TextColor = Color.White,
@@ -328,16 +359,17 @@ DataTemplate labelTemplate = new DataTemplate(() =>
         TextColor = Color.White,
         FontSize = 13,
     };
-    salesRateLabel.SetBinding(Label.TextProperty, "Item.SalesRate");
 
+    salesRateLabel.SetBinding(Label.TextProperty, "Item.SalesRate");
     horizontalStackLayout.Children.Add(productLabel);
     horizontalStackLayout.Children.Add(separatorLabel);
     horizontalStackLayout.Children.Add(salesRateLabel);
 
-    return horizontalStackLayout;
+    return horizontalStackLayout; // Return the completed layout
 });
 
-series.LabelTemplate = labelTemplate;
+series.LabelTemplate = labelTemplate; // Set the custom label template for the series
+
 chart.Series.Add(series);
 this.Content = chart;
         
@@ -388,11 +420,15 @@ The [ConnectorLineStyle]() is used to customize the appearance of the line that 
 
 {% highlight c# %}
 
+// Create a new SfCircularChart
 SfCircularChart chart = new SfCircularChart();
+
+// Create a DoubleCollection to store dash array values for the connector line
 DoubleCollection doubleCollection = new DoubleCollection();
 doubleCollection.Add(5);
 doubleCollection.Add(2);
-. . .
+// ... (add more values as needed)
+
 PieSeries series = new PieSeries()
 {
     ItemsSource = viewModel.Data,
@@ -401,17 +437,20 @@ PieSeries series = new PieSeries()
     ShowDataLabels = true,
 };
 
+// Create a ConnectorLineStyle to customize the appearance of connector lines
 var connectorLineStyle = new ConnectorLineStyle
 {
-    StrokeDashArray = doubleCollection,
-    ConnectorType = ConnectorType = ConnectorType.Curve,
-    Stroke = Colors.Black,
-    StrokeWidth = 3
+    StrokeDashArray = doubleCollection,  // Set the dash pattern for the line
+    ConnectorType = ConnectorType.Curve, // Set the connector line type to curve
+    Stroke = Colors.Black,               // Set the line color
+    StrokeWidth = 3                      // Set the line width
 };
+
+// Configure data label settings for the series
 series.DataLabelSettings = new CircularDataLabelSettings()
 {
-    LabelPosition="Outside"
-    ConnectorLineSettings = connectorLineStyle
+    LabelPosition = "Outside",              // Position labels outside the chart
+    ConnectorLineSettings = connectorLineStyle  // Apply the connector line style
 };
 
 chart.Series.Add(series);
