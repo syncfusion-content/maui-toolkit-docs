@@ -367,7 +367,7 @@ The following code example gives you the complete code of above configurations.
         </chart:SfPyramidChart.Title>
 
         <chart:SfPyramidChart.BindingContext>
-            <model:ChartViewModel/>
+            <model:StageViewModel/>
         </chart:SfPyramidChart.BindingContext>
 
         <chart:SfPyramidChart.Legend>
@@ -396,7 +396,7 @@ public partial class MainPage : ContentPage
             Text = "Pyramid Stages"
         };
         chart.Legend = new ChartLegend();
-        ViewModel viewModel = new ViewModel();
+        StageViewModel viewModel = new StageViewModel();
         chart.BindingContext = viewModel;
 
         chart.ItemsSource = viewModel.Data;

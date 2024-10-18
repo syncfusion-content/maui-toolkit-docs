@@ -369,7 +369,7 @@ The following code example gives you the complete code of above configurations.
         </chart:SfFunnelChart.Title>
 
         <chart:SfFunnelChart.BindingContext>
-            <model:ChartViewModel/>
+            <model:AdmissionViewModel/>
         </chart:SfFunnelChart.BindingContext>
 
         <chart:SfFunnelChart.Legend>
@@ -397,7 +397,7 @@ public partial class MainPage : ContentPage
             Text = "School Admission"
         };
         chart.Legend = new ChartLegend();
-        ViewModel viewModel = new ViewModel();
+        AdmissionViewModel viewModel = new AdmissionViewModel();
         chart.BindingContext = viewModel;
 
         chart.ItemsSource = viewModel.Data;

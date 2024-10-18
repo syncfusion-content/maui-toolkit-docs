@@ -527,7 +527,8 @@ namespace ChartGettingStarted
     {
         public MainPage()
         {
-            InitializeComponent();            
+            InitializeComponent();  
+            this.BindingContext = new PersonViewModel();          
             SfCartesianChart chart = new SfCartesianChart();
 
             chart.Title = new Label()
