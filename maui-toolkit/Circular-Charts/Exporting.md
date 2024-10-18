@@ -21,11 +21,17 @@ The following code snippet demonstrates the usage of this method:
 
 {% highlight c# %}
 
+// Create a new instance of SfCircularChart
 SfCircularChart chart = new SfCircularChart();
-...
-chart.SaveAsImage("ChartSample.jpeg");
 
+// ... (Other chart configuration code goes here)
+
+// Set the chart as the content of the current page or container
 this.Content = chart;
+
+. . .
+// Dynamically save the chart as an image file named "ChartSample.jpeg"
+chart.SaveAsImage("ChartSample.jpeg");
 
 {% endhighlight %}
 
@@ -74,17 +80,20 @@ The following code snippet demonstrates the usage of this method:
 
 {% highlight c# %}
 
+// Create a new instance of SfCircularChart
 SfCircularChart chart = new SfCircularChart();
-...
-await chart.GetStreamAsync(ImageFileFormat.Jpeg);
 
+// ... (Other chart configuration code goes here)
+
+// Set the chart as the content of the current page or container
 this.Content = chart;
+
+// Export the chart as a JPEG image asynchronously
+// The GetStreamAsync method returns a stream containing the image data
+await chart.GetStreamAsync(ImageFileFormat.Jpeg);
 
 {% endhighlight %}
 
 {% endtabs %}
 
 N> You can refer to our [.NET MAUI Charts](https://www.syncfusion.com/maui-controls) feature tour page for its groundbreaking feature representations. You can also explore our [.NET MAUI Charts example](https://github.com/syncfusion/maui-demos) to knows various chart types and how to easily configured with built-in support for creating stunning visual effects.
-
-
-
