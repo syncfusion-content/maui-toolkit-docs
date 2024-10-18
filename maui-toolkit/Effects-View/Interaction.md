@@ -17,19 +17,18 @@ The [TouchDownEffects](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Ma
 
 {% tabs %} 
 
-{% highlight xaml %} 
+{% highlight xaml %}
 
 <ContentPage 
-    ...
     xmlns:effectsView="clr-namespace:Syncfusion.Maui.Toolkit.EffectsView;assembly=Syncfusion.Maui.Toolkit">
     <ContentPage.Content> 
-	 	<effectsView:SfEffectsView TouchDownEffects="Ripple"/>
+	<effectsView:SfEffectsView TouchDownEffects="Ripple"/>
 	</ContentPage.Content> 
 </ContentPage>
 
 {% endhighlight %}
 
-{% highlight C# %} 
+{% highlight C# %}
 
 using Syncfusion.Maui.Toolkit.EffectsView;
 
@@ -37,6 +36,8 @@ var effectsView = new SfEffectsView
 {
     TouchDownEffects = SfEffects.Ripple
 };
+
+this.Content = effectsView;
 
 {% endhighlight %}
 
@@ -48,19 +49,18 @@ The [LongPressEffects](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Ma
 
 {% tabs %} 
 
-{% highlight xaml %} 
+{% highlight xaml %}
 
 <ContentPage 
-    ...
     xmlns:effectsView="clr-namespace:Syncfusion.Maui.Toolkit.EffectsView;assembly=Syncfusion.Maui.Toolkit">
     <ContentPage.Content> 
-	 	<effectsView:SfEffectsView LongPressEffects="Ripple"/>
+	<effectsView:SfEffectsView LongPressEffects="Ripple"/>
 	</ContentPage.Content> 
 </ContentPage>
 
 {% endhighlight %}
 
-{% highlight C# %} 
+{% highlight C# %}
 
 using Syncfusion.Maui.Toolkit.EffectsView;
 
@@ -68,6 +68,8 @@ var effectsView = new SfEffectsView
 {
     LongPressEffects = SfEffects.Ripple
 };
+
+this.Content = effectsView;
 
 {% endhighlight %}
 
@@ -79,19 +81,18 @@ The [TouchUpEffects](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui
 
 {% tabs %} 
 
-{% highlight xaml %} 
+{% highlight xaml %}
 
 <ContentPage 
-    ...
     xmlns:effectsView="clr-namespace:Syncfusion.Maui.Toolkit.EffectsView;assembly=Syncfusion.Maui.Toolkit">
     <ContentPage.Content> 
-	 	<effectsView:SfEffectsView TouchUpEffects="Ripple"/>
+	<effectsView:SfEffectsView TouchUpEffects="Ripple"/>
 	</ContentPage.Content> 
 </ContentPage>
 
 {% endhighlight %}
 
-{% highlight C# %} 
+{% highlight C# %}
 
 using Syncfusion.Maui.Toolkit.EffectsView;
 
@@ -99,6 +100,8 @@ var effectsView = new SfEffectsView
 {
     TouchUpEffects = SfEffects.Ripple
 };
+
+this.Content = effectsView;
 
 {% endhighlight %}
 

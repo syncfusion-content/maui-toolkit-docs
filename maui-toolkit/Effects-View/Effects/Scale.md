@@ -9,27 +9,26 @@ documentation: ug
 
 # Scale Effect in .NET MAUI Effects View (SfEffectsView)
 
-[SfEffects.Scale](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.EffectsView.SfEffects.html#Syncfusion_Maui_Toolkit_EffectsView_SfEffects_Scale) is a smooth transition on the size of the [SfEffectsView.Content](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.EffectsView.SfEffectsView.html#Syncfusion_Maui_Toolkit_EffectsView_SfEffectsView_Content) from its actual size to the size calculated based on [ScaleFactor](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.EffectsView.SfEffectsView.html#Syncfusion_Maui_Toolkit_EffectsView_SfEffectsView_ScaleFactor) in pixels.
+[SfEffects.Scale](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.EffectsView.SfEffects.html#Syncfusion_Maui_Toolkit_EffectsView_SfEffects_Scale) is a smooth transition on the size of the [SfEffectsView.Content](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SfContentView.html#Syncfusion_Maui_Toolkit_SfContentView_Content) from its actual size to the size calculated based on [ScaleFactor](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.EffectsView.SfEffectsView.html#Syncfusion_Maui_Toolkit_EffectsView_SfEffectsView_ScaleFactor) in pixels.
 
 {% tabs %} 
 
-{% highlight xaml %} 
+{% highlight xaml %}
 
 <ContentPage 
-            ...
-            xmlns:effectsView="clr-namespace:Syncfusion.Maui.Toolkit.EffectsView;assembly=Syncfusion.Maui.Toolkit">
+    xmlns:effectsView="clr-namespace:Syncfusion.Maui.Toolkit.EffectsView;assembly=Syncfusion.Maui.Toolkit">
     <ContentPage.Content> 
-	 	<effectsView:SfEffectsView
-    ScaleFactor="0.85"
-    TouchDownEffects="None"
-    TouchUpEffects="None"
-    LongPressEffects="Scale" /> 
+	<effectsView:SfEffectsView
+        ScaleFactor="0.85"
+        TouchDownEffects="None"
+        TouchUpEffects="None"
+        LongPressEffects="Scale" /> 
 	</ContentPage.Content> 
 </ContentPage>
 
 {% endhighlight %}
 
-{% highlight C# %} 
+{% highlight C# %}
 
 using Syncfusion.Maui.Toolkit.EffectsView;
 
@@ -40,6 +39,7 @@ var effectsView = new SfEffectsView
     TouchUpEffects = SfEffects.None,
     LongPressEffects = SfEffects.Scale
 };
+this.Content = effectsView;  
 
 {% endhighlight %}
 

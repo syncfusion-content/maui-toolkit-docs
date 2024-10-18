@@ -13,19 +13,18 @@ The [SfEffects.Ripple](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Ma
 
 {% tabs %} 
 
-{% highlight xaml %} 
+{% highlight xaml %}
 
 <ContentPage 
-            ...
-            xmlns:effectsView="clr-namespace:Syncfusion.Maui.Toolkit.EffectsView;assembly=Syncfusion.Maui.Toolkit">
+   xmlns:effectsView="clr-namespace:Syncfusion.Maui.Toolkit.EffectsView;assembly=Syncfusion.Maui.Toolkit">
     <ContentPage.Content> 
-	 	<effectsView:SfEffectsView  TouchDownEffects="Ripple" /> 
+	<effectsView:SfEffectsView TouchDownEffects="Ripple" /> 
 	</ContentPage.Content> 
 </ContentPage>
 
 {% endhighlight %}
 
-{% highlight C# %} 
+{% highlight C# %}
 
 using Syncfusion.Maui.Toolkit.EffectsView;
 
@@ -33,6 +32,7 @@ var effectsView = new SfEffectsView()
 {
     TouchDownEffects = SfEffects.Ripple
 };
+this.Content = effectsView;  
 
 {% endhighlight %}
 
