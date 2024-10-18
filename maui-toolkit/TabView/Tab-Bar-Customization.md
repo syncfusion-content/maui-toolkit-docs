@@ -28,7 +28,8 @@ To set the tab width mode, use the following code:
 {% endhighlight %}
 
 {% highlight C# %}
-     tabView.TabWidthMode = TabWidthMode.Default;
+SfTabView tabView = new SfTabView();
+tabView.TabWidthMode = TabWidthMode.Default;
 {% endhighlight %}
 
 {% endtabs %}
@@ -50,7 +51,8 @@ To set the tab width mode to fit the content, use the following code:
 {% endhighlight %}
 
 {% highlight C# %}
-     tabView.TabWidthMode = TabWidthMode.SizeToContent;
+SfTabView tabView = new SfTabView();
+tabView.TabWidthMode = TabWidthMode.SizeToContent;
 {% endhighlight %}
 
 {% endtabs %}
@@ -74,7 +76,8 @@ To set the tab bar height, use the following code:
 {% endhighlight %}
 
 {% highlight C# %}
-     tabView.TabBarHeight = 100;
+SfTabView tabView = new SfTabView();
+tabView.TabBarHeight = 100;
 {% endhighlight %}
 
 {% endtabs %}
@@ -95,7 +98,8 @@ To set the horizontal text alignment of the tab header, use the following code:
 <tabView:SfTabView HeaderHorizontalTextAlignment="Center"> 
 {% endhighlight %}
 
-{% highlight C# %} 
+{% highlight C# %}
+SfTabView tabView = new SfTabView(); 
 tabView.HeaderHorizontalTextAlignment = TextAlignment.Center; {% endhighlight %}
 
 {% endtabs %}
@@ -117,7 +121,8 @@ In this option, the tab bar will be placed above the content region of the tab v
 {% endhighlight %}
 
 {% highlight C# %}
-     tabView.TabBarPlacement = TabBarPlacement.Top;
+SfTabView tabView = new SfTabView();
+tabView.TabBarPlacement = TabBarPlacement.Top;
 {% endhighlight %}
 
 {% endtabs %}
@@ -137,7 +142,8 @@ In this option, the tab bar will be placed below the content region of the tab v
 {% endhighlight %}
 
 {% highlight C# %}
-     tabView.TabBarPlacement = TabBarPlacement.Bottom;
+SfTabView tabView = new SfTabView();
+tabView.TabBarPlacement = TabBarPlacement.Bottom;
 {% endhighlight %}
 
 {% endtabs %}
@@ -163,7 +169,8 @@ To set a solid color as the background, use the following code:
 {% endhighlight %}
 
 {% highlight C# %}
-     tabView.TabBarBackground = Colors.LightBlue;
+SfTabView tabView = new SfTabView();
+tabView.TabBarBackground = Colors.LightBlue;
 {% endhighlight %}
 
 {% endtabs %}

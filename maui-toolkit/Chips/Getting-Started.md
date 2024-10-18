@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started with .NET MAUI Chips
 
-This section provides instructions for setting up and configuring Chips control (SfChip) in your .NET MAUI application. Follow the steps below to integrate a basic Chips component into your project.
+This section provides instructions for setting up and configuring Chips control [Chips](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Chips.html) in your .NET MAUI application. Follow the steps below to integrate a basic Chips component into your project.
 
 ## Prerequisites
 
@@ -37,7 +37,7 @@ Before proceeding, ensure the following are setup:
 
 ### Visual Studio
 1. In **Solution Explorer**, right-click the project and choose **Manage NuGet Packages**.
-2. Search for [Syncfusion.Maui.Toolkit](https://www.nuget.org/packages/Syncfusion.Maui.Toolkit/) and install the latest version.
+2. Search for [Syncfusion.Maui.Toolkit](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.html) and install the latest version.
 3. Ensure the necessary dependencies are installed correctly, and the project is restored.
 
 ### Visual Studio Code
@@ -148,7 +148,7 @@ this.Content = grid;
 
 ## Set layout for the control
 
-The chips control creates chip for each object and arranges chips in a StackLayout with horizontal orientation. Any layout can be used to arrange the chips in the chips control. In the following example, the `FlexLayout` has been used. 
+The chips control creates chip for each object and arranges chips in a `StackLayout` with horizontal orientation. Any layout can be used to arrange the chips in the chips control. In the following example, the `FlexLayout` has been used. 
 
 {% tabs %}
 
@@ -160,8 +160,7 @@ The chips control creates chip for each object and arranges chips in a StackLayo
 			<ChipControl:SfChipGroup.ChipLayout>
 				<FlexLayout 
 					HorizontalOptions="Start" 
-					VerticalOptions="Center" 
-					/> 
+					VerticalOptions="Center"/> 
 			</ChipControl:SfChipGroup.ChipLayout>
 		</ChipControl:SfChipGroup> 
 	</Grid>
@@ -177,10 +176,10 @@ SfChipGroup chipGroup = new SfChipGroup();
 chipGroup.DispalyMemberPath="Name";
 grid.Children.Add(chipGroup);
 FlexLayout layout = new FlexLayout()
-	{
-		HorizontalOptions = LayoutOptions.Start,
-		VerticalOptions = LayoutOptions.Center,
-	};
+{
+	HorizontalOptions = LayoutOptions.Start,
+	VerticalOptions = LayoutOptions.Center,
+};
 chipGroup.ChipLayout = layout;
 this.Content = grid;
 		
@@ -190,14 +189,14 @@ this.Content = grid;
 
 ## Populating business objects
 
-Now, define a simple data model of person with the name and image properties. Create a view model class and initialize a collection of persons as shown in the following code sample.
+Now, define a simple data model of Employee with the name and image properties. Create a view model class and initialize a collection of Employee as shown in the following code sample.
 
 {% highlight c# %}
 
 namespace Chips
 {
 	//Model class for chips
-	public class Person
+	public class Employee
 	{
 		public string Name
 		{
@@ -218,8 +217,8 @@ namespace Chips
 	//View model class for chips
 	public class ViewModel : INotifyPropertyChanged
 	{
-		private ObservableCollection<Person> employees;
-		public ObservableCollection<Person> Employees
+		private ObservableCollection<Employee> employees;
+		public ObservableCollection<Employee> Employees
 		{
 			get { return employees; }
 			set { Employees = value; OnPropertyChanged("Employees"); }
@@ -227,12 +226,12 @@ namespace Chips
 
 		public ViewModel()
 		{
-			employees = new ObservableCollection<Person>();
-			employees.Add(new Person() { Name = "John" });
-			employees.Add(new Person() { Name = "James" });
-			employees.Add(new Person() { Name = "Linda" });
-			employees.Add(new Person() { Name = "Rose" });
-			employees.Add(new Person() { Name = "Mark" });
+			employees = new ObservableCollection<Employee>();
+			employees.Add(new Employee() { Name = "John" });
+			employees.Add(new Employee() { Name = "James" });
+			employees.Add(new Employee() { Name = "Linda" });
+			employees.Add(new Employee() { Name = "Rose" });
+			employees.Add(new Employee() { Name = "Mark" });
 		}
 
 		public event PropertyChangedEventHandler PropertyChanged;
@@ -301,10 +300,10 @@ this.Content = grid;
 
 ## Set types of chip group
 
-The functionality of chips control differ based on its `ChipType` property.
+The functionality of chips control differ based on its [ChipType](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Chips.SfChipGroup.html#Syncfusion_Maui_Toolkit_Chips_SfChipGroup_ChipType) property.
 By default type of chips control have Input type. Input chip types have close button, using it chip can be can removed dynamically from children and the layout.
 
-The following code example uses the `Action` type. In Action type, `Command` property of `SfChipGroup` is executed when any chip in the group is tapped. Here the Employee name of corresponding chip is set as label text when the Command is executed.
+The following code example uses the [Action](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Chips.SfChipsType.html#Syncfusion_Maui_Toolkit_Chips_SfChipsType_Action) type. In Action type, [Command](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Chips.SfChipGroup.html#Syncfusion_Maui_Toolkit_Chips_SfChipGroup_Command) property of [SfChipGroup](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Chips.SfChipGroup.html) is executed when any chip in the group is tapped. Here the Employee name of corresponding chip is set as label text when the Command is executed.
 
 {% tabs %}
 
@@ -347,18 +346,15 @@ namespace Chips
 	public class ViewModel :INotifyPropertyChanged
 	{
 		private ICommand actionCommand;
-
-		private ObservableCollection<Person> employees;
-
+		private ObservableCollection<Employee> employees;
 		private string result;
-
 		public ICommand ActionCommand
     	{
 			get { return actionCommand; }
 			set { actionCommand = value; }
     	}
     
-    	public ObservableCollection<Person> Employees
+    	public ObservableCollection<Employee> Employees
     	{
         	get { return employees; }
         	set { Employees = value; OnPropertyChanged("Employees"); }
@@ -373,12 +369,12 @@ namespace Chips
 		public ViewModel()
 		{
 			ActionCommand = new Command(HandleAction);
-			employees = new ObservableCollection<Person>();
-			employees.Add(new Person() { Name = "John" });
-			employees.Add(new Person() { Name = "James" });
-			employees.Add(new Person() { Name = "Linda" });
-			employees.Add(new Person() { Name = "Rose" });
-			employees.Add(new Person() { Name = "Mark" });
+			employees = new ObservableCollection<Employee>();
+			employees.Add(new Employee() { Name = "John" });
+			employees.Add(new Employee() { Name = "James" });
+			employees.Add(new Employee() { Name = "Linda" });
+			employees.Add(new Employee() { Name = "Rose" });
+			employees.Add(new Employee() { Name = "Mark" });
 		}
 
 		public event PropertyChangedEventHandler PropertyChanged;
@@ -393,7 +389,7 @@ namespace Chips
 
 		private void HandleAction(object obj)
 		{
-			Result = (obj as Person).Name.ToString();
+			Result = (obj as Employee).Name.ToString();
 		}
 	}
 }
@@ -403,7 +399,5 @@ namespace Chips
 {% endtabs %}
 
 ![ChipGroup sample with display member path and itemsSource demo](images/getting-started/action.png)
-
-N> You can find the getting started sample of .NET MAUI SfChipGroup from this [link.](https://github.com/SyncfusionExamples/Getting-Started-with-.NET-MAUI-Chips)
 
 N> You can refer to our [.NET MAUI Chips](https://www.syncfusion.com/maui-controls/maui-chips) feature tour page for its groundbreaking feature representations. You can also explore our [.NET MAUI Chips Example](https://github.com/syncfusion/maui-demos/tree/master/MAUI/Chips) that shows you how to render the Chips in .NET MAUI.
