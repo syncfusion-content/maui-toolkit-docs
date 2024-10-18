@@ -29,32 +29,41 @@ By default, the chart applies a set of predefined brushes to the series in a spe
 
 {% highlight c# %}
 
+// Create a new SfPolarChart instance
 SfPolarChart chart = new SfPolarChart();
+
+var viewModel = new ViewModel();
 . . .
+// Define the first PolarLineSeries
 PolarLineSeries series1 = new PolarLineSeries()
 {
-    ItemsSource = new ViewModel().PlantDetails,
-    XBindingPath = "Direction",
-    YBindingPath = "Tree"
+    ItemsSource = viewModel.PlantDetails, 
+    XBindingPath = "Direction", 
+    YBindingPath = "Tree" 
 };
 
+// Define the second PolarLineSeries
 PolarLineSeries series2 = new PolarLineSeries()
 {
-    ItemsSource = new ViewModel().PlantDetails,
-    XBindingPath = "Direction",
-    YBindingPath = "Weed"
+    ItemsSource = viewModel.PlantDetails, 
+    XBindingPath = "Direction", 
+    YBindingPath = "Weed" 
 };
 
+// Define the third PolarLineSeries
 PolarLineSeries series3 = new PolarLineSeries()
 {
-    ItemsSource = new ViewModel().PlantDetails,
-    XBindingPath = "Direction",
-    YBindingPath = "Flower"
+    ItemsSource = viewModel.PlantDetails, 
+    XBindingPath = "Direction", 
+    YBindingPath = "Flower" 
 };
 
+// Add all three series to the chart
 chart.Series.Add(series1);
 chart.Series.Add(series2);
 chart.Series.Add(series3);
+
+// Set the chart as the content of the current page or control
 this.Content = chart;
 
 {% endhighlight %}
@@ -79,16 +88,23 @@ The [SfPolarChart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.T
 
 {% highlight c# %}
 
+// Create a new instance of SfPolarChart
 SfPolarChart chart = new SfPolarChart();
+
+// Define a list of custom brushes for the chart
 List<Brush> CustomBrushes = new List<Brush>()
 {
-	new SolidColorBrush(Color.FromArgb("#25E739")),
-	new SolidColorBrush(Color.FromArgb("#F4890B")),
-	new SolidColorBrush(Color.FromArgb("#E2227E"))
+    new SolidColorBrush(Color.FromArgb("#25E739")),
+    new SolidColorBrush(Color.FromArgb("#F4890B")),
+    new SolidColorBrush(Color.FromArgb("#E2227E"))
 };
 
+// Set the custom palette brushes for the chart
 this.chart.PaletteBrushes = CustomBrushes;
-. . .
+
+// ... (other chart configurations)
+
+// Set the chart as the content of the current view
 this.Content = chart;
 
 {% endhighlight %}
@@ -120,53 +136,43 @@ The following code sample and screenshot illustrates how to apply the gradient b
 
 public class ViewModel
 {
-	public ObservableCollection<Model> Data { get; set; }
-	public List<Brush> CustomBrushes { get; set; }
-	public ViewModel()
-	{
-		CustomBrushes = new List<Brush>();
-		LinearGradientBrush gradientColor1 = new LinearGradientBrush();
-		gradientColor1.GradientStops = new GradientStopCollection()
-		{
-			new GradientStop() { Offset = 1, Color = Color.FromRgb(168, 234, 238) },
-			new GradientStop() { Offset = 0, Color = Color.FromRgb(123, 176, 249) }
-		};
+    // Collection to hold data for the chart
+    public ObservableCollection<Model> Data { get; set; }
 
-		LinearGradientBrush gradientColor2 = new LinearGradientBrush();
-		gradientColor2.GradientStops = new GradientStopCollection()
-		{
-			new GradientStop() { Offset = 1, Color = Color.FromRgb(221, 214, 243) },
-			new GradientStop() { Offset = 0, Color = Color.FromRgb(250, 172, 168) }
-		};
+    // List to store custom brushes for chart styling
+    public List<Brush> CustomBrushes { get; set; }
 
-		LinearGradientBrush gradientColor3 = new LinearGradientBrush();
-		gradientColor3.GradientStops = new GradientStopCollection()
-		{
-			new GradientStop() { Offset = 1, Color = Color.FromRgb(255, 231, 199) },
-			new GradientStop() { Offset = 0, Color = Color.FromRgb(252, 182, 159) }
-		};
+    public ViewModel()
+    {
+        CustomBrushes = new List<Brush>();
 
-		LinearGradientBrush gradientColor4 = new LinearGradientBrush();
-		gradientColor4.GradientStops = new GradientStopCollection()
-		{
-			new GradientStop() { Offset = 1, Color = Color.FromRgb(255, 231, 199) },
-			new GradientStop() { Offset = 0, Color = Color.FromRgb(252, 182, 159) }
-		};
+        LinearGradientBrush gradientColor1 = new LinearGradientBrush(); // Create and configure gradient brush 1
+        gradientColor1.GradientStops = new GradientStopCollection()
+        {
+            new GradientStop() { Offset = 1, Color = Color.FromRgb(168, 234, 238) },
+            new GradientStop() { Offset = 0, Color = Color.FromRgb(123, 176, 249) }
+        };
 
-		LinearGradientBrush gradientColor5 = new LinearGradientBrush();
-		gradientColor5.GradientStops = new GradientStopCollection()
-		{
-			new GradientStop() { Offset = 1, Color = Color.FromRgb(250, 221, 125) },
-			new GradientStop() { Offset = 0, Color = Color.FromRgb(252, 204, 45) }
-		};
+        LinearGradientBrush gradientColor2 = new LinearGradientBrush(); // Create and configure gradient brush 2
+        gradientColor2.GradientStops = new GradientStopCollection()
+        {
+            new GradientStop() { Offset = 1, Color = Color.FromRgb(221, 214, 243) },
+            new GradientStop() { Offset = 0, Color = Color.FromRgb(250, 172, 168) }
+        };
 
-		CustomBrushes.Add(gradientColor1);
-		CustomBrushes.Add(gradientColor2);
-		CustomBrushes.Add(gradientColor3);
-		CustomBrushes.Add(gradientColor4);
-		CustomBrushes.Add(gradientColor5);
-	}
-. . .
+        LinearGradientBrush gradientColor3 = new LinearGradientBrush(); // Create and configure gradient brush 3
+        gradientColor3.GradientStops = new GradientStopCollection()
+        {
+            new GradientStop() { Offset = 1, Color = Color.FromRgb(255, 231, 199) },
+            new GradientStop() { Offset = 0, Color = Color.FromRgb(252, 182, 159) }
+        };
+
+        // Add all created gradient brushes to the CustomBrushes list
+        CustomBrushes.Add(gradientColor1);
+        CustomBrushes.Add(gradientColor2);
+        CustomBrushes.Add(gradientColor3);
+    }
+    // ... (other methods)
 }
 
 {% endhighlight %}
@@ -202,32 +208,41 @@ public class ViewModel
 {% endhighlight %}
 
 {% highlight c# %}
-
+// Create a new SfPolarChart instance
 SfPolarChart chart = new SfPolarChart();
+
+// Create an AbsoluteLayout to hold the copyright and watermark
 AbsoluteLayout absoluteLayout = new AbsoluteLayout();
+// Create a Label for the copyright text
 var copyRight = new Label() 
 {
-	Text = "Copyright @ 2001 - 2024 Syncfusion Inc",
- 	FontSize = 18,Opacity = 0.4
+    Text = "Copyright @ 2001 - 2024 Syncfusion Inc",
+    FontSize = 18,
+    Opacity = 0.4
 };
 
 AbsoluteLayout.SetLayoutBounds(copyRight, new Rect(1, 1, -1, -1));
 AbsoluteLayout.SetLayoutFlags(copyRight, Microsoft.Maui.Layouts.AbsoluteLayoutFlags.PositionProportional);
 absoluteLayout.Children.Add(copyRight);
+
+// Create a Label for the watermark
 var watermark = new Label()
 {
-	Text = "CONFIDENTIAL",
- 	Rotation = 340,
-  	FontSize = 80,
-   	FontAttributes = FontAttributes.Bold,
-    	TextColor = Colors.Gray, 
-     	Opacity = 0.3
+    Text = "CONFIDENTIAL",
+    Rotation = 340,
+    FontSize = 80,
+    FontAttributes = FontAttributes.Bold,
+    TextColor = Colors.Gray, 
+    Opacity = 0.3
 };
 
 AbsoluteLayout.SetLayoutBounds(watermark, new Rect(0.5, 0.5, -1, -1));
 AbsoluteLayout.SetLayoutFlags(watermark, Microsoft.Maui.Layouts.AbsoluteLayoutFlags.PositionProportional);
 absoluteLayout.Children.Add(watermark);
-chart.PlotAreaBackgroundView = absoluteLayout;
+
+chart.PlotAreaBackgroundView = absoluteLayout; // Set the AbsoluteLayout as the PlotAreaBackgroundView of the chart
+
+// Set the chart as the content of the current page or view
 this.Content = chart;
 
 {% endhighlight %}
