@@ -309,7 +309,7 @@ chart.YAxes.Add(secondaryAxis);
 ColumnSeries series = new ColumnSeries();
 series.Label = "Height";
 series.ShowDataLabels = true;
-series.ItemsSource = (new ViewModel()).Data;
+series.ItemsSource = (new PersonViewModel()).Data;
 series.XBindingPath = "Name";
 series.YBindingPath = "Height";
 
@@ -424,7 +424,7 @@ N> Additionally, set label for each series using the `Label` property of chart s
 {% highlight C# %}
 
 ColumnSeries series = new ColumnSeries (); 
-series.ItemsSource = (new ViewModel()).Data;
+series.ItemsSource = (new PersonViewModel()).Data;
 series.XBindingPath = "Name"; 
 series.YBindingPath = "Height"; 
 series.Label = "Height";

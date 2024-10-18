@@ -36,7 +36,7 @@ SfPyramidChart chart = new SfPyramidChart()
 {
     XBindingPath = "Name",
     YBindingPath = "Value",
-    ItemsSource = new ViewModel().Data,
+    ItemsSource = new StageViewModel().Data,
 };
 
 chart.Legend = new ChartLegend();
@@ -67,7 +67,7 @@ The visibility of the chart legend can be controlled using the [IsVisible](https
 
 SfPyramidChart chart = new SfPyramidChart()
 {
-    ItemsSource = new ViewModel().Data,
+    ItemsSource = new StageViewModel().Data,
     XBindingPath = "Name",
     YBindingPath = "Value",
 };
@@ -161,7 +161,7 @@ To specify the legend icon based on associate series type using the [LegendIcon]
 
 SfPyramidChart chart = new SfPyramidChart()
 {
-    ItemsSource = new ViewModel().Data,
+    ItemsSource = new StageViewModel().Data,
     XBindingPath = "Name",
     YBindingPath = "Value",
     LegendIcon = ChartLegendIconType.Diamond
@@ -198,7 +198,7 @@ SfPyramidChart chart = new SfPyramidChart()
 {
     XBindingPath = "Name",
     YBindingPath = "Value",
-    ItemsSource = new ViewModel().Data,
+    ItemsSource = new StageViewModel().Data,
 
 };
    
@@ -236,7 +236,7 @@ The visibility of segments in the pyramid chart can be controlled by tapping the
 
 SfPyramidChart pyramidChart = new SfPyramidChart()
 {
-    ItemsSource = viewModel.Data,
+    ItemsSource = StageViewModel.Data,
     XBindingPath = "Name",
     YBindingPath = "Value"
 };
@@ -315,7 +315,7 @@ SfPyramidChart chart = new SfPyramidChart()
 {
     XBindingPath = "Name",
     YBindingPath = "Value",
-    ItemsSource = new ViewModel().Data,
+    ItemsSource = new StageViewModel().Data,
 };
 . . .
 ChartLegend legend = new ChartLegend();
@@ -369,7 +369,7 @@ N> The BindingContext of the template is the corresponding underlying legend ite
 
 SfPyramidChart chart = new SfPyramidChart()
 {
-    ItemsSource = new ViewModel().Data,
+    ItemsSource = new StageViewModel().Data,
     XBindingPath = "Name",
     YBindingPath = "Value",
 };

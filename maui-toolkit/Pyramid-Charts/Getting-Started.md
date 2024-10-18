@@ -229,7 +229,7 @@ Binding `Data` to the pyramid chart [ItemsSource](https://help.syncfusion.com/cr
 {% highlight C# %}
 
 SfPyramidChart chart = new SfPyramidChart();
-ViewModel viewModel = new ViewModel();
+StageViewModel viewModel = new StageViewModel();
 chart.BindingContext = viewModel;
 chart.ItemsSource = viewModel.Data;
 chart.XBindingPath = "Name";

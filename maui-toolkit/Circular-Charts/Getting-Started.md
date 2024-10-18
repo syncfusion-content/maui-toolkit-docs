@@ -233,7 +233,7 @@ N> To plot the series, the [XBindingPath](https://help.syncfusion.com/cr/maui-to
 {% highlight C# %}
 
 SfCircularChart chart = new SfCircularChart();
-ViewModel viewModel = new ViewModel();
+SalesViewModel viewModel = new SalesViewModel();
 chart.BindingContext = viewModel;
 PieSeries series = new PieSeries();
 series.ItemsSource = viewModel.Data;

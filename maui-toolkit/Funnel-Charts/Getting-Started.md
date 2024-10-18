@@ -231,7 +231,7 @@ Binding `Data` to the funnel chart [ItemsSource](https://help.syncfusion.com/cr/
 {% highlight C# %}
 
 SfFunnelChart chart = new SfFunnelChart();
-ViewModel viewModel = new ViewModel();
+AdmissionViewModel viewModel = new AdmissionViewModel();
 chart.ItemsSource = viewModel.Data;
 chart.XBindingPath = "XValue";
 chart.YBindingPath = "YValue";

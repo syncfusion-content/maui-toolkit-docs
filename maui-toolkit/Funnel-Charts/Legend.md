@@ -34,7 +34,7 @@ To define the legend in the chart, initialize the [ChartLegend](https://help.syn
 
 SfFunnelChart chart = new SfFunnelChart()
 {
-    ItemsSource = new ViewModel().Data,
+    ItemsSource = new AdmissionViewModel().Data,
     XBindingPath = "XValue",
     YBindingPath = "YValue",
 };
@@ -69,7 +69,7 @@ SfFunnelChart chart = new SfFunnelChart()
 {
     XBindingPath = "XValue",
     YBindingPath = "YValue",
-    ItemsSource = new ViewModel().Data,
+    ItemsSource = new AdmissionViewModel().Data,
 };
 
 chart.Legend = new ChartLegend()
@@ -161,7 +161,7 @@ To specify the legend icon based on associate series type using the [LegendIcon]
 
 SfFunnelChart chart = new SfFunnelChart()
 {
-    ItemsSource = new ViewModel().Data,
+    ItemsSource = new AdmissionViewModel().Data,
     XBindingPath = "XValue",
     YBindingPath = "YValue",
     LegendIcon = ChartLegendIconType.Diamond
@@ -233,7 +233,7 @@ The visibility of segments in the funnel chart can be controlled by tapping the 
 
 {% highlight c# %}
 
-ChartViewModel viewModel = new();
+AdmissionViewModel viewModel = new();
 
 SfFunnelChart funnelChart = new SfFunnelChart()
 {
@@ -315,7 +315,7 @@ SfFunnelChart chart = new SfFunnelChart()
 {
     XBindingPath = "XValue",
     YBindingPath = "YValue",
-    ItemsSource = new ViewModel().Data,
+    ItemsSource = new AdmissionViewModel().Data,
     LegendIcon = ChartLegendIconType.Diamond,
 };
 . . .
@@ -371,7 +371,7 @@ SfFunnelChart chart = new SfFunnelChart()
 {
     XBindingPath = "XValue",
     YBindingPath = "YValue",
-    ItemsSource = new ViewModel().Data,
+    ItemsSource = new AdmissionViewModel().Data,
 };
      
 ChartLegend legend = new ChartLegend();
