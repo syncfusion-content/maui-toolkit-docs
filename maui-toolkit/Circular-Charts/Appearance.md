@@ -13,7 +13,7 @@ The appearance of the [SfCircularChart](https://help.syncfusion.com/cr/maui-tool
 
 ## Custom PaletteBrushes
 
-The [SfCircularChart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCircularChart.html) provides support to define own brushes for series with preferred order by using the [PaletteBrushes](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartSeries.html#Syncfusion_Maui_Charts_ChartSeries_PaletteBrushes) property as shown in the following code example.
+The [SfCircularChart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCircularChart.html) provides support to define own brushes for series with preferred order by using the [PaletteBrushes](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartSeries.html#Syncfusion_Maui_Toolkit_Charts_ChartSeries_PaletteBrushes) property as shown in the following code example.
 
 {% tabs %}
 
@@ -57,7 +57,7 @@ public class ViewModel
 
 ## Applying Gradient
 
-The gradient for the circular chart can be set by using the [PaletteBrushes](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartSeries.html#Syncfusion_Maui_Charts_ChartSeries_PaletteBrushes) property of the series with the help of the `LinearGradientBrush` or `RadialGradientBrush`.
+The gradient for the circular chart can be set by using the [PaletteBrushes](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartSeries.html#Syncfusion_Maui_Toolkit_Charts_ChartSeries_PaletteBrushes) property of the series with the help of the `LinearGradientBrush` or `RadialGradientBrush`.
 
 {% tabs %}
 

@@ -13,9 +13,9 @@ documentation: ug
 
 Exploding a segment is used to pull attention to a specific area of the circular chart. The following properties are used to explode the segments in the circular chart.
 
-* [ExplodeIndex](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.PieSeries.html#Syncfusion_Maui_Charts_PieSeries_ExplodeIndex) - Used to explode any specific segment.
-* [ExplodeRadius](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.PieSeries.html#Syncfusion_Maui_Charts_PieSeries_ExplodeRadius) - Used to define the explode distance.
-* [ExplodeOnTouch](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.PieSeries.html#Syncfusion_Maui_Charts_PieSeries_ExplodeOnTouch) - Enables the segment to be exploded on touch/tap interaction.
+* [ExplodeIndex](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.PieSeries.html#Syncfusion_Maui_Toolkit_Charts_PieSeries_ExplodeIndex) - Used to explode any specific segment.
+* [ExplodeRadius](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.PieSeries.html#Syncfusion_Maui_Toolkit_Charts_PieSeries_ExplodeRadius) - Used to define the explode distance.
+* [ExplodeOnTouch](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.PieSeries.html#Syncfusion_Maui_Toolkit_Charts_PieSeries_ExplodeOnTouch) - Enables the segment to be exploded on touch/tap interaction.
 
 {% tabs %}
 
@@ -59,7 +59,7 @@ this.Content = chart;
 
 ## Exploding all the segments
 
-By setting the [ExplodeAll](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.PieSeries.html#Syncfusion_Maui_Charts_PieSeries_ExplodeAll) property of the [PieSeries](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.PieSeries.html) to true, all segments in a circular chart can be visually exploded and highlighted on touch or tap interaction.
+By setting the [ExplodeAll](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.PieSeries.html#Syncfusion_Maui_Toolkit_Charts_PieSeries_ExplodeAll) property of the [PieSeries](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.PieSeries.html) to true, all segments in a circular chart can be visually exploded and highlighted on touch or tap interaction.
 
 {% tabs %}
 
