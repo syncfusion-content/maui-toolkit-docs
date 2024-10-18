@@ -32,7 +32,7 @@ The [DrawerHeight](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.T
 	
 {% endhighlight %}	
 	
-{% highlight c# %} 
+{% highlight c# %}
 
 SfNavigationDrawer navigationDrawer = new SfNavigationDrawer();
 DrawerSettings drawerSettings = new DrawerSettings()
@@ -79,7 +79,7 @@ The [DrawerWidth](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.To
 	
 {% endhighlight %}	
 	
-{% highlight c# %} 
+{% highlight c# %}
 
 SfNavigationDrawer navigationDrawer = new SfNavigationDrawer();
 DrawerSettings drawerSettings = new DrawerSettings()

@@ -51,7 +51,7 @@ Before proceeding, ensure the following are set up:
 In the MauiProgram.cs file, register the handler for Syncfusion Toolkit.
 
 {% tabs %}
-{% highlight C# tabtitle="MauiProgram.cs" hl_lines="1 9" %}  
+{% highlight C# tabtitle="MauiProgram.cs" hl_lines="1 9" %}
 using Syncfusion.Maui.Toolkit.Hosting;
 
 public static class MauiProgram
@@ -71,6 +71,7 @@ public static class MauiProgram
         return builder.Build();
     }
 }
+
 {% endhighlight %}
 {% endtabs %} 
 

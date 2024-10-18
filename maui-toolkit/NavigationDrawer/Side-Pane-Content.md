@@ -194,7 +194,7 @@ N> The [DrawerFooterView](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion
 
 {% tabs %}
 
-{% highlight xaml %} 
+{% highlight xaml %}
 
 <navigationdrawer:SfNavigationDrawer x:Name="navigationDrawer">
     <navigationdrawer:SfNavigationDrawer.DrawerSettings>
@@ -251,7 +251,7 @@ The main content of the drawer is displayed between the header and footer conten
 
 {% tabs %}
 
-{% highlight xaml %} 
+{% highlight xaml %}
 
 <navigationdrawer:SfNavigationDrawer x:Name="navigationDrawer">
     <navigationdrawer:SfNavigationDrawer.DrawerSettings>
