@@ -112,16 +112,16 @@ You can customize the selection indicator's background using linear or radial gr
 {% tabs %}
 {% highlight xaml %}
 <tabView:SfTabView>
-	<!-- Set the indicator background to a linear gradient brush -->
-	<tabView:SfTabView.IndicatorBackground>
-		<LinearGradientBrush EndPoint="0,1">
-			<!-- Define the gradient stops for the linear gradient brush -->
-			<GradientStop Color="#009FFF"
-						  Offset="0.1" />
-			<GradientStop Color="#ec2F4B"
-						  Offset="1.0" />
-		</LinearGradientBrush>
-	</tabView:SfTabView.IndicatorBackground>
+    <!-- Set the indicator background to a linear gradient brush -->
+    <tabView:SfTabView.IndicatorBackground>
+        <LinearGradientBrush EndPoint="0,1">
+            <!-- Define the gradient stops for the linear gradient brush -->
+            <GradientStop Color="#009FFF"
+                          Offset="0.1" />
+            <GradientStop Color="#ec2F4B"
+                          Offset="1.0" />
+        </LinearGradientBrush>
+    </tabView:SfTabView.IndicatorBackground>
 </tabView:SfTabView>
 {% endhighlight %}
 {% highlight C# %}

@@ -24,7 +24,7 @@ The [TabItemTapped](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.
 
 <!-- Define the SfTabView control with a name and an event handler for the TabItemTapped event -->
 <tabView:SfTabView x:Name="tabView"
-				   TabItemTapped="TabView_TabItemTapped" />
+                   TabItemTapped="TabView_TabItemTapped" />
 
 {% endhighlight %}
 
@@ -65,7 +65,7 @@ The [SelectionChanging](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.M
 
 <!-- Define the SfTabView control with a name and an event handler for the SelectionChanging event -->
 <tabView:SfTabView x:Name="tabView"
-				   SelectionChanging="TabView_SelectionChanging" />
+                   SelectionChanging="TabView_SelectionChanging" />
 	
 {% endhighlight %}
 
@@ -104,7 +104,7 @@ The [SelectionChanged](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Ma
 
 <!-- Define the SfTabView control with a name and an event handler for the SelectionChanged event -->
 <tabView:SfTabView x:Name="tabView"
-				   SelectionChanged="TabView_SelectionChanged" />
+                   SelectionChanged="TabView_SelectionChanged" />
 	
 {% endhighlight %}
 

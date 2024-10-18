@@ -27,15 +27,15 @@ Below are examples of how to use this property in XAML and C#:
 
 <!-- Define the SfTabView control with the default header display mode -->
 <tabView:SfTabView HeaderDisplayMode="Default">
-	<!-- Define the first tab item with a header and an image source -->
-	<tabView:SfTabItem Header="Item1"
-					   ImageSource="avatar1.png" />
-	<!-- Define the second tab item with a header and an image source -->
-	<tabView:SfTabItem Header="Item2"
-					   ImageSource="avatar2.png" />
-	<!-- Define the third tab item with a header and an image source -->
-	<tabView:SfTabItem Header="Item3"
-					   ImageSource="avatar3.png" />
+    <!-- Define the first tab item with a header and an image source -->
+    <tabView:SfTabItem Header="Item1"
+                       ImageSource="avatar1.png" />
+    <!-- Define the second tab item with a header and an image source -->
+    <tabView:SfTabItem Header="Item2"
+                       ImageSource="avatar2.png" />
+    <!-- Define the third tab item with a header and an image source -->
+    <tabView:SfTabItem Header="Item3"
+                       ImageSource="avatar3.png" />
 </tabView:SfTabView>
 
 {% endhighlight %}
