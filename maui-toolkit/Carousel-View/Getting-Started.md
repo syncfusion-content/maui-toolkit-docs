@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting started with .NET MAUI Carousel View (SfCarousel) control | Syncfusion
+title: Getting started with .NET MAUI Carousel View control | Syncfusion
 description: Learn how to set up, configure, and use the Syncfusion .NET MAUI Carousel View (SfCarousel) control in your cross-platform applications.
 platform: maui
 control: Carousel
@@ -37,12 +37,12 @@ Before proceeding, ensure the following are setup:
 ### Visual Studio
 
 1. In **Solution Explorer**, right-click the project and choose **Manage NuGet Packages**.
-2. Search for [Syncfusion.Maui.Toolkit](https://www.nuget.org/packages/Syncfusion.Maui.Toolkit/) and install the latest version.
+2. Search for [Syncfusion.Maui.Toolkit](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.html) and install the latest version.
 3. Ensure the necessary dependencies are installed correctly, and the project is restored.
 
 ### Visual Studio Code
 
-1. Press <kbd>Ctrl</kbd> + <kbd>`</kbd> (backtick) to open the integrated terminal in Visual Studio Code.
+1. Press <kbd>Ctrl</kbd> + <kbd>`</kbd> (back tick) to open the integrated terminal in Visual Studio Code.
 2. Ensure you're in the project root directory where your .csproj file is located.
 3. Run the command `dotnet add package Syncfusion.Maui.Toolkit` to install the Syncfusion .NET MAUI Toolkit NuGet package.
 4. To ensure all dependencies are installed, run `dotnet restore`.
@@ -52,7 +52,9 @@ Before proceeding, ensure the following are setup:
 In the **MauiProgram.cs** file, register the handler for Syncfusion Toolkit.
 
 {% tabs %}
-{% highlight C# tabtitle="MauiProgram.cs" hl_lines="1 9" %}    
+
+{% highlight C# tabtitle="MauiProgram.cs" hl_lines="1 9" %}
+
     using Syncfusion.Maui.Toolkit.Hosting;
 
     public static class MauiProgram
@@ -72,7 +74,9 @@ In the **MauiProgram.cs** file, register the handler for Syncfusion Toolkit.
 		    return builder.Build();
 	    }
     }
+
 {% endhighlight %}
+
 {% endtabs %} 
 
 ## Step 4: Add a Basic Carousel
@@ -86,9 +90,11 @@ In the **MauiProgram.cs** file, register the handler for Syncfusion Toolkit.
 {% highlight xaml %}
 
 <?xml version="1.0" encoding="utf-8" ?>
-<ContentPage 
-            ...
-            xmlns:carousel="clr-namespace:Syncfusion.Maui.Toolkit.Carousel;assembly=Syncfusion.Maui.Toolkit">
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:carousel="clr-namespace:Syncfusion.Maui.Toolkit.Carousel;assembly=Syncfusion.Maui.Toolkit"
+             xmlns:local="clr-namespace:CarouselSample"
+             x:Class="CarouselSample.MainPage">
     <ContentPage.Content> 
         <carousel:SfCarousel />
     </ContentPage.Content>  
@@ -126,35 +132,35 @@ Create a model class using the image collection property that is initialized wit
 
 // Model
 
-public class CarouselModel
+public class ImageModel
 {
-    public CarouselModel(string imageString)
+    public ImageModel(string imageString)
     {
-        Image = imageString;
+        ImageName = imageString;
     }
-    private string _image;
+    private string _imageName;
 
-    public string Image
+    public string ImageName
     {
-        get { return _image; }
-        set { _image = value; }
+        get { return _imageName; }
+        set { _imageName = value; }
     }
 }
 
 //View Model
 
-public class CarouselViewModel
+public class GalleryViewModel
 {
-    public CarouselViewModel()
+    public GalleryViewModel()
     {
-        ImageCollection.Add(new CarouselModel("carousel_person1.png"));
-        ImageCollection.Add(new CarouselModel("carousel_person2.png"));
-        ImageCollection.Add(new CarouselModel("carousel_person3.png"));
-        ImageCollection.Add(new CarouselModel("carousel_person4.png"));
-        ImageCollection.Add(new CarouselModel("carousel_person5.png"));
+        ImageCollection.Add(new ImageModel("carousel_person1.png"));
+        ImageCollection.Add(new ImageModel("carousel_person2.png"));
+        ImageCollection.Add(new ImageModel("carousel_person3.png"));
+        ImageCollection.Add(new ImageModel("carousel_person4.png"));
+        ImageCollection.Add(new ImageModel("carousel_person5.png"));
     }
-    private List<CarouselModel> imageCollection = new List<CarouselModel>();
-    public List<CarouselModel> ImageCollection
+    private List<ImageModel> imageCollection = new List<ImageModel>();
+    public List<ImageModel> ImageCollection
     {
         get { return imageCollection; }
         set { imageCollection = value; }
@@ -178,13 +184,13 @@ The following code example illustrates how to add the collection in Carousel,
              x:Class="CarouselSample.MainPage">
              
     <ContentPage.BindingContext>
-        <local:CarouselViewModel/>
+        <local:GalleryViewModel/>
     </ContentPage.BindingContext>
 
     <ContentPage.Resources>
         <ResourceDictionary>
             <DataTemplate x:Key="itemTemplate">
-                <Image Source="{Binding Image}" 
+                <Image Source="{Binding ImageName}" 
                         Aspect="AspectFit"/>
             </DataTemplate>
         </ResourceDictionary>
@@ -210,7 +216,7 @@ namespace CarouselSample
         public MainPage()
         {
             InitializeComponent();
-            CarouselViewModel carouselViewModel = new CarouselViewModel();
+            GalleryViewModel galleryViewModel = new GalleryViewModel();
 
             SfCarousel carousel = new SfCarousel();
 
@@ -218,12 +224,12 @@ namespace CarouselSample
             {
                 var grid = new Grid();
                 var nameLabel = new Image();
-                nameLabel.SetBinding(Image.SourceProperty, "Image");
+                nameLabel.SetBinding(Image.SourceProperty, "ImageName");
                 grid.Children.Add(nameLabel);
                 return grid;
             });
 
-            carousel.BindingContext = carouselViewModel;
+            carousel.BindingContext = galleryViewModel;
             carousel.ItemTemplate = itemTemplate;
             carousel.SetBinding(SfCarousel.ItemsSourceProperty, "ImageCollection");
 

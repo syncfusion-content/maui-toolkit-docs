@@ -9,7 +9,7 @@ documentation : ug
 
 # Animation in .NET MAUI Carousel View (SfCarousel)
 
-The [Duration](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Carousel.SfCarousel.html#Syncfusion_Maui_Toolkit_Carousel_SfCarousel_Duration) property of the [SfCarousel](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Carousel.SfCarousel.html) control specifies the time taken to move an item to the selected item position in the Default mode. The duration is specified in milliseconds. The default value is 600 ms.
+The [Duration](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Carousel.SfCarousel.html#Syncfusion_Maui_Toolkit_Carousel_SfCarousel_Duration) property of the [SfCarousel](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Carousel.SfCarousel.html) control specifies the time taken to move an item to the selected item position in the Default mode. The duration is specified in milliseconds. The default value is **600** ms.
 
 {% tabs %}
 
