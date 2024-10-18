@@ -42,7 +42,7 @@ The [IsSelected](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Too
 {% highlight xaml %}
 <!-- Define the SfTabView control with a name and an event handler for the SelectionChanged event -->
 <tabView:SfTabView x:Name="tabView"
-				   SelectionChanged="TabView_SelectionIndexChanged" />
+                   SelectionChanged="TabView_SelectionIndexChanged" />
 {% endhighlight %}
 
 {% highlight C# %}

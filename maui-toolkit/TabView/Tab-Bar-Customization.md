@@ -208,16 +208,16 @@ The background can be customized with a linear gradient and radial gradient as l
 {% highlight xaml %}
 <!-- Define the SfTabView control -->
 <tabView:SfTabView>
-	<!-- Set the tab bar background to a linear gradient brush -->
-	<tabView:SfTabView.TabBarBackground>
-		<LinearGradientBrush EndPoint="0,1">
-			<!-- Define the gradient stops for the linear gradient brush -->
-			<GradientStop Color="#009FFF"
-						  Offset="0.1" />
-			<GradientStop Color="#ec2F4B"
-						  Offset="1.0" />
-		</LinearGradientBrush>
-	</tabView:SfTabView.TabBarBackground>
+    <!-- Set the tab bar background to a linear gradient brush -->
+    <tabView:SfTabView.TabBarBackground>
+        <LinearGradientBrush EndPoint="0,1">
+            <!-- Define the gradient stops for the linear gradient brush -->
+            <GradientStop Color="#009FFF"
+                          Offset="0.1" />
+            <GradientStop Color="#ec2F4B"
+                          Offset="1.0" />
+        </LinearGradientBrush>
+    </tabView:SfTabView.TabBarBackground>
 </tabView:SfTabView>
 {% endhighlight %}
 
