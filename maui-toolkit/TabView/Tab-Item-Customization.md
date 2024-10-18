@@ -59,9 +59,9 @@ You can add an image to a tab item to enhance its visual appeal. The [ImageSourc
 {% highlight xaml %}
 <!-- Define the SfTabView control -->
 <tabView:SfTabView>
-	<!-- Define a tab item with the header set to "ITEM 1" and an image source set to "alexandar" -->
-	<tabView:SfTabItem Header="ITEM 1"
-					   ImageSource="alexandar" />
+    <!-- Define a tab item with the header set to "ITEM 1" and an image source set to "alexandar" -->
+    <tabView:SfTabItem Header="ITEM 1"
+                        ImageSource="alexandar" />
 </tabView:SfTabView>
 {% endhighlight %}
 
