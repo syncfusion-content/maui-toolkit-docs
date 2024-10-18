@@ -73,7 +73,7 @@ public class ChipDataTemplateSelector : DataTemplateSelector
 
 ### Applying the data template selector
 
-Assign the already defined `DataTemplateSelector` to the [`ItemTemplate`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Chips.SfChipGroup.html#Syncfusion_Maui_Toolkit_Chips_SfChipGroup_ItemTemplate) of the SfChipGroup in either XAML or C#.
+Assign the already defined `DataTemplateSelector` to the [ItemTemplate](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Chips.SfChipGroup.html#Syncfusion_Maui_Toolkit_Chips_SfChipGroup_ItemTemplate) of the SfChipGroup in either XAML or C#.
 
 {% tabs %}
 {% highlight xaml %}
