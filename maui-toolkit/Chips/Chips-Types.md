@@ -102,6 +102,7 @@ public class EmployeeViewModel : INotifyPropertyChanged
 
 ## Choice
 Allows users to select a single chip from a group of items. Selecting a chip will automatically deselect the previously selected chips. 
+
 Here, Add visual states to set ChipType to Choice.
 The following code illustrates how to get choice typed ChipGroup.
 
@@ -372,7 +373,7 @@ public class EmployeeViewModel : INotifyPropertyChanged
 
 ## Action
 
-Action type of [`SfChipGroup`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Chips.SfChipGroup.html) executes the [`Command`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Chips.SfChipGroup.html#Syncfusion_Maui_Toolkit_Chips_SfChipGroup_Command) when clicking the chip in `SfChipGroup`. On its `Command` action, you can do our desired action.
+Action type of [SfChipGroup](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Chips.SfChipGroup.html) executes the [Command](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Chips.SfChipGroup.html#Syncfusion_Maui_Toolkit_Chips_SfChipGroup_Command) when clicking the chip in `SfChipGroup`. On its `Command` action, you can do our desired action.
 
 The `Command` will execute only for action typed `SfChipGroup`.
 
