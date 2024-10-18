@@ -134,11 +134,17 @@ public partial class MainPage : ContentPage
             }
         };
 
-        tabView.Items = tabItems;
+        // Set the items of the main tab view
+		tabView.Items = tabItems;
+		// Set the tab width mode to size to content
         tabView.TabWidthMode = TabWidthMode.SizeToContent;
+		// Set the tab bar placement to the top
         tabView.TabBarPlacement = TabBarPlacement.Top;
+		// Set the indicator placement to the top
         tabView.IndicatorPlacement = TabIndicatorPlacement.Top;
+		// Set the background color of the tab bar
         tabView.TabBarBackground = new SolidColorBrush(Color.FromArgb("#FDF8F6"));
+		// Set the background color of the indicator
         tabView.IndicatorBackground = new SolidColorBrush(Color.FromArgb("#6200EE"));
 
         // Configure nested tab view items
@@ -178,12 +184,18 @@ public partial class MainPage : ContentPage
             }
         };
 
-        nestedTabView.Items = nestedTabItems;
+        // Set the items of the nested tab view
+		nestedTabView.Items = nestedTabItems;
+		// Set the tab bar placement to the bottom
         nestedTabView.TabBarPlacement = TabBarPlacement.Bottom;
-        nestedTabView.IndicatorPlacement = TabIndicatorPlacement.Top;
+        // Set the indicator placement to the top
+		nestedTabView.IndicatorPlacement = TabIndicatorPlacement.Top;
+		// Set the background color of the tab bar
         nestedTabView.TabBarBackground = new SolidColorBrush(Color.FromArgb("#FDF8F6"));
-        nestedTabView.IndicatorBackground = new SolidColorBrush(Color.FromArgb("#6200EE"));
-        this.Content = tabView;
+        // Set the background color of the indicator
+		nestedTabView.IndicatorBackground = new SolidColorBrush(Color.FromArgb("#6200EE"));
+        // Set the content of the page to the main tab view
+		this.Content = tabView;
     }
 }
 
@@ -193,5 +205,3 @@ public partial class MainPage : ContentPage
 The following image illustrates the nested tab structure:
 
 ![Nested Tabs in .NET MAUI Tab View](images/Nested_Tab.png)
-
-N> View [sample](https://github.com/SyncfusionExamples/maui-toolkit-samples/tree/master/TabView/NestedTabViewSample) in GitHub
