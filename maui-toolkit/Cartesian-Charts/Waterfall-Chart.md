@@ -34,14 +34,14 @@ Keywords: .net maui waterfall chart, .net maui bridge chart, waterfall chart cus
     </chart:SfCartesianChart.YAxes>
     
     <chart:SfCartesianChart.Series>
-        <chart:WaterfallSeries ItemsSource = "{Binding Sales}"
-                               XBindingPath = "Department"
-                               YBindingPath = "Value"
-                               AllowAutoSum = "True"
-                               NegativePointsBrush = "Red"
-                               SummaryBindingPath = "IsSummary"
-                               SummaryPointsBrush = "RoyalBlue"
-                               ShowConnectorLine = "True"/>
+        <chart:WaterfallSeries ItemsSource="{Binding Sales}"
+                               XBindingPath="Department"
+                               YBindingPath="Value"
+                               AllowAutoSum="True"
+                               NegativePointsBrush="Red"
+                               SummaryBindingPath="IsSummary"
+                               SummaryPointsBrush="RoyalBlue"
+                               ShowConnectorLine="True"/>
     </chart:SfCartesianChart.Series>   
 </chart:SfCartesianChart>
 
@@ -88,11 +88,11 @@ The following code example illustrates how to apply style for connector line.
 {% highlight xaml %}
 
 <chart:SfCartesianChart.Series>
-    <chart:WaterfallSeries ItemsSource = "{Binding Sales}"
-                           XBindingPath = "Department"
-                           YBindingPath = "Value">
+    <chart:WaterfallSeries ItemsSource="{Binding Sales}"
+                           XBindingPath="Department"
+                           YBindingPath="Value">
         <chart:WaterfallSeries.ConnectorLineStyle>
-                <chart:ChartLineStyle Stroke = "DarkViolet" StrokeWidth = "2"/>
+                <chart:ChartLineStyle Stroke="DarkViolet" StrokeWidth="2"/>
         </chart:WaterfallSeries.ConnectorLineStyle>
     </chart:WaterfallSeries>
 </chart:SfCartesianChart.Series>   

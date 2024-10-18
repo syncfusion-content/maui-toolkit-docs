@@ -20,7 +20,7 @@ N> The Cartesian chart has `Series` as its default content.
 
 {% highlight xaml %}
 
-<chart:SfCartesianChart IsTransposed = "True">
+<chart:SfCartesianChart IsTransposed="True">
 
     <chart:SfCartesianChart.XAxes>
         <chart:CategoryAxis/>
@@ -30,9 +30,9 @@ N> The Cartesian chart has `Series` as its default content.
         <chart:NumericalAxis/>
     </chart:SfCartesianChart.YAxes>   
 
-    <chart:ColumnSeries ItemsSource = "{Binding Data}"
-                        XBindingPath = "XValue"
-                        YBindingPath = "YValue"/>
+    <chart:ColumnSeries ItemsSource="{Binding Data}"
+                        XBindingPath="XValue"
+                        YBindingPath="YValue"/>
 
 </chart:SfCartesianChart>
 
@@ -73,7 +73,7 @@ The [Width](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.
 
 {% highlight xaml %}
 
-<chart:SfCartesianChart IsTransposed = "True">
+<chart:SfCartesianChart IsTransposed="True">
 
     <chart:SfCartesianChart.XAxes>
         <chart:CategoryAxis/>
@@ -83,11 +83,11 @@ The [Width](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.
         <chart:NumericalAxis/>
     </chart:SfCartesianChart.YAxes>  
 
-    <chart:ColumnSeries ItemsSource = "{Binding Data}"
-                        XBindingPath = "XValue"
-                        YBindingPath = "YValue"
-                        Spacing = "0.3"
-                        Width = "0.5"/>
+    <chart:ColumnSeries ItemsSource="{Binding Data}"
+                        XBindingPath="XValue"
+                        YBindingPath="YValue"
+                        Spacing="0.3"
+                        Width="0.5"/>
 
 </chart:SfCartesianChart>
 

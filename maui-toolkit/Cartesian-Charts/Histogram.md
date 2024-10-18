@@ -28,11 +28,11 @@ Customize histogram intervals using the [HistogramInterval](https://help.syncfus
         <chart:NumericalAxis/>
     </chart:SfCartesianChart.YAxes>
 
-    <chart:HistogramSeries ItemsSource = "{Binding HistogramData}"
-                           XBindingPath = "Value" 
-                           YBindingPath = "Size"
-                           HistogramInterval = "20" 
-                           ShowNormalDistributionCurve = "True"/>
+    <chart:HistogramSeries ItemsSource="{Binding HistogramData}"
+                           XBindingPath="Value" 
+                           YBindingPath="Size"
+                           HistogramInterval="20" 
+                           ShowNormalDistributionCurve="True"/>
    
 </chart:SfCartesianChart>
 
@@ -77,14 +77,14 @@ Customize the normal distribution curve by using the [CurveStyle](https://help.s
 
 <chart:SfCartesianChart>
     ....
-    <chart:HistogramSeries ItemsSource = "{Binding HistogramData}" 
-                           XBindingPath = "Value" 
-                           YBindingPath = "Size"
-                           HistogramInterval = "20"
-                           ShowNormalDistributionCurve = "True">
+    <chart:HistogramSeries ItemsSource="{Binding HistogramData}" 
+                           XBindingPath="Value" 
+                           YBindingPath="Size"
+                           HistogramInterval="20"
+                           ShowNormalDistributionCurve="True">
         <chart:HistogramSeries.CurveStyle>
-            <chart:ChartLineStyle Stroke = "Blue"
-                                  StrokeWidth = "2">
+            <chart:ChartLineStyle Stroke="Blue"
+                                  StrokeWidth="2">
             </chart:ChartLineStyle>
         </chart:HistogramSeries.CurveStyle>
     </chart:HistogramSeries>

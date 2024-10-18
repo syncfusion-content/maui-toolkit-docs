@@ -32,17 +32,17 @@ N> The cartesian chart has [Series](https://help.syncfusion.com/cr/maui-toolkit/
         <chart:NumericalAxis/>
     </chart:SfCartesianChart.YAxes>   
 
-    <chart:StackingColumn100Series ItemsSource = "{Binding Data1}"
-                                   XBindingPath = "Name"
-                                   YBindingPath = "Value"/>
+    <chart:StackingColumn100Series ItemsSource="{Binding Data1}"
+                                   XBindingPath="Name"
+                                   YBindingPath="Value"/>
 
-    <chart:StackingColumn100Series ItemsSource = "{Binding Data2}"
-                                   XBindingPath = "Name"
-                                   YBindingPath = "Value"/>
+    <chart:StackingColumn100Series ItemsSource="{Binding Data2}"
+                                   XBindingPath="Name"
+                                   YBindingPath="Value"/>
 
-    <chart:StackingColumn100Series ItemsSource = "{Binding Data3}"
-                                   XBindingPath = "Name"
-                                   YBindingPath = "Value"/>
+    <chart:StackingColumn100Series ItemsSource="{Binding Data3}"
+                                   XBindingPath="Name"
+                                   YBindingPath="Value"/>
 
 </chart:SfCartesianChart>
 
@@ -104,25 +104,25 @@ We can group and stack the similar stacked column 100 series type using the [Gro
         <chart:NumericalAxis/>
     </chart:SfCartesianChart.YAxes>   
 
-    <chart:StackingColumn100Series ItemsSource = "{Binding Data1}"
-                                   XBindingPath = "XValue"
-                                   YBindingPath = "YValue"
-                                   GroupingLabel = "GroupOne"/>
+    <chart:StackingColumn100Series ItemsSource="{Binding Data1}"
+                                   XBindingPath="XValue"
+                                   YBindingPath="YValue"
+                                   GroupingLabel="GroupOne"/>
 
-    <chart:StackingColumn100Series ItemsSource = "{Binding Data2}"
-                                   XBindingPath = "XValue"
-                                   YBindingPath = "YValue"
-                                   GroupingLabel = "GroupOne"/>
+    <chart:StackingColumn100Series ItemsSource="{Binding Data2}"
+                                   XBindingPath="XValue"
+                                   YBindingPath="YValue"
+                                   GroupingLabel="GroupOne"/>
 
-    <chart:StackingColumn100Series ItemsSource = "{Binding Data3}"
-                                   XBindingPath = "XValue"
-                                   YBindingPath = "YValue"
-                                   GroupingLabel = "GroupTwo"/>
+    <chart:StackingColumn100Series ItemsSource="{Binding Data3}"
+                                   XBindingPath="XValue"
+                                   YBindingPath="YValue"
+                                   GroupingLabel="GroupTwo"/>
 
-    <chart:StackingColumn100Series ItemsSource = "{Binding Data4}"
-                                   XBindingPath = "XValue"
-                                   YBindingPath = "YValue"
-                                   GroupingLabel = "GroupTwo"/>
+    <chart:StackingColumn100Series ItemsSource="{Binding Data4}"
+                                   XBindingPath="XValue"
+                                   YBindingPath="YValue"
+                                   GroupingLabel="GroupTwo"/>
 
 </chart:SfCartesianChart>
 

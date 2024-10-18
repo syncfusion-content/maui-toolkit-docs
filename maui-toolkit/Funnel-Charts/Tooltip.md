@@ -19,7 +19,7 @@ To define the tooltip in the chart, set the [EnableTooltip](https://help.syncfus
 
 {% highlight xaml %}
 
-<chart:SfFunnelChart EnableTooltip = "True">
+<chart:SfFunnelChart EnableTooltip="True">
     . . .
 </chart:SfFunnelChart>
 
@@ -52,10 +52,10 @@ The [ChartTooltipBehavior](https://help.syncfusion.com/cr/maui-toolkit/Syncfusio
 
 {% highlight xml %}
 
-<chart:SfFunnelChart EnableTooltip = "True">
+<chart:SfFunnelChart EnableTooltip="True">
     . . .
     <chart:SfFunnelChart.TooltipBehavior>
-        <chart:ChartTooltipBehavior Duration = "4"/>
+        <chart:ChartTooltipBehavior Duration="4"/>
     </chart:SfFunnelChart.TooltipBehavior>
 </chart:SfFunnelChart>
 
@@ -86,24 +86,24 @@ this.Content = chart;
 
 <Grid x:Name="grid">
     <Grid.Resources>
-        <DataTemplate x:Key = "tooltipTemplate">
-            <StackLayout Orientation = "Horizontal">
-                <Label Text = "{Binding Item.XValue}"
-                       TextColor = "White"
-                       FontAttributes = "Bold"
-                       HorizontalOptions = "Center"
-                       VerticalOptions = "Center"/>
-                <Label Text = "{Binding Item.YValue,StringFormat=': {0}'}"
-                       TextColor = "White"
-                       FontAttributes = "Bold"
-                       HorizontalOptions = "Center"
-                       VerticalOptions = "Center"/>
+        <DataTemplate x:Key="tooltipTemplate">
+            <StackLayout Orientation="Horizontal">
+                <Label Text="{Binding Item.XValue}"
+                       TextColor="White"
+                       FontAttributes="Bold"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Center"/>
+                <Label Text="{Binding Item.YValue,StringFormat=': {0}'}"
+                       TextColor="White"
+                       FontAttributes="Bold"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Center"/>
             </StackLayout>
         </DataTemplate>
     </Grid.Resources>
 
-    <chart:SfFunnelChart EnableTooltip = "True"
-                         TooltipTemplate = "{StaticResource tooltipTemplate}">
+    <chart:SfFunnelChart EnableTooltip="True"
+                         TooltipTemplate="{StaticResource tooltipTemplate}">
 	. . .
     </chart:SfFunnelChart>
 </Grid>

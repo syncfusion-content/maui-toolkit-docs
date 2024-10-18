@@ -32,9 +32,9 @@ N> The Cartesian chart has [Series](https://help.syncfusion.com/cr/maui-toolkit/
         <chart:NumericalAxis/>
     </chart:SfCartesianChart.YAxes>   
 
-    <chart:BoxAndWhiskerSeries ItemsSource = "{Binding BoxWhiskerData}"
-                               XBindingPath = "Department"
-                               YBindingPath = "Age"/>
+    <chart:BoxAndWhiskerSeries ItemsSource="{Binding BoxWhiskerData}"
+                               XBindingPath="Department"
+                               YBindingPath="Age"/>
 
 </chart:SfCartesianChart>
 
@@ -92,10 +92,10 @@ In Normal mode, the whiskers extend to the minimum and maximum data points withi
         <chart:NumericalAxis/>
     </chart:SfCartesianChart.YAxes>  
 
-    <chart:BoxAndWhiskerSeries ItemsSource = "{Binding BoxWhiskerData}"
-                               XBindingPath = "Department"
-                               YBindingPath = "Age"
-                               BoxPlotMode = "Normal"/>
+    <chart:BoxAndWhiskerSeries ItemsSource="{Binding BoxWhiskerData}"
+                               XBindingPath="Department"
+                               YBindingPath="Age"
+                               BoxPlotMode="Normal"/>
 
 </chart:SfCartesianChart>
 
@@ -143,10 +143,10 @@ In Inclusive mode, the whiskers extend to the minimum and maximum data points wi
         <chart:NumericalAxis/>
     </chart:SfCartesianChart.YAxes>  
 
-    <chart:BoxAndWhiskerSeries ItemsSource = "{Binding BoxWhiskerData}"
-                               XBindingPath = "Department"
-                               YBindingPath = "Age"
-                               BoxPlotMode = "Inclusive"/>
+    <chart:BoxAndWhiskerSeries ItemsSource="{Binding BoxWhiskerData}"
+                               XBindingPath="Department"
+                               YBindingPath="Age"
+                               BoxPlotMode="Inclusive"/>
 
 </chart:SfCartesianChart>
 
@@ -194,10 +194,10 @@ The Median values of given dataset is viewed by enabling the [ShowMedian](https:
         <chart:NumericalAxis/>
     </chart:SfCartesianChart.YAxes>  
 
-    <chart:BoxAndWhiskerSeries ItemsSource = "{Binding BoxWhiskerData}"
-                               XBindingPath = "Department"
-                               YBindingPath = "Age"
-                               ShowMedian = "True"/>
+    <chart:BoxAndWhiskerSeries ItemsSource="{Binding BoxWhiskerData}"
+                               XBindingPath="Department"
+                               YBindingPath="Age"
+                               ShowMedian="True"/>
 
 </chart:SfCartesianChart>
 
@@ -252,10 +252,10 @@ The outlier value in the box plot can be viewed by enabling the [ShowOutlier](ht
         <chart:NumericalAxis/>
     </chart:SfCartesianChart.YAxes>  
 
-    <chart:BoxAndWhiskerSeries ItemsSource = "{Binding BoxWhiskerData}"
-                               XBindingPath = "Department"
-                               YBindingPath = "Age"
-                               ShowOutlier = "False"/>
+    <chart:BoxAndWhiskerSeries ItemsSource="{Binding BoxWhiskerData}"
+                               XBindingPath="Department"
+                               YBindingPath="Age"
+                               ShowOutlier="False"/>
 
 </chart:SfCartesianChart>
 
@@ -306,10 +306,10 @@ The following code shows how to set the [OutlierShapeType](https://help.syncfusi
         <chart:NumericalAxis/>
     </chart:SfCartesianChart.YAxes>  
 
-    <chart:BoxAndWhiskerSeries ItemsSource = "{Binding BoxWhiskerData}"
-                               XBindingPath = "Department"
-                               YBindingPath = "Age"
-                               OutlierShapeType = "Cross"/>
+    <chart:BoxAndWhiskerSeries ItemsSource="{Binding BoxWhiskerData}"
+                               XBindingPath="Department"
+                               YBindingPath="Age"
+                               OutlierShapeType="Cross"/>
 
 </chart:SfCartesianChart>
 

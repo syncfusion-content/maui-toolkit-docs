@@ -36,10 +36,10 @@ N> The Cartesian chart has the [Series](https://help.syncfusion.com/cr/maui-tool
         <chart:NumericalAxis/>
     </chart:SfCartesianChart.YAxes>   
      
-    <chart:RangeAreaSeries ItemsSource = "{Binding Data}"
-                           XBindingPath = "XValue"
-                           High = "HighValue"
-                           Low = "LowValue"/>
+    <chart:RangeAreaSeries ItemsSource="{Binding Data}"
+                           XBindingPath="XValue"
+                           High="HighValue"
+                           Low="LowValue"/>
 </chart:SfCartesianChart>
 
 {% endhighlight %}
@@ -79,11 +79,11 @@ A marker, also known as a symbol, is used to determine or highlight the position
 
 <chart:SfCartesianChart>
     ...
-    <chart:RangeAreaSeries ItemsSource = "{Binding Data}" 
-                           XBindingPath = "XValue"
-                           High = "HighValue"
-                           Low = "LowValue"
-                           ShowMarkers = "True"/>
+    <chart:RangeAreaSeries ItemsSource="{Binding Data}" 
+                           XBindingPath="XValue"
+                           High="HighValue"
+                           Low="LowValue"
+                           ShowMarkers="True"/>
 </chart:SfCartesianChart>
 
 {% endhighlight %}
@@ -125,18 +125,18 @@ In order to change the series markers appearance, create an instance of the [Mar
 
 <chart:SfCartesianChart>
     ...
-    <chart:RangeAreaSeries ItemsSource = "{Binding Data}" 
-                           XBindingPath = "XValue"
-                           High = "HighValue"
-                           Low = "LowValue"
+    <chart:RangeAreaSeries ItemsSource="{Binding Data}" 
+                           XBindingPath="XValue"
+                           High="HighValue"
+                           Low="LowValue"
                            ShowMarkers = "True">
         <chart:RangeAreaSeries.MarkerSettings>
-            <chart:ChartMarkerSettings Type = "Diamond"
-                                       Fill = "Brown"
-                                       Stroke = "Black"
-                                       StrokeWidth = "1"
-                                       Height = "8"
-                                       Width = "8"/>
+            <chart:ChartMarkerSettings Type="Diamond"
+                                       Fill="Brown"
+                                       Stroke="Black"
+                                       StrokeWidth="1"
+                                       Height="8"
+                                       Width="8"/>
         </chart:RangeAreaSeries.MarkerSettings>
     </chart:RangeAreaSeries>
 </chart:SfCartesianChart>

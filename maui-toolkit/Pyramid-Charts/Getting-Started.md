@@ -218,9 +218,9 @@ Binding `Data` to the pyramid chart [ItemsSource](https://help.syncfusion.com/cr
 
 {% highlight xaml %}
 
-<chart:SfPyramidChart ItemsSource = "{Binding Data}" 
-                      XBindingPath = "Name" 
-                      YBindingPath = "Value"/>
+<chart:SfPyramidChart ItemsSource="{Binding Data}" 
+                      XBindingPath="Name" 
+                      YBindingPath="Value"/>
 . . .            
 </chart:SfPyramidChart>
 
@@ -250,7 +250,7 @@ The title of the chart acts as the title to provide quick information to the use
 
 <chart:SfPyramidChart>
     <chart:SfPyramidChart.Title>
-        <Label Text = "Pyramid Stages"/>
+        <Label Text="Pyramid Stages"/>
     </chart:SfPyramidChart.Title>
     . . .
 </chart:SfPyramidChart>
@@ -277,7 +277,7 @@ The [ShowDataLabels](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui
 
 {% highlight xaml %}
 
-<chart:SfPyramidChart ShowDataLabels = "True">
+<chart:SfPyramidChart ShowDataLabels="True">
     . . .
 </chart:SfPyramidChart>
 
@@ -328,7 +328,7 @@ Tooltips are used to show information about the segment, when mouse over on it. 
 
 {% highlight xaml %}
 
-<chart:SfPyramidChart EnableTooltip = "True">
+<chart:SfPyramidChart EnableTooltip="True">
     . . .
 </chart:SfPyramidChart>
 
@@ -356,14 +356,14 @@ The following code example gives you the complete code of above configurations.
              xmlns:model="clr-namespace:GettingStarted"
              x:Class="GettingStarted.MainPage">
 
-    <chart:SfPyramidChart ItemsSource = "{Binding Data}" 
-                       ShowDataLabels = "True" 
-                       EnableTooltip = "True" 
-                       XBindingPath = "Name" 
-                       YBindingPath = "Value">
+    <chart:SfPyramidChart ItemsSource="{Binding Data}" 
+                       ShowDataLabels="True" 
+                       EnableTooltip="True" 
+                       XBindingPath="Name" 
+                       YBindingPath="Value">
 
         <chart:SfPyramidChart.Title>
-            <Label Text = "Pyramid Stages"/>
+            <Label Text="Pyramid Stages"/>
         </chart:SfPyramidChart.Title>
 
         <chart:SfPyramidChart.BindingContext>

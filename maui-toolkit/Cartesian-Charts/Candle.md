@@ -49,12 +49,12 @@ StockData.Add(new Model { Year = "2010", High = 50, Low = 40, Open = 40, Close =
         <chart:NumericalAxis/>
     </chart:SfCartesianChart.YAxes>   
 
-    <chart:CandleSeries ItemsSource = "{Binding StockData}"
-                        XBindingPath = "Year"
-                        Open = "Open"
-                        High = "High"
-                        Low = "Low"
-                        Close = "Close"/>
+    <chart:CandleSeries ItemsSource="{Binding StockData}"
+                        XBindingPath="Year"
+                        Open="Open"
+                        High="High"
+                        Low="Low"
+                        Close="Close"/>
 
 </chart:SfCartesianChart>
 
@@ -105,14 +105,14 @@ In the Candle chart, the [BullishFill](https://help.syncfusion.com/cr/maui-toolk
         <chart:NumericalAxis/>
     </chart:SfCartesianChart.YAxes>   
 
-    <chart:CandleSeries ItemsSource = "{Binding StockData}"
-                        XBindingPath = "Year"
-                        Open = "Open"
-                        High = "High"
-                        Low = "Low"
-                        Close = "Close"
-                        BullishFill = "Blue"
-                        BearishFill = "Yellow"/>
+    <chart:CandleSeries ItemsSource="{Binding StockData}"
+                        XBindingPath="Year"
+                        Open="Open"
+                        High="High"
+                        Low="Low"
+                        Close="Close"
+                        BullishFill="Blue"
+                        BearishFill="Yellow"/>
 
 </chart:SfCartesianChart>
 
@@ -165,13 +165,13 @@ In Candle Series, the [EnableSolidCandle](https://help.syncfusion.com/cr/maui-to
         <chart:NumericalAxis/>
     </chart:SfCartesianChart.YAxes>   
 
-    <chart:CandleSeries ItemsSource = "{Binding StockData}"
-                        XBindingPath = "Year"
-                        Open = "Open"
-                        High = "High"
-                        Low = "Low"
-                        Close = "Close"
-                        EnableSolidCandle = "True"/>
+    <chart:CandleSeries ItemsSource="{Binding StockData}"
+                        XBindingPath="Year"
+                        Open="Open"
+                        High="High"
+                        Low="Low"
+                        Close="Close"
+                        EnableSolidCandle="True"/>
 
 </chart:SfCartesianChart>
 

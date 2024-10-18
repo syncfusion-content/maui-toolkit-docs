@@ -220,9 +220,9 @@ Binding `Data` to the funnel chart [ItemsSource](https://help.syncfusion.com/cr/
 
 {% highlight xaml %}
 
-<chart:SfFunnelChart ItemsSource = "{Binding Data}" 
-                     XBindingPath = "XValue" 
-                     YBindingPath = "YValue">
+<chart:SfFunnelChart ItemsSource="{Binding Data}" 
+                     XBindingPath="XValue" 
+                     YBindingPath="YValue">
 . . .            
 </chart:SfFunnelChart>
 
@@ -251,7 +251,7 @@ The title of the chart acts as the title to provide quick information to the use
 
 <chart:SfFunnelChart>
     <chart:SfFunnelChart.Title>
-        <Label Text = "School Admission"/>
+        <Label Text="School Admission"/>
     </chart:SfFunnelChart.Title>
     . . .
 </chart:SfFunnelChart>
@@ -279,7 +279,7 @@ The [ShowDataLabels](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui
 
 {% highlight xaml %}
 
-<chart:SfFunnelChart ShowDataLabels = "True">
+<chart:SfFunnelChart ShowDataLabels="True">
     . . .
 </chart:SfFunnelChart>
 
@@ -330,7 +330,7 @@ Tooltips are used to show information about the segment, when mouse over on it. 
 
 {% highlight xaml %}
 
-<chart:SfFunnelChart EnableTooltip = "True">
+<chart:SfFunnelChart EnableTooltip="True">
     . . .
 </chart:SfFunnelChart>
 
@@ -358,14 +358,14 @@ The following code example gives you the complete code of above configurations.
              xmlns:model="clr-namespace:GettingStarted"
              x:Class="GettingStarted.MainPage">
 
-    <chart:SfFunnelChart ItemsSource = "{Binding Data}" 
-                     ShowDataLabels = "True" 
-                     EnableTooltip = "True" 
-                     XBindingPath = "XValue" 
-                     YBindingPath = "YValue">
+    <chart:SfFunnelChart ItemsSource="{Binding Data}" 
+                     ShowDataLabels="True" 
+                     EnableTooltip="True" 
+                     XBindingPath="XValue" 
+                     YBindingPath="YValue">
 
         <chart:SfFunnelChart.Title>
-            <Label Text = "School Admission"/>
+            <Label Text="School Admission"/>
         </chart:SfFunnelChart.Title>
 
         <chart:SfFunnelChart.BindingContext>

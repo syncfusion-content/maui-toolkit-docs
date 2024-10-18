@@ -46,12 +46,12 @@ StockData.Add(new Model { Year = "2010", High = 50, Low = 40, Open = 40, Close =
         <chart:NumericalAxis/>
     </chart:SfCartesianChart.YAxes>   
 
-    <chart:HiLoOpenCloseSeries ItemsSource = "{Binding StockData}"
-                               XBindingPath = "Year"
-                               Open = "Open"
-                               High = "High"
-                               Low = "Low"
-                               Close = "Close"/>
+    <chart:HiLoOpenCloseSeries ItemsSource="{Binding StockData}"
+                               XBindingPath="Year"
+                               Open="Open"
+                               High="High"
+                               Low="Low"
+                               Close="Close"/>
 </chart:SfCartesianChart>
 
 {% endhighlight %}
@@ -101,14 +101,14 @@ In the OHLC chart, the [BullishFill](https://help.syncfusion.com/cr/maui-toolkit
         <chart:NumericalAxis/>
     </chart:SfCartesianChart.YAxes>   
 
-    <chart:HiLoOpenCloseSeries ItemsSource = "{Binding StockData}"
-                               XBindingPath = "Year"
-                               Open = "Open"
-                               High = "High"
-                               Low = "Low"
-                               Close = "Close"
-                               BullishFill = "Blue"
-                               BearishFill = "Orange"/>
+    <chart:HiLoOpenCloseSeries ItemsSource="{Binding StockData}"
+                               XBindingPath="Year"
+                               Open="Open"
+                               High="High"
+                               Low="Low"
+                               Close="Close"
+                               BullishFill="Blue"
+                               BearishFill="Orange"/>
 
 </chart:SfCartesianChart>
 

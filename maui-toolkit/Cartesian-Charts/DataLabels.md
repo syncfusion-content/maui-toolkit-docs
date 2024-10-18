@@ -27,9 +27,9 @@ The [ShowDataLabels](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui
 
 <chart:SfCartesianChart>
     . . .
-    <chart:ColumnSeries ItemsSource = "{Binding Data}" 
-                        XBindingPath = "Category"
-                        YBindingPath = "Value" ShowDataLabels = "True">
+    <chart:ColumnSeries ItemsSource="{Binding Data}" 
+                        XBindingPath="Category"
+                        YBindingPath="Value" ShowDataLabels="True">
     </chart:ColumnSeries>
 </chart:SfCartesianChart>
 
@@ -78,9 +78,9 @@ N> This behavior varies based on the chart series type.
 
 <chart:SfCartesianChart>
     . . .
-    <chart:ColumnSeries ShowDataLabels = "True">
+    <chart:ColumnSeries ShowDataLabels="True">
         <chart:ColumnSeries.DataLabelSettings>
-            <chart:CartesianDataLabelSettings BarAlignment = "Middle"/>
+            <chart:CartesianDataLabelSettings BarAlignment="Middle"/>
         </chart:ColumnSeries.DataLabelSettings>
     </chart:ColumnSeries>
 </chart:SfCartesianChart>
@@ -126,7 +126,7 @@ The [LabelPlacement](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui
     . . .
     <chart:ColumnSeries ShowDataLabels="True">
         <chart:ColumnSeries.DataLabelSettings>
-            <chart:CartesianDataLabelSettings UseSeriesPalette = "False"/>
+            <chart:CartesianDataLabelSettings UseSeriesPalette="False"/>
         </chart:ColumnSeries.DataLabelSettings>
     </chart:ColumnSeries>
 </chart:SfCartesianChart>
@@ -166,13 +166,13 @@ The content of the label can be customized using the [LabelContext](https://help
 
 {% highlight xaml %}
 
-<chart:SfCartesianChart IsTransposed = "True">
+<chart:SfCartesianChart IsTransposed="True">
     . . .
-    <chart:ColumnSeries ItemsSource = "{Binding Data}" 
-                        XBindingPath = "XValue"
-                        YBindingPath = "YValue"
-                        ShowDataLabels = "True" 
-                        LabelContext = "Percentage"/>
+    <chart:ColumnSeries ItemsSource="{Binding Data}" 
+                        XBindingPath="XValue"
+                        YBindingPath="YValue"
+                        ShowDataLabels="True" 
+                        LabelContext="Percentage"/>
 </chart:SfCartesianChart>
 
 {% endhighlight %}
@@ -208,24 +208,24 @@ The [SfCartesianChart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Ma
 
 {% highlight xaml %}
 
-<chart:SfCartesianChart IsTransposed = "True">
+<chart:SfCartesianChart IsTransposed="True">
     <chart:SfCartesianChart.Resources>
-        <DataTemplate x:Key = "labelTemplate">
-            <HorizontalStackLayout Spacing = "5" WidthRequest = "100">
-                <Image Source = "arrow.png" WidthRequest = "15" HeightRequest = "15"/>
-                <Label Text = "{Binding Item.Values}" VerticalOptions = "Center" FontSize = "15"/>               
+        <DataTemplate x:Key="labelTemplate">
+            <HorizontalStackLayout Spacing="5" WidthRequest="100">
+                <Image Source="arrow.png" WidthRequest="15" HeightRequest="15"/>
+                <Label Text="{Binding Item.Values}" VerticalOptions="Center" FontSize="15"/>               
             </HorizontalStackLayout>
         </DataTemplate>
     </chart:SfCartesianChart.Resources>
     . . .
-    <chart:ColumnSeries ItemsSource = "{Binding Data}"
-                        XBindingPath = "Name"
-                        YBindingPath = "Values" 
-                        LabelTemplate = "{StaticResource labelTemplate}"
-                        ShowDataLabels = "True">
+    <chart:ColumnSeries ItemsSource="{Binding Data}"
+                        XBindingPath="Name"
+                        YBindingPath="Values" 
+                        LabelTemplate="{StaticResource labelTemplate}"
+                        ShowDataLabels="True">
 
         <chart:ColumnSeries.DataLabelSettings>
-            <chart:CartesianDataLabelSettings LabelPlacement = "Outer"/>
+            <chart:CartesianDataLabelSettings LabelPlacement="Outer"/>
         </chart:ColumnSeries.DataLabelSettings>
 
     </chart:ColumnSeries>

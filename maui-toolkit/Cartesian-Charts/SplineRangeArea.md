@@ -34,10 +34,10 @@ N> The Cartesian chart has [Series](https://help.syncfusion.com/cr/maui-toolkit/
         <chart:NumericalAxis/>
     </chart:SfCartesianChart.YAxes>   
 
-    <chart:SplineRangeAreaSeries ItemsSource = "{Binding Data}"
-                                 XBindingPath = "XValue"
-                                 High = "HighValue"
-                                 Low = "LowValue"/>
+    <chart:SplineRangeAreaSeries ItemsSource="{Binding Data}"
+                                 XBindingPath="XValue"
+                                 High="HighValue"
+                                 Low="LowValue"/>
 
 </chart:SfCartesianChart>
 
@@ -95,11 +95,11 @@ The following types are used in [SplineRangeAreaSeries](https://help.syncfusion.
         <chart:NumericalAxis/>
     </chart:SfCartesianChart.YAxes>  
 
-    <chart:SplineRangeAreaSeries ItemsSource = "{Binding Data}"
-                                 XBindingPath = "XValue"
-                                 High = "HighValue"
-                                 Low = "LowValue"
-                                 Type = "Cardinal"/>
+    <chart:SplineRangeAreaSeries ItemsSource="{Binding Data}"
+                                 XBindingPath="XValue"
+                                 High="HighValue"
+                                 Low="LowValue"
+                                 Type="Cardinal"/>
 
 </chart:SfCartesianChart>
 
@@ -144,11 +144,11 @@ A marker, also known as a symbol, is used to determine or highlight the position
 
 <chart:SfCartesianChart>
     ...
-    <chart:SplineRangeAreaSeries ItemsSource = "{Binding Data}"
-                                 XBindingPath = "XValue"
-                                 High = "HighValue"
-                                 Low = "LowValue"
-                                 ShowMarkers = "True"/>
+    <chart:SplineRangeAreaSeries ItemsSource="{Binding Data}"
+                                 XBindingPath="XValue"
+                                 High="HighValue"
+                                 Low="LowValue"
+                                 ShowMarkers="True"/>
 </chart:SfCartesianChart>
 
 {% endhighlight %}
@@ -190,18 +190,18 @@ In order to change the series markers appearance, create an instance of the [Mar
 
 <chart:SfCartesianChart>
     ...
-    <chart:SplineRangeAreaSeries ItemsSource = "{Binding Data}" 
-                                 XBindingPath = "XValue"
-                                 High = "HighValue"
-                                 Low = "LowValue"
-                                 ShowMarkers = "True">
+    <chart:SplineRangeAreaSeries ItemsSource="{Binding Data}" 
+                                 XBindingPath="XValue"
+                                 High="HighValue"
+                                 Low="LowValue"
+                                 ShowMarkers="True">
         <chart:SplineRangeAreaSeries.MarkerSettings>
-            <chart:ChartMarkerSettings Type = "Diamond"
-                                       Fill = "Brown"
-                                       Stroke = "Black"
-                                       StrokeWidth = "1"
-                                       Height = "8"
-                                       Width = "8"/>
+            <chart:ChartMarkerSettings Type="Diamond"
+                                       Fill="Brown"
+                                       Stroke="Black"
+                                       StrokeWidth="1"
+                                       Height="8"
+                                       Width="8"/>
         </chart:SplineRangeAreaSeries.MarkerSettings>
     </chart:SplineRangeAreaSeries>
 </chart:SfCartesianChart>

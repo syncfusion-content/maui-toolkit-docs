@@ -34,10 +34,10 @@ N> The Cartesian chart has [Series](https://help.syncfusion.com/cr/maui-toolkit/
         <chart:NumericalAxis/>
     </chart:SfCartesianChart.YAxes>   
 
-    <chart:RangeColumnSeries ItemsSource = "{Binding Data}"
-			                 XBindingPath = "XValue"
-                             High = "HighValue"
-			                 Low = "LowValue"/>
+    <chart:RangeColumnSeries ItemsSource="{Binding Data}"
+			                 XBindingPath="XValue"
+                             High="HighValue"
+			                 Low="LowValue"/>
 
 </chart:SfCartesianChart>
 
@@ -88,12 +88,12 @@ The [Width](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.
         <chart:NumericalAxis/>
     </chart:SfCartesianChart.YAxes>  
     
-    <chart:RangeColumnSeries ItemsSource = "{Binding Data}"
-			                 XBindingPath = "XValue"
-                             High = "HighValue"
-			                 Low = "LowValue"
-                             Spacing = "0.3"
-		                     Width = "0.7"/>
+    <chart:RangeColumnSeries ItemsSource="{Binding Data}"
+			                 XBindingPath="XValue"
+                             High="HighValue"
+			                 Low="LowValue"
+                             Spacing="0.3"
+		                     Width="0.7"/>
 </chart:SfCartesianChart>
 
 {% endhighlight %}

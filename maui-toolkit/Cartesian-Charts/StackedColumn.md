@@ -31,13 +31,13 @@ N> The Cartesian chart has [Series](https://help.syncfusion.com/cr/maui-toolkit/
         <chart:NumericalAxis/>
     </chart:SfCartesianChart.YAxes>
 
-    <chart:StackingColumnSeries ItemsSource = "{Binding Data1}"
-                                XBindingPath = "Name"
-                                YBindingPath = "Value"/>        
+    <chart:StackingColumnSeries ItemsSource="{Binding Data1}"
+                                XBindingPath="Name"
+                                YBindingPath="Value"/>        
 
-    <chart:StackingColumnSeries ItemsSource = "{Binding Data2}"
-                                XBindingPath = "Name"
-                                YBindingPath = "Value"/>         
+    <chart:StackingColumnSeries ItemsSource="{Binding Data2}"
+                                XBindingPath="Name"
+                                YBindingPath="Value"/>         
 </chart:SfCartesianChart>
 
 
@@ -87,20 +87,20 @@ N> If the [GroupingLabel](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion
 
 <chart:SfCartesianChart>
     ....
-    <chart:StackingColumnSeries ItemsSource = "{Binding Data1}"
-                                XBindingPath = "Name"
-                                YBindingPath = "Value"
-                                GroupingLabel = "GroupOne"/>
+    <chart:StackingColumnSeries ItemsSource="{Binding Data1}"
+                                XBindingPath="Name"
+                                YBindingPath="Value"
+                                GroupingLabel="GroupOne"/>
 
-    <chart:StackingColumnSeries ItemsSource = "{Binding Data2}" 
-                                XBindingPath = "Name"
-                                YBindingPath = "Value"
-                                GroupingLabel = "GroupTwo"/>
+    <chart:StackingColumnSeries ItemsSource="{Binding Data2}" 
+                                XBindingPath="Name"
+                                YBindingPath="Value"
+                                GroupingLabel="GroupTwo"/>
 
-    <chart:StackingColumnSeries ItemsSource = "{Binding Data3}" 
-                                XBindingPath = "Name"
-                                YBindingPath = "Value"
-                                GroupingLabel = "GroupOne"/>
+    <chart:StackingColumnSeries ItemsSource="{Binding Data3}" 
+                                XBindingPath="Name"
+                                YBindingPath="Value"
+                                GroupingLabel="GroupOne"/>
 </chart:SfCartesianChart>
 
 

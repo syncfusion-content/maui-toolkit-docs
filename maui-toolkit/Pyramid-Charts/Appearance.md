@@ -19,10 +19,10 @@ The [SfPyramidChart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui
 
 {% highlight xaml %}
 
-<chart:SfPyramidChart ItemsSource = "{Binding Data}" 
-                      XBindingPath = "Name"
-                      YBindingPath = "Value"
-                      PaletteBrushes = "{Binding CustomBrushes}">
+<chart:SfPyramidChart ItemsSource="{Binding Data}" 
+                      XBindingPath="Name"
+                      YBindingPath="Value"
+                      PaletteBrushes="{Binding CustomBrushes}">
 . . .
 </chart:SfPyramidChart>
 
@@ -61,10 +61,10 @@ The gradient for the pyramid chart can be set by using the [PaletteBrushes](http
 
 {% highlight xaml %}
 
-<chart:SfPyramidChart ItemsSource = "{Binding Data}" 
-                      XBindingPath = "Name"
-                      YBindingPath = "Value"
-                      PaletteBrushes = "{Binding CustomBrushes}">
+<chart:SfPyramidChart ItemsSource="{Binding Data}" 
+                      XBindingPath="Name"
+                      YBindingPath="Value"
+                      PaletteBrushes="{Binding CustomBrushes}">
 . . .
 </chart:SfPyramidChart>
 
@@ -138,10 +138,10 @@ The [SfPyramidChart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui
 
 {% highlight xaml %}
 
-<chart:SfPyramidChart ItemsSource = "{Binding Data}" 
-                      XBindingPath = "XValue" 
-                      YBindingPath = "YValue"
-                      Mode = "Surface">
+<chart:SfPyramidChart ItemsSource="{Binding Data}" 
+                      XBindingPath="XValue" 
+                      YBindingPath="YValue"
+                      Mode="Surface">
 </chart:SfPyramidChart>
 
 {% endhighlight %}

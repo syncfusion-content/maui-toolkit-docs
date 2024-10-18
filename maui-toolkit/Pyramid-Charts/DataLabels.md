@@ -19,7 +19,7 @@ To define the data label in the chart, set the [ShowDataLabels](https://help.syn
 
 {% highlight xaml %}
 
-<chart:SfPyramidChart ShowDataLabels = "True"/>
+<chart:SfPyramidChart ShowDataLabels="True"/>
 . . .
 </chart:SfPyramidChart>
 
@@ -56,14 +56,14 @@ this.Content = chart;
 
 {% highlight xaml %}
 
-<chart:SfPyramidChart ShowDataLabels = "True">
+<chart:SfPyramidChart ShowDataLabels="True">
     . . .
     <chart:SfPyramidChart.DataLabelSettings>
-        <chart:PyramidDataLabelSettings LabelPlacement = "Outer" 
-                                        Context = "XValue" 
-                                        UseSeriesPalette = "True">
+        <chart:PyramidDataLabelSettings LabelPlacement="Outer" 
+                                        Context="XValue" 
+                                        UseSeriesPalette="True">
             <chart:PyramidDataLabelSettings.LabelStyle>
-                <chart:ChartDataLabelStyle Margin = "2"/>
+                <chart:ChartDataLabelStyle Margin="2"/>
             </chart:PyramidDataLabelSettings.LabelStyle>
         </chart:PyramidDataLabelSettings>
     </chart:SfPyramidChart.DataLabelSettings>

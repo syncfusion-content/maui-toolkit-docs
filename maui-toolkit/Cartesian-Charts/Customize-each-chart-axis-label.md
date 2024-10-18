@@ -21,7 +21,7 @@ The following code sample demonstrates this:
 <chart:SfCartesianChart>
     . . .
     <chart:SfCartesianChart.XAxes>
-        <chart:NumericalAxis LabelCreated = "XAxes_LabelCreated"/>
+        <chart:NumericalAxis LabelCreated="XAxes_LabelCreated"/>
     </chart:SfCartesianChart.XAxes>
     . . .
 </chart:SfCartesianChart>

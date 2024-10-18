@@ -29,9 +29,9 @@ N> The Cartesian chart has [Series](https://help.syncfusion.com/cr/maui-toolkit/
         <chart:NumericalAxis/>
     </chart:SfCartesianChart.YAxes>   
 
-    <chart:ColumnSeries ItemsSource = "{Binding Data}"
-                        XBindingPath = "XValue"
-                        YBindingPath = "YValue"/>
+    <chart:ColumnSeries ItemsSource="{Binding Data}"
+                        XBindingPath="XValue"
+                        YBindingPath="YValue"/>
 </chart:SfCartesianChart>
 
 {% endhighlight %}
@@ -80,11 +80,11 @@ The [Width](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.
         <chart:NumericalAxis/>
     </chart:SfCartesianChart.YAxes>  
 
-    <chart:ColumnSeries ItemsSource = "{Binding Data}"
-			XBindingPath = "XValue"
-			YBindingPath = "YValue"
-			Spacing = "0.5"
-			Width = "0.6"/>
+    <chart:ColumnSeries ItemsSource="{Binding Data}"
+			XBindingPath="XValue"
+			YBindingPath="YValue"
+			Spacing="0.5"
+			Width="0.6"/>
 
 </chart:SfCartesianChart>
 
@@ -133,14 +133,14 @@ By default, all the column series which have the same x and y axes are placed si
         <chart:NumericalAxis/>
     </chart:SfCartesianChart.YAxes>  
 
-    <chart:ColumnSeries ItemsSource = "{Binding Data1}"
-                        XBindingPath = "XValue"
-                        YBindingPath = "YValue"/>
+    <chart:ColumnSeries ItemsSource="{Binding Data1}"
+                        XBindingPath="XValue"
+                        YBindingPath="YValue"/>
                          
-    <chart:ColumnSeries ItemsSource = "{Binding Data2}"
-                        XBindingPath = "XValue"
-                        YBindingPath = "YValue"
-                        Width = "0.2"/>                    
+    <chart:ColumnSeries ItemsSource="{Binding Data2}"
+                        XBindingPath="XValue"
+                        YBindingPath="YValue"
+                        Width="0.2"/>                    
 </chart:SfCartesianChart>
 
 {% endhighlight %}

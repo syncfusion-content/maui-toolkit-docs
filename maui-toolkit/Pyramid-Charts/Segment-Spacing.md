@@ -15,7 +15,7 @@ The gap between each segment in the pyramid chart can be set using the [GapRatio
 
 {% highlight xml %}
 
-<chart:SfPyramidChart GapRatio = "0.2">
+<chart:SfPyramidChart GapRatio="0.2">
 . . .
 </chart:SfPyramidChart>
 

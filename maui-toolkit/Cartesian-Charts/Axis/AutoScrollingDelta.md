@@ -21,11 +21,11 @@ By adding [ChartZoomPanBehavior](https://help.syncfusion.com/cr/maui/Syncfusion.
 <chart:SfCartesianChart>
     . . .
     <chart:SfCartesianChart.XAxes>
-        <chart:CategoryAxis AutoScrollingDelta = "3"/>
+        <chart:CategoryAxis AutoScrollingDelta="3"/>
     </chart:SfCartesianChart.XAxes>
 
     <chart:SfCartesianChart.ZoomPanBehavior>
-        <chart:ChartZoomPanBehavior EnablePanning = "True"/>
+        <chart:ChartZoomPanBehavior EnablePanning="True"/>
     </chart:SfCartesianChart.ZoomPanBehavior>
     . . .
 </chart:SfCartesianChart>
@@ -64,7 +64,7 @@ this.Content = chart;
 <chart:SfCartesianChart>
     . . .
     <chart:SfCartesianChart.XAxes>
-        <chart:CategoryAxis AutoScrollingDelta = "3" AutoScrollingMode = "Start"/>
+        <chart:CategoryAxis AutoScrollingDelta="3" AutoScrollingMode="Start"/>
     </chart:SfCartesianChart.XAxes>
     . . .
 </chart:SfCartesianChart>
@@ -98,7 +98,7 @@ In [DateTimeAxis](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Charts.Dat
 <chart:SfCartesianChart>
     . . .
     <chart:SfCartesianChart.XAxes>
-        <chart:DateTimeAxis AutoScrollingDelta = "3" AutoScrollingDeltaType = "Days"/>
+        <chart:DateTimeAxis AutoScrollingDelta="3" AutoScrollingDeltaType="Days"/>
     </chart:SfCartesianChart.XAxes>
     . . .
 </chart:SfCartesianChart>
