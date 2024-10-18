@@ -7,7 +7,7 @@ control: Segmented control
 documentation: ug
 ---
  
-# Layout customization in .NET MAUI Segmented control (SfSegmentedControl)
+# Layout customization in the .NET MAUI Segmented control
 The `SfSegmentedControl` supports changing the layout width, height and the number of visible segments displayed.
 
 ## Change the segment width
