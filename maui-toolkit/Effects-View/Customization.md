@@ -17,7 +17,7 @@ The [RippleAnimationDuration](https://help.syncfusion.com/cr/maui-toolkit/Syncfu
 
 {% tabs %} 
 
-{% highlight xaml %} 
+{% highlight xaml %}
 
 <ContentPage 
     xmlns:effectsView="clr-namespace:Syncfusion.Maui.Toolkit.EffectsView;assembly=Syncfusion.Maui.Toolkit">
@@ -28,7 +28,7 @@ The [RippleAnimationDuration](https://help.syncfusion.com/cr/maui-toolkit/Syncfu
 
 {% endhighlight %}
 
-{% highlight C# %} 
+{% highlight C# %}
 
 using Syncfusion.Maui.Toolkit.EffectsView;
 
@@ -49,7 +49,7 @@ The [ScaleAnimationDuration](https://help.syncfusion.com/cr/maui-toolkit/Syncfus
 
 {% tabs %} 
 
-{% highlight xaml %} 
+{% highlight xaml %}
 
 <ContentPage 
     xmlns:effectsView="clr-namespace:Syncfusion.Maui.Toolkit.EffectsView;assembly=Syncfusion.Maui.Toolkit">
@@ -63,7 +63,7 @@ The [ScaleAnimationDuration](https://help.syncfusion.com/cr/maui-toolkit/Syncfus
 
 {% endhighlight %}
 
-{% highlight C# %} 
+{% highlight C# %}
 
 using Syncfusion.Maui.Toolkit.EffectsView;
 
@@ -86,7 +86,7 @@ The [RotationAnimationDuration](https://help.syncfusion.com/cr/maui-toolkit/Sync
 
 {% tabs %} 
 
-{% highlight xaml %} 
+{% highlight xaml %}
 
 <ContentPage 
     xmlns:effectsView="clr-namespace:Syncfusion.Maui.Toolkit.EffectsView;assembly=Syncfusion.Maui.Toolkit">
@@ -100,7 +100,7 @@ The [RotationAnimationDuration](https://help.syncfusion.com/cr/maui-toolkit/Sync
 
 {% endhighlight %}
 
-{% highlight C# %} 
+{% highlight C# %}
 
 using Syncfusion.Maui.Toolkit.EffectsView;
 
@@ -123,7 +123,7 @@ The [InitialRippleFactor](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion
 
 {% tabs %} 
 
-{% highlight xaml %} 
+{% highlight xaml %}
 
 <ContentPage 
     xmlns:effectsView="clr-namespace:Syncfusion.Maui.Toolkit.EffectsView;assembly=Syncfusion.Maui.Toolkit">
@@ -134,7 +134,7 @@ The [InitialRippleFactor](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion
 
 {% endhighlight %}
 
-{% highlight C# %} 
+{% highlight C# %}
 
 using Syncfusion.Maui.Toolkit.EffectsView;
 
@@ -157,7 +157,7 @@ The [ScaleFactor](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.To
 
 {% tabs %} 
 
-{% highlight xaml %} 
+{% highlight xaml %}
 
 <ContentPage
     xmlns:effectsView="clr-namespace:Syncfusion.Maui.Toolkit.EffectsView;assembly=Syncfusion.Maui.Toolkit">
@@ -172,7 +172,7 @@ The [ScaleFactor](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.To
 
 {% endhighlight %}
 
-{% highlight C# %} 
+{% highlight C# %}
 
 using Syncfusion.Maui.Toolkit.EffectsView;
 
@@ -198,7 +198,7 @@ The [HighlightBackground](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion
 
 {% tabs %} 
 
-{% highlight xaml %} 
+{% highlight xaml %}
 
 <ContentPage 
     xmlns:effectsView="clr-namespace:Syncfusion.Maui.Toolkit.EffectsView;assembly=Syncfusion.Maui.Toolkit">
@@ -211,7 +211,7 @@ The [HighlightBackground](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion
 
 {% endhighlight %}
 
-{% highlight C# %} 
+{% highlight C# %}
 
 using Syncfusion.Maui.Toolkit.EffectsView;
 
@@ -235,7 +235,7 @@ The [RippleBackground](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Ma
 
 {% tabs %} 
 
-{% highlight xaml %} 
+{% highlight xaml %}
 
 <ContentPage 
    xmlns:effectsView="clr-namespace:Syncfusion.Maui.Toolkit.EffectsView;assembly=Syncfusion.Maui.Toolkit">
@@ -246,7 +246,7 @@ The [RippleBackground](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Ma
 
 {% endhighlight %}
 
-{% highlight C# %} 
+{% highlight C# %}
 
 using Syncfusion.Maui.Toolkit.EffectsView;
 
@@ -269,7 +269,7 @@ The [SelectionBackground](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion
 
 {% tabs %} 
 
-{% highlight xaml %} 
+{% highlight xaml %}
 
 <ContentPage 
     xmlns:effectsView="clr-namespace:Syncfusion.Maui.Toolkit.EffectsView;assembly=Syncfusion.Maui.Toolkit">
@@ -282,7 +282,7 @@ The [SelectionBackground](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion
 
 {% endhighlight %}
 
-{% highlight C# %} 
+{% highlight C# %}
 
 using Syncfusion.Maui.Toolkit.EffectsView;
 
@@ -306,7 +306,7 @@ The [Angle](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.
 
 {% tabs %} 
 
-{% highlight xaml %} 
+{% highlight xaml %}
 
 <ContentPage 
     xmlns:effectsView="clr-namespace:Syncfusion.Maui.Toolkit.EffectsView;assembly=Syncfusion.Maui.Toolkit">
@@ -319,7 +319,7 @@ The [Angle](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.
 
 {% endhighlight %}
 
-{% highlight C# %} 
+{% highlight C# %}
 
 using Syncfusion.Maui.Toolkit.EffectsView;
 
