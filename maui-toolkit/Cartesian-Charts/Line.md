@@ -29,12 +29,12 @@ N> The Cartesian chart has [Series](https://help.syncfusion.com/cr/maui-toolkit/
         <chart:NumericalAxis/>
     </chart:SfCartesianChart.YAxes>  
 
-    <chart:LineSeries ItemsSource = "{Binding Data}"
-                      XBindingPath = "Demand"
-                      YBindingPath = "Year2010"/>
-    <chart:LineSeries ItemsSource = "{Binding Data}"
-                      XBindingPath = "Demand"
-                      YBindingPath = "Year2011"/>
+    <chart:LineSeries ItemsSource="{Binding Data}"
+                      XBindingPath="Demand"
+                      YBindingPath="Year2010"/>
+    <chart:LineSeries ItemsSource="{Binding Data}"
+                      XBindingPath="Demand"
+                      YBindingPath="Year2011"/>
 </chart:SfCartesianChart>
 
 {% endhighlight %}
@@ -97,14 +97,14 @@ The [StrokeDashArray](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Mau
         <chart:NumericalAxis/>
     </chart:SfCartesianChart.YAxes>  
 
-    <chart:LineSeries ItemsSource = "{Binding Data}" 
-                      XBindingPath = "Demand"
-                      YBindingPath = "Year2010"
-                      StrokeDashArray = "{StaticResource dashArray}"/>
-    <chart:LineSeries ItemsSource = "{Binding Data}" 
-                      XBindingPath = "Demand"
-                      YBindingPath = "Year2011"
-                      StrokeDashArray = "{StaticResource dashArray}"/>
+    <chart:LineSeries ItemsSource="{Binding Data}" 
+                      XBindingPath="Demand"
+                      YBindingPath="Year2010"
+                      StrokeDashArray="{StaticResource dashArray}"/>
+    <chart:LineSeries ItemsSource="{Binding Data}" 
+                      XBindingPath="Demand"
+                      YBindingPath="Year2011"
+                      StrokeDashArray="{StaticResource dashArray}"/>
 </chart:SfCartesianChart>
 
 {% endhighlight %}
@@ -167,12 +167,12 @@ The [SplineSeries](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.T
         <chart:NumericalAxis/>
     </chart:SfCartesianChart.YAxes>  
 
-    <chart:SplineSeries ItemsSource = "{Binding Data}" 
-                        XBindingPath = "Demand"
-                        YBindingPath = "Year2010"/>
-    <chart:SplineSeries ItemsSource = "{Binding Data}" 
-                        XBindingPath = "Demand"
-                        YBindingPath = "Year2011"/>
+    <chart:SplineSeries ItemsSource="{Binding Data}" 
+                        XBindingPath="Demand"
+                        YBindingPath="Year2010"/>
+    <chart:SplineSeries ItemsSource="{Binding Data}" 
+                        XBindingPath="Demand"
+                        YBindingPath="Year2011"/>
 </chart:SfCartesianChart>
 
 {% endhighlight %}
@@ -234,10 +234,10 @@ The following types are used in SplineSeries:
         <chart:NumericalAxis/>
     </chart:SfCartesianChart.YAxes>  
 
-    <chart:SplineSeries ItemsSource = "{Binding Data}" 
-                        XBindingPath = "Demand"
-                        YBindingPath = "Year2010"
-                        Type = "Cardinal"/>
+    <chart:SplineSeries ItemsSource="{Binding Data}" 
+                        XBindingPath="Demand"
+                        YBindingPath="Year2010"
+                        Type="Cardinal"/>
 </chart:SfCartesianChart>
 
 {% endhighlight %}
@@ -278,15 +278,15 @@ A marker, also known as a symbol, is used to determine or highlight the position
 
 <chart:SfCartesianChart>
     ...
-    <chart:LineSeries ItemsSource = "{Binding Data}" 
-                      XBindingPath = "Demand"
-                      YBindingPath = "Year2010"
-                      ShowMarkers = "True"/>
+    <chart:LineSeries ItemsSource="{Binding Data}" 
+                      XBindingPath="Demand"
+                      YBindingPath="Year2010"
+                      ShowMarkers="True"/>
 
-    <chart:LineSeries ItemsSource = "{Binding Data}"
-                      XBindingPath = "Demand"
-                      YBindingPath = "Year2011"
-                      ShowMarkers = "True"/>                  
+    <chart:LineSeries ItemsSource="{Binding Data}"
+                      XBindingPath="Demand"
+                      YBindingPath="Year2011"
+                      ShowMarkers="True"/>                  
 </chart:SfCartesianChart>
 
 {% endhighlight %}
@@ -339,17 +339,17 @@ In order to change the series markers appearance, create an instance of the [Mar
 
 <chart:SfCartesianChart>
     ...
-    <chart:LineSeries ItemsSource = "{Binding Data}" 
-                      XBindingPath = "Year"
-                      YBindingPath = "Percentage"
-                      ShowMarkers = "True">
+    <chart:LineSeries ItemsSource="{Binding Data}" 
+                      XBindingPath="Year"
+                      YBindingPath="Percentage"
+                      ShowMarkers="True">
         <chart:LineSeries.MarkerSettings>
-            <chart:ChartMarkerSettings Type = "Diamond"
-                                       Fill = "Brown"
-                                       Stroke = "Black"
-                                       StrokeWidth = "1"
-                                       Height = "8"
-                                       Width = "8"/>
+            <chart:ChartMarkerSettings Type="Diamond"
+                                       Fill="Brown"
+                                       Stroke="Black"
+                                       StrokeWidth="1"
+                                       Height="8"
+                                       Width="8"/>
         </chart:LineSeries.MarkerSettings>
     </chart:LineSeries>
 </chart:SfCartesianChart>

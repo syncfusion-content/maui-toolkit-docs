@@ -19,10 +19,10 @@ The [SfFunnelChart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.
 
 {% highlight xaml %}
 
-<chart:SfFunnelChart ItemsSource = "{Binding Data}" 
-                     XBindingPath = "XValue"
-                     YBindingPath = "YValue"
-                     PaletteBrushes = "{Binding CustomBrushes}">
+<chart:SfFunnelChart ItemsSource="{Binding Data}" 
+                     XBindingPath="XValue"
+                     YBindingPath="YValue"
+                     PaletteBrushes="{Binding CustomBrushes}">
 . . .
 </chart:SfFunnelChart>
 
@@ -61,10 +61,10 @@ The gradient for the funnel chart can be set by using the [PaletteBrushes](https
 
 {% highlight xaml %}
 
-<chart:SfFunnelChart ItemsSource = "{Binding Data}" 
-                     XBindingPath = "XValue"
-                     YBindingPath = "YValue"
-                     PaletteBrushes = "{Binding CustomBrushes}">
+<chart:SfFunnelChart ItemsSource="{Binding Data}" 
+                     XBindingPath="XValue"
+                     YBindingPath="YValue"
+                     PaletteBrushes="{Binding CustomBrushes}">
 . . .
 </chart:SfFunnelChart>
 

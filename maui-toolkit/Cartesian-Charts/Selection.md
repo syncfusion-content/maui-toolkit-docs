@@ -23,11 +23,11 @@ To enable the data point selection, create an instance of the series [SelectionB
 <chart:SfCartesianChart>
     . . .
     <chart:SfCartesianChart.Series>
-        <chart:ColumnSeries ItemsSource = "{Binding Data}" 
-                            XBindingPath = "Time"
-                            YBindingPath = "FootStepsCount">
+        <chart:ColumnSeries ItemsSource="{Binding Data}" 
+                            XBindingPath="Time"
+                            YBindingPath="FootStepsCount">
             <chart:ColumnSeries.SelectionBehavior>
-                <chart:DataPointSelectionBehavior SelectionBrush = "#314A6E"/>
+                <chart:DataPointSelectionBehavior SelectionBrush="#314A6E"/>
             </chart:ColumnSeries.SelectionBehavior>
         </chart:ColumnSeries>
     </chart:SfCartesianChart.Series>
@@ -66,18 +66,18 @@ To enable the series selection, create an instance of the cartesian chart [Selec
 <chart:SfCartesianChart>
     . . .
     <chart:SfCartesianChart.SelectionBehavior>
-        <chart:SeriesSelectionBehavior SelectionBrush = "#314A6E"/>
+        <chart:SeriesSelectionBehavior SelectionBrush="#314A6E"/>
     </chart:SfCartesianChart.SelectionBehavior>
     <chart:SfCartesianChart.Series>
-        <chart:ColumnSeries ItemsSource = "{Binding Data}" 
-                            XBindingPath = "Country"
-                            YBindingPath = "Kids"/>
-        <chart:ColumnSeries ItemsSource = "{Binding Data}" 
-                            XBindingPath = "Country"
-                            YBindingPath = "Adults"/>
-        <chart:ColumnSeries ItemsSource = "{Binding Data}" 
-                            XBindingPath = "Country"
-                            YBindingPath = "Seniors"/>
+        <chart:ColumnSeries ItemsSource="{Binding Data}" 
+                            XBindingPath="Country"
+                            YBindingPath="Kids"/>
+        <chart:ColumnSeries ItemsSource="{Binding Data}" 
+                            XBindingPath="Country"
+                            YBindingPath="Adults"/>
+        <chart:ColumnSeries ItemsSource="{Binding Data}" 
+                            XBindingPath="Country"
+                            YBindingPath="Seniors"/>
     </chart:SfCartesianChart.Series>
 </chart:SfCartesianChart>
 

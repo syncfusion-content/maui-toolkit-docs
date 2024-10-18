@@ -80,7 +80,7 @@ this.Content = chart;
 <chart:SfCartesianChart>
     ...
     <chart:SfCartesianChart.Annotations>        
-        <chart:RectangleAnnotation X1 = "0" Y1 = "100" X2 = "300" Y2 = "400" Text = "Pixel value" CoordinateUnit = "Pixel"/>
+        <chart:RectangleAnnotation X1="0" Y1="100" X2="300" Y2="400" Text="Pixel value" CoordinateUnit="Pixel"/>
     </chart:SfCartesianChart.Annotations>
 </chart:SfCartesianChart>
 
@@ -127,12 +127,12 @@ When there are multiple axes, annotations can be added to a particular axis usin
 <chart:SfCartesianChart>
     ...
     <chart:SfCartesianChart.YAxes>
-        <chart:NumericalAxis Minimum = "0" Maximum = "1"/>
-        <chart:NumericalAxis Name = "YAxis" CrossesAt = "{Static x:Double.MaxValue}"/>
+        <chart:NumericalAxis Minimum="0" Maximum="1"/>
+        <chart:NumericalAxis Name="YAxis" CrossesAt="{Static x:Double.MaxValue}"/>
     </chart:SfCartesianChart.YAxes>
 
     <chart:SfCartesianChart.Annotations>
-        <chart:EllipseAnnotation X1 = "2" X2 = "4" Y1 = "10" Y2 = "15" Text = "Ellipse" YAxisName = "YAxis"/>
+        <chart:EllipseAnnotation X1="2" X2="4" Y1="10" Y2="15" Text="Ellipse" YAxisName="YAxis"/>
     </chart:SfCartesianChart.Annotations>
 </chart:SfCartesianChart>
 
@@ -190,7 +190,7 @@ The [TextAnnotation](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui
 <chart:SfCartesianChart>
     ...
     <chart:SfCartesianChart.Annotations>
-        <chart:TextAnnotation X1 = "2" Y1 = "25" Text = "Text Annotation"/>
+        <chart:TextAnnotation X1="2" Y1="25" Text="Text Annotation"/>
     </chart:SfCartesianChart.Annotations>
 </chart:SfCartesianChart>
 
@@ -269,7 +269,7 @@ The [RectangleAnnotation](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion
 <chart:SfCartesianChart>
     ...
     <chart:SfCartesianChart.Annotations>
-        <chart:RectangleAnnotation X1 = "1" Y1 = "40" X2 = "2" Y2 = "20"/>
+        <chart:RectangleAnnotation X1="1" Y1="40" X2="2" Y2="20"/>
     </chart:SfCartesianChart.Annotations>
 </chart:SfCartesianChart>
 
@@ -306,7 +306,7 @@ The [EllipseAnnotation](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.M
 <chart:SfCartesianChart>
     ...
     <chart:SfCartesianChart.Annotations>
-        <chart:EllipseAnnotation X1 = "2" X2 = "4" Y1 = "10" Y2 = "15" Width = "20" Height = "20"/>
+        <chart:EllipseAnnotation X1="2" X2="4" Y1="10" Y2="15" Width="20" Height="20"/>
     </chart:SfCartesianChart.Annotations>
 </chart:SfCartesianChart>
 
@@ -347,7 +347,7 @@ The [LineAnnotation](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui
 <chart:SfCartesianChart>
     ...
     <chart:SfCartesianChart.Annotations>
-        <chart:LineAnnotation X1 = "0.5" Y1 = "10" X2 = "3.5" Y2 = "20" Text = "Line"/>
+        <chart:LineAnnotation X1="0.5" Y1="10" X2="3.5" Y2="20" Text="Line"/>
     </chart:SfCartesianChart.Annotations>
 </chart:SfCartesianChart>
 
@@ -385,8 +385,8 @@ The [VerticalLineAnnotation](https://help.syncfusion.com/cr/maui-toolkit/Syncfus
 <chart:SfCartesianChart>
     ...
     <chart:SfCartesianChart.Annotations>
-        <chart:VerticalLineAnnotation X1 = "2"/>
-        <chart:HorizontalLineAnnotation Y1 = "20"/>
+        <chart:VerticalLineAnnotation X1="2"/>
+        <chart:HorizontalLineAnnotation Y1="20"/>
     </chart:SfCartesianChart.Annotations>
 </chart:SfCartesianChart>
 
@@ -427,8 +427,8 @@ The [VerticalLineAnnotation](https://help.syncfusion.com/cr/maui-toolkit/Syncfus
 <chart:SfCartesianChart>
     ...
     <chart:SfCartesianChart.Annotations>
-        <chart:VerticalLineAnnotation X1 = "2.5" ShowAxisLabel = "True"/>
-        <chart:HorizontalLineAnnotation Y1 = "25" ShowAxisLabel = "True"/>
+        <chart:VerticalLineAnnotation X1="2.5" ShowAxisLabel="True"/>
+        <chart:HorizontalLineAnnotation Y1="25" ShowAxisLabel="True"/>
     </chart:SfCartesianChart.Annotations>
 </chart:SfCartesianChart>
 
@@ -482,8 +482,8 @@ To display a single-headed arrow, set the [LineCap](https://help.syncfusion.com/
 <chart:SfCartesianChart>
     ...
     <chart:SfCartesianChart.Annotations>
-        <chart:VerticalLineAnnotation X1 = "2.5" LineCap = "Arrow"/>
-        <chart:HorizontalLineAnnotation Y1 = "25" LineCap = "Arrow"/>
+        <chart:VerticalLineAnnotation X1="2.5" LineCap="Arrow"/>
+        <chart:HorizontalLineAnnotation Y1="25" LineCap="Arrow"/>
     </chart:SfCartesianChart.Annotations>
 </chart:SfCartesianChart>
 
@@ -528,7 +528,7 @@ For all shape annotations, the text can be displayed using the [Text](https://he
 <chart:SfCartesianChart>
     ...
     <chart:SfCartesianChart.Annotations>
-        <chart:EllipseAnnotation X1 = "2" X2 = "4" Y1 = "10" Y2 = "15" Text = "Ellipse"/>
+        <chart:EllipseAnnotation X1="2" X2="4" Y1="10" Y2="15" Text="Ellipse"/>
     </chart:SfCartesianChart.Annotations>
 </chart:SfCartesianChart>
 
@@ -580,9 +580,9 @@ The [ViewAnnotation](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui
 <chart:SfCartesianChart>
     ...
     <chart:SfCartesianChart.Annotations>
-        <chart:ViewAnnotation X1 = "3" Y1 = "30">
+        <chart:ViewAnnotation X1="3" Y1="30">
             <chart:ViewAnnotation.View>
-                <Image Source = "cloud.png"/>
+                <Image Source="cloud.png"/>
             </chart:ViewAnnotation.View>
         </chart:ViewAnnotation>
     </chart:SfCartesianChart.Annotations>
@@ -620,7 +620,7 @@ The [IsVisible](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Tool
 <chart:SfCartesianChart>
     ...
     <chart:SfCartesianChart.Annotations>
-        <chart:EllipseAnnotation X1 = "2" X2 = "4" Y1 = "10" Y2 = "15" Text = "Ellipse" IsVisible = "False"/>
+        <chart:EllipseAnnotation X1="2" X2="4" Y1="10" Y2="15" Text="Ellipse" IsVisible="False"/>
     </chart:SfCartesianChart.Annotations>
 </chart:SfCartesianChart>
 

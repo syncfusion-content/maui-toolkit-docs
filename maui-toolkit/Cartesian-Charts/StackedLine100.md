@@ -31,24 +31,24 @@ N> The Cartesian chart has a [Series](https://help.syncfusion.com/cr/maui-toolki
             <chart:NumericalAxis/>
         </chart:SfCartesianChart.YAxes>
 
-        <chart:StackingLine100Series ItemsSource = "{Binding Data1}"
-                                     XBindingPath = "Month"
-                                     YBindingPath = "Value">        
+        <chart:StackingLine100Series ItemsSource="{Binding Data1}"
+                                     XBindingPath="Month"
+                                     YBindingPath="Value">        
         </chart:StackingLine100Series>
 
-        <chart:StackingLine100Series ItemsSource = "{Binding Data2}"
-                                     XBindingPath = "Month"
-                                     YBindingPath = "Value">         
+        <chart:StackingLine100Series ItemsSource="{Binding Data2}"
+                                     XBindingPath="Month"
+                                     YBindingPath="Value">         
         </chart:StackingLine100Series>
 
-        <chart:StackingLine100Series ItemsSource = "{Binding Data3}"
-                                     XBindingPath = "Month"
-                                     YBindingPath = "Value">         
+        <chart:StackingLine100Series ItemsSource="{Binding Data3}"
+                                     XBindingPath="Month"
+                                     YBindingPath="Value">         
         </chart:StackingLine100Series>
 
-        <chart:StackingLine100Series ItemsSource = "{Binding Data4}"
-                                     XBindingPath = "Month"
-                                     YBindingPath = "Value">      
+        <chart:StackingLine100Series ItemsSource="{Binding Data4}"
+                                     XBindingPath="Month"
+                                     YBindingPath="Value">      
         </chart:StackingLine100Series>
 
     </chart:SfCartesianChart>
@@ -123,32 +123,32 @@ The [StrokeDashArray](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Mau
         </chart:SfCartesianChart.Resources>
 
         <chart:SfCartesianChart.XAxes>
-            <chart:CategoryAxis />
+            <chart:CategoryAxis/>
         </chart:SfCartesianChart.XAxes>
 
         <chart:SfCartesianChart.YAxes>
-            <chart:NumericalAxis />
+            <chart:NumericalAxis/>
         </chart:SfCartesianChart.YAxes>  
 
-        <chart:StackingLine100Series ItemsSource = "{Binding Data1}"
-                                     XBindingPath = "Month"
-                                     YBindingPath = "Value"  
-                                     StrokeDashArray = "{StaticResource dashArray}"/>
+        <chart:StackingLine100Series ItemsSource="{Binding Data1}"
+                                     XBindingPath="Month"
+                                     YBindingPath="Value"  
+                                     StrokeDashArray="{StaticResource dashArray}"/>
 
-        <chart:StackingLine100Series ItemsSource = "{Binding Data2}"
-                                     XBindingPath = "Month"
-                                     YBindingPath = "Value"  
-                                     StrokeDashArray = "{StaticResource dashArray}"/>
+        <chart:StackingLine100Series ItemsSource="{Binding Data2}"
+                                     XBindingPath="Month"
+                                     YBindingPath="Value"  
+                                     StrokeDashArray="{StaticResource dashArray}"/>
 
-        <chart:StackingLine100Series ItemsSource = "{Binding Data3}"
-                                     XBindingPath = "Month"
-                                     YBindingPath = "Value"   
-                                     StrokeDashArray = "{StaticResource dashArray}"/>
+        <chart:StackingLine100Series ItemsSource="{Binding Data3}"
+                                     XBindingPath="Month"
+                                     YBindingPath="Value"   
+                                     StrokeDashArray="{StaticResource dashArray}"/>
 
-        <chart:StackingLine100Series ItemsSource = "{Binding Data4}"
-                                     XBindingPath = "Month"
-                                     YBindingPath = "Value"       
-                                     StrokeDashArray = "{StaticResource dashArray}"/>
+        <chart:StackingLine100Series ItemsSource="{Binding Data4}"
+                                     XBindingPath="Month"
+                                     YBindingPath="Value"       
+                                     StrokeDashArray="{StaticResource dashArray}"/>
     </chart:SfCartesianChart>
 
 {% endhighlight %}
@@ -222,25 +222,25 @@ A marker, also known as a symbol, is used to determine or highlight the position
 
     <chart:SfCartesianChart>
         ...
-        <chart:StackingLine100Series ItemsSource = "{Binding Data1}"
-                                     XBindingPath = "Month"
-                                     YBindingPath = "Value"
-                                     ShowMarkers = "True"/>
+        <chart:StackingLine100Series ItemsSource="{Binding Data1}"
+                                     XBindingPath="Month"
+                                     YBindingPath="Value"
+                                     ShowMarkers="True"/>
 
-        <chart:StackingLine100Series ItemsSource = "{Binding Data2}"
-                                     XBindingPath = "Month"
-                                     YBindingPath = "Value"
-                                     ShowMarkers = "True"/>
+        <chart:StackingLine100Series ItemsSource="{Binding Data2}"
+                                     XBindingPath="Month"
+                                     YBindingPath="Value"
+                                     ShowMarkers="True"/>
 
-        <chart:StackingLine100Series ItemsSource = "{Binding Data3}"
-                                     XBindingPath = "Month"
-                                     YBindingPath = "Value"
-                                     ShowMarkers = "True"/>
+        <chart:StackingLine100Series ItemsSource="{Binding Data3}"
+                                     XBindingPath="Month"
+                                     YBindingPath="Value"
+                                     ShowMarkers="True"/>
 
-        <chart:StackingLine100Series ItemsSource = "{Binding Data4}"
-                                     XBindingPath = "Month"
-                                     YBindingPath = "Value"
-                                     ShowMarkers = "True"/>
+        <chart:StackingLine100Series ItemsSource="{Binding Data4}"
+                                     XBindingPath="Month"
+                                     YBindingPath="Value"
+                                     ShowMarkers="True"/>
 
     </chart:SfCartesianChart>
 
@@ -314,16 +314,16 @@ In order to change the series markers appearance, create an instance of the [Mar
 
     <chart:SfCartesianChart>
         ...
-        <chart:StackingLine100Series ItemsSource = "{Binding Data}"
-                                  XBindingPath = "Month"
-                                  YBindingPath = "Value"
-                                  ShowMarkers = "True">
+        <chart:StackingLine100Series ItemsSource="{Binding Data}"
+                                  XBindingPath="Month"
+                                  YBindingPath="Value"
+                                  ShowMarkers="True">
             <chart:StackingLine100Series.MarkerSettings>
-                <chart:ChartMarkerSettings Type = "Diamond" 
-                                           StrokeWidth = "2"
-                                           Fill = "White"
-                                           Height = "8"
-                                           Width = "8"/>
+                <chart:ChartMarkerSettings Type="Diamond" 
+                                           StrokeWidth="2"
+                                           Fill="White"
+                                           Height="8"
+                                           Width="8"/>
             </chart:StackingLine100Series.MarkerSettings>    
         </chart:StackingLine100Series>
     </chart:SfCartesianChart>

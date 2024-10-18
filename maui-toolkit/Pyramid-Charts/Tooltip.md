@@ -19,7 +19,7 @@ To define the tooltip in the chart, set the [EnableTooltip](https://help.syncfus
 
 {% highlight xaml %}
 
-<chart:SfPyramidChart EnableTooltip = "True">
+<chart:SfPyramidChart EnableTooltip="True">
 . . .
 </chart:SfPyramidChart>
 
@@ -52,10 +52,10 @@ The [ChartTooltipBehavior](https://help.syncfusion.com/cr/maui-toolkit/Syncfusio
 
 {% highlight xml %}
 
-<chart:SfPyramidChart EnableTooltip = "True">
+<chart:SfPyramidChart EnableTooltip="True">
     . . .
     <chart:SfPyramidChart.TooltipBehavior>
-        <chart:ChartTooltipBehavior Duration = "4"/>
+        <chart:ChartTooltipBehavior Duration="4"/>
     </chart:SfPyramidChart.TooltipBehavior>
 </chart:SfPyramidChart>
 
@@ -86,18 +86,18 @@ this.Content = chart;
 
 <Grid x:Name="grid">
     <Grid.Resources>
-        <DataTemplate x:Key = "tooltipTemplate">
-            <StackLayout Orientation = "Horizontal">
-                <Label Text = "{Binding Item.Name}"
-                       TextColor = "White"
-                       FontAttributes = "Bold"
-                       HorizontalOptions = "Center"
-                       VerticalOptions = "Center"/>
-                <Label Text = "{Binding Item.Value,StringFormat=': {0}'}"
-                       TextColor = "White"
-                       FontAttributes = "Bold"
-                       HorizontalOptions = "Center"
-                       VerticalOptions = "Center"/>
+        <DataTemplate x:Key="tooltipTemplate">
+            <StackLayout Orientation="Horizontal">
+                <Label Text="{Binding Item.Name}"
+                       TextColor="White"
+                       FontAttributes="Bold"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Center"/>
+                <Label Text="{Binding Item.Value,StringFormat=': {0}'}"
+                       TextColor="White"
+                       FontAttributes="Bold"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Center"/>
             </StackLayout>
         </DataTemplate>
     </Grid.Resources>

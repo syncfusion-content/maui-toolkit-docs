@@ -19,7 +19,7 @@ To define the data label in the chart, set the [ShowDataLabels](https://help.syn
 
 {% highlight xaml %}
 
-<chart:SfFunnelChart ShowDataLabels = "True"/>
+<chart:SfFunnelChart ShowDataLabels="True"/>
 . . .
 </chart:SfFunnelChart>
 
@@ -56,14 +56,14 @@ this.Content = chart;
 
 {% highlight xaml %}
 
-<chart:SfFunnelChart ShowDataLabels = "True">
+<chart:SfFunnelChart ShowDataLabels="True">
     . . .
     <chart:SfFunnelChart.DataLabelSettings>
-        <chart:FunnelDataLabelSettings LabelPlacement = "Outer" 
-                                       Context = "XValue" 
-                                       UseSeriesPalette = "True">
+        <chart:FunnelDataLabelSettings LabelPlacement="Outer" 
+                                       Context="XValue" 
+                                       UseSeriesPalette="True">
             <chart:FunnelDataLabelSettings.LabelStyle>
-                <chart:ChartDataLabelStyle Margin = "2"/>
+                <chart:ChartDataLabelStyle Margin="2"/>
             </chart:FunnelDataLabelSettings.LabelStyle>
         </chart:FunnelDataLabelSettings>
     </chart:SfFunnelChart.DataLabelSettings>

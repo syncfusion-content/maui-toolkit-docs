@@ -30,9 +30,9 @@ N> The Cartesian chart has [Series](https://help.syncfusion.com/cr/maui-toolkit/
         <chart:NumericalAxis/>
     </chart:SfCartesianChart.YAxes>   
 
-    <chart:AreaSeries ItemsSource = "{Binding Data}"
-                      XBindingPath = "Demand"
-                      YBindingPath = "Year2010"/>  
+    <chart:AreaSeries ItemsSource="{Binding Data}"
+                      XBindingPath="Demand"
+                      YBindingPath="Year2010"/>  
 
 </chart:SfCartesianChart>
 
@@ -80,9 +80,9 @@ The [SplineAreaSeries](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Ma
         <chart:NumericalAxis/>
     </chart:SfCartesianChart.YAxes>
             
-    <chart:SplineAreaSeries ItemsSource = "{Binding Data}"
-                            XBindingPath = "Demand" 
-                            YBindingPath = "Year2010"/>  
+    <chart:SplineAreaSeries ItemsSource="{Binding Data}"
+                            XBindingPath="Demand" 
+                            YBindingPath="Year2010"/>  
 
 </chart:SfCartesianChart>
 
@@ -122,10 +122,10 @@ A marker, also known as a symbol, is used to determine or highlight the position
 
 <chart:SfCartesianChart>
     ...
-    <chart:AreaSeries ItemsSource = "{Binding Data}" 
-                      XBindingPath = "Year"
-                      YBindingPath = "Percentage"
-                      ShowMarkers = "True"/>
+    <chart:AreaSeries ItemsSource="{Binding Data}" 
+                      XBindingPath="Year"
+                      YBindingPath="Percentage"
+                      ShowMarkers="True"/>
 </chart:SfCartesianChart>
 
 {% endhighlight %}
@@ -166,17 +166,17 @@ In order to change the series markers appearance, create an instance of the [Mar
 
 <chart:SfCartesianChart>
     ...
-    <chart:AreaSeries ItemsSource = "{Binding Data}" 
-                      XBindingPath = "Year"
-                      YBindingPath = "Percentage"
-                      ShowMarkers = "True">
+    <chart:AreaSeries ItemsSource="{Binding Data}" 
+                      XBindingPath="Year"
+                      YBindingPath="Percentage"
+                      ShowMarkers="True">
         <chart:AreaSeries.MarkerSettings>
-            <chart:ChartMarkerSettings Type = "Diamond"
-                                       Fill = "Brown"
-                                       Stroke = "Black"
-                                       StrokeWidth = "1"
-                                       Height = "8"
-                                       Width = "8"/>
+            <chart:ChartMarkerSettings Type="Diamond"
+                                       Fill="Brown"
+                                       Stroke="Black"
+                                       StrokeWidth="1"
+                                       Height="8"
+                                       Width="8"/>
         </chart:AreaSeries.MarkerSettings>
     </chart:AreaSeries>
 </chart:SfCartesianChart>

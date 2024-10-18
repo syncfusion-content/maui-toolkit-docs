@@ -23,7 +23,7 @@ N> For category axis, minor tick lines are not applicable. Since it is rendered 
 <chart:SfCartesianChart>
     . . .
     <chart:SfCartesianChart.XAxes>
-        <chart:NumericalAxis MinorTicksPerInterval = "4"/>
+        <chart:NumericalAxis MinorTicksPerInterval="4"/>
     </chart:SfCartesianChart.XAxes>
 
     <chart:SfCartesianChart.YAxes>
@@ -66,7 +66,7 @@ The tick lines can be positioned inside or outside the chart area using the [Tic
     </chart:SfCartesianChart.XAxes>
 
     <chart:SfCartesianChart.YAxes>
-        <chart:NumericalAxis TickPosition = "Inside"/>
+        <chart:NumericalAxis TickPosition="Inside"/>
     </chart:SfCartesianChart.YAxes>
 </chart:SfCartesianChart>
 
@@ -102,13 +102,13 @@ Both major and minor tick lines can be customized by using the [MajorTickStyle](
 <chart:SfCartesianChart>
     . . .
     <chart:SfCartesianChart.XAxes>
-        <chart:NumericalAxis MinorTicksPerInterval = "4">
+        <chart:NumericalAxis MinorTicksPerInterval="4">
             <chart:NumericalAxis.MajorTickStyle>
-                <chart:ChartAxisTickStyle Stroke = "Red" StrokeWidth = "1" TickSize = "10"/>
+                <chart:ChartAxisTickStyle Stroke="Red" StrokeWidth="1" TickSize="10"/>
             </chart:NumericalAxis.MajorTickStyle>
             
             <chart:NumericalAxis.MinorTickStyle>
-                <chart:ChartAxisTickStyle Stroke = "Red" StrokeWidth = "1"/>
+                <chart:ChartAxisTickStyle Stroke="Red" StrokeWidth="1"/>
             </chart:NumericalAxis.MinorTickStyle>
         </chart:NumericalAxis>
     </chart:SfCartesianChart.XAxes>

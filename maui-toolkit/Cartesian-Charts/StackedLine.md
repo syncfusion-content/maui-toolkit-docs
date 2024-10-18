@@ -31,21 +31,21 @@ N> The Cartesian chart has a [Series](https://help.syncfusion.com/cr/maui-toolki
         <chart:NumericalAxis/>
     </chart:SfCartesianChart.YAxes>
 
-    <chart:StackingLineSeries ItemsSource = "{Binding Data1}"
-                              XBindingPath = "Month"
-                              YBindingPath = "Value"/>        
+    <chart:StackingLineSeries ItemsSource="{Binding Data1}"
+                              XBindingPath="Month"
+                              YBindingPath="Value"/>        
 
-    <chart:StackingLineSeries ItemsSource = "{Binding Data2}"
-                              XBindingPath = "Month"
-                              YBindingPath = "Value"/>
+    <chart:StackingLineSeries ItemsSource="{Binding Data2}"
+                              XBindingPath="Month"
+                              YBindingPath="Value"/>
 
-    <chart:StackingLineSeries ItemsSource = "{Binding Data3}"
-                              XBindingPath = "Month"
-                              YBindingPath = "Value"/>
+    <chart:StackingLineSeries ItemsSource="{Binding Data3}"
+                              XBindingPath="Month"
+                              YBindingPath="Value"/>
 
-    <chart:StackingLineSeries ItemsSource = "{Binding Data4}"
-                              XBindingPath = "Month"
-                              YBindingPath = "Value"/>
+    <chart:StackingLineSeries ItemsSource="{Binding Data4}"
+                              XBindingPath="Month"
+                              YBindingPath="Value"/>
 </chart:SfCartesianChart>
 
 {% endhighlight %}
@@ -124,25 +124,25 @@ The [StrokeDashArray](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Mau
         <chart:NumericalAxis/>
     </chart:SfCartesianChart.YAxes>  
 
-    <chart:StackingLineSeries ItemsSource = "{Binding Data1}"
-                              XBindingPath = "Month"
-                              YBindingPath = "Value"  
-                              StrokeDashArray = "{StaticResource dashArray}"/>
+    <chart:StackingLineSeries ItemsSource="{Binding Data1}"
+                              XBindingPath="Month"
+                              YBindingPath="Value"  
+                              StrokeDashArray="{StaticResource dashArray}"/>
 
-    <chart:StackingLineSeries ItemsSource = "{Binding Data2}"
-                              XBindingPath = "Month"
-                              YBindingPath = "Value"  
-                              StrokeDashArray = "{StaticResource dashArray}"/>
+    <chart:StackingLineSeries ItemsSource="{Binding Data2}"
+                              XBindingPath="Month"
+                              YBindingPath="Value"  
+                              StrokeDashArray="{StaticResource dashArray}"/>
 
-    <chart:StackingLineSeries ItemsSource = "{Binding Data3}"
-                              XBindingPath = "Month"
-                              YBindingPath = "Value"   
-                              StrokeDashArray = "{StaticResource dashArray}"/>
+    <chart:StackingLineSeries ItemsSource="{Binding Data3}"
+                              XBindingPath="Month"
+                              YBindingPath="Value"   
+                              StrokeDashArray="{StaticResource dashArray}"/>
 
-    <chart:StackingLineSeries ItemsSource = "{Binding Data4}"
-                              XBindingPath = "Month"
-                              YBindingPath = "Value"       
-                              StrokeDashArray = "{StaticResource dashArray}"/>
+    <chart:StackingLineSeries ItemsSource="{Binding Data4}"
+                              XBindingPath="Month"
+                              YBindingPath="Value"       
+                              StrokeDashArray="{StaticResource dashArray}"/>
 </chart:SfCartesianChart>
 
 {% endhighlight %}
@@ -216,25 +216,25 @@ A marker, also known as a symbol, is used to determine or highlight the position
 
 <chart:SfCartesianChart>
  . . .
-    <chart:StackingLineSeries ItemsSource = "{Binding Data1}"
-                              XBindingPath = "Month"
-                              YBindingPath = "Value"
-                              ShowMarkers = "True"/>
+    <chart:StackingLineSeries ItemsSource="{Binding Data1}"
+                              XBindingPath="Month"
+                              YBindingPath="Value"
+                              ShowMarkers="True"/>
 
-    <chart:StackingLineSeries ItemsSource = "{Binding Data2}"
-                              XBindingPath = "Month"
-                              YBindingPath = "Value"
-                              ShowMarkers = "True"/>
+    <chart:StackingLineSeries ItemsSource="{Binding Data2}"
+                              XBindingPath="Month"
+                              YBindingPath="Value"
+                              ShowMarkers="True"/>
 
-    <chart:StackingLineSeries ItemsSource = "{Binding Data3}"
-                              XBindingPath = "Month"
-                              YBindingPath = "Value"
-                              ShowMarkers = "True"/>
+    <chart:StackingLineSeries ItemsSource="{Binding Data3}"
+                              XBindingPath="Month"
+                              YBindingPath="Value"
+                              ShowMarkers="True"/>
 
-    <chart:StackingLineSeries ItemsSource = "{Binding Data4}"
-                              XBindingPath = "Month"
-                              YBindingPath = "Value"
-                              ShowMarkers = "True"/>
+    <chart:StackingLineSeries ItemsSource="{Binding Data4}"
+                              XBindingPath="Month"
+                              YBindingPath="Value"
+                              ShowMarkers="True"/>
 </chart:SfCartesianChart>
 
 {% endhighlight %}
@@ -307,16 +307,16 @@ In order to change the series markers appearance, create an instance of the [Mar
 
 <chart:SfCartesianChart>
     ...
-    <chart:StackingLineSeries ItemsSource = "{Binding Data1}"
-                              XBindingPath = "Month"
-                              YBindingPath = "Value"
-                              ShowMarkers = "True">
+    <chart:StackingLineSeries ItemsSource="{Binding Data1}"
+                              XBindingPath="Month"
+                              YBindingPath="Value"
+                              ShowMarkers="True">
         <chart:StackingLineSeries.MarkerSettings>
-            <chart:ChartMarkerSettings Type = "Diamond" 
-                                       StrokeWidth = "2"
-                                       Fill = "White"
-                                       Height = "8"
-                                       Width = "8"/>
+            <chart:ChartMarkerSettings Type="Diamond" 
+                                       StrokeWidth="2"
+                                       Fill="White"
+                                       Height="8"
+                                       Width="8"/>
         </chart:StackingLineSeries.MarkerSettings>    
     </chart:StackingLineSeries>
 </chart:SfCartesianChart>

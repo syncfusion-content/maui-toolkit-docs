@@ -32,21 +32,21 @@ N> The Cartesian chart has a [Series](https://help.syncfusion.com/cr/maui-toolki
         <chart:NumericalAxis/>
     </chart:SfCartesianChart.YAxes>
 
-    <chart:StackingAreaSeries ItemsSource = "{Binding Data1}"
-                              XBindingPath = "Year"
-                              YBindingPath = "Value"/>        
+    <chart:StackingAreaSeries ItemsSource="{Binding Data1}"
+                              XBindingPath="Year"
+                              YBindingPath="Value"/>        
 
-    <chart:StackingAreaSeries ItemsSource = "{Binding Data2}"
-                              XBindingPath = "Year"
-                              YBindingPath = "Value"/>         
+    <chart:StackingAreaSeries ItemsSource="{Binding Data2}"
+                              XBindingPath="Year"
+                              YBindingPath="Value"/>         
 
-    <chart:StackingAreaSeries ItemsSource = "{Binding Data3}"
-                              XBindingPath = "Year"
-                              YBindingPath = "Value"/>         
+    <chart:StackingAreaSeries ItemsSource="{Binding Data3}"
+                              XBindingPath="Year"
+                              YBindingPath="Value"/>         
 
-    <chart:StackingAreaSeries ItemsSource = "{Binding Data4}"
-                              XBindingPath = "Year"
-                              YBindingPath = "Value"/>         
+    <chart:StackingAreaSeries ItemsSource="{Binding Data4}"
+                              XBindingPath="Year"
+                              YBindingPath="Value"/>         
 </chart:SfCartesianChart>
 
 
@@ -111,10 +111,10 @@ A marker, also known as a symbol, is used to determine or highlight the position
 
 <chart:SfCartesianChart>
     ...
-    <chart:StackingAreaSeries ItemsSource = "{Binding Data}"
-                              XBindingPath = "Year"
-                              YBindingPath = "Value"
-                              ShowMarkers = "True"/>
+    <chart:StackingAreaSeries ItemsSource="{Binding Data}"
+                              XBindingPath="Year"
+                              YBindingPath="Value"
+                              ShowMarkers="True"/>
 </chart:SfCartesianChart>
 
 {% endhighlight %}
@@ -155,17 +155,17 @@ In order to change the series markers appearance, create an instance of the [Mar
 
 <chart:SfCartesianChart>
     ...
-    <chart:StackingAreaSeries ItemsSource = "{Binding Data}"
-                              XBindingPath = "Year"
-                              YBindingPath = "Value"
-                              ShowMarkers = "True">
+    <chart:StackingAreaSeries ItemsSource="{Binding Data}"
+                              XBindingPath="Year"
+                              YBindingPath="Value"
+                              ShowMarkers="True">
         <chart:StackingAreaSeries.MarkerSettings>
-            <chart:ChartMarkerSettings Type = "Diamond"
-                                       Fill = "LightBlue"
-                                       Stroke = "Blue"
-                                       StrokeWidth = "1"
-                                       Height = "8"
-                                       Width = "8"/>
+            <chart:ChartMarkerSettings Type="Diamond"
+                                       Fill="LightBlue"
+                                       Stroke="Blue"
+                                       StrokeWidth="1"
+                                       Height="8"
+                                       Width="8"/>
         </chart:StackingAreaSeries.MarkerSettings>
     </chart:StackingAreaSeries>
     ...

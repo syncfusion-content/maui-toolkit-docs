@@ -15,7 +15,7 @@ The gap between each segment in the funnel chart can be set using the [GapRatio]
 
 {% highlight xml %}
 
-<chart:SfFunnelChart GapRatio = "0.2">
+<chart:SfFunnelChart GapRatio="0.2">
     . . .
 </chart:SfFunnelChart>
 

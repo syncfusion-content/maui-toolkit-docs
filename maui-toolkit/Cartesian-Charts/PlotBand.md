@@ -38,8 +38,8 @@ Plot bands are classified into [NumericalPlotBand](https://help.syncfusion.com/c
         <chart:NumericalAxis>
             <chart:NumericalAxis.PlotBands>
                 <chart:NumericalPlotBandCollection>
-                    <chart:NumericalPlotBand Start = "24" End = "28" 
-                                             Fill = "Orange"/>
+                    <chart:NumericalPlotBand Start="24" End="28" 
+                                             Fill="Orange"/>
                 </chart:NumericalPlotBandCollection>
             </chart:NumericalAxis.PlotBands>
         </chart:NumericalAxis>
@@ -87,9 +87,9 @@ this.Content = chart;
         <chart:DateTimeAxis>
             <chart:DateTimeAxis.PlotBands>
                 <chart:DateTimePlotBandCollection>
-                    <chart:DateTimePlotBand Start = "2023-04-01"
-                                            End = "2023-06-01"
-                                            Fill = "Orange"/>
+                    <chart:DateTimePlotBand Start="2023-04-01"
+                                            End="2023-06-01"
+                                            Fill="Orange"/>
                 </chart:DateTimePlotBandCollection>
             </chart:DateTimeAxis.PlotBands>
         </chart:DateTimeAxis>
@@ -151,11 +151,11 @@ The Plot band recurrence feature enables plot bands to be drawn repeatedly at re
         <chart:NumericalAxis>
             <chart:NumericalAxis.PlotBands>
                 <chart:NumericalPlotBandCollection>
-                    <chart:NumericalPlotBand Start = "20"  End = "22"
-                                             IsRepeatable = "True"
-                                             RepeatUntil = "32"
-                                             RepeatEvery = "4"
-                                             Fill = "LightGray"/>
+                    <chart:NumericalPlotBand Start="20" End="22"
+                                             IsRepeatable="True"
+                                             RepeatUntil="32"
+                                             RepeatEvery="4"
+                                             Fill="LightGray"/>
                 </chart:NumericalPlotBandCollection>
             </chart:NumericalAxis.PlotBands>
         </chart:NumericalAxis>
@@ -214,24 +214,24 @@ Suppose, you want to draw a plot band that should not stretch along its associat
         <chart:NumericalAxis>
             <chart:NumericalAxis.PlotBands>
                 <chart:NumericalPlotBandCollection>
-                    <chart:NumericalPlotBand Start = "20" 
-                                             End = "22" 
-                                             AssociatedAxisEnd = "2"
-                                             Fill = "#B300E190"
-                                             Text = "Low"/>
+                    <chart:NumericalPlotBand Start="20" 
+                                             End="22" 
+                                             AssociatedAxisEnd="2"
+                                             Fill="#B300E190"
+                                             Text="Low"/>
 
-                    <chart:NumericalPlotBand Start = "25" 
-                                             End = "27" 
-                                             AssociatedAxisStart = "4.3",
-                                             AssociatedAxisEnd = "6.8"
-                                             Fill = "#B3FCD404"
-                                             Text = "Average"/>
+                    <chart:NumericalPlotBand Start="25" 
+                                             End="27" 
+                                             AssociatedAxisStart="4.3",
+                                             AssociatedAxisEnd="6.8"
+                                             Fill="#B3FCD404"
+                                             Text="Average"/>
 
-                    <chart:NumericalPlotBand Start = "30" 
-                                             End = "32" 
-                                             AssociatedAxisStart = "9"
-                                             Fill = "#B3FF4E4E"
-                                             Text = "High"/>                       
+                    <chart:NumericalPlotBand Start="30" 
+                                             End="32" 
+                                             AssociatedAxisStart="9"
+                                             Fill="#B3FF4E4E"
+                                             Text="High"/>                       
                 </chart:NumericalPlotBandCollection>
             </chart:NumericalAxis.PlotBands>
         </chart:NumericalAxis>
@@ -308,26 +308,26 @@ When specifying the same value for both `Start` and `End`, a plot line will be d
         <chart:NumericalAxis>
             <chart:NumericalAxis.PlotBands>
                 <chart:NumericalPlotBandCollection>
-                    <chart:NumericalPlotBand Start = "24" 
-                                             End = "24" 
-                                             Fill = "#B300E190"
-                                             Stroke = "#B300E190"
-                                             StrokeWidth = "2"
-                                             Text = "Low Temperature"/>
+                    <chart:NumericalPlotBand Start="24" 
+                                             End="24" 
+                                             Fill="#B300E190"
+                                             Stroke="#B300E190"
+                                             StrokeWidth="2"
+                                             Text="Low Temperature"/>
 
-                    <chart:NumericalPlotBand Start = "28" 
-                                             End = "28" 
-                                             Stroke = "#FCD404"
-                                             StrokeWidth = "2"
-                                             Fill = "#FCD404"
-                                             Text = "Average Temperature"/>
+                    <chart:NumericalPlotBand Start="28" 
+                                             End="28" 
+                                             Stroke="#FCD404"
+                                             StrokeWidth="2"
+                                             Fill="#FCD404"
+                                             Text="Average Temperature"/>
 
-                    <chart:NumericalPlotBand Start = "32" 
-                                             End = "32" 
-                                             Stroke = "#FF4E4E"
-                                             StrokeWidth = "2"
-                                             Fill = "#FF4E4E"
-                                            Text = "High Temperature"/>                       
+                    <chart:NumericalPlotBand Start="32" 
+                                             End="32" 
+                                             Stroke="#FF4E4E"
+                                             StrokeWidth="2"
+                                             Fill="#FF4E4E"
+                                            Text="High Temperature"/>                       
                 </chart:NumericalPlotBandCollection>
             </chart:NumericalAxis.PlotBands>
         </chart:NumericalAxis>
@@ -413,14 +413,14 @@ this.Content = chart;
         <chart:NumericalAxis>
             <chart:NumericalAxis.PlotBands>
                 <chart:NumericalPlotBandCollection>
-                    <chart:NumericalPlotBand Start = "28" 
-                                             Size = "10" 
-                                             Fill = "Orange"
-                                             Text = "Plot Band">
+                    <chart:NumericalPlotBand Start="28" 
+                                             Size="10" 
+                                             Fill="Orange"
+                                             Text="Plot Band">
                         <chart:NumericalPlotBand.LabelStyle>
-                            <chart:ChartPlotBandLabelStyle TextColor = "Blue"
-                                                           FontSize = "12" 
-                                                           FontAttributes = "Bold"/>
+                            <chart:ChartPlotBandLabelStyle TextColor="Blue"
+                                                           FontSize="12" 
+                                                           FontAttributes="Bold"/>
                         </chart:NumericalPlotBand.LabelStyle>
                     </chart:NumericalPlotBand>
                 </chart:NumericalPlotBandCollection>

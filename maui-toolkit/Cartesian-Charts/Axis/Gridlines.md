@@ -20,7 +20,7 @@ By default, major gridlines are automatically added to the [ChartAxis](https://h
 
 <chart:SfCartesianChart>
     <chart:SfCartesianChart.XAxes>
-        <chart:NumericalAxis ShowMajorGridLines = "False"/>
+        <chart:NumericalAxis ShowMajorGridLines="False"/>
     </chart:SfCartesianChart.XAxes>
     <chart:SfCartesianChart.YAxes>
         <chart:NumericalAxis/>
@@ -58,7 +58,7 @@ The [MajorGridLineStyle](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Cha
 <chart:SfCartesianChart>
     . . .
     <chart:SfCartesianChart.Resources>
-        <DoubleCollection x:Key = "dashArray">
+        <DoubleCollection x:Key="dashArray">
             <x:Double>3</x:Double>
             <x:Double>3</x:Double>
         </DoubleCollection>
@@ -67,9 +67,9 @@ The [MajorGridLineStyle](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Cha
     <chart:SfCartesianChart.XAxes>
         <chart:NumericalAxis>
             <chart:NumericalAxis.MajorGridLineStyle>
-                <chart:ChartLineStyle StrokeDashArray = "{StaticResource dashArray}"
-                                      Stroke = "Black"
-                                      StrokeWidth = "2"/>
+                <chart:ChartLineStyle StrokeDashArray="{StaticResource dashArray}"
+                                      Stroke="Black"
+                                      StrokeWidth="2"/>
             </chart:NumericalAxis.MajorGridLineStyle>
         </chart:NumericalAxis>
     </chart:SfCartesianChart.XAxes>
@@ -123,7 +123,7 @@ Minor gridlines will be added automatically when the small tick lines is defined
     </chart:SfCartesianChart.XAxes>
 
     <chart:SfCartesianChart.YAxes>
-        <chart:NumericalAxis MinorTicksPerInterval = "3"/>
+        <chart:NumericalAxis MinorTicksPerInterval="3"/>
     </chart:SfCartesianChart.YAxes>
     . . .
 </chart:SfCartesianChart>
@@ -159,7 +159,7 @@ The [MinorGridLineStyle](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Cha
 <chart:SfCartesianChart>
     . . .
     <chart:SfCartesianChart.Resources>
-        <DoubleCollection x:Key = "dashArray">
+        <DoubleCollection x:Key="dashArray">
             <x:Double>3</x:Double>
             <x:Double>3</x:Double>
         </DoubleCollection>
@@ -170,11 +170,11 @@ The [MinorGridLineStyle](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Cha
     </chart:SfCartesianChart.XAxes>
 
     <chart:SfCartesianChart.YAxes>
-        <chart:NumericalAxis ShowMinorGridLines = "True" MinorTicksPerInterval = "2">
+        <chart:NumericalAxis ShowMinorGridLines="True" MinorTicksPerInterval="2">
             <chart:NumericalAxis.MinorGridLineStyle>
-                <chart:ChartLineStyle StrokeDashArray = "{StaticResource dashArray}"
-                                      Stroke = "Black"
-                                      StrokeWidth = "0.8"/>
+                <chart:ChartLineStyle StrokeDashArray="{StaticResource dashArray}"
+                                      Stroke="Black"
+                                      StrokeWidth="0.8"/>
             </chart:NumericalAxis.MinorGridLineStyle>
         </chart:NumericalAxis>
     </chart:SfCartesianChart.YAxes>

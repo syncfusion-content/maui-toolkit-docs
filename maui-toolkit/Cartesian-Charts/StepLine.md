@@ -32,13 +32,13 @@ N> The Cartesian chart has [Series](https://help.syncfusion.com/cr/maui-toolkit/
         <chart:NumericalAxis/>
     </chart:SfCartesianChart.YAxes>   
 
-    <chart:StepLineSeries ItemsSource = "{Binding Data1}"
-                          XBindingPath = "Date"
-                          YBindingPath = "Value"/>
+    <chart:StepLineSeries ItemsSource="{Binding Data1}"
+                          XBindingPath="Date"
+                          YBindingPath="Value"/>
 
-    <chart:StepLineSeries ItemsSource = "{Binding Data2}"
-                          XBindingPath = "Date"
-                          YBindingPath = "Value"/>
+    <chart:StepLineSeries ItemsSource="{Binding Data2}"
+                          XBindingPath="Date"
+                          YBindingPath="Value"/>
 
 </chart:SfCartesianChart>
 
@@ -101,10 +101,10 @@ The [StrokeDashArray](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Mau
         <chart:NumericalAxis/>
     </chart:SfCartesianChart.YAxes>   
 
-    <chart:StepLineSeries ItemsSource = "{Binding Data}"
-                          StrokeDashArray = "{StaticResource DashArray}"
-                          XBindingPath = "Date"
-                          YBindingPath = "Value"/>
+    <chart:StepLineSeries ItemsSource="{Binding Data}"
+                          StrokeDashArray="{StaticResource DashArray}"
+                          XBindingPath="Date"
+                          YBindingPath="Value"/>
 
 <chart:SfCartesianChart>
 
@@ -158,13 +158,13 @@ The [IsTransposed](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.T
         <chart:NumericalAxis/>
     </chart:SfCartesianChart.YAxes>   
 
-    <chart:StepLineSeries ItemsSource = "{Binding Data1}"
-                          XBindingPath = "Year"
-                          YBindingPath = "Value"/>
+    <chart:StepLineSeries ItemsSource="{Binding Data1}"
+                          XBindingPath="Year"
+                          YBindingPath="Value"/>
 
-    <chart:StepLineSeries ItemsSource = "{Binding Data2}"
-                          XBindingPath = "Year"
-                          YBindingPath = "Value"/>
+    <chart:StepLineSeries ItemsSource="{Binding Data2}"
+                          XBindingPath="Year"
+                          YBindingPath="Value"/>
 
 <chart:SfCartesianChart>
 
