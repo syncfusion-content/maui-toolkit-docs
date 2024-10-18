@@ -21,7 +21,7 @@ The `Pulling` event will be notified whenever the swipe gesture is started. This
 
 The [Pulling](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.PullToRefresh.SfPullToRefresh.html#Syncfusion_Maui_Toolkit_PullToRefresh_SfPullToRefresh_Pulling) event is triggered whenever you start pulling down on the [PullableContent](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.PullToRefresh.SfPullToRefresh.html#Syncfusion_Maui_Toolkit_PullToRefresh_SfPullToRefresh_PullableContent) with [PullingEventArgs](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.PullToRefresh.PullingEventArgs.html) that contains the following properties.
 
-* [Cancel]() - You can cancel the pulling action based on the `Progress` value.
+* `Cancel` - You can cancel the pulling action based on the `Progress` value.
 * [Progress](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.PullToRefresh.PullingEventArgs.html#Syncfusion_Maui_Toolkit_PullToRefresh_PullingEventArgs_Progress) - Gets the progress completion value.
 
 {% tabs %}
