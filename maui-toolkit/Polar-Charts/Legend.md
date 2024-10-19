@@ -31,8 +31,13 @@ To define the legend in the chart, initialize the [ChartLegend](https://help.syn
 
 {% highlight c# %}
 
+// Create a new instance of SfPolarChart
 SfPolarChart chart = new SfPolarChart();
+
+// Create and assign a new ChartLegend to the chart's Legend property
 chart.Legend = new ChartLegend();
+
+// Set the chart as the content of the current view/page
 this.Content = chart;
 
 {% endhighlight %}
@@ -59,8 +64,11 @@ The visibility of the chart legend can be controlled using the [IsVisible](https
 {% highlight c# %}
 
 SfPolarChart chart = new SfPolarChart();
+
+// Configure the chart's legend
 chart.Legend = new ChartLegend()
 { 
+    // Set the visibility of the legend to true
     IsVisible = true 
 };
 
@@ -94,32 +102,39 @@ The visibility of individual legend items for specific series can be controlled 
 
 {% highlight c# %}
 
+// Create a new SfPolarChart instance
 SfPolarChart chart = new SfPolarChart();
-this.BindingContext = new ViewModel();
-PolarViewModel polarViewModel = new PolarViewModel();
-chart.Legend = new ChartLegend();
 
+// Create a new PolarViewModel instance
+PolarViewModel polarViewModel = new PolarViewModel();
+
+chart.Legend = new ChartLegend(); // Add a legend to the chart
+
+// Create the first PolarAreaSeries
 PolarAreaSeries series1 = new PolarAreaSeries()
 {
-    XBindingPath = "Direction",
-    YBindingPath = "Tree",
-    ItemsSource = polarViewModel.PlantDetails,
-    Label = "Tree", 
-    IsVisibleOnLegend =  true,
+    XBindingPath = "Direction", 
+    YBindingPath = "Tree", 
+    ItemsSource = polarViewModel.PlantDetails, 
+    Label = "Tree",              // Set the label for this series
+    IsVisibleOnLegend =  true, 
 };
 
+// Create the second PolarAreaSeries
 PolarAreaSeries series2 = new PolarAreaSeries()
 {
-    XBindingPath = "Direction",
-    YBindingPath = "Tree",
-    ItemsSource = polarViewModel.PlantDetails,
-    Label = "Weed",
-    IsVisibleOnLegend =  false,
+    XBindingPath = "Direction", 
+    YBindingPath = "Tree",  
+    ItemsSource = polarViewModel.PlantDetails, 
+    Label = "Weed",              // Set the label for this series
+    IsVisibleOnLegend =  false,  // Hide this series from the legend
 };
 
+// Add both series to the chart
 chart.Series.Add(series1);
 chart.Series.Add(series2);
 
+// Set the chart as the content of the current page or control
 this.Content = chart;
 
 {% endhighlight %}
@@ -154,19 +169,23 @@ The [`Label`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolki
 
 {% highlight c# %}
 
+// Create a new SfPolarChart instance
 SfPolarChart chart = new SfPolarChart();
 ... 
-
+// Create a new ChartLegend instance
 ChartLegend legend = new ChartLegend();
+
+// Create and configure the ChartLegendLabelStyle
 ChartLegendLabelStyle labelStyle = new ChartLegendLabelStyle()
 {
-    TextColor = Color.Blue,
-    Margin = new Thickness(5),
-    FontSize = 18,
-    FontAttributes = FontAttributes.Bold,
-    FontFamily = "PlaywriteAR-Regular"
+    TextColor = Color.Blue, 
+    Margin = new Thickness(5), 
+    FontSize = 18, 
+    FontAttributes = FontAttributes.Bold, 
+    FontFamily = "PlaywriteAR-Regular" 
 };
 
+// Assign the configured labelStyle to the legend
 legend.LabelStyle = labelStyle;
 chart.Legend = legend;
 
@@ -199,20 +218,26 @@ To specify the legend icon based on the associated series type, use the [LegendI
 
 {% highlight c# %}
 
+// Create a new SfPolarChart instance
 SfPolarChart chart = new SfPolarChart();
-this.BindingContext = new ViewModel();
+
+// Create a new PolarViewModel instance
 PolarViewModel polarViewModel = new PolarViewModel();
+
+// Add a legend to the chart
 chart.Legend = new ChartLegend();
 
+// Create a new PolarAreaSeries
 PolarAreaSeries series1 = new PolarAreaSeries()
 {
     XBindingPath = "Direction",
     YBindingPath = "Tree",
     ItemsSource = polarViewModel.PlantDetails,
     Label = "Tree",
-    LegendIcon = ChartLegendIconType.Diamond,
+    LegendIcon = ChartLegendIconType.Diamond, // Set the legend icon type to Diamond
 };
 
+// Add the series to the chart
 chart.Series.Add(series1);
 this.Content = chart;
 
@@ -240,12 +265,15 @@ The legend can be positioned to the left, right, top, or bottom of the chart are
 {% highlight c# %}
 
 SfPolarChart chart = new SfPolarChart();
+
+// Configure the chart legend
 chart.Legend = new ChartLegend()
 { 
-    Placement = LegendPlacement.Bottom
+    Placement = LegendPlacement.Bottom // Set the placement of the legend to the bottom of the chart
 };
 
 this.Content = chart;
+
 
 {% endhighlight %}
 
@@ -278,28 +306,28 @@ The visibility of polar series can be controlled by tapping the legend item usin
 
 {% highlight c# %}
 
+// Create a new instance of SfPolarChart
 SfPolarChart chart = new SfPolarChart();
-this.BindingContext = new ViewModel();
+
+// Create a new instance of PolarViewModel
 PolarViewModel polarViewModel = new PolarViewModel();
+
+// Configure the chart legend
 chart.Legend = new ChartLegend()
 { 
-    ToggleSeriesVisibility = true 
+    ToggleSeriesVisibility = true // Enable toggling series visibility from the legend
 };
 
+// Create and configure the first PolarAreaSeries
 PolarAreaSeries series1 = new PolarAreaSeries()
 {
-    XBindingPath = "Direction",
-    YBindingPath = "Tree",
-    ItemsSource = polarViewModel.PlantDetails,
-    Label = "Tree",
+    // ... (Series1 configuration details)
 };
 
+// Create and configure the second PolarAreaSeries
 PolarAreaSeries series2 = new PolarAreaSeries()
 {
-    XBindingPath = "Direction",
-    YBindingPath = "Tree",
-    ItemsSource = polarViewModel.PlantDetails,
-    Label = "Weed",
+    // ... (Series2 configuration details)
 };
 
 chart.Series.Add(series1);
@@ -330,21 +358,27 @@ To set the maximum size request for the legend view, override the [GetMaximumSiz
 
 {% highlight c# %}
 
+// Define a custom legend class that extends ChartLegend
 public class LegendExt : ChartLegend
 {
+    // Override the GetMaximumSizeCoefficient method to customize the legend size
     protected override double GetMaximumSizeCoefficient()
     {
+        // Return a custom size coefficient of 0.7 (70% of available space)
         return 0.7;
     }
 }
 
+// Create a new instance of SfPolarChart
 SfPolarChart chart = new SfPolarChart();
+
+// Set the chart's legend to use the custom LegendExt class
 chart.Legend = new LegendExt();
+
 
 {% endhighlight %}
 
 {% endtabs %}
-
 
 ## Items layout
 An [ItemsLayout](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartLegend.html#Syncfusion_Maui_Toolkit_Charts_ChartLegend_ItemsLayout) property is used to customize the arrangement and position for each legend item. The default value is `null`. It accepts any layout type in ItemsLayout property.
@@ -386,46 +420,23 @@ An [ItemsLayout](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Too
 
 {% highlight c# %}
 
+// Create a new instance of SfPolarChart
 SfPolarChart chart = new SfPolarChart();
-this.BindingContext = new ViewModel();
-PolarViewModel polarViewModel = new PolarViewModel();
     
+// Create a new instance of ChartLegend
 ChartLegend legend = new ChartLegend();
 
+// Create a new FlexLayout for the legend items
 FlexLayout layout = new FlexLayout();
 layout.Wrap = FlexWrap.Wrap;
 layout.HorizontalOptions = LayoutOptions.Start;
 layout.SetBinding(WidthRequestProperty, nameof(SfPolarChart.WidthProperty));
 legend.ItemsLayout = layout;
 
-PolarAreaSeries series1 = new PolarAreaSeries()
-{
-    XBindingPath = "Direction",
-    YBindingPath = "Tree",
-    ItemsSource = polarViewModel.PlantDetails,
-    Label = "Tree",
-};
+// ... (other legend configurations)
 
-PolarAreaSeries series2 = new PolarAreaSeries()
-{
-    XBindingPath = "Direction",
-    YBindingPath = "Weed",
-    ItemsSource = polarViewModel.PlantDetails,
-    Label = "Weed",
-};
-
-PolarAreaSeries series3 = new PolarAreaSeries()
-{
-    XBindingPath = "Direction",
-    YBindingPath = "Flower",
-    ItemsSource = polarViewModel.PlantDetails,
-    Label = "Flower",
-};
-
+// Set the configured legend to the chart
 chart.Legend = legend;
-chart.Series.Add(series1);
-chart.Series.Add(series2);
-chart.Series.Add(series3);
 this.Content = chart;
         
 {% endhighlight %}
@@ -476,32 +487,21 @@ N> The BindingContext of the template is the corresponding underlying legend ite
 
 {% highlight c# %}
 
+// Create a new instance of SfPolarChart
 SfPolarChart chart = new SfPolarChart();
-this.BindingContext = new ViewModel();
-PolarViewModel polarViewModel = new PolarViewModel();
-    
+// ... (Additional chart configuration)
+
+// Create a new instance of ChartLegend
 ChartLegend legend = new ChartLegend();
+
+// Set the ItemTemplate of the legend to a DataTemplate resource named "legendTemplate"
 legend.ItemTemplate = chart.Resources["legendTemplate"] as DataTemplate;
+// ... (Additional legend configuration)
 
-PolarAreaSeries series1 = new PolarAreaSeries()
-{
-    XBindingPath = "Direction",
-    YBindingPath = "Tree",
-    ItemsSource = polarViewModel.PlantDetails,
-    Label = "Tree",
-};
-
-PolarAreaSeries series2 = new PolarAreaSeries()
-{
-    XBindingPath = "Direction",
-    YBindingPath = "Weed",
-    ItemsSource = polarViewModel.PlantDetails,
-    Label = "Weed",
-};
-
+// Assign the configured legend to the chart's Legend property
 chart.Legend = legend;
-chart.Series.Add(series1);
-chart.Series.Add(series2);
+
+// Set the chart as the content of the current control/page
 this.Content = chart;
         
 {% endhighlight %}

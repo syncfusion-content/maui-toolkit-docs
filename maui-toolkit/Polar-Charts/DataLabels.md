@@ -80,15 +80,24 @@ The [UseSeriesPalette](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Ma
 
 {% highlight c# %}
 
+// Create a new instance of SfPolarChart
 SfPolarChart chart = new SfPolarChart();
+
+// Create a new instance of PolarLineSeries
 PolarLineSeries series = new PolarLineSeries();
 . . .
+
+// Configure the data label settings for the series
 series.DataLabelSettings = new PolarDataLabelSettings()
 {
+    // Disable the use of series palette for data labels
+    // This means data labels won't automatically use the series color
     UseSeriesPalette = false
 };
 
+// Add the configured series to the chart's collection of series
 chart.Series.Add(series);
+
 
 {% endhighlight %}
 
@@ -116,15 +125,17 @@ The content of the label can be customized using the [LabelContext](https://help
 
 {% highlight c# %}
 
+// Create a new instance of SfPolarChart
 SfPolarChart chart = new SfPolarChart();
 . . .
+// Create a new PolarAreaSeries
 PolarAreaSeries series = new PolarAreaSeries()
 {
     ItemsSource = new ViewModel().PlantDetails,
     XBindingPath = "Direction",
     YBindingPath = "Tree",
     ShowDataLabels = true,
-    LabelContext = LabelContext.Percentage
+    LabelContext = LabelContext.Percentage // Set the context for data labels to display percentage values
 };
 
 chart.Series.Add(series);
@@ -162,27 +173,30 @@ The [SfPolarChart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.T
 
 {% highlight c# %}
 
+// Create a new SfPolarChart instance
 SfPolarChart chart = new SfPolarChart();
 . . .
+// Create a new PolarAreaSeries
 PolarAreaSeries series = new PolarAreaSeries();
 series.ItemsSource = new ViewModel().Data;
 series.XBindingPath = "Category";
 series.YBindingPath = "Values";
 series.ShowDataLabels = true;
 
+// Create a custom DataTemplate for the data labels
 DataTemplate labelTemplate = new DataTemplate(() =>
 {
     var image = new Image
     {
         Source = "arrow.png",
-        WidthRequest = 15,
-        HeightRequest = 15
+        WidthRequest = 15, 
+        HeightRequest = 15 
     };
     
     return image;
 });
 
-series.LabelTemplate = labelTemplate;
+series.LabelTemplate = labelTemplate; // Assign the custom template to the series' LabelTemplate
 chart.Series.Add(series);
 this.Content = chart;
         

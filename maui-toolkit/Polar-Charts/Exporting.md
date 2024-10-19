@@ -21,10 +21,16 @@ The following code sample demonstrates the usage of this method:
 
 {% highlight c# %}
 
+// Create a new instance of SfPolarChart
 SfPolarChart chart = new SfPolarChart();
-...
-chart.SaveAsImage("ChartSample.jpeg");
+
+// ... (Other chart configuration code would go here)
+
+// Set the chart as the content of the current page or control
 this.Content = chart;
+
+// Dynamically save the chart as an image file named "ChartSample.jpeg"
+chart.SaveAsImage("ChartSample.jpeg");
 
 {% endhighlight %}
 
@@ -73,10 +79,16 @@ The following code sample demonstrates the usage of this method:
 
 {% highlight c# %}
 
+// Create a new instance of SfPolarChart
 SfPolarChart chart = new SfPolarChart();
-...
-await chart.GetStreamAsync(ImageFileFormat.Jpeg);
+
+// ... (Other chart configuration code goes here)
+
+// Set the chart as the content of the current page or container
 this.Content = chart;
+
+// Export the chart as a JPEG image stream asynchronously
+await chart.GetStreamAsync(ImageFileFormat.Jpeg);
 
 {% endhighlight %}
 
