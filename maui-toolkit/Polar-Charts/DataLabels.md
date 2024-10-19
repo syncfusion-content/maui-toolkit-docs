@@ -33,16 +33,19 @@ The [ShowDataLabels](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui
 
 {% highlight c# %}
 
+// Create a new instance of SfPolarChart
 SfPolarChart chart = new SfPolarChart();
 . . .
+// Create a new PolarLineSeries
 PolarLineSeries series = new PolarLineSeries()
 {
     ItemsSource = viewModel.PlantDetails,
     XBindingPath = "Direction",
     YBindingPath = "Tree",
-    ShowDataLabels = true
+    ShowDataLabels = true // Enable data labels for the series
 };
 
+// Add the series to the chart's Series collection
 chart.Series.Add(series);
 
 {% endhighlight %}
