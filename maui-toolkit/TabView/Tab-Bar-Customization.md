@@ -24,11 +24,14 @@ To set the tab width mode, use the following code:
 {% tabs %}
 
 {% highlight xaml %}
-    <tabView:SfTabView TabWidthMode="Default">
+<!-- Define the SfTabView control with the tab width mode set to Default -->
+<tabView:SfTabView TabWidthMode="Default" />
 {% endhighlight %}
 
 {% highlight C# %}
+// Create an instance of the SfTabView control
 SfTabView tabView = new SfTabView();
+// Set the tab width mode to default
 tabView.TabWidthMode = TabWidthMode.Default;
 {% endhighlight %}
 
@@ -47,11 +50,14 @@ To set the tab width mode to fit the content, use the following code:
 {% tabs %}
 
 {% highlight xaml %}
-    <tabView:SfTabView TabWidthMode="SizeToContent">
+<!-- Define the SfTabView control with the tab width mode set to SizeToContent -->
+<tabView:SfTabView TabWidthMode="SizeToContent" />
 {% endhighlight %}
 
 {% highlight C# %}
+// Create an instance of the SfTabView control
 SfTabView tabView = new SfTabView();
+// Set the tab width mode to size-to-content
 tabView.TabWidthMode = TabWidthMode.SizeToContent;
 {% endhighlight %}
 
@@ -72,11 +78,14 @@ To set the tab bar height, use the following code:
 {% tabs %}
 
 {% highlight xaml %}
-    <tabView:SfTabView TabBarHeight="100">
+<!-- Define the SfTabView control with the tab bar height set to 100 -->
+<tabView:SfTabView TabBarHeight="100" />
 {% endhighlight %}
 
 {% highlight C# %}
+// Create an instance of the SfTabView control
 SfTabView tabView = new SfTabView();
+// Set the height of the tab bar to 100
 tabView.TabBarHeight = 100;
 {% endhighlight %}
 
@@ -94,13 +103,17 @@ To set the horizontal text alignment of the tab header, use the following code:
 
 {% tabs %}
 
-{% highlight xaml %} 
-<tabView:SfTabView HeaderHorizontalTextAlignment="Center"> 
+{% highlight xaml %}
+<!-- Define the SfTabView control with the header horizontal text alignment set to Center -->
+<tabView:SfTabView HeaderHorizontalTextAlignment="Center" />
 {% endhighlight %}
 
 {% highlight C# %}
-SfTabView tabView = new SfTabView(); 
-tabView.HeaderHorizontalTextAlignment = TextAlignment.Center; {% endhighlight %}
+// Create an instance of the SfTabView control
+SfTabView tabView = new SfTabView();
+// Set the horizontal text alignment of the tab headers to center
+tabView.HeaderHorizontalTextAlignment = TextAlignment.Center; 
+{% endhighlight %}
 
 {% endtabs %}
 
@@ -117,11 +130,14 @@ In this option, the tab bar will be placed above the content region of the tab v
 {% tabs %}
 
 {% highlight xaml %}
-    <tabView:SfTabView TabBarPlacement="Top">
+<!-- Define the SfTabView control with the tab bar placement set to Top -->
+<tabView:SfTabView TabBarPlacement="Top" />
 {% endhighlight %}
 
 {% highlight C# %}
+// Create an instance of the SfTabView control
 SfTabView tabView = new SfTabView();
+// Set the tab bar placement to the top
 tabView.TabBarPlacement = TabBarPlacement.Top;
 {% endhighlight %}
 
@@ -142,7 +158,9 @@ In this option, the tab bar will be placed below the content region of the tab v
 {% endhighlight %}
 
 {% highlight C# %}
+// Create an instance of the SfTabView control
 SfTabView tabView = new SfTabView();
+ // Set the tab bar placement to the bottom
 tabView.TabBarPlacement = TabBarPlacement.Bottom;
 {% endhighlight %}
 
@@ -165,11 +183,14 @@ To set a solid color as the background, use the following code:
 {% tabs %}
 
 {% highlight xaml %}
-    <tabView:SfTabView TabBarBackground="LightBlue">
+<!-- Define the SfTabView control with the tab bar background color set to LightBlue -->
+<tabView:SfTabView TabBarBackground="LightBlue" />
 {% endhighlight %}
 
 {% highlight C# %}
+// Create an instance of the SfTabView control
 SfTabView tabView = new SfTabView();
+// Set the background color of the tab bar to light blue
 tabView.TabBarBackground = Colors.LightBlue;
 {% endhighlight %}
 
@@ -185,38 +206,47 @@ The background can be customized with a linear gradient and radial gradient as l
 
 {% tabs %}
 {% highlight xaml %}
-    <tabView:SfTabView>
-        <tabView:SfTabView.TabBarBackground>
-            <LinearGradientBrush EndPoint="0,1">
-                <GradientStop Color="#009FFF" Offset="0.1" />
-                <GradientStop Color="#ec2F4B Offset="1.0" />
-            </LinearGradientBrush>
-        </tabView:SfTabView.TabBarBackground>
-    </tabView:SfTabView>
+<!-- Define the SfTabView control -->
+<tabView:SfTabView>
+    <!-- Set the tab bar background to a linear gradient brush -->
+    <tabView:SfTabView.TabBarBackground>
+        <LinearGradientBrush EndPoint="0,1">
+            <!-- Define the gradient stops for the linear gradient brush -->
+            <GradientStop Color="#009FFF"
+                          Offset="0.1" />
+            <GradientStop Color="#ec2F4B"
+                          Offset="1.0" />
+        </LinearGradientBrush>
+    </tabView:SfTabView.TabBarBackground>
+</tabView:SfTabView>
 {% endhighlight %}
 
 
 {% highlight C# %}
-Microsoft.Maui.Controls.GradientStop gra1 = new Microsoft.Maui.Controls.GradientStop()
+// Create the first gradient stop with color #009FFF and offset 0.1
+Microsoft.Maui.Controls.GradientStop gradientStop1 = new Microsoft.Maui.Controls.GradientStop()
 {
-    Color = Color.FromArgb("#009FFF"),
-    Offset = (float)0.1,
+	Color = Color.FromArgb("#009FFF"),
+	Offset = (float)0.1,
 };
 
-Microsoft.Maui.Controls.GradientStop gra2 = new Microsoft.Maui.Controls.GradientStop()
+// Create the second gradient stop with color #ec2F4B and offset 1.0
+Microsoft.Maui.Controls.GradientStop gradientStop2 = new Microsoft.Maui.Controls.GradientStop()
 {
-    Color = Color.FromArgb("#ec2F4B"),
-    Offset = (float)1.0,
+	Color = Color.FromArgb("#ec2F4B"),
+	Offset = (float)1.0,
 };
 
-LinearGradientBrush graBrush = new LinearGradientBrush()
+// Create a linear gradient brush with the defined gradient stops
+LinearGradientBrush gradientBrush = new LinearGradientBrush()
 {
-    EndPoint = new Point(0, 1),
-    GradientStops = new GradientStopCollection() { gra1, gra2 }
+	EndPoint = new Point(0, 1),
+	GradientStops = new GradientStopCollection() { gradientStop1, gradientStop2 }
 };
 
+// Create an instance of the SfTabView control and set its tab bar background to the gradient brush
 SfTabView tabView = new SfTabView();
-tabView.TabBarBackground = graBrush;
+tabView.TabBarBackground = gradientBrush;
 {% endhighlight %}
 {% endtabs %}
 
@@ -224,4 +254,4 @@ The following image shows the tab bar with a gradient color background.
 
 ![Tab Bar Gradient Color Bottom](images/TabBarGradientColor.png)
 
-N> View [sample](https://github.com/SyncfusionExamples/maui-toolkit-samples/tree/master/TabView/TabBarCustomization) in GitHub
+N> View [sample](https://github.com/SyncfusionExamples/maui-toolkit-samples/tree/master/TabView/TabBarCustomization) in GitHub.

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting started with .NET MAUI Tab View (SfTabView) Control | Syncfusion
+title: Getting started with .NET MAUI Tab View (SfTabView) | Syncfusion
 description: Learn how to set up, configure, and use the Syncfusion .NET MAUI Tab View (SfTabView) control in your cross-platform applications.
 platform: maui-toolkit
 control: Tab View control (SfTabView)
@@ -52,7 +52,7 @@ Before proceeding, ensure the following are setup:
 In the **MauiProgram.cs** file, register the handler for Syncfusion Toolkit.
 
 {% tabs %}
-{% highlight C# tabtitle="MauiProgram.cs" hl_lines="1 9" %}    
+{% highlight C# tabtitle="MauiProgram.cs" hl_lines="1 9" %}
 using Syncfusion.Maui.Toolkit.Hosting;
 
 public static class MauiProgram
@@ -269,7 +269,7 @@ namespace TabViewGettingStarted
 {% endhighlight %}
 {% endtabs %}
 
-N> View [sample](https://github.com/SyncfusionExamples/maui-toolkit-samples/tree/master/TabView/TabViewGettingStarted) in GitHub
+N> View [sample](https://github.com/SyncfusionExamples/maui-toolkit-samples/tree/master/TabView/TabViewGettingStarted) in GitHub.
 
 ## Populate tab items using ItemsSource
 

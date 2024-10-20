@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Tab Item Customization in .NET MAUI Tab View (SfTabView) | Syncfusion
-description: Learn how to customize tab items in Syncfusion .NET MAUI Tab View (SfTabView). Explore image integration, text styling, font customization, and layout options to enhance your tab view appearance.
+description: Learn how to customize tab items in Syncfusion .NET MAUI Tab View (SfTabView). Explore the options to enhance your tab view appearance.
 platform: maui-toolkit
 control: Tab View
 documentation: ug
@@ -20,20 +20,28 @@ The [Header](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit
 {% tabs %}
 
 {% highlight xaml %}
+<!-- Define the SfTabView control -->
 <tabView:SfTabView>
-    <tabView:SfTabItem Header="ITEM 1"/>
+	<!-- Define a tab item with the header set to "ITEM 1" -->
+	<tabView:SfTabItem Header="ITEM 1" />
 </tabView:SfTabView>
 {% endhighlight %}
 
 {% highlight C# %}
-var tabView = new SfTabView();
+// Create an instance of the SfTabView control
+SfTabView tabView = new SfTabView();
+
+// Create a collection of tab items
 var tabItems = new TabItemCollection
 {
-    new SfTabItem()
-    {
-        Header = "ITEM 1",
-    }
+	new SfTabItem()
+	{
+		Header = "ITEM 1",
+	}
 };
+
+// Set the Items property of the SfTabView to the collection of tab items
+tabView.Items = tabItems;
 {% endhighlight %}
 
 {% endtabs %}
@@ -49,22 +57,30 @@ You can add an image to a tab item to enhance its visual appeal. The [ImageSourc
 {% tabs %}
 
 {% highlight xaml %}
+<!-- Define the SfTabView control -->
 <tabView:SfTabView>
-    <tabView:SfTabItem Header="ITEM 1" ImageSource="alexandar"/>
+    <!-- Define a tab item with the header set to "ITEM 1" and an image source set to "alexandar" -->
+    <tabView:SfTabItem Header="ITEM 1"
+                       ImageSource="alexandar" />
 </tabView:SfTabView>
 {% endhighlight %}
 
 {% highlight C# %}
-var tabView = new SfTabView();
+// Create an instance of the SfTabView control
+SfTabView tabView = new SfTabView();
+
+// Create a collection of tab items
 var tabItems = new TabItemCollection
 {
-    new SfTabItem()
-    {
-        Header = "ITEM 1",
-        ImageSource = "alexandar",
-    }
+	new SfTabItem
+	{
+		Header = "ITEM 1",
+		ImageSource = "alexandar",
+	}
 };
 
+// Set the Items property of the SfTabView to the collection of tab items
+tabView.Items = tabItems;
 {% endhighlight %}
 
 {% endtabs %}
@@ -80,30 +96,39 @@ The `Content` property allows you to assign a view that will be displayed in the
 {% tabs %}
 
 {% highlight xaml %}
+<!-- Define the SfTabView control -->
 <tabView:SfTabView>
-    <tabView:SfTabItem Header="ITEM 2">
-        <tabView:SfTabItem.Content>
-            <ListView>
-                <!--Add your items here-->
-            </ListView>
-        </tabView:SfTabItem.Content>
-    </tabView:SfTabItem>
+	<!-- Define a tab item with the header set to "ITEM 2" -->
+	<tabView:SfTabItem Header="ITEM 2">
+		<!-- Define the content of the tab item -->
+		<tabView:SfTabItem.Content>
+			<ListView>
+				<!-- Add your items here -->
+			</ListView>
+		</tabView:SfTabItem.Content>
+	</tabView:SfTabItem>
 </tabView:SfTabView>
 {% endhighlight %}
 
 {% highlight C# %}
-var tabView = new SfTabView();
+// Create an instance of the SfTabView control
+SfTabView tabView = new SfTabView();
+
+// Create a collection of tab items
 var tabItems = new TabItemCollection
 {
-    new SfTabItem()
-    {
-        Header = "ITEM 2",
-        Content = new ListView()
-        {
-            // Add your items here
-        }
-    }
+	new SfTabItem
+	{
+		Header = "ITEM 2",
+		Content = new ListView
+		{
+			// Add your items here
+		}
+	}
 };
+
+// Set the Items property of the SfTabView to the collection of tab items
+tabView.Items = tabItems;
 {% endhighlight %}
 
 {% endtabs %}
@@ -125,20 +150,28 @@ When the `ImagePosition` property is set to `Top`, the image will be placed abov
 {% tabs %}
 
 {% highlight xaml %}
- <tabView:SfTabView>
-     <tabView:SfTabItem ImagePosition="Top"/>
- </tabView:SfTabView>
+<!-- Define the SfTabView control -->
+<tabView:SfTabView>
+	<!-- Define a tab item with the image position set to Top -->
+	<tabView:SfTabItem ImagePosition="Top" />
+</tabView:SfTabView>
 {% endhighlight %}
 
 {% highlight C# %}
-var tabView = new SfTabView();
+// Create an instance of the SfTabView control
+SfTabView tabView = new SfTabView();
+
+// Create a collection of tab items
 var tabItems = new TabItemCollection
 {
-    new SfTabItem()
-    {
-        ImagePosition = TabImagePosition.Top,
-    }
+	new SfTabItem
+	{
+		ImagePosition = TabImagePosition.Top,
+	}
 };
+
+// Set the Items property of the SfTabView to the collection of tab items
+tabView.Items = tabItems;
 {% endhighlight %}
 
 {% endtabs %}
@@ -154,20 +187,28 @@ When the `ImagePosition` property is set to `Bottom`, the image will be placed b
 {% tabs %}
 
 {% highlight xaml %}
+<!-- Define the SfTabView control -->
 <tabView:SfTabView>
-    <tabView:SfTabItem ImagePosition="Bottom"/>
+	<!-- Define a tab item with the image position set to Top -->
+	<tabView:SfTabItem ImagePosition="Top" />
 </tabView:SfTabView>
 {% endhighlight %}
 
 {% highlight C# %}
-var tabView = new SfTabView();
+// Create an instance of the SfTabView control
+SfTabView tabView = new SfTabView();
+
+// Create a collection of tab items
 var tabItems = new TabItemCollection
 {
-    new SfTabItem()
-    {
-        ImagePosition = TabImagePosition.Bottom,
-    }
+	new SfTabItem
+	{
+		ImagePosition = TabImagePosition.Bottom,
+	}
 };
+
+// Set the Items property of the SfTabView to the collection of tab items
+tabView.Items = tabItems;
 {% endhighlight %}
 
 {% endtabs %}
@@ -183,13 +224,18 @@ When the `ImagePosition` property is set to `Left`, the image will be placed bef
 {% tabs %}
 
 {% highlight xaml %}
+<!-- Define the SfTabView control -->
 <tabView:SfTabView>
-    <tabView:SfTabItem ImagePosition="Left"/>
+	<!-- Define a tab item with the image position set to Left -->
+	<tabView:SfTabItem ImagePosition="Left" />
 </tabView:SfTabView>
 {% endhighlight %}
 
 {% highlight C# %}
-var tabView = new SfTabView();
+// Create an instance of the SfTabView control
+SfTabView tabView = new SfTabView();
+
+// Create a collection of tab items
 var tabItems = new TabItemCollection
 {
     new SfTabItem()
@@ -197,6 +243,9 @@ var tabItems = new TabItemCollection
         ImagePosition = TabImagePosition.Left,
     }
 };
+
+// Set the Items property of the SfTabView to the collection of tab items
+tabView.Items = tabItems;
 {% endhighlight %}
 
 {% endtabs %}
@@ -212,13 +261,18 @@ When the `ImagePosition` property is set to `Right`, the image will be placed to
 {% tabs %}
 
 {% highlight xaml %}
+<!-- Define the SfTabView control -->
 <tabView:SfTabView>
-    <tabView:SfTabItem ImagePosition="Right"/>
+	<!-- Define a tab item with the image position set to Right -->
+	<tabView:SfTabItem ImagePosition="Right" />
 </tabView:SfTabView>
 {% endhighlight %}
 
 {% highlight C# %}
-var tabView = new SfTabView();
+// Create an instance of the SfTabView control
+SfTabView tabView = new SfTabView();
+
+// Create a collection of tab items
 var tabItems = new TabItemCollection
 {
     new SfTabItem()
@@ -226,6 +280,9 @@ var tabItems = new TabItemCollection
         ImagePosition = TabImagePosition.Right,
     }
 };
+
+// Set the Items property of the SfTabView to the collection of tab items
+tabView.Items = tabItems;
 {% endhighlight %}
 
 {% endtabs %}
@@ -241,13 +298,18 @@ The [ImageTextSpacing](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Ma
 {% tabs %}
 
 {% highlight xaml %}
+<!-- Define the SfTabView control -->
 <tabView:SfTabView>
-    <tabView:SfTabItem ImageTextSpacing="20"/>
+	<!-- Define a tab item with the image text spacing set to 20 -->
+	<tabView:SfTabItem ImageTextSpacing="20" />
 </tabView:SfTabView>
 {% endhighlight %}
 
 {% highlight C# %}
-var tabView = new SfTabView();
+// Create an instance of the SfTabView control
+SfTabView tabView = new SfTabView();
+
+// Create a collection of tab items
 var tabItems = new TabItemCollection
 {
     new SfTabItem()
@@ -255,6 +317,9 @@ var tabItems = new TabItemCollection
         ImageTextSpacing = "20",
     }
 };
+
+// Set the Items property of the SfTabView to the collection of tab items
+tabView.Items = tabItems;
 {% endhighlight %}
 
 {% endtabs %}
@@ -270,13 +335,18 @@ The [TextColor](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Tool
 {% tabs %}
 
 {% highlight xaml %}
+<!-- Define the SfTabView control -->
 <tabView:SfTabView>
-    <tabView:SfTabItem TextColor="Blue"/>
+	<!-- Define a tab item with the text color set to Blue -->
+	<tabView:SfTabItem TextColor="Blue" />
 </tabView:SfTabView>
 {% endhighlight %}
 
 {% highlight C# %}
-var tabView = new SfTabView();
+// Create an instance of the SfTabView control
+SfTabView tabView = new SfTabView();
+
+// Create a collection of tab items
 var tabItems = new TabItemCollection
 {
     new SfTabItem()
@@ -284,6 +354,9 @@ var tabItems = new TabItemCollection
         TextColor = Color.Blue,
     }
 };
+
+// Set the Items property of the SfTabView to the collection of tab items
+tabView.Items = tabItems;
 {% endhighlight %}
 
 {% endtabs %}
@@ -303,13 +376,18 @@ The [FontFamily](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Too
 {% tabs %}
 
 {% highlight xaml %}
+<!-- Define the SfTabView control -->
 <tabView:SfTabView>
-    <tabView:SfTabItem FontFamily="OpenSansRegular"/>
+	<!-- Define a tab item with the font family set to OpenSansRegular -->
+	<tabView:SfTabItem FontFamily="OpenSansRegular" />
 </tabView:SfTabView>
 {% endhighlight %}
 
 {% highlight C# %}
-var tabView = new SfTabView();
+// Create an instance of the SfTabView control
+SfTabView tabView = new SfTabView();
+
+// Create a collection of tab items
 var tabItems = new TabItemCollection
 {
     new SfTabItem()
@@ -317,6 +395,9 @@ var tabItems = new TabItemCollection
         FontFamily = "OpenSansRegular",
     }
 };
+
+// Set the Items property of the SfTabView to the collection of tab items
+tabView.Items = tabItems;
 {% endhighlight %}
 
 {% endtabs %}
@@ -332,13 +413,18 @@ The [FontAttributes](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui
 {% tabs %}
 
 {% highlight xaml %}
+<!-- Define the SfTabView control -->
 <tabView:SfTabView>
-    <tabView:SfTabItem FontAttributes="Bold"/>
+	<!-- Define a tab item with the font attributes set to Bold -->
+	<tabView:SfTabItem FontAttributes="Bold" />
 </tabView:SfTabView>
 {% endhighlight %}
 
 {% highlight C# %}
-var tabView = new SfTabView();
+// Create an instance of the SfTabView control
+SfTabView tabView = new SfTabView();
+
+// Create a collection of tab items
 var tabItems = new TabItemCollection
 {
     new SfTabItem()
@@ -346,6 +432,9 @@ var tabItems = new TabItemCollection
         FontAttributes = FontAttributes.Bold,
     }
 };
+
+// Set the Items property of the SfTabView to the collection of tab items
+tabView.Items = tabItems;
 {% endhighlight %}
 
 {% endtabs %}
@@ -361,13 +450,18 @@ The [FontSize](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolk
 {% tabs %}
 
 {% highlight xaml %}
+<!-- Define the SfTabView control -->
 <tabView:SfTabView>
-    <tabView:SfTabItem FontSize="32"/>
+	<!-- Define a tab item with the font size set to 32 -->
+	<tabView:SfTabItem FontSize="32" />
 </tabView:SfTabView>
 {% endhighlight %}
 
 {% highlight C# %}
-var tabView = new SfTabView();
+// Create an instance of the SfTabView control
+SfTabView tabView = new SfTabView();
+
+// Create a collection of tab items
 var tabItems = new TabItemCollection
 {
     new SfTabItem()
@@ -375,6 +469,9 @@ var tabItems = new TabItemCollection
         FontSize = 32,
     }
 };
+
+// Set the Items property of the SfTabView to the collection of tab items
+tabView.Items = tabItems;
 {% endhighlight %}
 
 {% endtabs %}
@@ -394,14 +491,22 @@ Below are examples demonstrating how to set the `TabHeaderPadding` property in b
 {% tabs %}
 
 {% highlight xaml %}
-<tabView:SfTabView TabWidthMode="SizeToContent" TabHeaderPadding="5,10,5,10">
-    <tabView:SfTabItem/>
+<!-- Define the SfTabView control with specific tab width mode and header padding -->
+<tabView:SfTabView TabWidthMode="SizeToContent"
+                   TabHeaderPadding="5,10,5,10">
+    <!-- Define a tab item -->
+    <tabView:SfTabItem />
 </tabView:SfTabView>
 {% endhighlight %}
 
 {% highlight C# %}
-var tabView = new SfTabView();
+// Create an instance of the SfTabView control
+SfTabView tabView = new SfTabView();
+
+// Set the tab width mode to size to content
 tabView.TabWidthMode = TabWidthMode.SizeToContent;
+
+// Set the tab header padding
 tabView.TabHeaderPadding = new Thickness(5, 10, 5, 10);
 {% endhighlight %}
 
@@ -420,13 +525,18 @@ Below are examples demonstrating how to enable scroll buttons in both XAML and C
 {% tabs %}
 
 {% highlight xaml %}
-<tabView:SfTabView  IsScrollButtonEnabled="True">
-    <tabView:SfTabItem/>
+<!-- Define the SfTabView control with scroll button enabled -->
+<tabView:SfTabView IsScrollButtonEnabled="True">
+	<!-- Define a tab item -->
+	<tabView:SfTabItem />
 </tabView:SfTabView>
 {% endhighlight %}
 
 {% highlight C# %}
-var tabView = new SfTabView();
+// Create an instance of the SfTabView control
+SfTabView tabView = new SfTabView();
+
+// Enable scroll buttons for the tab view
 tabView.IsScrollButtonEnabled = true;
 {% endhighlight %}
 
@@ -445,13 +555,18 @@ Below are examples demonstrating how to enable font auto scaling in both XAML an
 {% tabs %}
 
 {% highlight xaml %}
+<!-- Define the SfTabView control with font auto-scaling enabled -->
 <tabView:SfTabView FontAutoScalingEnabled="True">
-    <tabView:SfTabItem/>
+	<!-- Define a tab item -->
+	<tabView:SfTabItem />
 </tabView:SfTabView>
 {% endhighlight %}
 
 {% highlight C# %}
-var tabView = new SfTabView();
+// Create an instance of the SfTabView control
+SfTabView tabView = new SfTabView();
+
+// Enable font auto-scaling for the tab view
 tabView.FontAutoScalingEnabled = true;
 {% endhighlight %}
 
@@ -466,13 +581,18 @@ Below are examples demonstrating how to set the content transition duration in b
 {% tabs %}
 
 {% highlight xaml %}
-<tabView:SfTabView  ContentTransitionDuration ="300">
-    <tabView:SfTabItem/>
+<!-- Define the SfTabView control with content transition duration set to 300 -->
+<tabView:SfTabView ContentTransitionDuration="300">
+	<!-- Define a tab item -->
+	<tabView:SfTabItem />
 </tabView:SfTabView>
 {% endhighlight %}
 
 {% highlight C# %}
-var tabView = new SfTabView();
+// Create an instance of the SfTabView control
+SfTabView tabView = new SfTabView();
+
+// Set the content transition duration for the tab view
 tabView.ContentTransitionDuration = 300;
 {% endhighlight %}
 

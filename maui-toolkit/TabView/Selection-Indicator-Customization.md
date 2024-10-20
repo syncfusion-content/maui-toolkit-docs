@@ -20,7 +20,8 @@ The selection indicator will be positioned at the top of the selected tab. You c
 {% tabs %}
 
 {% highlight xaml %}
-    <tabView:SfTabView IndicatorPlacement="Top"/>
+<!-- Define the SfTabView control with the indicator placement set to the top -->
+<tabView:SfTabView IndicatorPlacement="Top" />
 {% endhighlight %}
 
 {% highlight C# %}
@@ -41,7 +42,8 @@ The selection indicator will be positioned at the bottom of the selected tab. Yo
 {% tabs %}
 
 {% highlight xaml %}
-    <tabView:SfTabView IndicatorPlacement="Bottom"/>
+<!-- Define the SfTabView control with the indicator placement set to the bottom -->
+<tabView:SfTabView IndicatorPlacement="Bottom"/>
 {% endhighlight %}
 
 {% highlight C# %}
@@ -62,7 +64,8 @@ The selection indicator will fill the selected tab. You can set this using the `
 {% tabs %}
 
 {% highlight xaml %}
-    <tabView:SfTabView IndicatorPlacement="Fill"/>
+<!-- Define the SfTabView control with the indicator placement set to the fill -->
+<tabView:SfTabView IndicatorPlacement="Fill"/>
 {% endhighlight %}
 
 {% highlight C# %}
@@ -87,7 +90,8 @@ You can customize the selection indicator's background color using the [`Indicat
 {% tabs %}
 
 {% highlight xaml %}
-    <tabView:SfTabView IndicatorBackground="LightBlue"/>
+<!-- Define the SfTabView control with the indicator background color set to LightBlue -->
+<tabView:SfTabView IndicatorBackground="LightBlue"/>
 {% endhighlight %}
 
 {% highlight C# %}
@@ -107,14 +111,18 @@ You can customize the selection indicator's background using linear or radial gr
 
 {% tabs %}
 {% highlight xaml %}
-    <tabView:SfTabView>
-        <tabView:SfTabView.IndicatorBackground>
-            <LinearGradientBrush EndPoint="0,1">
-                <GradientStop Color="#009FFF" Offset="0.1" />
-                <GradientStop Color="#ec2F4B" Offset="1.0" />
-            </LinearGradientBrush>
-        </tabView:SfTabView.IndicatorBackground>
-    </tabView:SfTabView>
+<tabView:SfTabView>
+    <!-- Set the indicator background to a linear gradient brush -->
+    <tabView:SfTabView.IndicatorBackground>
+        <LinearGradientBrush EndPoint="0,1">
+            <!-- Define the gradient stops for the linear gradient brush -->
+            <GradientStop Color="#009FFF"
+                          Offset="0.1" />
+            <GradientStop Color="#ec2F4B"
+                          Offset="1.0" />
+        </LinearGradientBrush>
+    </tabView:SfTabView.IndicatorBackground>
+</tabView:SfTabView>
 {% endhighlight %}
 {% highlight C# %}
 Microsoft.Maui.Controls.GradientStop gradient1 = new Microsoft.Maui.Controls.GradientStop()
@@ -156,7 +164,8 @@ In Fit mode, the indicator width adjusts to fit the content of the header item. 
 {% tabs %}
 
 {% highlight xaml %}
-    <tabView:SfTabView IndicatorWidthMode="Fit"/>
+<!-- Define the SfTabView control with the indicator width mode set to Fit -->
+<tabView:SfTabView IndicatorWidthMode="Fit" />
 {% endhighlight %}
 
 {% highlight C# %}
@@ -177,7 +186,8 @@ In Stretch mode, the indicator width stretches to cover the entire header item. 
 {% tabs %}
 
 {% highlight xaml %}
-    <tabView:SfTabView IndicatorWidthMode="Stretch"/>
+<!-- Define the SfTabView control with the indicator width mode set to Stretch -->
+<tabView:SfTabView IndicatorWidthMode="Stretch"/>
 {% endhighlight %}
 
 {% highlight C# %}
@@ -198,11 +208,14 @@ You can customize the corner radius of the selection indicator using the [Indica
 {% tabs %}
 
 {% highlight xaml %}
-    <tabView:SfTabView IndicatorCornerRadius ="5"/>
+<!-- Define the SfTabView control with the indicator corner radius set to 5 -->
+<tabView:SfTabView IndicatorCornerRadius="5" />
 {% endhighlight %}
 
 {% highlight C# %}
+// Create an instance of the SfTabView control
 SfTabView tabView = new SfTabView();
+// Set the corner radius of the indicator
 tabView.IndicatorCornerRadius  = 5;
 {% endhighlight %}
 

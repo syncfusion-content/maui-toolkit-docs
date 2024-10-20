@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with .NET MAUI Chips control | Syncfusion
-description: Learn here about getting started with Syncfusion Essential Studio .NET MAUI Chips control, its elements and more.
+description: Learn here about getting started with Syncfusion Toolkit for .NET MAUI Chips control, its elements and more.
 platform: maui-toolkit
 control: Chips
 documentation: ug
@@ -50,7 +50,7 @@ Before proceeding, ensure the following are setup:
 
 In the **MauiProgram.cs file**, register the handler for Syncfusion Toolkit.
 
-{% highlight c# hl_lines="1 10" %}
+{% highlight c# hl_lines="1 9" %}
 
 using Syncfusion.Maui.Toolkit.Hosting;
 public static class MauiProgram

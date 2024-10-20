@@ -85,10 +85,9 @@ In the **MauiProgram.cs** file, register the handler for Syncfusion Toolkit.
 {% highlight XAML %}
 
 <ContentPage   
-            
-    xmlns:segmentedControl="clr-namespace:Syncfusion.Maui.Toolkit.SegmentedControl;assembly=Syncfusion.Maui.Toolkit"
+    xmlns:segmentedControl="clr-namespace:Syncfusion.Maui.Toolkit.SegmentedControl;assembly=Syncfusion.Maui.Toolkit">
 
-        <segmentedControl:SfSegmentedControl />
+    <segmentedControl:SfSegmentedControl />
 
 </ContentPage>
 
@@ -121,7 +120,7 @@ You can use [ItemsSource](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion
 
 <ContentPage   
     xmlns:segmentedControl="clr-namespace:Syncfusion.Maui.Toolkit.SegmentedControl;assembly=Syncfusion.Maui.Toolkit">
-    <segmentedControl:SfSegmentedControl x:Name="segmentedControl">
+    <segmentedControl:SfSegmentedControl>
         <segmentedControl:SfSegmentedControl.ItemsSource>
             <x:Array Type="{x:Type x:String}">
                 <x:String>Day</x:String>

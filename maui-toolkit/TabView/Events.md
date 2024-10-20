@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Events in .NET MAUI Tab View (SfTabView) Control | Syncfusion
-description: Explore event handling in the Syncfusion .NET MAUI Tab View (SfTabView) control. Learn how to use TabItemTapped, SelectionChanging, and SelectionChanged events to enhance user interaction and control behavior.
+description: Explore event handling in the Syncfusion .NET MAUI Tab View (SfTabView) control. Learn how to use events to enhance user interaction.
 platform: maui-toolkit
 control: Tab View control (SfTabView)
 documentation: ug
@@ -22,24 +22,30 @@ The [TabItemTapped](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.
 
 {% highlight xaml %}
 
-<tabView:SfTabView x:Name="tabView" TabItemTapped="TabView_TabItemTapped"/>
+<!-- Define the SfTabView control with a name and an event handler for the TabItemTapped event -->
+<tabView:SfTabView x:Name="tabView"
+                   TabItemTapped="TabView_TabItemTapped" />
 
 {% endhighlight %}
 
 {% highlight C# %}
 
+// Create an instance of the SfTabView control
+SfTabView tabView = new SfTabView();
+// Subscribe to the TabItemTapped event
 tabView.TabItemTapped += TabView_TabItemTapped;
 
+// Event handler for the TabItemTapped event
 private void TabView_TabItemTapped(object? sender, TabItemTappedEventArgs e)
 {
-    if (e.TabItem != null)
-    {
-        // Acces the Selected Tab Item Property
-        e.TabItem.FontSize = 26;
+	if (e.TabItem != null)
+	{
+		// Access the selected tab item property and set its font size
+		e.TabItem.FontSize = 26;
 
-        // Cancel the event if needed
-        e.Cancel = true;
-    }
+		// Cancel the event if needed
+		e.Cancel = true;
+	}
 }
 
 {% endhighlight %}
@@ -57,21 +63,27 @@ The [SelectionChanging](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.M
 
 {% highlight xaml %}
 
-<tabView:SfTabView x:Name="tabView" SelectionChanging="TabView_SelectionChanging"/>
+<!-- Define the SfTabView control with a name and an event handler for the SelectionChanging event -->
+<tabView:SfTabView x:Name="tabView"
+                   SelectionChanging="TabView_SelectionChanging" />
 	
 {% endhighlight %}
 
 {% highlight C# %}
 
+// Create an instance of the SfTabView control
+SfTabView tabView = new SfTabView();
+// Subscribe to the SelectionChanging event
 tabView.SelectionChanging += TabView_SelectionChanging;
 
+// Event handler for the SelectionChanging event
 private void TabView_SelectionChanging(object? sender, SelectionChangingEventArgs e)
 {
-    // Access the index value of the item that is being selected.
-    var selectionChangingIndex = e.Index;
+	// Access the index value of the item that is being selected.
+	var selectionChangingIndex = e.Index;
 
-    // If we set Cancel to true, the tab item will not be selected.
-    e.Cancel = true;
+	// If we set Cancel to true, the tab item will not be selected.
+	e.Cancel = true;
 }
 
 {% endhighlight %}
@@ -90,21 +102,28 @@ The [SelectionChanged](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Ma
 
 {% highlight xaml %}
 
-<tabView:SfTabView x:Name="tabView" SelectionChanged="TabView_SelectionChanged"/>
+<!-- Define the SfTabView control with a name and an event handler for the SelectionChanged event -->
+<tabView:SfTabView x:Name="tabView"
+                   SelectionChanged="TabView_SelectionChanged" />
 	
 {% endhighlight %}
 
 {% highlight C# %}
 
+// Create an instance of the SfTabView control
+SfTabView tabView = new SfTabView();
+// Subscribe to the SelectionChanged event
 tabView.SelectionChanged += TabView_SelectionChanged;
-private void TabView_SelectionChanged(object sender, TabSelectionChangedEventArgs e)
+			
+// Event handler for the SelectionChanged event
+private void TabView_SelectionChanged(object? sender, TabSelectionChangedEventArgs e)
 {
-    // Access the new and old Index
-    double newValue = e.NewIndex;
-    double oldValue = e.OldIndex;
+	// Access the new and old Index
+	double newValue = e.NewIndex;
+	double oldValue = e.OldIndex;
 
-    // If we set Handled to true, it indicates that the event has been handled.
-    e.Handled = true;
+	// If we set Handled to true, it indicates that the event has been handled.
+	e.Handled = true;
 }
 
 {% endhighlight %}
