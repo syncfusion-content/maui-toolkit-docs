@@ -13,7 +13,7 @@ The [Offset](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit
 
 ## Tilt Non Selected Items
 
-The [RotationAngle](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Carousel.SfCarousel.html#Syncfusion_Maui_Toolkit_Carousel_SfCarousel_RotationAngle) property in the [SfCarousel](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Carousel.SfCarousel.html) control is utilized to tilt all unselected items at a specified angle in the [Default](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Carousel.SfCarousel.ViewMode.html#Syncfusion_Maui_Toolkit_Carousel_SfCarousel_ViewMode_Default) mode.
+The [RotationAngle](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Carousel.SfCarousel.html#Syncfusion_Maui_Toolkit_Carousel_SfCarousel_RotationAngle) property in the [SfCarousel](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Carousel.SfCarousel.html) control is utilized to tilt all unselected items at a specified angle in the [Default](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Carousel.ViewMode.html#Syncfusion_Maui_Toolkit_Carousel_ViewMode_Default) mode.
 
 N> If the angle value is positive, then the rotation is in the clockwise direction. If the angle value is negative, the rotation is in the counterclockwise direction. 
 

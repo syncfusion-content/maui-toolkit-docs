@@ -23,7 +23,7 @@ The following properties are used to achieve this support:
 
 By enabling the [AllowLoadMore](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Carousel.SfCarousel.html#Syncfusion_Maui_Toolkit_Carousel_SfCarousel_AllowLoadMore) property, the LoadMore support works in the carousel view. 
 
-N>The default value of the [AllowLoadMore](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Carousel.SfCarousel.html#Syncfusion_Maui_Toolkit_Carousel_SfCarousel_AllowLoadMore) property is false.
+N> The default value of the [AllowLoadMore](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Carousel.SfCarousel.html#Syncfusion_Maui_Toolkit_Carousel_SfCarousel_AllowLoadMore) property is **false**.
 
 {% tabs %}
 
@@ -56,7 +56,7 @@ carousel.SetBinding(SfCarousel.ItemsSourceProperty, "ImageCollection");
 
 Number of items can be maintained in the carousel control using the [LoadMoreItemsCount](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Carousel.SfCarousel.html#Syncfusion_Maui_Toolkit_Carousel_SfCarousel_LoadMoreItemsCount) property. By using the **LoadMoreItemsCount** property, numerous items can be separated. 
 
-N>The default value of the [LoadMoreItemsCount](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Carousel.SfCarousel.html#Syncfusion_Maui_Toolkit_Carousel_SfCarousel_LoadMoreItemsCount) property is 3.
+N> The default value of the [LoadMoreItemsCount](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Carousel.SfCarousel.html#Syncfusion_Maui_Toolkit_Carousel_SfCarousel_LoadMoreItemsCount) property is **3**.
 
 {% tabs %}
 

@@ -285,12 +285,10 @@ Create a **Model** class for data binding, that implements `INotifyPropertyChang
 
 {% highlight C# %}
 
-namespace TabViewGettingStarted
-{
     public class PersonModel : INotifyPropertyChanged
     {
         private string name;
-        private string description;
+		private string description;
 
         // Event to notify when a property value changes
         public event PropertyChangedEventHandler PropertyChanged;
@@ -314,7 +312,7 @@ namespace TabViewGettingStarted
                 OnPropertyChanged(nameof(Name));
             }
         }
-
+		
         // Property for the person's description
         public string Description
         {
@@ -325,9 +323,8 @@ namespace TabViewGettingStarted
                 // Notify that the Description property has changed
                 OnPropertyChanged(nameof(Description));
             }
-        }
+        }		
     }
-}
 {% endhighlight %}
 
 {% endtabs %}
@@ -337,8 +334,6 @@ Next, we will create a **ViewModel** class that will serve as the data source fo
 {% tabs %}
 
 {% highlight C# %}
-namespace TabViewGettingStarted
-{
     public class PersonViewModel : INotifyPropertyChanged
     {
         private ObservableCollection<PersonModel> tabItems;
@@ -370,15 +365,15 @@ namespace TabViewGettingStarted
         public PersonViewModel()
         {
             TabItems = new ObservableCollection<PersonModel>();
-            TabItems.Add(new PersonModel() { Name = "Alexandar", Description = "Alexandar is a creative fiction writer with a knack for weaving intricate plots and complex characters. His works span a variety of genres, but he excels in contemporary fiction. With a passion for exploring human emotions, Alexandar’s stories are known for their depth and ability to resonate with readers on a personal level." });
+            TabItems.Add(new PersonModel() { Name = "Alexandar" , Description = "Alexandar is a creative fiction writer with a knack for weaving intricate plots and complex characters. His works span a variety of genres, but he excels in contemporary fiction. With a passion for exploring human emotions, Alexandar’s stories are known for their depth and ability to resonate with readers on a personal level." });
             TabItems.Add(new PersonModel() { Name = "Gabriella", Description = "Create your description here..." });
-            TabItems.Add(new PersonModel() { Name = "Clara", Description = "Create your description here..." });
-            TabItems.Add(new PersonModel() { Name = "Tye", Description = "Create your description here..." });
-            TabItems.Add(new PersonModel() { Name = "Nora", Description = "Create your description here..." });
-            TabItems.Add(new PersonModel() { Name = "Sebastian", Description = "Create your description here..." });
+            TabItems.Add(new PersonModel() { Name = "Clara" , Description = "Create your description here..." });
+            TabItems.Add(new PersonModel() { Name = "Tye" , Description = "Create your description here..." });
+            TabItems.Add(new PersonModel() { Name = "Nora" , Description = "Create your description here..." });
+            TabItems.Add(new PersonModel() { Name = "Sebastian" , Description = "Create your description here..." });
         }
     }
-}
+
 {% endhighlight %}
 
 {% endtabs %}

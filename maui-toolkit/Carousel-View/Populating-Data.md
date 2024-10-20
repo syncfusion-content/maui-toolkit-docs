@@ -9,41 +9,41 @@ documentation : ug
 
 # Populating Data in .NET MAUI Carousel View (SfCarousel)
 
-[SfCarousel](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Carousel.SfCarousel.html) control supports binding to different items sources such as IList and ObservableCollection type of  items sources.
+The [SfCarousel](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Carousel.SfCarousel.html) control supports binding to various item sources, such as IList and ObservableCollection.
 
 ## Through Binding
 
-Items can be populated in the [SfCarousel](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Carousel.SfCarousel.html) control through item source and applying a custom template, as explained in the following.
+Items can be populated in the [SfCarousel](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Carousel.SfCarousel.html) control by binding an item source and applying a custom template, as explained below.
 
 ### Create a Model with Data
 
-[SfCarousel](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Carousel.SfCarousel.html) items can be populated with a collection of image data. For example, a user may want to create a **SfCarousel** control, which will display a list of images.
+The [SfCarousel](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Carousel.SfCarousel.html) items can be populated with a collection of image data. For example, a user may want to create an **SfCarousel** control to display a list of images.
 
-The **SfCarousel** model looks as follows.
+The **SfCarousel** model is structured as follows.
 
 {% highlight C# %}
 
 namespace CarouselSample
 {
-    public class CarouselModel
+    public class GalleryModel
     {
-        public CarouselModel(string imageString)
+        public GalleryModel(string imageString)
         {
-            Image = imageString;
+            ImageName = imageString;
         }
-        private string _image;
+        private string _imageName;
 
-        public string Image
+        public string ImageName
         {
-            get { return _image; }
-            set { _image = value; }
+            get { return _imageName; }
+            set { _imageName = value; }
         }
     }
 }
 
 {% endhighlight %}
 
-Populate carousel items collection in View model with the image data. 
+Populate the **SfCarousel** items collection in the ViewModel with the image data.
 
 {% highlight C# %}
 
@@ -51,18 +51,18 @@ using System.Collections.Generic;
 
 namespace CarouselSample
 {
-    public class CarouselViewModel
+    public class GalleryViewModel
     {
-        public CarouselViewModel()
+        public GalleryViewModel()
         {
-            ImageCollection.Add(new CarouselModel("carousel_person1.png"));
-            ImageCollection.Add(new CarouselModel("carousel_person2.png"));
-            ImageCollection.Add(new CarouselModel("carousel_person3.png"));
-            ImageCollection.Add(new CarouselModel("carousel_person4.png"));
-            ImageCollection.Add(new CarouselModel("carousel_person5.png"));
+            ImageCollection.Add(new GalleryModel("carousel_person1.png"));
+            ImageCollection.Add(new GalleryModel("carousel_person2.png"));
+            ImageCollection.Add(new GalleryModel("carousel_person3.png"));
+            ImageCollection.Add(new GalleryModel("carousel_person4.png"));
+            ImageCollection.Add(new GalleryModel("carousel_person5.png"));
         }
-        private List<CarouselModel> imageCollection = new List<CarouselModel>();
-        public List<CarouselModel> ImageCollection
+        private List<GalleryModel> imageCollection = new List<GalleryModel>();
+        public List<GalleryModel> ImageCollection
         {
             get { return imageCollection; }
             set { imageCollection = value; }
@@ -74,7 +74,7 @@ namespace CarouselSample
 
 ### Binding the Data with Custom Template
 
-[SfCarousel](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Carousel.SfCarousel.html) provides support to add a custom view as carousel items by designing a view inside its [ItemTemplate](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Carousel.SfCarousel.html#Syncfusion_Maui_Toolkit_Carousel_SfCarousel_ItemTemplate). This template will be applied for all its items, and its data will be bound.
+The [SfCarousel](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Carousel.SfCarousel.html) supports adding custom views as carousel items by designing a view inside its [ItemTemplate](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Carousel.SfCarousel.html#Syncfusion_Maui_Toolkit_Carousel_SfCarousel_ItemTemplate). This template will be applied to all items, with data bound accordingly.
 
 {% tabs %}
 
@@ -87,12 +87,12 @@ namespace CarouselSample
              xmlns:local="clr-namespace:CarouselSample"
              x:Class="CarouselSample.MainPage">
     <ContentPage.BindingContext>
-        <local:CarouselViewModel/>
+        <local:GalleryViewModel/>
     </ContentPage.BindingContext>
     <ContentPage.Resources>
         <ResourceDictionary>
             <DataTemplate x:Key="itemTemplate">
-                <Image Source="{Binding Image}" 
+                <Image Source="{Binding ImageName}" 
                        Aspect="AspectFit"/>
             </DataTemplate>
         </ResourceDictionary>
@@ -119,7 +119,7 @@ namespace CarouselSample
         public MainPage()
         {
             InitializeComponent();
-            CarouselViewModel carouselViewModel = new CarouselViewModel();
+            GalleryViewModel galleryViewModel = new GalleryViewModel();
 
             SfCarousel carousel = new SfCarousel()
             {
@@ -131,12 +131,12 @@ namespace CarouselSample
             {
                 var grid = new Grid();
                 var nameLabel = new Image();
-                nameLabel.SetBinding(Image.SourceProperty, "Image");
+                nameLabel.SetBinding(Image.SourceProperty, "ImageName");
                 grid.Children.Add(nameLabel);
                 return grid;
             });
 
-            carousel.BindingContext = carouselViewModel;
+            carousel.BindingContext = galleryViewModel;
             carousel.ItemTemplate = itemTemplate;
             carousel.SetBinding(SfCarousel.ItemsSourceProperty, "ImageCollection");
 
