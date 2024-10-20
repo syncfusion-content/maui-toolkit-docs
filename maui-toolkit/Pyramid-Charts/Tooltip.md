@@ -30,7 +30,7 @@ To define the tooltip in the chart, set the [EnableTooltip](https://help.syncfus
 
 SfPyramidChart chart = new SfPyramidChart();
 . . .      
-chart.EnableTooltip = true;
+chart.EnableTooltip = true; // Enable tooltip for the chart.
 this.Content = chart;
 {% endhighlight %}
 
@@ -65,10 +65,12 @@ The [ChartTooltipBehavior](https://help.syncfusion.com/cr/maui-toolkit/Syncfusio
 
 SfPyramidChart chart = new SfPyramidChart();
 . . .
-chart.EnableTooltip = true;
+chart.EnableTooltip = true; // Enable tooltip for the chart.
+
+// Customize the tooltip behavior.
 chart.TooltipBehavior = new ChartTooltipBehavior()
 {
-    Duration = 4,
+    Duration = 4, // Set the duration for displaying the tooltip.
 };
 . . .
 this.Content = chart;
@@ -114,8 +116,8 @@ this.Content = chart;
 
 SfPyramidChart chart = new SfPyramidChart();
 . . .
-chart.EnableTooltip = true;
-chart.TooltipTemplate= grid.Resources["tooltipTemplate"] as DataTemplate;
+chart.EnableTooltip = true; // Enable tooltip for the chart.
+chart.TooltipTemplate= grid.Resources["tooltipTemplate"] as DataTemplate; // Set the tooltip template.
 . . .     
 this.Content = chart;
 {% endhighlight %}

@@ -25,7 +25,7 @@ The gap between each segment in the pyramid chart can be set using the [GapRatio
 
 SfPyramidChart chart = new SfPyramidChart();
 . . .
-chart.GapRatio = 0.2;
+chart.GapRatio = 0.2; // Set gap ratio between pyramid segments.
 . . .
 this.Content = chart;
 {% endhighlight %}

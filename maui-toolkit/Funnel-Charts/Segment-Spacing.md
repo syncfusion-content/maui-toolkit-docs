@@ -25,7 +25,7 @@ The gap between each segment in the funnel chart can be set using the [GapRatio]
 
 SfFunnelChart chart = new SfFunnelChart();
 . . .
-chart.GapRatio = 0.2;
+chart.GapRatio = 0.2; // Set gap ratio between funnel segments.
 . . .
 this.Content = chart;
 {% endhighlight %}
