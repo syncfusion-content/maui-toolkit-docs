@@ -33,11 +33,18 @@ To display a line series in a polar chart, instantiate the [PolarLineSeries](htt
 
 {% highlight c# %}
 
+// Create a new instance of SfPolarChart
 SfPolarChart chart = new SfPolarChart();
+
+// Create and set the primary axis (X-axis) as a CategoryAxis
 CategoryAxis primaryAxis = new CategoryAxis();
 chart.PrimaryAxis = primaryAxis;
+
+// Create and set the secondary axis (Y-axis) as a NumericalAxis
 NumericalAxis secondaryAxis = new NumericalAxis();
 chart.SecondaryAxis = secondaryAxis;
+
+// Create a new PolarLineSeries and configure its properties
 PolarLineSeries series = new PolarLineSeries()
 {
     ItemsSource = new ViewModel().PlantDetails,
@@ -45,6 +52,7 @@ PolarLineSeries series = new PolarLineSeries()
     YBindingPath = "Tree"
 };
 
+// Add the configured series to the chart's Series collection
 chart.Series.Add(series);
 this.Content = chart;
 
@@ -71,9 +79,15 @@ The [GridLineType](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.T
 
 {% highlight c# %}
 
+// Create a new instance of SfPolarChart
 SfPolarChart chart = new SfPolarChart();
+
+// Set the grid line type to Polygon
 chart.GridLineType = PolarChartGridLineType.Polygon;
-. . .
+
+// ... (other chart configurations)
+
+// Create a new PolarLineSeries
 PolarLineSeries series = new PolarLineSeries()
 {
     ItemsSource = new ViewModel().PlantDetails,
@@ -81,6 +95,7 @@ PolarLineSeries series = new PolarLineSeries()
     YBindingPath = "Tree"
 };
 
+// Add the series to the chart's Series collection
 chart.Series.Add(series);
 this.Content = chart;
 
@@ -108,16 +123,22 @@ The [IsClosed](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolk
 
 {% highlight c# %}
 
+// Create a new instance of SfPolarChart
 SfPolarChart chart = new SfPolarChart();
 . . .
+
+// Create a new PolarLineSeries
 PolarLineSeries series = new PolarLineSeries()
 {
     ItemsSource = new ViewModel().PlantDetails,
     XBindingPath = "Direction",
     YBindingPath = "Tree",
+    // Set whether the line series should be closed or open
+    // False means the start and end points won't be connected
     IsClosed = "False"
 };
 
+// Add the series to the chart's Series collection
 chart.Series.Add(series);
 this.Content = chart;
 
@@ -145,18 +166,22 @@ A marker, also known as a symbol, is used to determine or highlight the position
 
 {% highlight c# %}
 
+// Create a new instance of SfPolarChart
 SfPolarChart chart = new SfPolarChart();
 ...
+
+// Create a new PolarLineSeries
 PolarLineSeries series = new PolarLineSeries()
 {
     ItemsSource = new ViewModel().PlantDetails,
     XBindingPath = "Direction",
     YBindingPath = "Tree",
-    ShowMarkers= true
+    ShowMarkers = true // Enable markers at data points
 };
 
+// Add the series to the chart's collection of series
 chart.Series.Add(series);
-this.Content= chart;
+this.Content = chart;
 
 {% endhighlight %}
 
@@ -192,24 +217,30 @@ In order to change the series markers appearance, create an instance of the [Mar
 
 {% highlight c# %}
 
+// Create a new SfPolarChart instance
 SfPolarChart chart = new SfPolarChart();
 ...
+
+// Create and configure ChartMarkerSettings
+ChartMarkerSettings chartMarker = new ChartMarkerSettings();
+chartMarker.Type = ShapeType.Diamond; // Set marker shape to diamond
+chartMarker.Fill = Colors.Brown; // Set fill color for markers
+chartMarker.Stroke = Colors.Black; // Set outline color for markers
+chartMarker.StrokeWidth = 1; // Set outline width for markers
+chartMarker.Height = 8; // Set marker height
+chartMarker.Width = 8; // Set marker width
+
+// Create a new PolarLineSeries
 PolarLineSeries series = new PolarLineSeries()
 {
     ItemsSource = new ViewModel().PlantDetails,
     XBindingPath = "Direction",
     YBindingPath = "Tree",
-    ShowMarkers = true,
-    MarkerSettings = chartMarker
- };
+    ShowMarkers = true, // Enable markers for data points
+    MarkerSettings = chartMarker // Apply marker settings to the series
+};
 
-ChartMarkerSettings chartMarker= new ChartMarkerSettings();
-chartMarker.Type = ShapeType.Diamond;
-chartMarker.Fill = Colors.Brown;
-chartMarker.Stroke = Colors.Black;
-chartMarker.StrokeWidth= 1;
-chartMarker.Height = 8;
-chartMarker.Width = 8;
+// Add the series to the chart
 chart.Series.Add(series);
 this.Content = chart;
 

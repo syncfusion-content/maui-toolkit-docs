@@ -180,7 +180,7 @@ public class ViewModel
 		       Margin="10,0,0,0"
 		       AbsoluteLayout.LayoutBounds="0.5,0.5,-1,-1"
 		       AbsoluteLayout.LayoutFlags="PositionProportional"
-	               Opacity="0.3"/>
+	           Opacity="0.3"/>
     	</AbsoluteLayout>
     </chart:SfCircularChart.PlotAreaBackgroundView>
 </chart:SfCircularChart>
@@ -241,7 +241,6 @@ chart.PlotAreaBackgroundView = absoluteLayout;
 
 // Set the chart as the content of the current page/view
 this.Content = chart;
-
 
 {% endhighlight %}
 
