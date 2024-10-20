@@ -58,7 +58,7 @@ In the **MauiProgram.cs** file, register the handler for Syncfusion Toolkit.
 
 {% highlight C# tabtitle="MauiProgram.cs" hl_lines="1 9" %}
 
-    using Syncfusion.Maui.Toolkit.Hosting;
+    using Syncfusion.Maui.Toolkit.Hosting; // Import the namespace required for Syncfusion MAUI Toolkit Handler.
 
     public static class MauiProgram
     {
@@ -66,7 +66,7 @@ In the **MauiProgram.cs** file, register the handler for Syncfusion Toolkit.
 	    {
 	        var builder = MauiApp.CreateBuilder();
 		    builder
-			    .ConfigureSyncfusionToolkit()
+			    .ConfigureSyncfusionToolkit() // Configure the Syncfusion Toolkit for MAUI.
 			    .UseMauiApp<App>()
 			    .ConfigureFonts(fonts =>
 			    {
@@ -104,7 +104,7 @@ In the **MauiProgram.cs** file, register the handler for Syncfusion Toolkit.
 
 {% highlight C# %}
 
-using Syncfusion.Maui.Toolkit.Charts;
+using Syncfusion.Maui.Toolkit.Charts; // Import the namespace required for Syncfusion MAUI Toolkit Charts.
 
 . . .
 
@@ -113,8 +113,8 @@ public partial class MainPage : ContentPage
     public MainPage()
     {
         InitializeComponent();
-        SfFunnelChart chart = new SfFunnelChart();
-        this.Content = chart;
+        SfFunnelChart chart = new SfFunnelChart(); // Create an instance of the SfFunnelChart.
+        this.Content = chart; // Set the chart as the content of the page.
     }
 }
 
@@ -202,8 +202,8 @@ public partial class MainPage : ContentPage
     {
         InitializeComponent();
         SfFunnelChart chart = new SfFunnelChart();
-        AdmissionViewModel viewModel = new AdmissionViewModel();
-        chart.BindingContext = viewModel;
+        AdmissionViewModel viewModel = new AdmissionViewModel(); // Create an instance of the AdmissionViewModel
+        chart.BindingContext = viewModel; // Set the view model as the BindingContext of the chart
         this.Content = chart;
     }
 }
@@ -232,8 +232,14 @@ Binding `Data` to the funnel chart [ItemsSource](https://help.syncfusion.com/cr/
 
 SfFunnelChart chart = new SfFunnelChart();
 AdmissionViewModel viewModel = new AdmissionViewModel();
-chart.ItemsSource = viewModel.Data;
-chart.XBindingPath = "XValue";
+
+// Bind the chart's data source to the ViewModel's data collection.
+chart.ItemsSource = viewModel.Data; 
+
+// Set X-axis binding to the 'XValue' property in the ViewModel.
+chart.XBindingPath = "XValue"; 
+
+// Set Y-axis binding to the 'YValue' property in the ViewModel.
 chart.YBindingPath = "YValue";
 this.Content = chart;
 
@@ -261,6 +267,8 @@ The title of the chart acts as the title to provide quick information to the use
 {% highlight C# %}
 
 SfFunnelChart chart = new SfFunnelChart();
+
+// Set the title of the chart.
 chart.Title = new Label()
 {
     Text = "School Admission"
@@ -289,7 +297,7 @@ The [ShowDataLabels](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui
 
 SfFunnelChart chart = new SfFunnelChart();
 . . .
-chart.ShowDataLabels = true;
+chart.ShowDataLabels = true; // Enable data labels in the chart.
 this.Content = chart;
 {% endhighlight %}
 
@@ -316,7 +324,7 @@ The legend provides information about the data point displayed in the funnel cha
 
 SfFunnelChart chart = new SfFunnelChart();
 . . .
-chart.Legend = new ChartLegend();
+chart.Legend = new ChartLegend(); // Enable legend in the chart.
 this.Content = chart;
 {% endhighlight %}
 
@@ -340,7 +348,7 @@ Tooltips are used to show information about the segment, when mouse over on it. 
 
 SfFunnelChart chart = new SfFunnelChart();
 . . .
-chart.EnableTooltip = true;
+chart.EnableTooltip = true; // Enable tooltip in the chart.
 this.Content = chart;
 {% endhighlight %}
 

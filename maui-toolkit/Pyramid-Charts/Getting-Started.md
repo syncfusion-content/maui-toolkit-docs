@@ -57,7 +57,7 @@ In the **MauiProgram.cs** file, register the handler for Syncfusion Toolkit.
 
 {% highlight C# tabtitle="MauiProgram.cs" hl_lines="1 9" %}
 
-    using Syncfusion.Maui.Toolkit.Hosting;
+    using Syncfusion.Maui.Toolkit.Hosting; // Import the namespace required for Syncfusion MAUI Toolkit Handler.
 
     public static class MauiProgram
     {
@@ -65,7 +65,7 @@ In the **MauiProgram.cs** file, register the handler for Syncfusion Toolkit.
 	    {
 	        var builder = MauiApp.CreateBuilder();
 		    builder
-			    .ConfigureSyncfusionToolkit()
+			    .ConfigureSyncfusionToolkit() // Configure the Syncfusion Toolkit for MAUI.
 			    .UseMauiApp<App>()
 			    .ConfigureFonts(fonts =>
 			    {
@@ -103,7 +103,7 @@ In the **MauiProgram.cs** file, register the handler for Syncfusion Toolkit.
 
 {% highlight C# %}
 
-using Syncfusion.Maui.Toolkit.Charts;
+using Syncfusion.Maui.Toolkit.Charts; // Import the namespace required for Syncfusion MAUI Toolkit Chart.
 
 . . .
 
@@ -112,8 +112,8 @@ public partial class MainPage : ContentPage
     public MainPage()
     {
         InitializeComponent();
-        SfPyramidChart chart = new SfPyramidChart();
-        this.Content = chart;
+        SfPyramidChart chart = new SfPyramidChart(); // Create an instance of the Pyramid Chart.
+        this.Content = chart; // Set the chart as the content of the page.
     }
 }
 
@@ -200,8 +200,8 @@ public partial class MainPage : ContentPage
     {
         InitializeComponent();
         SfPyramidChart chart = new SfPyramidChart();
-        StageViewModel viewModel = new StageViewModel();
-        chart.BindingContext = viewModel;
+        StageViewModel viewModel = new StageViewModel(); // Create an instance of the view model.
+        chart.BindingContext = viewModel; // Set the view model as the BindingContext of the chart.
         this.Content = chart;
     }
 }
@@ -231,9 +231,15 @@ Binding `Data` to the pyramid chart [ItemsSource](https://help.syncfusion.com/cr
 SfPyramidChart chart = new SfPyramidChart();
 StageViewModel viewModel = new StageViewModel();
 chart.BindingContext = viewModel;
-chart.ItemsSource = viewModel.Data;
+
+// Bind the chart's data source to the ViewModel's data collection.
+chart.ItemsSource = viewModel.Data; 
+
+// Set X-axis binding to the 'Name' property in the ViewModel.
 chart.XBindingPath = "Name";
-chart.YBindingPath = "Value";
+
+// Set Y-axis binding to the 'Value' property in the ViewModel.
+chart.YBindingPath = "Value"; 
 this.Content = chart;
 
 {% endhighlight %}
@@ -260,6 +266,8 @@ The title of the chart acts as the title to provide quick information to the use
 {% highlight C# %}
 
 SfPyramidChart chart = new SfPyramidChart();
+
+// Set the title of the chart.
 chart.Title = new Label()
 {
     Text = "Pyramid Stages",
@@ -287,7 +295,7 @@ The [ShowDataLabels](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui
 
 SfPyramidChart chart = new SfPyramidChart();
 . . .
-chart.ShowDataLabels = true;
+chart.ShowDataLabels = true; // Enable data labels in the chart.
 this.Content = chart;
 {% endhighlight %}
 
@@ -314,7 +322,7 @@ The legend provides information about the data point displayed in the pyramid ch
 
 SfPyramidChart chart = new SfPyramidChart();
 . . .
-chart.Legend = new ChartLegend();
+chart.Legend = new ChartLegend(); // Enable legend in the chart.
 this.Content = chart;
 {% endhighlight %}
 
@@ -338,7 +346,7 @@ Tooltips are used to show information about the segment, when mouse over on it. 
 
 SfPyramidChart chart = new SfPyramidChart();
 . . .
-chart.EnableTooltip = true;
+chart.EnableTooltip = true; // Enable tooltip in the chart.
 this.Content = chart;
 {% endhighlight %}
 

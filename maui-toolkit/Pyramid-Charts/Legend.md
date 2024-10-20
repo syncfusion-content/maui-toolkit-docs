@@ -39,7 +39,7 @@ SfPyramidChart chart = new SfPyramidChart()
     ItemsSource = new StageViewModel().Data,
 };
 
-chart.Legend = new ChartLegend();
+chart.Legend = new ChartLegend(); // Initialize the legend for the chart.
 this.Content = chart;
 
 {% endhighlight %}
@@ -74,7 +74,7 @@ SfPyramidChart chart = new SfPyramidChart()
 
 chart.Legend = new ChartLegend()
 { 
-   IsVisible = true 
+   IsVisible = true // Set the visibility of the chart legend.
 };
 
 this.Content = chart;
@@ -121,7 +121,9 @@ SfPyramidChart chart = new SfPyramidChart()
     ItemsSource = new ViewModel().Data,
 };
 
-ChartLegend legend = new ChartLegend();
+ChartLegend legend = new ChartLegend(); // Initialize the legend.
+
+// Define the label style for the legend.
 ChartLegendLabelStyle labelStyle = new ChartLegendLabelStyle()
 {
     TextColor = Colors.Blue,
@@ -131,8 +133,8 @@ ChartLegendLabelStyle labelStyle = new ChartLegendLabelStyle()
     FontFamily = "PlaywriteAR-Regular"
 };
 
-legend.LabelStyle = labelStyle;
-chart.Legend = legend;
+legend.LabelStyle = labelStyle; // Set the label style for the legend.
+chart.Legend = legend; // Set the legend for the chart.
 this.Content = chart;
 {% endhighlight %}
 
@@ -164,7 +166,7 @@ SfPyramidChart chart = new SfPyramidChart()
     ItemsSource = new StageViewModel().Data,
     XBindingPath = "Name",
     YBindingPath = "Value",
-    LegendIcon = ChartLegendIconType.Diamond
+    LegendIcon = ChartLegendIconType.Diamond // Set the legend icon type.
 };
 
 chart.Legend = new ChartLegend();
@@ -204,7 +206,7 @@ SfPyramidChart chart = new SfPyramidChart()
    
 chart.Legend = new ChartLegend()
 {
-    Placement = LegendPlacement.Bottom 
+    Placement = LegendPlacement.Bottom // Set the legend placement.
 };
 
 this.Content = chart;
@@ -243,7 +245,7 @@ SfPyramidChart pyramidChart = new SfPyramidChart()
 
 pyramidChart.Legend = new ChartLegend()
 {
-    ToggleSeriesVisibility = true
+    ToggleSeriesVisibility = true // Enable the toggle series visibility using legend.
 };
 
 this.Content = chart;
@@ -272,6 +274,7 @@ To set the maximum size request for the legend view, override the [GetMaximumSiz
 
 public class LegendExt : ChartLegend
 {
+    // Set the maximum size request for the legend view.
     protected override double GetMaximumSizeCoefficient()
     {
         return 0.7;
@@ -279,7 +282,7 @@ public class LegendExt : ChartLegend
 }
 
 SfPyramidChart chart = new SfPyramidChart();
-chart.Legend = new LegendExt();
+chart.Legend = new LegendExt(); // Set the custom legend for the chart.
 this.Content = chart;
 
 {% endhighlight %}
@@ -318,14 +321,16 @@ SfPyramidChart chart = new SfPyramidChart()
     ItemsSource = new StageViewModel().Data,
 };
 . . .
-ChartLegend legend = new ChartLegend();
+ChartLegend legend = new ChartLegend(); // Initialize the legend.
+
+// Define the layout for the legend items.
 legend.ItemsLayout = new FlexLayout()
 {
     Wrap = FlexWrap.Wrap,
     WidthRequest = 400
 };
 
-chart.Legend = legend;
+chart.Legend = legend; // Set the legend for the chart.
 this.Content = chart;
         
 {% endhighlight %}
@@ -374,10 +379,10 @@ SfPyramidChart chart = new SfPyramidChart()
     YBindingPath = "Value",
 };
      
-ChartLegend legend = new ChartLegend();
-legend.ItemTemplate = chart.Resources["legendTemplate"] as DataTemplate;
+ChartLegend legend = new ChartLegend(); // Initialize the legend.
+legend.ItemTemplate = chart.Resources["legendTemplate"] as DataTemplate; // Set the item template for the legend.
 ...
-chart.Legend = legend;
+chart.Legend = legend; // Set the legend for the chart.
 this.Content = chart;
         
 {% endhighlight %}
