@@ -10,11 +10,11 @@ keywords: .net maui chart touch position, maui chart touch position, .net maui c
 
 # Get the touch position in SfCartesianChart
 
-[ChartInteractiveBehavior](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartInteractiveBehavior.html) provides the following override methods to get the x and y positions when touching the [`SfCartesianChart`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html?tabs=tabid-1).
+[ChartInteractiveBehavior](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartInteractiveBehavior.html) provides the following override methods to get the x and y positions when touching the [SfCartesianChart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html).
 
-* [`OnTouchUp`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartBehavior.html#Syncfusion_Maui_Charts_ChartBehavior_OnTouchUp_Syncfusion_Maui_Charts_ChartBase_System_Single_System_Single_) - Called when a user lifts their finger or releases their touch input from the Chart area. 
-* [`OnTouchMove`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartBehavior.html#Syncfusion_Maui_Charts_ChartBehavior_OnTouchMove_Syncfusion_Maui_Charts_ChartBase_System_Single_System_Single_) - Called when a user's finger or touch input device is in contact with the Chart area and moves across its surface.
-* [`OnTouchDown`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartBehavior.html#Syncfusion_Maui_Charts_ChartBehavior_OnTouchDown_Syncfusion_Maui_Charts_ChartBase_System_Single_System_Single_) -  Called when the user makes the initial contact of a user's finger or touch input device with the Chart Area.
+* [`OnTouchUp`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartBehavior.html#Syncfusion_Maui_Toolkit_Charts_ChartBehavior_OnTouchUp_Syncfusion_Maui_Toolkit_Charts_ChartBase_System_Single_System_Single_) - Called when a user lifts their finger or releases their touch input from the Chart area. 
+* [`OnTouchMove`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartBehavior.html#Syncfusion_Maui_Toolkit_Charts_ChartBehavior_OnTouchMove_Syncfusion_Maui_Toolkit_Charts_ChartBase_System_Single_System_Single_) - Called when a user's finger or touch input device is in contact with the Chart area and moves across its surface.
+* [`OnTouchDown`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartBehavior.html#Syncfusion_Maui_Toolkit_Charts_ChartBehavior_OnTouchDown_Syncfusion_Maui_Toolkit_Charts_ChartBase_System_Single_System_Single_) -  Called when the user makes the initial contact of a user's finger or touch input device with the Chart Area.
 
 {% tabs %}
 
@@ -24,7 +24,7 @@ keywords: .net maui chart touch position, maui chart touch position, .net maui c
     .........
 
     <chart:SfCartesianChart.InteractiveBehavior>
-        <local:ChartInteractiveExt></local:ChartInteractiveExt>
+        <local:ChartInteractiveExt/>
     </chart:SfCartesianChart.InteractiveBehavior>
 
 </chart:SfCartesianChart>

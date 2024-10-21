@@ -13,7 +13,7 @@ The appearance of the [SfFunnelChart](https://help.syncfusion.com/cr/maui-toolki
 
 ## Custom PaletteBrushes
 
-The [SfFunnelChart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfFunnelChart.html) allows you to define your own brushes with preferred order by using the [PaletteBrushes](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfFunnelChart.html#Syncfusion_Maui_Charts_SfFunnelChart_PaletteBrushes) property, as shown in the code below.
+The [SfFunnelChart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfFunnelChart.html) allows you to define your own brushes with preferred order by using the [PaletteBrushes](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfFunnelChart.html#Syncfusion_Maui_Toolkit_Charts_SfFunnelChart_PaletteBrushes) property, as shown in the code below.
 
 {% tabs %}
 
@@ -30,13 +30,15 @@ The [SfFunnelChart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.
 
 {% highlight c# %}
 
-public class ViewModel
+public class AdmissionViewModel
 {
 	public ObservableCollection<Model> Data { get; set; }
 
 	public List<Brush> CustomBrushes { get; set; }
-	public ViewModel()
+
+	public AdmissionViewModel()
 	{
+	    //Initializing CustomBrushes collection to add custom palette colors.
 		CustomBrushes = new List<Brush>();
 		CustomBrushes.Add(new SolidColorBrush(Color.FromRgb(38, 198, 218)));
 		CustomBrushes.Add(new SolidColorBrush(Color.FromRgb(0, 188, 212)));
@@ -55,7 +57,7 @@ public class ViewModel
 
 ## Applying Gradient
 
-The gradient for the funnel chart can be set by using the [PaletteBrushes](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfFunnelChart.html#Syncfusion_Maui_Charts_SfFunnelChart_PaletteBrushes) property of the chart with the help of the `LinearGradientBrush` or `RadialGradientBrush`.
+The gradient for the funnel chart can be set by using the [PaletteBrushes](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfFunnelChart.html#Syncfusion_Maui_Toolkit_Charts_SfFunnelChart_PaletteBrushes) property of the chart with the help of the `LinearGradientBrush` or `RadialGradientBrush`.
 
 {% tabs %}
 
@@ -72,12 +74,12 @@ The gradient for the funnel chart can be set by using the [PaletteBrushes](https
 
 {% highlight c# %}
 
-public class ViewModel
+public class AdmissionViewModel
 {
 	public ObservableCollection<Model> Data { get; set; }
 
 	public List<Brush> CustomBrushes { get; set; }
-	public ViewModel()
+	public AdmissionViewModel()
 	{
 		CustomBrushes = new List<Brush>();
 		LinearGradientBrush gradientColor1 = new LinearGradientBrush();
@@ -115,6 +117,7 @@ public class ViewModel
 			new GradientStop() { Offset = 0, Color = Color.FromArgb("#56C596") }
 		};
 
+		//Adding gradient brush to the custom brushes collection.
 		CustomBrushes.Add(gradientColor1);
 		CustomBrushes.Add(gradientColor2);
 		CustomBrushes.Add(gradientColor3);

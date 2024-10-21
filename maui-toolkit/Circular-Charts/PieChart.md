@@ -9,9 +9,9 @@ documentation: ug
 
 # Pie Chart in .NET MAUI Chart
 
-To render a [PieSeries](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.PieSeries.html) in circular chart, create an instance of the [PieSeries](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.PieSeries.html) and add it to the [Series](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCircularChart.html#Syncfusion_Maui_Charts_SfCircularChart_Series) collection property of [SfCircularChart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCircularChart.html).
+To render a [PieSeries](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.PieSeries.html) in circular chart, create an instance of the [PieSeries](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.PieSeries.html) and add it to the [Series](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCircularChart.html#Syncfusion_Maui_Toolkit_Charts_SfCircularChart_Series) collection property of [SfCircularChart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCircularChart.html).
 
-N> The circular chart has [Series](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCircularChart.html#Syncfusion_Maui_Charts_SfCircularChart_Series) as its default content.
+N> The circular chart has [Series](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCircularChart.html#Syncfusion_Maui_Toolkit_Charts_SfCircularChart_Series) as its default content.
 
 {% tabs %}
 
@@ -30,6 +30,7 @@ N> The circular chart has [Series](https://help.syncfusion.com/cr/maui-toolkit/S
 SfCircularChart chart = new SfCircularChart();
 
 PieSeries series = new PieSeries();
+series.ItemsSource = (new SalesViewModel()).Data;
 series.XBindingPath = "Product";
 series.YBindingPath = "SalesRate";
 
@@ -44,7 +45,7 @@ this.Content = chart;
 
 ## Radius
 
-The rendering size of the [PieSeries](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.PieSeries.html) can be controlled using the [Radius](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.CircularSeries.html#Syncfusion_Maui_Charts_CircularSeries_Radius) property as shown in the following code sample.
+The rendering size of the [PieSeries](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.PieSeries.html) can be controlled using the [Radius](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.CircularSeries.html#Syncfusion_Maui_Toolkit_Charts_CircularSeries_Radius) property as shown in the following code sample.
 
 {% tabs %}
 
@@ -54,7 +55,7 @@ The rendering size of the [PieSeries](https://help.syncfusion.com/cr/maui-toolki
     <chart:PieSeries ItemsSource="{Binding Data}" 
                      XBindingPath="Product" 
                      YBindingPath="SalesRate"
-                     Radius = "0.9"/>            
+                     Radius="0.9"/>            
 </chart:SfCircularChart>
 
 {% endhighlight %}
@@ -64,6 +65,7 @@ The rendering size of the [PieSeries](https://help.syncfusion.com/cr/maui-toolki
 SfCircularChart chart = new SfCircularChart();
 
 PieSeries series = new PieSeries();
+series.ItemsSource = (new SalesViewModel()).Data;
 series.XBindingPath = "Product";
 series.YBindingPath = "SalesRate";
 series.Radius = 0.9;
@@ -79,18 +81,18 @@ this.Content = chart;
 
 ## Semi Pie
 
-By using the [StartAngle](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.CircularSeries.html#Syncfusion_Maui_Charts_CircularSeries_StartAngle) and [EndAngle](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.CircularSeries.html#Syncfusion_Maui_Charts_CircularSeries_EndAngle) properties, you can draw pie series in different shapes such as semi-pie or quarter pie series.
+By using the [StartAngle](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.CircularSeries.html#Syncfusion_Maui_Toolkit_Charts_CircularSeries_StartAngle) and [EndAngle](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.CircularSeries.html#Syncfusion_Maui_Toolkit_Charts_CircularSeries_EndAngle) properties, you can draw pie series in different shapes such as semi-pie or quarter pie series.
 
 {% tabs %}
 
 {% highlight xaml %}
 
 <chart:SfCircularChart>
-    <chart:PieSeries StartAngle="180"
-                     EndAngle="360"
-                     ItemsSource="{Binding Data}"
+    <chart:PieSeries ItemsSource="{Binding Data}"
                      XBindingPath="Product"
-                     YBindingPath="SalesRate"/>
+                     YBindingPath="SalesRate"
+                     StartAngle="180"
+                     EndAngle="360"/>
 </chart:SfCircularChart>
 
 {% endhighlight %}
@@ -100,6 +102,7 @@ By using the [StartAngle](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion
 SfCircularChart chart = new SfCircularChart();
 
 PieSeries series = new PieSeries();
+series.ItemsSource = (new SalesViewModel()).Data;
 series.XBindingPath = "Product";
 series.YBindingPath = "SalesRate";
 series.StartAngle = 180;

@@ -13,9 +13,9 @@ documentation: ug
 
 Exploding a segment is used to pull attention to a specific area of the circular chart. The following properties are used to explode the segments in the circular chart.
 
-* [ExplodeIndex](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.PieSeries.html#Syncfusion_Maui_Charts_PieSeries_ExplodeIndex) - Used to explode any specific segment.
-* [ExplodeRadius](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.PieSeries.html#Syncfusion_Maui_Charts_PieSeries_ExplodeRadius) - Used to define the explode distance.
-* [ExplodeOnTouch](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.PieSeries.html#Syncfusion_Maui_Charts_PieSeries_ExplodeOnTouch) - Enables the segment to be exploded on touch/tap interaction.
+* [ExplodeIndex](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.PieSeries.html#Syncfusion_Maui_Toolkit_Charts_PieSeries_ExplodeIndex) - Used to explode any specific segment.
+* [ExplodeRadius](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.PieSeries.html#Syncfusion_Maui_Toolkit_Charts_PieSeries_ExplodeRadius) - Used to define the explode distance.
+* [ExplodeOnTouch](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.PieSeries.html#Syncfusion_Maui_Toolkit_Charts_PieSeries_ExplodeOnTouch) - Enables the segment to be exploded on touch/tap interaction.
 
 {% tabs %}
 
@@ -25,27 +25,29 @@ Exploding a segment is used to pull attention to a specific area of the circular
     . . .
     <chart:DoughnutSeries x:Name="DoughnutSeries"
                           ItemsSource="{Binding Data}"
+                          XBindingPath="XValue"
+                          YBindingPath="YValue"
                           ExplodeIndex="2"
                           ExplodeRadius="10"
-                          ExplodeOnTouch="True"
-                          XBindingPath="Utilization"
-                          YBindingPath="ResponseTime"/>
+                          ExplodeOnTouch="True"/>
 </chart:SfCircularChart>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
+// Create a new instance of SfCircularChart
 SfCircularChart chart = new SfCircularChart();
 . . .
+// Create a new DoughnutSeries
 DoughnutSeries series = new DoughnutSeries()
 {
     ItemsSource = new ViewModel().Data,
-    XBindingPath = "Utilization",
-    YBindingPath = "ResponseTime",
-    ExplodeIndex = 2,
-    ExplodeRadius = 10,
-    ExplodeOnTouch = true
+    XBindingPath = "XValue",
+    YBindingPath = "YValue",
+    ExplodeIndex = 2, // Set the index of the segment to be exploded (0-based)
+    ExplodeRadius = 10, // Set the radius of explosion in pixels
+    ExplodeOnTouch = true // Enable exploding segments on touch
 };
 
 chart.Series.Add(series);
@@ -59,7 +61,7 @@ this.Content = chart;
 
 ## Exploding all the segments
 
-By setting the [ExplodeAll](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.PieSeries.html#Syncfusion_Maui_Charts_PieSeries_ExplodeAll) property of the [PieSeries](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.PieSeries.html) to true, all segments in a circular chart can be visually exploded and highlighted on touch or tap interaction.
+By setting the [ExplodeAll](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.PieSeries.html#Syncfusion_Maui_Toolkit_Charts_PieSeries_ExplodeAll) property of the [PieSeries](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.PieSeries.html) to true, all segments in a circular chart can be visually exploded and highlighted on touch or tap interaction.
 
 {% tabs %}
 
@@ -78,14 +80,16 @@ By setting the [ExplodeAll](https://help.syncfusion.com/cr/maui-toolkit/Syncfusi
 
 {% highlight c# %}
 
+// Create a new instance of SfCircularChart
 SfCircularChart chart = new SfCircularChart();
 . . .
+// Create a new DoughnutSeries
 DoughnutSeries series = new DoughnutSeries()
 {
     ItemsSource = new ViewModel().Data,
     XBindingPath = "XValue",
     YBindingPath = "YValue",
-    ExplodeAll = true
+    ExplodeAll = true // Enable exploding for all segments in the doughnut chart
 };
 
 chart.Series.Add(series);
