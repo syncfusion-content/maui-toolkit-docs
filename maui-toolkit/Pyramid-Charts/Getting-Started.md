@@ -88,7 +88,7 @@ In the **MauiProgram.cs** file, register the handler for Syncfusion Toolkit.
 
 {% tabs %}
 
-{% highlight XAML %}
+{% highlight xaml %}
 
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
@@ -148,7 +148,6 @@ Next, create a `StageViewModel` class and initialize a list of `StageModel` obje
 public class StageViewModel
 {
     public List<StageModel> Data { get; set; }
-
     public StageViewModel()
     {
         Data = new List<StageModel>()
@@ -171,14 +170,13 @@ N> If you prefer to set the `BindingContext` in XAML, make sure to add the appro
 
 {% tabs %} 
 
-{% highlight xaml %} 
+{% highlight xaml %}
 
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:chart="clr-namespace:Syncfusion.Maui.Toolkit.Charts;assembly=Syncfusion.Maui.Toolkit"
              xmlns:model="clr-namespace:GettingStarted"
              x:Class="GettingStarted.MainPage">
-
     <chart:SfPyramidChart>
         <chart:SfPyramidChart.BindingContext>
             <model:StageViewModel/>
