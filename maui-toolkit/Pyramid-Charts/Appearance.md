@@ -13,7 +13,7 @@ The appearance of the [SfPyramidChart](https://help.syncfusion.com/cr/maui-toolk
 
 ## Custom PaletteBrushes
 
-The [SfPyramidChart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfPyramidChart.html) allows you to define your own brushes with preferred order by using the [PaletteBrushes](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfPyramidChart.html#Syncfusion_Maui_Charts_SfPyramidChart_PaletteBrushes) property, as shown in the code below.
+The [SfPyramidChart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfPyramidChart.html) allows you to define your own brushes with preferred order by using the [PaletteBrushes](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfPyramidChart.html#Syncfusion_Maui_Toolkit_Charts_SfPyramidChart_PaletteBrushes) property, as shown in the code below.
 
 {% tabs %}
 
@@ -30,13 +30,15 @@ The [SfPyramidChart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui
 
 {% highlight c# %}
 
-public class ViewModel
+public class StageViewModel
 {
 	public ObservableCollection<Model> Data { get; set; }
 
 	public List<Brush> CustomBrushes { get; set; }
-	public ViewModel()
+
+	public StageViewModel()
 	{
+	 //Initializing CustomBrushes collection to add custom palette colors.
 	 CustomBrushes = new List<Brush>();
 	 CustomBrushes.Add(new SolidColorBrush(Color.FromRgb(38, 198, 218)));
 	 CustomBrushes.Add(new SolidColorBrush(Color.FromRgb(0, 188, 212)));
@@ -55,7 +57,7 @@ public class ViewModel
 
 ## Applying Gradient
 
-The gradient for the pyramid chart can be set by using the [PaletteBrushes](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfPyramidChart.html#Syncfusion_Maui_Charts_SfPyramidChart_PaletteBrushes) property of the chart with the help of the `LinearGradientBrush` or `RadialGradientBrush`.
+The gradient for the pyramid chart can be set by using the [PaletteBrushes](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfPyramidChart.html#Syncfusion_Maui_Toolkit_Charts_SfPyramidChart_PaletteBrushes) property of the chart with the help of the `LinearGradientBrush` or `RadialGradientBrush`.
 
 {% tabs %}
 
@@ -72,12 +74,12 @@ The gradient for the pyramid chart can be set by using the [PaletteBrushes](http
 
 {% highlight c# %}
 
-public class ViewModel
+public class StageViewModel
 {
 	public ObservableCollection<Model> Data { get; set; }
 
 	public List<Brush> CustomBrushes { get; set; }
-	public ViewModel()
+	public StageViewModel()
 	{
 		CustomBrushes = new List<Brush>();
 		LinearGradientBrush gradientColor1 = new LinearGradientBrush();
@@ -115,6 +117,7 @@ public class ViewModel
 			new GradientStop() { Offset = 0, Color = Color.FromArgb("#56C596") }
 		};
 
+		//Adding gradient brush to the custom brushes collection.
 		CustomBrushes.Add(gradientColor1);
 		CustomBrushes.Add(gradientColor2);
 		CustomBrushes.Add(gradientColor3);
@@ -132,7 +135,7 @@ public class ViewModel
 
 ## Pyramid modes
 
-The [SfPyramidChart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfPyramidChart.html) allows you to render a chart in a linear or surface mode by using the [Mode](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfPyramidChart.html#Syncfusion_Maui_Charts_SfPyramidChart_Mode) property. In the [Linear](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.PyramidMode.html#Syncfusion_Maui_Charts_PyramidMode_Linear) mode, the height of the pyramid segment is based on the y-value. In the [Surface](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.PyramidMode.html#Syncfusion_Maui_Charts_PyramidMode_Surface) mode, the area of the pyramid segment is based on the y-value. By default, the Mode property is set to linear.
+The [SfPyramidChart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfPyramidChart.html) allows you to render a chart in a linear or surface mode by using the [Mode](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfPyramidChart.html#Syncfusion_Maui_Toolkit_Charts_SfPyramidChart_Mode) property. In the [Linear](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.PyramidMode.html#Syncfusion_Maui_Toolkit_Charts_PyramidMode_Linear) mode, the height of the pyramid segment is based on the y-value. In the [Surface](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.PyramidMode.html#Syncfusion_Maui_Toolkit_Charts_PyramidMode_Surface) mode, the area of the pyramid segment is based on the y-value. By default, the Mode property is set to linear.
 
 {% tabs %}
 
@@ -155,8 +158,8 @@ ViewModel viewModel = new ViewModel();
 chart.ItemsSource = viewModel.Data;
 chart.XBindingPath = "XValue";
 chart.YBindingPath = "YValue";
-chart.Mode =  PyramidMode.Surface;
-
+chart.Mode =  PyramidMode.Surface; //Setting the pyramid mode for the chart.
+this.Content = chart;
 {% endhighlight %}
 
 {% endtabs %}

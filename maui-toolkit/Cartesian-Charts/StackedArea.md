@@ -14,9 +14,9 @@ keywords: .net maui stacked area chart, maui stacked area chart, stacked area ch
 
 The stacked area chart enables users to visually represent data points on top of each other to indicate the cumulative value of the data points.
 
-To render a stacked area chart, create an instance of the [StackingAreaSeries](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.StackingAreaSeries.html) and add it to the [Series](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html#Syncfusion_Maui_Charts_SfCartesianChart_Series) collection property of the [SfCartesianChart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html).
+To render a stacked area chart, create an instance of the [StackingAreaSeries](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.StackingAreaSeries.html) and add it to the [Series](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html#Syncfusion_Maui_Toolkit_Charts_SfCartesianChart_Series) collection property of the [SfCartesianChart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html).
 
-N> The Cartesian chart has a [Series](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html#Syncfusion_Maui_Charts_SfCartesianChart_Series) as its default content.
+N> The Cartesian chart has a [Series](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html#Syncfusion_Maui_Toolkit_Charts_SfCartesianChart_Series) as its default content.
 
 {% tabs %}
 
@@ -64,29 +64,29 @@ ViewModel viewModel = new ViewModel();
 
 StackingAreaSeries series1 = new  StackingAreaSeries()
 {
+    ItemsSource = viewModel.Data1
     XBindingPath = "Year",
     YBindingPath = "Value",
-    ItemsSource = viewModel.Data1
 };
 
 StackingAreaSeries series2 = new StackingAreaSeries()
 {
+    ItemsSource = viewModel.Data2
     XBindingPath = "Year",
     YBindingPath = "Value",
-    ItemsSource = viewModel.Data2
 };
 StackingAreaSeries series3 = new StackingAreaSeries()
 {
+    ItemsSource = viewModel.Data3
     XBindingPath = "Year",
     YBindingPath = "Value",
-    ItemsSource = viewModel.Data3
 };
 
 StackingAreaSeries series4 = new StackingAreaSeries()
 {
+    ItemsSource = viewModel.Data4
     XBindingPath = "Year",
     YBindingPath = "Value",
-    ItemsSource = viewModel.Data4
 };
 
 chart.Series.Add(series1);
@@ -103,7 +103,7 @@ this.Content = chart;
 
 ## Enable Marker
 
-A marker, also known as a symbol, is used to determine or highlight the position of the data point. To enable markers in the series, set the [ShowMarkers](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.StackingAreaSeries.html#Syncfusion_Maui_Charts_StackingAreaSeries_ShowMarkers) property to `true`.
+A marker, also known as a symbol, is used to determine or highlight the position of the data point. To enable markers in the series, set the [ShowMarkers](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.StackingAreaSeries.html#Syncfusion_Maui_Toolkit_Charts_StackingAreaSeries_ShowMarkers) property to `true`.
 
 {% tabs %}
 
@@ -111,11 +111,10 @@ A marker, also known as a symbol, is used to determine or highlight the position
 
 <chart:SfCartesianChart>
     ...
-    <chart:StackingAreaSeries ItemsSource="{Binding StackData}"
+    <chart:StackingAreaSeries ItemsSource="{Binding Data}"
                               XBindingPath="Year"
                               YBindingPath="Value"
                               ShowMarkers="True"/>
-    ...
 </chart:SfCartesianChart>
 
 {% endhighlight %}
@@ -126,12 +125,12 @@ SfCartesianChart chart = new SfCartesianChart();
 ...
 StackingAreaSeries series = new StackingAreaSeries()
 {
-    ItemsSource = new ViewModel().StackData,
+    ItemsSource = new ViewModel().Data,
     XBindingPath = "Year",
     YBindingPath = "Value",
-    ShowMarkers= true
+    ShowMarkers = true
 };
-...
+
 chart.Series.Add(series);
 this.Content= chart;
 
@@ -141,14 +140,14 @@ this.Content= chart;
 
 ### Marker customization
 
-In order to change the series markers’ appearance, create an instance of the [MarkerSettings](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.StackingAreaSeries.html#Syncfusion_Maui_Charts_StackingAreaSeries_MarkerSettings) property. The following properties are used to customize marker appearance.
+In order to change the series markers appearance, create an instance of the [MarkerSettings](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.StackingAreaSeries.html#Syncfusion_Maui_Toolkit_Charts_StackingAreaSeries_MarkerSettings) property. The following properties are used to customize marker appearance.
 
-* [Type](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartMarkerSettings.html#Syncfusion_Maui_Charts_ChartMarkerSettings_Type), of type `ShapeType`, describes the shape of the series marker. The default value of this property is the [ShapeType.Circle](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ShapeType.html#Syncfusion_Maui_Charts_ShapeType_Circle).
-* [Stroke](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartMarkerSettings.html#Syncfusion_Maui_Charts_ChartMarkerSettings_Stroke), of type `Brush`, indicates the brush used to paint the marker border.
-* [StrokeWidth](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartMarkerSettings.html#Syncfusion_Maui_Charts_ChartMarkerSettings_StrokeWidth), of type `double`, indicates the width of the marker border.
-* [Fill](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartMarkerSettings.html#Syncfusion_Maui_Charts_ChartMarkerSettings_Fill), of type `Brush`, indicates the color of the marker.
-* [Width](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartMarkerSettings.html#Syncfusion_Maui_Charts_ChartMarkerSettings_Width), of type `double`, indicates the width of the marker.
-* [Height](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartMarkerSettings.html#Syncfusion_Maui_Charts_ChartMarkerSettings_Height), of type `double`, indicates the height of the marker.
+* [Type](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartMarkerSettings.html#Syncfusion_Maui_Toolkit_Charts_ChartMarkerSettings_Type), of type `ShapeType`, describes the shape of the series marker. The default value of this property is the [ShapeType.Circle](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ShapeType.html#Syncfusion_Maui_Toolkit_Charts_ShapeType_Circle).
+* [Stroke](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartMarkerSettings.html#Syncfusion_Maui_Toolkit_Charts_ChartMarkerSettings_Stroke), of type `Brush`, indicates the brush used to paint the marker border.
+* [StrokeWidth](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartMarkerSettings.html#Syncfusion_Maui_Toolkit_Charts_ChartMarkerSettings_StrokeWidth), of type `double`, indicates the width of the marker border.
+* [Fill](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartMarkerSettings.html#Syncfusion_Maui_Toolkit_Charts_ChartMarkerSettings_Fill), of type `Brush`, indicates the color of the marker.
+* [Width](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartMarkerSettings.html#Syncfusion_Maui_Toolkit_Charts_ChartMarkerSettings_Width), of type `double`, indicates the width of the marker.
+* [Height](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartMarkerSettings.html#Syncfusion_Maui_Toolkit_Charts_ChartMarkerSettings_Height), of type `double`, indicates the height of the marker.
 
 {% tabs %}
 
@@ -156,7 +155,7 @@ In order to change the series markers’ appearance, create an instance of the [
 
 <chart:SfCartesianChart>
     ...
-    <chart:StackingAreaSeries ItemsSource="{Binding StackData}"
+    <chart:StackingAreaSeries ItemsSource="{Binding Data}"
                               XBindingPath="Year"
                               YBindingPath="Value"
                               ShowMarkers="True">
@@ -178,25 +177,27 @@ In order to change the series markers’ appearance, create an instance of the [
 
 SfCartesianChart chart = new SfCartesianChart();
 ...
-ChartMarkerSettings chartMarker= new ChartMarkerSettings();
-chartMarker.Type = ShapeType.Diamond;
-chartMarker.Fill = Colors.LightBlue;
-chartMarker.Stroke = Colors.Blue;
-chartMarker.StrokeWidth= 1;
-chartMarker.Height = 8;
-chartMarker.Width = 8;
+ChartMarkerSettings chartMarker= new ChartMarkerSettings()
+{
+    Type = ShapeType.Diamond,
+    Fill = Colors.LightBlue,
+    Stroke = Colors.Blue,
+    StrokeWidth = 1,
+    Height = 8,
+    Width = 8
+};
 
 StackingAreaSeries series = new StackingAreaSeries()
 {
-    ItemsSource = new ViewModel().StackData,
+    ItemsSource = new ViewModel().Data,
     XBindingPath = "Year",
     YBindingPath = "Value",
-    ShowMarkers= true,
+    ShowMarkers = true,
     MarkerSettings = chartMarker
 };
 ...
 chart.Series.Add(series);
-this.Content= chart;
+this.Content = chart;
 
 {% endhighlight %}
 

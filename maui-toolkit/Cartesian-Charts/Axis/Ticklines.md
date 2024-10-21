@@ -46,6 +46,7 @@ chart.XAxes.Add(primaryAxis);
 NumericalAxis secondaryAxis = new NumericalAxis();
 chart.YAxes.Add(secondaryAxis);
 
+this.Content = chart;
 {% endhighlight %}
 
 {% endtabs %}
@@ -83,7 +84,7 @@ NumericalAxis secondaryAxis = new NumericalAxis()
 
 chart.XAxes.Add(primaryAxis);
 chart.YAxes.Add(secondaryAxis);
-
+this.Content = chart;
 {% endhighlight %}
 
 {% endtabs %}
@@ -129,13 +130,13 @@ NumericalAxis primaryAxis = new NumericalAxis()
     MinorTicksPerInterval = 4,
     MajorTickStyle = new ChartAxisTickStyle()
     {
-        Stroke = Color.Red,
+        Stroke = Colors.Red,
         StrokeWidth = 1,
         TickSize = 10
     },
     MinorTickStyle = new ChartAxisTickStyle()
     {
-        Stroke = Color.Red,
+        Stroke = Colors.Red,
         StrokeWidth = 1
     }
 };
@@ -145,6 +146,7 @@ chart.XAxes.Add(primaryAxis);
 NumericalAxis secondaryAxis = new NumericalAxis();
 chart.YAxes.Add(secondaryAxis);
 
+this.Content = chart;
 {% endhighlight %}
 
 {% endtabs %}

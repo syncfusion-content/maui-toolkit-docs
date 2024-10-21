@@ -19,7 +19,7 @@ Each data label can be represented by the following:
 
 ## Enable Data Labels 
 
-The [ShowDataLabels](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartSeries.html#Syncfusion_Maui_Charts_ChartSeries_ShowDataLabels) property of series is used to enable the data labels.
+The [ShowDataLabels](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartSeries.html#Syncfusion_Maui_Toolkit_Charts_ChartSeries_ShowDataLabels) property of series is used to enable the data labels.
 
 {% tabs %}
 
@@ -48,27 +48,27 @@ ColumnSeries series = new ColumnSeries()
 };
 
 chart.Series.Add(series);
-
+this.Content = chart;
 {% endhighlight %}
 
 {% endtabs %}
 
-Data labels can be customized by using the [DataLabelSettings](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.CartesianSeries.html#Syncfusion_Maui_Charts_CartesianSeries_DataLabelSettings) property of chart series. For customizing, need to create an instance of [CartesianDataLabelSettings](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.CartesianDataLabelSettings.html) and set to the [DataLabelSettings](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.CartesianSeries.html#Syncfusion_Maui_Charts_CartesianSeries_DataLabelSettings) property. Following properties are used to customize the data labels which are available in [CartesianDataLabelSettings](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.CartesianDataLabelSettings.html).
+Data labels can be customized by using the [DataLabelSettings](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.CartesianSeries.html#Syncfusion_Maui_Toolkit_Charts_CartesianSeries_DataLabelSettings) property of chart series. For customizing, need to create an instance of [CartesianDataLabelSettings](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.CartesianDataLabelSettings.html) and set to the [DataLabelSettings](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.CartesianSeries.html#Syncfusion_Maui_Toolkit_Charts_CartesianSeries_DataLabelSettings) property. Following properties are used to customize the data labels which are available in [CartesianDataLabelSettings](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.CartesianDataLabelSettings.html).
 
-* [BarAlignment](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.CartesianDataLabelSettings.html#Syncfusion_Maui_Charts_CartesianDataLabelSettings_BarAlignment) - Gets or sets the data label alignment top, middle or bottom.
-* [LabelPlacement](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartDataLabelSettings.html#Syncfusion_Maui_Charts_ChartDataLabelSettings_LabelPlacement) - Gets or sets the data label position inside, outside or default.
-* [LabelStyle](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartDataLabelSettings.html#Syncfusion_Maui_Charts_ChartDataLabelSettings_LabelStyle) - Gets or sets the options for customizing the data labels. 
-* [UseSeriesPalette](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartDataLabelSettings.html#Syncfusion_Maui_Charts_ChartDataLabelSettings_UseSeriesPalette) - Gets or sets a value indicating whether the data label should reflect the series interior.
+* [BarAlignment](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.CartesianDataLabelSettings.html#Syncfusion_Maui_Toolkit_Charts_CartesianDataLabelSettings_BarAlignment) - Gets or sets the data label alignment top, middle or bottom.
+* [LabelPlacement](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartDataLabelSettings.html#Syncfusion_Maui_Toolkit_Charts_ChartDataLabelSettings_LabelPlacement) - Gets or sets the data label position inside, outside or default.
+* [LabelStyle](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartDataLabelSettings.html#Syncfusion_Maui_Toolkit_Charts_ChartDataLabelSettings_LabelStyle) - Gets or sets the options for customizing the data labels. 
+* [UseSeriesPalette](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartDataLabelSettings.html#Syncfusion_Maui_Toolkit_Charts_ChartDataLabelSettings_UseSeriesPalette) - Gets or sets a value indicating whether the data label should reflect the series interior.
 
 ![Data label in MAUI chart](DataLabel_images/maui_chart_data_label.jpg) 
 
 ## Data Label Alignment
 
-The alignment of data labels inside the series is defined by using the [BarAlignment](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.CartesianDataLabelSettings.html#Syncfusion_Maui_Charts_CartesianDataLabelSettings_BarAlignment) property. 
+The alignment of data labels inside the series is defined by using the [BarAlignment](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.CartesianDataLabelSettings.html#Syncfusion_Maui_Toolkit_Charts_CartesianDataLabelSettings_BarAlignment) property. 
 
-* [Top](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.DataLabelAlignment.html#Syncfusion_Maui_Charts_DataLabelAlignment_Top) - Positions the data label at the top edge point of a chart segment.
-* [Middle](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.DataLabelAlignment.html#Syncfusion_Maui_Charts_DataLabelAlignment_Middle) - Positions the data label at the center point of a chart segment.
-* [Bottom](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.DataLabelAlignment.html#Syncfusion_Maui_Charts_DataLabelAlignment_Bottom) - Positions the data label at the bottom edge point of a chart segment.
+* [Top](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.DataLabelAlignment.html#Syncfusion_Maui_Toolkit_Charts_DataLabelAlignment_Top) - Positions the data label at the top edge point of a chart segment.
+* [Middle](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.DataLabelAlignment.html#Syncfusion_Maui_Toolkit_Charts_DataLabelAlignment_Middle) - Positions the data label at the center point of a chart segment.
+* [Bottom](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.DataLabelAlignment.html#Syncfusion_Maui_Toolkit_Charts_DataLabelAlignment_Bottom) - Positions the data label at the bottom edge point of a chart segment.
 
 N> This behavior varies based on the chart series type.
 
@@ -90,15 +90,18 @@ N> This behavior varies based on the chart series type.
 {% highlight c# %}
 
 SfCartesianChart chart = new SfCartesianChart();
-ColumnSeries series = new ColumnSeries();
 . . .
+ColumnSeries series = new ColumnSeries()
+{
+    ShowDataLabels = true,
+};
 series.DataLabelSettings = new CartesianDataLabelSettings()
 {
     BarAlignment = DataLabelAlignment.Middle,
 };
 
 chart.Series.Add(series);
-
+this.Content = chart;
 {% endhighlight %}
 
 {% endtabs %}
@@ -109,11 +112,11 @@ chart.Series.Add(series);
 
 Other than the above alignment options, Chart providing additional customization option to position the data labels. 
 
-The [LabelPlacement](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartDataLabelSettings.html#Syncfusion_Maui_Charts_ChartDataLabelSettings_LabelPlacement) property is used to position the data labels at [Center](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.DataLabelPlacement.html#Syncfusion_Maui_Charts_DataLabelPlacement_Center), [Inner](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.DataLabelPlacement.html#Syncfusion_Maui_Charts_DataLabelPlacement_Inner) and [Outer](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.DataLabelPlacement.html#Syncfusion_Maui_Charts_DataLabelPlacement_Outer) position of the actual data point position. By default, labels are positioned based on the series types for better readability.
+The [LabelPlacement](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartDataLabelSettings.html#Syncfusion_Maui_Toolkit_Charts_ChartDataLabelSettings_LabelPlacement) property is used to position the data labels at [Center](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.DataLabelPlacement.html#Syncfusion_Maui_Toolkit_Charts_DataLabelPlacement_Center), [Inner](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.DataLabelPlacement.html#Syncfusion_Maui_Toolkit_Charts_DataLabelPlacement_Inner) and [Outer](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.DataLabelPlacement.html#Syncfusion_Maui_Toolkit_Charts_DataLabelPlacement_Outer) position of the actual data point position. By default, labels are positioned based on the series types for better readability.
 
 ## Applying Series Brush
 
-[UseSeriesPalette](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartDataLabelSettings.html#Syncfusion_Maui_Charts_ChartDataLabelSettings_UseSeriesPalette) property is used to set the interior of the series to the data marker background. 
+[UseSeriesPalette](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartDataLabelSettings.html#Syncfusion_Maui_Toolkit_Charts_ChartDataLabelSettings_UseSeriesPalette) property is used to set the interior of the series to the data marker background. 
 
 {% tabs %}
 
@@ -123,7 +126,7 @@ The [LabelPlacement](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui
     . . .
     <chart:ColumnSeries ShowDataLabels="True">
         <chart:ColumnSeries.DataLabelSettings>
-            <chart:CartesianDataLabelSettings  UseSeriesPalette="False"/>
+            <chart:CartesianDataLabelSettings UseSeriesPalette="False"/>
         </chart:ColumnSeries.DataLabelSettings>
     </chart:ColumnSeries>
 </chart:SfCartesianChart>
@@ -133,15 +136,18 @@ The [LabelPlacement](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui
 {% highlight c# %}
 
 SfCartesianChart chart = new SfCartesianChart();
-ColumnSeries series = new ColumnSeries();
 . . .
+ColumnSeries series = new ColumnSeries()
+{
+    ShowDataLabels = true,
+};
 series.DataLabelSettings = new CartesianDataLabelSettings()
 {
     UseSeriesPalette = false,
 };
 
 chart.Series.Add(series);
-
+this.Content = chart;
 {% endhighlight %}
 
 {% endtabs %}
@@ -150,11 +156,11 @@ chart.Series.Add(series);
 
 ## Formatting Label Context
 
-The content of the label can be customized using the [LabelContext](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.LabelContext.html) property. Following are the two options that are supported now,
+The content of the label can be customized using the [LabelContext](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartSeries.html#Syncfusion_Maui_Toolkit_Charts_ChartSeries_LabelContext) property. Following are the two options that are supported now,
 
-* [Percentage](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.LabelContext.html#Syncfusion_Maui_Charts_LabelContext_Percentage) - This will show the percentage value of corresponding data point Y value.
+* [Percentage](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.LabelContext.html#Syncfusion_Maui_Toolkit_Charts_LabelContext_Percentage) - This will show the percentage value of corresponding data point Y value.
 
-* [YValue](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.LabelContext.html#Syncfusion_Maui_Charts_LabelContext_YValue) - This will show the corresponding Y value.
+* [YValue](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.LabelContext.html#Syncfusion_Maui_Toolkit_Charts_LabelContext_YValue) - This will show the corresponding Y value.
 
 {% tabs %}
 
@@ -163,9 +169,9 @@ The content of the label can be customized using the [LabelContext](https://help
 <chart:SfCartesianChart IsTransposed="True">
     . . .
     <chart:ColumnSeries ItemsSource="{Binding Data}" 
-                        ShowDataLabels="True"
-                        XBindingPath="Name"
-                        YBindingPath="Height" 
+                        XBindingPath="XValue"
+                        YBindingPath="YValue"
+                        ShowDataLabels="True" 
                         LabelContext="Percentage"/>
 </chart:SfCartesianChart>
 
@@ -179,8 +185,8 @@ chart.IsTransposed = true;
 ColumnSeries series = new ColumnSeries()
 {
     ItemsSource = new ViewModel().Data,
-    XBindingPath = "Name",
-    YBindingPath = "Height",
+    XBindingPath = "XValue",
+    YBindingPath = "YValue",
     ShowDataLabels = true,
     LabelContext = LabelContext.Percentage
 };
@@ -196,7 +202,7 @@ this.Content = chart;
 
 ## LabelTemplate
 
-The [SfCartesianChart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html) provides support to customize the appearance of the data labels using the [LabelTemplate](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartSeries.html#Syncfusion_Maui_Charts_ChartSeries_LabelTemplate) property.
+The [SfCartesianChart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html) provides support to customize the appearance of the data labels using the [LabelTemplate](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartSeries.html#Syncfusion_Maui_Toolkit_Charts_ChartSeries_LabelTemplate) property.
 
 {% tabs %}
 
@@ -207,15 +213,15 @@ The [SfCartesianChart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Ma
         <DataTemplate x:Key="labelTemplate">
             <HorizontalStackLayout Spacing="5" WidthRequest="100">
                 <Image Source="arrow.png" WidthRequest="15" HeightRequest="15"/>
-                <Label Text="{Binding Item.Values}" VerticalOptions="Center" FontSize = "15"/>               
+                <Label Text="{Binding Item.Values}" VerticalOptions="Center" FontSize="15"/>               
             </HorizontalStackLayout>
         </DataTemplate>
     </chart:SfCartesianChart.Resources>
     . . .
-    <chart:ColumnSeries ItemsSource="{Binding Data}" 
-                        LabelTemplate="{StaticResource labelTemplate}"
+    <chart:ColumnSeries ItemsSource="{Binding Data}"
                         XBindingPath="Name"
                         YBindingPath="Values" 
+                        LabelTemplate="{StaticResource labelTemplate}"
                         ShowDataLabels="True">
 
         <chart:ColumnSeries.DataLabelSettings>
@@ -233,10 +239,10 @@ SfCartesianChart chart = new SfCartesianChart();
 chart.IsTransposed = true;
 . . .
 ColumnSeries series = new ColumnSeries();
-series.ShowDataLabels = true;
 series.ItemsSource = new ViewModel().Data;
 series.XBindingPath = "Name";
 series.YBindingPath = "Values";
+series.ShowDataLabels = true;
 series.DataLabelSettings = new CartesianDataLabelSettings()
 {
     LabelPlacement = DataLabelPlacement.Outer

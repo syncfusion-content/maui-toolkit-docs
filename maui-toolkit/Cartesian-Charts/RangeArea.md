@@ -16,11 +16,11 @@ Range Area Chart is a type of data visualization useful for displaying the relat
 
 By displaying ranges of data, range area series can make it easier to compare multiple datasets at once.
 
-To render a range area chart, create an instance of the [RangeAreaSeries](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.RangeAreaSeries.html), and add it to the [Series](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html#Syncfusion_Maui_Charts_SfCartesianChart_Series) collection property of the [SfCartesianChart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html?tabs=tabid-1).
+To render a range area chart, create an instance of the [RangeAreaSeries](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.RangeAreaSeries.html), and add it to the [Series](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html#Syncfusion_Maui_Toolkit_Charts_SfCartesianChart_Series) collection property of the [SfCartesianChart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html).
 
 Since the [RangeAreaSeries](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.RangeAreaSeries.html) requires two Y values for each point, your data should contain both the high and low values. These high and low values specify the maximum and minimum ranges of the point.
 
-N> The Cartesian chart has the [Series](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html#Syncfusion_Maui_Charts_SfCartesianChart_Series) as its default content.
+N> The Cartesian chart has the [Series](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html#Syncfusion_Maui_Toolkit_Charts_SfCartesianChart_Series) as its default content.
 
 {% tabs %}
 
@@ -56,7 +56,7 @@ RangeAreaSeries series = new RangeAreaSeries()
 {
     ItemsSource = new ViewModel().Data,
     XBindingPath = "XValue",
-    High="HighValue",
+    High = "HighValue",
     Low="LowValue",
 };
 
@@ -71,7 +71,7 @@ this.Content = chart;
 
 ## Enable Marker
 
-A marker, also known as a symbol, is used to determine or highlight the position of the data point. To enable markers in the series, set the [ShowMarkers](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.RangeAreaSeries.html#Syncfusion_Maui_Charts_RangeAreaSeries_ShowMarkers) property to true.
+A marker, also known as a symbol, is used to determine or highlight the position of the data point. To enable markers in the series, set the [ShowMarkers](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.RangeAreaSeries.html#Syncfusion_Maui_Toolkit_Charts_RangeAreaSeries_ShowMarkers) property to true.
 
 {% tabs %}
 
@@ -79,10 +79,10 @@ A marker, also known as a symbol, is used to determine or highlight the position
 
 <chart:SfCartesianChart>
     ...
-    <chart:RangeAreaSeries XBindingPath="XValue"
+    <chart:RangeAreaSeries ItemsSource="{Binding Data}" 
+                           XBindingPath="XValue"
                            High="HighValue"
                            Low="LowValue"
-                           ItemsSource="{Binding Data}"
                            ShowMarkers="True"/>
 </chart:SfCartesianChart>
 
@@ -94,11 +94,11 @@ SfCartesianChart chart = new SfCartesianChart();
 ...
 RangeAreaSeries series = new RangeAreaSeries()
 {
+    ItemsSource = new ViewModel().Data,
     XBindingPath = "XValue",
     High = "HighValue",
     Low = "LowValue",
-    ItemsSource = new ViewModel().Data,
-    ShowMarkers= true,
+    ShowMarkers = true,
 };
 
 chart.Series.Add(series);
@@ -110,14 +110,14 @@ this.Content= chart;
 
 ### Marker Customization
 
-In order to change the series markers’ appearance, create an instance of the [MarkerSettings](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.RangeAreaSeries.html#Syncfusion_Maui_Charts_RangeAreaSeries_MarkerSettings) property. The following properties are used to customize marker appearance.
+In order to change the series markers appearance, create an instance of the [MarkerSettings](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.RangeAreaSeries.html#Syncfusion_Maui_Toolkit_Charts_RangeAreaSeries_MarkerSettings) property. The following properties are used to customize marker appearance.
 
-* [Type](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartMarkerSettings.html#Syncfusion_Maui_Charts_ChartMarkerSettings_Type), of type `ShapeType`, describes the shape of the series marker. The default value of this property is the [ShapeType.Circle](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ShapeType.html#Syncfusion_Maui_Charts_ShapeType_Circle).
-* [Stroke](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartMarkerSettings.html#Syncfusion_Maui_Charts_ChartMarkerSettings_Stroke), of type `Brush`, indicates the brush used to paint the marker border.
-* [StrokeWidth](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartMarkerSettings.html#Syncfusion_Maui_Charts_ChartMarkerSettings_StrokeWidth), of type `double`, indicates the width of the marker border.
-* [Fill](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartMarkerSettings.html#Syncfusion_Maui_Charts_ChartMarkerSettings_Fill), of type `Brush`, indicates the color of the marker.
-* [Width](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartMarkerSettings.html#Syncfusion_Maui_Charts_ChartMarkerSettings_Width), of type `double`, indicates the width of the marker.
-* [Height](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartMarkerSettings.html#Syncfusion_Maui_Charts_ChartMarkerSettings_Height), of type `double`, indicates the height of the marker.
+* [Type](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartMarkerSettings.html#Syncfusion_Maui_Toolkit_Charts_ChartMarkerSettings_Type), of type `ShapeType`, describes the shape of the series marker. The default value of this property is the [ShapeType.Circle](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ShapeType.html#Syncfusion_Maui_Toolkit_Charts_ShapeType_Circle).
+* [Stroke](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartMarkerSettings.html#Syncfusion_Maui_Toolkit_Charts_ChartMarkerSettings_Stroke), of type `Brush`, indicates the brush used to paint the marker border.
+* [StrokeWidth](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartMarkerSettings.html#Syncfusion_Maui_Toolkit_Charts_ChartMarkerSettings_StrokeWidth), of type `double`, indicates the width of the marker border.
+* [Fill](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartMarkerSettings.html#Syncfusion_Maui_Toolkit_Charts_ChartMarkerSettings_Fill), of type `Brush`, indicates the color of the marker.
+* [Width](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartMarkerSettings.html#Syncfusion_Maui_Toolkit_Charts_ChartMarkerSettings_Width), of type `double`, indicates the width of the marker.
+* [Height](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartMarkerSettings.html#Syncfusion_Maui_Toolkit_Charts_ChartMarkerSettings_Height), of type `double`, indicates the height of the marker.
 
 {% tabs %}
 
@@ -125,11 +125,11 @@ In order to change the series markers’ appearance, create an instance of the [
 
 <chart:SfCartesianChart>
     ...
-    <chart:RangeAreaSeries XBindingPath="XValue"
+    <chart:RangeAreaSeries ItemsSource="{Binding Data}" 
+                           XBindingPath="XValue"
                            High="HighValue"
                            Low="LowValue"
-                           ItemsSource="{Binding Data}"
-                           ShowMarkers="True">
+                           ShowMarkers = "True">
         <chart:RangeAreaSeries.MarkerSettings>
             <chart:ChartMarkerSettings Type="Diamond"
                                        Fill="Brown"
@@ -147,20 +147,22 @@ In order to change the series markers’ appearance, create an instance of the [
 
 SfCartesianChart chart = new SfCartesianChart();
 ...
-ChartMarkerSettings chartMarker= new ChartMarkerSettings();
-chartMarker.Type = ShapeType.Diamond;
-chartMarker.Fill = Colors.Brown;
-chartMarker.Stroke = Colors.Black;
-chartMarker.StrokeWidth= 1;
-chartMarker.Height = 8;
-chartMarker.Width = 8;
+ChartMarkerSettings chartMarker= new ChartMarkerSettings()
+{
+    Type = ShapeType.Diamond,
+    Fill = Colors.Brown,
+    Stroke = Colors.Black,
+    StrokeWidth = 1,
+    Height = 8,
+    Width = 8,
+};
 
 RangeAreaSeries series = new RangeAreaSeries()
 {
+    ItemsSource = new ViewModel().Data,
     XBindingPath = "XValue",
     High = "HighValue",
     Low = "LowValue",
-    ItemsSource = new ViewModel().Data,
     ShowMarkers = true,
     MarkerSettings = chartMarker
 };
