@@ -40,13 +40,13 @@ The navigation pane pulled in and out from the [Left](https://help.syncfusion.co
 	
 {% highlight c# %}
 
- SfNavigationDrawer navigationDrawer = new SfNavigationDrawer();
- DrawerSettings drawerSettings = new DrawerSettings()
- {
-     Position = Position.Left,
- };
- navigationDrawer.DrawerSettings = drawerSettings;
- this.Content = navigationDrawer;
+SfNavigationDrawer navigationDrawer = new SfNavigationDrawer();
+DrawerSettings drawerSettings = new DrawerSettings()
+{
+    Position = Position.Left,
+};
+navigationDrawer.DrawerSettings = drawerSettings;
+this.Content = navigationDrawer;
 
 {% endhighlight %}
 
@@ -73,13 +73,13 @@ The navigation pane pulled in and out from the [Right](https://help.syncfusion.c
 	
 {% highlight c# %}
 
- SfNavigationDrawer navigationDrawer = new SfNavigationDrawer();
- DrawerSettings drawerSettings = new DrawerSettings()
- {
-     Position = Position.Right,
- };
- navigationDrawer.DrawerSettings = drawerSettings;
- this.Content = navigationDrawer;
+SfNavigationDrawer navigationDrawer = new SfNavigationDrawer();
+DrawerSettings drawerSettings = new DrawerSettings()
+{
+    Position = Position.Right,
+};
+navigationDrawer.DrawerSettings = drawerSettings;
+this.Content = navigationDrawer;
 
 {% endhighlight %}
 
@@ -107,13 +107,13 @@ The navigation pane pulled in and out from the [Top](https://help.syncfusion.com
 	
 {% highlight c# %}
 	
- SfNavigationDrawer navigationDrawer = new SfNavigationDrawer();
- DrawerSettings drawerSettings = new DrawerSettings()
- {
-     Position = Position.Top,
- };
- navigationDrawer.DrawerSettings = drawerSettings;
- this.Content = navigationDrawer;
+SfNavigationDrawer navigationDrawer = new SfNavigationDrawer();
+DrawerSettings drawerSettings = new DrawerSettings()
+{
+    Position = Position.Top,
+};
+navigationDrawer.DrawerSettings = drawerSettings;
+this.Content = navigationDrawer;
 
 {% endhighlight %}
 
