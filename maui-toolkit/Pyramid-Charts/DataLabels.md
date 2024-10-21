@@ -72,7 +72,7 @@ this.Content = chart;
 
 {% endhighlight %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 SfPyramidChart chart = new SfPyramidChart();
 . . .

@@ -273,6 +273,7 @@ chart.Title = new Label()
     Text = "Pyramid Stages",
 };
 this.Content = chart;
+
 {% endhighlight %}
 
 {% endtabs %}  
@@ -297,6 +298,7 @@ SfPyramidChart chart = new SfPyramidChart();
 . . .
 chart.ShowDataLabels = true; // Enable data labels in the chart.
 this.Content = chart;
+
 {% endhighlight %}
 
 {% endtabs %} 
@@ -324,6 +326,7 @@ SfPyramidChart chart = new SfPyramidChart();
 . . .
 chart.Legend = new ChartLegend(); // Enable legend in the chart.
 this.Content = chart;
+
 {% endhighlight %}
 
 {% endtabs %} 
@@ -348,6 +351,7 @@ SfPyramidChart chart = new SfPyramidChart();
 . . .
 chart.EnableTooltip = true; // Enable tooltip in the chart.
 this.Content = chart;
+
 {% endhighlight %}
 
 {% endtabs %}

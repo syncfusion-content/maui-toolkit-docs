@@ -275,6 +275,7 @@ chart.Title = new Label()
 };
 . . .
 this.Content = chart;
+
 {% endhighlight %}
 
 {% endtabs %}  
@@ -299,6 +300,7 @@ SfFunnelChart chart = new SfFunnelChart();
 . . .
 chart.ShowDataLabels = true; // Enable data labels in the chart.
 this.Content = chart;
+
 {% endhighlight %}
 
 {% endtabs %} 
@@ -326,6 +328,7 @@ SfFunnelChart chart = new SfFunnelChart();
 . . .
 chart.Legend = new ChartLegend(); // Enable legend in the chart.
 this.Content = chart;
+
 {% endhighlight %}
 
 {% endtabs %} 
@@ -350,6 +353,7 @@ SfFunnelChart chart = new SfFunnelChart();
 . . .
 chart.EnableTooltip = true; // Enable tooltip in the chart.
 this.Content = chart;
+
 {% endhighlight %}
 
 {% endtabs %}
@@ -387,7 +391,7 @@ The following code example gives you the complete code of above configurations.
     </chart:SfFunnelChart>
 
 </ContentPage>
- 
+
 {% endhighlight %}
 
 {% highlight C# %}
