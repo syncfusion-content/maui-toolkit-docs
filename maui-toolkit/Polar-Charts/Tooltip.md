@@ -29,16 +29,19 @@ To define the tooltip in the series, set the [EnableTooltip](https://help.syncfu
 
 {% highlight c# %}
 
+// Create a new instance of SfPolarChart
 SfPolarChart chart = new SfPolarChart();
 . . .
+// Create a new PolarAreaSeries
 PolarAreaSeries series = new PolarAreaSeries()
 {
     ItemsSource = new ViewModel().PlantDetails,
     XBindingPath = "Direction",
     YBindingPath = "Tree",
-    EnableTooltip = true
+    EnableTooltip = true // Enable tooltips for this series
 };
 
+// Add the series to the chart's Series collection
 chart.Series.Add(series);
 this.Content = chart;
 
@@ -101,21 +104,26 @@ The [Duration](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolk
 
 {% highlight c# %}
 
+// Create a new SfPolarChart instance
 SfPolarChart chart = new SfPolarChart();
 . . .
+
+// Configure the tooltip behavior for the chart
 chart.TooltipBehavior = new ChartTooltipBehavior()
 {
-  Duration = 5000,
+    Duration = 5000, // Set the tooltip display duration to 5 seconds
 };
 
+// Create a new PolarAreaSeries
 PolarAreaSeries series = new PolarAreaSeries()
 {
     ItemsSource = new ViewModel().PlantDetails,
     XBindingPath = "Direction",
     YBindingPath = "Tree",
-    EnableTooltip = true
+    EnableTooltip = true // Enable tooltips for this series
 };
 
+// Add the series to the chart's collection of series
 chart.Series.Add(series);
 this.Content = chart;
 
@@ -162,17 +170,21 @@ The [SfPolarChart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.T
 
 {% highlight c# %}
 
+// Create a new instance of SfPolarChart
 SfPolarChart chart = new SfPolarChart();
 . . .
+
+// Create a new PolarAreaSeries
 PolarAreaSeries series = new PolarAreaSeries()
 {
     ItemsSource = new ViewModel().PlantDetails,
     XBindingPath = "Direction",
     YBindingPath = "Tree",
     EnableTooltip = true,
-    TooltipTemplate = chart.Resources["tooltipTemplate1"] as DataTemplate
+    TooltipTemplate = chart.Resources["tooltipTemplate1"] as DataTemplate // Set a custom tooltip template from the chart's resources
 };
 
+// Add the series to the chart's collection of series
 chart.Series.Add(series);
 this.Content = chart;
         
@@ -235,7 +247,6 @@ The [Hide](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.C
 {% highlight c# %}
 
 //The argument determines whether the tooltip should be animated while hiding.
-
 tooltip.Hide();
 
 {% endhighlight %}

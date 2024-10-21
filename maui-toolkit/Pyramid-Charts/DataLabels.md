@@ -25,12 +25,13 @@ To define the data label in the chart, set the [ShowDataLabels](https://help.syn
 
 {% endhighlight %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 SfPyramidChart chart = new SfPyramidChart();
 . . .
-chart.ShowDataLabels = true;
+chart.ShowDataLabels = true; // Enable data labels for the chart.
 this.Content = chart;
+
 {% endhighlight %}
 
 {% endtabs %} 
@@ -71,22 +72,25 @@ this.Content = chart;
 
 {% endhighlight %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 SfPyramidChart chart = new SfPyramidChart();
 . . .
 chart.ShowDataLabels = true;
+
+// Define the style for data labels.
 ChartDataLabelStyle labelStyle = new ChartDataLabelStyle()
 {
     Margin = 2,
 };
 
+// Configure data label settings for the chart.
 chart.DataLabelSettings = new PyramidDataLabelSettings()
 {
-    Context = PyramidDataLabelContext.XValue,
-    LabelPlacement = DataLabelPlacement.Outer,
-    UseSeriesPalette = true,
-    LabelStyle = labelStyle,
+    Context = PyramidDataLabelContext.XValue, // Show x value in the label content.
+    LabelPlacement = DataLabelPlacement.Outer, // Position the data labels at the outer side of the chart.
+    UseSeriesPalette = true, // Set the interior of the chart to the data label background.
+    LabelStyle = labelStyle, // Apply the style for data labels.
 };
 
 this.Content = chart;

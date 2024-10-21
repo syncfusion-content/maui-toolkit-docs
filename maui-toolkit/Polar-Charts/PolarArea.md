@@ -33,18 +33,24 @@ To display an area series in a polar chart, instantiate the [PolarAreaSeries](ht
 
 {% highlight c# %}
 
+// Create a new instance of SfPolarChart
 SfPolarChart chart = new SfPolarChart();
-CategoryAxis primaryAxis = new CategoryAxis();
+
+CategoryAxis primaryAxis = new CategoryAxis(); // Create a primary axis (CategoryAxis) for the chart
 chart.PrimaryAxis = primaryAxis;
-NumericalAxis secondaryAxis = new NumericalAxis();
+
+NumericalAxis secondaryAxis = new NumericalAxis(); // Create a secondary axis (NumericalAxis) for the chart
 chart.SecondaryAxis = secondaryAxis;
+
+// Create a new PolarAreaSeries and configure its properties
 PolarAreaSeries series = new PolarAreaSeries()
 {
-    ItemsSource = new ViewModel().PlantDetails,
-    XBindingPath = "Direction",
-    YBindingPath = "Tree"
+    ItemsSource = new ViewModel().PlantDetails, // Set the data source for the series
+    XBindingPath = "Direction", // Specify the property to be used for X-axis values
+    YBindingPath = "Tree" // Specify the property to be used for Y-axis values
 };
 
+// Add the series to the chart's collection of series
 chart.Series.Add(series);
 this.Content = chart;
 
@@ -71,9 +77,15 @@ The [GridLineType](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.T
 
 {% highlight c# %}
 
+// Create a new SfPolarChart instance
 SfPolarChart chart = new SfPolarChart();
+
+// Set the grid line type to Polygon
 chart.GridLineType = PolarChartGridLineType.Polygon;
-. . .
+
+// ... (other chart configurations)
+
+// Create a new PolarAreaSeries
 PolarAreaSeries series = new PolarAreaSeries()
 {
     ItemsSource = new ViewModel().PlantDetails,
@@ -81,6 +93,7 @@ PolarAreaSeries series = new PolarAreaSeries()
     YBindingPath = "Tree"
 };
 
+// Add the series to the chart's Series collection
 chart.Series.Add(series);
 this.Content = chart;
 
@@ -100,24 +113,32 @@ The [IsClosed](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolk
 
 <chart:SfPolarChart> 
     . . .
-    <chart:PolarAreaSeries ItemsSource="{Binding PlantDetails}" XBindingPath="Direction" YBindingPath="Tree" 
-                           IsClosed="False"/>  
+    <chart:PolarAreaSeries ItemsSource="{Binding PlantDetails}" 
+        XBindingPath="Direction" 
+        YBindingPath="Tree" 
+        IsClosed="False"/>  
 </chart:SfPolarChart>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
+// Create a new instance of SfPolarChart
 SfPolarChart chart = new SfPolarChart();
 . . .
+// Create a new PolarAreaSeries
 PolarAreaSeries series = new PolarAreaSeries()
 {
     ItemsSource = new ViewModel().PlantDetails,
     XBindingPath = "Direction",
     YBindingPath = "Tree",
+    
+    // Set whether the series should be closed or open
+    // False means the series will not be closed (no line connecting start and end points)
     IsClosed = "False"
 };
 
+// Add the series to the chart's Series collection
 chart.Series.Add(series);
 this.Content = chart;
 
@@ -137,26 +158,30 @@ A marker, also known as a symbol, is used to determine or highlight the position
 
 <chart:SfPolarChart>
     ...
-    <chart:PolarAreaSeries ItemsSource="{Binding PlantDetails}" XBindingPath="Direction"  YBindingPath="Tree"    
-                           ShowMarkers="True"/>
+    <chart:PolarAreaSeries ItemsSource="{Binding PlantDetails}" XBindingPath="Direction"
+            YBindingPath="Tree" 
+            ShowMarkers="True"/>
 </chart:SfPolarChart>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
+// Create a new instance of SfPolarChart
 SfPolarChart chart = new SfPolarChart();
 ...
+// Create a new PolarAreaSeries
 PolarAreaSeries series = new PolarAreaSeries()
 {
     ItemsSource = new ViewModel().PlantDetails,
     XBindingPath = "Direction",
     YBindingPath = "Tree",
-    ShowMarkers= true
- };
+    ShowMarkers = true // Enable markers for data points
+};
 
+// Add the series to the chart's Series collection
 chart.Series.Add(series);
-this.Content= chart;
+this.Content = chart;
 
 {% endhighlight %}
 
@@ -192,24 +217,30 @@ In order to change the series markers appearance, create an instance of the [Mar
 
 {% highlight c# %}
 
+// Create a new instance of SfPolarChart
 SfPolarChart chart = new SfPolarChart();
 ...
+
+// Create and configure chart marker settings
+ChartMarkerSettings chartMarker= new ChartMarkerSettings();
+chartMarker.Type = ShapeType.Diamond;  // Set marker shape to diamond
+chartMarker.Fill = Colors.Brown; // Set fill color of markers
+chartMarker.Stroke = Colors.Black; // Set outline color of markers
+chartMarker.StrokeWidth= 1; // Set outline width of markers
+chartMarker.Height = 8; // Set height of markers
+chartMarker.Width = 8; // Set width of markers
+
+// Create a new PolarAreaSeries
 PolarAreaSeries series = new PolarAreaSeries()
 {
     ItemsSource = new ViewModel().PlantDetails,
     XBindingPath = "Direction",
     YBindingPath = "Tree",
-    ShowMarkers = true,
-    MarkerSettings = chartMarker
+    ShowMarkers = true,  // Enable markers for data points
+    MarkerSettings = chartMarker // Apply marker settings
 };
 
-ChartMarkerSettings chartMarker= new ChartMarkerSettings();
-chartMarker.Type = ShapeType.Diamond;
-chartMarker.Fill = Colors.Brown;
-chartMarker.Stroke = Colors.Black;
-chartMarker.StrokeWidth= 1;
-chartMarker.Height = 8;
-chartMarker.Width = 8;
+// Add the series to the chart
 chart.Series.Add(series);
 this.Content = chart;
 

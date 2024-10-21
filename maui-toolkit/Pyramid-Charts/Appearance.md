@@ -35,8 +35,10 @@ public class StageViewModel
 	public ObservableCollection<Model> Data { get; set; }
 
 	public List<Brush> CustomBrushes { get; set; }
+
 	public StageViewModel()
 	{
+	 //Initializing CustomBrushes collection to add custom palette colors.
 	 CustomBrushes = new List<Brush>();
 	 CustomBrushes.Add(new SolidColorBrush(Color.FromRgb(38, 198, 218)));
 	 CustomBrushes.Add(new SolidColorBrush(Color.FromRgb(0, 188, 212)));
@@ -115,6 +117,7 @@ public class StageViewModel
 			new GradientStop() { Offset = 0, Color = Color.FromArgb("#56C596") }
 		};
 
+		//Adding gradient brush to the custom brushes collection.
 		CustomBrushes.Add(gradientColor1);
 		CustomBrushes.Add(gradientColor2);
 		CustomBrushes.Add(gradientColor3);
@@ -155,7 +158,7 @@ ViewModel viewModel = new ViewModel();
 chart.ItemsSource = viewModel.Data;
 chart.XBindingPath = "XValue";
 chart.YBindingPath = "YValue";
-chart.Mode =  PyramidMode.Surface;
+chart.Mode =  PyramidMode.Surface; //Setting the pyramid mode for the chart.
 this.Content = chart;
 {% endhighlight %}
 
