@@ -128,7 +128,7 @@ Define a simple data model to represent a data point in the chart:
 
 {% tabs %}  
 
-{% highlight c# %}
+{% highlight C# %}
 
 public class AdmissionModel
 {
@@ -144,7 +144,7 @@ Next, create a `AdmissionViewModel` class and initialize a list of `AdmissionMod
 
 {% tabs %}  
 
-{% highlight c# %}
+{% highlight C# %}
 
 public class AdmissionViewModel
 {
@@ -190,7 +190,7 @@ N> If you prefer to set the `BindingContext` in XAML, make sure to add the appro
 
 {% endhighlight %}
 
-{% highlight C# %} 
+{% highlight C# %}
 
 using Syncfusion.Maui.Toolkit.Charts;
 

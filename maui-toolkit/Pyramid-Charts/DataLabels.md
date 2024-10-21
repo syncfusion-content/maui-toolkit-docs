@@ -25,12 +25,13 @@ To define the data label in the chart, set the [ShowDataLabels](https://help.syn
 
 {% endhighlight %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 SfPyramidChart chart = new SfPyramidChart();
 . . .
 chart.ShowDataLabels = true; // Enable data labels for the chart.
 this.Content = chart;
+
 {% endhighlight %}
 
 {% endtabs %} 
