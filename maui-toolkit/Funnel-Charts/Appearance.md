@@ -38,7 +38,7 @@ public class AdmissionViewModel
 
 	public AdmissionViewModel()
 	{
-	    //Initializing CustomBrushes collection to add custom palette colors
+	    //Initializing CustomBrushes collection to add custom palette colors.
 		CustomBrushes = new List<Brush>();
 		CustomBrushes.Add(new SolidColorBrush(Color.FromRgb(38, 198, 218)));
 		CustomBrushes.Add(new SolidColorBrush(Color.FromRgb(0, 188, 212)));

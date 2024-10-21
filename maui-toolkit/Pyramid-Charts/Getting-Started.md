@@ -112,7 +112,7 @@ public partial class MainPage : ContentPage
     public MainPage()
     {
         InitializeComponent();
-        SfPyramidChart chart = new SfPyramidChart(); // Create an instance of the Pyramid Chart.
+        SfPyramidChart chart = new SfPyramidChart(); // Create an instance of the SfPyramidChart.
         this.Content = chart; // Set the chart as the content of the page.
     }
 }
@@ -127,7 +127,7 @@ Define a simple data model to represent a data point in the chart:
 
 {% tabs %}  
 
-{% highlight c# %}
+{% highlight C# %}
 
 public class StageModel
 {
@@ -143,7 +143,7 @@ Next, create a `StageViewModel` class and initialize a list of `StageModel` obje
 
 {% tabs %}  
 
-{% highlight c# %}
+{% highlight C# %}
 
 public class StageViewModel
 {
