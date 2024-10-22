@@ -15,7 +15,7 @@ NuGet is a package management system used in Visual Studio, simplifying the proc
 
 ## Installation using Package Manager UI
 
-The **NuGet Package Manager UI** llows you to search for, install, uninstall, and update Syncfusion Maui Toolkit packages easily. Follow these steps to install the Syncfusion.Maui.Toolkit package in your MAUI application:
+The **NuGet Package Manager UI** allows you to search for, install, uninstall, and update Syncfusion Maui Toolkit packages easily. Follow these steps to install the Syncfusion.Maui.Toolkit package in your MAUI application:
 
 1. Right-click on your MAUI application or solution in the Solution Explorer and select **Manage NuGet Packages...**
 
