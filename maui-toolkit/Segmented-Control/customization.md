@@ -1,25 +1,24 @@
 ---
 layout: post
-title: Appearance Customization of .NET MAUI Segmented Control (SfSegmentedControl) | Syncfusion
+title: Appearance Customization of .NET MAUI Segmented Control | Syncfusion
 description: Learn about the appearance customization of Syncfusion .NET MAUI Segmented Control (SfSegmentedControl).
 platform: maui-toolkit
 control: Segmented control
 documentation: ug
 ---
  
-# Appearance Customization of .NET MAUI Segmented Control (SfSegmentedControl)
+# Appearance Customization of .NET MAUI Segmented Control
 The .NET MAUI Segmented control allows you to customize the background, text color, selection style, and more.
 
 ## Customize the border color
-You can use the [Stroke](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SegmentedControl.html#Syncfusion_Maui_Toolkit_SegmentedControl_Stroke) property of [SfSegmentedControl](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SegmentedControl.html) to customize the border color of the segmented control.
+You can use the [Stroke](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SegmentedControl.SfSegmentedControl.html#Syncfusion_Maui_Toolkit_SegmentedControl_SfSegmentedControl_Stroke) property of [SfSegmentedControl](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SegmentedControl.SfSegmentedControl.html) to customize the border color of the segmented control.
 
 {% tabs %}
 {% highlight XAML %}
 
 <ContentPage
     xmlns:segmentedControl="clr-namespace:Syncfusion.Maui.Toolkit.SegmentedControl;assembly=Syncfusion.Maui.Toolkit">
-    <segmentedControl:SfSegmentedControl 
-                                Stroke="Red">
+    <segmentedControl:SfSegmentedControl Stroke="Red">
         <segmentedControl:SfSegmentedControl.ItemsSource>
             <x:Array Type="{x:Type x:String}">
                 <x:String>Day</x:String>
@@ -55,15 +54,14 @@ public partial class MainPage : ContentPage
 
 ## Customize the border thickness
 
-You can use the [StrokeThickness](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SegmentedControl.html#Syncfusion_Maui_Toolkit_SegmentedControl_StrokeThickness) property of [SfSegmentedControl](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SegmentedControl.html) to customize the border thickness of the segmented control.
+You can use the [StrokeThickness](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SegmentedControl.SfSegmentedControl.html#Syncfusion_Maui_Toolkit_SegmentedControl_SfSegmentedControl_StrokeThickness) property of [SfSegmentedControl](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SegmentedControl.SfSegmentedControl.html) to customize the border thickness of the segmented control.
 
 {% tabs %}
 {% highlight XAML %}
 
 <ContentPage
     xmlns:segmentedControl="clr-namespace:Syncfusion.Maui.Toolkit.SegmentedControl;assembly=Syncfusion.Maui.Toolkit">
-    <segmentedControl:SfSegmentedControl x:Name="segmentedControl"
-                                StrokeThickness="2">
+    <segmentedControl:SfSegmentedControl StrokeThickness="2">
         <segmentedControl:SfSegmentedControl.ItemsSource>
             <x:Array Type="{x:Type x:String}">
                 <x:String>Day</x:String>
@@ -99,15 +97,14 @@ public partial class MainPage : ContentPage
 
 ## Customize the border corner radius
 
-Use the [CornerRadius](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SegmentedControl.html#Syncfusion_Maui_Toolkit_SegmentedControl_CornerRadius) property of [SfSegmentedControl](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SegmentedControl.html) to customize the corner radius of the segmented control.
+Use the [CornerRadius](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SegmentedControl.SfSegmentedControl.html#Syncfusion_Maui_Toolkit_SegmentedControl_SfSegmentedControl_CornerRadius) property of [SfSegmentedControl](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SegmentedControl.SfSegmentedControl.html) to customize the corner radius of the segmented control.
 
 {% tabs %}
 {% highlight XAML %}
 
 <ContentPage
     xmlns:segmentedControl="clr-namespace:Syncfusion.Maui.Toolkit.SegmentedControl;assembly=Syncfusion.Maui.Toolkit">
-    <segmentedControl:SfSegmentedControl x:Name="segmentedControl"
-                                CornerRadius="5">
+    <segmentedControl:SfSegmentedControl CornerRadius="5">
         <segmentedControl:SfSegmentedControl.ItemsSource>
             <x:Array Type="{x:Type x:String}">
                 <x:String>Day</x:String>
@@ -145,15 +142,14 @@ N> The `CornerRadius` property will be applicable only for the first and last se
 
 ## Customize the segment corner radius
 
-Use the [SegmentCornerRadius](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SegmentedControl.html#Syncfusion_Maui_Toolkit_SegmentedControl_SegmentCornerRadius) property of [SfSegmentedControl](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SegmentedControl.html) to customize the segment corner radius of the segmented control.
+Use the [SegmentCornerRadius](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SegmentedControl.SfSegmentedControl.html#Syncfusion_Maui_Toolkit_SegmentedControl_SfSegmentedControl_SegmentCornerRadius) property of [SfSegmentedControl](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SegmentedControl.SfSegmentedControl.html) to customize the segment corner radius of the segmented control.
 
 {% tabs %}
 {% highlight XAML %}
 
 <ContentPage
     xmlns:segmentedControl="clr-namespace:Syncfusion.Maui.Toolkit.SegmentedControl;assembly=Syncfusion.Maui.Toolkit">
-    <segmentedControl:SfSegmentedControl x:Name="segmentedControl"
-                                SegmentCornerRadius="5">
+    <segmentedControl:SfSegmentedControl SegmentCornerRadius="5">
         <segmentedControl:SfSegmentedControl.ItemsSource>
             <x:Array Type="{x:Type x:String}">
                 <x:String>Day</x:String>
@@ -191,14 +187,14 @@ public partial class MainPage : ContentPage
 You can customize the text style of the segmented control and each segment item.
 
 ### Customize the text style of segmented Control
-Use the [TextStyle](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SegmentedControl.html#Syncfusion_Maui_Toolkit_SegmentedControl_TextStyle) property of [SfSegmentedControl](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SegmentedControl.html) to customize the text style of the segmented control.
+Use the [TextStyle](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SegmentedControl.SfSegmentedControl.html#Syncfusion_Maui_Toolkit_SegmentedControl_SfSegmentedControl_TextStyle) property of [SfSegmentedControl](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SegmentedControl.SfSegmentedControl.html) to customize the text style of the segmented control.
 
 {% tabs %}
 {% highlight XAML %}
 
 <ContentPage
     xmlns:segmentedControl="clr-namespace:Syncfusion.Maui.Toolkit.SegmentedControl;assembly=Syncfusion.Maui.Toolkit">
-    <segmentedControl:SfSegmentedControl x:Name="segmentedControl">
+    <segmentedControl:SfSegmentedControl>
         <segmentedControl:SfSegmentedControl.TextStyle>
             <segmentedControl:SegmentTextStyle TextColor="Red" FontAttributes="Italic" FontSize="20"/>
         </segmentedControl:SfSegmentedControl.TextStyle>
@@ -245,7 +241,7 @@ public partial class MainPage : ContentPage
 Customize the text style of each segment item using the [TextStyle](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SegmentedControl.SfSegmentItem.html#Syncfusion_Maui_Toolkit_SegmentedControl_SfSegmentItem_TextStyle) property of [SfSegmentItem](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SegmentedControl.SfSegmentItem.html).
 
 {% tabs %}
-{% highlight C# tabtitle="MainPage.xaml.cs"%}
+{% highlight C# tabtitle="MainPage.xaml.cs" %}
 
 using Syncfusion.Maui.Toolkit.SegmentedControl;
 . . .
@@ -277,15 +273,14 @@ public partial class MainPage : ContentPage
 You can customize the segmented background of the segmented control and each segment item.
 
 ### Customize the segment background of segmented control
-Use the [SegmentBackground](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SegmentedControl.html#Syncfusion_Maui_Toolkit_SegmentedControl_SegmentBackground) property of [SfSegmentedControl](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SegmentedControl.html) to customize the segmented background of the segmented control.
+Use the [SegmentBackground](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SegmentedControl.SfSegmentedControl.html#Syncfusion_Maui_Toolkit_SegmentedControl_SfSegmentedControl_SegmentBackground) property of [SfSegmentedControl](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SegmentedControl.SfSegmentedControl.html) to customize the segmented background of the segmented control.
 
 {% tabs %}
 {% highlight XAML %}
 
 <ContentPage
     xmlns:segmentedControl="clr-namespace:Syncfusion.Maui.Toolkit.SegmentedControl;assembly=Syncfusion.Maui.Toolkit">
-    <segmentedControl:SfSegmentedControl x:Name="segmentedControl"
-                                SegmentBackground="LightGray">
+    <segmentedControl:SfSegmentedControl SegmentBackground="LightGray">
         <segmentedControl:SfSegmentedControl.ItemsSource>
             <x:Array Type="{x:Type x:String}">
                 <x:String>Day</x:String>
@@ -324,7 +319,7 @@ public partial class MainPage : ContentPage
 Customize the background of each segment item using the [Background](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SegmentedControl.SfSegmentItem.html#Syncfusion_Maui_Toolkit_SegmentedControl_SfSegmentItem_Background) property of [SfSegmentItem](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SegmentedControl.SfSegmentItem.html).
 
 {% tabs %}
-{% highlight C# tabtitle="MainPage.xaml.cs"%}
+{% highlight C# tabtitle="MainPage.xaml.cs" %}
 
 using Syncfusion.Maui.Toolkit.SegmentedControl;
 . . .
@@ -354,14 +349,14 @@ public partial class MainPage : ContentPage
 
 ## Customize segment items appearance using DataTemplate
 
-Use the [SegmentTemplate](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SegmentedControl.html#Syncfusion_Maui_Toolkit_SegmentedControl_SegmentTemplate) property of [SfSegmentedControl](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SegmentedControl.html) to create custom segmented control. The following example code shows how to create a custom segmented control using a data template.
+Use the [SegmentTemplate](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SegmentedControl.SfSegmentedControl.html#Syncfusion_Maui_Toolkit_SegmentedControl_SfSegmentedControl_SegmentTemplate) property of [SfSegmentedControl](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SegmentedControl.SfSegmentedControl.html) to create custom segmented control. The following example code shows how to create a custom segmented control using a data template.
 
 {% tabs %}
 {% highlight XAML %}
 
 <ContentPage   
     xmlns:segmentedControl="clr-namespace:Syncfusion.Maui.Toolkit.SegmentedControl;assembly=Syncfusion.Maui.Toolkit">
-    <segmentedControl:SfSegmentedControl x:Name="segmentedControl">
+    <segmentedControl:SfSegmentedControl>
         <segmentedControl:SfSegmentedControl.ItemsSource>
             <x:Array Type="{x:Type x:String}">                
                 <x:String>Day</x:String>                

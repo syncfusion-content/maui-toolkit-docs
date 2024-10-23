@@ -71,8 +71,3 @@ this.Content = navigationDrawer;
 {% endhighlight %}
 
 {% endtabs %}
-
-### Limitations
-
-* When the navigation drawer is placed inside a `ScrollView`, it can interfere with the navigation drawer's touch gestures.
-* This may lead to unintended behavior, such as the navigation drawer responding to swipe gestures meant for the `ScrollView`, or vice versa. Overlapping gestures can cause confusion and disrupt the user experience, resulting in a less intuitive interface.

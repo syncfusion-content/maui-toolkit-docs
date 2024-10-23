@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Events in .NET MAUI Chips control | Syncfusion
-description: Learn about Events support in Syncfusion Essential Studio .NET MAUI Chips control, its elements and more.
+description: Learn about Events support in Syncfusion Toolkit for .NET MAUI Chips control, its elements and more.
 platform: maui-toolkit
 control: Chips
 documentation: ug
@@ -23,11 +23,11 @@ The [SelectionChanged](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Ma
  * [AddedItem] - Get the selected chip from `SfChipGroup`.
  * [RemovedItem] - Get the previous selected or deselected chip from `SfChipGroup`.
 
-N>  Currently, [`Choice`](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Core.SfChipsType.html#Syncfusion_Maui_Core_SfChipsType_Choice) and [`Filter`](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Core.SfChipsType.html#Syncfusion_Maui_Core_SfChipsType_Filter) types are only supported for `SelectionChanging` and `SelectionChanged` events.
+N>  Currently, [Choice](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Chips.SfChipsType.html#Syncfusion_Maui_Toolkit_Chips_SfChipsType_Choice) and [Filter](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Chips.SfChipsType.html#Syncfusion_Maui_Toolkit_Chips_SfChipsType_Filter) types are only supported for `SelectionChanging` and `SelectionChanged` events.
 
 ##  ChipClicked
 
-The [`ChipClicked`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Chips.SfChipGroup.html#Syncfusion_Maui_Toolkit_Chips_SfChipGroup_ChipClicked) event is triggered when a chip clicked in the [SfChipGroup]. The event argument is type of `EventArgs`.
+The [ChipClicked](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Chips.SfChipGroup.html#Syncfusion_Maui_Toolkit_Chips_SfChipGroup_ChipClicked) event is triggered when a chip clicked in the [SfChipGroup]. The event argument is type of `EventArgs`.
 
 ## ItemRemoved Event
 

@@ -17,19 +17,18 @@ The [RippleAnimationDuration](https://help.syncfusion.com/cr/maui-toolkit/Syncfu
 
 {% tabs %} 
 
-{% highlight xaml %} 
+{% highlight xaml %}
 
 <ContentPage 
-            ...
-            xmlns:effectsView="clr-namespace:Syncfusion.Maui.Toolkit.EffectsView;assembly=Syncfusion.Maui.Toolkit">
+    xmlns:effectsView="clr-namespace:Syncfusion.Maui.Toolkit.EffectsView;assembly=Syncfusion.Maui.Toolkit">
     <ContentPage.Content> 
-	 	<effectsView:SfEffectsView RippleAnimationDuration="800" /> 
+	<effectsView:SfEffectsView RippleAnimationDuration="800"/> 
 	</ContentPage.Content> 
 </ContentPage>
 
 {% endhighlight %}
 
-{% highlight C# %} 
+{% highlight C# %}
 
 using Syncfusion.Maui.Toolkit.EffectsView;
 
@@ -37,6 +36,8 @@ var effectsView = new SfEffectsView()
 {
     RippleAnimationDuration = 800
 };
+
+this.Content = effectsView;
 
 {% endhighlight %}
 
@@ -48,22 +49,21 @@ The [ScaleAnimationDuration](https://help.syncfusion.com/cr/maui-toolkit/Syncfus
 
 {% tabs %} 
 
-{% highlight xaml %} 
+{% highlight xaml %}
 
 <ContentPage 
-            ...
     xmlns:effectsView="clr-namespace:Syncfusion.Maui.Toolkit.EffectsView;assembly=Syncfusion.Maui.Toolkit">
     <ContentPage.Content> 
-	 	<effectsView:SfEffectsView 
+	<effectsView:SfEffectsView 
         ScaleAnimationDuration="800"
-    LongPressEffects="Scale"
-    ScaleFactor="0.85"/>
+        LongPressEffects="Scale"
+        ScaleFactor="0.85"/>
 	</ContentPage.Content> 
 </ContentPage>
 
 {% endhighlight %}
 
-{% highlight C# %} 
+{% highlight C# %}
 
 using Syncfusion.Maui.Toolkit.EffectsView;
 
@@ -73,6 +73,8 @@ var effectsView = new SfEffectsView()
     LongPressEffects = SfEffects.Scale,
     ScaleFactor = 0.85
 };
+
+this.Content = effectsView;
 
 {% endhighlight %}
 
@@ -84,22 +86,21 @@ The [RotationAnimationDuration](https://help.syncfusion.com/cr/maui-toolkit/Sync
 
 {% tabs %} 
 
-{% highlight xaml %} 
+{% highlight xaml %}
 
 <ContentPage 
-            ...
     xmlns:effectsView="clr-namespace:Syncfusion.Maui.Toolkit.EffectsView;assembly=Syncfusion.Maui.Toolkit">
     <ContentPage.Content> 
-	 	<effectsView:SfEffectsView 
-    RotationAnimationDuration="800"
-    Angle="180"
-    TouchDownEffects="Rotation"/>
+	<effectsView:SfEffectsView 
+        RotationAnimationDuration="800"
+        Angle="180"
+        TouchDownEffects="Rotation"/>
 	</ContentPage.Content> 
 </ContentPage>
 
 {% endhighlight %}
 
-{% highlight C# %} 
+{% highlight C# %}
 
 using Syncfusion.Maui.Toolkit.EffectsView;
 
@@ -109,6 +110,8 @@ var effectsView = new SfEffectsView()
     Angle = 180,
     TouchDownEffects = SfEffects.Rotation
 };
+
+this.Content = effectsView;
 
 {% endhighlight %}
 
@@ -120,19 +123,18 @@ The [InitialRippleFactor](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion
 
 {% tabs %} 
 
-{% highlight xaml %} 
+{% highlight xaml %}
 
 <ContentPage 
-            ...
     xmlns:effectsView="clr-namespace:Syncfusion.Maui.Toolkit.EffectsView;assembly=Syncfusion.Maui.Toolkit">
     <ContentPage.Content> 
-	 	<effectsView:SfEffectsView InitialRippleFactor="0.1"/>
+	<effectsView:SfEffectsView InitialRippleFactor="0.1"/>
 	</ContentPage.Content> 
 </ContentPage>
 
 {% endhighlight %}
 
-{% highlight C# %} 
+{% highlight C# %}
 
 using Syncfusion.Maui.Toolkit.EffectsView;
 
@@ -140,6 +142,8 @@ var effectsView = new SfEffectsView
 {
     InitialRippleFactor = 0.1
 };
+
+this.Content = effectsView;
 
 {% endhighlight %}
 
@@ -153,23 +157,22 @@ The [ScaleFactor](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.To
 
 {% tabs %} 
 
-{% highlight xaml %} 
+{% highlight xaml %}
 
-<ContentPage 
-            ...
+<ContentPage
     xmlns:effectsView="clr-namespace:Syncfusion.Maui.Toolkit.EffectsView;assembly=Syncfusion.Maui.Toolkit">
     <ContentPage.Content> 
-	 	<effectsView:SfEffectsView
-     ScaleFactor="0.85"
-     LongPressEffects="Scale"
-     TouchDownEffects="None"
-     TouchUpEffects="None"/>
+	<effectsView:SfEffectsView
+        ScaleFactor="0.85"
+        LongPressEffects="Scale"
+        TouchDownEffects="None"
+        TouchUpEffects="None"/>
 	</ContentPage.Content> 
 </ContentPage>
 
 {% endhighlight %}
 
-{% highlight C# %} 
+{% highlight C# %}
 
 using Syncfusion.Maui.Toolkit.EffectsView;
 
@@ -180,6 +183,8 @@ var effectsView = new SfEffectsView
     TouchDownEffects = SfEffects.None,
     TouchUpEffects = SfEffects.None
 };
+
+this.Content = effectsView;
 
 {% endhighlight %}
 
@@ -193,21 +198,20 @@ The [HighlightBackground](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion
 
 {% tabs %} 
 
-{% highlight xaml %} 
+{% highlight xaml %}
 
 <ContentPage 
-            ...
     xmlns:effectsView="clr-namespace:Syncfusion.Maui.Toolkit.EffectsView;assembly=Syncfusion.Maui.Toolkit">
     <ContentPage.Content> 
-	 	<effectsView:SfEffectsView
-     HighlightBackground="#2196F3"
-     TouchDownEffects="Highlight"/>
+	<effectsView:SfEffectsView
+        HighlightBackground="#2196F3"
+        TouchDownEffects="Highlight"/>
 	</ContentPage.Content> 
 </ContentPage>
 
 {% endhighlight %}
 
-{% highlight C# %} 
+{% highlight C# %}
 
 using Syncfusion.Maui.Toolkit.EffectsView;
 
@@ -216,6 +220,8 @@ var effectsView = new SfEffectsView
     effectsView.HighlightBackground = new SolidColorBrush(Colors.Aqua),
     TouchDownEffects = SfEffects.Highlight
 };
+
+this.Content = effectsView;
 
 {% endhighlight %}
 
@@ -229,19 +235,18 @@ The [RippleBackground](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Ma
 
 {% tabs %} 
 
-{% highlight xaml %} 
+{% highlight xaml %}
 
 <ContentPage 
-            ...
-    xmlns:effectsView="clr-namespace:Syncfusion.Maui.Toolkit.EffectsView;assembly=Syncfusion.Maui.Toolkit">
+   xmlns:effectsView="clr-namespace:Syncfusion.Maui.Toolkit.EffectsView;assembly=Syncfusion.Maui.Toolkit">
     <ContentPage.Content> 
-	 	<effectsView:SfEffectsView RippleBackground="#2196F3"/>
+	<effectsView:SfEffectsView RippleBackground="#2196F3"/>
 	</ContentPage.Content> 
 </ContentPage>
 
 {% endhighlight %}
 
-{% highlight C# %} 
+{% highlight C# %}
 
 using Syncfusion.Maui.Toolkit.EffectsView;
 
@@ -249,6 +254,8 @@ var effectsView = new SfEffectsView
 {
     RippleBackground = new SolidColorBrush(Colors.Aqua)
 };
+
+this.Content = effectsView;
             
 {% endhighlight %}
 
@@ -262,21 +269,20 @@ The [SelectionBackground](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion
 
 {% tabs %} 
 
-{% highlight xaml %} 
+{% highlight xaml %}
 
 <ContentPage 
-            ...
     xmlns:effectsView="clr-namespace:Syncfusion.Maui.Toolkit.EffectsView;assembly=Syncfusion.Maui.Toolkit">
     <ContentPage.Content> 
-	 	<effectsView:SfEffectsView
-    LongPressEffects="Selection"
-    SelectionBackground="#2196F3"/>
+	<effectsView:SfEffectsView
+        LongPressEffects="Selection"
+        SelectionBackground="#2196F3"/>
 	</ContentPage.Content> 
 </ContentPage>
 
 {% endhighlight %}
 
-{% highlight C# %} 
+{% highlight C# %}
 
 using Syncfusion.Maui.Toolkit.EffectsView;
 
@@ -285,6 +291,8 @@ var effectsView = new SfEffectsView
     LongPressEffects = SfEffects.Selection,
     SelectionBackground = new SolidColorBrush(Colors.Aqua)
 };
+
+this.Content = effectsView;
 
 {% endhighlight %}
 
@@ -298,21 +306,20 @@ The [Angle](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.
 
 {% tabs %} 
 
-{% highlight xaml %} 
+{% highlight xaml %}
 
 <ContentPage 
-            ...
     xmlns:effectsView="clr-namespace:Syncfusion.Maui.Toolkit.EffectsView;assembly=Syncfusion.Maui.Toolkit">
     <ContentPage.Content> 
-	 	<effectsView:SfEffectsView
-    Angle="180"
-    TouchDownEffects="Ripple,Rotation"/>
+	<effectsView:SfEffectsView
+        Angle="180"
+        TouchDownEffects="Ripple,Rotation"/>
 	</ContentPage.Content> 
 </ContentPage>
 
 {% endhighlight %}
 
-{% highlight C# %} 
+{% highlight C# %}
 
 using Syncfusion.Maui.Toolkit.EffectsView;
 
@@ -321,6 +328,8 @@ var effectsView = new SfEffectsView
     Angle = 180,
     TouchDownEffects = SfEffects.Ripple | SfEffects.Rotation
 };
+
+this.Content = effectsView;
             
 {% endhighlight %}
 

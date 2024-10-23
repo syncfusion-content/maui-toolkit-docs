@@ -17,29 +17,30 @@ By enabling the [FadeOutRipple](https://help.syncfusion.com/cr/maui-toolkit/Sync
 
 {% tabs %} 
 
-{% highlight xaml %} 
+{% highlight xaml %}
 
 <ContentPage 
-    ...
     xmlns:effectsView="clr-namespace:Syncfusion.Maui.Toolkit.EffectsView;assembly=Syncfusion.Maui.Toolkit">
     <ContentPage.Content> 
-	 	<effectsView:SfEffectsView
-    				 FadeOutRipple="True"
-    				 RippleAnimationDuration="1000"/>
+	<effectsView:SfEffectsView
+    	FadeOutRipple="True"
+    	RippleAnimationDuration="1000"/>
 	</ContentPage.Content> 
 </ContentPage>
 
 {% endhighlight %}
 
-{% highlight C# %} 
+{% highlight C# %}
 
 using Syncfusion.Maui.Toolkit.EffectsView;
 
-     var effectsView = new SfEffectsView
-    {
-    FadeOutRipple = true,
-    RippleAnimationDuration = 1000
-    };
+ var effectsView = new SfEffectsView
+ {
+     FadeOutRipple = true,
+     RippleAnimationDuration = 1000
+ };
+
+ this.Content = effectsView;
             
 {% endhighlight %}
 
@@ -53,26 +54,27 @@ Enabling the [IsSelected](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion
 
 {% tabs %} 
 
-{% highlight xaml %} 
+{% highlight xaml %}
 
 <ContentPage 
-    ...
     xmlns:effectsView="clr-namespace:Syncfusion.Maui.Toolkit.EffectsView;assembly=Syncfusion.Maui.Toolkit">
     <ContentPage.Content> 
-	 	<effectsView:SfEffectsView IsSelected="true"/>
+	<effectsView:SfEffectsView IsSelected="true"/>
 	</ContentPage.Content> 
 </ContentPage>
 
 {% endhighlight %}
 
-{% highlight C# %} 
+{% highlight C# %}
 
 using Syncfusion.Maui.Toolkit.EffectsView;
 
-    var effectsView = new SfEffectsView
-    {
+var effectsView = new SfEffectsView
+{
     IsSelected = true,
-    };
+};
+
+this.Content = effectsView;
 
 {% endhighlight %}
 
@@ -84,27 +86,27 @@ Enabling the [ShouldIgnoreTouches](https://help.syncfusion.com/cr/maui-toolkit/S
 
 {% tabs %} 
 
-{% highlight xaml %} 
+{% highlight xaml %}
 
 <ContentPage 
-    ...
     xmlns:effectsView="clr-namespace:Syncfusion.Maui.Toolkit.EffectsView;assembly=Syncfusion.Maui.Toolkit">
     <ContentPage.Content> 
-	 	<effectsView:SfEffectsView
-    				 ShouldIgnoreTouches="true"/>
+	<effectsView:SfEffectsView ShouldIgnoreTouches="true"/>
 	</ContentPage.Content> 
 </ContentPage>
 
 {% endhighlight %}
 
-{% highlight C# %} 
+{% highlight C# %}
 
 using Syncfusion.Maui.Toolkit.EffectsView;
 
-    var effectsView = new SfEffectsView
-    {
-      ShouldIgnoreTouches = true
-    };
+var effectsView = new SfEffectsView
+{
+    ShouldIgnoreTouches = true
+};
+
+this.Content = effectsView;
 
 {% endhighlight %}
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Chips Types in .NET MAUI Chips control | Syncfusion
-description: Learn about Chips Types support in Syncfusion Essential Studio .NET MAUI Chips control, its elements and more.
+description: Learn about Chips Types support in Syncfusion Toolkit for .NET MAUI Chips control, its elements and more.
 platform: maui-toolkit
 control: Chips
 documentation: ug
@@ -19,18 +19,18 @@ The following code demonstrates how to obtain an input-type chip.
 
 {% highlight xaml %}
 <ChipControl:SfChipGroup Margin="200,100,0,0"  
-                  ItemsSource="{Binding Employees}" 
-                  DisplayMemberPath="Name" 
-                  ChipType="Input">
-<ChipControl:SfChipGroup.InputView>
-<Entry x:Name="entry"
-	   VerticalOptions="Center" 
-       HeightRequest="40"
-	   FontSize="15" 
-	   WidthRequest="110" 
-	   Completed="Entry_Completed">
-</Entry>
-</ChipControl:SfChipGroup.InputView>
+                         ItemsSource="{Binding Employees}" 
+                         DisplayMemberPath="Name" 
+                         ChipType="Input">
+    <ChipControl:SfChipGroup.InputView>
+        <Entry x:Name="entry"
+               VerticalOptions="Center" 
+               HeightRequest="40"
+               FontSize="15" 
+               WidthRequest="110" 
+               Completed="Entry_Completed">
+        </Entry>
+    </ChipControl:SfChipGroup.InputView>
 </chip:SfChipGroup>
 
 {% endhighlight %}
@@ -102,6 +102,7 @@ public class EmployeeViewModel : INotifyPropertyChanged
 
 ## Choice
 Allows users to select a single chip from a group of items. Selecting a chip will automatically deselect the previously selected chips. 
+
 Here, Add visual states to set ChipType to Choice.
 The following code illustrates how to get choice typed ChipGroup.
 
@@ -196,7 +197,6 @@ public class EmployeeViewModel : INotifyPropertyChanged
         Employees.Add(new Employee() { Name = "Emilio Alvaro" });
         Employees.Add(new Employee() { Name = "Janet Leverling" });
     }
-
 }
 
 {% endhighlight %}
@@ -373,7 +373,7 @@ public class EmployeeViewModel : INotifyPropertyChanged
 
 ## Action
 
-Action type of [`SfChipGroup`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Chips.SfChipGroup.html) executes the [`Command`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Chips.SfChipGroup.html#Syncfusion_Maui_Toolkit_Chips_SfChipGroup_Command) when clicking the chip in `SfChipGroup`. On its `Command` action, you can do our desired action.
+Action type of [SfChipGroup](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Chips.SfChipGroup.html) executes the [Command](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Chips.SfChipGroup.html#Syncfusion_Maui_Toolkit_Chips_SfChipGroup_Command) when clicking the chip in `SfChipGroup`. On its `Command` action, you can do our desired action.
 
 The `Command` will execute only for action typed `SfChipGroup`.
 

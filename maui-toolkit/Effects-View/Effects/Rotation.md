@@ -13,21 +13,20 @@ documentation: ug
 
 {% tabs %} 
 
-{% highlight xaml %} 
+{% highlight xaml %}
 
 <ContentPage 
-            ...
-            xmlns:effectsView="clr-namespace:Syncfusion.Maui.Toolkit.EffectsView;assembly=Syncfusion.Maui.Toolkit">
+    xmlns:effectsView="clr-namespace:Syncfusion.Maui.Toolkit.EffectsView;assembly=Syncfusion.Maui.Toolkit">
     <ContentPage.Content> 
-	 	<effectsView:SfEffectsView
-    TouchDownEffects="Rotation"
-    Angle="180" /> 
+	<effectsView:SfEffectsView
+        TouchDownEffects="Rotation"
+        Angle="180" /> 
 	</ContentPage.Content> 
 </ContentPage>
 
 {% endhighlight %}
 
-{% highlight C# %} 
+{% highlight C# %}
 
 using Syncfusion.Maui.Toolkit.EffectsView;
 
@@ -36,6 +35,7 @@ var effectsView = new SfEffectsView
     TouchDownEffects = SfEffects.Rotation,
     Angle = 180,
 };
+this.Content = effectsView;  
 
 {% endhighlight %}
 

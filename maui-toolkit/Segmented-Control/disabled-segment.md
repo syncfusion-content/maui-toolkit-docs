@@ -3,11 +3,11 @@ layout: post
 title: Disabled segmented item in .NET MAUI Segmented control | Syncfusion
 description: Learn about the Disabled segmented item in Syncfusion .NET MAUI Segmented control (SfSegmentedControl).
 platform: maui-toolkit
-control: Segmented (SfSegmented) control
+control: Segmented control
 documentation: ug
 ---
  
-# Disabled Segmented Item in .NET MAUI Segmented Control (SfSegmentedControl)
+# Disabled Segmented Item in .NET MAUI Segmented Control
 
 This section describes the features of the Segmented Control that help with disabling segmented item, customization of the disabled item, and associated operations.
 
@@ -16,7 +16,7 @@ This section describes the features of the Segmented Control that help with disa
 Restrict selection and interaction of segment items by setting the [IsEnabled](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SegmentedControl.SfSegmentItem.html#Syncfusion_Maui_Toolkit_SegmentedControl_SfSegmentItem_IsEnabled) property of [SfSegmentItem](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SegmentedControl.SfSegmentItem.html) to `false`. The value of `IsEnabled` property is `true` by default.
 
 {% tabs %}
-{% highlight C# tabtitle="MainPage.xaml.cs"%}
+{% highlight C# tabtitle="MainPage.xaml.cs" %}
 
 using Syncfusion.Maui.Toolkit.SegmentedControl;
 . . .
@@ -46,21 +46,18 @@ public partial class MainPage : ContentPage
 ![Disabled segment in .NET MAUI Segmented control.](images/disabled-segment/disabled-segment.png)
 
 ### Programmatically Enable or Disable segment using Method
-Set the enabled state of a specific segment at the specified index using the [SetSegmentEnabled](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SegmentedControl.html#Syncfusion_Maui_Toolkit_SegmentedControl_SetSegmentEnabled_System_Int32_System_Boolean_) method of [SfSegmentedControl](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SegmentedControl.html).
+Set the enabled state of a specific segment at the specified index using the [SetSegmentEnabled](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SegmentedControl.SfSegmentedControl.html#Syncfusion_Maui_Toolkit_SegmentedControl_SfSegmentedControl_SetSegmentEnabled_System_Int32_System_Boolean_) method of [SfSegmentedControl](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SegmentedControl.SfSegmentedControl.html).
 
 {% tabs %}
 {% highlight XAML %}
 
 <ContentPage
-    xmlns:local="clr-namespace:SfSegmentSample"
+    xmlns:local="clr-namespace:SegmentSample"
     xmlns:segmentedControl="clr-namespace:Syncfusion.Maui.Toolkit.SegmentedControl;assembly=Syncfusion.Maui.Toolkit.SegmentedControl">
     <ContentPage.BindingContext>
         <local:ViewModel/>
     </ContentPage.BindingContext>
-
-    <segmentedControl:SfSegmentedControl x:Name="segmentedControl"
-                                ItemsSource="{Binding SegmentItems}">
-    </segmentedControl:SfSegmentedControl>
+    <segmentedControl:SfSegmentedControl ItemsSource="{Binding SegmentItems}"/>
 </ContentPage>
 
 {% endhighlight %}
@@ -87,11 +84,11 @@ public partial class MainPage : ContentPage
 
 public class ViewModel
 {
-    private List<SfSegmentItem> segmentItems;
+   public List<SfSegmentItem> SegmentItems { get; set; }
 
     public ViewModel()
     {
-        segmentItems = new List<SfSegmentItem>()
+        SegmentItems = new List<SfSegmentItem>()
         {
                new SfSegmentItem() {Text = "XS"},
                new SfSegmentItem() {Text = "S"},
@@ -99,12 +96,6 @@ public class ViewModel
                new SfSegmentItem() {Text = "L"},
                new SfSegmentItem() {Text = "XL", IsEnabled = false},
         };
-    }
-
-    public List<SfSegmentItem> SegmentItems
-    {
-        get { return segmentItems; }
-        set { segmentItems = value; }
     }
 }
 
@@ -116,16 +107,14 @@ You can customize the disabled segment text color and background of the segmente
 
 ### Customizing the disabled segment text color
 
-Use the [DisabledSegmentTextColor](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SegmentedControl.html#Syncfusion_Maui_Toolkit_SegmentedControl_DisabledSegmentTextColor) property of [SfSegmentedControl](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SegmentedControl.html) to customize the disabled segment text color of the segmented control.
+Use the [DisabledSegmentTextColor](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SegmentedControl.SfSegmentedControl.html#Syncfusion_Maui_Toolkit_SegmentedControl_SfSegmentedControl_DisabledSegmentTextColor) property of [SfSegmentedControl](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SegmentedControl.SfSegmentedControl.html) to customize the disabled segment text color of the segmented control.
 
 {% tabs %}
 {% highlight XAML %}
 
 <ContentPage
     xmlns:segmentedControl="clr-namespace:Syncfusion.Maui.Toolkit.SegmentedControl;assembly=Syncfusion.Maui.Toolkit.SegmentedControl">
-    <segmentedControl:SfSegmentedControl x:Name="segmentedControl"
-                                DisabledSegmentTextColor="Red">
-    </segmentedControl:SfSegmentedControl>
+    <segmentedControl:SfSegmentedControl DisabledSegmentTextColor="Red"/>
 </ContentPage>
 
 {% endhighlight %}
@@ -155,16 +144,14 @@ N> The `DisabledSegmentTextColor` will be applicable only when the `IsEnabled` p
 
 ### Customizing the disabled segment background
 
-Use the [DisabledSegmentBackground](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SegmentedControl.html#Syncfusion_Maui_Toolkit_SegmentedControl_DisabledSegmentBackground) property of [SfSegmentedControl](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SegmentedControl.html) to customize the disabled segment background of the segmented control.
+Use the [DisabledSegmentBackground](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SegmentedControl.SfSegmentedControl.html#Syncfusion_Maui_Toolkit_SegmentedControl_SfSegmentedControl_DisabledSegmentBackground) property of [SfSegmentedControl](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SegmentedControl.SfSegmentedControl.html) to customize the disabled segment background of the segmented control.
 
 {% tabs %}
 {% highlight XAML %}
 
 <ContentPage
     xmlns:segmentedControl="clr-namespace:Syncfusion.Maui.Toolkit.SegmentedControl;assembly=Syncfusion.Maui.Toolkit.SegmentedControl">
-    <segmentedControl:SfSegmentedControl x:Name="segmentedControl"
-                                DisabledSegmentBackground="LightGray">
-    </segmentedControl:SfSegmentedControl>
+    <segmentedControl:SfSegmentedControl DisabledSegmentBackground="LightGray"/>
 </ContentPage>
 
 {% endhighlight %}
