@@ -65,8 +65,8 @@ public partial class NavigationDrawerPage : ContentPage
     SfNavigationDrawer navigationDrawer;
     Label contentLabel;
     public NavigationDrawerPage()
-	{
-		InitializeComponent();
+    {
+        InitializeComponent();
         navigationDrawer = new SfNavigationDrawer();
         Grid grid = new Grid()
         {
@@ -79,10 +79,10 @@ public partial class NavigationDrawerPage : ContentPage
         };
 
         HorizontalStackLayout layout = new HorizontalStackLayout()
-        { 
+        {
             BackgroundColor = Color.FromArgb("#6750A4"),
             Spacing = 10,
-            Padding = new Thickness(5,0,0,0),
+            Padding = new Thickness(5, 0, 0, 0),
         };
 
         var hamburgerButton = new ImageButton
