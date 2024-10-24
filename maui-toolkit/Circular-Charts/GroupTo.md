@@ -36,14 +36,14 @@ SfCircularChart chart = new SfCircularChart();
 PieSeries series = new PieSeries()
 {
     ItemsSource = new ViewModel().Data,
-    XBindingPath="Product", 
-    YBindingPath="SalesRate",
-    GroupMode=Value,
-    GroupTo=15
+    XBindingPath = "Product", 
+    YBindingPath = "SalesRate",
+    GroupMode = Value, // Set the mode for grouping smaller slices into a single slice.
+    GroupTo = 15 // Define a threshold value for the group mode. 
 };
 
 chart.Series.Add(series);
-
+this.Content = chart;
 {% endhighlight %}
 
 {% endtabs %}

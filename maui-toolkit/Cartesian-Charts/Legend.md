@@ -276,8 +276,10 @@ To set the maximum size request for the legend view, override the [GetMaximumSiz
 
 {% highlight c# %}
 
+// Define a custom legend class that extends ChartLegend
 public class LegendExt : ChartLegend
 {
+    // Override the GetMaximumSizeCoefficient method to customize the legend size
     protected override double GetMaximumSizeCoefficient()
     {
         return 0.7;
@@ -285,7 +287,7 @@ public class LegendExt : ChartLegend
 }
 
 SfCartesianChart chart = new SfCartesianChart();
-chart.Legend = new LegendExt();
+chart.Legend = new LegendExt(); // Set the chart's legend to use the custom LegendExt class
 
 {% endhighlight %}
 

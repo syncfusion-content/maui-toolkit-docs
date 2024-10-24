@@ -31,7 +31,7 @@ To define the tooltip in the chart, set the [EnableTooltip](https://help.syncfus
 SfCircularChart chart = new SfCircularChart();
 . . .
 PieSeries series = new PieSeries();
-series.EnableTooltip = true;
+series.EnableTooltip = true; // Enable tooltips for this series
 chart.Series.Add(series);
 this.Content = chart;
 
@@ -70,7 +70,7 @@ SfCircularChart chart = new SfCircularChart();
 . . .
 chart.TooltipBehavior = new ChartTooltipBehavior()
 {
-	Duration = 2000,
+	Duration = 2000, // Set the tooltip display duration
 };
 this.Content = chart;
 {% endhighlight %}
@@ -128,7 +128,7 @@ SfCircularChart chart = new SfCircularChart();
 . . .
 PieSeries series = new PieSeries();
 series.EnableTooltip = true;
-series.TooltipTemplate = chart.Resources["tooltipTemplate"] as DataTemplate;
+series.TooltipTemplate = chart.Resources["tooltipTemplate"] as DataTemplate; // Set a custom tooltip template from the chart's resources
 . . .     
 
 this.Content = chart;

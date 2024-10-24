@@ -32,11 +32,11 @@ SfCircularChart chart = new SfCircularChart();
 
 DoughnutSeries series = new DoughnutSeries(); // Create a new instance of DoughnutSeries
 series.ItemsSource = (new SalesViewModel()).Data;
-series.XBindingPath = "Product"; // Set the XBindingPath to the "Product" property of the data source
-series.YBindingPath = "SalesRate"; // Set the YBindingPath to the "SalesRate" property of the data source
+series.XBindingPath = "Product"; 
+series.YBindingPath = "SalesRate"; e
 
 chart.Series.Add(series); // Add the series to the chart's Series collection
-this.Content = chart; // Set the chart as the content of the current view
+this.Content = chart; 
 
 {% endhighlight %}
 
@@ -63,10 +63,8 @@ The [InnerRadius](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.To
 
 {% highlight c# %}
 
-// Create a new instance of SfCircularChart
 SfCircularChart chart = new SfCircularChart();
 
-// Create a new instance of DoughnutSeries
 DoughnutSeries series = new DoughnutSeries();
 series.ItemsSource = (new SalesViewModel()).Data;
 series.XBindingPath = "Product";
@@ -101,10 +99,8 @@ By using the [StartAngle](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion
 
 {% highlight c# %}
 
-// Create a new instance of SfCircularChart
 SfCircularChart chart = new SfCircularChart();
 
-// Create a new instance of DoughnutSeries
 DoughnutSeries series = new DoughnutSeries();
 series.ItemsSource = (new SalesViewModel()).Data;
 series.XBindingPath = "Product";
@@ -153,7 +149,6 @@ The [CenterHoleSize](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui
 
 {% highlight c# %}
 
-// Create a new SfCircularChart
 SfCircularChart chart = new SfCircularChart();       
 
 // Create a new DoughnutSeries

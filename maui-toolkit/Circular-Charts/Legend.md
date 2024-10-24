@@ -30,6 +30,7 @@ To define the legend in the chart, initialize the [ChartLegend](https://help.syn
 {% highlight c# %}
 
 SfCircularChart chart = new SfCircularChart();
+// Create and assign a new ChartLegend to the chart's Legend property
 chart.Legend = new ChartLegend();
 . . .
 this.Content = chart;
@@ -58,7 +59,7 @@ SfCircularChart chart = new SfCircularChart();
 
 chart.Legend = new ChartLegend()
 { 
-    IsVisible = true 
+    IsVisible = true // Set the visibility of the legend to true
 };
 . . .
 this.Content = chart;
@@ -137,6 +138,8 @@ The appearance of the legend label can be customized using the [`LabelStyle`](ht
 
 SfCircularChart chart = new SfCircularChart();
 ChartLegend legend = new ChartLegend();
+
+// Create and configure the ChartLegendLabelStyle
 ChartLegendLabelStyle labelStyle = new ChartLegendLabelStyle()
 {
     TextColor = Colors.Blue,
@@ -145,6 +148,7 @@ ChartLegendLabelStyle labelStyle = new ChartLegendLabelStyle()
     FontAttributes = FontAttributes.Bold,
     FontFamily = "PlaywriteAR-Regular"
 };
+// Assign the configured labelStyle to the legend
 legend.LabelStyle = labelStyle;
 
 chart.Legend = legend;
@@ -185,7 +189,7 @@ PieSeries pieSeries = new PieSeries()
     ItemsSource = viewModel.Data,
     XBindingPath = "XValue",
     YBindingPath = "YValue",
-    LegendIcon = ChartLegendIconType.Diamond,
+    LegendIcon = ChartLegendIconType.Diamond,  // Set the icon type for the legend 
 };
 
 chart.Series.Add(pieSeries);
@@ -217,7 +221,7 @@ SfCircularChart chart = new SfCircularChart();
 
 chart.Legend = new ChartLegend()
 { 
-    Placement = LegendPlacement.Bottom 
+    Placement = LegendPlacement.Bottom  // Set the placement of the legend 
 };
 
 this.Content = chart;
@@ -247,8 +251,7 @@ The visibility of circular series data points can be controlled by tapping the l
 SfCircularChart chart = new SfCircularChart();
 chart.Legend = new ChartLegend()
 { 
-    ToggleSeriesVisibility = true 
-};
+    ToggleSeriesVisibility = true  // Enable the functionality to show/hide series by tapping on legends
 
 this.Content = chart;
 
@@ -275,8 +278,10 @@ To set the maximum size request for the legend view, override the [GetMaximumSiz
 
 {% highlight c# %}
 
+// Define a custom legend class that extends ChartLegend
 public class LegendExt : ChartLegend
 {
+    // Override the GetMaximumSizeCoefficient method to customize the legend size
     protected override double GetMaximumSizeCoefficient()
     {
         return 0.7;
@@ -284,7 +289,7 @@ public class LegendExt : ChartLegend
 }
 
 SfCircularChart chart = new SfCircularChart();
-chart.Legend = new LegendExt();
+chart.Legend = new LegendExt(); // Set the chart's legend to use the custom LegendExt class
 this.Content = chart;
 {% endhighlight %}
 
@@ -369,6 +374,7 @@ N> The BindingContext of the template is the corresponding underlying legend ite
 
 SfCircularChart chart = new SfCircularChart();
 ChartLegend legend = new ChartLegend();
+// Assign a custom item template to the legend using a `DataTemplate` resource from the chart's resources.
 legend.ItemTemplate = chart.Resources["legendTemplate"] as DataTemplate;
 ...
 chart.Legend = legend;
