@@ -33,7 +33,7 @@ SfCircularChart chart = new SfCircularChart();
 DoughnutSeries series = new DoughnutSeries(); // Create a new instance of DoughnutSeries
 series.ItemsSource = (new SalesViewModel()).Data;
 series.XBindingPath = "Product"; 
-series.YBindingPath = "SalesRate"; e
+series.YBindingPath = "SalesRate"; 
 
 chart.Series.Add(series); // Add the series to the chart's Series collection
 this.Content = chart; 

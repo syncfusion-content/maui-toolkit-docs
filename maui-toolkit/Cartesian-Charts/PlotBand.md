@@ -66,8 +66,10 @@ NumericalPlotBand plotBand = new NumericalPlotBand()
     Fill = Colors.Orange
 };
 
-numericalPlotBandCollection.Add(plotBand); // Initialize a collection to hold NumericalPlotBands.
-numericalAxis.PlotBands = numericalPlotBandCollection; // Associate the plot band collection with the numerical axis.
+// Add the configured plot band to the plot band collection.
+numericalPlotBandCollection.Add(plotBand); 
+// Assign the defined plot bands to the numerical axis of the chart.
+numericalAxis.PlotBands = numericalPlotBandCollection; 
 chart.YAxes.Add(numericalAxis);
 ...
 this.Content = chart;

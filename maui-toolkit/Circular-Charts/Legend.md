@@ -252,7 +252,7 @@ SfCircularChart chart = new SfCircularChart();
 chart.Legend = new ChartLegend()
 { 
     ToggleSeriesVisibility = true  // Enable the functionality to show/hide series by tapping on legends
-
+};
 this.Content = chart;
 
 {% endhighlight %}

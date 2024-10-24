@@ -66,7 +66,7 @@ N> The Cartesian chart has a [Series](https://help.syncfusion.com/cr/maui-toolki
 
     ViewModel viewModel = new ViewModel();
 
-    // Create a LineSeries for the chart
+    // Create a StackingLine100Series for the chart
     StackingLine100Series series1 = new  StackingLine100Series()
     {
         ItemsSource = viewModel.Data1,
