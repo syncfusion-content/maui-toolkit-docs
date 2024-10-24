@@ -53,6 +53,7 @@ chart.XAxes.Add(primaryAxis);
 NumericalAxis secondaryAxis = new NumericalAxis();
 chart.YAxes.Add(secondaryAxis);
 
+// Create a new BubbleSeries for the chart
 BubbleSeries series = new BubbleSeries()
 {
     ItemsSource = new ViewModel().Data,
@@ -61,6 +62,7 @@ BubbleSeries series = new BubbleSeries()
     SizeValuePath = "Size",
 };
 
+// Add the configured bubble series to the chart's series collection
 chart.Series.Add(series);
 this.Content = chart;
 

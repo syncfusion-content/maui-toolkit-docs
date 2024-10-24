@@ -68,6 +68,7 @@ chart.XAxes.Add(primaryAxis);
 NumericalAxis secondaryAxis = new NumericalAxis();
 chart.YAxes.Add(secondaryAxis);
 
+// Initialize a new CandleSeries to display candlestick data.
 CandleSeries series = new CandleSeries()
 {
     ItemsSource = new ViewModel().StockData,
@@ -78,6 +79,7 @@ CandleSeries series = new CandleSeries()
     Close = "Close",
 };
 
+// Add the CandleSeries to the chart's series collection.
 chart.Series.Add(series);
 this.Content = chart;
 
@@ -134,8 +136,8 @@ CandleSeries series = new CandleSeries()
     High = "High",
     Low = "Low",
     Close = "Close",
-    BullishFill = Colors.Blue,
-    BearishFill = Colors.Yellow,
+    BullishFill = Colors.Blue, // Set the color of the candlestick for bullish (price up) scenarios.
+    BearishFill = Colors.Yellow, // Set the color of the candlestick for bearish (price down) scenarios.
 };
 
 chart.Series.Add(series);
@@ -193,7 +195,7 @@ CandleSeries series = new CandleSeries()
     High = "High",
     Low = "Low",
     Close = "Close",
-    EnableSolidCandle = true,
+    EnableSolidCandle = true, // Enable solid candles in the series for a more filled appearance
 };
 
 chart.Series.Add(series);

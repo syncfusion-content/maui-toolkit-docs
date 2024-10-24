@@ -33,6 +33,8 @@ The following code sample demonstrates this:
 SfCartesianChart chart = new SfCartesianChart();
 . . .
 NumericalAxis primaryAxis = new NumericalAxis();
+// Subscribe to the LabelCreated event of the primary axis
+// This event is triggered whenever a label is created on the axis
 primaryAxis.LabelCreated += XAxes_LabelCreated;
 chart.XAxes.Add(primaryAxis);
 . . .

@@ -44,6 +44,7 @@ chart.XAxes.Add(primaryAxis);
 NumericalAxis secondaryAxis = new NumericalAxis();
 chart.YAxes.Add(secondaryAxis);
 
+// Defines a new ColumnSeries for the chart
 ColumnSeries series = new ColumnSeries()
 {
     ItemsSource = new ViewModel().Data,
@@ -51,6 +52,7 @@ ColumnSeries series = new ColumnSeries()
     YBindingPath = "YValue",
 };
 
+// Adds the ColumnSeries to the chart's Series collection
 chart.Series.Add(series);
 this.Content = chart;
 
@@ -103,8 +105,8 @@ ColumnSeries series = new ColumnSeries()
     ItemsSource = new ViewModel().Data,
     XBindingPath = "XValue",
     YBindingPath = "YValue",
-    Spacing = 0.5,
-    Width = 0.6
+    Spacing = 0.5, // Specify the spacing between columns
+    Width = 0.6  // Define the width of the columns
 };
 
 chart.Series.Add(series);
@@ -148,7 +150,7 @@ By default, all the column series which have the same x and y axes are placed si
 {% highlight c# %}
     
 SfCartesianChart chart = new SfCartesianChart();
-chart.EnableSideBySideSeriesPlacement = false;
+chart.EnableSideBySideSeriesPlacement = false; // Disable the default side-by-side series placement.
 CategoryAxis primaryAxis = new CategoryAxis();
 chart.XAxes.Add(primaryAxis);
 NumericalAxis secondaryAxis = new NumericalAxis();

@@ -57,6 +57,7 @@ chart.YAxes.Add(yAxis);
    
 ViewModel viewModel = new ViewModel();
 
+// Create a new WaterfallSeries to display the data
 WaterfallSeries series = new WaterfallSeries()
 {
     ItemsSource = new viewModel().Sales,
@@ -68,7 +69,8 @@ WaterfallSeries series = new WaterfallSeries()
     SummaryPointsBrush = new SolidColorBrush(Colors.RoyalBlue),
     ShowConnectorLine = true,
 };
-    
+
+// Add the created series to the chart   
 chart.Series.Add(series);
 this.Content = chart;
 
@@ -101,6 +103,7 @@ The following code example illustrates how to apply style for connector line.
 
 {% highlight c# %}
 
+// Define the style for the connector lines in the waterfall chart.
 ChartLineStyle lineStyle = new ChartLineStyle()
 {
     Stroke = new SolidColorBrush(Colors.DarkViolet),
@@ -112,7 +115,7 @@ WaterfallSeries series = new WaterfallSeries()
     ItemsSource = new viewModel().Sales,
     XBindingPath = "Department",
     YBindingPath = "Value",
-    ConnectorLineStyle = lineStyle,
+    ConnectorLineStyle = lineStyle, // Apply the previously defined line style to the connector lines in the series.
 };
     
 {% endhighlight %}

@@ -56,6 +56,7 @@ chart.XAxes.Add(primaryAxis);
 NumericalAxis secondaryAxis = new NumericalAxis();
 chart.YAxes.Add(secondaryAxis);
 
+// Create a StackingColumn100Series for the chart
 StackingColumn100Series series1 = new StackingColumn100Series()
 {
     ItemsSource = new ViewModel().Data1,
@@ -75,6 +76,7 @@ StackingColumn100Series series3 = new StackingColumn100Series()
     YBindingPath = "Value",
 };
  
+// Add all series to the chart
 chart.Series.Add(series1);
 chart.Series.Add(series2);
 chart.Series.Add(series3);
@@ -141,30 +143,31 @@ StackingColumn100Series series1 = new StackingColumn100Series()
     ItemsSource = new ViewModel().Data1,
     XBindingPath = "XValue",
     YBindingPath = "YValue",
-    GroupingLabel = "GroupOne"
+    GroupingLabel = "GroupOne" // Assign the series to "GroupOne"
 };
 StackingColumn100Series series2 = new StackingColumn100Series()
 {
     ItemsSource = new ViewModel().Data2,
     XBindingPath = "XValue",
     YBindingPath = "YValue",
-    GroupingLabel = "GroupOne"
+    GroupingLabel = "GroupOne" // Assign the series to "GroupOne"
 };
 StackingColumn100Series series3 = new StackingColumn100Series()
 {
     ItemsSource = new ViewModel().Data3,
     XBindingPath = "XValue",
     YBindingPath = "YValue",
-    GroupingLabel = "GroupTwo"
+    GroupingLabel = "GroupTwo" // Assign the series to "GroupTwo"
 };
 StackingColumn100Series series4 = new StackingColumn100Series()
 {
     ItemsSource = new ViewModel().Data4,
     XBindingPath = "XValue",
     YBindingPath = "YValue",
-    GroupingLabel = "GroupTwo"
+    GroupingLabel = "GroupTwo" // Assign the series to "GroupTwo"
 };
 
+// Add all series to the chart
 chart.Series.Add(series1);
 chart.Series.Add(series2);
 chart.Series.Add(series3);

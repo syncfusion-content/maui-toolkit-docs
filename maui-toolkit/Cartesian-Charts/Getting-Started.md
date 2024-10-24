@@ -113,7 +113,9 @@ public partial class MainPage : ContentPage
     public MainPage()
     {
         InitializeComponent();
+        // Create a new instance of SfCartesianChart which is a type of chart control.
         SfCartesianChart chart = new SfCartesianChart();
+        // Set the newly created chart as the content of the current view.
         this.Content = chart;
     }
 }
@@ -200,6 +202,7 @@ public partial class MainPage : ContentPage
     public MainPage()
     {
         InitializeComponent();
+        // Set the data binding context for the UI, linking it to a PersonViewModel instance
         this.BindingContext = new PersonViewModel();
     }
 }
@@ -234,10 +237,14 @@ public partial class MainPage : ContentPage
 
 SfCartesianChart chart = new SfCartesianChart();
 
+// Initialize the primary axis as a CategoryAxis for the X-Axis
 CategoryAxis primaryAxis = new CategoryAxis();
+// Add the primary axis to the chart's XAxes collection
 chart.XAxes.Add(primaryAxis);
 
+// Initialize the secondary axis as a NumericalAxis for the Y-Axis
 NumericalAxis secondaryAxis = new NumericalAxis();
+// Add the secondary axis to the chart's YAxes collection
 chart.YAxes.Add(secondaryAxis);
 
  this.Content = chart;
@@ -340,6 +347,7 @@ The title of the chart provide quick information to the user about the data bein
 {% highlight C# %}
 
 SfCartesianChart chart = new SfCartesianChart();
+// Set the title of the chart using a Label component.
 chart.Title = new Label()
 {
     Text = "Height Comparison"
@@ -371,7 +379,7 @@ The [ShowDataLabels](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui
 SfCartesianChart chart = new SfCartesianChart()
 . . .
 ColumnSeries series = new ColumnSeries();
-series.ShowDataLabels = true;
+series.ShowDataLabels = true; // Enable data labels to be displayed on the data points in the column series.
 chart.Series.Add(series);
 this.Content = chart;
 {% endhighlight %}
@@ -452,7 +460,7 @@ Tooltips are used to show information about the segment, when a user hovers over
 {% highlight C# %}
 
 ColumnSeries series = new ColumnSeries();
-series.EnableTooltip = true;
+series.EnableTooltip = true; // Enable tooltips for the column series to display additional information on hover
 
 {% endhighlight %}
 

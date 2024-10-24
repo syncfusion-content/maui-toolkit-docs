@@ -62,6 +62,7 @@ chart.YAxes.Add(secondaryAxis);
 
 ViewModel viewModel = new ViewModel();
 
+// Create a StackingArea100Series for the chart
 StackingArea100Series series1 = new  StackingArea100Series()
 {
     XBindingPath = "Year",
@@ -90,6 +91,7 @@ StackingArea100Series series4 = new StackingArea100Series()
     ItemsSource = viewModel.Data4
 };
 
+// Add the all series to the chart
 chart.Series.Add(series1);
 chart.Series.Add(series2);     
 chart.Series.Add(series3); 
@@ -129,7 +131,7 @@ StackingArea100Series series = new StackingArea100Series()
     ItemsSource = new ViewModel().Data,
     XBindingPath = "Year",
     YBindingPath = "Value",
-    ShowMarkers = true
+    ShowMarkers = true // Display markers on the series
 };
 
 chart.Series.Add(series);
@@ -178,6 +180,7 @@ In order to change the series markers appearance, create an instance of the [Mar
 
 SfCartesianChart chart = new SfCartesianChart();
 ...
+// Configure chart marker settings, defining appearance and style
 ChartMarkerSettings chartMarker= new ChartMarkerSettings()
 {
     Type = ShapeType.Diamond,
@@ -194,7 +197,7 @@ StackingArea100Series series = new StackingArea100Series()
     XBindingPath = "Year",
     YBindingPath = "Value",
     ShowMarkers = true,
-    MarkerSettings = chartMarker
+    MarkerSettings = chartMarker  // Apply the defined marker settings to the series
 };
 ...
 chart.Series.Add(series);

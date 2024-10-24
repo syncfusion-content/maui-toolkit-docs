@@ -22,10 +22,14 @@ The following code snippet demonstrates the usage of this method:
 
 {% highlight c# %}
 
+// Create a new instance of SfCartesianChart
 SfCartesianChart chart = new SfCartesianChart();
 ...
-chart.SaveAsImage("ChartSample.jpeg");
 this.Content = chart;
+
+// Dynamically save the chart as an image file named "ChartSample.jpeg"
+chart.SaveAsImage("ChartSample.jpeg");
+
 
 {% endhighlight %}
 
@@ -74,10 +78,14 @@ The following code snippet demonstrates the usage of this method:
 
 {% highlight c# %}
 
+// Create a new instance of SfCartesianChart
 SfCartesianChart chart = new SfCartesianChart();
 ...
-await chart.GetStreamAsync(ImageFileFormat.Jpeg);
 this.Content = chart;
+
+// Export the chart as a JPEG image stream asynchronously
+await chart.GetStreamAsync(ImageFileFormat.Jpeg);
+
 
 {% endhighlight %}
 

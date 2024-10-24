@@ -47,6 +47,7 @@ chart.XAxes.Add(primaryAxis);
 NumericalAxis secondaryAxis = new NumericalAxis();
 chart.YAxes.Add(secondaryAxis);
 
+// Create a LineSeries for the chart
 LineSeries series1 = new LineSeries()
 {
     ItemsSource = new ViewModel().Data,
@@ -62,6 +63,7 @@ LineSeries series2 = new LineSeries()
 
 };
 
+// Add the line series to the chart
 chart.Series.Add(series1);
 chart.Series.Add(series2);
 
@@ -113,6 +115,7 @@ The [StrokeDashArray](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Mau
 
 SfCartesianChart chart = new SfCartesianChart();
 . . .
+// Create a DoubleCollection for the StrokeDashArray, which defines the pattern of dashes and gaps.
 DoubleCollection doubleCollection = new DoubleCollection();
 doubleCollection.Add(5);
 doubleCollection.Add(2);
@@ -127,7 +130,7 @@ LineSeries series1 = new LineSeries()
     ItemsSource = new ViewModel().Data,
     XBindingPath = "Demand",
     YBindingPath = "Year2010",
-    StrokeDashArray = doubleCollection
+    StrokeDashArray = doubleCollection // Apply the stroke dash pattern.
 
 };
 
@@ -136,7 +139,7 @@ LineSeries series2 = new LineSeries()
     ItemsSource = new ViewModel().Data,
     XBindingPath = "Demand",
     YBindingPath = "Year2011",
-    StrokeDashArray = doubleCollection
+    StrokeDashArray = doubleCollection // Apply the stroke dash pattern.
 };
 
 chart.Series.Add(series1);
@@ -185,6 +188,7 @@ chart.XAxes.Add(primaryAxis);
 NumericalAxis secondaryAxis = new NumericalAxis();
 chart.YAxes.Add(secondaryAxis);
 
+// Create a SplineSeries for the chart
 SplineSeries series1 = new SplineSeries()
 {
     ItemsSource = new ViewModel().Data,
@@ -255,7 +259,7 @@ SplineSeries series = new SplineSeries()
     ItemsSource = new ViewModel().Data,
     XBindingPath = "Demand",
     YBindingPath = "Year2010",
-    Type = SplineType.Cardinal
+    Type = SplineType.Cardinal // Define the spline type as Cardinal, which affects the shape of the curve.
 };
 
 chart.Series.Add(series);
@@ -301,7 +305,7 @@ LineSeries series1 = new LineSeries()
     ItemsSource = new ViewModel().Data,
     XBindingPath = "Demand",
     YBindingPath = "Year2010",
-    ShowMarkers = true,
+    ShowMarkers = true, // Enable markers to visually highlight data points on the line
 };
 
 LineSeries series2 = new LineSeries()
@@ -309,7 +313,7 @@ LineSeries series2 = new LineSeries()
     ItemsSource = new ViewModel().Data,
     XBindingPath = "Demand",
     YBindingPath = "Year2011",
-    ShowMarkers = true,
+    ShowMarkers = true, // Enable markers to visually highlight data points on the line
 };
 
 chart.Series.Add(series1);
@@ -360,6 +364,7 @@ In order to change the series markers appearance, create an instance of the [Mar
 
 SfCartesianChart chart = new SfCartesianChart();
 ...
+// Set up marker settings for the chart series with a diamond shape
 ChartMarkerSettings chartMarker= new ChartMarkerSettings()
 {
     Type = ShapeType.Diamond,
@@ -376,7 +381,7 @@ LineSeries series = new LineSeries()
    XBindingPath = "Year",
    YBindingPath = "Percentage",
    ShowMarkers = true,
-   MarkerSettings = chartMarker,
+   MarkerSettings = chartMarker, // Apply the specified marker settings
 };
 
 chart.Series.Add(series);

@@ -46,6 +46,7 @@ chart.XAxes.Add(primaryAxis);
 NumericalAxis secondaryAxis = new NumericalAxis();
 chart.YAxes.Add(secondaryAxis);
 
+// Create a AreaSeries for the chart
 AreaSeries series = new AreaSeries()
 {
     ItemsSource = new ViewModel().Data,
@@ -53,7 +54,8 @@ AreaSeries series = new AreaSeries()
     YBindingPath = "Year2010",
 };
 
-chart.Series.Add(series);
+// Add the series to the chart's series collection
+chart.Series.Add(series); 
 this.Content = chart;
 
 {% endhighlight %}
@@ -96,6 +98,7 @@ chart.XAxes.Add(primaryAxis);
 NumericalAxis secondaryAxis = new NumericalAxis();
 chart.YAxes.Add(secondaryAxis);
 
+// Create a SplineAreaSeries for the chart
 SplineAreaSeries series = new SplineAreaSeries()
 {
     ItemsSource = new ViewModel().Data,
@@ -103,6 +106,7 @@ SplineAreaSeries series = new SplineAreaSeries()
     YBindingPath = "Year2010",
 };
 
+// Add the series to the chart's series collection
 chart.Series.Add(series);
 this.Content = chart;
 
@@ -139,7 +143,7 @@ AreaSeries series = new AreaSeries()
     ItemsSource = new ViewModel().Data,
     XBindingPath = "Year",
     YBindingPath = "Percentage",
-    ShowMarkers = true,
+    ShowMarkers = true, // Enable markers on data points for better visibility
  };
 
 chart.Series.Add(series);
@@ -187,6 +191,7 @@ In order to change the series markers appearance, create an instance of the [Mar
 
 SfCartesianChart chart = new SfCartesianChart();
 ...
+// Configure the marker settings for the chart series
 ChartMarkerSettings chartMarker= new ChartMarkerSettings()
 {
     Type = ShapeType.Diamond,
@@ -203,7 +208,7 @@ AreaSeries series = new AreaSeries()
    XBindingPath = "Year",
    YBindingPath = "Percentage",
    ShowMarkers = true,
-   MarkerSettings = chartMarker
+   MarkerSettings = chartMarker // Apply the configured marker settings
 };
 
 chart.Series.Add(series);

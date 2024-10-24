@@ -46,6 +46,7 @@ chart.XAxes.Add(primaryAxis);
 NumericalAxis secondaryAxis = new NumericalAxis();
 chart.YAxes.Add(secondaryAxis);
 
+// Create a StepAreaSeries for the chart
 StepAreaSeries series = new StepAreaSeries()
 {
     ItemsSource = new ViewModel().Data,
@@ -53,6 +54,7 @@ StepAreaSeries series = new StepAreaSeries()
     YBindingPath = "Value",
 };
 
+// Add the series to the chart's Series collection
 chart.Series.Add(series);
 this.Content = chart;
 
@@ -90,7 +92,7 @@ StepAreaSeries series = new StepAreaSeries()
     ItemsSource = new ViewModel().Data,
     XBindingPath = "Month",
     YBindingPath = "Value",
-    ShowMarkers= true,
+    ShowMarkers= true, // Enable markers to display data points clearly
  };
 
 chart.Series.Add(series);
@@ -138,6 +140,7 @@ To change the series markers appearance, create an instance of the [MarkerSettin
 
 SfCartesianChart chart = new SfCartesianChart();
 ...
+// Configure chart marker settings to customize the appearance of markers in the chart.
 ChartMarkerSettings chartMarker= new ChartMarkerSettings()
 {
     Type = ShapeType.Diamond,
@@ -154,7 +157,7 @@ StepAreaSeries series = new StepAreaSeries()
    XBindingPath = "Month",
    YBindingPath = "Value",
    ShowMarkers = true,
-   MarkerSettings = chartMarker
+   MarkerSettings = chartMarker // Apply the previously configured marker settings to this series
 };
 
 chart.Series.Add(series);

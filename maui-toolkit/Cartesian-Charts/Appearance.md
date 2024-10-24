@@ -33,13 +33,14 @@ By default, chart applies a set of predefined brushes to the series in a predefi
 
 SfCartesianChart chart = new SfCartesianChart();
 . . .
+// Create a new list to hold custom brushes for the chart.
 List<Brush> CustomBrushes = new List<Brush>();
 CustomBrushes.Add(new SolidColorBrush(Color.FromRgb(38, 198, 218)));
 CustomBrushes.Add(new SolidColorBrush(Color.FromRgb(0, 172, 193)));
 CustomBrushes.Add(new SolidColorBrush(Color.FromRgb(0, 151, 167)));
 CustomBrushes.Add(new SolidColorBrush(Color.FromRgb(0, 131, 143)));
 
-chart.PaletteBrushes = CustomBrushes;
+chart.PaletteBrushes = CustomBrushes; // Assign the list of custom colors to the palette of the chart. 
 . . .
 this.Content = chart;
 
@@ -73,6 +74,7 @@ public class ViewModel
 {
 	public ObservableCollection<Model> Data { get; set; }
 
+    // Create a new list to hold custom brushes for the chart.
 	public List<Brush> CustomBrushes { get; set; }
 	public ViewModel()
 	{
@@ -118,7 +120,8 @@ The following code sample and screenshot illustrates how to apply the gradient b
 public class ViewModel
 {
 	public ObservableCollection<Model> Data { get; set; }
-
+     
+	// Create a new list to hold gradient brushes for the chart.
 	public List<Brush> CustomBrushes { get; set; }
 	public ViewModel()
 	{
