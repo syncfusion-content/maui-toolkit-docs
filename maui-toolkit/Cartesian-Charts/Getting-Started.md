@@ -565,7 +565,7 @@ namespace ChartGettingStarted
             {
                 Label = "Height",
                 ShowDataLabels = true,
-                ItemsSource = (new ViewModel()).Data,
+                ItemsSource = (new PersonViewModel()).Data,
                 XBindingPath = "Name",
                 YBindingPath = "Height",
                 DataLabelSettings = new CartesianDataLabelSettings()
