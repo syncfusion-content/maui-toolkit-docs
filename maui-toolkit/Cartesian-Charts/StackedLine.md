@@ -60,6 +60,7 @@ chart.YAxes.Add(secondaryAxis);
 
 ViewModel viewModel = new ViewModel();
 
+// Create a StackingLineSeries for the chart
 StackingLineSeries series1 = new  StackingLineSeries()
 {
     ItemsSource = viewModel.Data1,
@@ -87,6 +88,7 @@ StackingLineSeries series4 = new StackingLineSeries()
     YBindingPath = "Value",
 };
 
+// Add each series to the chart's Series collection
 chart.Series.Add(series1);
 chart.Series.Add(series2);     
 chart.Series.Add(series3); 
@@ -157,6 +159,7 @@ chart.YAxes.Add(secondaryAxis);
 
 ViewModel viewModel = new ViewModel();
 
+// Create a DoubleCollection to define the stroke dash patterns for the lines
 DoubleCollection doubleCollection = new DoubleCollection();
 doubleCollection.Add(5);
 doubleCollection.Add(2);
@@ -166,7 +169,7 @@ StackingLineSeries series1 = new  StackingLineSeries()
     ItemsSource = viewModel.Data1,
     XBindingPath = "Month",
     YBindingPath = "Value",
-    StrokeDashArray = doubleCollection
+    StrokeDashArray = doubleCollection // Define dashed line style
 };
 
 StackingLineSeries series2 = new StackingLineSeries()
@@ -174,7 +177,7 @@ StackingLineSeries series2 = new StackingLineSeries()
     ItemsSource = viewModel.Data2,
     XBindingPath = "Month",
     YBindingPath = "Value",
-    StrokeDashArray = doubleCollection
+    StrokeDashArray = doubleCollection // Define dashed line style
 };
 
 StackingLineSeries series3 = new StackingLineSeries()       
@@ -182,7 +185,7 @@ StackingLineSeries series3 = new StackingLineSeries()
     ItemsSource = viewModel.Data3,
     XBindingPath = "Month",
     YBindingPath = "Value",
-    StrokeDashArray = doubleCollection
+    StrokeDashArray = doubleCollection // Define dashed line style
 };
 
 StackingLineSeries series4 = new StackingLineSeries()
@@ -190,7 +193,7 @@ StackingLineSeries series4 = new StackingLineSeries()
     ItemsSource = viewModel.Data4,
     XBindingPath = "Month",
     YBindingPath = "Value",
-    StrokeDashArray = doubleCollection
+    StrokeDashArray = doubleCollection // Define dashed line style
 };
 
 chart.Series.Add(series1);
@@ -250,7 +253,7 @@ StackingLineSeries series1 = new  StackingLineSeries()
     ItemsSource = viewModel.Data1,
     XBindingPath = "Month",
     YBindingPath = "Value",
-    ShowMarkers = true,
+    ShowMarkers = true, // Display markers on data points
 };
 
 StackingLineSeries series2 = new StackingLineSeries()
@@ -258,7 +261,7 @@ StackingLineSeries series2 = new StackingLineSeries()
     ItemsSource = viewModel.Data2,
     XBindingPath = "Month",
     YBindingPath = "Value",
-    ShowMarkers = true,
+    ShowMarkers = true, // Display markers on data points
 };
 
 StackingLineSeries series3 = new StackingLineSeries()       
@@ -266,7 +269,7 @@ StackingLineSeries series3 = new StackingLineSeries()
     ItemsSource = viewModel.Data3,
     XBindingPath = "Month",
     YBindingPath = "Value",
-    ShowMarkers = true,
+    ShowMarkers = true, // Display markers on data points
 };
 
 StackingLineSeries series4 = new StackingLineSeries()
@@ -274,7 +277,7 @@ StackingLineSeries series4 = new StackingLineSeries()
     ItemsSource = viewModel.Data4,
     XBindingPath = "Month",
     YBindingPath = "Value",
-    ShowMarkers = true, 
+    ShowMarkers = true, // Display markers on data points
 };
 
 chart.Series.Add(series1);
@@ -329,6 +332,7 @@ SfCartesianChart chart = new SfCartesianChart();
 
 ViewModel viewModel = new ViewModel();
 ...
+// Define settings for the chart markers
 ChartMarkerSettings chartMarker= new ChartMarkerSettings()
 {
     Type = ShapeType.Diamond,
@@ -344,7 +348,7 @@ StackingLineSeries series = new  StackingLineSeries()
     XBindingPath = "Month",
     YBindingPath = "Value",
     ShowMarkers = true,
-    MarkerSettings = chartMarker,
+    MarkerSettings = chartMarker, // Apply the defined marker settings
 };
 
 chart.Series.Add(series);

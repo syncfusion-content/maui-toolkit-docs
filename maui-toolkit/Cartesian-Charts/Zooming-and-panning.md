@@ -35,6 +35,7 @@ To enable the zooming and panning in the chart, create an instance of [ChartZoom
 
 SfCartesianChart chart = new SfCartesianChart();
 ...
+// Initialize zooming and panning behavior for the chart
 ChartZoomPanBehavior zooming = new ChartZoomPanBehavior();
 chart.ZoomPanBehavior = zooming;
 ...
@@ -106,7 +107,7 @@ SfCartesianChart chart = new SfCartesianChart();
 ChartZoomPanBehavior zooming = new ChartZoomPanBehavior()
 {
     EnablePinchZooming = true,
-    EnableDirectionalZooming = true
+    EnableDirectionalZooming = true // Enable directional zooming, allowing zooming in specific directions (horizontal/vertical).
 };
 
 chart.ZoomPanBehavior = zooming;
@@ -180,7 +181,7 @@ SfCartesianChart chart = new SfCartesianChart();
 ...
 ChartZoomPanBehavior zooming = new ChartZoomPanBehavior()
 {
-    ZoomMode = ZoomMode.X
+    ZoomMode = ZoomMode.X //Set the zooming mode, allowing zoom operations only along the axis.
 };
 
 chart.ZoomPanBehavior = zooming;
@@ -243,7 +244,7 @@ SfCartesianChart chart = new SfCartesianChart();
 ...
 ChartZoomPanBehavior zooming = new ChartZoomPanBehavior()
 {
-    MaximumZoomLevel = 2
+    MaximumZoomLevel = 2 // Set the maximum zoom level
 };
 
 chart.ZoomPanBehavior = zooming;
@@ -275,7 +276,7 @@ Panning feature allows moving the visible area of the chart when it is zoomed in
 SfCartesianChart chart = new SfCartesianChart();
 ChartZoomPanBehavior zooming = new ChartZoomPanBehavior()
 {
-    EnablePanning = true
+    EnablePanning = true // Enable panning functionality for the chart
 };
 
 chart.ZoomPanBehavior = zooming;
@@ -309,7 +310,7 @@ N> To perform selection zooming on a desktop, hold the left mouse button, double
 SfCartesianChart chart = new SfCartesianChart();
 ChartZoomPanBehavior zooming = new ChartZoomPanBehavior()
 {
-    EnableSelectionZooming = true
+    EnableSelectionZooming = true // Enable the feature that allows users to zoom in on the chart by selecting a region
 };
 
 chart.ZoomPanBehavior = zooming;

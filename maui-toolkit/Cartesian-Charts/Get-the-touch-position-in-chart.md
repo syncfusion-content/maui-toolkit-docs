@@ -36,8 +36,9 @@ keywords: .net maui chart touch position, maui chart touch position, .net maui c
 SfCartesianChart chart = new SfCartesianChart();
 .......
     
+// Create an instance of `ChartInteractiveExt`, which allows interaction with the chart
 ChartInteractiveExt interactiveExt = new ChartInteractiveExt();
-chart.Behaviors.Add(interactiveExt);
+chart.Behaviors.Add(interactiveExt); // Add the interactive behavior to the chart
 
 this.Content = chart;
 

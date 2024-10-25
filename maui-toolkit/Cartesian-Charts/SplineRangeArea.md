@@ -53,6 +53,7 @@ chart.XAxes.Add(primaryAxis);
 NumericalAxis secondaryAxis = new NumericalAxis();
 chart.YAxes.Add(secondaryAxis);
 
+// Create a SplineRangeAreaSeries for the chart
 SplineRangeAreaSeries series = new SplineRangeAreaSeries()
 {
     ItemsSource = new ViewModel().Data,
@@ -61,6 +62,7 @@ SplineRangeAreaSeries series = new SplineRangeAreaSeries()
     Low = "LowValue",
 };
 
+// Add the SplineRangeAreaSeries to the chart's series collection
 chart.Series.Add(series);
 this.Content = chart;
 
@@ -121,7 +123,7 @@ SplineRangeAreaSeries series = new SplineRangeAreaSeries()
     XBindingPath = "XValue",
     High = "HighValue",
     Low = "LowValue",
-    Type = SplineType.Cardinal
+    Type = SplineType.Cardinal // Set the type of the spline to 'Cardinal'
 };
 
 chart.Series.Add(series);
@@ -163,7 +165,7 @@ SplineRangeAreaSeries series = new SplineRangeAreaSeries()
     XBindingPath = "XValue",
     High = "HighValue",
     Low = "LowValue",
-    ShowMarkers = true,
+    ShowMarkers = true,  // Display markers on the data points
 };
 
 chart.Series.Add(series);
@@ -212,6 +214,7 @@ In order to change the series markers appearance, create an instance of the [Mar
 
 SfCartesianChart chart = new SfCartesianChart();
 ...
+// Configure marker settings for the chart series
 ChartMarkerSettings chartMarker= new ChartMarkerSettings()
 {
     Type = ShapeType.Diamond,
@@ -229,7 +232,7 @@ SplineRangeAreaSeries series = new SplineRangeAreaSeries()
     High = "HighValue",
     Low = "LowValue",
     ShowMarkers = true,
-    MarkerSettings = chartMarker,
+    MarkerSettings = chartMarker, // Apply the configured marker settings
 };
 
 chart.Series.Add(series);

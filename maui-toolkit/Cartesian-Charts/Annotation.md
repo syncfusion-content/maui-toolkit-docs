@@ -278,6 +278,8 @@ The [RectangleAnnotation](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion
 {% highlight c# %}
 
 SfCartesianChart chart = new SfCartesianChart();
+
+// Create a new rectangle annotation
 var rectangle = new RectangleAnnotation()
 {
     X1 = 1,
@@ -286,6 +288,7 @@ var rectangle = new RectangleAnnotation()
     Y2 = 20,                
 };
 
+// Add the rectangle annotation to the chart's annotations collection
 chart.Annotations.Add(rectangle);
 this.Content = chart;
 
@@ -315,6 +318,8 @@ The [EllipseAnnotation](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.M
 {% highlight c# %}
 
 SfCartesianChart chart = new SfCartesianChart();
+
+// Create an instance of EllipseAnnotation to display an ellipse on the chart.
 var ellipse = new EllipseAnnotation()
 {
     X1 = 2,
@@ -325,6 +330,7 @@ var ellipse = new EllipseAnnotation()
     Height = 20
 };
 
+// Add the ellipse annotation to the chart's annotations collection.
 chart.Annotations.Add(ellipse);
 this.Content = chart;
 
@@ -356,6 +362,8 @@ The [LineAnnotation](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui
 {% highlight c# %}
 
 SfCartesianChart chart = new SfCartesianChart();
+
+// Create and configure a LineAnnotation with specified coordinates
 var line = new LineAnnotation()
 {
     X1 = 0.5,
@@ -365,6 +373,7 @@ var line = new LineAnnotation()
     Text = "Line"
 };
 
+// Add the line annotation to the annotations collection of the chart
 chart.Annotations.Add(line);
 this.Content = chart;
 
@@ -396,16 +405,19 @@ The [VerticalLineAnnotation](https://help.syncfusion.com/cr/maui-toolkit/Syncfus
 
 SfCartesianChart chart = new SfCartesianChart();
 . . .
+// Create a vertical line annotation
 var verticalLineAnnotation = new VerticalLineAnnotation()
 {
     X1 = 2,
 };
 
+// Create a horizontal line annotation
 var horizontalLineAnnotation = new HorizontalLineAnnotation()
 {
     Y1 = 20,
 };
 
+// Add the vertical and horizontal line annotations to the chart's annotations.
 chart.Annotations.Add(verticalLineAnnotation);
 chart.Annotations.Add(horizontalLineAnnotation);
 this.Content = chart;
@@ -441,13 +453,13 @@ SfCartesianChart chart = new SfCartesianChart();
 var verticalLineAnnotation = new VerticalLineAnnotation()
 {
     X1 = 2.5,
-    ShowAxisLabel = true
+    ShowAxisLabel = true // Display the label on the X-axis where the line intersects
 };
 
 var horizontalLineAnnotation = new HorizontalLineAnnotation()
 {
     Y1 = 25,
-    ShowAxisLabel = true
+    ShowAxisLabel = true // Display the label on the Y-axis where the line intersects
 };
 
 chart.Annotations.Add(verticalLineAnnotation);
@@ -496,13 +508,13 @@ SfCartesianChart chart = new SfCartesianChart();
 var verticalLineAnnotation = new VerticalLineAnnotation()
 {
     X1 = 2.5,
-    LineCap = ChartLineCap.Arrow
+    LineCap = ChartLineCap.Arrow // Add an arrow cap to the end of the line
 };
 
 var horizontalLineAnnotation = new HorizontalLineAnnotation()
 {
     Y1 = 25,
-    LineCap = ChartLineCap.Arrow
+    LineCap = ChartLineCap.Arrow // Add an arrow cap to the end of the line
 };
 
 chart.Annotations.Add(verticalLineAnnotation);
@@ -544,7 +556,7 @@ var ellipseAnnotation = new EllipseAnnotation()
     Y1 = 10,
     X2 = 4,
     Y2 = 15,
-    Text = "Ellipse"
+    Text = "Ellipse" // Set the text label for the ellipse.
 };
 
 chart.Annotations.Add(ellipseAnnotation);
@@ -594,6 +606,7 @@ The [ViewAnnotation](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui
 
 SfCartesianChart chart = new SfCartesianChart();
 ...
+// Define a new ViewAnnotation to add a graphical element to the chart.
 var viewAnnotation = new ViewAnnotation()
 {
     X1 = 3,
@@ -601,6 +614,7 @@ var viewAnnotation = new ViewAnnotation()
     View = new Image() { Source = "cloud.png" };
 };
 
+// Add the created ViewAnnotation to the chart's Annotations collection.
 chart.Annotations.Add(viewAnnotation);
 this.Content = chart;
 {% endhighlight %}
@@ -637,7 +651,7 @@ var ellipseAnnotation = new EllipseAnnotation()
     X2 = 4,
     Y2 = 15,
     Text = "Ellipse",
-    IsVisible = false
+    IsVisible = false  // Set the visibility of the annotation
 };
 
 chart.Annotations.Add(ellipse);

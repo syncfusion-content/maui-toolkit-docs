@@ -39,7 +39,9 @@ To enable the trackball in the chart, create an instance of the [ChartTrackballB
 
 SfCartesianChart chart = new SfCartesianChart();
 ...
+// Create a trackball behavior for the chart
 ChartTrackballBehavior trackball = new ChartTrackballBehavior();
+// Set the trackball behavior to the chart
 chart.TrackballBehavior= trackball;
 
 this.Content = chart;
@@ -78,7 +80,7 @@ SfCartesianChart chart = new SfCartesianChart();
 ChartTrackballBehavior trackball = new ChartTrackballBehavior()
 {
     ShowLine = true,
-    DisplayMode = LabelDisplayMode.NearestPoint
+    DisplayMode = LabelDisplayMode.NearestPoint  // Set the display mode of the trackball label
 };
 chart.TrackballBehavior= trackball;
 . . . 
@@ -117,7 +119,7 @@ SfCartesianChart chart = new SfCartesianChart();
 ...
 ChartTrackballBehavior trackball = new ChartTrackballBehavior()
 {
-    ActivationMode = ChartTrackballActivationMode.LongPress
+    ActivationMode = ChartTrackballActivationMode.LongPress // Set the activation mode of the trackball
 };
 chart.TrackballBehavior= trackball;
 . . . 
@@ -172,6 +174,7 @@ SfCartesianChart chart = new SfCartesianChart();
 . . .
 ChartTrackballBehavior trackball = new ChartTrackballBehavior();
 
+// Define a label style for the trackball
 ChartLabelStyle labelStyle = new ChartLabelStyle()
 {
     Background = Color.LightBlue,
@@ -181,7 +184,7 @@ ChartLabelStyle labelStyle = new ChartLabelStyle()
     Stroke = Color.Gray
 };
 
-trackballBehavior.LabelStyle = labelStyle;
+trackballBehavior.LabelStyle = labelStyle; // Apply the custom label style to the trackball behavior
 chart.TrackballBehavior= trackball;
 
 this.Content = chart;
@@ -218,12 +221,14 @@ this.Content = chart;
 SfCartesianChart chart = new SfCartesianChart();
 . . .
 ChartTrackballBehavior trackball = new ChartTrackballBehavior();
+
+// Create a new ChartLineStyle to define the appearance of the trackball line
 ChartLineStyle lineStyle = new ChartLineStyle()
 {
     Stroke = Colors.Gray,
     StrokeWidth = 4
 };
-trackballBehavior.LineStyle = lineStyle;
+trackballBehavior.LineStyle = lineStyle; // Assign the configured line style to the trackball behavior
 chart.TrackballBehavior= trackball;
 
 this.Content = chart;
@@ -265,6 +270,7 @@ The [MarkerSettings](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui
 
 SfCartesianChart chart = new SfCartesianChart();
 . . .
+// Configure the settings for the marker that appears along with the trackball.
 var markerSettings = new ChartMarkerSettings()
 {
     Height = 10, Width = 10,
@@ -272,7 +278,7 @@ var markerSettings = new ChartMarkerSettings()
 };
 chart.TrackballBehavior = new ChartTrackballBehavior()
 {
-    MarkerSettings = markerSettings,
+    MarkerSettings = markerSettings, // Assign the marker settings to the TrackballBehavior.
 };
 
 this.Content = chart;
@@ -352,6 +358,7 @@ series3.XBindingPath = "XValues";
 series3.YBindingPath = "YValues";
 series3.Label = "Andrew";
 
+// Define a data template for the trackball label
 DataTemplate trackballLabelTemplate = new DataTemplate(() =>
 {
     HorizontalStackLayout horizontalStackLayout = new HorizontalStackLayout();
@@ -386,6 +393,7 @@ DataTemplate trackballLabelTemplate = new DataTemplate(() =>
     return horizontalStackLayout;
 });
 
+// Assign the trackball label template to each series
 series1.TrackballLabelTemplate = trackballLabelTemplate;
 series2.TrackballLabelTemplate = trackballLabelTemplate;
 series3.TrackballLabelTemplate = trackballLabelTemplate;
@@ -442,6 +450,7 @@ chart.TrackballBehavior = trackball;
 DateTimeAxis primaryAxis = new DateTimeAxis();
 primaryAxis.ShowTrackballLabel = true;
 
+// Define a template for the axis label to customize its appearance
 DataTemplate axisLabelTemplate = new DataTemplate(() =>
 {
     var label = new Label()
@@ -458,7 +467,7 @@ DataTemplate axisLabelTemplate = new DataTemplate(() =>
     return label;
 });
 
-primaryAxis.TrackballLabelTemplate = axisLabelTemplate;
+primaryAxis.TrackballLabelTemplate = axisLabelTemplate; // Assign the custom label template to the primary axis's trackball label template
 . . .
 LineSeries series = new LineSeries();
 series.ItemsSource = new ViewModel().Data;
@@ -499,7 +508,7 @@ SfCartesianChart chart = new SfCartesianChart();
 . . .
 LineSeries lineSeries = new LineSeries()
 {
-  ShowTrackballLabel = false,
+  ShowTrackballLabel = false, // Set a value for whether a label should be displayed on the trackball.
   XBindingPath = "Name",
   YBindingPath = "Run",
   ItemsSource = new ViewModel().Data

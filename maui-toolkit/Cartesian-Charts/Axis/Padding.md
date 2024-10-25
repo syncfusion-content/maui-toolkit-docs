@@ -12,7 +12,7 @@ Keywords: .net maui chart axis padding, .net maui chart axis spacing, .net maui 
 
 ## PlotOffsetStart
 
-The [PlotOffsetStart](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Charts.ChartAxis.html#Syncfusion_Maui_Charts_ChartAxis_PlotOffsetStart) property is used to provide padding to the axis at start position. The following code sample demonstrates the padding applied to Start position for both x and y-axes.
+The [PlotOffsetStart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxis.html#Syncfusion_Maui_Toolkit_Charts_ChartAxis_PlotOffsetStart) property is used to provide padding to the axis at start position. The following code sample demonstrates the padding applied to Start position for both x and y-axes.
 
 {% tabs %}
 
@@ -38,13 +38,13 @@ SfCartesianChart chart = new SfCartesianChart();
 . . .
 CategoryAxis primaryAxis = new CategoryAxis()
 {
-    PlotOffsetStart = 30
+    PlotOffsetStart = 30 // Set the offset at the start of the plot area for the X-axis
 };
 chart.XAxes.Add(primaryAxis);
 
 NumericalAxis secondaryAxis = new NumericalAxis()
 {
-    PlotOffsetStart = 30
+    PlotOffsetStart = 30  // Set the offset at the start of the plot area for the Y-axis
 };
 chart.YAxes.Add(secondaryAxis);
 . . .
@@ -57,7 +57,7 @@ this.Content = chart;
 
 ## PlotOffsetEnd
 
-The [PlotOffsetEnd](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Charts.ChartAxis.html#Syncfusion_Maui_Charts_ChartAxis_PlotOffsetEnd) property is used to provide padding to the axis at end position. The following code sample demonstrates the padding applied to end position for both x and y-axes.
+The [PlotOffsetEnd](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxis.html#Syncfusion_Maui_Toolkit_Charts_ChartAxis_PlotOffsetEnd) property is used to provide padding to the axis at end position. The following code sample demonstrates the padding applied to end position for both x and y-axes.
 
 {% tabs %}
 
@@ -83,13 +83,13 @@ SfCartesianChart chart = new SfCartesianChart();
 . . .
 CategoryAxis primaryAxis = new CategoryAxis()
 {
-    PlotOffsetEnd = 30
+    PlotOffsetEnd = 30 // Set the offset at the end of the plot area for the Y-axis
 };
 chart.XAxes.Add(primaryAxis);
 
 NumericalAxis secondaryAxis = new NumericalAxis()
 {
-    PlotOffsetEnd = 30
+    PlotOffsetEnd = 30 // Set the offset at the end of the plot area for the Y-axis.
 };
 chart.YAxes.Add(secondaryAxis);
 . . .

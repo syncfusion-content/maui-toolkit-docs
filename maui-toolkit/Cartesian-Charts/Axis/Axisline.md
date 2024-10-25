@@ -12,7 +12,7 @@ keywords: .net maui chart axis line, .net maui chart axis customization, .net ma
 
 ## Customization
 
-Cartesian chart axis provides support to customize the style of axis line by defining the [AxisLineStyle](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Charts.ChartAxis.html#Syncfusion_Maui_Charts_ChartAxis_AxisLineStyle) property as shown in the below code snippet.
+Cartesian chart axis provides support to customize the style of axis line by defining the [AxisLineStyle](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxis.html#Syncfusion_Maui_Toolkit_Charts_ChartAxis_AxisLineStyle) property as shown in the below code snippet.
 
 {% tabs %}
 
@@ -38,12 +38,13 @@ Cartesian chart axis provides support to customize the style of axis line by def
 SfCartesianChart chart = new SfCartesianChart();
 . . .
 NumericalAxis primaryAxis = new NumericalAxis();
+// Define the style for the axis line
 ChartLineStyle axisLineStyle = new ChartLineStyle()
 {
     Stroke = Colors.Red,
     StrokeWidth = 2,
 };
-primaryAxis.AxisLineStyle = axisLineStyle;
+primaryAxis.AxisLineStyle = axisLineStyle; // Apply the defined axis line style to the primary axis
 chart.XAxes.Add(primaryAxis);
 . . .
 this.Content = chart;
@@ -55,7 +56,7 @@ this.Content = chart;
 
 ## Offset
 
-The padding to the axis line is defined by using the [AxisLineOffset](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Charts.ChartAxis.html#Syncfusion_Maui_Charts_ChartAxis_AxisLineOffset) property.
+The padding to the axis line is defined by using the [AxisLineOffset](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxis.html#Syncfusion_Maui_Toolkit_Charts_ChartAxis_AxisLineOffset) property.
 
 {% tabs %}
 
@@ -81,7 +82,7 @@ The padding to the axis line is defined by using the [AxisLineOffset](https://he
 SfCartesianChart chart = new SfCartesianChart();
 . . .
 NumericalAxis primaryAxis = new NumericalAxis();
-primaryAxis.AxisLineOffset = 25;
+primaryAxis.AxisLineOffset = 25; // Set the axis line offset to position the axis line away from the plotted area
 ChartLineStyle axisLineStyle = new ChartLineStyle()
 {
     Stroke = Colors.Red,

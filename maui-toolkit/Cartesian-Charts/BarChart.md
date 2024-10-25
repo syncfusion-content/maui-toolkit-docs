@@ -41,7 +41,7 @@ N> The Cartesian chart has `Series` as its default content.
 {% highlight c# %}
 
 SfCartesianChart chart = new SfCartesianChart();
-chart.IsTransposed = true;
+chart.IsTransposed = true; // Transpose the chart so that the X and Y axes are swapped
 CategoryAxis primaryAxis = new CategoryAxis();
 chart.XAxes.Add(primaryAxis);
 NumericalAxis secondaryAxis = new NumericalAxis();
@@ -107,8 +107,8 @@ ColumnSeries series = new ColumnSeries()
     ItemsSource = new ViewModel().Data,
     XBindingPath = "XValue",
     YBindingPath = "YValue",
-    Spacing = 0.3,
-    Width = 0.5
+    Spacing = 0.3, // Set the spacing between columns (bars) in the series. 
+    Width = 0.5 // Set the width of the columns (bars) in the series.
 };
 
 chart.Series.Add(series);

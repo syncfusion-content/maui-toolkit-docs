@@ -29,11 +29,13 @@ N> The circular chart has [Series](https://help.syncfusion.com/cr/maui-toolkit/S
 
 SfCircularChart chart = new SfCircularChart();
 
+// Create an instance of PieSeries
 PieSeries series = new PieSeries();
 series.ItemsSource = (new SalesViewModel()).Data;
 series.XBindingPath = "Product";
 series.YBindingPath = "SalesRate";
 
+// Add the configured series to the chart's series collection.
 chart.Series.Add(series);
 this.Content = chart;
 
@@ -68,7 +70,7 @@ PieSeries series = new PieSeries();
 series.ItemsSource = (new SalesViewModel()).Data;
 series.XBindingPath = "Product";
 series.YBindingPath = "SalesRate";
-series.Radius = 0.9;
+series.Radius = 0.9; // Set the radius of the pie chart 
 
 chart.Series.Add(series);
 this.Content = chart;
@@ -105,8 +107,8 @@ PieSeries series = new PieSeries();
 series.ItemsSource = (new SalesViewModel()).Data;
 series.XBindingPath = "Product";
 series.YBindingPath = "SalesRate";
-series.StartAngle = 180;
-series.EndAngle = 360;
+series.StartAngle = 180; // Set the starting angle for the pie slices
+series.EndAngle = 360; // Set the ending angle for the pie slices
 
 chart.Series.Add(series);
 this.Content = chart;

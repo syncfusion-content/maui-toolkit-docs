@@ -10,7 +10,7 @@ keywords: .net maui cartesian charts, .net maui axis title, cartesian chart axis
 
 # Axis Title in MAUI Chart
 
-The [Title](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Charts.ChartAxis.html#Syncfusion_Maui_Charts_ChartAxis_Title) property is used to set the title for the chart axis.
+The [Title](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxis.html#Syncfusion_Maui_Toolkit_Charts_ChartAxis_Title) property is used to set the title for the chart axis.
 
 {% tabs %}
 
@@ -41,6 +41,7 @@ The [Title](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Charts.ChartAxis
 SfCartesianChart chart = new SfCartesianChart();
 . . .
 CategoryAxis primaryAxis = new CategoryAxis();
+// Set the title of the X axis to "Category"
 primaryAxis.Title = new ChartAxisTitle()
 {
     Text = "Category"
@@ -48,6 +49,7 @@ primaryAxis.Title = new ChartAxisTitle()
 chart.XAxes.Add(primaryAxis);
 
 NumericalAxis secondaryAxis = new NumericalAxis();
+// Set the title of the Y axis to "Values"
 secondaryAxis.Title = new ChartAxisTitle()
 {
     Text = "Values"
@@ -63,7 +65,7 @@ this.Content = chart;
 
 ## Customization
 
-The [Title](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Charts.ChartAxis.html#Syncfusion_Maui_Charts_ChartAxis_Title) property in axis provides options to customize the text and font of axis title. Axis does not display title by default. The title can be customized using following properties,
+The [Title](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxis.html#Syncfusion_Maui_Toolkit_Charts_ChartAxis_Title) property in axis provides options to customize the text and font of axis title. Axis does not display title by default. The title can be customized using following properties,
 
 * `Text` - Gets or sets the title for axis.
 * `Background` - Gets or sets the background color of the labels.
@@ -78,7 +80,7 @@ The [Title](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Charts.ChartAxis
 
 ## Label extent
 
-The [LabelExtent](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Charts.ChartAxis.html#Syncfusion_Maui_Charts_ChartAxis_LabelExtent) property allows to set the gap between axis labels and title. This is typically used to maintain the fixed gap between axis labels and title when the digits of the axis value changed in live update.
+The [LabelExtent](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxis.html#Syncfusion_Maui_Toolkit_Charts_ChartAxis_LabelExtent) property allows to set the gap between axis labels and title. This is typically used to maintain the fixed gap between axis labels and title when the digits of the axis value changed in live update.
 
 {% tabs %}
 
@@ -102,7 +104,7 @@ The [LabelExtent](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Charts.Cha
 SfCartesianChart chart = new SfCartesianChart();
 . . .
 CategoryAxis primaryAxis = new CategoryAxis();
-primaryAxis.LabelExtent = 60;
+primaryAxis.LabelExtent = 60; // Set the label extent to ensure adequate space for the axis labels.
 primaryAxis.Title = new ChartAxisTitle()
 {
     Text = "Category"
