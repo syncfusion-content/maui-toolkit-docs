@@ -44,7 +44,7 @@ ColumnSeries series = new ColumnSeries()
     ItemsSource = viewModel.Data,
     XBindingPath = "Category",
     YBindingPath = "Value",
-    ShowDataLabels = true
+    ShowDataLabels = true // Enable the display of data labels for the series.
 };
 
 chart.Series.Add(series);
@@ -97,7 +97,7 @@ ColumnSeries series = new ColumnSeries()
 };
 series.DataLabelSettings = new CartesianDataLabelSettings()
 {
-    BarAlignment = DataLabelAlignment.Middle,
+    BarAlignment = DataLabelAlignment.Middle, // Set the alignment of data labels
 };
 
 chart.Series.Add(series);
@@ -188,7 +188,7 @@ ColumnSeries series = new ColumnSeries()
     XBindingPath = "XValue",
     YBindingPath = "YValue",
     ShowDataLabels = true,
-    LabelContext = LabelContext.Percentage
+    LabelContext = LabelContext.Percentage // Set the context for the displayed data labels 
 };
 
 chart.Series.Add(series);
@@ -248,6 +248,7 @@ series.DataLabelSettings = new CartesianDataLabelSettings()
     LabelPlacement = DataLabelPlacement.Outer
 };
 
+// Define a custom DataTemplate for the labels
 DataTemplate labelTemplate = new DataTemplate(() =>
 {
     HorizontalStackLayout horizontalStackLayout = new HorizontalStackLayout { Spacing = 5, WidthRequest=100 };
@@ -272,7 +273,7 @@ DataTemplate labelTemplate = new DataTemplate(() =>
     return horizontalStackLayout;
 });
 
-series.LabelTemplate = labelTemplate;
+series.LabelTemplate = labelTemplate; // Assign the custom label template to the series
 chart.Series.Add(series);
 this.Content = chart;
         

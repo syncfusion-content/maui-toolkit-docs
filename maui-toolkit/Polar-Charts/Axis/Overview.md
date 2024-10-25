@@ -9,7 +9,7 @@ documentation: ug
 
 # Axis in .NET MAUI Chart
 
-The [ChartAxis](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Charts.ChartAxis.html) is used to locate a data point within the chart area. Charts usually consist of two axes, which are used to measure and categorize data: a primary axis and a secondary axis.
+The [ChartAxis](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxis.html) is used to locate a data point within the chart area. Charts usually consist of two axes, which are used to measure and categorize data: a primary axis and a secondary axis.
 
 Polar chart supports the following types of chart axis.
 

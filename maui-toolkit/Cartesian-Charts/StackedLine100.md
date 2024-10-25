@@ -66,6 +66,7 @@ N> The Cartesian chart has a [Series](https://help.syncfusion.com/cr/maui-toolki
 
     ViewModel viewModel = new ViewModel();
 
+    // Create a StackingLine100Series for the chart
     StackingLine100Series series1 = new  StackingLine100Series()
     {
         ItemsSource = viewModel.Data1,
@@ -93,6 +94,7 @@ N> The Cartesian chart has a [Series](https://help.syncfusion.com/cr/maui-toolki
         YBindingPath = "Value",
     };
 
+    // Add all series to the chart
     chart.Series.Add(series1);
     chart.Series.Add(series2);     
     chart.Series.Add(series3); 
@@ -163,6 +165,7 @@ The [StrokeDashArray](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Mau
 
     ViewModel viewModel = new ViewModel();
     
+    // Create a collection of doubles to set the stroke dash pattern for the series
     DoubleCollection doubleCollection = new DoubleCollection();
     doubleCollection.Add(5);
     doubleCollection.Add(2);
@@ -172,7 +175,7 @@ The [StrokeDashArray](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Mau
         ItemsSource = viewModel.Data1,
         XBindingPath = "Month",
         YBindingPath = "Value",
-        StrokeDashArray = doubleCollection
+        StrokeDashArray = doubleCollection // Use defined dash pattern
     };
 
     StackingLine100Series series2 = new StackingLine100Series()
@@ -180,7 +183,7 @@ The [StrokeDashArray](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Mau
         ItemsSource = viewModel.Data2,
         XBindingPath = "Month",
         YBindingPath = "Value",
-        StrokeDashArray = doubleCollection
+        StrokeDashArray = doubleCollection // Use defined dash pattern
     };
 
     StackingLine100Series series3 = new StackingLine100Series()       
@@ -188,7 +191,7 @@ The [StrokeDashArray](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Mau
         ItemsSource = viewModel.Data3,
         XBindingPath = "Month",
         YBindingPath = "Value",
-        StrokeDashArray = doubleCollection
+        StrokeDashArray = doubleCollection // Use defined dash pattern
     };
 
     StackingLine100Series series4 = new StackingLine100Series()
@@ -196,7 +199,7 @@ The [StrokeDashArray](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Mau
         ItemsSource = viewModel.Data4,
         XBindingPath = "Month",
         YBindingPath = "Value",
-        StrokeDashArray = doubleCollection
+        StrokeDashArray = doubleCollection // Use defined dash pattern
     };
 
     chart.Series.Add(series1);
@@ -257,7 +260,7 @@ A marker, also known as a symbol, is used to determine or highlight the position
         ItemsSource = viewModel.Data1,
         XBindingPath = "Month",
         YBindingPath = "Value",
-        ShowMarkers = true,
+        ShowMarkers = true, // Enable markers on the series for data points
     };
 
     StackingLine100Series series2 = new StackingLine100Series()
@@ -265,7 +268,7 @@ A marker, also known as a symbol, is used to determine or highlight the position
         ItemsSource = viewModel.Data2,
         XBindingPath = "Month",
         YBindingPath = "Value",
-        ShowMarkers = true,
+        ShowMarkers = true, // Enable markers on the series for data points
     };
 
     StackingLine100Series series3 = new StackingLine100Series()       
@@ -273,7 +276,7 @@ A marker, also known as a symbol, is used to determine or highlight the position
         ItemsSource = viewModel.Data3,
         XBindingPath = "Month",
         YBindingPath = "Value",
-        ShowMarkers = true,
+        ShowMarkers = true, // Enable markers on the series for data points
     };
 
     StackingLine100Series series4 = new StackingLine100Series()
@@ -281,7 +284,7 @@ A marker, also known as a symbol, is used to determine or highlight the position
         ItemsSource = viewModel.Data4,
         XBindingPath = "Month",
         YBindingPath = "Value",
-        ShowMarkers = true, 
+        ShowMarkers = true, // Enable markers on the series for data points
     };
 
     chart.Series.Add(series1);
@@ -336,6 +339,7 @@ In order to change the series markers appearance, create an instance of the [Mar
 
     ViewModel viewModel = new ViewModel();
     ...
+    // Configure marker settings for the data points in the chart series.
     ChartMarkerSettings chartMarker= new ChartMarkerSettings()
     {
         Type = ShapeType.Diamond,
@@ -351,7 +355,7 @@ In order to change the series markers appearance, create an instance of the [Mar
         XBindingPath = "Month",
         YBindingPath = "Value",
         ShowMarkers= true,
-        MarkerSettings = chartMarker,
+        MarkerSettings = chartMarker, // Apply the marker settings configured above.
     };
 
     chart.Series.Add(series);

@@ -71,7 +71,8 @@ chart.Legend = new ChartLegend()
     // Set the visibility of the legend to true
     IsVisible = true 
 };
-
+. . .
+this.Content = chart;
 {% endhighlight %}
 
 {% endtabs %}
@@ -188,7 +189,8 @@ ChartLegendLabelStyle labelStyle = new ChartLegendLabelStyle()
 // Assign the configured labelStyle to the legend
 legend.LabelStyle = labelStyle;
 chart.Legend = legend;
-
+. . .
+this.Content = chart;
 {% endhighlight %}
 
 {% endtabs %}
@@ -228,7 +230,7 @@ PolarViewModel polarViewModel = new PolarViewModel();
 chart.Legend = new ChartLegend();
 
 // Create a new PolarAreaSeries
-PolarAreaSeries series1 = new PolarAreaSeries()
+PolarAreaSeries series = new PolarAreaSeries()
 {
     XBindingPath = "Direction",
     YBindingPath = "Tree",
@@ -238,7 +240,7 @@ PolarAreaSeries series1 = new PolarAreaSeries()
 };
 
 // Add the series to the chart
-chart.Series.Add(series1);
+chart.Series.Add(series);
 this.Content = chart;
 
 {% endhighlight %}
@@ -273,7 +275,6 @@ chart.Legend = new ChartLegend()
 };
 
 this.Content = chart;
-
 
 {% endhighlight %}
 

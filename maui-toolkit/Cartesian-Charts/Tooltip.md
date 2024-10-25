@@ -44,7 +44,7 @@ ColumnSeries series1 = new ColumnSeries()
     ItemsSource = new ViewModel().Data,
     XBindingPath = "Demand",
     YBindingPath = "Year2010",
-    EnableTooltip = true
+    EnableTooltip = true // Enable tooltips for this series
 };
 
 ColumnSeries series2 = new ColumnSeries()
@@ -52,7 +52,7 @@ ColumnSeries series2 = new ColumnSeries()
     ItemsSource = new ViewModel().Data,
     XBindingPath = "Demand",
     YBindingPath = "Year2011",
-    EnableTooltip = true
+    EnableTooltip = true // Enable tooltips for this series
 };
 
 chart.Series.Add(series1);
@@ -128,6 +128,7 @@ The [Duration](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolk
 
 SfCartesianChart chart = new SfCartesianChart();
 . . .
+// Set the tooltip behavior for the chart with a specified duration
 chart.TooltipBehavior = new ChartTooltipBehavior()
 {
     Duration = 5000
@@ -218,7 +219,7 @@ ColumnSeries series1 = new ColumnSeries()
     XBindingPath = "Demand",
     YBindingPath = "Year2010",
     EnableTooltip = true,
-    TooltipTemplate = chart.Resources["tooltipTemplate"] as DataTemplate
+    TooltipTemplate = chart.Resources["tooltipTemplate"] as DataTemplate  // Set a custom tooltip template from the chart's resources
 };
 
 ColumnSeries series2 = new ColumnSeries()
@@ -227,7 +228,7 @@ ColumnSeries series2 = new ColumnSeries()
     XBindingPath = "Demand",
     YBindingPath = "Year2010",
     EnableTooltip = true,
-    TooltipTemplate = chart.Resources["tooltipTemplate"] as DataTemplate
+    TooltipTemplate = chart.Resources["tooltipTemplate"] as DataTemplate  // Set a custom tooltip template from the chart's resources
 };
 
 chart.Series.Add(series1);

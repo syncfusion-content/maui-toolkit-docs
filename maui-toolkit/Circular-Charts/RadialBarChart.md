@@ -43,11 +43,13 @@ The following properties can be used to customize the appearance of the radial b
 
 SfCircularChart chart = new SfCircularChart();
 
+// Initialize a new RadialBarSeries
 RadialBarSeries series = new RadialBarSeries();
 series.ItemsSource = (new SalesViewModel()).Data;
 series.XBindingPath = "Product";
 series.YBindingPath = "SalesRate";
 
+// Add the configured series to the SfCircularChart's series collection.
 chart.Series.Add(series);
 this.Content = chart;
 
@@ -82,7 +84,7 @@ RadialBarSeries series = new RadialBarSeries();
 series.ItemsSource = (new SalesViewModel()).Data;
 series.XBindingPath = "Product";
 series.YBindingPath = "SalesRate";
-series.Radius = 0.5;
+series.Radius = 0.5; // Set the radius of the radial bars
 
 chart.Series.Add(series);
 this.Content = chart;
@@ -118,7 +120,7 @@ RadialBarSeries series = new RadialBarSeries();
 series.ItemsSource = (new SalesViewModel()).Data;
 series.XBindingPath = "Product";
 series.YBindingPath = "SalesRate";
-series.InnerRadius = 0.1;
+series.InnerRadius = 0.1; // Set the inner radius of the radial bar chart, which determine the center emptiness of the chart 
 
 chart.Series.Add(series);
 this.Content = chart;
@@ -168,7 +170,7 @@ RadialBarSeries series = new RadialBarSeries();
 series.ItemsSource = (new SalesViewModel()).Data;
 series.XBindingPath = "Product";
 series.YBindingPath = "SalesRate";
-series.CapStyle = CapStyle.BothCurve;
+series.CapStyle = CapStyle.BothCurve; // Set the cap style for the series
 
 chart.Series.Add(series);
 this.Content = chart;
@@ -206,7 +208,7 @@ series.ItemsSource = (new SalesViewModel()).Data;
 series.XBindingPath = "Product";
 series.YBindingPath = "SalesRate";
 series.InnerRadius = 0.2;
-series.GapRatio = 0.4;
+series.GapRatio = 0.4; // Set the gap ratio between each radial bar
 
 chart.Series.Add(series);
 this.Content = chart;
@@ -226,8 +228,6 @@ You can use the following properties to customize the appearance of the circular
   * [TrackStrokeWidth](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.RadialBarSeries.html#Syncfusion_Maui_Toolkit_Charts_RadialBarSeries_TrackStrokeWidth) - To customize the border width of the circular bar.
 
   * [TrackFill](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.RadialBarSeries.html#Syncfusion_Maui_Toolkit_Charts_RadialBarSeries_TrackFill) - To customize the circular bar area which behind the radial bar segments.
-
-**TrackFill**
 
 {% tabs %}
 
@@ -252,9 +252,9 @@ RadialBarSeries series = new RadialBarSeries();
 series.ItemsSource = (new SalesViewModel()).Data;
 series.XBindingPath = "Product";
 series.YBindingPath = "SalesRate";
-series.TrackFill = new SolidColorBrush(Color.FromArgb("#FFF7ED"));
-series.TrackStrokeWidth = 1;
-series.TrackStroke = new SolidColorBrush(Color.FromArgb("#FED7AA"));
+series.TrackFill = new SolidColorBrush(Color.FromArgb("#FFF7ED")); // Set the fill color for the track
+series.TrackStrokeWidth = 1; // Set the width of the stroke line for the track
+series.TrackStroke = new SolidColorBrush(Color.FromArgb("#FED7AA")); // Set the stroke color for the track
 
 chart.Series.Add(series);
 this.Content = chart;
@@ -303,12 +303,14 @@ series.XBindingPath = "XValue";
 series.YBindingPath = "YValue";
 series.CapStyle = CapStyle.BothCurve;
 
+// Create a StackLayout to hold additional content in the center of the radial bar chart
 StackLayout layout = new StackLayout();
 Image image = new Image { Source = "person.png" };
 layout.SetBinding(HeightRequestProperty, nameof(RadialBarSeries.CenterHoleSize));
 layout.SetBinding(WidthRequestProperty, nameof(RadialBarSeries.CenterHoleSize));
 layout.Children.Add(image);       
 
+// Assign the layout as the center view of the series, allowing content to be shown inside the radial bar
 series.CenterView = layout;
 chart.Series.Add(series);
 this.Content = chart;

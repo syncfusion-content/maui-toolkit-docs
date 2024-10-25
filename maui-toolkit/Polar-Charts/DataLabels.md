@@ -47,6 +47,7 @@ PolarLineSeries series = new PolarLineSeries()
 
 // Add the series to the chart's Series collection
 chart.Series.Add(series);
+this.Content = chart;
 
 {% endhighlight %}
 
@@ -98,7 +99,7 @@ series.DataLabelSettings = new PolarDataLabelSettings()
 // Add the configured series to the chart's collection of series
 chart.Series.Add(series);
 
-
+this.Content = chart;
 {% endhighlight %}
 
 {% endtabs %}

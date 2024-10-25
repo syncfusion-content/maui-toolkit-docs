@@ -113,7 +113,9 @@ public partial class MainPage : ContentPage
     public MainPage()
     {
         InitializeComponent();
+        // Create a new instance of the SfCircularChart
         SfCircularChart chart = new SfCircularChart();
+        // Set the chart as the content of the page
         this.Content = chart;
     }
 }
@@ -200,6 +202,7 @@ public partial class MainPage : ContentPage
     {
         InitializeComponent();
         SfCircularChart chart = new SfCircularChart();
+        // Set the BindingContext to a new instance of SalesViewModel.
         this.BindingContext = new SalesViewModel();
         this.Content = chart;
     }
@@ -235,10 +238,14 @@ N> To plot the series, the [XBindingPath](https://help.syncfusion.com/cr/maui-to
 SfCircularChart chart = new SfCircularChart();
 SalesViewModel viewModel = new SalesViewModel();
 chart.BindingContext = viewModel;
+
+// Initialize a new PieSeries, which will represent the data in the circular chart.
 PieSeries series = new PieSeries();
 series.ItemsSource = viewModel.Data;
 series.XBindingPath = "Product";
 series.YBindingPath = "SalesRate";
+
+// Add the configured PieSeries to the circular chart's series collection.
 chart.Series.Add(series);
 this.Content = chart;
 {% endhighlight %}
@@ -265,6 +272,8 @@ The title of the chart acts as the title to provide quick information to the use
 {% highlight C# %}
 
 SfCircularChart chart = new SfCircularChart();
+
+// Set the chart title
 chart.Title = new Label()
 {
     Text = "PRODUCT SALES",
@@ -295,7 +304,7 @@ The [ShowDataLabels](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui
 SfCircularChart chart = new SfCircularChart();
 . . .
 PieSeries series = new PieSeries();
-series.ShowDataLabels = true;
+series.ShowDataLabels = true;  // Enable data labels for the series
 chart.Series.Add(series);
 this.Content = chart;
 {% endhighlight %}
@@ -323,6 +332,7 @@ The legend provides information about the data point displayed in the circular c
 
 SfCircularChart chart = new SfCircularChart();
 . . .
+// Initialize and assign a new ChartLegend to the chart's Legend property
 chart.Legend = new ChartLegend();
 this.Content = chart;
 {% endhighlight %}
@@ -349,7 +359,7 @@ Tooltips are used to show information about the segment, when mouse over on it. 
 SfCircularChart chart = new SfCircularChart();
 . . .
 PieSeries series = new PieSeries();
-series.EnableTooltip = true;
+series.EnableTooltip = true; // Enable tooltips for the series
 chart.Series.Add(series);
 this.Content = chart;
 {% endhighlight %}
@@ -400,21 +410,32 @@ public partial class MainPage : ContentPage
 {   
     public MainWindow()
     {
+        // Create an instance of SfCircularChart
         SfCircularChart chart = new SfCircularChart();
+
+        // Set the chart title
         chart.Title = new Label()
         {
             Text = "PRODUCT SALES"
         };
+
+        // Initialize and set the chart legend
         chart.Legend = new ChartLegend();
+
+        // Create a new instance of the SalesViewModel
         SalesViewModel viewModel = new SalesViewModel();
+        // Set the BindingContext of the chart to the view model
         chart.BindingContext = viewModel;
 
+        // Create a new PieSeries for the chart
         PieSeries series = new PieSeries();
         series.ItemsSource = viewModel.Data;
         series.XBindingPath = "Product";
         series.YBindingPath = "SalesRate";
         series.EnableTooltip = true;
         series.ShowDataLabels = true;
+
+        // Add the configured series to the chart
         chart.Series.Add(series);
         this.Content = chart;
     }

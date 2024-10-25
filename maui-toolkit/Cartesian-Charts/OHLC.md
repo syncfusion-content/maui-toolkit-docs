@@ -64,6 +64,7 @@ chart.XAxes.Add(primaryAxis);
 NumericalAxis secondaryAxis = new NumericalAxis();
 chart.YAxes.Add(secondaryAxis);
 
+// Create a HiLoOpenCloseSeries for displaying financial  data
 HiLoOpenCloseSeries series = new HiLoOpenCloseSeries()
 {
     ItemsSource = new ViewModel().StockData,
@@ -74,6 +75,7 @@ HiLoOpenCloseSeries series = new HiLoOpenCloseSeries()
     Close = "Close",
 };
 
+// Add the HiLoOpenCloseSeries to the chart's series collection
 chart.Series.Add(series);
 this.Content = chart;
 
@@ -130,8 +132,8 @@ HiLoOpenCloseSeries series = new HiLoOpenCloseSeries()
     High = "High",
     Low = "Low",
     Close = "Close",
-    BullishFill = Colors.Blue,
-    BearishFill = Colors.Orange,
+    BullishFill = Colors.Blue, // Set color for bullish (rising) candles
+    BearishFill = Colors.Orange, // Set color for bearish (falling) candles
 };
 
 chart.Series.Add(series);

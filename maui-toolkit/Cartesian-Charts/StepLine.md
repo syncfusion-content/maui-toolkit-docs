@@ -52,6 +52,7 @@ chart.XAxes.Add(primaryAxis);
 NumericalAxis secondaryAxis = new NumericalAxis();
 chart.YAxes.Add(secondaryAxis);
 
+// Create a StepLineSeries for the chart
 StepLineSeries series1 = new StepLineSeries()
 {
     ItemsSource = new ViewModel().Data1,
@@ -66,6 +67,7 @@ StepLineSeries series2 = new StepLineSeries()
     YBindingPath = "Value",
 };
 
+// Add the series to the chart's Series collection.
 chart.Series.Add(series1);
 chart.Series.Add(series2);
 this.Content = chart;
@@ -119,6 +121,7 @@ chart.XAxes.Add(primaryAxis);
 NumericalAxis secondaryAxis = new NumericalAxis();
 chart.YAxes.Add(secondaryAxis);
 
+// Create a DoubleCollection for the StrokeDashArray, 
 DoubleCollection doubleCollection = new DoubleCollection();
 doubleCollection.Add(5);
 doubleCollection.Add(2);
@@ -128,7 +131,7 @@ StepLineSeries steplineSeries = new StepLineSeries()
     ItemsSource = new ViewModel().Data;
     XBindingPath = "Date";
     YBindingPath = "Value";
-    StrokeDashArray = doubleCollection;
+    StrokeDashArray = doubleCollection; // Apply custom dash pattern to the series stroke.
 }
 
 chart.Series.Add(steplineSeries);
@@ -174,7 +177,7 @@ The [IsTransposed](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.T
 
 SfCartesianChart chart = new SfCartesianChart();
 
-chart.IsTransposed = True;
+chart.IsTransposed = True; // Set the chart to transpose the axes, swapping the X and Y axes
 
 DatetimeAxis primaryAxis = new DatetimeAxis();
 chart.XAxes.Add(primaryAxis);

@@ -19,7 +19,7 @@ Application culture can be changed by setting `CurrentUICulture.` in `App.xaml.c
 {% tabs %}
 {% highlight c# tabtitle="App.xaml.cs" hl_lines="1 2 9 15" %}
 
-using Syncfusion.Maui.Charts;
+using Syncfusion.Maui.Toolkit.Charts;
 using System.Resources;
 
 public partial class App : Application

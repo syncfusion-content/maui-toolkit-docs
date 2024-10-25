@@ -39,6 +39,7 @@ To enable the data point selection, create an instance of the series [SelectionB
 
 SfCartesianChart chart = new SfCartesianChart();
 . . .
+// Initialize data point selection behavior
 DataPointSelectionBehavior selection = new DataPointSelectionBehavior();
 selection.SelectionBrush=Color.FromArgb("#314A6E");
 
@@ -47,7 +48,7 @@ ColumnSeries series = new ColumnSeries()
     ItemsSource = new ViewModel().Data,
     XBindingPath = "Time",
     YBindingPath = "FootStepsCount",
-    SelectionBehavior = selection
+    SelectionBehavior = selection // Apply the selection behavior to the series
 };
 chart.Series.Add(series);
 this.Content = chart;
@@ -87,8 +88,11 @@ To enable the series selection, create an instance of the cartesian chart [Selec
 
 SfCartesianChart chart = new SfCartesianChart();
 . . .
+// Create a series selection behavior for the chart
 SeriesSelectionBehavior selection = new SeriesSelectionBehavior();
 selection.SelectionBrush=Color.FromArgb("#314A6E");
+
+// Apply the series selection behavior to the chart
 chart.SelectionBehavior = selection;
 
 ColumnSeries series1 = new ColumnSeries()
