@@ -49,6 +49,7 @@ chart.XAxes.Add(xAxis);
 NumericalAxis yAxis = new NumericalAxis();
 chart.YAxes.Add(yAxis);
 
+// Create a histogram series to visualize distribution in the chart
 HistogramSeries histogramSeries = new HistogramSeries
 {
     ItemsSource = new ViewModel().HistogramData, 
@@ -58,6 +59,7 @@ HistogramSeries histogramSeries = new HistogramSeries
     ShowNormalDistributionCurve = true
 };
 
+// Add the configured histogram series to the chart's series collection
 chart.Series.Add(histogramSeries);
 this.Content = chart;
 
@@ -103,6 +105,7 @@ HistogramSeries histogramSeries = new HistogramSeries
     YBindingPath = "Size",
     HistogramInterval = 20,
     ShowNormalDistributionCurve = true,
+    // Customize the appearance of the distribution curve
     CurveStyle = new ChartLineStyle()
     {
         Stroke = Color.Blue,

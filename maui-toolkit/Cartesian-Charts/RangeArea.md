@@ -52,6 +52,7 @@ chart.XAxes.Add(primaryAxis);
 NumericalAxis secondaryAxis = new NumericalAxis();
 chart.YAxes.Add(secondaryAxis);
 
+// Create a RangeAreaSeries for the chart
 RangeAreaSeries series = new RangeAreaSeries()
 {
     ItemsSource = new ViewModel().Data,
@@ -60,6 +61,7 @@ RangeAreaSeries series = new RangeAreaSeries()
     Low="LowValue",
 };
 
+// Add the configured series to the chart
 chart.Series.Add(series);
 this.Content = chart;
 
@@ -98,7 +100,7 @@ RangeAreaSeries series = new RangeAreaSeries()
     XBindingPath = "XValue",
     High = "HighValue",
     Low = "LowValue",
-    ShowMarkers = true,
+    ShowMarkers = true, // Enable markers to visually indicate data points on the chart.
 };
 
 chart.Series.Add(series);
@@ -147,6 +149,7 @@ In order to change the series markers appearance, create an instance of the [Mar
 
 SfCartesianChart chart = new SfCartesianChart();
 ...
+// Configure marker settings for the series
 ChartMarkerSettings chartMarker= new ChartMarkerSettings()
 {
     Type = ShapeType.Diamond,
@@ -164,7 +167,7 @@ RangeAreaSeries series = new RangeAreaSeries()
     High = "HighValue",
     Low = "LowValue",
     ShowMarkers = true,
-    MarkerSettings = chartMarker
+    MarkerSettings = chartMarker // Assign the marker settings
 };
 
 chart.Series.Add(series);

@@ -32,6 +32,8 @@ To define the legend in the chart, initialize the [ChartLegend](https://help.syn
 {% highlight c# %}
 
 SfCartesianChart chart = new SfCartesianChart();
+
+// Assign a new instance of ChartLegend to the chart to display a legend
 chart.Legend = new ChartLegend();
 . . .
 this.Content = chart;
@@ -61,7 +63,7 @@ SfCartesianChart chart = new SfCartesianChart();
 
 chart.Legend = new ChartLegend()
 { 
-    IsVisible = true 
+    IsVisible = true  // Set the legend's visibility
 };
 . . .
 this.Content = chart;
@@ -98,7 +100,7 @@ LineSeries series = new LineSeries()
     ItemsSource = viewModel.Data,
     XBindingPath = "XValue",
     YBindingPath = "YValue",
-    IsVisibleOnLegend = true,
+    IsVisibleOnLegend = true, // Indicate that this series should be visible in the chart's legend
 };
 
 chart.Series.Add(series);
@@ -139,6 +141,7 @@ The [`Label`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolki
 SfCartesianChart chart = new SfCartesianChart();
 . . .
 chart.Legend = new ChartLegend();
+// Define and initialize a new `ChartLegendLabelStyle` to customize the legend label appearance.
 ChartLegendLabelStyle labelStyle = new ChartLegendLabelStyle()
 {
     TextColor = Color.Blue,
@@ -148,7 +151,7 @@ ChartLegendLabelStyle labelStyle = new ChartLegendLabelStyle()
     FontFamily = "PlaywriteAR-Regular"
 };
 
-legend.LabelStyle = labelStyle;
+legend.LabelStyle = labelStyle; // Apply the label style configuration to the chart's legend.
 this.Content = chart;
 {% endhighlight %}
 
@@ -187,7 +190,7 @@ ColumnSeries columnSeries = new ColumnSeries()
     ItemsSource = viewModel.Data,
     XBindingPath = "XValue",
     YBindingPath = "YValue",
-    LegendIcon = ChartLegendIconType.Diamond,
+    LegendIcon = ChartLegendIconType.Diamond, // Set the shape of the legend icon for the series
 };
 
 chart.Series.Add(columnSeries);
@@ -219,7 +222,7 @@ SfCartesianChart chart = new SfCartesianChart();
 . . .
 chart.Legend = new ChartLegend()
 { 
-    Placement = LegendPlacement.Bottom 
+    Placement = LegendPlacement.Bottom // Set the legend placement
 };
 
 this.Content = chart;
@@ -248,7 +251,7 @@ The visibility of series can be controlled by tapping the legend item using the 
 SfCartesianChart chart = new SfCartesianChart();
 chart.Legend = new ChartLegend()
 { 
-    ToggleSeriesVisibility = true 
+    ToggleSeriesVisibility = true // Enable the functionality to show/hide series by tapping on legends
 };
 . . .
 this.Content = chart;
@@ -273,8 +276,10 @@ To set the maximum size request for the legend view, override the [GetMaximumSiz
 
 {% highlight c# %}
 
+// Define a custom legend class that extends ChartLegend
 public class LegendExt : ChartLegend
 {
+    // Override the GetMaximumSizeCoefficient method to customize the legend size
     protected override double GetMaximumSizeCoefficient()
     {
         return 0.7;
@@ -282,7 +287,7 @@ public class LegendExt : ChartLegend
 }
 
 SfCartesianChart chart = new SfCartesianChart();
-chart.Legend = new LegendExt();
+chart.Legend = new LegendExt(); // Set the chart's legend to use the custom LegendExt class
 
 {% endhighlight %}
 
@@ -365,6 +370,7 @@ N> The BindingContext of the template is the corresponding underlying legend ite
 
 SfCartesianChart chart = new SfCartesianChart();
 ChartLegend legend = new ChartLegend();
+// Assign a custom item template to the legend using a `DataTemplate` resource from the chart's resources.
 legend.ItemTemplate = chart.Resources["legendTemplate"] as DataTemplate;
 ...
 chart.Legend = legend;

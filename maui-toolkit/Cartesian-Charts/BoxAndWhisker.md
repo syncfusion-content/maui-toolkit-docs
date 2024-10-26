@@ -48,6 +48,7 @@ chart.XAxes.Add(primaryAxis);
 NumericalAxis secondaryAxis = new NumericalAxis();
 chart.YAxes.Add(secondaryAxis);
 
+// Create a new BoxAndWhiskerSeries to display the data.
 BoxAndWhiskerSeries series = new BoxAndWhiskerSeries()
 {
     ItemsSource = new ViewModel().BoxWhiskerData,
@@ -55,6 +56,7 @@ BoxAndWhiskerSeries series = new BoxAndWhiskerSeries()
     YBindingPath = "Age",
 };
 
+// Add the BoxAndWhiskerSeries to the chart's Series collection.
 chart.Series.Add(series);
 this.Content = chart;
 
@@ -114,7 +116,7 @@ BoxAndWhiskerSeries series = new BoxAndWhiskerSeries()
     ItemsSource = new ViewModel().BoxWhiskerData,
     XBindingPath = "Department",
     YBindingPath = "Age",
-    BoxPlotMode = "Normal"
+    BoxPlotMode = "Normal" // Set the mode of the box plot to "Normal"
 };
 
 chart.Series.Add(series);
@@ -165,7 +167,7 @@ BoxAndWhiskerSeries series = new BoxAndWhiskerSeries()
     ItemsSource = new ViewModel().BoxWhiskerData,
     XBindingPath = "Department",
     YBindingPath = "Age",
-    BoxPlotMode = "Inclusive"
+    BoxPlotMode = "Inclusive" // Set the mode of the box plot to "Inclusive"
 };
 
 chart.Series.Add(series);
@@ -216,7 +218,7 @@ BoxAndWhiskerSeries series = new BoxAndWhiskerSeries()
     ItemsSource = new ViewModel().BoxWhiskerData,
     XBindingPath = "Department",
     YBindingPath = "Age",
-    ShowMedian = true,
+    ShowMedian = true, // Enable the median line display in the box plot
 };
 
 chart.Series.Add(series);
@@ -274,7 +276,7 @@ BoxAndWhiskerSeries series = new BoxAndWhiskerSeries()
     ItemsSource = new ViewModel().BoxWhiskerData,
     XBindingPath = "Department",
     YBindingPath = "Age",
-    ShowOutlier = false
+    ShowOutlier = false // Set whether to show outlier points in the series
 };
 
 chart.Series.Add(series);
@@ -328,7 +330,7 @@ BoxAndWhiskerSeries series = new BoxAndWhiskerSeries()
     ItemsSource = new ViewModel().BoxWhiskerData,
     XBindingPath = "Department",
     YBindingPath = "Age",
-    OutlierShapeType = ShapeType.Cross
+    OutlierShapeType = ShapeType.Cross // Set the shape type for outliers to a cross
 };
 
 chart.Series.Add(series);

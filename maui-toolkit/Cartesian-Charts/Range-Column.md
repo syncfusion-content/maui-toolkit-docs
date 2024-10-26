@@ -51,6 +51,7 @@ chart.XAxes.Add(primaryAxis);
 NumericalAxis secondaryAxis = new NumericalAxis();
 chart.YAxes.Add(secondaryAxis);
 
+// Create a RangeColumnSeries to represent data with high and low values
 RangeColumnSeries series = new RangeColumnSeries()
 {
     ItemsSource = new ViewModel().Data,
@@ -59,6 +60,7 @@ RangeColumnSeries series = new RangeColumnSeries()
     Low = "LowValue",
 };
 
+// Add the series to the chart
 chart.Series.Add(series);
 this.Content = chart;
 
@@ -114,8 +116,8 @@ RangeColumnSeries series = new RangeColumnSeries()
     XBindingPath = "XValue",
     High = "HighValue",
     Low = "LowValue",
-    Spacing = 0.3,
-    Width = 0.7,
+    Spacing = 0.3, // Set the spacing between columns
+    Width = 0.7, // Set the width of the columns
 };
 
 chart.Series.Add(series);

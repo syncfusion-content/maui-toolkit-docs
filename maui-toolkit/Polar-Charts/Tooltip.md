@@ -76,7 +76,8 @@ The [ChartTooltipBehavior](https://help.syncfusion.com/cr/maui-toolkit/Syncfusio
 
 SfPolarChart chart = new SfPolarChart();
 chart.TooltipBehavior = new ChartTooltipBehavior();
-
+. . .
+this.Content = chart;
 {% endhighlight %}
 
 {% endtabs %}

@@ -44,6 +44,7 @@ chart.XAxes.Add(primaryAxis);
 NumericalAxis secondaryAxis = new NumericalAxis();
 chart.YAxes.Add(secondaryAxis);
 
+// Create a FastLineSeries for the chart
 FastLineSeries series = new FastLineSeries()
 {
     ItemsSource = new ViewModel().Data,
@@ -100,6 +101,7 @@ chart.XAxes.Add(primaryAxis);
 NumericalAxis secondaryAxis = new NumericalAxis();
 chart.YAxes.Add(secondaryAxis);
 
+// Create a DoubleCollection to define a custom stroke dash pattern for the series line
 DoubleCollection doubleCollection = new DoubleCollection();
 doubleCollection.Add(5);
 doubleCollection.Add(2);
@@ -109,7 +111,7 @@ FastLineSeries series = new FastLineSeries()
     ItemsSource = new ViewModel().Data,
     XBindingPath = "XValue",
     YBindingPath = "YValue",
-    StrokeDashArray = doubleCollection
+    StrokeDashArray = doubleCollection // Apply the custom stroke dash pattern
 
 };
 
@@ -150,7 +152,7 @@ FastLineSeries series = new FastLineSeries()
     ItemsSource = new ViewModel().Data,
     XBindingPath = "XValue",
     YBindingPath = "YValue",
-    EnableAntiAliasing = true
+    EnableAntiAliasing = true  // Enable anti-aliasing for smoother lines in the chart
 };
 
 chart.Series.Add(series);

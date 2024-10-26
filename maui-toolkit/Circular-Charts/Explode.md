@@ -36,10 +36,9 @@ Exploding a segment is used to pull attention to a specific area of the circular
 
 {% highlight c# %}
 
-// Create a new instance of SfCircularChart
 SfCircularChart chart = new SfCircularChart();
 . . .
-// Create a new DoughnutSeries
+
 DoughnutSeries series = new DoughnutSeries()
 {
     ItemsSource = new ViewModel().Data,
@@ -80,10 +79,8 @@ By setting the [ExplodeAll](https://help.syncfusion.com/cr/maui-toolkit/Syncfusi
 
 {% highlight c# %}
 
-// Create a new instance of SfCircularChart
 SfCircularChart chart = new SfCircularChart();
 . . .
-// Create a new DoughnutSeries
 DoughnutSeries series = new DoughnutSeries()
 {
     ItemsSource = new ViewModel().Data,

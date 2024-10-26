@@ -23,9 +23,8 @@ The following code snippet demonstrates the usage of this method:
 
 SfFunnelChart chart = new SfFunnelChart();
 ...
-chart.SaveAsImage("ChartSample.jpeg"); // Export the chart view as an image in the JPEG format.
-
 this.Content = chart;
+chart.SaveAsImage("ChartSample.jpeg"); // Export the chart view as an image in the JPEG format.
 
 {% endhighlight %}
 
@@ -76,9 +75,8 @@ The following code snippet demonstrates the usage of this method:
 
 SfFunnelChart chart = new SfFunnelChart();
 ...
-await chart.GetStreamAsync(ImageFileFormat.Jpeg); // Get the chart view as a stream in the JPEG format.
-
 this.Content = chart;
+await chart.GetStreamAsync(ImageFileFormat.Jpeg); // Get the chart view as a stream in the JPEG format.
 
 {% endhighlight %}
 

@@ -56,6 +56,7 @@ chart.XAxes.Add(primaryAxis);
 NumericalAxis secondaryAxis = new NumericalAxis();
 chart.YAxes.Add(secondaryAxis);
 
+// Create a scatter series to plot data points
 ScatterSeries scatterSeries = new ScatterSeries()
 {
     ItemsSource = new ViewModel().EnergyProductions,
@@ -65,6 +66,7 @@ ScatterSeries scatterSeries = new ScatterSeries()
     PointHeight = 20
 };
 
+// Create an error bar series to display error ranges
 ErrorBarSeries errorBar = new ErrorBarSeries()
 {
     ItemsSource = new ViewModel().EnergyProductions,
@@ -74,6 +76,7 @@ ErrorBarSeries errorBar = new ErrorBarSeries()
     VerticalErrorValue = 50
 };
 
+// Add the both series to the chart's series collection
 chart.Series.Add(scatterSeries);
 chart.Series.Add(errorBar);
 
@@ -114,7 +117,7 @@ ErrorBarSeries errorBar = new ErrorBarSeries()
     YBindingPath = "Coal",
     HorizontalErrorValue = 0.5,
     VerticalErrorValue = 50,
-    Mode = Both
+    Mode = Both  // Specifies the mode of the error bars
 };
 
 {% endhighlight %}
@@ -238,8 +241,8 @@ ErrorBarSeries errorBar = new ErrorBarSeries()
     YBindingPath = "Coal",
     HorizontalErrorValue = 0.5,
     VerticalErrorValue = 50,
-    HorizontalDirection = ErrorBarDirection.Plus,
-    VerticalDirectyion = ErrorBarDirection.Minus
+    HorizontalDirection = ErrorBarDirection.Plus, // Sets the direction of the horizontal error bars
+    VerticalDirectyion = ErrorBarDirection.Minus // Sets the direction of the vertical error bars
 };
 
 {% endhighlight %}
@@ -277,7 +280,7 @@ ErrorBarSeries errorBar = new ErrorBarSeries()
     YBindingPath = "Coal",
     HorizontalErrorValue = 0.5,
     VerticalErrorValue = 50,
-    Type = ErrorBarType.Fixed,
+    Type = ErrorBarType.Fixed,  // Specify the type of error bars
 };
 
 {% endhighlight %}
@@ -311,7 +314,7 @@ ErrorBarSeries errorBar = new ErrorBarSeries()
     YBindingPath = "Coal",
     HorizontalErrorValue = 0.5,
     VerticalErrorValue = 50,
-    Type = ErrorBarType.Percentage,
+    Type = ErrorBarType.Percentage, // Specify the type of error bars
 };
 
 {% endhighlight %}
@@ -345,7 +348,7 @@ ErrorBarSeries errorBar = new ErrorBarSeries()
     YBindingPath = "Coal",
     HorizontalErrorValue = 0.5,
     VerticalErrorValue = 50,
-    Type = ErrorBarType.StandardError,
+    Type = ErrorBarType.StandardError, // Specify the type of error bars
 };
 
 {% endhighlight %}
@@ -379,7 +382,7 @@ ErrorBarSeries errorBar = new ErrorBarSeries()
     YBindingPath = "Coal",
     HorizontalErrorValue = 0.5,
     VerticalErrorValue = 50,
-    Type = ErrorBarType.StandardDeviation,
+    Type = ErrorBarType.StandardDeviation, // Specify the type of error bars
 };
 
 {% endhighlight %}
@@ -417,7 +420,7 @@ ErrorBarSeries errorBar = new ErrorBarSeries()
     YBindingPath = "Coal",
     HorizontalErrorValue = 0.5,
     VerticalErrorValue = 50,
-    Type = ErrorBarType.Custom,
+    Type = ErrorBarType.Custom, // Specify the type of error bars
     HorizontalErrorPath = "HorizontalErrorValue",
     VerticalErrorPath = "VerticalErrorValue"
 };
@@ -467,12 +470,14 @@ ErrorBarSeries errorBar = new ErrorBarSeries()
     VerticalErrorValue = 50,
 };
 
+// Customize the style for the horizontal error lines
 errorBar.HorizontalLineStyle = new ErrorBarLineStyle()
 {
     Stroke = new SolidColorBrush(Colors.Red),
     StrokeWidth = 2
 };
 
+// Customize the style for the vertical error lines
 errorBar.VerticalLineStyle = new ErrorBarLineStyle()
 {
     Stroke = new SolidColorBrush(Colors.Red),
@@ -521,12 +526,14 @@ ErrorBarSeries errorBar = new ErrorBarSeries()
     VerticalErrorValue = 50,
 };
 
+// Define the style for the horizontal cap lines of the error bars
 errorBar.HorizontalCapLineStyle = new ErrorBarCapLineStyle()
 {
     Stroke = new SolidColorBrush(Colors.Red),
     StrokeWidth = 2
 };
 
+// Define the style for the vertical cap lines of the error bars
 errorBarSeries.VerticalCapLineStyle = new ErrorBarCapLineStyle()
 {
     Stroke = new SolidColorBrush(Colors.Red),

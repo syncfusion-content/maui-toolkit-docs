@@ -54,16 +54,22 @@ Plot bands are classified into [NumericalPlotBand](https://help.syncfusion.com/c
 SfCartesianChart chart = new SfCartesianChart();
 . . .
 NumericalAxis numericalAxis = new NumericalAxis();
+
+// Initialize a collection to hold NumericalPlotBands.
 NumericalPlotBandCollection numericalPlotBandCollection = new NumericalPlotBandCollection();
-NumericalPlotBand plotBand = new NumericalPlotBand
+
+// Create a new instance of NumericalPlotBand to define a highlighted area on the chart.
+NumericalPlotBand plotBand = new NumericalPlotBand()
 {
     Start = 24,
     End = 28,
     Fill = Colors.Orange
 };
 
-numericalPlotBandCollection.Add(plotBand);
-numericalAxis.PlotBands = numericalPlotBandCollection;
+// Add the configured plot band to the plot band collection.
+numericalPlotBandCollection.Add(plotBand); 
+// Assign the defined plot bands to the numerical axis of the chart.
+numericalAxis.PlotBands = numericalPlotBandCollection; 
 chart.YAxes.Add(numericalAxis);
 ...
 this.Content = chart;
@@ -107,16 +113,20 @@ this.Content = chart;
 SfCartesianChart chart = new SfCartesianChart();
 . . .
 DateTimeAxis dateTimeAxis = new DateTimeAxis();
+
+// Create a collection to hold DateTime plot bands
 DateTimePlotBandCollection dateTimePlotBandCollection = new DateTimePlotBandCollection();
-DateTimePlotBand plotBand = new DateTimePlotBand
+
+// Define a plot band with a specific start and end date
+DateTimePlotBand plotBand = new DateTimePlotBand()
 {
     Start = new DateTime(2023, 04, 01),
     End = new DateTime(2023,06,01),
     Fill = Color.Orange
 };
 
-dateTimePlotBandCollection.Add(plotBand);
-dateTimeAxis.PlotBands = dateTimePlotBandCollection;
+dateTimePlotBandCollection.Add(plotBand); // Add the plot band to the plot band collection
+dateTimeAxis.PlotBands = dateTimePlotBandCollection; // Assign the plot bands to the DateTime axis
 chart.XAxes.Add(dateTimeAxis);
 
 NumericalAxis secondaryAxis = new NumericalAxis();
@@ -173,13 +183,13 @@ chart.XAxes.Add(primaryAxis);
 
 NumericalAxis numericalAxis = new NumericalAxis();
 NumericalPlotBandCollection numericalPlotBandCollection = new NumericalPlotBandCollection();
-NumericalPlotBand plotBand = new NumericalPlotBand
+NumericalPlotBand plotBand = new NumericalPlotBand()
 {
     Start = 20,
     End = 22,
-    IsRepeatable = true
-    RepeatUntil = 32
-    RepeatEvery = 4                                  
+    IsRepeatable = true, // Enable repeating the plot band
+    RepeatUntil = 32, // Repeat the plot band until this value
+    RepeatEvery = 4, // Interval at which the plot band repeats                               
     Fill = Colors.LightGray
 };
 
@@ -254,7 +264,7 @@ NumericalPlotBand plotBand1 = new NumericalPlotBand()
 {
     Start = 20,
     End = 22,
-    AssociatedAxisEnd = 2,
+    AssociatedAxisEnd = 2, // Associated axis range end value
     Text = "Low",
     Fill = new SolidColorBrush(Color.FromArgb("#B300E190"))
 };
@@ -263,8 +273,8 @@ NumericalPlotBand plotBand2 = new NumericalPlotBand()
 {
     Start = 25,
     End = 27,
-    AssociatedAxisStart = 4.3,
-    AssociatedAxisEnd = 6.8,
+    AssociatedAxisStart = 4.3, // Associated axis range start value
+    AssociatedAxisEnd = 6.8, // Associated axis range end value
     Text = "Average",
     Fill = new SolidColorBrush(Color.FromArgb("#B3FCD404"))
 };
@@ -273,7 +283,7 @@ NumericalPlotBand plotBand3 = new NumericalPlotBand()
 {
     Start = 30,
     End = 32,
-    AssociatedAxisStart = 9,
+    AssociatedAxisStart = 9, // Associated axis range start value
     Text = "High",
     Fill = new SolidColorBrush(Color.FromArgb("#B3FF4E4E"))
 };
@@ -441,7 +451,7 @@ chart.XAxes.Add(primaryAxis);
 
 NumericalAxis numericalAxis = new NumericalAxis();
 NumericalPlotBandCollection numericalPlotBandCollection = new NumericalPlotBandCollection();
-NumericalPlotBand plotBand = new NumericalPlotBand
+NumericalPlotBand plotBand = new NumericalPlotBand()
 {
     Start = 28,
     Width = 10,
@@ -449,6 +459,7 @@ NumericalPlotBand plotBand = new NumericalPlotBand
     Text = "Plot Band"
 };
 
+// Define the label style for the plot band text
 ChartPlotBandLabelStyle labelStyle = new ChartPlotBandLabelStyle()
 {
     TextColor = Colors.Blue,
@@ -456,7 +467,7 @@ ChartPlotBandLabelStyle labelStyle = new ChartPlotBandLabelStyle()
     FontAttributes = FontAttributes.Bold
 };
 
-plotBand.LabelStyle = labelStyle;
+plotBand.LabelStyle = labelStyle; // Apply the label style to the plot band
 numericalPlotBandCollection.Add(plotBand);
 numericalAxis.PlotBands= numericalPlotBandCollection;
 chart.YAxes.Add(numericalAxis);

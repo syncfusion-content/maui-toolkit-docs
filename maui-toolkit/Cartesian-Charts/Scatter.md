@@ -50,6 +50,7 @@ chart.XAxes.Add(primaryAxis);
 NumericalAxis secondaryAxis = new NumericalAxis();
 chart.YAxes.Add(secondaryAxis);
 
+// Create a new ScatterSeries to plot data points on the chart
 ScatterSeries series = new ScatterSeries()
 {
     ItemsSource = new ViewModel().Data,
@@ -59,6 +60,7 @@ ScatterSeries series = new ScatterSeries()
     PointWidth = 7,
 };
 
+// Add the ScatterSeries to the chart's series collection
 chart.Series.Add(series);
 this.Content = chart;
 

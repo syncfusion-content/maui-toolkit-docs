@@ -37,18 +37,14 @@ Each data label can be represented by the following:
 
 {% highlight c# %}
 
-// Create a new instance of SfCircularChart
 SfCircularChart chart = new SfCircularChart();
 . . .
-// Create a new instance of PieSeries
 PieSeries series = new PieSeries();
 // Enable data labels for this series
 series.ShowDataLabels = true;
 . . .
-// Add the configured series to the chart's Series collection
 chart.Series.Add(series);
 
-// Set the chart as the content of the current page/view
 this.Content = chart;
 
 {% endhighlight %}
@@ -93,10 +89,8 @@ The [LabelPosition](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.
 
 {% highlight c# %}
 
-// Create a new instance of SfCircularChart
 SfCircularChart chart = new SfCircularChart();
 . . .
-// Create a new PieSeries
 PieSeries series = new PieSeries();
 series.ItemsSource = new SalesViewModel().Data;
 series.XBindingPath = "Product";
@@ -109,10 +103,8 @@ series.DataLabelSettings = new CircularDataLabelSettings()
     LabelPosition = ChartDataLabelPosition.Outside, // Position the data labels outside the pie slices
 };
 
-// Add the series to the chart's Series collection
 chart.Series.Add(series);
 
-// Set the chart as the content of the current page/view
 this.Content = chart;
 
 {% endhighlight %}
@@ -164,10 +156,8 @@ When the [SmartLabelAlignment](https://help.syncfusion.com/cr/maui-toolkit/Syncf
 
 {% highlight c# %}
 
-// Create a new instance of SfCircularChart
 SfCircularChart chart = new SfCircularChart();
 . . .
-// Create a new PieSeries
 PieSeries series = new PieSeries();
 series.ItemsSource = new ViewModel().Data;
 series.XBindingPath = "XValue";
@@ -218,10 +208,8 @@ this.Content = chart;
 
 {% highlight c# %}
 
-// Create a new instance of SfCircularChart
 SfCircularChart chart = new SfCircularChart();
 . . .
-// Create a new PieSeries
 PieSeries series = new PieSeries();
 
 series.ShowDataLabels = true;
@@ -267,11 +255,9 @@ The content of the label can be customized using the [LabelContext](https://help
 
 {% highlight c# %}
 
-// Create a new instance of SfCircularChart
 SfCircularChart chart = new SfCircularChart();
 // ... (other chart configurations)
 
-// Create a new PieSeries
 PieSeries series = new PieSeries()
 {
     ItemsSource = new SalesViewModel().Data,
@@ -324,12 +310,10 @@ The [SfCircularChart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Mau
 
 {% highlight c# %}
 
-// Create a new SfCircularChart
 SfCircularChart chart = new SfCircularChart();
 
 // ... (other chart configuration)
 
-// Create a new PieSeries
 PieSeries series = new PieSeries();
 series.ItemsSource = new SalesViewModel().Data;
 series.XBindingPath = "Product";
@@ -420,7 +404,6 @@ The [ConnectorLineSettings](https://help.syncfusion.com/cr/maui-toolkit/Syncfusi
 
 {% highlight c# %}
 
-// Create a new SfCircularChart
 SfCircularChart chart = new SfCircularChart();
 
 // Create a DoubleCollection to store dash array values for the connector line

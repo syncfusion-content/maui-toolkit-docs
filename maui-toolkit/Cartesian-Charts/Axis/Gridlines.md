@@ -12,7 +12,7 @@ keywords: .net maui chart grid lines, .net maui chart grid customization, syncfu
 
 ## Major Grid Lines
 
-By default, major gridlines are automatically added to the [ChartAxis](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Charts.ChartAxis.html) in its defined intervals. The visibility of the major gridlines can be controlled using the [ShowMajorGridLines](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Charts.ChartAxis.html#Syncfusion_Maui_Charts_ChartAxis_ShowMajorGridLines) property. The default value of [ShowMajorGridLines](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Charts.ChartAxis.html#Syncfusion_Maui_Charts_ChartAxis_ShowMajorGridLines) is `true`. 
+By default, major gridlines are automatically added to the [ChartAxis](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxis.html) in its defined intervals. The visibility of the major gridlines can be controlled using the [ShowMajorGridLines](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxis.html#Syncfusion_Maui_Toolkit_Charts_ChartAxis_ShowMajorGridLines) property. The default value of [ShowMajorGridLines](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxis.html#Syncfusion_Maui_Toolkit_Charts_ChartAxis_ShowMajorGridLines) is `true`. 
 
 {% tabs %}
 
@@ -35,7 +35,7 @@ By default, major gridlines are automatically added to the [ChartAxis](https://h
 SfCartesianChart chart = new SfCartesianChart();
 
 NumericalAxis primaryAxis = new NumericalAxis();
-primaryAxis.ShowMajorGridLines = false;
+primaryAxis.ShowMajorGridLines = false; // Disable major grid lines for the primary axis
 chart.XAxes.Add(primaryAxis);
 
 NumericalAxis secondaryAxis = new NumericalAxis();
@@ -50,7 +50,7 @@ this.Content = chart;
 
 ### Customization
 
-The [MajorGridLineStyle](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Charts.ChartAxis.html#Syncfusion_Maui_Charts_ChartAxis_MajorGridLineStyle) property in the chart axis is used to customize the appearance of major gridlines.
+The [MajorGridLineStyle](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxis.html#Syncfusion_Maui_Toolkit_Charts_ChartAxis_MajorGridLineStyle) property in the chart axis is used to customize the appearance of major gridlines.
 
 {% tabs %}
 
@@ -90,13 +90,14 @@ doubleCollection.Add(3);
 doubleCollection.Add(3);
 
 NumericalAxis primaryAxis = new NumericalAxis();
+// Define grid line style with black stroke, width, and dash pattern
 ChartLineStyle gridLineStyle = new ChartLineStyle()
 {
     Stroke = Colors.Black,
     StrokeWidth = 2,
     StrokeDashArray = doubleCollection,
 };
-primaryAxis.MajorGridLineStyle = gridLineStyle;
+primaryAxis.MajorGridLineStyle = gridLineStyle; // Apply the grid line style to the primary axis
 chart.XAxes.Add(primaryAxis);
 
 NumericalAxis secondaryAxis = new NumericalAxis();
@@ -111,7 +112,7 @@ this.Content = chart;
 
 ## Minor Grid Lines
 
-Minor gridlines will be added automatically when the small tick lines is defined and using the [MinorTicksPerInterval](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Charts.RangeAxisBase.html#Syncfusion_Maui_Charts_RangeAxisBase_MinorTicksPerInterval) property of chart axis. The visibility of the minor gridlines can be controlled using the [ShowMinorGridLines](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Charts.RangeAxisBase.html#Syncfusion_Maui_Charts_RangeAxisBase_ShowMinorGridLines) property. The default value of [ShowMinorGridLines](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Charts.RangeAxisBase.html#Syncfusion_Maui_Charts_RangeAxisBase_ShowMinorGridLines) is `true`.
+Minor gridlines will be added automatically when the small tick lines is defined and using the [MinorTicksPerInterval](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.RangeAxisBase.html#Syncfusion_Maui_Toolkit_Charts_RangeAxisBase_MinorTicksPerInterval) property of chart axis. The visibility of the minor gridlines can be controlled using the [ShowMinorGridLines](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.RangeAxisBase.html#Syncfusion_Maui_Toolkit_Charts_RangeAxisBase_ShowMinorGridLines) property. The default value of [ShowMinorGridLines](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.RangeAxisBase.html#Syncfusion_Maui_Toolkit_Charts_RangeAxisBase_ShowMinorGridLines) is `true`.
 
 {% tabs %}
 
@@ -139,6 +140,7 @@ chart.XAxes.Add(primaryAxis);
 
 chart.SecondaryAxis = new NumericalAxis()
 {
+    // Set the number of minor ticks per interval on the axis
     MinorTicksPerInterval = 3,
 };
 chart.YAxes.Add(secondaryAxis);
@@ -150,7 +152,7 @@ this.Content = chart;
 
 ### Customization
 
-The [MinorGridLineStyle](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Charts.RangeAxisBase.html#Syncfusion_Maui_Charts_RangeAxisBase_MinorGridLineStyle) property in the chart axis is used to customize the appearance of minor gridlines.
+The [MinorGridLineStyle](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.RangeAxisBase.html#Syncfusion_Maui_Toolkit_Charts_RangeAxisBase_MinorGridLineStyle) property in the chart axis is used to customize the appearance of minor gridlines.
 
 {% tabs %}
 
@@ -195,12 +197,14 @@ NumericalAxis primaryAxis = new NumericalAxis();
 chart.XAxes.Add(primaryAxis);
 
 NumericalAxis secondaryAxis = new NumericalAxis() { MinorTicksPerInterval = 2 };
+// Define the style for the minor grid lines on the Y-axis.
 ChartLineStyle gridLineStyle = new ChartLineStyle()
 {
     Stroke = Colors.Black,
     StrokeWidth = 0.8,
     StrokeDashArray = doubleCollection,
 };
+// Apply the grid line style to the minor grid lines of the secondary axis.
 secondaryAxis.MinorGridLineStyle = gridLineStyle;
 chart.YAxes.Add(secondaryAxis);
 
