@@ -27,6 +27,11 @@ Syncfusion Toolkit for .NET MAUI is a comprehensive collection of .NET MAUI comp
 * macOS 12 or higher, using Mac Catalyst.
 * Windows 11 and Windows 10 version 1809 or higher, using Windows UI Library (WinUI) 3.
 
+## Supported .NET versions
+
+* .NET 9.0
+* .NET 8.0
+
 ## Support
 
 If you are unable to find the information that you are looking for in the self-help resources mentioned above, please contact us by creating a [support ticket](https://mauitoolkit.syncfusion.com/).
