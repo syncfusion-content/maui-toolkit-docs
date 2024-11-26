@@ -19,7 +19,6 @@ Bottom sheet can be toggled using
 The `Show` method enables programmatically opening the bottom sheet, and the `Close` method enables programmatically closing the bottom sheet.
 
 {% tabs %}
-
 {% highlight xaml %}
 
 <bottomSheet:SfBottonSheet x:Name="bottomSheet">
@@ -29,7 +28,6 @@ The `Show` method enables programmatically opening the bottom sheet, and the `Cl
 </bottomSheet:SfBottonSheet>
 
 {% endhighlight %}	
-	
 {% highlight c# %} 
 
 SfBottonSheet bottomSheet = new SfBottonSheet();
@@ -38,21 +36,23 @@ bottomSheet.BottomSheetContent = grid;
 this.Content = bottomSheet;
 
 {% endhighlight %}
-
 {% endtabs %}
 
-Using `Show` method,
 
+Using `Show` method,
+{% tabs %}
 {% highlight c# %} 
 
 bottomSheet.Show();
 
 {% endhighlight %}
+{% endtabs %}
 
 Using `Close` method,
-
+{% tabs %}
 {% highlight c# %} 
 
 bottomSheet.Close();
 
 {% endhighlight %}
+{% endtabs %}

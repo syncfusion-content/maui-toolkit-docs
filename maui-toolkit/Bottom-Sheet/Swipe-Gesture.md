@@ -15,7 +15,6 @@ The BottomSheet supports the swipe gesture for closing the sheet.
 The `EnableSwiping` property can activate or deactivate the swipe functionality in the `SfBottomSheet`.By default, the EnableSwiping property is set to `true`.
 
 {% tabs %}
-
 {% highlight xaml %}
 
 <bottomSheet:SfBottonSheet x:Name="bottomSheet">
@@ -25,7 +24,6 @@ The `EnableSwiping` property can activate or deactivate the swipe functionality 
 </bottomSheet:SfBottonSheet>
 
 {% endhighlight %}	
-	
 {% highlight c# %} 
 
 SfBottonSheet bottomSheet = new SfBottonSheet();
@@ -34,5 +32,4 @@ bottomSheet.BottomSheetContent = grid;
 this.Content = bottomSheet;
 
 {% endhighlight %}
-
 {% endtabs %}
