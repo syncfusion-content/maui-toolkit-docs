@@ -22,6 +22,12 @@ By preserving similar APIs and functionality, developers can easily update their
 <th>Description</th>
 </tr>
 <tr>
+<td><a href="">SfBottomSheet</a></td>
+<td>xmlns:bottomSheet = "clr-namespace:Syncfusion.Maui.BottomSheet;assembly=Syncfusion.Maui.BottomSheet"</td>
+<td>xmlns:bottomSheet = "clr-namespace:Syncfusion.Maui.Toolkit.BottomSheet;assembly=Syncfusion.Maui.Toolkit"</td>
+<td>Defines the XAML namespace for <a href="">SfBottomSheet</a> control.</td>
+</tr>
+<tr>
 <td><a href="https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Carousel.SfCarousel.html">SfCarousel</a></td>
 <td>xmlns: carousel ="clr-namespace:Syncfusion.Maui.Carousel;assembly=Syncfusion.Maui.Carousel"</td>
 <td>xmlns:carousel="clr-namespace:Syncfusion.Maui.Toolkit.Carousel;assembly=Syncfusion.Maui.Toolkit"</td>
@@ -91,6 +97,12 @@ By preserving similar APIs and functionality, developers can easily update their
 <th>Syncfusion .NET MAUI Namespace</th>
 <th>Syncfusion Toolkit for .NET MAUI Namespace</th>
 <th>Description</th>
+</tr>
+<tr>
+<td><a href="">SfBottomSheet</a></td>
+<td>Syncfusion.Maui.BottomSheet</td>
+<td>Syncfusion.Maui.Toolkit.BottomSheet</td>
+<td>Defines the namespace for <a href="">SfBottomSheet</a> control.</td>
 </tr>
 <tr>
 <td><a href="https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Carousel.SfCarousel.html">SfCarousel</a></td>
