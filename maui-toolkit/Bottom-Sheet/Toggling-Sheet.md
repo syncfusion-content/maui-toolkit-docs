@@ -38,21 +38,18 @@ this.Content = bottomSheet;
 {% endhighlight %}
 {% endtabs %}
 
-
 Using `Show` method,
-{% tabs %}
-{% highlight c# %} 
+
+{% highlight c# %}
 
 bottomSheet.Show();
 
 {% endhighlight %}
-{% endtabs %}
 
 Using `Close` method,
-{% tabs %}
+
 {% highlight c# %} 
 
 bottomSheet.Close();
 
 {% endhighlight %}
-{% endtabs %}
