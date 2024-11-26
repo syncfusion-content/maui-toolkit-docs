@@ -51,7 +51,7 @@ bottomSheet.Show();
 
 Using `Close` method,
 
-{% highlight c# %} 
+{% highlight c# %}
 
 bottomSheet.Close();
 
