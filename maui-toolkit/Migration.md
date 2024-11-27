@@ -7,7 +7,7 @@ control: General
 documentation: ug
 ---
 
-# Migration Overview: Syncfusion .NET MAUI to Syncfusion Toolkit for .NET MAUI
+# Migration Overview: Syncfusion .NET MAUI to Syncfusion Toolkit .NET MAUI
 
 To ensure a smooth migration from **Syncfusion .NET MAUI** to the **Syncfusion Toolkit for .NET MAUI** controls, we have designed the Toolkit components to closely resemble those in Syncfusion .NET MAUI. This approach minimizes the changes required during migration, with the primary difference being the use of toolkit-specific namespaces.
 By preserving similar APIs and functionality, developers can easily update their existing projects to use the new toolkit with minimal code modifications. Refer to the table below for a detailed overview of the necessary changes:
