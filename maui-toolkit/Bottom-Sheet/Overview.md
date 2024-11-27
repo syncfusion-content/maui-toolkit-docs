@@ -1,7 +1,7 @@
 ---
 layout: post
 title: About .NET MAUI Botton Sheet control | Syncfusion
-description: Learn here all about introduction of Syncfusion .NET MAUI Bottom Sheet (SfBottomSheet) control, its elements and more.
+description: Learn here all about introduction of Syncfusion .NET MAUI Bottom Sheet (SfBottomSheet) control.
 platform: maui-toolkit
 control: BottomSheet
 documentation: ug
@@ -9,12 +9,14 @@ documentation: ug
 
 # .NET MAUI Bottom Sheet (SfBottomSheet) Overview
 
-The BottomSheet for .NET MAUI is a simple component to display a sliding sheet in the application. It consists of a content area that slides up from the bottom of the screen to show additional options or information. The Sheet can be opened by programmatically.
+A `BottomSheet` control is a user interface component used in mobile and desktop applications that slides up from the bottom of the screen to display supplementary content or actions, allowing users to interact with additional information without navigating away from the main screen.
 
 ![.NET MAUI Bottom Sheet.](images/overview.png)
 
 ## Key Features
 
-* BottomSheet states – Supports different states: FullExpanded, HalfExpanded, Collapsed, and Hidden.
+* States – Supports different states: FullExpanded, HalfExpanded, Collapsed, and Hidden.
 
-* BottomSheet allowStates – Supports allowed states: FullExpanded, HalfExpanded, and All.
+* Allow states – Supports allowed states: FullExpanded, HalfExpanded, and All.
+
+* Popup Mode – The Bottom Sheet acts as a dialog page when setting `IsModal` to `true`, blocking interaction with the rest of the app’s UI.

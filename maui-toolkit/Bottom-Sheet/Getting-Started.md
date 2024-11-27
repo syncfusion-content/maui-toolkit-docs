@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with .NET MAUI Bottom Sheet control | Syncfusion
-description: Learn here about getting started with Syncfusion .NET MAUI Bottom Sheet (SfBottomSheet) control, its elements and more.
+description: Learn here about getting started with Syncfusion .NET MAUI Bottom Sheet (SfBottomSheet) control.
 platform: maui-toolkit
 control: BottomSheet
 documentation: ug
@@ -101,6 +101,7 @@ public static class MauiProgram
 {% highlight c# %}
 
 using Syncfusion.Maui.Toolkit.BottomSheet;
+
 namespace BottomSheetGettingStarted
 {
     public partial class MainPage : ContentPage
@@ -108,10 +109,12 @@ namespace BottomSheetGettingStarted
         public MainPage()
         {
             InitializeComponent();
+            Grid grid=new Grid();
             var verticalStackLayout = new VerticalStackLayout
             {
                 Padding = new Thickness(20)
             };
+
             var button = new Button
             {
                 Text = "Open Bottom Sheet",
@@ -119,6 +122,7 @@ namespace BottomSheetGettingStarted
                 CornerRadius = 30,
                 VerticalOptions = LayoutOptions.Center
             };
+
             button.Clicked += OpenBottomSheet;
             verticalStackLayout.Children.Add(button);
             SfBottomSheet bottomSheet = new SfBottomSheet
@@ -129,6 +133,7 @@ namespace BottomSheetGettingStarted
                 HorizontalOptions = LayoutOptions.Center,
                 FontSize = 14
             };
+
             bottomSheet.BottomSheetContent = bottomSheetContent;
             grid.Children.Add(verticalStackLayout);
             grid.Children.Add(bottomSheet);
@@ -152,4 +157,4 @@ private void OpenBottomSheet(object sender, EventArgs e)
 
 N> It is mandatory to set `BottomSheetContent` for `SfBottomSheet` on initializing.
 
-![Getting Started Image for BottomSheet](images/getting-started.png)
+![Getting Started Image for BottomSheet](images/gettingStarted.png)
