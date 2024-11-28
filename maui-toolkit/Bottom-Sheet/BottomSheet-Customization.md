@@ -193,7 +193,7 @@ Content = bottomSheet;
 {% endtabs %}
 
 ## Background
-The `Background` property allows you to customize the appearance of the `BottomSheet` by setting its background color.
+The `Background` property allows you to customize the background color of the BottomSheet."
 
 {% tabs %}	
 {% highlight xaml %}
