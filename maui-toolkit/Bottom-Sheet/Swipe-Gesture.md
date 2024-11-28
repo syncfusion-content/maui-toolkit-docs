@@ -85,4 +85,4 @@ private void OpenBottomSheet(object sender, EventArgs e)
 
 {% endhighlight %}
 
-![Swiping Image for BottomSheet](images/Swiping.gif)
+![Swiping Image for BottomSheet](images/swiping.gif)

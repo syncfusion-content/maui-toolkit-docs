@@ -87,4 +87,4 @@ private void OpenBottomSheet(object sender, EventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-![BottomSheetContent Image for BottomSheet](images/BottomSheetContent.png)
+![BottomSheetContent Image for BottomSheet](images/bottomSheetContent.png)
