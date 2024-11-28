@@ -224,8 +224,8 @@ bottomSheet.Show();
 {% endhighlight %}
 {% endtabs %}
 
-# Grabber Customization
-## Show Grabber
+## Grabber Customization
+### Show Grabber
 The `ShowGrabber` property of the BottomSheet enables users to interact with the BottomSheet by dragging it up and down.By default,the ShowGrabber property is set to `true`. 
 
 {% tabs %}	
@@ -250,8 +250,8 @@ bottomSheet.Show();
 {% endhighlight %}
 {% endtabs %}
 
-## Grabber Width and Grabber Height
-The `GrabberWidth` and `GrabberHeight` properties of the BottomSheet specify the width and height of the grabber element. By default, the GrabberWidth property is set to 32, and the GrabberHeight property is set to 4.
+### Grabber Width and Grabber Height
+The `GrabberWidth` and `GrabberHeight` properties of the BottomSheet specify the width and height of the grabber element. By default, the GrabberWidth property is set to `32`, and the GrabberHeight property is set to `4`.
 
 {% tabs %}	
 {% highlight xaml %}
@@ -276,7 +276,7 @@ bottomSheet.Show();
 {% endhighlight %}
 {% endtabs %}
 
-## Grabber CornerRadius
+### Grabber CornerRadius
 The `GrabberCornerRadius` property allows you to customize the corner radius of the grabber element in the BottomSheet. By adjusting this property, you can create rounded corners for the grabber. By default, the GrabberCornerRadius property is set to `12`.
 
 {% tabs %}	
@@ -301,7 +301,7 @@ bottomSheet.Show();
 {% endhighlight %}
 {% endtabs %}
 
-## Grabber Background
+### Grabber Background
 The `GrabberBackground` property of the BottomSheet allows you to customize the color of the grabber in the BottomSheet.
 {% tabs %}	
 {% highlight xaml %}

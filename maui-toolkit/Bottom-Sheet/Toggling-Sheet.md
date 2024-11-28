@@ -84,4 +84,4 @@ private void CloseBottomSheet(object sender, EventArgs e)
 
 {% endhighlight %}
 
-![Toggle methods for BottomSheet](images/toggleMethod.gif)
+![Toggle Gif for BottomSheet](images/toggleMethod.gif)
