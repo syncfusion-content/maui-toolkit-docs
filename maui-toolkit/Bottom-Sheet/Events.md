@@ -28,15 +28,16 @@ This event occurs when the value of the `State` property is changed by swiping t
 {% endhighlight %}
 {% highlight c# %}
 
-public MainPage()
-{
-    InitializeComponent();
-    SfBottomSheet bottomSheet = new SfBottomSheet();
-    Grid grid = new Grid();
-    bottomSheet.BottomSheetContent = grid;
-    this.Content = bottomSheet; 
-    bottomSheet.StateChanged += OnStateChanged;
-}
+SfBottomSheet bottomSheet = new SfBottomSheet();
+Grid grid = new Grid();
+bottomSheet.BottomSheetContent = grid;
+this.Content = bottomSheet; 
+bottomSheet.StateChanged += OnStateChanged;
+
+{% endhighlight %}
+{% endtabs %}
+
+{% highlight c# %}
 
 private void OnStateChanged(object sender, StateChangedEventArgs args)
 {
@@ -44,4 +45,3 @@ private void OnStateChanged(object sender, StateChangedEventArgs args)
 }
 
 {% endhighlight %}
-{% endtabs %}

@@ -17,6 +17,6 @@ A `BottomSheet` control is a user interface component used in mobile and desktop
 
 * States – Supports different states: FullExpanded, HalfExpanded, Collapsed, and Hidden.
 
-* Allow states – Supports allowed states: FullExpanded, HalfExpanded, and All.
+* Allowed states – Supports allowed states: FullExpanded, HalfExpanded, and All.
 
 * Popup Mode – The Bottom Sheet acts as a dialog page when setting `IsModal` to `true`, blocking interaction with the rest of the app’s UI.
