@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Set Bottom Sheet Content in .NET MAUI Bottom Sheet | Syncfusion
-description: Learn here all about Setting Bottom Sheet Content support in Syncfusion .NET MAUI Bottom Sheet (SfBottomSheet) control.
+description: Learn here all about setting bottom sheet content support in Syncfusion .NET MAUI Bottom Sheet (SfBottomSheet) control.
 platform: maui-toolkit
 control: BottomSheet
 documentation: ug
@@ -18,60 +18,49 @@ It can be set using the `BottomSheetContent` property.
 {% tabs %}
 {% highlight xaml %}
 
-<Grid>
-     <VerticalStackLayout Padding="20">
-         <Button Text="Open Bottom Sheet" WidthRequest="180" HeightRequest="40" Clicked="OpenBottomSheet"/>
-     </VerticalStackLayout>
-     <bottomSheet:SfBottomSheet ShowGrabber="True" x:Name="bottomSheet">
-         <bottomSheet:SfBottomSheet.BottomSheetContent>
-             <Grid BackgroundColor="#6750A4">
-                 <Label Text="BottomSheet Content"  TextColor="White" VerticalOptions="Center" HorizontalOptions="Center"/>
-             </Grid>
-         </bottomSheet:SfBottomSheet.BottomSheetContent>
-     </bottomSheet:SfBottomSheet>
-</Grid>
+ <Grid>
+    <VerticalStackLayout Padding="20">
+        <Button Text="Open Bottom Sheet" Clicked="OpenBottomSheet" WidthRequest="180" CornerRadius="30" VerticalOptions="Center"/>
+    </VerticalStackLayout>
+    <bottomSheet:SfBottomSheet x:Name="bottomSheet">
+        <bottomSheet:SfBottomSheet.BottomSheetContent>
+            <Label Text="Bottom Sheet Content" VerticalOptions="Center" HorizontalOptions="Center" FontSize="14" />
+        </bottomSheet:SfBottomSheet.BottomSheetContent>
+    </bottomSheet:SfBottomSheet>
+    </Grid>
 	
 {% endhighlight %}
 {% highlight c# %}
 
+Grid grid=new Grid();
+var verticalStackLayout = new VerticalStackLayout
+{
+    Padding = new Thickness(20)
+};
+
 var button = new Button
 {
+    Text = "Open Bottom Sheet",
     WidthRequest = 180,
-    HeightRequest = 40,
-    Text= "Open Bottom Sheet"
+    CornerRadius = 30,
+    VerticalOptions = LayoutOptions.Center
 };
 
 button.Clicked += OpenBottomSheet;
-var verticalStackLayout = new VerticalStackLayout
+verticalStackLayout.Children.Add(button);
+SfBottomSheet bottomSheet = new SfBottomSheet();
+var bottomSheetContent = new Label
 {
-    Padding = new Thickness(20),
-    Children = { button }
-};
-
-bottomSheet = new SfBottomSheet
-{
-    ShowGrabber = true,
-};
-
-var bottomSheetContent = new Grid
-{
-    BackgroundColor = Color.FromArgb("#6750A4")
-};
-
-var label = new Label
-{
-    Text = "BottomSheet Content",
-    TextColor = Colors.White,
+    Text = "Bottom Sheet Content",
     VerticalOptions = LayoutOptions.Center,
-    HorizontalOptions = LayoutOptions.Center
+    HorizontalOptions = LayoutOptions.Center,
+    FontSize = 14
 };
 
-bottomSheetContent.Children.Add(label);
 bottomSheet.BottomSheetContent = bottomSheetContent;
-Grid grid = new Grid();
 grid.Children.Add(verticalStackLayout);
 grid.Children.Add(bottomSheet);
-Content = grid;
+this.Content = grid;
   
 {% endhighlight %}
 {% endtabs %}

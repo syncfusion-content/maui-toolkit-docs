@@ -31,13 +31,12 @@ bottomSheet.IsModal = true;
 Grid grid = new Grid();
 bottomSheet.BottomSheetContent = grid;
 Content = bottomSheet;
-bottomSheet.Show();
 
 {% endhighlight %}
 {% endtabs %}
 
 ## State
-The state of the BottomSheet can be controlled using the `State` property. The default value is `Hidden`. This property accepts the following values:
+The state of the `BottomSheet` can be controlled using the `State` property. The default value is `Hidden`. This property accepts the following values:
 
 * **FullExpanded** - The sheet will expand to cover the full screen.
 * **HalfExpanded** - The sheet will expand to cover half of the screen.
@@ -63,22 +62,21 @@ bottomSheet.State = BottomSheetState.FullExpanded;
 Grid grid = new Grid();
 bottomSheet.BottomSheetContent = grid;
 Content = bottomSheet;
-bottomSheet.Show();
 
 {% endhighlight %}
 {% endtabs %}
 
 ## Allowed State
-The allowed states of the BottomSheet can be controlled using the `AllowedState` property. The default value is `All`, allowing all states. This property accepts the following values:
+The states of the `BottomSheet` can be controlled using the `AllowedState` property. The default value is `All`, allowing all states. This property accepts the following values:
 
 *   **FullExpanded** - The sheet can expand to cover the full screen.
 *   **HalfExpanded** - The sheet can expand to half of the screen height.
-*   **All** - The sheet can transition between all available states (FullExpanded, HalfExpanded, Collapsed and Hidden).
+*   **All** - The sheet can transition between all available states (FullExpanded, HalfExpanded, Collapsed, and Hidden).
 
 {% tabs %}	
 {% highlight xaml %}
 
-<bottomSheet:SfBottonSheet x:Name="bottomSheet" AllowdState="HalfExpanded" >
+<bottomSheet:SfBottonSheet x:Name="bottomSheet" AllowedState="HalfExpanded" >
     <bottomSheet:SfBottonSheet.BottomSheetContent>
         <Grid/>
     </bottomSheet:SfBottonSheet.BottomSheetContent>
@@ -92,14 +90,13 @@ bottomSheet.AllowedState = BottomSheetAllowedState.HalfExpanded;
 Grid grid = new Grid();
 bottomSheet.BottomSheetContent = grid;
 Content = bottomSheet;
-bottomSheet.Show();
 
 {% endhighlight %}
 {% endtabs %}
 
 ## HalfExpandedRatio
 
-The `HalfExpandedRatio` property in the BottomSheet sets the height of the BottomSheet when it is in the `HalfExpanded` state. The default value is `0.5`. You can set a value between 0.1 and 0.9 to adjust the height. This property works only when the sheet's `State` is `HalfExpanded`.
+The `HalfExpandedRatio` property adjusts the height of the `BottomSheet` when it is in the `HalfExpanded` state. The default value is `0.5`. You can set a value between 0.1 and 0.9 to adjust the height. This property works only when the sheet's `State` is `HalfExpanded`.
 
 {% tabs %}	
 {% highlight xaml %}
@@ -119,7 +116,6 @@ bottomSheet.State = BottomSheetState.HalfExpanded;
 Grid grid = new Grid();
 bottomSheet.BottomSheetContent = grid;
 Content = bottomSheet;
-bottomSheet.Show();
 
 {% endhighlight %}
 {% endtabs %}
@@ -144,7 +140,6 @@ bottomSheet.CornerRadius = new CornerRadius(15, 15, 0, 0);
 Grid grid = new Grid();
 bottomSheet.BottomSheetContent = grid;
 Content = bottomSheet;
-bottomSheet.Show();
 
 {% endhighlight %}
 {% endtabs %}
@@ -169,13 +164,12 @@ bottomSheet.Margin = new Thickness(10);
 Grid grid = new Grid();
 bottomSheet.BottomSheetContent = grid;
 Content = bottomSheet;
-bottomSheet.Show();
 
 {% endhighlight %}
 {% endtabs %}
 
 ## Content Padding
-The `ContentPadding` property of the BottomSheet adds space around the content creating a gap between the bottom sheet content and the edges.
+The `ContentPadding` property of the `BottomSheet` adds space around the content creating a gap between the bottom sheet content and the edges.
 
 {% tabs %}	
 {% highlight xaml %}
@@ -194,13 +188,12 @@ bottomSheet.ContentPadding = new Thickness(15);
 Grid grid = new Grid();
 bottomSheet.BottomSheetContent = grid;
 Content = bottomSheet;
-bottomSheet.Show();
 
 {% endhighlight %}
 {% endtabs %}
 
 ## Background
-The `Background` property allows you to add Background color to the Bottom sheet.
+The `Background` property allows you to customize the appearance of the `BottomSheet` by setting its background color.
 
 {% tabs %}	
 {% highlight xaml %}
@@ -219,14 +212,13 @@ bottomSheet.Background = new SolidColorBrush(Colors.MediumPurple);
 Grid grid = new Grid();
 bottomSheet.BottomSheetContent = grid;
 Content = bottomSheet;
-bottomSheet.Show();
 
 {% endhighlight %}
 {% endtabs %}
 
 ## Grabber Customization
 ### Show Grabber
-The `ShowGrabber` property of the BottomSheet enables users to interact with the BottomSheet by dragging it up and down.By default,the ShowGrabber property is set to `true`. 
+The `ShowGrabber` property enables users to interact with the `BottomSheet` by dragging it up and down.By default,the ShowGrabber property is set to `true`. 
 
 {% tabs %}	
 {% highlight xaml %}
@@ -245,13 +237,12 @@ bottomSheet.ShowGrabber = true;
 Grid grid = new Grid();
 bottomSheet.BottomSheetContent = grid;
 Content = bottomSheet;
-bottomSheet.Show();
 
 {% endhighlight %}
 {% endtabs %}
 
 ### Grabber Width and Grabber Height
-The `GrabberWidth` and `GrabberHeight` properties of the BottomSheet specify the width and height of the grabber element. By default, the GrabberWidth property is set to `32`, and the GrabberHeight property is set to `4`.
+The `GrabberWidth` and `GrabberHeight` properties of the `BottomSheet` specify the width and height of the grabber element. By default, the GrabberWidth property is set to `32`, and the GrabberHeight property is set to `4`.
 
 {% tabs %}	
 {% highlight xaml %}
@@ -271,13 +262,12 @@ bottomSheet.GrabberHeight = 6;
 Grid grid = new Grid();
 bottomSheet.BottomSheetContent = grid;
 Content = bottomSheet;
-bottomSheet.Show();
 
 {% endhighlight %}
 {% endtabs %}
 
 ### Grabber CornerRadius
-The `GrabberCornerRadius` property allows you to customize the corner radius of the grabber element in the BottomSheet. By adjusting this property, you can create rounded corners for the grabber. By default, the GrabberCornerRadius property is set to `12`.
+The `GrabberCornerRadius` property allows you to customize the corner radius of the grabber element in the `BottomSheet`. By adjusting this property, you can create rounded corners for the grabber.
 
 {% tabs %}	
 {% highlight xaml %}
@@ -296,13 +286,12 @@ bottomSheet.GrabberCornerRadius = new CornerRadius(24);
 Grid grid = new Grid();
 bottomSheet.BottomSheetContent = grid;
 Content = bottomSheet;
-bottomSheet.Show();
 
 {% endhighlight %}
 {% endtabs %}
 
 ### Grabber Background
-The `GrabberBackground` property of the BottomSheet allows you to customize the color of the grabber in the BottomSheet.
+The `GrabberBackground` property allows you to customize the background color of the grabber in the `BottomSheet`.
 {% tabs %}	
 {% highlight xaml %}
 
@@ -320,7 +309,6 @@ bottomSheet.GrabberBackground = new SolidColorBrush(Colors.Red);
 Grid grid = new Grid();
 bottomSheet.BottomSheetContent = grid;
 Content = bottomSheet;
-bottomSheet.Show();
 
 {% endhighlight %}
 {% endtabs %}

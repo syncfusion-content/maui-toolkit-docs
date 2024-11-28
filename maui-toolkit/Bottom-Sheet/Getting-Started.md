@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started with .NET MAUI Bottom Sheet control | Syncfusion
+title: Getting started with .NET MAUI Bottom Sheet control | Syncfusion
 description: Learn here about getting started with Syncfusion .NET MAUI Bottom Sheet (SfBottomSheet) control in your cross-platform applications.
 platform: maui-toolkit
 control: BottomSheet
@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started with .NET MAUI Bottom Sheet
 
-This section provides a quick overview of how to get started with the `Bottom Sheet` for .NET MAUI and a walk-through to configure the .NET MAUI Bottom Sheet in a real-time scenario. Follow the steps below to add .NET MAUI Bottom Sheet to your project.
+This section provides a quick overview of how to get started with the `BottomSheet` for .NET MAUI and a walk-through to configure the .NET MAUI Bottom Sheet in a real-time scenario. Follow the steps below to add .NET MAUI Bottom Sheet to your project.
 
 ## Prerequisites
 
@@ -125,7 +125,7 @@ namespace BottomSheetGettingStarted
 
             button.Clicked += OpenBottomSheet;
             verticalStackLayout.Children.Add(button);
-            SfBottomSheet bottomSheet = new SfBottomSheet
+            SfBottomSheet bottomSheet = new SfBottomSheet();
             var bottomSheetContent = new Label
             {
                 Text = "Bottom Sheet Content",

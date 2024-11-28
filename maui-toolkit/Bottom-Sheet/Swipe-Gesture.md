@@ -12,66 +12,55 @@ The BottomSheet supports the swiping for expanding the sheet.
 
 ## Enable Swiping
 
-The `EnableSwiping` property allows you to enable or disable swipe functionality in the SfBottomSheet. By default, the EnableSwiping property is set to `true`.
+The `EnableSwiping` property allows you to enable or disable swipe functionality in the `BottomSheet`. By default, the EnableSwiping property is set to `true`.
 
 {% tabs %}	
 {% highlight xaml %}
 
-<Grid>
-     <VerticalStackLayout Padding="20">
-         <Button Text="Open Bottom Sheet" WidthRequest="180" HeightRequest="40" Clicked="OpenBottomSheet"/>
-     </VerticalStackLayout>
-     <bottomSheet:SfBottomSheet x:Name="bottomSheet" ShowGrabber="True" EnableSwiping="True">
-         <bottomSheet:SfBottomSheet.BottomSheetContent>
-             <Grid BackgroundColor="#6750A4">
-                 <Label Text="BottomSheet Content"  TextColor="White" VerticalOptions="Center" HorizontalOptions="Center"/>
-             </Grid>
-         </bottomSheet:SfBottomSheet.BottomSheetContent>
-     </bottomSheet:SfBottomSheet>
-</Grid>
+ <Grid>
+    <VerticalStackLayout Padding="20">
+        <Button Text="Open Bottom Sheet" Clicked="OpenBottomSheet" WidthRequest="180" CornerRadius="30" VerticalOptions="Center"/>
+    </VerticalStackLayout>
+    <bottomSheet:SfBottomSheet x:Name="bottomSheet" EnableSwiping="True" >
+        <bottomSheet:SfBottomSheet.BottomSheetContent>
+            <Label Text="Bottom Sheet Content" VerticalOptions="Center" HorizontalOptions="Center" FontSize="14" />
+        </bottomSheet:SfBottomSheet.BottomSheetContent>
+    </bottomSheet:SfBottomSheet>
+    </Grid>
 	
 {% endhighlight %}
 {% highlight c# %}
 
+Grid grid=new Grid();
+var verticalStackLayout = new VerticalStackLayout
+{
+    Padding = new Thickness(20)
+};
+
 var button = new Button
 {
+    Text = "Open Bottom Sheet",
     WidthRequest = 180,
-    HeightRequest = 40,
-    Text= "Open Bottom Sheet"
+    CornerRadius = 30,
+    VerticalOptions = LayoutOptions.Center
 };
 
 button.Clicked += OpenBottomSheet;
-var verticalStackLayout = new VerticalStackLayout
+verticalStackLayout.Children.Add(button);
+SfBottomSheet bottomSheet = new SfBottomSheet();
+var bottomSheetContent = new Label
 {
-    Padding = new Thickness(20),
-    Children = { button }
-};
-
-bottomSheet = new SfBottomSheet
-{
-    ShowGrabber = true,
-};
-
-var bottomSheetContent = new Grid
-{
-    BackgroundColor = Color.FromArgb("#6750A4")
-};
-
-var label = new Label
-{
-    Text = "BottomSheet Content",
-    TextColor = Colors.White,
+    Text = "Bottom Sheet Content",
     VerticalOptions = LayoutOptions.Center,
-    HorizontalOptions = LayoutOptions.Center
+    HorizontalOptions = LayoutOptions.Center,
+    FontSize = 14
 };
 
-bottomSheetContent.Children.Add(label);
-bottomSheet.BottomSheetContent = bottomSheetContent;
 bottomSheet.EnableSwiping = true;
-Grid grid = new Grid();
+bottomSheet.BottomSheetContent = bottomSheetContent;
 grid.Children.Add(verticalStackLayout);
 grid.Children.Add(bottomSheet);
-Content = grid;
+this.Content = grid;
 
 {% endhighlight %}
 {% endtabs %}
