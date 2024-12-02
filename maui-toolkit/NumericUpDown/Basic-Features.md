@@ -212,7 +212,7 @@ sfNumericUpDown.Stroke = Colors.Red;
 {% endhighlight %}
 {% endtabs %}
 
-You can find the complete getting started sample of .NET MAUI from this [link.](https://github.com/SyncfusionExamples/maui-NumericUpDown-samples)
+You can find the complete getting started sample of .NET MAUI from this [link.]()
 
 ## Border visibility
 
