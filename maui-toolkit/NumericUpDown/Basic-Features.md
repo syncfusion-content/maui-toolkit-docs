@@ -16,7 +16,7 @@ You can prompt the user with any information using the [Placeholder]() property.
 {% tabs %}
 {% highlight xaml %}
 
-<editors:SfNumberBox HorizontalOptions="Center" 
+<editors:SfNumericUpDown HorizontalOptions="Center" 
                      VerticalOptions="Center" 
                      Placeholder="Enter input here..." />
 
