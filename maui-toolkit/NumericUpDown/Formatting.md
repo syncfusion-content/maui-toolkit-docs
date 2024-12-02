@@ -1,37 +1,37 @@
 ---
 layout: post
-title: Change Number Format in .NET MAUI NumericEntry | Syncfusion
-description: Learn here about changing the number format of Syncfusion .NET MAUI NumericEntry (SfNumericEntry) control and more.
+title: Change Number Format in .NET MAUI NumericUpDown | Syncfusion
+description: Learn here about changing the number format of Syncfusion .NET MAUI NumericUpDown (SfNumericUpDown) control and more.
 platform: MAUI
-control: SfNumericEntry
+control: SfNumericUpDown
 documentation: ug
 ---
 
-# Value Formatting with .NET MAUI NumericEntry
+# Value Formatting with .NET MAUI NumericUpDown
 
-This section explains how to change the value format of the [NumericEntry]() control using the `CustomFormat` properties.
+This section explains how to change the value format of the [NumericUpDown]() control using the `CustomFormat` properties.
 
 ## Currency, percentage and decimal format
 
-The value of the `NumericEntry` control can be formatted using the [CustomFormat]() property. By default, the value is formatted based on the current culture's decimal format. The default value of the `CustomFormat` properties is **null**.
+The value of the `NumericUpDown` control can be formatted using the [CustomFormat]() property. By default, the value is formatted based on the current culture's decimal format. The default value of the `CustomFormat` properties is **null**.
 
 The following example shows how to set the `CurrencyFormatter`, `DecimalFormatter`, and `PercentFormatter` for the `NumberFormatter` property. 
 
 Using the **N**, **C**, and **P** format values, we can apply numeric, currency, and percent custom formats in the `CustomFormat` property. 
 
-N> You can apply various custom formats available in  [this page](), which are supported for the `double` type.
+N> You can apply various custom formats available in  [this page](https://docs.microsoft.com/en-us/dotnet/standard/base-types/standard-numeric-format-strings), which are supported for the `double` type.
 
 {% tabs %}
 {% highlight xaml %}
 
 // Format stock price in currency.
-<editors:SfNumericEntry CustomFormat="C2"/>
+<editors:SfNumericUpDown CustomFormat="C2"/>
 
 // Format product discount in percent.
-<editors:SfNumericEntry CustomFormat="P2"/>
+<editors:SfNumericUpDown CustomFormat="P2"/>
 
 // Format worked hours in decimal.
-<editors:SfNumericEntry CustomFormat="N2"/>
+<editors:SfNumericUpDown CustomFormat="N2"/>
 
 {% endhighlight %}
 {% highlight c# %}
@@ -48,11 +48,11 @@ hoursWorked.CustomFormat = "N2";
 {% endhighlight %}
 {% endtabs %}
 
-![.NET MAUI NumericEntry customize format by NumberFormatter](Formatting_images/maui-numeric-entry-numberformatter.png)
+![.NET MAUI NumericUpDown customize format by NumberFormatter](Formatting_images/maui-numeric-entry-numberformatter.png)
 
 ## Format the integer digits
 
-You can change the decimal digits of the value in the `NumericEntry` control using the [CustomFormat]() properties. 
+You can change the decimal digits of the value in the `NumericUpDown` control using the [CustomFormat]() properties. 
 
 For the `CustomFormat` property, use the **0** format specifier to set the minimum number of decimal digits.  
 
@@ -62,13 +62,13 @@ N> **0** (Zero placeholder) replaces the zero with the corresponding digit prese
 {% highlight xaml %}
 
 // Format stock price in currency.
-<editors:SfNumericEntry CustomFormat = "$00000.00"/>
+<editors:SfNumericUpDown CustomFormat = "$00000.00"/>
 
 // Format product discount in percentage.
-<editors:SfNumericEntry CustomFormat = "00000.00%"/>
+<editors:SfNumericUpDown CustomFormat = "00000.00%"/>
 
 // Format worked hours in decimal.
-<editors:SfNumericEntry CustomFormat = "00000.00"/>
+<editors:SfNumericUpDown CustomFormat = "00000.00"/>
 
 {% endhighlight %}
 {% highlight c# %}
@@ -85,11 +85,11 @@ hoursWorked.CustomFormat = "00000.00";
 {% endhighlight %}
 {% endtabs %}
 
-![.NET MAUI NumericEntry customize decimal digits](Formatting_images/maui-numeric-entry-change-decimal-digits.png)
+![.NET MAUI NumericUpDown customize decimal digits](Formatting_images/maui-numeric-entry-change-decimal-digits.png)
 
 ## Format the fractional digits
 
-You can change the fractional digits of the value in the `NumericEntry` control using the [CustomFormat]() Properties.
+You can change the fractional digits of the value in the `NumericUpDown` control using the [CustomFormat]() Properties.
 
 For the `CustomFormat` property, use the **0** format specifier to set the minimum number of fractional digits.  
 
@@ -98,9 +98,9 @@ N> **0** (Zero placeholder) replaces the zero with the corresponding digit in th
 {% tabs %}
 {% highlight xaml %}
 
-<editors:SfNumericEntry CustomFormat = "$000.000"/>
-<editors:SfNumericEntry CustomFormat = "00.000%"/>
-<editors:SfNumericEntry CustomFormat = "00.000"/>
+<editors:SfNumericUpDown CustomFormat = "$000.000"/>
+<editors:SfNumericUpDown CustomFormat = "00.000%"/>
+<editors:SfNumericUpDown CustomFormat = "00.000"/>
 
 {% endhighlight %}
 {% highlight c# %}
@@ -112,11 +112,11 @@ hoursWorked.CustomFormat = "00.000";
 {% endhighlight %}
 {% endtabs %}
 
-![.NET MAUI NumericEntry customize fractional digits](Formatting_images/maui-numeric-entry-change-fractional-digits.png)
+![.NET MAUI NumericUpDown customize fractional digits](Formatting_images/maui-numeric-entry-change-fractional-digits.png)
 
 ## Apply custom format
 
-You can apply custom formats to the `NumericEntry` control using the **0** and **#** format specifiers. Using these format specifiers, you can set the minimum and the maximum number of fractional digits in the [CustomFormat](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Inputs.SfNumericEntry.html#Syncfusion_Maui_Inputs_SfNumericEntry_CustomFormat) property.
+You can apply custom formats to the `NumericUpDown` control using the **0** and **#** format specifiers. Using these format specifiers, you can set the minimum and the maximum number of fractional digits in the [CustomFormat]() property.
 
    * **0** (Zero placeholder) replaces the zero with the corresponding digit present in the value; otherwise, zero appends with the leftmost position of the value. 
 
@@ -127,9 +127,9 @@ In the following example, the value of the `CustomFormat` property is **#.00##**
 {% tabs %}
 {% highlight xaml %}
 
-<editors:SfNumericEntry CustomFormat = "$00.00##"/>
-<editors:SfNumericEntry CustomFormat = "00.00##%"/>
-<editors:SfNumericEntry CustomFormat = "00.00##"/>
+<editors:SfNumericUpDown CustomFormat = "$00.00##"/>
+<editors:SfNumericUpDown CustomFormat = "00.00##%"/>
+<editors:SfNumericUpDown CustomFormat = "00.00##"/>
 
 {% endhighlight %}
 {% highlight c# %}
@@ -141,7 +141,7 @@ hoursWorked.CustomFormat = "00.00##";
 {% endhighlight %}
 {% endtabs %}
 
-![.NET MAUI NumericEntry customize fractional digits](Formatting_images/maui-numeric-entry-apply-customformat.png)
+![.NET MAUI NumericUpDown customize fractional digits](Formatting_images/maui-numeric-entry-apply-customformat.png)
 
 
 ## Culture support
@@ -152,65 +152,65 @@ The culture support allows the control to be configured for a specific language.
 {% highlight c# %}
 
 CultureInfo culture = new CultureInfo("en-US");
-NumericEntry.Culture = culture;
+NumericUpDown.Culture = culture;
          
 {% endhighlight %}
 {% endtabs %}
 
-![.NET MAUI NumericEntry culture based custom format](Formatting_images/maui-numeric-entry-culture_support.png)
+![.NET MAUI NumericUpDown culture based custom format](Formatting_images/maui-numeric-entry-culture_support.png)
 
 ## Customize percentage display
 
-When the [SfNumericEntry]() is in percentage format, the value can be displayed in two ways as follows:
+When the [SfNumericUpDown]() is in percentage format, the value can be displayed in two ways as follows:
 
 `Value`: Displays the actual value with percentage symbol.
 
 {% tabs %}
 {% highlight xaml %}
 
-<editors:SfNumericEntry x:Name="numericEntry" 
+<editors:SfNumericUpDown x:Name="NumericUpDown" 
                         CustomFormat="p" 
                         Value="1000"  
                         PercentDisplayMode="Value">
-</editors:SfNumericEntry>
+</editors:SfNumericUpDown>
 
 {% endhighlight %}
 {% highlight C# %}
 
-SfNumericEntry sfNumericEntry= new SfNumericEntry();
-SfNumericEntry sfNumericEntry = new SfNumericEntry();
-sfNumericEntry.Value = 1000;
-sfNumericEntry.CustomFormat = "p";
-sfNumericEntry.PercentDisplayMode = PercentDisplayMode.Value;
+SfNumericUpDown sfNumericUpDown= new SfNumericUpDown();
+SfNumericUpDown sfNumericUpDown = new SfNumericUpDown();
+sfNumericUpDown.Value = 1000;
+sfNumericUpDown.CustomFormat = "p";
+sfNumericUpDown.PercentDisplayMode = PercentDisplayMode.Value;
 
 {% endhighlight %}
 {% endtabs %}
 
-![.NET MAUI NumericEntry PercentDisplayMode](GettingStarted_images/percentdisplaymode_value.png)
+![.NET MAUI NumericUpDown PercentDisplayMode](GettingStarted_images/percentdisplaymode_value.png)
 
 `Compute`: Displays the computed value with percentage symbol.
 
 {% tabs %}
 {% highlight xaml %}
 
-<editors:SfNumericEntry x:Name="numericEntry" 
+<editors:SfNumericUpDown x:Name="NumericUpDown" 
                         CustomFormat="p" 
                         Value="1000"  
                         PercentDisplayMode="Value">
-</editors:SfNumericEntry>
+</editors:SfNumericUpDown>
 
 {% endhighlight %}
 {% highlight C# %}
 
-SfNumericEntry sfNumericEntry= new SfNumericEntry();
-sfNumericEntry.Value = 1000;
-sfNumericEntry.CustomFormat = "p";
-sfNumericEntry.PercentDisplayMode = PercentDisplayMode.Compute;
+SfNumericUpDown sfNumericUpDown= new SfNumericUpDown();
+sfNumericUpDown.Value = 1000;
+sfNumericUpDown.CustomFormat = "p";
+sfNumericUpDown.PercentDisplayMode = PercentDisplayMode.Compute;
 
 {% endhighlight %}
 {% endtabs %}
 
-![.NET MAUI NumericEntry PercentDisplayMode](GettingStarted_images/percentdisplaymode_compute.png)
+![.NET MAUI NumericUpDown PercentDisplayMode](GettingStarted_images/percentdisplaymode_compute.png)
 
 N> Default value of PercentDisplayMode is `Compute`.
 
@@ -223,19 +223,19 @@ N> The `MaximumNumberDecimalDigits` property can only be set to a positive value
 {% tabs %}
 {% highlight xaml %}
 
-<editors:SfNumericEntry x:Name="numericEntry" 
+<editors:SfNumericUpDown x:Name="NumericUpDown" 
                         Value="1000.23232"  
                         MaximumNumberDecimalDigits="3">
-</editors:SfNumericEntry>
+</editors:SfNumericUpDown>
 
 {% endhighlight %}
 {% highlight C# %}
 
-SfNumericEntry sfNumericEntry= new SfNumericEntry();
-sfNumericEntry.Value = 1000.23232;
-sfNumericEntry.MaximumNumberDecimalDigits = 3;
+SfNumericUpDown sfNumericUpDown= new SfNumericUpDown();
+sfNumericUpDown.Value = 1000.23232;
+sfNumericUpDown.MaximumNumberDecimalDigits = 3;
 
 {% endhighlight %}
 {% endtabs %}
 
-![.NET MAUI NumericEntry MaximumNumberDecimalDigits](GettingStarted_images/maximumnumberdecimaldigits.png)
+![.NET MAUI NumericUpDown MaximumNumberDecimalDigits](GettingStarted_images/maximumnumberdecimaldigits.png)
