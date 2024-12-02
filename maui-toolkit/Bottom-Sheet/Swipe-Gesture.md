@@ -8,7 +8,7 @@ documentation: ug
 ---
 # Swiping in .NET MAUI Bottom Sheet (SfBottomSheet)
 
-The BottomSheet supports the swiping for expanding the sheet. 
+The `BottomSheet` supports the swiping for expanding the sheet. 
 
 ## Enable Swiping
 

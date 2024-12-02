@@ -94,6 +94,32 @@ Content = bottomSheet;
 {% endhighlight %}
 {% endtabs %}
 
+## FullExpandedRatio
+
+The `FullExpandedRatio` property adjusts the height of the `BottomSheet` when it is in the `FullExpanded` state. The default value is `1`. You can set a value between 0.1 and 1 to adjust the height. This property works only when the sheet's `State` is `FullExpanded`.
+
+{% tabs %}	
+{% highlight xaml %}
+
+<bottomSheet:SfBottomSheet x:Name="bottomSheet" FullExpandedRatio="0.8" State="FullExpanded">
+ <bottomSheet:SfBottomSheet.BottomSheetContent>
+     <Grid/>
+ </bottomSheet:SfBottomSheet.BottomSheetContent>
+</bottomSheet:SfBottomSheet>
+	
+{% endhighlight %}
+{% highlight c# %}
+
+SfBottomSheet bottomSheet = new SfBottomSheet();
+bottomSheet.FullExpandedRatio = 0.8;
+bottomSheet.State = BottomSheetState.FullExpanded;
+Grid grid = new Grid();
+bottomSheet.BottomSheetContent = grid;
+Content = bottomSheet;
+
+{% endhighlight %}
+{% endtabs %}
+
 ## HalfExpandedRatio
 
 The `HalfExpandedRatio` property adjusts the height of the `BottomSheet` when it is in the `HalfExpanded` state. The default value is `0.5`. You can set a value between 0.1 and 0.9 to adjust the height. This property works only when the sheet's `State` is `HalfExpanded`.
@@ -119,6 +145,31 @@ Content = bottomSheet;
 
 {% endhighlight %}
 {% endtabs %}
+
+## Collapsed Height
+The `CollapsedHeight` property allows you to specify the height of the bottomSheet. when it is in the `Collapsed` state. The default value is `100`.
+
+{% tabs %}	
+{% highlight xaml %}
+
+<bottomSheet:SfBottomSheet x:Name="bottomSheet" CollapsedHeight="150">
+    <bottomSheet:SfBottomSheet.BottomSheetContent>
+        <Grid/>
+    </bottomSheet:SfBottomSheet.BottomSheetContent>
+</bottomSheet:SfBottomSheet>
+	
+{% endhighlight %}
+{% highlight c# %}
+
+SfBottomSheet bottomSheet = new SfBottomSheet();
+bottomSheet.CollapsedHeight = 150;
+Grid grid = new Grid();
+bottomSheet.BottomSheetContent = grid;
+Content = bottomSheet;
+
+{% endhighlight %}
+{% endtabs %}
+
 
 ## CornerRadius
 The `CornerRadius` property allows you to add corner radius to the Bottom sheet.
@@ -193,7 +244,7 @@ Content = bottomSheet;
 {% endtabs %}
 
 ## Background
-The `Background` property allows you to customize the background color of the BottomSheet."
+The `Background` property allows you to customize the background color of the BottomSheet.
 
 {% tabs %}	
 {% highlight xaml %}
@@ -218,7 +269,7 @@ Content = bottomSheet;
 
 ## Grabber Customization
 ### Show Grabber
-The `ShowGrabber` property enables users to interact with the `BottomSheet` by dragging it up and down.By default,the ShowGrabber property is set to `true`. 
+The `ShowGrabber` property enables users to interact with the `BottomSheet` by dragging it up and down. By default, the ShowGrabber property is set to `true`.
 
 {% tabs %}	
 {% highlight xaml %}
