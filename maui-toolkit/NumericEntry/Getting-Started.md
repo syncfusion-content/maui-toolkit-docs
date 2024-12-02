@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started with .NET MAUI Numeric Entry
 
-This section guides you through setting up and configuring a [Numeric Entry](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Inputs.SfNumericEntry.html) in your .NET MAUI application. Follow the steps below to add a basic Numeric Entry to your project.
+This section guides you through setting up and configuring a [Numeric Entry]() in your .NET MAUI application. Follow the steps below to add a basic Numeric Entry to your project.
 
 To quickly get started with the .NET MAUI Numeric Entry, watch this video.
 
@@ -98,7 +98,7 @@ Step 2: Add the namespace as shown in the following code sample.
 {% endhighlight %}
 {% endtabs %}
 
-Step 3: Add the [SfNumericEntry](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Inputs.SfNumericEntry.html) control with a required optimal name using the included namespace.
+Step 3: Add the [SfNumericEntry]() control with a required optimal name using the included namespace.
 
 {% tabs %}
 {% highlight xaml %}
@@ -117,7 +117,7 @@ Step 3: Add the [SfNumericEntry](https://help.syncfusion.com/cr/maui/Syncfusion.
 
 ## Editing the value
 
-By default, the [NumericEntry](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Inputs.SfNumericEntry.html) control allows you to enter numeric input and restricts the alphabetic input. Once the `Enter` key is pressed or control focus is lost, the value of the `NumericEntry` control is validated and updated based on the format applied.
+By default, the [NumericEntry]() control allows you to enter numeric input and restricts the alphabetic input. Once the `Enter` key is pressed or control focus is lost, the value of the `NumericEntry` control is validated and updated based on the format applied.
 
 {% tabs %}
 {% highlight xaml %}
@@ -141,7 +141,7 @@ sfNumericEntry.CustomFormat = "0.000";
 
 ## Change number format
 
-You can change the format in which the value should be displayed using the [CustomFormat](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Inputs.SfNumericEntry.html#Syncfusion_Maui_Inputs_SfNumericEntry_CustomFormat) property. By default, the value of the `CustomFormat` property is **null**.
+You can change the format in which the value should be displayed using the [CustomFormat]() property. By default, the value of the `CustomFormat` property is **null**.
 
 {% tabs %}
 {% highlight xaml %}
@@ -167,7 +167,7 @@ sfNumberBox.CustomFormat = "C2";
 
 ## Accept null value
 
-By default, the [NumericEntry](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Inputs.SfNumericEntry.html) control allows a **null** value. A null value is assigned when the user clicks the clear button or clears the input. You can disable this by setting the value of the [AllowNull](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Inputs.SfNumericEntry.html#Syncfusion_Maui_Inputs_SfNumericEntry_AllowNull) property as **false**. When the value of the `AllowNull` property is set to **false**, and the input is cleared, the `NumericEntry` control returns it to **0**.
+By default, the [NumericEntry]() control allows a **null** value. A null value is assigned when the user clicks the clear button or clears the input. You can disable this by setting the value of the [AllowNull]() property as **false**. When the value of the `AllowNull` property is set to **false**, and the input is cleared, the `NumericEntry` control returns it to **0**.
 
 {% tabs %}
 {% highlight xaml %}

@@ -9,17 +9,17 @@ documentation: ug
 
 # Value Formatting with .NET MAUI NumericEntry
 
-This section explains how to change the value format of the [NumericEntry](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Inputs.SfNumericEntry.html) control using the `CustomFormat` properties.
+This section explains how to change the value format of the [NumericEntry]() control using the `CustomFormat` properties.
 
 ## Currency, percentage and decimal format
 
-The value of the `NumericEntry` control can be formatted using the [CustomFormat](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Inputs.SfNumericEntry.html#Syncfusion_Maui_Inputs_SfNumericEntry_CustomFormat) property. By default, the value is formatted based on the current culture's decimal format. The default value of the `CustomFormat` properties is **null**.
+The value of the `NumericEntry` control can be formatted using the [CustomFormat]() property. By default, the value is formatted based on the current culture's decimal format. The default value of the `CustomFormat` properties is **null**.
 
 The following example shows how to set the `CurrencyFormatter`, `DecimalFormatter`, and `PercentFormatter` for the `NumberFormatter` property. 
 
 Using the **N**, **C**, and **P** format values, we can apply numeric, currency, and percent custom formats in the `CustomFormat` property. 
 
-N> You can apply various custom formats available in  [this page](https://docs.microsoft.com/en-us/dotnet/standard/base-types/standard-numeric-format-strings), which are supported for the `double` type.
+N> You can apply various custom formats available in  [this page](), which are supported for the `double` type.
 
 {% tabs %}
 {% highlight xaml %}
@@ -52,7 +52,7 @@ hoursWorked.CustomFormat = "N2";
 
 ## Format the integer digits
 
-You can change the decimal digits of the value in the `NumericEntry` control using the [CustomFormat](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Inputs.SfNumericEntry.html#Syncfusion_Maui_Inputs_SfNumericEntry_CustomFormat) properties. 
+You can change the decimal digits of the value in the `NumericEntry` control using the [CustomFormat]() properties. 
 
 For the `CustomFormat` property, use the **0** format specifier to set the minimum number of decimal digits.  
 
@@ -89,7 +89,7 @@ hoursWorked.CustomFormat = "00000.00";
 
 ## Format the fractional digits
 
-You can change the fractional digits of the value in the `NumericEntry` control using the [CustomFormat](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Inputs.SfNumericEntry.html#Syncfusion_Maui_Inputs_SfNumericEntry_CustomFormat) Properties.
+You can change the fractional digits of the value in the `NumericEntry` control using the [CustomFormat]() Properties.
 
 For the `CustomFormat` property, use the **0** format specifier to set the minimum number of fractional digits.  
 
@@ -161,7 +161,7 @@ NumericEntry.Culture = culture;
 
 ## Customize percentage display
 
-When the [SfNumericEntry](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Inputs.SfNumericEntry.html) is in percentage format, the value can be displayed in two ways as follows:
+When the [SfNumericEntry]() is in percentage format, the value can be displayed in two ways as follows:
 
 `Value`: Displays the actual value with percentage symbol.
 
