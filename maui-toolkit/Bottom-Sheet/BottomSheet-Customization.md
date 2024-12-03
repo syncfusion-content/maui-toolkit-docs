@@ -147,7 +147,7 @@ Content = bottomSheet;
 {% endtabs %}
 
 ## Collapsed Height
-The `CollapsedHeight` property allows you to specify the height of the bottomSheet. when it is in the `Collapsed` state. The default value is `100`.
+The `CollapsedHeight` property allows you to specify the height of the `BottomSheet`, when it is in the `Collapsed` state. The default value is `100`.
 
 {% tabs %}	
 {% highlight xaml %}
