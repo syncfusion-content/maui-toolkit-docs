@@ -123,6 +123,12 @@ By preserving similar APIs and functionality, developers can easily update their
   <td>Defines the namespace for <a href="https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Buttons.SfButton.html">SfButton</a> control.</td>
 </tr>
 <tr>
+<td><a href="https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Calendar.SfCalendar.html">SfCalendar</a></td>
+<td>Syncfusion.Maui.Calendar</td>
+<td>Syncfusion.Maui.Toolkit.Calendar</td>
+<td>Defines the namespace for <a href="https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Calendar.SfCalendar.html">SfCalendar</a> control.</td>
+</tr>
+<tr>
 <td><a href="https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Carousel.SfCarousel.html">SfCarousel</a></td>
 <td>Syncfusion.Maui.Carousel</td>
 <td>Syncfusion.Maui.Toolkit.Carousel</td>
