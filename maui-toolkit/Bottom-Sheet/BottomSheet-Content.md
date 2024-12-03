@@ -7,32 +7,29 @@ control: BottomSheet
 documentation: ug
 ---
 
-# Set Bottom Sheet Content in .NET MAUI Bottom Sheet
+# Set Main Content and Bottom Sheet Content in .NET MAUI Bottom Sheet
 
-The sheet content is only viewable when the sheet is in the FullExpanded, HalfExpanded, and Collapsed state. Its content can be set as : `BottomSheetContent`
+* The main content of the `BottomSheet` is always visible and can be set using the `Content` property.
 
-## BottomSheet Content
-
-It can be set using the `BottomSheetContent` property.
+* The `BottomSheet` content is only viewable when the sheet is in the FullExpanded, HalfExpanded, or Collapsed state. Its content can be set as : `BottomSheetContent`.
 
 {% tabs %}
 {% highlight xaml %}
 
- <Grid>
-    <VerticalStackLayout Padding="20">
-        <Button Text="Open Bottom Sheet" Clicked="OpenBottomSheet" WidthRequest="180" CornerRadius="30" VerticalOptions="Center"/>
-    </VerticalStackLayout>
-    <bottomSheet:SfBottomSheet x:Name="bottomSheet">
-        <bottomSheet:SfBottomSheet.BottomSheetContent>
-            <Label Text="Bottom Sheet Content" VerticalOptions="Center" HorizontalOptions="Center" FontSize="14" />
-        </bottomSheet:SfBottomSheet.BottomSheetContent>
-    </bottomSheet:SfBottomSheet>
-    </Grid>
+<bottomSheet:SfBottomSheet x:Name="bottomSheet">
+    <bottomSheet:SfBottomSheet.Content>
+        <VerticalStackLayout Padding="20">
+            <Button Text="Open Bottom Sheet" Clicked="OpenBottomSheet" WidthRequest="180" CornerRadius="30" VerticalOptions="Center"/>
+        </VerticalStackLayout>
+    </bottomSheet:SfBottomSheet.Content>
+    <bottomSheet:SfBottomSheet.BottomSheetContent>
+        <Label Text="Bottom Sheet Content" VerticalOptions="Center" HorizontalOptions="Center" FontSize="14" />
+    </bottomSheet:SfBottomSheet.BottomSheetContent>
+</bottomSheet:SfBottomSheet>
 	
 {% endhighlight %}
 {% highlight c# %}
 
-Grid grid=new Grid();
 var verticalStackLayout = new VerticalStackLayout
 {
     Padding = new Thickness(20)
@@ -58,9 +55,8 @@ var bottomSheetContent = new Label
 };
 
 bottomSheet.BottomSheetContent = bottomSheetContent;
-grid.Children.Add(verticalStackLayout);
-grid.Children.Add(bottomSheet);
-this.Content = grid;
+bottomSheet.Content = verticalStackLayout;
+this.Content = bottomSheet;
   
 {% endhighlight %}
 {% endtabs %}

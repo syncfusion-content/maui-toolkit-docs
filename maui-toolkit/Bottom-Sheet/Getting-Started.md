@@ -85,16 +85,16 @@ public static class MauiProgram
 
 <ContentPage
     xmlns:bottomSheet="clr-namespace:Syncfusion.Maui.Toolkit.BottomSheet;assembly=Syncfusion.Maui.Toolkit">
-    <Grid>
-        <VerticalStackLayout Padding="20">
-            <Button Text="Open Bottom Sheet" Clicked="OpenBottomSheet" WidthRequest="180" CornerRadius="30" VerticalOptions="Center"/>
-        </VerticalStackLayout>
-        <bottomSheet:SfBottomSheet x:Name="bottomSheet">
-            <bottomSheet:SfBottomSheet.BottomSheetContent>
-                <Label Text="Bottom Sheet Content" VerticalOptions="Center" HorizontalOptions="Center" FontSize="14" />
-            </bottomSheet:SfBottomSheet.BottomSheetContent>
-        </bottomSheet:SfBottomSheet>
-    </Grid>
+   <bottomSheet:SfBottomSheet x:Name="bottomSheet">
+        <bottomSheet:SfBottomSheet.Content>
+            <VerticalStackLayout Padding="20">
+                <Button Text="Open Bottom Sheet" Clicked="OpenBottomSheet" WidthRequest="180" CornerRadius="30" VerticalOptions="Center"/>
+            </VerticalStackLayout>
+        </bottomSheet:SfBottomSheet.Content>
+        <bottomSheet:SfBottomSheet.BottomSheetContent>
+            <Label Text="Bottom Sheet Content" VerticalOptions="Center" HorizontalOptions="Center" FontSize="14" />
+        </bottomSheet:SfBottomSheet.BottomSheetContent>
+</bottomSheet:SfBottomSheet>
 </ContentPage>
     
 {% endhighlight %}
@@ -106,10 +106,10 @@ namespace BottomSheetGettingStarted
 {
     public partial class MainPage : ContentPage
     {
+        SfBottomSheet bottomSheet;
         public MainPage()
         {
             InitializeComponent();
-            Grid grid=new Grid();
             var verticalStackLayout = new VerticalStackLayout
             {
                 Padding = new Thickness(20)
@@ -125,7 +125,7 @@ namespace BottomSheetGettingStarted
 
             button.Clicked += OpenBottomSheet;
             verticalStackLayout.Children.Add(button);
-            SfBottomSheet bottomSheet = new SfBottomSheet();
+            bottomSheet = new SfBottomSheet();
             var bottomSheetContent = new Label
             {
                 Text = "Bottom Sheet Content",
@@ -135,9 +135,8 @@ namespace BottomSheetGettingStarted
             };
 
             bottomSheet.BottomSheetContent = bottomSheetContent;
-            grid.Children.Add(verticalStackLayout);
-            grid.Children.Add(bottomSheet);
-            this.Content = grid;
+            bottomSheet.Content = verticalStackLayout;
+            this.Content = bottomSheet;
         }
     } 
 }
@@ -155,6 +154,6 @@ private void OpenBottomSheet(object sender, EventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-N> It is mandatory to set `BottomSheetContent` for `SfBottomSheet` on initializing.
+N> It is mandatory to set `Content` and `BottomSheetContent` for `SfBottomSheet` on initializing.
 
 ![Getting Started Image for BottomSheet](images/gettingStarted.png)

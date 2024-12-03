@@ -17,21 +17,20 @@ The `EnableSwiping` property allows you to enable or disable swipe functionality
 {% tabs %}	
 {% highlight xaml %}
 
- <Grid>
-    <VerticalStackLayout Padding="20">
-        <Button Text="Open Bottom Sheet" Clicked="OpenBottomSheet" WidthRequest="180" CornerRadius="30" VerticalOptions="Center"/>
-    </VerticalStackLayout>
-    <bottomSheet:SfBottomSheet x:Name="bottomSheet" EnableSwiping="True" >
-        <bottomSheet:SfBottomSheet.BottomSheetContent>
-            <Label Text="Bottom Sheet Content" VerticalOptions="Center" HorizontalOptions="Center" FontSize="14" />
-        </bottomSheet:SfBottomSheet.BottomSheetContent>
-    </bottomSheet:SfBottomSheet>
-    </Grid>
+<bottomSheet:SfBottomSheet x:Name="bottomSheet" EnableSwiping="True">
+    <bottomSheet:SfBottomSheet.Content>
+        <VerticalStackLayout Padding="20">
+            <Button Text="Open Bottom Sheet" Clicked="OpenBottomSheet" WidthRequest="180" CornerRadius="30" VerticalOptions="Center"/>
+        </VerticalStackLayout>
+    </bottomSheet:SfBottomSheet.Content>
+    <bottomSheet:SfBottomSheet.BottomSheetContent>
+        <Label Text="Bottom Sheet Content" VerticalOptions="Center" HorizontalOptions="Center" FontSize="14" />
+    </bottomSheet:SfBottomSheet.BottomSheetContent>
+</bottomSheet:SfBottomSheet>
 	
 {% endhighlight %}
 {% highlight c# %}
 
-Grid grid=new Grid();
 var verticalStackLayout = new VerticalStackLayout
 {
     Padding = new Thickness(20)
@@ -58,9 +57,8 @@ var bottomSheetContent = new Label
 
 bottomSheet.EnableSwiping = true;
 bottomSheet.BottomSheetContent = bottomSheetContent;
-grid.Children.Add(verticalStackLayout);
-grid.Children.Add(bottomSheet);
-this.Content = grid;
+bottomSheet.Content = verticalStackLayout;
+this.Content = bottomSheet;
 
 {% endhighlight %}
 {% endtabs %}

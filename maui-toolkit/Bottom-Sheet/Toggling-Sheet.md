@@ -59,38 +59,34 @@ The `Show` method enables programmatically opening the bottom sheet, and the `Cl
 
 {% highlight xaml %}
 
-<Grid>
-    <VerticalStackLayout Padding="20">
-       <Button Text="Open Bottom Sheet" Clicked="OpenBottomSheet" WidthRequest="180" CornerRadius="30"/>
-    </VerticalStackLayout>
-    <bottomSheet:SfBottomSheet x:Name="bottomSheet">
-        <bottomSheet:SfBottomSheet.BottomSheetContent>
-            <Button Text="Close Bottom Sheet" Clicked="CloseBottomSheet" HeightRequest="50" WidthRequest="180" CornerRadius="30"/>
-        </bottomSheet:SfBottomSheet.BottomSheetContent>
-    </bottomSheet:SfBottomSheet>
-</Grid>
+<bottomSheet:SfBottomSheet x:Name="bottomSheet">
+    <bottomSheet:SfBottomSheet.Content>
+        <VerticalStackLayout Padding="20">
+            <Button Text="Open Bottom Sheet" Clicked="OpenBottomSheet" WidthRequest="180" CornerRadius="30" VerticalOptions="Center"/>
+        </VerticalStackLayout>
+    </bottomSheet:SfBottomSheet.Content>
+    <bottomSheet:SfBottomSheet.BottomSheetContent>
+        <Button Text="Close Bottom Sheet" Clicked="CloseBottomSheet" HeightRequest="50" WidthRequest="180" CornerRadius="30"/>
+    </bottomSheet:SfBottomSheet.BottomSheetContent>
+</bottomSheet:SfBottomSheet>
 
 {% endhighlight %}
 {% highlight c# %}
 
-Grid grid = new Grid();
-VerticalStackLayout verticalStack = new VerticalStackLayout
+var verticalStackLayout = new VerticalStackLayout
 {
     Padding = new Thickness(20)
 };
 
-Button openButton = new Button
+var openButton = new Button
 {
     Text = "Open Bottom Sheet",
     WidthRequest = 180,
     CornerRadius = 30,
+    VerticalOptions = LayoutOptions.Center
 };
 
-openButton.Clicked += OpenBottomSheet;
-verticalStack.Children.Add(openButton);
-grid.Children.Add(verticalStack);
-SfBottomSheet bottomSheet = new SfBottomSheet();
-Button closeButton = new Button
+var closeButton = new Button
 {
     Text = "Close Bottom Sheet",
     HeightRequest = 50,
@@ -98,10 +94,13 @@ Button closeButton = new Button
     CornerRadius = 30,
 };
 
+openButton.Clicked += OpenBottomSheet;
 closeButton.Clicked += CloseBottomSheet;
+verticalStackLayout.Children.Add(openButton);
+SfBottomSheet bottomSheet = new SfBottomSheet();
 bottomSheet.BottomSheetContent = closeButton;
-grid.Children.Add(bottomSheet);
-Content = grid;
+bottomSheet.Content = verticalStackLayout;
+this.Content = bottomSheet;
 
 {% endhighlight %}
 {% endtabs %}
