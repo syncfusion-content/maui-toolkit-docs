@@ -11,10 +11,48 @@ documentation: ug
 
 Bottom sheet can be toggled using
 
+* IsOpen property
 * Show method
 * Close method
 
-## Opening and Closing Sheet Programmatically
+## Opening and Closing Sheet Programmatically using property
+
+The `IsOpen` property enables programatically opening or closing the bottom sheet. By default, the IsOpen property is set to `false`.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<Grid>
+    <bottomSheet:SfBottomSheet IsOpen="True">
+        <bottomSheet:SfBottomSheet.BottomSheetContent>
+            <Label Text="Bottom Sheet Content" VerticalOptions="Center" HorizontalOptions="Center" FontSize="14" />
+        </bottomSheet:SfBottomSheet.BottomSheetContent>
+    </bottomSheet:SfBottomSheet>
+</Grid>
+
+{% endhighlight %}
+{% highlight c# %}
+
+Grid grid = new Grid();
+SfBottomSheet bottomSheet = new SfBottomSheet();
+bottomSheet.IsOpen = true;
+Label label = new Label()
+{
+    Text = "Bottom Sheet Content",
+    FontSize = 14,
+    VerticalOptions = LayoutOptions.Center,
+    HorizontalOptions = LayoutOptions.Center,
+};
+bottomSheet.BottomSheetContent = label;
+grid.Children.Add(bottomSheet);
+Content = grid;
+
+{% endhighlight %}
+{% endtabs %}
+
+
+## Opening and Closing Sheet Programmatically using method
 The `Show` method enables programmatically opening the bottom sheet, and the `Close` method enables programmatically closing the bottom sheet.
 
 {% tabs %}

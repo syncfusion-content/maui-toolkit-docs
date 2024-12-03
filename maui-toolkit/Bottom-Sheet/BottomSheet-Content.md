@@ -9,7 +9,7 @@ documentation: ug
 
 # Set Bottom Sheet Content in .NET MAUI Bottom Sheet
 
-The sheet content is only viewable when the sheet is in the FullExpanded, HalfExpanded, Collapsed state. Its content can be set as : `BottomSheetContent`
+The sheet content is only viewable when the sheet is in the FullExpanded, HalfExpanded, and Collapsed state. Its content can be set as : `BottomSheetContent`
 
 ## BottomSheet Content
 
