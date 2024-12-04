@@ -195,13 +195,16 @@ Content = bottomSheet;
 {% endhighlight %}
 {% endtabs %}
 
-## Margin
-The `Margin` property allows you to add margin to the Bottom sheet.
+## Content Width Mode
+The `ContentWidthMode` property allows you to adjust the width of the `BottomSheet`. The default value is `Full`. This property accepts the following values:
+
+* **Full** - The sheet will occupy the entire screen width.
+* **Custom** - The sheet will adjust its width based on the value set in the `BottomSheetContentWidth` property.
 
 {% tabs %}	
 {% highlight xaml %}
 
-<bottomSheet:SfBottomSheet x:Name="bottomSheet" Margin="10">
+<bottomSheet:SfBottomSheet x:Name="bottomSheet" ContentWidthMode="Full">
     <bottomSheet:SfBottomSheet.BottomSheetContent>
         <Grid/>
     </bottomSheet:SfBottomSheet.BottomSheetContent>
@@ -211,7 +214,32 @@ The `Margin` property allows you to add margin to the Bottom sheet.
 {% highlight c# %}
 
 SfBottomSheet bottomSheet = new SfBottomSheet();
-bottomSheet.Margin = new Thickness(10);
+bottomSheet.ContentWidthMode = BottomSheetContentWidthMode.Full;
+Grid grid = new Grid();
+bottomSheet.BottomSheetContent = grid;
+Content = bottomSheet;
+
+{% endhighlight %}
+{% endtabs %}
+
+## Bottom Sheet Content Width
+The `BottomSheetContentWidth` property allows you to adjust the width of the `BottomSheet`, when it is in `Custom` content width mode. The default value is `300`.
+
+{% tabs %}	
+{% highlight xaml %}
+
+<bottomSheet:SfBottomSheet x:Name="bottomSheet" ContentWidthMode="Custom" BottomSheetContentWidth="500">
+    <bottomSheet:SfBottomSheet.BottomSheetContent>
+       <Grid/>
+    </bottomSheet:SfBottomSheet.BottomSheetContent>
+</bottomSheet:SfBottomSheet>
+	
+{% endhighlight %}
+{% highlight c# %}
+
+SfBottomSheet bottomSheet = new SfBottomSheet();
+bottomSheet.ContentWidthMode = BottomSheetContentWidthMode.Custom;
+bottomSheet.BottomSheetContentWidth = 500;
 Grid grid = new Grid();
 bottomSheet.BottomSheetContent = grid;
 Content = bottomSheet;
