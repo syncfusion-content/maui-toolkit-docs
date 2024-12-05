@@ -16,13 +16,15 @@ You can customize the appearance of the button by adding your custom view in the
 
 
 <ContentPage.Content>
-    <button:SfButton  CornerRadius="20"  WidthRequest="120" Text="SfButton">
-        <DataTemplate>
-            <HorizontalStackLayout Spacing = "8" Padding="5">
-                <ActivityIndicator Color = "White" IsRunning="True"/>
-                <Label Text = "Loading..." VerticalOptions="Center"/>
-            </HorizontalStackLayout>
-	    </DataTemplate>
+    <button:SfButton  CornerRadius="10"  WidthRequest="120" Text="SfButton" Background="#4125BC">
+        <button:SfButton.Content>
+            <DataTemplate>
+                <HorizontalStackLayout Spacing = "8" Padding="5">
+                    <ActivityIndicator Color = "White" IsRunning="True"/>
+                    <Label Text = "Loading..." VerticalOptions="Center" TextColor="White"/>
+                </HorizontalStackLayout>
+            </DataTemplate>
+        </button:SfButton.Content>
     </button:SfButton>
 </ContentPage.Content>
 
@@ -39,6 +41,7 @@ var customTemplate = new DataTemplate(() =>
     var label = new Label
     {
         Text = "Loading...",
+        TextColor = Colors.White,
         VerticalOptions = LayoutOptions.Center
     };
     var stackLayout = new HorizontalStackLayout
@@ -49,12 +52,13 @@ var customTemplate = new DataTemplate(() =>
     stackLayout.Children.Add(activityIndicator);
     stackLayout.Children.Add(label);
     return stackLayout;
-
 });
 SfButton button = new SfButton
 {
-    Text = "Button Text",
+    Text = "SfButton",
     WidthRequest = 120,
+    Background = Color.FromArgb("#4125BC"),
+    CornerRadius= 10,
     Content = customTemplate
 };
 {% endhighlight %}
