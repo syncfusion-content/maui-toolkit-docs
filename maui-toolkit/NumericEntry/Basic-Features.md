@@ -11,7 +11,7 @@ documentation: ug
 
 ## Setting Placeholder Text
 
-You can prompt the user with any information using the [Placeholder]() property. Placeholder text will be displayed only when the value of the [AllowNull]() property is **true** and the value of the `NumericEntry` control is **null**. The default value of the `Placeholder` property is **string.Empty** (No string will be displayed).
+You can prompt the user with any information using the [Placeholder](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericEntry.SfNumericEntry.html#Syncfusion_Maui_Toolkit_NumericEntry_SfNumericEntry_Placeholder) property. Placeholder text will be displayed only when the value of the [AllowNull](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericEntry.SfNumericEntry.html#Syncfusion_Maui_Toolkit_NumericEntry_SfNumericEntry_AllowNull) property is **true** and the value of the `NumericEntry` control is **null**. The default value of the `Placeholder` property is **string.Empty** (No string will be displayed).
 
 {% tabs %}
 {% highlight xaml %}
@@ -35,7 +35,7 @@ sfNumberBox.VerticalOptions = LayoutOptions.Center;
 
 ## Clear button visibility 
 
-The [ShowClearButton]() property is used to show or hide the clear button in the `NumericEntry`. By default, visibility of the clear button is enabled.
+The [ShowClearButton](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericEntry.SfNumericEntry.html#Syncfusion_Maui_Toolkit_NumericEntry_SfNumericEntry_ShowClearButton) property is used to show or hide the clear button in the `NumericEntry`. By default, visibility of the clear button is enabled.
 
 N> The clear button appears only when the text box is focused and the `IsEditable` property value is set to **true**.
 {% tabs %}
@@ -68,11 +68,11 @@ If IsEditable is false
 
 ## Value Change Mode
 
-The [ValueChangeMode]() property determine when the values are updated.
+The [ValueChangeMode](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericEntry.SfNumericEntry.html#Syncfusion_Maui_Toolkit_NumericEntry_SfNumericEntry_ValueChanged) property determine when the values are updated.
 
 The supported value change modes are as follows:
-    * [OnLostFocus]() - The value will be updated when the editor loses its focus or the focus moved to the next control. By default, the [ValueChangeMode]() is `OnLostFocus`.
-    * [OnKeyFocus]() - The value will be updated with each key press.
+    * [OnLostFocus](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericEntry.ValueChangeMode.html#Syncfusion_Maui_Toolkit_NumericEntry_ValueChangeMode_OnLostFocus) - The value will be updated when the editor loses its focus or the focus moved to the next control. By default, the [ValueChangeMode](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericEntry.SfNumericEntry.html#Syncfusion_Maui_Toolkit_NumericEntry_SfNumericEntry_ValueChangeMode) is `OnLostFocus`.
+    * [OnKeyFocus](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericEntry.ValueChangeMode.html#Syncfusion_Maui_Toolkit_NumericEntry_ValueChangeMode_OnKeyFocus) - The value will be updated with each key press.
 
 {% tabs %}
 {% highlight xaml %}
@@ -176,7 +176,7 @@ You can find the complete getting started sample of .NET MAUI from this [link.](
 
 ## Border visibility
 
-The [ShowBorder]() property of [SfNumericEntry]() is used to modify the visibility of the border and its default value is **true**. The following code example demonstrates how to change the border visibility,
+The [ShowBorder](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericEntry.SfNumericEntry.html#Syncfusion_Maui_Toolkit_NumericEntry_SfNumericEntry_ShowBorder) property of [SfNumericEntry](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericEntry.SfNumericEntry.html) is used to modify the visibility of the border and its default value is **true**. The following code example demonstrates how to change the border visibility,
 
 {% tabs %}
 {% highlight xaml %}
@@ -202,7 +202,7 @@ The following image illustrates the result of the above code:
 
 ## TextAlignment
 
-The [SfNumericEntry]() provides support to customize the text alignment by using the [HorizontalTextAlignment]() and [VerticalTextAlignment]() properties.
+The [SfNumericEntry](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericEntry.SfNumericEntry.html) provides support to customize the text alignment by using the [HorizontalTextAlignment](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericEntry.SfNumericEntry.html#Syncfusion_Maui_Toolkit_NumericEntry_SfNumericEntry_HorizontalTextAlignment) and [VerticalTextAlignment](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericEntry.SfNumericEntry.html#Syncfusion_Maui_Toolkit_NumericEntry_SfNumericEntry_VerticalTextAlignment) properties.
 
 N> Dynamic changes to the `HorizontalTextAlignment` property may not be functioning as expected on Android platform.
 
@@ -234,7 +234,7 @@ The following image illustrates the result of the above code:
 
 The `ReturnType` property specifies the return button (e.g., Next, Done, Go) of the keyboard. It helps manage the flow between multiple input fields by defining what happens when the action button is pressed.
 
-You can define the return key type of [SfNumericEntry]() by using the ReturnType property.
+You can define the return key type of [SfNumericEntry](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericEntry.SfNumericEntry.html) by using the ReturnType property.
 
 N> Default value of ReturnType is `Default`.
 
@@ -258,7 +258,7 @@ sfNumericEntry.ReturnType = ReturnType.Next;
 
 ## Clear button customization
 
-The `ClearButtonPath` property allows users to set the path for customizing the appearance of the [SfNumericEntry]() clear button.
+The [ClearButtonPath](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericEntry.SfNumericEntry.html#Syncfusion_Maui_Toolkit_NumericEntry_SfNumericEntry_ClearButtonPath) property allows users to set the path for customizing the appearance of the [SfNumericEntry](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericEntry.SfNumericEntry.html) clear button.
 
 {% tabs %}
 {% highlight xaml %}

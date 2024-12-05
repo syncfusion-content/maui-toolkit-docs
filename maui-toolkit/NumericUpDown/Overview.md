@@ -9,7 +9,7 @@ documentation: ug
 
 # .NET MAUI NumericUpDown Overview
 
-The [.NET MAUI NumericUpDown]() control is designed to provide a user-friendly and advanced input experience for numeric values, featuring increment and decrement buttons for easy value adjustment. It supports a wide range of numeric formats, including currency, percentages, decimals, and more. With its key features, it enhances the user experience and facilitates input validation.
+The [.NET MAUI NumericUpDown](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericUpDown.SfNumericUpDown.html) control is designed to provide a user-friendly and advanced input experience for numeric values, featuring increment and decrement buttons for easy value adjustment. It supports a wide range of numeric formats, including currency, percentages, decimals, and more. With its key features, it enhances the user experience and facilitates input validation.
 
 ## Control Structure
 

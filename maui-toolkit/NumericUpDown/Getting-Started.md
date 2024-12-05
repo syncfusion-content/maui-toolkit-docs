@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started with .NET MAUI Numeric UpDown
 
-This section guides you through setting up and configuring a [Numeric UpDown]() in your .NET MAUI application. Follow the steps below to add a basic Numeric UpDown to your project.
+This section guides you through setting up and configuring a [Numeric UpDown](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericUpDown.SfNumericUpDown.html) in your .NET MAUI application. Follow the steps below to add a basic Numeric UpDown to your project.
 
 ## Prerequisites
 
@@ -94,7 +94,7 @@ Step 2: Add the namespace as shown in the following code sample.
 {% endhighlight %}
 {% endtabs %}
 
-Step 3: Add the [SfNumericUpDown]() control with a required optimal name using the included namespace.
+Step 3: Add the [SfNumericUpDown](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericUpDown.SfNumericUpDown.html) control with a required optimal name using the included namespace.
 
 {% tabs %}
 {% highlight xaml %}
@@ -112,7 +112,7 @@ Step 3: Add the [SfNumericUpDown]() control with a required optimal name using t
 ![.NET MAUI NumericUpDown Application](GettingStarted_images/gettingStarted_img.png)
 
 ## Editing the value
-By default, the [NumericUpDown]() control allows you to enter numeric input, restricts the alphabetic input. It provides increment and decrement buttons for convenient value adjustments. Once the `Enter` key is pressed or control focus is lost, the value of the `NumericUpDown` control is validated and updated based on the format applied.
+By default, the [NumericUpDown](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericUpDown.SfNumericUpDown.html) control allows you to enter numeric input, restricts the alphabetic input. It provides increment and decrement buttons for convenient value adjustments. Once the `Enter` key is pressed or control focus is lost, the value of the `NumericUpDown` control is validated and updated based on the format applied.
 
 {% tabs %}
 {% highlight xaml %}
@@ -136,7 +136,7 @@ sfNumericUpDown.CustomFormat = "0.000";
 
 ## Change number format
 
-You can change the format in which the value should be displayed using the [CustomFormat]() property. By default, the value of the `CustomFormat` property is **null**.
+You can change the format in which the value should be displayed using the [CustomFormat](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericEntry.SfNumericEntry.html#Syncfusion_Maui_Toolkit_NumericEntry_SfNumericEntry_CustomFormat) property. By default, the value of the `CustomFormat` property is **null**.
 
 {% tabs %}
 {% highlight xaml %}
@@ -162,15 +162,15 @@ sfNumericUpDown.CustomFormat = "C2";
 
 ## Accept null value
 
-By default, the [NumericUpDown]() control allows a **null** value. A null value is assigned when the user clicks the clear button or clears the input. You can disable this by setting the value of the [AllowNull]() property as **false**. When the value of the `AllowNull` property is set to **false**, and the input is cleared, the `NumericUpDown` control returns it to **0**.
+By default, the [NumericUpDown](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericUpDown.SfNumericUpDown.html) control allows a **null** value. A null value is assigned when the user clicks the clear button or clears the input. You can disable this by setting the value of the [AllowNull](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericEntry.SfNumericEntry.html#Syncfusion_Maui_Toolkit_NumericEntry_SfNumericEntry_AllowNull) property as **false**. When the value of the `AllowNull` property is set to **false**, and the input is cleared, the `NumericUpDown` control returns it to **0**.
 
 {% tabs %}
 {% highlight xaml %}
 
 <editors:SfNumericUpDown HorizontalOptions="Center"
-                        VerticalOptions="Center"
-                        Value="12315"
-                        AllowNull="False" />
+                         VerticalOptions="Center"
+                         Value="12315"
+                         AllowNull="False" />
 
 {% endhighlight %}
 {% highlight C# %}
