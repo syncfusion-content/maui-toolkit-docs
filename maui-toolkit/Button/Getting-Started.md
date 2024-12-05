@@ -79,36 +79,33 @@ public static class MauiProgram
 
 Step 1. To initialize the control, import the `Syncfusion.Maui.Toolkit.Buttons` namespace into your code. 
 
-Step 2: Add the namespace as shown in the following code sample.
-
-{% tabs %}
-{% highlight xaml %}
-
-	xmlns:buttons="clr-namespace:Syncfusion.Maui.Toolkit.Buttons;assembly=Syncfusion.Maui.Toolkit"
-
-{% endhighlight %}
-{% highlight c# %}
-
-	using Syncfusion.Maui.Toolkit.Buttons;
-
-{% endhighlight %}
-{% endtabs %}
-
-## Initialize Button
-
-Now, add the [SfButton](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Buttons.SfButton.html) control with a required optimal name using the included namespace.
+Step 2: Initialize [SfButton](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Buttons.SfButton.html) control.
 
 {% tabs %}
 
 {% highlight xaml %}
+<ContentPage 
+    xmlns:button="clr-namespace:Syncfusion.Maui.Toolkit.Buttons;assembly=Syncfusion.Maui.Toolkit">
+    <ContentPage.Content> 
+	 	<buttons:SfButton x:Name="button" />
+	</ContentPage.Content> 
+</ContentPage>
 
-<buttons:SfButton x:Name="button" />
-	
 {% endhighlight %}
 
 {% highlight C# %}
 
-SfButton button = new SfButton();
+using Syncfusion.Maui.Toolkit.Buttons;
+
+	public partial class MainPage : ContentPage
+	{ 
+		public MainPage()
+		{   
+			InitializeComponent();
+			SfButton button = new SfButton();
+			this.Content = button;
+		}  
+	}  
 
 {% endhighlight %}
 
@@ -173,4 +170,3 @@ button.WidthRequest = 150;
 
 ![.NET MAUI Button with background image.](images/getting-started/net-maui-button-with-background-image.png)
 
-N> You can refer to our [.NET MAUI Button](https://www.syncfusion.com/maui-controls/maui-button) feature tour page for its groundbreaking feature representations. You can also explore our [.NET MAUI Button Example](https://github.com/syncfusion/maui-demos/tree/master/MAUI/Buttons) that shows you how to render the Button in .NET MAUI.
