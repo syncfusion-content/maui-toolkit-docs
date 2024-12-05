@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started with .NET MAUI Button
 
-This section guides you through setting up and configuring a [Button](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Buttons.html) in your .NET MAUI application. Follow the steps below to add a basic Button to your project.
+This section guides you through setting up and configuring a [Button](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Buttons.SfButton.html) in your .NET MAUI application. Follow the steps below to add a basic Button to your project.
 
 ## Prerequisites
 
@@ -96,7 +96,7 @@ Step 2: Add the namespace as shown in the following code sample.
 
 ## Initialize Button
 
-Now, add the [SfButton](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Buttons.html) control with a required optimal name using the included namespace.
+Now, add the [SfButton](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Buttons.SfButton.html) control with a required optimal name using the included namespace.
 
 {% tabs %}
 
@@ -116,7 +116,7 @@ SfButton button = new SfButton();
 
 ## Button icon
 
-The button icon can be defined using the [ImageSource](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Core.ButtonBase.html#Syncfusion_Maui_Core_ButtonBase_ImageSource) and [ShowIcon](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Core.ButtonBase.html#Syncfusion_Maui_Core_ButtonBase_ShowIcon) properties of [SfButton](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Buttons.SfButton.html).
+The button icon can be defined using the [ImageSource](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Core.ButtonBase.html#Syncfusion_Maui_Core_ButtonBase_ImageSource) and [ShowIcon](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Core.ButtonBase.html#Syncfusion_Maui_Core_ButtonBase_ShowIcon) properties of [SfButton](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Buttons.SfButton.html).
 
 N> Ensure that the images mentioned in the code snippets are located in the **Resources** folder of your sample project.
 
@@ -146,7 +146,7 @@ button.ShowIcon = true;
 
 ## Button background image
 
-The button background image can be defined using the [BackgroundImageSource](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.ButtonBase.html#Syncfusion_Maui_Toolkit_ButtonBase_BackgroundImageSource) property of [SfButton](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Buttons.html).
+The button background image can be defined using the [BackgroundImageSource](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.ButtonBase.html#Syncfusion_Maui_Toolkit_ButtonBase_BackgroundImageSource) property of [SfButton](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Buttons.SfButton.html).
 
 {% tabs %}
 {% highlight xaml %}
