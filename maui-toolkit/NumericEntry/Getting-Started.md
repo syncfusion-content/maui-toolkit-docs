@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started with .NET MAUI Numeric Entry
 
-This section guides you through setting up and configuring a [Numeric Entyr]() in your .NET MAUI application. Follow the steps below to add a basic Numeric Entry Down to your project.
+This section guides you through setting up and configuring a [Numeric Entry]() in your .NET MAUI application. Follow the steps below to add a basic Numeric Entry Down to your project.
 
 ## Prerequisites
 
