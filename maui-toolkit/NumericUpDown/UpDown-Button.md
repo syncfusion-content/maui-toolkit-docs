@@ -39,7 +39,7 @@ sfNumericUpDown.VerticalOptions = LayoutOptions.Center;
 {% endhighlight %}
 {% endtabs %}
 
-![.NET MAUI NumericUpDown Placeholder Text](GettingStarted_images/valuechange-bykeys.gif)
+![.NET MAUI NumericUpDown Placeholder Text](UpDownButton_images/valuechange-bykeys.gif)
 
 ## UpDown button placement
 
@@ -52,8 +52,8 @@ N> When using the up-down button, the `NumericUpDown` control value changes base
 
 <editors:SfNumericUpDown HorizontalOptions="Center"
                         VerticalOptions="Center"
-                        Value="360";
-                        UpDownPlacementMode="Inline" />
+                        Value="24";
+                        UpDownPlacementMode="InlineVertical" />
                      
 {% endhighlight %}
 {% highlight c# %}
@@ -67,29 +67,7 @@ sfNumericUpDown.UpDownPlacementMode = NumericUpDownUpDownPlacementMode.Inline;
 {% endhighlight %}
 {% endtabs %}
 
-![UpDown Placement in .NET MAUI NumericUpDown](UpDownButton_images/UpDownButtonPlacement.gif)
-
-{% tabs %}
-{% highlight XAML %}
-
-<editors:SfNumericUpDown Value="360"
-                        VerticalOptions="Center"
-                        HorizontalOptions="Center"
-                        UpDownPlacementMode="InlineVertical"/>
-                     
-{% endhighlight %}
-{% highlight c# %}
-
-SfNumericUpDown sfNumericUpDown = new SfNumericUpDown();
-sfNumericUpDown.HorizontalOptions = LayoutOptions.Center;
-sfNumericUpDown.VerticalOptions = LayoutOptions.Center;
-sfNumericUpDown.Value=360;
-sfNumericUpDown.UpDownPlacementMode = NumericUpDownUpDownPlacementMode.InlineVertical;
-
-{% endhighlight %}
-{% endtabs %}
-
-![UpDown Vertical Placement in .NET MAUI NumericUpDown](UpDownButton_images/UpDownButtonPlacementVertical.png)
+![UpDown Placement in .NET MAUI NumericUpDown](UpDownButton_images/UpDownButtonPlacement.png)
 
 ## UpDown button alignment
 
@@ -100,6 +78,28 @@ The UpDown button alignment in the `NumericUpDown` control can be customized usi
 **Both**: Positions the buttons on both sides of the control. 
 
 The default updown button alignment is **Right**.
+
+{% tabs %}
+{% highlight XAML %}
+
+<editors:SfNumericUpDown HorizontalOptions="Center"
+                         VerticalOptions="Center"
+                         Value="24";
+                         UpDownButtonAlignment="Both" />
+                     
+{% endhighlight %}
+{% highlight c# %}
+
+SfNumericUpDown sfNumericUpDown = new SfNumericUpDown();
+sfNumericUpDown.HorizontalOptions = LayoutOptions.Center;
+sfNumericUpDown.VerticalOptions = LayoutOptions.Center;
+sfNumericUpDown.Value=360;
+sfNumericUpDown.UpDownButtonAlignment = NumericUpDownUpDownPlacementMode.Inline;
+
+{% endhighlight %}
+{% endtabs %}
+
+![UpDown Placement in .NET MAUI NumericUpDown](UpDownButton_images/upDownButtonAlignment.png)
 
 ## UpDown button customization
 
@@ -115,7 +115,6 @@ Customize the `NumericUpDown` control button color by using the [UpDownButtonCol
                         HorizontalOptions="Center"
                         VerticalOptions="Center"
                         Value="360"
-                        UpDownPlacementMode="Inline"
                         UpDownButtonColor="Blue"/>
                      
 {% endhighlight %}
@@ -154,26 +153,22 @@ N> The UpDownButton template only supports Inline Placement mode.
         <editors:SfNumericUpDown.UpButtonTemplate>
             <DataTemplate>
                 <Grid>
-                    <Label Padding="0,6.5,0,0" 
-                           Rotation="90"
-                           FontFamily="FontIcons"
-                           HorizontalOptions="Center"
-                           Text="&#xe74a;"
-                           TextColor="Green"
-                           FontSize="20"/>
+                    <Label  Text="&#xe791;" 
+                            FontFamily="FontIcon"  
+                            FontAttributes="Bold" 
+                            Padding="6,6,8,0" 
+                            TextColor="Green" />
                 </Grid>
             </DataTemplate>
         </editors:SfNumericUpDown.UpButtonTemplate>
         <editors:SfNumericUpDown.DownButtonTemplate>
             <DataTemplate>
                 <Grid>
-                    <Label Padding="0,5,0,0" 
-                           Rotation="270"
-                           FontFamily="FontIcons"
-                           HorizontalOptions="Center"
-                           Text="&#xe74a;"
-                           TextColor="Red"
-                           FontSize="20"/>
+                    <Label  Text="&#xe792;" 
+                            FontFamily="FontIcon"  
+                            FontAttributes="Bold" 
+                            Padding="6,6,8,0" 
+                            TextColor="Red" />
                 </Grid>
             </DataTemplate>
         </editors:SfNumericUpDown.DownButtonTemplate>

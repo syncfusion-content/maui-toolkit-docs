@@ -77,9 +77,7 @@ public static class MauiProgram
 
 ## Step 4: Add a Basic Numeric UpDown
 
-Step 1. To initialize the control, import the `Syncfusion.Maui.Toolkit.NumericUpDown` namespace into your code. 
-
-Step 2: Add the namespace as shown in the following code sample.
+Step 1. To initialize the control, import the `Syncfusion.Maui.Toolkit.NumericUpDown` namespace into your code, as shown in the following code sample.
 
 {% tabs %}
 {% highlight xaml %}
@@ -94,7 +92,7 @@ Step 2: Add the namespace as shown in the following code sample.
 {% endhighlight %}
 {% endtabs %}
 
-Step 3: Add the [SfNumericUpDown](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericUpDown.SfNumericUpDown.html) control with a required optimal name using the included namespace.
+Step 2: Add the [SfNumericUpDown](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericUpDown.SfNumericUpDown.html) control with a required optimal name using the included namespace.
 
 {% tabs %}
 {% highlight xaml %}

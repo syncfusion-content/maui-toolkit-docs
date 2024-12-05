@@ -48,7 +48,7 @@ hoursWorked.CustomFormat = "N2";
 {% endhighlight %}
 {% endtabs %}
 
-![.NET MAUI NumericUpDown customize format by NumberFormatter](Formatting_images/maui-numeric-entry-numberformatter.png)
+![.NET MAUI NumericUpDown customize format by NumberFormatter](Formatting_images/numberformatter.png)
 
 ## Format the integer digits
 
@@ -85,7 +85,7 @@ hoursWorked.CustomFormat = "00000.00";
 {% endhighlight %}
 {% endtabs %}
 
-![.NET MAUI NumericUpDown customize decimal digits](Formatting_images/maui-numeric-entry-change-decimal-digits.png)
+![.NET MAUI NumericUpDown customize decimal digits](Formatting_images/decimal-digits.png)
 
 ## Format the fractional digits
 
@@ -112,7 +112,7 @@ hoursWorked.CustomFormat = "00.000";
 {% endhighlight %}
 {% endtabs %}
 
-![.NET MAUI NumericUpDown customize fractional digits](Formatting_images/maui-numeric-entry-change-fractional-digits.png)
+![.NET MAUI NumericUpDown customize fractional digits](Formatting_images/fractional-digits.png)
 
 ## Apply custom format
 
@@ -141,7 +141,7 @@ hoursWorked.CustomFormat = "00.00##";
 {% endhighlight %}
 {% endtabs %}
 
-![.NET MAUI NumericUpDown customize fractional digits](Formatting_images/maui-numeric-entry-apply-customformat.png)
+![.NET MAUI NumericUpDown customize fractional digits](Formatting_images/customformat.png)
 
 
 ## Culture support
@@ -157,7 +157,7 @@ NumericUpDown.Culture = culture;
 {% endhighlight %}
 {% endtabs %}
 
-![.NET MAUI NumericUpDown culture based custom format](Formatting_images/maui-numeric-entry-culture_support.png)
+![.NET MAUI NumericUpDown culture based custom format](Formatting_images/culture_support.png)
 
 ## Customize percentage display
 
