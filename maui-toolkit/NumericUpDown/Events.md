@@ -41,7 +41,7 @@ You can handle the event as follows.
 {% tabs %}
 {% highlight C# %}
 
-private void sfNumericUpDown_ValueChanged(object sender, NumericUpDownValueChangedEventArgs e)
+private void sfNumericUpDown_ValueChanged(object sender, NumericEntryValueChangedEventArgs e)
 {
     var oldValue = e.OldValue;
     var newValue = e.NewValue;
@@ -58,8 +58,8 @@ The `NumericUpDown` control includes a [Completed]() event, which is triggered w
 {% highlight xaml %}
 
 <editors:SfNumericUpDown HorizontalOptions="Center"
-                        VerticalOptions="Center"
-                        Completed="sfNumericUpDown_Completed" />
+                         VerticalOptions="Center"
+                         Completed="sfNumericUpDown_Completed" />
 
 {% endhighlight %}
 {% highlight C# %}
@@ -67,7 +67,7 @@ The `NumericUpDown` control includes a [Completed]() event, which is triggered w
 SfNumericUpDown sfNumericUpDown = new SfNumericUpDown();
 sfNumericUpDown.HorizontalOptions = LayoutOptions.Center;
 sfNumericUpDown.VerticalOptions = LayoutOptions.Center;
-sfNumericUpDown.ValueChanged += sfNumericUpDown_Completed;
+sfNumericUpDown.Completed += sfNumericUpDown_Completed;
 
 {% endhighlight %}
 {% endtabs %}
