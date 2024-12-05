@@ -546,6 +546,30 @@ The following image shows the tab view with scroll buttons enabled:
 
 ![.NET MAUI Tab View Scroll Mode](images/TabViewScroll.gif) 
 
+### Scroll button customization
+
+The `ScrollButtonBackground` and `ScrollButtonColor` property of [SfTabView](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.TabView.SfTabView.html?tabs=tabid-1) allows users to customize the background color and foreground color of scroll button.
+
+{% tabs %}
+
+{% highlight xaml %}
+<tabView:SfTabView ScrollButtonBackground="Violet" ScrollButtonColor="Red">
+</tabView:SfTabView>
+{% endhighlight %}
+
+{% highlight C# %}
+StackLayout stackLayout = new StackLayout();
+var tabView = new SfTabView();
+tabView.ScrollButtonBackground = SolidColorBrush.Violet;
+tabView.ScrollButtonColor = Colors.Red;
+stackLayout.Children.Add(tabView);
+this.Content = stackLayout;
+{% endhighlight %}
+
+{% endtabs %}
+
+![ScrollButtonCustomization](images/ScrollButtonCustomization.png)
+
 ## Font auto scaling
 
 The [FontAutoScalingEnabled](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SfTabItem.html#Syncfusion_Maui_Toolkit_TabView_SfTabItem_FontAutoScalingEnabled) property allows you to enable or disable automatic font scaling for the tab headers. When enabled, this feature adjusts the font size of the tab headers based on the text size settings of the operating system. The default value of the `FontAutoScalingEnabled` property is `false.`
@@ -594,6 +618,35 @@ SfTabView tabView = new SfTabView();
 
 // Set the content transition duration for the tab view
 tabView.ContentTransitionDuration = 300;
+{% endhighlight %}
+
+{% endtabs %}
+
+## Image size
+
+You can customize the image size in the .NET MAUI TabView control by setting the `ImageSize` property.
+
+{% tabs %}
+
+{% highlight xaml %}
+<tabView:SfTabView>
+    <tabView:SfTabItem ImageSize="50"/>
+</tabView:SfTabView>
+{% endhighlight %}
+
+{% highlight C# %}
+StackLayout stackLayout = new StackLayout();
+var tabView = new SfTabView();
+var tabItems = new TabItemCollection
+{
+    new SfTabItem()
+    {
+        ImageSize = 50,
+    }
+};
+tabView.Items = tabItems;
+stackLayout.Children.Add(tabView);
+this.Content = stackLayout;
 {% endhighlight %}
 
 {% endtabs %}
