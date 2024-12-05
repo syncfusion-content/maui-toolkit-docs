@@ -22,6 +22,18 @@ By preserving similar APIs and functionality, developers can easily update their
 <th>Description</th>
 </tr>
 <tr>
+  <td><a href="https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Buttons.SfButton.html">SfButton</a></td>
+  <td>xmlns: button ="clr-namespace:Syncfusion.Maui.Buttons;assembly=Syncfusion.Maui.Buttons"</td>
+  <td>xmlns:button ="clr-namespace:Syncfusion.Maui.Toolkit.Buttons;assembly=Syncfusion.Maui.Toolkit"</td>
+  <td>Defines the XAML namespace for <a href="https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Buttons.SfButton.html">SfButton</a> control.</td>
+</tr>
+<tr>
+<td><a href="https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Calendar.SfCalendar.html">SfCalendar</a></td>
+<td>xmlns: calendar ="clr-namespace:Syncfusion.Maui.Calendar;assembly=Syncfusion.Maui.Calendar"</td>
+<td>xmlns:calendar="clr-namespace:Syncfusion.Maui.Toolkit.Calendar;assembly=Syncfusion.Maui.Toolkit.Calendar"</td>
+<td>Defines the XAML namespace for <a href="https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Calendar.SfCalendar.html">SfCalendar</a> control.</td>
+</tr>
+<tr>
 <td><a href="https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Carousel.SfCarousel.html">SfCarousel</a></td>
 <td>xmlns: carousel ="clr-namespace:Syncfusion.Maui.Carousel;assembly=Syncfusion.Maui.Carousel"</td>
 <td>xmlns:carousel="clr-namespace:Syncfusion.Maui.Toolkit.Carousel;assembly=Syncfusion.Maui.Toolkit"</td>
@@ -50,6 +62,18 @@ By preserving similar APIs and functionality, developers can easily update their
   <td>xmlns:navigationDrawer="clr-namespace:Syncfusion.Maui.NavigationDrawer;assembly=Syncfusion.Maui.NavigationDrawer"</td>
   <td>xmlns:navigationDrawer="clr-namespace:Syncfusion.Maui.Toolkit.NavigationDrawer;assembly=Syncfusion.Maui.Toolkit"</td>
   <td>Defines the XAML namespace for <a href="https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NavigationDrawer.SfNavigationDrawer.html">SfNavigationDrawer</a> control.</td>
+</tr>
+<tr>
+  <td><a href="https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericEntry.SfNumericEntry.html">SfNumericEntry</a></td>
+  <td>xmlns:numericEntry ="clr-namespace:Syncfusion.Maui.Inputs;assembly=Syncfusion.Maui.Inputs"</td>
+  <td>xmlns:numericEntry="clr-namespace:Syncfusion.Maui.Toolkit.NumericEntry;assembly=Syncfusion.Maui.Toolkit"</td>
+  <td>Defines the XAML namespace for <a href="https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericEntry.SfNumericEntry.html">SfNumericEntry</a> control.</td>
+</tr>
+<tr>
+  <td><a href="https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericUpDown.SfNumericUpDown.html">SfNumericUpDown</a></td>
+  <td>xmlns:numericUpDown ="clr-namespace:Syncfusion.Maui.Inputs;assembly=Syncfusion.Maui.Inputs"</td>
+  <td>xmlns:numericUpDown="clr-namespace:Syncfusion.Maui.Toolkit.NumericUpDown;assembly=Syncfusion.Maui.Toolkit"</td>
+  <td>Defines the XAML namespace for <a href="https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericUpDown.SfNumericUpDown.html">SfNumericUpDown</a> control.</td>
 </tr>
 <tr>
   <td><a href="https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.PullToRefresh.SfPullToRefresh.html">SfPullToRefresh</a></td>
@@ -93,6 +117,18 @@ By preserving similar APIs and functionality, developers can easily update their
 <th>Description</th>
 </tr>
 <tr>
+  <td><a href="https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Buttons.SfButton.html">SfButton</a></td>
+  <td>Syncfusion.Maui.Buttons</td>
+  <td>Syncfusion.Maui.Toolkit.Buttons</td>
+  <td>Defines the namespace for <a href="https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Buttons.SfButton.html">SfButton</a> control.</td>
+</tr>
+<tr>
+<td><a href="https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Calendar.SfCalendar.html">SfCalendar</a></td>
+<td>Syncfusion.Maui.Calendar</td>
+<td>Syncfusion.Maui.Toolkit.Calendar</td>
+<td>Defines the namespace for <a href="https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Calendar.SfCalendar.html">SfCalendar</a> control.</td>
+</tr>
+<tr>
 <td><a href="https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Carousel.SfCarousel.html">SfCarousel</a></td>
 <td>Syncfusion.Maui.Carousel</td>
 <td>Syncfusion.Maui.Toolkit.Carousel</td>
@@ -121,6 +157,18 @@ By preserving similar APIs and functionality, developers can easily update their
   <td>Syncfusion.Maui.NavigationDrawer</td>
   <td>Syncfusion.Maui.Toolkit.NavigationDrawer</td>
   <td>Defines the namespace for <a href="https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NavigationDrawer.SfNavigationDrawer.html">SfNavigationDrawer</a> control.</td>
+</tr>
+<tr>
+  <td><a href="https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericEntry.SfNumericEntry.html">SfNumericEntry</a></td>
+  <td>Syncfusion.Maui.Inputs</td>
+  <td>Syncfusion.Maui.Toolkit.NumericEntry</td>
+  <td>Defines the namespace for <a href="https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericEntry.SfNumericEntry.html">SfNumericEntry</a> control.</td>
+</tr>
+<tr>
+  <td><a href="https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericUpDown.SfNumericUpDown.html">SfNumericUpDown</a></td>
+  <td>Syncfusion.Maui.Inputs</td>
+  <td>Syncfusion.Maui.Toolkit.NumericUpDown</td>
+  <td>Defines the namespace for <a href="https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericUpDown.SfNumericUpDown.html">SfNumericUpDown</a> control.</td>
 </tr>
 <tr>
   <td><a href="https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.PullToRefresh.SfPullToRefresh.html">SfPullToRefresh</a></td>
