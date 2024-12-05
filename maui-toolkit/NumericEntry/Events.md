@@ -67,7 +67,7 @@ The `NumericEntry` control includes a [Completed]() event, which is triggered wh
 SfNumericEntry sfNumericEntry = new SfNumericEntry();
 sfNumericEntry.HorizontalOptions = LayoutOptions.Center;
 sfNumericEntry.VerticalOptions = LayoutOptions.Center;
-sfNumericEntry.ValueChanged += sfNumericEntry_Completed;
+sfNumericEntry.Completed += sfNumericEntry_Completed;
 
 {% endhighlight %}
 {% endtabs %}
