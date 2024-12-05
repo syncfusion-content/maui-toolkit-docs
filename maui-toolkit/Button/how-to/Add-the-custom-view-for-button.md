@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How to Add the Custom View for Syncfusion SfButton
-description: How to add the custom view for SfButton.
+description: Learn about how to add a custom content view for the .NET MAUI Toolkit's SfButton control in detail.
 platform: maui
 control: Sfbutton
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 # Add the custom view for button
 
-You can customize the appearance of the button by adding your custom view in the [`Content`](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Buttons.SfButton.html#Syncfusion_Maui_Buttons_SfButton_Content) property. The following code sample demonstrates how to apply the busy indicator control as a custom view for a button.
+You can customize the appearance of the button by adding your custom view in the [`Content`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Buttons.SfButton.html#Syncfusion_Maui_Toolkit_Buttons_SfButton_Content) property. The following code sample demonstrates how to apply the busy indicator control as a custom view for a button.
 
 {% tabs %}
 {% highlight xaml %}
