@@ -22,7 +22,7 @@ The [`TextColor`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.To
 {% tabs %}
 {% highlight xaml %}
 
-<button:SfButton x:Name="button" Text="Button" TextColor = "White">
+<button:SfButton x:Name="button" Text="Button" TextColor = "White" CornerRadius="10">
 </button:SfButton>
 
 {% endhighlight %}
@@ -31,6 +31,7 @@ The [`TextColor`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.To
 SfButton button = new SfButton();
 button.Text = "Button";
 button.TextColor = Colors.White;
+button.CornerRadius= 10;
 
 {% endhighlight %}
 {% endtabs %}
@@ -44,7 +45,7 @@ The [`FontSize`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Too
 {% tabs %}
 {% highlight xaml %}
 
-<button:SfButton x:Name="button" Text="Button" FontSize = "18">
+<button:SfButton x:Name="button" Text="Button" FontSize = "18" CornerRadius="10">
 </button:SfButton>
 
 {% endhighlight %}
@@ -53,6 +54,7 @@ The [`FontSize`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Too
 SfButton button = new SfButton();
 button.Text = "Button";
 button.FontSize = 18;
+button.CornerRadius= 10;
 
 {% endhighlight %}
 {% endtabs %}
@@ -66,7 +68,7 @@ The [`FontAttributes`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Ma
 {% tabs %}
 {% highlight xaml %}
 
-<button:SfButton x:Name="button" Text="Button" FontAttributes = "Italic">
+<button:SfButton x:Name="button" Text="Button" FontAttributes = "Italic" CornerRadius="10">
 </button:SfButton>
 
 {% endhighlight %}
@@ -75,6 +77,7 @@ The [`FontAttributes`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Ma
 SfButton button = new SfButton();
 button.Text = "Button";
 button.FontAttributes = FontAttributes.Italic;
+button.CornerRadius= 10;
 
 {% endhighlight %}
 {% endtabs %}
@@ -88,7 +91,7 @@ The [`FontFamily`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.T
 {% tabs %}
 {% highlight xaml %}
 
-<button:SfButton x:Name="button" Text="Button" FontFamily = "Samantha-Demo">
+<button:SfButton x:Name="button" Text="Button" FontFamily = "Samantha-Demo" CornerRadius="10">
 </button:SfButton>
 
 {% endhighlight %}
@@ -97,6 +100,7 @@ The [`FontFamily`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.T
 SfButton button = new SfButton();
 button.Text = "Button";
 button.FontFamily = "Samantha-Demo";
+button.CornerRadius= 10;
 
 {% endhighlight %}
 {% endtabs %}
@@ -192,7 +196,7 @@ The [`Background`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.T
 {% tabs %}
 {% highlight xaml %}
 
-<button:SfButton x:Name="button" Text="Button" Background = "DeepSkyBlue">
+<button:SfButton x:Name="button" Text="Button" Background = "DeepSkyBlue" CornerRadius="10">
 </button:SfButton>
 
 {% endhighlight %}
@@ -201,6 +205,7 @@ The [`Background`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.T
 SfButton button = new SfButton();
 button.Text = "Button";
 button.Background = Colors.DeepSkyBlue;
+button.CornerRadius= 10;
 
 {% endhighlight %}
 {% endtabs %}
@@ -216,7 +221,7 @@ The [`Stroke`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolk
 {% tabs %}
 {% highlight xaml %}
 
-<button:SfButton x:Name="button" Text="Button" Stroke="Red">
+<button:SfButton x:Name="button" Text="Button" Stroke="Red" CornerRadius="10">
 </button:SfButton>
 
 {% endhighlight %}
@@ -225,6 +230,7 @@ The [`Stroke`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolk
 SfButton button = new SfButton();
 button.Text = "Button";
 button.Stroke = Colors.Red;
+button.CornerRadius= 10;
 
 {% endhighlight %}
 {% endtabs %}
@@ -238,7 +244,7 @@ The [`StrokeThickness`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.M
 {% tabs %}
 {% highlight xaml %}
 
-<button:SfButton x:Name="button" Text="Button" Stroke="Red" StrokeThickness="6">
+<button:SfButton x:Name="button" Text="Button" Stroke="Red" StrokeThickness="6" CornerRadius="10">
 </button:SfButton>
 
 {% endhighlight %}
@@ -248,6 +254,7 @@ SfButton button = new SfButton();
 button.Text = "Button";
 button.StrokeThickness = 6;
 button.Stroke = Colors.Red;
+button.CornerRadius= 10;
 
 {% endhighlight %}
 {% endtabs %}
@@ -310,7 +317,7 @@ N> Enable the [`ShowIcon`]() property to enable the [`ImageSource`](https://help
 {% tabs %}
 {% highlight xaml %}
 
-<button:SfButton x:Name="button" Text="Button" ImageSource="Heart.png" ShowIcon="True">
+<button:SfButton x:Name="button" Text="Button" ImageSource="Heart.png" ShowIcon="True" CornerRadius="2">
 </button:SfButton>
 
 {% endhighlight %}
@@ -320,6 +327,7 @@ SfButton button = new SfButton();
 button.Text = "Button";
 button.ImageSource = "Heart.png";
 button.ShowIcon = True;
+button.CornerRadius= 2;
 
 {% endhighlight %}
 {% endtabs %}
@@ -377,6 +385,7 @@ N> Enable the `ShowIcon` property to enable the `ImageAlignment` property.
                 ShowIcon="True" 
                 ImageSize="25"
                 Stroke="Black"
+                CornerRadius="10"
                 Background="White"
                 ImageAlignment="End"/>
 
@@ -392,6 +401,7 @@ SfButton button = new SfButton()
     ShowIcon = true,
     ImageSize = 25,
     Stroke = Colors.Black,
+    CornerRadius= 10,
     Background = Colors.White,
     ImageAlignment = Alignment.End
 };
@@ -414,6 +424,7 @@ SfButton button = new SfButton()
                     ShowIcon="True" 
                     ImageSize="25"
                     Stroke="Black"
+                    CornerRadius="10"
                     Background="White"
                     ImageAlignment="Start"/>
 
@@ -429,6 +440,7 @@ SfButton button = new SfButton()
     ShowIcon = true,
     ImageSize = 25,
     Stroke = Colors.Black,
+    CornerRadius= 10,
     Background = Colors.White,
     ImageAlignment = Alignment.Start
 };
@@ -452,6 +464,7 @@ SfButton button = new SfButton()
                 ShowIcon="True" 
                 ImageSize="25"
                 Stroke="Black"
+                CornerRadius="10"
                 Background="White"
                 ImageAlignment="Top"/>
 
@@ -467,6 +480,7 @@ SfButton button = new SfButton()
     ShowIcon = true,
     ImageSize= 25,
     Stroke = Colors.Black,
+    CornerRadius= 10,
     Background = Colors.White,
     ImageAlignment = Alignment.Top
 };
@@ -490,6 +504,7 @@ SfButton button = new SfButton()
                 ShowIcon="True" 
                 ImageSize="25"
                 Stroke="Black"
+                CornerRadius="10"
                 Background="White"
                 ImageAlignment="Bottom"/>
 
@@ -505,6 +520,7 @@ SfButton button = new SfButton()
     ShowIcon = true,
     ImageSize = 25,
     Stroke = Colors.Black,
+    CornerRadius= 10,
     Background = Colors.White,
     ImageAlignment = Alignment.Bottom
 };
@@ -528,6 +544,7 @@ SfButton button = new SfButton()
                 ShowIcon="True" 
                 ImageSize="25"
                 Stroke="Black"
+                CornerRadius="10"
                 Background="White"
                 ImageAlignment="Default"/>
 
@@ -543,6 +560,7 @@ SfButton button = new SfButton()
     ShowIcon = true,
     ImageSize = 25,
     Stroke = Colors.Black,
+    CornerRadius= 10,
     Background = Colors.White,
     ImageAlignment = Alignment.Center
 };
@@ -568,6 +586,7 @@ In RTL flow direction, image alignment with [`Start`](https://help.syncfusion.co
                 ShowIcon="True" 
                 ImageSize="25"
                 Stroke="Black"
+                CornerRadius="10"
                 Background="White"
                 ImageAlignment="Left"/>
 
@@ -584,6 +603,7 @@ SfButton button = new SfButton()
     ShowIcon = true,
     ImageSize = 25,
     Stroke= Colors.Black,
+    CornerRadius= 10,
     Background = Colors.White,
     ImageAlignment = Alignment.Left
 };
@@ -608,6 +628,7 @@ In RTL flow direction, image alignment with [`End`](https://help.syncfusion.com/
                 ShowIcon="True" 
                 ImageSize="25"
                 Stroke="Black"
+                CornerRadius="10"
                 Background="White"
                 ImageAlignment="Right"/>
 
@@ -623,6 +644,7 @@ SfButton button = new SfButton()
     ShowIcon = true,
     ImageSize = 25,
     Stroke= Colors.Black,
+    CornerRadius= 10,
     Background = Colors.White,
     ImageAlignment = Alignment.Right
 };
