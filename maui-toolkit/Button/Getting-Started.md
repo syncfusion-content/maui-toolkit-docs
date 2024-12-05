@@ -123,7 +123,8 @@ N> Ensure that the images mentioned in the code snippets are located in the **Re
 <buttons:SfButton x:Name="SfButton" 
                     Text="Button"
                     TextColor="White" 
-                    ShowIcon="True" 
+                    ShowIcon="True"
+                    CornerRadius="2" 
                     ImageSource="button_Heart.png"/>
 
 {% endhighlight %}
@@ -134,6 +135,7 @@ button.Text = "Button";
 button.TextColor = Colors.White;
 button.ImageSource = "button_Heart.png";
 button.ShowIcon = true;
+button.CornerRadius= 2;
 
 {% endhighlight %}
 {% endtabs %}
