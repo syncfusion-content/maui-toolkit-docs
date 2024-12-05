@@ -41,7 +41,7 @@ You can handle the event as follows.
 {% tabs %}
 {% highlight C# %}
 
-private void sfNumericUpDown_ValueChanged(object sender, NumericEntryValueChangedEventArgs e)
+private void sfNumericUpDown_ValueChanged(object sender, Syncfusion.Maui.Toolkit.NumericEntry.NumericEntryValueChangedEventArgs e)
 {
     var oldValue = e.OldValue;
     var newValue = e.NewValue;
