@@ -136,8 +136,7 @@ sfNumericUpDown.CustomFormat = "0.000";
 
 ## Change number format
 
-You can change the format in which the value should be displayed using the [CustomFormat](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericEntry.SfNumericEntry.html#Syncfusion_Maui_Toolkit_NumericEntry_SfNumericEntry_CustomFormat
-) property. By default, the value of the `CustomFormat` property is **null**.
+You can change the format in which the value should be displayed using the [CustomFormat](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericEntry.SfNumericEntry.html#Syncfusion_Maui_Toolkit_NumericEntry_SfNumericEntry_CustomFormat) property. By default, the value of the `CustomFormat` property is **null**.
 
 {% tabs %}
 {% highlight xaml %}
