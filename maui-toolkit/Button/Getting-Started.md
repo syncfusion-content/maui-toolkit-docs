@@ -85,7 +85,7 @@ Step 2: Initialize [SfButton](https://help.syncfusion.com/cr/maui-toolkit/Syncfu
 
 {% highlight xaml %}
 <ContentPage 
-    xmlns:button="clr-namespace:Syncfusion.Maui.Toolkit.Buttons;assembly=Syncfusion.Maui.Toolkit">
+    xmlns:buttons="clr-namespace:Syncfusion.Maui.Toolkit.Buttons;assembly=Syncfusion.Maui.Toolkit">
     <ContentPage.Content> 
 	 	<buttons:SfButton x:Name="button" />
 	</ContentPage.Content> 
