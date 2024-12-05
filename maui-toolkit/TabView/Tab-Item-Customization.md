@@ -548,7 +548,7 @@ The following image shows the tab view with scroll buttons enabled:
 
 ### Scroll button customization
 
-The `ScrollButtonBackground` and `ScrollButtonColor` property of [SfTabView](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.TabView.SfTabView.html?tabs=tabid-1) allows users to customize the background color and foreground color of scroll button.
+The `ScrollButtonBackground` and `ScrollButtonColor` property of [SfTabView](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SfTabView.html) allows users to customize the background color and foreground color of scroll button.
 
 {% tabs %}
 
