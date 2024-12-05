@@ -43,7 +43,7 @@ sfNumericEntry.AllowNull = false;
 
 ## Restrict value within range
 
-You can restrict the users to enter input within a minimum and maximum range in the `NumericEntry` control using the Minimum and Maximum properties. The default value of the [Minimum](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Inputs.SfNumericEntry.html#Syncfusion_Maui_Inputs_SfNumericEntry_Minimum) property is the **double.MinValue** and [Maximum](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Inputs.SfNumericEntry.html#Syncfusion_Maui_Inputs_SfNumericEntry_Maximum) property is **double.MaxValue**.
+You can restrict the users to enter input within a minimum and maximum range in the `NumericEntry` control using the Minimum and Maximum properties. The default value of the [Minimum]() property is the **double.MinValue** and [Maximum]() property is **double.MaxValue**.
 
 {% tabs %}
 {% highlight xaml %}

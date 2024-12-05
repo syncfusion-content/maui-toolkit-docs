@@ -35,7 +35,7 @@ numericUpDown.VerticalOptions = LayoutOptions.Center;
 
 ## Clear button visibility 
 
-The [ShowClearButton](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Inputs.SfNumericUpDown.html#Syncfusion_Maui_Inputs_SfNumericUpDown_ShowClearButton) property is used to show or hide the clear button in the `NumericUpDown`. By default, visibility of the clear button is enabled.
+The [ShowClearButton]() property is used to show or hide the clear button in the `NumericUpDown`. By default, visibility of the clear button is enabled.
 
 N> The clear button appears only when the text box is focused and the `IsEditable` property value is set to **true**.
 {% tabs %}
@@ -65,46 +65,6 @@ If IsEditable is true
 If IsEditable is false
 
 ![.NET MAUI NumericUpDown without Clear Button](GettingStarted_images/clearbutton_collapsed.png)
-
-
-## Value changed notification
-
-The [ValueChanged]() event is triggered when the [Value]() property of the `NumericUpDown` control is changed. The value will not be changed when the user enters the input. The value of the `NumericUpDown` control will be changed after validation is performed on the `Enter` keypress or when the focus is lost in the control. The `ValueChanged` contains the following properties.
-
- * `NewValue`- Contains the new input value.
- * `OldValue`- Contains the previous input value.
-
-{% tabs %}
-{% highlight xaml %}
-
-<editors:SfNumericUpDown HorizontalOptions="Center"
-                        VerticalOptions="Center"
-                        ValueChanged="sfNumericUpDown_ValueChanged" />
-
-{% endhighlight %}
-{% highlight C# %}
-
-SfNumericUpDown sfNumericUpDown = new SfNumericUpDown();
-sfNumericUpDown.HorizontalOptions = LayoutOptions.Center;
-sfNumericUpDown.VerticalOptions = LayoutOptions.Center;
-sfNumericUpDown.ValueChanged += sfNumericUpDown_ValueChanged;
-
-{% endhighlight %}
-{% endtabs %}
-
-You can handle the event as follows.
-
-{% tabs %}
-{% highlight C# %}
-
-private void sfNumericUpDown_ValueChanged(object sender, NumericUpDownValueChangedEventArgs e)
-{
-    var oldValue = e.OldValue;
-    var newValue = e.NewValue;
-}
-
-{% endhighlight %}
-{% endtabs %}
 
 ## Value Change Mode
 

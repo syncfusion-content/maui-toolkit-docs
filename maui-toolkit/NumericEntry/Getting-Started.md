@@ -9,18 +9,14 @@ documentation: ug
 
 # Getting Started with .NET MAUI Numeric Entry
 
-This section guides you through setting up and configuring a [Numeric Entry]() in your .NET MAUI application. Follow the steps below to add a basic Numeric Entry to your project.
-
-To quickly get started with the .NET MAUI Numeric Entry, watch this video.
-
-{% youtube "https://www.youtube.com/watch?v=BHw8UpoUmoM&ab_channel=Syncfusion%2CInc" %}
+This section guides you through setting up and configuring a [Numeric Entry]() in your .NET MAUI application. Follow the steps below to add a basic Numeric Entry Down to your project.
 
 ## Prerequisites
 
 Before proceeding, ensure the following are in place:
 
-1. Install [.NET 7 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/7.0) or later.
-2. Set up a .NET MAUI environment with Visual Studio 2022 (v17.3 or later) or Visual Studio Code. For Visual Studio Code users, ensure that the .NET MAUI workload is installed and configured as described [here](https://learn.microsoft.com/en-us/dotnet/maui/get-started/installation?view=net-maui-8.0&tabs=visual-studio-code).
+1. Install [.NET 8 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/8.0) or later.
+2. Set up a .NET MAUI environment with Visual Studio 2022 (v17.8 or later) or Visual Studio Code. For Visual Studio Code users, ensure that the .NET MAUI workload is installed and configured as described [here](https://learn.microsoft.com/en-us/dotnet/maui/get-started/installation?view=net-maui-8.0&tabs=visual-studio-code).
 
 ## Step 1: Create a New MAUI Project
 
