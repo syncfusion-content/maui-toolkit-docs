@@ -11,7 +11,7 @@ documentation: ug
 
 ## Setting Placeholder Text
 
-You can prompt the user with any information using the [Placeholder]() property. Placeholder text will be displayed only when the value of the [AllowNull](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Inputs.SfNumericEntry.html#Syncfusion_Maui_Inputs_SfNumericEntry_AllowNull) property is **true** and the value of the `NumericEntry` control is **null**. The default value of the `Placeholder` property is **string.Empty** (No string will be displayed).
+You can prompt the user with any information using the [Placeholder]() property. Placeholder text will be displayed only when the value of the [AllowNull]() property is **true** and the value of the `NumericEntry` control is **null**. The default value of the `Placeholder` property is **string.Empty** (No string will be displayed).
 
 {% tabs %}
 {% highlight xaml %}
@@ -66,52 +66,12 @@ If IsEditable is false
 
 ![.NET MAUI NumericEntry without Clear Button](GettingStarted_images/clearbutton_collapsed.png)
 
-
-## Value changed notification
-
-The [ValueChanged]() event is triggered when the [Value]() property of the `NumericEntry` control is changed. The value will not be changed when the user enters the input. The value of the `NumericEntry` control will be changed after validation is performed on the `Enter` keypress or when the focus is lost in the control. The `ValueChanged` contains the following properties.
-
- * `NewValue`- Contains the new input value.
- * `OldValue`- Contains the previous input value.
-
-{% tabs %}
-{% highlight xaml %}
-
-<editors:SfNumericEntry HorizontalOptions="Center"
-                        VerticalOptions="Center"
-                        ValueChanged="sfNumericEntry_ValueChanged" />
-
-{% endhighlight %}
-{% highlight C# %}
-
-SfNumericEntry sfNumericEntry = new SfNumericEntry();
-sfNumericEntry.HorizontalOptions = LayoutOptions.Center;
-sfNumericEntry.VerticalOptions = LayoutOptions.Center;
-sfNumericEntry.ValueChanged += sfNumericEntry_ValueChanged;
-
-{% endhighlight %}
-{% endtabs %}
-
-You can handle the event as follows.
-
-{% tabs %}
-{% highlight C# %}
-
-private void sfNumericEntry_ValueChanged(object sender, NumericEntryValueChangedEventArgs e)
-{
-    var oldValue = e.OldValue;
-    var newValue = e.NewValue;
-}
-
-{% endhighlight %}
-{% endtabs %}
-
 ## Value Change Mode
 
 The [ValueChangeMode]() property determine when the values are updated.
 
 The supported value change modes are as follows:
-    * [OnLostFocus]() - The value will be updated when the editor loses its focus or the focus moved to the next control. By default, the [ValueChangeMode](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Inputs.SfNumericEntry.html#Syncfusion_Maui_Inputs_SfNumericEntry_ValueChangeMode) is `OnLostFocus`.
+    * [OnLostFocus]() - The value will be updated when the editor loses its focus or the focus moved to the next control. By default, the [ValueChangeMode]() is `OnLostFocus`.
     * [OnKeyFocus]() - The value will be updated with each key press.
 
 {% tabs %}

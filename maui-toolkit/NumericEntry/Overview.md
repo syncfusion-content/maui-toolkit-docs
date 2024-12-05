@@ -18,7 +18,6 @@ The [.NET MAUI NumericEntry]() control is designed to provide a user-friendly an
 ## Key features
 
 * Input validation is triggered when the focus is lost, or the enter key is pressed.
-* Convenient value increment and decrement using the up-down button.
 * Flexible display of values in various custom formats.
 * Adapts to different cultural and regional settings for value presentation.
 * Placeholder text displayed when the Numeric Entry control contains an empty or null value.

@@ -7,14 +7,6 @@ control: SfNumericEntry
 documentation: ug
 ---
 
-# Getting Started with .NET MAUI Numeric Entry
-
-This section guides you through setting up and configuring a [Numeric Entry]() in your .NET MAUI application. Follow the steps below to add a basic Numeric Entry to your project.
-
-To quickly get started with the .NET MAUI Numeric Entry, watch this video.
-
-{% youtube "https://www.youtube.com/watch?v=BHw8UpoUmoM&ab_channel=Syncfusion%2CInc" %}
-
 ## Prerequisites
 
 Before proceeding, ensure the following are in place:

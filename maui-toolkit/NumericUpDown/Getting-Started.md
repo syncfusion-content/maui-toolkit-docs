@@ -112,15 +112,14 @@ Step 3: Add the [SfNumericUpDown]() control with a required optimal name using t
 ![.NET MAUI NumericUpDown Application](GettingStarted_images/gettingStarted_img.png)
 
 ## Editing the value
-
-By default, the [NumericUpDown]() control allows you to enter numeric input and restricts the alphabetic input. Once the `Enter` key is pressed or control focus is lost, the value of the `NumericUpDown` control is validated and updated based on the format applied.
+By default, the [NumericUpDown]() control allows you to enter numeric input, restricts the alphabetic input. It provides increment and decrement buttons for convenient value adjustments. Once the `Enter` key is pressed or control focus is lost, the value of the `NumericUpDown` control is validated and updated based on the format applied.
 
 {% tabs %}
 {% highlight xaml %}
 
 <editors:SfNumericUpDown HorizontalOptions="Center" 
-                        VerticalOptions="Center" 
-                        CustomFormat="0.000" />
+                         VerticalOptions="Center" 
+                         CustomFormat="0.000" />
 
 {% endhighlight %}
 {% highlight C# %}
