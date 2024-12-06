@@ -13,8 +13,6 @@ documentation: ug
 
 * The `BottomSheet` content is only viewable when the sheet is in the FullExpanded, HalfExpanded, or Collapsed state. Its content can be set as : `BottomSheetContent`.
 
-## With Using Content
-
 {% tabs %}
 {% highlight xaml %}
 
