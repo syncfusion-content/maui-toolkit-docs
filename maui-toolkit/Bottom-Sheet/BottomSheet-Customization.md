@@ -67,11 +67,11 @@ Content = bottomSheet;
 {% endtabs %}
 
 ## Allowed State
-The states of the `BottomSheet` can be controlled using the `AllowedState` property. The default value is `All`, allowing all states. This property accepts the following values:
+The states of the `BottomSheet` allow you to control the height of the bottom sheet using the `AllowedState` property. The default value is `All`, which allows transitions between all available states. This property accepts the following values:
 
-*   **FullExpanded** - The sheet can expand to cover the full screen.
-*   **HalfExpanded** - The sheet can expand to half of the screen height.
-*   **All** - The sheet can transition between all available states (FullExpanded, HalfExpanded, Collapsed, and Hidden).
+* **FullExpanded** - Restricts the transitions to only between FullExpanded and Collapsed states.
+* **HalfExpanded** - Restricts the transitions to only between HalfExpanded and Collapsed states.
+* **All** - Allows transitions between all available states (FullExpanded, HalfExpanded, Collapsed, and Hidden).
 
 {% tabs %}	
 {% highlight xaml %}
@@ -87,159 +87,6 @@ The states of the `BottomSheet` can be controlled using the `AllowedState` prope
 
 SfBottomSheet bottomSheet = new SfBottomSheet();
 bottomSheet.AllowedState = BottomSheetAllowedState.HalfExpanded;
-Grid grid = new Grid();
-bottomSheet.BottomSheetContent = grid;
-Content = bottomSheet;
-
-{% endhighlight %}
-{% endtabs %}
-
-## FullExpandedRatio
-
-The `FullExpandedRatio` property adjusts the height of the `BottomSheet` when it is in the `FullExpanded` state. The default value is `1`. You can set a value between 0.1 and 1 to adjust the height. This property works only when the sheet's `State` is `FullExpanded`.
-
-{% tabs %}	
-{% highlight xaml %}
-
-<bottomSheet:SfBottomSheet x:Name="bottomSheet" FullExpandedRatio="0.8" State="FullExpanded">
- <bottomSheet:SfBottomSheet.BottomSheetContent>
-     <Grid/>
- </bottomSheet:SfBottomSheet.BottomSheetContent>
-</bottomSheet:SfBottomSheet>
-	
-{% endhighlight %}
-{% highlight c# %}
-
-SfBottomSheet bottomSheet = new SfBottomSheet();
-bottomSheet.FullExpandedRatio = 0.8;
-bottomSheet.State = BottomSheetState.FullExpanded;
-Grid grid = new Grid();
-bottomSheet.BottomSheetContent = grid;
-Content = bottomSheet;
-
-{% endhighlight %}
-{% endtabs %}
-
-## HalfExpandedRatio
-
-The `HalfExpandedRatio` property adjusts the height of the `BottomSheet` when it is in the `HalfExpanded` state. The default value is `0.5`. You can set a value between 0.1 and 0.9 to adjust the height. This property works only when the sheet's `State` is `HalfExpanded`.
-
-{% tabs %}	
-{% highlight xaml %}
-
-<bottomSheet:SfBottomSheet x:Name="bottomSheet" HalfExpandedRatio="0.7" State="HalfExpanded">
-    <bottomSheet:SfBottomSheet.BottomSheetContent>
-        <Grid/>
-    </bottomSheet:SfBottomSheet.BottomSheetContent>
-</bottomSheet:SfBottomSheet>
-	
-{% endhighlight %}
-{% highlight c# %}
-
-SfBottomSheet bottomSheet = new SfBottomSheet();
-bottomSheet.HalfExpandedRatio = 0.7;
-bottomSheet.State = BottomSheetState.HalfExpanded;
-Grid grid = new Grid();
-bottomSheet.BottomSheetContent = grid;
-Content = bottomSheet;
-
-{% endhighlight %}
-{% endtabs %}
-
-## Collapsed Height
-The `CollapsedHeight` property allows you to specify the height of the `BottomSheet`, when it is in the `Collapsed` state. The default value is `100`.
-
-{% tabs %}	
-{% highlight xaml %}
-
-<bottomSheet:SfBottomSheet x:Name="bottomSheet" CollapsedHeight="150">
-    <bottomSheet:SfBottomSheet.BottomSheetContent>
-        <Grid/>
-    </bottomSheet:SfBottomSheet.BottomSheetContent>
-</bottomSheet:SfBottomSheet>
-	
-{% endhighlight %}
-{% highlight c# %}
-
-SfBottomSheet bottomSheet = new SfBottomSheet();
-bottomSheet.CollapsedHeight = 150;
-Grid grid = new Grid();
-bottomSheet.BottomSheetContent = grid;
-Content = bottomSheet;
-
-{% endhighlight %}
-{% endtabs %}
-
-
-## CornerRadius
-The `CornerRadius` property allows you to add corner radius to the Bottom sheet.
-
-{% tabs %}	
-{% highlight xaml %}
-
-<bottomSheet:SfBottomSheet x:Name="bottomSheet" CornerRadius="15, 15, 0, 0">
-    <bottomSheet:SfBottomSheet.BottomSheetContent>
-        <Grid/>
-    </bottomSheet:SfBottomSheet.BottomSheetContent>
-</bottomSheet:SfBottomSheet>
-	
-{% endhighlight %}
-{% highlight c# %}
-
-SfBottomSheet bottomSheet = new SfBottomSheet();
-bottomSheet.CornerRadius = new CornerRadius(15, 15, 0, 0);
-Grid grid = new Grid();
-bottomSheet.BottomSheetContent = grid;
-Content = bottomSheet;
-
-{% endhighlight %}
-{% endtabs %}
-
-## Content Width Mode
-The `ContentWidthMode` property allows you to adjust the width of the `BottomSheet`. The default value is `Full`. This property accepts the following values:
-
-* **Full** - The sheet will occupy the entire screen width.
-* **Custom** - The sheet will adjust its width based on the value set in the `BottomSheetContentWidth` property.
-
-{% tabs %}	
-{% highlight xaml %}
-
-<bottomSheet:SfBottomSheet x:Name="bottomSheet" ContentWidthMode="Full">
-    <bottomSheet:SfBottomSheet.BottomSheetContent>
-        <Grid/>
-    </bottomSheet:SfBottomSheet.BottomSheetContent>
-</bottomSheet:SfBottomSheet>
-	
-{% endhighlight %}
-{% highlight c# %}
-
-SfBottomSheet bottomSheet = new SfBottomSheet();
-bottomSheet.ContentWidthMode = BottomSheetContentWidthMode.Full;
-Grid grid = new Grid();
-bottomSheet.BottomSheetContent = grid;
-Content = bottomSheet;
-
-{% endhighlight %}
-{% endtabs %}
-
-## Bottom Sheet Content Width
-The `BottomSheetContentWidth` property allows you to adjust the width of the `BottomSheet`, when it is in `Custom` content width mode. The default value is `300`.
-
-{% tabs %}	
-{% highlight xaml %}
-
-<bottomSheet:SfBottomSheet x:Name="bottomSheet" ContentWidthMode="Custom" BottomSheetContentWidth="500">
-    <bottomSheet:SfBottomSheet.BottomSheetContent>
-       <Grid/>
-    </bottomSheet:SfBottomSheet.BottomSheetContent>
-</bottomSheet:SfBottomSheet>
-	
-{% endhighlight %}
-{% highlight c# %}
-
-SfBottomSheet bottomSheet = new SfBottomSheet();
-bottomSheet.ContentWidthMode = BottomSheetContentWidthMode.Custom;
-bottomSheet.BottomSheetContentWidth = 500;
 Grid grid = new Grid();
 bottomSheet.BottomSheetContent = grid;
 Content = bottomSheet;
@@ -288,6 +135,134 @@ The `Background` property allows you to customize the background color of the Bo
 
 SfBottomSheet bottomSheet = new SfBottomSheet();
 bottomSheet.Background = new SolidColorBrush(Colors.MediumPurple);
+Grid grid = new Grid();
+bottomSheet.BottomSheetContent = grid;
+Content = bottomSheet;
+
+{% endhighlight %}
+{% endtabs %}
+
+## CornerRadius
+The `CornerRadius` property allows you to add corner radius to the Bottom sheet.
+
+{% tabs %}	
+{% highlight xaml %}
+
+<bottomSheet:SfBottomSheet x:Name="bottomSheet" CornerRadius="15, 15, 0, 0">
+    <bottomSheet:SfBottomSheet.BottomSheetContent>
+        <Grid/>
+    </bottomSheet:SfBottomSheet.BottomSheetContent>
+</bottomSheet:SfBottomSheet>
+	
+{% endhighlight %}
+{% highlight c# %}
+
+SfBottomSheet bottomSheet = new SfBottomSheet();
+bottomSheet.CornerRadius = new CornerRadius(15, 15, 0, 0);
+Grid grid = new Grid();
+bottomSheet.BottomSheetContent = grid;
+Content = bottomSheet;
+
+{% endhighlight %}
+{% endtabs %}
+
+## Adjust the Height
+### FullExpandedRatio
+
+The `FullExpandedRatio` property adjusts the height of the `BottomSheet` when it is in the `FullExpanded` state. The default value is `1`. You can set a value between 0.1 and 1 to adjust the height. This property works only when the sheet's `State` is `FullExpanded`.
+
+{% tabs %}	
+{% highlight xaml %}
+
+<bottomSheet:SfBottomSheet x:Name="bottomSheet" FullExpandedRatio="0.8" State="FullExpanded">
+ <bottomSheet:SfBottomSheet.BottomSheetContent>
+     <Grid/>
+ </bottomSheet:SfBottomSheet.BottomSheetContent>
+</bottomSheet:SfBottomSheet>
+	
+{% endhighlight %}
+{% highlight c# %}
+
+SfBottomSheet bottomSheet = new SfBottomSheet();
+bottomSheet.FullExpandedRatio = 0.8;
+bottomSheet.State = BottomSheetState.FullExpanded;
+Grid grid = new Grid();
+bottomSheet.BottomSheetContent = grid;
+Content = bottomSheet;
+
+{% endhighlight %}
+{% endtabs %}
+
+### HalfExpandedRatio
+
+The `HalfExpandedRatio` property adjusts the height of the `BottomSheet` when it is in the `HalfExpanded` state. The default value is `0.5`. You can set a value between 0.1 and 0.9 to adjust the height. This property works only when the sheet's `State` is `HalfExpanded`.
+
+{% tabs %}	
+{% highlight xaml %}
+
+<bottomSheet:SfBottomSheet x:Name="bottomSheet" HalfExpandedRatio="0.7" State="HalfExpanded">
+    <bottomSheet:SfBottomSheet.BottomSheetContent>
+        <Grid/>
+    </bottomSheet:SfBottomSheet.BottomSheetContent>
+</bottomSheet:SfBottomSheet>
+	
+{% endhighlight %}
+{% highlight c# %}
+
+SfBottomSheet bottomSheet = new SfBottomSheet();
+bottomSheet.HalfExpandedRatio = 0.7;
+bottomSheet.State = BottomSheetState.HalfExpanded;
+Grid grid = new Grid();
+bottomSheet.BottomSheetContent = grid;
+Content = bottomSheet;
+
+{% endhighlight %}
+{% endtabs %}
+
+### Collapsed Height
+The `CollapsedHeight` property allows you to specify the height of the `BottomSheet`, when it is in the `Collapsed` state. The default value is `100`.
+
+{% tabs %}	
+{% highlight xaml %}
+
+<bottomSheet:SfBottomSheet x:Name="bottomSheet" CollapsedHeight="150">
+    <bottomSheet:SfBottomSheet.BottomSheetContent>
+        <Grid/>
+    </bottomSheet:SfBottomSheet.BottomSheetContent>
+</bottomSheet:SfBottomSheet>
+	
+{% endhighlight %}
+{% highlight c# %}
+
+SfBottomSheet bottomSheet = new SfBottomSheet();
+bottomSheet.CollapsedHeight = 150;
+Grid grid = new Grid();
+bottomSheet.BottomSheetContent = grid;
+Content = bottomSheet;
+
+{% endhighlight %}
+{% endtabs %}
+
+## Adjust the Width
+* The `ContentWidthMode` property allows you to adjust the width of the `BottomSheet`. The default value is `Full`.
+
+* The `BottomSheetContentWidth` property allows you to adjust the width of the `BottomSheet`, when it is in `Custom` content width mode. The default value is `300`.
+
+{% tabs %}	
+{% highlight xaml %}
+
+<bottomSheet:SfBottomSheet x:Name="bottomSheet" ContentWidthMode="Custom" BottomSheetContentWidth="500">
+    <bottomSheet:SfBottomSheet.BottomSheetContent>
+       <Grid/>
+    </bottomSheet:SfBottomSheet.BottomSheetContent>
+</bottomSheet:SfBottomSheet>
+	
+{% endhighlight %}
+{% highlight c# %}
+
+SfBottomSheet bottomSheet = new SfBottomSheet();
+bottomSheet.ContentWidthMode = BottomSheetContentWidthMode.Custom;
+bottomSheet.BottomSheetContentWidth = 500;
 Grid grid = new Grid();
 bottomSheet.BottomSheetContent = grid;
 Content = bottomSheet;

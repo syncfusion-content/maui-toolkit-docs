@@ -138,22 +138,17 @@ namespace BottomSheetGettingStarted
             bottomSheet.Content = verticalStackLayout;
             this.Content = bottomSheet;
         }
-    } 
+
+        private void OpenBottomSheet(object sender, EventArgs e)
+        {
+            bottomSheet.Show();
+        }
+        
+    }
 }
 {% endhighlight %}
 {% endtabs %}
 
-{% tabs %}
-{% highlight c# %}
-    
-private void OpenBottomSheet(object sender, EventArgs e)
-{
-    bottomSheet.Show();
-}
-
-{% endhighlight %}
-{% endtabs %}
-
-N> It is mandatory to set `Content` and `BottomSheetContent` for `SfBottomSheet` on initializing.
+N> Using `Content`, Place the main content inside the bottom sheet's `Content` property. Without using `Content`, Place the main content outside the `BottomSheet`, making sure the bottom sheet is the last element in the grid.
 
 ![Getting Started Image for BottomSheet](images/gettingStarted.png)
