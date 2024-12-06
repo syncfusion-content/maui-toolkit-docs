@@ -17,12 +17,12 @@ The text inside the button can be customized by its text color, font size, font 
 
 ### TextColor
 
-The [`TextColor`](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Core.ButtonBase.html#Syncfusion_Maui_Core_ButtonBase_TextColor) property is used to customize the color of text in [`SfButton`](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Buttons.SfButton.html).
+The [`TextColor`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.ButtonBase.html#Syncfusion_Maui_Toolkit_ButtonBase_TextColor) property is used to customize the color of text in [`SfButton`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Buttons.SfButton.html).
 
 {% tabs %}
 {% highlight xaml %}
 
-<button:SfButton x:Name="button" Text="Button" TextColor = "White">
+<button:SfButton x:Name="button" Text="Button" TextColor = "White" CornerRadius="10">
 </button:SfButton>
 
 {% endhighlight %}
@@ -31,6 +31,7 @@ The [`TextColor`](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Core.Butto
 SfButton button = new SfButton();
 button.Text = "Button";
 button.TextColor = Colors.White;
+button.CornerRadius= 10;
 
 {% endhighlight %}
 {% endtabs %}
@@ -39,12 +40,12 @@ button.TextColor = Colors.White;
 
 ### FontSize
 
-The [`FontSize`](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Core.ButtonBase.html#Syncfusion_Maui_Core_ButtonBase_FontSize) property is used to customize the size of text in [`SfButton`](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Buttons.SfButton.html).
+The [`FontSize`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.ButtonBase.html#Syncfusion_Maui_Toolkit_ButtonBase_FontSize) property is used to customize the size of text in [`SfButton`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Buttons.SfButton.html).
 
 {% tabs %}
 {% highlight xaml %}
 
-<button:SfButton x:Name="button" Text="Button" FontSize = "18">
+<button:SfButton x:Name="button" Text="Button" FontSize = "18" CornerRadius="10">
 </button:SfButton>
 
 {% endhighlight %}
@@ -53,6 +54,7 @@ The [`FontSize`](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Core.Button
 SfButton button = new SfButton();
 button.Text = "Button";
 button.FontSize = 18;
+button.CornerRadius= 10;
 
 {% endhighlight %}
 {% endtabs %}
@@ -61,12 +63,12 @@ button.FontSize = 18;
 
 ### FontAttributes
 
-The [`FontAttributes`](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Core.ButtonBase.html#Syncfusion_Maui_Core_ButtonBase_FontAttributes) property is used to customize the font style of text in [`SfButton`](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Buttons.SfButton.html).
+The [`FontAttributes`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.ButtonBase.html#Syncfusion_Maui_Toolkit_ButtonBase_FontAttributes) property is used to customize the font style of text in [`SfButton`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Buttons.SfButton.html).
 
 {% tabs %}
 {% highlight xaml %}
 
-<button:SfButton x:Name="button" Text="Button" FontAttributes = "Italic">
+<button:SfButton x:Name="button" Text="Button" FontAttributes = "Italic" CornerRadius="10">
 </button:SfButton>
 
 {% endhighlight %}
@@ -75,6 +77,7 @@ The [`FontAttributes`](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Core.
 SfButton button = new SfButton();
 button.Text = "Button";
 button.FontAttributes = FontAttributes.Italic;
+button.CornerRadius= 10;
 
 {% endhighlight %}
 {% endtabs %}
@@ -83,12 +86,12 @@ button.FontAttributes = FontAttributes.Italic;
 
 ### FontFamily
 
-The [`FontFamily`](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Core.ButtonBase.html#Syncfusion_Maui_Core_ButtonBase_FontFamily) property is used to customize the font family of text in [`SfButton`](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Buttons.SfButton.html).
+The [`FontFamily`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.ButtonBase.html#Syncfusion_Maui_Toolkit_ButtonBase_FontFamily) property is used to customize the font family of text in [`SfButton`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Buttons.SfButton.html).
 
 {% tabs %}
 {% highlight xaml %}
 
-<button:SfButton x:Name="button" Text="Button" FontFamily = "Samantha-Demo">
+<button:SfButton x:Name="button" Text="Button" FontFamily = "Samantha-Demo" CornerRadius="10">
 </button:SfButton>
 
 {% endhighlight %}
@@ -97,6 +100,7 @@ The [`FontFamily`](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Core.Butt
 SfButton button = new SfButton();
 button.Text = "Button";
 button.FontFamily = "Samantha-Demo";
+button.CornerRadius= 10;
 
 {% endhighlight %}
 {% endtabs %}
@@ -105,7 +109,7 @@ button.FontFamily = "Samantha-Demo";
 
 ### TextAlignment
 
-The [`HorizontalTextAlignment`](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Core.ButtonBase.html#Syncfusion_Maui_Core_ButtonBase_HorizontalTextAlignment) and [`VerticalTextAlignment`](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Core.ButtonBase.html#Syncfusion_Maui_Core_ButtonBase_VerticalTextAlignment) properties are used to customize the alignment of text in [`SfButton`](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Buttons.SfButton.html).
+The [`HorizontalTextAlignment`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.ButtonBase.html#Syncfusion_Maui_Toolkit_ButtonBase_HorizontalTextAlignment) and [`VerticalTextAlignment`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.ButtonBase.html#Syncfusion_Maui_Toolkit_ButtonBase_VerticalTextAlignment) properties are used to customize the alignment of text in [`SfButton`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Buttons.SfButton.html).
 
 {% tabs %}
 {% highlight xaml %}
@@ -126,7 +130,7 @@ button.VerticalTextAlignment = TextAlignment.Center;
 
 ### Text Transform
 
-Users can now customize the [`SfButton`](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Buttons.SfButton.html) text casing using the `TextTransform` property. They can easily switch between uppercase, lowercase, none, or default casing.
+Users can now customize the [`SfButton`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Buttons.SfButton.html) text casing using the [`TextTransform`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Buttons.SfButton.html#Syncfusion_Maui_Toolkit_Buttons_SfButton_TextTransform) property. They can easily switch between uppercase, lowercase, none, or default casing.
 
 {% tabs %}
 {% highlight xaml %}
@@ -153,7 +157,7 @@ button.VerticalTextAlignment = TextAlignment.Center;
 ![.NET MAUI Button Text Transform](images/customization-images/Button_texttransform.png)
 
 ## LineBreakMode
-The [`LineBreakMode`](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Buttons.SfButton.html#Syncfusion_Maui_Buttons_SfButton_LineBreakMode) allows you to wrap or truncate the text. The default value of this property is `NoWrap`. The following other options are available in LineBreakMode:
+The [`LineBreakMode`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Buttons.SfButton.html#Syncfusion_Maui_Toolkit_Buttons_SfButton_LineBreakMode) allows you to wrap or truncate the text. The default value of this property is `NoWrap`. The following other options are available in LineBreakMode:
 
  * `NoWrap` - Avoids the text wrap. 
  * `WordWrap` - Wraps the text by words.
@@ -187,12 +191,12 @@ The background of the button can be customized by its background color, border c
 
 ### Background Color
 
-The [`Background`](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Buttons.SfButton.html#Syncfusion_Maui_Buttons_SfButton_Background) property is used to customize the background color of [`SfButton`](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Buttons.SfButton.html).
+The [`Background`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Buttons.SfButton.html#Syncfusion_Maui_Toolkit_Buttons_SfButton_Background) property is used to customize the background color of [`SfButton`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Buttons.SfButton.html).
 
 {% tabs %}
 {% highlight xaml %}
 
-<button:SfButton x:Name="button" Text="Button" Background = "DeepSkyBlue">
+<button:SfButton x:Name="button" Text="Button" Background = "DeepSkyBlue" CornerRadius="10">
 </button:SfButton>
 
 {% endhighlight %}
@@ -201,6 +205,7 @@ The [`Background`](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Buttons.S
 SfButton button = new SfButton();
 button.Text = "Button";
 button.Background = Colors.DeepSkyBlue;
+button.CornerRadius= 10;
 
 {% endhighlight %}
 {% endtabs %}
@@ -211,12 +216,12 @@ N> When defining the background colors of the SfButton control, always use the `
 
 ### Stroke
 
-The [`Stroke`](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Core.ButtonBase.html#Syncfusion_Maui_Core_ButtonBase_Stroke) property is used to customize the color of border in [`SfButton`](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Buttons.SfButton.html).
+The [`Stroke`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.ButtonBase.html#Syncfusion_Maui_Toolkit_ButtonBase_Stroke) property is used to customize the color of border in [`SfButton`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Buttons.SfButton.html).
 
 {% tabs %}
 {% highlight xaml %}
 
-<button:SfButton x:Name="button" Text="Button" Stroke="Red">
+<button:SfButton x:Name="button" Text="Button" Stroke="Red" CornerRadius="10">
 </button:SfButton>
 
 {% endhighlight %}
@@ -225,6 +230,7 @@ The [`Stroke`](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Core.ButtonBa
 SfButton button = new SfButton();
 button.Text = "Button";
 button.Stroke = Colors.Red;
+button.CornerRadius= 10;
 
 {% endhighlight %}
 {% endtabs %}
@@ -233,12 +239,12 @@ button.Stroke = Colors.Red;
 
 ### StrokeThickness
 
-The [`StrokeThickness`](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Core.ButtonBase.html#Syncfusion_Maui_Core_ButtonBase_StrokeThickness) property is used to customize the thickness of border in [`SfButton`](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Buttons.SfButton.html). 
+The [`StrokeThickness`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Buttons.SfButton.html#Syncfusion_Maui_Toolkit_Buttons_SfButton_StrokeThickness) property is used to customize the thickness of border in [`SfButton`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Buttons.SfButton.html). 
 
 {% tabs %}
 {% highlight xaml %}
 
-<button:SfButton x:Name="button" Text="Button" Stroke="Red" StrokeThickness="6">
+<button:SfButton x:Name="button" Text="Button" Stroke="Red" StrokeThickness="6" CornerRadius="10">
 </button:SfButton>
 
 {% endhighlight %}
@@ -248,6 +254,7 @@ SfButton button = new SfButton();
 button.Text = "Button";
 button.StrokeThickness = 6;
 button.Stroke = Colors.Red;
+button.CornerRadius= 10;
 
 {% endhighlight %}
 {% endtabs %}
@@ -256,7 +263,7 @@ button.Stroke = Colors.Red;
 
 ### CornerRadius
 
-The [`CornerRadius`](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Core.ButtonBase.html#Syncfusion_Maui_Core_ButtonBase_CornerRadius) property is used to customize the rounded edges in [`SfButton`](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Buttons.SfButton.html) as demonstrated in the following code sample.
+The [`CornerRadius`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Buttons.SfButton.html#Syncfusion_Maui_Toolkit_Buttons_SfButton_CornerRadius) property is used to customize the rounded edges in [`SfButton`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Buttons.SfButton.html) as demonstrated in the following code sample.
 
 {% tabs %}
 {% highlight xaml %}
@@ -282,7 +289,7 @@ The Image can be customized by its ShowIcon, ImageSource, ImageSize and ImageAli
 
 ### ShowIcon
 
-You can enable the Icon image using the [`ShowIcon`](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Core.ButtonBase.html#Syncfusion_Maui_Core_ButtonBase_ShowIcon) property to know whether any image appears to the [`SfButton`](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Buttons.SfButton.html).
+You can enable the Icon image using the [`ShowIcon`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.ButtonBase.html#Syncfusion_Maui_Toolkit_ButtonBase_ShowIcon) property to know whether any image appears to the [`SfButton`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Buttons.SfButton.html).
 
 {% tabs %}
 {% highlight xaml %}
@@ -303,14 +310,14 @@ button.ShowIcon = True;
 
 ### ImageSource
 
-The [`ImageSource`](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Core.ButtonBase.html#Syncfusion_Maui_Core_ButtonBase_ImageSource) property is used to customize the icon image of [`SfButton`](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Buttons.SfButton.html) by adding a custom image.
+The [`ImageSource`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.ButtonBase.html#Syncfusion_Maui_Toolkit_ButtonBase_ImageSource) property is used to customize the icon image of [`SfButton`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Buttons.SfButton.html) by adding a custom image.
 
-N> Enable the [`ShowIcon`](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Core.ButtonBase.html#Syncfusion_Maui_Core_ButtonBase_ShowIcon) property to enable the [`ImageSource`](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Core.ButtonBase.html#Syncfusion_Maui_Core_ButtonBase_ImageSource) property. 
+N> Enable the [`ShowIcon`]() property to enable the [`ImageSource`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.ButtonBase.html#Syncfusion_Maui_Toolkit_ButtonBase_ImageSource) property. 
 
 {% tabs %}
 {% highlight xaml %}
 
-<button:SfButton x:Name="button" Text="Button" ImageSource="Heart.png" ShowIcon="True">
+<button:SfButton x:Name="button" Text="Button" ImageSource="Heart.png" ShowIcon="True" CornerRadius="2">
 </button:SfButton>
 
 {% endhighlight %}
@@ -320,6 +327,7 @@ SfButton button = new SfButton();
 button.Text = "Button";
 button.ImageSource = "Heart.png";
 button.ShowIcon = True;
+button.CornerRadius= 2;
 
 {% endhighlight %}
 {% endtabs %}
@@ -328,7 +336,7 @@ button.ShowIcon = True;
 
 ### ImageSize
 
-The [`ImageSize`](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Core.ButtonBase.html#Syncfusion_Maui_Core_ButtonBase_ImageSize) property is used to customize the width of icon image in [`SfButton`](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Buttons.SfButton.html).
+The [`ImageSize`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.ButtonBase.html#Syncfusion_Maui_Toolkit_ButtonBase_ImageSize) property is used to customize the width of icon image in [`SfButton`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Buttons.SfButton.html).
 
 N> Enable the `ShowIcon` property to enable the `ImageSize` property.
 
@@ -352,15 +360,15 @@ button.ImageSize= 50;
 
 ### ImageAlignment 
 
-The [`ImageAlignment`](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Core.ButtonBase.html#Syncfusion_Maui_Core_ButtonBase_ImageAlignment) property is used to customize the alignment of icon image in [`SfButton`](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Buttons.SfButton.html). The following options are available in [`ImageAlignment`](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Core.ButtonBase.html#Syncfusion_Maui_Core_ButtonBase_ImageAlignment):
+The [`ImageAlignment`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.ButtonBase.html#Syncfusion_Maui_Toolkit_ButtonBase_ImageAlignment) property is used to customize the alignment of icon image in [`SfButton`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Buttons.SfButton.html). The following options are available in [`ImageAlignment`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.ButtonBase.html#Syncfusion_Maui_Toolkit_ButtonBase_ImageAlignment):
 
-* [`Start`](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Core.Alignment.html#Syncfusion_Maui_Core_Alignment_Start) - Places the image at the left most of [`SfButton`](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Buttons.SfButton.html).
-* [`End`](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Core.Alignment.html#Syncfusion_Maui_Core_Alignment_End) - Places the image at the right most of [`SfButton`](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Buttons.SfButton.html).
-* [`Top`](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Core.Alignment.html#Syncfusion_Maui_Core_Alignment_Top) - Places the image at the top of the text.
-* [`Bottom`](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Core.Alignment.html#Syncfusion_Maui_Core_Alignment_Bottom) - Places the image at the bottom of the text.
-* '[`Default`](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Core.Alignment.html#Syncfusion_Maui_Core_Alignment_Default) - By default the image places at the center of the text.
-* [`Left`](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Core.Alignment.html#Syncfusion_Maui_Core_Alignment_Left) - Although the flow direction has been applied, it always places the image in the left part of [`SfButton`](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Buttons.SfButton.html). For example, in the direction of the RTL flow, the image setting will move to the right. Use [`Left`](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Core.Alignment.html#Syncfusion_Maui_Core_Alignment_Left) alignment to show this in the same left position.
-* [`Right`](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Core.Alignment.html#Syncfusion_Maui_Core_Alignment_Right) - Although flow direction has been applied, the image is always located in the right part of [`SfButton`](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Buttons.SfButton.html). For example, in the direction of the RTL flow, the image setting will move to the left. But use [`Right`](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Core.Alignment.html#Syncfusion_Maui_Core_Alignment_Right) alignment to show this in the same right position.
+* [`Start`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Chips.Alignment.html#Syncfusion_Maui_Toolkit_Chips_Alignment_Start) - Places the image at the left most of [`SfButton`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Buttons.SfButton.html).
+* [`End`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Chips.Alignment.html#Syncfusion_Maui_Toolkit_Chips_Alignment_End) - Places the image at the right most of [`SfButton`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Buttons.SfButton.html).
+* [`Top`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Chips.Alignment.html#Syncfusion_Maui_Toolkit_Chips_Alignment_Top) - Places the image at the top of the text.
+* [`Bottom`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Chips.Alignment.html#Syncfusion_Maui_Toolkit_Chips_Alignment_Bottom) - Places the image at the bottom of the text.
+* '[`Default`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Chips.Alignment.html#Syncfusion_Maui_Toolkit_Chips_Alignment_Default) - By default the image places at the center of the text.
+* [`Left`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Chips.Alignment.html#Syncfusion_Maui_Toolkit_Chips_Alignment_Left) - Although the flow direction has been applied, it always places the image in the left part of [`SfButton`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Buttons.SfButton.html). For example, in the direction of the RTL flow, the image setting will move to the right. Use [`Left`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Chips.Alignment.html#Syncfusion_Maui_Toolkit_Chips_Alignment_Left) alignment to show this in the same left position.
+* [`Right`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Chips.Alignment.html#Syncfusion_Maui_Toolkit_Chips_Alignment_Right) - Although flow direction has been applied, the image is always located in the right part of [`SfButton`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Buttons.SfButton.html). For example, in the direction of the RTL flow, the image setting will move to the left. But use [`Right`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Chips.Alignment.html#Syncfusion_Maui_Toolkit_Chips_Alignment_Right) alignment to show this in the same right position.
 
 N> Enable the `ShowIcon` property to enable the `ImageAlignment` property.
 
@@ -377,6 +385,7 @@ N> Enable the `ShowIcon` property to enable the `ImageAlignment` property.
                 ShowIcon="True" 
                 ImageSize="25"
                 Stroke="Black"
+                CornerRadius="10"
                 Background="White"
                 ImageAlignment="End"/>
 
@@ -392,6 +401,7 @@ SfButton button = new SfButton()
     ShowIcon = true,
     ImageSize = 25,
     Stroke = Colors.Black,
+    CornerRadius= 10,
     Background = Colors.White,
     ImageAlignment = Alignment.End
 };
@@ -414,6 +424,7 @@ SfButton button = new SfButton()
                     ShowIcon="True" 
                     ImageSize="25"
                     Stroke="Black"
+                    CornerRadius="10"
                     Background="White"
                     ImageAlignment="Start"/>
 
@@ -429,6 +440,7 @@ SfButton button = new SfButton()
     ShowIcon = true,
     ImageSize = 25,
     Stroke = Colors.Black,
+    CornerRadius= 10,
     Background = Colors.White,
     ImageAlignment = Alignment.Start
 };
@@ -452,6 +464,7 @@ SfButton button = new SfButton()
                 ShowIcon="True" 
                 ImageSize="25"
                 Stroke="Black"
+                CornerRadius="10"
                 Background="White"
                 ImageAlignment="Top"/>
 
@@ -467,6 +480,7 @@ SfButton button = new SfButton()
     ShowIcon = true,
     ImageSize= 25,
     Stroke = Colors.Black,
+    CornerRadius= 10,
     Background = Colors.White,
     ImageAlignment = Alignment.Top
 };
@@ -490,6 +504,7 @@ SfButton button = new SfButton()
                 ShowIcon="True" 
                 ImageSize="25"
                 Stroke="Black"
+                CornerRadius="10"
                 Background="White"
                 ImageAlignment="Bottom"/>
 
@@ -505,6 +520,7 @@ SfButton button = new SfButton()
     ShowIcon = true,
     ImageSize = 25,
     Stroke = Colors.Black,
+    CornerRadius= 10,
     Background = Colors.White,
     ImageAlignment = Alignment.Bottom
 };
@@ -528,6 +544,7 @@ SfButton button = new SfButton()
                 ShowIcon="True" 
                 ImageSize="25"
                 Stroke="Black"
+                CornerRadius="10"
                 Background="White"
                 ImageAlignment="Default"/>
 
@@ -543,6 +560,7 @@ SfButton button = new SfButton()
     ShowIcon = true,
     ImageSize = 25,
     Stroke = Colors.Black,
+    CornerRadius= 10,
     Background = Colors.White,
     ImageAlignment = Alignment.Center
 };
@@ -568,6 +586,7 @@ In RTL flow direction, image alignment with [`Start`](https://help.syncfusion.co
                 ShowIcon="True" 
                 ImageSize="25"
                 Stroke="Black"
+                CornerRadius="10"
                 Background="White"
                 ImageAlignment="Left"/>
 
@@ -584,6 +603,7 @@ SfButton button = new SfButton()
     ShowIcon = true,
     ImageSize = 25,
     Stroke= Colors.Black,
+    CornerRadius= 10,
     Background = Colors.White,
     ImageAlignment = Alignment.Left
 };
@@ -608,6 +628,7 @@ In RTL flow direction, image alignment with [`End`](https://help.syncfusion.com/
                 ShowIcon="True" 
                 ImageSize="25"
                 Stroke="Black"
+                CornerRadius="10"
                 Background="White"
                 ImageAlignment="Right"/>
 
@@ -623,6 +644,7 @@ SfButton button = new SfButton()
     ShowIcon = true,
     ImageSize = 25,
     Stroke= Colors.Black,
+    CornerRadius= 10,
     Background = Colors.White,
     ImageAlignment = Alignment.Right
 };
@@ -633,9 +655,85 @@ SfButton button = new SfButton()
 
 ![SfButton with image with icon image with right alignment](images/customization-images/Button_imagealignment_right.png)
 
+## BackgroundImageSource
+
+The [BackgroundImageSource](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.ButtonBase.html#Syncfusion_Maui_Toolkit_ButtonBase_BackgroundImageSource) property is used to set background image for the Button.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<ContentPage.Content>
+    <StackLayout Margin="8,8,8,8" >
+        <buttons:SfButton WidthRequest="100"
+                            HorizontalOptions="Center"
+                            VerticalOptions="Center"
+                            BackgroundImageSource="lion.png">
+        </buttons:SfButton>
+    </StackLayout>
+</ContentPage.Content>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+using Syncfusion.Maui.Toolkit.Buttons;
+StackLayout stackLayout = new StackLayout();
+SfButton button = new SfButton();
+button.WidthRequest = 100;
+button.HorizontalOptions = LayoutOptions.Center;
+button.VerticalOptions = LayoutOptions.Center;
+button.BackgroundImageSource="lion.png";
+stackLayout.Children.Add(button);
+this.Content = stackLayout;
+        
+{% endhighlight %}
+
+{% endtabs %}
+
+![SfButton with image property](images/getting-started/net-maui-button-with-background-image.png)
+
+The [BackgroundImageAspect](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Buttons.SfButton.html#Syncfusion_Maui_Toolkit_Buttons_SfButton_BackgroundImageAspect) property is used to customize the aspect ratio of background image for the Button.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<ContentPage.Content>
+    <StackLayout Margin="8,8,8,8" >
+        <buttons:SfButton WidthRequest="100"
+                            HorizontalOptions="Center"
+                            VerticalOptions="Center"
+                            BackgroundImageSource="lion.png"
+                            BackgroundImageAspect="Fill">
+        </buttons:SfButton>
+    </StackLayout>
+</ContentPage.Content>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+using Syncfusion.Maui.Toolkit.Buttons;
+StackLayout stackLayout = new StackLayout();
+SfButton button = new SfButton();
+button.WidthRequest = 100;
+button.HorizontalOptions = LayoutOptions.Center;
+button.VerticalOptions = LayoutOptions.Center;
+button.BackgroundImageSource = "lion.png";
+button.BackgroundImageAspect = Aspect.Fill;
+stackLayout.Children.Add(button);
+this.Content = stackLayout;
+        
+{% endhighlight %}
+
+{% endtabs %}
+
+![SfButton with image property](images/getting-started/net-maui-button-with-background-image.png)
+
 ## EnableRippleEffect
 
-The [EnableRippleEffect](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Core.ButtonBase.html#Syncfusion_Maui_Core_ButtonBase_EnableRippleEffectProperty) property is used to control the presence of the ripple effects.
+The [EnableRippleEffect](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.ButtonBase.html#Syncfusion_Maui_Toolkit_ButtonBase_EnableRippleEffect) property is used to control the presence of the ripple effects.
 
 {% tabs %}
 {% highlight xaml %}
@@ -656,7 +754,7 @@ button.EnableRippleEffect = True;
 
 ## Gradient background
 
-You can set the gradient as background of SfButton using the [`Background`](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Buttons.SfButton.html#Syncfusion_Maui_Buttons_SfButton_Background) property. It supports the following types of gradients:
+You can set the gradient as background of SfButton using the [`Background`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Buttons.SfButton.html#Syncfusion_Maui_Toolkit_Buttons_SfButton_Background) property. It supports the following types of gradients:
 
 * Linear gradient
 * Radial gradient
@@ -724,7 +822,7 @@ radialButton.Background = radialGradientBrush;
 
 ## Command
 
-The [`Command`](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Core.ButtonBase.html#Syncfusion_Maui_Core_ButtonBase_Command)  property is used to associate a command with an instance of [`SfButton`](https://learn.microsoft.com/en-us/dotnet/maui/user-interface/brushes/gradient). This property is most often set with MVVM pattern to bind callbacks back into the ViewModel.
+The [`Command`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.ButtonBase.html#Syncfusion_Maui_Toolkit_ButtonBase_Command)  property is used to associate a command with an instance of [`SfButton`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Buttons.SfButton.html). This property is most often set with MVVM pattern to bind callbacks back into the ViewModel.
 
 N> Default value is [`null`].
 

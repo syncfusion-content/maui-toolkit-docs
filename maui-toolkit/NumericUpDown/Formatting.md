@@ -9,11 +9,11 @@ documentation: ug
 
 # Value Formatting with .NET MAUI NumericUpDown
 
-This section explains how to change the value format of the [NumericUpDown]() control using the `CustomFormat` properties.
+This section explains how to change the value format of the [NumericUpDown](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericUpDown.SfNumericUpDown.html) control using the `CustomFormat` properties.
 
 ## Currency, percentage and decimal format
 
-The value of the `NumericUpDown` control can be formatted using the [CustomFormat]() property. By default, the value is formatted based on the current culture's decimal format. The default value of the `CustomFormat` properties is **null**.
+The value of the `NumericUpDown` control can be formatted using the [CustomFormat](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericEntry.SfNumericEntry.html#Syncfusion_Maui_Toolkit_NumericEntry_SfNumericEntry_CustomFormat) property. By default, the value is formatted based on the current culture's decimal format. The default value of the `CustomFormat` properties is **null**.
 
 The following example shows how to set the `CurrencyFormatter`, `DecimalFormatter`, and `PercentFormatter` for the `NumberFormatter` property. 
 
@@ -48,11 +48,11 @@ hoursWorked.CustomFormat = "N2";
 {% endhighlight %}
 {% endtabs %}
 
-![.NET MAUI NumericUpDown customize format by NumberFormatter](Formatting_images/maui-numeric-entry-numberformatter.png)
+![.NET MAUI NumericUpDown customize format by NumberFormatter](Formatting_images/numberformatter.png)
 
 ## Format the integer digits
 
-You can change the decimal digits of the value in the `NumericUpDown` control using the [CustomFormat]() properties. 
+You can change the decimal digits of the value in the `NumericUpDown` control using the [CustomFormat](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericEntry.SfNumericEntry.html#Syncfusion_Maui_Toolkit_NumericEntry_SfNumericEntry_CustomFormat) properties. 
 
 For the `CustomFormat` property, use the **0** format specifier to set the minimum number of decimal digits.  
 
@@ -85,11 +85,11 @@ hoursWorked.CustomFormat = "00000.00";
 {% endhighlight %}
 {% endtabs %}
 
-![.NET MAUI NumericUpDown customize decimal digits](Formatting_images/maui-numeric-entry-change-decimal-digits.png)
+![.NET MAUI NumericUpDown customize decimal digits](Formatting_images/decimal-digits.png)
 
 ## Format the fractional digits
 
-You can change the fractional digits of the value in the `NumericUpDown` control using the [CustomFormat]() Properties.
+You can change the fractional digits of the value in the `NumericUpDown` control using the [CustomFormat](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericEntry.SfNumericEntry.html#Syncfusion_Maui_Toolkit_NumericEntry_SfNumericEntry_CustomFormat) Properties.
 
 For the `CustomFormat` property, use the **0** format specifier to set the minimum number of fractional digits.  
 
@@ -112,11 +112,11 @@ hoursWorked.CustomFormat = "00.000";
 {% endhighlight %}
 {% endtabs %}
 
-![.NET MAUI NumericUpDown customize fractional digits](Formatting_images/maui-numeric-entry-change-fractional-digits.png)
+![.NET MAUI NumericUpDown customize fractional digits](Formatting_images/fractional-digits.png)
 
 ## Apply custom format
 
-You can apply custom formats to the `NumericUpDown` control using the **0** and **#** format specifiers. Using these format specifiers, you can set the minimum and the maximum number of fractional digits in the [CustomFormat]() property.
+You can apply custom formats to the `NumericUpDown` control using the **0** and **#** format specifiers. Using these format specifiers, you can set the minimum and the maximum number of fractional digits in the [CustomFormat](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericEntry.SfNumericEntry.html#Syncfusion_Maui_Toolkit_NumericEntry_SfNumericEntry_CustomFormat) property.
 
    * **0** (Zero placeholder) replaces the zero with the corresponding digit present in the value; otherwise, zero appends with the leftmost position of the value. 
 
@@ -141,7 +141,7 @@ hoursWorked.CustomFormat = "00.00##";
 {% endhighlight %}
 {% endtabs %}
 
-![.NET MAUI NumericUpDown customize fractional digits](Formatting_images/maui-numeric-entry-apply-customformat.png)
+![.NET MAUI NumericUpDown customize fractional digits](Formatting_images/customformat.png)
 
 
 ## Culture support
@@ -157,11 +157,11 @@ NumericUpDown.Culture = culture;
 {% endhighlight %}
 {% endtabs %}
 
-![.NET MAUI NumericUpDown culture based custom format](Formatting_images/maui-numeric-entry-culture_support.png)
+![.NET MAUI NumericUpDown culture based custom format](Formatting_images/culture_support.png)
 
 ## Customize percentage display
 
-When the [SfNumericUpDown]() is in percentage format, the value can be displayed in two ways as follows:
+When the [SfNumericUpDown](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericUpDown.SfNumericUpDown.html) is in percentage format, the value can be displayed in two ways as follows:
 
 `Value`: Displays the actual value with percentage symbol.
 
