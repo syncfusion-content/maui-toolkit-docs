@@ -693,6 +693,8 @@ this.Content = stackLayout;
 
 ![SfButton with image property](images/getting-started/net-maui-button-with-background-image.png)
 
+## BackgroundImageAspect
+
 The [BackgroundImageAspect](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Buttons.SfButton.html#Syncfusion_Maui_Toolkit_Buttons_SfButton_BackgroundImageAspect) property is used to customize the aspect ratio of background image for the Button.
 
 {% tabs %}
