@@ -21,10 +21,10 @@ N> The value in the `NumericUpDown` can also be changed by mouse scrolling. The 
 {% highlight xaml %}
 
 <editors:SfNumericUpDown HorizontalOptions="Center"
-                        VerticalOptions="Center" 
-                        SmallChange="5"
-                        Value="10"
-                        LargeChange="10" />
+                         VerticalOptions="Center" 
+                         SmallChange="5"
+                         Value="10"
+                         LargeChange="10" />
 
 {% endhighlight %}
 {% highlight C# %}
@@ -111,11 +111,11 @@ Customize the `NumericUpDown` control button color by using the [UpDownButtonCol
 {% highlight XAML %}
 
 <editors:SfNumericUpDown HeightRequest="50"
-                        WidthRequest="200"
-                        HorizontalOptions="Center"
-                        VerticalOptions="Center"
-                        Value="360"
-                        UpDownButtonColor="Blue"/>
+                         WidthRequest="200"
+                         HorizontalOptions="Center"
+                         VerticalOptions="Center"
+                         Value="360"
+                         UpDownButtonColor="Blue"/>
                      
 {% endhighlight %}
 {% highlight c# %}
@@ -145,11 +145,10 @@ N> The UpDownButton template only supports Inline Placement mode.
 
 <VerticalStackLayout Spacing="10" VerticalOptions="Center">
     <editors:SfNumericUpDown x:Name="NumericUpDown"
-                            WidthRequest="200"
-                            HeightRequest="40" 
-                            VerticalOptions="Center"
-                            UpDownPlacementMode="Inline"
-                            Value="50">
+                             WidthRequest="200"
+                             HeightRequest="40" 
+                             VerticalOptions="Center"
+                             Value="50">
         <editors:SfNumericUpDown.UpButtonTemplate>
             <DataTemplate>
                 <Grid>
@@ -193,7 +192,6 @@ N> The UpDownButton template only supports Inline Placement mode.
              WidthRequest = 200,
              HeightRequest = 40,
              VerticalOptions = LayoutOptions.Center,
-             UpDownPlacementMode = NumericUpDownUpDownPlacementMode.Inline,
              Value = 50
          };
          var upButtonTemplate = new DataTemplate(() =>
@@ -201,13 +199,11 @@ N> The UpDownButton template only supports Inline Placement mode.
              var grid = new Grid();
              var label = new Label
              {
-                 Padding = new Thickness(0, 6.5, 0, 0),
-                 Rotation = 90,
-                 FontFamily = "FontIcons",
-                 HorizontalOptions = LayoutOptions.Center,
-                 Text = "\ue74a", // Use Unicode directly for the icon
+                 Padding = new Thickness(6, 6, 8, 0),
+                 FontFamily = "FontIcon",
+                 FontAttributes="Bold" 
+                 Text = "\ue791", // Use Unicode directly for the icon
                  TextColor = Colors.Green,
-                 FontSize = 20
              };
              grid.Children.Add(label);
              return grid;
@@ -217,13 +213,11 @@ N> The UpDownButton template only supports Inline Placement mode.
              var grid = new Grid();
              var label = new Label
              {
-                 Padding = new Thickness(0, 5, 0, 0),
-                 Rotation = 270,
-                 FontFamily = "FontIcons",
-                 HorizontalOptions = LayoutOptions.Center,
-                 Text = "\ue74a",
+                 Padding = new Thickness(6, 6, 8, 0),
+                 FontFamily = "FontIcon",
+                 FontAttributes="Bold" 
+                 Text = "\ue792",
                  TextColor = Colors.Red,
-                 FontSize = 20
              };
              grid.Children.Add(label);
              return grid;

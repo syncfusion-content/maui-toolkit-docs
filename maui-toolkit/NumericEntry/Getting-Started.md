@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started with .NET MAUI Numeric Entry
 
-This section guides you through setting up and configuring a [Numeric Entry](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericEntry.SfNumericEntry.html) in your .NET MAUI application. Follow the steps below to add a basic Numeric Entry Down to your project.
+This section guides you through setting up and configuring a [Numeric Entry](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericEntry.SfNumericEntry.html) in your .NET MAUI application. Follow the steps below to add a basic Numeric Entry to your project.
 
 ## Prerequisites
 
@@ -110,8 +110,12 @@ Step 2: Add the [SfNumericEntry](https://help.syncfusion.com/cr/maui-toolkit/Syn
 ![.NET MAUI NumericEntry Application](GettingStarted_images/gettingStarted_img.png)
 
 ## Editing the value
+The NumericEntry control enables numeric input and automatically blocks any alphabetic characters.
 
-By default, the [NumericEntry](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericEntry.SfNumericEntry.html) control allows you to enter numeric input and restricts the alphabetic input. Once the `Enter` key is pressed or control focus is lost, the value of the `NumericEntry` control is validated and updated based on the format applied.
+**OnKeyFocus Mode:** The entered value is validated immediately as the user types.
+**OnLostFocus Mode:** The value is validated and updated when the control loses focus or when the Enter key is pressed. The value is then formatted based on the specified settings.
+
+This ensures that only valid numeric input is accepted and displayed according to the defined format.
 
 {% tabs %}
 {% highlight xaml %}
