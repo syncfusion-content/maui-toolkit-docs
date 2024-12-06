@@ -67,10 +67,10 @@ Content = bottomSheet;
 {% endtabs %}
 
 ## Allowed State
-The states of the `BottomSheet` allow you to control the height of the bottom sheet using the `AllowedState` property. The default value is `All`, which allows transitions between all available states. This property accepts the following values:
+The `BottomSheet` allows to control the transition between the states using the `AllowedState` property. The default value is `All`, which allows transitions between all available states. This property accepts the following values:
 
-* **FullExpanded** - Restricts the transitions to only between FullExpanded and Collapsed states.
-* **HalfExpanded** - Restricts the transitions to only between HalfExpanded and Collapsed states.
+* **FullExpanded** - It will allow transitions only between the FullExpanded and Collapsed states.
+* **HalfExpanded** - It will allow transitions only between the HalfExpanded and Collapsed states.
 * **All** - Allows transitions between all available states (FullExpanded, HalfExpanded, Collapsed, and Hidden).
 
 {% tabs %}	
@@ -167,9 +167,9 @@ Content = bottomSheet;
 {% endtabs %}
 
 ## Adjust the Height
-### FullExpandedRatio
+### Full Expanded Height
 
-The `FullExpandedRatio` property adjusts the height of the `BottomSheet` when it is in the `FullExpanded` state. The default value is `1`. You can set a value between 0.1 and 1 to adjust the height. This property works only when the sheet's `State` is `FullExpanded`.
+The `FullExpandedRatio` property adjusts the height of the `BottomSheet` when it is in the `FullExpanded` state. The default value is `1`. You can set a value between 0.1 and 1 to adjust the height.
 
 {% tabs %}	
 {% highlight xaml %}
@@ -193,9 +193,9 @@ Content = bottomSheet;
 {% endhighlight %}
 {% endtabs %}
 
-### HalfExpandedRatio
+### Half Expanded Height
 
-The `HalfExpandedRatio` property adjusts the height of the `BottomSheet` when it is in the `HalfExpanded` state. The default value is `0.5`. You can set a value between 0.1 and 0.9 to adjust the height. This property works only when the sheet's `State` is `HalfExpanded`.
+The `HalfExpandedRatio` property adjusts the height of the `BottomSheet` when it is in the `HalfExpanded` state. The default value is `0.5`. You can set a value between 0.1 and 0.9 to adjust the height.
 
 {% tabs %}	
 {% highlight xaml %}
@@ -244,9 +244,12 @@ Content = bottomSheet;
 {% endtabs %}
 
 ## Adjust the Width
-* The `ContentWidthMode` property allows you to adjust the width of the `BottomSheet`. The default value is `Full`.
+The `ContentWidthMode` property allows you to adjust the width of the `BottomSheet`. The default value is `Full`.
 
-* The `BottomSheetContentWidth` property allows you to adjust the width of the `BottomSheet`, when it is in `Custom` content width mode. The default value is `300`.
+* **Full** - The sheet will occupy the entire screen width.
+* **Custom** - The sheet will adjust its width based on the value set in the `BottomSheetContentWidth` property.
+
+The `BottomSheetContentWidth` property allows you to adjust the width of the `BottomSheet`, when it is in `Custom` content width mode. The default value is `300`.
 
 {% tabs %}	
 {% highlight xaml %}

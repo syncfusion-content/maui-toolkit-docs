@@ -149,6 +149,6 @@ namespace BottomSheetGettingStarted
 {% endhighlight %}
 {% endtabs %}
 
-N> Using `Content`, Place the main content inside the bottom sheet's `Content` property. Without using `Content`, Place the main content outside the `BottomSheet`, making sure the bottom sheet is the last element in the grid.
+N> Using `Content`, Place the main content inside the bottom sheet's `Content` property. Without using `Content`, Place the main content outside the `BottomSheet`, making sure the bottom sheet is the last element in the Grid layout.
 
 ![Getting Started Image for BottomSheet](images/gettingStarted.png)
