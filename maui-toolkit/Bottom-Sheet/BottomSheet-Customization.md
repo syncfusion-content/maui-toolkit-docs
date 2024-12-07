@@ -144,7 +144,7 @@ Content = bottomSheet;
 {% endhighlight %}
 {% endtabs %}
 
-![Background color image for BottomSheet](/images/backgroundColor.png)
+![Background color image for BottomSheet](images/backgroundColor.png)
 
 ## CornerRadius
 The `CornerRadius` property allows you to add corner radius to the Bottom sheet.
