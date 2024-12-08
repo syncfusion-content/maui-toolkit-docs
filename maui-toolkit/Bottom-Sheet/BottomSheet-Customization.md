@@ -35,6 +35,8 @@ Content = bottomSheet;
 {% endhighlight %}
 {% endtabs %}
 
+![PopUpMode image for BottomSheet](images/popUpMode.png)
+
 ## State
 The state of the `BottomSheet` can be controlled using the `State` property. The default value is `Hidden`. This property accepts the following values:
 
@@ -142,6 +144,8 @@ Content = bottomSheet;
 {% endhighlight %}
 {% endtabs %}
 
+![Background color image for BottomSheet](images/backgroundColor.png)
+
 ## CornerRadius
 The `CornerRadius` property allows you to add corner radius to the Bottom sheet.
 
@@ -166,6 +170,7 @@ Content = bottomSheet;
 {% endhighlight %}
 {% endtabs %}
 
+![Corner radius image for BottomSheet](images/cornerRadius.png)
 ## Adjust the Height
 ### Full Expanded Height
 
@@ -273,6 +278,7 @@ Content = bottomSheet;
 {% endhighlight %}
 {% endtabs %}
 
+![Content width mode image for BottomSheet](images/contentWidthModeCustom.png)
 ## Grabber Customization
 ### Show Grabber
 The `ShowGrabber` property enables users to interact with the `BottomSheet` by dragging it up and down. By default, the ShowGrabber property is set to `true`.
@@ -369,3 +375,4 @@ Content = bottomSheet;
 
 {% endhighlight %}
 {% endtabs %}
+![Grabber Customization Image for BottomSheet](images/grabberCustomization.png)
