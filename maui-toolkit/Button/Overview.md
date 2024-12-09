@@ -13,8 +13,10 @@ The .NET MAUI Button is a custom button control with UI customization. Set icons
 
 ## Key features
 
- * Easily customize a button as an outline, flat, circle, or icon button.
- * Display an image as the background for the control.
- * Display custom content in the button control.
+ * Button Customization: Easily customize a button as outline, flat, circular, or icon types.
+ * Visual States: Utilize states like normal, pressed, checked and disabled.
+ * Background Image: Set an image as the button's background.
+ * Custom Content: Display personalized content within the button control.
+ * Toggle Button: Implement toggle button functionality.
 
 ![Overview image of SfButton](Images/overview/Overview.png)
