@@ -77,9 +77,7 @@ public static class MauiProgram
 
 ## Step 4: Add a Basic Numeric UpDown
 
-Step 1. To initialize the control, import the `Syncfusion.Maui.Toolkit.NumericUpDown` namespace into your code. 
-
-Step 2: Add the namespace as shown in the following code sample.
+Step 1. To initialize the control, import the `Syncfusion.Maui.Toolkit.NumericUpDown` namespace into your code, as shown in the following code sample.
 
 {% tabs %}
 {% highlight xaml %}
@@ -94,7 +92,7 @@ Step 2: Add the namespace as shown in the following code sample.
 {% endhighlight %}
 {% endtabs %}
 
-Step 3: Add the [SfNumericUpDown](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericUpDown.SfNumericUpDown.html) control with a required optimal name using the included namespace.
+Step 2: Add the [SfNumericUpDown](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericUpDown.SfNumericUpDown.html) control with a required optimal name using the included namespace.
 
 {% tabs %}
 {% highlight xaml %}
@@ -112,7 +110,12 @@ Step 3: Add the [SfNumericUpDown](https://help.syncfusion.com/cr/maui-toolkit/Sy
 ![.NET MAUI NumericUpDown Application](GettingStarted_images/gettingStarted_img.png)
 
 ## Editing the value
-By default, the [NumericUpDown](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericUpDown.SfNumericUpDown.html) control allows you to enter numeric input, restricts the alphabetic input. It provides increment and decrement buttons for convenient value adjustments. Once the `Enter` key is pressed or control focus is lost, the value of the `NumericUpDown` control is validated and updated based on the format applied.
+The [NumericUpDown](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericUpDown.SfNumericUpDown.html) control enables numeric input and automatically blocks any alphabetic characters.
+
+**OnKeyFocus Mode:** The entered value is validated immediately as the user types.
+**OnLostFocus Mode:** The value is validated and updated when the control loses focus or when the Enter key is pressed. The value is then formatted based on the specified settings.
+
+This ensures that only valid numeric input is accepted and displayed according to the defined format.
 
 {% tabs %}
 {% highlight xaml %}
@@ -133,6 +136,38 @@ sfNumericUpDown.CustomFormat = "0.000";
 {% endtabs %}
 
 ![.NET MAUI NumericUpDown value editing](GettingStarted_images/editing_value.gif)
+
+## Increment and Decrement
+
+The [NumericUpDown](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericUpDown.SfNumericUpDown.html) control allows users to adjust the value by incrementing or decrementing it using the provided `Up` and `Down` buttons.
+
+**Increment:** Clicking the up button increases the current value.
+
+**Decrement:** Clicking the down button decreases the current value.
+
+N> Clicking the up or down button increases or decreases the value based on the [SmallChange](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericUpDown.SfNumericUpDown.html#Syncfusion_Maui_Toolkit_NumericUpDown_SfNumericUpDown_SmallChange) property value.
+
+{% tabs %}
+{% highlight xaml %}
+
+<editors:SfNumericUpDown HorizontalOptions="Center" 
+                         VerticalOptions="Center" 
+                         CustomFormat="0.000"
+                         SmallChange="4" />
+
+{% endhighlight %}
+{% highlight C# %}
+
+SfNumericUpDown sfNumericUpDown = new SfNumericUpDown();
+sfNumericUpDown.HorizontalOptions = LayoutOptions.Center;
+sfNumericUpDown.VerticalOptions = LayoutOptions.Center;
+sfNumericUpDown.CustomFormat = "0.000";
+sfNumericUpDown.SmallChange = "4";
+
+{% endhighlight %}
+{% endtabs %}
+
+![.NET MAUI NumericUpDown value editing](GettingStarted_images/updownbutton.gif)
 
 ## Change number format
 
