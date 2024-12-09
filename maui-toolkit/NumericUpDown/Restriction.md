@@ -67,7 +67,7 @@ sfNumericUpDown.Value = 50;
 {% endhighlight %}
 {% endtabs %}
 
-![.NET MAUI NumericUpDown value restriction](GettingStarted_images/value_restriction_img.png)
+![.NET MAUI NumericUpDown value restriction](Restriction_images/value_restriction_img.png)
 
 ## Restrict text editing
 
