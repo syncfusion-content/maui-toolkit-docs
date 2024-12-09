@@ -19,4 +19,3 @@ The [.NET MAUI NumericEntry](https://help.syncfusion.com/cr/maui-toolkit/Syncfus
 * Placeholder text displayed when the Numeric Entry control contains an empty or null value.
 
 ![.NET MAUI NumericEntry](Overview_images/overview_img.png)
-
