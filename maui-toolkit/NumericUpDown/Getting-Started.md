@@ -78,6 +78,7 @@ public static class MauiProgram
 ## Step 4: Add a Basic Numeric UpDown
 
 Step 1. To initialize the control, import the `Syncfusion.Maui.Toolkit.NumericUpDown` namespace into your code, as shown in the following code sample.
+
 {% tabs %}
 {% highlight xaml %}
 
