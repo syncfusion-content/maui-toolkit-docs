@@ -110,7 +110,8 @@ Step 2: Add the [SfNumericEntry](https://help.syncfusion.com/cr/maui-toolkit/Syn
 ![.NET MAUI NumericEntry Application](GettingStarted_images/gettingStarted_img.png)
 
 ## Editing the value
-The NumericEntry control enables numeric input and automatically blocks any alphabetic characters.
+
+The [NumericEntry](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericEntry.SfNumericEntry.html) control enables numeric input and automatically blocks any alphabetic characters.
 
 **OnKeyFocus Mode:** The entered value is validated immediately as the user types.
 **OnLostFocus Mode:** The value is validated and updated when the control loses focus or when the Enter key is pressed. The value is then formatted based on the specified settings.

@@ -51,9 +51,9 @@ N> When using the up-down button, the `NumericUpDown` control value changes base
 {% highlight XAML %}
 
 <editors:SfNumericUpDown HorizontalOptions="Center"
-                        VerticalOptions="Center"
-                        Value="24";
-                        UpDownPlacementMode="InlineVertical" />
+                         VerticalOptions="Center"
+                         Value="24";
+                         UpDownPlacementMode="InlineVertical" />
                      
 {% endhighlight %}
 {% highlight c# %}
