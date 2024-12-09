@@ -820,8 +820,6 @@ radialButton.Background = radialGradientBrush;
 {% endhighlight %}
 {% endtabs %}
 
-N> The gradient colors used as a background are not functioning as expected because of a framework-level issue. This issue is specifically related to the incorrect rendering of gradient color on iOS and macOS when clipping a view. Refer to this [link](https://github.com/dotnet/maui/issues/18671) for more details.
-
 ![.NET MAUI gradient support](images/customization-images/Button_gradient.jpg)
 
 ## Command
