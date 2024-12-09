@@ -67,28 +67,6 @@ sfNumericUpDown.UpDownPlacementMode = NumericUpDownUpDownPlacementMode.Inline;
 {% endhighlight %}
 {% endtabs %}
 
-![UpDown Placement in .NET MAUI NumericUpDown](UpDownButton_images/UpDownButtonPlacement.gif)
-
-{% tabs %}
-{% highlight XAML %}
-
-<editors:SfNumericUpDown Value="360"
-                        VerticalOptions="Center"
-                        HorizontalOptions="Center"
-                        UpDownPlacementMode="InlineVertical"/>
-                     
-{% endhighlight %}
-{% highlight c# %}
-
-SfNumericUpDown sfNumericUpDown = new SfNumericUpDown();
-sfNumericUpDown.HorizontalOptions = LayoutOptions.Center;
-sfNumericUpDown.VerticalOptions = LayoutOptions.Center;
-sfNumericUpDown.Value=360;
-sfNumericUpDown.UpDownPlacementMode = NumericUpDownUpDownPlacementMode.InlineVertical;
-
-{% endhighlight %}
-{% endtabs %}
-
 ![UpDown Placement in .NET MAUI NumericUpDown](UpDownButton_images/UpDownButtonPlacement.png)
 
 ## UpDown button alignment
