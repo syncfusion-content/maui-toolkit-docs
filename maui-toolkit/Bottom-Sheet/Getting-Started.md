@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started with .NET MAUI Bottom Sheet
 
-This section provides a quick overview of how to get started with the `BottomSheet` for .NET MAUI and a walk-through to configure the .NET MAUI Bottom Sheet in a real-time scenario. Follow the steps below to add .NET MAUI Bottom Sheet to your project.
+This section provides a quick overview of how to get started with the [BottomSheet](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.BottomSheet.SfBottomSheet.html) for .NET MAUI and a walk-through to configure the .NET MAUI Bottom Sheet in a real-time scenario. Follow the steps below to add .NET MAUI Bottom Sheet to your project.
 
 ## Prerequisites
 
@@ -79,7 +79,8 @@ public static class MauiProgram
 
 1. To initialize the control, import the `Syncfusion.Maui.Toolkit.BottomSheet` namespace into your code.
 
-2. Initialize `SfBottomSheet`
+2. Initialize [SfBottomSheet](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.BottomSheet.SfBottomSheet.html).
+
 {% tabs %}
 {% highlight xaml %}
 
@@ -149,6 +150,6 @@ namespace BottomSheetGettingStarted
 {% endhighlight %}
 {% endtabs %}
 
-N> Using `Content`, Place the main content inside the bottom sheet's `Content` property. Without using `Content`, Place the main content outside the `BottomSheet`, making sure the bottom sheet is the last element in the Grid layout.
+N> Using [Content](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.BottomSheet.SfBottomSheet.html#Syncfusion_Maui_Toolkit_BottomSheet_SfBottomSheet_Content), Place the main content inside the bottom sheet's `Content` property. Without using `Content`, Place the main content outside the [BottomSheet](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.BottomSheet.SfBottomSheet.html), making sure the bottom sheet is the last element in the Grid layout.
 
 ![Getting Started Image for BottomSheet](images/gettingStarted.png)
