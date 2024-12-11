@@ -17,7 +17,7 @@ Bottom sheet can be toggled using
 
 ## Opening and Closing Sheet Programmatically using property
 
-The `IsOpen` property enables programatically opening or closing the bottom sheet. By default, the IsOpen property is set to `false`.
+The [IsOpen](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.BottomSheet.SfBottomSheet.html#Syncfusion_Maui_Toolkit_BottomSheet_SfBottomSheet_IsOpen) property enables programatically opening or closing the bottom sheet. By default, the IsOpen property is set to `false`.
 
 {% tabs %}
 
@@ -53,7 +53,7 @@ Content = grid;
 
 
 ## Opening and Closing Sheet Programmatically using method
-The `Show` method enables programmatically opening the bottom sheet, and the `Close` method enables programmatically closing the bottom sheet.
+The [Show](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.BottomSheet.SfBottomSheet.html#Syncfusion_Maui_Toolkit_BottomSheet_SfBottomSheet_Show) method enables programmatically opening the bottom sheet, and the [Close](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.BottomSheet.SfBottomSheet.html#Syncfusion_Maui_Toolkit_BottomSheet_SfBottomSheet_Close) method enables programmatically closing the bottom sheet.
 
 {% tabs %}
 
