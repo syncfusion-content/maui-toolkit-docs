@@ -210,7 +210,7 @@ N> View [sample](https://github.com/SyncfusionExamples/maui-toolkit-samples/tree
 
 ## Enable virtualization
 
-EnableVirtualization enhances the initial loading performance of SfTabView. To enable this feature, set the `EnableVirtualization` property to `true.`
+Enabling virtualization improves the initial loading performance of [SfTabView.](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SfTabView.html) To activate this feature, set the [EnableVirtualization](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SfTabView.html#Syncfusion_Maui_Toolkit_TabView_SfTabView_EnableVirtualization) property to `true.`
 
 {% tabs %}
 {% highlight xaml %}
