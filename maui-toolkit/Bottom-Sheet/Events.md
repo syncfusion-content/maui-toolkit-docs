@@ -11,7 +11,7 @@ documentation: ug
 
 ## StateChanged event
 
-This event occurs when the value of the `State` property is changed by swiping the bottom sheet or setting the value to the State property using XAML or C# code. The event arguments are of type `StateChangedEventArgs` and expose the following property:
+This event occurs when the value of the [State](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.BottomSheet.SfBottomSheet.html#Syncfusion_Maui_Toolkit_BottomSheet_SfBottomSheet_State) property is changed by swiping the bottom sheet or setting the value to the State property using XAML or C# code. The event arguments are of type [StateChangedEventArgs](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.BottomSheet.StateChangedEventArgs.html) and expose the following property:
 
 * `NewValue` : Gets the current state of the Bottom Sheet.
 * `OldValue` : Gets the previous state of the Bottom Sheet.
