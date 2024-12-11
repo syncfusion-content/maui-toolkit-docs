@@ -207,3 +207,21 @@ The following image illustrates the nested tab structure:
 ![Nested Tabs in .NET MAUI Tab View](images/Nested_Tab.png)
 
 N> View [sample](https://github.com/SyncfusionExamples/maui-toolkit-samples/tree/master/TabView/NestedTabViewSample) in GitHub.
+
+## Enable virtualization
+
+Enabling virtualization improves the initial loading performance of [SfTabView.](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SfTabView.html) To activate this feature, set the [EnableVirtualization](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SfTabView.html#Syncfusion_Maui_Toolkit_TabView_SfTabView_EnableVirtualization) property to `true.`
+
+{% tabs %}
+{% highlight xaml %}
+
+<tabView:SfTabView EnableVirtualization="True" />
+
+{% endhighlight %}
+{% highlight C# %}
+
+SfTabView tabView = new SfTabView();
+tabView.EnableVirtualization = true;
+
+{% endhighlight %}
+{% endtabs %}
