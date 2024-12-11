@@ -400,4 +400,4 @@ namespace Chips
 
 ![ChipGroup sample with display member path and itemsSource demo](images/getting-started/action.png)
 
-N> You can refer to our [.NET MAUI Chips](https://www.syncfusion.com/maui-controls/maui-chips) feature tour page for its groundbreaking feature representations. You can also explore our [.NET MAUI Chips Example](https://github.com/syncfusion/maui-demos/tree/master/MAUI/Chips) that shows you how to render the Chips in .NET MAUI.
+
