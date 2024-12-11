@@ -208,7 +208,7 @@ The following image illustrates the nested tab structure:
 
 N> View [sample](https://github.com/SyncfusionExamples/maui-toolkit-samples/tree/master/TabView/NestedTabViewSample) in GitHub.
 
-# Enable virtualization
+## Enable virtualization
 
 EnableVirtualization enhances the initial loading performance of SfTabView. To enable this feature, set the `EnableVirtualization` property to `true.`
 
