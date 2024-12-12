@@ -30,7 +30,7 @@ By preserving similar APIs and functionality, developers can easily update their
 <tr>
 <td><a href="https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Calendar.SfCalendar.html">SfCalendar</a></td>
 <td>xmlns: calendar ="clr-namespace:Syncfusion.Maui.Calendar;assembly=Syncfusion.Maui.Calendar"</td>
-<td>xmlns:calendar="clr-namespace:Syncfusion.Maui.Toolkit.Calendar;assembly=Syncfusion.Maui.Toolkit.Calendar"</td>
+<td>xmlns:calendar="clr-namespace:Syncfusion.Maui.Toolkit.Calendar;assembly=Syncfusion.Maui.Toolkit"</td>
 <td>Defines the XAML namespace for <a href="https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Calendar.SfCalendar.html">SfCalendar</a> control.</td>
 </tr>
 <tr>
