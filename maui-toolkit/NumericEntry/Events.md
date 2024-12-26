@@ -21,7 +21,8 @@ The [ValueChanged](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.T
 {% tabs %}
 {% highlight xaml %}
 
-<editors:SfNumericEntry HorizontalOptions="Center"
+<editors:SfNumericEntry WidthRequest="200"
+                        HorizontalOptions="Center"
                         VerticalOptions="Center"
                         ValueChanged="sfNumericEntry_ValueChanged" />
 
@@ -29,6 +30,7 @@ The [ValueChanged](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.T
 {% highlight C# %}
 
 SfNumericEntry sfNumericEntry = new SfNumericEntry();
+sfNumericEntry.WidthRequest=200;
 sfNumericEntry.HorizontalOptions = LayoutOptions.Center;
 sfNumericEntry.VerticalOptions = LayoutOptions.Center;
 sfNumericEntry.ValueChanged += sfNumericEntry_ValueChanged;
@@ -57,7 +59,8 @@ The `NumericEntry` control includes a [Completed](https://help.syncfusion.com/cr
 {% tabs %}
 {% highlight xaml %}
 
-<editors:SfNumericEntry HorizontalOptions="Center"
+<editors:SfNumericEntry WidthRequest="200"
+                        HorizontalOptions="Center"
                         VerticalOptions="Center"
                         Completed="sfNumericEntry_Completed" />
 
@@ -65,6 +68,7 @@ The `NumericEntry` control includes a [Completed](https://help.syncfusion.com/cr
 {% highlight C# %}
 
 SfNumericEntry sfNumericEntry = new SfNumericEntry();
+sfNumericEntry.WidthRequest=200;
 sfNumericEntry.HorizontalOptions = LayoutOptions.Center;
 sfNumericEntry.VerticalOptions = LayoutOptions.Center;
 sfNumericEntry.Completed += sfNumericEntry_Completed;
