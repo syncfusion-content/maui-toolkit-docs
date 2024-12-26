@@ -112,12 +112,12 @@ public partial class MainPage : ContentPage
             Spacing = 10,
             VerticalOptions = LayoutOptions.Center
         };
-        var numericEntry = new SfNumericUpDown
+        var NumericUpDown = new SfNumericUpDown
         {
             WidthRequest = 200,
             HeightRequest = 40,
             VerticalOptions = LayoutOptions.Center,
-            ValueChangeMode = ValueChangeMode.OnKeyFocus,
+            ValueChangeMode = Syncfusion.Maui.Toolkit.NumericEntry.ValueChangeMode.OnKeyFocus,
             Value = 50
         };
         var horizontalStackLayout = new StackLayout
@@ -135,15 +135,15 @@ public partial class MainPage : ContentPage
             Text="$50",
             TextColor = Colors.Green
         };
-        numericEntry.ValueChanged += NumericEntry_ValueChanged;
+        NumericUpDown.ValueChanged += NumericUpDown_ValueChanged;
         horizontalStackLayout.Children.Add(labelDollar);
         horizontalStackLayout.Children.Add(valueDisplay);
-        verticalStackLayout.Children.Add(numericEntry);
+        verticalStackLayout.Children.Add(NumericUpDown);
         verticalStackLayout.Children.Add(horizontalStackLayout);
         Content = verticalStackLayout;
     }
 
-    private void NumericEntry_ValueChanged(object sender, NumericEntryValueChangedEventArgs e)
+    private void NumericUpDown_ValueChanged(object? sender, Syncfusion.Maui.Toolkit.NumericEntry.NumericEntryValueChangedEventArgs e)
     {
         valueDisplay.Text="$"+e.NewValue.ToString();
     }
