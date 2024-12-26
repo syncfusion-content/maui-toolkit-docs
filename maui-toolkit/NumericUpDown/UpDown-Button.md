@@ -20,7 +20,8 @@ N> The value in the `NumericUpDown` can also be changed by mouse scrolling. The 
 {% tabs %}
 {% highlight xaml %}
 
-<editors:SfNumericUpDown HorizontalOptions="Center"
+<editors:SfNumericUpDown WidthRequest="200" 
+                         HorizontalOptions="Center"
                          VerticalOptions="Center" 
                          SmallChange="5"
                          Value="10"
@@ -30,6 +31,7 @@ N> The value in the `NumericUpDown` can also be changed by mouse scrolling. The 
 {% highlight C# %}
 
 SfNumericUpDown sfNumericUpDown= new SfNumericUpDown();
+sfNumericUpDown.WidthRequest = 200;
 sfNumericUpDown.Value=10;
 sfNumericUpDown.SmallChange=5;
 sfNumericUpDown.LargeChange=10;
@@ -50,7 +52,8 @@ N> When using the up-down button, the `NumericUpDown` control value changes base
 {% tabs %}
 {% highlight XAML %}
 
-<editors:SfNumericUpDown HorizontalOptions="Center"
+<editors:SfNumericUpDown WidthRequest="200"
+                         HorizontalOptions="Center"
                          VerticalOptions="Center"
                          Value="24";
                          UpDownPlacementMode="InlineVertical" />
@@ -59,6 +62,7 @@ N> When using the up-down button, the `NumericUpDown` control value changes base
 {% highlight c# %}
 
 SfNumericUpDown sfNumericUpDown = new SfNumericUpDown();
+sfNumericUpDown.WidthRequest = 200;
 sfNumericUpDown.HorizontalOptions = LayoutOptions.Center;
 sfNumericUpDown.VerticalOptions = LayoutOptions.Center;
 sfNumericUpDown.Value=360;
@@ -82,7 +86,8 @@ The default updown button alignment is **Right**.
 {% tabs %}
 {% highlight XAML %}
 
-<editors:SfNumericUpDown HorizontalOptions="Center"
+<editors:SfNumericUpDown WidthRequest="200"
+                         HorizontalOptions="Center"
                          VerticalOptions="Center"
                          Value="24";
                          UpDownButtonAlignment="Both" />
@@ -91,6 +96,7 @@ The default updown button alignment is **Right**.
 {% highlight c# %}
 
 SfNumericUpDown sfNumericUpDown = new SfNumericUpDown();
+sfNumericUpDown.WidthRequest = 200;
 sfNumericUpDown.HorizontalOptions = LayoutOptions.Center;
 sfNumericUpDown.VerticalOptions = LayoutOptions.Center;
 sfNumericUpDown.Value=360;
@@ -152,7 +158,7 @@ N> The UpDownButton template only supports Inline Placement mode.
         <editors:SfNumericUpDown.UpButtonTemplate>
             <DataTemplate>
                 <Grid>
-                    <Label  Text="&#xe791;" 
+                    <Label  Text="&#8593;" 
                             FontFamily="FontIcon"  
                             FontAttributes="Bold" 
                             Padding="6,6,8,0" 
@@ -163,7 +169,7 @@ N> The UpDownButton template only supports Inline Placement mode.
         <editors:SfNumericUpDown.DownButtonTemplate>
             <DataTemplate>
                 <Grid>
-                    <Label  Text="&#xe792;" 
+                    <Label  Text="&#8595;" 
                             FontFamily="FontIcon"  
                             FontAttributes="Bold" 
                             Padding="6,6,8,0" 
@@ -242,7 +248,8 @@ N> The default value of this property is `false.`
 {% tabs %}
 {% highlight XAML %}
 
-<editors:SfNumericUpDown UpDownPlacementMode="Inline"
+<editors:SfNumericUpDown WidthRequest="200"
+                        UpDownPlacementMode="Inline"
                         AutoReverse="True"
                         Minimum="0"
                         Maximum="10"/>
@@ -252,6 +259,7 @@ N> The default value of this property is `false.`
 {% highlight c# %}
 
 SfNumericUpDown sfNumericUpDown = new SfNumericUpDown();
+sfNumericUpDown.WidthRequest = 200;
 sfNumericUpDown.UpDownPlacementMode = NumericUpDownUpDownPlacementMode.Inline;
 sfNumericUpDown.AutoReverse = true;
 sfNumericUpDown.Minimum=0;
