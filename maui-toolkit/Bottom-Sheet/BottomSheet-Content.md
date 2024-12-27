@@ -16,14 +16,37 @@ documentation: ug
 {% tabs %}
 {% highlight xaml %}
 
-<bottomSheet:SfBottomSheet x:Name="bottomSheet">
-    <bottomSheet:SfBottomSheet.Content>
-        <VerticalStackLayout Padding="20">
-            <Button Text="Open Bottom Sheet" Clicked="OpenBottomSheet" WidthRequest="180" CornerRadius="30" VerticalOptions="Center"/>
-        </VerticalStackLayout>
-    </bottomSheet:SfBottomSheet.Content>
+<bottomSheet:SfBottomSheet x:Name="bottomSheet" HalfExpandedRatio="0.35" ContentPadding="10">
     <bottomSheet:SfBottomSheet.BottomSheetContent>
-        <Label Text="Bottom Sheet Content" VerticalOptions="Center" HorizontalOptions="Center" FontSize="14" />
+        <VerticalStackLayout Spacing="5" x:Name="bottomSheetContent">
+            <Grid ColumnDefinitions="120, *" ColumnSpacing="10">
+                <Label Text="Title:" FontSize="20" FontAttributes="Bold"/>
+                <Label Text="{Binding Title}" FontSize="16" VerticalTextAlignment="Center" Grid.Column="1"/>
+            </Grid>
+            <Grid ColumnDefinitions="120, *" ColumnSpacing="10">
+                <Label Text="Genre:" FontSize="20" FontAttributes="Bold"/>
+                <Label Text="{Binding Genre}" FontSize="16" VerticalTextAlignment="Center" Grid.Column="1"/>
+            </Grid>
+            <Grid ColumnDefinitions="120, *" ColumnSpacing="10">
+                <Label Text="Published:" FontSize="20" FontAttributes="Bold"/>
+                <Label Text="{Binding Published}" FontSize="16" VerticalTextAlignment="Center" Grid.Column="1"/>
+            </Grid>
+            <Grid ColumnDefinitions="120, *" ColumnSpacing="10">
+                <Label Text="Description:" FontSize="20" FontAttributes="Bold"/>
+                <Label Text="{Binding Description}" FontSize="16" VerticalTextAlignment="Center" Grid.Column="1"/>
+            </Grid>
+            <Grid ColumnDefinitions="120, *" ColumnSpacing="10">
+                <Label Text="Price:" FontSize="20" FontAttributes="Bold"/>
+                <Label FontSize="16" VerticalTextAlignment="Center" Grid.Column="1">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="$" FontAttributes="Bold" />
+                            <Span Text="{Binding Price, StringFormat='{0:F2}'}" />
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+            </Grid>
+        </VerticalStackLayout>
     </bottomSheet:SfBottomSheet.BottomSheetContent>
 </bottomSheet:SfBottomSheet>
 	
