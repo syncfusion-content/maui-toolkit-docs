@@ -54,11 +54,64 @@ The [IsModal](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolki
 {% endhighlight %}
 {% highlight C# %}
 
-SfBottomSheet bottomSheet = new SfBottomSheet();
-bottomSheet.IsModal = true;
-Grid grid = new Grid();
-bottomSheet.BottomSheetContent = grid;
-Content = bottomSheet;
+SfBottomSheet bottomSheet = new SfBottomSheet
+{
+    IsModal = true,
+    HalfExpandedRatio = 0.35,
+    ContentPadding = new Thickness(10)
+};
+
+var bottomSheetContent = new VerticalStackLayout { Spacing = 5 };
+
+void AddRow(string labelText, string bindingPath, string? stringFormat = null)
+{
+    var rowGrid = new Grid
+    {
+        ColumnDefinitions =
+        {
+            new ColumnDefinition { Width = 120 },
+            new ColumnDefinition { Width = new GridLength(1, GridUnitType.Star) }
+        },
+        ColumnSpacing = 10
+    };
+
+    var label = new Label
+    {
+        Text = labelText,
+        FontSize = 20,
+        FontAttributes = FontAttributes.Bold
+    };
+
+    var valueLabel = new Label
+    {
+        FontSize = 16,
+        VerticalTextAlignment = TextAlignment.Center
+    };
+
+    if (stringFormat != null)
+    {
+        valueLabel.SetBinding(Label.TextProperty, new Binding(bindingPath, stringFormat: stringFormat));
+    }
+    else
+    {
+        valueLabel.SetBinding(Label.TextProperty, bindingPath);
+    }
+
+    rowGrid.Children.Add(label);
+    rowGrid.SetColumn(label, 0);
+    rowGrid.Children.Add(valueLabel);
+    rowGrid.SetColumn(valueLabel, 1);
+
+    bottomSheetContent.Children.Add(rowGrid);
+}
+
+AddRow("Title:", "Title");
+AddRow("Genre:", "Genre");
+AddRow("Published:", "Published");
+AddRow("Description:", "Description");
+AddRow("Price:", "Price", "${0:F2}");
+
+bottomSheet.BottomSheetContent = bottomSheetContent;
 
 {% endhighlight %}
 {% endtabs %}
@@ -191,11 +244,64 @@ The [Background](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Too
 {% endhighlight %}
 {% highlight c# %}
 
-SfBottomSheet bottomSheet = new SfBottomSheet();
-bottomSheet.Background = new SolidColorBrush(Colors.MediumPurple);
-Grid grid = new Grid();
-bottomSheet.BottomSheetContent = grid;
-Content = bottomSheet;
+SfBottomSheet bottomSheet = new SfBottomSheet
+{
+    Background = Colors.Beige,
+    HalfExpandedRatio = 0.35,
+    ContentPadding = new Thickness(10)
+};
+
+var bottomSheetContent = new VerticalStackLayout { Spacing = 5 };
+
+void AddRow(string labelText, string bindingPath, string? stringFormat = null)
+{
+    var rowGrid = new Grid
+    {
+        ColumnDefinitions =
+        {
+            new ColumnDefinition { Width = 120 },
+            new ColumnDefinition { Width = new GridLength(1, GridUnitType.Star) }
+        },
+        ColumnSpacing = 10
+    };
+
+    var label = new Label
+    {
+        Text = labelText,
+        FontSize = 20,
+        FontAttributes = FontAttributes.Bold
+    };
+
+    var valueLabel = new Label
+    {
+        FontSize = 16,
+        VerticalTextAlignment = TextAlignment.Center
+    };
+
+    if (stringFormat != null)
+    {
+        valueLabel.SetBinding(Label.TextProperty, new Binding(bindingPath, stringFormat: stringFormat));
+    }
+    else
+    {
+        valueLabel.SetBinding(Label.TextProperty, bindingPath);
+    }
+
+    rowGrid.Children.Add(label);
+    rowGrid.SetColumn(label, 0);
+    rowGrid.Children.Add(valueLabel);
+    rowGrid.SetColumn(valueLabel, 1);
+
+    bottomSheetContent.Children.Add(rowGrid);
+}
+
+AddRow("Title:", "Title");
+AddRow("Genre:", "Genre");
+AddRow("Published:", "Published");
+AddRow("Description:", "Description");
+AddRow("Price:", "Price", "${0:F2}");
+
+bottomSheet.BottomSheetContent = bottomSheetContent;
 
 {% endhighlight %}
 {% endtabs %}
@@ -245,11 +351,64 @@ The [CornerRadius](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.T
 {% endhighlight %}
 {% highlight c# %}
 
-SfBottomSheet bottomSheet = new SfBottomSheet();
-bottomSheet.CornerRadius = new CornerRadius(15, 15, 0, 0);
-Grid grid = new Grid();
-bottomSheet.BottomSheetContent = grid;
-Content = bottomSheet;
+SfBottomSheet bottomSheet = new SfBottomSheet
+{
+    CornerRadius = new CornerRadius(15, 15, 0, 0),
+    HalfExpandedRatio = 0.35,
+    ContentPadding = new Thickness(10)
+};
+
+var bottomSheetContent = new VerticalStackLayout { Spacing = 5 };
+
+void AddRow(string labelText, string bindingPath, string? stringFormat = null)
+{
+    var rowGrid = new Grid
+    {
+        ColumnDefinitions =
+        {
+            new ColumnDefinition { Width = 120 },
+            new ColumnDefinition { Width = new GridLength(1, GridUnitType.Star) }
+        },
+        ColumnSpacing = 10
+    };
+
+    var label = new Label
+    {
+        Text = labelText,
+        FontSize = 20,
+        FontAttributes = FontAttributes.Bold
+    };
+
+    var valueLabel = new Label
+    {
+        FontSize = 16,
+        VerticalTextAlignment = TextAlignment.Center
+    };
+
+    if (stringFormat != null)
+    {
+        valueLabel.SetBinding(Label.TextProperty, new Binding(bindingPath, stringFormat: stringFormat));
+    }
+    else
+    {
+        valueLabel.SetBinding(Label.TextProperty, bindingPath);
+    }
+
+    rowGrid.Children.Add(label);
+    rowGrid.SetColumn(label, 0);
+    rowGrid.Children.Add(valueLabel);
+    rowGrid.SetColumn(valueLabel, 1);
+
+    bottomSheetContent.Children.Add(rowGrid);
+}
+
+AddRow("Title:", "Title");
+AddRow("Genre:", "Genre");
+AddRow("Published:", "Published");
+AddRow("Description:", "Description");
+AddRow("Price:", "Price", "${0:F2}");
+
+bottomSheet.BottomSheetContent = bottomSheetContent;
 
 {% endhighlight %}
 {% endtabs %}
@@ -380,12 +539,65 @@ The [BottomSheetContentWidth](https://help.syncfusion.com/cr/maui-toolkit/Syncfu
 {% endhighlight %}
 {% highlight c# %}
 
-SfBottomSheet bottomSheet = new SfBottomSheet();
-bottomSheet.ContentWidthMode = BottomSheetContentWidthMode.Custom;
-bottomSheet.BottomSheetContentWidth = 500;
-Grid grid = new Grid();
-bottomSheet.BottomSheetContent = grid;
-Content = bottomSheet;
+SfBottomSheet bottomSheet = new SfBottomSheet
+{
+    ContentWidthMode = BottomSheetContentWidthMode.Custom,
+    BottomSheetContentWidth = 500,
+    HalfExpandedRatio = 0.35,
+    ContentPadding = new Thickness(10)
+};
+
+var bottomSheetContent = new VerticalStackLayout { Spacing = 5 };
+
+void AddRow(string labelText, string bindingPath, string? stringFormat = null)
+{
+    var rowGrid = new Grid
+    {
+        ColumnDefinitions =
+        {
+            new ColumnDefinition { Width = 120 },
+            new ColumnDefinition { Width = new GridLength(1, GridUnitType.Star) }
+        },
+        ColumnSpacing = 10
+    };
+
+    var label = new Label
+    {
+        Text = labelText,
+        FontSize = 20,
+        FontAttributes = FontAttributes.Bold
+    };
+
+    var valueLabel = new Label
+    {
+        FontSize = 16,
+        VerticalTextAlignment = TextAlignment.Center
+    };
+
+    if (stringFormat != null)
+    {
+        valueLabel.SetBinding(Label.TextProperty, new Binding(bindingPath, stringFormat: stringFormat));
+    }
+    else
+    {
+        valueLabel.SetBinding(Label.TextProperty, bindingPath);
+    }
+
+    rowGrid.Children.Add(label);
+    rowGrid.SetColumn(label, 0);
+    rowGrid.Children.Add(valueLabel);
+    rowGrid.SetColumn(valueLabel, 1);
+
+    bottomSheetContent.Children.Add(rowGrid);
+}
+
+AddRow("Title:", "Title");
+AddRow("Genre:", "Genre");
+AddRow("Published:", "Published");
+AddRow("Description:", "Description");
+AddRow("Price:", "Price", "${0:F2}");
+
+bottomSheet.BottomSheetContent = bottomSheetContent;
 
 {% endhighlight %}
 {% endtabs %}
@@ -435,11 +647,64 @@ The [ShowGrabber](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.To
 {% endhighlight %}
 {% highlight c# %}
 
-SfBottomSheet bottomSheet = new SfBottomSheet();
-bottomSheet.ShowGrabber = true;
-Grid grid = new Grid();
-bottomSheet.BottomSheetContent = grid;
-Content = bottomSheet;
+SfBottomSheet bottomSheet = new SfBottomSheet
+{
+    ShowGrabber = true,
+    HalfExpandedRatio = 0.35,
+    ContentPadding = new Thickness(10)
+};
+
+var bottomSheetContent = new VerticalStackLayout { Spacing = 5 };
+
+void AddRow(string labelText, string bindingPath, string? stringFormat = null)
+{
+    var rowGrid = new Grid
+    {
+        ColumnDefinitions =
+        {
+            new ColumnDefinition { Width = 120 },
+            new ColumnDefinition { Width = new GridLength(1, GridUnitType.Star) }
+        },
+        ColumnSpacing = 10
+    };
+
+    var label = new Label
+    {
+        Text = labelText,
+        FontSize = 20,
+        FontAttributes = FontAttributes.Bold
+    };
+
+    var valueLabel = new Label
+    {
+        FontSize = 16,
+        VerticalTextAlignment = TextAlignment.Center
+    };
+
+    if (stringFormat != null)
+    {
+        valueLabel.SetBinding(Label.TextProperty, new Binding(bindingPath, stringFormat: stringFormat));
+    }
+    else
+    {
+        valueLabel.SetBinding(Label.TextProperty, bindingPath);
+    }
+
+    rowGrid.Children.Add(label);
+    rowGrid.SetColumn(label, 0);
+    rowGrid.Children.Add(valueLabel);
+    rowGrid.SetColumn(valueLabel, 1);
+
+    bottomSheetContent.Children.Add(rowGrid);
+}
+
+AddRow("Title:", "Title");
+AddRow("Genre:", "Genre");
+AddRow("Published:", "Published");
+AddRow("Description:", "Description");
+AddRow("Price:", "Price", "${0:F2}");
+
+bottomSheet.BottomSheetContent = bottomSheetContent;
 
 {% endhighlight %}
 {% endtabs %}
@@ -487,12 +752,65 @@ The [GrabberWidth](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.T
 {% endhighlight %}
 {% highlight c# %}
 
-SfBottomSheet bottomSheet = new SfBottomSheet();
-bottomSheet.GrabberWidth = 48;
-bottomSheet.GrabberHeight = 6;
-Grid grid = new Grid();
-bottomSheet.BottomSheetContent = grid;
-Content = bottomSheet;
+SfBottomSheet bottomSheet = new SfBottomSheet
+{
+    GrabberHeight = 12,
+    GrabberWidth = 100,
+    HalfExpandedRatio = 0.35,
+    ContentPadding = new Thickness(10)
+};
+
+var bottomSheetContent = new VerticalStackLayout { Spacing = 5 };
+
+void AddRow(string labelText, string bindingPath, string? stringFormat = null)
+{
+    var rowGrid = new Grid
+    {
+        ColumnDefinitions =
+        {
+            new ColumnDefinition { Width = 120 },
+            new ColumnDefinition { Width = new GridLength(1, GridUnitType.Star) }
+        },
+        ColumnSpacing = 10
+    };
+
+    var label = new Label
+    {
+        Text = labelText,
+        FontSize = 20,
+        FontAttributes = FontAttributes.Bold
+    };
+
+    var valueLabel = new Label
+    {
+        FontSize = 16,
+        VerticalTextAlignment = TextAlignment.Center
+    };
+
+    if (stringFormat != null)
+    {
+        valueLabel.SetBinding(Label.TextProperty, new Binding(bindingPath, stringFormat: stringFormat));
+    }
+    else
+    {
+        valueLabel.SetBinding(Label.TextProperty, bindingPath);
+    }
+
+    rowGrid.Children.Add(label);
+    rowGrid.SetColumn(label, 0);
+    rowGrid.Children.Add(valueLabel);
+    rowGrid.SetColumn(valueLabel, 1);
+
+    bottomSheetContent.Children.Add(rowGrid);
+}
+
+AddRow("Title:", "Title");
+AddRow("Genre:", "Genre");
+AddRow("Published:", "Published");
+AddRow("Description:", "Description");
+AddRow("Price:", "Price", "${0:F2}");
+
+bottomSheet.BottomSheetContent = bottomSheetContent;
 
 {% endhighlight %}
 {% endtabs %}
@@ -540,11 +858,66 @@ The [GrabberCornerRadius](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion
 {% endhighlight %}
 {% highlight c# %}
 
-SfBottomSheet bottomSheet = new SfBottomSheet();
-bottomSheet.GrabberCornerRadius = new CornerRadius(24);
-Grid grid = new Grid();
-bottomSheet.BottomSheetContent = grid;
-Content = bottomSheet;
+SfBottomSheet bottomSheet = new SfBottomSheet
+{
+    GrabberHeight = 12,
+    GrabberWidth = 100,
+    GrabberCornerRadius = new CornerRadius(3),
+    HalfExpandedRatio = 0.35,
+    ContentPadding = new Thickness(10)
+};
+
+var bottomSheetContent = new VerticalStackLayout { Spacing = 5 };
+
+void AddRow(string labelText, string bindingPath, string? stringFormat = null)
+{
+    var rowGrid = new Grid
+    {
+        ColumnDefinitions =
+        {
+            new ColumnDefinition { Width = 120 },
+            new ColumnDefinition { Width = new GridLength(1, GridUnitType.Star) }
+        },
+        ColumnSpacing = 10
+    };
+
+    var label = new Label
+    {
+        Text = labelText,
+        FontSize = 20,
+        FontAttributes = FontAttributes.Bold
+    };
+
+    var valueLabel = new Label
+    {
+        FontSize = 16,
+        VerticalTextAlignment = TextAlignment.Center
+    };
+
+    if (stringFormat != null)
+    {
+        valueLabel.SetBinding(Label.TextProperty, new Binding(bindingPath, stringFormat: stringFormat));
+    }
+    else
+    {
+        valueLabel.SetBinding(Label.TextProperty, bindingPath);
+    }
+
+    rowGrid.Children.Add(label);
+    rowGrid.SetColumn(label, 0);
+    rowGrid.Children.Add(valueLabel);
+    rowGrid.SetColumn(valueLabel, 1);
+
+    bottomSheetContent.Children.Add(rowGrid);
+}
+
+AddRow("Title:", "Title");
+AddRow("Genre:", "Genre");
+AddRow("Published:", "Published");
+AddRow("Description:", "Description");
+AddRow("Price:", "Price", "${0:F2}");
+
+bottomSheet.BottomSheetContent = bottomSheetContent;
 
 {% endhighlight %}
 {% endtabs %}
@@ -591,11 +964,64 @@ The [GrabberBackground](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.M
 {% endhighlight %}
 {% highlight c# %}
 
-SfBottomSheet bottomSheet = new SfBottomSheet();
-bottomSheet.GrabberBackground = new SolidColorBrush(Colors.Red);
-Grid grid = new Grid();
-bottomSheet.BottomSheetContent = grid;
-Content = bottomSheet;
+SfBottomSheet bottomSheet = new SfBottomSheet
+{
+    GrabberBackground = Colors.Red,
+    HalfExpandedRatio = 0.35,
+    ContentPadding = new Thickness(10)
+};
+
+var bottomSheetContent = new VerticalStackLayout { Spacing = 5 };
+
+void AddRow(string labelText, string bindingPath, string? stringFormat = null)
+{
+    var rowGrid = new Grid
+    {
+        ColumnDefinitions =
+        {
+            new ColumnDefinition { Width = 120 },
+            new ColumnDefinition { Width = new GridLength(1, GridUnitType.Star) }
+        },
+        ColumnSpacing = 10
+    };
+
+    var label = new Label
+    {
+        Text = labelText,
+        FontSize = 20,
+        FontAttributes = FontAttributes.Bold
+    };
+
+    var valueLabel = new Label
+    {
+        FontSize = 16,
+        VerticalTextAlignment = TextAlignment.Center
+    };
+
+    if (stringFormat != null)
+    {
+        valueLabel.SetBinding(Label.TextProperty, new Binding(bindingPath, stringFormat: stringFormat));
+    }
+    else
+    {
+        valueLabel.SetBinding(Label.TextProperty, bindingPath);
+    }
+
+    rowGrid.Children.Add(label);
+    rowGrid.SetColumn(label, 0);
+    rowGrid.Children.Add(valueLabel);
+    rowGrid.SetColumn(valueLabel, 1);
+
+    bottomSheetContent.Children.Add(rowGrid);
+}
+
+AddRow("Title:", "Title");
+AddRow("Genre:", "Genre");
+AddRow("Published:", "Published");
+AddRow("Description:", "Description");
+AddRow("Price:", "Price", "${0:F2}");
+
+bottomSheet.BottomSheetContent = bottomSheetContent;
 
 {% endhighlight %}
 {% endtabs %}

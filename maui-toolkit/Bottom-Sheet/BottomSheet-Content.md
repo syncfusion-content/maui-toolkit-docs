@@ -55,7 +55,6 @@ documentation: ug
 
 SfBottomSheet bottomSheet = new SfBottomSheet
 {
-    EnableSwiping = true,
     HalfExpandedRatio = 0.35,
     ContentPadding = new Thickness(10)
 };

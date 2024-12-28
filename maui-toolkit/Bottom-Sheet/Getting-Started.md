@@ -230,7 +230,7 @@ namespace BottomSheetGettingStarted
             // Create BottomSheet
             bottomSheet = new SfBottomSheet
             {
-                EnableSwiping = true,
+                CornerRadius = new CornerRadius(15, 15, 0, 0),
                 HalfExpandedRatio = 0.35,
                 ContentPadding = new Thickness(10)
             };
