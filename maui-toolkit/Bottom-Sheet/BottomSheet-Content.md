@@ -53,33 +53,64 @@ documentation: ug
 {% endhighlight %}
 {% highlight c# %}
 
-var verticalStackLayout = new VerticalStackLayout
+SfBottomSheet bottomSheet = new SfBottomSheet
 {
-    Padding = new Thickness(20)
+    EnableSwiping = true,
+    HalfExpandedRatio = 0.35,
+    ContentPadding = new Thickness(10)
 };
 
-var button = new Button
-{
-    Text = "Open Bottom Sheet",
-    WidthRequest = 180,
-    CornerRadius = 30,
-    VerticalOptions = LayoutOptions.Center
-};
+var bottomSheetContent = new VerticalStackLayout { Spacing = 5 };
 
-button.Clicked += OpenBottomSheet;
-verticalStackLayout.Children.Add(button);
-SfBottomSheet bottomSheet = new SfBottomSheet();
-var bottomSheetContent = new Label
+void AddRow(string labelText, string bindingPath, string? stringFormat = null)
 {
-    Text = "Bottom Sheet Content",
-    VerticalOptions = LayoutOptions.Center,
-    HorizontalOptions = LayoutOptions.Center,
-    FontSize = 14
-};
+    var rowGrid = new Grid
+    {
+        ColumnDefinitions =
+        {
+            new ColumnDefinition { Width = 120 },
+            new ColumnDefinition { Width = new GridLength(1, GridUnitType.Star) }
+        },
+        ColumnSpacing = 10
+    };
+
+    var label = new Label
+    {
+        Text = labelText,
+        FontSize = 20,
+        FontAttributes = FontAttributes.Bold
+    };
+
+    var valueLabel = new Label
+    {
+        FontSize = 16,
+        VerticalTextAlignment = TextAlignment.Center
+    };
+
+    if (stringFormat != null)
+    {
+        valueLabel.SetBinding(Label.TextProperty, new Binding(bindingPath, stringFormat: stringFormat));
+    }
+    else
+    {
+        valueLabel.SetBinding(Label.TextProperty, bindingPath);
+    }
+
+    rowGrid.Children.Add(label);
+    rowGrid.SetColumn(label, 0);
+    rowGrid.Children.Add(valueLabel);
+    rowGrid.SetColumn(valueLabel, 1);
+
+    bottomSheetContent.Children.Add(rowGrid);
+}
+
+AddRow("Title:", "Title");
+AddRow("Genre:", "Genre");
+AddRow("Published:", "Published");
+AddRow("Description:", "Description");
+AddRow("Price:", "Price", "${0:F2}");
 
 bottomSheet.BottomSheetContent = bottomSheetContent;
-bottomSheet.Content = verticalStackLayout;
-this.Content = bottomSheet;
   
 {% endhighlight %}
 {% endtabs %}
@@ -87,8 +118,9 @@ this.Content = bottomSheet;
 {% tabs %}
 {% highlight c# %}
 
-private void OpenBottomSheet(object sender, EventArgs e)
+private void ListView_ItemTapped(object? sender, ItemTappedEventArgs e)
 {
+    bottomSheet.BottomSheetContent.BindingContext = e.Item;
     bottomSheet.Show();
 }
 

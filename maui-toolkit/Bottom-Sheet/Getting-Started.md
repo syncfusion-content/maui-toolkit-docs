@@ -167,37 +167,138 @@ namespace BottomSheetGettingStarted
         public MainPage()
         {
             InitializeComponent();
-            var verticalStackLayout = new VerticalStackLayout
+
+            // Create ViewModel and set BindingContext
+            var bookViewModel = new BookViewModel();
+
+            // Main Grid
+            var mainGrid = new Grid();
+            mainGrid.BindingContext = bookViewModel;
+
+            // ListView for displaying books
+            var listView = new ListView
             {
-                Padding = new Thickness(20)
+                ItemsSource = bookViewModel.Books,
+                HasUnevenRows = true,
+                ItemTemplate = new DataTemplate(() =>
+                {
+                    var grid = new Grid
+                    {
+                        Padding = new Thickness(10),
+                        ColumnDefinitions =
+                        {
+                            new ColumnDefinition { Width = new GridLength(1, GridUnitType.Star) },
+                            new ColumnDefinition { Width = 60 }
+                        }
+                    };
+
+                    var titleLabel = new Label
+                    {
+                        FontSize = 20,
+                        FontAttributes = FontAttributes.Bold
+                    };
+                    titleLabel.SetBinding(Label.TextProperty, "Title");
+
+                    var descriptionLabel = new Label
+                    {
+                        FontSize = 14,
+                        TextColor = Colors.Gray
+                    };
+                    descriptionLabel.SetBinding(Label.TextProperty, "Description");
+
+                    var verticalStackLayout = new VerticalStackLayout();
+                    verticalStackLayout.Children.Add(titleLabel);
+                    verticalStackLayout.Children.Add(descriptionLabel);
+
+                    var ratingLabel = new Label
+                    {
+                        HorizontalOptions = LayoutOptions.Center,
+                        VerticalOptions = LayoutOptions.Center
+                    };
+                    ratingLabel.SetBinding(Label.TextProperty, new Binding("Rating", stringFormat: "{0} / 5"));
+
+                    grid.Children.Add(verticalStackLayout);
+                    grid.SetColumn(verticalStackLayout, 0);
+                    grid.Children.Add(ratingLabel);
+                    grid.SetColumn(ratingLabel, 1);
+
+                    return new ViewCell { View = grid };
+                })
+            };
+            listView.ItemTapped += ListView_ItemTapped;
+
+            // Create BottomSheet
+            bottomSheet = new SfBottomSheet
+            {
+                EnableSwiping = true,
+                HalfExpandedRatio = 0.35,
+                ContentPadding = new Thickness(10)
             };
 
-            var button = new Button
-            {
-                Text = "Open Bottom Sheet",
-                WidthRequest = 180,
-                CornerRadius = 30,
-                VerticalOptions = LayoutOptions.Center
-            };
+            // BottomSheet Content
+            var bottomSheetContent = new VerticalStackLayout { Spacing = 5 };
 
-            button.Clicked += OpenBottomSheet;
-            verticalStackLayout.Children.Add(button);
-            bottomSheet = new SfBottomSheet();
-            var bottomSheetContent = new Label
+            void AddRow(string labelText, string bindingPath, string? stringFormat = null)
             {
-                Text = "Bottom Sheet Content",
-                VerticalOptions = LayoutOptions.Center,
-                HorizontalOptions = LayoutOptions.Center,
-                FontSize = 14
-            };
+                var rowGrid = new Grid
+                {
+                    ColumnDefinitions =
+                    {
+                        new ColumnDefinition { Width = 120 },
+                        new ColumnDefinition { Width = new GridLength(1, GridUnitType.Star) }
+                    },
+                    ColumnSpacing = 10
+                };
+
+                var label = new Label
+                {
+                    Text = labelText,
+                    FontSize = 20,
+                    FontAttributes = FontAttributes.Bold
+                };
+
+                var valueLabel = new Label
+                {
+                    FontSize = 16,
+                    VerticalTextAlignment = TextAlignment.Center
+                };
+
+                if (stringFormat != null)
+                {
+                    valueLabel.SetBinding(Label.TextProperty, new Binding(bindingPath, stringFormat: stringFormat));
+                }
+                else
+                {
+                    valueLabel.SetBinding(Label.TextProperty, bindingPath);
+                }
+
+                rowGrid.Children.Add(label);
+                rowGrid.SetColumn(label, 0);
+                rowGrid.Children.Add(valueLabel);
+                rowGrid.SetColumn(valueLabel, 1);
+
+                bottomSheetContent.Children.Add(rowGrid);
+            }
+
+            AddRow("Title:", "Title");
+            AddRow("Genre:", "Genre");
+            AddRow("Published:", "Published");
+            AddRow("Description:", "Description");
+            AddRow("Price:", "Price", "${0:F2}");
 
             bottomSheet.BottomSheetContent = bottomSheetContent;
-            bottomSheet.Content = verticalStackLayout;
-            this.Content = bottomSheet;
+
+            // Add ListView and BottomSheet to Main Grid
+            mainGrid.Children.Add(listView);
+            mainGrid.Children.Add(bottomSheet);
+
+            // Set the Content of the Page
+            Content = mainGrid;
         }
 
-        private void OpenBottomSheet(object sender, EventArgs e)
+        private void ListView_ItemTapped(object? sender, ItemTappedEventArgs e)
         {
+            bottomSheet.BottomSheetContent.BindingContext = e.Item;
             bottomSheet.Show();
         }
         
