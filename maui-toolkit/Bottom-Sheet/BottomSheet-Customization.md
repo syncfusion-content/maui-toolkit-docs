@@ -17,37 +17,9 @@ The [IsModal](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolki
 {% tabs %}
 {% highlight xaml %}
 
-<bottomSheet:SfBottomSheet x:Name="bottomSheet" IsModal="True" HalfExpandedRatio="0.35" ContentPadding="10">
+<bottomSheet:SfBottomSheet x:Name="bottomSheet" IsModal="True">
     <bottomSheet:SfBottomSheet.BottomSheetContent>
-        <VerticalStackLayout Spacing="5" x:Name="bottomSheetContent">
-            <Grid ColumnDefinitions="120, *" ColumnSpacing="10">
-                <Label Text="Title:" FontSize="20" FontAttributes="Bold"/>
-                <Label Text="{Binding Title}" FontSize="16" VerticalTextAlignment="Center" Grid.Column="1"/>
-            </Grid>
-            <Grid ColumnDefinitions="120, *" ColumnSpacing="10">
-                <Label Text="Genre:" FontSize="20" FontAttributes="Bold"/>
-                <Label Text="{Binding Genre}" FontSize="16" VerticalTextAlignment="Center" Grid.Column="1"/>
-            </Grid>
-            <Grid ColumnDefinitions="120, *" ColumnSpacing="10">
-                <Label Text="Published:" FontSize="20" FontAttributes="Bold"/>
-                <Label Text="{Binding Published}" FontSize="16" VerticalTextAlignment="Center" Grid.Column="1"/>
-            </Grid>
-            <Grid ColumnDefinitions="120, *" ColumnSpacing="10">
-                <Label Text="Description:" FontSize="20" FontAttributes="Bold"/>
-                <Label Text="{Binding Description}" FontSize="16" VerticalTextAlignment="Center" Grid.Column="1"/>
-            </Grid>
-            <Grid ColumnDefinitions="120, *" ColumnSpacing="10">
-                <Label Text="Price:" FontSize="20" FontAttributes="Bold"/>
-                <Label FontSize="16" VerticalTextAlignment="Center" Grid.Column="1">
-                    <Label.FormattedText>
-                        <FormattedString>
-                            <Span Text="$" FontAttributes="Bold" />
-                            <Span Text="{Binding Price, StringFormat='{0:F2}'}" />
-                        </FormattedString>
-                    </Label.FormattedText>
-                </Label>
-            </Grid>
-        </VerticalStackLayout>
+        <Grid/>
     </bottomSheet:SfBottomSheet.BottomSheetContent>
 </bottomSheet:SfBottomSheet>
 
@@ -56,62 +28,11 @@ The [IsModal](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolki
 
 SfBottomSheet bottomSheet = new SfBottomSheet
 {
-    IsModal = true,
-    HalfExpandedRatio = 0.35,
-    ContentPadding = new Thickness(10)
+    IsModal = true
 };
 
-var bottomSheetContent = new VerticalStackLayout { Spacing = 5 };
-
-void AddRow(string labelText, string bindingPath, string? stringFormat = null)
-{
-    var rowGrid = new Grid
-    {
-        ColumnDefinitions =
-        {
-            new ColumnDefinition { Width = 120 },
-            new ColumnDefinition { Width = new GridLength(1, GridUnitType.Star) }
-        },
-        ColumnSpacing = 10
-    };
-
-    var label = new Label
-    {
-        Text = labelText,
-        FontSize = 20,
-        FontAttributes = FontAttributes.Bold
-    };
-
-    var valueLabel = new Label
-    {
-        FontSize = 16,
-        VerticalTextAlignment = TextAlignment.Center
-    };
-
-    if (stringFormat != null)
-    {
-        valueLabel.SetBinding(Label.TextProperty, new Binding(bindingPath, stringFormat: stringFormat));
-    }
-    else
-    {
-        valueLabel.SetBinding(Label.TextProperty, bindingPath);
-    }
-
-    rowGrid.Children.Add(label);
-    rowGrid.SetColumn(label, 0);
-    rowGrid.Children.Add(valueLabel);
-    rowGrid.SetColumn(valueLabel, 1);
-
-    bottomSheetContent.Children.Add(rowGrid);
-}
-
-AddRow("Title:", "Title");
-AddRow("Genre:", "Genre");
-AddRow("Published:", "Published");
-AddRow("Description:", "Description");
-AddRow("Price:", "Price", "${0:F2}");
-
-bottomSheet.BottomSheetContent = bottomSheetContent;
+Grid grid = new Grid();
+bottomSheet.BottomSheetContent = grid;
 
 {% endhighlight %}
 {% endtabs %}
@@ -207,37 +128,9 @@ The [Background](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Too
 {% tabs %}	
 {% highlight xaml %}
 
-<bottomSheet:SfBottomSheet x:Name="bottomSheet" Background="Beige" HalfExpandedRatio="0.35" ContentPadding="10">
+<bottomSheet:SfBottomSheet x:Name="bottomSheet" Background="Beige">
     <bottomSheet:SfBottomSheet.BottomSheetContent>
-        <VerticalStackLayout Spacing="5" x:Name="bottomSheetContent">
-            <Grid ColumnDefinitions="120, *" ColumnSpacing="10">
-                <Label Text="Title:" FontSize="20" FontAttributes="Bold"/>
-                <Label Text="{Binding Title}" FontSize="16" VerticalTextAlignment="Center" Grid.Column="1"/>
-            </Grid>
-            <Grid ColumnDefinitions="120, *" ColumnSpacing="10">
-                <Label Text="Genre:" FontSize="20" FontAttributes="Bold"/>
-                <Label Text="{Binding Genre}" FontSize="16" VerticalTextAlignment="Center" Grid.Column="1"/>
-            </Grid>
-            <Grid ColumnDefinitions="120, *" ColumnSpacing="10">
-                <Label Text="Published:" FontSize="20" FontAttributes="Bold"/>
-                <Label Text="{Binding Published}" FontSize="16" VerticalTextAlignment="Center" Grid.Column="1"/>
-            </Grid>
-            <Grid ColumnDefinitions="120, *" ColumnSpacing="10">
-                <Label Text="Description:" FontSize="20" FontAttributes="Bold"/>
-                <Label Text="{Binding Description}" FontSize="16" VerticalTextAlignment="Center" Grid.Column="1"/>
-            </Grid>
-            <Grid ColumnDefinitions="120, *" ColumnSpacing="10">
-                <Label Text="Price:" FontSize="20" FontAttributes="Bold"/>
-                <Label FontSize="16" VerticalTextAlignment="Center" Grid.Column="1">
-                    <Label.FormattedText>
-                        <FormattedString>
-                            <Span Text="$" FontAttributes="Bold" />
-                            <Span Text="{Binding Price, StringFormat='{0:F2}'}" />
-                        </FormattedString>
-                    </Label.FormattedText>
-                </Label>
-            </Grid>
-        </VerticalStackLayout>
+        <Grid/>
     </bottomSheet:SfBottomSheet.BottomSheetContent>
 </bottomSheet:SfBottomSheet>
 	
@@ -246,62 +139,11 @@ The [Background](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Too
 
 SfBottomSheet bottomSheet = new SfBottomSheet
 {
-    Background = Colors.Beige,
-    HalfExpandedRatio = 0.35,
-    ContentPadding = new Thickness(10)
+    Background = Colors.Beige
 };
 
-var bottomSheetContent = new VerticalStackLayout { Spacing = 5 };
-
-void AddRow(string labelText, string bindingPath, string? stringFormat = null)
-{
-    var rowGrid = new Grid
-    {
-        ColumnDefinitions =
-        {
-            new ColumnDefinition { Width = 120 },
-            new ColumnDefinition { Width = new GridLength(1, GridUnitType.Star) }
-        },
-        ColumnSpacing = 10
-    };
-
-    var label = new Label
-    {
-        Text = labelText,
-        FontSize = 20,
-        FontAttributes = FontAttributes.Bold
-    };
-
-    var valueLabel = new Label
-    {
-        FontSize = 16,
-        VerticalTextAlignment = TextAlignment.Center
-    };
-
-    if (stringFormat != null)
-    {
-        valueLabel.SetBinding(Label.TextProperty, new Binding(bindingPath, stringFormat: stringFormat));
-    }
-    else
-    {
-        valueLabel.SetBinding(Label.TextProperty, bindingPath);
-    }
-
-    rowGrid.Children.Add(label);
-    rowGrid.SetColumn(label, 0);
-    rowGrid.Children.Add(valueLabel);
-    rowGrid.SetColumn(valueLabel, 1);
-
-    bottomSheetContent.Children.Add(rowGrid);
-}
-
-AddRow("Title:", "Title");
-AddRow("Genre:", "Genre");
-AddRow("Published:", "Published");
-AddRow("Description:", "Description");
-AddRow("Price:", "Price", "${0:F2}");
-
-bottomSheet.BottomSheetContent = bottomSheetContent;
+Grid grid = new Grid();
+bottomSheet.BottomSheetContent = grid;
 
 {% endhighlight %}
 {% endtabs %}
@@ -314,37 +156,9 @@ The [CornerRadius](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.T
 {% tabs %}	
 {% highlight xaml %}
 
-<bottomSheet:SfBottomSheet x:Name="bottomSheet" CornerRadius="15, 15, 0, 0" HalfExpandedRatio="0.35" ContentPadding="10">
+<bottomSheet:SfBottomSheet x:Name="bottomSheet" CornerRadius="15, 15, 0, 0">
     <bottomSheet:SfBottomSheet.BottomSheetContent>
-        <VerticalStackLayout Spacing="5" x:Name="bottomSheetContent">
-            <Grid ColumnDefinitions="120, *" ColumnSpacing="10">
-                <Label Text="Title:" FontSize="20" FontAttributes="Bold"/>
-                <Label Text="{Binding Title}" FontSize="16" VerticalTextAlignment="Center" Grid.Column="1"/>
-            </Grid>
-            <Grid ColumnDefinitions="120, *" ColumnSpacing="10">
-                <Label Text="Genre:" FontSize="20" FontAttributes="Bold"/>
-                <Label Text="{Binding Genre}" FontSize="16" VerticalTextAlignment="Center" Grid.Column="1"/>
-            </Grid>
-            <Grid ColumnDefinitions="120, *" ColumnSpacing="10">
-                <Label Text="Published:" FontSize="20" FontAttributes="Bold"/>
-                <Label Text="{Binding Published}" FontSize="16" VerticalTextAlignment="Center" Grid.Column="1"/>
-            </Grid>
-            <Grid ColumnDefinitions="120, *" ColumnSpacing="10">
-                <Label Text="Description:" FontSize="20" FontAttributes="Bold"/>
-                <Label Text="{Binding Description}" FontSize="16" VerticalTextAlignment="Center" Grid.Column="1"/>
-            </Grid>
-            <Grid ColumnDefinitions="120, *" ColumnSpacing="10">
-                <Label Text="Price:" FontSize="20" FontAttributes="Bold"/>
-                <Label FontSize="16" VerticalTextAlignment="Center" Grid.Column="1">
-                    <Label.FormattedText>
-                        <FormattedString>
-                            <Span Text="$" FontAttributes="Bold" />
-                            <Span Text="{Binding Price, StringFormat='{0:F2}'}" />
-                        </FormattedString>
-                    </Label.FormattedText>
-                </Label>
-            </Grid>
-        </VerticalStackLayout>
+        <Grid/>
     </bottomSheet:SfBottomSheet.BottomSheetContent>
 </bottomSheet:SfBottomSheet>
 	
@@ -353,62 +167,11 @@ The [CornerRadius](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.T
 
 SfBottomSheet bottomSheet = new SfBottomSheet
 {
-    CornerRadius = new CornerRadius(15, 15, 0, 0),
-    HalfExpandedRatio = 0.35,
-    ContentPadding = new Thickness(10)
+    CornerRadius = new CornerRadius(15, 15, 0, 0)
 };
 
-var bottomSheetContent = new VerticalStackLayout { Spacing = 5 };
-
-void AddRow(string labelText, string bindingPath, string? stringFormat = null)
-{
-    var rowGrid = new Grid
-    {
-        ColumnDefinitions =
-        {
-            new ColumnDefinition { Width = 120 },
-            new ColumnDefinition { Width = new GridLength(1, GridUnitType.Star) }
-        },
-        ColumnSpacing = 10
-    };
-
-    var label = new Label
-    {
-        Text = labelText,
-        FontSize = 20,
-        FontAttributes = FontAttributes.Bold
-    };
-
-    var valueLabel = new Label
-    {
-        FontSize = 16,
-        VerticalTextAlignment = TextAlignment.Center
-    };
-
-    if (stringFormat != null)
-    {
-        valueLabel.SetBinding(Label.TextProperty, new Binding(bindingPath, stringFormat: stringFormat));
-    }
-    else
-    {
-        valueLabel.SetBinding(Label.TextProperty, bindingPath);
-    }
-
-    rowGrid.Children.Add(label);
-    rowGrid.SetColumn(label, 0);
-    rowGrid.Children.Add(valueLabel);
-    rowGrid.SetColumn(valueLabel, 1);
-
-    bottomSheetContent.Children.Add(rowGrid);
-}
-
-AddRow("Title:", "Title");
-AddRow("Genre:", "Genre");
-AddRow("Published:", "Published");
-AddRow("Description:", "Description");
-AddRow("Price:", "Price", "${0:F2}");
-
-bottomSheet.BottomSheetContent = bottomSheetContent;
+Grid grid = new Grid();
+bottomSheet.BottomSheetContent = grid;
 
 {% endhighlight %}
 {% endtabs %}
@@ -502,37 +265,9 @@ The [BottomSheetContentWidth](https://help.syncfusion.com/cr/maui-toolkit/Syncfu
 {% tabs %}	
 {% highlight xaml %}
 
-<bottomSheet:SfBottomSheet x:Name="bottomSheet" ContentWidthMode="Custom" BottomSheetContentWidth="500" HalfExpandedRatio="0.35" ContentPadding="10">
+<bottomSheet:SfBottomSheet x:Name="bottomSheet" ContentWidthMode="Custom" BottomSheetContentWidth="500">
     <bottomSheet:SfBottomSheet.BottomSheetContent>
-        <VerticalStackLayout Spacing="5" x:Name="bottomSheetContent">
-            <Grid ColumnDefinitions="120, *" ColumnSpacing="10">
-                <Label Text="Title:" FontSize="20" FontAttributes="Bold"/>
-                <Label Text="{Binding Title}" FontSize="16" VerticalTextAlignment="Center" Grid.Column="1"/>
-            </Grid>
-            <Grid ColumnDefinitions="120, *" ColumnSpacing="10">
-                <Label Text="Genre:" FontSize="20" FontAttributes="Bold"/>
-                <Label Text="{Binding Genre}" FontSize="16" VerticalTextAlignment="Center" Grid.Column="1"/>
-            </Grid>
-            <Grid ColumnDefinitions="120, *" ColumnSpacing="10">
-                <Label Text="Published:" FontSize="20" FontAttributes="Bold"/>
-                <Label Text="{Binding Published}" FontSize="16" VerticalTextAlignment="Center" Grid.Column="1"/>
-            </Grid>
-            <Grid ColumnDefinitions="120, *" ColumnSpacing="10">
-                <Label Text="Description:" FontSize="20" FontAttributes="Bold"/>
-                <Label Text="{Binding Description}" FontSize="16" VerticalTextAlignment="Center" Grid.Column="1"/>
-            </Grid>
-            <Grid ColumnDefinitions="120, *" ColumnSpacing="10">
-                <Label Text="Price:" FontSize="20" FontAttributes="Bold"/>
-                <Label FontSize="16" VerticalTextAlignment="Center" Grid.Column="1">
-                    <Label.FormattedText>
-                        <FormattedString>
-                            <Span Text="$" FontAttributes="Bold" />
-                            <Span Text="{Binding Price, StringFormat='{0:F2}'}" />
-                        </FormattedString>
-                    </Label.FormattedText>
-                </Label>
-            </Grid>
-        </VerticalStackLayout>
+        <Grid/>
     </bottomSheet:SfBottomSheet.BottomSheetContent>
 </bottomSheet:SfBottomSheet>
 	
@@ -542,62 +277,11 @@ The [BottomSheetContentWidth](https://help.syncfusion.com/cr/maui-toolkit/Syncfu
 SfBottomSheet bottomSheet = new SfBottomSheet
 {
     ContentWidthMode = BottomSheetContentWidthMode.Custom,
-    BottomSheetContentWidth = 500,
-    HalfExpandedRatio = 0.35,
-    ContentPadding = new Thickness(10)
+    BottomSheetContentWidth = 500
 };
 
-var bottomSheetContent = new VerticalStackLayout { Spacing = 5 };
-
-void AddRow(string labelText, string bindingPath, string? stringFormat = null)
-{
-    var rowGrid = new Grid
-    {
-        ColumnDefinitions =
-        {
-            new ColumnDefinition { Width = 120 },
-            new ColumnDefinition { Width = new GridLength(1, GridUnitType.Star) }
-        },
-        ColumnSpacing = 10
-    };
-
-    var label = new Label
-    {
-        Text = labelText,
-        FontSize = 20,
-        FontAttributes = FontAttributes.Bold
-    };
-
-    var valueLabel = new Label
-    {
-        FontSize = 16,
-        VerticalTextAlignment = TextAlignment.Center
-    };
-
-    if (stringFormat != null)
-    {
-        valueLabel.SetBinding(Label.TextProperty, new Binding(bindingPath, stringFormat: stringFormat));
-    }
-    else
-    {
-        valueLabel.SetBinding(Label.TextProperty, bindingPath);
-    }
-
-    rowGrid.Children.Add(label);
-    rowGrid.SetColumn(label, 0);
-    rowGrid.Children.Add(valueLabel);
-    rowGrid.SetColumn(valueLabel, 1);
-
-    bottomSheetContent.Children.Add(rowGrid);
-}
-
-AddRow("Title:", "Title");
-AddRow("Genre:", "Genre");
-AddRow("Published:", "Published");
-AddRow("Description:", "Description");
-AddRow("Price:", "Price", "${0:F2}");
-
-bottomSheet.BottomSheetContent = bottomSheetContent;
+Grid grid = new Grid();
+bottomSheet.BottomSheetContent = grid;
 
 {% endhighlight %}
 {% endtabs %}
@@ -610,37 +294,9 @@ The [ShowGrabber](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.To
 {% tabs %}	
 {% highlight xaml %}
 
-<bottomSheet:SfBottomSheet x:Name="bottomSheet" ShowGrabber="True" HalfExpandedRatio="0.35" ContentPadding="10">
+<bottomSheet:SfBottomSheet x:Name="bottomSheet" ShowGrabber="True">
     <bottomSheet:SfBottomSheet.BottomSheetContent>
-        <VerticalStackLayout Spacing="5" x:Name="bottomSheetContent">
-            <Grid ColumnDefinitions="120, *" ColumnSpacing="10">
-                <Label Text="Title:" FontSize="20" FontAttributes="Bold"/>
-                <Label Text="{Binding Title}" FontSize="16" VerticalTextAlignment="Center" Grid.Column="1"/>
-            </Grid>
-            <Grid ColumnDefinitions="120, *" ColumnSpacing="10">
-                <Label Text="Genre:" FontSize="20" FontAttributes="Bold"/>
-                <Label Text="{Binding Genre}" FontSize="16" VerticalTextAlignment="Center" Grid.Column="1"/>
-            </Grid>
-            <Grid ColumnDefinitions="120, *" ColumnSpacing="10">
-                <Label Text="Published:" FontSize="20" FontAttributes="Bold"/>
-                <Label Text="{Binding Published}" FontSize="16" VerticalTextAlignment="Center" Grid.Column="1"/>
-            </Grid>
-            <Grid ColumnDefinitions="120, *" ColumnSpacing="10">
-                <Label Text="Description:" FontSize="20" FontAttributes="Bold"/>
-                <Label Text="{Binding Description}" FontSize="16" VerticalTextAlignment="Center" Grid.Column="1"/>
-            </Grid>
-            <Grid ColumnDefinitions="120, *" ColumnSpacing="10">
-                <Label Text="Price:" FontSize="20" FontAttributes="Bold"/>
-                <Label FontSize="16" VerticalTextAlignment="Center" Grid.Column="1">
-                    <Label.FormattedText>
-                        <FormattedString>
-                            <Span Text="$" FontAttributes="Bold" />
-                            <Span Text="{Binding Price, StringFormat='{0:F2}'}" />
-                        </FormattedString>
-                    </Label.FormattedText>
-                </Label>
-            </Grid>
-        </VerticalStackLayout>
+        <Grid/>
     </bottomSheet:SfBottomSheet.BottomSheetContent>
 </bottomSheet:SfBottomSheet>
 	
@@ -649,62 +305,11 @@ The [ShowGrabber](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.To
 
 SfBottomSheet bottomSheet = new SfBottomSheet
 {
-    ShowGrabber = true,
-    HalfExpandedRatio = 0.35,
-    ContentPadding = new Thickness(10)
+    ShowGrabber = true
 };
 
-var bottomSheetContent = new VerticalStackLayout { Spacing = 5 };
-
-void AddRow(string labelText, string bindingPath, string? stringFormat = null)
-{
-    var rowGrid = new Grid
-    {
-        ColumnDefinitions =
-        {
-            new ColumnDefinition { Width = 120 },
-            new ColumnDefinition { Width = new GridLength(1, GridUnitType.Star) }
-        },
-        ColumnSpacing = 10
-    };
-
-    var label = new Label
-    {
-        Text = labelText,
-        FontSize = 20,
-        FontAttributes = FontAttributes.Bold
-    };
-
-    var valueLabel = new Label
-    {
-        FontSize = 16,
-        VerticalTextAlignment = TextAlignment.Center
-    };
-
-    if (stringFormat != null)
-    {
-        valueLabel.SetBinding(Label.TextProperty, new Binding(bindingPath, stringFormat: stringFormat));
-    }
-    else
-    {
-        valueLabel.SetBinding(Label.TextProperty, bindingPath);
-    }
-
-    rowGrid.Children.Add(label);
-    rowGrid.SetColumn(label, 0);
-    rowGrid.Children.Add(valueLabel);
-    rowGrid.SetColumn(valueLabel, 1);
-
-    bottomSheetContent.Children.Add(rowGrid);
-}
-
-AddRow("Title:", "Title");
-AddRow("Genre:", "Genre");
-AddRow("Published:", "Published");
-AddRow("Description:", "Description");
-AddRow("Price:", "Price", "${0:F2}");
-
-bottomSheet.BottomSheetContent = bottomSheetContent;
+Grid grid = new Grid();
+bottomSheet.BottomSheetContent = grid;
 
 {% endhighlight %}
 {% endtabs %}
@@ -715,37 +320,9 @@ The [GrabberWidth](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.T
 {% tabs %}	
 {% highlight xaml %}
 
-<bottomSheet:SfBottomSheet x:Name="bottomSheet" GrabberHeight="12" GrabberWidth="100" HalfExpandedRatio="0.35" ContentPadding="10">
+<bottomSheet:SfBottomSheet x:Name="bottomSheet" GrabberHeight="12" GrabberWidth="100">
     <bottomSheet:SfBottomSheet.BottomSheetContent>
-        <VerticalStackLayout Spacing="5" x:Name="bottomSheetContent">
-            <Grid ColumnDefinitions="120, *" ColumnSpacing="10">
-                <Label Text="Title:" FontSize="20" FontAttributes="Bold"/>
-                <Label Text="{Binding Title}" FontSize="16" VerticalTextAlignment="Center" Grid.Column="1"/>
-            </Grid>
-            <Grid ColumnDefinitions="120, *" ColumnSpacing="10">
-                <Label Text="Genre:" FontSize="20" FontAttributes="Bold"/>
-                <Label Text="{Binding Genre}" FontSize="16" VerticalTextAlignment="Center" Grid.Column="1"/>
-            </Grid>
-            <Grid ColumnDefinitions="120, *" ColumnSpacing="10">
-                <Label Text="Published:" FontSize="20" FontAttributes="Bold"/>
-                <Label Text="{Binding Published}" FontSize="16" VerticalTextAlignment="Center" Grid.Column="1"/>
-            </Grid>
-            <Grid ColumnDefinitions="120, *" ColumnSpacing="10">
-                <Label Text="Description:" FontSize="20" FontAttributes="Bold"/>
-                <Label Text="{Binding Description}" FontSize="16" VerticalTextAlignment="Center" Grid.Column="1"/>
-            </Grid>
-            <Grid ColumnDefinitions="120, *" ColumnSpacing="10">
-                <Label Text="Price:" FontSize="20" FontAttributes="Bold"/>
-                <Label FontSize="16" VerticalTextAlignment="Center" Grid.Column="1">
-                    <Label.FormattedText>
-                        <FormattedString>
-                            <Span Text="$" FontAttributes="Bold" />
-                            <Span Text="{Binding Price, StringFormat='{0:F2}'}" />
-                        </FormattedString>
-                    </Label.FormattedText>
-                </Label>
-            </Grid>
-        </VerticalStackLayout>
+        <Grid/>
     </bottomSheet:SfBottomSheet.BottomSheetContent>
 </bottomSheet:SfBottomSheet>
 	
@@ -755,62 +332,11 @@ The [GrabberWidth](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.T
 SfBottomSheet bottomSheet = new SfBottomSheet
 {
     GrabberHeight = 12,
-    GrabberWidth = 100,
-    HalfExpandedRatio = 0.35,
-    ContentPadding = new Thickness(10)
+    GrabberWidth = 100
 };
 
-var bottomSheetContent = new VerticalStackLayout { Spacing = 5 };
-
-void AddRow(string labelText, string bindingPath, string? stringFormat = null)
-{
-    var rowGrid = new Grid
-    {
-        ColumnDefinitions =
-        {
-            new ColumnDefinition { Width = 120 },
-            new ColumnDefinition { Width = new GridLength(1, GridUnitType.Star) }
-        },
-        ColumnSpacing = 10
-    };
-
-    var label = new Label
-    {
-        Text = labelText,
-        FontSize = 20,
-        FontAttributes = FontAttributes.Bold
-    };
-
-    var valueLabel = new Label
-    {
-        FontSize = 16,
-        VerticalTextAlignment = TextAlignment.Center
-    };
-
-    if (stringFormat != null)
-    {
-        valueLabel.SetBinding(Label.TextProperty, new Binding(bindingPath, stringFormat: stringFormat));
-    }
-    else
-    {
-        valueLabel.SetBinding(Label.TextProperty, bindingPath);
-    }
-
-    rowGrid.Children.Add(label);
-    rowGrid.SetColumn(label, 0);
-    rowGrid.Children.Add(valueLabel);
-    rowGrid.SetColumn(valueLabel, 1);
-
-    bottomSheetContent.Children.Add(rowGrid);
-}
-
-AddRow("Title:", "Title");
-AddRow("Genre:", "Genre");
-AddRow("Published:", "Published");
-AddRow("Description:", "Description");
-AddRow("Price:", "Price", "${0:F2}");
-
-bottomSheet.BottomSheetContent = bottomSheetContent;
+Grid grid = new Grid();
+bottomSheet.BottomSheetContent = grid;
 
 {% endhighlight %}
 {% endtabs %}
@@ -821,37 +347,9 @@ The [GrabberCornerRadius](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion
 {% tabs %}	
 {% highlight xaml %}
 
-<bottomSheet:SfBottomSheet x:Name="bottomSheet" GrabberHeight="12" GrabberWidth="100" GrabberCornerRadius="3" HalfExpandedRatio="0.35" ContentPadding="10">
+<bottomSheet:SfBottomSheet x:Name="bottomSheet" GrabberCornerRadius="3">
     <bottomSheet:SfBottomSheet.BottomSheetContent>
-        <VerticalStackLayout Spacing="5" x:Name="bottomSheetContent">
-            <Grid ColumnDefinitions="120, *" ColumnSpacing="10">
-                <Label Text="Title:" FontSize="20" FontAttributes="Bold"/>
-                <Label Text="{Binding Title}" FontSize="16" VerticalTextAlignment="Center" Grid.Column="1"/>
-            </Grid>
-            <Grid ColumnDefinitions="120, *" ColumnSpacing="10">
-                <Label Text="Genre:" FontSize="20" FontAttributes="Bold"/>
-                <Label Text="{Binding Genre}" FontSize="16" VerticalTextAlignment="Center" Grid.Column="1"/>
-            </Grid>
-            <Grid ColumnDefinitions="120, *" ColumnSpacing="10">
-                <Label Text="Published:" FontSize="20" FontAttributes="Bold"/>
-                <Label Text="{Binding Published}" FontSize="16" VerticalTextAlignment="Center" Grid.Column="1"/>
-            </Grid>
-            <Grid ColumnDefinitions="120, *" ColumnSpacing="10">
-                <Label Text="Description:" FontSize="20" FontAttributes="Bold"/>
-                <Label Text="{Binding Description}" FontSize="16" VerticalTextAlignment="Center" Grid.Column="1"/>
-            </Grid>
-            <Grid ColumnDefinitions="120, *" ColumnSpacing="10">
-                <Label Text="Price:" FontSize="20" FontAttributes="Bold"/>
-                <Label FontSize="16" VerticalTextAlignment="Center" Grid.Column="1">
-                    <Label.FormattedText>
-                        <FormattedString>
-                            <Span Text="$" FontAttributes="Bold" />
-                            <Span Text="{Binding Price, StringFormat='{0:F2}'}" />
-                        </FormattedString>
-                    </Label.FormattedText>
-                </Label>
-            </Grid>
-        </VerticalStackLayout>
+        <Grid/>
     </bottomSheet:SfBottomSheet.BottomSheetContent>
 </bottomSheet:SfBottomSheet>
 
@@ -860,64 +358,11 @@ The [GrabberCornerRadius](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion
 
 SfBottomSheet bottomSheet = new SfBottomSheet
 {
-    GrabberHeight = 12,
-    GrabberWidth = 100,
-    GrabberCornerRadius = new CornerRadius(3),
-    HalfExpandedRatio = 0.35,
-    ContentPadding = new Thickness(10)
+    GrabberCornerRadius = new CornerRadius(3)
 };
 
-var bottomSheetContent = new VerticalStackLayout { Spacing = 5 };
-
-void AddRow(string labelText, string bindingPath, string? stringFormat = null)
-{
-    var rowGrid = new Grid
-    {
-        ColumnDefinitions =
-        {
-            new ColumnDefinition { Width = 120 },
-            new ColumnDefinition { Width = new GridLength(1, GridUnitType.Star) }
-        },
-        ColumnSpacing = 10
-    };
-
-    var label = new Label
-    {
-        Text = labelText,
-        FontSize = 20,
-        FontAttributes = FontAttributes.Bold
-    };
-
-    var valueLabel = new Label
-    {
-        FontSize = 16,
-        VerticalTextAlignment = TextAlignment.Center
-    };
-
-    if (stringFormat != null)
-    {
-        valueLabel.SetBinding(Label.TextProperty, new Binding(bindingPath, stringFormat: stringFormat));
-    }
-    else
-    {
-        valueLabel.SetBinding(Label.TextProperty, bindingPath);
-    }
-
-    rowGrid.Children.Add(label);
-    rowGrid.SetColumn(label, 0);
-    rowGrid.Children.Add(valueLabel);
-    rowGrid.SetColumn(valueLabel, 1);
-
-    bottomSheetContent.Children.Add(rowGrid);
-}
-
-AddRow("Title:", "Title");
-AddRow("Genre:", "Genre");
-AddRow("Published:", "Published");
-AddRow("Description:", "Description");
-AddRow("Price:", "Price", "${0:F2}");
-
-bottomSheet.BottomSheetContent = bottomSheetContent;
+Grid grid = new Grid();
+bottomSheet.BottomSheetContent = grid;
 
 {% endhighlight %}
 {% endtabs %}
@@ -927,37 +372,9 @@ The [GrabberBackground](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.M
 {% tabs %}	
 {% highlight xaml %}
 
-<bottomSheet:SfBottomSheet x:Name="bottomSheet" GrabberBackground="Red" HalfExpandedRatio="0.35" ContentPadding="10">
+<bottomSheet:SfBottomSheet x:Name="bottomSheet" GrabberBackground="Red">
     <bottomSheet:SfBottomSheet.BottomSheetContent>
-        <VerticalStackLayout Spacing="5" x:Name="bottomSheetContent">
-            <Grid ColumnDefinitions="120, *" ColumnSpacing="10">
-                <Label Text="Title:" FontSize="20" FontAttributes="Bold"/>
-                <Label Text="{Binding Title}" FontSize="16" VerticalTextAlignment="Center" Grid.Column="1"/>
-            </Grid>
-            <Grid ColumnDefinitions="120, *" ColumnSpacing="10">
-                <Label Text="Genre:" FontSize="20" FontAttributes="Bold"/>
-                <Label Text="{Binding Genre}" FontSize="16" VerticalTextAlignment="Center" Grid.Column="1"/>
-            </Grid>
-            <Grid ColumnDefinitions="120, *" ColumnSpacing="10">
-                <Label Text="Published:" FontSize="20" FontAttributes="Bold"/>
-                <Label Text="{Binding Published}" FontSize="16" VerticalTextAlignment="Center" Grid.Column="1"/>
-            </Grid>
-            <Grid ColumnDefinitions="120, *" ColumnSpacing="10">
-                <Label Text="Description:" FontSize="20" FontAttributes="Bold"/>
-                <Label Text="{Binding Description}" FontSize="16" VerticalTextAlignment="Center" Grid.Column="1"/>
-            </Grid>
-            <Grid ColumnDefinitions="120, *" ColumnSpacing="10">
-                <Label Text="Price:" FontSize="20" FontAttributes="Bold"/>
-                <Label FontSize="16" VerticalTextAlignment="Center" Grid.Column="1">
-                    <Label.FormattedText>
-                        <FormattedString>
-                            <Span Text="$" FontAttributes="Bold" />
-                            <Span Text="{Binding Price, StringFormat='{0:F2}'}" />
-                        </FormattedString>
-                    </Label.FormattedText>
-                </Label>
-            </Grid>
-        </VerticalStackLayout>
+        <Grid/>
     </bottomSheet:SfBottomSheet.BottomSheetContent>
 </bottomSheet:SfBottomSheet>
 	
@@ -966,62 +383,11 @@ The [GrabberBackground](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.M
 
 SfBottomSheet bottomSheet = new SfBottomSheet
 {
-    GrabberBackground = Colors.Red,
-    HalfExpandedRatio = 0.35,
-    ContentPadding = new Thickness(10)
+    GrabberBackground = Colors.Red
 };
 
-var bottomSheetContent = new VerticalStackLayout { Spacing = 5 };
-
-void AddRow(string labelText, string bindingPath, string? stringFormat = null)
-{
-    var rowGrid = new Grid
-    {
-        ColumnDefinitions =
-        {
-            new ColumnDefinition { Width = 120 },
-            new ColumnDefinition { Width = new GridLength(1, GridUnitType.Star) }
-        },
-        ColumnSpacing = 10
-    };
-
-    var label = new Label
-    {
-        Text = labelText,
-        FontSize = 20,
-        FontAttributes = FontAttributes.Bold
-    };
-
-    var valueLabel = new Label
-    {
-        FontSize = 16,
-        VerticalTextAlignment = TextAlignment.Center
-    };
-
-    if (stringFormat != null)
-    {
-        valueLabel.SetBinding(Label.TextProperty, new Binding(bindingPath, stringFormat: stringFormat));
-    }
-    else
-    {
-        valueLabel.SetBinding(Label.TextProperty, bindingPath);
-    }
-
-    rowGrid.Children.Add(label);
-    rowGrid.SetColumn(label, 0);
-    rowGrid.Children.Add(valueLabel);
-    rowGrid.SetColumn(valueLabel, 1);
-
-    bottomSheetContent.Children.Add(rowGrid);
-}
-
-AddRow("Title:", "Title");
-AddRow("Genre:", "Genre");
-AddRow("Published:", "Published");
-AddRow("Description:", "Description");
-AddRow("Price:", "Price", "${0:F2}");
-
-bottomSheet.BottomSheetContent = bottomSheetContent;
+Grid grid = new Grid();
+bottomSheet.BottomSheetContent = grid;
 
 {% endhighlight %}
 {% endtabs %}

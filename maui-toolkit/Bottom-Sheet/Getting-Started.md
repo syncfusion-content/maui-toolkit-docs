@@ -87,7 +87,7 @@ public static class MauiProgram
 {% endhighlight %}
 {% endtabs %} 
 
-## Step 4: Add a Basic BottomSheet
+## Step 4: Add a BottomSheet
 
 1. To initialize the control, import the `Syncfusion.Maui.Toolkit.BottomSheet` namespace into your code.
 
