@@ -19,7 +19,7 @@ The [IsModal](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolki
 
 <bottomSheet:SfBottomSheet x:Name="bottomSheet" IsModal="True">
     <bottomSheet:SfBottomSheet.BottomSheetContent>
-        <Grid/>
+        <!--Add your content here-->
     </bottomSheet:SfBottomSheet.BottomSheetContent>
 </bottomSheet:SfBottomSheet>
 
@@ -30,9 +30,6 @@ SfBottomSheet bottomSheet = new SfBottomSheet
 {
     IsModal = true
 };
-
-Grid grid = new Grid();
-bottomSheet.BottomSheetContent = grid;
 
 {% endhighlight %}
 {% endtabs %}
@@ -54,7 +51,7 @@ The [State](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.
 
 <bottomSheet:SfBottomSheet x:Name="bottomSheet" State="FullExpanded">
     <bottomSheet:SfBottomSheet.BottomSheetContent>
-        <Grid/>    
+        <!--Add your content here-->    
     </bottomSheet:SfBottomSheet.BottomSheetContent>
 </bottomSheet:SfBottomSheet>
 	
@@ -63,9 +60,6 @@ The [State](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.
 
 SfBottomSheet bottomSheet = new SfBottomSheet();
 bottomSheet.State = BottomSheetState.FullExpanded;
-Grid grid = new Grid();
-bottomSheet.BottomSheetContent = grid;
-Content = bottomSheet;
 
 {% endhighlight %}
 {% endtabs %}
@@ -82,7 +76,7 @@ The [BottomSheet](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.To
 
 <bottomSheet:SfBottonSheet x:Name="bottomSheet" AllowedState="HalfExpanded" >
     <bottomSheet:SfBottonSheet.BottomSheetContent>
-        <Grid/>
+        <!--Add your content here-->
     </bottomSheet:SfBottonSheet.BottomSheetContent>
 </bottomSheet:SfBottonSheet>
 	
@@ -91,9 +85,6 @@ The [BottomSheet](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.To
 
 SfBottomSheet bottomSheet = new SfBottomSheet();
 bottomSheet.AllowedState = BottomSheetAllowedState.HalfExpanded;
-Grid grid = new Grid();
-bottomSheet.BottomSheetContent = grid;
-Content = bottomSheet;
 
 {% endhighlight %}
 {% endtabs %}
@@ -106,7 +97,7 @@ The [ContentPadding](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui
 
 <bottomSheet:SfBottomSheet x:Name="bottomSheet" ContentPadding="15">
     <bottomSheet:SfBottomSheet.BottomSheetContent>
-        <Grid/>
+        <!--Add your content here-->
     </bottomSheet:SfBottomSheet.BottomSheetContent>
 </bottomSheet:SfBottomSheet>
 	
@@ -115,9 +106,6 @@ The [ContentPadding](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui
 
 SfBottomSheet bottomSheet = new SfBottomSheet();
 bottomSheet.ContentPadding = new Thickness(15);
-Grid grid = new Grid();
-bottomSheet.BottomSheetContent = grid;
-Content = bottomSheet;
 
 {% endhighlight %}
 {% endtabs %}
@@ -130,7 +118,7 @@ The [Background](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Too
 
 <bottomSheet:SfBottomSheet x:Name="bottomSheet" Background="Beige">
     <bottomSheet:SfBottomSheet.BottomSheetContent>
-        <Grid/>
+        <!--Add your content here-->
     </bottomSheet:SfBottomSheet.BottomSheetContent>
 </bottomSheet:SfBottomSheet>
 	
@@ -141,9 +129,6 @@ SfBottomSheet bottomSheet = new SfBottomSheet
 {
     Background = Colors.Beige
 };
-
-Grid grid = new Grid();
-bottomSheet.BottomSheetContent = grid;
 
 {% endhighlight %}
 {% endtabs %}
@@ -158,7 +143,7 @@ The [CornerRadius](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.T
 
 <bottomSheet:SfBottomSheet x:Name="bottomSheet" CornerRadius="15, 15, 0, 0">
     <bottomSheet:SfBottomSheet.BottomSheetContent>
-        <Grid/>
+        <!--Add your content here-->
     </bottomSheet:SfBottomSheet.BottomSheetContent>
 </bottomSheet:SfBottomSheet>
 	
@@ -169,9 +154,6 @@ SfBottomSheet bottomSheet = new SfBottomSheet
 {
     CornerRadius = new CornerRadius(15, 15, 0, 0)
 };
-
-Grid grid = new Grid();
-bottomSheet.BottomSheetContent = grid;
 
 {% endhighlight %}
 {% endtabs %}
@@ -187,7 +169,7 @@ The [FullExpandedRatio](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.M
 
 <bottomSheet:SfBottomSheet x:Name="bottomSheet" FullExpandedRatio="0.8" State="FullExpanded">
  <bottomSheet:SfBottomSheet.BottomSheetContent>
-     <Grid/>
+     <!--Add your content here-->
  </bottomSheet:SfBottomSheet.BottomSheetContent>
 </bottomSheet:SfBottomSheet>
 	
@@ -197,9 +179,6 @@ The [FullExpandedRatio](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.M
 SfBottomSheet bottomSheet = new SfBottomSheet();
 bottomSheet.FullExpandedRatio = 0.8;
 bottomSheet.State = BottomSheetState.FullExpanded;
-Grid grid = new Grid();
-bottomSheet.BottomSheetContent = grid;
-Content = bottomSheet;
 
 {% endhighlight %}
 {% endtabs %}
@@ -213,7 +192,7 @@ The [HalfExpandedRatio](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.M
 
 <bottomSheet:SfBottomSheet x:Name="bottomSheet" HalfExpandedRatio="0.7" State="HalfExpanded">
     <bottomSheet:SfBottomSheet.BottomSheetContent>
-        <Grid/>
+        <!--Add your content here-->
     </bottomSheet:SfBottomSheet.BottomSheetContent>
 </bottomSheet:SfBottomSheet>
 	
@@ -223,9 +202,6 @@ The [HalfExpandedRatio](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.M
 SfBottomSheet bottomSheet = new SfBottomSheet();
 bottomSheet.HalfExpandedRatio = 0.7;
 bottomSheet.State = BottomSheetState.HalfExpanded;
-Grid grid = new Grid();
-bottomSheet.BottomSheetContent = grid;
-Content = bottomSheet;
 
 {% endhighlight %}
 {% endtabs %}
@@ -238,7 +214,7 @@ The [CollapsedHeight](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Mau
 
 <bottomSheet:SfBottomSheet x:Name="bottomSheet" CollapsedHeight="150">
     <bottomSheet:SfBottomSheet.BottomSheetContent>
-        <Grid/>
+        <!--Add your content here-->
     </bottomSheet:SfBottomSheet.BottomSheetContent>
 </bottomSheet:SfBottomSheet>
 	
@@ -247,9 +223,6 @@ The [CollapsedHeight](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Mau
 
 SfBottomSheet bottomSheet = new SfBottomSheet();
 bottomSheet.CollapsedHeight = 150;
-Grid grid = new Grid();
-bottomSheet.BottomSheetContent = grid;
-Content = bottomSheet;
 
 {% endhighlight %}
 {% endtabs %}
@@ -267,7 +240,7 @@ The [BottomSheetContentWidth](https://help.syncfusion.com/cr/maui-toolkit/Syncfu
 
 <bottomSheet:SfBottomSheet x:Name="bottomSheet" ContentWidthMode="Custom" BottomSheetContentWidth="500">
     <bottomSheet:SfBottomSheet.BottomSheetContent>
-        <Grid/>
+        <!--Add your content here-->
     </bottomSheet:SfBottomSheet.BottomSheetContent>
 </bottomSheet:SfBottomSheet>
 	
@@ -279,9 +252,6 @@ SfBottomSheet bottomSheet = new SfBottomSheet
     ContentWidthMode = BottomSheetContentWidthMode.Custom,
     BottomSheetContentWidth = 500
 };
-
-Grid grid = new Grid();
-bottomSheet.BottomSheetContent = grid;
 
 {% endhighlight %}
 {% endtabs %}
@@ -296,7 +266,7 @@ The [ShowGrabber](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.To
 
 <bottomSheet:SfBottomSheet x:Name="bottomSheet" ShowGrabber="True">
     <bottomSheet:SfBottomSheet.BottomSheetContent>
-        <Grid/>
+        <!--Add your content here-->
     </bottomSheet:SfBottomSheet.BottomSheetContent>
 </bottomSheet:SfBottomSheet>
 	
@@ -307,9 +277,6 @@ SfBottomSheet bottomSheet = new SfBottomSheet
 {
     ShowGrabber = true
 };
-
-Grid grid = new Grid();
-bottomSheet.BottomSheetContent = grid;
 
 {% endhighlight %}
 {% endtabs %}
@@ -322,7 +289,7 @@ The [GrabberWidth](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.T
 
 <bottomSheet:SfBottomSheet x:Name="bottomSheet" GrabberHeight="12" GrabberWidth="100">
     <bottomSheet:SfBottomSheet.BottomSheetContent>
-        <Grid/>
+        <!--Add your content here-->
     </bottomSheet:SfBottomSheet.BottomSheetContent>
 </bottomSheet:SfBottomSheet>
 	
@@ -335,9 +302,6 @@ SfBottomSheet bottomSheet = new SfBottomSheet
     GrabberWidth = 100
 };
 
-Grid grid = new Grid();
-bottomSheet.BottomSheetContent = grid;
-
 {% endhighlight %}
 {% endtabs %}
 
@@ -349,7 +313,7 @@ The [GrabberCornerRadius](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion
 
 <bottomSheet:SfBottomSheet x:Name="bottomSheet" GrabberCornerRadius="3">
     <bottomSheet:SfBottomSheet.BottomSheetContent>
-        <Grid/>
+        <!--Add your content here-->
     </bottomSheet:SfBottomSheet.BottomSheetContent>
 </bottomSheet:SfBottomSheet>
 
@@ -361,9 +325,6 @@ SfBottomSheet bottomSheet = new SfBottomSheet
     GrabberCornerRadius = new CornerRadius(3)
 };
 
-Grid grid = new Grid();
-bottomSheet.BottomSheetContent = grid;
-
 {% endhighlight %}
 {% endtabs %}
 
@@ -374,7 +335,7 @@ The [GrabberBackground](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.M
 
 <bottomSheet:SfBottomSheet x:Name="bottomSheet" GrabberBackground="Red">
     <bottomSheet:SfBottomSheet.BottomSheetContent>
-        <Grid/>
+        <!--Add your content here-->
     </bottomSheet:SfBottomSheet.BottomSheetContent>
 </bottomSheet:SfBottomSheet>
 	
@@ -385,9 +346,6 @@ SfBottomSheet bottomSheet = new SfBottomSheet
 {
     GrabberBackground = Colors.Red
 };
-
-Grid grid = new Grid();
-bottomSheet.BottomSheetContent = grid;
 
 {% endhighlight %}
 {% endtabs %}
