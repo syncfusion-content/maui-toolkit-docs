@@ -87,7 +87,7 @@ public static class MauiProgram
 {% endhighlight %}
 {% endtabs %} 
 
-## Step 4: Add a BottomSheet
+## Step 4: Add a Basic BottomSheet
 
 1. To initialize the control, import the `Syncfusion.Maui.Toolkit.BottomSheet` namespace into your code.
 
@@ -98,7 +98,7 @@ public static class MauiProgram
 
 <bottomSheet:SfBottomSheet x:Name="bottomSheet">
     <bottomSheet:SfBottomSheet.BottomSheetContent>
-        <Grid/>
+        <!--Add your content here-->
     </bottomSheet:SfBottomSheet.BottomSheetContent>
 </bottomSheet:SfBottomSheet>
 
@@ -106,8 +106,6 @@ public static class MauiProgram
 {% highlight c# %}
 
 SfBottomSheet bottomSheet = new SfBottomSheet();
-Grid grid = new Grid();
-bottomSheet.BottomSheetContent = grid;
 
 {% endhighlight %}
 {% endtabs %}
