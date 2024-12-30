@@ -96,69 +96,232 @@ public static class MauiProgram
 {% tabs %}
 {% highlight xaml %}
 
-<ContentPage
-    xmlns:bottomSheet="clr-namespace:Syncfusion.Maui.Toolkit.BottomSheet;assembly=Syncfusion.Maui.Toolkit">
-   <bottomSheet:SfBottomSheet x:Name="bottomSheet">
-        <bottomSheet:SfBottomSheet.Content>
-            <VerticalStackLayout Padding="20">
-                <Button Text="Open Bottom Sheet" Clicked="OpenBottomSheet" WidthRequest="180" CornerRadius="30" VerticalOptions="Center"/>
-            </VerticalStackLayout>
-        </bottomSheet:SfBottomSheet.Content>
-        <bottomSheet:SfBottomSheet.BottomSheetContent>
-            <Label Text="Bottom Sheet Content" VerticalOptions="Center" HorizontalOptions="Center" FontSize="14" />
-        </bottomSheet:SfBottomSheet.BottomSheetContent>
+<bottomSheet:SfBottomSheet x:Name="bottomSheet">
+    <bottomSheet:SfBottomSheet.BottomSheetContent>
+        <!--Add your content here-->
+    </bottomSheet:SfBottomSheet.BottomSheetContent>
 </bottomSheet:SfBottomSheet>
+
+{% endhighlight %}
+{% highlight c# %}
+
+SfBottomSheet bottomSheet = new SfBottomSheet();
+
+{% endhighlight %}
+{% endtabs %}
+
+## Add a BottomSheet with Detailed Content
+The following code demonstrates how to add a bottom sheet that displays detailed book information. It uses a ViewModel for effective data binding to ensure seamless updates and interaction.
+
+### Model
+Create a simple data model as shown in the following code example, and save it as Book.cs file.
+
+{% tabs %}
+{% highlight Book.cs %}
+
+public class Book
+{
+    public string Title { get; set; } = string.Empty;
+    public string Genre { get; set; } = string.Empty;
+    public string Published { get; set; } = string.Empty;
+    public string Description { get; set; } = string.Empty;
+    public double Rating { get; set; }
+    public decimal Price { get; set; }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+### View Model
+Next, create a model repository class with Books collection property initialized with required number of data objects in a new class file as shown in the following code example, and save it as BookViewModel.cs file:
+
+{% tabs %}
+{% highlight BookViewModel.cs %}
+
+public class BookViewModel
+{
+    private ObservableCollection<Book>? _books;
+
+    public ObservableCollection<Book>? Books
+    {
+        get => _books;
+        set
+        {
+            _books = value;
+        }
+    }
+
+    public BookViewModel()
+    {
+        Books = new ObservableCollection<Book>
+        {
+            new Book
+            {
+                Title = "Object-Oriented Programming in C#",
+                Genre = "Programming, Software Development",
+                Published = "July 2023",
+                Description = "Object-oriented programming is a programming paradigm based on the concept of objects",
+                Rating = 4.7,
+                Price = 49.99
+            },
+            new Book
+            {
+                Title = "C# Code Contracts",
+                Genre = "Programming",
+                Published = "March 2019",
+                Description = "Code Contracts provide a way to convey code assumptions",
+                Rating = 4.8,
+                Price = 39.99
+            },
+            new Book
+            {
+                Title = "Machine Learning Using C#",
+                Genre = "Programming, Software Engineering",
+                Published = "August 2008",
+                Description = "You will learn several different approaches to applying machine learning",
+                Rating = 4.7,
+                Price = 34.99
+            },
+            new Book
+            {
+                Title = "Neural Networks Using C#",
+                Genre = "Programming",
+                Published = "October 1999",
+                Description = "Neural networks are an exciting field of software development",
+                Rating = 4.9,
+                Price = 49.99
+            },
+            new Book
+            {
+                Title = "Visual Studio Code",
+                Genre = "Software Development",
+                Published = "November 2018",
+                Description = "It is a powerful tool for editing code and serves for end-to-end programming",
+                Rating = 4.6,
+                Price = 45.99
+            },
+            new Book
+            {
+                Title = "Android Programming",
+                Genre = "Algorithms, Computer Science",
+                Published = "July 2009",
+                Description = "It provides a useful overview of the Android application life cycle",
+                Rating = 4.5,
+                Price = 94.99
+            },
+            new Book
+            {
+                Title = "iOS Succinctly",
+                Genre = "Software Design",
+                Published = "October 1994",
+                Description = "It is for developers looking to step into frightening world of iPhone",
+                Rating = 4.8,
+                Price = 54.99
+            },
+            new Book
+            {
+                Title = "Visual Studio 2015",
+                Genre = "Programming, Software Design",
+                Published = "October 2004",
+                Description = "The new version of the widely-used integrated development environment",
+                Rating = 4.7,
+                Price = 44.99
+            },
+            new Book
+            {
+                Title = "Xamarin.Forms",
+                Genre = "Software Design, Software Engineering",
+                Published = "August 2003",
+                Description = "It creates mappings from its C# classes and controls directly",
+                Rating = 4.6,
+                Price = 49.99
+            },
+            new Book
+            {
+                Title = "Windows Store Apps",
+                Genre = "Programming, Web Development",
+                Published = "March 2023",
+                Description = "Windows Store apps present a radical shift in Windows development",
+                Rating = 4.9,
+                Price = 59.99
+            }
+        };
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+{% tabs %}
+{% highlight xaml %}
+
+<ContentPage
+    xmlns:local="clr-namespace:BottomSheetGettingStarted.ViewModel"
+    xmlns:bottomSheet="clr-namespace:Syncfusion.Maui.Toolkit.BottomSheet;assembly=Syncfusion.Maui.Toolkit">
+   <Grid>
+        <Grid.BindingContext>
+            <local:BookViewModel />
+        </Grid.BindingContext>
+        <ListView ItemsSource="{Binding Books}" ItemTapped="ListView_ItemTapped" HasUnevenRows="True">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <Grid ColumnDefinitions="*, 60" Padding="10">
+                            <VerticalStackLayout>
+                                <Label Text="{Binding Title}" FontSize="20" FontAttributes="Bold"/>
+                                <Label Text="{Binding Description}" FontSize="14" TextColor="Gray"/>
+                            </VerticalStackLayout>
+                            <Label Text="{Binding Rating, StringFormat='{}{0} / 5'}" Grid.Column="1" HorizontalOptions="Center" VerticalOptions="Center"/>
+                        </Grid>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        <bottomSheet:SfBottomSheet x:Name="bottomSheet" CornerRadius="15, 15, 0, 0" HalfExpandedRatio="0.35" ContentPadding="10">
+            <bottomSheet:SfBottomSheet.BottomSheetContent>
+                <VerticalStackLayout Spacing="5" x:Name="bottomSheetContent">
+                    <Grid ColumnDefinitions="120, *" ColumnSpacing="10">
+                        <Label Text="Title:" FontSize="20" FontAttributes="Bold"/>
+                        <Label Text="{Binding Title}" FontSize="16" VerticalTextAlignment="Center" Grid.Column="1"/>
+                    </Grid>
+                    <Grid ColumnDefinitions="120, *" ColumnSpacing="10">
+                        <Label Text="Genre:" FontSize="20" FontAttributes="Bold"/>
+                        <Label Text="{Binding Genre}" FontSize="16" VerticalTextAlignment="Center" Grid.Column="1"/>
+                    </Grid>
+                    <Grid ColumnDefinitions="120, *" ColumnSpacing="10">
+                        <Label Text="Published:" FontSize="20" FontAttributes="Bold"/>
+                        <Label Text="{Binding Published}" FontSize="16" VerticalTextAlignment="Center" Grid.Column="1"/>
+                    </Grid>
+                    <Grid ColumnDefinitions="120, *" ColumnSpacing="10">
+                        <Label Text="Description:" FontSize="20" FontAttributes="Bold"/>
+                        <Label Text="{Binding Description}" FontSize="16" VerticalTextAlignment="Center" Grid.Column="1"/>
+                    </Grid>
+                    <Grid ColumnDefinitions="120, *" ColumnSpacing="10">
+                        <Label Text="Price:" FontSize="20" FontAttributes="Bold"/>
+                        <Label FontSize="16" VerticalTextAlignment="Center" Grid.Column="1">
+                            <Label.FormattedText>
+                                <FormattedString>
+                                    <Span Text="$" FontAttributes="Bold" />
+                                    <Span Text="{Binding Price, StringFormat='{0:F2}'}" />
+                                </FormattedString>
+                            </Label.FormattedText>
+                        </Label>
+                    </Grid>
+                </VerticalStackLayout>
+            </bottomSheet:SfBottomSheet.BottomSheetContent>
+        </bottomSheet:SfBottomSheet>
+    </Grid>
 </ContentPage>
     
 {% endhighlight %}
 {% highlight c# %}
 
-using Syncfusion.Maui.Toolkit.BottomSheet;
-
-namespace BottomSheetGettingStarted
+private void OnListViewItemTapped(object? sender, ItemTappedEventArgs e)
 {
-    public partial class MainPage : ContentPage
-    {
-        SfBottomSheet bottomSheet;
-        public MainPage()
-        {
-            InitializeComponent();
-            var verticalStackLayout = new VerticalStackLayout
-            {
-                Padding = new Thickness(20)
-            };
-
-            var button = new Button
-            {
-                Text = "Open Bottom Sheet",
-                WidthRequest = 180,
-                CornerRadius = 30,
-                VerticalOptions = LayoutOptions.Center
-            };
-
-            button.Clicked += OpenBottomSheet;
-            verticalStackLayout.Children.Add(button);
-            bottomSheet = new SfBottomSheet();
-            var bottomSheetContent = new Label
-            {
-                Text = "Bottom Sheet Content",
-                VerticalOptions = LayoutOptions.Center,
-                HorizontalOptions = LayoutOptions.Center,
-                FontSize = 14
-            };
-
-            bottomSheet.BottomSheetContent = bottomSheetContent;
-            bottomSheet.Content = verticalStackLayout;
-            this.Content = bottomSheet;
-        }
-
-        private void OpenBottomSheet(object sender, EventArgs e)
-        {
-            bottomSheet.Show();
-        }
-        
-    }
+    bottomSheet.BottomSheetContent.BindingContext = e.Item;
+    bottomSheet.Show();
 }
+
 {% endhighlight %}
 {% endtabs %}
 
