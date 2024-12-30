@@ -19,7 +19,7 @@ The [EnableSwiping](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.
 
 <bottomSheet:SfBottomSheet x:Name="bottomSheet" EnableSwiping="True">
     <bottomSheet:SfBottomSheet.BottomSheetContent>
-        <Grid/>
+        <!--Add your content here-->
     </bottomSheet:SfBottomSheet.BottomSheetContent>
 </bottomSheet:SfBottomSheet>
 	
@@ -30,9 +30,6 @@ SfBottomSheet bottomSheet = new SfBottomSheet
 {
     EnableSwiping = true
 };
-
-Grid grid = new Grid();
-bottomSheet.BottomSheetContent = grid;
 
 {% endhighlight %}
 {% endtabs %}
