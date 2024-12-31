@@ -103,6 +103,7 @@ public static class MauiProgram
 </bottomSheet:SfBottomSheet>
 
 {% endhighlight %}
+
 {% highlight c# %}
 
 SfBottomSheet bottomSheet = new SfBottomSheet();
