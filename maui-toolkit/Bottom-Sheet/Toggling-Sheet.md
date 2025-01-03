@@ -26,7 +26,7 @@ The [IsOpen](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit
 <Grid>
     <bottomSheet:SfBottomSheet IsOpen="True">
         <bottomSheet:SfBottomSheet.BottomSheetContent>
-            <Label Text="Bottom Sheet Content" VerticalOptions="Center" HorizontalOptions="Center" FontSize="14" />
+            <!--Add your content here-->
         </bottomSheet:SfBottomSheet.BottomSheetContent>
     </bottomSheet:SfBottomSheet>
 </Grid>
@@ -34,19 +34,8 @@ The [IsOpen](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit
 {% endhighlight %}
 {% highlight c# %}
 
-Grid grid = new Grid();
 SfBottomSheet bottomSheet = new SfBottomSheet();
 bottomSheet.IsOpen = true;
-Label label = new Label()
-{
-    Text = "Bottom Sheet Content",
-    FontSize = 14,
-    VerticalOptions = LayoutOptions.Center,
-    HorizontalOptions = LayoutOptions.Center,
-};
-bottomSheet.BottomSheetContent = label;
-grid.Children.Add(bottomSheet);
-Content = grid;
 
 {% endhighlight %}
 {% endtabs %}
@@ -60,47 +49,15 @@ The [Show](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.B
 {% highlight xaml %}
 
 <bottomSheet:SfBottomSheet x:Name="bottomSheet">
-    <bottomSheet:SfBottomSheet.Content>
-        <VerticalStackLayout Padding="20">
-            <Button Text="Open Bottom Sheet" Clicked="OpenBottomSheet" WidthRequest="180" CornerRadius="30" VerticalOptions="Center"/>
-        </VerticalStackLayout>
-    </bottomSheet:SfBottomSheet.Content>
     <bottomSheet:SfBottomSheet.BottomSheetContent>
-        <Button Text="Close Bottom Sheet" Clicked="CloseBottomSheet" HeightRequest="50" WidthRequest="180" CornerRadius="30"/>
+        <!--Add your content here-->
     </bottomSheet:SfBottomSheet.BottomSheetContent>
 </bottomSheet:SfBottomSheet>
 
 {% endhighlight %}
 {% highlight c# %}
 
-var verticalStackLayout = new VerticalStackLayout
-{
-    Padding = new Thickness(20)
-};
-
-var openButton = new Button
-{
-    Text = "Open Bottom Sheet",
-    WidthRequest = 180,
-    CornerRadius = 30,
-    VerticalOptions = LayoutOptions.Center
-};
-
-var closeButton = new Button
-{
-    Text = "Close Bottom Sheet",
-    HeightRequest = 50,
-    WidthRequest = 180,
-    CornerRadius = 30,
-};
-
-openButton.Clicked += OpenBottomSheet;
-closeButton.Clicked += CloseBottomSheet;
-verticalStackLayout.Children.Add(openButton);
 SfBottomSheet bottomSheet = new SfBottomSheet();
-bottomSheet.BottomSheetContent = closeButton;
-bottomSheet.Content = verticalStackLayout;
-this.Content = bottomSheet;
 
 {% endhighlight %}
 {% endtabs %}
@@ -109,8 +66,9 @@ Using `Show` and `Close` methods,
 
 {% highlight c# %}
 
-private void OpenBottomSheet(object sender, EventArgs e)
+private void OnListViewItemTapped(object? sender, ItemTappedEventArgs e)
 {
+    bottomSheet.BottomSheetContent.BindingContext = e.Item;
     bottomSheet.Show();
 }
 
