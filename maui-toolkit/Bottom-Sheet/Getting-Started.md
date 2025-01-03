@@ -117,7 +117,7 @@ The following code demonstrates how to add a bottom sheet that displays detailed
 Create a simple data model as shown in the following code example, and save it as Book.cs file.
 
 {% tabs %}
-{% highlight Book.cs %}
+{% highlight C# tabtitle="Book.cs" %}
 
 public class Book
 {
@@ -136,7 +136,7 @@ public class Book
 Next, create a model repository class with Books collection property initialized with required number of data objects in a new class file as shown in the following code example, and save it as BookViewModel.cs file:
 
 {% tabs %}
-{% highlight BookViewModel.cs %}
+{% highlight C# tabtitle="BookViewModel.cs" %}
 
 public class BookViewModel
 {
