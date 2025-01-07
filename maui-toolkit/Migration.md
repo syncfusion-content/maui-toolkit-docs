@@ -17,8 +17,8 @@ By preserving similar APIs and functionality, developers can easily update their
 <table>
 <tr>
 <th>Controls</th>
-<th>Syncfusion .NET MAUI Namespace</th>
-<th>Syncfusion Toolkit for .NET MAUI Namespace</th>
+<th>Syncfusion<sup>®</sup> .NET MAUI Namespace</th>
+<th>Syncfusion<sup>®</sup> Toolkit for .NET MAUI Namespace</th>
 <th>Description</th>
 </tr>
 <tr>
