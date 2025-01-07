@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting started with .NET MAUI Tab View (SfTabView) | Syncfusion
-description: Learn how to set up, configure, and use the Syncfusion .NET MAUI Tab View (SfTabView) control in your cross-platform applications.
+title: Getting started with .NET MAUI Tab View (SfTabView) | Syncfusion<sup>®</sup>
+description: Learn how to set up, configure, and use the Syncfusion<sup>®</sup> .NET MAUI Tab View (SfTabView) control in your cross-platform applications.
 platform: maui-toolkit
 control: Tab View control (SfTabView)
 documentation: ug
@@ -37,7 +37,7 @@ Before proceeding, ensure the following are setup:
 {% endtabcontent %}
 {% endtabcontents %}
 
-## Step 2: Install the Syncfusion .NET MAUI Toolkit package
+## Step 2: Install the Syncfusion<sup>®</sup> .NET MAUI Toolkit package
 
 {% tabcontents %}
 {% tabcontent Visual Studio %}
@@ -50,7 +50,7 @@ Before proceeding, ensure the following are setup:
 
 1. Press <kbd>Ctrl</kbd> + <kbd>`</kbd> (backtick) to open the integrated terminal in Visual Studio Code.
 2. Ensure you're in the project root directory where your .csproj file is located.
-3. Run the command `dotnet add package Syncfusion.Maui.Toolkit` to install the Syncfusion .NET MAUI Toolkit NuGet package.
+3. Run the command `dotnet add package Syncfusion.Maui.Toolkit` to install the Syncfusion<sup>®</sup> .NET MAUI Toolkit NuGet package.
 4. To ensure all dependencies are installed, run `dotnet restore`.
 
 {% endtabcontent %}
@@ -58,7 +58,7 @@ Before proceeding, ensure the following are setup:
 
 ## Step 3: Register the handler
 
-In the **MauiProgram.cs** file, register the handler for Syncfusion Toolkit.
+In the **MauiProgram.cs** file, register the handler for Syncfusion<sup>®</sup> Toolkit.
 
 {% tabs %}
 {% highlight C# tabtitle="MauiProgram.cs" hl_lines="1 9" %}
