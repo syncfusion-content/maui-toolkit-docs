@@ -1,7 +1,7 @@
 ---
 ayout: post
-title: Events in .NET MAUI NumericUpDown control | Syncfusion
-description: Learn here all about the Events support in Syncfusion .NET MAUI NumericUpDown (SfNumericUpDown) control and more details.
+title: Events in .NET MAUI NumericUpDown control | Syncfusion<sup>®</sup>
+description: Learn here all about the Events support in Syncfusion<sup>®</sup> .NET MAUI NumericUpDown (SfNumericUpDown) control and more details.
 platform: maui
 control: SfNumericUpDown
 documentation: ug

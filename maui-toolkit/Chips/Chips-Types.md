@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Chips Types in .NET MAUI Chips control | Syncfusion
-description: Learn about Chips Types support in Syncfusion Toolkit for .NET MAUI Chips control, its elements and more.
+title: Chips Types in .NET MAUI Chips control | Syncfusion<sup>®</sup>
+description: Learn about Chips Types support in Syncfusion<sup>®</sup> Toolkit for .NET MAUI Chips control, its elements and more.
 platform: maui-toolkit
 control: Chips
 documentation: ug
