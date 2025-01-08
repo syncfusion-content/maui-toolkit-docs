@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Migration from Syncfusion .NET MAUI to Syncfusion Toolkit for .NET MAUI
-description: Describes the necessary changes to easily update the existing Syncfusion .NET MAUI control to use the new toolkit with minimal code modifications.
+title: Migration from Syncfusion<sup>®</sup> .NET MAUI to Syncfusion<sup>®</sup> Toolkit for .NET MAUI
+description: Describes the necessary changes to easily update the existing Syncfusion<sup>®</sup> .NET MAUI control to use the new toolkit with minimal code modifications.
 platform: maui-toolkit
 control: General
 documentation: ug
 ---
 
-# Migration Overview: Syncfusion .NET MAUI to Syncfusion Toolkit for .NET MAUI
+# Migration Overview: Syncfusion<sup>®</sup> .NET MAUI to Syncfusion<sup>®</sup> Toolkit for .NET MAUI
 
-To ensure a smooth migration from **Syncfusion .NET MAUI** to the **Syncfusion Toolkit for .NET MAUI** controls, we have designed the Toolkit components to closely resemble those in Syncfusion .NET MAUI. This approach minimizes the changes required during migration, with the primary difference being the use of toolkit-specific namespaces.
+To ensure a smooth migration from **Syncfusion<sup>®</sup> .NET MAUI** to the **Syncfusion<sup>®</sup> Toolkit for .NET MAUI** controls, we have designed the Toolkit components to closely resemble those in Syncfusion<sup>®</sup> .NET MAUI. This approach minimizes the changes required during migration, with the primary difference being the use of toolkit-specific namespaces.
 By preserving similar APIs and functionality, developers can easily update their existing projects to use the new toolkit with minimal code modifications. Refer to the table below for a detailed overview of the necessary changes:
 
 ## XAML Namespaces
@@ -17,8 +17,8 @@ By preserving similar APIs and functionality, developers can easily update their
 <table>
 <tr>
 <th>Controls</th>
-<th>Syncfusion .NET MAUI Namespace</th>
-<th>Syncfusion Toolkit for .NET MAUI Namespace</th>
+<th>Syncfusion<sup>®</sup> .NET MAUI Namespace</th>
+<th>Syncfusion<sup>®</sup> Toolkit for .NET MAUI Namespace</th>
 <th>Description</th>
 </tr>
 <tr>
@@ -112,8 +112,8 @@ By preserving similar APIs and functionality, developers can easily update their
 <table>
 <tr>
 <th>Controls</th>
-<th>Syncfusion .NET MAUI Namespace</th>
-<th>Syncfusion Toolkit for .NET MAUI Namespace</th>
+<th>Syncfusion<sup>®</sup> .NET MAUI Namespace</th>
+<th>Syncfusion<sup>®</sup> Toolkit for .NET MAUI Namespace</th>
 <th>Description</th>
 </tr>
 <tr>
@@ -213,8 +213,8 @@ By preserving similar APIs and functionality, developers can easily update their
 <table>
 <tr>
 <th>Controls</th>
-<th>Syncfusion .NET MAUI</th>
-<th>Syncfusion Toolkit for .NET MAUI</th>
+<th>Syncfusion<sup>®</sup> .NET MAUI</th>
+<th>Syncfusion<sup>®</sup> Toolkit for .NET MAUI</th>
 <th>Description</th>
 </tr>
 <tr>
