@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Swiping in .NET MAUI Bottom Sheet | Syncfusion
-description: Learn here all about swiping support in Syncfusion .NET MAUI Bottom Sheet (SfBottomSheet) control and more.
+title: Swiping in .NET MAUI Bottom Sheet | Syncfusion<sup>®</sup>
+description: Learn here all about swiping support in Syncfusion<sup>®</sup> .NET MAUI Bottom Sheet (SfBottomSheet) control and more.
 platform: maui-toolkit
 control: BottomSheet
 documentation: ug
