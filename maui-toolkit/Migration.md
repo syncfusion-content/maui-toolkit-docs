@@ -34,6 +34,12 @@ By preserving similar APIs and functionality, developers can easily update their
 <td>Defines the XAML namespace for <a href="https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Calendar.SfCalendar.html">SfCalendar</a> control.</td>
 </tr>
 <tr>
+<td><a href="https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Cards.html">SfCards</a></td>
+<td>xmlns:cards="clr-namespace:Syncfusion.Maui.Cards;assembly=Syncfusion.Maui.Cards"</td>
+<td>xmlns:cards="clr-namespace:Syncfusion.Maui.Toolkit.Cards;assembly=Syncfusion.Maui.Toolkit"</td>
+<td>Defines the XAML namespace for <a href="https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Cards.html">SfCards</a> control.</td>
+</tr>
+<tr>
 <td><a href="https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Carousel.SfCarousel.html">SfCarousel</a></td>
 <td>xmlns: carousel ="clr-namespace:Syncfusion.Maui.Carousel;assembly=Syncfusion.Maui.Carousel"</td>
 <td>xmlns:carousel="clr-namespace:Syncfusion.Maui.Toolkit.Carousel;assembly=Syncfusion.Maui.Toolkit"</td>
@@ -127,6 +133,12 @@ By preserving similar APIs and functionality, developers can easily update their
 <td>Syncfusion.Maui.Calendar</td>
 <td>Syncfusion.Maui.Toolkit.Calendar</td>
 <td>Defines the namespace for <a href="https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Calendar.SfCalendar.html">SfCalendar</a> control.</td>
+</tr>
+<tr>
+<td><a href="https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Cards.html">SfCards</a></td>
+<td>Syncfusion.Maui.Cards</td>
+<td>Syncfusion.Maui.Toolkit.Cards</td>
+<td>Defines the namespace for <a href="https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Cards.html">SfCards</a> control.</td>
 </tr>
 <tr>
 <td><a href="https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Carousel.SfCarousel.html">SfCarousel</a></td>
