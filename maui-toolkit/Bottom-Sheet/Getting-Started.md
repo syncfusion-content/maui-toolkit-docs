@@ -11,6 +11,9 @@ documentation: ug
 
 This section provides a quick overview of how to get started with the [BottomSheet](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.BottomSheet.SfBottomSheet.html) for .NET MAUI and a walk-through to configure the .NET MAUI Bottom Sheet in a real-time scenario. Follow the steps below to add .NET MAUI Bottom Sheet to your project.
 
+To quickly get started with the .NET MAUI Bottom Sheet, watch this video.
+{% youtube "https://www.youtube.com/watch?v=ZBKnPe7NkIc" %}
+
 ## Prerequisites
 
 Before proceeding, ensure the following are set up:
