@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting started with .NET MAUI Bottom Sheet control | Syncfusion<sup>®</sup>
-description: Learn here about getting started with Syncfusion<sup>®</sup> .NET MAUI Bottom Sheet (SfBottomSheet) control in your cross-platform applications.
+title: Getting started with .NET MAUI Bottom Sheet control | Syncfusion®
+description: Learn here about getting started with Syncfusion® .NET MAUI Bottom Sheet (SfBottomSheet) control in your cross-platform applications.
 platform: maui-toolkit
 control: BottomSheet
 documentation: ug

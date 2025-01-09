@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Set Bottom Sheet Content in .NET MAUI Bottom Sheet | Syncfusion<sup>®</sup>
-description: Learn here all about setting bottom sheet content support in Syncfusion<sup>®</sup> .NET MAUI Bottom Sheet (SfBottomSheet) control.
+title: Set Bottom Sheet Content in .NET MAUI Bottom Sheet | Syncfusion®
+description: Learn here all about setting bottom sheet content support in Syncfusion® .NET MAUI Bottom Sheet (SfBottomSheet) control.
 platform: maui-toolkit
 control: BottomSheet
 documentation: ug
