@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Tab Item Customization in .NET MAUI Tab View (SfTabView) | Syncfusion<sup>®</sup>
-description: Learn how to customize tab items in Syncfusion<sup>®</sup> .NET MAUI Tab View (SfTabView). Explore the options to enhance your tab view appearance.
+title: Tab Item Customization in .NET MAUI Tab View (SfTabView) | Syncfusion®
+description: Learn how to customize tab items in Syncfusion® .NET MAUI Tab View (SfTabView). Explore the options to enhance your tab view appearance.
 platform: maui-toolkit
 control: Tab View
 documentation: ug
