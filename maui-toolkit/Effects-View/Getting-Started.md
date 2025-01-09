@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with .NET MAUI Effects View control | Syncfusion
-description: Learn here about getting started with Syncfusion .NET MAUI Effects View (SfEffectsView) control, its elements and more.
+title: Getting Started with .NET MAUI Effects View control | Syncfusion<sup>®</sup>
+description: Learn here about getting started with Syncfusion<sup>®</sup> .NET MAUI Effects View (SfEffectsView) control, its elements and more.
 platform: maui-toolkit
 control: Effects View
 documentation: ug
@@ -37,7 +37,7 @@ Before proceeding, ensure the following are set up:
 {% endtabcontent %}
 {% endtabcontents %}
 
-## Step 2: Install the Syncfusion .NET MAUI Toolkit Package
+## Step 2: Install the Syncfusion<sup>®</sup> .NET MAUI Toolkit Package
 
 {% tabcontents %}
 {% tabcontent Visual Studio %}
@@ -51,7 +51,7 @@ Before proceeding, ensure the following are set up:
 
 1. Press <kbd>Ctrl</kbd> + <kbd>`</kbd> (backtick) to open the integrated terminal in Visual Studio Code.
 2. Ensure you're in the project root directory where your .csproj file is located.
-3. Run the command `dotnet add package Syncfusion.Maui.Toolkit` to install the Syncfusion .NET MAUI Toolkit NuGet package.
+3. Run the command `dotnet add package Syncfusion.Maui.Toolkit` to install the Syncfusion<sup>®</sup> .NET MAUI Toolkit NuGet package.
 4. To ensure all dependencies are installed, run `dotnet restore`.
 
 {% endtabcontent %}
@@ -59,7 +59,7 @@ Before proceeding, ensure the following are set up:
 
 ## Step 3: Register the handler
 
-In the **MauiProgram.cs** file, register the handler for Syncfusion Toolkit.
+In the **MauiProgram.cs** file, register the handler for Syncfusion<sup>®</sup> Toolkit.
 
 {% tabs %}
 {% highlight C# tabtitle="MauiProgram.cs" hl_lines="1 9" %}

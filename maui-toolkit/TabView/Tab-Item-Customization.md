@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Tab Item Customization in .NET MAUI Tab View (SfTabView) | Syncfusion
-description: Learn how to customize tab items in Syncfusion .NET MAUI Tab View (SfTabView). Explore the options to enhance your tab view appearance.
+title: Tab Item Customization in .NET MAUI Tab View (SfTabView) | Syncfusion<sup>®</sup>
+description: Learn how to customize tab items in Syncfusion<sup>®</sup> .NET MAUI Tab View (SfTabView). Explore the options to enhance your tab view appearance.
 platform: maui-toolkit
 control: Tab View
 documentation: ug
@@ -548,7 +548,7 @@ The following image shows the tab view with scroll buttons enabled:
 
 ### Scroll button customization
 
-The `ScrollButtonBackground` and `ScrollButtonColor` property of [SfTabView](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SfTabView.html) allows users to customize the background color and foreground color of scroll button.
+The [ScrollButtonBackground](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SfTabView.html#Syncfusion_Maui_Toolkit_TabView_SfTabView_ScrollButtonBackground) and [ScrollButtonColor](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SfTabView.html#Syncfusion_Maui_Toolkit_TabView_SfTabView_ScrollButtonColor) property of [SfTabView](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SfTabView.html) allows users to customize the background color and foreground color of scroll button.
 
 {% tabs %}
 
@@ -624,7 +624,7 @@ tabView.ContentTransitionDuration = 300;
 
 ## Image size
 
-You can customize the image size in the .NET MAUI TabView control by setting the `ImageSize` property.
+You can customize the image size in the .NET MAUI TabView control by setting the [ImageSize](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SfTabItem.html#Syncfusion_Maui_Toolkit_TabView_SfTabItem_ImageSize) property.
 
 {% tabs %}
 

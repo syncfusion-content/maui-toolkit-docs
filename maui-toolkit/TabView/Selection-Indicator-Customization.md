@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Customize the indicator in .NET MAUI Tab View (SfTabView) | Syncfusion
-description: Learn here all about selection indicator customization support in Syncfusion .NET MAUI Tab View (SfTabView) control and more.
+title: Customize the indicator in .NET MAUI Tab View (SfTabView) | Syncfusion<sup>®</sup>
+description: Learn here all about selection indicator customization support in Syncfusion<sup>®</sup> .NET MAUI Tab View (SfTabView) control and more.
 platform: maui-toolkit
 control: Tab View
 documentation: ug
@@ -226,7 +226,7 @@ The following image shows the selection indicator with the corner radius:
 ![.NET MAUI TabView Selection Indicator Corner Radius](images/IndicatorCornerRadius.png) 
 
 ## Indicator's Stroke Thickness
-You can customize the stroke thickness of the selection indicator using the `IndicatorStrokeThickness` property in the Tab View.
+You can customize the stroke thickness of the selection indicator using the [IndicatorStrokeThickness](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SfTabView.html#Syncfusion_Maui_Toolkit_TabView_SfTabView_IndicatorStrokeThickness) property in the Tab View.
 
 {% tabs %}
 
