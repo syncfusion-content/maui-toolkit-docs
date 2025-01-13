@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting started with .NET MAUI Bottom Sheet control | Syncfusion
-description: Learn here about getting started with Syncfusion .NET MAUI Bottom Sheet (SfBottomSheet) control in your cross-platform applications.
+title: Getting started with .NET MAUI Bottom Sheet control | Syncfusion®
+description: Learn here about getting started with Syncfusion® .NET MAUI Bottom Sheet (SfBottomSheet) control in your cross-platform applications.
 platform: maui-toolkit
 control: BottomSheet
 documentation: ug
@@ -10,6 +10,9 @@ documentation: ug
 # Getting Started with .NET MAUI Bottom Sheet
 
 This section provides a quick overview of how to get started with the [BottomSheet](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.BottomSheet.SfBottomSheet.html) for .NET MAUI and a walk-through to configure the .NET MAUI Bottom Sheet in a real-time scenario. Follow the steps below to add .NET MAUI Bottom Sheet to your project.
+
+To quickly get started with the .NET MAUI Bottom Sheet, watch this video.
+{% youtube "https://www.youtube.com/watch?v=ZBKnPe7NkIc" %}
 
 ## Prerequisites
 
@@ -38,7 +41,7 @@ Before proceeding, ensure the following are set up:
 {% endtabcontent %}
 {% endtabcontents %}
 
-## Step 2: Install the Syncfusion MAUI Toolkit Package
+## Step 2: Install the Syncfusion<sup>®</sup> MAUI Toolkit Package
 
 {% tabcontents %}
 {% tabcontent Visual Studio %}
@@ -52,7 +55,7 @@ Before proceeding, ensure the following are set up:
 
 1. Press <kbd>Ctrl</kbd> + <kbd>`</kbd> (backtick) to open the integrated terminal in Visual Studio Code.
 2. Ensure you're in the project root directory where your .csproj file is located.
-3. Run the command `dotnet add package Syncfusion.Maui.Toolkit` to install the Syncfusion .NET MAUI Toolkit NuGet package.
+3. Run the command `dotnet add package Syncfusion.Maui.Toolkit` to install the Syncfusion<sup>®</sup> .NET MAUI Toolkit NuGet package.
 4. To ensure all dependencies are installed, run `dotnet restore`.
 
 {% endtabcontent %}
@@ -60,7 +63,7 @@ Before proceeding, ensure the following are set up:
 
 ## Step 3: Register the handler
 
-In the MauiProgram.cs file, register the handler for Syncfusion Toolkit.
+In the MauiProgram.cs file, register the handler for Syncfusion<sup>®</sup> Toolkit.
 
 {% tabs %}
 {% highlight C# tabtitle="MauiProgram.cs" hl_lines="1 9" %}
