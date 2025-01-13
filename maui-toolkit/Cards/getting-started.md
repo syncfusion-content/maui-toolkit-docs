@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Getting Started with MAUI Card Control | Syncfusion
-description:  Learn here about getting started with Syncfusion .NET MAUI Cards (SfCards) control and its basic features.
+title: Getting Started with MAUI Card Control | Syncfusion<sup>&reg;</sup>
+description:  Learn here about getting started with Syncfusion<sup>&reg;</sup> .NET MAUI Cards (SfCards) control and its basic features.
 platform: maui
 control: SfCard
 documentation: ug
 ---
 
 # Getting started with .NET MAUI Card
-This section details the process of integrating the [.NET MAUI Cards](https://www.syncfusion.com/maui-controls/maui-cards) control and focuses solely on the fundamental features required for initiating your exploration of Syncfusion Card. Follow the steps below to add a .NET MAUI Cards control to your project.
+This section details the process of integrating the [.NET MAUI Cards](https://www.syncfusion.com/maui-controls/maui-cards) control and focuses solely on the fundamental features required for initiating your exploration of Syncfusion<sup>&reg;</sup> Card. Follow the steps below to add a .NET MAUI Cards control to your project.
 
 ## Prerequisites
 
@@ -31,7 +31,7 @@ Before proceeding, ensure the following are set up:
 3. Select the project location, type the project name and press **Enter**.
 4. Then choose **Create project.**
 
-## Step 2: Install the Syncfusion .NET MAUI Cards NuGet Package
+## Step 2: Install the Syncfusion<sup>&reg;</sup> MAUI Toolkit Package
 
 1. In **Solution Explorer,** right-click the project and choose **Manage NuGet Packages.**
 2. Search for [Syncfusion.Maui.Toolkit](https://www.nuget.org/packages/Syncfusion.Maui.Toolkit/) and install the latest version.
@@ -39,7 +39,7 @@ Before proceeding, ensure the following are set up:
 
 ## Step 3: Register the handler
 
-The [Syncfusion.Maui.Toolkit](https://www.nuget.org/packages/Syncfusion.Maui.Toolkit/) NuGet is a dependent package for all Syncfusion controls of .NET MAUI. In the **MauiProgram.cs** file, register the handler for Syncfusion toolkit.
+In the **MauiProgram.cs** file, register the handler for Syncfusion<sup>&reg;</sup> toolkit.
 
 {% tabs %}
 {% highlight C# tabtitle="MauiProgram.cs" hl_lines="1 10" %}
@@ -69,7 +69,7 @@ namespace GettingStarted
 {% endhighlight %}
 {% endtabs %}
 
-## Step 4: Add .NET MAUI Cards control
+## Step 4: Add a basic Cards control
 
 1. To initialize the control, import the `Syncfusion.Maui.Toolkit.Cards` namespace into your code.
 2. Initialize [SfCards](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Cards.html).
