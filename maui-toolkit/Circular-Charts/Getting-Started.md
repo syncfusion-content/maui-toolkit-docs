@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with .NET MAUI Chart control | Syncfusion
-description: Learn here all about getting started with Syncfusion .NET MAUI Chart (SfCircularChart) control, its elements, and more.
+description: Learn here all about getting started with Syncfusion® .NET MAUI Chart (SfCircularChart) control, its elements, and more.
 platform: maui-toolkit
 control: SfCircularChart
 documentation: ug
@@ -34,7 +34,7 @@ Before proceeding, ensure that the following are set up:
 3. Select the project location, type the project name and press **Enter**.
 4. Then choose **Create project.**
 
-## Step 2: Install the Syncfusion .NET MAUI Toolkit Package
+## Step 2: Install the Syncfusion® .NET MAUI Toolkit Package
 
 ### Visual Studio
 
@@ -46,12 +46,12 @@ Before proceeding, ensure that the following are set up:
 
 1. Press <kbd>Ctrl</kbd> + <kbd>`</kbd> (backtick) to open the integrated terminal in Visual Studio Code.
 2. Ensure you're in the project root directory where your .csproj file is located.
-3. Run the command `dotnet add package Syncfusion.Maui.Toolkit` to install the Syncfusion .NET MAUI Toolkit NuGet package.
+3. Run the command `dotnet add package Syncfusion.Maui.Toolkit` to install the Syncfusion® .NET MAUI Toolkit NuGet package.
 4. To ensure all dependencies are installed, run `dotnet restore`.
 
 ## Step 3: Register the handler
 
-In the **MauiProgram.cs** file, register the handler for Syncfusion Toolkit.
+In the **MauiProgram.cs** file, register the handler for Syncfusion® Toolkit.
 
 {% tabs %}
 
