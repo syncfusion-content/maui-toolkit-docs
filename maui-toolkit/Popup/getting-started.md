@@ -2,7 +2,7 @@
 layout: post
 title: Getting Started with .NET MAUI Popup control | Syncfusion
 description: Learn here about getting started with Syncfusion .NET MAUI Popup (SfPopup) control, its elements and more.
-platform: MAUI
+platform: maui-toolkit
 control: SfPopup
 documentation: ug
 ---

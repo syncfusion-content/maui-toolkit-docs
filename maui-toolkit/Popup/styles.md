@@ -2,7 +2,7 @@
 layout: post
 title: Styles in .NET MAUI Popup control | Syncfusion
 description: Learn here all about Styles support in the Syncfusion .NET MAUI Popup (SfPopup) control, its elements, and more.
-platform: MAUI
+platform: maui-toolkit
 control: SfPopup
 documentation: ug
 --- 

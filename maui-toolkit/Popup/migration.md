@@ -2,7 +2,7 @@
 layout: post
 title: Migrate from Xamarin SfPopupLayout to .NET MAUI SfPopup | Syncfusion 
 description: Learn here all about Migrating from Syncfusion Xamarin Popup to Syncfusion .NET MAUI Popup control and more.
-platform: MAUI
+platform: maui-toolkit
 control: SfPopup
 documentation: ug
 ---  

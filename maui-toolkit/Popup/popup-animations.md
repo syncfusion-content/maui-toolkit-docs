@@ -2,7 +2,7 @@
 layout: post
 title: Popup Animations in .NET MAUI Popup Control | Syncfusion
 description: Learn here all about Popup Animations support in the Syncfusion .NET MAUI Popup (SfPopup) control and more.
-platform: MAUI
+platform: maui-toolkit
 control: SfPopup
 documentation: ug
 --- 
