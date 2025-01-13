@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting started with .NET MAUI Carousel View control | Syncfusion
-description: Learn how to set up, configure, and use the Syncfusion .NET MAUI Carousel View (SfCarousel) control in your cross-platform applications.
+title: Getting started with .NET MAUI Carousel View control | Syncfusion<sup>®</sup>
+description: Learn how to set up, configure, and use the Syncfusion<sup>®</sup> .NET MAUI Carousel View (SfCarousel) control in your cross-platform applications.
 platform: maui
 control: Carousel
 documentation: ug
@@ -32,7 +32,7 @@ Before proceeding, ensure the following are setup:
 3. Select the project location, type the project name, and press **Enter**.
 4. Choose **Create project**.
 
-## Step 2: Install the Syncfusion .NET MAUI Toolkit Package
+## Step 2: Install the Syncfusion<sup>®</sup> .NET MAUI Toolkit Package
 
 ### Visual Studio
 
@@ -44,12 +44,12 @@ Before proceeding, ensure the following are setup:
 
 1. Press <kbd>Ctrl</kbd> + <kbd>`</kbd> (back tick) to open the integrated terminal in Visual Studio Code.
 2. Ensure you're in the project root directory where your .csproj file is located.
-3. Run the command `dotnet add package Syncfusion.Maui.Toolkit` to install the Syncfusion .NET MAUI Toolkit NuGet package.
+3. Run the command `dotnet add package Syncfusion.Maui.Toolkit` to install the Syncfusion<sup>®</sup> .NET MAUI Toolkit NuGet package.
 4. To ensure all dependencies are installed, run `dotnet restore`.
 
 ## Step 3: Register the handler
 
-In the **MauiProgram.cs** file, register the handler for Syncfusion Toolkit.
+In the **MauiProgram.cs** file, register the handler for Syncfusion<sup>®</sup> Toolkit.
 
 {% tabs %}
 
