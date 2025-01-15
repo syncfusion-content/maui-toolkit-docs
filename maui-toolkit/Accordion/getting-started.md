@@ -1,0 +1,289 @@
+---
+layout: post
+title: Getting started | SfAccordion | MAUI | Syncfusion
+description: Learn here about getting started with .NET MAUI Accordion (SfAccordion) control, its elements and more.
+platform: MAUI
+control: SfAccordion
+documentation: ug
+---
+
+# Getting Started with MAUI Accordion
+
+This section guides you through setting up and configuring a `Accordion` in your .NET MAUI application. Follow the steps below to add a basic Accordion to your project.
+
+To quickly get started with the .NET MAUI Accordion, watch this video:
+
+<style>#MAUIAccordionVideoTutorial{width : 90% !important; height: 400px !important }</style> <iframe id='MAUIAccordionVideoTutorial' src='https://www.youtube.com/embed/AdZpwD3W2xE'></iframe>
+
+## Prerequisites
+Before proceeding, ensure the following are in place:
+
+ 1. Install [.NET 8 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/8.0) or later.
+ 2. Set up a .NET MAUI environment with Visual Studio 2022 (v17.3 or later) or VS Code. For VS Code users, ensure that the .NET MAUI workload is installed and configured as described [here](https://learn.microsoft.com/en-us/dotnet/maui/get-started/installation?view=net-maui-8.0&tabs=visual-studio-code).
+
+## Step 1: Create a .NET MAUI project
+
+### Visual Studio
+
+ 1. Go to **File > New > Project** and choose the **.NET MAUI App** template.
+ 2. Name the project and choose a location. Then, click **Next**.
+ 3. Select the .NET framework version. Then, click **Create**.
+
+### Visual Studio Code
+
+ 1. Open the command palette by pressing `Ctrl+Shift+P` and type **.NET:New Project** and Enter.
+ 2. Choose the **.NET MAUI App** template.
+ 3. Select the project location, type the project name and press Enter.
+ 4. Then choose **Create Project**.
+ 
+## Step 2: Install the Syncfusion<sup>®</sup> .NET MAUI Toolkit Package
+ 
+ ### Visual Studio
+ 1. In **Solution Explorer**, right-click the project and choose **Manage NuGet Packages**.
+ 2. Search for [Syncfusion.Maui.Toolkit](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.html) and install the latest version.
+ 3. Ensure the necessary dependencies are installed correctly, and the project is restored.
+
+ ### Visual Studio Code
+1. Press <kbd>Ctrl</kbd> + <kbd>`</kbd> (backtick) to open the integrated terminal in Visual Studio Code.
+2. Ensure you're in the project root directory where your .csproj file is located.
+3. Run the command `dotnet add package Syncfusion.Maui.Toolkit` to install the Syncfusion<sup>®</sup> .NET MAUI Toolkit NuGet package.
+4. To ensure all dependencies are installed, run `dotnet restore`.
+
+## Step 3: Register the handler
+
+In the **MauiProgram.cs file**, register the handler for Syncfusion<sup>®</sup> Toolkit.
+
+{% highlight c# hl_lines="1 9" %}
+
+using Syncfusion.Maui.Toolkit.Hosting;
+public static class MauiProgram
+{
+	public static MauiApp CreateMauiApp()
+	{
+		var builder = MauiApp.CreateBuilder();
+		builder
+		.UseMauiApp<App>()
+		.ConfigureSyncfusionToolkit()
+		.ConfigureFonts(fonts =>
+		{
+			fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
+		});
+
+		return builder.Build();
+	}      
+}
+   
+{% endhighlight %} 
+ 
+## Step 4: Add a .NET MAUI Accordion control
+ 
+ 1. To initialize the control, import the `Syncfusion.Maui.Toolkit.Accordion` namespace into your code.
+ 2. Initialize `SfAccordion`.
+ 
+{% tabs %}
+{% highlight xaml hl_lines="4" %}
+<ContentPage   
+    . . .
+      xmlns:syncfusion="clr-namespace:Syncfusion.Maui.Toolkit.Accordion;assembly=Syncfusion.Maui.Toolkit">
+    <syncfusion:SfAccordion />
+</ContentPage>
+{% endhighlight %}
+
+{% highlight c# hl_lines="8" %}
+using Syncfusion.Maui.Toolkit.Accordion;
+. . .
+public partial class MainPage : ContentPage
+{
+    public MainPage()
+    {
+        InitializeComponent();
+        SfAccordion accordion = new SfAccordion();
+    }
+}
+{% endhighlight %}
+{% endtabs %}
+
+## Step 5: Define the accordion items
+
+Create the `AccordionItem` instance that comprise a `header` & `content` and add it into `Items` of `SfAccordion`.
+
+In this example, a Grid is loaded in both the header and content of accordion items.
+
+N> When loading Label as direct children of `Header` or `Content` of `AccordionItem`, then it will lead to an exception. So, load `Label` inside `Grid` to overcome the crash.
+
+{% tabs %}
+{% highlight xaml hl_lines="9 10" %}
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:GettingStarted"
+             x:Class="GettingStarted.MainPage"
+             xmlns:syncfusion="clr-namespace:Syncfusion.Maui.Toolkit.Accordion;assembly=Syncfusion.Maui.Toolkit">
+<ContentPage.Content>
+        <syncfusion:SfAccordion >
+            <syncfusion:SfAccordion.Items>
+                <syncfusion:AccordionItem>
+                    <syncfusion:AccordionItem.Header>
+                        <Grid  HeightRequest="48">
+                            <Label Text="Robin Rane" Margin="16,14,0,14" CharacterSpacing="0.25" FontFamily="Roboto-Regular"  FontSize="14" />
+                        </Grid>
+                    </syncfusion:AccordionItem.Header>
+                    <syncfusion:AccordionItem.Content>
+                        <Grid ColumnSpacing="10" RowSpacing="2" BackgroundColor="#f4f4f4"  >
+                            <Grid Margin="16,6,0,0">
+                                <Grid.Resources>
+                                    <Style TargetType="Label">
+                                        <Setter Property="FontFamily" Value="Roboto-Regular"/>
+                                    </Style>
+                                </Grid.Resources>
+                                <Grid.RowDefinitions >
+                                    <RowDefinition Height="25"/>
+                                    <RowDefinition Height="25"/>
+                                    <RowDefinition Height="25"/>
+                                    <RowDefinition Height="25"/>
+                                    <RowDefinition Height="{OnPlatform Default=90,Android=90,WinUI=70, iOS=100,MacCatalyst=70 }"/>
+                                    <RowDefinition Height="Auto"/>
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="100"/>
+                                    <ColumnDefinition Width="100"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                <Frame  Grid.RowSpan="4" BorderColor="Transparent" Grid.Row="0" Grid.Column="0"  Padding="0" Margin="0,0,0,7">
+                                    <Image  Source="emp_01.png"/>
+                                </Frame>
+                                <Label Text="Position" Grid.Column="1" Grid.Row="0" Margin="6,0,0,0"/>
+                                <Label Text="Chairman" Grid.Row="0" Grid.Column="2"/>
+                                <Label Text="Organization " Grid.Row="1" Grid.Column="1" Margin="6,0,0,0"/>
+                                <Label Text="ABC Inc." Grid.Row="1" Grid.Column="2"/>
+                                <Label Text="Date Of Birth " Grid.Row="2" Grid.Column="1" Margin="6,0,0,0"/>
+                                <Label Text="09/17/1973" Grid.Row="2" Grid.Column="2"/>
+                                <Label Text="Location " Grid.Row="3" Grid.Column="1" Margin="6,0,0,0"/>
+                                <Label Text="Boston" Grid.Row="3" Grid.Column="2"/>
+                                <Label Padding="0,10,0,10" Grid.Row="4" Grid.ColumnSpan="3"  LineBreakMode="WordWrap"  
+                                            FontSize="14" CharacterSpacing="0.25" VerticalTextAlignment="Center" 
+                                                Text="Robin Rane, Chairman of ABC Inc., leads with dedication and vision.Under his guidance, the company thrives and continues to make a significant impact in the industry.">
+                                </Label>
+                                <StackLayout Grid.Row="5" Orientation="Horizontal" Margin="0,0,0,12">
+                                    <Label Text="&#xe700;" FontSize="16" Margin="0,2,2,2"
+                                                   FontFamily='{OnPlatform Android=AccordionFontIcons.ttf#,WinUI=AccordionFontIcons.ttf#AccordionFontIcons,MacCatalyst=AccordionFontIcons,iOS=AccordionFontIcons}'
+                                                   VerticalOptions="Center" VerticalTextAlignment="Center"/>
+                                    <Label Text="(617) 555-1234" Grid.Column="1" VerticalOptions="Center" CharacterSpacing="0.25" FontSize="14"/>
+                                </StackLayout>
+                            </Grid>
+                        </Grid>
+                    </syncfusion:AccordionItem.Content>
+                </syncfusion:AccordionItem>
+            </syncfusion:SfAccordion.Items>
+        </syncfusion:SfAccordion>
+    </ContentPage.Content>
+</ContentPage>
+
+{% endhighlight %}
+{% endtabs %}
+
+## Step 6: Running the Application
+
+Press **F5** to build and run the application. Once compiled, the Accordion will be displayed with the data provided.
+
+Here is the result of the previous codes,
+
+![.NET MAUI Accordion with items](Images/getting-started/maui-accordion-with-defining-accordion-items.png)
+
+N> When adding the template control inside the `StackLayout` or `Grid` with a height set to `Auto`, the child element will not receive the height changes at runtime. Since the `SfAccordion` is a template-based control, the default height value cannot be determined. Therefore, it is recommended to provide the `HorizontalOptions` and `VerticalOptions` as `FillAndExpand` options for the control.
+
+## Animation duration
+
+The `SfAccordion` allows you to customize the expanding and collapsing duration of accordion items by using the `AnimationDuration` property. By default, the animation duration is set to `200 milliseconds`. 
+
+{% tabs %}
+{% highlight xaml hl_lines="2" %}
+    <syncfusion:SfAccordion x:Name="accordion" 
+                            AnimationDuration="150" /> 
+{% endhighlight %}
+{% highlight c# %}
+    accordion.AnimationDuration = 150;
+{% endhighlight %}
+{% endtabs %}
+
+## Animation easing
+
+You can customize the rate of change of a parameter over time or the animation style of an accordion item by using the `AnimationEasing` property. By default, the animation easing is set to `Linear`.  
+
+{% tabs %}
+{% highlight xaml hl_lines="2" %}
+         <syncfusion:SfAccordion x:Name="accordion"
+                                AnimationEasing="SinOut" />
+{% endhighlight %}
+{% highlight c# %}
+    accordion.AnimationEasing = ExpanderAnimationEasing.SinOut;
+{% endhighlight %}
+{% endtabs %}
+
+## Auto scroll position
+
+The `SfAccordion` allows you to customize the scroll position of the expanded accordion item using the `AutoScrollPosition` property. By default, the auto-scroll position is set to `MakeVisible`.  
+
+{% tabs %}
+{% highlight xaml hl_lines="2" %}
+    <syncfusion:SfAccordion x:Name="accordion"
+                             AutoScrollPosition="Top"/>
+{% endhighlight %}
+{% highlight c# %}
+    accordion.AutoScrollPosition = AccordionAutoScrollPosition.Top;
+{% endhighlight %}
+{% endtabs %}
+
+## Bring an accordion item into view
+
+The `BringIntoView` method is used to bring a specific item into view by scrolling to it programmatically.
+
+{% tabs %}
+{% highlight xaml %}
+<syncfusion:SfAccordion x:Name="accordion">
+    <syncfusion:SfAccordion.Items>
+        <syncfusion:AccordionItem>
+            ...
+            ...
+        </syncfusion:AccordionItem>
+    </syncfusion:SfAccordion.Items>
+ </syncfusion:SfAccordion>
+{% endhighlight %}
+{% endtabs %}
+
+{% tabs %}
+{% highlight c# hl_lines="3" %}
+private void Button_Clicked(object sender, EventArgs e)
+{
+    accordion.BringIntoView(accordion.Items[15]);
+}
+{% endhighlight %}
+{% endtabs %}
+
+## Expand mode
+
+You can expand single or multiple items using the `ExpandMode` property. By default, the expanded mode is set to `Single`.  
+
+{% tabs %}
+{% highlight xaml hl_lines="2" %}
+    <syncfusion:SfAccordion x:Name="accordion" 
+                            ExpandMode="Multiple" />
+{% endhighlight %}
+{% highlight c# %}
+    accordion.ExpandMode = AccordionExpandMode.Multiple;
+{% endhighlight %}
+{% endtabs %}
+
+## Item spacing
+
+The `SfAccordion` allows you to customize the vertical spacing between the accordion items by using the `ItemSpacing` property. 
+
+{% tabs %}
+{% highlight xaml hl_lines="2"%}
+    <syncfusion:SfAccordion x:Name="accordion" 
+                            ItemSpacing="6.0d" />
+{% endhighlight %}
+{% highlight c# %}
+    accordion.ItemSpacing = 6.0d;
+{% endhighlight %}
+{% endtabs %}
