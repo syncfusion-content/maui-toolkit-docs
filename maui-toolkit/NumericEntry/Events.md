@@ -1,7 +1,7 @@
 ---
 ayout: post
-title: Events in .NET MAUI NumericEntry control | Syncfusion
-description: Learn here all about the Events support in Syncfusion .NET MAUI NumericEntry (SfNumericEntry) control and more details.
+title: Events in .NET MAUI NumericEntry control | Syncfusion<sup>®</sup>
+description: Learn here all about the Events support in Syncfusion<sup>®</sup> .NET MAUI NumericEntry (SfNumericEntry) control and more details.
 platform: maui
 control: SfNumericEntry
 documentation: ug
