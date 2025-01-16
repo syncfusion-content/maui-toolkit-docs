@@ -11,10 +11,6 @@ documentation: ug
 
 This section guides you through setting up and configuring a `Accordion` in your .NET MAUI application. Follow the steps below to add a basic Accordion to your project.
 
-To quickly get started with the .NET MAUI Accordion, watch this video:
-
-<style>#MAUIAccordionVideoTutorial{width : 90% !important; height: 400px !important }</style> <iframe id='MAUIAccordionVideoTutorial' </iframe>
-
 ## Prerequisites
 Before proceeding, ensure the following are in place:
 
