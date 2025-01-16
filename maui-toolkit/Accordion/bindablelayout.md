@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Bindable Layout in .NET MAUI Accordion control
+title: Bindable Layout in .NET MAUI Accordion | Syncfusion<sup>®</sup>
 description: Learn about Bindable layout support in Syncfusion<sup>®</sup> Toolkit for .NET MAUI Accordion control, its elements and more.
 platform: maui-toolkit
 control: SfAccordion
