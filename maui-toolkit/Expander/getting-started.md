@@ -23,7 +23,7 @@ Before proceeding, ensure the following are in place:
 
  1. Go to **File > New > Project** and choose the **.NET MAUI App** template.
  2. Name the project and choose a location. Then, click **Next**.
- 3. Select the .NET framework version. Then, click **Create**.
+ 3. Select the .NET framework version and click Create.
 
 ### Visual Studio Code
 
@@ -42,12 +42,12 @@ Before proceeding, ensure the following are in place:
 ### Visual Studio Code
 1. Press <kbd>Ctrl</kbd> + <kbd>`</kbd> (backtick) to open the integrated terminal in Visual Studio Code.
 2. Ensure you're in the project root directory where your .csproj file is located.
-3. Run the command `dotnet add package Syncfusion.Maui.Toolkit` to install the Syncfusion .NET MAUI Toolkit NuGet package.
+3. Run the command `dotnet add package Syncfusion.Maui.Toolkit` to install the Syncfusion<sup>®</sup> .NET MAUI Toolkit NuGet package.
 4. To ensure all dependencies are installed, run `dotnet restore`.
 
 ## Step 3: Register the handler
 
-In the **MauiProgram.cs file**, register the handler for Syncfusion Toolkit.
+In the **MauiProgram.cs file**, register the handler for Syncfusion<sup>®</sup> Toolkit.
 
 {% tabs %}
 {% highlight c# tabtitle="MauiProgram.cs" hl_lines="1 15" %}
@@ -83,7 +83,6 @@ public class MauiProgram
 {% tabs %}
 {% highlight xaml hl_lines="4" %}
 <ContentPage   
-    . . .
     xmlns:syncfusion=xmlns:syncfusion="clr-namespace:Syncfusion.Maui.Toolkit.Expander;assembly=Syncfusion.Maui.Toolkit">
     <syncfusion:SfExpander />
 </ContentPage>
@@ -105,9 +104,9 @@ public partial class MainPage : ContentPage
 
 ## Step 5: Define the Header and Content 
 
-The `SfExpander` is a layout control that includes a `Header` and `Content` section, where any View can be loaded. The visibility of the Content can be controlled using the `IsExpanded` property.Users can expand or collapse the Content view by tapping the Header.
+The `SfExpander` is a layout control that includes a `Header` and a `Content` section, where any view can be loaded. The visibility of the content can be controlled using the `IsExpanded` property. Users can expand or collapse the content view by tapping the header.
 
-Here, the Grid with Labels is loaded in the Header and Content of the expander. 
+Here, the grid with label is loaded in the header and content of the expander. 
 
 N> Loading the `Label` as direct children of the `Header` or `Content` of the Expander will lead to an exception. So, load the Label inside the Grid to overcome the crash.
 
@@ -282,7 +281,7 @@ Here is the result of the previous codes,
 
 ## Animation duration
 
-The `SfExpander` allows you to customize the expanding and collapsing duration by using the `AnimationDuration` property. By default, the animation duration is `300 milliseconds`.
+The `SfExpander` allows you to customize the duration of the expanding and collapsing animations by using the `AnimationDuration` property. By default, the animation duration is set to `300 milliseconds`.
 
 {% tabs %}
 {% highlight xaml hl_lines="2" %}
@@ -296,7 +295,7 @@ The `SfExpander` allows you to customize the expanding and collapsing duration b
 
 ## Animation easing
 
-The `SfExpander` allows you to customize the rate of change of parameters over time or animation style by using the `AnimationEasing` property. By default, the animation easing is `Linear`.
+The `SfExpander` allows you to customize the rate of change of parameters over time or the animation style by using the `AnimationEasing` property. By default, the animation easing is set to `Linear`.
 
 {% tabs %}
 {% highlight xaml hl_lines="2" %}
@@ -310,7 +309,7 @@ The `SfExpander` allows you to customize the rate of change of parameters over t
 
 ## Expand and collapse 
 
-The `SfExpander` provides the ability to programmatically expand or collapse its content using the `IsExpanded` property. Users can manage expand and collapse actions by handling the `Expanding` and `Collapsing` events.
+The `SfExpander` allows users to programmatically expand or collapse its content using the `IsExpanded` property. Users can manage the expand and collapse actions by handling the `Expanding` and `Collapsing` events.
 
 {% tabs %}
 {% highlight xaml hl_lines="2" %}
@@ -402,5 +401,3 @@ private void SfExpander_Collapsed(object sender, ExpandedAndCollapsedEventArgs e
 }
 {% endhighlight %}
 {% endtabs %}
-
-N> You can refer to our `.NET MAUI Expander` feature tour page for its groundbreaking feature representations.
