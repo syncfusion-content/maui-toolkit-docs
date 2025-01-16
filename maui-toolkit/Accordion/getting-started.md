@@ -13,7 +13,7 @@ This section guides you through setting up and configuring a `Accordion` in your
 
 To quickly get started with the .NET MAUI Accordion, watch this video:
 
-<style>#MAUIAccordionVideoTutorial{width : 90% !important; height: 400px !important }</style> <iframe id='MAUIAccordionVideoTutorial' src='https://www.youtube.com/embed/AdZpwD3W2xE'></iframe>
+<style>#MAUIAccordionVideoTutorial{width : 90% !important; height: 400px !important }</style> <iframe id='MAUIAccordionVideoTutorial' </iframe>
 
 ## Prerequisites
 Before proceeding, ensure the following are in place:
@@ -21,13 +21,13 @@ Before proceeding, ensure the following are in place:
  1. Install [.NET 8 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/8.0) or later.
  2. Set up a .NET MAUI environment with Visual Studio 2022 (v17.3 or later) or VS Code. For VS Code users, ensure that the .NET MAUI workload is installed and configured as described [here](https://learn.microsoft.com/en-us/dotnet/maui/get-started/installation?view=net-maui-8.0&tabs=visual-studio-code).
 
-## Step 1: Create a .NET MAUI project
+## Step 1: Create a new .NET MAUI Project
 
 ### Visual Studio
 
  1. Go to **File > New > Project** and choose the **.NET MAUI App** template.
  2. Name the project and choose a location. Then, click **Next**.
- 3. Select the .NET framework version. Then, click **Create**.
+ 3. Select the .NET Framework version, and then click **Create**.
 
 ### Visual Studio Code
 
@@ -78,7 +78,7 @@ public static class MauiProgram
 ## Step 4: Add a .NET MAUI Accordion control
  
  1. To initialize the control, import the `Syncfusion.Maui.Toolkit.Accordion` namespace into your code.
- 2. Initialize `SfAccordion`.
+ 2. Initialize SfAccordion Control.
  
 {% tabs %}
 {% highlight xaml hl_lines="4" %}
@@ -98,6 +98,7 @@ public partial class MainPage : ContentPage
     {
         InitializeComponent();
         SfAccordion accordion = new SfAccordion();
+        this.Content = accordion
     }
 }
 {% endhighlight %}
@@ -105,7 +106,7 @@ public partial class MainPage : ContentPage
 
 ## Step 5: Define the accordion items
 
-Create the `AccordionItem` instance that comprise a `header` & `content` and add it into `Items` of `SfAccordion`.
+Create an `AccordionItem` instance containing a `header` and `conten`t, and then add it to the `Items` collection of SfAccordion.
 
 In this example, a Grid is loaded in both the header and content of accordion items.
 
@@ -194,7 +195,7 @@ N> When adding the template control inside the `StackLayout` or `Grid` with a he
 
 ## Animation duration
 
-The `SfAccordion` allows you to customize the expanding and collapsing duration of accordion items by using the `AnimationDuration` property. By default, the animation duration is set to `200 milliseconds`. 
+The `SfAccordion` allows you to customize the duration of the expanding and collapsing animations for accordion items by using the `AnimationDuration` property. By default, the animation duration is set to `200 milliseconds`.
 
 {% tabs %}
 {% highlight xaml hl_lines="2" %}
@@ -279,7 +280,7 @@ You can expand single or multiple items using the `ExpandMode` property. By defa
 The `SfAccordion` allows you to customize the vertical spacing between the accordion items by using the `ItemSpacing` property. 
 
 {% tabs %}
-{% highlight xaml hl_lines="2"%}
+{% highlight xaml hl_lines="2" %}
     <syncfusion:SfAccordion x:Name="accordion" 
                             ItemSpacing="6.0d" />
 {% endhighlight %}
