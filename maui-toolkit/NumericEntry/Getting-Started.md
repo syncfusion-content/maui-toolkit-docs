@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with .NET MAUI NumericEntry | Syncfusion<sup>®</sup>
-description: Learn how to get started with Syncfusion<sup>®</sup> .NET MAUI NumericEntry (SfNumericEntry) control, its elements, and more in here.
+title: Getting Started with .NET MAUI NumericEntry | Syncfusion
+description: Learn how to get started with Syncfusion .NET MAUI NumericEntry (SfNumericEntry) control, its elements, and more in here.
 platform: MAUI
 control: SfNumericEntry
 documentation: ug
@@ -33,7 +33,7 @@ Before proceeding, ensure the following are in place:
 3. Select the project location, type the project name and press Enter.
 4. Then choose **Create project**
 
-## Step 2: Install the Syncfusion<sup>®</sup> MAUI Toolkit Package
+## Step 2: Install the Syncfusion MAUI Toolkit Package
 
 ### Visual Studio
 1. In **Solution Explorer,** right-click the project and choose **Manage NuGet Packages.**
@@ -43,12 +43,12 @@ Before proceeding, ensure the following are in place:
 ### Visual Studio Code
 1. Press <kbd>Ctrl</kbd> + <kbd>`</kbd> (backtick) to open the integrated terminal in Visual Studio Code.
 2. Ensure you're in the project root directory where your .csproj file is located.
-3. Run the command `dotnet add package Syncfusion.Maui.Toolkit` to install the Syncfusion<sup>®</sup> .NET MAUI Toolkit NuGet package.
+3. Run the command `dotnet add package Syncfusion.Maui.Toolkit` to install the Syncfusion .NET MAUI Toolkit NuGet package.
 4. To ensure all dependencies are installed, run `dotnet restore`.
 
 ## Step 3: Register the handler
 
-In the MauiProgram.cs file, register the handler for Syncfusion<sup>®</sup> Toolkit.
+In the MauiProgram.cs file, register the handler for Syncfusion Toolkit.
 
 {% tabs %}
 {% highlight C# tabtitle="MauiProgram.cs" hl_lines="1 9" %}
@@ -121,7 +121,8 @@ This ensures that only valid numeric input is accepted and displayed according t
 {% tabs %}
 {% highlight xaml %}
 
-<editors:SfNumericEntry HorizontalOptions="Center" 
+<editors:SfNumericEntry WidthRequest="200"
+                        HorizontalOptions="Center" 
                         VerticalOptions="Center" 
                         CustomFormat="0.000" />
 
@@ -129,6 +130,7 @@ This ensures that only valid numeric input is accepted and displayed according t
 {% highlight C# %}
 
 SfNumericEntry sfNumericEntry = new SfNumericEntry();
+sfNumericEntry.WidthRequest=200;
 sfNumericEntry.HorizontalOptions = LayoutOptions.Center;
 sfNumericEntry.VerticalOptions = LayoutOptions.Center;
 sfNumericEntry.CustomFormat = "0.000";
@@ -145,7 +147,8 @@ You can change the format in which the value should be displayed using the [Cust
 {% tabs %}
 {% highlight xaml %}
 
-<editors:SfNumericEntry HorizontalOptions="Center"
+<editors:SfNumericEntry WidthRequest="200"
+                        HorizontalOptions="Center"
                         VerticalOptions="Center"
                         Value="12.5" 
                         CustomFormat="C2" />
@@ -153,11 +156,12 @@ You can change the format in which the value should be displayed using the [Cust
 {% endhighlight %}
 {% highlight C# %}
 
-SfNumberBox sfNumberBox = new SfNumberBox();
-sfNumberBox.HorizontalOptions = LayoutOptions.Center;
-sfNumberBox.VerticalOptions = LayoutOptions.Center;
-sfNumberBox.Value = 12.5;
-sfNumberBox.CustomFormat = "C2";
+SfNumericEntry sfNumericEntry = new SfNumericEntry();
+sfNumericEntry.WidthRequest=200;
+sfNumericEntry.HorizontalOptions = LayoutOptions.Center;
+sfNumericEntry.VerticalOptions = LayoutOptions.Center;
+sfNumericEntry.Value = 12.5;
+sfNumericEntry.CustomFormat = "C2";
 
 {% endhighlight %}
 {% endtabs %}
@@ -171,7 +175,8 @@ By default, the [NumericEntry](https://help.syncfusion.com/cr/maui-toolkit/Syncf
 {% tabs %}
 {% highlight xaml %}
 
-<editors:SfNumericEntry HorizontalOptions="Center"
+<editors:SfNumericEntry WidthRequest="200"
+                        HorizontalOptions="Center" 
                         VerticalOptions="Center"
                         Value="12315"
                         AllowNull="False" />
@@ -180,6 +185,7 @@ By default, the [NumericEntry](https://help.syncfusion.com/cr/maui-toolkit/Syncf
 {% highlight C# %}
 
 SfNumericEntry sfNumericEntry = new SfNumericEntry();
+sfNumericEntry.WidthRequest=200;
 sfNumericEntry.Value=12315;
 sfNumericEntry.HorizontalOptions = LayoutOptions.Center;
 sfNumericEntry.VerticalOptions = LayoutOptions.Center;

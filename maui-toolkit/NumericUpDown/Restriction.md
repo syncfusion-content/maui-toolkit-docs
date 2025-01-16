@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Value Change Restriction in .NET MAUI NumericUpDown | Syncfusion<sup>®</sup>
-description: Learn here all about how to restrict the value change in Syncfusion<sup>®</sup> .NET MAUI NumericUpDown (SfNumericUpDown) control and more.
+title: Value Change Restriction in .NET MAUI NumericUpDown | Syncfusion
+description: Learn here all about how to restrict the value change in Syncfusion .NET MAUI NumericUpDown (SfNumericUpDown) control and more.
 platform: MAUI
 control:  SfNumericUpDown
 documentation: ug
@@ -22,7 +22,8 @@ N> When the value of the Minimum property is **15**, and the `AllowNull` propert
 {% tabs %}
 {% highlight xaml %}
 
-<editors:SfNumericUpDown HorizontalOptions="Center"
+<editors:SfNumericUpDown WidthRequest="200"
+                        HorizontalOptions="Center"
                         VerticalOptions="Center" 
                         Value="10" 
                         AllowNull="False" />
@@ -31,6 +32,7 @@ N> When the value of the Minimum property is **15**, and the `AllowNull` propert
 {% highlight C# %}
 
 SfNumericUpDown sfNumericUpDown = new SfNumericUpDown();
+sfNumericUpDown.WidthRequest = 200;
 sfNumericUpDown.HorizontalOptions = LayoutOptions.Center;
 sfNumericUpDown.VerticalOptions = LayoutOptions.Center;
 sfNumericUpDown.Value = 10;
@@ -48,7 +50,8 @@ You can restrict the users to enter input within a minimum and maximum range in 
 {% tabs %}
 {% highlight xaml %}
 
-<editors:SfNumericUpDown HorizontalOptions="Center"
+<editors:SfNumericUpDown WidthRequest="200"
+                        HorizontalOptions="Center"
                         VerticalOptions="Center"
                         Value="50"
                         Minimum="10"
@@ -58,6 +61,7 @@ You can restrict the users to enter input within a minimum and maximum range in 
 {% highlight C# %}
 
 SfNumericUpDown sfNumericUpDown = new SfNumericUpDown();
+sfNumericUpDown.WidthRequest = 200;
 sfNumericUpDown.HorizontalOptions = LayoutOptions.Center;
 sfNumericUpDown.VerticalOptions = LayoutOptions.Center;
 sfNumericUpDown.Minimum = 10;
@@ -78,7 +82,8 @@ You can prevent users from editing the numerical value in the editor using the [
 {% tabs %}
 {% highlight xaml %}
 
-<editors:SfNumericUpDown x:Name="sfNumericUpDown" 
+<editors:SfNumericUpDown x:Name="sfNumericUpDown"
+                        WidthRequest="200" 
                         HorizontalOptions="Center"
                         VerticalOptions="Center"
                         IsEditable="True" />
@@ -87,6 +92,7 @@ You can prevent users from editing the numerical value in the editor using the [
 {% highlight C# %}
 
 SfNumericUpDown sfNumericUpDown = new SfNumericUpDown();
+sfNumericUpDown.WidthRequest = 200;
 sfNumericUpDown.HorizontalOptions = LayoutOptions.Center;
 sfNumericUpDown.VerticalOptions = LayoutOptions.Center;
 sfNumericUpDown.IsEditable = true;

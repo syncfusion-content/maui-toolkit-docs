@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Right To Left in .NET MAUI Button Control | Syncfusion<sup>®</sup>
-description: Learn about the comprehensive support for right-to-left (RTL) directionality within the Syncfusion<sup>®</sup> .NET MAUI Button, also known as the SfButton control.
+title: Right To Left in .NET MAUI Button Control | Syncfusion
+description: Learn about the comprehensive support for right-to-left (RTL) directionality within the Syncfusion .NET MAUI Button, also known as the SfButton control.
 platform: maui
 control: SfButton
 documentation: ug
@@ -15,6 +15,8 @@ documentation: ug
 {% highlight xaml %}
 
 <buttons:SfButton x:Name="button"
+                WidthRequest="150"
+                HeightRequest="40"
                 FlowDirection="RightToLeft"
                 ImageSource="add_to_card.png"
                 ShowIcon="True" 
@@ -24,6 +26,8 @@ documentation: ug
 {% highlight c# %}
 SfButton button = new SfButton()
 {
+    WidthRequest = 150,
+    HeightRequest = 40,
     FlowDirection = FlowDirection.RightToLeft,
     Text = "Add to cart",
     ImageSource = "add_to_card.png",

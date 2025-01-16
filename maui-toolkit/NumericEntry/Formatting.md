@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Change Number Format in .NET MAUI NumericEntry | Syncfusion<sup>®</sup>
-description: Learn here about changing the number format of Syncfusion<sup>®</sup> .NET MAUI NumericEntry (SfNumericEntry) control and more.
+title: Change Number Format in .NET MAUI NumericEntry | Syncfusion
+description: Learn here about changing the number format of Syncfusion .NET MAUI NumericEntry (SfNumericEntry) control and more.
 platform: MAUI
 control: SfNumericEntry
 documentation: ug
@@ -25,25 +25,37 @@ N> You can apply various custom formats available in  [this page](), which are s
 {% highlight xaml %}
 
 // Format stock price in currency.
-<editors:SfNumericEntry CustomFormat="C2"/>
+<editors:SfNumericEntry CustomFormat="C2" WidthRequest="200"/>
 
 // Format product discount in percent.
-<editors:SfNumericEntry CustomFormat="P2"/>
+<editors:SfNumericEntry CustomFormat="P2" WidthRequest="200"/>
 
 // Format worked hours in decimal.
-<editors:SfNumericEntry CustomFormat="N2"/>
+<editors:SfNumericEntry CustomFormat="N2" WidthRequest="200"/>
 
 {% endhighlight %}
 {% highlight c# %}
 
 // Format stock price in currency.
-stockPrice.CustomFormat = "C2";
+SfNumericEntry stockPrice = new SfNumericEntry
+{
+    CustomFormat = "C2",
+    WidthRequest = 200
+};
 
 // Format product discount in percent.
-productDiscount.CustomFormat = "P2";
+SfNumericEntry productDiscount = new SfNumericEntry
+{
+    CustomFormat = "P2",
+    WidthRequest = 200
+};
 
 // Format worked hours in decimal.
-hoursWorked.CustomFormat = "N2";
+SfNumericEntry hoursWorked = new SfNumericEntry
+{
+    CustomFormat = "N2",
+    WidthRequest = 200
+};
 
 {% endhighlight %}
 {% endtabs %}
@@ -62,25 +74,37 @@ N> **0** (Zero placeholder) replaces the zero with the corresponding digit prese
 {% highlight xaml %}
 
 // Format stock price in currency.
-<editors:SfNumericEntry CustomFormat = "$00000.00"/>
+<editors:SfNumericEntry CustomFormat = "$00000.00" WidthRequest="200"/>
 
 // Format product discount in percentage.
-<editors:SfNumericEntry CustomFormat = "00000.00%"/>
+<editors:SfNumericEntry CustomFormat = "00000.00%" WidthRequest="200"/>
 
 // Format worked hours in decimal.
-<editors:SfNumericEntry CustomFormat = "00000.00"/>
+<editors:SfNumericEntry CustomFormat = "00000.00" WidthRequest="200"/>
 
 {% endhighlight %}
 {% highlight c# %}
 
 // Format stock price in currency.
-stockPrice.CustomFormat = "$00000.00";
+SfNumericEntry stockPrice = new SfNumericEntry
+{
+    CustomFormat = "$00000.00",
+    WidthRequest = 200
+};
 
 // Format product discount in percentage.
-productDiscount.CustomFormat = "00000.00%";
+SfNumericEntry productDiscount = new SfNumericEntry
+{
+    CustomFormat = "00000.00%",
+    WidthRequest = 200
+};
 
 // Format worked hours in decimal.
-hoursWorked.CustomFormat = "00000.00";
+SfNumericEntry hoursWorked = new SfNumericEntry
+{
+    CustomFormat = "00000.00",
+    WidthRequest = 200
+};
 
 {% endhighlight %}
 {% endtabs %}
@@ -98,16 +122,30 @@ N> **0** (Zero placeholder) replaces the zero with the corresponding digit in th
 {% tabs %}
 {% highlight xaml %}
 
-<editors:SfNumericEntry CustomFormat = "$000.000"/>
-<editors:SfNumericEntry CustomFormat = "00.000%"/>
-<editors:SfNumericEntry CustomFormat = "00.000"/>
+<editors:SfNumericEntry CustomFormat = "$000.000" WidthRequest="200"/>
+<editors:SfNumericEntry CustomFormat = "00.000%" WidthRequest="200"/>
+<editors:SfNumericEntry CustomFormat = "00.000" WidthRequest="200"/>
 
 {% endhighlight %}
 {% highlight c# %}
 
-stockPrice.CustomFormat = "$000.000";
-productDiscount.CustomFormat = "00.000%";
-hoursWorked.CustomFormat = "00.000";
+SfNumericEntry stockPrice = new SfNumericEntry
+{
+    CustomFormat = "$000.000",
+    WidthRequest = 200
+};
+
+SfNumericEntry productDiscount = new SfNumericEntry
+{
+    CustomFormat = "00.000%",
+    WidthRequest = 200
+};
+
+SfNumericEntry hoursWorked = new SfNumericEntry
+{
+    CustomFormat = "00.000",
+    WidthRequest = 200
+};
 
 {% endhighlight %}
 {% endtabs %}
@@ -127,16 +165,30 @@ In the following example, the value of the `CustomFormat` property is **#.00##**
 {% tabs %}
 {% highlight xaml %}
 
-<editors:SfNumericEntry CustomFormat = "$00.00##"/>
-<editors:SfNumericEntry CustomFormat = "00.00##%"/>
-<editors:SfNumericEntry CustomFormat = "00.00##"/>
+<editors:SfNumericEntry CustomFormat = "$00.00##" WidthRequest="200"/>
+<editors:SfNumericEntry CustomFormat = "00.00##%" WidthRequest="200"/>
+<editors:SfNumericEntry CustomFormat = "00.00##" WidthRequest="200"/>
 
 {% endhighlight %}
 {% highlight c# %}
 
-stockPrice.CustomFormat = "$00.00##";
-productDiscount.CustomFormat = "00.00##%";
-hoursWorked.CustomFormat = "00.00##";
+SfNumericEntry stockPrice = new SfNumericEntry
+{
+    CustomFormat = "$00.00##",
+    WidthRequest = 200
+};
+
+SfNumericEntry productDiscount = new SfNumericEntry
+{
+    CustomFormat = "00.00##%",
+    WidthRequest = 200
+};
+
+SfNumericEntry hoursWorked = new SfNumericEntry
+{
+    CustomFormat = "00.00##",
+    WidthRequest = 200
+};
 
 {% endhighlight %}
 {% endtabs %}
@@ -169,6 +221,7 @@ When the [SfNumericEntry](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion
 {% highlight xaml %}
 
 <editors:SfNumericEntry x:Name="numericEntry" 
+                        WidthRequest="200"
                         CustomFormat="p" 
                         Value="1000"  
                         PercentDisplayMode="Value">
@@ -178,7 +231,7 @@ When the [SfNumericEntry](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion
 {% highlight C# %}
 
 SfNumericEntry sfNumericEntry= new SfNumericEntry();
-SfNumericEntry sfNumericEntry = new SfNumericEntry();
+sfNumericUpDown.WidthRequest = 200;
 sfNumericEntry.Value = 1000;
 sfNumericEntry.CustomFormat = "p";
 sfNumericEntry.PercentDisplayMode = PercentDisplayMode.Value;
@@ -193,7 +246,8 @@ sfNumericEntry.PercentDisplayMode = PercentDisplayMode.Value;
 {% tabs %}
 {% highlight xaml %}
 
-<editors:SfNumericEntry x:Name="numericEntry" 
+<editors:SfNumericEntry x:Name="numericEntry"
+                        WidthRequest="200"
                         CustomFormat="p" 
                         Value="1000"  
                         PercentDisplayMode="Value">
@@ -203,6 +257,7 @@ sfNumericEntry.PercentDisplayMode = PercentDisplayMode.Value;
 {% highlight C# %}
 
 SfNumericEntry sfNumericEntry= new SfNumericEntry();
+sfNumericUpDown.WidthRequest = 200;
 sfNumericEntry.Value = 1000;
 sfNumericEntry.CustomFormat = "p";
 sfNumericEntry.PercentDisplayMode = PercentDisplayMode.Compute;
@@ -224,6 +279,7 @@ N> The `MaximumNumberDecimalDigits` property can only be set to a positive value
 {% highlight xaml %}
 
 <editors:SfNumericEntry x:Name="numericEntry" 
+                        WidthRequest="200"
                         Value="1000.23232"  
                         MaximumNumberDecimalDigits="3">
 </editors:SfNumericEntry>
@@ -232,6 +288,7 @@ N> The `MaximumNumberDecimalDigits` property can only be set to a positive value
 {% highlight C# %}
 
 SfNumericEntry sfNumericEntry= new SfNumericEntry();
+sfNumericUpDown.WidthRequest = 200;
 sfNumericEntry.Value = 1000.23232;
 sfNumericEntry.MaximumNumberDecimalDigits = 3;
 

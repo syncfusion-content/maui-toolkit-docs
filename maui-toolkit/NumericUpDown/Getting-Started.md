@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with .NET MAUI NumericUpDown | Syncfusion<sup>®</sup>
-description: Learn how to get started with Syncfusion<sup>®</sup> .NET MAUI NumericUpDown (SfNumericUpDown) control, its elements, and more in here.
+title: Getting Started with .NET MAUI NumericUpDown | Syncfusion
+description: Learn how to get started with Syncfusion .NET MAUI NumericUpDown (SfNumericUpDown) control, its elements, and more in here.
 platform: MAUI
 control: SfNumericUpDown
 documentation: ug
@@ -33,7 +33,7 @@ Before proceeding, ensure the following are in place:
 3. Select the project location, type the project name and press Enter.
 4. Then choose **Create project**
 
-## Step 2: Install the Syncfusion<sup>®</sup> MAUI Toolkit Package
+## Step 2: Install the Syncfusion MAUI Toolkit Package
 
 ### Visual Studio
 1. In **Solution Explorer,** right-click the project and choose **Manage NuGet Packages.**
@@ -43,12 +43,12 @@ Before proceeding, ensure the following are in place:
 ### Visual Studio Code
 1. Press <kbd>Ctrl</kbd> + <kbd>`</kbd> (backtick) to open the integrated terminal in Visual Studio Code.
 2. Ensure you're in the project root directory where your .csproj file is located.
-3. Run the command `dotnet add package Syncfusion.Maui.Toolkit` to install the Syncfusion<sup>®</sup> .NET MAUI Toolkit NuGet package.
+3. Run the command `dotnet add package Syncfusion.Maui.Toolkit` to install the Syncfusion .NET MAUI Toolkit NuGet package.
 4. To ensure all dependencies are installed, run `dotnet restore`.
 
 ## Step 3: Register the handler
 
-In the MauiProgram.cs file, register the handler for Syncfusion<sup>®</sup> Toolkit.
+In the MauiProgram.cs file, register the handler for Syncfusion Toolkit.
 
 {% tabs %}
 {% highlight C# tabtitle="MauiProgram.cs" hl_lines="1 9" %}
@@ -120,7 +120,8 @@ This ensures that only valid numeric input is accepted and displayed according t
 {% tabs %}
 {% highlight xaml %}
 
-<editors:SfNumericUpDown HorizontalOptions="Center" 
+<editors:SfNumericUpDown WidthRequest="200"
+                         HorizontalOptions="Center" 
                          VerticalOptions="Center" 
                          CustomFormat="0.000" />
 
@@ -128,6 +129,7 @@ This ensures that only valid numeric input is accepted and displayed according t
 {% highlight C# %}
 
 SfNumericUpDown sfNumericUpDown = new SfNumericUpDown();
+sfNumericUpDown.WidthRequest = 200;
 sfNumericUpDown.HorizontalOptions = LayoutOptions.Center;
 sfNumericUpDown.VerticalOptions = LayoutOptions.Center;
 sfNumericUpDown.CustomFormat = "0.000";
@@ -150,7 +152,8 @@ N> Clicking the up or down button increases or decreases the value based on the 
 {% tabs %}
 {% highlight xaml %}
 
-<editors:SfNumericUpDown HorizontalOptions="Center" 
+<editors:SfNumericUpDown WidthRequest="200" 
+                         HorizontalOptions="Center" 
                          VerticalOptions="Center" 
                          CustomFormat="0.000"
                          SmallChange="4" />
@@ -159,6 +162,7 @@ N> Clicking the up or down button increases or decreases the value based on the 
 {% highlight C# %}
 
 SfNumericUpDown sfNumericUpDown = new SfNumericUpDown();
+sfNumericUpDown.WidthRequest = 200;
 sfNumericUpDown.HorizontalOptions = LayoutOptions.Center;
 sfNumericUpDown.VerticalOptions = LayoutOptions.Center;
 sfNumericUpDown.CustomFormat = "0.000";
@@ -176,7 +180,8 @@ You can change the format in which the value should be displayed using the [Cust
 {% tabs %}
 {% highlight xaml %}
 
-<editors:SfNumericUpDown HorizontalOptions="Center"
+<editors:SfNumericUpDown WidthRequest="200" 
+                        HorizontalOptions="Center"
                         VerticalOptions="Center"
                         Value="12.5" 
                         CustomFormat="C2" />
@@ -185,6 +190,7 @@ You can change the format in which the value should be displayed using the [Cust
 {% highlight C# %}
 
 SfNumericUpDown sfNumericUpDown = new SfNumericUpDown();
+sfNumericUpDown.WidthRequest = 200;
 sfNumericUpDown.HorizontalOptions = LayoutOptions.Center;
 sfNumericUpDown.VerticalOptions = LayoutOptions.Center;
 sfNumericUpDown.Value = 12.5;
@@ -202,7 +208,8 @@ By default, the [NumericUpDown](https://help.syncfusion.com/cr/maui-toolkit/Sync
 {% tabs %}
 {% highlight xaml %}
 
-<editors:SfNumericUpDown HorizontalOptions="Center"
+<editors:SfNumericUpDown WidthRequest="200"
+                         HorizontalOptions="Center"
                          VerticalOptions="Center"
                          Value="12315"
                          AllowNull="False" />
@@ -211,6 +218,7 @@ By default, the [NumericUpDown](https://help.syncfusion.com/cr/maui-toolkit/Sync
 {% highlight C# %}
 
 SfNumericUpDown sfNumericUpDown = new SfNumericUpDown();
+sfNumericUpDown.WidthRequest = 200;
 sfNumericUpDown.Value=12315;
 sfNumericUpDown.HorizontalOptions = LayoutOptions.Center;
 sfNumericUpDown.VerticalOptions = LayoutOptions.Center;

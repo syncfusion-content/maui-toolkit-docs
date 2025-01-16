@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with .NET MAUI Button | Syncfusion<sup>®</sup>
-description: Learn here about getting started with the Syncfusion<sup>®</sup> .NET MAUI Button (SfButton) control, its elements and more.
+title: Getting Started with .NET MAUI Button | Syncfusion
+description: Learn here about getting started with the Syncfusion .NET MAUI Button (SfButton) control, its elements and more.
 platform: MAUI
 control: SfButton
 documentation: ug
@@ -33,7 +33,7 @@ Before proceeding, ensure the following are in place:
 3. Select the project location, type the project name and press **Enter**.
 4. Then choose **Create project**
 
-## Step 2: Install the Syncfusion<sup>®</sup> MAUI Toolkit Package
+## Step 2: Install the Syncfusion MAUI Toolkit Package
 
 ### Visual Studio
 1. In **Solution Explorer,** right-click the project and choose **Manage NuGet Packages.**
@@ -43,12 +43,12 @@ Before proceeding, ensure the following are in place:
 ### Visual Studio Code
 1. Press <kbd>Ctrl</kbd> + <kbd>`</kbd> (backtick) to open the integrated terminal in Visual Studio Code.
 2. Ensure you're in the project root directory where your .csproj file is located.
-3. Run the command `dotnet add package Syncfusion.Maui.Toolkit` to install the Syncfusion<sup>®</sup> .NET MAUI Toolkit NuGet package.
+3. Run the command `dotnet add package Syncfusion.Maui.Toolkit` to install the Syncfusion .NET MAUI Toolkit NuGet package.
 4. To ensure all dependencies are installed, run `dotnet restore`.
 
 ## Step 3: Register the handler
 
-In the MauiProgram.cs file, register the handler for Syncfusion<sup>®</sup> Toolkit.
+In the MauiProgram.cs file, register the handler for Syncfusion Toolkit.
 
 {% tabs %}
 {% highlight C# tabtitle="MauiProgram.cs" hl_lines="1 9" %}
@@ -122,6 +122,8 @@ N> Ensure that the images mentioned in the code snippets are located in the **Re
 
 <buttons:SfButton x:Name="SfButton" 
                     Text="Button"
+                    WidthRequest="150"
+                    HeightRequest="40" 
                     TextColor="White" 
                     ShowIcon="True"
                     CornerRadius="2" 
@@ -132,6 +134,8 @@ N> Ensure that the images mentioned in the code snippets are located in the **Re
 
 SfButton button = new SfButton();
 button.Text = "Button";
+button.WidthRequest = 150;
+button.HeightRequest = 40;
 button.TextColor = Colors.White;
 button.ImageSource = "button_Heart.png";
 button.ShowIcon = true;
@@ -155,7 +159,8 @@ The button background image can be defined using the [BackgroundImageSource](htt
                     FontAttributes="Bold" 
                     BackgroundImageSource="button_background.png" 
                     CornerRadius="10" 
-                    WidthRequest="150"/>
+                    WidthRequest="150"
+                    HeightRequest="40"/>
 
 {% endhighlight %}
 {% highlight c# %}
@@ -166,6 +171,7 @@ button.FontAttributes = FontAttributes.Bold;
 button.BackgroundImageSource = "button_background.png";
 button.CornerRadius = 10;
 button.WidthRequest = 150;
+button.HeightRequest = 40;
 
 {% endhighlight %}
 {% endtabs %}
