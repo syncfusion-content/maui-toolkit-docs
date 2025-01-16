@@ -313,8 +313,6 @@ DataTemplate ItemTemplate = new DataTemplate(() =>
     content.BackgroundColor = Color.FromArgb("#f4f4f4");
     var contentGrid = new Grid();
 
-    (......)
-
     contentGrid.Children.Add(stack);
     content.Children.Add(contentGrid);
     accordionItem.Content = contentGrid;
