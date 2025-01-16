@@ -16,7 +16,7 @@ The .NET MAUI SfExpander comes with built-in support for customizing the appeara
 The `SfExpander` allows you to customize the position of the header icon by using the `HeaderIconPosition` property. By default, the header icon position is `End`.
 
 {% tabs %}
-{% highlight xaml hl_lines="2"%}
+{% highlight xaml hl_lines="2" %}
     <syncfusion:SfExpander x:Name="expander" 
                            HeaderIconPosition="Start" />
 {% endhighlight %}

@@ -81,7 +81,7 @@ public class MauiProgram
  2. Initialize `SfExpander` class.
  
 {% tabs %}
-{% highlight xaml hl_lines="4"%}
+{% highlight xaml hl_lines="4" %}
 <ContentPage   
     . . .
     xmlns:syncfusion=xmlns:syncfusion="clr-namespace:Syncfusion.Maui.Toolkit.Expander;assembly=Syncfusion.Maui.Toolkit">
@@ -89,7 +89,7 @@ public class MauiProgram
 </ContentPage>
 {% endhighlight %}
 
-{% highlight c# hl_lines="8"%}
+{% highlight c# hl_lines="8" %}
 using Syncfusion.Maui.Toolkit.Expander;
 . . .
 public partial class MainPage : ContentPage
@@ -112,7 +112,7 @@ Here, the Grid with Labels is loaded in the Header and Content of the expander.
 N> Loading the `Label` as direct children of the `Header` or `Content` of the Expander will lead to an exception. So, load the Label inside the Grid to overcome the crash.
 
 {% tabs %}
-{% highlight xaml hl_lines="11"%}
+{% highlight xaml hl_lines="11" %}
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
@@ -299,7 +299,7 @@ The `SfExpander` allows you to customize the expanding and collapsing duration b
 The `SfExpander` allows you to customize the rate of change of parameters over time or animation style by using the `AnimationEasing` property. By default, the animation easing is `Linear`.
 
 {% tabs %}
-{% highlight xaml hl_lines="2"%}
+{% highlight xaml hl_lines="2" %}
     <syncfusion:SfExpander x:Name="expander"
                            AnimationEasing="SinOut"/>       
 {% endhighlight %}
@@ -313,7 +313,7 @@ The `SfExpander` allows you to customize the rate of change of parameters over t
 The `SfExpander` provides the ability to programmatically expand or collapse its content using the `IsExpanded` property. Users can manage expand and collapse actions by handling the `Expanding` and `Collapsing` events.
 
 {% tabs %}
-{% highlight xaml hl_lines="2"%}
+{% highlight xaml hl_lines="2" %}
     <syncfusion:SfExpander x:Name="expander" 
                            IsExpanded="True"/>        
 {% endhighlight %}
