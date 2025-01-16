@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Getting started | SfAccordion | MAUI | Syncfusion
-description: Learn here about getting started with .NET MAUI Accordion (SfAccordion) control, its elements and more.
-platform: MAUI
+title: Getting Started with .NET MAUI Accordion control | Syncfusion<sup>®</sup>
+description: Learn here about getting started with Syncfusion<sup>®</sup> Toolkit for .NET MAUI Accordion control, its elements and more.
+platform: maui-toolkit
 control: SfAccordion
 documentation: ug
 ---
@@ -106,7 +106,7 @@ public partial class MainPage : ContentPage
 
 ## Step 5: Define the accordion items
 
-Create an `AccordionItem` instance containing a `header` and `conten`t, and then add it to the `Items` collection of SfAccordion.
+Create an `AccordionItem` instance containing a `header` and `content`, and then add it to the `Items` collection of SfAccordion.
 
 In this example, a Grid is loaded in both the header and content of accordion items.
 
