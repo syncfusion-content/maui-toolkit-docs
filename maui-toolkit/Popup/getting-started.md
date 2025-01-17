@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started with .NET MAUI Popup
 
-This section guides you through setting up and configuring a [Popup]() in your .NET MAUI application. Follow the steps below to add a basic Popup to your project.
+This section guides you through setting up and configuring a `Popup` in your .NET MAUI application. Follow the steps below to add a basic Popup to your project.
 
 To quickly get started with the .NET MAUI Popup, watch this video:
 <style>#MAUIPopupVideoTutorial{width : 90% !important; height: 400px !important }</style> <iframe id='MAUIPopupVideoTutorial' src=''></iframe>
