@@ -1,6 +1,6 @@
 ---
 layout : post
-title: Load More in .NET MAUI Carousel View control | Syncfusion
+title: Load More in .NET MAUI Carousel View control | Syncfusion®
 description: Learn here all about Load More support in Syncfusion® .NET MAUI Carousel View (SfCarousel) control and more.
 platform : maui
 control : Carousel
