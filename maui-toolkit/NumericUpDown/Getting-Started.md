@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with .NET MAUI NumericUpDown | Syncfusion
-description: Learn how to get started with Syncfusion .NET MAUI NumericUpDown (SfNumericUpDown) control, its elements, and more in here.
+title: Getting Started with .NET MAUI NumericUpDown | Syncfusion<sup>®</sup>
+description: Learn how to get started with Syncfusion<sup>®</sup> .NET MAUI NumericUpDown (SfNumericUpDown) control, its elements, and more in here.
 platform: MAUI
 control: SfNumericUpDown
 documentation: ug
@@ -33,7 +33,7 @@ Before proceeding, ensure the following are in place:
 3. Select the project location, type the project name and press Enter.
 4. Then choose **Create project**
 
-## Step 2: Install the Syncfusion MAUI Toolkit Package
+## Step 2: Install the Syncfusion<sup>®</sup> MAUI Toolkit Package
 
 ### Visual Studio
 1. In **Solution Explorer,** right-click the project and choose **Manage NuGet Packages.**
@@ -43,12 +43,12 @@ Before proceeding, ensure the following are in place:
 ### Visual Studio Code
 1. Press <kbd>Ctrl</kbd> + <kbd>`</kbd> (backtick) to open the integrated terminal in Visual Studio Code.
 2. Ensure you're in the project root directory where your .csproj file is located.
-3. Run the command `dotnet add package Syncfusion.Maui.Toolkit` to install the Syncfusion .NET MAUI Toolkit NuGet package.
+3. Run the command `dotnet add package Syncfusion.Maui.Toolkit` to install the Syncfusion<sup>®</sup> .NET MAUI Toolkit NuGet package.
 4. To ensure all dependencies are installed, run `dotnet restore`.
 
 ## Step 3: Register the handler
 
-In the MauiProgram.cs file, register the handler for Syncfusion Toolkit.
+In the MauiProgram.cs file, register the handler for Syncfusion<sup>®</sup> Toolkit.
 
 {% tabs %}
 {% highlight C# tabtitle="MauiProgram.cs" hl_lines="1 9" %}
