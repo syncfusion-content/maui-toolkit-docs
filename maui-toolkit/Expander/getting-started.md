@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with .NET MAUI Expander | Syncfusion<sup>®</sup>
-description: Learn here about getting started with Syncfusion<sup>®</sup> ToolKit .NET MAUI Expander (SfExpander) control, its elements and more.
+title: Getting Started with .NET MAUI Expander control | Syncfusion®
+description: Learn here about getting started with Syncfusion® ToolKit .NET MAUI Expander (SfExpander) control, its elements and more.
 platform: maui-toolkit
 control: SfExpander
 documentation: ug

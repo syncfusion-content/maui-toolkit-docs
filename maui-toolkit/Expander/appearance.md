@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Appearance in .NET MAUI Expander control | Syncfusion<sup>®</sup>
-description: Learn here all about appearance support in Syncfusion<sup>®</sup> ToolKit .NET MAUI Expander (SfExpander) control and more.
+title: Appearance in .NET MAUI Expander control | Syncfusion®
+description: Learn here all about appearance support in Syncfusion® ToolKit .NET MAUI Expander (SfExpander) control and more.
 platform: maui-toolkit
 control: SfExpander
 documentation: ug
