@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting started with MAUI Calendar control | Syncfusion
-description: Learn here all about getting started with Syncfusion .NET MAUI Calendar (SfCalendar) control and its basic features.
+title: Getting started with MAUI Calendar control | Syncfusion<sup>&reg;</sup>
+description: Learn here all about getting started with Syncfusion<sup>&reg;</sup> .NET MAUI Calendar (SfCalendar) control and its basic features.
 platform: maui
 control: SfCalendar
 documentation: ug
@@ -20,20 +20,25 @@ Before proceeding, ensure the following are set up:
 
 ## Step 1: Create a New .NET MAUI Project
 
-### Visual Studio
+{% tabcontents %}
+{% tabcontent Visual Studio %}
 
 1. Go to **File > New > Project** and choose the **.NET MAUI App** template.
 2. Name the project and choose a location. Then click **Next**.
 3. Select the .NET framework version and click **Create**.
 
-### Visual Studio Code
+{% endtabcontent %}
+{% tabcontent Visual Studio Code %}
 
 1. Open the command palette by pressing `Ctrl+Shift+P` and type **.NET:New Project** and enter.
 2. Choose the **.NET MAUI App** template.
 3. Select the project location, type the project name and press **Enter**.
 4. Then choose **Create project.**
 
-## Step 2: Install the Syncfusion .NET MAUI Calendar NuGet Package
+{% endtabcontent %}
+{% endtabcontents %}
+
+## Step 2: Install the Syncfusion<sup>&reg;</sup> .NET MAUI Calendar NuGet Package
 
 1. In **Solution Explorer,** right-click the project and choose **Manage NuGet Packages.**
 2. Search for [Syncfusion.Maui.Toolkit](https://www.nuget.org/packages/Syncfusion.Maui.Toolkit/) and install the latest version.
@@ -41,7 +46,7 @@ Before proceeding, ensure the following are set up:
 
 ## Step 3: Register the handler
 
-The [Syncfusion.Maui.Toolkit](https://www.nuget.org/packages/Syncfusion.Maui.Toolkit/) NuGet is a dependent package for all Syncfusion controls of .NET MAUI. In the **MauiProgram.cs** file, register the handler for Syncfusion toolkit.
+The [Syncfusion.Maui.Toolkit](https://www.nuget.org/packages/Syncfusion.Maui.Toolkit/) NuGet is a dependent package for all Syncfusion<sup>&reg;</sup> controls of .NET MAUI. In the **MauiProgram.cs** file, register the handler for Syncfusion<sup>&reg;</sup> toolkit.
 
 {% tabs %}
 {% highlight C# tabtitle="MauiProgram.cs" hl_lines="1 10" %}
