@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Getting Started with .NET MAUI Expander control | Syncfusion
-description: Learn here about getting started with Syncfusion .NET MAUI Expander (SfExpander) control, its elements and more.
-platform: MAUI
+title: Getting Started with .NET MAUI Expander control | Syncfusion<sup>®</sup>
+description: Learn here about getting started with Syncfusion<sup>®</sup> ToolKit .NET MAUI Expander (SfExpander) control, its elements and more.
+platform: maui-toolkit
 control: SfExpander
 documentation: ug
 ---
@@ -277,7 +277,7 @@ Press **F5** to build and run the application. Once compiled, the Expander will 
 
 Here is the result of the previous codes,
 
-![.NET MAUI Expander](Images/maui-expander-with-gettingstarted.png)
+![.NET MAUI Expander](Images/gettingstarted/maui-expander-with-gettingstarted.png)
 
 ## Animation duration
 

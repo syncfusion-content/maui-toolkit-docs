@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Appearance in .NET MAUI Expander control | Syncfusion
-description: Learn here all about Appearance support in Syncfusion .NET MAUI Expander (SfExpander) control and more.
-platform: MAUI
+title: Appearance in .NET MAUI Expander control | Syncfusion<sup>®</sup>
+description: Learn here all about appearance support in Syncfusion<sup>®</sup> ToolKit .NET MAUI Expander (SfExpander) control and more.
+platform: maui-toolkit
 control: SfExpander
 documentation: ug
 ---
@@ -21,7 +21,7 @@ The `SfExpander` allows you to customize the position of the header icon by usin
                            HeaderIconPosition="Start" />
 {% endhighlight %}
 {% highlight c# %}
-    expander.HeaderIconPosition = Syncfusion.Maui.Expander.ExpanderIconPosition.Start;
+    expander.HeaderIconPosition = Syncfusion.Maui.Toolkit.Expander.ExpanderIconPosition.Start;
 {% endhighlight %}
 {% endtabs %}
 
