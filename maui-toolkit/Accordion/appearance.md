@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Appearance in .NET MAUI Accordion control | Syncfusion<sup>®</sup>
-description: Learn about Appearance support in Syncfusion<sup>®</sup> Toolkit for .NET MAUI Accordion control, its elements and more.
+description: Learn about appearance support in Syncfusion<sup>®</sup> Toolkit for .NET MAUI Accordion control, its elements and more.
 platform: maui-toolkit
 control: SfAccordion
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 # Appearance in Maui Accordion (SfAccordion)
 
-The .NET MAUI SfAccordion comes with built-in support for customizing the appearance of the header.
+The `.NET MAUI Toolkit SfAccordion` comes with built-in support for customizing the appearance of the header.
 
 ## Header icon position 
  
@@ -21,7 +21,7 @@ The `SfAccordion` allows you to customize the position of the header icon in eac
                         HeaderIconPosition="Start" />
 {% endhighlight %}
 {% highlight c# %}
-accordion.HeaderIconPosition = Syncfusion.Maui.Expander.ExpanderIconPosition.Start;
+accordion.HeaderIconPosition = Syncfusion.Maui.Toolkit.Expander.ExpanderIconPosition.Start;
 {% endhighlight %}
 {% endtabs %}
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Bindable Layout in .NET MAUI Accordion | Syncfusion<sup>®</sup>
-description: Learn about Bindable layout support in Syncfusion<sup>®</sup> Toolkit for .NET MAUI Accordion control, its elements and more.
+description: Learn about bindable layout support in Syncfusion<sup>®</sup> Toolkit for .NET MAUI Accordion control, its elements and more.
 platform: maui-toolkit
 control: SfAccordion
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 # BindableLayout in .NET MAUI Accordion (SfAccordion)
 
-The `SfAccordion` control allows the use of `.NET MAUI BindableLayout` to bind a data collection using `BindableLayout.ItemsSource` and `BindableLayout.ItemTemplate` properties.
+The `SfAccordion` control allows the use of [.NET MAUI BindableLayout](https://learn.microsoft.com/en-us/dotnet/maui/user-interface/layouts/bindablelayout) to bind a data collection using `BindableLayout.ItemsSource` and `BindableLayout.ItemTemplate` properties.
 
 ## Creating Data Model
 
@@ -312,7 +312,7 @@ DataTemplate ItemTemplate = new DataTemplate(() =>
     content.RowSpacing = 2;
     content.BackgroundColor = Color.FromArgb("#f4f4f4");
     var contentGrid = new Grid();
-
+    (......)
     contentGrid.Children.Add(stack);
     content.Children.Add(contentGrid);
     accordionItem.Content = contentGrid;
