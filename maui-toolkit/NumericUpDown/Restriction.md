@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Value Change Restriction in .NET MAUI NumericUpDown | Syncfusion<sup>®</sup>
-description: Learn here all about how to restrict the value change in Syncfusion<sup>®</sup> .NET MAUI NumericUpDown (SfNumericUpDown) control and more.
+title: Value Change Restriction in .NET MAUI NumericUpDown | Syncfusion®
+description: Learn here all about how to restrict the value change in Syncfusion® .NET MAUI NumericUpDown (SfNumericUpDown) control and more.
 platform: MAUI
 control:  SfNumericUpDown
 documentation: ug

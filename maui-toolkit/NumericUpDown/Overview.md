@@ -1,7 +1,7 @@
 ---
 layout: post
-title: About .NET MAUI NumericUpDown Control | Syncfusion<sup>®</sup>
-description: Learn here all about introduction of Syncfusion<sup>®</sup> .NET MAUI NumericUpDown (SfNumericUpDown) control, its features, and more.
+title: About .NET MAUI NumericUpDown Control | Syncfusion®
+description: Learn here all about introduction of Syncfusion® .NET MAUI NumericUpDown (SfNumericUpDown) control, its features, and more.
 platform: MAUI
 control: SfNumericUpDown
 documentation: ug
