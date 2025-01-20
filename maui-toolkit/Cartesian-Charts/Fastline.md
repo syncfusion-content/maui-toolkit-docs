@@ -161,3 +161,105 @@ this.Content = chart;
 {% endhighlight %}
 
 {% endtabs %}
+
+## Enable Marker
+
+A marker, also known as a symbol, is used to determine or highlight the position of the data point. To enable markers in the series, set the [ShowMarkers]() property to `true`.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<chart:SfCartesianChart>
+    ...
+    <chart:FastLineSeries ItemsSource="{Binding Data}" 
+                          XBindingPath="XValue"
+                          YBindingPath="YValue"
+                          ShowMarkers="True"/>                 
+</chart:SfCartesianChart>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfCartesianChart chart = new SfCartesianChart();
+...
+FastLineSeries series = new FastLineSeries()
+{
+    ItemsSource = new ViewModel().Data,
+    XBindingPath = "XValue",
+    YBindingPath = "YValue",
+    ShowMarkers = true, // Enable markers to visually highlight data points on the line
+};
+
+chart.Series.Add(series);
+this.Content= chart;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+### Marker customization
+
+In order to change the series markers appearance, create an instance of the [MarkerSettings]() property. The following properties are used to customize marker appearance.
+
+* [Type](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartMarkerSettings.html#Syncfusion_Maui_Toolkit_Charts_ChartMarkerSettings_Type), of type `ShapeType`, describes the shape of the series marker. The default value of this property is [ShapeType.Circle](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ShapeType.html#Syncfusion_Maui_Toolkit_Charts_ShapeType_Circle).
+* [Stroke](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartMarkerSettings.html#Syncfusion_Maui_Toolkit_Charts_ChartMarkerSettings_Stroke), of type `Brush`, indicates the brush used to paint the marker border.
+* [StrokeWidth](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartMarkerSettings.html#Syncfusion_Maui_Toolkit_Charts_ChartMarkerSettings_StrokeWidth), of type `double`, indicates the width of the marker border.
+* [Fill](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartMarkerSettings.html#Syncfusion_Maui_Toolkit_Charts_ChartMarkerSettings_Fill), of type `Brush`, indicates the color of the marker.
+* [Width](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartMarkerSettings.html#Syncfusion_Maui_Toolkit_Charts_ChartMarkerSettings_Width), of type `double`, indicates the width of the marker.
+* [Height](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartMarkerSettings.html#Syncfusion_Maui_Toolkit_Charts_ChartMarkerSettings_Height), of type `double`, indicates the height of the marker.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<chart:SfCartesianChart>
+    ...
+    <chart:FastLineSeries ItemsSource="{Binding Data}" 
+                          XBindingPath="XValue"
+                          YBindingPath="YValue"
+                          ShowMarkers="True">
+        <chart:FastLineSeries.MarkerSettings>
+            <chart:ChartMarkerSettings Type="Diamond"
+                                       Fill="Yellow"
+                                       Stroke="Red"
+                                       StrokeWidth="1"
+                                       Height="8"
+                                       Width="8"/>
+        </chart:FastLineSeries.MarkerSettings>
+    </chart:FastLineSeries>
+</chart:SfCartesianChart>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfCartesianChart chart = new SfCartesianChart();
+...
+// Set up marker settings for the chart series with a diamond shape
+ChartMarkerSettings chartMarker= new ChartMarkerSettings()
+{
+    Type = ShapeType.Diamond,
+    Fill = Colors.Yellow,
+    Stroke = Colors.Red,
+    StrokeWidth = 1,
+    Height = 8,
+    Width = 8
+};
+
+FastLineSeries  series = new FastLineSeries()
+{
+   ItemsSource = new ViewModel().Data,
+   XBindingPath = "XValue",
+   YBindingPath = "YValue",
+   ShowMarkers = true,
+   MarkerSettings = chartMarker, // Apply the specified marker settings
+};
+
+chart.Series.Add(series);
+this.Content = chart;
+
+{% endhighlight %}
+
+{% endtabs %}
