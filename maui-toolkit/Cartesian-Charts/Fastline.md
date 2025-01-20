@@ -164,7 +164,7 @@ this.Content = chart;
 
 ## Enable Marker
 
-A marker, also known as a symbol, is used to determine or highlight the position of the data point. To enable markers in the series, set the [ShowMarkers]() property to `true`.
+A marker, also known as a symbol, is used to determine or highlight the position of the data point. To enable markers in the series, set the **ShowMarkers** property to `true`.
 
 {% tabs %}
 
@@ -201,7 +201,7 @@ this.Content= chart;
 
 ### Marker customization
 
-In order to change the series markers appearance, create an instance of the [MarkerSettings]() property. The following properties are used to customize marker appearance.
+In order to change the series markers appearance, create an instance of the **MarkerSettings** property. The following properties are used to customize marker appearance.
 
 * [Type](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartMarkerSettings.html#Syncfusion_Maui_Toolkit_Charts_ChartMarkerSettings_Type), of type `ShapeType`, describes the shape of the series marker. The default value of this property is [ShapeType.Circle](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ShapeType.html#Syncfusion_Maui_Toolkit_Charts_ShapeType_Circle).
 * [Stroke](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartMarkerSettings.html#Syncfusion_Maui_Toolkit_Charts_ChartMarkerSettings_Stroke), of type `Brush`, indicates the brush used to paint the marker border.
