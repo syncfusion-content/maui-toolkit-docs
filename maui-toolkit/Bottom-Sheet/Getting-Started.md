@@ -24,7 +24,7 @@ Before proceeding, ensure the following are set up:
 {% tabcontents %}
 {% tabcontent Visual Studio %}
 
-## Step 1: Create a new .NET MAUI project with BottomSheet
+## Step 1: Create a new .NET MAUI project
 
 1. Go to **File > New > Project** and choose the **.NET MAUI App** template.
 2. Name the project and choose a location. Then, click **Next.**
@@ -91,7 +91,7 @@ SfBottomSheet bottomSheet = new SfBottomSheet();
 {% endtabcontent %}
 {% tabcontent Visual Studio Code %}
 
-## Step 1: Create a new .NET MAUI project with BottomSheet
+## Step 1: Create a new .NET MAUI project
 
 1. Open the command palette by pressing `Ctrl+Shift+P` and type **.NET:New Project** and enter.
 2. Choose the **.NET MAUI App** template.
