@@ -96,7 +96,7 @@ public static class MauiProgram
 {% tabs %}
 {% highlight xaml %}
 
-<otp:SfOtpInput />
+<otp:SfOtpInput></otp:SfOtpInput>
 
 {% endhighlight %}
 {% highlight c# %}
