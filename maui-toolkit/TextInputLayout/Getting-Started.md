@@ -24,33 +24,15 @@ Before proceeding, ensure the following are in place:
 
 ## Step 1: Create a New MAUI Project
 
-### Visual Studio
-
  1. Go to **File > New > Project** and choose the **.NET MAUI App** template.
  2. Name the project and choose a location. Then, click **Next**.
  3. Select the .NET framework version and click **Create**.
 
-### Visual Studio Code
-
- 1. Open the Command Palette by pressing **Ctrl+Shift+P** and type **.NET:New Project** and press Enter.
- 2. Choose the **.NET MAUI App** template.
- 3. Select the project location, type the project name and press Enter.
- 4. Then choose **Create project**
-
 ## Step 2: Install the Syncfusion<sup>®</sup> MAUI Toolkit NuGet Package
-
-### Visual Studio
 
  1. In **Solution Explorer**, right-click the project and choose **Manage NuGet Packages**.
  2. Search for [Syncfusion.Maui.Toolkit](https://www.nuget.org/packages/Syncfusion.Maui.Toolkit/) and install the latest version.
  3. Ensure the necessary dependencies are installed correctly, and the project is restored.
-
-### Visual Studio Code
-
-1. Press <kbd>Ctrl</kbd> + <kbd>`</kbd> (backtick) to open the integrated terminal in Visual Studio Code.
-2. Ensure you're in the project root directory where your .csproj file is located.
-3. Run the command `dotnet add package Syncfusion.Maui.Toolkit` to install the Syncfusion<sup>®</sup> .NET MAUI Toolkit NuGet package.
-4. To ensure all dependencies are installed, run `dotnet restore`.
 
 ## Step 3: Register the Handler
 
@@ -114,20 +96,13 @@ Add any input view control such as [Entry](https://learn.microsoft.com/en-us/dot
 
 ## Prerequisites
 
-Before proceeding, ensure the following are in place:
+Before proceeding, ensure the following are set up:
 
- 1. Install [.NET 8 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/8.0) or later.
- 2. Set up a .NET MAUI environment with Visual Studio 2022 (v17.8 or later)
+1. Install [.NET 8 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/8.0) or later is installed.
+2. Set up a .NET MAUI environment with Visual Studio Code.
+3. Ensure that the .NET MAUI extension is installed and configured as described [here.](https://learn.microsoft.com/en-us/dotnet/maui/get-started/installation?view=net-maui-8.0&tabs=visual-studio-code)
 
 ## Step 1: Create a New MAUI Project
-
-### Visual Studio
-
- 1. Go to **File > New > Project** and choose the **.NET MAUI App** template.
- 2. Name the project and choose a location. Then, click **Next**.
- 3. Select the .NET framework version and click **Create**.
-
-### Visual Studio Code
 
  1. Open the Command Palette by pressing **Ctrl+Shift+P** and type **.NET:New Project** and press Enter.
  2. Choose the **.NET MAUI App** template.
@@ -135,14 +110,6 @@ Before proceeding, ensure the following are in place:
  4. Then choose **Create project**
 
 ## Step 2: Install the Syncfusion<sup>®</sup> MAUI Toolkit NuGet Package
-
-### Visual Studio
-
- 1. In **Solution Explorer**, right-click the project and choose **Manage NuGet Packages**.
- 2. Search for [Syncfusion.Maui.Toolkit](https://www.nuget.org/packages/Syncfusion.Maui.Toolkit/) and install the latest version.
- 3. Ensure the necessary dependencies are installed correctly, and the project is restored.
-
-### Visual Studio Code
 
 1. Press <kbd>Ctrl</kbd> + <kbd>`</kbd> (backtick) to open the integrated terminal in Visual Studio Code.
 2. Ensure you're in the project root directory where your .csproj file is located.

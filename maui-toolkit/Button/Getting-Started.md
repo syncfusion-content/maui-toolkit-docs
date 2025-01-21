@@ -188,7 +188,7 @@ using Syncfusion.Maui.Toolkit.Buttons;
 
 {% endtabs %}
 {% endtabcontent %}
-{% tabcontent Visual Studio Code %}
+{% endtabcontents %}
 
 ## Button icon
 
@@ -218,9 +218,6 @@ button.CornerRadius= 2;
 
 {% endhighlight %}
 {% endtabs %}
-
-{% endtabcontent %}
-{% endtabcontents %}
 
 ![.NET MAUI Button with button icon.](images/getting-started/net-maui-button-with-icon.png)
 
