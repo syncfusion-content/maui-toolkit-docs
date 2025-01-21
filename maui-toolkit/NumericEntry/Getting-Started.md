@@ -11,7 +11,7 @@ documentation: ug
 
 This section guides you through setting up and configuring a [Numeric Entry](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericEntry.SfNumericEntry.html) in your .NET MAUI application. Follow the steps below to add a basic Numeric Entry to your project.
 
-{% tabcontents %}
+{% tabcontents %} 
 {% tabcontent Visual Studio %}
 
 ## Prerequisites
