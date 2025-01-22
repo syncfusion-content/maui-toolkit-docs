@@ -131,3 +131,89 @@ SfOtpInput otpInput = new SfOtpInput()
 
 {% endhighlight %}
 {% endtabs %}
+
+## Input Background
+
+You can specify the color of OtpInput using `InputBackground` property.
+
+{% tabs %}
+{% highlight xaml %}
+
+<otpInput:SfOtpInput InputBackground="LightPink" StylingMode="Filled" />
+
+{% endhighlight %}
+{% highlight C# %}
+
+SfOtpInput otpInput = new SfOtpInput()
+{
+    InputBackground = Colors.LightPink,
+    StylingMode = OtpInputStyle.Filled
+};
+
+{% endhighlight %}
+{% endtabs %}
+
+N> The `InputBackground` property applies only when `StylingMode` is set to `Filled.`
+
+## Stroke
+
+You can specify the color of border in OtpInput using `Stroke` property.
+
+{% tabs %}
+{% highlight xaml %}
+
+<otpInput:SfOtpInput Stroke="Blue" />
+
+{% endhighlight %}
+{% highlight C# %}
+
+SfOtpInput otpInput = new SfOtpInput()
+{
+    Stroke = Colors.Blue
+};
+
+{% endhighlight %}
+{% endtabs %}
+
+## TextColor
+
+You can specify the color of text in OtpInput using `TextColor` property.
+
+{% tabs %}
+{% highlight xaml %}
+
+<otpInput:SfOtpInput TextColor="Orange" />
+
+{% endhighlight %}
+{% highlight C# %}
+
+SfOtpInput otpInput = new SfOtpInput()
+{
+    TextColor = Colors.Orange
+};
+
+{% endhighlight %}
+{% endtabs %}
+
+## MaskCharacter
+
+You can specify the character used to mask the text in OtpInput using `MaskCharacter` property.
+
+{% tabs %}
+{% highlight xaml %}
+
+<otpInput:SfOtpInput Type="Password" MaskCharacter="*" />
+
+{% endhighlight %}
+{% highlight C# %}
+
+SfOtpInput otpInput = new SfOtpInput()
+{
+    Type = OtpInputType.Password,
+    MaskCharacter = '*'
+};
+
+{% endhighlight %}
+{% endtabs %}
+
+N> The `MaskCharacter` property applies only when `Type` is set to `Password.`
