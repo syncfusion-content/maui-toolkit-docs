@@ -217,3 +217,67 @@ SfOtpInput otpInput = new SfOtpInput()
 {% endtabs %}
 
 N> The `MaskCharacter` property applies only when `Type` is set to `Password.`
+
+## InputState
+
+The `InputState` property in the OtpInput allows you to visually represent the validation status of the input fields.
+
+### Success
+
+The `Stroke` of OtpInput turns green when `InputState` is set to `Success.`
+
+{% tabs %}
+{% highlight xaml %}
+
+<otpInput:SfOtpInput InputState="Success" />
+
+{% endhighlight %}
+{% highlight C# %}
+
+SfOtpInput otpInput = new SfOtpInput()
+{
+    InputState = OtpInputState.Success
+};
+
+{% endhighlight %}
+{% endtabs %}
+
+### Warning
+
+The `Stroke` of OtpInput turns yellow when `InputState` is set to `Warning.`
+
+{% tabs %}
+{% highlight xaml %}
+
+<otpInput:SfOtpInput InputState="Warning" />
+
+{% endhighlight %}
+{% highlight C# %}
+
+SfOtpInput otpInput = new SfOtpInput()
+{
+    InputState = OtpInputState.Warning
+};
+
+{% endhighlight %}
+{% endtabs %}
+
+### Error
+
+The `Stroke` of OtpInput turns red when `InputState` is set to `Error.`
+
+{% tabs %}
+{% highlight xaml %}
+
+<otpInput:SfOtpInput InputState="Error" />
+
+{% endhighlight %}
+{% highlight C# %}
+
+SfOtpInput otpInput = new SfOtpInput()
+{
+    InputState = OtpInputState.Error
+};
+
+{% endhighlight %}
+{% endtabs %}
