@@ -11,7 +11,7 @@ documentation: ug
 
 ## ValueChanged event
 
-The OTP Input component triggers the `ValueChanged` event when the value of each OTP Input is changed. The `OtpInputValueChangedEventArgs` passed as an event argument provides the details of the each value is changed.
+The OtpInput component triggers the `ValueChanged` event when the value of each OtpInput is changed. The `OtpInputValueChangedEventArgs` passed as an event argument provides the details of the each value is changed.
 
 {% tabs %}
 {% highlight xaml %}

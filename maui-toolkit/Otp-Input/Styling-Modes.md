@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Swiping in .NET MAUI OtpInput | Syncfusion®
+title: Styling Modes in .NET MAUI OtpInput | Syncfusion®
 description: Learn here about styling modes in Syncfusion® .NET MAUI OtpInput (SfOtpInput) control in your cross-platform applications.
 platform: maui-toolkit
 control: OtpInput
 documentation: ug
 ---
 
-# Styling Modes in OTP Input component
+# Styling Modes in OtpInput component
 
-Styling modes specify the style variants for the input fields in the OTP Input component. These modes allows you to customize the appearance of the OTP Input fields.
+Styling modes specify the style variants for the input fields in the OtpInput component. These modes allows you to customize the appearance of the OtpInput fields.
 
 ## Outline mode
 

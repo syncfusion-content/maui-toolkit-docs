@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Swiping in .NET MAUI OtpInput | Syncfusion®
+title: Input Types in .NET MAUI OtpInput | Syncfusion®
 description: Learn here about input types in Syncfusion® .NET MAUI OtpInput (SfOtpInput) control in your cross-platform applications.
 platform: maui-toolkit
 control: OtpInput
@@ -15,7 +15,7 @@ This section explains the the various types of OTP (One-Time Password) input com
 
 ### Number type
 
-You can set the `Type` property to `Number` to use this input type as number. This is ideal for OTP input scenarios with numeric-only codes. By default `Type` property is `Number`.
+You can set the `Type` property to `Number` to use this input type as number. This is ideal for OtpInput scenarios with numeric-only codes. By default `Type` property is `Number`.
 
 {% tabs %}	
 {% highlight xaml %}
@@ -36,7 +36,7 @@ SfOtpInput otpInput = new SfOtpInput()
 
 ### Text type
 
-You can set the `Type` property to `Text` to use this input type as text. This is suitable when the OTP input need to include both letters and numbers.
+You can set the `Type` property to `Text` to use this input type as text. This is suitable when the OtpInput need to include both letters and numbers.
 
 {% tabs %}	
 {% highlight xaml %}
@@ -57,7 +57,7 @@ SfOtpInput otpInput = new SfOtpInput()
 
 ### Password type
 
-You can set the `Type` property to `Password` to use this input type as password in the OTP Input.
+You can set the `Type` property to `Password` to use this input type as password in the OtpInput.
 
 {% tabs %}	
 {% highlight xaml %}
@@ -78,7 +78,7 @@ SfOtpInput otpInput = new SfOtpInput()
 
 ## Value
 
-You can specify the value of OTP Input by using the `Value` property.
+You can specify the value of OtpInput by using the `Value` property.
 
 {% tabs %}	
 {% highlight xaml %}

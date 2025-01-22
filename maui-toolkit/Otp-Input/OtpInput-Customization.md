@@ -11,9 +11,9 @@ documentation: ug
 
 A `OtpInput` consists of several elements that can be customized to enhance its appearance and functionality.
 
-## Placeholder in OTP Input component
+## Placeholder in OtpInput component
 
-The placeholder in OTP Input specifies the text that is shown as a hint or placeholder until the user enters a value in the input field. It acts as a guidance for the users regarding the expected input format or purpose of the input field.
+The placeholder in OtpInput specifies the text that is shown as a hint or placeholder until the user enters a value in the input field. It acts as a guidance for the users regarding the expected input format or purpose of the input field.
 
 You can set the placeholder text by using the `Placeholder` property. Additionally, when providing a single character as the placeholder value all input fields within the OTP Input component will display the same character.
 
@@ -33,7 +33,7 @@ SfOtpInput otpInput = new SfOtpInput()
 {% endhighlight %}
 {% endtabs %}
 
-When a placeholder with multiple placeholder characters is provided each input field will display characters from the placeholder string in sequence based on the available OTP Input length.
+When a placeholder with multiple placeholder characters is provided each input field will display characters from the placeholder string in sequence based on the available OtpInput length.
 
 {% tabs %}	
 {% highlight xaml %}
@@ -51,7 +51,7 @@ SfOtpInput otpInput = new SfOtpInput()
 {% endhighlight %}
 {% endtabs %}
 
-## PlaceholderColor in OTP Input component
+## PlaceholderColor in OtpInput component
 
 The placeholder text color can be changed by using the `PlaceholderColor` property. The default value of PlaceholderColor property is `Colors.Gray`.
 
@@ -72,9 +72,9 @@ SfOtpInput otpInput = new SfOtpInput()
 {% endhighlight %}
 {% endtabs %}
 
-## Separator in OTP Input component
+## Separator in OtpInput component
 
-The separator in OTP Input specifies the character or symbol used to separate each input field in the OTP Input component. This separator is displayed between each input field to visually distinguish between each inputs. You can set the separator character by using the `Separator` property.
+The separator in OtpInput specifies the character or symbol used to separate each input field in the OtpInput component. This separator is displayed between each input field to visually distinguish between each inputs. You can set the separator character by using the `Separator` property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -92,9 +92,9 @@ SfOtpInput otpInput = new SfOtpInput()
 {% endhighlight %}
 {% endtabs %}
 
-## Appearance in OTP Input component
+## Appearance in OtpInput component
 
-You can also customize the appearance of OTP Input component.
+You can also customize the appearance of OtpInput component.
 
 ### Setting input length
 
@@ -118,7 +118,7 @@ SfOtpInput otpInput = new SfOtpInput()
 
 ### Disable inputs
 
-You can disable the OTP Input component by using the `IsEnabled` property. By default the value is `true`.
+You can disable the OtpInput component by using the `IsEnabled` property. By default the value is `true`.
 
 {% tabs %}
 {% highlight xaml %}
