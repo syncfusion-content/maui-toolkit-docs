@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Customization in .NET MAUI OtpInput (SfOtpInput) | Syncfusion®
-description: Learn how to customize otp input in Syncfusion® .NET MAUI OtpInput (SfOtpInput). Explore the options to enhance your otp input appearance.
+description: Learn how to customize OTP input in Syncfusion® .NET MAUI OtpInput (SfOtpInput) control. Explore various options to enhance the appearance of your OTP input.
 platform: maui-toolkit
 control: OtpInput
 documentation: ug
@@ -9,18 +9,18 @@ documentation: ug
 
 # Customization in .NET MAUI OtpInput (SfOtpInput)
 
-A `OtpInput` consists of several elements that can be customized to enhance its appearance and functionality.
+An `OtpInput` consists of multiple elements that can be customized to enhance both its appearance and functionality.
 
-## Placeholder in OtpInput component
+## Placeholder
 
-The placeholder in OtpInput specifies the text that is shown as a hint or placeholder until the user enters a value in the input field. It acts as a guidance for the users regarding the expected input format or purpose of the input field.
+The placeholder for the OtpInput specifies the text that appears as a hint until the user enters a value.
 
-You can set the placeholder text by using the `Placeholder` property. Additionally, when providing a single character as the placeholder value all input fields within the OTP Input component will display the same character.
+Set the placeholder text using the `Placeholder` property. When a single character is assigned, each input field will show the same character.
 
 {% tabs %}	
 {% highlight xaml %}
 
-<otp:SfOtpInput Placeholder="x"></otp:SfOtpInput>
+<otpInput:SfOtpInput Placeholder="x" />
 	
 {% endhighlight %}
 {% highlight c# %}
@@ -33,12 +33,12 @@ SfOtpInput otpInput = new SfOtpInput()
 {% endhighlight %}
 {% endtabs %}
 
-When a placeholder with multiple placeholder characters is provided each input field will display characters from the placeholder string in sequence based on the available OtpInput length.
+For placeholders with multiple characters, available input fields will sequentially display each character.
 
 {% tabs %}	
 {% highlight xaml %}
 
-<otp:SfOtpInput Placeholder="wxyz"></otp:SfOtpInput>
+<otpInput:SfOtpInput Placeholder="wxyz" />
 	
 {% endhighlight %}
 {% highlight c# %}
@@ -51,14 +51,14 @@ SfOtpInput otpInput = new SfOtpInput()
 {% endhighlight %}
 {% endtabs %}
 
-## PlaceholderColor in OtpInput component
+### PlaceholderColor
 
-The placeholder text color can be changed by using the `PlaceholderColor` property. The default value of PlaceholderColor property is `Colors.Gray`.
+The color of placeholder text can be changed using the `PlaceholderColor` property.
 
 {% tabs %}
 {% highlight xaml %}
 
-<otp:SfOtpInput Placeholder="x" PlaceholderColor="Red"></otp:SfOtpInput>
+<otpInput:SfOtpInput Placeholder="x" PlaceholderColor="Red" />
 
 {% endhighlight %}
 {% highlight C# %}
@@ -72,14 +72,14 @@ SfOtpInput otpInput = new SfOtpInput()
 {% endhighlight %}
 {% endtabs %}
 
-## Separator in OtpInput component
+## Separator
 
-The separator in OtpInput specifies the character or symbol used to separate each input field in the OtpInput component. This separator is displayed between each input field to visually distinguish between each inputs. You can set the separator character by using the `Separator` property.
+The `Separator` property defines a character or symbol used to separate each input field, visually distinguishing inputs.
 
 {% tabs %}
 {% highlight xaml %}
 
-<otp:SfOtpInput Separator="/"></otp:SfOtpInput>
+<otpInput:SfOtpInput Separator="/" />
 
 {% endhighlight %}
 {% highlight C# %}
@@ -92,18 +92,14 @@ SfOtpInput otpInput = new SfOtpInput()
 {% endhighlight %}
 {% endtabs %}
 
-## Appearance in OtpInput component
-
-You can also customize the appearance of OtpInput component.
-
-### Setting input length
+## Setting input length
 
 You can specify the length of OTP by using the `Length` property. The default value is `4`.
 
 {% tabs %}
 {% highlight xaml %}
 
-<otp:SfOtpInput Length="6"></otp:SfOtpInput>
+<otpInput:SfOtpInput Length="6" />
 
 {% endhighlight %}
 {% highlight C# %}
@@ -116,14 +112,14 @@ SfOtpInput otpInput = new SfOtpInput()
 {% endhighlight %}
 {% endtabs %}
 
-### Disable inputs
+## Disable inputs
 
 You can disable the OtpInput component by using the `IsEnabled` property. By default the value is `true`.
 
 {% tabs %}
 {% highlight xaml %}
 
-<otp:SfOtpInput IsEnabled="False"></otp:SfOtpInput>
+<otpInput:SfOtpInput IsEnabled="False" />
 
 {% endhighlight %}
 {% highlight C# %}

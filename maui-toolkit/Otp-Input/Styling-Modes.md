@@ -18,7 +18,7 @@ You can use the outline style by setting the `StylingMode` property to `Outlined
 {% tabs %}	
 {% highlight xaml %}
 
-<otp:SfOtpInput StylingMode="Outlined"></otp:SfOtpInput>
+<otpInput:SfOtpInput StylingMode="Outlined" />
 	
 {% endhighlight %}
 {% highlight c# %}
@@ -38,7 +38,7 @@ You can use the filled style by setting the `StylingMode` property to `Filled`.
 {% tabs %}	
 {% highlight xaml %}
 
-<otp:SfOtpInput StylingMode="Filled"></otp:SfOtpInput>
+<otpInput:SfOtpInput StylingMode="Filled" />
 	
 {% endhighlight %}
 {% highlight c# %}
@@ -58,7 +58,7 @@ You can use the underline style by setting the `StylingMode` property to `Underl
 {% tabs %}	
 {% highlight xaml %}
 
-<otp:SfOtpInput StylingMode="Underlined"></otp:SfOtpInput>
+<otpInput:SfOtpInput StylingMode="Underlined" />
 	
 {% endhighlight %}
 {% highlight c# %}

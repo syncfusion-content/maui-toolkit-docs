@@ -7,7 +7,7 @@ control: OtpInput
 documentation: ug
 ---
 
-# Input Types in Blazor OTP Input component
+# Input Types in MAUI OTP Input component
 
 ## Types
 
@@ -15,12 +15,12 @@ This section explains the the various types of OTP (One-Time Password) input com
 
 ### Number type
 
-You can set the `Type` property to `Number` to use this input type as number. This is ideal for OtpInput scenarios with numeric-only codes. By default `Type` property is `Number`.
+The `Type` property can be set to `Number`, prompting the input to handle numeric-only codes. This is ideal for scenarios demanding numeric OTPs. By default, the `Type` property is set to `Number`.
 
 {% tabs %}	
 {% highlight xaml %}
 
-<otp:SfOtpInput Value="1234" Type="Number"></otp:SfOtpInput>
+<otpInput:SfOtpInput Value="1234" Type="Number" />
 	
 {% endhighlight %}
 {% highlight c# %}
@@ -36,19 +36,19 @@ SfOtpInput otpInput = new SfOtpInput()
 
 ### Text type
 
-You can set the `Type` property to `Text` to use this input type as text. This is suitable when the OtpInput need to include both letters and numbers.
+You can set the `Type` property to `Text` for inputs that may include both letters and numbers, suitable for alphanumeric OTPs.
 
 {% tabs %}	
 {% highlight xaml %}
 
-<otp:SfOtpInput Value="e3c7" Type="Text"></otp:SfOtpInput>
+<otpInput:SfOtpInput Value="e3c7" Type="Text" />
 	
 {% endhighlight %}
 {% highlight c# %}
 
 SfOtpInput otpInput = new SfOtpInput()
 {
-    Value = "1234",
+    Value = "e3c7",
     Type = OtpInputType.Text
 };
 
@@ -62,14 +62,14 @@ You can set the `Type` property to `Password` to use this input type as password
 {% tabs %}	
 {% highlight xaml %}
 
-<otp:SfOtpInput Value="e3c7" Type="Password"></otp:SfOtpInput>
+<otpInput:SfOtpInput Value="e3c7" Type="Password" />
 	
 {% endhighlight %}
 {% highlight c# %}
 
 SfOtpInput otpInput = new SfOtpInput()
 {
-    Value = "1234",
+    Value = "e3c7",
     Type = OtpInputType.Password
 };
 
@@ -83,14 +83,15 @@ You can specify the value of OtpInput by using the `Value` property.
 {% tabs %}	
 {% highlight xaml %}
 
-<otp:SfOtpInput Value="e3c7"></otp:SfOtpInput>
+<otpInput:SfOtpInput Value="e3c7" Type="Text" />
 	
 {% endhighlight %}
 {% highlight c# %}
 
 SfOtpInput otpInput = new SfOtpInput()
 {
-    Value = "1234"
+    Value = "e3c7",
+    Type = OtpInputType.Text
 };
 
 {% endhighlight %}

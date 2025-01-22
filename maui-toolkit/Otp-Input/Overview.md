@@ -17,4 +17,4 @@ An `OtpInput` is a user interface component commonly used in applications that r
 
 * `StylingMode` - Supports different styling modes : Outlined, Filled, and Underlined.
 
-* `Types` - Supports different input types : Number, Password, and Text.
+* `Type` - Supports different input types : Number, Password, and Text.

@@ -16,7 +16,7 @@ The OtpInput component triggers the `ValueChanged` event when the value of each 
 {% tabs %}
 {% highlight xaml %}
 
-<otp:SfOtpInput ValueChanged="OnValueChanged"></otp:SfOtpInput>
+<otpInput:SfOtpInput ValueChanged="OnValueChanged" />
 
 {% endhighlight %}
 {% highlight c# %}
