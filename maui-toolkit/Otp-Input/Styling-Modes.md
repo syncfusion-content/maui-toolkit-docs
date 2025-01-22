@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Swiping in .NET MAUI OtpInput | Syncfusion®
-description: Learn here all about styling modes in Syncfusion® .NET MAUI OtpInput (SfOtpInput) control and more.
+description: Learn here about styling modes in Syncfusion® .NET MAUI OtpInput (SfOtpInput) control in your cross-platform applications.
 platform: maui-toolkit
 control: OtpInput
 documentation: ug
