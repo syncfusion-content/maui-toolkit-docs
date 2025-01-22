@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Populating Items in .NET MAUI Chips control | Syncfusion
-description: Learn about Populating Items support in Syncfusion Toolkit for .NET MAUI Chips control, its elements and more.
+title: Populating Items in .NET MAUI Chips control | Syncfusion<sup>®</sup>
+description: Learn about Populating Items support in Syncfusion<sup>®</sup> Toolkit for .NET MAUI Chips control, its elements and more.
 platform: maui-toolkit
 control: Chips
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: About .NET MAUI Chart Control | Syncfusion
-description: Learn here all about introduction of Syncfusion .NET MAUI Chart(SfFunnelChart) control with key features and more
+description: Learn here all about introduction of Syncfusion® .NET MAUI Chart(SfFunnelChart) control with key features and more
 platform: maui-toolkit
 control: SfFunnelChart
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 # .NET MAUI Funnel Chart Overview
 
-The Syncfusion Toolkit for .NET MAUI Funnel Chart (`SfFunnelChart`) provides a visually appealing way to represent data across different stages in a process. It is ideal for analyzing business funnels, such as sales processes or conversion rates, in high-quality .NET MAUI applications.
+The Syncfusion® Toolkit for .NET MAUI Funnel Chart (`SfFunnelChart`) provides a visually appealing way to represent data across different stages in a process. It is ideal for analyzing business funnels, such as sales processes or conversion rates, in high-quality .NET MAUI applications.
 
 ## Key Features
 

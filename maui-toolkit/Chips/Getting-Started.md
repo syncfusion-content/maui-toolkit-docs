@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with .NET MAUI Chips control | Syncfusion
-description: Learn here about getting started with Syncfusion Toolkit for .NET MAUI Chips control, its elements and more.
+title: Getting Started with .NET MAUI Chips control | Syncfusion<sup>®</sup>
+description: Learn here about getting started with Syncfusion<sup>®</sup> Toolkit for .NET MAUI Chips control, its elements and more.
 platform: maui-toolkit
 control: Chips
 documentation: ug
@@ -33,7 +33,7 @@ Before proceeding, ensure the following are setup:
 3. Select the project location, type the project name and press **Enter**.
 4. Then choose **Create project**
 
-## Step 2: Install the Syncfusion .NET MAUI Toolkit Package
+## Step 2: Install the Syncfusion<sup>®</sup> .NET MAUI Toolkit Package
 
 ### Visual Studio
 1. In **Solution Explorer**, right-click the project and choose **Manage NuGet Packages**.
@@ -43,12 +43,12 @@ Before proceeding, ensure the following are setup:
 ### Visual Studio Code
 1. Press <kbd>Ctrl</kbd> + <kbd>`</kbd> (backtick) to open the integrated terminal in Visual Studio Code.
 2. Ensure you're in the project root directory where your .csproj file is located.
-3. Run the command `dotnet add package Syncfusion.Maui.Toolkit` to install the Syncfusion .NET MAUI Toolkit NuGet package.
+3. Run the command `dotnet add package Syncfusion.Maui.Toolkit` to install the Syncfusion<sup>®</sup> .NET MAUI Toolkit NuGet package.
 4. To ensure all dependencies are installed, run `dotnet restore`.
 
 ## Step 3: Register the Handler 
 
-In the **MauiProgram.cs file**, register the handler for Syncfusion Toolkit.
+In the **MauiProgram.cs file**, register the handler for Syncfusion<sup>®</sup> Toolkit.
 
 {% highlight c# hl_lines="1 9" %}
 

@@ -1,21 +1,21 @@
 ---
 layout: post
-title: Install Syncfusion Maui Toolkit NuGet packages - Syncfusion
-description: Learn here about the how to install Syncfusion Maui Toolkit NuGet packages from Package manager and NuGet manager.
+title: Install Syncfusion® Maui Toolkit NuGet packages - Syncfusion®
+description: Learn here about the how to install Syncfusion® Maui Toolkit NuGet packages from Package manager and NuGet manager.
 platform: maui-toolkit
 component: Common
 documentation: ug
 ---
 
-# Install Syncfusion Maui Toolkit NuGet packages
+# Install Syncfusion<sup>®</sup> Maui Toolkit NuGet packages
 
 ## Overview
 
-NuGet is a package management system used in Visual Studio, simplifying the process of adding, updating, and removing external libraries in your applications. Syncfusion publishes the **Syncfusion.Maui.Toolkit** NuGet package, which can be found on [nuget.org](https://www.nuget.org/packages?q=Syncfusion.Maui.Toolkit).
+NuGet is a package management system used in Visual Studio, simplifying the process of adding, updating, and removing external libraries in your applications. Syncfusion<sup>®</sup> publishes the **Syncfusion.Maui.Toolkit** NuGet package, which can be found on [nuget.org](https://www.nuget.org/packages?q=Syncfusion.Maui.Toolkit).
 
 ## Installation using Package Manager UI
 
-The **NuGet Package Manager UI** allows you to search for, install, uninstall, and update Syncfusion Maui Toolkit packages easily. Follow these steps to install the Syncfusion.Maui.Toolkit package in your MAUI application:
+The **NuGet Package Manager UI** allows you to search for, install, uninstall, and update Syncfusion<sup>®</sup> Maui Toolkit packages easily. Follow these steps to install the Syncfusion.Maui.Toolkit package in your MAUI application:
 
 1. Right-click on your MAUI application or solution in the Solution Explorer and select **Manage NuGet Packages...**
 
@@ -33,13 +33,13 @@ The **NuGet Package Manager UI** allows you to search for, install, uninstall, a
 
     ![Maui NuGet Packages Install](images/InstallNuGet.png)
 
-4. Once the installation is complete, your application will have all the necessary **Syncfusion assemblies** required to begin developing using the **Syncfusion .NET MAUI Toolkit components**.
+4. Once the installation is complete, your application will have all the necessary **Syncfusion<sup>®</sup> assemblies** required to begin developing using the **Syncfusion<sup>®</sup> .NET MAUI Toolkit components**.
 
 ## Installation using Dotnet (.NET) CLI
 
 The [.NET Command Line Interface (CLI)](https://learn.microsoft.com/en-us/nuget/consume-packages/install-use-packages-dotnet-cli), allows you to add, restore, and manage packages without making changes to your project files manually. Here are the steps to install the **Syncfusion.Maui.Toolkit** package using the .NET CLI:
 
-Follow the below instructions to use the dotnet CLI command to install the Syncfusion Maui NuGet packages.
+Follow the below instructions to use the dotnet CLI command to install the Syncfusion<sup>®</sup> Maui NuGet packages.
 
 1. Open a command prompt and navigate to your **MAUI application directory**.
 
@@ -78,8 +78,8 @@ The **Package Manager Console**  provides an efficient way to install the **Sync
    
    ![Package Manager Console Output ](images/ConsoleInstallationProjectOutput.png)
 
-3. Once the installation completes, the console will display confirmation, and your application will now have access to the **Syncfusion .NET MAUI Toolkit components**.
+3. Once the installation completes, the console will display confirmation, and your application will now have access to the **Syncfusion<sup>®</sup> .NET MAUI Toolkit components**.
 
-4. Your application is now ready to leverage the high-performance and responsive components of the **Syncfusion .NET MAUI Toolkit**.
+4. Your application is now ready to leverage the high-performance and responsive components of the **Syncfusion<sup>®</sup> .NET MAUI Toolkit**.
 
 
