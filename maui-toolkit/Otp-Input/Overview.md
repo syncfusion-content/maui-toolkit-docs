@@ -1,7 +1,7 @@
 ---
 layout: post
 title: About .NET MAUI OtpInput control | Syncfusion®
-description: Learn here all about introduction of Syncfusion® .NET MAUI OtpInput (SfOtpInput) control and more.
+description: Learn here about introduction of Syncfusion® .NET MAUI OtpInput (SfOtpInput) control in your cross-platform applications.
 platform: maui-toolkit
 control: OtpInput
 documentation: ug
