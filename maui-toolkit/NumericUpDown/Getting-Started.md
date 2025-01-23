@@ -11,7 +11,7 @@ documentation: ug
 
 This section guides you through setting up and configuring a [Numeric UpDown](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericUpDown.SfNumericUpDown.html) in your .NET MAUI application. Follow the steps below to add a basic Numeric UpDown to your project.
 
-{% tabcontents %} 
+{% tabcontents %}
 {% tabcontent Visual Studio %}
 
 ## Prerequisites
@@ -181,7 +181,7 @@ Step 2: Add the [SfNumericUpDown](https://help.syncfusion.com/cr/maui-toolkit/Sy
 {% endtabs %}
 
 {% endtabcontent %}
-{% tabcontent Visual Studio Code %}
+{% endtabcontents %}
 
 ![.NET MAUI NumericUpDown Application](GettingStarted_images/gettingStarted_img.png)
 
@@ -210,9 +210,6 @@ sfNumericUpDown.CustomFormat = "0.000";
 
 {% endhighlight %}
 {% endtabs %}
-
-{% endtabcontent %}
-{% endtabcontents %}
 
 ![.NET MAUI NumericUpDown value editing](GettingStarted_images/editing_value.gif)
 
