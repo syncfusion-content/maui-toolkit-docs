@@ -13,8 +13,10 @@ An `OtpInput` is a user interface component commonly used in applications that r
 
 ## Key Features
 
-* `Length` - The length property lets you easily customize the number of OtpInput fields.
+* `Length` - Customize the number of input fields to match the desired OTP code length.
 
 * `StylingMode` - Supports different styling modes : Outlined, Filled, and Underlined.
 
-* `Type` - Supports different input types : Number, Password, and Text.
+* `Type` - Supports different input types : Number, Text, and Password.
+
+* `Separator` – Specifies the character or symbol used to separate each input field.

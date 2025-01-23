@@ -7,13 +7,14 @@ control: OtpInput
 documentation: ug
 ---
 
-# Styling Modes in OtpInput component
+# Styling Modes in OtpInput
 
-Styling modes specify the style variants for the input fields in the OtpInput component. These modes allows you to customize the appearance of the OtpInput fields.
+Styling modes specify the visual style variants for input fields in the OtpInput component, allowing you to customize appearances according to your application's design needs.
+
 
 ## Outline mode
 
-You can use the outline style by setting the `StylingMode` property to `Outlined`. The default styling mode is `Outlined`.
+You can customize the appearance of input fields with a border around them by setting the `StylingMode` property to `Outlined.`  This is the default styling mode for the OtpInput component.
 
 {% tabs %}	
 {% highlight xaml %}
@@ -33,7 +34,7 @@ SfOtpInput otpInput = new SfOtpInput()
 
 ## Filled mode
 
-You can use the filled style by setting the `StylingMode` property to `Filled`.
+You can customize the appearance of input fields by filling them with color by setting the `StylingMode` property to `Filled.` 
 
 {% tabs %}	
 {% highlight xaml %}
@@ -53,7 +54,7 @@ SfOtpInput otpInput = new SfOtpInput()
 
 ## Underline mode
 
-You can use the underline style by setting the `StylingMode` property to `Underlined`.
+You can customize the appearance of input fields with an underline by setting the `StylingMode` property to `Underlined.`
 
 {% tabs %}	
 {% highlight xaml %}

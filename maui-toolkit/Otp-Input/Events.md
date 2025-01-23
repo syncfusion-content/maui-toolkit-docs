@@ -7,11 +7,13 @@ control: OtpInput
 documentation: ug
 ---
 
-# Event in .NET MAUI OtpInput (SfOtpInput)
+# Events in .NET MAUI OtpInput (SfOtpInput)
+
+Events in the OtpInput control allow developers to respond to user interactions and input changes effectively. 
 
 ## ValueChanged event
 
-The OtpInput component triggers the `ValueChanged` event when the value of each OtpInput is changed. The `OtpInputValueChangedEventArgs` passed as an event argument provides the details of the each value is changed.
+The OtpInput component triggers the `ValueChanged` event whenever the value of an input field changes. This is particularly useful for validating input in real-time or triggering further actions as user input is completed. The `OtpInputValueChangedEventArgs` provides details about the specific changes in value.
 
 {% tabs %}
 {% highlight xaml %}
@@ -31,7 +33,9 @@ otpInput.ValueChanged += OnValueChanged;
 
 private void OnValueChanged(object sender, OtpInputValueChangedEventArgs e)
 {
-    // Codes that need to be executed once the input value is Changed.
+    // Code executed when the input value changes.
+    // Example: Update the interface to show the new input value.
+    Console.WriteLine("New Value: " + e.NewValue);
 }
 
 {% endhighlight %}

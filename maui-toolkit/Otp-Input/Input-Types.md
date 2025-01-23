@@ -7,7 +7,7 @@ control: OtpInput
 documentation: ug
 ---
 
-# Input Types in MAUI OTP Input component
+# Input Types in .NET MAUI OTP Input
 
 ## Types
 

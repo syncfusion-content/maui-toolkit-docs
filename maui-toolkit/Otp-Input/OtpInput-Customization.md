@@ -94,7 +94,7 @@ SfOtpInput otpInput = new SfOtpInput()
 
 ## Setting input length
 
-You can specify the length of OTP by using the `Length` property. The default value is `4`.
+You can specify the number of input fields to match the desired OTP code length by using the `Length` property. The default value is `4`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -114,7 +114,7 @@ SfOtpInput otpInput = new SfOtpInput()
 
 ## Disable inputs
 
-You can disable the OtpInput component by using the `IsEnabled` property. By default the value is `true`.
+You can disable the OtpInput component by using the `IsEnabled` property. By default, this property's value is set to `True.`
 
 {% tabs %}
 {% highlight xaml %}
@@ -132,9 +132,9 @@ SfOtpInput otpInput = new SfOtpInput()
 {% endhighlight %}
 {% endtabs %}
 
-## Input Background
+## Input background
 
-You can specify the color of OtpInput using `InputBackground` property.
+You can set the `InputBackground` property to any color to customize the appearance of the input fields. The `InputBackground` property applies only when `StylingMode` is set to `Filled.`
 
 {% tabs %}
 {% highlight xaml %}
@@ -153,11 +153,9 @@ SfOtpInput otpInput = new SfOtpInput()
 {% endhighlight %}
 {% endtabs %}
 
-N> The `InputBackground` property applies only when `StylingMode` is set to `Filled.`
-
 ## Stroke
 
-You can specify the color of border in OtpInput using `Stroke` property.
+You can set the `Stroke` property to any color to customize the border appearance of the input fields. 
 
 {% tabs %}
 {% highlight xaml %}
@@ -175,9 +173,9 @@ SfOtpInput otpInput = new SfOtpInput()
 {% endhighlight %}
 {% endtabs %}
 
-## TextColor
+## Text color
 
-You can specify the color of text in OtpInput using `TextColor` property.
+You can set the `TextColor` property to any color to customize the text appearance of the input fields. 
 
 {% tabs %}
 {% highlight xaml %}
@@ -195,9 +193,9 @@ SfOtpInput otpInput = new SfOtpInput()
 {% endhighlight %}
 {% endtabs %}
 
-## MaskCharacter
+## Mask character
 
-You can specify the character used to mask the text in OtpInput using `MaskCharacter` property.
+You can set the `MaskCharacter` property to any character to define how the masked input is displayed, enhancing security by obscuring sensitive information.
 
 {% tabs %}
 {% highlight xaml %}
@@ -218,13 +216,13 @@ SfOtpInput otpInput = new SfOtpInput()
 
 N> The `MaskCharacter` property applies only when `Type` is set to `Password.`
 
-## InputState
+## Input state
 
 The `InputState` property in the OtpInput allows you to visually represent the validation status of the input fields.
 
 ### Success
 
-The `Stroke` of OtpInput turns green when `InputState` is set to `Success.`
+ The `InputState` can be set to `Success` to indicate that the input is correct. When the `InputState` is set to `Success,` the stroke of the OtpInput turns green.
 
 {% tabs %}
 {% highlight xaml %}
@@ -244,7 +242,7 @@ SfOtpInput otpInput = new SfOtpInput()
 
 ### Warning
 
-The `Stroke` of OtpInput turns yellow when `InputState` is set to `Warning.`
+The `InputState` can be set to `Warning` to indicate a potential issue with the input, prompting the user to correct it. The stroke of the OtpInput turns yellow when `InputState` is set to `Warning.`
 
 {% tabs %}
 {% highlight xaml %}
@@ -264,7 +262,7 @@ SfOtpInput otpInput = new SfOtpInput()
 
 ### Error
 
-The `Stroke` of OtpInput turns red when `InputState` is set to `Error.`
+The `InputState` can be set to `Error` to indicate that the input is invalid or requires correction. The stroke of OtpInput turns red when `InputState` is set to `Error.`
 
 {% tabs %}
 {% highlight xaml %}
