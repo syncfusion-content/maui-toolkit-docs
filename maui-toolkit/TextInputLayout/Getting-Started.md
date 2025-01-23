@@ -91,7 +91,7 @@ Add the following namespace to add [.NET MAUI Text Input Layout](https://help.sy
 Add any input view control such as [Entry](https://learn.microsoft.com/en-us/dotnet/maui/user-interface/controls/entry) and [Editor](https://learn.microsoft.com/en-us/dotnet/maui/user-interface/controls/editor) controls and add hint label (floating label).
 
 {% endtabcontent %}
-{% tabcontent Visual Studio COde%}
+{% tabcontent Visual Studio Code%}
 
 
 ## Prerequisites
