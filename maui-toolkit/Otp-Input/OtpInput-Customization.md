@@ -195,7 +195,7 @@ SfOtpInput otpInput = new SfOtpInput()
 
 ## Mask character
 
-You can set the `MaskCharacter` property to any character to define how the masked input is displayed, enhancing security by obscuring sensitive information.
+You can set the `MaskCharacter` property to any character to define how the masked input is displayed, enhancing security by obscuring sensitive information. The `MaskCharacter` property applies only when `Type` is set to `Password.`
 
 {% tabs %}
 {% highlight xaml %}
@@ -214,15 +214,13 @@ SfOtpInput otpInput = new SfOtpInput()
 {% endhighlight %}
 {% endtabs %}
 
-N> The `MaskCharacter` property applies only when `Type` is set to `Password.`
-
 ## Input state
 
 The `InputState` property in the OtpInput allows you to visually represent the validation status of the input fields.
 
 ### Success
 
- The `InputState` can be set to `Success` to indicate that the input is correct. When the `InputState` is set to `Success,` the stroke of the OtpInput turns green.
+The `InputState` can be set to `Success` to indicate that the input is correct. When the `InputState` is set to `Success,` the stroke of the OtpInput turns green.
 
 {% tabs %}
 {% highlight xaml %}
