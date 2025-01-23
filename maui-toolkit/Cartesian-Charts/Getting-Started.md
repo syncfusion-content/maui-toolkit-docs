@@ -133,7 +133,7 @@ Before proceeding, ensure that the following are set up:
 
 ## Step 3: Register the handler
 
-In the **MauiProgram.cs** file, register the handler for Syncfusion® Toolkit.
+In the **MauiProgram.cs** file, register the handler for Syncfusion<sup>®</sup> Toolkit.
 
 {% tabs %}
 {% highlight C# tabtitle="MauiProgram.cs" hl_lines="1 9" %}

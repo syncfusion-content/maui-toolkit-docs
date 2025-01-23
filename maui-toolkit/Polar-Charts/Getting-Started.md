@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started with .NET MAUI Polar Chart
 
-This section explains how to populate the Polar Chart with data, including adding a title, data labels, a legend, tooltips, and markers. It also covers the essential aspects needed to get started with the Polar Chart.
+This section explains how to populate the Polar Chart with data, including adding a title, data labels, a legend, tooltips, and markers. It also covers the essential aspects needed to get started with the [Polar Chart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfPolarChart.html).
 
 {% tabcontents %}
 {% tabcontent Visual Studio %}
@@ -35,7 +35,7 @@ Before proceeding, ensure that the following are set up:
 
 ## Step 3: Register the handler
 
-In the **MauiProgram.cs** file, register the handler for Syncfusion® Toolkit.
+In the **MauiProgram.cs** file, register the handler for Syncfusion<sup>®</sup> Toolkit.
 
 {% tabs %}
 {% highlight C# tabtitle="MauiProgram.cs" hl_lines="1 9" %}
@@ -65,7 +65,7 @@ In the **MauiProgram.cs** file, register the handler for Syncfusion® Toolkit.
 
 ## Step 4: Add .NET MAUI Polar Chart
 
-1. Import the `Syncfusion.Maui.Toolkit.Charts` namespace into your code.
+1. To initialize the control, import the `Syncfusion.Maui.Toolkit.Charts` namespace into your code.
 2. Initialize an instance of the [SfPolarChart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfPolarChart.html) control.
 
 {% tabs %}
@@ -134,7 +134,7 @@ Before proceeding, ensure that the following are set up:
 
 ## Step 3: Register the handler
 
-In the **MauiProgram.cs** file, register the handler for Syncfusion® Toolkit.
+In the **MauiProgram.cs** file, register the handler for Syncfusion<sup>®</sup> Toolkit.
 
 {% tabs %}
 {% highlight C# tabtitle="MauiProgram.cs" hl_lines="1 9" %}
@@ -164,7 +164,7 @@ In the **MauiProgram.cs** file, register the handler for Syncfusion® Toolkit.
 
 ## Step 4: Add .NET MAUI Polar Chart
 
-1. Import the `Syncfusion.Maui.Toolkit.Charts` namespace into your code.
+1. To initialize the control, import the `Syncfusion.Maui.Toolkit.Charts` namespace into your code.
 2. Initialize an instance of the [SfPolarChart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfPolarChart.html) control.
 
 {% tabs %}
