@@ -34,6 +34,8 @@ SfOtpInput otpInput = new SfOtpInput()
 {% endhighlight %}
 {% endtabs %}
 
+![Number Image for OtpInput](images/number.png)
+
 ### Text type
 
 You can set the `Type` property to `Text` for inputs that may include both letters and numbers, suitable for alphanumeric OTPs.
@@ -54,6 +56,8 @@ SfOtpInput otpInput = new SfOtpInput()
 
 {% endhighlight %}
 {% endtabs %}
+
+![Text Image for OtpInput](images/text.png)
 
 ### Password type
 
@@ -76,6 +80,8 @@ SfOtpInput otpInput = new SfOtpInput()
 {% endhighlight %}
 {% endtabs %}
 
+![Password Image for OtpInput](images/password.png)
+
 ## Value
 
 You can specify the value of OtpInput by using the `Value` property.
@@ -96,3 +102,5 @@ SfOtpInput otpInput = new SfOtpInput()
 
 {% endhighlight %}
 {% endtabs %}
+
+![Value Image for OtpInput](images/value.png)

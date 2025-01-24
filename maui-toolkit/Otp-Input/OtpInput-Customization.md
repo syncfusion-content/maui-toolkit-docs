@@ -33,6 +33,8 @@ SfOtpInput otpInput = new SfOtpInput()
 {% endhighlight %}
 {% endtabs %}
 
+![Placeholder Image for OtpInput](images/placeholder.png)
+
 For placeholders with multiple characters, available input fields will sequentially display each character.
 
 {% tabs %}	
@@ -50,6 +52,8 @@ SfOtpInput otpInput = new SfOtpInput()
 
 {% endhighlight %}
 {% endtabs %}
+
+![Placeholder Image for OtpInput](images/placeholderLength.png)
 
 ### PlaceholderColor
 
@@ -72,6 +76,8 @@ SfOtpInput otpInput = new SfOtpInput()
 {% endhighlight %}
 {% endtabs %}
 
+![PlaceholderColor Image for OtpInput](images/placeholderColor.png)
+
 ## Separator
 
 The `Separator` property defines a character or symbol used to separate each input field, visually distinguishing inputs.
@@ -91,6 +97,8 @@ SfOtpInput otpInput = new SfOtpInput()
 
 {% endhighlight %}
 {% endtabs %}
+
+![Separator Image for OtpInput](images/separator.png)
 
 ## Setting input length
 
@@ -112,6 +120,8 @@ SfOtpInput otpInput = new SfOtpInput()
 {% endhighlight %}
 {% endtabs %}
 
+![InputLength Image for OtpInput](images/length.png)
+
 ## Disable inputs
 
 You can disable the OtpInput component by using the `IsEnabled` property. By default, this property's value is set to `True.`
@@ -131,6 +141,8 @@ SfOtpInput otpInput = new SfOtpInput()
 
 {% endhighlight %}
 {% endtabs %}
+
+![Disabled Image for OtpInput](images/isenabled.png)
 
 ## Input background
 
@@ -153,6 +165,8 @@ SfOtpInput otpInput = new SfOtpInput()
 {% endhighlight %}
 {% endtabs %}
 
+![InputBackground Image for OtpInput](images/inputBackground.png)
+
 ## Stroke
 
 You can set the `Stroke` property to any color to customize the border appearance of the input fields. 
@@ -172,6 +186,8 @@ SfOtpInput otpInput = new SfOtpInput()
 
 {% endhighlight %}
 {% endtabs %}
+
+![Stroke Image for OtpInput](images/stroke.png)
 
 ## Text color
 
@@ -195,6 +211,8 @@ SfOtpInput otpInput = new SfOtpInput()
 {% endhighlight %}
 {% endtabs %}
 
+![TextColor Image for OtpInput](images/textColor.png)
+
 ## Mask character
 
 You can set the `MaskCharacter` property to any character to define how the masked input is displayed, enhancing security by obscuring sensitive information. The `MaskCharacter` property applies only when `Type` is set to `Password.`
@@ -215,6 +233,8 @@ SfOtpInput otpInput = new SfOtpInput()
 
 {% endhighlight %}
 {% endtabs %}
+
+![MaskCharacter Image for OtpInput](images/maskCharacter.png)
 
 ## Input state
 
@@ -240,6 +260,8 @@ SfOtpInput otpInput = new SfOtpInput()
 {% endhighlight %}
 {% endtabs %}
 
+![Success state Image for OtpInput](images/success.png)
+
 ### Warning
 
 The `InputState` can be set to `Warning` to indicate a potential issue with the input, prompting the user to correct it. The stroke of the OtpInput turns orange-brown when `InputState` is set to `Warning.`
@@ -260,6 +282,8 @@ SfOtpInput otpInput = new SfOtpInput()
 {% endhighlight %}
 {% endtabs %}
 
+![Warning state Image for OtpInput](images/warning.png)
+
 ### Error
 
 The `InputState` can be set to `Error` to indicate that the input is invalid or requires correction. The stroke of OtpInput turns red when `InputState` is set to `Error.`
@@ -279,3 +303,5 @@ SfOtpInput otpInput = new SfOtpInput()
 
 {% endhighlight %}
 {% endtabs %}
+
+![Error state Image for OtpInput](images/error.png)

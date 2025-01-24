@@ -32,6 +32,8 @@ SfOtpInput otpInput = new SfOtpInput()
 {% endhighlight %}
 {% endtabs %}
 
+![Outlined Image for OtpInput](images/outlined.png)
+
 ## Filled mode
 
 You can customize the appearance of input fields by filling them with color by setting the `StylingMode` property to `Filled.` 
@@ -52,6 +54,8 @@ SfOtpInput otpInput = new SfOtpInput()
 {% endhighlight %}
 {% endtabs %}
 
+![Filled Image for OtpInput](images/filled.png)
+
 ## Underline mode
 
 You can customize the appearance of input fields with an underline by setting the `StylingMode` property to `Underlined.`
@@ -71,3 +75,5 @@ SfOtpInput otpInput = new SfOtpInput()
 
 {% endhighlight %}
 {% endtabs %}
+
+![Underlined Image for OtpInput](images/underlined.png)

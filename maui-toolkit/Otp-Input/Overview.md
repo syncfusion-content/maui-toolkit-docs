@@ -11,6 +11,8 @@ documentation: ug
 
 An `OtpInput` is a user interface component commonly used in applications that require one-time password (OTP) verification for authentication. This simplify and streamline the process of entering OTP codes received via SMS, email, or other communication channels.
 
+![.NET MAUI OtpInput.](images/overview.png)
+
 ## Key Features
 
 * `Length` - Customize the number of input fields to match the desired OTP code length.
