@@ -12,59 +12,33 @@ keywords: .net maui cartesian chart, .net maui charting, cartesian chart maui, s
 
 This section explains how to populate the Cartesian chart with data, a title, data labels, a legend, and tooltips, as well as the essential aspects for getting started with the SfCartesianChart.
 
+{% tabcontents %}
+{% tabcontent Visual Studio %}
+
 ## Prerequisites
 
 Before proceeding, ensure that the following are set up:
-1. [.NET 8 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/8.0) or later is installed.
-2. A .NET MAUI development environment is configured using either:
-    - Visual Studio 2022 (version 17.8 or later), or
-    - Visual Studio Code, with the .NET MAUI workload installed and configured. For more information on setting up Visual Studio Code with .NET MAUI, see the official [documentation.](https://learn.microsoft.com/en-us/dotnet/maui/get-started/installation?view=net-maui-8.0&tabs=visual-studio-code)
 
-## Step 1: Create a New .NET MAUI Project
+1. Install [.NET 8 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/8.0) or later is installed.
+2. Set up a .NET MAUI environment with Visual Studio 2022 (v17.8 or later).
 
-{% tabcontents %}
-{% tabcontent Visual Studio %}
+## Step 1: Create a new .NET MAUI project
 
 1. Go to **File > New > Project** and choose the **.NET MAUI App** template.
-2. Name the project and choose a location. Click **Next**.
-3. Select the .NET framework version and click **Create**.
+2. Name the project and choose a location. Then, click **Next.**
+3. Select the .NET framework version and click **Create.**
 
-{% endtabcontent %}
-{% tabcontent Visual Studio Code %}
+## Step 2: Install the Syncfusion<sup>®</sup> MAUI Toolkit Package
 
-1. Open the command palette by pressing `Ctrl+Shift+P` and type **.NET: New Project** and press **Enter**.
-2. Choose the **.NET MAUI App** template.
-3. Select the project location, type the project name, and press **Enter**.
-4. Choose **Create project**.
-
-{% endtabcontent %}
-{% endtabcontents %}
-
-## Step 2: Install the Syncfusion® .NET MAUI Toolkit Package
-
-{% tabcontents %}
-{% tabcontent Visual Studio %}
-1. In **Solution Explorer**, right-click the project and choose **Manage NuGet Packages**.
+1. In **Solution Explorer,** right-click the project and choose **Manage NuGet Packages.**
 2. Search for [Syncfusion.Maui.Toolkit](https://www.nuget.org/packages/Syncfusion.Maui.Toolkit/) and install the latest version.
 3. Ensure the necessary dependencies are installed correctly, and the project is restored.
-
-{% endtabcontent %}
-{% tabcontent Visual Studio Code %}
-
-1. Press <kbd>Ctrl</kbd> + <kbd>`</kbd> (backtick) to open the integrated terminal in Visual Studio Code.
-2. Ensure you're in the project root directory where your .csproj file is located.
-3. Run the command `dotnet add package Syncfusion.Maui.Toolkit` to install the Syncfusion<sup>®</sup> .NET MAUI Toolkit NuGet package.
-4. To ensure all dependencies are installed, run `dotnet restore`.
-
-{% endtabcontent %}
-{% endtabcontents %}
 
 ## Step 3: Register the handler
 
 In the **MauiProgram.cs** file, register the handler for Syncfusion® Toolkit.
 
 {% tabs %}
-
 {% highlight C# tabtitle="MauiProgram.cs" hl_lines="1 9" %}
 
     using Syncfusion.Maui.Toolkit.Hosting;
@@ -88,16 +62,14 @@ In the **MauiProgram.cs** file, register the handler for Syncfusion® Toolkit.
     }
 
 {% endhighlight %}
-
 {% endtabs %}
 
 ## Step 4: Add .NET MAUI Cartesian Chart
 
 1. Import the `Syncfusion.Maui.Toolkit.Charts` namespace into your code.
-2. Initialize an instance of the `SfCartesianChart` control.
+2. Initialize an instance of the [SfCartesianChart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html) control.
 
 {% tabs %}
-
 {% highlight XAML %}
 
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
@@ -130,15 +102,112 @@ public partial class MainPage : ContentPage
 }
 
 {% endhighlight %}
-
 {% endtabs %}
+
+{% endtabcontent %}
+
+{% tabcontent Visual Studio Code %}
+
+## Prerequisites
+
+Before proceeding, ensure that the following are set up:
+
+1. Install [.NET 8 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/8.0) or later is installed.
+2. Set up a .NET MAUI environment with Visual Studio Code.
+3. Ensure that the .NET MAUI extension is installed and configured as described [here.](https://learn.microsoft.com/en-us/dotnet/maui/get-started/installation?view=net-maui-8.0&tabs=visual-studio-code)
+
+## Step 1: Create a new .NET MAUI project
+
+1. Open the command palette by pressing `Ctrl+Shift+P` and type **.NET:New Project** and enter.
+2. Choose the **.NET MAUI App** template.
+3. Select the project location, type the project name and press **Enter.**
+4. Then choose **Create project.**
+
+## Step 2: Install the Syncfusion<sup>®</sup> MAUI Toolkit Package
+
+1. Press <kbd>Ctrl</kbd> + <kbd>`</kbd> (backtick) to open the integrated terminal in Visual Studio Code.
+2. Ensure you're in the project root directory where your .csproj file is located.
+3. Run the command `dotnet add package Syncfusion.Maui.Toolkit` to install the Syncfusion<sup>®</sup> .NET MAUI Toolkit NuGet package.
+4. To ensure all dependencies are installed, run `dotnet restore`.
+
+## Step 3: Register the handler
+
+In the **MauiProgram.cs** file, register the handler for Syncfusion® Toolkit.
+
+{% tabs %}
+{% highlight C# tabtitle="MauiProgram.cs" hl_lines="1 9" %}
+
+    using Syncfusion.Maui.Toolkit.Hosting;
+
+    public static class MauiProgram
+    {
+	    public static MauiApp CreateMauiApp()
+	    {
+	        var builder = MauiApp.CreateBuilder();
+		    builder
+			    .ConfigureSyncfusionToolkit()
+			    .UseMauiApp<App>()
+			    .ConfigureFonts(fonts =>
+			    {
+				    fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
+				    fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
+			    });
+
+		    return builder.Build();
+	    }
+    }
+
+{% endhighlight %}
+{% endtabs %}
+
+## Step 4: Add .NET MAUI Cartesian Chart
+
+1. Import the `Syncfusion.Maui.Toolkit.Charts` namespace into your code.
+2. Initialize an instance of the [SfCartesianChart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html) control.
+
+{% tabs %}
+{% highlight XAML %}
+
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:chart="clr-namespace:Syncfusion.Maui.Toolkit.Charts;assembly=Syncfusion.Maui.Toolkit"
+             x:Class="GettingStarted.MainPage">
+
+        <chart:SfCartesianChart/>
+
+</ContentPage>
+
+{% endhighlight %}
+
+{% highlight C# %}
+
+using Syncfusion.Maui.Toolkit.Charts;
+
+. . .
+
+public partial class MainPage : ContentPage
+{
+    public MainPage()
+    {
+        InitializeComponent();
+        // Create a new instance of SfCartesianChart which is a type of chart control.
+        SfCartesianChart chart = new SfCartesianChart();
+        // Set the newly created chart as the content of the current view.
+        this.Content = chart;
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+{% endtabcontent %}
+{% endtabcontents %}
 
 ### Initialize view model
 
 Define a simple data model to represent a data point in the chart:
 
 {% tabs %}  
-
 {% highlight c# %}
 
 public class PersonModel   
@@ -148,7 +217,6 @@ public class PersonModel
 }
 
 {% endhighlight %} 
-
 {% endtabs %} 
 
 Next, create a `PersonViewModel` class and initialize a list of `PersonModel` objects:
@@ -175,7 +243,6 @@ public class PersonViewModel
  }
 
 {% endhighlight %} 
-
 {% endtabs %} 
 
 Set the `PersonViewModel` instance as the `BindingContext` of your view to bind the `PersonViewModel` properties to the chart:
@@ -183,7 +250,6 @@ Set the `PersonViewModel` instance as the `BindingContext` of your view to bind 
 N> If you prefer to set the `BindingContext` in XAML, make sure to add the appropriate namespace for the `PersonViewModel` class in your XAML page.
 
 {% tabs %} 
-
 {% highlight xaml %}
 
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
