@@ -196,16 +196,14 @@ You can set the `TextColor` property to any color to customize the text appearan
 {% tabs %}
 {% highlight xaml %}
 
-<otpInput:SfOtpInput TextColor="Orange" Value="1234" Type="Number" />
+<otpInput:SfOtpInput TextColor="Orange" />
 
 {% endhighlight %}
 {% highlight C# %}
 
 SfOtpInput otpInput = new SfOtpInput()
 {
-    TextColor = Colors.Orange,
-    Value = "1234",
-    Type = OtpInputType.Number
+    TextColor = Colors.Orange
 };
 
 {% endhighlight %}
