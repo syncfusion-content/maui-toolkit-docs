@@ -36,7 +36,7 @@ Focuses the previous input in the OTP.
 RightArrow
 </td>
 <td>
-Focuses the next input in OTP
+Focuses the next input in OTP.
 </td>
 </tr>
 <tr>
