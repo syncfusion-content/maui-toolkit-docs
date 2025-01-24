@@ -180,14 +180,16 @@ You can set the `TextColor` property to any color to customize the text appearan
 {% tabs %}
 {% highlight xaml %}
 
-<otpInput:SfOtpInput TextColor="Orange" />
+<otpInput:SfOtpInput TextColor="Orange" Value="1234" Type="Number" />
 
 {% endhighlight %}
 {% highlight C# %}
 
 SfOtpInput otpInput = new SfOtpInput()
 {
-    TextColor = Colors.Orange
+    TextColor = Colors.Orange,
+    Value = "1234",
+    Type = OtpInputType.Number
 };
 
 {% endhighlight %}
@@ -240,7 +242,7 @@ SfOtpInput otpInput = new SfOtpInput()
 
 ### Warning
 
-The `InputState` can be set to `Warning` to indicate a potential issue with the input, prompting the user to correct it. The stroke of the OtpInput turns yellow when `InputState` is set to `Warning.`
+The `InputState` can be set to `Warning` to indicate a potential issue with the input, prompting the user to correct it. The stroke of the OtpInput turns orange-brown when `InputState` is set to `Warning.`
 
 {% tabs %}
 {% highlight xaml %}
