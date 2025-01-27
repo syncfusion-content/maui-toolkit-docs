@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started with .NET MAUI Funnel Chart
 
-This section explains how to populate the Funnel Chart with data, including adding a title, data labels, a legend, and tooltips. It also covers the essential aspects needed to get started with the Funnel Chart.
+This section explains how to populate the Funnel Chart with data, including adding a title, data labels, a legend, and tooltips. It also covers the essential aspects needed to get started with the [Funnel Chart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfFunnelChart.html).
 
 {% tabcontents %}
 {% tabcontent Visual Studio %}
@@ -35,7 +35,7 @@ Before proceeding, ensure that the following are set up:
 
 ## Step 3: Register the handler
 
-In the **MauiProgram.cs** file, register the handler for Syncfusion® Toolkit.
+In the **MauiProgram.cs** file, register the handler for Syncfusion<sup>®</sup> Toolkit.
 
 {% tabs %}
 {% highlight C# tabtitle="MauiProgram.cs" hl_lines="1 9" %}
@@ -65,7 +65,8 @@ In the **MauiProgram.cs** file, register the handler for Syncfusion® Toolkit.
 
 ## Step 4: Add .NET MAUI Funnel Chart
 
-1. Import the `Syncfusion.Maui.Toolkit.Charts` namespace into your code.
+1. To initialize the control, import the `Syncfusion.Maui.Toolkit.Charts` namespace into your code.
+
 2. Initialize an instance of the [SfFunnelChart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfFunnelChart.html) control.
 
 {% tabs %}
@@ -130,7 +131,7 @@ Before proceeding, ensure that the following are set up:
 
 ## Step 3: Register the handler
 
-In the **MauiProgram.cs** file, register the handler for Syncfusion® Toolkit.
+In the **MauiProgram.cs** file, register the handler for Syncfusion<sup>®</sup> Toolkit.
 
 {% tabs %}
 {% highlight C# tabtitle="MauiProgram.cs" hl_lines="1 9" %}
@@ -160,7 +161,8 @@ In the **MauiProgram.cs** file, register the handler for Syncfusion® Toolkit.
 
 ## Step 4: Add .NET MAUI Funnel Chart
 
-1. Import the `Syncfusion.Maui.Toolkit.Charts` namespace into your code.
+1. To initialize the control, import the `Syncfusion.Maui.Toolkit.Charts` namespace into your code.
+
 2. Initialize an instance of the [SfFunnelChart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfFunnelChart.html) control.
 
 {% tabs %}
