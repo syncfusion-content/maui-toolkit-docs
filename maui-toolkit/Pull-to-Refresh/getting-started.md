@@ -25,11 +25,6 @@ Before proceeding, ensure the following are in place:
  1. Go to **File > New > Project** and choose the **.NET MAUI App** template.
  2. Name the project and choose a location. Then, click **Next**.
  3. Select the .NET framework version and click Create.
-
- 1. Open the command palette by pressing `Ctrl+Shift+P` and type **.NET:New Project** and Enter.
- 2. Choose the **.NET MAUI App** template.
- 3. Select the project location, type the project name and press Enter.
- 4. Then choose **Create Project**.
  
 ## Step 2: Install the Syncfusion MAUI ToolKit NuGet Package
 
