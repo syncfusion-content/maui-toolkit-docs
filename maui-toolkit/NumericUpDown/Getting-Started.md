@@ -182,6 +182,7 @@ Step 2: Add the [SfNumericUpDown](https://help.syncfusion.com/cr/maui-toolkit/Sy
 
 {% endtabcontent %}
 {% endtabcontents %}
+
 ![.NET MAUI NumericUpDown Application](GettingStarted_images/gettingStarted_img.png)
 
 ## Editing the value
