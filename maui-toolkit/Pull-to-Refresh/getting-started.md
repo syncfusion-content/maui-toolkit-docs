@@ -95,62 +95,6 @@ public partial class MainPage : ContentPage
 {% endhighlight %}
 {% endtabs %}
 
-## Step 5: Define the PullableContent
-
-The `PullableContent` view serves as the designated area where users can initiate the pull-to-refresh action, enabling them to refresh and update the content within the view.
-
-To show the progress indicator while updating the view, set `IsRefreshing` property to `True` using `Refreshing` event. Once view is updated, remove the progress indicator by setting `IsRefreshing` property to `False`.
-
-{% tabs %}
-{% highlight xaml tabtitle="MainPage.xaml" hl_lines="7 11" %}
-
-<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="GettingStarted.MainPage"
-             xmlns:PullToRefreshControl="clr-namespace:Syncfusion.Maui.Toolkit.PullToRefresh;assembly=Syncfusion.Maui.Toolkit">
-    <PullToRefreshControl:SfPullToRefresh x:Name="pullToRefresh">
-        <PullToRefreshControl:SfPullToRefresh.PullableContent>
-            <StackLayout>
-                <Label Text="sample page" />
-            </StackLayout>
-        </PullToRefreshControl:SfPullToRefresh.PullableContent>
-    </PullToRefreshControl:SfPullToRefresh>
-</ContentPage>
-
-{% endhighlight %}
-{% highlight c# tabtitle="MainPage.xaml.cs" hl_lines="12" %}
-
-public partial class MainPage : ContentPage
-{
-    public MainPage()
-    {
-        InitializeComponent();
-        this.pullToRefresh.Refreshing += PullToRefresh_Refreshing;
-    }
-
-    private async void PullToRefresh_Refreshing(object sender, EventArgs e)
-    {
-        this.pullToRefresh.IsRefreshing = true;
-        await Task.Delay(2000);
-        this.pullToRefresh.IsRefreshing = false;
-    }
-}
-
-{% endhighlight %}
-{% endtabs %}
-
-## Step 6: Running the Application
-
-Press **F5** to build and run the application. Once compiled, perform pull-to-refresh action on pullable content view to refresh the view.
-
-![.NET MAUI PullToRefresh with slide on top transition mode](Images/getting-started//maui-pull-to-refresh-slideontop-mode.gif)
-
-If we run the above sample with `TransitionMode` set to `Push`, the output will be as shown in the following.
-
-![.NET MAUI PullToRefresh with slide on top transition mode](Images/getting-started//maui-pull-to-refresh-push-mode.gif).
-
-N> PullToRefresh does not have a view. So, it is mandatory to set size or LayoutOptions when loaded inside any layouts.
-
 {% endtabcontent %}
 {% tabcontent Visual Studio Code %}
 
@@ -238,6 +182,8 @@ public partial class MainPage : ContentPage
 
 {% endhighlight %}
 {% endtabs %}
+{% endtabcontent %}
+{% endtabcontents %}
 
 ## Step 5: Define the PullableContent
 
@@ -295,5 +241,3 @@ If we run the above sample with `TransitionMode` set to `Push`, the output will 
 
 N> PullToRefresh does not have a view. So, it is mandatory to set size or LayoutOptions when loaded inside any layouts.
 
-{% endtabcontent %}
-{% endtabcontents %}
