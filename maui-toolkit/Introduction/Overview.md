@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Comprehensive Guide to Syncfusion Toolkit for .NET MAUI
-description: Overview of the Syncfusion .NET MAUI Toolkit, detailed steps on how to read the user guide effectively, and supported platforms
+title: Comprehensive Guide to Syncfusion® Toolkit for .NET MAUI
+description: Overview of the Syncfusion® .NET MAUI Toolkit, detailed steps on how to read the user guide effectively, and supported platforms
 platform: maui-toolkit
 control: Overview
 documentation: ug
 ---
 
-# Welcome to Syncfusion Toolkit for .NET MAUI
+# Welcome to Syncfusion<sup>®</sup> Toolkit for .NET MAUI
 
-Syncfusion Toolkit for .NET MAUI is a comprehensive collection of .NET MAUI components for building modern Mobile and Desktop applications. It includes our first set of .NET MAUI UI controls such as Charts, Navigation Drawer, and Tab View.
+Syncfusion<sup>®</sup> Toolkit for .NET MAUI is a comprehensive collection of .NET MAUI components for building modern Mobile and Desktop applications. It includes our first set of .NET MAUI UI controls such as Charts, Navigation Drawer, and Tab View.
 
 ## How to read this user guide most effectively
 
