@@ -1,7 +1,7 @@
 ---
 layout: post
-title: About .NET MAUI Botton Sheet control | Syncfusion<sup>®</sup>
-description: Learn here all about introduction of Syncfusion<sup>®</sup> .NET MAUI Bottom Sheet (SfBottomSheet) control and more.
+title: About .NET MAUI Botton Sheet control | Syncfusion®
+description: Learn here all about introduction of Syncfusion® .NET MAUI Bottom Sheet (SfBottomSheet) control and more.
 platform: maui-toolkit
 control: BottomSheet
 documentation: ug

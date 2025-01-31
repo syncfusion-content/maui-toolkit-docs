@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Customization in .NET MAUI Bottom Sheet (SfBottomSheet) | Syncfusion<sup>®</sup>
-description: Learn how to customize bottom sheet in Syncfusion<sup>®</sup> .NET MAUI Bottom Sheet (SfbottomSheet). Explore the options to enhance your bottom sheet appearance.
+title: Customization in .NET MAUI Bottom Sheet (SfBottomSheet) | Syncfusion®
+description: Learn how to customize bottom sheet in Syncfusion® .NET MAUI Bottom Sheet (SfbottomSheet). Explore the options to enhance your bottom sheet appearance.
 platform: maui-toolkit
 control: BottomSheet
 documentation: ug

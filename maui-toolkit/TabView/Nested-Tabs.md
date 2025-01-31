@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Nested Tabs in .NET MAUI Tab View (SfTabView) control | Syncfusion<sup>®</sup>
-description: Learn here about the nested tab support in Syncfusion<sup>®</sup> .NET MAUI Tab View (SfTabView) control with code examples.
+title: Nested Tabs in .NET MAUI Tab View (SfTabView) control | Syncfusion®
+description: Learn here about the nested tab support in Syncfusion® .NET MAUI Tab View (SfTabView) control with code examples.
 platform: maui-toolkit
 control: Tab View
 documentation: ug
