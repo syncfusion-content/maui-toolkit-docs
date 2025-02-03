@@ -196,7 +196,8 @@ This ensures that only valid numeric input is accepted and displayed according t
 {% tabs %}
 {% highlight xaml %}
 
-<editors:SfNumericUpDown HorizontalOptions="Center" 
+<editors:SfNumericUpDown WidthRequest="200"
+                         HorizontalOptions="Center" 
                          VerticalOptions="Center" 
                          CustomFormat="0.000" />
 
@@ -204,6 +205,7 @@ This ensures that only valid numeric input is accepted and displayed according t
 {% highlight C# %}
 
 SfNumericUpDown sfNumericUpDown = new SfNumericUpDown();
+sfNumericUpDown.WidthRequest = 200;
 sfNumericUpDown.HorizontalOptions = LayoutOptions.Center;
 sfNumericUpDown.VerticalOptions = LayoutOptions.Center;
 sfNumericUpDown.CustomFormat = "0.000";
@@ -226,7 +228,8 @@ N> Clicking the up or down button increases or decreases the value based on the 
 {% tabs %}
 {% highlight xaml %}
 
-<editors:SfNumericUpDown HorizontalOptions="Center" 
+<editors:SfNumericUpDown WidthRequest="200" 
+                         HorizontalOptions="Center" 
                          VerticalOptions="Center" 
                          CustomFormat="0.000"
                          SmallChange="4" />
@@ -235,6 +238,7 @@ N> Clicking the up or down button increases or decreases the value based on the 
 {% highlight C# %}
 
 SfNumericUpDown sfNumericUpDown = new SfNumericUpDown();
+sfNumericUpDown.WidthRequest = 200;
 sfNumericUpDown.HorizontalOptions = LayoutOptions.Center;
 sfNumericUpDown.VerticalOptions = LayoutOptions.Center;
 sfNumericUpDown.CustomFormat = "0.000";
@@ -252,7 +256,8 @@ You can change the format in which the value should be displayed using the [Cust
 {% tabs %}
 {% highlight xaml %}
 
-<editors:SfNumericUpDown HorizontalOptions="Center"
+<editors:SfNumericUpDown WidthRequest="200" 
+                        HorizontalOptions="Center"
                         VerticalOptions="Center"
                         Value="12.5" 
                         CustomFormat="C2" />
@@ -261,6 +266,7 @@ You can change the format in which the value should be displayed using the [Cust
 {% highlight C# %}
 
 SfNumericUpDown sfNumericUpDown = new SfNumericUpDown();
+sfNumericUpDown.WidthRequest = 200;
 sfNumericUpDown.HorizontalOptions = LayoutOptions.Center;
 sfNumericUpDown.VerticalOptions = LayoutOptions.Center;
 sfNumericUpDown.Value = 12.5;
@@ -278,7 +284,8 @@ By default, the [NumericUpDown](https://help.syncfusion.com/cr/maui-toolkit/Sync
 {% tabs %}
 {% highlight xaml %}
 
-<editors:SfNumericUpDown HorizontalOptions="Center"
+<editors:SfNumericUpDown WidthRequest="200"
+                         HorizontalOptions="Center"
                          VerticalOptions="Center"
                          Value="12315"
                          AllowNull="False" />
@@ -287,6 +294,7 @@ By default, the [NumericUpDown](https://help.syncfusion.com/cr/maui-toolkit/Sync
 {% highlight C# %}
 
 SfNumericUpDown sfNumericUpDown = new SfNumericUpDown();
+sfNumericUpDown.WidthRequest = 200;
 sfNumericUpDown.Value=12315;
 sfNumericUpDown.HorizontalOptions = LayoutOptions.Center;
 sfNumericUpDown.VerticalOptions = LayoutOptions.Center;
