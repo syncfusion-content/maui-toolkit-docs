@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with .NET MAUI Segmented control | Syncfusion<sup>&reg;</sup>
-description: Learn about getting started with Syncfusion<sup>&reg;</sup> .NET MAUI Segmented control (SfSegmentedControl) in mobile and desktop applications from a single shared codebase.
+title: Getting Started with .NET MAUI Segmented control | Syncfusion
+description: Learn about getting started with Syncfusion .NET MAUI Segmented control (SfSegmentedControl) in mobile and desktop applications from a single shared codebase.
 platform: maui-toolkit
 control: Segmented control
 documentation: ug
@@ -278,6 +278,93 @@ public partial class MainPage : ContentPage
 {% endhighlight %}
 {% endtabs %}
 
+{% endtabcontent %}
+
+{% tabcontent JetBrains Rider %}
+
+## Prerequisites
+
+Before proceeding, ensure the following are set up:
+
+1. Ensure you have the latest version of JetBrains Rider.
+2. Install [.NET 8 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/8.0) or later is installed.
+3. Make sure the MAUI workloads are installed and configured as described [here.](https://www.jetbrains.com/help/rider/MAUI.html#before-you-start)
+
+## Step 1: Create a new .NET MAUI Project
+
+1. Go to **File > New Solution,** Select .NET (C#) and choose the .NET MAUI App template.
+2. Enter the Project Name, Solution Name, and Location.
+3. Select the .NET framework version and click Create.
+
+## Step 2: Install the Syncfusion<sup>®</sup> MAUI Toolkit NuGet Package
+
+1. In **Solution Explorer,** right-click the project and choose **Manage NuGet Packages.**
+2. Search for [Syncfusion.Maui.Toolkit](https://www.nuget.org/packages/Syncfusion.Maui.Toolkit/) and install the latest version.
+3. Ensure the necessary dependencies are installed correctly, and the project is restored. If not, Open the Terminal in Rider and manually run: `dotnet restore`
+
+## Step 3: Register the handler
+
+In the **MauiProgram.cs** file, register the handler for Syncfusion<sup>&reg;</sup> Toolkit.
+
+{% tabs %}
+{% highlight C# tabtitle="MauiProgram.cs" hl_lines="1 9" %}
+    using Syncfusion.Maui.Toolkit.Hosting;
+
+    public static class MauiProgram
+    {
+	    public static MauiApp CreateMauiApp()
+	    {
+	        var builder = MauiApp.CreateBuilder();
+		    builder
+			    .ConfigureSyncfusionToolkit()
+			    .UseMauiApp<App>()
+			    .ConfigureFonts(fonts =>
+			    {
+				    fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
+				    fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
+			    });
+
+		    return builder.Build();
+	    }
+    }
+
+{% endhighlight %}
+{% endtabs %}
+
+## Step 4: Add .NET MAUI Segmented Control
+
+1. To initialize the control, import the `Syncfusion.Maui.Toolkit.SegmentedControl` namespace into your code.
+2. Initialize [SfSegmentedControl](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SegmentedControl.SfSegmentedControl.html) class.
+
+{% tabs %}
+{% highlight XAML %}
+
+<ContentPage   
+    xmlns:segmentedControl="clr-namespace:Syncfusion.Maui.Toolkit.SegmentedControl;assembly=Syncfusion.Maui.Toolkit">
+
+    <segmentedControl:SfSegmentedControl />
+
+</ContentPage>
+
+{% endhighlight %}
+{% highlight C# %}
+
+using Syncfusion.Maui.Toolkit.SegmentedControl;
+
+. . .
+
+public partial class MainPage : ContentPage
+{
+    public MainPage()
+    {
+        InitializeComponent();
+        SfSegmentedControl segmentedControl = new SfSegmentedControl();
+        this.Content = segmentedControl;
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
 {% endtabcontent %}
 {% endtabcontents %}
 
