@@ -34,4 +34,4 @@ void UpdateTheme(object sender, System.EventArgs e)
 
 {% endhighlight %}
 
-The complete theme switch sample is available in `this` link.
+The complete theme switch sample is available in this [link](https://github.com/SyncfusionExamples/maui-toolkit-samples/tree/master/Theme/SyncfusionThemeSample).
