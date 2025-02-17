@@ -16,16 +16,16 @@ You can customize the appearance of the button by adding your custom view in the
 
 
 <ContentPage.Content>
-    <button:SfButton  CornerRadius="10"  WidthRequest="120" Text="SfButton" Background="#4125BC">
-        <button:SfButton.Content>
+    <buttons:SfButton  CornerRadius="10"  WidthRequest="120" Text="SfButton" Background="#4125BC">
+        <buttons:SfButton.Content>
             <DataTemplate>
                 <HorizontalStackLayout Spacing = "8" Padding="5">
                     <ActivityIndicator Color = "White" IsRunning="True"/>
                     <Label Text = "Loading..." VerticalOptions="Center" TextColor="White"/>
                 </HorizontalStackLayout>
             </DataTemplate>
-        </button:SfButton.Content>
-    </button:SfButton>
+        </buttons:SfButton.Content>
+    </buttons:SfButton>
 </ContentPage.Content>
 
 {% endhighlight %}
@@ -57,10 +57,17 @@ SfButton button = new SfButton
 {
     Text = "SfButton",
     WidthRequest = 120,
+    HeightRequest = 50,
     Background = Color.FromArgb("#4125BC"),
     CornerRadius= 10,
     Content = customTemplate
 };
+
+Content = new VerticalStackLayout
+{
+    Children = { button },
+};
+
 {% endhighlight %}
 {% endtabs %}
 
