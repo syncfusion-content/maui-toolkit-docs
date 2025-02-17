@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with .NET MAUI Text Input Layout | Syncfusion®
-description: Learn here about getting started with Syncfusion<sup>®</sup> .NET MAUI Text Input Layout (SfTextInputLayout) control, its elements and more.
+title: Getting Started with .NET MAUI Text Input Layout control | Syncfusion®
+description: Learn here about getting started with Syncfusion® .NET MAUI Text Input Layout (SfTextInputLayout) control, its elements and more.
 platform: maui-toolkit
 control: SfTextInputLayout
 documentation: ug
@@ -115,6 +115,86 @@ Before proceeding, ensure the following are set up:
 2. Ensure you're in the project root directory where your .csproj file is located.
 3. Run the command `dotnet add package Syncfusion.Maui.Toolkit` to install the Syncfusion<sup>®</sup> .NET MAUI Toolkit NuGet package.
 4. To ensure all dependencies are installed, run `dotnet restore`.
+
+## Step 3: Register the Handler
+
+In the **MauiProgram.cs file**, register the handler for Syncfusion<sup>®</sup> Toolkit.
+
+{% tabs %}
+{% highlight C# tabtitle="MauiProgram.cs" hl_lines="1 9" %}    
+using Syncfusion.Maui.Toolkit.Hosting;
+
+public static class MauiProgram
+{
+	public static MauiApp CreateMauiApp()
+	{
+	    var builder = MauiApp.CreateBuilder();
+		builder
+			.ConfigureSyncfusionToolkit()
+			.UseMauiApp<App>()
+			.ConfigureFonts(fonts =>
+			{
+				fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
+				fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
+			});
+
+		return builder.Build();
+	}
+}
+{% endhighlight %}
+{% endtabs %}
+
+## Step 4: Add a Basic TextInputLayout
+
+Step 1: Add the NuGet to the project as discussed in the above reference section.
+
+Step 2: Add the namespace as shown in the following code sample.
+
+Add the following namespace to add [.NET MAUI Text Input Layout](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TextInputLayout.SfTextInputLayout.html).
+
+{% tabs %}
+
+{% highlight xaml %}
+
+    xmlns:inputLayout="clr-namespace:Syncfusion.Maui.Toolkit.TextInputLayout;assembly=Syncfusion.Maui.Toolkit"
+	
+{% endhighlight %}
+
+{% highlight c# %}
+
+    using Syncfusion.Maui.Toolkit.TextInputLayout;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+### Adding the .NET MAUI Text Input Layout control
+
+Add any input view control such as [Entry](https://learn.microsoft.com/en-us/dotnet/maui/user-interface/controls/entry) and [Editor](https://learn.microsoft.com/en-us/dotnet/maui/user-interface/controls/editor) controls and add hint label (floating label).
+
+{% endtabcontent %}
+
+{% tabcontent JetBrains Rider %}
+
+## Prerequisites
+
+Before proceeding, ensure the following are set up:
+
+1. Ensure you have the latest version of JetBrains Rider.
+2. Install [.NET 8 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/8.0) or later is installed.
+3. Make sure the MAUI workloads are installed and configured as described [here.](https://www.jetbrains.com/help/rider/MAUI.html#before-you-start)
+
+## Step 1: Create a new .NET MAUI Project
+
+1. Go to **File > New Solution,** Select .NET (C#) and choose the .NET MAUI App template.
+2. Enter the Project Name, Solution Name, and Location.
+3. Select the .NET framework version and click Create.
+
+## Step 2: Install the Syncfusion<sup>®</sup> MAUI Toolkit NuGet Package
+
+1. In **Solution Explorer,** right-click the project and choose **Manage NuGet Packages.**
+2. Search for [Syncfusion.Maui.Toolkit](https://www.nuget.org/packages/Syncfusion.Maui.Toolkit/) and install the latest version.
+3. Ensure the necessary dependencies are installed correctly, and the project is restored. If not, Open the Terminal in Rider and manually run: `dotnet restore`
 
 ## Step 3: Register the Handler
 
