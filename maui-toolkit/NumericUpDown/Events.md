@@ -1,7 +1,7 @@
 ---
 ayout: post
-title: Events in .NET MAUI NumericUpDown control | Syncfusion<sup>®</sup>
-description: Learn here all about the Events support in Syncfusion<sup>®</sup> .NET MAUI NumericUpDown (SfNumericUpDown) control and more details.
+title: Events in .NET MAUI NumericUpDown control | Syncfusion®
+description: Learn here all about the Events support in Syncfusion® .NET MAUI NumericUpDown (SfNumericUpDown) control and more details.
 platform: maui
 control: SfNumericUpDown
 documentation: ug
@@ -21,7 +21,8 @@ The [ValueChanged](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.T
 {% tabs %}
 {% highlight xaml %}
 
-<editors:SfNumericUpDown HorizontalOptions="Center"
+<editors:SfNumericUpDown WidthRequest="200"
+                        HorizontalOptions="Center"
                         VerticalOptions="Center"
                         ValueChanged="sfNumericUpDown_ValueChanged" />
 
@@ -29,6 +30,7 @@ The [ValueChanged](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.T
 {% highlight C# %}
 
 SfNumericUpDown sfNumericUpDown = new SfNumericUpDown();
+sfNumericUpDown.WidthRequest = 200;
 sfNumericUpDown.HorizontalOptions = LayoutOptions.Center;
 sfNumericUpDown.VerticalOptions = LayoutOptions.Center;
 sfNumericUpDown.ValueChanged += sfNumericUpDown_ValueChanged;
@@ -57,7 +59,8 @@ The `NumericUpDown` control includes a [Completed](https://help.syncfusion.com/c
 {% tabs %}
 {% highlight xaml %}
 
-<editors:SfNumericUpDown HorizontalOptions="Center"
+<editors:SfNumericUpDown WidthRequest="200"
+                         HorizontalOptions="Center"
                          VerticalOptions="Center"
                          Completed="sfNumericUpDown_Completed" />
 
@@ -65,6 +68,7 @@ The `NumericUpDown` control includes a [Completed](https://help.syncfusion.com/c
 {% highlight C# %}
 
 SfNumericUpDown sfNumericUpDown = new SfNumericUpDown();
+sfNumericUpDown.WidthRequest = 200;
 sfNumericUpDown.HorizontalOptions = LayoutOptions.Center;
 sfNumericUpDown.VerticalOptions = LayoutOptions.Center;
 sfNumericUpDown.Completed += sfNumericUpDown_Completed;
