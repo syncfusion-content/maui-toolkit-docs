@@ -329,7 +329,7 @@ chip.CornerRadius = 25;
 chip.Stroke = Colors.Black;
 stackLayout.Children.Add(chip);
 this.Content = stackLayout;
-
+            
 {% endhighlight %}
 
 {% endtabs %}
@@ -342,6 +342,7 @@ N> The default value of CornerRadius is [`Thickness(8)`]. When using ItemTemplat
 ## FontAttributes
 
 The [FontAttributes](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.ButtonBase.html#Syncfusion_Maui_Toolkit_ButtonBase_FontAttributes) property customizes the font style of text in SfChip.
+
 {% tabs %}
 
 {% highlight xaml %}
