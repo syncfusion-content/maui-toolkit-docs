@@ -336,7 +336,9 @@ this.Content = stackLayout;
 
 ![SfChip with CornerRadius](images/customization-images/chip_cornerradius_image.png)
 
-N> The default value of CornerRadius is [`Thickness(8)`].
+N> The default value of CornerRadius is [`Thickness(8)`]. 
+   To remove any extra border around the SfChip control, you can set the ChipCornerRadius property to match the CornerRadius value of the SfChip. This ensures that the corner radius of the chip and its border are consistent, eliminating any unwanted additional space.
+
 
 ## FontAttributes
 
