@@ -336,7 +336,7 @@ this.Content = stackLayout;
 
 ![SfChip with CornerRadius](images/customization-images/chip_cornerradius_image.png)
 
-N> The default value of CornerRadius is [`Thickness(8)`]. When using ItemTemplate in SfChipGroup, to modify the corner radius of each chip, set the ChipCornerRadius of the SfChipGroup to avoid extra borders.
+N> The default value of CornerRadius is [`Thickness(8)`].
 
 
 ## FontAttributes
@@ -1247,6 +1247,49 @@ this.Content = stack;
 ![SfChipGroup with ChipStroke](images/customization-images/chipgroup_chipstroke_image.png)
 
 N> The default value of ChipBorderColor is [`Color.FromArgb("#79747E")`].
+
+
+## ChipCornerRadius
+
+The [ChipCornerRadius](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Core.SfChipGroup.html#Syncfusion_Maui_Core_SfChipGroup_ChipCornerRadius) property is used to customize the rounded edges of each individual chip in the SfChipGroup, as demonstrated in the following code sample.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<ContentPage.BindingContext>
+    <local:ViewModel/>
+</ContentPage.BindingContext>
+<ContentPage.Content>
+    <StackLayout Margin="10,10,10,10">
+        <ChipControl:SfChipGroup ItemsSource="{Binding Employees}"
+                                 DisplayMemberPath="Name"
+                                 ChipCornerRadius="1">
+        </ChipControl:SfChipGroup>
+    </StackLayout>  
+</ContentPage.Content>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+using Syncfusion.Maui.Toolkit.Chips;
+StackLayout stack = new StackLayout();
+SfChipGroup chipGroup = new SfChipGroup();
+stack.Children.Add(chipGroup);
+this.BindingContext = new ViewModel();
+chipGroup.SetBinding(SfChipGroup.ItemsSourceProperty, "Employees");
+chipGroup.DisplayMemberPath = "Name";
+chipGroup.ChipCornerRadius = 1;
+this.Content = stack;
+        
+{% endhighlight %}
+
+{% endtabs %}
+
+![SfChipGroup with ChipCornerRadius](images/customization-images/chipgroup_chipcornerradius_image.png)
+
+N> N> The default value of CornerRadius is [`Thickness(8)`]. When using ItemTemplate in SfChipGroup, to modify the corner radius of each chip, set the ChipCornerRadius of the SfChipGroup to avoid extra borders.
 
 ## ChipTextSize
 
