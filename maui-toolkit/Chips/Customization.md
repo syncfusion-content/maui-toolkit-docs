@@ -338,7 +338,6 @@ this.Content = stackLayout;
 
 N> The default value of CornerRadius is [`Thickness(8)`].
 
-
 ## FontAttributes
 
 The [FontAttributes](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.ButtonBase.html#Syncfusion_Maui_Toolkit_ButtonBase_FontAttributes) property customizes the font style of text in SfChip.
