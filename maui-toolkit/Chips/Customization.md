@@ -1263,7 +1263,7 @@ The [ChipCornerRadius](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Core.
     <StackLayout Margin="10,10,10,10">
         <ChipControl:SfChipGroup ItemsSource="{Binding Employees}"
                                  DisplayMemberPath="Name"
-                                 ChipCornerRadius="1">
+                                 ChipCornerRadius="20">
         </ChipControl:SfChipGroup>
     </StackLayout>  
 </ContentPage.Content>
@@ -1279,7 +1279,7 @@ stack.Children.Add(chipGroup);
 this.BindingContext = new ViewModel();
 chipGroup.SetBinding(SfChipGroup.ItemsSourceProperty, "Employees");
 chipGroup.DisplayMemberPath = "Name";
-chipGroup.ChipCornerRadius = 1;
+chipGroup.ChipCornerRadius = 20;
 this.Content = stack;
         
 {% endhighlight %}
@@ -1288,7 +1288,7 @@ this.Content = stack;
 
 ![SfChipGroup with ChipCornerRadius](images/customization-images/chipgroup_chipcornerradius_image.png)
 
-N> N> The default value of CornerRadius is [`Thickness(8)`]. When using ItemTemplate in SfChipGroup, to modify the corner radius of each chip, set the ChipCornerRadius of the SfChipGroup to avoid extra borders.
+N> The default value of ChipCornerRadius is [`Thickness(8)`]. When using ItemTemplate in SfChipGroup, to modify the corner radius of each chip, set the ChipCornerRadius of the SfChipGroup to avoid extra borders.
 
 ## ChipTextSize
 
