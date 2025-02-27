@@ -329,21 +329,19 @@ chip.CornerRadius = 25;
 chip.Stroke = Colors.Black;
 stackLayout.Children.Add(chip);
 this.Content = stackLayout;
-            
+
 {% endhighlight %}
 
 {% endtabs %}
 
 ![SfChip with CornerRadius](images/customization-images/chip_cornerradius_image.png)
 
-N> The default value of CornerRadius is [`Thickness(8)`]. 
-   To remove any extra border around the SfChip control, you can set the ChipCornerRadius property to match the CornerRadius value of the SfChip. This ensures that the corner radius of the chip and its border are consistent, eliminating any unwanted additional space.
+N> The default value of CornerRadius is [`Thickness(8)`]. When using ItemTemplate in SfChipGroup, to modify the corner radius of each chip, set the ChipCornerRadius of the SfChipGroup to avoid extra borders.
 
 
 ## FontAttributes
 
 The [FontAttributes](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.ButtonBase.html#Syncfusion_Maui_Toolkit_ButtonBase_FontAttributes) property customizes the font style of text in SfChip.
-
 {% tabs %}
 
 {% highlight xaml %}
