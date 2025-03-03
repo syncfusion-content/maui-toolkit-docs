@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Basic Features in .NET MAUI Numeric UpDown control | Syncfusion<sup>®</sup>
-description: Learn about Basic Features support in Syncfusion<sup>®</sup> .NET MAUI Numeric UpDown (SfNumericUpDown) control and more.
+title: Basic Features in .NET MAUI Numeric UpDown control | Syncfusion®
+description: Learn about Basic Features support in Syncfusion® .NET MAUI Numeric UpDown (SfNumericUpDown) control and more.
 platform: maui
 control: SfNumericUpDown
 documentation: ug
@@ -16,7 +16,8 @@ You can prompt the user with any information using the [Placeholder](https://hel
 {% tabs %}
 {% highlight xaml %}
 
-<editors:SfNumericUpDown HorizontalOptions="Center" 
+<editors:SfNumericUpDown WidthRequest="200"
+                     HorizontalOptions="Center" 
                      VerticalOptions="Center" 
                      Placeholder="Enter input here..." />
 
@@ -24,6 +25,7 @@ You can prompt the user with any information using the [Placeholder](https://hel
 {% highlight C# %}
 
 SfNumericUpDown numericUpDown= new SfNumericUpDown();
+numericUpDown.WidthRequest = 200;
 numericUpDown.Placeholder = "Enter input here...";
 numericUpDown.HorizontalOptions = LayoutOptions.Center;
 numericUpDown.VerticalOptions = LayoutOptions.Center;
@@ -41,7 +43,8 @@ N> The clear button appears only when the text box is focused and the `IsEditabl
 {% tabs %}
 {% highlight xaml %}
 
-<editors:SfNumericUpDown ShowClearButton="True" 
+<editors:SfNumericUpDown WidthRequest="200"
+                         ShowClearButton="True" 
                          IsEditable="True" 
                          Value="10"/>
 
@@ -50,6 +53,7 @@ N> The clear button appears only when the text box is focused and the `IsEditabl
 {% highlight C# %}
 
 SfNumericUpDown sfNumericUpDown = new SfNumericUpDown();
+sfNumericUpDown.WidthRequest = 200;
 sfNumericUpDown.Value=10;
 sfNumericUpDown.ShowClearButton = true;
 sfNumericUpDown.IsEditable = true; 
@@ -113,7 +117,7 @@ public partial class MainPage : ContentPage
             WidthRequest = 200,
             HeightRequest = 40,
             VerticalOptions = LayoutOptions.Center,
-            ValueChangeMode = ValueChangeMode.OnKeyFocus,
+            ValueChangeMode = Syncfusion.Maui.Toolkit.NumericEntry.ValueChangeMode.OnKeyFocus,
             Value = 50
         };
         var horizontalStackLayout = new StackLayout
@@ -139,7 +143,7 @@ public partial class MainPage : ContentPage
         Content = verticalStackLayout;
     }
 
-    private void NumericUpDown_ValueChanged(object sender, NumericUpDownValueChangedEventArgs e)
+    private void NumericUpDown_ValueChanged(object? sender, Syncfusion.Maui.Toolkit.NumericEntry.NumericEntryValueChangedEventArgs e)
     {
         valueDisplay.Text="$"+e.NewValue.ToString();
     }
@@ -157,7 +161,8 @@ The NumericUpDown border color can be changed by using the [Stroke](https://help
 {% tabs %}
 {% highlight xaml %}
 
-<editors:SfNumericUpDown HorizontalOptions="Center"
+<editors:SfNumericUpDown WidthRequest="200"
+                        HorizontalOptions="Center"
                         VerticalOptions="Center"
                         Stroke="Red" />
 
@@ -165,6 +170,7 @@ The NumericUpDown border color can be changed by using the [Stroke](https://help
 {% highlight C# %}
 
 SfNumericUpDown sfNumericUpDown = new SfNumericUpDown();
+sfNumericUpDown.WidthRequest = 200;
 sfNumericUpDown.HorizontalOptions = LayoutOptions.Center;
 sfNumericUpDown.VerticalOptions = LayoutOptions.Center;
 sfNumericUpDown.Stroke = Colors.Red;
@@ -247,6 +253,7 @@ N> Default value of ReturnType is `Default`.
 {% highlight C# %}
 
 SfNumericUpDown sfNumericUpDown = new SfNumericUpDown();
+sfNumericUpDown.WidthRequest = 200;
 sfNumericUpDown.ReturnType = ReturnType.Next;
 
 {% endhighlight %}
@@ -262,6 +269,7 @@ The `ClearButtonPath` property allows users to set the path for customizing the 
 {% highlight xaml %}
 
 <editors:SfNumericUpDown x:Name="NumericUpDown"
+                        WidthRequest="200"
                         ShowClearButton="True" 
                         IsEditable="True" 
                         Value="10">
@@ -286,6 +294,7 @@ var path = new Path()
 };
 
 SfNumericUpDown numericUpDown = new SfNumericUpDown();
+numericUpDown.WidthRequest = 200;
 numericUpDown.Value=10;
 numericUpDown.ShowClearButton = true;
 numericUpDown.IsEditable = true; 
@@ -311,6 +320,7 @@ The following image illustrates the result of the above code:
 </ContentPage.BindingContext>
 
 <editors:SfNumericUpDown x:Name="NumericUpDown"
+            WidthRequest="200"
             ReturnCommand="{Binding AlertCommand}"
             ReturnCommandParameter="Return key is pressed">
 </editors:SfNumericUpDown>
@@ -320,6 +330,7 @@ The following image illustrates the result of the above code:
 
 var viewModel = new CommandDemoViewModel();
 SfNumericUpDown NumericUpDown = new SfNumericUpDown();
+NumericUpDown.WidthRequest = 200;
 NumericUpDown.ReturnCommand = viewModel.AlertCommand;
 NumericUpDown.ReturnCommandParameter = "Return key is pressed";
 

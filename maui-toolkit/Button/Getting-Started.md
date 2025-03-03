@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with .NET MAUI Button | Syncfusion<sup>®</sup>
-description: Learn here about getting started with the Syncfusion<sup>®</sup> .NET MAUI Button (SfButton) control, its elements and more.
+title: Getting Started with .NET MAUI Button | Syncfusion®
+description: Learn here about getting started with the Syncfusion® .NET MAUI Button (SfButton) control, its elements and more.
 platform: MAUI
 control: SfButton
 documentation: ug
@@ -289,6 +289,8 @@ N> Ensure that the images mentioned in the code snippets are located in the **Re
 
 <buttons:SfButton x:Name="SfButton" 
                     Text="Button"
+                    WidthRequest="150"
+                    HeightRequest="40" 
                     TextColor="White" 
                     ShowIcon="True"
                     CornerRadius="2" 
@@ -299,6 +301,8 @@ N> Ensure that the images mentioned in the code snippets are located in the **Re
 
 SfButton button = new SfButton();
 button.Text = "Button";
+button.WidthRequest = 150;
+button.HeightRequest = 40;
 button.TextColor = Colors.White;
 button.ImageSource = "button_Heart.png";
 button.ShowIcon = true;
@@ -322,7 +326,8 @@ The button background image can be defined using the [BackgroundImageSource](htt
                     FontAttributes="Bold" 
                     BackgroundImageSource="button_background.png" 
                     CornerRadius="10" 
-                    WidthRequest="150"/>
+                    WidthRequest="150"
+                    HeightRequest="40"/>
 
 {% endhighlight %}
 {% highlight c# %}
@@ -333,6 +338,7 @@ button.FontAttributes = FontAttributes.Bold;
 button.BackgroundImageSource = "button_background.png";
 button.CornerRadius = 10;
 button.WidthRequest = 150;
+button.HeightRequest = 40;
 
 {% endhighlight %}
 {% endtabs %}

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Visual states in .NET MAUI Button Control | Syncfusion<sup>®</sup>
-description: Learn about visual states support in the Syncfusion<sup>®</sup> .NET MAUI Button (SfButton) control, its elements, and more.
+title: Visual states in .NET MAUI Button Control | Syncfusion®
+description: Learn about visual states support in the Syncfusion® .NET MAUI Button (SfButton) control, its elements, and more.
 platform: maui
 control: SfButton
 documentation: ug 
@@ -35,7 +35,7 @@ N> The visual states [Checked](https://help.syncfusion.com/cr/maui-toolkit/Syncf
         <VisualStateGroup x:Name="CommonStates">
             <VisualState x:Name="Normal">
                 <VisualState.Setters>
-                    <Setter Property="Background" Value="Orange"/>
+                    <Setter Property="Background" Value="#6A4C9C"/>
                 </VisualState.Setters>
             </VisualState>
             <VisualState x:Name="Checked">
