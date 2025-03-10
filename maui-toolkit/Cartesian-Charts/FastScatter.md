@@ -66,4 +66,4 @@ this.Content = chart;
 
 {% endtabs %}
 
-![FastScatter chart type in MAUI Chart](Chart-types-images/maui_fast_scatter_chart.jpg)
+![FastScatter chart type in MAUI Chart](Chart-types-images/maui_fast_scatter_chart.png)
