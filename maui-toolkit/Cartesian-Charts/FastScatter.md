@@ -14,7 +14,7 @@ Keywords: .net maui fast scatter chart, .net maui performance scatter chart, fas
 
 The **FastScatterSeries** is a specialized scatter series designed to efficiently render a large number of data points. To render a fast scatter chart, create an instance of **FastScatterSeries**, and add it to the [Series](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html#Syncfusion_Maui_Toolkit_Charts_SfCartesianChart_Series) collection property of [SfCartesianChart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html).
 
-The **PointHeight** and **PointWidth** properties in the FastScatterSeries control the height and width of scatter segments. The **ScatterShapeType** property allows you to change the rendering shape of the [FastScatterSeries]().
+The **PointHeight** and **PointWidth** properties in the FastScatterSeries control the height and width of scatter segments. The **Type** property allows you to change the rendering shape of the **FastScatterSeries**.
 
 N> The Cartesian chart has [Series](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html#Syncfusion_Maui_Toolkit_Charts_SfCartesianChart_Series) as its default content.
 
