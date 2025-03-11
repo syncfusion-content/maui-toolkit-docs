@@ -28,11 +28,11 @@ The data collection that is passed to the chart can have NaN or Null values that
 
 {% endhighlight %}
 
-By default, the [EmptyPointMode]() property is None. So the empty points will not be rendered as shown in the below.
+By default, the [EmptyPointMode]() property is `None`. So the empty points will not be rendered as shown in the below.
 
 ![Empty Points in MAUI Chart](EmptyPoints_images/EmptyPoints_Default.png)
 
-## EmptyPointMode
+## Empty Point Mode
 The [EmptyPointMode]() property of series specifies how empty points should be handled. 
 
 This property is an enumeration with the following options:
@@ -41,7 +41,7 @@ This property is an enumeration with the following options:
 * Zero - Empty points will be replaced with zero.
 * Average - Empty points will be replaced with the average value of the surrounding data points.
 
-The following code example shows the [EmptyPointMode]() as Zero.
+The following code example shows the [EmptyPointMode]() as `Zero`.
 
 {% tabs %}
 
@@ -54,10 +54,6 @@ The following code example shows the [EmptyPointMode]() as Zero.
         <chart:LineSeries ItemsSource="{Binding ProductSales}"
                   XBindingPath="Product"
                   YBindingPath="Sales"
-                  Fill="#3068F7"
-                  StrokeWidth="2"
-                  ShowMarkers="True"
-                  ShowDataLabels="True"
                   EmptyPointMode="Zero">
         </chart:LineSeries>
     </chart:SfCartesianChart>
@@ -75,10 +71,6 @@ The following code example shows the [EmptyPointMode]() as Zero.
         ItemsSource = new ViewModel().ProductSales,
         XBindingPath = "Product",
         YBindingPath = "Sales",
-        Fill = Color.FromArgb("#3068F7"),
-        StrokeWidth = 2,
-        ShowMarkers = true,
-        ShowDataLabels = true,
         EmptyPointMode = EmptyPointMode.Zero
     };
 
@@ -91,7 +83,7 @@ The following code example shows the [EmptyPointMode]() as Zero.
 
 ![EmptyPoint Mode Zero in MAUI Chart](EmptyPoints_images/EmptyPoints_Mode_Zero.png)
 
-The following code example shows the [EmptyPointMode]() as Average.
+The following code example shows the [EmptyPointMode]() as `Average`.
 
 {% tabs %}
 
@@ -104,8 +96,6 @@ The following code example shows the [EmptyPointMode]() as Average.
         <chart:ColumnSeries ItemsSource="{Binding ProductSales}"
                   XBindingPath="Product"
                   YBindingPath="Sales"
-                  Fill="#3068F7"
-                  ShowDataLabels="True"
                   EmptyPointMode="Average">
         </chart:ColumnSeries>
     </chart:SfCartesianChart>
@@ -123,8 +113,6 @@ The following code example shows the [EmptyPointMode]() as Average.
         ItemsSource = new ViewModel().ProductSales,
         XBindingPath = "Product",
         YBindingPath = "Sales",
-        Fill = Color.FromArgb("#3068F7"),
-        ShowDataLabels = true,
         EmptyPointMode = EmptyPointMode.Average
     };
 
@@ -138,7 +126,7 @@ The following code example shows the [EmptyPointMode]() as Average.
 ![EmptyPoint Mode Average in MAUI Chart](EmptyPoints_images/EmptyPoints_Mode_Average.png)
 
 ## Customizing Empty Points
-The [EmptyPointSettings]() property allows you to customize the appearance of empty points in a chart. This enables you to adjust various visual aspects of empty points, making them more distinct from the other data points. You can modify the following properties within [EmptyPointSettings]().
+The [EmptyPointSettings]() property allows you to customize the appearance of empty points in a series. This enables you to adjust various visual aspects of empty points, making them more distinct from the other data points. You can modify the following properties within [EmptyPointSettings]().
 
 * [Fill]() - Gets or sets the fill color for the empty points.
 * [Stroke]() - Gets or sets the stroke color for empty points.
