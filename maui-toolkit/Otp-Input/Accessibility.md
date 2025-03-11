@@ -7,7 +7,7 @@ control: SfOtpInput
 documentation: ug
 ---
 
-# Accessibility in .NET Maui SfOtpInput
+# Accessibility in .NET MAUI OTP Input (SfOtpInput)
 
 The OTP Input Control is designed to work effectively with the OTP Input elements, providing voice descriptions of their OTP Input items.
 
