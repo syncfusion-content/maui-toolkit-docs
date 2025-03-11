@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Input Types in .NET MAUI OtpInput | Syncfusion®
-description: Learn here about input types in Syncfusion® .NET MAUI OtpInput (SfOtpInput) control in your cross-platform applications.
+title: Input Types in .NET MAUI OTP Input | Syncfusion®
+description: Learn here about input types in Syncfusion® .NET MAUI OTP Input (SfOtpInput) control in your cross-platform applications.
 platform: maui-toolkit
-control: OtpInput
+control: OTP Input
 documentation: ug
 ---
 
@@ -34,7 +34,7 @@ SfOtpInput otpInput = new SfOtpInput()
 {% endhighlight %}
 {% endtabs %}
 
-![Number Image for OtpInput](images/number.png)
+![Number Image for OTP Input](images/number.png)
 
 ### Text type
 
@@ -57,11 +57,11 @@ SfOtpInput otpInput = new SfOtpInput()
 {% endhighlight %}
 {% endtabs %}
 
-![Text Image for OtpInput](images/text.png)
+![Text Image for OTP Input](images/text.png)
 
 ### Password type
 
-You can set the `Type` property to `Password` to use this input type as password in the OtpInput.
+You can set the `Type` property to `Password` to use this input type as password in the OTP Input.
 
 {% tabs %}	
 {% highlight xaml %}
@@ -80,27 +80,4 @@ SfOtpInput otpInput = new SfOtpInput()
 {% endhighlight %}
 {% endtabs %}
 
-![Password Image for OtpInput](images/password.png)
-
-## Value
-
-You can specify the value of OtpInput by using the `Value` property.
-
-{% tabs %}	
-{% highlight xaml %}
-
-<otpInput:SfOtpInput Value="e3c7" Type="Text" />
-	
-{% endhighlight %}
-{% highlight c# %}
-
-SfOtpInput otpInput = new SfOtpInput()
-{
-    Value = "e3c7",
-    Type = OtpInputType.Text
-};
-
-{% endhighlight %}
-{% endtabs %}
-
-![Value Image for OtpInput](images/value.png)
+![Password Image for OTP Input](images/password.png)

@@ -1,19 +1,19 @@
 ---
 layout: post
-title: Customization in .NET MAUI OtpInput (SfOtpInput) | Syncfusion®
-description: Learn how to customize OTP input in Syncfusion® .NET MAUI OtpInput (SfOtpInput) control. Explore various options to enhance the appearance of your OTP input.
+title: Customization in .NET MAUI OTP Input (SfOtpInput) | Syncfusion®
+description: Learn how to customize OTP input in Syncfusion® .NET MAUI OTP Input (SfOtpInput) control. Explore various options to enhance the appearance of your OTP input.
 platform: maui-toolkit
-control: OtpInput
+control: OTP Input
 documentation: ug
 ---
 
-# Customization in .NET MAUI OtpInput (SfOtpInput)
+# Customization in .NET MAUI OTP Input (SfOtpInput)
 
-An `OtpInput` consists of multiple elements that can be customized to enhance both its appearance and functionality.
+An `OTP Input` consists of multiple elements that can be customized to enhance both its appearance and functionality.
 
 ## Placeholder
 
-The placeholder for the OtpInput specifies the text that appears as a hint until the user enters a value.
+The placeholder for the OTP Input specifies the text that appears as a hint until the user enters a value.
 
 Set the placeholder text using the `Placeholder` property. When a single character is assigned, each input field will show the same character.
 
@@ -33,7 +33,7 @@ SfOtpInput otpInput = new SfOtpInput()
 {% endhighlight %}
 {% endtabs %}
 
-![Placeholder Image for OtpInput](images/placeholder.png)
+![Placeholder Image for OTP Input](images/placeholder.png)
 
 For placeholders with multiple characters, available input fields will sequentially display each character.
 
@@ -53,7 +53,7 @@ SfOtpInput otpInput = new SfOtpInput()
 {% endhighlight %}
 {% endtabs %}
 
-![Placeholder Image for OtpInput](images/placeholderLength.png)
+![Placeholder Image for OTP Input](images/placeholderLength.png)
 
 ### PlaceholderColor
 
@@ -76,7 +76,7 @@ SfOtpInput otpInput = new SfOtpInput()
 {% endhighlight %}
 {% endtabs %}
 
-![PlaceholderColor Image for OtpInput](images/placeholderColor.png)
+![PlaceholderColor Image for OTP Input](images/placeholderColor.png)
 
 ## Separator
 
@@ -98,7 +98,7 @@ SfOtpInput otpInput = new SfOtpInput()
 {% endhighlight %}
 {% endtabs %}
 
-![Separator Image for OtpInput](images/separator.png)
+![Separator Image for OTP Input](images/separator.png)
 
 ## Setting input length
 
@@ -120,11 +120,11 @@ SfOtpInput otpInput = new SfOtpInput()
 {% endhighlight %}
 {% endtabs %}
 
-![InputLength Image for OtpInput](images/length.png)
+![InputLength Image for OTP Input](images/length.png)
 
 ## Disable inputs
 
-You can disable the OtpInput component by using the `IsEnabled` property. By default, this property's value is set to `True.`
+You can disable the OTP Input component by using the `IsEnabled` property. By default, this property's value is set to `True.`
 
 {% tabs %}
 {% highlight xaml %}
@@ -142,7 +142,7 @@ SfOtpInput otpInput = new SfOtpInput()
 {% endhighlight %}
 {% endtabs %}
 
-![Disabled Image for OtpInput](images/isenabled.png)
+![Disabled Image for OTP Input](images/isenabled.png)
 
 ## Input background
 
@@ -165,7 +165,7 @@ SfOtpInput otpInput = new SfOtpInput()
 {% endhighlight %}
 {% endtabs %}
 
-![InputBackground Image for OtpInput](images/inputBackground.png)
+![InputBackground Image for OTP Input](images/inputBackground.png)
 
 ## Stroke
 
@@ -187,7 +187,7 @@ SfOtpInput otpInput = new SfOtpInput()
 {% endhighlight %}
 {% endtabs %}
 
-![Stroke Image for OtpInput](images/stroke.png)
+![Stroke Image for OTP Input](images/stroke.png)
 
 ## Text color
 
@@ -209,7 +209,7 @@ SfOtpInput otpInput = new SfOtpInput()
 {% endhighlight %}
 {% endtabs %}
 
-![TextColor Image for OtpInput](images/textColor.png)
+![TextColor Image for OTP Input](images/textColor.png)
 
 ## Mask character
 
@@ -232,15 +232,15 @@ SfOtpInput otpInput = new SfOtpInput()
 {% endhighlight %}
 {% endtabs %}
 
-![MaskCharacter Image for OtpInput](images/maskCharacter.png)
+![MaskCharacter Image for OTP Input](images/maskCharacter.png)
 
 ## Input state
 
-The `InputState` property in the OtpInput allows you to visually represent the validation status of the input fields.
+The `InputState` property in the OTP Input allows you to visually represent the validation status of the input fields.
 
 ### Success
 
-The `InputState` can be set to `Success` to indicate that the input is correct. When the `InputState` is set to `Success,` the stroke of the OtpInput turns green.
+The `InputState` can be set to `Success` to indicate that the input is correct. When the `InputState` is set to `Success,` the stroke of the OTP Input turns green.
 
 {% tabs %}
 {% highlight xaml %}
@@ -258,11 +258,11 @@ SfOtpInput otpInput = new SfOtpInput()
 {% endhighlight %}
 {% endtabs %}
 
-![Success state Image for OtpInput](images/success.png)
+![Success state Image for OTP Input](images/success.png)
 
 ### Warning
 
-The `InputState` can be set to `Warning` to indicate a potential issue with the input, prompting the user to correct it. The stroke of the OtpInput turns orange-brown when `InputState` is set to `Warning.`
+The `InputState` can be set to `Warning` to indicate a potential issue with the input, prompting the user to correct it. The stroke of the OTP Input turns orange-brown when `InputState` is set to `Warning.`
 
 {% tabs %}
 {% highlight xaml %}
@@ -280,11 +280,11 @@ SfOtpInput otpInput = new SfOtpInput()
 {% endhighlight %}
 {% endtabs %}
 
-![Warning state Image for OtpInput](images/warning.png)
+![Warning state Image for OTP Input](images/warning.png)
 
 ### Error
 
-The `InputState` can be set to `Error` to indicate that the input is invalid or requires correction. The stroke of OtpInput turns red when `InputState` is set to `Error.`
+The `InputState` can be set to `Error` to indicate that the input is invalid or requires correction. The stroke of OTP Input turns red when `InputState` is set to `Error.`
 
 {% tabs %}
 {% highlight xaml %}
@@ -302,4 +302,4 @@ SfOtpInput otpInput = new SfOtpInput()
 {% endhighlight %}
 {% endtabs %}
 
-![Error state Image for OtpInput](images/error.png)
+![Error state Image for OTP Input](images/error.png)
