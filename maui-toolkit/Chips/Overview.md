@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview | .NET MAUI Chips | Syncfusion<sup>®</sup>
+title: Overview | .NET MAUI Chips | Syncfusion®
 platform: maui-toolkit
 description: Learn here about overall key features in Toolkit for .NET MAUI SfChip Control, its elements, and more.
 control: SfChip
