@@ -119,6 +119,27 @@ tabView.HeaderHorizontalTextAlignment = TextAlignment.Center;
 
 ![Tab header text alignment](images/HorizontalTextAlignmentCenter.png) 
 
+
+## Iscontent transition enabled support
+
+The .NET MAUI Tab View allows users to enable or disable the transition animation for tab content when switching between tabs using `IsContentTransitionEnabled` property. 
+
+{% tabs %}
+
+{% highlight xaml %}
+<tabView:SfTabView IsContentTransitionEnabled="True" ContentTransitionDuration = 1000/>
+{% endhighlight %}
+
+{% highlight C# %}
+SfTabView tabView = new SfTabView();
+tabView.IsContentTransitionEnabled = "True"; 
+tabView.ContentTransitionDuration = 1000; 
+{% endhighlight %}
+
+{% endtabs %}
+
+![content transition enabled ](images/TabView_IsContentTransitionEnabled.gif) 
+
 ## Tab bar placement options 
 
 The .NET MAUI Tab View provides two options for determining how the tab bar aligns relative to the tab content. The options are top and bottom. This can be done using the [TabBarPlacement](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SfTabView.html#Syncfusion_Maui_Toolkit_TabView_SfTabView_TabBarPlacement) property.
