@@ -28,7 +28,7 @@ Description
 LeftArrow
 </td>
 <td>
-Focuses the previous input in the OTP.
+Focuses the previous field in the OTP Input.
 </td>
 </tr>
 <tr>
@@ -36,7 +36,7 @@ Focuses the previous input in the OTP.
 RightArrow
 </td>
 <td>
-Focuses the next input in OTP.
+Focuses the next field in OTP Input.
 </td>
 </tr>
 <tr>
@@ -44,7 +44,7 @@ Focuses the next input in OTP.
 Tab
 </td>
 <td>
-Moves the initial focus and shifts focus to the next input of the OTP.
+Moves the initial focus and shifts focus to the next field of the OTP Input.
 </td>
 </tr>
 <tr>
@@ -52,7 +52,7 @@ Moves the initial focus and shifts focus to the next input of the OTP.
 Shift + Tab
 </td>
 <td>
-Moves the focus to the previous input of the OTP.
+Moves the focus to the previous field of the OTP Input.
 </td>
 </tr>
 </table>

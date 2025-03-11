@@ -20,14 +20,14 @@ Set the placeholder text using the `Placeholder` property. When a single charact
 {% tabs %}	
 {% highlight xaml %}
 
-<otpInput:SfOtpInput Placeholder="x" />
+<otpInput:SfOtpInput Placeholder="_" />
 	
 {% endhighlight %}
 {% highlight c# %}
 
 SfOtpInput otpInput = new SfOtpInput()
 {
-    Placeholder = "x"
+    Placeholder = "_"
 };
 
 {% endhighlight %}

@@ -9,7 +9,7 @@ documentation: ug
 
 # Events in .NET MAUI OtpInput (SfOtpInput)
 
-Events in the OtpInput control allow developers to respond to user interactions and input changes effectively. 
+Events in the OtpInput control allow developers to respond effectively to user interactions and input changes.
 
 ## ValueChanged event
 
