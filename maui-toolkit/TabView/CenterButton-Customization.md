@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Center button customization in .NET MAUI Tab View | Syncfusion®
-description: Learn here all about center button Customization in .NET MAUI Tab View control.
+description: Learn here all about the center button customization in the Syncfusion® .NET MAUI Tab View(SfTabView) control.
 platform: maui-toolkit
 control: Tab View
 documentation: ug
@@ -38,8 +38,7 @@ public MainPage()
 {% endtabs %}
 
 ## Customize the center button
-You can customize the center button using the properties of `CenterButtonSetting.` The following properties are used to customize the view of the center button `Background,` `Stroke,` `StrokeThickness,` `CornerRadius,` `TextColor,` `Height,` `Title,` `FontAttributes,` `FontFamily,` `FontSize,` `Widt,h` `ImageSource,` `ImageSize,` and `DisplayMode.`
-
+You can customize the center button using the properties of `CenterButtonSetting.` The following properties are used to customize the view of the center button `Background,` `Stroke,` `StrokeThickness,` `CornerRadius,` `TextColor,` `Height,` `Title,` `FontAttributes,` `FontFamily,` `FontSize,` `Width,` `ImageSource,` `ImageSize,` and `DisplayMode.`
 
 {% tabs %}
 
