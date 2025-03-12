@@ -8,9 +8,7 @@ documentation: ug
 Keywords: .net maui fast scatter chart, .net maui performance scatter chart, fast scatter chart customization .net maui, syncfusion maui fast scatter chart, cartesian fast scatter chart maui, cartesian performance scatter chart maui, .net maui chart fast scatter visualization.
 ---
 
-# Fast Scatter Chart in .NET MAUI Chart
-
-## Fast Scatter Chart
+# Fast Scatter in .NET MAUI Chart
 
 The **FastScatterSeries** is a specialized scatter series designed to efficiently render a large number of data points. To render a fast scatter chart, create an instance of **FastScatterSeries**, and add it to the [Series](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html#Syncfusion_Maui_Toolkit_Charts_SfCartesianChart_Series) collection property of [SfCartesianChart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html).
 
