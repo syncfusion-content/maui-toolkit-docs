@@ -9,11 +9,11 @@ documentation: ug
 
 # Center Button Customization in .NET MAUI Tab View (SfTabView)
 
-This section explains how to create and customize The .NET MAUI [SfTabView](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SfTabView.html)
+This section explains how to enable and customize The center button in .NET MAUI [SfTabView.](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SfTabView.html)
 
 ## Enable the center button 
 
-You can enable the center button in Tab View by setting `IsCenterButtonEnable` property to true. Its appearance can be configured using `CenterButtonSettings`.
+You can enable the center button in Tab View by setting the `IsCenterButtonEnable` property to `True.`
 
 {% tabs %}
 
@@ -38,7 +38,7 @@ public MainPage()
 {% endtabs %}
 
 ## Customize the center button
-You can customize the center button using the properties of CenterButtonSetting. The following properties are used to customize the view of center button `Background`, `Stroke`,`StrokeThickness`, `CornerRadius`, `TextColor`, `Height`, `Title`, `FontAttributes`, `FontFamily`, `FontSize`, `Width`, `ImageSource`, `ImageSize`, `DisplayMode`.
+You can customize the center button using the properties of `CenterButtonSetting.` The following properties are used to customize the view of the center button `Background,` `Stroke,` `StrokeThickness,` `CornerRadius,` `TextColor,` `Height,` `Title,` `FontAttributes,` `FontFamily,` `FontSize,` `Widt,h` `ImageSource,` `ImageSize,` and `DisplayMode.`
 
 
 {% tabs %}
@@ -70,17 +70,21 @@ public MainPage()
 {
     InitializeComponent();
     SfTabView tabView = new SfTabView();
-    CenterButtonSettings centerButton = new CenterButtonSettings ();
-    centerButton.Height = 80;
-    centerButton.Width = 100;
-    centerButton.Title = "Center Button";
-    centerButton.FontAttributes = FontAttributes.Bold;
-    centerButton.TextColor = Colors.Green;
-    centerButton.DisplayMode = CenterButtonDisplayMode.ImageWithText;
-    centerButton.ImageSource = "Home.png";
-    centerButton.ImageSize = 24;
-    centerButton.FontFamily = "SevillanaRegular";
-    centerButton.CornerRadius = 10;
+		CenterButtonSettings centerButtonSettings = new CenterButtonSettings()
+		{
+			Height = 80,
+			Width = 100,
+			Title = "Center Button",
+			FontAttributes = FontAttributes.Bold,
+			TextColor = Colors.Green,
+			DisplayMode = CenterButtonDisplayMode.ImageWithText,
+			ImageSource = "Home.png",
+			ImageSize = 24,
+			FontFamily = "SevillanaRegular",
+			CornerRadius = new CornerRadius(10),
+		};
+
+		tabView.CenterButtonSettings = centerButtonSettings;
 }
 {% endhighlight %}
 
@@ -88,7 +92,7 @@ public MainPage()
 
 ## Center button tapped event
 
-When center button is tapped, the `CenterButtonTapped` event occurs. Using this event we can set alert message.
+When the center button is tapped, the `CenterButtonTapped` event occurs. Using this event we can set alert messages.
 
 {% tabs %}
 
