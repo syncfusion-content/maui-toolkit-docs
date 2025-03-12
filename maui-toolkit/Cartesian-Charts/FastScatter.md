@@ -31,13 +31,11 @@ N> The Cartesian chart has [Series](https://help.syncfusion.com/cr/maui-toolkit/
 
       <chart:FastScatterSeries ItemsSource="{Binding Data1}" 
                                XBindingPath="XValue" 
-                               YBindingPath="YValue" 
-                               Label="Train travel"/>
+                               YBindingPath="YValue" />
 
       <chart:FastScatterSeries ItemsSource="{Binding Data2}" 
                                XBindingPath="XValue" 
-                               YBindingPath="YValue" 
-                               Label="Automobile travel"/>
+                               YBindingPath="YValue" />
 
 </chart:SfCartesianChart>
 
@@ -58,7 +56,6 @@ FastScatterSeries scatterSeries1 = new FastScatterSeries
     ItemsSource = new ViewModel().Data1,
     XBindingPath = "XValue",
     YBindingPath = "YValue",
-    Label = "Train travel"
 };
 
 FastScatterSeries scatterSeries2 = new FastScatterSeries
@@ -66,7 +63,6 @@ FastScatterSeries scatterSeries2 = new FastScatterSeries
     ItemsSource = new ViewModel().Data2,
     XBindingPath = "XValue",
     YBindingPath = "XValue",
-    Label = "Automobile travel"
 };
 
 chart.Series.Add(scatterSeries1);
