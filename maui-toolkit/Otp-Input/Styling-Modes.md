@@ -1,20 +1,20 @@
 ---
 layout: post
-title: Styling Modes in .NET MAUI OtpInput | Syncfusion®
-description: Learn here about styling modes in Syncfusion® .NET MAUI OtpInput (SfOtpInput) control in your cross-platform applications.
+title: Styling Modes in .NET MAUI OTP Input | Syncfusion®
+description: Learn here about styling modes in Syncfusion® .NET MAUI OTP Input (SfOtpInput) control in your cross-platform applications.
 platform: maui-toolkit
-control: OtpInput
+control: OTP Input
 documentation: ug
 ---
 
-# Styling Modes in OtpInput
+# Styling Modes in OTP Input
 
-Styling modes specify the visual style variants for input fields in the OtpInput component, allowing you to customize appearances according to your application's design needs.
+Styling modes specify the visual style variants for input fields in the OTP Input component, allowing you to customize appearances according to your application's design needs.
 
 
 ## Outline mode
 
-You can customize the appearance of input fields with a border around them by setting the `StylingMode` property to `Outlined.`  This is the default styling mode for the OtpInput component.
+You can customize the appearance of input fields with a border around them by setting the `StylingMode` property to `Outlined.`  This is the default styling mode for the OTP Input component.
 
 {% tabs %}	
 {% highlight xaml %}
@@ -32,7 +32,7 @@ SfOtpInput otpInput = new SfOtpInput()
 {% endhighlight %}
 {% endtabs %}
 
-![Outlined Image for OtpInput](images/outlined.png)
+![Outlined Image for OTP Input](images/outlined.png)
 
 ## Filled mode
 
@@ -54,7 +54,7 @@ SfOtpInput otpInput = new SfOtpInput()
 {% endhighlight %}
 {% endtabs %}
 
-![Filled Image for OtpInput](images/filled.png)
+![Filled Image for OTP Input](images/filled.png)
 
 ## Underline mode
 
@@ -76,4 +76,4 @@ SfOtpInput otpInput = new SfOtpInput()
 {% endhighlight %}
 {% endtabs %}
 
-![Underlined Image for OtpInput](images/underlined.png)
+![Underlined Image for OTP Input](images/underlined.png)
