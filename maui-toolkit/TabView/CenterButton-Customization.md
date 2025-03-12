@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Center Button Customization in .NET MAUI Tab View (SfTabView) | Syncfusion®
-description: Learn here all about center button Customization in .NET MAUI Tab View control and more.
+title: Center button customization in .NET MAUI Tab View | Syncfusion®
+description: Learn here all about center button Customization in .NET MAUI Tab View control.
 platform: maui-toolkit
 control: Tab View
 documentation: ug

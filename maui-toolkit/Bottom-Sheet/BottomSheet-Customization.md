@@ -90,7 +90,7 @@ bottomSheet.AllowedState = BottomSheetAllowedState.HalfExpanded;
 {% endtabs %}
 
 
-## Collapse OnOverlay Tap
+## Overlay tap to collapse
 
 The `CollapseOnOverlayTap` property enables the bottom sheet to collapse when the user taps on the overlay (outside the sheet). This enhances user interaction by allowing easy dismissal of the sheet without fully closing it.
 
@@ -110,7 +110,7 @@ SfBottomSheet bottomSheet = new SfBottomSheet();
 bottomSheet.CollapseOnOverlayTap = true;
 
 {% endhighlight %}
-{% endtabs %
+{% endtabs %}
 
 ![Collapse on overlay tap image for BottomSheet](images/collapseOnOverlayTap.gif)
 
