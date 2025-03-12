@@ -138,18 +138,19 @@ tabView.ContentTransitionDuration = 1000;
 
 {% endtabs %}
 
-![content transition enabled ](images/IsContentTransitionEnabled.gif) 
 
+## Tab header alignment 
 
-## Tab header alignment support
-
-The .NET MAUI TabView allows users to customize the header position using the TabHeaderAlignment` property, providing greater flexibility in tab layout customization.
+The .NET MAUI TabView allows users to customize the header position using the `TabHeaderAlignment` property, providing greater flexibility in tab layout customization.
 
 By default, the header is positioned at the Start. This property supports the following values:
 
 *   **Start** - Positions the tab header at the beginning of the tab view.
 *   **Center** - Aligns the tab header at the center of the tab view.
 *   **End** - Places the tab header at the end of the tab view.
+
+
+N> The `TabHeaderAlignment` property is applicable only when the `TabWidthMode` is set to SizeToContent.
 
 {% tabs %}
 
@@ -163,8 +164,6 @@ SfTabView tabView = new SfTabView();
 {% endhighlight %}
 
 {% endtabs %}
-
-![TabHeaderAlignment ](images/TabHeaderAlignment_center.png) 
 
 ## Tab bar placement options 
 
