@@ -112,6 +112,8 @@ bottomSheet.CollapseOnOverlayTap = true;
 {% endhighlight %}
 {% endtabs %
 
+![Collapse on overlay tap image for BottomSheet](images/collapseOnOverlayTap.gif)
+
 ## Content Padding
 The [ContentPadding](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.BottomSheet.SfBottomSheet.html#Syncfusion_Maui_Toolkit_BottomSheet_SfBottomSheet_ContentPadding) property of the [BottomSheet](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.BottomSheet.SfBottomSheet.html) adds space around the content creating a gap between the bottom sheet content and the edges.
 
@@ -377,12 +379,12 @@ SfBottomSheet bottomSheet = new SfBottomSheet
 
 ### Grabber area height
 
-The `GrabberAreaHeight` support in the [BottomSheet](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.BottomSheet.SfBottomSheet.html) control allows developers to customize the height of the drag area, enhancing usability and appearance.
+The `GrabberAreaHeight` feature in the [BottomSheet](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.BottomSheet.SfBottomSheet.html) control allows developers to adjust the height of the drag area, thus enhancing both usability and appearance.
 
 {% tabs %}	
 {% highlight xaml %}
 
-<bottomSheet:SfBottomSheet x:Name="bottomSheet" GrabberAreaHeight="30">
+<bottomSheet:SfBottomSheet x:Name="bottomSheet" GrabberAreaHeight="100">
     <bottomSheet:SfBottomSheet.BottomSheetContent>
         <!--Add your content here-->    
     </bottomSheet:SfBottomSheet.BottomSheetContent>
@@ -393,10 +395,10 @@ The `GrabberAreaHeight` support in the [BottomSheet](https://help.syncfusion.com
 
 SfBottomSheet bottomSheet = new SfBottomSheet
 {
-    GrabberAreaHeight = 30
+    GrabberAreaHeight = 100
 };
 
 {% endhighlight %}
 {% endtabs %}
 
-![Grabber area height for BottomSheet](images/grabberAreaHeight.png)
+![Grabber area height for BottomSheet](images/grabberAreaHeight.jpg)

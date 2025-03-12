@@ -1,15 +1,16 @@
 ---
 layout: post
-title: CenterButton Customization in .NET MAUI Tab View (SfTabView) | Syncfusion®
-description: Learn here all about CenterButton Customization in .NET MAUI Tab View control and more.
+title: Center Button Customization in .NET MAUI Tab View (SfTabView) | Syncfusion®
+description: Learn here all about center button Customization in .NET MAUI Tab View control and more.
 platform: maui-toolkit
 control: Tab View
 documentation: ug
 ---
 
-# CenterButton Customization in .NET MAUI Tab View (SfTabView)
+# Center Button Customization in .NET MAUI Tab View (SfTabView)
 
-This section explains how to create and customize The .NET MAUI [SfTabView](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SfTabView.html) CenterButton. Its appearance can be configured using `CenterButtonSettings,` and visibility can be controlled with `IsCenterButtonEnabled.`
+## Enable the center button 
+This section explains how to create and customize The .NET MAUI [SfTabView](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SfTabView.html) Center Button. Its appearance can be configured using `CenterButtonSettings,` and visibility can be controlled with `IsCenterButtonEnabled.`
 
 {% tabs %}
 
@@ -33,8 +34,8 @@ public MainPage()
 
 {% endtabs %}
 
-## Customize CenterButtonSettings
-We can customize the CenterButton using the properties of CenterButtonSetting. The following properties are used to customize the view of CenterButton `Background`, `Stroke`,`StrokeThickness`, `CornerRadius`, `TextColor`, `Height`, `Title`, `FontAttributes`, `FontFamily`, `FontSize`, `Width`.
+## Customize the center button
+We can customize the center button using the properties of CenterButtonSetting. The following properties are used to customize the view of center button `Background`, `Stroke`,`StrokeThickness`, `CornerRadius`, `TextColor`, `Height`, `Title`, `FontAttributes`, `FontFamily`, `FontSize`, `Width`, `ImageSource`, `ImageSize`, `DisplayMode`.
 
 
 {% tabs %}
@@ -42,10 +43,20 @@ We can customize the CenterButton using the properties of CenterButtonSetting. T
 {% highlight xaml %}
 
 <tabView:SfTabView.CenterButtonSettings>
-    <tabView:CenterButtonSettings Height="80" Width="100"
-                                  Title="Center Button" TextColor="Green"
-                                  FontAttributes="Bold">
-    </tabView:CenterButtonSettings>
+     <tabView:CenterButtonSettings Title="Home" 
+                              Height="70" 
+                              Width="80"
+                              Background="White" 
+                              Stroke="HotPink" 
+                              StrokeThickness="3" 
+                              CornerRadius="10" 
+                              TextColor="Green" 
+                              ImageSource="image.png" 
+                              ImageSize="24" 
+                              DisplayMode="ImageWithText" 
+                              FontFamily="SevillanaRegular" 
+                              FontAttributes="Bold" 
+                              FontSize="16" />
 </tabView:SfTabView.CenterButtonSettings>
 
 {% endhighlight %}
@@ -55,26 +66,27 @@ We can customize the CenterButton using the properties of CenterButtonSetting. T
 public MainPage()
 {
     InitializeComponent();
-    var centerButton = tabView.CenterButtonSettings;
-    centerButton.Height = 80;
+    var centerButton = tabView.CenterButtonSettings;        centerButton.Height = 80;
     centerButton.Width = 100;
-    centerButton.Title = "Center Button";
+    centerButton.Title = "Center Button";    
     centerButton.FontAttributes = FontAttributes.Bold;
-    centerButton.TextColor = Color.Green;
+    centerButton.TextColor = Colors.Green;        centerButton.DisplayMode = CenterButtonDisplayMode.ImageWithText;
+    centerButton.ImageSource = "Home.png";        centerButton.ImageSize = 24;
+    centerButton.FontFamily = "SevillanaRegular";        centerButton.CornerRadius = 10;
 }
 {% endhighlight %}
 
 {% endtabs %}
 
-## CenterButtonTapped event
+## Center button tapped event
 
-When CenterButton is tapped, the `CenterButtonTapped` event occurs. Using this event we can set alert message.
+When center button is tapped, the `CenterButtonTapped` event occurs. Using this event we can set alert message.
 
 {% tabs %}
 
 {% highlight xaml %}
 
-<tabView:SfTabView CenterButtonTapped="TabView_CenterButtonTapped">
+<tabView:SfTabView CenterButtonTapped="OnCenterButtonTapped">
 </tabView:SfTabView>
 
 {% endhighlight %}
@@ -84,10 +96,10 @@ When CenterButton is tapped, the `CenterButtonTapped` event occurs. Using this e
 public MainPage()
 {
     InitializeComponent();
-    tabView.CenterButtonTapped += TabView_CenterButtonTapped;
+    tabView.CenterButtonTapped += OnCenterButtonTapped;
 }
 
-private void TabView_CenterButtonTapped(object sender, EventArgs e)
+private void OnCenterButtonTapped(object sender, EventArgs e)
 {
     DisplayAlert("Message", "CenterButton Clicked", "Ok");
 }
@@ -96,43 +108,4 @@ private void TabView_CenterButtonTapped(object sender, EventArgs e)
 
 {% endtabs %}
 
-## Custom CenterButton
-
-
-{% tabs %}
-
-{% highlight xaml %}
-<tabView:SfTabView.CenterButtonSettings>
-     <tabView:CenterButtonSettings 
-     Height="70"
-     Width="100"     
-     TextColor="HotPink" 
-     StrokeThickness="3" 
-     CornerRadius="10"      
-     ImageSource="home.png"
-     ImageSize="24" 
-     DisplayMode="ImageWithText" />
-</tabView:SfTabView.CenterButtonSettings>
-
-{% endhighlight %}
-
-{% highlight C# %}
-
-public MainPage()
-{
-    InitializeComponent();
-    var centerButton = tabView.CenterButtonSettings;
-    centerButton.Height = 80;
-    centerButton.Width = 100;   
-    centerButton.TextColor = Color.HotPink;
-    centerButton.StrokeThickness = 3;
-    centerButton.CornerRadius = 10;
-    centerButton.ImageSource = "home.png"
-    centerButton.ImageSize = 24;    
-}
-
-{% endhighlight %}
-
-{% endtabs %}
-
-![CenterButton .NET MAUI TabView](images/TabView-CenterButton.png)
+![CenterButton .NET MAUI TabView](images/CenterButton.png)
