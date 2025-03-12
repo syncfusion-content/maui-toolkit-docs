@@ -31,11 +31,16 @@ N> The Cartesian chart has [Series](https://help.syncfusion.com/cr/maui-toolkit/
         <chart:NumericalAxis/>
     </chart:SfCartesianChart.YAxes>
 
-    <chart:FastScatterSeries ItemsSource="{Binding Data}"
-                             XBindingPath="XValue"
-                             YBindingPath="YValue" 
-                             PointHeight="8"
-                             PointWidth="8"/>
+      <chart:FastScatterSeries ItemsSource="{Binding Data1}" 
+                               XBindingPath="XValue" 
+                               YBindingPath="YValue" 
+                               Label="Train travel"/>
+
+      <chart:FastScatterSeries ItemsSource="{Binding Data2}" 
+                               XBindingPath="XValue" 
+                               YBindingPath="YValue" 
+                               Label="Automobile travel"/>
+
 </chart:SfCartesianChart>
 
 {% endhighlight %}
@@ -50,16 +55,24 @@ chart.XAxes.Add(primaryAxis);
 NumericalAxis secondaryAxis = new NumericalAxis();
 chart.YAxes.Add(secondaryAxis);
 
-FastScatterSeries series = new FastScatterSeries()
+FastScatterSeries scatterSeries1 = new FastScatterSeries
 {
-    ItemsSource = new ViewModel().Data,
+    ItemsSource = new ViewModel().Data1,
     XBindingPath = "XValue",
     YBindingPath = "YValue",
-    PointHeight = 8,
-    PointWidth = 8,
+    Label = "Train travel"
 };
 
-chart.Series.Add(series);
+FastScatterSeries scatterSeries2 = new FastScatterSeries
+{
+    ItemsSource = new ViewModel().Data2,
+    XBindingPath = "XValue",
+    YBindingPath = "XValue",
+    Label = "Automobile travel"
+};
+
+chart.Series.Add(scatterSeries1);
+chart.Series.Add(scatterSeries2);
 this.Content = chart;
 
 {% endhighlight %}
