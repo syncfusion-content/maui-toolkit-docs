@@ -70,21 +70,21 @@ public MainPage()
 {
     InitializeComponent();
     SfTabView tabView = new SfTabView();
-		CenterButtonSettings centerButtonSettings = new CenterButtonSettings()
-		{
-			Height = 80,
-			Width = 100,
-			Title = "Center Button",
-			FontAttributes = FontAttributes.Bold,
-			TextColor = Colors.Green,
-			DisplayMode = CenterButtonDisplayMode.ImageWithText,
-			ImageSource = "Home.png",
-			ImageSize = 24,
-			FontFamily = "SevillanaRegular",
-			CornerRadius = new CornerRadius(10),
-		};
+    CenterButtonSettings centerButtonSettings = new CenterButtonSettings()
+    {
+        Height = 80,
+        Width = 100,
+        Title = "Center Button",
+        FontAttributes = FontAttributes.Bold,
+        TextColor = Colors.Green,
+        DisplayMode = CenterButtonDisplayMode.ImageWithText,
+        ImageSource = "Home.png",
+        ImageSize = 24,
+        FontFamily = "SevillanaRegular",
+        CornerRadius = new CornerRadius(10),
+    };
 
-		tabView.CenterButtonSettings = centerButtonSettings;
+    tabView.CenterButtonSettings = centerButtonSettings;
 }
 {% endhighlight %}
 
@@ -119,5 +119,3 @@ private void OnCenterButtonTapped(object sender, EventArgs e)
 {% endhighlight %}
 
 {% endtabs %}
-
-
