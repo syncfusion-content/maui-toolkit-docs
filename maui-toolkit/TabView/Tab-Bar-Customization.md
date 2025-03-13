@@ -145,9 +145,9 @@ The .NET MAUI TabView allows users to customize the header position using the `T
 
 By default, the header is positioned at the Start. This property supports the following values:
 
-*   **Start** - Positions the tab header at the beginning of the tab view.
-*   **Center** - Aligns the tab header at the center of the tab view.
-*   **End** - Places the tab header at the end of the tab view.
+*   **Start** - Positions the tab header at the beginning of the Tab View.
+*   **Center** - Aligns the tab header at the center of the Tab View.
+*   **End** - Places the tab header at the end of the Tab View.
 
 
 N> The `TabHeaderAlignment` property is applicable only when the `TabWidthMode` is set to SizeToContent.
