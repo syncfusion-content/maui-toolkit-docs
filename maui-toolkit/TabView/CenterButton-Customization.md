@@ -38,19 +38,8 @@ public MainPage()
 {% endtabs %}
 
 ## Customize the center button
-<<<<<<< .mine
 
-=======
-You can customize the center button using the properties of `CenterButtonSetting.` The following properties are used to customize the view of the center button `Background,` `Stroke,` `StrokeThickness,` `CornerRadius,` `TextColor,` `Height,` `Title,` `FontAttributes,` `FontFamily,` `FontSize,` `Width,` `ImageSource,` `ImageSize,` and `DisplayMode.`
->>>>>>> .theirs
-
-<<<<<<< .mine
-You can customize the center button using the properties of `CenterButtonSettings`. The following properties are used to customize the view of center button `Background`, `Stroke`,`StrokeThickness`, `CornerRadius`, `TextColor`, `Height`, `Title`, `FontAttributes`, `FontFamily`, `FontSize`, `Width`, `ImageSource`, `ImageSize`, `DisplayMode`.
-
-=======
-
-
->>>>>>> .theirs
+You can customize the center button using the properties of `CenterButtonSettings`. The following properties are used to customize the view of center button `Background`, `Stroke`,`StrokeThickness`, `CornerRadius`, `TextColor`, `Height`, `Title`, `FontAttributes`, `FontFamily`, `FontSize`, `Width`, `ImageSource`, `ImageSize`, and `DisplayMode`.
 
 {% tabs %}
 
