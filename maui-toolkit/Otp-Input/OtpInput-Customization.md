@@ -122,28 +122,6 @@ SfOtpInput otpInput = new SfOtpInput()
 
 ![InputLength Image for OTP Input](images/length.png)
 
-## Disable inputs
-
-You can disable the OTP Input component by using the `IsEnabled` property. By default, this property's value is set to `True.`
-
-{% tabs %}
-{% highlight xaml %}
-
-<otpInput:SfOtpInput IsEnabled="False" />
-
-{% endhighlight %}
-{% highlight C# %}
-
-SfOtpInput otpInput = new SfOtpInput()
-{
-    IsEnabled = false
-};
-
-{% endhighlight %}
-{% endtabs %}
-
-![Disabled Image for OTP Input](images/isenabled.png)
-
 ## Input background
 
 You can set the `InputBackground` property to any color to customize the appearance of the input fields. The `InputBackground` property applies only when `StylingMode` is set to `Filled.`
@@ -218,7 +196,7 @@ You can set the `MaskCharacter` property to any character to define how the mask
 {% tabs %}
 {% highlight xaml %}
 
-<otpInput:SfOtpInput Type="Password" MaskCharacter="*" />
+<otpInput:SfOtpInput Type="Password" MaskCharacter="#" />
 
 {% endhighlight %}
 {% highlight C# %}
@@ -226,7 +204,7 @@ You can set the `MaskCharacter` property to any character to define how the mask
 SfOtpInput otpInput = new SfOtpInput()
 {
     Type = OtpInputType.Password,
-    MaskCharacter = '*'
+    MaskCharacter = '#'
 };
 
 {% endhighlight %}
