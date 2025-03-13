@@ -52,7 +52,7 @@ You can customize the center button using the properties of `CenterButtonSetting
                                 Background="#6750A4"
                                 ImageSize="25"
                                 DisplayMode="Image"
-                                ImageSource="home.png">
+                                ImageSource="image.png">
   </tabView:CenterButtonSettings>
 </tabView:SfTabView.CenterButtonSettings>
 
@@ -72,7 +72,7 @@ public MainPage()
         ImageSize = 25,
         Background = Color.FromArgb("#6750A4");
         CornerRadius = new CornerRadius(50),
-        ImageSource = "home.png"        
+        ImageSource = "image.png"        
     };
 
     tabView.CenterButtonSettings = centerButtonSettings;
