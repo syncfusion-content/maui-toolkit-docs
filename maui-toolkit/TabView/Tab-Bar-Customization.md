@@ -127,7 +127,7 @@ The .NET MAUI Tab View allows users to enable or disable the transition animatio
 {% tabs %}
 
 {% highlight xaml %}
-<tabView:SfTabView IsContentTransitionEnabled="True" ContentTransitionDuration = 1000/>
+<tabView:SfTabView IsContentTransitionEnabled="True" ContentTransitionDuration = "1000"/>
 {% endhighlight %}
 
 {% highlight C# %}
