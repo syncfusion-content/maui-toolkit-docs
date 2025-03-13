@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Migration from Syncfusion® .NET MAUI to Syncfusion® Toolkit for .NET MAUI
+title: Switch from Syncfusion® .NET MAUI to Syncfusion® Toolkit for .NET MAUI
 description: Describes the necessary changes to easily update the existing Syncfusion® .NET MAUI control to use the new toolkit with minimal code modifications.
 platform: maui-toolkit
 control: General
@@ -80,6 +80,12 @@ By preserving similar APIs and functionality, developers can easily update their
   <td>xmlns:numericUpDown ="clr-namespace:Syncfusion.Maui.Inputs;assembly=Syncfusion.Maui.Inputs"</td>
   <td>xmlns:numericUpDown="clr-namespace:Syncfusion.Maui.Toolkit.NumericUpDown;assembly=Syncfusion.Maui.Toolkit"</td>
   <td>Defines the XAML namespace for <a href="https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericUpDown.SfNumericUpDown.html">SfNumericUpDown</a> control.</td>
+</tr>
+<tr>
+  <td>SfPopup</td>
+  <td>xmlns:popup="clr-namespace:Syncfusion.Maui.Popup;assembly=Syncfusion.Maui.Popup"</td>
+  <td>xmlns:popup="clr-namespace:Syncfusion.Maui.Toolkit.Popup;assembly=Syncfusion.Maui.Toolkit"</td>
+  <td>Defines the XAML namespace for SfPopup control.</td>
 </tr>
 <tr>
   <td><a href="https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.PullToRefresh.SfPullToRefresh.html">SfPullToRefresh</a></td>
