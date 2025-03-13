@@ -89,7 +89,7 @@ public MainPage()
 
 {% endtabs %}
 
-![.NET MAUI Customize the center button](/TabView/images/CenterButton-Customizaton.jpg) 
+![.NET MAUI Customize the center button](images/CenterButton-Customizaton.jpg) 
 
 ## Center button tapped event
 
