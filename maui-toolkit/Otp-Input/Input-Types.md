@@ -11,7 +11,7 @@ documentation: ug
 
 ## Types
 
-This section explains the the various types of OTP (One-Time Password) input component, explaining their default behaviors and appropriate use cases.
+This section explains the various types of OTP (One-Time Password) input component, explaining their default behaviors and appropriate use cases.
 
 ### Number type
 
