@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with .NET MAUI Chips control | Syncfusion<sup>®</sup>
-description: Learn here about getting started with Syncfusion<sup>®</sup> Toolkit for .NET MAUI Chips control, its elements and more.
+title: Getting Started with .NET MAUI Chips control | Syncfusion®
+description: Learn here about getting started with Syncfusion® Toolkit for .NET MAUI Chips control, its elements and more.
 platform: maui-toolkit
 control: Chips
 documentation: ug
@@ -436,6 +436,8 @@ this.Content = grid;
 {% endtabs %}
 
 ![ChipGroup sample with display member path and itemsSource demo](images/getting-started/getting_started.png)
+
+N> When publishing in AOT mode on iOS, ensure `[Preserve(AllMembers = true)]` is added to the model class to maintain DisplayMemberPath binding
 
 ## Set types of chip group
 

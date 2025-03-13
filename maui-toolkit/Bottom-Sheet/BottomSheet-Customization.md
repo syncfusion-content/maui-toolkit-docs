@@ -89,6 +89,29 @@ bottomSheet.AllowedState = BottomSheetAllowedState.HalfExpanded;
 {% endhighlight %}
 {% endtabs %}
 
+
+## Overlay tap to collapse
+
+The `CollapseOnOverlayTap` property enables the bottom sheet to collapse when the user taps on the overlay (outside the sheet). This enhances user interaction by allowing easy dismissal of the sheet without fully closing it.
+
+{% tabs %}	
+{% highlight xaml %}
+
+<bottomSheet:SfBottomSheet x:Name="bottomSheet" CollapseOnOverlayTap="True">
+    <bottomSheet:SfBottomSheet.BottomSheetContent>
+        <!--Add your content here-->    
+    </bottomSheet:SfBottomSheet.BottomSheetContent>
+</bottomSheet:SfBottomSheet>
+	
+{% endhighlight %}
+{% highlight c# %}
+
+SfBottomSheet bottomSheet = new SfBottomSheet();
+bottomSheet.CollapseOnOverlayTap = true;
+
+{% endhighlight %}
+{% endtabs %}
+
 ## Content Padding
 The [ContentPadding](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.BottomSheet.SfBottomSheet.html#Syncfusion_Maui_Toolkit_BottomSheet_SfBottomSheet_ContentPadding) property of the [BottomSheet](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.BottomSheet.SfBottomSheet.html) adds space around the content creating a gap between the bottom sheet content and the edges.
 
@@ -350,3 +373,28 @@ SfBottomSheet bottomSheet = new SfBottomSheet
 {% endhighlight %}
 {% endtabs %}
 ![Grabber Customization Image for BottomSheet](images/grabberCustomization.png)
+
+
+### Grabber area height
+
+The `GrabberAreaHeight` feature in the [BottomSheet](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.BottomSheet.SfBottomSheet.html) control allows developers to adjust the height of the drag area, thus enhancing both usability and appearance.
+
+{% tabs %}	
+{% highlight xaml %}
+
+<bottomSheet:SfBottomSheet x:Name="bottomSheet" GrabberAreaHeight="100">
+    <bottomSheet:SfBottomSheet.BottomSheetContent>
+        <!--Add your content here-->    
+    </bottomSheet:SfBottomSheet.BottomSheetContent>
+</bottomSheet:SfBottomSheet>
+	
+{% endhighlight %}
+{% highlight c# %}
+
+SfBottomSheet bottomSheet = new SfBottomSheet
+{
+    GrabberAreaHeight = 100
+};
+
+{% endhighlight %}
+{% endtabs %}
