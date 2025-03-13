@@ -622,6 +622,24 @@ tabView.ContentTransitionDuration = 300;
 
 {% endtabs %}
 
+## Enable content transition
+
+The .NET MAUI Tab View allows users to enable or disable the transition animation for tab content when switching between tabs using `IsContentTransitionEnabled` property. 
+
+{% tabs %}
+
+{% highlight xaml %}
+<tabView:SfTabView IsContentTransitionEnabled="True" ContentTransitionDuration = "1000"/>
+{% endhighlight %}
+
+{% highlight C# %}
+SfTabView tabView = new SfTabView();
+tabView.IsContentTransitionEnabled = "True"; 
+tabView.ContentTransitionDuration = 1000; 
+{% endhighlight %}
+
+{% endtabs %}
+
 ## Image size
 
 You can customize the image size in the .NET MAUI TabView control by setting the [ImageSize](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SfTabItem.html#Syncfusion_Maui_Toolkit_TabView_SfTabItem_ImageSize) property.
