@@ -22,6 +22,12 @@ By preserving similar APIs and functionality, developers can easily update their
 <th>Description</th>
 </tr>
 <tr>
+  <td><a href="https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Accordion.SfAccordion.html">SfAccordion</a></td>
+  <td>xmlns:accordion="clr-namespace:Syncfusion.Maui.Accordion;assembly=Syncfusion.Maui.Expander"</td>
+  <td>xmlns:accordion="clr-namespace:Syncfusion.Maui.Toolkit.Accordion;assembly=Syncfusion.Maui.Toolkit"</td>
+  <td>Defines the XAML namespace for <a href="https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Accordion.SfAccordion.html">SfAccordion</a> control.</td>
+</tr>
+<tr>
   <td><a href="https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Buttons.SfButton.html">SfButton</a></td>
   <td>xmlns: button ="clr-namespace:Syncfusion.Maui.Buttons;assembly=Syncfusion.Maui.Buttons"</td>
   <td>xmlns:button ="clr-namespace:Syncfusion.Maui.Toolkit.Buttons;assembly=Syncfusion.Maui.Toolkit"</td>
@@ -62,6 +68,12 @@ By preserving similar APIs and functionality, developers can easily update their
 <td>xmlns:effectsView="clr-namespace:Syncfusion.Maui.Core;assembly=Syncfusion.Maui.Core"</td>
 <td>xmlns:effectsView="clr-namespace:Syncfusion.Maui.Toolkit.EffectsView;assembly=Syncfusion.Maui.Toolkit"</td>
 <td>Defines the XAML namespace for <a href="https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.EffectsView.SfEffectsView.html">SfEffectsView</a> control.</td>
+</tr>
+<tr>
+  <td><a href="https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Expander.SfExpander.html">SfExpander</a></td>
+  <td>xmlns:expander="clr-namespace:Syncfusion.Maui.Expander;assembly=Syncfusion.Maui.Expander"</td>
+  <td>xmlns:expander="clr-namespace:Syncfusion.Maui.Toolkit.Expander;assembly=Syncfusion.Maui.Toolkit"</td>
+  <td>Defines the XAML namespace for <a href="https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Expander.SfExpander.html">SfExpander</a> control.</td>
 </tr>
 <tr>
   <td><a href="https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NavigationDrawer.SfNavigationDrawer.html">SfNavigationDrawer</a></td>
