@@ -51,11 +51,8 @@ You can customize the center button using the properties of `CenterButtonSetting
                                 CornerRadius="50"
                                 Background="#6750A4"
                                 ImageSize="25"
-                                DisplayMode="Image">
-    <tabView:CenterButtonSettings.ImageSource>
-        <FontImageSource Glyph="&#xe73d;"
-                         Color="#FFFBFE" FontFamily="MauiSampleFontIcon"/>
-    </tabView:CenterButtonSettings.ImageSource>
+                                DisplayMode="Image"
+                                ImageSource="home.png">
   </tabView:CenterButtonSettings>
 </tabView:SfTabView.CenterButtonSettings>
 
@@ -75,12 +72,7 @@ public MainPage()
         ImageSize = 25,
         Background = Color.FromArgb("#6750A4");
         CornerRadius = new CornerRadius(10),
-        ImageSource = new FontImageSource
-        {
-            Glyph = "\uE73D",
-            Color = Color.FromArgb("#FFFBFE"),
-            FontFamily = "MauiSampleFontIcon"
-        }
+        ImageSource = "home.png"        
     };
 
     tabView.CenterButtonSettings = centerButtonSettings;
