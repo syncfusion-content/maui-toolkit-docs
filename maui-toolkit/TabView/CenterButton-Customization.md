@@ -71,7 +71,7 @@ public MainPage()
         DisplayMode = CenterButtonDisplayMode.Image,
         ImageSize = 25,
         Background = Color.FromArgb("#6750A4");
-        CornerRadius = new CornerRadius(10),
+        CornerRadius = new CornerRadius(50),
         ImageSource = "home.png"        
     };
 
