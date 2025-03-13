@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Accessibility in .NET MAUI OtpInput Control | Syncfusion
-description: Learn here all about the accessibility features of Syncfusion .NET MAUI OtpInput (SfOtpInput) control.
+title: Accessibility in .NET MAUI OTP Input Control | Syncfusion
+description: Learn here all about the accessibility features of Syncfusion .NET MAUI OTP Input (SfOtpInput) control.
 platform: maui
 control: SfOtpInput
 documentation: ug
 ---
 
-# Accessibility in .NET Maui SfOtpInput
+# Accessibility in .NET MAUI OTP Input (SfOtpInput)
 
-The OtpInput Control is designed to work effectively with the OtpInput elements, providing voice descriptions of their OtpInput items.
+The OTP Input Control is designed to work effectively with the OTP Input elements, providing voice descriptions of their OTP Input items.
 
 ## Keyboard Interaction
 The following keyboard shortcuts are supported by the OTP Input component.
@@ -28,7 +28,7 @@ Description
 LeftArrow
 </td>
 <td>
-Focuses the previous input in the OTP.
+Focuses the previous field in the OTP Input.
 </td>
 </tr>
 <tr>
@@ -36,7 +36,7 @@ Focuses the previous input in the OTP.
 RightArrow
 </td>
 <td>
-Focuses the next input in OTP.
+Focuses the next field in OTP Input.
 </td>
 </tr>
 <tr>
@@ -44,7 +44,7 @@ Focuses the next input in OTP.
 Tab
 </td>
 <td>
-Moves the initial focus and shifts focus to the next input of the OTP.
+Moves the initial focus and shifts focus to the next field of the OTP Input.
 </td>
 </tr>
 <tr>
@@ -52,7 +52,7 @@ Moves the initial focus and shifts focus to the next input of the OTP.
 Shift + Tab
 </td>
 <td>
-Moves the focus to the previous input of the OTP.
+Moves the focus to the previous field of the OTP Input.
 </td>
 </tr>
 </table>

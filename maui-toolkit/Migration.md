@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Migration from Syncfusion® .NET MAUI to Syncfusion® Toolkit for .NET MAUI
+title: Switch from Syncfusion® .NET MAUI to Syncfusion® Toolkit for .NET MAUI
 description: Describes the necessary changes to easily update the existing Syncfusion® .NET MAUI control to use the new toolkit with minimal code modifications.
 platform: maui-toolkit
 control: General
@@ -20,6 +20,12 @@ By preserving similar APIs and functionality, developers can easily update their
 <th>Syncfusion<sup>®</sup> .NET MAUI Namespace</th>
 <th>Syncfusion<sup>®</sup> Toolkit for .NET MAUI Namespace</th>
 <th>Description</th>
+</tr>
+<tr>
+  <td><a href="https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Accordion.SfAccordion.html">SfAccordion</a></td>
+  <td>xmlns:accordion="clr-namespace:Syncfusion.Maui.Accordion;assembly=Syncfusion.Maui.Expander"</td>
+  <td>xmlns:accordion="clr-namespace:Syncfusion.Maui.Toolkit.Accordion;assembly=Syncfusion.Maui.Toolkit"</td>
+  <td>Defines the XAML namespace for <a href="https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Accordion.SfAccordion.html">SfAccordion</a> control.</td>
 </tr>
 <tr>
   <td><a href="https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Buttons.SfButton.html">SfButton</a></td>
@@ -64,6 +70,12 @@ By preserving similar APIs and functionality, developers can easily update their
 <td>Defines the XAML namespace for <a href="https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.EffectsView.SfEffectsView.html">SfEffectsView</a> control.</td>
 </tr>
 <tr>
+  <td><a href="https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Expander.SfExpander.html">SfExpander</a></td>
+  <td>xmlns:expander="clr-namespace:Syncfusion.Maui.Expander;assembly=Syncfusion.Maui.Expander"</td>
+  <td>xmlns:expander="clr-namespace:Syncfusion.Maui.Toolkit.Expander;assembly=Syncfusion.Maui.Toolkit"</td>
+  <td>Defines the XAML namespace for <a href="https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Expander.SfExpander.html">SfExpander</a> control.</td>
+</tr>
+<tr>
   <td><a href="https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NavigationDrawer.SfNavigationDrawer.html">SfNavigationDrawer</a></td>
   <td>xmlns:navigationDrawer="clr-namespace:Syncfusion.Maui.NavigationDrawer;assembly=Syncfusion.Maui.NavigationDrawer"</td>
   <td>xmlns:navigationDrawer="clr-namespace:Syncfusion.Maui.Toolkit.NavigationDrawer;assembly=Syncfusion.Maui.Toolkit"</td>
@@ -80,6 +92,12 @@ By preserving similar APIs and functionality, developers can easily update their
   <td>xmlns:numericUpDown ="clr-namespace:Syncfusion.Maui.Inputs;assembly=Syncfusion.Maui.Inputs"</td>
   <td>xmlns:numericUpDown="clr-namespace:Syncfusion.Maui.Toolkit.NumericUpDown;assembly=Syncfusion.Maui.Toolkit"</td>
   <td>Defines the XAML namespace for <a href="https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericUpDown.SfNumericUpDown.html">SfNumericUpDown</a> control.</td>
+</tr>
+<tr>
+  <td><a href="https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Popup.SfPopup.html">SfPopup</a></td>
+  <td>xmlns:popup="clr-namespace:Syncfusion.Maui.Popup;assembly=Syncfusion.Maui.Popup"</td>
+  <td>xmlns:popup="clr-namespace:Syncfusion.Maui.Toolkit.Popup;assembly=Syncfusion.Maui.Toolkit"</td>
+  <td>Defines the XAML namespace for <a href="https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Popup.SfPopup.html">SfPopup</a> control.</td>
 </tr>
 <tr>
   <td><a href="https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.PullToRefresh.SfPullToRefresh.html">SfPullToRefresh</a></td>
@@ -181,6 +199,12 @@ By preserving similar APIs and functionality, developers can easily update their
   <td>Syncfusion.Maui.Inputs</td>
   <td>Syncfusion.Maui.Toolkit.NumericUpDown</td>
   <td>Defines the namespace for <a href="https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericUpDown.SfNumericUpDown.html">SfNumericUpDown</a> control.</td>
+</tr>
+<tr>
+  <td><a href="https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Popup.SfPopup.html">SfPopup</a></td>
+  <td>Syncfusion.Maui.Popup</td>
+  <td>Syncfusion.Maui.Toolkit.Popup</td>
+  <td>Defines the namespace for <a href="https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Popup.SfPopup.html">SfPopup</a> control.</td>
 </tr>
 <tr>
   <td><a href="https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.PullToRefresh.SfPullToRefresh.html">SfPullToRefresh</a></td>
