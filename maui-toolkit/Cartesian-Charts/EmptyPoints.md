@@ -188,4 +188,4 @@ The [EmptyPointSettings]() property allows you to customize the appearance of em
 
 ![Customize EmptyPoints in MAUI Chart](EmptyPoints_images\Customize_EmptyPoints.png)
 
-N> EmptyPoint support is not available for Histogram and BoxAndWhisker series.
+N> EmptyPoint support is not applicable for Histogram and BoxAndWhisker series.
