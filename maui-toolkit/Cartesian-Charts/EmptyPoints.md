@@ -35,11 +35,11 @@ By default, the [EmptyPointMode]() property is `None`. So the empty points will 
 ## Empty Point Mode
 The [EmptyPointMode]() property of series specifies how empty points should be handled. 
 
-This property is an enumeration with the following options:
+This property provides the following options.
 
-* None - Empty points are not rendered. This is the default behavior.
-* Zero - Empty points will be replaced with zero.
-* Average - Empty points will be replaced with the average value of the surrounding data points.
+* **None** - Empty points are not rendered. This is the default behavior.
+* **Zero** - Empty points will be replaced with zero.
+* **Average** - Empty points will be replaced with the average value of the surrounding data points.
 
 The following code example shows the [EmptyPointMode]() as `Zero`.
 
@@ -48,14 +48,14 @@ The following code example shows the [EmptyPointMode]() as `Zero`.
 {% highlight xaml %}
 
     <chart:SfCartesianChart>
-
+        
         .....
-
         <chart:LineSeries ItemsSource="{Binding ProductSales}"
                   XBindingPath="Product"
                   YBindingPath="Sales"
                   EmptyPointMode="Zero">
         </chart:LineSeries>
+
     </chart:SfCartesianChart>
 
 {% endhighlight %}
@@ -65,7 +65,6 @@ The following code example shows the [EmptyPointMode]() as `Zero`.
     SfCartesianChart chart = new SfCartesianChart();
 
     .....
-
     LineSeries series = new LineSeries()
     {
         ItemsSource = new ViewModel().ProductSales,
@@ -92,12 +91,12 @@ The following code example shows the [EmptyPointMode]() as `Average`.
     <chart:SfCartesianChart>
 
         .....
-
         <chart:ColumnSeries ItemsSource="{Binding ProductSales}"
                   XBindingPath="Product"
                   YBindingPath="Sales"
                   EmptyPointMode="Average">
         </chart:ColumnSeries>
+
     </chart:SfCartesianChart>
 
 {% endhighlight %}
@@ -107,7 +106,6 @@ The following code example shows the [EmptyPointMode]() as `Average`.
     SfCartesianChart chart = new SfCartesianChart();
 
     .....
-
     ColumnSeries series = new ColumnSeries()
     {
         ItemsSource = new ViewModel().ProductSales,
@@ -125,7 +123,7 @@ The following code example shows the [EmptyPointMode]() as `Average`.
 
 ![EmptyPoint Mode Average in MAUI Chart](EmptyPoints_images/EmptyPoints_Mode_Average.png)
 
-## Customizing Empty Points
+## Empty Point Customization
 The [EmptyPointSettings]() property allows you to customize the appearance of empty points in a series. This enables you to adjust various visual aspects of empty points, making them more distinct from the other data points. You can modify the following properties within [EmptyPointSettings]().
 
 * [Fill]() - Gets or sets the fill color for the empty points.
@@ -139,7 +137,6 @@ The [EmptyPointSettings]() property allows you to customize the appearance of em
     <chart:SfCartesianChart>
 
         .....
-
         <chart:LineSeries ItemsSource="{Binding ProductSales}"
                   XBindingPath="Product"
                   YBindingPath="Sales"
@@ -152,6 +149,7 @@ The [EmptyPointSettings]() property allows you to customize the appearance of em
                 <chart:EmptyPointSettings Fill="Orange" StrokeWidth="2"/>
             </chart:LineSeries.EmptyPointSettings>
         </chart:LineSeries>
+
     </chart:SfCartesianChart>
 
 {% endhighlight %}
@@ -161,7 +159,6 @@ The [EmptyPointSettings]() property allows you to customize the appearance of em
     SfCartesianChart chart = new SfCartesianChart();
 
     .....
-
     LineSeries series = new LineSeries()
     {
         ItemsSource = new ViewModel().ProductSales,
@@ -191,4 +188,4 @@ The [EmptyPointSettings]() property allows you to customize the appearance of em
 
 ![Customize EmptyPoints in MAUI Chart](EmptyPoints_images\Customize_EmptyPoints.png)
 
-N> The EmptyPoints feature is not supported for Histogram and BoxAndWhisker series.
+N> EmptyPoint support is not applicable for Histogram and BoxAndWhisker series.
