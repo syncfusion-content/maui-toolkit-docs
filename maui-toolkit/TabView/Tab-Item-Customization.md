@@ -624,7 +624,7 @@ tabView.ContentTransitionDuration = 300;
 
 ## Enable content transition
 
-The .NET MAUI Tab View allows users to enable or disable the transition animation for tab content when switching between tabs using `IsContentTransitionEnabled` property. 
+The .NET MAUI Tab View allows users to enable or disable the transition animation for tab content when switching between tabs using [IsContentTransitionEnabled](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SfTabView.html#Syncfusion_Maui_Toolkit_TabView_SfTabView_IsContentTransitionEnabled) property. 
 
 {% tabs %}
 
@@ -639,6 +639,8 @@ tabView.ContentTransitionDuration = 1000;
 {% endhighlight %}
 
 {% endtabs %}
+
+![.NET MAUI Tab View IsContentTransitionEnabled](images/ContentTransition.gif)
 
 ## Image size
 
