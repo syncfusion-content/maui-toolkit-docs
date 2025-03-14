@@ -9,13 +9,13 @@ documentation: ug
 
 # Customization in .NET MAUI OTP Input (SfOtpInput)
 
-An `OTP Input` consists of multiple elements that can be customized to enhance both its appearance and functionality.
+An [OTP Input](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.OtpInput.SfOtpInput.html) consists of multiple elements that can be customized to enhance both its appearance and functionality.
 
 ## Placeholder
 
 The placeholder for the OTP Input specifies the text that appears as a hint until the user enters a value.
 
-Set the placeholder text using the `Placeholder` property. When a single character is assigned, each input field will show the same character.
+Set the placeholder text using the [Placeholder](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.OtpInput.SfOtpInput.html#Syncfusion_Maui_Toolkit_OtpInput_SfOtpInput_Placeholder) property. When a single character is assigned, each input field will show the same character.
 
 {% tabs %}	
 {% highlight xaml %}
@@ -57,7 +57,7 @@ SfOtpInput otpInput = new SfOtpInput()
 
 ### PlaceholderColor
 
-The color of placeholder text can be changed using the `PlaceholderColor` property.
+The color of placeholder text can be changed using the [PlaceholderColor](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.OtpInput.SfOtpInput.html#Syncfusion_Maui_Toolkit_OtpInput_SfOtpInput_PlaceholderColor) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -80,7 +80,7 @@ SfOtpInput otpInput = new SfOtpInput()
 
 ## Separator
 
-The `Separator` property defines a character or symbol used to separate each input field, visually distinguishing inputs.
+The [Separator](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.OtpInput.SfOtpInput.html#Syncfusion_Maui_Toolkit_OtpInput_SfOtpInput_Separator) property defines a character or symbol used to separate each input field, visually distinguishing inputs.
 
 {% tabs %}
 {% highlight xaml %}
@@ -102,7 +102,7 @@ SfOtpInput otpInput = new SfOtpInput()
 
 ## Setting input length
 
-You can specify the number of input fields to match the desired OTP code length by using the `Length` property. The default value is `4`.
+You can specify the number of input fields to match the desired OTP code length by using the [Length](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.OtpInput.SfOtpInput.html#Syncfusion_Maui_Toolkit_OtpInput_SfOtpInput_Length) property. The default value is `4`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -124,7 +124,7 @@ SfOtpInput otpInput = new SfOtpInput()
 
 ## Input background
 
-You can set the `InputBackground` property to any color to customize the appearance of the input fields. The `InputBackground` property applies only when `StylingMode` is set to `Filled.`
+You can set the [InputBackground](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.OtpInput.SfOtpInput.html#Syncfusion_Maui_Toolkit_OtpInput_SfOtpInput_InputBackground) property to any color to customize the appearance of the input fields. The `InputBackground` property applies only when [StylingMode](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.OtpInput.SfOtpInput.html#Syncfusion_Maui_Toolkit_OtpInput_SfOtpInput_StylingMode) is set to [Filled.](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.OtpInput.OtpInputStyle.html#Syncfusion_Maui_Toolkit_OtpInput_OtpInputStyle_Filled)
 
 {% tabs %}
 {% highlight xaml %}
@@ -147,7 +147,7 @@ SfOtpInput otpInput = new SfOtpInput()
 
 ## Stroke
 
-You can set the `Stroke` property to any color to customize the border appearance of the input fields. 
+You can set the [Stroke](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.OtpInput.SfOtpInput.html#Syncfusion_Maui_Toolkit_OtpInput_SfOtpInput_Stroke) property to any color to customize the border appearance of the input fields. 
 
 {% tabs %}
 {% highlight xaml %}
@@ -169,7 +169,7 @@ SfOtpInput otpInput = new SfOtpInput()
 
 ## Text color
 
-You can set the `TextColor` property to any color to customize the text appearance of the input fields. 
+You can set the [TextColor](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.OtpInput.SfOtpInput.html#Syncfusion_Maui_Toolkit_OtpInput_SfOtpInput_TextColor) property to any color to customize the text appearance of the input fields. 
 
 {% tabs %}
 {% highlight xaml %}
@@ -191,7 +191,7 @@ SfOtpInput otpInput = new SfOtpInput()
 
 ## Mask character
 
-You can set the `MaskCharacter` property to any character to define how the masked input is displayed, enhancing security by obscuring sensitive information. The `MaskCharacter` property applies only when `Type` is set to `Password.`
+You can set the [MaskCharacter](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.OtpInput.SfOtpInput.html#Syncfusion_Maui_Toolkit_OtpInput_SfOtpInput_MaskCharacter) property to any character to define how the masked input is displayed, enhancing security by obscuring sensitive information. The `MaskCharacter` property applies only when [Type](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.OtpInput.SfOtpInput.html#Syncfusion_Maui_Toolkit_OtpInput_SfOtpInput_Type) is set to [Password.](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.OtpInput.OtpInputType.html#Syncfusion_Maui_Toolkit_OtpInput_OtpInputType_Password)
 
 {% tabs %}
 {% highlight xaml %}
@@ -214,11 +214,11 @@ SfOtpInput otpInput = new SfOtpInput()
 
 ## Input state
 
-The `InputState` property in the OTP Input allows you to visually represent the validation status of the input fields.
+The [InputState](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.OtpInput.SfOtpInput.html#Syncfusion_Maui_Toolkit_OtpInput_SfOtpInput_InputState) property in the OTP Input allows you to visually represent the validation status of the input fields.
 
 ### Success
 
-The `InputState` can be set to `Success` to indicate that the input is correct. When the `InputState` is set to `Success,` the stroke of the OTP Input turns green.
+The [InputState](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.OtpInput.SfOtpInput.html#Syncfusion_Maui_Toolkit_OtpInput_SfOtpInput_InputState) can be set to [Success](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.OtpInput.OtpInputState.html#Syncfusion_Maui_Toolkit_OtpInput_OtpInputState_Success) to indicate that the input is correct. When the `InputState` is set to `Success,` the stroke of the OTP Input turns green.
 
 {% tabs %}
 {% highlight xaml %}
@@ -240,7 +240,7 @@ SfOtpInput otpInput = new SfOtpInput()
 
 ### Warning
 
-The `InputState` can be set to `Warning` to indicate a potential issue with the input, prompting the user to correct it. The stroke of the OTP Input turns orange-brown when `InputState` is set to `Warning.`
+The [InputState](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.OtpInput.SfOtpInput.html#Syncfusion_Maui_Toolkit_OtpInput_SfOtpInput_InputState) can be set to [Warning](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.OtpInput.OtpInputState.html#Syncfusion_Maui_Toolkit_OtpInput_OtpInputState_Warning) to indicate a potential issue with the input, prompting the user to correct it. The stroke of the OTP Input turns orange-brown when `InputState` is set to `Warning.`
 
 {% tabs %}
 {% highlight xaml %}
@@ -262,7 +262,7 @@ SfOtpInput otpInput = new SfOtpInput()
 
 ### Error
 
-The `InputState` can be set to `Error` to indicate that the input is invalid or requires correction. The stroke of OTP Input turns red when `InputState` is set to `Error.`
+The [InputState](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.OtpInput.SfOtpInput.html#Syncfusion_Maui_Toolkit_OtpInput_SfOtpInput_InputState) can be set to [Error](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.OtpInput.OtpInputState.html#Syncfusion_Maui_Toolkit_OtpInput_OtpInputState_Error) to indicate that the input is invalid or requires correction. The stroke of OTP Input turns red when `InputState` is set to `Error.`
 
 {% tabs %}
 {% highlight xaml %}
