@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started with .NET MAUI OTP Input
 
-This section provides a quick overview of how to get started with the `OTP Input` for .NET MAUI and a walk-through to configure the .NET MAUI OTP Input in a real-time scenario. Follow the steps below to add .NET MAUI OTP Input to your project.
+This section provides a quick overview of how to get started with the [OTP Input](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.OtpInput.SfOtpInput.html) for .NET MAUI and a walk-through to configure the .NET MAUI OTP Input in a real-time scenario. Follow the steps below to add .NET MAUI OTP Input to your project.
 
 {% tabcontents %}
 {% tabcontent Visual Studio %}
@@ -66,7 +66,7 @@ public static class MauiProgram
 
 1. To initialize the control, import the `Syncfusion.Maui.Toolkit.OtpInput` namespace into your code.
 
-2. Initialize `SfOtpInput.`
+2. Initialize [SfOtpInput.](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.OtpInput.SfOtpInput.html)
 
 {% tabs %}
 {% highlight xaml %}
@@ -139,7 +139,7 @@ public static class MauiProgram
 
 1. To initialize the control, import the `Syncfusion.Maui.Toolkit.OtpInput` namespace into your code.
 
-2. Initialize `SfOtpInput.`
+2. Initialize [SfOtpInput.](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.OtpInput.SfOtpInput.html)
 
 {% tabs %}
 {% highlight xaml %}
@@ -211,7 +211,7 @@ public static class MauiProgram
 
 1. To initialize the control, import the `Syncfusion.Maui.Toolkit.OtpInput` namespace into your code.
 
-2. Initialize `SfOtpInput.`
+2. Initialize [SfOtpInput.](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.OtpInput.SfOtpInput.html)
 
 {% tabs %}
 {% highlight xaml %}
@@ -231,7 +231,7 @@ SfOtpInput otpInput = new SfOtpInput();
 
 ## Value
 
-You can specify the value of OTP Input by using the `Value` property.
+You can specify the value of OTP Input by using the [Value](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.OtpInput.SfOtpInput.html#Syncfusion_Maui_Toolkit_OtpInput_SfOtpInput_Value) property.
 
 {% tabs %}	
 {% highlight xaml %}
