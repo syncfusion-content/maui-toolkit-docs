@@ -11,6 +11,58 @@ documentation: ug
 
 This page lists the keys for each control and the element to which it is mapped for all the controls.
 
+## SfBottomSheet
+
+<table>
+    <tr>
+        <th>Theme Dictionary <br/> <br/> </th>        
+        <th>Keys <br/> <br/> </th>
+        <th> Description <br/> <br/> </th>
+    </tr>
+
+    <tr>
+        <td rowspan="16">
+          SfBottomSheetStyles  <br/> <br/>
+        </td>
+		<td> SfBottomSheetTheme <br/> <br/>
+        </td>
+        <td>    
+            By merging this key in application resources, you can customize the appearance of SfBottomSheet without merging common theme resource and control style resource dictionaries.
+			
+{% highlight xaml %}
+
+<Application xmlns:syncTheme="clr-namespace:Syncfusion.Maui.Toolkit.Themes;assembly=Syncfusion.Maui.Toolkit"
+             ...>
+ <Application.Resources>
+    <ResourceDictionary>
+        <ResourceDictionary.MergedDictionaries>
+            <syncTheme:SyncfusionThemeResourceDictionary />
+            <ResourceDictionary>
+                <x:String x:Key="SfBottomSheetTheme">CommonTheme</x:String>
+                <Color x:Key="SfBottomSheetBackground">AliceBlue</Color>
+                <Color x:Key="SfBottomSheetGrabberBackground">Black</Color>
+            </ResourceDictionary>
+        </ResourceDictionary.MergedDictionaries>
+    </ResourceDictionary>
+ </Application.Resources>
+ </Application>
+
+{% endhighlight %}
+            <br/>
+            <br/>
+        </td>
+        </tr>
+     <tr>
+        <td>SfBottomSheetBackground<br/><br/></td>
+        <td>Background color of bottom sheet<br/><br/></td>
+    </tr>
+     <tr>
+        <td>SfBottomSheetGrabberBackground<br/><br/></td>
+        <td>Background color of bottom sheet grabber<br/><br/></td>
+    </tr>
+   
+ </table>
+
 ## SfCartesian Chart
 
 <table>
@@ -854,6 +906,100 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
     </tr>
+    </table>
+
+## SfOtpInput
+
+<table>
+    <tr>
+        <th>Theme Dictionary<br/>
+            <br/></th>        
+        <th>
+          Keys
+            <br/>
+            <br/>
+        </th>
+        <th>
+            Description
+            <br/>
+            <br/>
+        </th>
+    </tr>
+
+    <tr>
+        <td rowspan="3">
+            SfOtpInputStyles 
+            <br/>
+            <br/>
+        </td>
+		<td>
+           SfOtpInputTheme 
+            <br/>
+            <br/>
+        </td>
+        <td>    
+            By merging this key in application resources, you can customize the appearance of SfOtpInput without merging common theme resource and control style resource dictionaries.
+			
+{% highlight xaml %}
+
+<Application xmlns:syncTheme="clr-namespace:Syncfusion.Maui.Toolkit.Themes;assembly=Syncfusion.Maui.Toolkit"
+             ...>
+ <Application.Resources>
+    <ResourceDictionary>
+        <ResourceDictionary.MergedDictionaries>
+            <syncTheme:SyncfusionThemeResourceDictionary />
+            <ResourceDictionary>
+                <x:String x:Key="SfOtpInputTheme">CommonTheme</x:String>
+                <Color x:Key="SfOtpInputTextColor">Yellow</Color>
+                <Color x:Key="SfOtpInputFilledBackground">Red</Color>
+            </ResourceDictionary>
+        </ResourceDictionary.MergedDictionaries>
+    </ResourceDictionary>
+ </Application.Resources>
+ </Application>
+
+{% endhighlight %}
+            <br/>
+            <br/>
+        </td>
+        </tr>
+        <tr>
+        <td>
+            SfOtpInputTextColor  
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of the SfOtpInput text color.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            SfOtpInputFilledBackground 
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of the SfOtpInput filled background.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+   <tr>
+        <td> SfOtpInputBorderDefault <br/><br/></td>
+        <td> Color of the SfOtpInput border color.<br/><br/>
+        </td>
+    </tr>
+
+    <tr>
+        <td> SfOtpInputPlaceholderColor <br/><br/></td>
+        <td> Color of the SfOtpInput place holder color <br/><br/>
+        </td>
+    </tr>
+
     </table>
 
 ## SfPullToRefresh
