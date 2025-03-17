@@ -13,7 +13,7 @@ The .NET MAUI Accordion comes with built-in support for customizing the appearan
 
 ## Header icon position 
  
-The `SfAccordion` allows you to customize the position of the header icon in each accordion item using the `HeaderIconPosition` property. By default, the header icon position is set to `End`.
+The [SfAccordion](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Accordion.SfAccordion.html?tabs=tabid-1) allows you to customize the position of the header icon in each accordion item using the [HeaderIconPosition](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Accordion.SfAccordion.html#Syncfusion_Maui_Toolkit_Accordion_SfAccordion_HeaderIconPosition) property. By default, the header icon position is set to `End`.
 
 {% tabs %}
 {% highlight xaml hl_lines="2" %}
@@ -27,7 +27,7 @@ accordion.HeaderIconPosition = Syncfusion.Maui.Toolkit.Expander.ExpanderIconPosi
 
 ## Header background color customization
 
-The `SfAccordion` allows you to customize the background color of the expander header by using the `HeaderBackground` property.
+The `SfAccordion` allows you to customize the background color of the expander header by using the [HeaderBackground](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Accordion.AccordionItem.html#Syncfusion_Maui_Toolkit_Accordion_AccordionItem_HeaderBackground) property.
 
 {% tabs %}
 {% highlight xaml hl_lines="3" %}
@@ -63,7 +63,7 @@ public AccordionItem GenerateAccordionItem()
 
 ## Icon color customization
 
-The `SfAccordion` allows you to customize the color of the expander icon by using the `HeaderIconColor` property.
+The `SfAccordion` allows you to customize the color of the expander icon by using the [HeaderIconColor](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Accordion.AccordionItem.html#Syncfusion_Maui_Toolkit_Accordion_AccordionItem_HeaderIconColor) property.
 
 {% tabs %}
 {% highlight xaml hl_lines="3" %}
@@ -99,7 +99,7 @@ public AccordionItem GenerateAccordionItem()
 
 ## Visual State Manager
 
-The appearance of the `SfAccordion` can be customized using the following `VisualStates`:
+The appearance of the [SfAccordion](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Accordion.SfAccordion.html) can be customized using the following `VisualStates`:
 
 * Expanded
 * Collapsed
