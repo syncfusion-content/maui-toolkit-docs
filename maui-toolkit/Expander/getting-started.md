@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started with .NET MAUI Expander (SfExpander)
 
-This section guides you through setting up and configuring a [Expander](https://helpstaging.syncfusion.com:14038/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Expander.SfExpander.html) in your .NET MAUI application. Follow the steps below to add a basic Expander to your project.
+This section guides you through setting up and configuring a [Expander](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Expander.SfExpander.html?tabs=tabid-1) in your .NET MAUI application. Follow the steps below to add a basic Expander to your project.
 
 {% tabcontents %}
 {% tabcontent Visual Studio %}
@@ -65,7 +65,7 @@ public class MauiProgram
  
  1. To initialize the control, import the `Syncfusion.Maui.Toolkit.Expander` namespace into your code.
 
- 2. Initialize [SfExpander](https://helpstaging.syncfusion.com:14038/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Expander.SfExpander.html) class.
+ 2. Initialize [SfExpander](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Expander.SfExpander.html?tabs=tabid-1) class.
  
 {% tabs %}
 {% highlight xaml hl_lines="4" %}
@@ -146,7 +146,7 @@ public class MauiProgram
  
  1. To initialize the control, import the `Syncfusion.Maui.Toolkit.Expander` namespace into your code.
 
- 2. Initialize [SfExpander](https://helpstaging.syncfusion.com:14038/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Expander.SfExpander.html) class.
+ 2. Initialize [SfExpander](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Expander.SfExpander.html?tabs=tabid-1) class.
  
 {% tabs %}
 {% highlight xaml hl_lines="4" %}
@@ -226,7 +226,7 @@ public class MauiProgram
  
  1. To initialize the control, import the `Syncfusion.Maui.Toolkit.Expander` namespace into your code.
 
- 2. Initialize [SfExpander](https://helpstaging.syncfusion.com:14038/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Expander.SfExpander.html) class.
+ 2. Initialize [SfExpander](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Expander.SfExpander.html?tabs=tabid-1) class.
  
 {% tabs %}
 {% highlight xaml hl_lines="4" %}
@@ -254,7 +254,7 @@ public partial class MainPage : ContentPage
 
 ## Step 5: Define the Header and Content 
 
-The [SfExpander](https://helpstaging.syncfusion.com:14038/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Expander.SfExpander.html) is a layout control that includes a [Header](https://helpstaging.syncfusion.com:14038/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Expander.SfExpander.html#Syncfusion_Maui_Toolkit_Expander_SfExpander_Header) and a [Content](https://helpstaging.syncfusion.com:14038/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Expander.SfExpander.html?tabs=tabid-1#Syncfusion_Maui_Toolkit_Expander_SfExpander_Content) section, where any view can be loaded. The visibility of the content can be controlled using the [IsExpanded](https://helpstaging.syncfusion.com:14038/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Expander.SfExpander.html#Syncfusion_Maui_Toolkit_Expander_SfExpander_IsExpanded) property. Users can expand or collapse the content view by tapping the header.
+The [SfExpander](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Expander.SfExpander.html?tabs=tabid-1) is a layout control that includes a [Header](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Expander.SfExpander.html#Syncfusion_Maui_Toolkit_Expander_SfExpander_Header) and a [Content](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Expander.SfExpander.html#Syncfusion_Maui_Toolkit_Expander_SfExpander_Content) section, where any view can be loaded. The visibility of the content can be controlled using the [IsExpanded](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Expander.SfExpander.html#Syncfusion_Maui_Toolkit_Expander_SfExpander_IsExpanded) property. Users can expand or collapse the content view by tapping the header.
 
 Here, the grid with label is loaded in the header and content of the expander. 
 
@@ -431,7 +431,7 @@ Here is the result of the previous codes,
 
 ## Animation duration
 
-The `SfExpander` allows you to customize the duration of the expanding and collapsing animations by using the [AnimationDuration](https://helpstaging.syncfusion.com:14038/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Expander.SfExpander.html#Syncfusion_Maui_Toolkit_Expander_SfExpander_AnimationDuration) property. By default, the animation duration is set to `300 milliseconds`.
+The `SfExpander` allows you to customize the duration of the expanding and collapsing animations by using the [AnimationDuration](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Expander.SfExpander.html#Syncfusion_Maui_Toolkit_Expander_SfExpander_AnimationDuration) property. By default, the animation duration is set to `300 milliseconds`.
 
 {% tabs %}
 {% highlight xaml hl_lines="2" %}
@@ -445,7 +445,7 @@ The `SfExpander` allows you to customize the duration of the expanding and colla
 
 ## Animation easing
 
-The `SfExpander` allows you to customize the rate of change of parameters over time or the animation style by using the [AnimationEasing](https://helpstaging.syncfusion.com:14038/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Expander.SfExpander.html#Syncfusion_Maui_Toolkit_Expander_SfExpander_AnimationEasing) property. By default, the animation easing is set to `Linear`.
+The `SfExpander` allows you to customize the rate of change of parameters over time or the animation style by using the [AnimationEasing](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Expander.SfExpander.html#Syncfusion_Maui_Toolkit_Expander_SfExpander_AnimationEasing) property. By default, the animation easing is set to `Linear`.
 
 {% tabs %}
 {% highlight xaml hl_lines="2" %}
@@ -459,7 +459,7 @@ The `SfExpander` allows you to customize the rate of change of parameters over t
 
 ## Expand and collapse 
 
-The `SfExpander` allows users to programmatically expand or collapse its content using the [IsExpanded](https://helpstaging.syncfusion.com:14038/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Expander.SfExpander.html#Syncfusion_Maui_Toolkit_Expander_SfExpander_IsExpanded) property. Users can manage the expand and collapse actions by handling the `Expanding` and `Collapsing` events.
+The `SfExpander` allows users to programmatically expand or collapse its content using the [IsExpanded](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Expander.SfExpander.html#Syncfusion_Maui_Toolkit_Expander_SfExpander_IsExpanded) property. Users can manage the expand and collapse actions by handling the `Expanding` and `Collapsing` events.
 
 {% tabs %}
 {% highlight xaml hl_lines="2" %}
@@ -482,7 +482,7 @@ There are four built-in events in the SfExpander control namely:
 
 ### Expanding Event
 
-The [Expanding](https://helpstaging.syncfusion.com:14038/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Expander.SfExpander.html#Syncfusion_Maui_Toolkit_Expander_SfExpander_Expanding) event will be triggered when the expander control is being expanded.Expansion can be canceled using the [ExpandingAndCollapsingEventArgs](https://helpstaging.syncfusion.com:14038/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Expander.ExpandingAndCollapsingEventArgs.html), which includes the following property:
+The [Expanding](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Expander.SfExpander.html#Syncfusion_Maui_Toolkit_Expander_SfExpander_Expanding) event will be triggered when the expander control is being expanded.Expansion can be canceled using the [ExpandingAndCollapsingEventArgs](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Expander.ExpandingAndCollapsingEventArgs.html), which includes the following property:
 
 * `Cancel`: Indicates that the expansion or collapse action should be canceled.
 
@@ -501,7 +501,7 @@ private void SfExpander_Expanding(object sender, ExpandingAndCollapsingEventArgs
 
 ### Expanded Event
 
-The [Expanded](https://helpstaging.syncfusion.com:14038/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Expander.SfExpander.html#Syncfusion_Maui_Toolkit_Expander_SfExpander_Expanded) event is triggered when the expander is fully expanded. You can execute your own code when this event occurs.
+The [Expanded](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Expander.SfExpander.html#Syncfusion_Maui_Toolkit_Expander_SfExpander_Expanded) event is triggered when the expander is fully expanded. You can execute your own code when this event occurs.
 
 {% tabs %}
 {% highlight xaml tabtitle="MainPage.xaml" %}
@@ -518,7 +518,7 @@ private void SfExpander_Expanded(object sender, ExpandedAndCollapsedEventArgs e)
 
 ### Collapsing Event
 
-The [Collapsing](https://helpstaging.syncfusion.com:14038/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Expander.SfExpander.html#Syncfusion_Maui_Toolkit_Expander_SfExpander_Collapsing) event will be triggered when the expander control is being collapsed.Collapsing can be canceled using the [ExpandingAndCollapsingEventArgs](https://helpstaging.syncfusion.com:14038/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Expander.ExpandingAndCollapsingEventArgs.html), which includes the following property:
+The [Collapsing](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Expander.SfExpander.html#Syncfusion_Maui_Toolkit_Expander_SfExpander_Collapsing) event will be triggered when the expander control is being collapsed.Collapsing can be canceled using the [ExpandingAndCollapsingEventArgs](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Expander.ExpandingAndCollapsingEventArgs.html), which includes the following property:
 
 * `Cancel`: Indicates that the expansion or collapse action should be canceled.
 
@@ -537,7 +537,7 @@ private void SfExpander_Collapsing(object sender, ExpandingAndCollapsingEventArg
 
 ### Collapsed Event 
 
-The [Collapsed](https://helpstaging.syncfusion.com:14038/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Expander.SfExpander.html#Syncfusion_Maui_Toolkit_Expander_SfExpander_Collapsed) event is triggered when the expander is collapsed. You can execute your own code when this event occurs.
+The [Collapsed](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Expander.SfExpander.html#Syncfusion_Maui_Toolkit_Expander_SfExpander_Collapsed) event is triggered when the expander is collapsed. You can execute your own code when this event occurs.
 
 {% tabs %}
 {% highlight xaml tabtitle="MainPage.xaml" %}
