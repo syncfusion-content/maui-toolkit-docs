@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started with MAUI Accordion
 
-This section guides you through setting up and configuring a `Accordion` in your .NET MAUI application. Follow the steps below to add a basic Accordion to your project.
+This section guides you through setting up and configuring a [Accordion](https://helpstaging.syncfusion.com:14038/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Accordion.SfAccordion.html?tabs=tabid-1) in your .NET MAUI application. Follow the steps below to add a basic Accordion to your project.
 
 {% tabcontents %}
 {% tabcontent Visual Studio %}
@@ -61,7 +61,7 @@ public static class MauiProgram
 ## Step 4: Add a Basic Accordion control
  
  1. To initialize the control, import the `Syncfusion.Maui.Toolkit.Accordion` namespace into your code.
- 2. Initialize SfAccordion Control.
+ 2. Initialize [SfAccordion](https://helpstaging.syncfusion.com:14038/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Accordion.SfAccordion.html?tabs=tabid-1) Control.
  
 {% tabs %}
 {% highlight xaml hl_lines="4" %}
@@ -139,7 +139,7 @@ public static class MauiProgram
 ## Step 4: Add a Basic Accordion control
  
  1. To initialize the control, import the `Syncfusion.Maui.Toolkit.Accordion` namespace into your code.
- 2. Initialize SfAccordion Control.
+ 2. Initialize [SfAccordion](https://helpstaging.syncfusion.com:14038/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Accordion.SfAccordion.html?tabs=tabid-1) Control.
  
 {% tabs %}
 {% highlight xaml hl_lines="4" %}
@@ -216,7 +216,7 @@ public static class MauiProgram
 ## Step 4: Add a Basic Accordion control
  
  1. To initialize the control, import the `Syncfusion.Maui.Toolkit.Accordion` namespace into your code.
- 2. Initialize SfAccordion Control.
+ 2. Initialize [SfAccordion](https://helpstaging.syncfusion.com:14038/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Accordion.SfAccordion.html?tabs=tabid-1) Control.
  
 {% tabs %}
 {% highlight xaml hl_lines="4" %}
@@ -245,7 +245,7 @@ public partial class MainPage : ContentPage
 
 ## Step 5: Define the accordion items
 
-Create an `AccordionItem` instance containing a `header` and `content`, and then add it to the `Items` collection of SfAccordion.
+Create an [AccordionItem](https://helpstaging.syncfusion.com:14038/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Accordion.AccordionItem.html?tabs=tabid-1) instance containing a [Header](https://helpstaging.syncfusion.com:14038/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Accordion.AccordionItem.html#Syncfusion_Maui_Toolkit_Accordion_AccordionItem_Header) and [Content](https://helpstaging.syncfusion.com:14038/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Accordion.AccordionItem.html#Syncfusion_Maui_Toolkit_Accordion_AccordionItem_Content), and then add it to the [Items](https://helpstaging.syncfusion.com:14038/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Accordion.SfAccordion.html?tabs=tabid-1#Syncfusion_Maui_Toolkit_Accordion_SfAccordion_Items) collection of SfAccordion.
 
 In this example, a Grid is loaded in both the header and content of accordion items.
 
@@ -334,7 +334,7 @@ N> When adding the template control inside the `StackLayout` or `Grid` with a he
 
 ## Animation duration
 
-The `SfAccordion` allows you to customize the duration of the expanding and collapsing animations for accordion items by using the `AnimationDuration` property. By default, the animation duration is set to `200 milliseconds`.
+The `SfAccordion` allows you to customize the duration of the expanding and collapsing animations for accordion items by using the [AnimationDuration](https://helpstaging.syncfusion.com:14038/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Accordion.SfAccordion.html?tabs=tabid-1#Syncfusion_Maui_Toolkit_Accordion_SfAccordion_AnimationDuration) property. By default, the animation duration is set to `200 milliseconds`.
 
 {% tabs %}
 {% highlight xaml hl_lines="2" %}
@@ -348,7 +348,7 @@ The `SfAccordion` allows you to customize the duration of the expanding and coll
 
 ## Animation easing
 
-You can customize the rate of change of a parameter over time or the animation style of an accordion item by using the `AnimationEasing` property. By default, the animation easing is set to `Linear`.  
+You can customize the rate of change of a parameter over time or the animation style of an accordion item by using the [AnimationEasing](https://helpstaging.syncfusion.com:14038/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Accordion.SfAccordion.html?tabs=tabid-1#Syncfusion_Maui_Toolkit_Accordion_SfAccordion_AnimationEasing) property. By default, the animation easing is set to `Linear`.  
 
 {% tabs %}
 {% highlight xaml hl_lines="2" %}
@@ -362,7 +362,7 @@ You can customize the rate of change of a parameter over time or the animation s
 
 ## Auto scroll position
 
-The `SfAccordion` allows you to customize the scroll position of the expanded accordion item using the `AutoScrollPosition` property. By default, the auto-scroll position is set to `MakeVisible`.  
+The `SfAccordion` allows you to customize the scroll position of the expanded accordion item using the [AutoScrollPosition](https://helpstaging.syncfusion.com:14038/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Accordion.SfAccordion.html#Syncfusion_Maui_Toolkit_Accordion_SfAccordion_AutoScrollPosition) property. By default, the auto-scroll position is set to `MakeVisible`.  
 
 {% tabs %}
 {% highlight xaml hl_lines="2" %}
@@ -376,7 +376,7 @@ The `SfAccordion` allows you to customize the scroll position of the expanded ac
 
 ## Bring an accordion item into view
 
-The `BringIntoView` method is used to bring a specific item into view by scrolling to it programmatically.
+The [BringIntoView](https://helpstaging.syncfusion.com:14038/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Accordion.SfAccordion.html#Syncfusion_Maui_Toolkit_Accordion_SfAccordion_BringIntoView_Syncfusion_Maui_Toolkit_Accordion_AccordionItem_) method is used to bring a specific item into view by scrolling to it programmatically.
 
 {% tabs %}
 {% highlight xaml %}
@@ -455,7 +455,7 @@ private void Button_Clicked(object sender, EventArgs e)
 
 ## Expand mode
 
-You can expand single or multiple items using the `ExpandMode` property. By default, the expanded mode is set to `Single`.  
+You can expand single or multiple items using the [ExpandMode](https://helpstaging.syncfusion.com:14038/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Accordion.SfAccordion.html#Syncfusion_Maui_Toolkit_Accordion_SfAccordion_ExpandMode) property. By default, the expanded mode is set to `Single`.  
 
 {% tabs %}
 {% highlight xaml hl_lines="2" %}
@@ -469,7 +469,7 @@ You can expand single or multiple items using the `ExpandMode` property. By defa
 
 ## Item spacing
 
-The `SfAccordion` allows you to customize the vertical spacing between the accordion items by using the `ItemSpacing` property. 
+The `SfAccordion` allows you to customize the vertical spacing between the accordion items by using the [ItemSpacing](https://helpstaging.syncfusion.com:14038/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Accordion.SfAccordion.html#Syncfusion_Maui_Toolkit_Accordion_SfAccordion_ItemSpacing) property. 
 
 {% tabs %}
 {% highlight xaml hl_lines="2" %}
