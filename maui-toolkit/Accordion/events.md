@@ -61,7 +61,7 @@ private void accordion_Expanded(object sender, Syncfusion.Maui.Toolkit.Accordion
 
 ### Collapsing Event
 
-The [Collapsing](https://helpstaging.syncfusion.com:14038/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Accordion.SfAccordion.html?tabs=tabid-1#Syncfusion_Maui_Toolkit_Accordion_SfAccordion_Collapsing) event will be triggered when the expander control is being collapsed. You can cancel the collapsing using p[ExpandingAndCollapsingEventArgs](https://helpstaging.syncfusion.com:14038/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Accordion.ExpandingAndCollapsingEventArgs.html), which contains the following property:
+The [Collapsing](https://helpstaging.syncfusion.com:14038/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Accordion.SfAccordion.html?tabs=tabid-1#Syncfusion_Maui_Toolkit_Accordion_SfAccordion_Collapsing) event will be triggered when the expander control is being collapsed. You can cancel the collapsing using [ExpandingAndCollapsingEventArgs](https://helpstaging.syncfusion.com:14038/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Accordion.ExpandingAndCollapsingEventArgs.html), which contains the following property:
 
 * `Cancel`: Indicates that the expansion or collapse action should be cancelled.
 * [Index](https://helpstaging.syncfusion.com:14038/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Accordion.ExpandingAndCollapsingEventArgs.html#Syncfusion_Maui_Toolkit_Accordion_ExpandingAndCollapsingEventArgs_Index): Gets the index of the current collapsing accordion item.
