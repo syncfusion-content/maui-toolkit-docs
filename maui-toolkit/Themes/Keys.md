@@ -21,7 +21,7 @@ This page lists the keys for each control and the element to which it is mapped 
     </tr>
 
     <tr>
-        <td rowspan="16">
+        <td rowspan="3">
           SfBottomSheetStyles  <br/> <br/>
         </td>
 		<td> SfBottomSheetTheme <br/> <br/>
@@ -54,11 +54,11 @@ This page lists the keys for each control and the element to which it is mapped 
         </tr>
      <tr>
         <td>SfBottomSheetBackground<br/><br/></td>
-        <td>Background color of bottom sheet<br/><br/></td>
+        <td>The background color of the bottom sheet<br/><br/></td>
     </tr>
      <tr>
         <td>SfBottomSheetGrabberBackground<br/><br/></td>
-        <td>Background color of bottom sheet grabber<br/><br/></td>
+        <td>The background color of the grabber<br/><br/></td>
     </tr>
    
  </table>
@@ -927,7 +927,7 @@ This page lists the keys for each control and the element to which it is mapped 
     </tr>
 
     <tr>
-        <td rowspan="3">
+        <td rowspan="5">
             SfOtpInputStyles 
             <br/>
             <br/>
@@ -970,7 +970,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            Color of the SfOtpInput text color.
+            Text color of the OTP Input.
             <br/>
             <br/>
         </td>
@@ -982,7 +982,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            Color of the SfOtpInput filled background.
+            The background color of the OTP Input on filled state.
             <br/>
             <br/>
         </td>
@@ -990,13 +990,13 @@ This page lists the keys for each control and the element to which it is mapped 
 
    <tr>
         <td> SfOtpInputBorderDefault <br/><br/></td>
-        <td> Color of the SfOtpInput border color.<br/><br/>
+        <td>Border color of the OTP Input.<br/><br/>
         </td>
     </tr>
 
     <tr>
         <td> SfOtpInputPlaceholderColor <br/><br/></td>
-        <td> Color of the SfOtpInput place holder color <br/><br/>
+        <td> Placeholder color of the OTP Input.<br/><br/>
         </td>
     </tr>
 
