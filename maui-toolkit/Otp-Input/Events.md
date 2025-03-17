@@ -13,7 +13,7 @@ Events in the OTP Input control allow developers to respond effectively to user 
 
 ## ValueChanged event
 
-The OTP Input component triggers the `ValueChanged` event whenever the value of an input field changes. This is particularly useful for validating input in real-time or triggering further actions as user input is completed. The `OtpInputValueChangedEventArgs` provides details about the specific changes in value.
+The OTP Input component triggers the [ValueChanged](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.OtpInput.SfOtpInput.html#Syncfusion_Maui_Toolkit_OtpInput_SfOtpInput_ValueChanged) event whenever the value of an input field changes. This is particularly useful for validating input in real-time or triggering further actions as user input is completed. The [OtpInputValueChangedEventArgs](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.OtpInput.OtpInputValueChangedEventArgs.html) provides details about the specific changes in value.
 
 {% tabs %}
 {% highlight xaml %}
