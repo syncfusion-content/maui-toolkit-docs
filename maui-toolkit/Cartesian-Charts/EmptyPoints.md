@@ -11,7 +11,7 @@ keywords: .net maui chart empty points, .net maui empty points customization, sy
 # Empty Points in .NET MAUI Chart
 Empty Points are used to indicate missing or null data in a series. These empty points can occur when data is unavailable, improperly formatted, or explicitly set as null or double.NaN. The chart provides options to handle and customize these empty points to enhance visualization and maintain the integrity of data representation.
 
-[SfCartesianChart](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Charts.SfCartesianChart.html) provides support for empty points, allowing users to handle missing data effectively.
+[SfCartesianChart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html) provides support for empty points, allowing users to handle missing data effectively.
 
 The data collection that is passed to the chart can have NaN or Null values that are considered as empty points. The empty point can be defined as in the below code example.
 
@@ -28,12 +28,12 @@ The data collection that is passed to the chart can have NaN or Null values that
 
 {% endhighlight %}
 
-By default, the [EmptyPointMode]() property is `None`. So the empty points will not be rendered as shown in the below.
+By default, the [EmptyPointMode](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.EmptyPointMode.html) property is `None`. So the empty points will not be rendered as shown in the below.
 
 ![Empty Points in MAUI Chart](EmptyPoints_images/EmptyPoints_Default.png)
 
 ## Empty Point Mode
-The [EmptyPointMode]() property of series specifies how empty points should be handled. 
+The [EmptyPointMode](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.EmptyPointMode.html) property of series specifies how empty points should be handled. 
 
 This property provides the following options.
 
@@ -41,7 +41,7 @@ This property provides the following options.
 * **Zero** - Empty points will be replaced with zero.
 * **Average** - Empty points will be replaced with the average value of the surrounding data points.
 
-The following code example shows the [EmptyPointMode]() as `Zero`.
+The following code example shows the [EmptyPointMode](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.EmptyPointMode.html) as `Zero`.
 
 {% tabs %}
 
@@ -82,7 +82,7 @@ The following code example shows the [EmptyPointMode]() as `Zero`.
 
 ![EmptyPoint Mode Zero in MAUI Chart](EmptyPoints_images/EmptyPoints_Mode_Zero.png)
 
-The following code example shows the [EmptyPointMode]() as `Average`.
+The following code example shows the [EmptyPointMode](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.EmptyPointMode.html) as `Average`.
 
 {% tabs %}
 
@@ -124,11 +124,11 @@ The following code example shows the [EmptyPointMode]() as `Average`.
 ![EmptyPoint Mode Average in MAUI Chart](EmptyPoints_images/EmptyPoints_Mode_Average.png)
 
 ## Empty Point Customization
-The [EmptyPointSettings]() property allows you to customize the appearance of empty points in a series. This enables you to adjust various visual aspects of empty points, making them more distinct from the other data points. You can modify the following properties within [EmptyPointSettings]().
+The [EmptyPointSettings](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.EmptyPointSettings.html) property allows you to customize the appearance of empty points in a series. This enables you to adjust various visual aspects of empty points, making them more distinct from the other data points. You can modify the following properties within [EmptyPointSettings](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.EmptyPointSettings.html).
 
-* [Fill]() - Gets or sets the fill color for the empty points.
-* [Stroke]() - Gets or sets the stroke color for empty points.
-* [StrokeWidth]() - Gets or sets the stroke thickness for empty points.
+* [Fill](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.EmptyPointSettings.html#Syncfusion_Maui_Toolkit_Charts_EmptyPointSettings_Fill) - Gets or sets the fill color for the empty points.
+* [Stroke](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.EmptyPointSettings.html#Syncfusion_Maui_Toolkit_Charts_EmptyPointSettings_Stroke) - Gets or sets the stroke color for empty points.
+* [StrokeWidth](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.EmptyPointSettings.html#Syncfusion_Maui_Toolkit_Charts_EmptyPointSettings_StrokeWidth) - Gets or sets the stroke thickness for empty points.
 
 {% tabs %}
 
