@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Enable ListenPropertyChange in .NET MAUI Charts | Syncfusion
-description: Learn about ListenPropertyChange support in Syncfusion® .NET MAUI Chart (SfCartesianChart).
+description: Learn about Listen Property Change support in Syncfusion® .NET MAUI Cartesian Chart.
 platform: maui-toolkit
 control: SfCartesianChart
 documentation: ug
-keywords: .net maui chart listenpropertychange, syncfusion maui chart property change, real-time chart updates .net maui, maui chart dynamic updates, .net maui chart listen property change feature, syncfusion maui chart real-time data, listen property change
+keywords: .net maui chart listenpropertychange, maui chart property change, real-time chart updates, maui chart dynamic updates, listen property change feature, maui chart real-time data, listen property change
 ---
 
 # ListenPropertyChange in .NET MAUI Charts
