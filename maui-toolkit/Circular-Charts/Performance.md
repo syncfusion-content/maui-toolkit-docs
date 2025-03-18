@@ -2,7 +2,7 @@
 layout: post
 title: Performance in .NET MAUI Charts | Syncfusion
 description: Learn about Performance in Syncfusion® .NET MAUI Chart (SfCircularChart), its elements and more details.
-platform: maui
+platform: maui-toolkit
 control: SfCircularChart
 documentation: ug
 ---
