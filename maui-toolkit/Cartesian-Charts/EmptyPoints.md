@@ -17,7 +17,7 @@ The data collection that is passed to the chart can have NaN or Null values that
 
 {% highlight C# %}
 
-ProductSales = new ObservableCollection<Model>();
+ ProductSales = new ObservableCollection<Model>();
 ProductSales.Add(new Model() { Product = "Electronics", Sales = 60 });
 ProductSales.Add(new Model() { Product = "Clothing", Sales = 40 });
 ProductSales.Add(new Model() { Product = "Groceries", Sales = double.NaN });
