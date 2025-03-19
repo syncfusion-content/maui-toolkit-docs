@@ -20,22 +20,23 @@ N> The Cartesian chart has [Series](https://help.syncfusion.com/cr/maui-toolkit/
 
 {% highlight xaml %}
 
-    <chart:SfCartesianChart>
-        <chart:SfCartesianChart.XAxes>
-            <chart:NumericalAxis/>
-        </chart:SfCartesianChart.XAxes>
+        <chart:SfCartesianChart>
 
-        <chart:SfCartesianChart.YAxes>
-            <chart:NumericalAxis/>
-        </chart:SfCartesianChart.YAxes>
+    <chart:SfCartesianChart.XAxes>
+        <chart:NumericalAxis/>
+    </chart:SfCartesianChart.XAxes>
 
-        <chart:FastScatterSeries ItemsSource="{Binding Data1}" 
-                                XBindingPath="XValue" 
-                                YBindingPath="YValue" />
+    <chart:SfCartesianChart.YAxes>
+        <chart:NumericalAxis/>
+    </chart:SfCartesianChart.YAxes>
 
-        <chart:FastScatterSeries ItemsSource="{Binding Data2}" 
-                                XBindingPath="XValue" 
-                                YBindingPath="YValue" />
+    <chart:FastScatterSeries ItemsSource="{Binding Data1}" 
+                            XBindingPath="XValue" 
+                            YBindingPath="YValue"/>
+
+    <chart:FastScatterSeries ItemsSource="{Binding Data2}" 
+                            XBindingPath="XValue" 
+                            YBindingPath="YValue"/>
 
     </chart:SfCartesianChart>
 
@@ -43,7 +44,7 @@ N> The Cartesian chart has [Series](https://help.syncfusion.com/cr/maui-toolkit/
 
 {% highlight c# %}
 
-    SfCartesianChart chart = new SfCartesianChart();
+        SfCartesianChart chart = new SfCartesianChart();
 
     NumericalAxis primaryAxis = new NumericalAxis();
     chart.XAxes.Add(primaryAxis);
@@ -53,16 +54,16 @@ N> The Cartesian chart has [Series](https://help.syncfusion.com/cr/maui-toolkit/
 
     FastScatterSeries scatterSeries1 = new FastScatterSeries
     {
-        ItemsSource = new ViewModel().Data1,
-        XBindingPath = "XValue",
-        YBindingPath = "YValue",
+    ItemsSource = new ViewModel().Data1,
+    XBindingPath = "XValue",
+    YBindingPath = "YValue",
     };
 
     FastScatterSeries scatterSeries2 = new FastScatterSeries
     {
-        ItemsSource = new ViewModel().Data2,
-        XBindingPath = "XValue",
-        YBindingPath = "XValue",
+    ItemsSource = new ViewModel().Data2,
+    XBindingPath = "XValue",
+    YBindingPath = "XValue",
     };
 
     chart.Series.Add(scatterSeries1);

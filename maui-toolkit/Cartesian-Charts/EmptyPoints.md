@@ -17,7 +17,7 @@ The data collection that is passed to the chart can have NaN or Null values that
 
 {% highlight C# %}
 
-    ProductSales = new ObservableCollection<Model>();
+        ProductSales = new ObservableCollection<Model>();
     ProductSales.Add(new Model() { Product = "Electronics", Sales = 60 });
     ProductSales.Add(new Model() { Product = "Clothing", Sales = 40 });
     ProductSales.Add(new Model() { Product = "Groceries", Sales = double.NaN });
@@ -47,13 +47,13 @@ The following code example shows the [EmptyPointMode](https://help.syncfusion.co
 
 {% highlight xaml %}
 
-    <chart:SfCartesianChart>
-        
+        <chart:SfCartesianChart>
+            
         .....
         <chart:LineSeries ItemsSource="{Binding ProductSales}"
-                  XBindingPath="Product"
-                  YBindingPath="Sales"
-                  EmptyPointMode="Zero">
+                    XBindingPath="Product"
+                    YBindingPath="Sales"
+                    EmptyPointMode="Zero">
         </chart:LineSeries>
 
     </chart:SfCartesianChart>
@@ -62,7 +62,7 @@ The following code example shows the [EmptyPointMode](https://help.syncfusion.co
 
 {% highlight c# %}
 
-    SfCartesianChart chart = new SfCartesianChart();
+        SfCartesianChart chart = new SfCartesianChart();
 
     .....
     LineSeries series = new LineSeries()
@@ -88,13 +88,13 @@ The following code example shows the [EmptyPointMode](https://help.syncfusion.co
 
 {% highlight xaml %}
 
-    <chart:SfCartesianChart>
+        <chart:SfCartesianChart>
 
         .....
         <chart:ColumnSeries ItemsSource="{Binding ProductSales}"
-                  XBindingPath="Product"
-                  YBindingPath="Sales"
-                  EmptyPointMode="Average">
+                        XBindingPath="Product"
+                        YBindingPath="Sales"
+                        EmptyPointMode="Average">
         </chart:ColumnSeries>
 
     </chart:SfCartesianChart>
@@ -103,15 +103,15 @@ The following code example shows the [EmptyPointMode](https://help.syncfusion.co
 
 {% highlight c# %}
 
-    SfCartesianChart chart = new SfCartesianChart();
+        SfCartesianChart chart = new SfCartesianChart();
 
     .....
     ColumnSeries series = new ColumnSeries()
     {
-        ItemsSource = new ViewModel().ProductSales,
-        XBindingPath = "Product",
-        YBindingPath = "Sales",
-        EmptyPointMode = EmptyPointMode.Average
+    ItemsSource = new ViewModel().ProductSales,
+    XBindingPath = "Product",
+    YBindingPath = "Sales",
+    EmptyPointMode = EmptyPointMode.Average
     };
 
     chart.Series.Add(series);
@@ -134,21 +134,21 @@ The [EmptyPointSettings](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.
 
 {% highlight xaml %}
 
-    <chart:SfCartesianChart>
+        <chart:SfCartesianChart>
 
-        .....
-        <chart:LineSeries ItemsSource="{Binding ProductSales}"
-                  XBindingPath="Product"
-                  YBindingPath="Sales"
-                  Fill="#3068F7"
-                  StrokeWidth="2"
-                  ShowMarkers="True"
-                  ShowDataLabels="True"
-                  EmptyPointMode="Average">
-            <chart:LineSeries.EmptyPointSettings>
+    .....
+    <chart:LineSeries ItemsSource="{Binding ProductSales}"
+                    XBindingPath="Product"
+                    YBindingPath="Sales"
+                    Fill="#3068F7"
+                    StrokeWidth="2"
+                    ShowMarkers="True"
+                    ShowDataLabels="True"
+                    EmptyPointMode="Average">
+        <chart:LineSeries.EmptyPointSettings>
                 <chart:EmptyPointSettings Fill="Orange" StrokeWidth="2"/>
-            </chart:LineSeries.EmptyPointSettings>
-        </chart:LineSeries>
+        </chart:LineSeries.EmptyPointSettings>
+    </chart:LineSeries>
 
     </chart:SfCartesianChart>
 
@@ -156,25 +156,25 @@ The [EmptyPointSettings](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.
 
 {% highlight c# %}
 
-    SfCartesianChart chart = new SfCartesianChart();
+        SfCartesianChart chart = new SfCartesianChart();
 
     .....
     LineSeries series = new LineSeries()
     {
-        ItemsSource = new ViewModel().ProductSales,
-        XBindingPath = "Product",
-        YBindingPath = "Sales",
-        Fill = Color.FromArgb("#3068F7"),
-        StrokeWidth = 2,
-        ShowMarkers = true,
-        ShowDataLabels = true,
-        EmptyPointMode = EmptyPointMode.Average
+    ItemsSource = new ViewModel().ProductSales,
+    XBindingPath = "Product",
+    YBindingPath = "Sales",
+    Fill = Color.FromArgb("#3068F7"),
+    StrokeWidth = 2,
+    ShowMarkers = true,
+    ShowDataLabels = true,
+    EmptyPointMode = EmptyPointMode.Average
     };
 
     EmptyPointSettings emptypointSettings = new EmptyPointSettings()
     {
-        Fill = Colors.Orange,
-        StrokeWidth = 2
+    Fill = Colors.Orange,
+    StrokeWidth = 2
     };
 
     series.EmptyPointSettings = emptypointSettings;
