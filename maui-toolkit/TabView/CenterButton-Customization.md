@@ -9,11 +9,11 @@ documentation: ug
 
 # Center Button Customization in .NET MAUI Tab View (SfTabView)
 
-This section explains how to enable and customize The center button in .NET MAUI [SfTabView.](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SfTabView.html)
+This section explains how to enable and customize the center button in .NET MAUI [SfTabView.](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SfTabView.html)
 
 ## Enable the center button 
 
-You can enable the center button in Tab View by setting the `IsCenterButtonEnable` property to `True.`
+You can enable the center button in Tab View by setting the [IsCenterButtonEnabled](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SfTabView.html#Syncfusion_Maui_Toolkit_TabView_SfTabView_IsCenterButtonEnabled) property to `True.`
 
 {% tabs %}
 
@@ -38,27 +38,22 @@ public MainPage()
 {% endtabs %}
 
 ## Customize the center button
-You can customize the center button using the properties of `CenterButtonSetting.` The following properties are used to customize the view of the center button `Background,` `Stroke,` `StrokeThickness,` `CornerRadius,` `TextColor,` `Height,` `Title,` `FontAttributes,` `FontFamily,` `FontSize,` `Width,` `ImageSource,` `ImageSize,` and `DisplayMode.`
+
+You can customize the center button using the properties of [CenterButtonSettings.](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.CenterButtonSettings.html) The following properties are used to customize the view of center button [Background](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.CenterButtonSettings.html#Syncfusion_Maui_Toolkit_TabView_CenterButtonSettings_Background), [Stroke](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.CenterButtonSettings.html#Syncfusion_Maui_Toolkit_TabView_CenterButtonSettings_Stroke), [StrokeThickness](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.CenterButtonSettings.html#Syncfusion_Maui_Toolkit_TabView_CenterButtonSettings_StrokeThickness), [CornerRadius](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.CenterButtonSettings.html#Syncfusion_Maui_Toolkit_TabView_CenterButtonSettings_CornerRadius), [TextColor](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.CenterButtonSettings.html#Syncfusion_Maui_Toolkit_TabView_CenterButtonSettings_TextColor), [Height](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.CenterButtonSettings.html#Syncfusion_Maui_Toolkit_TabView_CenterButtonSettings_Height), [Title](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.CenterButtonSettings.html#Syncfusion_Maui_Toolkit_TabView_CenterButtonSettings_Title), [FontAttributes](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.CenterButtonSettings.html#Syncfusion_Maui_Toolkit_TabView_CenterButtonSettings_FontAttributes), [FontFamily](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.CenterButtonSettings.html#Syncfusion_Maui_Toolkit_TabView_CenterButtonSettings_FontFamily), [FontSize](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.CenterButtonSettings.html#Syncfusion_Maui_Toolkit_TabView_CenterButtonSettings_FontSize), [Width](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.CenterButtonSettings.html#Syncfusion_Maui_Toolkit_TabView_CenterButtonSettings_Width), [ImageSource](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.CenterButtonSettings.html#Syncfusion_Maui_Toolkit_TabView_CenterButtonSettings_ImageSource), [ImageSize](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.CenterButtonSettings.html#Syncfusion_Maui_Toolkit_TabView_CenterButtonSettings_ImageSize), and [DisplayMode.](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.CenterButtonSettings.html#Syncfusion_Maui_Toolkit_TabView_CenterButtonSettings_DisplayMode)
 
 {% tabs %}
 
 {% highlight xaml %}
 
 <tabView:SfTabView.CenterButtonSettings>
-     <tabView:CenterButtonSettings Title="Home" 
-                              Height="70" 
-                              Width="80"
-                              Background="White" 
-                              Stroke="HotPink" 
-                              StrokeThickness="3" 
-                              CornerRadius="10" 
-                              TextColor="Green" 
-                              ImageSource="image.png" 
-                              ImageSize="24" 
-                              DisplayMode="ImageWithText" 
-                              FontFamily="SevillanaRegular" 
-                              FontAttributes="Bold" 
-                              FontSize="16" />
+  <tabView:CenterButtonSettings Height="45"
+                                Width="45"
+                                CornerRadius="50"
+                                Background="#6750A4"
+                                ImageSize="25"
+                                DisplayMode="Image"
+                                ImageSource="image.png">
+  </tabView:CenterButtonSettings>
 </tabView:SfTabView.CenterButtonSettings>
 
 {% endhighlight %}
@@ -71,16 +66,13 @@ public MainPage()
     SfTabView tabView = new SfTabView();
     CenterButtonSettings centerButtonSettings = new CenterButtonSettings()
     {
-        Height = 80,
-        Width = 100,
-        Title = "Center Button",
-        FontAttributes = FontAttributes.Bold,
-        TextColor = Colors.Green,
-        DisplayMode = CenterButtonDisplayMode.ImageWithText,
-        ImageSource = "Home.png",
-        ImageSize = 24,
-        FontFamily = "SevillanaRegular",
-        CornerRadius = new CornerRadius(10),
+        Height = 45,
+        Width = 45,
+        DisplayMode = CenterButtonDisplayMode.Image,
+        ImageSize = 25,
+        Background = Color.FromArgb("#6750A4");
+        CornerRadius = new CornerRadius(50),
+        ImageSource = "image.png"        
     };
 
     tabView.CenterButtonSettings = centerButtonSettings;
@@ -89,9 +81,11 @@ public MainPage()
 
 {% endtabs %}
 
+![.NET MAUI Customize the center button](images/CenterButton-Customizaton.jpg) 
+
 ## Center button tapped event
 
-When the center button is tapped, the `CenterButtonTapped` event occurs. Using this event we can set alert messages.
+When the center button is tapped, the [CenterButtonTapped](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SfTabView.html#Syncfusion_Maui_Toolkit_TabView_SfTabView_CenterButtonTapped) event occurs. Using this event we can set alert messages.
 
 {% tabs %}
 

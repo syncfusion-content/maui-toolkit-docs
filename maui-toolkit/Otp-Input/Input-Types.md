@@ -11,11 +11,11 @@ documentation: ug
 
 ## Types
 
-This section explains the the various types of OTP (One-Time Password) input component, explaining their default behaviors and appropriate use cases.
+This section explains the various types of OTP (One-Time Password) input component, explaining their default behaviors and appropriate use cases.
 
 ### Number type
 
-The `Type` property can be set to `Number`, prompting the input to handle numeric-only codes. This is ideal for scenarios demanding numeric OTP's. By default, the `Type` property is set to `Number`.
+The [Type](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.OtpInput.SfOtpInput.html#Syncfusion_Maui_Toolkit_OtpInput_SfOtpInput_Type) property can be set to [Number](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.OtpInput.OtpInputType.html#Syncfusion_Maui_Toolkit_OtpInput_OtpInputType_Number), prompting the input to handle numeric-only codes. This is ideal for scenarios demanding numeric OTP's. By default, the `Type` property is set to `Number.`
 
 {% tabs %}	
 {% highlight xaml %}
@@ -38,7 +38,7 @@ SfOtpInput otpInput = new SfOtpInput()
 
 ### Text type
 
-You can set the `Type` property to `Text` for inputs that may include both letters and numbers, suitable for alphanumeric OTP's.
+You can set the [Type](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.OtpInput.SfOtpInput.html#Syncfusion_Maui_Toolkit_OtpInput_SfOtpInput_Type) property to [Text](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.OtpInput.OtpInputType.html#Syncfusion_Maui_Toolkit_OtpInput_OtpInputType_Text) for inputs that may include both letters and numbers, suitable for alphanumeric OTP's.
 
 {% tabs %}	
 {% highlight xaml %}
@@ -61,7 +61,7 @@ SfOtpInput otpInput = new SfOtpInput()
 
 ### Password type
 
-You can set the `Type` property to `Password` to use this input type as password in the OTP Input.
+You can set the [Type](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.OtpInput.SfOtpInput.html#Syncfusion_Maui_Toolkit_OtpInput_SfOtpInput_Type) property to [Password](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.OtpInput.OtpInputType.html#Syncfusion_Maui_Toolkit_OtpInput_OtpInputType_Password) to use this input type as password in the OTP Input.
 
 {% tabs %}	
 {% highlight xaml %}

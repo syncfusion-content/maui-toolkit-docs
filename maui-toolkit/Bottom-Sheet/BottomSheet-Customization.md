@@ -92,7 +92,7 @@ bottomSheet.AllowedState = BottomSheetAllowedState.HalfExpanded;
 
 ## Overlay tap to collapse
 
-The `CollapseOnOverlayTap` property enables the bottom sheet to collapse when the user taps on the overlay (outside the sheet). This enhances user interaction by allowing easy dismissal of the sheet without fully closing it.
+The [CollapseOnOverlayTap](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.BottomSheet.SfBottomSheet.html#Syncfusion_Maui_Toolkit_BottomSheet_SfBottomSheet_CollapseOnOverlayTap) property enables the bottom sheet to collapse when the user taps on the overlay (outside the sheet). This enhances user interaction by allowing easy dismissal of the sheet without fully closing it.
 
 {% tabs %}	
 {% highlight xaml %}
@@ -111,6 +111,8 @@ bottomSheet.CollapseOnOverlayTap = true;
 
 {% endhighlight %}
 {% endtabs %}
+
+![CollapseOnOverlay Gif](images/collapseOnOverlay.gif)
 
 ## Content Padding
 The [ContentPadding](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.BottomSheet.SfBottomSheet.html#Syncfusion_Maui_Toolkit_BottomSheet_SfBottomSheet_ContentPadding) property of the [BottomSheet](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.BottomSheet.SfBottomSheet.html) adds space around the content creating a gap between the bottom sheet content and the edges.
@@ -377,7 +379,7 @@ SfBottomSheet bottomSheet = new SfBottomSheet
 
 ### Grabber area height
 
-The `GrabberAreaHeight` feature in the [BottomSheet](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.BottomSheet.SfBottomSheet.html) control allows developers to adjust the height of the drag area, thus enhancing both usability and appearance.
+The [GrabberAreaHeight](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.BottomSheet.SfBottomSheet.html#Syncfusion_Maui_Toolkit_BottomSheet_SfBottomSheet_GrabberAreaHeight) feature in the [BottomSheet](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.BottomSheet.SfBottomSheet.html) control allows developers to adjust the height of the drag area, thus enhancing both usability and appearance.
 
 {% tabs %}	
 {% highlight xaml %}
