@@ -49,7 +49,7 @@ documentation: ug
         </VerticalStackLayout>
     </bottomSheet:SfBottomSheet.BottomSheetContent>
 </bottomSheet:SfBottomSheet>
-	
+    
 {% endhighlight %}
 {% highlight c# %}
 
