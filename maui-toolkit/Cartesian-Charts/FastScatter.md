@@ -10,9 +10,9 @@ Keywords: .net maui fast scatter chart, .net maui performance scatter chart, fas
 
 # Fast Scatter in .NET MAUI Chart
 
-The **FastScatterSeries** is a specialized scatter series designed to efficiently render a large number of data points. To render a fast scatter chart, create an instance of **FastScatterSeries**, and add it to the [Series](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html#Syncfusion_Maui_Toolkit_Charts_SfCartesianChart_Series) collection property of [SfCartesianChart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html).
+The [FastScatterSeries](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.FastScatterSeries.html) is a specialized scatter series designed to efficiently render a large number of data points. To render a fast scatter chart, create an instance of [FastScatterSeries](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.FastScatterSeries.html), and add it to the [Series](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html#Syncfusion_Maui_Toolkit_Charts_SfCartesianChart_Series) collection property of [SfCartesianChart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html).
 
-The **PointHeight** and **PointWidth** properties in the FastScatterSeries control the height and width of scatter segments. The **Type** property allows you to change the rendering shape of the **FastScatterSeries**.
+The [PointHeight](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.FastScatterSeries.html#Syncfusion_Maui_Toolkit_Charts_FastScatterSeries_PointHeight) and [PointWidth](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.FastScatterSeries.html#Syncfusion_Maui_Toolkit_Charts_FastScatterSeries_PointWidth) properties in the FastScatterSeries control the height and width of scatter segments. The [Type](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.FastScatterSeries.html#Syncfusion_Maui_Toolkit_Charts_FastScatterSeries_Type) property allows you to change the rendering shape of the [FastScatterSeries](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.FastScatterSeries.html).
 
 N> The Cartesian chart has [Series](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html#Syncfusion_Maui_Toolkit_Charts_SfCartesianChart_Series) as its default content.
 
@@ -21,19 +21,23 @@ N> The Cartesian chart has [Series](https://help.syncfusion.com/cr/maui-toolkit/
 {% highlight xaml %}
 
 <chart:SfCartesianChart>
-    <chart:SfCartesianChart.XAxes>
-        <chart:NumericalAxis/>
-    </chart:SfCartesianChart.XAxes>
 
-    <chart:SfCartesianChart.YAxes>
-        <chart:NumericalAxis/>
-    </chart:SfCartesianChart.YAxes>
+   <chart:SfCartesianChart.XAxes>
+       <chart:NumericalAxis/>
+   </chart:SfCartesianChart.XAxes>
 
-    <chart:FastScatterSeries ItemsSource="{Binding Data}"
-                             XBindingPath="XValue"
-                             YBindingPath="YValue" 
-                             PointHeight="8"
-                             PointWidth="8"/>
+   <chart:SfCartesianChart.YAxes>
+       <chart:NumericalAxis/>
+   </chart:SfCartesianChart.YAxes>
+
+   <chart:FastScatterSeries ItemsSource="{Binding Data1}" 
+                       XBindingPath="XValue" 
+                       YBindingPath="YValue" />
+
+   <chart:FastScatterSeries ItemsSource="{Binding Data2}" 
+                       XBindingPath="XValue" 
+                       YBindingPath="YValue" />
+
 </chart:SfCartesianChart>
 
 {% endhighlight %}
@@ -48,16 +52,22 @@ chart.XAxes.Add(primaryAxis);
 NumericalAxis secondaryAxis = new NumericalAxis();
 chart.YAxes.Add(secondaryAxis);
 
-FastScatterSeries series = new FastScatterSeries()
+FastScatterSeries scatterSeries1 = new FastScatterSeries
 {
-    ItemsSource = new ViewModel().Data,
-    XBindingPath = "XValue",
-    YBindingPath = "YValue",
-    PointHeight = 8,
-    PointWidth = 8,
+   ItemsSource = new ViewModel().Data1,
+   XBindingPath = "XValue",
+   YBindingPath = "YValue",
 };
 
-chart.Series.Add(series);
+FastScatterSeries scatterSeries2 = new FastScatterSeries
+{
+   ItemsSource = new ViewModel().Data2,
+   XBindingPath = "XValue",
+   YBindingPath = "XValue",
+};
+
+chart.Series.Add(scatterSeries1);
+chart.Series.Add(scatterSeries2);
 this.Content = chart;
 
 {% endhighlight %}
