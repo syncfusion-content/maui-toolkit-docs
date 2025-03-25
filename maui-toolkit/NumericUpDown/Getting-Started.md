@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with .NET MAUI NumericUpDown | Syncfusion®
-description: Learn how to get started with Syncfusion® .NET MAUI NumericUpDown (SfNumericUpDown) control, its elements, and more in here.
+title: Getting Started with .NET MAUI NumericUpDown | Syncfusion<sup>®</sup>
+description: Learn how to get started with Syncfusion<sup>®</sup> .NET MAUI NumericUpDown (SfNumericUpDown) control, its elements, and more in here.
 platform: MAUI
 control: SfNumericUpDown
 documentation: ug

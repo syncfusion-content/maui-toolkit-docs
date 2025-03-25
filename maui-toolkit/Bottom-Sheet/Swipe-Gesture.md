@@ -22,7 +22,7 @@ The [EnableSwiping](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.
         <!--Add your content here-->
     </bottomSheet:SfBottomSheet.BottomSheetContent>
 </bottomSheet:SfBottomSheet>
-    
+	
 {% endhighlight %}
 {% highlight c# %}
 

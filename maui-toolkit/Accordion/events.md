@@ -11,17 +11,17 @@ documentation: ug
 
 There are four built-in events in the SfAccordion control namely:
 
-* [Expanding](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Accordion.SfAccordion.html#Syncfusion_Maui_Toolkit_Accordion_SfAccordion_Expanding)
-* [Expanded](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Accordion.SfAccordion.html#Syncfusion_Maui_Toolkit_Accordion_SfAccordion_Expanded)
-* [Collapsing](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Accordion.SfAccordion.html#Syncfusion_Maui_Toolkit_Accordion_SfAccordion_Collapsing)
-* [Collapsed](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Accordion.SfAccordion.html#Syncfusion_Maui_Toolkit_Accordion_SfAccordion_Collapsed)
+* `Expanding`
+* `Expanded`
+* `Collapsing`
+* `Collapsed`
 
 ### Expanding Event
 
-The [Expanding](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Accordion.SfAccordion.html#Syncfusion_Maui_Toolkit_Accordion_SfAccordion_Expanding) event will be triggered when the accordion item is being expanded. It can cancel the expansion using [ExpandingAndCollapsingEventArgs](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Accordion.ExpandingAndCollapsingEventArgs.html), which contains the following property:
+The `Expanding` event will be triggered when the accordion item is being expanded. It can cancel the expansion using `ExpandingAndCollapsingEventArgs`, which contains the following property:
 
 * `Cancel`: Indicates that the expansion or collapse action should be cancelled.
-* [Index](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Accordion.ExpandingAndCollapsingEventArgs.html#Syncfusion_Maui_Toolkit_Accordion_ExpandingAndCollapsingEventArgs_Index): Gets the index of the current expanding accordion item.
+* `Index`: Gets the index of the current expanding accordion item.
 
 {% tabs %}
 {% highlight xaml tabtitle="MainPage.xaml" hl_lines="1" %}
@@ -41,7 +41,7 @@ private void accordion_Expanding(object sender, Syncfusion.Maui.Toolkit.Accordio
 
 ### Expanded Event
 
-The [Expanded](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Accordion.SfAccordion.html#Syncfusion_Maui_Toolkit_Accordion_SfAccordion_Expanded) event is triggered when an accordion item is fully expanded. You can execute your own code when this event occurs.
+The `Expanded` event is triggered when an accordion item is fully expanded. You can execute your own code when this event occurs.
 
 {% tabs %}
 {% highlight xaml tabtitle="MainPage.xaml" hl_lines="1" %}
@@ -61,10 +61,10 @@ private void accordion_Expanded(object sender, Syncfusion.Maui.Toolkit.Accordion
 
 ### Collapsing Event
 
-The [Collapsing](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Accordion.SfAccordion.html#Syncfusion_Maui_Toolkit_Accordion_SfAccordion_Collapsing) event will be triggered when the expander control is being collapsed. You can cancel the collapsing using [ExpandingAndCollapsingEventArgs](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Accordion.ExpandingAndCollapsingEventArgs.html), which contains the following property:
+The `Collapsing` event will be triggered when the expander control is being collapsed. You can cancel the collapsing using `ExpandingAndCollapsingEventArgs`, which contains the following property:
 
 * `Cancel`: Indicates that the expansion or collapse action should be cancelled.
-* [Index](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Accordion.ExpandingAndCollapsingEventArgs.html#Syncfusion_Maui_Toolkit_Accordion_ExpandingAndCollapsingEventArgs_Index): Gets the index of the current collapsing accordion item.
+* `Index`: Gets the index of the current collapsing accordion item.
 
 {% tabs %}
 {% highlight xaml tabtitle="MainPage.xaml" hl_lines="1" %}
@@ -84,7 +84,7 @@ private void accordion_Collapsing(object sender, Syncfusion.Maui.Toolkit.Accordi
 
 ### Collapsed Event 
 
-The [Collapsed](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Accordion.SfAccordion.html#Syncfusion_Maui_Toolkit_Accordion_SfAccordion_Collapsed) event is triggered when an accordion item is collapsed. You can execute your own code when this event occurs.
+The `Collapsed` event is triggered when an accordion item is collapsed. You can execute your own code when this event occurs.
 
 {% tabs %}
 {% highlight xaml tabtitle="MainPage.xaml" hl_lines="1" %}

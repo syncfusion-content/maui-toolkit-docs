@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started with .NET MAUI Popup
 
-This section guides you through setting up and configuring a [Popup](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Popup.SfPopup.html) in your .NET MAUI application. Follow the steps below to add a basic Popup to your project.
+This section guides you through setting up and configuring a `Popup` in your .NET MAUI application. Follow the steps below to add a basic Popup to your project.
 
 {% tabcontents %}
 {% tabcontent Visual Studio %}
@@ -68,7 +68,7 @@ namespace GettingStarted
 ## Step 4: Add a Basic Popup
 
  1. To initialize the control, import the `Syncfusion.Maui.Toolkit.Popup` namespace into your code.
- 2. Initialize [SfPopup](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Popup.SfPopup.html) class.
+ 2. Initialize `SfPopup` class.
  
 {% tabs %}
 {% highlight xaml tabtitle="MainPage.xaml" %}
@@ -100,7 +100,7 @@ public partial class MainPage : ContentPage
 
 ## Step 5: Displaying popup
 
-Display a popup over your view by calling the [Show](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Popup.SfPopup.html#Syncfusion_Maui_Toolkit_Popup_SfPopup_Show_System_Boolean_) method.
+Display a popup over your view by calling the `Show` method.
 
 Refer to the following code example for displaying popup using Button's Click event.
 
@@ -215,7 +215,7 @@ namespace GettingStarted
 ## Step 4: Add a Basic Popup
 
  1. To initialize the control, import the `Syncfusion.Maui.Toolkit.Popup` namespace into your code.
- 2. Initialize [SfPopup](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Popup.SfPopup.html) class.
+ 2. Initialize `SfPopup` class.
  
 {% tabs %}
 {% highlight xaml tabtitle="MainPage.xaml" %}
@@ -247,7 +247,7 @@ public partial class MainPage : ContentPage
 
 ## Step 5: Displaying popup
 
-Display a popup over your view by calling the [Show](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Popup.SfPopup.html#Syncfusion_Maui_Toolkit_Popup_SfPopup_Show_System_Boolean_) method.
+Display a popup over your view by calling the `Show` method.
 
 Refer to the following code example for displaying popup using Button's Click event.
 
@@ -361,7 +361,7 @@ namespace GettingStarted
 ## Step 4: Add a Basic Popup
 
  1. To initialize the control, import the `Syncfusion.Maui.Toolkit.Popup` namespace into your code.
- 2. Initialize [SfPopup](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Popup.SfPopup.html) class.
+ 2. Initialize `SfPopup` class.
  
 {% tabs %}
 {% highlight xaml tabtitle="MainPage.xaml" %}
@@ -395,7 +395,7 @@ public partial class MainPage : ContentPage
 
 ## Close the popup
 
-To close the popup programmatically, you can call either the [Dismiss](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Popup.SfPopup.html#Syncfusion_Maui_Toolkit_Popup_SfPopup_Dismiss) method or set the IsOpen property to false.
+To close the popup programmatically, you can call either the `Dismiss` method or set the IsOpen property to false.
 
 Refer to the following code example for dismissing popup.
 
@@ -419,17 +419,17 @@ The .NET MAUI Popup (SfPopup) allows showing the popup content at various positi
 
 The following list of options is available to position the SfPopup in the desired position:
 
-* `Center Positioning`: Use the [IsOpen](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Popup.SfPopup.html#Syncfusion_Maui_Toolkit_Popup_SfPopup_IsOpen) property or [Show](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Popup.SfPopup.html#Syncfusion_Maui_Toolkit_Popup_SfPopup_Show_System_Boolean_) method to display the SfPopup at the center.
-* `Absolute Positioning`: Use the [Show(x-position, y-position)](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Popup.SfPopup.html#Syncfusion_Maui_Toolkit_Popup_SfPopup_Show_System_Double_System_Double_) to display the SfPopup at the specified X and y position.
-* `Relative Positioning`: Use the [ShowRelativeToView(View, RelativePosition)](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Popup.SfPopup.html#Syncfusion_Maui_Toolkit_Popup_SfPopup_ShowRelativeToView_Microsoft_Maui_Controls_View_Syncfusion_Maui_Toolkit_Popup_PopupRelativePosition_System_Double_System_Double_) to display the SfPopup at any of the 8 positions relative to the specified view.
-* `Absolute relative positioning`: Use the [ShowRelativeToView(View, RelativePosition,x position,y position)](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Popup.SfPopup.html#Syncfusion_Maui_Toolkit_Popup_SfPopup_ShowRelativeToView_Microsoft_Maui_Controls_View_Syncfusion_Maui_Toolkit_Popup_PopupRelativePosition_System_Double_System_Double_) to display the SfPopup at an absolute x,y coordinate from the relative position of the specified view.
+* `Center Positioning`: Use the `IsOpen` property or `Show` method to display the SfPopup at the center.
+* `Absolute Positioning`: Use the `Show(x-position, y-position)` to display the SfPopup at the specified X and y position.
+* `Relative Positioning`: Use the `ShowRelativeToView(View, RelativePosition)` to display the SfPopup at any of the 8 positions relative to the specified view.
+* `Absolute relative positioning`: Use the `ShowRelativeToView(View, RelativePosition,x position,y position)` to display the SfPopup at an absolute x,y coordinate from the relative position of the specified view.
 
 ## Customizing layouts
 
-By default, choose a layout from the following available layouts in the SfPopup by using the [AppearanceMode](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Popup.SfPopup.html#Syncfusion_Maui_Toolkit_Popup_SfPopup_AppearanceMode) property.
+By default, choose a layout from the following available layouts in the SfPopup by using the `AppearanceMode` property.
 
-* [OneButton]()https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Popup.PopupButtonAppearanceMode.html#Syncfusion_Maui_Toolkit_Popup_PopupButtonAppearanceMode_OneButton) : Shows the SfPopup with one button in the footer view. This is the default value.
-* [TwoButton](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Popup.PopupButtonAppearanceMode.html#Syncfusion_Maui_Toolkit_Popup_PopupButtonAppearanceMode_TwoButton): Shows the SfPopup with two buttons in the footer view.
+* `OneButton`: Shows the SfPopup with one button in the footer view. This is the default value.
+* `TwoButton`: Shows the SfPopup with two buttons in the footer view.
 
 Also, customize the entire popup view by loading the templates or custom views for the header, body, and footer.
 
@@ -487,7 +487,7 @@ namespace GettingStarted
 
 ##  Load template view in the popup body
 
-Any view can be added as popup content by using the [ContentTemplate](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Popup.SfPopup.html#Syncfusion_Maui_Toolkit_Popup_SfPopup_ContentTemplate) property to refresh it. Refer to the following code example in which a label is added as popup content. 
+Any view can be added as popup content by using the `ContentTemplate` property to refresh it. Refer to the following code example in which a label is added as popup content. 
 
 {% tabs %}
 
