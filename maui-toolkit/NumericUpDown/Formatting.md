@@ -25,25 +25,37 @@ N> You can apply various custom formats available in  [this page](https://docs.m
 {% highlight xaml %}
 
 // Format stock price in currency.
-<editors:SfNumericUpDown CustomFormat="C2"/>
+<editors:SfNumericUpDown CustomFormat="C2" WidthRequest="200"/>
 
 // Format product discount in percent.
-<editors:SfNumericUpDown CustomFormat="P2"/>
+<editors:SfNumericUpDown CustomFormat="P2" WidthRequest="200"/>
 
 // Format worked hours in decimal.
-<editors:SfNumericUpDown CustomFormat="N2"/>
+<editors:SfNumericUpDown CustomFormat="N2" WidthRequest="200"/>
 
 {% endhighlight %}
 {% highlight c# %}
 
 // Format stock price in currency.
-stockPrice.CustomFormat = "C2";
+SfNumericUpDown stockPrice = new SfNumericUpDown
+{
+    CustomFormat = "C2",
+    WidthRequest = 200
+};
 
 // Format product discount in percent.
-productDiscount.CustomFormat = "P2";
+SfNumericUpDown productDiscount = new SfNumericUpDown
+{
+    CustomFormat = "P2",
+    WidthRequest = 200
+};
 
 // Format worked hours in decimal.
-hoursWorked.CustomFormat = "N2";
+SfNumericUpDown hoursWorked = new SfNumericUpDown
+{
+    CustomFormat = "N2",
+    WidthRequest = 200
+};
 
 {% endhighlight %}
 {% endtabs %}
@@ -62,25 +74,37 @@ N> **0** (Zero placeholder) replaces the zero with the corresponding digit prese
 {% highlight xaml %}
 
 // Format stock price in currency.
-<editors:SfNumericUpDown CustomFormat = "$00000.00"/>
+<editors:SfNumericUpDown CustomFormat = "$00000.00" WidthRequest="200"/>
 
 // Format product discount in percentage.
-<editors:SfNumericUpDown CustomFormat = "00000.00%"/>
+<editors:SfNumericUpDown CustomFormat = "00000.00%" WidthRequest="200"/>
 
 // Format worked hours in decimal.
-<editors:SfNumericUpDown CustomFormat = "00000.00"/>
+<editors:SfNumericUpDown CustomFormat = "00000.00" WidthRequest="200"/>
 
 {% endhighlight %}
 {% highlight c# %}
 
 // Format stock price in currency.
-stockPrice.CustomFormat = "$00000.00";
+SfNumericUpDown stockPrice = new SfNumericUpDown
+{
+    CustomFormat = "$00000.00",
+    WidthRequest = 200
+};
 
 // Format product discount in percentage.
-productDiscount.CustomFormat = "00000.00%";
+SfNumericUpDown productDiscount = new SfNumericUpDown
+{
+    CustomFormat = "00000.00%",
+    WidthRequest = 200
+};
 
 // Format worked hours in decimal.
-hoursWorked.CustomFormat = "00000.00";
+SfNumericUpDown hoursWorked = new SfNumericUpDown
+{
+    CustomFormat = "00000.00",
+    WidthRequest = 200
+};
 
 {% endhighlight %}
 {% endtabs %}
@@ -98,16 +122,30 @@ N> **0** (Zero placeholder) replaces the zero with the corresponding digit in th
 {% tabs %}
 {% highlight xaml %}
 
-<editors:SfNumericUpDown CustomFormat = "$000.000"/>
-<editors:SfNumericUpDown CustomFormat = "00.000%"/>
-<editors:SfNumericUpDown CustomFormat = "00.000"/>
+<editors:SfNumericUpDown CustomFormat = "$000.000" WidthRequest="200"/>
+<editors:SfNumericUpDown CustomFormat = "00.000%" WidthRequest="200"/>
+<editors:SfNumericUpDown CustomFormat = "00.000" WidthRequest="200"/>
 
 {% endhighlight %}
 {% highlight c# %}
 
-stockPrice.CustomFormat = "$000.000";
-productDiscount.CustomFormat = "00.000%";
-hoursWorked.CustomFormat = "00.000";
+SfNumericUpDown stockPrice = new SfNumericUpDown
+{
+    CustomFormat = "$000.000",
+    WidthRequest = 200
+};
+
+SfNumericUpDown productDiscount = new SfNumericUpDown
+{
+    CustomFormat = "00.000%",
+    WidthRequest = 200
+};
+
+SfNumericUpDown hoursWorked = new SfNumericUpDown
+{
+    CustomFormat = "00.000",
+    WidthRequest = 200
+};
 
 {% endhighlight %}
 {% endtabs %}
@@ -127,16 +165,30 @@ In the following example, the value of the `CustomFormat` property is **#.00##**
 {% tabs %}
 {% highlight xaml %}
 
-<editors:SfNumericUpDown CustomFormat = "$00.00##"/>
-<editors:SfNumericUpDown CustomFormat = "00.00##%"/>
-<editors:SfNumericUpDown CustomFormat = "00.00##"/>
+<editors:SfNumericUpDown CustomFormat = "$00.00##" WidthRequest="200"/>
+<editors:SfNumericUpDown CustomFormat = "00.00##%" WidthRequest="200"/>
+<editors:SfNumericUpDown CustomFormat = "00.00##" WidthRequest="200"/>
 
 {% endhighlight %}
 {% highlight c# %}
 
-stockPrice.CustomFormat = "$00.00##";
-productDiscount.CustomFormat = "00.00##%";
-hoursWorked.CustomFormat = "00.00##";
+SfNumericUpDown stockPrice = new SfNumericUpDown
+{
+    CustomFormat = "$00.00##",
+    WidthRequest = 200
+};
+
+SfNumericUpDown productDiscount = new SfNumericUpDown
+{
+    CustomFormat = "00.00##%",
+    WidthRequest = 200
+};
+
+SfNumericUpDown hoursWorked = new SfNumericUpDown
+{
+    CustomFormat = "00.00##",
+    WidthRequest = 200
+};
 
 {% endhighlight %}
 {% endtabs %}
@@ -168,7 +220,8 @@ When the [SfNumericUpDown](https://help.syncfusion.com/cr/maui-toolkit/Syncfusio
 {% tabs %}
 {% highlight xaml %}
 
-<editors:SfNumericUpDown x:Name="NumericUpDown" 
+<editors:SfNumericUpDown x:Name="NumericUpDown"
+                        WidthRequest="200" 
                         CustomFormat="p" 
                         Value="1000"  
                         PercentDisplayMode="Value">
@@ -179,6 +232,7 @@ When the [SfNumericUpDown](https://help.syncfusion.com/cr/maui-toolkit/Syncfusio
 
 SfNumericUpDown sfNumericUpDown= new SfNumericUpDown();
 SfNumericUpDown sfNumericUpDown = new SfNumericUpDown();
+sfNumericUpDown.WidthRequest = 200;
 sfNumericUpDown.Value = 1000;
 sfNumericUpDown.CustomFormat = "p";
 sfNumericUpDown.PercentDisplayMode = PercentDisplayMode.Value;
@@ -194,6 +248,7 @@ sfNumericUpDown.PercentDisplayMode = PercentDisplayMode.Value;
 {% highlight xaml %}
 
 <editors:SfNumericUpDown x:Name="NumericUpDown" 
+                        WidthRequest="200"
                         CustomFormat="p" 
                         Value="1000"  
                         PercentDisplayMode="Value">
@@ -203,6 +258,7 @@ sfNumericUpDown.PercentDisplayMode = PercentDisplayMode.Value;
 {% highlight C# %}
 
 SfNumericUpDown sfNumericUpDown= new SfNumericUpDown();
+sfNumericUpDown.WidthRequest = 200;
 sfNumericUpDown.Value = 1000;
 sfNumericUpDown.CustomFormat = "p";
 sfNumericUpDown.PercentDisplayMode = PercentDisplayMode.Compute;
@@ -224,6 +280,7 @@ N> The `MaximumNumberDecimalDigits` property can only be set to a positive value
 {% highlight xaml %}
 
 <editors:SfNumericUpDown x:Name="NumericUpDown" 
+                        WidthRequest="200"
                         Value="1000.23232"  
                         MaximumNumberDecimalDigits="3">
 </editors:SfNumericUpDown>
@@ -232,6 +289,7 @@ N> The `MaximumNumberDecimalDigits` property can only be set to a positive value
 {% highlight C# %}
 
 SfNumericUpDown sfNumericUpDown= new SfNumericUpDown();
+sfNumericUpDown.WidthRequest = 200;
 sfNumericUpDown.Value = 1000.23232;
 sfNumericUpDown.MaximumNumberDecimalDigits = 3;
 
