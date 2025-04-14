@@ -1002,6 +1002,154 @@ This page lists the keys for each control and the element to which it is mapped 
 
     </table>
 
+## SfPopup
+
+<table>
+    <tr>
+        <th>Theme Dictionary<br/>
+            <br/></th>        
+        <th>
+          Keys
+            <br/>
+            <br/>
+        </th>
+        <th>
+            Description
+            <br/>
+            <br/>
+        </th>
+    </tr>
+
+    <tr>
+        <td rowspan="23">
+            SfPopupStyles  
+            <br/>
+            <br/>
+        </td>
+        <td>
+           SfPopupTheme 
+            <br/>
+            <br/>
+        </td>
+        <td>    
+            By merging this key in application resources, you can customize the appearance of SfPopup without merging common theme resource and control style resource dictionaries.
+			
+{% highlight xaml %}
+
+<Application xmlns:syncTheme="clr-namespace:Syncfusion.Maui.Toolkit.Themes;assembly=Syncfusion.Maui.Toolkit"
+             ...>
+ <Application.Resources>
+    <ResourceDictionary>
+        <ResourceDictionary.MergedDictionaries>
+            <syncTheme:SyncfusionThemeResourceDictionary />
+            <ResourceDictionary>
+                <x:String x:Key="SfPopupTheme">CommonTheme</x:String>
+                <Color x:Key="SfPopupNormalHeaderTextColor">Black</Color>
+                <Color x:Key="SfPopupHoverFooterButtonBackground">Gray</Color>
+            </ResourceDictionary>
+        </ResourceDictionary.MergedDictionaries>
+    </ResourceDictionary>
+ </Application.Resources>
+
+....
+
+</Application>
+
+{% endhighlight %}
+            <br/>
+            <br/>
+        </td>
+    </tr>
+    <tr>
+        <td> SfPopupHoverFooterButtonBackground <br/><br/></td>
+        <td> Hover Background color of the SfPopup Footer button.<br/><br/></td>
+    </tr>
+    <tr>
+        <td> SfPopupFooterButtonRippleBackground <br/><br/></td>
+        <td> Ripple Background Color of the Sfpopup Footer button.<br/><br/></td>
+    </tr>
+    <tr>
+        <td> SfPopupNormalHeaderBackground <br/><br/></td>
+        <td> Background color of the SfPopup Header.<br/><br/></td>
+    </tr>
+    <tr>
+        <td> SfPopupNormalHeaderTextColor <br/><br/></td>
+        <td> Text color of the SfPopup Header.<br/><br/></td>
+    </tr>
+    <tr>
+        <td> SfPopupNormalMessageBackground <br/><br/></td>
+        <td> Background color of the SfPopup Message.<br/><br/></td>
+    </tr>
+    <tr>
+        <td> SfpopupNormalMessageTextColor <br/><br/></td>
+        <td> Text color of the SfPopup Message.<br/><br/></td>
+    </tr>
+    <tr>
+        <td> SfPopupNormalFooterBackground <br/><br/></td>
+        <td> Background color of the SfPopup Footer.<br/><br/></td>
+    </tr>
+    <tr>
+        <td> SfPopupNormalAcceptButtonBackground <br/><br/></td>
+        <td> Background color of the SfPopup AcceptButton.<br/><br/></td>
+    </tr>
+    <tr>
+        <td> SfPopupNormalAcceptButtonTextColor <br/><br/></td>
+        <td> Text color of the SfPopup AcceptButton.<br/><br/></td>
+    </tr>
+    <tr>
+        <td> SfPopupNormalDeclineButtonBackground <br/><br/></td>
+        <td> Background color of the SfPopup DeclineButton.<br/><br/></td>
+    </tr>
+    <tr>
+        <td> SfPopupNormalDeclineButtonTextColor <br/><br/></td>
+        <td> Text color of the SfPopup DeclineButton.<br/><br/></td>
+    </tr>
+    <tr>
+        <td> SfPopupNormalStroke <br/><br/></td>
+        <td> Stroke color of the SfPopup.<br/><br/></td>
+    </tr>
+    <tr>
+        <td> SfPopupNormalHeaderFontSize <br/><br/></td>
+        <td> Font Size of the SfPopup Header.<br/><br/></td>
+    </tr>
+    <tr>
+        <td> SfPopupNormalMessageFontSize <br/><br/></td>
+        <td> Font Size of the SfPopup Message.<br/><br/></td>
+    </tr>
+    <tr>
+        <td> SfPopupNormalFooterFontSize <br/><br/></td>
+        <td> Font Size of the SfPopup Footer.<br/><br/></td>
+    </tr>
+    <tr>
+        <td> SfPopupNormalStrokeThickness <br/><br/></td>
+        <td> Stroke Thickness of the SfPopup.<br/><br/></td>
+    </tr>
+    <tr>
+        <td> SfPopupNormalOverlayBackground <br/><br/></td>
+        <td> Background color of the SfPopup Overlay.<br/><br/></td>
+    </tr>
+    <tr>
+        <td> SfPopupHoverCloseButtonIconBackground <br/><br/></td>
+        <td> Hover Background color of the SfPopup CloseButtonIcon.<br/><br/></td>
+    </tr>
+    <tr>
+        <td> SfPopupPressedCloseButtonIconBackground <br/><br/></td>
+        <td> Pressed Background color of the SfPopup CloseButtonIcon.<br/><br/></td>
+    </tr>
+    <tr>
+        <td> SfPopupNormalCloseButtonIconStroke <br/><br/></td>
+        <td> Stroke color of the SfPopup CloseButtonIcon.<br/><br/></td>
+    </tr>
+    <tr>
+        <td> SfPopupNormalBackground <br/><br/></td>
+        <td> Background color of the SfPopup.<br/><br/></td>
+    </tr>
+    <tr>
+        <td> SfPopupNormalCloseButtonIconStrokeThickness <br/><br/></td>
+        <td> Stroke Thickness of the SfPopup CloseButtonIcon.<br/><br/></td>
+    </tr>
+</table>
+
 ## SfPullToRefresh
 
 <table>
