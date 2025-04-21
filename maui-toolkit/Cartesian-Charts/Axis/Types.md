@@ -697,9 +697,9 @@ this.Content = chart;
 
 In the above image, the [ColumnSeries](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ColumnSeries.html) is plotted based on additional axes of [YAxes](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html#Syncfusion_Maui_Toolkit_Charts_SfCartesianChart_YAxes) collection, and [SplineSeries](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SplineSeries.html) is plotted based on axis of the collection's 0th index.
 
-To Add and Customize Multiple Axes in .NET MAUI Cartesian Charts, you can check the below video.
+To learn how to add and customize the multiple axes in .NET MAUI Cartesian Charts quickly, you can check the below video.
 
-{% youtube "https://www.youtube.com/watch?v=Mvno-lDRpxU&pp=ygUGbERScHhV" %}
+{% youtube "https://youtu.be/Mvno-lDRpxU" %}
 
 ## Axis Crossing
 
