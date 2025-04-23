@@ -1081,7 +1081,7 @@ This page lists the keys for each control and the element to which it is mapped 
         <td> Background color of the SfPopup Message.<br/><br/></td>
     </tr>
     <tr>
-        <td> SfpopupNormalMessageTextColor <br/><br/></td>
+        <td> SfPopupNormalMessageTextColor <br/><br/></td>
         <td> Text color of the SfPopup Message.<br/><br/></td>
     </tr>
     <tr>
