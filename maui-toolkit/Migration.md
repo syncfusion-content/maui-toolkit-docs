@@ -58,6 +58,12 @@ By preserving similar APIs and functionality, developers can easily update their
 <td>Defines the XAML namespace for <a href="https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html">SfCartesianChart</a>, <a href="https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCircularChart.html">SfCircularChart</a>, <a href="https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfFunnelChart.html">SfFunnelChart</a>, <a href="https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfPolarChart.html">SfPolarChart</a>, and <a href="https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfPyramidChart.html">SfPyramidChart</a> controls.</td>
 </tr>
 <tr>
+<td><a href="https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.ProgressBar.SfCircularProgressBar.html">SfCircularProgressBar</a></td>
+<td>xmlns:progressBar="clr-namespace:Syncfusion.Maui.ProgressBar;assembly=Syncfusion.Maui.ProgressBar"</td>
+<td>xmlns:progressBar="clr-namespace:Syncfusion.Maui.Toolkit.ProgressBar;assembly=Syncfusion.Maui.Toolkit"</td>
+<td>Defines the XAML namespace for <a href="https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.ProgressBar.SfCircularProgressBar.html">SfCircularProgressBar</a> control.</td>
+</tr>
+<tr>
 <td><a href="https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Chips.SfChip.html">SfChip</a></td>
 <td>xmlns:chip="clr-namespace:Syncfusion.Maui.Core;assembly=Syncfusion.Maui.Core"</td>
 <td>xmlns:chip="clr-namespace:Syncfusion.Maui.Toolkit.Chips;assembly=Syncfusion.Maui.Toolkit"</td>
@@ -74,6 +80,12 @@ By preserving similar APIs and functionality, developers can easily update their
   <td>xmlns:expander="clr-namespace:Syncfusion.Maui.Expander;assembly=Syncfusion.Maui.Expander"</td>
   <td>xmlns:expander="clr-namespace:Syncfusion.Maui.Toolkit.Expander;assembly=Syncfusion.Maui.Toolkit"</td>
   <td>Defines the XAML namespace for <a href="https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Expander.SfExpander.html">SfExpander</a> control.</td>
+</tr>
+<tr>
+<td><a href="https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.ProgressBar.SfLinearProgressBar.html">SfLinearProgressBar</a></td>
+<td>xmlns:progressBar="clr-namespace:Syncfusion.Maui.ProgressBar;assembly=Syncfusion.Maui.ProgressBar"</td>
+<td>xmlns:progressBar="clr-namespace:Syncfusion.Maui.Toolkit.ProgressBar;assembly=Syncfusion.Maui.Toolkit"</td>
+<td>Defines the XAML namespace for <a href="https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.ProgressBar.SfLinearProgressBar.html">SfLinearProgressBar</a> control.</td>
 </tr>
 <tr>
   <td><a href="https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NavigationDrawer.SfNavigationDrawer.html">SfNavigationDrawer</a></td>
@@ -171,6 +183,12 @@ By preserving similar APIs and functionality, developers can easily update their
 <td>Defines the namespace for <a href="https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html">SfCartesianChart</a>, <a href="https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCircularChart.html">SfCircularChart</a>, <a href="https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfFunnelChart.html">SfFunnelChart</a>, <a href="https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfPolarChart.html">SfPolarChart</a>, and <a href="https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfPyramidChart.html">SfPyramidChart</a> controls.</td>
 </tr>
 <tr>
+<td><a href="https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.ProgressBar.SfCircularProgressBar.html">SfCircularProgressBar</a></td>
+<td>Syncfusion.Maui.ProgressBar</td>
+<td>Syncfusion.Maui.Toolkit.ProgressBar</td>
+<td>Defines the namespace for <a href="https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.ProgressBar.SfCircularProgressBar.html">SfCircularProgressBar</a> control.</td>
+</tr>
+<tr>
 <td><a href="https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Chips.SfChip.html">SfChip</a></td>
 <td>Syncfusion.Maui.Core</td>
 <td>Syncfusion.Maui.Toolkit.Chip</td>
@@ -181,6 +199,12 @@ By preserving similar APIs and functionality, developers can easily update their
 <td>Syncfusion.Maui.Core</td>
 <td>Syncfusion.Maui.Toolkit.EffectsView</td>
 <td>Defines the namespace for <a href="https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.EffectsView.SfEffectsView.html">SfEffectsView</a> control.</td>
+</tr>
+<tr>
+<td><a href="https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.ProgressBar.SfLinearProgressBar.html">SfLinearProgressBar</a></td>
+<td>Syncfusion.Maui.ProgressBar</td>
+<td>Syncfusion.Maui.Toolkit.ProgressBar</td>
+<td>Defines the namespace for <a href="https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.ProgressBar.SfLinearProgressBar.html">SfLinearProgressBar</a> control.</td>
 </tr>
 <tr>
   <td><a href="https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NavigationDrawer.SfNavigationDrawer.html">SfNavigationDrawer</a></td>
