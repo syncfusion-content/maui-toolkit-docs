@@ -11,19 +11,14 @@ documentation: ug
 
 This section explains the steps required to add the linear progress bar control with the progress and its customizable elements such as indeterminate, segment, progress fill, and track fill. This section covers only the basic features needed to know and gets started with the Syncfusion<sup>&reg;</sup> linear progress bar. Follow the steps below to add a .NET MAUI Linear progress bar control to your project.
 
-To get start quickly with our .NET MAUI Linear ProgressBar, check the following video.
-
-{% youtube
-"youtube:https://www.youtube.com/watch?v=DY29ko7PTXg&t"%}
-
 {% tabcontents %}
 {% tabcontent Visual Studio %}
 
 ## Prerequisites
 
 Before proceeding, ensure the following are set up:
-1. Install [.NET 7 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/7.0) or later is installed.
-2. Set up a .NET MAUI environment with Visual Studio 2022 (v17.3 or later).
+1. Install [.NET 8 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/8.0) or later is installed.
+2. Set up a .NET MAUI environment with Visual Studio 2022 (v17.8 or later).
 
 ## Step 1: Create a New .NET MAUI Project
 
@@ -31,20 +26,20 @@ Before proceeding, ensure the following are set up:
 2. Name the project and choose a location. Then click **Next**.
 3. Select the .NET framework version and click **Create**.
 
-## Step 2: Install the Syncfusion<sup>&reg;</sup> .NET MAUI Linear ProgressBar NuGet Package
+## Step 2: Install the Syncfusion<sup>&reg;</sup> MAUI Toolkit Package
 
 1. In **Solution Explorer,** right-click the project and choose **Manage NuGet Packages.**
-2. Search for [Syncfusion.Maui.Toolkit.ProgressBar](https://www.nuget.org/packages/Syncfusion.Maui.Toolkit.ProgressBar/) and install the latest version.
+2. Search for [Syncfusion.Maui.Toolkit](https://www.nuget.org/packages/Syncfusion.Maui.Toolkit/) and install the latest version.
 3. Ensure the necessary dependencies are installed correctly, and the project is restored.
 
 ## Step 3: Register the handler
 
-The [Syncfusion.Maui.Core](https://www.nuget.org/packages/Syncfusion.Maui.Core/) NuGet is a dependent package for all Syncfusion<sup>&reg;</sup> controls of .NET MAUI. In the **MauiProgram.cs** file, register the handler for Syncfusion core.
+In the **MauiProgram.cs** file, register the handler for Syncfusion<sup>&reg;</sup> toolkit.
 
 {% tabs %}
 {% highlight C# tabtitle="MauiProgram.cs" hl_lines="1 10" %}
 
-using Syncfusion.Maui.Core.Hosting;
+using Syncfusion.Maui.Toolkit.Hosting;
 namespace GettingStarted
 {
     public static class MauiProgram
@@ -53,7 +48,7 @@ namespace GettingStarted
         {
             var builder = MauiApp.CreateBuilder();
 
-            builder.ConfigureSyncfusionCore();
+            builder.ConfigureSyncfusionToolkit();
             builder
             .UseMauiApp<App>()
             .ConfigureFonts(fonts =>
@@ -78,7 +73,7 @@ namespace GettingStarted
 
 {% highlight xaml %}
 
-xmlns:progressBar="clr-namespace:Syncfusion.Maui.Toolkit.ProgressBar;assembly=Syncfusion.Maui.Toolkit.ProgressBar"
+xmlns:progressBar="clr-namespace:Syncfusion.Maui.Toolkit.ProgressBar;assembly=Syncfusion.Maui.Toolkit"
 
 {% endhighlight %}
 
@@ -115,9 +110,9 @@ this.Content = linearProgressBar;
 ## Prerequisites
 
 Before proceeding, ensure the following are set up:
-1. Install [.NET 7 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/7.0) or later is installed.
+1. Install [.NET 8 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/8.0) or later is installed.
 2. Set up a .NET MAUI environment with Visual Studio Code.
-3. Ensure that the .NET MAUI workload is installed and configured as described [here.](https://learn.microsoft.com/en-us/dotnet/maui/get-started/installation?view=net-maui-8.0&tabs=visual-studio-code)
+3. Ensure that the .NET MAUI extension is installed and configured as described [here.](https://learn.microsoft.com/en-us/dotnet/maui/get-started/installation?view=net-maui-8.0&tabs=visual-studio-code)
 
 ## Step 1: Create a New .NET MAUI Project
 
@@ -126,21 +121,21 @@ Before proceeding, ensure the following are set up:
 3. Select the project location, type the project name and press **Enter**.
 4. Then choose **Create project.**
 
-## Step 2: Install the Syncfusion<sup>&reg;</sup> .NET MAUI Linear ProgressBar NuGet Package
+## Step 2: Install the Syncfusion<sup>&reg;</sup> MAUI Toolkit Package
 
 1. Press <kbd>Ctrl</kbd> + <kbd>`</kbd> (backtick) to open the integrated terminal in Visual Studio Code.
 2. Ensure you're in the project root directory where your .csproj file is located.
-3. Run the command `dotnet add package Syncfusion.Maui.Toolkit.ProgressBar` to install the Syncfusion<sup>®</sup> .NET MAUI ProgressBar NuGet package.
+3. Run the command `dotnet add package Syncfusion.Maui.Cards` to install the Syncfusion<sup>®</sup> .NET MAUI Cards NuGet package.
 4. To ensure all dependencies are installed, run `dotnet restore`.
 
 ## Step 3: Register the handler
 
-The [Syncfusion.Maui.Core](https://www.nuget.org/packages/Syncfusion.Maui.Core/) NuGet is a dependent package for all Syncfusion<sup>&reg;</sup> controls of .NET MAUI. In the **MauiProgram.cs** file, register the handler for Syncfusion core.
+In the **MauiProgram.cs** file, register the handler for Syncfusion<sup>&reg;</sup> toolkit.
 
 {% tabs %}
 {% highlight C# tabtitle="MauiProgram.cs" hl_lines="1 10" %}
 
-using Syncfusion.Maui.Core.Hosting;
+using Syncfusion.Maui.Toolkit.Hosting;
 namespace GettingStarted
 {
     public static class MauiProgram
@@ -149,7 +144,7 @@ namespace GettingStarted
         {
             var builder = MauiApp.CreateBuilder();
 
-            builder.ConfigureSyncfusionCore();
+            builder.ConfigureSyncfusionToolkit();
             builder
             .UseMauiApp<App>()
             .ConfigureFonts(fonts =>
@@ -174,7 +169,7 @@ namespace GettingStarted
 
 {% highlight xaml %}
 
-xmlns:progressBar="clr-namespace:Syncfusion.Maui.Toolkit.ProgressBar;assembly=Syncfusion.Maui.Toolkit.ProgressBar"
+xmlns:progressBar="clr-namespace:Syncfusion.Maui.Toolkit.ProgressBar;assembly=Syncfusion.Maui.Toolkit"
 
 {% endhighlight %}
 
@@ -224,20 +219,20 @@ Before proceeding, ensure the following are set up:
 2. Enter the Project Name, Solution Name, and Location.
 3. Select the .NET framework version and click Create.
 
-## Step 2: Install the Syncfusion<sup>®</sup> MAUI ProgressBar NuGet Package
+## Step 2: Install the Syncfusion<sup>®</sup> MAUI Toolkit NuGet Package
 
 1. In **Solution Explorer,** right-click the project and choose **Manage NuGet Packages.**
-2. Search for [Syncfusion.Maui.Toolkit.ProgressBar](https://www.nuget.org/packages/Syncfusion.Maui.Toolkit.ProgressBar/) and install the latest version.
+2. Search for [Syncfusion.Maui.Toolkit](https://www.nuget.org/packages/Syncfusion.Maui.Toolkit/) and install the latest version.
 3. Ensure the necessary dependencies are installed correctly, and the project is restored. If not, Open the Terminal in Rider and manually run: `dotnet restore`
 
 ## Step 3: Register the handler
 
-The [Syncfusion.Maui.Core](https://www.nuget.org/packages/Syncfusion.Maui.Core/) NuGet is a dependent package for all Syncfusion<sup>&reg;</sup> controls of .NET MAUI. In the **MauiProgram.cs** file, register the handler for Syncfusion core.
+In the **MauiProgram.cs** file, register the handler for Syncfusion<sup>&reg;</sup> toolkit.
 
 {% tabs %}
 {% highlight C# tabtitle="MauiProgram.cs" hl_lines="1 10" %}
 
-using Syncfusion.Maui.Core.Hosting;
+using Syncfusion.Maui.Toolkit.Hosting;
 namespace GettingStarted
 {
     public static class MauiProgram
@@ -246,7 +241,7 @@ namespace GettingStarted
         {
             var builder = MauiApp.CreateBuilder();
 
-            builder.ConfigureSyncfusionCore();
+            builder.ConfigureSyncfusionToolkit();
             builder
             .UseMauiApp<App>()
             .ConfigureFonts(fonts =>
@@ -271,7 +266,7 @@ namespace GettingStarted
 
 {% highlight xaml %}
 
-xmlns:progressBar="clr-namespace:Syncfusion.Maui.Toolkit.ProgressBar;assembly=Syncfusion.Maui.Toolkit.ProgressBar"
+xmlns:progressBar="clr-namespace:Syncfusion.Maui.Toolkit.ProgressBar;assembly=Syncfusion.Maui.Toolkit"
 
 {% endhighlight %}
 
@@ -397,7 +392,3 @@ SfLinearProgressBar sfLinearProgressBar = new SfLinearProgressBar
 {% endtabs %} 
 
 ![.NET MAUI Linear ProgressBar with customized colors](images/getting-started/style.png)
-
-N> 
-* Get the complete getting started sample from [GitHub](https://github.com/SyncfusionExamples/Getting-started-with-.NET-MAUI-Linear-ProgressBar-control-) link.
-* Refer to our [.NET MAUI Linear ProgressBar](https://www.syncfusion.com/maui-controls/maui-progressbar) feature tour page for its groundbreaking feature representations.

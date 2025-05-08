@@ -36,5 +36,3 @@ this.Content = circularProgressBar;
 {% endtabs %} 
 
 ![.NET MAUI Circular ProgressBar with range customization](images/define-range/range.png)
-
-N> Refer to our [.NET MAUI Circular ProgressBar](https://www.syncfusion.com/maui-controls/maui-progressbar) feature tour page for its groundbreaking feature representations. Also explore our [.NET MAUI Circular ProgressBar example](https://github.com/syncfusion/maui-demos/) that shows how to configure a SfCircularProgressBar in .NET MAUI.

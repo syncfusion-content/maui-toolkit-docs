@@ -28,5 +28,3 @@ The .NET MAUI Circular ProgressBar shows the progress of a task with customizabl
 * **Angle** - Customize the angles of a circular progress bar.
 
 ![Circular ProgresBar control for .NET MAUI.](images/overview/dotnet_maui_progressbar.png)
-
-N> Get the samples in the [GitHub](https://github.com/syncfusion/maui-demos) link.
