@@ -94,6 +94,12 @@ By preserving similar APIs and functionality, developers can easily update their
   <td>Defines the XAML namespace for <a href="https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericUpDown.SfNumericUpDown.html">SfNumericUpDown</a> control.</td>
 </tr>
 <tr>
+  <td><a href="https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Picker.SfPicker.html">SfPicker</a></td>
+  <td>xmlns:picker="clr-namespace:Syncfusion.Maui.Picker;assembly=Syncfusion.Maui.Picker"</td>
+  <td>xmlns:picker="clr-namespace:Syncfusion.Maui.Toolkit.Picker;assembly=Syncfusion.Maui.Toolkit"</td>
+  <td>Defines the XAML namespace for <a href="https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Picker.SfPicker.html">SfPicker</a> control.</td>
+</tr>
+<tr>
   <td><a href="https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Popup.SfPopup.html">SfPopup</a></td>
   <td>xmlns:popup="clr-namespace:Syncfusion.Maui.Popup;assembly=Syncfusion.Maui.Popup"</td>
   <td>xmlns:popup="clr-namespace:Syncfusion.Maui.Toolkit.Popup;assembly=Syncfusion.Maui.Toolkit"</td>
@@ -199,6 +205,12 @@ By preserving similar APIs and functionality, developers can easily update their
   <td>Syncfusion.Maui.Inputs</td>
   <td>Syncfusion.Maui.Toolkit.NumericUpDown</td>
   <td>Defines the namespace for <a href="https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericUpDown.SfNumericUpDown.html">SfNumericUpDown</a> control.</td>
+</tr>
+<tr>
+  <td><a href="https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Picker.SfPicker.html">SfPicker</a></td>
+  <td>Syncfusion.Maui.Picker</td>
+  <td>Syncfusion.Maui.Toolkit.Picker</td>
+  <td>Defines the namespace for <a href="https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Picker.SfPicker.html">SfPicker</a> control.</td>
 </tr>
 <tr>
   <td><a href="https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Popup.SfPopup.html">SfPopup</a></td>
