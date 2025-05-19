@@ -253,38 +253,34 @@ N> If the [LabelsIntersectAction](https://help.syncfusion.com/cr/maui-toolkit/Sy
 
 ## Maximum Labels Per 100 Pixels
 
-The [MaximumLabels]() property in [ChartAxis](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxis.html?) is an integer type property that is used to control the number of axis labels rendered for every 100 pixels of the chart axis. This feature helps maintain better label spacing and improves readability.
+The `MaximumLabels` property in [ChartAxis](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxis.html) is an integer type property that is used to control the number of axis labels rendered for every 100 pixels of the chart axis. This feature limits and manages the density of axis labels per 100 pixels, ensuring that either the specified maximum is displayed or that label spacing is optimized to maintain readability.
 
 By default, a maximum of `3` labels are displayed per 100 pixels of axis. This ensures that the chart remains clean and readable without manual configuration. You can override this behavior by explicitly setting the MaximumLabels property to your desired density.
-
-**XAML**
 
 {% tabs %}
 
 {% highlight xaml %}
 
     <chart:SfCartesianChart>
-
     . . .
 
-    <chart:NumericalAxis MaximumLabels="1" />
+        <chart:SfCartesianChart.YAxes>
+            <chart:NumericalAxis MaximumLabels="5" />
+        </chart:SfCartesianChart.YAxes>
     . . .
-
     </chart:SfCartesianChart>
 
 {% endhighlight %}
-
-**C#**
 
 {% highlight C# %}
 
     SfCartesianChart chart = new SfCartesianChart();
     . . .
-    NumericalAxis axis = new NumericalAxis()
+    NumericalAxis axis = new()
     {
-        MaximumLabels = 1,
+        MaximumLabels = 5,
     };
-    chart.XAxes.Add(axis);
+    chart.YAxes.Add(axis);
     . . .
     this.Content = chart;
 
@@ -292,4 +288,6 @@ By default, a maximum of `3` labels are displayed per 100 pixels of axis. This e
 
 {% endtabs %}
 
-N> [MaximumLabels]() only applies during automatic interval calculation. It will have no effect if the `Interval` property is manually set on the axis.
+![Maximum Labels in .NET MAUI SfCartesianChart.](axis_images/maui_chart_maximum_labels.png)
+
+N> `MaximumLabels` only applies during automatic interval calculation. It will have no effect if the `Interval` property is manually set on the axis.
