@@ -5,7 +5,7 @@ description: Learn here all about axis labels and its customization in Syncfusio
 platform: maui-toolkit
 control: SfCartesianChart
 documentation: ug
-keywords: .net maui chart axis labels, axis labels customization .net maui, syncfusion maui chart axis labels, cartesian chart axis labels maui, customize axis labels .net maui chart.
+keywords: .net maui chart axis labels, axis labels customization .net maui, syncfusion maui chart axis labels, cartesian chart axis labels maui, customize axis labels .net maui chart, .net maui chart labels per 100 pixels.
 ---
 
 # Axis labels in .NET MAUI Chart
@@ -250,3 +250,46 @@ this.Content = chart;
 ![Smart axis lable support in .NET MAUI SfCartesianChart.](axis_images/maui_chart_smart_axis_labels.png)
 
 N> If the [LabelsIntersectAction](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxis.html#Syncfusion_Maui_Toolkit_Charts_ChartAxis_LabelsIntersectAction) is set to Wrap, we should set the width of the wrap using the [MaxWidth](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxisLabelStyle.html#Syncfusion_Maui_Toolkit_Charts_ChartAxisLabelStyle_MaxWidth) property. We can align the wrapped axis label using the [WrappedLabelAlignment](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxisLabelStyle.html#Syncfusion_Maui_Toolkit_Charts_ChartAxisLabelStyle_WrappedLabelAlignment) property.
+
+## Maximum Labels Per 100 Pixels
+
+The [MaximumLabels]() property in [ChartAxis](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxis.html?) is an integer type property that is used to control the number of axis labels rendered for every 100 pixels of the chart axis. This feature helps maintain better label spacing and improves readability.
+
+By default, a maximum of `3` labels are displayed per 100 pixels of axis. This ensures that the chart remains clean and readable without manual configuration. You can override this behavior by explicitly setting the MaximumLabels property to your desired density.
+
+**XAML**
+
+{% tabs %}
+
+{% highlight xaml %}
+
+    <chart:SfCartesianChart>
+
+    . . .
+
+    <chart:NumericalAxis MaximumLabels="1" />
+    . . .
+
+    </chart:SfCartesianChart>
+
+{% endhighlight %}
+
+**C#**
+
+{% highlight C# %}
+
+    SfCartesianChart chart = new SfCartesianChart();
+    . . .
+    NumericalAxis axis = new NumericalAxis()
+    {
+        MaximumLabels = 1,
+    };
+    chart.XAxes.Add(axis);
+    . . .
+    this.Content = chart;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+N> [MaximumLabels]() only applies during automatic interval calculation. It will have no effect if the `Interval` property is manually set on the axis.
