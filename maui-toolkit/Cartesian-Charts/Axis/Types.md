@@ -15,6 +15,7 @@ Cartesian chart supports the following types of chart axis.
 * NumericalAxis
 * CategoryAxis
 * DateTimeAxis
+* DateTimeCategoryAxis
 * LogarithmicAxis
 
 ## Numerical Axis
@@ -411,6 +412,41 @@ this.Content = chart;
 {% endtabs %}
 
 ![DateTimeAxis range customization support in MAUI Chart](Axis_Images/maui_chart_datetime_axis_range.jpg)
+
+## DateTimeCategoryAxis
+
+The [DateTimeCategoryAxis]() is a specialized type of axis primarily used with financial series. Similar to the [CategoryAxis](), all data points are plotted with equal spacing, eliminating gaps for missing dates. The intervals and ranges for this axis are calculated similarly to the [DateTimeAxis](). There are no visual gaps between points, even if the difference between two points exceeds a year.
+
+The following APIs can be used to customize the interval of the DateTimeCategoryAxis.
+
+* Interval - Gets or sets the double value that represents the interval between the labels.
+* IntervalType - Gets or sets the DateTimeIntervalType that represents the type of the interval to be displayed.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+    <chart:SfCartesianChart> 
+        <chart:SfCartesianChart.XAxes>
+            <chart:DateTimeCategoryAxis 
+            Interval="2" 
+            IntervalType="Months"/> 
+        </chart:SfCartesianChart.XAxes> 
+    </chart:SfCartesianChart>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+    SfCartesianChart chart = new SfCartesianChart(); 
+    DateTimeCategoryAxis primaryAxis = new DateTimeCategoryAxis() { Interval = 2, IntervalType = DateTimeIntervalType.Months }; 
+    chart.XAxes.Add(primaryAxis);
+
+this.Content = chart; {% endhighlight %}
+
+{% endtabs %}
+
+![DateTimeCategory Axis support in MAUI Chart]()
 
 ## Logarithmic Axis
 
