@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Line Chart in .NET MAUI Chart control | Syncfusion
-description: Learn here all about the line chart and its type in Syncfusion® .NET MAUI Chart (SfCartesianChart) control. 
+description: Learn here all about the line chart and its types in Syncfusion .NET MAUI Chart (SfCartesianChart) control.
 platform: maui-toolkit
 control: SfCartesianChart
 documentation: ug
@@ -12,7 +12,7 @@ keywords: .net maui line chart, maui line chart, .net maui chart line type, line
 
 ## Line Chart
 
-Line chart is used to represent the data trends at equal intervals by connecting points on a plot with straight lines. To render a line chart, create an instance of [LineSeries](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.LineSeries.html), and add it to the [Series](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html#Syncfusion_Maui_Toolkit_Charts_SfCartesianChart_Series) collection property of [SfCartesianChart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html).
+Line chart is used to represent data trends at equal intervals by connecting points on a plot with straight lines. To render a line chart, create an instance of [LineSeries](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.LineSeries.html), and add it to the [Series](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html#Syncfusion_Maui_Toolkit_Charts_SfCartesianChart_Series) collection property of [SfCartesianChart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html).
 
 N> The Cartesian chart has [Series](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html#Syncfusion_Maui_Toolkit_Charts_SfCartesianChart_Series) as its default content.
 
@@ -60,7 +60,6 @@ LineSeries series2 = new LineSeries()
     ItemsSource = new ViewModel().Data,
     XBindingPath = "Demand",
     YBindingPath = "Year2011",
-
 };
 
 // Add the line series to the chart
@@ -114,7 +113,7 @@ The [StrokeDashArray](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Mau
 {% highlight c# %}
 
 SfCartesianChart chart = new SfCartesianChart();
-. . .
+
 // Create a DoubleCollection for the StrokeDashArray, which defines the pattern of dashes and gaps.
 DoubleCollection doubleCollection = new DoubleCollection();
 doubleCollection.Add(5);
@@ -131,7 +130,6 @@ LineSeries series1 = new LineSeries()
     XBindingPath = "Demand",
     YBindingPath = "Year2010",
     StrokeDashArray = doubleCollection // Apply the stroke dash pattern.
-
 };
 
 LineSeries series2 = new LineSeries()
@@ -216,7 +214,7 @@ this.Content = chart;
 
 ### Spline rendering types
 
-The [Type](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SplineSeries.html#Syncfusion_Maui_Toolkit_Charts_SplineSeries_Type) property allows to change the rendering type of spline curve in series. The default value of [Type](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SplineSeries.html#Syncfusion_Maui_Toolkit_Charts_SplineSeries_Type) is [Natural](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SplineType.html#Syncfusion_Maui_Toolkit_Charts_SplineType_Natural).
+The [Type](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SplineSeries.html#Syncfusion_Maui_Toolkit_Charts_SplineSeries_Type) property allows you to change the rendering type of spline curve in series. The default value of [Type](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SplineSeries.html#Syncfusion_Maui_Toolkit_Charts_SplineSeries_Type) is [Natural](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SplineType.html#Syncfusion_Maui_Toolkit_Charts_SplineType_Natural).
 
 The following types are used in SplineSeries:
 
@@ -318,7 +316,7 @@ LineSeries series2 = new LineSeries()
 
 chart.Series.Add(series1);
 chart.Series.Add(series2);
-this.Content= chart;
+this.Content = chart;
 
 {% endhighlight %}
 
@@ -328,7 +326,7 @@ this.Content= chart;
 
 ### Marker customization
 
-In order to change the series markers appearance, create an instance of the [MarkerSettings](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.LineSeries.html#Syncfusion_Maui_Toolkit_Charts_LineSeries_MarkerSettings) property. The following properties are used to customize marker appearance.
+In order to change the series markers appearance, create an instance of the [MarkerSettings](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.LineSeries.html#Syncfusion_Maui_Toolkit_Charts_LineSeries_MarkerSettings) property. The following properties are used to customize marker appearance:
 
 * [Type](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartMarkerSettings.html#Syncfusion_Maui_Toolkit_Charts_ChartMarkerSettings_Type), of type `ShapeType`, describes the shape of the series marker. The default value of this property is [ShapeType.Circle](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ShapeType.html#Syncfusion_Maui_Toolkit_Charts_ShapeType_Circle).
 * [Stroke](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartMarkerSettings.html#Syncfusion_Maui_Toolkit_Charts_ChartMarkerSettings_Stroke), of type `Brush`, indicates the brush used to paint the marker border.
@@ -365,7 +363,7 @@ In order to change the series markers appearance, create an instance of the [Mar
 SfCartesianChart chart = new SfCartesianChart();
 ...
 // Set up marker settings for the chart series with a diamond shape
-ChartMarkerSettings chartMarker= new ChartMarkerSettings()
+ChartMarkerSettings chartMarker = new ChartMarkerSettings()
 {
     Type = ShapeType.Diamond,
     Fill = Colors.Brown,

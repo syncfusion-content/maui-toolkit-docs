@@ -10,9 +10,9 @@ keywords: .net maui bar chart, maui bar chart, .net maui chart bar type, bar cha
 
 # Bar Chart in .NET MAUI Chart
 
-A bar chart uses bars to represent data points and compare values across different categories. To render bar chart, initialize the [SfCartesianChart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html) and switch the chart X and Y axes by using the [IsTransposed](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html#Syncfusion_Maui_Toolkit_Charts_SfCartesianChart_IsTransposed) property as true. Then, create the column chart. To render a column chart, create an instance of [ColumnSeries](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ColumnSeries.html), and add it to the [Series](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html#Syncfusion_Maui_Toolkit_Charts_SfCartesianChart_Series) collection property of [SfCartesianChart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html).
+A bar chart uses horizontal bars to represent data points and compare values across different categories. To render a bar chart, initialize the [SfCartesianChart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html) and set the [IsTransposed](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html#Syncfusion_Maui_Toolkit_Charts_SfCartesianChart_IsTransposed) property to true. This effectively transforms a column chart into a bar chart by switching the chart's X and Y axes. To create the chart, instantiate a [ColumnSeries](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ColumnSeries.html) and add it to the [Series](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html#Syncfusion_Maui_Toolkit_Charts_SfCartesianChart_Series) collection of the [SfCartesianChart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html).
 
-N> By default, [IsTransposed](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html#Syncfusion_Maui_Toolkit_Charts_SfCartesianChart_IsTransposed) property of the [SfCartesianChart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html) is false.
+N> By default, the [IsTransposed](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html#Syncfusion_Maui_Toolkit_Charts_SfCartesianChart_IsTransposed) property of the [SfCartesianChart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html) is false.
 
 N> The Cartesian chart has `Series` as its default content.
 
@@ -65,7 +65,7 @@ this.Content = chart;
 
 ## Spacing and Width
 
-The [Spacing](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ColumnSeries.html#Syncfusion_Maui_Toolkit_Charts_ColumnSeries_Spacing) property of the [ColumnSeries](hhttps://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ColumnSeries.html) is used to change the spacing between two segments. The default value of spacing is 0, and the value ranges from 0 to 1. Here, 1 and 0 correspond to 100% and 0% of the available space, respectively. 
+The [Spacing](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ColumnSeries.html#Syncfusion_Maui_Toolkit_Charts_ColumnSeries_Spacing) property of the [ColumnSeries](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ColumnSeries.html) is used to change the spacing between two segments. The default value of spacing is 0, and the value ranges from 0 to 1. Here, 1 and 0 correspond to 100% and 0% of the available space, respectively. 
 
 The [Width](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ColumnSeries.html#Syncfusion_Maui_Toolkit_Charts_ColumnSeries_Width) property of the [ColumnSeries](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ColumnSeries.html) is used to change the width of the rectangle. The default value of the width is 0.8, and the value ranges from 0 to 1.
 
@@ -107,8 +107,8 @@ ColumnSeries series = new ColumnSeries()
     ItemsSource = new ViewModel().Data,
     XBindingPath = "XValue",
     YBindingPath = "YValue",
-    Spacing = 0.3, // Set the spacing between columns (bars) in the series. 
-    Width = 0.5 // Set the width of the columns (bars) in the series.
+    Spacing = 0.3, // Set the spacing between columns (bars) in the series
+    Width = 0.5 // Set the width of the columns (bars) in the series
 };
 
 chart.Series.Add(series);

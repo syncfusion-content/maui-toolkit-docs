@@ -12,7 +12,7 @@ Keywords: .net maui fast line chart, .net maui performance line chart, fast line
 
 ## Fast Line Chart
 
-The [FastLineSeries](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.FastLineSeries.html) is a special kind of line series that can render a collection with large number of datapoints. To render a fast line chart, create an instance of [FastLineSeries](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.FastLineSeries.html), and add it to the [Series](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html#Syncfusion_Maui_Toolkit_Charts_SfCartesianChart_Series) collection property of [SfCartesianChart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html). 
+The [FastLineSeries](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.FastLineSeries.html) is a special kind of line series that can render a collection with a large number of data points. To render a fast line chart, create an instance of [FastLineSeries](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.FastLineSeries.html), and add it to the [Series](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html#Syncfusion_Maui_Toolkit_Charts_SfCartesianChart_Series) collection property of [SfCartesianChart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html). 
 
 N> The Cartesian chart has [Series](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html#Syncfusion_Maui_Toolkit_Charts_SfCartesianChart_Series) as its default content.
 
@@ -78,7 +78,7 @@ The [StrokeDashArray](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Mau
     </chart:SfCartesianChart.Resources>
 
     <chart:SfCartesianChart.XAxes>
-        <chart:chart:DateTimeAxis/>
+        <chart:DateTimeAxis/>
     </chart:SfCartesianChart.XAxes>
 
     <chart:SfCartesianChart.YAxes>
@@ -105,18 +105,16 @@ chart.YAxes.Add(secondaryAxis);
 DoubleCollection doubleCollection = new DoubleCollection();
 doubleCollection.Add(5);
 doubleCollection.Add(2);
-. . .
+
 FastLineSeries series = new FastLineSeries()
 {
     ItemsSource = new ViewModel().Data,
     XBindingPath = "XValue",
     YBindingPath = "YValue",
     StrokeDashArray = doubleCollection // Apply the custom stroke dash pattern
-
 };
 
 chart.Series.Add(series);
-
 this.Content = chart;
 
 {% endhighlight %}
@@ -146,7 +144,7 @@ There may be some jagged lines at the edges. This can be reduced by using the [E
 {% highlight c# %}
 
 SfCartesianChart chart = new SfCartesianChart();
-. . .
+// ... (other chart configuration)
 FastLineSeries series = new FastLineSeries()
 {
     ItemsSource = new ViewModel().Data,

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Fast Scatter Chart in .NET MAUI Chart control | Syncfusion
-description: Learn here all about the fast scatter chart and its features in Syncfusion® .NET MAUI Chart (SfCartesianChart) control.
+description: Learn here all about the fast scatter chart and its features in Syncfusion .NET MAUI Chart (SfCartesianChart) control.
 platform: maui-toolkit
 control: SfCartesianChart
 documentation: ug
@@ -63,7 +63,7 @@ FastScatterSeries scatterSeries2 = new FastScatterSeries
 {
    ItemsSource = new ViewModel().Data2,
    XBindingPath = "XValue",
-   YBindingPath = "XValue",
+   YBindingPath = "YValue",  // Fixed YBindingPath from "XValue" to "YValue"
 };
 
 chart.Series.Add(scatterSeries1);

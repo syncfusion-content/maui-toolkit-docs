@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Scatter Chart in .NET MAUI Chart control | Syncfusion
-description: Learn here all about the scatter chart and its features in Syncfusion® .NET MAUI Chart (SfCartesianChart) control.
+description: Learn here all about the scatter chart and its features in Syncfusion .NET MAUI Chart (SfCartesianChart) control.
 platform: maui-toolkit
 control: SfCartesianChart
 documentation: ug 
@@ -10,7 +10,7 @@ keywords: .net maui scatter chart, maui scatter chart, scatter chart customizati
 
 # Scatter Chart in .NET MAUI Chart
 
-The scatter chart is used to represent the each data point by a dot or circle with equal size.
+The scatter chart is used to represent each data point as a dot or circle with equal size.
 
 ## Scatter Chart
 

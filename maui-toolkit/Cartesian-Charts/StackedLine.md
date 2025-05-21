@@ -61,7 +61,7 @@ chart.YAxes.Add(secondaryAxis);
 ViewModel viewModel = new ViewModel();
 
 // Create a StackingLineSeries for the chart
-StackingLineSeries series1 = new  StackingLineSeries()
+StackingLineSeries series1 = new StackingLineSeries()
 {
     ItemsSource = viewModel.Data1,
     XBindingPath = "Month",
@@ -74,6 +74,7 @@ StackingLineSeries series2 = new StackingLineSeries()
     XBindingPath = "Month",
     YBindingPath = "Value",
 };
+
 StackingLineSeries series3 = new StackingLineSeries()       
 {
     ItemsSource = viewModel.Data3,
@@ -100,7 +101,7 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Stacking Line Chart in .NET MAUI Cartesian Charts.](chart-types-images\net-maui-cartesian-charts-stacked-line-chart.png)
+![Stacking Line Chart in .NET MAUI Cartesian Charts.](chart-types-images/net-maui-cartesian-charts-stacked-line-chart.png)
 
 ## Dashed Stacked Line
 
@@ -163,8 +164,8 @@ ViewModel viewModel = new ViewModel();
 DoubleCollection doubleCollection = new DoubleCollection();
 doubleCollection.Add(5);
 doubleCollection.Add(2);
-. . .
-StackingLineSeries series1 = new  StackingLineSeries()
+
+StackingLineSeries series1 = new StackingLineSeries()
 {
     ItemsSource = viewModel.Data1,
     XBindingPath = "Month",
@@ -207,7 +208,7 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Dashed Stacked Line chart in MAUI](Chart-types-images/maui_dashed_stacked_line_chart.png)
+![Dashed Stacked Line chart in MAUI](chart-types-images/maui_dashed_stacked_line_chart.png)
 
 ## Enable Marker
 
@@ -248,7 +249,7 @@ SfCartesianChart chart = new SfCartesianChart();
 
 ViewModel viewModel = new ViewModel();
 . . .
-StackingLineSeries series1 = new  StackingLineSeries()
+StackingLineSeries series1 = new StackingLineSeries()
 {
     ItemsSource = viewModel.Data1,
     XBindingPath = "Month",
@@ -291,7 +292,7 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Stacked Line Marker support in MAUI Chart](Chart-types-images/stacked_line_marker_support.png)
+![Stacked Line Marker support in MAUI Chart](chart-types-images/stacked_line_marker_support.png)
 
 ### Marker customization
 
@@ -333,7 +334,7 @@ SfCartesianChart chart = new SfCartesianChart();
 ViewModel viewModel = new ViewModel();
 ...
 // Define settings for the chart markers
-ChartMarkerSettings chartMarker= new ChartMarkerSettings()
+ChartMarkerSettings chartMarker = new ChartMarkerSettings()
 {
     Type = ShapeType.Diamond,
     Fill = Colors.White,
@@ -342,7 +343,7 @@ ChartMarkerSettings chartMarker= new ChartMarkerSettings()
     Width = 8,
 };
 
-StackingLineSeries series = new  StackingLineSeries()
+StackingLineSeries series = new StackingLineSeries()
 {
     ItemsSource = viewModel.Data,
     XBindingPath = "Month",
