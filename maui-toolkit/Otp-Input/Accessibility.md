@@ -1,17 +1,18 @@
 ---
 layout: post
-title: Accessibility in .NET MAUI OTP Input Control | Syncfusion
-description: Learn here all about the accessibility features of Syncfusion .NET MAUI OTP Input (SfOtpInput) control.
-platform: maui
+title: Accessibility in .NET MAUI OTP Input Control | Syncfusion®
+description: Learn about the accessibility features of the Syncfusion® .NET MAUI OTP Input (SfOtpInput) control.
+platform: maui-toolkit
 control: SfOtpInput
-documentation: ug
+documentation: UG
 ---
 
 # Accessibility in .NET MAUI OTP Input (SfOtpInput)
 
-The OTP Input Control is designed to work effectively with the OTP Input elements, providing voice descriptions of their OTP Input items.
+The OTP Input Control is designed to work effectively with OTP Input elements, providing voice descriptions for OTP Input items to enhance accessibility.
 
 ## Keyboard Interaction
+
 The following keyboard shortcuts are supported by the OTP Input component.
 
 <table>
