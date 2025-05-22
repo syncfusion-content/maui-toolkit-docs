@@ -73,7 +73,6 @@ The [Width](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.
 {% highlight xaml %}
 
 <chart:SfCartesianChart>
-
     <chart:SfCartesianChart.XAxes>
         <chart:CategoryAxis/>
     </chart:SfCartesianChart.XAxes>
@@ -83,11 +82,10 @@ The [Width](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.
     </chart:SfCartesianChart.YAxes>  
 
     <chart:ColumnSeries ItemsSource="{Binding Data}"
-			XBindingPath="XValue"
-			YBindingPath="YValue"
-			Spacing="0.5"
-			Width="0.6"/>
-
+                       XBindingPath="XValue"
+                       YBindingPath="YValue"
+                       Spacing="0.5"
+                       Width="0.6"/>
 </chart:SfCartesianChart>
 
 {% endhighlight %}
@@ -168,7 +166,7 @@ ColumnSeries series2 = new ColumnSeries()
     ItemsSource = new ViewModel().Data2,
     XBindingPath = "XValue",
     YBindingPath = "YValue",
-    Width = 0.2;
+    Width = 0.2
 };
 
 chart.Series.Add(series1);
