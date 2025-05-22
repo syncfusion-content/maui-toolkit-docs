@@ -144,7 +144,7 @@ There may be some jagged lines at the edges. This can be reduced by using the [E
 {% highlight c# %}
 
 SfCartesianChart chart = new SfCartesianChart();
-// ... (other chart configuration)
+. . .
 FastLineSeries series = new FastLineSeries()
 {
     ItemsSource = new ViewModel().Data,

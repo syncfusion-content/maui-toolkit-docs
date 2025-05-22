@@ -135,6 +135,8 @@ this.Content = chart;
 
 ## Recursive Plot Band
 
+The Plot Band Recurrence feature allows plot bands to be drawn repeatedly at regular intervals within a chart. This functionality is especially beneficial when you need to highlight events that occur repeatedly over the timeline of a chart.
+
 * [`RepeatEvery`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartPlotBand.html#Syncfusion_Maui_Toolkit_Charts_ChartPlotBand_RepeatEvery) - Specifies the frequency at which the plot band is repeated.
 * [`RepeatEveryType`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.DateTimePlotBand.html#Syncfusion_Maui_Toolkit_Charts_DateTimePlotBand_RepeatEveryType) - Specifies the date-time unit for `DateTimePlotBand`.
 * [`RepeatUntil`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.DateTimePlotBand.html#Syncfusion_Maui_Toolkit_Charts_DateTimePlotBand_RepeatUntil) - Specifies the end value at which the plot band stops repeating.
@@ -197,6 +199,8 @@ this.Content = chart;
 ![Visualization of plot band recurrence](Plot_band_images/recurrence_plotband.png)
 
 ## Segmented Plot Band
+
+When you draw a plot band for a vertical axis, the height of the plot band is determined by its `start` and `end` properties. The plot band extends horizontally across the entire length of its associated horizontal axis. Similarly, when drawing a plot band for a horizontal axis, the width is dictated by its `start` and `width` properties. Vertically, a plot band on a horizontal axis extends across the entire length of the associated vertical axis.
 
 If you want to draw a plot band that should not stretch along its associated axis, you can set the [AssociatedAxisStart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartPlotBand.html#Syncfusion_Maui_Toolkit_Charts_ChartPlotBand_AssociatedAxisStart) and [AssociatedAxisEnd](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartPlotBand.html#Syncfusion_Maui_Toolkit_Charts_ChartPlotBand_AssociatedAxisEnd) properties. The values provided in these two properties correspond to its associated axis specified by the [AssociatedAxisName](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartPlotBand.html#Syncfusion_Maui_Toolkit_Charts_ChartPlotBand_AssociatedAxisName) property.
 
@@ -401,7 +405,7 @@ this.Content = chart;
 {% tabs %}
 {% highlight xaml %}
 <chart:SfCartesianChart>
-    ...
+    . . .
     <chart:SfCartesianChart.XAxes>
         <chart:CategoryAxis/>
     </chart:SfCartesianChart.XAxes>
@@ -410,25 +414,25 @@ this.Content = chart;
             <chart:NumericalAxis.PlotBands>
                 <chart:NumericalPlotBandCollection>
                     <chart:NumericalPlotBand Start="28"
-                                            Size="10"
-                                            Fill="Orange"
-                                            Text="Plot Band">
+                                             Size="10"
+                                             Fill="Orange"
+                                             Text="Plot Band">
                         <chart:NumericalPlotBand.LabelStyle>
                             <chart:ChartPlotBandLabelStyle TextColor="Blue"
-                                                        FontSize="12"
-                                                        FontAttributes="Bold"/>
+                                                           FontSize="12"
+                                                           FontAttributes="Bold"/>
                         </chart:NumericalPlotBand.LabelStyle>
                     </chart:NumericalPlotBand>
                 </chart:NumericalPlotBandCollection>
             </chart:NumericalAxis.PlotBands>
         </chart:NumericalAxis>
     </chart:SfCartesianChart.YAxes>
-    ...
+    . . .
 </chart:SfCartesianChart>
 {% endhighlight %}
 {% highlight c# %}
 SfCartesianChart chart = new SfCartesianChart();
-...
+. . .
 CategoryAxis primaryAxis = new CategoryAxis();
 chart.XAxes.Add(primaryAxis);
 
@@ -454,7 +458,7 @@ plotBand.LabelStyle = labelStyle; // Apply the label style to the plot band
 numericalPlotBandCollection.Add(plotBand);
 numericalAxis.PlotBands = numericalPlotBandCollection;
 chart.YAxes.Add(numericalAxis);
-...
+. . .
 this.Content = chart;
 {% endhighlight %}
 {% endtabs %}
