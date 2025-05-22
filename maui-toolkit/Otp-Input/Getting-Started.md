@@ -11,6 +11,9 @@ documentation: UG
 
 This section provides a detailed guide on how to get started with the [OTP Input](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.OtpInput.SfOtpInput.html) for .NET MAUI and includes a walkthrough to configure the .NET MAUI OTP Input in a real-time scenario. Follow the steps below to add the .NET MAUI OTP Input to your project.
 
+To quickly get started with the .NET MAUI OTP Input, watch this video.
+{% youtube "https://www.youtube.com/watch?v=VmeTz2XEvag" %}
+
 {% tabcontents %}
 {% tabcontent Visual Studio %}
 
