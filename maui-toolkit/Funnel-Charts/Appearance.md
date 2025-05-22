@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Appearance in .NET MAUI Chart control  Syncfusion
-description: Learn here all about appearance customization in .NET MAUI Chart (SfFunnelChart), its elements and more.
+title: Appearance in .NET MAUI Chart Control | Syncfusion
+description: Learn about appearance customization in Syncfusion® .NET MAUI Chart (SfFunnelChart), including palettes and gradients.
 platform: maui-toolkit
 control: SfFunnelChart
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 # Appearance in .NET MAUI Funnel Chart
 
-The appearance of the [SfFunnelChart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfFunnelChart.html) can be customized by using the predefined palettes, custom palettes, and gradient which allows enriching the application.
+The appearance of the [SfFunnelChart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfFunnelChart.html) can be customized by using predefined palettes, custom palettes, and gradients which allow enriching the application.
 
 ## Custom PaletteBrushes
 
@@ -23,7 +23,7 @@ The [SfFunnelChart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.
                      XBindingPath="XValue"
                      YBindingPath="YValue"
                      PaletteBrushes="{Binding CustomBrushes}">
-. . .
+    <!-- Other chart configurations -->
 </chart:SfFunnelChart>
 
 {% endhighlight %}
@@ -38,7 +38,7 @@ public class AdmissionViewModel
 
 	public AdmissionViewModel()
 	{
-	    //Initializing CustomBrushes collection to add custom palette colors.
+        // Initializing CustomBrushes collection to add custom palette colors.
 		CustomBrushes = new List<Brush>();
 		CustomBrushes.Add(new SolidColorBrush(Color.FromRgb(38, 198, 218)));
 		CustomBrushes.Add(new SolidColorBrush(Color.FromRgb(0, 188, 212)));
@@ -46,7 +46,7 @@ public class AdmissionViewModel
 		CustomBrushes.Add(new SolidColorBrush(Color.FromRgb(0, 151, 167)));
 		CustomBrushes.Add(new SolidColorBrush(Color.FromRgb(0, 131, 143)));
 	}
-. . .
+    // Other view model code
 }
 
 {% endhighlight %}
@@ -67,7 +67,7 @@ The gradient for the funnel chart can be set by using the [PaletteBrushes](https
                      XBindingPath="XValue"
                      YBindingPath="YValue"
                      PaletteBrushes="{Binding CustomBrushes}">
-. . .
+    <!-- Other chart configurations -->
 </chart:SfFunnelChart>
 
 {% endhighlight %}
@@ -79,9 +79,11 @@ public class AdmissionViewModel
 	public ObservableCollection<Model> Data { get; set; }
 
 	public List<Brush> CustomBrushes { get; set; }
+
 	public AdmissionViewModel()
 	{
 		CustomBrushes = new List<Brush>();
+
 		LinearGradientBrush gradientColor1 = new LinearGradientBrush();
 		gradientColor1.GradientStops = new GradientStopCollection()
 		{
@@ -117,14 +119,14 @@ public class AdmissionViewModel
 			new GradientStop() { Offset = 0, Color = Color.FromArgb("#56C596") }
 		};
 
-		//Adding gradient brush to the custom brushes collection.
+        // Adding gradient brushes to the custom brushes collection.
 		CustomBrushes.Add(gradientColor1);
 		CustomBrushes.Add(gradientColor2);
 		CustomBrushes.Add(gradientColor3);
 		CustomBrushes.Add(gradientColor4);
 		CustomBrushes.Add(gradientColor5);
 	}
-. . .
+    // Other view model code
 }
 
 {% endhighlight %}
@@ -132,3 +134,4 @@ public class AdmissionViewModel
 {% endtabs %}
 
 ![Gradient support in MAUI Chart](Appearance_images/MAUI_funnel_chart.png)
+

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Tooltip in .NET MAUI Chart control | Syncfusion
-description: This section explains about how to enable tooltip and its customization in Syncfusion® .NET MAUI Chart (SfFunnelChart) control
+title: Tooltip in .NET MAUI Chart Control | Syncfusion
+description: Learn how to enable tooltips and customize them in Syncfusion® .NET MAUI Chart (SfFunnelChart) control.
 platform: maui-toolkit
 control: SfFunnelChart
 documentation: ug
@@ -20,16 +20,15 @@ To define the tooltip in the chart, set the [EnableTooltip](https://help.syncfus
 {% highlight xaml %}
 
 <chart:SfFunnelChart EnableTooltip="True">
-    . . .
+    <!-- Other chart configurations -->
 </chart:SfFunnelChart>
-
 
 {% endhighlight %}
 
 {% highlight c# %}
 
 SfFunnelChart chart = new SfFunnelChart();
-. . .      
+// Other chart configurations
 chart.EnableTooltip = true; // Enable tooltip for the chart.
 this.Content = chart;
 {% endhighlight %}
@@ -38,7 +37,7 @@ this.Content = chart;
 
 ![Tooltip support in MAUI chart](Tooltip_images/MAUI_chart_tooltip.png)
 
-The [ChartTooltipBehavior](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartTooltipBehavior.html) is used to customize the tooltip. For customizing the tooltip, create an instance [ChartTooltipBehavior](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartTooltipBehavior.html) and set it to the [TooltipBehavior](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartBase.html#Syncfusion_Maui_Toolkit_Charts_ChartBase_TooltipBehavior) property of [SfFunnelChart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfFunnelChart.html). The following properties are used to customize the tooltip:
+The [ChartTooltipBehavior](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartTooltipBehavior.html) is used to customize the tooltip. For customizing the tooltip, create an instance of [ChartTooltipBehavior](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartTooltipBehavior.html) and set it to the [TooltipBehavior](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartBase.html#Syncfusion_Maui_Toolkit_Charts_ChartBase_TooltipBehavior) property of [SfFunnelChart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfFunnelChart.html). The following properties are used to customize the tooltip:
 
 * [Background](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartTooltipBehavior.html#Syncfusion_Maui_Toolkit_Charts_ChartTooltipBehavior_Background) of type `Brush`, indicates background color to the tooltip label.
 * [FontAttributes](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartTooltipBehavior.html#Syncfusion_Maui_Toolkit_Charts_ChartTooltipBehavior_FontAttributes) of type `FontAttributes`, indicates the font style of the label.
@@ -53,7 +52,7 @@ The [ChartTooltipBehavior](https://help.syncfusion.com/cr/maui-toolkit/Syncfusio
 {% highlight xml %}
 
 <chart:SfFunnelChart EnableTooltip="True">
-    . . .
+    <!-- Other chart configurations -->
     <chart:SfFunnelChart.TooltipBehavior>
         <chart:ChartTooltipBehavior Duration="4"/>
     </chart:SfFunnelChart.TooltipBehavior>
@@ -64,7 +63,7 @@ The [ChartTooltipBehavior](https://help.syncfusion.com/cr/maui-toolkit/Syncfusio
 {% highlight c# %}
 
 SfFunnelChart chart = new SfFunnelChart();
-. . .
+// Other chart configurations
 chart.EnableTooltip = true; // Enable tooltip for the chart.
 
 // Customize the tooltip behavior.
@@ -72,7 +71,7 @@ chart.TooltipBehavior = new ChartTooltipBehavior()
 {
     Duration = 4, // Set the duration for displaying the tooltip.
 };
-. . .
+// Other chart configurations
 this.Content = chart;
 {% endhighlight %}
 
@@ -106,7 +105,7 @@ this.Content = chart;
 
     <chart:SfFunnelChart EnableTooltip="True"
                          TooltipTemplate="{StaticResource tooltipTemplate}">
-	. . .
+        <!-- Other chart configurations -->
     </chart:SfFunnelChart>
 </Grid>
 
@@ -115,13 +114,14 @@ this.Content = chart;
 {% highlight c# %}
 
 SfFunnelChart chart = new SfFunnelChart();
-. . .
+// Other chart configurations
 chart.EnableTooltip = true; // Enable tooltip for the chart.
-chart.TooltipTemplate= grid.Resources["tooltipTemplate"] as DataTemplate; // Set the tooltip template.
-. . .
+chart.TooltipTemplate = grid.Resources["tooltipTemplate"] as DataTemplate; // Set the tooltip template.
+// Other chart configurations
 this.Content = chart;
 {% endhighlight %}
 
 {% endtabs %}
 
 ![Tooltip template in MAUI Chart](Tooltip_images/MAUI_chart_tooltip_customization.png)
+
