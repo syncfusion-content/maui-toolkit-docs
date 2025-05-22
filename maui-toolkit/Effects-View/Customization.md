@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Customization in .NET MAUI Effects View control | Syncfusion®
-description: Learn here all about Customization support in Syncfusion® .NET MAUI Effects View (SfEffectsView) control and more.
+title: Customization in .NET MAUI Effects View Control | Syncfusion®
+description: Learn about Customization support in Syncfusion® .NET MAUI Effects View (SfEffectsView) control and more.
 platform: maui-toolkit
-control: Effects View
-documentation: ug
+control: SfEffectsView
+documentation: UG
 ---
 
 # Customization in .NET MAUI Effects View (SfEffectsView)
 
-The [SfEffectsView](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.EffectsView.SfEffects.html) control provides support to customize the animation duration, color, and more. This section explains how to customize the effects view control.
+The [SfEffectsView](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.EffectsView.SfEffects.html) control provides support to customize animation duration, color, and more. This section explains how to customize the Effects View control.
 
 ## RippleAnimationDuration
 
@@ -149,7 +149,7 @@ this.Content = effectsView;
 
 {% endtabs %}
 
-![.NET MAUI Effects View InitialRippleFactor customization](Customization_images/EffectsView_InitialRippleFactor.gif)
+![InitialRippleFactor customization](Customization_images/EffectsView_InitialRippleFactor.gif)
 
 ## ScaleFactor
 
@@ -190,11 +190,11 @@ this.Content = effectsView;
 
 {% endtabs %}
 
-![.NET MAUI Effects View ScaleFactor customization](Customization_images/EffectsView_Scale.gif)
+![ScaleFactor customization](Customization_images/EffectsView_Scale.gif)
 
 ## HighlightBackground
 
-The [HighlightBackground](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.EffectsView.SfEffectsView.html#Syncfusion_Maui_Toolkit_EffectsView_SfEffectsView_HighlightBackground) property of [SfEffectsView](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.EffectsView.SfEffectsView.html) is used to customize the color of highlight effect.
+The [HighlightBackground](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.EffectsView.SfEffectsView.html#Syncfusion_Maui_Toolkit_EffectsView_SfEffectsView_HighlightBackground) property of [SfEffectsView](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.EffectsView.SfEffectsView.html) is used to customize the color of the highlight effect.
 
 {% tabs %} 
 
@@ -231,7 +231,7 @@ this.Content = effectsView;
 
 ## RippleBackground
 
-The [RippleBackground](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.EffectsView.SfEffectsView.html#Syncfusion_Maui_Toolkit_EffectsView_SfEffectsView_RippleBackground) property of [SfEffectsView](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.EffectsView.SfEffectsView.html) is used to customize the color of ripple.
+The [RippleBackground](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.EffectsView.SfEffectsView.html#Syncfusion_Maui_Toolkit_EffectsView_SfEffectsView_RippleBackground) property of [SfEffectsView](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.EffectsView.SfEffectsView.html) is used to customize the color of the ripple.
 
 {% tabs %} 
 
@@ -261,7 +261,7 @@ this.Content = effectsView;
 
 {% endtabs %}
 
-![.NET MAUI Effects View ripple background customization](Customization_images/EffectsView_RippleColor.gif)
+![Ripple background customization](Customization_images/EffectsView_RippleColor.gif)
 
 ## SelectionBackground
 
@@ -298,7 +298,7 @@ this.Content = effectsView;
 
 {% endtabs %}
 
-![.NET MAUI Effects View selection background customization](Customization_images/EffectsView_Selection.png)
+![Selection background customization](Customization_images/EffectsView_Selection.png)
 
 ## Angle
 
@@ -335,5 +335,5 @@ this.Content = effectsView;
 
 {% endtabs %}
 
-![.NET MAUI Effects View rotation angle customization](Customization_images/EffectsView_Rotation.png)
+![Rotation angle customization](Customization_images/EffectsView_Rotation.png)
 
