@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Appearance in .NET MAUI Chart control  Syncfusion
+title: Appearance in .NET MAUI Chart control | Syncfusion
 description: Learn here all about appearance customization in .NET MAUI Chart (SfCircularChart), its elements and more.
 platform: maui-toolkit
 control: SfCircularChart
@@ -9,25 +9,24 @@ documentation: ug
 
 # Appearance in .NET MAUI Circular Chart
 
-The appearance of the [SfCircularChart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCircularChart.html) can be customized by using the predefined palettes, custom palettes, and gradient which allows enriching the application.
+The appearance of the [SfCircularChart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCircularChart.html) can be customized using predefined palettes, custom palettes, and gradients to enrich your application.
 
 ## Custom PaletteBrushes
 
-The [SfCircularChart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCircularChart.html) provides support to define own brushes for series with preferred order by using the [PaletteBrushes](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartSeries.html#Syncfusion_Maui_Toolkit_Charts_ChartSeries_PaletteBrushes) property as shown in the following code example.
+The [SfCircularChart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCircularChart.html) allows you to define your own brushes for series in your preferred order using the [PaletteBrushes](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartSeries.html#Syncfusion_Maui_Toolkit_Charts_ChartSeries_PaletteBrushes) property, as shown in the following code example:
 
 {% tabs %}
 
 {% highlight xaml %}
 
 <chart:SfCircularChart>
-    . . .
+    <!-- Other chart configurations -->
     <chart:PieSeries 
         ItemsSource="{Binding Data}"
         XBindingPath="XValue"
         YBindingPath="YValue"
         PaletteBrushes="{Binding CustomBrushes}"/>
 </chart:SfCircularChart>
-
 
 {% endhighlight %}
 
@@ -65,15 +64,16 @@ public class ViewModel
 
 ## Applying Gradient
 
-The gradient for the circular chart can be set by using the [PaletteBrushes](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartSeries.html#Syncfusion_Maui_Toolkit_Charts_ChartSeries_PaletteBrushes) property of the series with the help of the `LinearGradientBrush` or `RadialGradientBrush`.
+You can apply gradients to the circular chart by using the [PaletteBrushes](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartSeries.html#Syncfusion_Maui_Toolkit_Charts_ChartSeries_PaletteBrushes) property of the series with either `LinearGradientBrush` or `RadialGradientBrush`.
 
 {% tabs %}
 
 {% highlight xaml %}
 
 <chart:SfCircularChart>
-	. . .
-	<chart:PieSeries ItemsSource="{Binding Data}" 
+    <!-- Other chart configurations -->
+    <chart:PieSeries
+        ItemsSource="{Binding Data}"
 			 XBindingPath="XValue" 
 			 YBindingPath="YValue"
 			 PaletteBrushes="{Binding CustomBrushes}"/>
@@ -151,9 +151,9 @@ public class ViewModel
 
 ![Gradient support in MAUI Chart](Appearance_images/MAUI_pie_chart_gradient.png)
 
-## Plotting Area Customization:
+## Plot Area Customization
 
-[SfCircularChart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCircularChart.html?tabs=tabid-1) allows you to add any view to the chart plot area, which is useful for adding any relevant data, a watermark, or a color gradient to the background of the chart.
+[SfCircularChart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCircularChart.html) allows you to add any view to the chart plot area. This is useful for adding relevant data, watermarks, or color gradients to the background of the chart.
 
 {% tabs %}
 
