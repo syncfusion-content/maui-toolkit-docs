@@ -55,7 +55,7 @@ SfOtpInput otpInput = new SfOtpInput()
 
 ![Placeholder](images/placeholderLength.png)
 
-### PlaceholderColor
+### Placeholder color
 
 The color of placeholder text can be changed using the [PlaceholderColor](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.OtpInput.SfOtpInput.html#Syncfusion_Maui_Toolkit_OtpInput_SfOtpInput_PlaceholderColor) property.
 
@@ -122,7 +122,7 @@ SfOtpInput otpInput = new SfOtpInput()
 
 ![Input length](images/length.png)
 
-## InputBackground
+## Input background
 
 The [InputBackground](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.OtpInput.SfOtpInput.html#Syncfusion_Maui_Toolkit_OtpInput_SfOtpInput_InputBackground) property customizes the appearance of input fields. This property works when [StylingMode](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.OtpInput.SfOtpInput.html#Syncfusion_Maui_Toolkit_OtpInput_SfOtpInput_StylingMode) is set to [Filled](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.OtpInput.OtpInputStyle.html#Syncfusion_Maui_Toolkit_OtpInput_OtpInputStyle_Filled).
 
@@ -167,7 +167,7 @@ SfOtpInput otpInput = new SfOtpInput()
 
 ![Stroke](images/stroke.png)
 
-## TextColor
+## Text color
 
 You can set the [TextColor](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.OtpInput.SfOtpInput.html#Syncfusion_Maui_Toolkit_OtpInput_SfOtpInput_TextColor) property to any color to customize the text appearance of the input fields. 
 
@@ -189,7 +189,7 @@ SfOtpInput otpInput = new SfOtpInput()
 
 ![TextColor](images/textColor.png)
 
-## MaskCharacter
+## Mask character
 
 Set the [MaskCharacter](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.OtpInput.SfOtpInput.html#Syncfusion_Maui_Toolkit_OtpInput_SfOtpInput_MaskCharacter) property to any character to define how the masked input is displayed, enhancing security by obscuring sensitive information. The `MaskCharacter` property applies only when [Type](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.OtpInput.SfOtpInput.html#Syncfusion_Maui_Toolkit_OtpInput_SfOtpInput_Type) is set to [Password](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.OtpInput.OtpInputType.html#Syncfusion_Maui_Toolkit_OtpInput_OtpInputType_Password).
 
@@ -212,7 +212,7 @@ SfOtpInput otpInput = new SfOtpInput()
 
 ![MaskCharacter](images/maskCharacter.png)
 
-## InputState
+## Input state
 
 The [InputState](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.OtpInput.SfOtpInput.html#Syncfusion_Maui_Toolkit_OtpInput_SfOtpInput_InputState) property visually represent the validation status of the input fields.
 
