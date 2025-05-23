@@ -10,7 +10,7 @@ documentation: UG
 
 The [Bottom Sheet](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.BottomSheet.SfBottomSheet.html) supports swiping to expand the sheet.
 
-## EnableSwiping
+## Enable swiping
 
 The [EnableSwiping](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.BottomSheet.SfBottomSheet.html#Syncfusion_Maui_Toolkit_BottomSheet_SfBottomSheet_EnableSwiping) property allows you to enable or disable swipe functionality in the [Bottom Sheet](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.BottomSheet.SfBottomSheet.html). By default, the EnableSwiping property is set to `true`.
 
