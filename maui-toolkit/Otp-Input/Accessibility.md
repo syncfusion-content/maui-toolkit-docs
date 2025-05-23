@@ -11,7 +11,7 @@ documentation: UG
 
 The OTP Input Control is designed to work effectively with OTP Input elements, providing voice descriptions for OTP Input items to enhance accessibility.
 
-## Keyboard Interaction
+## Keyboard interaction
 
 The following keyboard shortcuts are supported by the OTP Input component.
 
