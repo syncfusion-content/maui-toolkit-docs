@@ -66,7 +66,7 @@ bottomSheet.State = BottomSheetState.FullExpanded;
 {% endhighlight %}
 {% endtabs %}
 
-## AllowedState
+## Allowed state
 
 The [Bottom Sheet](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.BottomSheet.SfBottomSheet.html) allows controlling the transition between states using the [AllowedState](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.BottomSheet.SfBottomSheet.html#Syncfusion_Maui_Toolkit_BottomSheet_SfBottomSheet_AllowedState) property. The default value is `All`, which allows transitions between all available states. This property accepts the following values:
 
@@ -117,7 +117,7 @@ bottomSheet.CollapseOnOverlayTap = true;
 
 ![CollapseOnOverlay](images/collapseOnOverlay.gif)
 
-## ContentPadding
+## Content padding
 
 The [ContentPadding](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.BottomSheet.SfBottomSheet.html#Syncfusion_Maui_Toolkit_BottomSheet_SfBottomSheet_ContentPadding) property of the [Bottom Sheet](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.BottomSheet.SfBottomSheet.html) adds space around the content, creating a gap between the Bottom Sheet content and the edges.
 
@@ -165,7 +165,7 @@ SfBottomSheet bottomSheet = new SfBottomSheet
 
 ![Background color](images/backgroundColor.png)
 
-## CornerRadius
+## Corner radius
 
 The [CornerRadius](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.BottomSheet.SfBottomSheet.html#Syncfusion_Maui_Toolkit_BottomSheet_SfBottomSheet_CornerRadius) property allows you to add a corner radius to the Bottom Sheet.
 
@@ -193,7 +193,7 @@ SfBottomSheet bottomSheet = new SfBottomSheet
 
 ## Adjust the height
 
-### FullExpanded height
+### Full expanded height
 
 The [FullExpandedRatio](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.BottomSheet.SfBottomSheet.html#Syncfusion_Maui_Toolkit_BottomSheet_SfBottomSheet_FullExpandedRatio) property adjusts the height of the [Bottom Sheet](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.BottomSheet.SfBottomSheet.html) when it is in the `FullExpanded` state. The default value is `1`. You can set a value between 0.1 and 1 to adjust the height.
 
@@ -216,7 +216,7 @@ bottomSheet.State = BottomSheetState.FullExpanded;
 {% endhighlight %}
 {% endtabs %}
 
-### HalfExpanded height
+### Half expanded height
 
 The [HalfExpandedRatio](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.BottomSheet.SfBottomSheet.html#Syncfusion_Maui_Toolkit_BottomSheet_SfBottomSheet_HalfExpandedRatio) property adjusts the height of the [Bottom Sheet](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.BottomSheet.SfBottomSheet.html) when it is in the `HalfExpanded` state. The default value is `0.5`. You can set a value between 0.1 and 0.9 to adjust the height.
 
@@ -239,7 +239,7 @@ bottomSheet.State = BottomSheetState.HalfExpanded;
 {% endhighlight %}
 {% endtabs %}
 
-### CollapsedHeight
+### Collapsed height
 
 The [CollapsedHeight](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.BottomSheet.SfBottomSheet.html#Syncfusion_Maui_Toolkit_BottomSheet_SfBottomSheet_CollapsedHeight) property allows you to specify the height of the [Bottom Sheet](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.BottomSheet.SfBottomSheet.html) when it is in the `Collapsed` state. The default value is `100`.
 
@@ -295,7 +295,7 @@ SfBottomSheet bottomSheet = new SfBottomSheet
 
 ## Grabber customization
 
-### ShowGrabber
+### Show grabber
 The [ShowGrabber](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.BottomSheet.SfBottomSheet.html#Syncfusion_Maui_Toolkit_BottomSheet_SfBottomSheet_ShowGrabber) property enables users to interact with the [Bottom Sheet](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.BottomSheet.SfBottomSheet.html) by dragging it up and down. By default, the ShowGrabber property is set to `true`.
 
 {% tabs %}	
@@ -318,7 +318,7 @@ SfBottomSheet bottomSheet = new SfBottomSheet
 {% endhighlight %}
 {% endtabs %}
 
-### GrabberWidth and GrabberHeight
+### Grabber width and Grabber height
 
 The [GrabberWidth](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.BottomSheet.SfBottomSheet.html#Syncfusion_Maui_Toolkit_BottomSheet_SfBottomSheet_GrabberWidth) and [GrabberHeight](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.BottomSheet.SfBottomSheet.html#Syncfusion_Maui_Toolkit_BottomSheet_SfBottomSheet_GrabberHeight) properties of the [Bottom Sheet](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.BottomSheet.SfBottomSheet.html) specify the width and height of the grabber element. By default, the GrabberWidth property is set to `32`, and the GrabberHeight property is set to `4`.
 
@@ -343,7 +343,7 @@ SfBottomSheet bottomSheet = new SfBottomSheet
 {% endhighlight %}
 {% endtabs %}
 
-### GrabberCornerRadius
+### Grabber corner radius
 
 The [GrabberCornerRadius](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.BottomSheet.SfBottomSheet.html#Syncfusion_Maui_Toolkit_BottomSheet_SfBottomSheet_GrabberCornerRadius) property allows you to customize the corner radius of the grabber element in the [Bottom Sheet](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.BottomSheet.SfBottomSheet.html). By adjusting this property, you can create rounded corners for the grabber.
 
@@ -367,7 +367,7 @@ SfBottomSheet bottomSheet = new SfBottomSheet
 {% endhighlight %}
 {% endtabs %}
 
-### GrabberBackground
+### Grabber background
 
 The [GrabberBackground](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.BottomSheet.SfBottomSheet.html#Syncfusion_Maui_Toolkit_BottomSheet_SfBottomSheet_GrabberBackground) property allows you to customize the background color of the grabber in the [Bottom Sheet](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.BottomSheet.SfBottomSheet.html).
 
@@ -392,7 +392,7 @@ SfBottomSheet bottomSheet = new SfBottomSheet
 {% endtabs %}
 ![Grabber customization](images/grabberCustomization.png)
 
-### GrabberAreaHeight
+### Grabber area height
 
 The [GrabberAreaHeight](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.BottomSheet.SfBottomSheet.html#Syncfusion_Maui_Toolkit_BottomSheet_SfBottomSheet_GrabberAreaHeight) feature in the [Bottom Sheet](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.BottomSheet.SfBottomSheet.html) control allows developers to adjust the height of the drag area, thus enhancing both usability and appearance.
 
