@@ -11,7 +11,7 @@ documentation: UG
 
 The [SfEffectsView](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.EffectsView.SfEffectsView.html) control supports applying multiple [SfEffects](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.EffectsView.SfEffects.html) in combination. Below are some valid combinations of [SfEffects](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.EffectsView.SfEffects.html).
 
-## Highlight and Ripple
+## Highlight and ripple
 
 {% tabs %} 
 
@@ -40,7 +40,7 @@ var effectsView = new SfEffectsView()
 
 {% endtabs %}
 
-## Highlight and Selection
+## Highlight and selection
 
 {% tabs %} 
 
@@ -72,7 +72,7 @@ var effectsView = new SfEffectsView()
 
 {% endtabs %}
 
-## Ripple and Selection
+## Ripple and selection
 
 {% tabs %} 
 
@@ -104,7 +104,7 @@ var effectsView = new SfEffectsView()
 
 {% endtabs %}
 
-## Highlight, Ripple, and Selection
+## Highlight, ripple, and selection
 
 {% tabs %} 
 
@@ -136,7 +136,7 @@ var effectsView = new SfEffectsView()
 
 {% endtabs %}
 
-## Scale and Selection
+## Scale and selection
 
 {% tabs %} 
 
