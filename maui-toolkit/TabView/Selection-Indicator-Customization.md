@@ -201,7 +201,7 @@ The following image shows the selection indicator with the width mode set to `St
 
 ![Stretch](images/IndicatorWidthMode_Stretch.png) 
 
-## IndicatorCornerRadius
+## Indicator corner radius
 
 You can customize the corner radius of the selection indicator using the [IndicatorCornerRadius](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SfTabView.html#Syncfusion_Maui_Toolkit_TabView_SfTabView_IndicatorCornerRadius) property in the `SfTabView`.
 
@@ -225,7 +225,7 @@ The following image shows the selection indicator with the corner radius:
 
 ![CornerRadius](images/IndicatorCornerRadius.png) 
 
-## IndicatorStrokeThickness
+## Indicator stroke thickness
 
 You can customize the stroke thickness of the selection indicator using the [IndicatorStrokeThickness](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SfTabView.html#Syncfusion_Maui_Toolkit_TabView_SfTabView_IndicatorStrokeThickness) property in the Tab View.
 
