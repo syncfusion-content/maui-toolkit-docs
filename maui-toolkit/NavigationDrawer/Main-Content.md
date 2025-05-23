@@ -1,16 +1,15 @@
 ---
 layout: post
-title: Set Main Content in .NET MAUI Navigation Drawer control | Syncfusion®
-description: Learn here all about Setting Main Content support in Syncfusion® .NET MAUI Navigation Drawer (SfNavigationDrawer) control and more.
+title: Set Main Content in .NET MAUI Navigation Drawer Control | Syncfusion®
+description: Learn all about setting Main Content support in the Syncfusion® .NET MAUI Navigation Drawer (SfNavigationDrawer) control and more.
 platform: maui-toolkit
-control: NavigationDrawer
-documentation: ug
+control: SfNavigationDrawer
+documentation: UG
 ---
-
 
 # Setting Main Content in .NET MAUI Navigation Drawer
 
-The main content of the NavigationDrawer is always visible and can be set using the [ContentView](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NavigationDrawer.SfNavigationDrawer.html#Syncfusion_Maui_Toolkit_NavigationDrawer_SfNavigationDrawer_ContentView) property. In the following code example, the [ContentView](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NavigationDrawer.SfNavigationDrawer.html#Syncfusion_Maui_Toolkit_NavigationDrawer_SfNavigationDrawer_ContentView) is switched when the selection changes in the ListView. In short, this allows for easy navigation and switching of content.
+The main content of the Navigation Drawer is always visible and can be configured using the [ContentView](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NavigationDrawer.SfNavigationDrawer.html#Syncfusion_Maui_Toolkit_NavigationDrawer_SfNavigationDrawer_ContentView) property. In the following code example, the [ContentView](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NavigationDrawer.SfNavigationDrawer.html#Syncfusion_Maui_Toolkit_NavigationDrawer_SfNavigationDrawer_ContentView) is updated when the selection changes in the ListView, allowing for easy navigation and content switching.
 
 {% tabs %}
 
@@ -147,4 +146,4 @@ public partial class NavigationDrawerPage : ContentPage
 
 N> It is mandatory to set [ContentView](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NavigationDrawer.SfNavigationDrawer.html#Syncfusion_Maui_Toolkit_NavigationDrawer_SfNavigationDrawer_ContentView) for [SfNavigationDrawer](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NavigationDrawer.SfNavigationDrawer.html) when initializing.
 
-![contentview](Images/main-content/getting_main_content.png)
+![ContentView](Images/main-content/getting_main_content.png)

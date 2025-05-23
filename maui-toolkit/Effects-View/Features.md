@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Features in .NET MAUI Effects View control | Syncfusion®
-description: Learn here all about Features support in Syncfusion® .NET MAUI Effects View (SfEffectsView) control and more.
+title: Features in .NET MAUI Effects View Control | Syncfusion®
+description: Learn about Features support in Syncfusion® .NET MAUI Effects View (SfEffectsView) control and more.
 platform: maui-toolkit
-control: Effects View
-documentation: ug
+control: SfEffectsView
+documentation: UG
 ---
 
 # Features in .NET MAUI Effects View (SfEffectsView)
@@ -13,7 +13,7 @@ The [SfEffectsView](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.
 
 ## FadeOutRipple
 
-By enabling the [FadeOutRipple](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.EffectsView.SfEffectsView.html#Syncfusion_Maui_Toolkit_EffectsView_SfEffectsView_FadeOutRipple) property of [SfEffectsView](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.EffectsView.SfEffectsView.html), the expandable circle will lose its opacity to 0 on growing.
+By enabling the [FadeOutRipple](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.EffectsView.SfEffectsView.html#Syncfusion_Maui_Toolkit_EffectsView_SfEffectsView_FadeOutRipple) property of [SfEffectsView](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.EffectsView.SfEffectsView.html), the expandable circle will lose its opacity to 0 as it grows.
 
 {% tabs %} 
 
@@ -46,7 +46,7 @@ using Syncfusion.Maui.Toolkit.EffectsView;
 
 {% endtabs %}
 
-![.NET MAUI Effects View FadeOutRipple](Features_images/EffectsView_Fadeout_Ripple.gif)
+![FadeOutRipple](Features_images/EffectsView_Fadeout_Ripple.gif)
 
 ## IsSelected
 
@@ -111,4 +111,3 @@ this.Content = effectsView;
 {% endhighlight %}
 
 {% endtabs %}
-

@@ -1,23 +1,23 @@
 ---
 layout: post
-title: Toggle methods in .NET MAUI Bottom Sheet | Syncfusion®
-description: Learn here all about toggle methods support in Syncfusion® .NET MAUI Bottom Sheet(SfBottomSheet) control.
+title: Toggle Methods in .NET MAUI Bottom Sheet | Syncfusion®
+description: Learn about toggle methods support in the Syncfusion® .NET MAUI Bottom Sheet (SfBottomSheet) control.
 platform: maui-toolkit
-control: BottomSheet
-documentation: ug
+control: SfBottomSheet
+documentation: UG
 ---
 
-# Toggle methods in .NET MAUI Bottom Sheet (SfBottomSheet)
+# Toggle Methods in .NET MAUI Bottom Sheet (SfBottomSheet)
 
-Bottom sheet can be toggled using
+The Bottom Sheet can be toggled using
 
 * IsOpen property
 * Show method
 * Close method
 
-## Opening and Closing Sheet Programmatically using property
+## Opening and closing the sheet programmatically using property
 
-The [IsOpen](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.BottomSheet.SfBottomSheet.html#Syncfusion_Maui_Toolkit_BottomSheet_SfBottomSheet_IsOpen) property enables programatically opening or closing the bottom sheet. By default, the IsOpen property is set to `false`.
+The [IsOpen](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.BottomSheet.SfBottomSheet.html#Syncfusion_Maui_Toolkit_BottomSheet_SfBottomSheet_IsOpen) property allows you to open or close the Bottom Sheet programmatically. By default, the `IsOpen` property is set to `false`.
 
 {% tabs %}
 
@@ -41,8 +41,9 @@ bottomSheet.IsOpen = true;
 {% endtabs %}
 
 
-## Opening and Closing Sheet Programmatically using method
-The [Show](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.BottomSheet.SfBottomSheet.html#Syncfusion_Maui_Toolkit_BottomSheet_SfBottomSheet_Show) method enables programmatically opening the bottom sheet, and the [Close](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.BottomSheet.SfBottomSheet.html#Syncfusion_Maui_Toolkit_BottomSheet_SfBottomSheet_Close) method enables programmatically closing the bottom sheet.
+## Opening and closing sheet programmatically using method
+
+The [Show](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.BottomSheet.SfBottomSheet.html#Syncfusion_Maui_Toolkit_BottomSheet_SfBottomSheet_Show) method is used to open the Bottom Sheet, and the [Close](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.BottomSheet.SfBottomSheet.html#Syncfusion_Maui_Toolkit_BottomSheet_SfBottomSheet_Close) method is used to close the Bottom Sheet programmatically.
 
 {% tabs %}
 
@@ -79,4 +80,4 @@ private void CloseBottomSheet(object sender, EventArgs e)
 
 {% endhighlight %}
 
-![Toggle Gif for BottomSheet](images/toggleMethod.gif)
+![Toggle method](images/toggleMethod.gif)
