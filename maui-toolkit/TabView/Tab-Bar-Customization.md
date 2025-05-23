@@ -119,7 +119,7 @@ tabView.HeaderHorizontalTextAlignment = TextAlignment.Center;
 
 ![HorizontalTextAlignmentCenter](images/HorizontalTextAlignmentCenter.png) 
 
-## TabHeaderAlignment 
+## Tab header alignment 
 
 The .NET MAUI TabView allows header position customization using the [TabHeaderAlignment](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SfTabView.html#Syncfusion_Maui_Toolkit_TabView_SfTabView_TabHeaderAlignment) property for enhanced layout flexibility. The default position is Start. Supported values include:
 
