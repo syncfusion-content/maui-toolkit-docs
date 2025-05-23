@@ -1,21 +1,22 @@
 ---
 layout: post
-title: Toggle methods in .NET MAUI Navigation Drawer | Syncfusion®
+title: Toggle Methods in .NET MAUI Navigation Drawer | Syncfusion®
 description: Learn here all about Toggle methods support in Syncfusion® .NET MAUI Navigation Drawer (SfNavigationDrawer) control and more.
 platform: maui-toolkit
-control: NavigationDrawer
-documentation: ug
+control: SfNavigationDrawer
+documentation: UG
 ---
 
-# Toggle methods in .NET MAUI Navigation Drawer (SfNavigationDrawer)
+# Toggle Methods in .NET MAUI Navigation Drawer (SfNavigationDrawer)
 
-Drawer can be toggled using
+The drawer in the SfNavigationDrawer can be toggled using the following methods:
 
 * IsOpen property
 * ToggleDrawer method
 * Swipe gesture
 
-## Opening Drawer Programmatically
+## Opening drawer programmatically
+
 The [IsOpen](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NavigationDrawer.SfNavigationDrawer.html#Syncfusion_Maui_Toolkit_NavigationDrawer_SfNavigationDrawer_IsOpen) property and [ToggleDrawer](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NavigationDrawer.SfNavigationDrawer.html#Syncfusion_Maui_Toolkit_NavigationDrawer_SfNavigationDrawer_ToggleDrawer) method enable programmatically opening or closing the drawer.
 
 {% tabs %}
@@ -38,7 +39,7 @@ SfNavigationDrawer navigationDrawer = new SfNavigationDrawer()
 
 {% endtabs %}
 
-Using [ToggleDrawer](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NavigationDrawer.SfNavigationDrawer.html#Syncfusion_Maui_Toolkit_NavigationDrawer_SfNavigationDrawer_ToggleDrawer) method,
+Using [ToggleDrawer](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NavigationDrawer.SfNavigationDrawer.html#Syncfusion_Maui_Toolkit_NavigationDrawer_SfNavigationDrawer_ToggleDrawer) method:
 
 {% highlight c# %} 
 

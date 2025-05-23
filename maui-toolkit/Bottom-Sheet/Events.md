@@ -1,17 +1,17 @@
 ---
 layout: post
-title: Events in .NET MAUI Bottom Sheet control | Syncfusion®
-description: Learn about event support in Syncfusion® Toolkit for .NET MAUI Bottom Sheet (SfBottomSheet) control and more.
+title: Events in .NET MAUI Bottom Sheet Control | Syncfusion®
+description: Learn about event support in the Syncfusion® Toolkit for .NET MAUI Bottom Sheet (SfBottomSheet) control and more.
 platform: maui-toolkit
-control: BottomSheet
-documentation: ug
+control: SfBottomSheet
+documentation: UG
 ---
 
-# Event in .NET MAUI Bottom Sheet (SfBottomSheet)
+# Events in .NET MAUI Bottom Sheet (SfBottomSheet)
 
 ## StateChanged event
 
-This event occurs when the value of the [State](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.BottomSheet.SfBottomSheet.html#Syncfusion_Maui_Toolkit_BottomSheet_SfBottomSheet_State) property is changed by swiping the bottom sheet or setting the value to the State property using XAML or C# code. The event arguments are of type [StateChangedEventArgs](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.BottomSheet.StateChangedEventArgs.html) and expose the following property:
+The `StateChanged` event is triggered when the [State](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.BottomSheet.SfBottomSheet.html#Syncfusion_Maui_Toolkit_BottomSheet_SfBottomSheet_State) property of the Bottom Sheet changes. This can occur either through user interaction, such as swiping the Bottom Sheet, or programmatically by setting the State property using XAML or C# code. The event's arguments are of type [StateChangedEventArgs](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.BottomSheet.StateChangedEventArgs.html) and provide the following properties:
 
 * `NewValue` : Gets the current state of the Bottom Sheet.
 * `OldValue` : Gets the previous state of the Bottom Sheet.
