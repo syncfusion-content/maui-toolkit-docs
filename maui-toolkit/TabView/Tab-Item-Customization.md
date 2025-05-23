@@ -50,7 +50,7 @@ The following image shows a tab item with the header text:
 
 ![Header](images/Tab-Width-Mode-Default.png) 
 
-### ImageSource 
+### Image source 
 
 You can add an image to a tab item to enhance its visual appeal. The [ImageSource](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SfTabItem.html#Syncfusion_Maui_Toolkit_TabView_SfTabItem_ImageSource) specifies the image to be displayed in the tab item. You can set the `ImageSource` property in both XAML and C# code as shown in the examples below.
 
@@ -137,7 +137,7 @@ The following image shows a tab item with its content:
 
 ![Content](images/TabItem_Content.png) 
 
-## ImagePosition options 
+## Image position options 
 
 The .NET MAUI Tab View provides four options that determine how the image in the tab aligns relative to the text. The options are left, top, right, and bottom. You can set this alignment using the [ImagePosition](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SfTabItem.html#Syncfusion_Maui_Toolkit_TabView_SfTabItem_ImagePosition) property of the [SfTabItem](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SfTabItem.html) class.
 
@@ -291,7 +291,7 @@ The following image shows the tab item with the image positioned to the right of
 
 ![Right](images/Image-Position-Right.png) 
 
-## ImageTextSpacing
+## Image text spacing
 
 The [ImageTextSpacing](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SfTabItem.html#Syncfusion_Maui_Toolkit_TabView_SfTabItem_ImageTextSpacing) property in [SfTabItem](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SfTabItem.html) allows you to set the spacing between the image and the text of the tab item. This property is particularly useful when you want to fine-tune the layout of tab items that contain both an image and text.
 
@@ -328,7 +328,7 @@ The following image shows a tab item with the specified image text spacing:
 
 ![ImageTextSpacing](images/Image-Text-Spacing.png)
 
-## TextColor customization
+## Text color customization
 
 The [TextColor](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SfTabItem.html#Syncfusion_Maui_Toolkit_TabView_SfTabItem_TextColor) property allows you to customize the color of the text displayed in the tab item. Below are examples demonstrating how to set the `TextColor` property in both XAML and C#.
 
@@ -369,7 +369,7 @@ The following image shows a tab item with the specified text color:
 
 Font customization allows you to modify the appearance of the text in tab items. You can adjust the following font properties:
 
-### FontFamily
+### Font family
 
 The [FontFamily](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SfTabItem.html#Syncfusion_Maui_Toolkit_TabView_SfTabItem_FontFamily) property sets the font family of the tab item text. Below are examples demonstrating how to set the `FontFamily` property in both XAML and C#.
 
@@ -406,7 +406,7 @@ The following image shows a tab item with the specified font family:
 
 ![FontFamily](images/FontFamily.png) 
 
-### FontAttributes
+### Font attributes
 
 The [FontAttributes](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SfTabItem.html#Syncfusion_Maui_Toolkit_TabView_SfTabItem_FontAttributes) defines the font style (e.g., bold, italic) of the tab item text. Below are examples demonstrating how to set the `FontAttributes` property in both XAML and C#.
 
@@ -443,7 +443,7 @@ The following image shows a tab item with the specified font attributes:
 
 ![FontAttribute](images/FontAttributes.png) 
 
-### FontSize
+### Font size
 
 The [FontSize](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SfTabItem.html#Syncfusion_Maui_Toolkit_TabView_SfTabItem_FontSize) property specifies the size of the text in the tab item. Below are examples demonstrating how to set the `FontSize` property in both XAML and C#.
 
@@ -480,7 +480,7 @@ The following image shows a tab item with the specified font size:
 
 ![FontSize](images/FontSize.png)
 
-## TabHeaderPadding
+## Tab header padding
 
 The [TabHeaderPadding](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SfTabView.html#Syncfusion_Maui_Toolkit_TabView_SfTabView_TabHeaderPadding) property in [SfTabView](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SfTabView.html) allows you to add padding to the tab header.
 
@@ -570,7 +570,7 @@ this.Content = stackLayout;
 
 ![ScrollButtonCustomization](images/ScrollButtonCustomization.png)
 
-## FontAutoScalingEnabled
+## Font auto scaling enabled
 
 The [FontAutoScalingEnabled](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SfTabItem.html#Syncfusion_Maui_Toolkit_TabView_SfTabItem_FontAutoScalingEnabled) property allows you to enable or disable automatic font scaling for the tab headers. When enabled, this feature adjusts the font size of the tab headers based on the text size settings of the operating system. The default value of the `FontAutoScalingEnabled` property is `false`.
 
@@ -596,7 +596,7 @@ tabView.FontAutoScalingEnabled = true;
 
 {% endtabs %}
 
-## ContentTransitionDuration
+## Content transition duration
 
 You can customize the animation duration when switching between tabs in the Tab View by setting the [ContentTransitionDuration](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SfTabView.html#Syncfusion_Maui_Toolkit_TabView_SfTabView_ContentTransitionDuration) property. This property affects the smooth transition of content when the [SelectedIndex](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SfTabView.html#Syncfusion_Maui_Toolkit_TabView_SfTabView_SelectedIndex) changes.
 
@@ -642,7 +642,7 @@ tabView.ContentTransitionDuration = 1000;
 
 ![IsContentTransitionEnabled](images/ContentTransition.gif)
 
-## ImageSize
+## Image size
 
 You can customize the image size in the .NET MAUI Tab View control by setting the [ImageSize](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SfTabItem.html#Syncfusion_Maui_Toolkit_TabView_SfTabItem_ImageSize) property.
 
