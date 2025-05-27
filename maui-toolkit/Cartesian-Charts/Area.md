@@ -12,7 +12,7 @@ keywords: .net maui area chart, .net maui chart area type, area chart customizat
 
 ## Area Chart
 
-The area chart is rendered by using a collection of line segments connected to form a closed loop area, filled with the specified color. To render a area chart, create an instance of [AreaSeries](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.AreaSeries.html) and add it to the [Series](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html#Syncfusion_Maui_Toolkit_Charts_SfCartesianChart_Series) collection property of the chart.
+The area chart is rendered by using a collection of line segments connected to form a closed loop area, filled with the specified color. To render an area chart, create an instance of [AreaSeries](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.AreaSeries.html) and add it to the [Series](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html#Syncfusion_Maui_Toolkit_Charts_SfCartesianChart_Series) collection property of the chart.
 
 N> The Cartesian chart has [Series](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html#Syncfusion_Maui_Toolkit_Charts_SfCartesianChart_Series) as its default content.
 
@@ -46,7 +46,7 @@ chart.XAxes.Add(primaryAxis);
 NumericalAxis secondaryAxis = new NumericalAxis();
 chart.YAxes.Add(secondaryAxis);
 
-// Create a AreaSeries for the chart
+// Create an AreaSeries for the chart
 AreaSeries series = new AreaSeries()
 {
     ItemsSource = new ViewModel().Data,
@@ -144,10 +144,10 @@ AreaSeries series = new AreaSeries()
     XBindingPath = "Year",
     YBindingPath = "Percentage",
     ShowMarkers = true, // Enable markers on data points for better visibility
- };
+};
 
 chart.Series.Add(series);
-this.Content= chart;
+this.Content = chart;
 
 {% endhighlight %}
 
@@ -155,7 +155,7 @@ this.Content= chart;
 
 ### Marker customization
 
-In order to change the series markers appearance, create an instance of the [MarkerSettings](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.AreaSeries.html#Syncfusion_Maui_Toolkit_Charts_AreaSeries_MarkerSettings) property. The following properties are used to customize marker appearance.
+In order to change the series markers appearance, create an instance of the [MarkerSettings](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.AreaSeries.html#Syncfusion_Maui_Toolkit_Charts_AreaSeries_MarkerSettings) property. The following properties are used to customize marker appearance:
 
 * [Type](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartMarkerSettings.html#Syncfusion_Maui_Toolkit_Charts_ChartMarkerSettings_Type), of type `ShapeType`, describes the shape of the series marker. The default value of this property is [ShapeType.Circle](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ShapeType.html#Syncfusion_Maui_Toolkit_Charts_ShapeType_Circle).
 * [Stroke](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartMarkerSettings.html#Syncfusion_Maui_Toolkit_Charts_ChartMarkerSettings_Stroke), of type `Brush`, indicates the brush used to paint the marker border.
@@ -192,7 +192,7 @@ In order to change the series markers appearance, create an instance of the [Mar
 SfCartesianChart chart = new SfCartesianChart();
 ...
 // Configure the marker settings for the chart series
-ChartMarkerSettings chartMarker= new ChartMarkerSettings()
+ChartMarkerSettings chartMarker = new ChartMarkerSettings()
 {
     Type = ShapeType.Diamond,
     Fill = Colors.Brown,

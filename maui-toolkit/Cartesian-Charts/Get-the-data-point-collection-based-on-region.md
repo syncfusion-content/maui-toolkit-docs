@@ -21,16 +21,16 @@ documentation: ug
 //Gets the collection of data that falls inside the given rectangle region.
 List<object> dataPoints = Series.GetDataPoints(rectangle);
 
-or
+//or
 
 //Gets the collection of data from the given axis visible range.
 List<object> dataPoints = Series.GetDataPoints(startX, endX, startY, endY);
 
-{% endhighlight  %}
+{% endhighlight %}
 
 {% endtabs %}
 
-N> You can get the visible plotting region of the series in the chart using [SeriesBounds](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartBase.html#Syncfusion_Maui_Toolkit_Charts_ChartBase_SeriesBounds) property in run time.
+N> You can get the visible plotting region of the series in the chart using the [SeriesBounds](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartBase.html#Syncfusion_Maui_Toolkit_Charts_ChartBase_SeriesBounds) property in run time.
 
 ## See also 
 

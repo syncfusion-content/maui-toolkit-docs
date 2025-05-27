@@ -12,7 +12,7 @@ keywords: .net maui stacked column chart, maui stacked column chart, stacked col
 
 ## Stacked Column Chart
 
-The stacked column chart represents data values in a stacked format, where the columns are stacked on each other to indicate the cumulative value of the data points.
+The stacked column chart represents data values in a stacked format, where columns are stacked on top of each other to indicate the cumulative value of data points.
 
 To render a stacked column chart, create an instance of the [StackingColumnSeries](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.StackingColumnSeries.html) and add it to the [Series](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html#Syncfusion_Maui_Toolkit_Charts_SfCartesianChart_Series) collection property of the [SfCartesianChart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html).
 
@@ -40,7 +40,6 @@ N> The Cartesian chart has [Series](https://help.syncfusion.com/cr/maui-toolkit/
                                 YBindingPath="Value"/>         
 </chart:SfCartesianChart>
 
-
 {% endhighlight %}
 
 {% highlight c# %}
@@ -52,12 +51,11 @@ NumericalAxis secondaryAxis = new NumericalAxis();
 chart.YAxes.Add(secondaryAxis);
 
 // Create a StackingColumnSeries for the chart
-StackingColumnSeries series1 = new  StackingColumnSeries()
+StackingColumnSeries series1 = new StackingColumnSeries()
 {
     ItemsSource = new ViewModel().Data1,
     XBindingPath = "Name",
     YBindingPath = "Value",
-    
 };
 StackingColumnSeries series2 = new StackingColumnSeries()
 {
@@ -78,8 +76,8 @@ this.Content = chart;
 
 ## Grouping Series
 
-Each series in a stacked chart with several series may be difficult to compare. To solve that problem, grouping is used.
-The [GroupingLabel](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.StackingSeriesBase.html#Syncfusion_Maui_Toolkit_Charts_StackingSeriesBase_GroupingLabel) property used to group the series, which allows users to assign a label to each stacked column series. This label identifies the specific group to which the stacked column series belongs and can be used to group similar series.
+Comparing multiple series in a stacked chart can be difficult. Grouping solves this problem by organizing related series together.
+The [GroupingLabel](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.StackingSeriesBase.html#Syncfusion_Maui_Toolkit_Charts_StackingSeriesBase_GroupingLabel) property is used to group series by assigning a label to each stacked column series. This label identifies the specific group to which the stacked column series belongs and can be used to group similar series.
 
 N> If the [GroupingLabel](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.StackingSeriesBase.html#Syncfusion_Maui_Toolkit_Charts_StackingSeriesBase_GroupingLabel) is not provided, the stacked column will consider all series as a single group.
 
@@ -105,7 +103,6 @@ N> If the [GroupingLabel](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion
                                 GroupingLabel="GroupOne"/>
 </chart:SfCartesianChart>
 
-
 {% endhighlight %}
 
 {% highlight c# %}
@@ -116,7 +113,7 @@ chart.XAxes.Add(primaryAxis);
 NumericalAxis secondaryAxis = new NumericalAxis();
 chart.YAxes.Add(secondaryAxis);
 
-StackingColumnSeries series1 = new  StackingColumnSeries()
+StackingColumnSeries series1 = new StackingColumnSeries()
 {
     ItemsSource = new ViewModel().Data1,
     XBindingPath = "Name",
@@ -130,7 +127,7 @@ StackingColumnSeries series2 = new StackingColumnSeries()
     YBindingPath = "Value",
     GroupingLabel = "GroupTwo" // Assign series to "GroupTwo"
 };
-StackingColumnSeries series3 = new  StackingColumnSeries()
+StackingColumnSeries series3 = new StackingColumnSeries()
 {
     ItemsSource = new ViewModel().Data3,
     XBindingPath = "Name",
@@ -148,10 +145,10 @@ this.Content = chart;
 
 {% endtabs %}
 
-## Appearance customization
+## Appearance Customization
 
-* [Spacing](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.StackingColumnSeries.html#Syncfusion_Maui_Toolkit_Charts_StackingColumnSeries_Spacing) of the `Double` type is used to change the spacing between two segments. The default spacing value is 0, ranging from 0 to 1.
-* [Width](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.StackingColumnSeries.html#Syncfusion_Maui_Toolkit_Charts_StackingColumnSeries_Width) of the `Double` type is used to change the width of the rectangle. The default value of the width is 0.8, and the value ranges from 0 to 1.
-* [CornerRadius](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.StackingColumnSeries.html#Syncfusion_Maui_Toolkit_Charts_StackingColumnSeries_CornerRadius) of the type `CornerRadius`, indicates the rounded corner for the stacked column.
-* [Stroke](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.StackingSeriesBase.html#Syncfusion_Maui_Toolkit_Charts_StackingSeriesBase_Stroke) of the type `Brush` indicates the brush used to paint the border of the stacked column.
-* [StrokeWidth](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.XYDataSeries.html#Syncfusion_Maui_Toolkit_Charts_XYDataSeries_StrokeWidth) of the type `Double` indicates the width of the stacked segment.
+* [Spacing](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.StackingColumnSeries.html#Syncfusion_Maui_Toolkit_Charts_StackingColumnSeries_Spacing) - A `Double` property that changes the spacing between two segments. The default value is 0, with a range from 0 to 1.
+* [Width](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.StackingColumnSeries.html#Syncfusion_Maui_Toolkit_Charts_StackingColumnSeries_Width) - A `Double` property that changes the width of the rectangle. The default value is 0.8, with a range from 0 to 1.
+* [CornerRadius](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.StackingColumnSeries.html#Syncfusion_Maui_Toolkit_Charts_StackingColumnSeries_CornerRadius) - A `CornerRadius` property that defines the rounded corners for the stacked column.
+* [Stroke](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.StackingSeriesBase.html#Syncfusion_Maui_Toolkit_Charts_StackingSeriesBase_Stroke) - A `Brush` property that defines the color used for the border of the stacked column.
+* [StrokeWidth](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.XYDataSeries.html#Syncfusion_Maui_Toolkit_Charts_XYDataSeries_StrokeWidth) - A `Double` property that defines the width of the stacked segment border.

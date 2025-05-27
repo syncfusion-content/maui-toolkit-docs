@@ -71,4 +71,3 @@ public class ChartInteractiveExt: ChartInteractiveBehavior
 {% endhighlight  %}
 
 {% endtabs %}
-

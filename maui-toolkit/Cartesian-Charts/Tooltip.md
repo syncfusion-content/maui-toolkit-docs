@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Tooltip in .NET MAUI Chart control | Syncfusion
-description: This section explains about how to enable tooltip and its customization in Syncfusion® .NET MAUI Chart (SfCartesianChart) control.
+description: This section explains how to enable tooltip and its customization in Syncfusion® .NET MAUI Chart (SfCartesianChart) control.
 platform: maui-toolkit
 control: SfCartesianChart
 documentation: ug
@@ -10,11 +10,11 @@ keywords: .net maui chart tooltip, maui chart tooltip, .net maui chart tooltip c
 
 # Tooltip in .NET MAUI Chart
 
-Tooltip is used to display any information or metadata of the tapped segment. The Cartesian chart provides tooltip support for all series. 
+Tooltip is used to display information or metadata of the tapped segment. The Cartesian chart provides tooltip support for all series.
 
 ## Define Tooltip
 
-To define the tooltip in the series, set the [EnableTooltip](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartSeries.html#Syncfusion_Maui_Toolkit_Charts_ChartSeries_EnableTooltip) property to true. The default value of [EnableTooltip](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartSeries.html#Syncfusion_Maui_Toolkit_Charts_ChartSeries_EnableTooltip) property is `false`.
+To define the tooltip in a series, set the [EnableTooltip](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartSeries.html#Syncfusion_Maui_Toolkit_Charts_ChartSeries_EnableTooltip) property to true. The default value of the [EnableTooltip](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartSeries.html#Syncfusion_Maui_Toolkit_Charts_ChartSeries_EnableTooltip) property is `false`.
 
 {% tabs %}
 
@@ -65,14 +65,14 @@ this.Content = chart;
 
 ![Tooltip support in MAUI chart](Tooltip_images/maui_chart_tooltip.png)
 
-The [ChartTooltipBehavior](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartTooltipBehavior.html) is used to customize the tooltip. For customizing the tooltip, create an instance [ChartTooltipBehavior](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartTooltipBehavior.html) and set it to the [TooltipBehavior](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartBase.html#Syncfusion_Maui_Toolkit_Charts_ChartBase_TooltipBehavior) property of [SfCartesianChart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html). The following properties are used to customize the tooltip:
+The [ChartTooltipBehavior](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartTooltipBehavior.html) is used to customize the tooltip. For customizing the tooltip, create an instance of [ChartTooltipBehavior](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartTooltipBehavior.html) and set it to the [TooltipBehavior](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartBase.html#Syncfusion_Maui_Toolkit_Charts_ChartBase_TooltipBehavior) property of [SfCartesianChart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html). The following properties are used to customize the tooltip:
 
-* [Background](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartTooltipBehavior.html#Syncfusion_Maui_Toolkit_Charts_ChartTooltipBehavior_Background) - Gets or sets the background color to the tooltip label.
+* [Background](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartTooltipBehavior.html#Syncfusion_Maui_Toolkit_Charts_ChartTooltipBehavior_Background) - Gets or sets the background color of the tooltip label.
 * [FontAttributes](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartTooltipBehavior.html#Syncfusion_Maui_Toolkit_Charts_ChartTooltipBehavior_FontAttributes) - Gets or sets the font style for the label.
 * [FontFamily](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartTooltipBehavior.html#Syncfusion_Maui_Toolkit_Charts_ChartTooltipBehavior_FontFamily) - Gets or sets the font family name for the label.
 * [FontSize](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartTooltipBehavior.html#Syncfusion_Maui_Toolkit_Charts_ChartTooltipBehavior_FontSize) - Gets or sets the font size for the label.
-* [Duration](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartTooltipBehavior.html#Syncfusion_Maui_Toolkit_Charts_ChartTooltipBehavior_Duration) - Gets or sets the duration of the tooltip text in seconds.
-* [Margin](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartTooltipBehavior.html#Syncfusion_Maui_Toolkit_Charts_ChartTooltipBehavior_Margin) - Gets or sets the margin of the label to customize the appearance of label.
+* [Duration](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartTooltipBehavior.html#Syncfusion_Maui_Toolkit_Charts_ChartTooltipBehavior_Duration) - Gets or sets the duration of the tooltip text in milliseconds.
+* [Margin](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartTooltipBehavior.html#Syncfusion_Maui_Toolkit_Charts_ChartTooltipBehavior_Margin) - Gets or sets the margin of the label to customize its appearance.
 * [TextColor](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartTooltipBehavior.html#Syncfusion_Maui_Toolkit_Charts_ChartTooltipBehavior_TextColor) - Used to set the color for the text of the label.
 
 
@@ -99,7 +99,7 @@ this.Content = chart;
 
 ## Duration
 
-The [Duration](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartTooltipBehavior.html#Syncfusion_Maui_Toolkit_Charts_ChartTooltipBehavior_Duration) property is used to specify the duration time in milliseconds for which tooltip will be displayed.
+The [Duration](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartTooltipBehavior.html#Syncfusion_Maui_Toolkit_Charts_ChartTooltipBehavior_Duration) property is used to specify the duration in milliseconds for which the tooltip will be displayed.
 
 {% tabs %}
 
@@ -166,7 +166,7 @@ The [SfCartesianChart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Ma
 
 {% highlight xaml %}
 
-<chart:SfCartesianChart >
+<chart:SfCartesianChart>
     <chart:SfCartesianChart.Resources>
         <DataTemplate x:Key="tooltipTemplate">
             <StackLayout Orientation="Horizontal">
@@ -197,11 +197,13 @@ The [SfCartesianChart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Ma
         <chart:ChartTooltipBehavior/>
     </chart:SfCartesianChart.TooltipBehavior>
 
-    <chart:ColumnSeries ItemsSource="{Binding Data}" TooltipTemplate="{StaticResource tooltipTemplate}"
+    <chart:ColumnSeries ItemsSource="{Binding Data}"
+                        TooltipTemplate="{StaticResource tooltipTemplate}"
                         XBindingPath="Demand"
                         YBindingPath="Year2010" 
                         EnableTooltip="True"/>
-    <chart:ColumnSeries ItemsSource="{Binding Data}" TooltipTemplate="{StaticResource tooltipTemplate}"
+    <chart:ColumnSeries ItemsSource="{Binding Data}"
+                        TooltipTemplate="{StaticResource tooltipTemplate}"
                         XBindingPath="Demand"
                         YBindingPath="Year2011" 
                         EnableTooltip="True"/>
@@ -226,7 +228,7 @@ ColumnSeries series2 = new ColumnSeries()
 {
     ItemsSource = new ViewModel().Data,
     XBindingPath = "Demand",
-    YBindingPath = "Year2010",
+    YBindingPath = "Year2011",
     EnableTooltip = true,
     TooltipTemplate = chart.Resources["tooltipTemplate"] as DataTemplate  // Set a custom tooltip template from the chart's resources
 };
