@@ -209,7 +209,7 @@ You can customize the CapStyle property of the doughnut series based on its type
     <chart:DoughnutSeries ItemsSource="{Binding Data}" 
                           XBindingPath="Product" 
                           YBindingPath="SalesRate"
-                          CapStyle = "BothCurve"
+                          CapStyle="BothCurve"
                           InnerRadius="0.6"/>
     </chart:SfCircularChart>
 
@@ -237,7 +237,7 @@ this.Content = chart;
 
 ## Spacing
 
-The [Spacing]() property defines the space between individual doughnut segments. By default, its value is set to `0`, meaning there is no gap between the segments. The value can range from 0 to 1, where 0 represents 0% spacing and 1 represents 100% spacing.
+The [GapRatio]() property defines the gap between individual doughnut segments. By default, its value is set to `0`, meaning there is no gap between the segments. The value can range from 0 to 1, where 0 represents 0% spacing and 1 represents 100% spacing.
 
 {% tabs %}
 
@@ -247,7 +247,7 @@ The [Spacing]() property defines the space between individual doughnut segments.
     <chart:DoughnutSeries ItemsSource="{Binding Data}" 
                           XBindingPath="Product" 
                           YBindingPath="SalesRate"
-                          Spacing="0.2"/>
+                          GapRatio="0.2"/>
 </chart:SfCircularChart>
 
 {% endhighlight %}
@@ -260,7 +260,7 @@ DoughnutSeries series = new DoughnutSeries();
 series.ItemsSource = (new SalesViewModel()).Data;
 series.XBindingPath = "Product";
 series.YBindingPath = "SalesRate";
-series.Spacing = 0.2; // Set the gap between each doughnut segments
+series.GapRatio = 0.2; // Set the gap between each doughnut segments
 
 chart.Series.Add(series);
 this.Content = chart;
