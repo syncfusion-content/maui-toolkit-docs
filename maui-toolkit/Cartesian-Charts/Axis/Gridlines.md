@@ -201,14 +201,14 @@ NumericalAxis primaryAxis = new NumericalAxis();
 chart.XAxes.Add(primaryAxis);
 
 NumericalAxis secondaryAxis = new NumericalAxis() { MinorTicksPerInterval = 2 };
-// Define the style for the minor grid lines on the Y-axis
+// Define the style for the minor grid lines on the Y-axis.
 ChartLineStyle gridLineStyle = new ChartLineStyle()
 {
     Stroke = Colors.Black,
     StrokeWidth = 0.8,
     StrokeDashArray = doubleCollection,
 };
-// Apply the grid line style to the minor grid lines of the secondary axis
+// Apply the grid line style to the minor grid lines of the secondary axis.
 secondaryAxis.MinorGridLineStyle = gridLineStyle;
 chart.YAxes.Add(secondaryAxis);
 

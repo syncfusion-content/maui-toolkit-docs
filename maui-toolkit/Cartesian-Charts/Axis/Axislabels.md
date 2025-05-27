@@ -234,6 +234,7 @@ SfCartesianChart chart = new SfCartesianChart();
 . . .
 CategoryAxis primaryAxis = new CategoryAxis()
 {
+    // Set the labels intersect action to "MultipleRows", allowing labels to be positioned on multiple rows to avoid overlap
     LabelsIntersectAction = AxisLabelsIntersectAction.MultipleRows,
 };
 chart.XAxes.Add(primaryAxis);
