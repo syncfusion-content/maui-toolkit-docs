@@ -1,10 +1,10 @@
 ---
 layout: post
 title: About Keys for Syncfusion® Controls | Syncfusion®
-description: This section contains the details about the keys which are mapped to the UI elements of all the controls
+description: Detailed information on the keys mapped to the UI elements of all Syncfusion® controls.
 platform: maui-toolkit
 control: General
-documentation: ug
+documentation: UG
 ---
 
 # Keys of Syncfusion<sup>®</sup> Controls
@@ -106,7 +106,7 @@ This page lists the keys for each control and the element to which it is mapped 
         </tr>
      <tr>
         <td>SfCartesianChartBackground<br/><br/></td>
-        <td>Background color of cartesian chart<br/><br/></td>
+        <td>Background color of the cartesian chart<br/><br/></td>
     </tr>
     <tr>
         <td>SfCartesianChartMajorGridLineStroke<br/><br/></td>
@@ -324,7 +324,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            Color of the SfChips background in disable state.
+            Color of the SfChips background in disabled state.
             <br/>
             <br/>
         </td>
@@ -336,7 +336,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            Color of the SfChips text in disable state.
+            Color of the SfChips text in disabled state.
             <br/>
             <br/>
         </td>
@@ -348,7 +348,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            Color of the clear button icon in disable state.
+            Color of the clear button icon in disabled state.
             <br/>
             <br/>
         </td>
@@ -360,7 +360,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            Color of the SfChips stroke in disable state.
+            Color of the SfChips stroke in disabled state.
             <br/>
             <br/>
         </td>
@@ -372,7 +372,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            Color of the SfChips selection indicator in disable state.
+            Color of the SfChips selection indicator in disabled state.
             <br/>
             <br/>
         </td>
@@ -536,7 +536,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            Color of the SfChipGroup background in disable state.
+            Color of the SfChipGroup background in disabled state.
             <br/>
             <br/>
         </td>
@@ -548,7 +548,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            Color of the SfChipGroup text in disable state.
+            Color of the SfChipGroup text in disabled state.
             <br/>
             <br/>
         </td>
@@ -560,7 +560,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            Color of the SfChipGroup stroke in disable state.
+            Color of the SfChipGroup stroke in disabled state.
             <br/>
             <br/>
         </td>
@@ -572,7 +572,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            Color of the SfChipGroup selected background in disable state.
+            Color of the SfChipGroup selected background in disabled state.
             <br/>
             <br/>
         </td>
@@ -584,7 +584,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            Color of the SfChipGroup selected text in disable state.
+            Color of the SfChipGroup selected text in disabled state.
             <br/>
             <br/>
         </td>
@@ -596,7 +596,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            Color of the SfChipGroup selection indicator in disable state.
+            Color of the SfChipGroup selection indicator in disabled state.
             <br/>
             <br/>
         </td>
@@ -642,7 +642,7 @@ This page lists the keys for each control and the element to which it is mapped 
          </tr>
      <tr>
         <td>SfCircularChartBackground<br/><br/></td>
-        <td>Background of circular chart<br/><br/></td>
+        <td>Background of the circular chart<br/><br/></td>
     </tr>
     <tr>
         <td>SfCircularChartSelectionBrush<br/><br/></td>
@@ -807,7 +807,7 @@ This page lists the keys for each control and the element to which it is mapped 
          </tr>
     <tr>
         <td>SfFunnelChartBackground<br/><br/></td>
-        <td>Background of funnel chart<br/><br/></td>
+        <td>Background of the funnel chart<br/><br/></td>
     </tr>
     <tr>
         <td>SfFunnelChartSelectionBrush<br/><br/></td>
@@ -1261,7 +1261,7 @@ This page lists the keys for each control and the element to which it is mapped 
           </tr>
     <tr>
         <td>SfPyramidChartBackground<br/><br/></td>
-        <td>Background color of pyramid chart<br/><br/></td>
+        <td>Background color of the pyramid chart<br/><br/></td>
     </tr>
     <tr>
         <td>SfPyramidChartSelectionBrush<br/><br/></td>
@@ -1347,7 +1347,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            Color of border in segmented control.
+            Color of border in the segmented control.
             <br/>
             <br/>
         </td>
@@ -1360,7 +1360,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            Color of text in segmented control.
+            Color of text in the segmented control.
             <br/>
             <br/>
         </td>
@@ -1373,7 +1373,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            Background color of segmented control.
+            Background color of the segmented control.
             <br/>
             <br/>
         </td>
@@ -1464,7 +1464,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            Segmented controls border color when it is focused using the keyboard navigation keys.    
+            Segmented controls border color when it is focused using the keyboard navigation keys.
             <br/>
             <br/>
         </td>
@@ -1503,7 +1503,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            Corner radius of segment in segmented control.      
+            Corner radius of segment in the segmented control.      
             <br/>
             <br/>
         </td>
@@ -1516,7 +1516,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            Font size of the segment item in segmented control.   
+            Font size of the segment item in the segmented control.   
             <br/>
             <br/>
         </td>
@@ -1529,7 +1529,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            Thickness of the border stroke in segmented control, when it is selected.     
+            Thickness of the border stroke in the segmented control, when it is selected.     
             <br/>
             <br/>
         </td>
@@ -2302,7 +2302,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            Color of the SfTextInputLayout background in focus state.
+            Color of the SfTextInputLayout background in focused state.
             <br/>
             <br/>
         </td>
@@ -2326,7 +2326,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            Color of the SfTextInputLayout background in disable state.
+            Color of the SfTextInputLayout background in disabled state.
             <br/>
             <br/>
         </td>
@@ -2338,7 +2338,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            Color of the SfTextInputLayout stroke in disable state.
+            Color of the SfTextInputLayout stroke in disabled state.
             <br/>
             <br/>
         </td>
