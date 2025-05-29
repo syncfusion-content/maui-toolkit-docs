@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Font Customization  in .NET MAUI TextInputLayout control | Syncfusion<sup>®</sup>
+title: Font Customization  in .NET MAUI TextInputLayout control | Syncfusion
 description: Learn here all about Font Customization  support in Syncfusion<sup>®</sup> .NET MAUI Text Input Layout (SfTextInputLayout) control and more.
 platform: maui-toolkit
 control: SfTextInputLayout
