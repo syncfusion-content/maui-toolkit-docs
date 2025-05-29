@@ -183,9 +183,9 @@ this.Content = chart;
 
 ## CapStyle customization
 
-The [CapStyle]() property of the doughnut series is used to specify the shape of the start and end points of the circular segment. The default value of this property is `Both.Flat`.
+The CapStyle property of the doughnut series is used to specify the shape of the start and end points of the circular segment. The default value of this property is `Both.Flat`.
 
-The following types are available for [CapStyle]() property.
+The following types are available for `CapStyle` property.
 
  * [BothFlat](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.CapStyle.html#Syncfusion_Maui_Toolkit_Charts_CapStyle_BothFlat) - Start and end positions of the segment should be updated with a flat shape.
 
@@ -233,11 +233,9 @@ this.Content = chart;
 
 {% endtabs %}
 
-![.NET MAUI Doughnut chart cap style customization]()
-
 ## Spacing
 
-The [GapRatio]() property defines the gap between individual doughnut segments. By default, its value is set to `0`, meaning there is no gap between the segments. The value can range from 0 to 1, where 0 represents 0% spacing and 1 represents 100% spacing.
+The GapRatio property defines the gap between individual doughnut segments. By default, its value is set to `0`, meaning there is no gap between the segments. The value can range from 0 to 1, where 0 represents 0% spacing and 1 represents 100% spacing.
 
 {% tabs %}
 
@@ -268,6 +266,3 @@ this.Content = chart;
 {% endhighlight %}
 
 {% endtabs %}
-
-![.NET MAUI Doughnut chart spacing customization]()
-
