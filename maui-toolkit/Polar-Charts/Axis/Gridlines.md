@@ -41,6 +41,7 @@ NumericalAxis secondaryAxis = new NumericalAxis();
 chart.SecondaryAxis = secondaryAxis;
 . . .
 this.Content = chart;
+
 {% endhighlight %}
 
 {% endtabs %}
@@ -52,6 +53,7 @@ The [MajorGridLineStyle](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.
 {% tabs %}
 
 {% highlight xaml %}
+
 <chart:SfPolarChart>
     . . .
     <chart:SfPolarChart.Resources>
@@ -86,7 +88,7 @@ doubleCollection.Add(3);
 doubleCollection.Add(3);
 
 NumericalAxis primaryAxis = new NumericalAxis();
-/ Define a new ChartLineStyle for customizing the appearance of the grid lines
+// Define a new ChartLineStyle for customizing the appearance of the grid lines
 ChartLineStyle axisLineStyle = new ChartLineStyle()
 {
     Stroke = Colors.Black,
@@ -99,13 +101,14 @@ NumericalAxis secondaryAxis = new NumericalAxis();
 chart.SecondaryAxis = secondaryAxis;
 . . .
 this.Content = chart;
+
 {% endhighlight %}
 
 {% endtabs %}
 
 ## Minor Grid Lines
 
-Minor gridlines will be added automatically when the small tick lines is defined and using the [MinorTicksPerInterval](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.RangeAxisBase.html#Syncfusion_Maui_Toolkit_Charts_RangeAxisBase_MinorTicksPerInterval) property of the chart axis. The visibility of the minor gridlines can be controlled using the [ShowMinorGridLines](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.RangeAxisBase.html#Syncfusion_Maui_Toolkit_Charts_RangeAxisBase_ShowMinorGridLines) property. The default value of [ShowMinorGridLines](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.RangeAxisBase.html#Syncfusion_Maui_Toolkit_Charts_RangeAxisBase_ShowMinorGridLines) is `true`.
+Minor gridlines will be added automatically when the small tick lines are defined using the [MinorTicksPerInterval](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.RangeAxisBase.html#Syncfusion_Maui_Toolkit_Charts_RangeAxisBase_MinorTicksPerInterval) property of the chart axis. The visibility of the minor gridlines can be controlled using the [ShowMinorGridLines](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.RangeAxisBase.html#Syncfusion_Maui_Toolkit_Charts_RangeAxisBase_ShowMinorGridLines) property. The default value of [ShowMinorGridLines](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.RangeAxisBase.html#Syncfusion_Maui_Toolkit_Charts_RangeAxisBase_ShowMinorGridLines) is `true`.
 
 {% tabs %}
 
@@ -129,13 +132,14 @@ Minor gridlines will be added automatically when the small tick lines is defined
 SfPolarChart chart = new SfPolarChart();
 NumericalAxis primaryAxis = new NumericalAxis();
 chart.PrimaryAxis = primaryAxis;
-chart.SecondaryAxis = new NumericalAxis()
+NumericalAxis secondaryAxis = new NumericalAxis()
 {
     MinorTicksPerInterval = 3, // Set the number of minor ticks between each interval
 };
 chart.SecondaryAxis = secondaryAxis;
 . . .
 this.Content = chart;
+
 {% endhighlight %}
 
 {% endtabs %}
@@ -184,7 +188,11 @@ DoubleCollection doubleCollection = new DoubleCollection();
 doubleCollection.Add(3);
 doubleCollection.Add(3);
 
-NumericalAxis secondaryAxis = new NumericalAxis() { MinorTicksPerInterval = 2, ShowMinorGridLines = true; };
+NumericalAxis secondaryAxis = new NumericalAxis() 
+{ 
+    MinorTicksPerInterval = 2, 
+    ShowMinorGridLines = true 
+};
 // Define the style for the minor grid lines on the secondary axis
 ChartLineStyle axisLineStyle = new ChartLineStyle()
 {
@@ -196,6 +204,7 @@ secondaryAxis.MinorGridLineStyle = axisLineStyle; // Assign the style to the min
 chart.SecondaryAxis = secondaryAxis;
 . . .
 this.Content = chart;
+
 {% endhighlight %}
 
 {% endtabs %}

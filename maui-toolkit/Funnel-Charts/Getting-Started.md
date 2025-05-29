@@ -18,7 +18,7 @@ This section explains how to populate the Funnel Chart with data, including addi
 
 Before proceeding, ensure that the following are set up:
 
-1. Install [.NET 8 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/8.0) or later is installed.
+1. Install [.NET 8 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/8.0) or later.
 2. Set up a .NET MAUI environment with Visual Studio 2022 (v17.8 or later).
 
 ## Step 1: Create a new .NET MAUI project
@@ -27,7 +27,7 @@ Before proceeding, ensure that the following are set up:
 2. Name the project and choose a location. Then, click **Next.**
 3. Select the .NET framework version and click **Create.**
 
-## Step 2: Install the Syncfusion<sup>®</sup> MAUI Toolkit Package
+## Step 2: Install the Syncfusion® MAUI Toolkit Package
 
 1. In **Solution Explorer,** right-click the project and choose **Manage NuGet Packages.**
 2. Search for [Syncfusion.Maui.Toolkit](https://www.nuget.org/packages/Syncfusion.Maui.Toolkit/) and install the latest version.
@@ -35,7 +35,7 @@ Before proceeding, ensure that the following are set up:
 
 ## Step 3: Register the handler
 
-In the **MauiProgram.cs** file, register the handler for Syncfusion<sup>®</sup> Toolkit.
+In the **MauiProgram.cs** file, register the handler for Syncfusion® Toolkit.
 
 {% tabs %}
 {% highlight C# tabtitle="MauiProgram.cs" hl_lines="1 9" %}
@@ -111,7 +111,7 @@ public partial class MainPage : ContentPage
 
 Before proceeding, ensure that the following are set up:
 
-1. Install [.NET 8 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/8.0) or later is installed.
+1. Install [.NET 8 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/8.0) or later.
 2. Set up a .NET MAUI environment with Visual Studio Code.
 3. Ensure that the .NET MAUI extension is installed and configured as described [here.](https://learn.microsoft.com/en-us/dotnet/maui/get-started/installation?view=net-maui-8.0&tabs=visual-studio-code)
 
@@ -122,16 +122,16 @@ Before proceeding, ensure that the following are set up:
 3. Select the project location, type the project name and press **Enter.**
 4. Then choose **Create project.**
 
-## Step 2: Install the Syncfusion<sup>®</sup> MAUI Toolkit Package
+## Step 2: Install the Syncfusion® MAUI Toolkit Package
 
 1. Press <kbd>Ctrl</kbd> + <kbd>`</kbd> (backtick) to open the integrated terminal in Visual Studio Code.
 2. Ensure you're in the project root directory where your .csproj file is located.
-3. Run the command `dotnet add package Syncfusion.Maui.Toolkit` to install the Syncfusion<sup>®</sup> .NET MAUI Toolkit NuGet package.
+3. Run the command `dotnet add package Syncfusion.Maui.Toolkit` to install the Syncfusion® .NET MAUI Toolkit NuGet package.
 4. To ensure all dependencies are installed, run `dotnet restore`.
 
 ## Step 3: Register the handler
 
-In the **MauiProgram.cs** file, register the handler for Syncfusion<sup>®</sup> Toolkit.
+In the **MauiProgram.cs** file, register the handler for Syncfusion® Toolkit.
 
 {% tabs %}
 {% highlight C# tabtitle="MauiProgram.cs" hl_lines="1 9" %}
@@ -208,7 +208,7 @@ public partial class MainPage : ContentPage
 Before proceeding, ensure the following are set up:
 
 1. Ensure you have the latest version of JetBrains Rider.
-2. Install [.NET 8 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/8.0) or later is installed.
+2. Install [.NET 8 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/8.0) or later.
 3. Make sure the MAUI workloads are installed and configured as described [here.](https://www.jetbrains.com/help/rider/MAUI.html#before-you-start)
 
 ## Step 1: Create a new .NET MAUI Project
@@ -217,7 +217,7 @@ Before proceeding, ensure the following are set up:
 2. Enter the Project Name, Solution Name, and Location.
 3. Select the .NET framework version and click Create.
 
-## Step 2: Install the Syncfusion<sup>®</sup> MAUI Toolkit NuGet Package
+## Step 2: Install the Syncfusion® MAUI Toolkit NuGet Package
 
 1. In **Solution Explorer,** right-click the project and choose **Manage NuGet Packages.**
 2. Search for [Syncfusion.Maui.Toolkit](https://www.nuget.org/packages/Syncfusion.Maui.Toolkit/) and install the latest version.
@@ -225,7 +225,7 @@ Before proceeding, ensure the following are set up:
 
 ## Step 3: Register the handler
 
-In the **MauiProgram.cs** file, register the handler for Syncfusion<sup>®</sup> Toolkit.
+In the **MauiProgram.cs** file, register the handler for Syncfusion® Toolkit.
 
 {% tabs %}
 {% highlight C# tabtitle="MauiProgram.cs" hl_lines="1 9" %}
@@ -330,8 +330,8 @@ public class AdmissionViewModel
             new AdmissionModel() {XValue = "Enrolled", YValue=175},
             new AdmissionModel() {XValue = "Admits", YValue=190},
             new AdmissionModel() {XValue = "Applicants", YValue=245},
-            new AdmissionModel() {XValue = "Inquiries ", YValue=290},
-            new AdmissionModel() {XValue = "Prospects ", YValue=320},
+            new AdmissionModel() {XValue = "Inquiries", YValue=290},
+            new AdmissionModel() {XValue = "Prospects", YValue=320},
         };
     }
 }
@@ -386,7 +386,7 @@ public partial class MainPage : ContentPage
 
 ### Populate chart with data
 
-Binding `Data` to the funnel chart [ItemsSource](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfFunnelChart.html#Syncfusion_Maui_Toolkit_Charts_SfFunnelChart_ItemsSource) property from its BindingContext to create our own funnel chart.
+Bind `Data` to the funnel chart [ItemsSource](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfFunnelChart.html#Syncfusion_Maui_Toolkit_Charts_SfFunnelChart_ItemsSource) property from its BindingContext to create your own funnel chart.
 
 {% tabs %}   
 
@@ -507,7 +507,7 @@ this.Content = chart;
 
 ### Enable Tooltip
 
-Tooltips are used to show information about the segment, when mouse over on it. Enable tooltip by setting the chart [EnableTooltip](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfFunnelChart.html#Syncfusion_Maui_Toolkit_Charts_SfFunnelChart_EnableTooltip) property as `true`.
+Tooltips are used to show information about the segment when mouse hovers over it. Enable tooltip by setting the chart [EnableTooltip](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfFunnelChart.html#Syncfusion_Maui_Toolkit_Charts_SfFunnelChart_EnableTooltip) property as `true`.
 
 {% tabs %} 
 
@@ -573,8 +573,9 @@ using Syncfusion.Maui.Toolkit.Charts;
 . . .
 public partial class MainPage : ContentPage
 {   
-    public MainWindow()
+    public MainPage()
     {
+        InitializeComponent();
         SfFunnelChart chart = new SfFunnelChart();
         chart.Title = new Label()
         {

@@ -11,7 +11,7 @@ documentation: ug
 
 ## Export as an image
 
-You can export the chart view as an image in the desired file format using the [SaveAsImage](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartBase.html#Syncfusion_Maui_Toolkit_Charts_ChartBase_SaveAsImage_System_String_) method of [SfPyramidChart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfPyramidChart.html). The supported image formats are **JPEG and PNG**. By default, i.e., if you didn’t mention any image format with the filename, the chart view will be exported as an image in the PNG format.
+You can export the chart view as an image in your desired file format using the [SaveAsImage](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartBase.html#Syncfusion_Maui_Toolkit_Charts_ChartBase_SaveAsImage_System_String_) method of [SfPyramidChart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfPyramidChart.html). The supported image formats are **JPEG and PNG**. By default, if you don't specify an image format with the filename, the chart view will be exported as a PNG image.
 
 N> The chart view can be exported as an image only when the chart view is added to the visual tree.
 
@@ -20,34 +20,30 @@ The following code snippet demonstrates the usage of this method:
 {% tabs %}
 
 {% highlight c# %}
-
 SfPyramidChart chart = new SfPyramidChart();
 ...
 this.Content = chart;
 chart.SaveAsImage("ChartSample.jpeg"); // Export the chart view as an image in the JPEG format.
-
 {% endhighlight %}
 
 {% endtabs %}
 
-T> We can change the image formats in above code by changing its extension as .jpg, .png.
+T> You can change the image format by changing the file extension to .jpg or .png.
 
-The exported image will be saved in the different location across the platforms.
+The exported image will be saved in different locations across platforms:
 
-**Windows Phone, Android and MAC** – The image will be saved inside the 'Pictures' directory of the file system.
-
-**iOS** – The image will be saved inside the 'Photos/Album' directory of the file system.
+* **Windows Phone, Android, and MAC** – The image will be saved inside the 'Pictures' directory of the file system.
+* **iOS** – The image will be saved inside the 'Photos/Album' directory of the file system.
 
 To save the image on Android and Windows Phone devices, you must enable file writing permissions on the device storage.
 
-To save the image in the photo album on iOS devices, you must enable permission to access the device storage in the "Info" file. 
+To save the image in the photo album on iOS devices, you must enable permission to access the device storage in the "Info.plist" file. 
 
-Add the following code snippet to the "Info" file:
+Add the following code snippet to the "Info.plist" file:
 
 {% tabs %}
 
-{% highlight xaml %}
-
+{% highlight xml %}
 <dict>
     ...    
     <key>NSPhotoLibraryUsageDescription</key>    
@@ -56,28 +52,25 @@ Add the following code snippet to the "Info" file:
     <string>This App needs permission to access the Photos</string> 
     ...
 </dict>
-
 {% endhighlight %}
 
 {% endtabs %}
 
 ## Get the stream of Chart
 
-The [GetStreamAsync](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartBase.html#Syncfusion_Maui_Toolkit_Charts_ChartBase_GetStreamAsync_Syncfusion_Maui_Toolkit_ImageFileFormat_) method of [SfPyramidChart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfPyramidChart.html) is used to asynchronously get the chart view as a stream in the desired ImageFileFormat. The output stream can be passed as an input to other components that accept streams, such as PDF, Excel, and Word. The supported image file formats are **JPEG and PNG**.
+The [GetStreamAsync](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartBase.html#Syncfusion_Maui_Toolkit_Charts_ChartBase_GetStreamAsync_Syncfusion_Maui_Toolkit_ImageFileFormat_) method of [SfPyramidChart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfPyramidChart.html) is used to asynchronously get the chart view as a stream in the desired ImageFileFormat. The output stream can be passed as an input to other components that accept streams, such as PDF, Excel, and Word documents. The supported image file formats are **JPEG and PNG**.
 
-N> The charts stream can only be rendered when the chart view is added to the visual tree.
+N> The chart's stream can only be generated when the chart view is added to the visual tree.
 
 The following code snippet demonstrates the usage of this method:
 
 {% tabs %}
 
 {% highlight c# %}
-
 SfPyramidChart chart = new SfPyramidChart();
 ...
 this.Content = chart;
-await chart.GetStreamAsync(ImageFileFormat.Jpeg); // Get the chart view as a stream in the JPEG format.
-
+var stream = await chart.GetStreamAsync(ImageFileFormat.Jpeg); // Get the chart view as a stream in the JPEG format.
 {% endhighlight %}
 
 {% endtabs %}
