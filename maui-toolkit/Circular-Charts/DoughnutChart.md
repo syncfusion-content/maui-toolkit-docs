@@ -210,7 +210,7 @@ You can customize the CapStyle property of the doughnut series based on its type
                           XBindingPath="Product" 
                           YBindingPath="SalesRate"
                           CapStyle="BothCurve"
-                          InnerRadius="0.6"/>
+                          InnerRadius="0.8"/>
     </chart:SfCircularChart>
 
 {% endhighlight %}
@@ -224,7 +224,7 @@ series.ItemsSource = (new SalesViewModel()).Data;
 series.XBindingPath = "Product";
 series.YBindingPath = "SalesRate";
 series.CapStyle = CapStyle.BothCurve; // Set the cap style for the series
-series.InnerRadius = 0.6;
+series.InnerRadius = 0.8;
 
 chart.Series.Add(series);
 this.Content = chart;
