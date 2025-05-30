@@ -415,12 +415,36 @@ this.Content = chart;
 
 ## DateTimeCategoryAxis
 
-The [DateTimeCategoryAxis]() is a specialized type of axis primarily used with financial series. Similar to the [CategoryAxis](), all data points are plotted with equal spacing, eliminating gaps for missing dates. The intervals and ranges for this axis are calculated similarly to the [DateTimeAxis](). There are no visual gaps between points, even if the difference between two points exceeds a year.
+The [DateTimeCategoryAxis]() is a specialized type of axis primarily used with financial series. Similar to the [CategoryAxis](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.CategoryAxis.html), all data points are plotted with equal spacing, eliminating gaps for missing dates. The intervals and ranges for this axis are calculated similarly to the [DateTimeAxis](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.DateTimeAxis.html). There are no visual gaps between points, even if the difference between two points exceeds a year.
 
-The following APIs can be used to customize the interval of the DateTimeCategoryAxis.
+{% tabs %}
 
-* Interval - Gets or sets the double value that represents the interval between the labels.
-* IntervalType - Gets or sets the DateTimeIntervalType that represents the type of the interval to be displayed.
+{% highlight xaml %}
+
+<chart:SfCartesianChart>
+    . . .
+    <chart:SfCartesianChart.XAxes>
+        <chart:DateTimeCategoryAxis/>
+    </chart:SfCartesianChart.XAxes>
+</chart:SfCartesianChart>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfCartesianChart chart = new SfCartesianChart(); . . . // Create an instance of the DateTimeCategoryAxis, used for displaying DateTime values as categories 
+DateTimeCategoryAxis primaryAxis = new DateTimeCategoryAxis(); // Add the DateTimeCategoryAxis instance to the chart's XAxes collection 
+chart.XAxes.Add(primaryAxis);
+
+this.Content = chart; 
+
+{% endhighlight %}
+
+{% endtabs %}
+
+### Interval
+
+In [DateTimeCategoryAxis](), intervals can be customized by using the Interval and IntervalType properties, similar to [DateTimeAxis](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.DateTimeAxis.html). For example, setting [Interval]() as 3 and [IntervalType]() as [Months]() will consider 3 months as interval.
 
 {% tabs %}
 
@@ -429,7 +453,7 @@ The following APIs can be used to customize the interval of the DateTimeCategory
     <chart:SfCartesianChart> 
         <chart:SfCartesianChart.XAxes>
             <chart:DateTimeCategoryAxis 
-            Interval="2" 
+            Interval="3" 
             IntervalType="Months"/> 
         </chart:SfCartesianChart.XAxes> 
     </chart:SfCartesianChart>
@@ -439,14 +463,16 @@ The following APIs can be used to customize the interval of the DateTimeCategory
 {% highlight c# %}
 
     SfCartesianChart chart = new SfCartesianChart(); 
-    DateTimeCategoryAxis primaryAxis = new DateTimeCategoryAxis() { Interval = 2, IntervalType = DateTimeIntervalType.Months }; 
+    DateTimeCategoryAxis primaryAxis = new DateTimeCategoryAxis() { Interval = 3, IntervalType = DateTimeIntervalType.Months }; 
     chart.XAxes.Add(primaryAxis);
 
-this.Content = chart; {% endhighlight %}
+this.Content = chart; 
+
+{% endhighlight %}
 
 {% endtabs %}
 
-![DateTimeCategory Axis support in MAUI Chart]()
+![DateTimeCategory Axis support in MAUI Chart](Axis_Images/DateTimeCategoryAxis.png)
 
 ## Logarithmic Axis
 
