@@ -450,21 +450,21 @@ In [DateTimeCategoryAxis](), intervals can be customized by using the Interval a
 
 {% highlight xaml %}
 
-    <chart:SfCartesianChart> 
+<chart:SfCartesianChart> 
         <chart:SfCartesianChart.XAxes>
             <chart:DateTimeCategoryAxis 
             Interval="3" 
             IntervalType="Months"/> 
         </chart:SfCartesianChart.XAxes> 
-    </chart:SfCartesianChart>
+</chart:SfCartesianChart>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-    SfCartesianChart chart = new SfCartesianChart(); 
-    DateTimeCategoryAxis primaryAxis = new DateTimeCategoryAxis() { Interval = 3, IntervalType = DateTimeIntervalType.Months }; 
-    chart.XAxes.Add(primaryAxis);
+SfCartesianChart chart = new SfCartesianChart(); 
+DateTimeCategoryAxis primaryAxis = new DateTimeCategoryAxis() { Interval = 3, IntervalType = DateTimeIntervalType.Months }; 
+chart.XAxes.Add(primaryAxis);
 
 this.Content = chart; 
 
