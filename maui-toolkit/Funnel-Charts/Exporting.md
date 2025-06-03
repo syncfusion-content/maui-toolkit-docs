@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Exporting in .NET MAUI Chart Control | Syncfusion
-description: Learn how to export the chart view as an image and stream in the Syncfusion® .NET MAUI Chart (SfFunnelChart) control.
+title: Exporting in .NET MAUI Chart control | Syncfusion
+description: Learn here how to export the chart view as an image and stream in the Syncfusion® .NET MAUI Chart (SfFunnelChart) control.
 platform: maui-toolkit
 control: SfFunnelChart
 documentation: ug
@@ -9,9 +9,9 @@ documentation: ug
 
 # Exporting in .NET MAUI Chart
 
-## Export as an Image
+## Export as an image
 
-You can export the chart view as an image in the desired file format using the [SaveAsImage](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartBase.html#Syncfusion_Maui_Toolkit_Charts_ChartBase_SaveAsImage_System_String_) method of [SfFunnelChart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfFunnelChart.html). The supported image formats are **JPEG and PNG**. By default, if you don't specify an image format with the filename, the chart view will be exported as a PNG image.
+You can export the chart view as an image in the desired file format using the [SaveAsImage](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartBase.html#Syncfusion_Maui_Toolkit_Charts_ChartBase_SaveAsImage_System_String_) method of [SfFunnelChart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfFunnelChart.html). The supported image formats are **JPEG and PNG**. By default, i.e., if you didn’t mention any image format with the filename, the chart view will be exported as an image in the PNG format.
 
 N> The chart view can be exported as an image only when the chart view is added to the visual tree.
 
@@ -22,7 +22,7 @@ The following code snippet demonstrates the usage of this method:
 {% highlight c# %}
 
 SfFunnelChart chart = new SfFunnelChart();
-// Other chart configurations
+...
 this.Content = chart;
 chart.SaveAsImage("ChartSample.jpeg"); // Export the chart view as an image in the JPEG format.
 
@@ -30,19 +30,19 @@ chart.SaveAsImage("ChartSample.jpeg"); // Export the chart view as an image in t
 
 {% endtabs %}
 
-T> You can change the image format in the code above by changing its extension to .jpg or .png.
+T> We can change the image formats in above code by changing its extension as .jpg, .png.
 
-The exported image will be saved in different locations depending on the platform:
+The exported image will be saved in the different location across the platforms.
 
-**Windows Phone, Android, and macOS** – The image will be saved inside the 'Pictures' directory of the file system.
+**Windows Phone, Android and MAC** – The image will be saved inside the 'Pictures' directory of the file system.
 
 **iOS** – The image will be saved inside the 'Photos/Album' directory of the file system.
 
-To save the image on Android and Windows Phone devices, you must enable file writing permissions in the device storage.
+To save the image on Android and Windows Phone devices, you must enable file writing permissions on the device storage.
 
-To save the image in the photo album on iOS devices, you must enable permission to access the device storage in the Info.plist file.
+To save the image in the photo album on iOS devices, you must enable permission to access the device storage in the "Info" file. 
 
-Add the following code snippet to the Info.plist file:
+Add the following code snippet to the "Info" file:
 
 {% tabs %}
 
@@ -61,11 +61,11 @@ Add the following code snippet to the Info.plist file:
 
 {% endtabs %}
 
-## Get the Stream of the Chart
+## Get the stream of Chart
 
-The [GetStreamAsync](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartBase.html#Syncfusion_Maui_Toolkit_Charts_ChartBase_GetStreamAsync_Syncfusion_Maui_Toolkit_ImageFileFormat_) method of [SfFunnelChart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfFunnelChart.html) is used to asynchronously get the chart view as a stream in the desired ImageFileFormat. The output stream can be passed as input to other components that accept streams, such as PDF, Excel, and Word. The supported image file formats are **JPEG and PNG**.
+The [GetStreamAsync](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartBase.html#Syncfusion_Maui_Toolkit_Charts_ChartBase_GetStreamAsync_Syncfusion_Maui_Toolkit_ImageFileFormat_) method of [SfFunnelChart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfFunnelChart.html) is used to asynchronously get the chart view as a stream in the desired ImageFileFormat. The output stream can be passed as an input to other components that accept streams, such as PDF, Excel, and Word. The supported image file formats are **JPEG and PNG**.
 
-N> The chart stream can only be rendered when the chart view is added to the visual tree.
+N> The charts stream can only be rendered when the chart view is added to the visual tree.
 
 The following code snippet demonstrates the usage of this method:
 
@@ -74,7 +74,7 @@ The following code snippet demonstrates the usage of this method:
 {% highlight c# %}
 
 SfFunnelChart chart = new SfFunnelChart();
-// Other chart configurations
+...
 this.Content = chart;
 await chart.GetStreamAsync(ImageFileFormat.Jpeg); // Get the chart view as a stream in the JPEG format.
 

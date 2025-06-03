@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with .NET MAUI Chart Control | Syncfusion
-description: Learn how to get started with Syncfusion® .NET MAUI Chart (SfFunnelChart) control, its elements, and more.
+title: Getting Started with .NET MAUI Chart control | Syncfusion
+description: Learn here all about getting started with Syncfusion® .NET MAUI Chart (SfFunnelChart) control, its elements, and more.
 platform: maui-toolkit
 control: SfFunnelChart
 documentation: ug
@@ -16,24 +16,24 @@ This section explains how to populate the Funnel Chart with data, including addi
 
 ## Prerequisites
 
-Before proceeding, ensure the following are set up:
+Before proceeding, ensure that the following are set up:
 
-1. Install [.NET 8 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/8.0) or later.
+1. Install [.NET 8 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/8.0) or later is installed.
 2. Set up a .NET MAUI environment with Visual Studio 2022 (v17.8 or later).
 
-## Step 1: Create a New .NET MAUI Project
+## Step 1: Create a new .NET MAUI project
 
 1. Go to **File > New > Project** and choose the **.NET MAUI App** template.
-2. Name the project and choose a location. Then, click **Next**.
-3. Select the .NET framework version and click **Create**.
+2. Name the project and choose a location. Then, click **Next.**
+3. Select the .NET framework version and click **Create.**
 
 ## Step 2: Install the Syncfusion<sup>®</sup> MAUI Toolkit Package
 
-1. In **Solution Explorer**, right-click the project and choose **Manage NuGet Packages**.
+1. In **Solution Explorer,** right-click the project and choose **Manage NuGet Packages.**
 2. Search for [Syncfusion.Maui.Toolkit](https://www.nuget.org/packages/Syncfusion.Maui.Toolkit/) and install the latest version.
 3. Ensure the necessary dependencies are installed correctly, and the project is restored.
 
-## Step 3: Register the Handler
+## Step 3: Register the handler
 
 In the **MauiProgram.cs** file, register the handler for Syncfusion<sup>®</sup> Toolkit.
 
@@ -101,7 +101,7 @@ public partial class MainPage : ContentPage
 }
 
 {% endhighlight %}
-{% endtabs %} 
+{% endtabs %}
 
 {% endtabcontent %}
 
@@ -109,18 +109,18 @@ public partial class MainPage : ContentPage
 
 ## Prerequisites
 
-Before proceeding, ensure the following are set up:
+Before proceeding, ensure that the following are set up:
 
-1. Install [.NET 8 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/8.0) or later.
+1. Install [.NET 8 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/8.0) or later is installed.
 2. Set up a .NET MAUI environment with Visual Studio Code.
-3. Ensure that the .NET MAUI extension is installed and configured as described [here](https://learn.microsoft.com/en-us/dotnet/maui/get-started/installation?view=net-maui-8.0&tabs=visual-studio-code).
+3. Ensure that the .NET MAUI extension is installed and configured as described [here.](https://learn.microsoft.com/en-us/dotnet/maui/get-started/installation?view=net-maui-8.0&tabs=visual-studio-code)
 
-## Step 1: Create a New .NET MAUI Project
+## Step 1: Create a new .NET MAUI project
 
-1. Open the command palette by pressing `Ctrl+Shift+P`, type **.NET: New Project**, and press Enter.
+1. Open the command palette by pressing `Ctrl+Shift+P` and type **.NET:New Project** and enter.
 2. Choose the **.NET MAUI App** template.
-3. Select the project location, type the project name, and press **Enter**.
-4. Then choose **Create project**.
+3. Select the project location, type the project name and press **Enter.**
+4. Then choose **Create project.**
 
 ## Step 2: Install the Syncfusion<sup>®</sup> MAUI Toolkit Package
 
@@ -129,7 +129,7 @@ Before proceeding, ensure the following are set up:
 3. Run the command `dotnet add package Syncfusion.Maui.Toolkit` to install the Syncfusion<sup>®</sup> .NET MAUI Toolkit NuGet package.
 4. To ensure all dependencies are installed, run `dotnet restore`.
 
-## Step 3: Register the Handler
+## Step 3: Register the handler
 
 In the **MauiProgram.cs** file, register the handler for Syncfusion<sup>®</sup> Toolkit.
 
@@ -594,6 +594,7 @@ public partial class MainPage : ContentPage
 }
 
 {% endhighlight %}
+
 {% endtabs %}
 
 ![Funnel chart in .NET MAUI Chart](Getting-Started_Images/MAUI_funnel_chart.png)

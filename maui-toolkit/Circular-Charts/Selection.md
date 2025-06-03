@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Selection in .NET MAUI Chart Control | Syncfusion
-description: Learn how to configure the selection support and its features in Syncfusion® .NET MAUI Chart (SfCircularChart) control.
+title: Selection in .NET MAUI Chart control | Syncfusion
+description: This section explains about how to configure the selection support and its features applying in .NET MAUI Chart (SfCircularChart).
 platform: maui-toolkit
 control: SfCircularChart
 documentation: ug
@@ -11,7 +11,7 @@ documentation: ug
 
 The [SfCircularChart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCircularChart.html) provides selection behavior support, which allows you to select or highlight a segment (data points) in a series using the [DataPointSelectionBehavior](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.DataPointSelectionBehavior.html).
 
-## Enable Selection
+## Enable selection
 
 To enable the data point selection, create an instance of the series [SelectionBehavior](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartSeries.html#Syncfusion_Maui_Toolkit_Charts_ChartSeries_SelectionBehavior) property.
 
@@ -42,7 +42,7 @@ DataPointSelectionBehavior selection = new DataPointSelectionBehavior()
 };
 
 DoughnutSeries series = new DoughnutSeries();
-// ...
+. . .
 series.SelectionBehavior = selection; // Set the selection behavior for this series
 chart.Series.Add(series);
 this.Content = chart;
@@ -51,7 +51,7 @@ this.Content = chart;
 
 {% endtabs %}
 
-## Behavior Customization
+## Behavior customization 
 
 The following properties are used to customize the [ChartSelectionBehavior](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartSelectionBehavior.html):
 
