@@ -251,7 +251,7 @@ this.Content = chart;
 
 N> If the [LabelsIntersectAction](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxis.html#Syncfusion_Maui_Toolkit_Charts_ChartAxis_LabelsIntersectAction) is set to Wrap, we should set the width of the wrap using the [MaxWidth](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxisLabelStyle.html#Syncfusion_Maui_Toolkit_Charts_ChartAxisLabelStyle_MaxWidth) property. We can align the wrapped axis label using the [WrappedLabelAlignment](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxisLabelStyle.html#Syncfusion_Maui_Toolkit_Charts_ChartAxisLabelStyle_WrappedLabelAlignment) property.
 
-## Maximum Labels Per 100 Pixels
+## Maximum number of labels per 100 pixels
 
 The `MaximumLabels` property in [ChartAxis](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxis.html) is an integer type property that is used to control the number of axis labels rendered for every 100 pixels of the chart axis. This feature limits and manages the density of axis labels per 100 pixels, ensuring that either the specified maximum is displayed or that label spacing is optimized to maintain readability.
 
@@ -288,6 +288,6 @@ By default, a maximum of `3` labels are displayed per 100 pixels of axis. This e
 
 {% endtabs %}
 
-![Maximum Labels in .NET MAUI SfCartesianChart.](axis_images/maui_chart_maximum_labels.png)
+![Maximum Labels in .NET MAUI SfCartesianChart.](axis_images/maui_chart_axis_maximum_labels.png)
 
 N> `MaximumLabels` only applies during automatic interval calculation. It will have no effect if the `Interval` property is manually set on the axis.
