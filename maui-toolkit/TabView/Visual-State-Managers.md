@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Visual state manager in .NET MAUI Tab View (SfTabView) | Syncfusion®
+title: Visual State Manager in .NET MAUI Tab View (SfTabView) | Syncfusion®
 description: Learn how to implement the Visual State Manager in Syncfusion® .NET MAUI Tab View (SfTabView) to enhance the user interface based on different states.
 platform: maui-toolkit
-control: TabView
-documentation: ug
+control: SfTabView
+documentation: UG
 ---
 
 # Visual State Manager in .NET MAUI Tab View (SfTabView)
@@ -13,7 +13,7 @@ Use the [VisualStateManager](https://learn.microsoft.com/en-us/dotnet/api/micros
 
 Refer to the following example to implement Visual State Manager in the `SfTabView` control. This example demonstrates how to define visual states and apply them to the `SfTabView` control to change its appearance based on different states:
 
-Additionally, the C# example demonstrates how to create a custom `CustomTabItem` class that inherits from `SfTabItem`. This class sets up the visual states programmatically, allowing for more dynamic control over the visual states.
+Additionally, the C# example demonstrates how to create a `CustomTabItem` class that inherits from `SfTabItem`. This class sets up the visual states programmatically, allowing for more dynamic control over the visual states.
 
 {% tabs %}
 
@@ -293,7 +293,7 @@ public partial class MainPage : ContentPage
 	}
 }
 
-// We create a custom `CustomTabItem` class that inherits from `SfTabItem`. This class sets up the visual states programmatically, allowing for more dynamic control over the visual states.
+// We create a `CustomTabItem` class that inherits from `SfTabItem`. This class sets up the visual states programmatically, allowing for more dynamic control over the visual states.
 
 public class CustomTabItem : SfTabItem
 {
@@ -336,7 +336,7 @@ public class CustomTabItem : SfTabItem
 
 {% endtabs %}
 
-By using the Visual State Manager, you can easily change the appearance of tab items based on their current state, providing visual feedback to users and enhancing the overall user experience. The following image demonstrating different visual states for tab items
+By using the Visual State Manager, you can easily change the appearance of tab items based on their current state, providing visual feedback to users and enhancing the overall user experience. The following image demonstrating different visual states for tab items.
 
 ![Visual state manager](images/Visual-state-manager.png)
 

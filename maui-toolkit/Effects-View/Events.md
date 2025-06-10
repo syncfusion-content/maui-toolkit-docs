@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Events in .NET MAUI Effects View control | Syncfusion®
-description: Learn here all about Events support in Syncfusion® .NET Effects View (SfEffectsView) control and more.
+title: Events in .NET MAUI Effects View Control | Syncfusion®
+description: Learn about Events support in Syncfusion® .NET Effects View (SfEffectsView) control and more.
 platform: maui-toolkit
-control: Effects View
-documentation: ug
+control: SfEffectsView
+documentation: UG
 ---
 
 # Events in .NET MAUI Effects View (SfEffectsView)

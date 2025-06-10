@@ -1,10 +1,10 @@
 ---
 layout: post
 title: Styling Modes in .NET MAUI OTP Input | Syncfusion®
-description: Learn here about styling modes in Syncfusion® .NET MAUI OTP Input (SfOtpInput) control in your cross-platform applications.
+description: Learn about styling modes in the Syncfusion® .NET MAUI OTP Input (SfOtpInput) control for your cross-platform applications.
 platform: maui-toolkit
-control: OTP Input
-documentation: ug
+control: SfOtpInput
+documentation: UG
 ---
 
 # Styling Modes in OTP Input
@@ -14,7 +14,7 @@ Styling modes specify the visual style variants for input fields in the OTP Inpu
 
 ## Outline mode
 
-You can customize the appearance of input fields with a border around them by setting the [StylingMode](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.OtpInput.SfOtpInput.html?tabs=tabid-1#Syncfusion_Maui_Toolkit_OtpInput_SfOtpInput_StylingMode) property to [Outlined.](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.OtpInput.OtpInputStyle.html#Syncfusion_Maui_Toolkit_OtpInput_OtpInputStyle_Outlined)  This is the default styling mode for the OTP Input component.
+Customize the appearance of input fields with a border around them by setting the [StylingMode](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.OtpInput.SfOtpInput.html?tabs=tabid-1#Syncfusion_Maui_Toolkit_OtpInput_SfOtpInput_StylingMode) property to [Outlined](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.OtpInput.OtpInputStyle.html#Syncfusion_Maui_Toolkit_OtpInput_OtpInputStyle_Outlined). This is the default styling mode for the OTP Input component.
 
 {% tabs %}	
 {% highlight xaml %}
@@ -32,11 +32,11 @@ SfOtpInput otpInput = new SfOtpInput()
 {% endhighlight %}
 {% endtabs %}
 
-![Outlined Image for OTP Input](images/outlined.png)
+![Outlined](images/outlined.png)
 
 ## Filled mode
 
-You can customize the appearance of input fields by filling them with color by setting the [StylingMode](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.OtpInput.SfOtpInput.html?tabs=tabid-1#Syncfusion_Maui_Toolkit_OtpInput_SfOtpInput_StylingMode) property to [Filled.](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.OtpInput.OtpInputStyle.html#Syncfusion_Maui_Toolkit_OtpInput_OtpInputStyle_Filled) 
+Customize the appearance of input fields by filling them with color by setting the [StylingMode](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.OtpInput.SfOtpInput.html?tabs=tabid-1#Syncfusion_Maui_Toolkit_OtpInput_SfOtpInput_StylingMode) property to [Filled](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.OtpInput.OtpInputStyle.html#Syncfusion_Maui_Toolkit_OtpInput_OtpInputStyle_Filled).
 
 {% tabs %}	
 {% highlight xaml %}
@@ -54,11 +54,11 @@ SfOtpInput otpInput = new SfOtpInput()
 {% endhighlight %}
 {% endtabs %}
 
-![Filled Image for OTP Input](images/filled.png)
+![Filled](images/filled.png)
 
 ## Underline mode
 
-You can customize the appearance of input fields with an underline by setting the [StylingMode](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.OtpInput.SfOtpInput.html?tabs=tabid-1#Syncfusion_Maui_Toolkit_OtpInput_SfOtpInput_StylingMode) property to [Underlined.](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.OtpInput.OtpInputStyle.html#Syncfusion_Maui_Toolkit_OtpInput_OtpInputStyle_Underlined)
+Customize the appearance of input fields with an underline by setting the [StylingMode](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.OtpInput.SfOtpInput.html?tabs=tabid-1#Syncfusion_Maui_Toolkit_OtpInput_SfOtpInput_StylingMode) property to [Underlined](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.OtpInput.OtpInputStyle.html#Syncfusion_Maui_Toolkit_OtpInput_OtpInputStyle_Underlined).
 
 {% tabs %}	
 {% highlight xaml %}
@@ -76,4 +76,4 @@ SfOtpInput otpInput = new SfOtpInput()
 {% endhighlight %}
 {% endtabs %}
 
-![Underlined Image for OTP Input](images/underlined.png)
+![Underlined](images/underlined.png)

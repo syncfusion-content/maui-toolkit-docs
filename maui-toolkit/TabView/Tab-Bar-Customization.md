@@ -1,25 +1,25 @@
 ---
 layout: post
 title: Customize the Tab Bar in .NET MAUI Tab View (SfTabView) | Syncfusion®
-description: Learn here all about custom header support in Syncfusion® .NET MAUI Tab View (SfTabView) control and more.
+description: Learn how to customize the header in Syncfusion® .NET MAUI Tab View (SfTabView) control.
 platform: maui-toolkit
-control: Tab View
-documentation: ug
+control: SfTabView
+documentation: UG
 ---
 
 # Customize the Tab Bar in .NET MAUI Tab View (SfTabView)
 
 ## Tab width options
 
-The .NET MAUI Tab View provides two modes for determining how the width of the tab is calculated on the tab bar while it gets populated. The options are [Default](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.TabWidthMode.html#Syncfusion_Maui_Toolkit_TabView_TabWidthMode_Default) and [SizeToContent](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.TabWidthMode.html#Syncfusion_Maui_Toolkit_TabView_TabWidthMode_SizeToContent). You can set these modes using the [TabWidthMode](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.TabWidthMode.html) property.
+The .NET MAUI Tab View provides two modes to determine how tab widths are calculated on the tab bar when populated. These options are [Default](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.TabWidthMode.html#Syncfusion_Maui_Toolkit_TabView_TabWidthMode_Default) and [SizeToContent](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.TabWidthMode.html#Syncfusion_Maui_Toolkit_TabView_TabWidthMode_SizeToContent), settable via the [TabWidthMode](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.TabWidthMode.html) property.
 
 ### Default tab width mode
 
-In this mode, the width of the tab is divided equally based on the available control width. This enables a fixed tab bar that will not allow tab scrolling even it contains any number of tabs. You can achieve this by setting the `TabWidthMode` property to `Default`.
+In this mode, the tab width is equally divided based on the available control width, providing a fixed tab bar without scrolling, regardless of tab quantity. Set this mode using the `TabWidthMode` property set to `Default`.
 
-N> This mode is recommended when the tab count is not more than four. More tabs in this mode may result in text being trimmed.
+N> This mode is recommended for up to four tabs, as more may cause text trimming.
 
-To set the tab width mode, use the following code:
+Set the default tab width mode using the following code:
 
 {% tabs %}
 
@@ -39,7 +39,7 @@ tabView.TabWidthMode = TabWidthMode.Default;
 
 The following image shows the tab bar in default tab width mode.
 
-![Default Tab Width Mode in .NET MAUI TabView](images/Tab-Width-Mode-Default.png)
+![Default tab width mode](images/Tab-Width-Mode-Default.png)
 
 ### Based on the text size
 
@@ -65,7 +65,7 @@ tabView.TabWidthMode = TabWidthMode.SizeToContent;
 
 The following image shows the tab bar in size-to-content width mode.
 
-![Tab Width Mode Size to fit](images/Tab-Width-Mode-SizeToFit.png) 
+![Size to fit](images/Tab-Width-Mode-SizeToFit.png) 
 
 ## Customize the tab bar height
 
@@ -93,11 +93,11 @@ tabView.TabBarHeight = 100;
 
 ## Customize the tab header text alignment
 
-The horizontal text alignment of the tab header can be customized by setting the [HeaderHorizontalTextAlignment](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SfTabView.html#Syncfusion_Maui_Toolkit_TabView_SfTabView_HeaderHorizontalTextAlignment) property. The default value is Center. This property accepts the following values:
+The tab header text alignment can be customized using the [HeaderHorizontalTextAlignment](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SfTabView.html#Syncfusion_Maui_Toolkit_TabView_SfTabView_HeaderHorizontalTextAlignment) property. The default value is Center. This property accepts the following values:
 
-*   **Start** - The text will be placed at the starting position in the header tab.
-*   **Center** - The text will be placed at the center of the header tab.
-*   **End** - The text will be placed at the end of the header tab.
+*   **Start** - Text is placed at the beginning of the header tab.
+*   **Center** - Text is centered within the header tab
+*   **End** - Text is aligned at the end of the header tab.
 
 To set the horizontal text alignment of the tab header, use the following code:
 
@@ -117,16 +117,16 @@ tabView.HeaderHorizontalTextAlignment = TextAlignment.Center;
 
 {% endtabs %}
 
-![Tab header text alignment](images/HorizontalTextAlignmentCenter.png) 
+![HorizontalTextAlignmentCenter](images/HorizontalTextAlignmentCenter.png) 
 
 ## Tab header alignment 
 
-The .NET MAUI TabView allows users to customize the header position using the [TabHeaderAlignment](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SfTabView.html#Syncfusion_Maui_Toolkit_TabView_SfTabView_TabHeaderAlignment) property, providing greater flexibility in tab layout customization.
+The .NET MAUI TabView allows header position customization using the [TabHeaderAlignment](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SfTabView.html#Syncfusion_Maui_Toolkit_TabView_SfTabView_TabHeaderAlignment) property for enhanced layout flexibility. The default position is Start. Supported values include:
 
 By default, the header is positioned at the Start. This property supports the following values:
 
 *   **Start** - Positions the tab header at the beginning of the Tab View.
-*   **Center** - Aligns the tab header at the center of the Tab View.
+*   **Center** - Centers the tab header in the Tab View.
 *   **End** - Places the tab header at the end of the Tab View.
 
 
@@ -151,7 +151,7 @@ The .NET MAUI Tab View provides two options for determining how the tab bar alig
 
 ### Top
 
-In this option, the tab bar will be placed above the content region of the tab view. To set the tab bar placement to the top, use the following code:
+In this option, the tab bar will be placed above the content region of the Tab View. To set the tab bar placement to the top, use the following code:
 
 {% tabs %}
 
@@ -171,11 +171,11 @@ tabView.TabBarPlacement = TabBarPlacement.Top;
 
 The following image shows the tab bar placed at the top of the content region.
 
-![Tab Bar Placement Top](images/Tab-bar-Placement-Top.png) 
+![Top](images/Tab-bar-Placement-Top.png) 
 
 ### Bottom
 
-In this option, the tab bar will be placed below the content region of the tab view. To set the tab bar placement to the bottom, use the following code:
+In this option, the tab bar will be placed below the content region of the Tab View. To set the tab bar placement to the bottom, use the following code:
 
 {% tabs %}
 
@@ -194,13 +194,13 @@ tabView.TabBarPlacement = TabBarPlacement.Bottom;
 
 The following image illustrates the tab bar placed at the bottom of the content region.
 
-![Tab Bar Placement Bottom](images/Tab-bar-Placement-Bottom.png) 
+![Bottom](images/Tab-bar-Placement-Bottom.png) 
 
-## Tab Bar background customization
+## Tab bar background customization
 
-TYou can customize the tab bar background using the [TabBarBackground](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SfTabView.html#Syncfusion_Maui_Toolkit_TabView_SfTabView_TabBarBackground) property. You can set a solid color or a gradient color as the background.
+Customize the tab bar background using the [TabBarBackground](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SfTabView.html#Syncfusion_Maui_Toolkit_TabView_SfTabView_TabBarBackground) property. You can set a solid color or a gradient color as the background.
 
-### Solid Color 
+### Solid color 
 
 A solid color can be achieved by assigning the `SolidColorBrush` to the [TabBarBackground](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SfTabView.html#Syncfusion_Maui_Toolkit_TabView_SfTabView_TabBarBackground), which represents the color of the tab bar background.
 
@@ -224,9 +224,9 @@ tabView.TabBarBackground = Colors.LightBlue;
 
 The following image shows the tab bar with a solid color background.
 
-![Tab Bar Solid Color Bottom](images/TabBarSolidColor.png) 
+![Solid color](images/TabBarSolidColor.png) 
 
-### Gradient Color 
+### Gradient color 
 
 The background can be customized with a linear gradient and radial gradient as like below example.
 
@@ -278,6 +278,6 @@ tabView.TabBarBackground = gradientBrush;
 
 The following image shows the tab bar with a gradient color background.
 
-![Tab Bar Gradient Color Bottom](images/TabBarGradientColor.png)
+![Gradient color](images/TabBarGradientColor.png)
 
 N> View [sample](https://github.com/SyncfusionExamples/maui-toolkit-samples/tree/master/TabView/TabBarCustomization) in GitHub.
