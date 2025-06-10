@@ -446,7 +446,7 @@ this.Content = chart;
 
 {% endtabs %}
 
-![DateTimeCategory Axis support in MAUI Chart](Axis_Images/dateTimeCategory_axis.png)
+![DateTimeCategory Axis support in MAUI Chart](Axis_Images/maui_dateTimeCategory_axis.png)
 
 ### Interval
 
@@ -484,7 +484,7 @@ this.Content = chart;
 
 {% endtabs %}
 
-![DateTimeCategory Axis support in MAUI Chart](Axis_Images/dateTimeCategory_interval.png)
+![DateTimeCategory Axis support in MAUI Chart](Axis_Images/maui_dateTimeCategory_interval.png)
 
 ## Logarithmic Axis
 
