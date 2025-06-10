@@ -341,7 +341,7 @@ this.Content = chart;
 
 {% endtabs %}
 
-![DateTimeCategory Axis support in MAUI Chart](Axis_Images/MAUI_dateTimeCategory_axis.png)
+![DateTimeCategory Axis support in MAUI Chart](Axis_Images/maui_dateTimeCategory_axis.png)
 
 ### Interval
 
