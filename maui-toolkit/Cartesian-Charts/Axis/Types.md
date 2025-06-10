@@ -426,14 +426,18 @@ The `DateTimeCategoryAxis` is a specialized type of axis primarily used with fin
     <chart:SfCartesianChart.XAxes>
         <chart:DateTimeCategoryAxis/>
     </chart:SfCartesianChart.XAxes>
+    . . .
 </chart:SfCartesianChart>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-SfCartesianChart chart = new SfCartesianChart(); . . . // Create an instance of the DateTimeCategoryAxis, used for displaying DateTime values as categories 
-DateTimeCategoryAxis primaryAxis = new DateTimeCategoryAxis(); // Add the DateTimeCategoryAxis instance to the chart's XAxes collection 
+SfCartesianChart chart = new SfCartesianChart(); 
+. . . 
+// Create an instance of the DateTimeCategoryAxis, used for displaying DateTime values as categories 
+DateTimeCategoryAxis primaryAxis = new DateTimeCategoryAxis(); 
+// Add the DateTimeCategoryAxis instance to the chart's XAxes collection 
 chart.XAxes.Add(primaryAxis);
 
 this.Content = chart; 
@@ -442,10 +446,11 @@ this.Content = chart;
 
 {% endtabs %}
 
+![DateTimeCategory Axis support in MAUI Chart](Axis_Images/dateTimeCategory_axis.png)
+
 ### Interval
 
-In `DateTimeCategoryAxis`, intervals can be customized by using the Interval and IntervalType properties, similar to [DateTimeAxis](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.DateTimeAxis.html). For example, setting `Interval` as 3 and `IntervalType` as `Months` will consider 3 months as interval.
-
+In `DateTimeCategoryAxis`, intervals can be customized by using the Interval and IntervalType properties, similar to [DateTimeAxis](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.DateTimeAxis.html). For example, setting `Interval` as 5 and `IntervalType` as `Days` will consider 5 days as an interval.
 {% tabs %}
 
 {% highlight xaml %}
@@ -454,9 +459,10 @@ In `DateTimeCategoryAxis`, intervals can be customized by using the Interval and
     . . .
         <chart:SfCartesianChart.XAxes>
             <chart:DateTimeCategoryAxis 
-            Interval="3" 
-            IntervalType="Months"/> 
+            Interval="5" 
+            IntervalType="Days"/> 
         </chart:SfCartesianChart.XAxes> 
+    . . .
 </chart:SfCartesianChart>
 
 {% endhighlight %}
@@ -464,16 +470,21 @@ In `DateTimeCategoryAxis`, intervals can be customized by using the Interval and
 {% highlight c# %}
 
 SfCartesianChart chart = new SfCartesianChart(); 
-DateTimeCategoryAxis primaryAxis = new DateTimeCategoryAxis() { Interval = 3, IntervalType = DateTimeIntervalType.Months }; 
+. . .
+DateTimeCategoryAxis primaryAxis = new DateTimeCategoryAxis() 
+{ 
+    Interval = 5, 
+    IntervalType = DateTimeIntervalType.Days 
+}; 
 chart.XAxes.Add(primaryAxis);
-
+. . .
 this.Content = chart; 
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![DateTimeCategory Axis support in MAUI Chart](Axis_Images/DateTimeCategoryAxis.png)
+![DateTimeCategory Axis support in MAUI Chart](Axis_Images/dateTimeCategory_interval.png)
 
 ## Logarithmic Axis
 
