@@ -479,6 +479,9 @@ The ripple effect of the segments when the segment clicked can be customized by 
 {% endhighlight %}
 {% endtabs %}
 
+{% tabs %}
+{% highlight xaml tabtitle="MainPage.xaml.cs" hl_lines="9" %}
+
  SfSegmentedControl segmentedControl = new SfSegmentedControl();
         List<SfSegmentItem> itemList = new List<SfSegmentItem>
         {
