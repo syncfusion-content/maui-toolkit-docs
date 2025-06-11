@@ -19,7 +19,7 @@ Each data label can be represented by the following:
 
 To learn how to customize the data labels in .NET MAUI Cartesian Charts quickly, you can check the below video.
 
-{% youtube " https://youtu.be/tDwQ7h9jwWk" %}
+{% youtube "https://youtu.be/tDwQ7h9jwWk" %}
 
 ## Enable Data Labels 
 
