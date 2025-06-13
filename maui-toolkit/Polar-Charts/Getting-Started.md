@@ -21,10 +21,6 @@ Before proceeding, ensure that the following are set up:
 1. Install [.NET 8 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/8.0) or later is installed.
 2. Set up a .NET MAUI environment with Visual Studio 2022 (v17.8 or later).
 
-To get start quickly with our .NET MAUI Polar Chart, you can check the below video.
-
-{% youtube "https://youtu.be/Ga9mytwCo_s" %}
-
 ## Step 1: Create a new .NET MAUI project
 
 1. Go to **File > New > Project** and choose the **.NET MAUI App** template.

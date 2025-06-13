@@ -16,10 +16,6 @@ keywords: .net maui chart annotations, .net maui annotations customization, sync
 * Shape annotation
 * View annotation
 
-To learn how to add and customize annotations in .NET MAUI Cartesian Charts quickly, you can check the below video.
-
-{% youtube "https://youtu.be/v1u774lp9pQ" %}
-
 ## Adding Annotations
 
 To add annotations, create an instance of any type of annotation and add it to the [Annotations](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html#Syncfusion_Maui_Toolkit_Charts_SfCartesianChart_Annotations) collection. For example, the [EllipseAnnotation](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.EllipseAnnotation.html) can be added.
