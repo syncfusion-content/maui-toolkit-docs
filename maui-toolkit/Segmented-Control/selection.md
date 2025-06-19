@@ -459,11 +459,11 @@ public partial class MainPage : ContentPage
 
 ## Enable or Disable Ripple Animation
 
-The [SfSegmentedControl](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SegmentedControl.SfSegmentedControl.html?tabs=tabid-34%2Ctabid-30%2Ctabid-19%2Ctabid-16%2Ctabid-3%2Ctabid-24%2Ctabid-32%2Ctabid-8%2Ctabid-36%2Ctabid-10%2Ctabid-6%2Ctabid-14%2Ctabid-37%2Ctabid-26%2Ctabid-28%2Ctabid-22%2Ctabid-12%2Ctabid-1) provides a ripple animation that visually highlights a segment when it is tapped. This effect applies to both default segment items and items defined using custom data templates. You can enable or disable this animation using the EnableRippleEffect property. Set EnableRippleEffect to true to display the ripple effect when a segment is selected. Set it to false to disable the ripple animation.
+The [SfSegmentedControl](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SegmentedControl.SfSegmentedControl.html?tabs=tabid-34%2Ctabid-30%2Ctabid-19%2Ctabid-16%2Ctabid-3%2Ctabid-24%2Ctabid-32%2Ctabid-8%2Ctabid-36%2Ctabid-10%2Ctabid-6%2Ctabid-14%2Ctabid-37%2Ctabid-26%2Ctabid-28%2Ctabid-22%2Ctabid-12%2Ctabid-1) provides a ripple animation that visually highlights a segment when it is tapped. This effect applies to both default segment items and items defined using custom data templates. You can enable or disable this animation using the `EnableRippleEffect` property. Set `EnableRippleEffect` to true to display the ripple effect when a segment is selected. Set it to false to disable the ripple animation.
 
 
 {% tabs %}
-{% highlight xaml tabtitle="MainPage.xaml" hl_lines="2" %}
+{% highlight xaml tabtitle="MainPage.xaml" hl_lines="4" %}
 
 <ContentPage   
     xmlns:segmentedControl="clr-namespace:Syncfusion.Maui.Toolkit.SegmentedControl;assembly=Syncfusion.Maui.Toolkit">
@@ -486,7 +486,7 @@ The [SfSegmentedControl](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.
 {% endtabs %}
 
 {% tabs %}
-{% highlight xaml tabtitle="MainPage.xaml.cs" hl_lines="10" %}
+{% highlight xaml tabtitle="MainPage.xaml.cs" hl_lines="17" %}
 
 using Syncfusion.Maui.Toolkit.SegmentedControl;
 . . .
