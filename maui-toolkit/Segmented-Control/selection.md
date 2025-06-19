@@ -465,7 +465,10 @@ The [SfSegmentedControl](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.
 {% tabs %}
 {% highlight xaml tabtitle="MainPage.xaml" hl_lines="2" %}
 
-<button:SfSegmentedControl x:Name="segmentedControl"
+<ContentPage   
+    xmlns:segmentedControl="clr-namespace:Syncfusion.Maui.Toolkit.SegmentedControl;assembly=Syncfusion.Maui.Toolkit">
+
+<segmentedControl:SfSegmentedControl x:Name="segmentedControl"
                            EnableRippleEffect="False">
     <button:SfSegmentedControl.ItemsSource>
         <x:Array Type="{x:Type x:String}">
@@ -474,8 +477,10 @@ The [SfSegmentedControl](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.
                 <x:String>Month</x:String>
                 <x:String>Year</x:String>
         </x:Array>
-    </button:SfSegmentedControl.ItemsSource>
-</button:SfSegmentedControl>
+    </segmentedControl:SfSegmentedControl.ItemsSource>
+</segmentedControl:SfSegmentedControl>
+
+</ContentPage>
 
 {% endhighlight %}
 {% endtabs %}
@@ -483,17 +488,27 @@ The [SfSegmentedControl](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.
 {% tabs %}
 {% highlight xaml tabtitle="MainPage.xaml.cs" hl_lines="10" %}
 
-SfSegmentedControl segmentedControl = new SfSegmentedControl();
-List<SfSegmentItem> itemList = new List<SfSegmentItem>
+using Syncfusion.Maui.Toolkit.SegmentedControl;
+. . .
+
+public partial class MainPage : ContentPage
 {
-    new SfSegmentItem() {Text = "Day"},
-    new SfSegmentItem() {Text = "Week"},
-    new SfSegmentItem() {Text = "Month"},
-    new SfSegmentItem() {Text = "Year"},
-};
-segmentedControl.ItemsSource = itemList;
-segmentedControl.EnableRippleEffect = false;
-this.Content = segmentedControl;
+    public MainPage()
+    {
+        InitializeComponent();
+        SfSegmentedControl segmentedControl = new SfSegmentedControl();
+        List<SfSegmentItem> itemList = new List<SfSegmentItem>
+        {
+            new SfSegmentItem() {Text = "Day"},
+            new SfSegmentItem() {Text = "Week"},
+            new SfSegmentItem() {Text = "Month"},
+            new SfSegmentItem() {Text = "Year"},
+        };
+        segmentedControl.ItemsSource = itemList;
+        segmentedControl.EnableRippleEffect = false;
+        this.Content = segmentedControl;
+    }
+}
 
 {% endhighlight %}
 {% endtabs %}
