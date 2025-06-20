@@ -463,7 +463,7 @@ The [SfSegmentedControl](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.
 
 
 {% tabs %}
-{% highlight xaml tabtitle="MainPage.xaml" hl_lines="4" %}
+{% highlight xaml tabtitle="MainPage.xaml" hl_lines="5" %}
 
 <ContentPage   
     xmlns:segmentedControl="clr-namespace:Syncfusion.Maui.Toolkit.SegmentedControl;assembly=Syncfusion.Maui.Toolkit">
