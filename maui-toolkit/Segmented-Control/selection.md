@@ -463,13 +463,13 @@ The [SfSegmentedControl](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.
 
 
 {% tabs %}
-{% highlight xaml tabtitle="MainPage.xaml" hl_lines="4" %}
+{% highlight xaml tabtitle="MainPage.xaml" hl_lines="5" %}
 
 <ContentPage   
     xmlns:segmentedControl="clr-namespace:Syncfusion.Maui.Toolkit.SegmentedControl;assembly=Syncfusion.Maui.Toolkit">
 
 <segmentedControl:SfSegmentedControl x:Name="segmentedControl"
-                           EnableRippleEffect="False">
+                                     EnableRippleEffect="False">
     <button:SfSegmentedControl.ItemsSource>
         <x:Array Type="{x:Type x:String}">
                 <x:String>Day</x:String>
@@ -483,10 +483,7 @@ The [SfSegmentedControl](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.
 </ContentPage>
 
 {% endhighlight %}
-{% endtabs %}
-
-{% tabs %}
-{% highlight xaml tabtitle="MainPage.xaml.cs" hl_lines="17" %}
+{% highlight xaml tabtitle="MainPage.xaml.cs" hl_lines="18" %}
 
 using Syncfusion.Maui.Toolkit.SegmentedControl;
 . . .
