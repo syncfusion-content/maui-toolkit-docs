@@ -1,18 +1,18 @@
 ---
 layout: post
 title: Swiping in .NET MAUI Bottom Sheet | Syncfusion®
-description: Learn here all about swiping support in Syncfusion® .NET MAUI Bottom Sheet (SfBottomSheet) control and more.
+description: Learn about swiping support in the Syncfusion® .NET MAUI Bottom Sheet (SfBottomSheet) control and more.
 platform: maui-toolkit
-control: BottomSheet
-documentation: ug
+control: SfBottomSheet
+documentation: UG
 ---
 # Swiping in .NET MAUI Bottom Sheet (SfBottomSheet)
 
-The [BottomSheet](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.BottomSheet.SfBottomSheet.html) supports the swiping for expanding the sheet. 
+The [Bottom Sheet](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.BottomSheet.SfBottomSheet.html) supports swiping to expand the sheet.
 
-## Enable Swiping
+## Enable swiping
 
-The [EnableSwiping](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.BottomSheet.SfBottomSheet.html#Syncfusion_Maui_Toolkit_BottomSheet_SfBottomSheet_EnableSwiping) property allows you to enable or disable swipe functionality in the [BottomSheet](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.BottomSheet.SfBottomSheet.html). By default, the EnableSwiping property is set to `true`.
+The [EnableSwiping](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.BottomSheet.SfBottomSheet.html#Syncfusion_Maui_Toolkit_BottomSheet_SfBottomSheet_EnableSwiping) property allows you to enable or disable swipe functionality in the [Bottom Sheet](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.BottomSheet.SfBottomSheet.html). By default, the EnableSwiping property is set to `true`.
 
 {% tabs %}	
 {% highlight xaml %}
@@ -44,4 +44,4 @@ private void OnListViewItemTapped(object? sender, ItemTappedEventArgs e)
 
 {% endhighlight %}
 
-![Swiping Image for BottomSheet](images/swiping.gif)
+![Swiping](images/swiping.gif)

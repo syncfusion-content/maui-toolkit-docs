@@ -1,15 +1,15 @@
 ---
 layout: post
-title: The .NET MAUI Scale Animation | Effects View control | Syncfusion®
-description: Learn here all about scale effect support in Syncfusion® .NET MAUI Effects View (SfEffectsView) control and more.
+title: The .NET MAUI Scale Animation | Effects View Control | Syncfusion®
+description: Learn all about scale effect support in Syncfusion® .NET MAUI Effects View (SfEffectsView) control and more.
 platform: maui-toolkit
-control: Effects View
-documentation: ug
+control: SfEffectsView
+documentation: UG
 ---
 
 # Scale Effect in .NET MAUI Effects View (SfEffectsView)
 
-[SfEffects.Scale](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.EffectsView.SfEffects.html#Syncfusion_Maui_Toolkit_EffectsView_SfEffects_Scale) is a smooth transition on the size of the [SfEffectsView.Content](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SfContentView.html#Syncfusion_Maui_Toolkit_SfContentView_Content) from its actual size to the size calculated based on [ScaleFactor](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.EffectsView.SfEffectsView.html#Syncfusion_Maui_Toolkit_EffectsView_SfEffectsView_ScaleFactor) in pixels.
+The [SfEffects.Scale](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.EffectsView.SfEffects.html#Syncfusion_Maui_Toolkit_EffectsView_SfEffects_Scale) provides a smooth transition in the size of the [SfEffectsView.Content](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SfContentView.html#Syncfusion_Maui_Toolkit_SfContentView_Content), adjusting from its actual size to a new size based on the [ScaleFactor](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.EffectsView.SfEffectsView.html#Syncfusion_Maui_Toolkit_EffectsView_SfEffectsView_ScaleFactor) specified in pixels.
 
 {% tabs %} 
 
@@ -45,4 +45,4 @@ this.Content = effectsView;
 
 {% endtabs %}
 
-![.net maui scale animation](Effects_images/net_maui_scale_animation.png)
+![Scale animation](Effects_images/net_maui_scale_animation.png)

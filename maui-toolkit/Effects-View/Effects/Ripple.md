@@ -1,15 +1,15 @@
 ---
 layout: post
-title: The .NET MAUI Ripple Effects | Effects View control | Syncfusion®
-description: Learn here all about ripple effect support in Syncfusion® .NET MAUI Effects View (SfEffectsView) control and more.
+title: The .NET MAUI Ripple Effects | Effects View Control | Syncfusion®
+description: Learn all about ripple effect support in Syncfusion® .NET MAUI Effects View (SfEffectsView) control and more.
 platform: maui-toolkit
-control: Effects View
-documentation: ug
+control: SfEffectsView
+documentation: UG
 ---
 
 # Ripple Effect in .NET MAUI Effects View (SfEffectsView)
 
-The [SfEffects.Ripple](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.EffectsView.SfEffects.html#Syncfusion_Maui_Toolkit_EffectsView_SfEffects_Ripple) is a expandable circle, which is initially placed on the tapped location, and it grows till the whole layout is filled. [SfEffects.Ripple](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.EffectsView.SfEffects.html#Syncfusion_Maui_Toolkit_EffectsView_SfEffects_Ripple) is rendered based on [InitialRippleFactor](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.EffectsView.SfEffectsView.html#Syncfusion_Maui_Toolkit_EffectsView_SfEffectsView_InitialRippleFactor).
+The [SfEffects.Ripple](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.EffectsView.SfEffects.html#Syncfusion_Maui_Toolkit_EffectsView_SfEffects_Ripple) is an expandable circle that is initially placed at the tapped location and grows until the whole layout is filled. The [SfEffects.Ripple](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.EffectsView.SfEffects.html#Syncfusion_Maui_Toolkit_EffectsView_SfEffects_Ripple) is rendered based on the [InitialRippleFactor](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.EffectsView.SfEffectsView.html#Syncfusion_Maui_Toolkit_EffectsView_SfEffectsView_InitialRippleFactor).
 
 {% tabs %} 
 
@@ -38,4 +38,4 @@ this.Content = effectsView;
 
 {% endtabs %}
 
-![.net maui ripple effect](Effects_images/net_maui_ripple_effect.gif)
+![Ripple effect](Effects_images/net_maui_ripple_effect.gif)

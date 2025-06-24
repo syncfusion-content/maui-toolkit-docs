@@ -1,15 +1,15 @@
 ---
 layout: post
-title: The .NET MAUI Highlight Effects | Effects View control | Syncfusion®
-description: Learn here all about highlight effect support in Syncfusion® .NET MAUI Effects View (SfEffectsView) control and more.
+title: The .NET MAUI Highlight Effects | Effects View Control | Syncfusion®
+description: Learn about highlight effect support in Syncfusion® .NET MAUI Effects View (SfEffectsView) control and more.
 platform: maui-toolkit
-control: Effects View
-documentation: ug
+control: SfEffectsView
+documentation: UG
 ---
 
 # Highlight Effect in .NET MAUI Effects View (SfEffectsView)
 
-[SfEffects.Highlight](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.EffectsView.SfEffects.html#Syncfusion_Maui_Toolkit_EffectsView_SfEffects_Highlight) is a smooth transition on the background color of [SfEffectsView](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.EffectsView.SfEffectsView.html)
+[SfEffects.Highlight](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.EffectsView.SfEffects.html#Syncfusion_Maui_Toolkit_EffectsView_SfEffects_Highlight) provides a smooth transition on the background color of the [SfEffectsView](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.EffectsView.SfEffectsView.html)
 
 {% tabs %} 
 
@@ -41,4 +41,4 @@ this.Content = effectsView;
 
 {% endtabs %}
 
-![.net maui highlight effect](Effects_images/net_maui_highlight_effect.png)
+![Highlight effect](Effects_images/net_maui_highlight_effect.png)

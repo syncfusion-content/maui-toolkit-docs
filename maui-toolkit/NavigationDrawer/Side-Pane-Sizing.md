@@ -1,17 +1,17 @@
 ---
 layout: post
-title: Setting Sliding Panel size in .NET MAUI Navigation Drawer | Syncfusion®
-description: Learn here all about Setting Sliding Panel size support in Syncfusion® .NET MAUI Navigation Drawer (SfNavigationDrawer) control and more.
+title: Setting Sliding Panel Size in .NET MAUI Navigation Drawer | Syncfusion®
+description: Learn all about setting Sliding Panel size support in the Syncfusion® .NET MAUI Navigation Drawer (SfNavigationDrawer) control and more.
 platform: maui-toolkit
-control: NavigationDrawer
-documentation: ug
+control: SfNavigationDrawer
+documentation: UG
 ---
 
 # Setting Sliding Panel Size in .NET MAUI Navigation Drawer
 
 The size of the side pane can be adjusted using the [DrawerHeight](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NavigationDrawer.DrawerSettings.html#Syncfusion_Maui_Toolkit_NavigationDrawer_DrawerSettings_DrawerHeight) and [DrawerWidth](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NavigationDrawer.DrawerSettings.html#Syncfusion_Maui_Toolkit_NavigationDrawer_DrawerSettings_DrawerWidth) properties.
 
-## Drawer Height
+## Drawer height
 
 The [DrawerHeight](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NavigationDrawer.DrawerSettings.html#Syncfusion_Maui_Toolkit_NavigationDrawer_DrawerSettings_DrawerHeight) property changes the height of the side pane when the [Position](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NavigationDrawer.DrawerSettings.html#Syncfusion_Maui_Toolkit_NavigationDrawer_DrawerSettings_Position) is set to [Top](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NavigationDrawer.Position.html#Syncfusion_Maui_Toolkit_NavigationDrawer_Position_Top) or [Bottom](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NavigationDrawer.Position.html#Syncfusion_Maui_Toolkit_NavigationDrawer_Position_Bottom).
 
@@ -55,9 +55,9 @@ this.Content = navigationDrawer;
 
 {% endtabs %}
 
-![Drawer height](Images/panel-size/navigation_drawer_pane_height.png)
+![DrawerHeight](Images/panel-size/navigation_drawer_pane_height.png)
 
-## Drawer Width
+## Drawer width
 
 The [DrawerWidth](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NavigationDrawer.DrawerSettings.html#Syncfusion_Maui_Toolkit_NavigationDrawer_DrawerSettings_DrawerWidth) property changes the width of the side pane when the [Position](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NavigationDrawer.DrawerSettings.html#Syncfusion_Maui_Toolkit_NavigationDrawer_DrawerSettings_Position) is set to [Left](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NavigationDrawer.Position.html#Syncfusion_Maui_Toolkit_NavigationDrawer_Position_Left) or [Right](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NavigationDrawer.Position.html#Syncfusion_Maui_Toolkit_NavigationDrawer_Position_Right).
 
@@ -103,4 +103,4 @@ this.Content = navigationDrawer;
 
 {% endtabs %}
 
-![Drawer width](Images/panel-size/navigation_drawer_pane_width.png)
+![DrawerWidth](Images/panel-size/navigation_drawer_pane_width.png)
