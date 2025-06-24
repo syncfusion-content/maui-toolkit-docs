@@ -927,7 +927,7 @@ This page lists the keys for each control and the element to which it is mapped 
     </tr>
 
     <tr>
-        <td rowspan="5">
+        <td rowspan="15">
             SfOtpInputStyles 
             <br/>
             <br/>
