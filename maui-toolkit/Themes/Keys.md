@@ -1,7 +1,7 @@
 ---
 layout: post
 title: About Keys for Syncfusion® Controls | Syncfusion®
-description: Detailed information on the keys mapped to the UI elements of all Syncfusion® controls.
+description: Explore key mappings for Syncfusion® controls in the documentation, detailing UI element interactions for enhanced user experience.
 platform: maui-toolkit
 control: General
 documentation: UG
@@ -927,7 +927,7 @@ This page lists the keys for each control and the element to which it is mapped 
     </tr>
 
     <tr>
-        <td rowspan="5">
+        <td rowspan="15">
             SfOtpInputStyles 
             <br/>
             <br/>
@@ -997,6 +997,66 @@ This page lists the keys for each control and the element to which it is mapped 
     <tr>
         <td> SfOtpInputPlaceholderColor <br/><br/></td>
         <td> Placeholder color of the OTP Input.<br/><br/>
+        </td>
+    </tr>
+
+    <tr>
+        <td> SfOtpInputSuccessStroke <br/><br/></td>
+        <td>Border color when OTP Input is successfully validated.<br/><br/>
+        </td>
+    </tr>
+
+    <tr>
+        <td> SfOtpInputWarningStroke <br/><br/></td>
+        <td> Border color when there's a warning state in OTP Input.<br/><br/>
+        </td>
+    </tr>
+
+    <tr>
+        <td> SfOtpInputErrorStroke <br/><br/></td>
+        <td> Border color when there's an error state in OTP Input.<br/><br/>
+        </td>
+    </tr>
+
+    <tr>
+        <td> SfOtpInputDefaultBackground <br/><br/></td>
+        <td> Default background color of the OTP Input.<br/><br/>
+        </td>
+    </tr>
+
+    <tr>
+        <td> SfOtpInputHoveredBackground <br/><br/></td>
+        <td> Background color when hovered over OTP Input.<br/><br/>
+        </td>
+    </tr>
+
+    <tr>
+        <td> SfOtpInputBorderHovered <br/><br/></td>
+        <td> Border color when hovered over OTP Input.<br/><br/>
+        </td>
+    </tr>
+
+    <tr>
+        <td> SfOtpInputBorderPressed <br/><br/></td>
+        <td> Border color when OTP Input is pressed.<br/><br/>
+        </td>
+    </tr>
+
+    <tr>
+        <td> SfOtpInputBorderDisabled <br/><br/></td>
+        <td> Border color when OTP Input is disabled.<br/><br/>
+        </td>
+    </tr>
+
+    <tr>
+        <td> SfOtpInputBackgroundDisabled <br/><br/></td>
+        <td> Background color when OTP Input is disabled.<br/><br/>
+        </td>
+    </tr>
+    
+    <tr>
+        <td> SfOtpInputDisabledTextColor <br/><br/></td>
+        <td> Text color when OTP Input is disabled.<br/><br/>
         </td>
     </tr>
 
