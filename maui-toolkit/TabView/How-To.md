@@ -1,17 +1,17 @@
 ---
 layout: post
-title: Select tab in .NET MAUI Tab View (SfTabView) | Syncfusion®
-description: Learn here all about select tab item programmatically in Syncfusion® .NET MAUI Tab View (SfTabView) control and more.
+title: Select Tab in .NET MAUI Tab View (SfTabView) | Syncfusion®
+description: Learn all about selecting a tab item programmatically in the Syncfusion® .NET MAUI Tab View (SfTabView) control and more.
 platform: maui-toolkit
-control: Tab View
-documentation: ug
+control: SfTabView
+documentation: UG
 ---
 
-# How to select a tab item programmatically? 
+# How to Select a Tab Item Programmatically?
 
 ## Programmatically select the tab item
 
-You can programmatically select a tab item using the [SelectedIndex](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SfTabView.html#Syncfusion_Maui_Toolkit_TabView_SfTabView_SelectedIndex) property of `SfTabView`, as shown in the following code snippet.
+You can use the [SelectedIndex](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SfTabView.html#Syncfusion_Maui_Toolkit_TabView_SfTabView_SelectedIndex) property of `SfTabView` to programmatically select a tab item. Below is a code snippet demonstrating how to do this:
 
 {% tabs %}
 
@@ -35,7 +35,7 @@ The following image shows the tab item selected programmatically using the `Sele
 
 ## Get the selected tab item
 
-The [IsSelected](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SfTabItem.html#Syncfusion_Maui_Toolkit_TabView_SfTabItem_IsSelected) property indicates whether a tab item is active. You can use this property to determine the selected item in the tab view, as shown in the following code snippet.
+The [IsSelected](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SfTabItem.html#Syncfusion_Maui_Toolkit_TabView_SfTabItem_IsSelected) property indicates whether the tab item is active. This property can be used, as shown in the code snippet below, to check and perform actions on the selected tab item.
 
 {% tabs %}
 
@@ -72,6 +72,6 @@ private void TabView_SelectionIndexChanged(object? sender, TabSelectionChangedEv
 
 {% endtabs %}
 
-The following image shows a tab item selected in the .NET MAUI TabView:
+The following image shows a tab item selected in the .NET MAUI Tab View:
 
-![Selected tab item in .NET MAUI TabView](images/SelectedIndex.png)
+![Selected tab item](images/SelectedIndex.png)
