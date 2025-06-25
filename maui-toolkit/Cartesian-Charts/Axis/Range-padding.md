@@ -10,7 +10,7 @@ keywords: .net maui chart axis range padding, .net maui chart range padding cust
 
 # Axis Range Padding in .NET MAUI Chart
 
-Range padding is used to apply the minimum and maximum extremes of chart axis range by using the [RangePadding](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.NumericalAxis.html#Syncfusion_Maui_Toolkit_Charts_NumericalAxis_RangePadding) property. The [NumericalAxis](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.NumericalAxis.html) and [DateTimeAxis](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.DateTimeAxis.html) have a [RangePadding](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.NumericalAxis.html#Syncfusion_Maui_Toolkit_Charts_NumericalAxis_RangePadding) property that can be used to add padding to the range of the chart axis.
+Range padding is used to adjust the minimum and maximum extremes of chart axis range by using the [RangePadding](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.NumericalAxis.html#Syncfusion_Maui_Toolkit_Charts_NumericalAxis_RangePadding) property. The [NumericalAxis](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.NumericalAxis.html) and [DateTimeAxis](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.DateTimeAxis.html) have a [RangePadding](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.NumericalAxis.html#Syncfusion_Maui_Toolkit_Charts_NumericalAxis_RangePadding) property that can be used to add padding to the range of the chart axis.
 
 ## Numerical Range Padding
 
@@ -68,7 +68,7 @@ this.Content = chart;
 
 {% endtabs %}
 
-![NumericalAxis range padding support in MAUI Chart](Axis_Images/maui_chart_axis_numerical-range-padding_additional.jpg)
+![NumericalAxis range padding support in .NET MAUI Chart](Axis_Images/maui_chart_axis_numerical-range-padding_additional.jpg)
 
 **None**
 
@@ -108,7 +108,7 @@ this.Content = chart;
 
 {% endtabs %}
 
-![NumericalAxis range padding none in MAUI Chart](Axis_Images/maui_chart_axis_numerical-range-padding_none.jpg)
+![NumericalAxis range padding none in .NET MAUI Chart](Axis_Images/maui_chart_axis_numerical-range-padding_none.jpg)
 
 **Round**
 
@@ -148,7 +148,7 @@ this.Content = chart;
 
 {% endtabs %}
 
-![NumericalAxis range padding round in MAUI Chart](Axis_Images/maui_chart_axis_numerical-range-padding_round.jpg)
+![NumericalAxis range padding round in .NET MAUI Chart](Axis_Images/maui_chart_axis_numerical-range-padding_round.jpg)
 
 ## DateTime Range Padding
 
@@ -161,7 +161,7 @@ The [RangePadding](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.T
 * `RoundStart` - The visible start range round to nearest interval value.
 * `RoundEnd` - The visible end range round to nearest interval value.
 * `PrependInterval` - The visible start range will be prepended with an additional interval.
-* `AppendInterval` - The visible start range will be appended with an additional interval.
+* `AppendInterval` - The visible end range will be appended with an additional interval.
 
 **Additional**
 
@@ -202,7 +202,7 @@ this.Content = chart;
 
 {% endtabs %}
 
-![DateTimeAxis range padding support in MAUI Chart](Axis_Images/maui_chart_axis_datetime-range-padding_additional.jpg)
+![DateTimeAxis range padding support in .NET MAUI Chart](Axis_Images/maui_chart_axis_datetime-range-padding_additional.jpg)
 
 **None**
 
@@ -242,7 +242,7 @@ this.Content = chart;
 
 {% endtabs %}
 
-![DateTimeAxis range padding none in MAUI Chart](Axis_Images/maui_chart_axis_datetime-range-padding_none.jpg)
+![DateTimeAxis range padding none in .NET MAUI Chart](Axis_Images/maui_chart_axis_datetime-range-padding_none.jpg)
 
 **Round**
 
@@ -282,4 +282,4 @@ this.Content = chart;
 
 {% endtabs %}
 
-![DateTimeAxis range padding round in MAUI Chart](Axis_Images/maui_chart_axis_datetime-range-padding_round.jpg)
+![DateTimeAxis range padding round in .NET MAUI Chart](Axis_Images/maui_chart_axis_datetime-range-padding_round.jpg)

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Appearance in .NET MAUI Chart control  Syncfusion
+title: Appearance in .NET MAUI Chart control | Syncfusion
 description: Learn here all about appearance customization in .NET MAUI Chart (SfCartesianChart), its elements and more.
 platform: maui-toolkit
 control: SfCartesianChart
@@ -9,15 +9,15 @@ keywords: .net maui cartesian chart appearance, .net maui chart appearance custo
 ---
 
 # Appearance in .NET MAUI Cartesian Chart
-The appearance of [SfCartesianChart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html) can be customized by using the predefined brushes, custom brushes and gradient, which allows to enrich the application.
+The appearance of [SfCartesianChart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html) can be customized by using predefined brushes, custom brushes, and gradients, which allows you to enhance your application's visual appeal.
 
 ## Applying PaletteBrushes for Chart
 
-By default, chart applies a set of predefined brushes to the series in a predefined order. [SfCartesianChart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html) provides [PaletteBrushes](hhttps://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html#Syncfusion_Maui_Toolkit_Charts_SfCartesianChart_PaletteBrushes) property for applying various kinds of custom palettes brushes.
+By default, chart applies a set of predefined brushes to the series in a predefined order. [SfCartesianChart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html) provides the [PaletteBrushes](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html#Syncfusion_Maui_Toolkit_Charts_SfCartesianChart_PaletteBrushes) property for applying various kinds of custom palette brushes.
 
 ### Custom PaletteBrushes
 
-[SfCartesianChart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html) provides support to define own brushes for the chart with preferred order by using the [PaletteBrushes](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html#Syncfusion_Maui_Toolkit_Charts_SfCartesianChart_PaletteBrushes) property, as shown in the following code example.
+[SfCartesianChart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html) provides support to define your own brushes for the chart with preferred order by using the [PaletteBrushes](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html#Syncfusion_Maui_Toolkit_Charts_SfCartesianChart_PaletteBrushes) property, as shown in the following code example.
 
 {% tabs %}
 
@@ -76,6 +76,7 @@ public class ViewModel
 
     // Create a new list to hold custom brushes for the chart.
 	public List<Brush> CustomBrushes { get; set; }
+
 	public ViewModel()
 	{
 		CustomBrushes = new List<Brush>();
@@ -123,9 +124,11 @@ public class ViewModel
      
 	// Create a new list to hold gradient brushes for the chart.
 	public List<Brush> CustomBrushes { get; set; }
+
 	public ViewModel()
 	{
 		CustomBrushes = new List<Brush>();
+
 		LinearGradientBrush gradientColor1 = new LinearGradientBrush();
 		gradientColor1.GradientStops = new GradientStopCollection()
 		{
@@ -177,9 +180,9 @@ public class ViewModel
 
 ![Gradient support in MAUI Chart](Appearance_images/MAUI_chart_gradient_color.png)
 
-## Plotting Area Customization:
+## Plotting Area Customization
 
-[SfCartesianChart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html) allows you to add any view to the chart plot area, which is useful for adding any relevant data, a watermark, or a color gradient to the background of the chart.
+[SfCartesianChart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html) allows you to add any view to the chart plot area, which is useful for adding relevant data, a watermark, or a color gradient to the background of the chart.
 
 {% tabs %}
 
@@ -211,6 +214,7 @@ public class ViewModel
 
 SfCartesianChart chart = new SfCartesianChart();
 AbsoluteLayout absoluteLayout = new AbsoluteLayout();
+
 var copyRight = new Label() 
 {
 	Text = "Copyright @ 2001 - 2022 Syncfusion Inc",
@@ -221,9 +225,11 @@ var copyRight = new Label()
 AbsoluteLayout.SetLayoutBounds(copyRight, new Rect(1, 1, -1, -1));
 AbsoluteLayout.SetLayoutFlags(copyRight, Microsoft.Maui.Layouts.AbsoluteLayoutFlags.PositionProportional);
 absoluteLayout.Children.Add(copyRight);
+
 var watermark = new Label()
 {
-	Text = "CONFIDENTIAL",Rotation = 340,
+    	Text = "CONFIDENTIAL",
+    	Rotation = 340,
 	FontSize = 80,
 	FontAttributes = FontAttributes.Bold,
 	TextColor = Colors.Gray, 
@@ -233,6 +239,7 @@ var watermark = new Label()
 AbsoluteLayout.SetLayoutBounds(watermark, new Rect(0.5, 0.5, -1, -1));
 AbsoluteLayout.SetLayoutFlags(watermark, Microsoft.Maui.Layouts.AbsoluteLayoutFlags.PositionProportional);
 absoluteLayout.Children.Add(watermark);
+
 chart.PlotAreaBackgroundView = absoluteLayout;
 this.Content = chart;
 

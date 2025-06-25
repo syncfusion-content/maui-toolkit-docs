@@ -14,7 +14,7 @@ The [SfCartesianChart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Ma
 
 ## Enable data point selection
 
-To enable the data point selection, create an instance of the series [SelectionBehavior](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartSeries.html#Syncfusion_Maui_Toolkit_Charts_ChartSeries_SelectionBehavior) property.
+To enable data point selection, create an instance of the series [SelectionBehavior](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartSeries.html#Syncfusion_Maui_Toolkit_Charts_ChartSeries_SelectionBehavior) property.
 
 {% tabs %}
 
@@ -41,7 +41,7 @@ SfCartesianChart chart = new SfCartesianChart();
 . . .
 // Initialize data point selection behavior
 DataPointSelectionBehavior selection = new DataPointSelectionBehavior();
-selection.SelectionBrush=Color.FromArgb("#314A6E");
+selection.SelectionBrush = Color.FromArgb("#314A6E");
 
 ColumnSeries series = new ColumnSeries()
 {
@@ -58,7 +58,7 @@ this.Content = chart;
 
 ## Enable series selection
 
-To enable the series selection, create an instance of the cartesian chart [SelectionBehavior](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html#Syncfusion_Maui_Toolkit_Charts_SfCartesianChart_SelectionBehavior) property.
+To enable series selection, create an instance of the cartesian chart [SelectionBehavior](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html#Syncfusion_Maui_Toolkit_Charts_SfCartesianChart_SelectionBehavior) property.
 
 {% tabs %}
 
@@ -90,7 +90,7 @@ SfCartesianChart chart = new SfCartesianChart();
 . . .
 // Create a series selection behavior for the chart
 SeriesSelectionBehavior selection = new SeriesSelectionBehavior();
-selection.SelectionBrush=Color.FromArgb("#314A6E");
+selection.SelectionBrush = Color.FromArgb("#314A6E");
 
 // Apply the series selection behavior to the chart
 chart.SelectionBehavior = selection;
@@ -120,7 +120,7 @@ The following properties are used to customize the [ChartSelectionBehavior](http
 
 * [Type](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartSelectionBehavior.html#Syncfusion_Maui_Toolkit_Charts_ChartSelectionBehavior_Type) - Gets or sets the [ChartSelectionType](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartSelectionType.html) for the selection behavior.     
 Chart selection types:
-    * `Single` - The user can select only one item at a time
+    * `Single` - The user can select only one item at a time.
     * `SingleDeselect` - The user can select and deselect only one item at a time.
     * `Multiple` - The user can select and deselect multiple items at a time.
     * `None` - The user can't select any item.
