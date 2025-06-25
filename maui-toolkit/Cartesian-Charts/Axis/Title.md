@@ -80,7 +80,8 @@ The [Title](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.
 
 ## Label extent
 
-The [LabelExtent](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxis.html#Syncfusion_Maui_Toolkit_Charts_ChartAxis_LabelExtent) property allows you to set the gap between axis labels and title. This is typically used to maintain a fixed gap between axis labels and title when the digits of the axis value change in live updates.
+The [LabelExtent](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxis.html#Syncfusion_Maui_Toolkit_Charts_ChartAxis_LabelExtent) property allows you to set the gap between axis labels and the title. This is typically used to maintain a fixed gap between axis labels and the title when the digits of the axis values change during live updates.
+
 
 {% tabs %}
 

@@ -102,7 +102,7 @@ this.Content = chart;
 
 {% endtabs %}
 
-### Marker customization
+### Marker Customization
 
 To change the series markers appearance, create an instance of the [MarkerSettings](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.AreaSeries.html#Syncfusion_Maui_Toolkit_Charts_AreaSeries_MarkerSettings) property. The following properties are used to customize marker appearance:
 

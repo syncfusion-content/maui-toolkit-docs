@@ -82,10 +82,10 @@ The [Width](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.
     </chart:SfCartesianChart.YAxes>  
 
     <chart:ColumnSeries ItemsSource="{Binding Data}"
-                       XBindingPath="XValue"
-                       YBindingPath="YValue"
-                       Spacing="0.5"
-                       Width="0.6"/>
+                        XBindingPath="XValue"
+                        YBindingPath="YValue"
+                        Spacing="0.5"
+                        Width="0.6"/>
 </chart:SfCartesianChart>
 
 {% endhighlight %}

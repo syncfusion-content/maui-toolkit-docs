@@ -14,15 +14,15 @@ A plot band, also known as a stripline, allows for shading specific regions or r
 
 Plot bands are classified into [NumericalPlotBand](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.NumericalPlotBand.html) and [DateTimePlotBand](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.DateTimePlotBand.html). Based on the axis type, plot bands are drawn using these classifications. The following properties are used to configure the plot band:
 
-* [`Size`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartPlotBand.html#Syncfusion_Maui_Toolkit_Charts_ChartPlotBand_Size) - Determines how far the plot band should expand. This is applicable only when the end value is not specified.
-* [`SizeType`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.DateTimePlotBand.html#Syncfusion_Maui_Toolkit_Charts_DateTimePlotBand_SizeType) - Specifies the date-time unit of the value in the `Size` property. The values can be year, month, day, hour, minute, second, and millisecond.
-* [`Text`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartPlotBand.html#Syncfusion_Maui_Toolkit_Charts_ChartPlotBand_Text) - Sets the text of the plot band.
-* [`Fill`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartPlotBand.html#Syncfusion_Maui_Toolkit_Charts_ChartPlotBand_Fill) - Sets the fill color of the plot band.
-* [`Stroke`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartPlotBand.html#Syncfusion_Maui_Toolkit_Charts_ChartPlotBand_Stroke) - Sets the stroke color of the plot band.
-* [`StrokeWidth`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartPlotBand.html#Syncfusion_Maui_Toolkit_Charts_ChartPlotBand_StrokeWidth) - Sets the stroke width of the plot band.
-* [`StrokeDashArray`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartPlotBand.html#Syncfusion_Maui_Toolkit_Charts_ChartPlotBand_StrokeDashArray) - Defines the stroke dash pattern.
-* [`IsVisible`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartPlotBand.html#Syncfusion_Maui_Toolkit_Charts_ChartPlotBand_IsVisible) - Controls the visibility of the plot band in chart axis.
-* [`IsRepeatable`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartPlotBand.html#Syncfusion_Maui_Toolkit_Charts_ChartPlotBand_IsRepeatable) - Specifies whether the plot band should be repeated at specified intervals.
+* [Size](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartPlotBand.html#Syncfusion_Maui_Toolkit_Charts_ChartPlotBand_Size) - Determines how far the plot band should expand. This is applicable only when the end value is not specified.
+* [SizeType](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.DateTimePlotBand.html#Syncfusion_Maui_Toolkit_Charts_DateTimePlotBand_SizeType) - Specifies the date-time unit of the value in the `Size` property. The values can be year, month, day, hour, minute, second, and millisecond.
+* [Text](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartPlotBand.html#Syncfusion_Maui_Toolkit_Charts_ChartPlotBand_Text) - Sets the text of the plot band.
+* [Fill](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartPlotBand.html#Syncfusion_Maui_Toolkit_Charts_ChartPlotBand_Fill) - Sets the fill color of the plot band.
+* [Stroke](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartPlotBand.html#Syncfusion_Maui_Toolkit_Charts_ChartPlotBand_Stroke) - Sets the stroke color of the plot band.
+* [StrokeWidth](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartPlotBand.html#Syncfusion_Maui_Toolkit_Charts_ChartPlotBand_StrokeWidth) - Sets the stroke width of the plot band.
+* [StrokeDashArray](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartPlotBand.html#Syncfusion_Maui_Toolkit_Charts_ChartPlotBand_StrokeDashArray) - Defines the stroke dash pattern.
+* [IsVisible](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartPlotBand.html#Syncfusion_Maui_Toolkit_Charts_ChartPlotBand_IsVisible) - Controls the visibility of the plot band in chart axis.
+* [IsRepeatable](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartPlotBand.html#Syncfusion_Maui_Toolkit_Charts_ChartPlotBand_IsRepeatable) - Specifies whether the plot band should be repeated at specified intervals.
 
 ## Numerical PlotBand 
 
@@ -64,7 +64,9 @@ NumericalPlotBand plotBand = new NumericalPlotBand()
     Fill = Colors.Orange
 };
 
-numericalPlotBandCollection.Add(plotBand); 
+// Add the configured plot band to the plot band collection.
+numericalPlotBandCollection.Add(plotBand);
+// Assign the defined plot bands to the numerical axis of the chart.
 numericalAxis.PlotBands = numericalPlotBandCollection; 
 chart.YAxes.Add(numericalAxis);
 ...
@@ -137,9 +139,9 @@ this.Content = chart;
 
 The Plot Band Recurrence feature allows plot bands to be drawn repeatedly at regular intervals within a chart. This functionality is especially beneficial when you need to highlight events that occur repeatedly over the timeline of a chart.
 
-* [`RepeatEvery`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartPlotBand.html#Syncfusion_Maui_Toolkit_Charts_ChartPlotBand_RepeatEvery) - Specifies the frequency at which the plot band is repeated.
-* [`RepeatEveryType`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.DateTimePlotBand.html#Syncfusion_Maui_Toolkit_Charts_DateTimePlotBand_RepeatEveryType) - Specifies the date-time unit for `DateTimePlotBand`.
-* [`RepeatUntil`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.DateTimePlotBand.html#Syncfusion_Maui_Toolkit_Charts_DateTimePlotBand_RepeatUntil) - Specifies the end value at which the plot band stops repeating.
+* [RepeatEvery](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartPlotBand.html#Syncfusion_Maui_Toolkit_Charts_ChartPlotBand_RepeatEvery) - Specifies the frequency at which the plot band is repeated.
+* [RepeatEveryType](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.DateTimePlotBand.html#Syncfusion_Maui_Toolkit_Charts_DateTimePlotBand_RepeatEveryType) - Specifies the date-time unit for `DateTimePlotBand`.
+* [RepeatUntil](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.DateTimePlotBand.html#Syncfusion_Maui_Toolkit_Charts_DateTimePlotBand_RepeatUntil) - Specifies the end value at which the plot band stops repeating.
 
 {% tabs %}
 
@@ -200,7 +202,7 @@ this.Content = chart;
 
 ## Segmented Plot Band
 
-When you draw a plot band for a vertical axis, the height of the plot band is determined by its `start` and `end` properties. The plot band extends horizontally across the entire length of its associated horizontal axis. Similarly, when drawing a plot band for a horizontal axis, the width is dictated by its `start` and `width` properties. Vertically, a plot band on a horizontal axis extends across the entire length of the associated vertical axis.
+When you draw a plot band for a vertical axis, the height of the plot band is determined by its `start` and `end` properties. The plot band extends horizontally across the entire length of its associated horizontal axis. Similarly, when drawing a plot band for a horizontal axis, the width is determined by its `start` and `width` properties. Vertically, a plot band on a horizontal axis extends across the entire length of the associated vertical axis.
 
 If you want to draw a plot band that should not stretch along its associated axis, you can set the [AssociatedAxisStart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartPlotBand.html#Syncfusion_Maui_Toolkit_Charts_ChartPlotBand_AssociatedAxisStart) and [AssociatedAxisEnd](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartPlotBand.html#Syncfusion_Maui_Toolkit_Charts_ChartPlotBand_AssociatedAxisEnd) properties. The values provided in these two properties correspond to its associated axis specified by the [AssociatedAxisName](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartPlotBand.html#Syncfusion_Maui_Toolkit_Charts_ChartPlotBand_AssociatedAxisName) property.
 

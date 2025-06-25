@@ -116,7 +116,7 @@ this.Content = chart;
 
 ![Annotations in pixel value in MAUI Chart](Annotation_image/Rectangle_with_pixel.png)
 
-## Adding Annotation for multiple Axes
+## Adding Annotation for Multiple Axes
 
 When there are multiple axes, annotations can be added to a particular axis using the [XAxisName](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAnnotation.html#Syncfusion_Maui_Toolkit_Charts_ChartAnnotation_XAxisName) and [YAxisName](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAnnotation.html#Syncfusion_Maui_Toolkit_Charts_ChartAnnotation_YAxisName) properties. This is demonstrated in the code snippet below:
 
@@ -406,7 +406,7 @@ this.Content = chart;
 
 ![Vertical and horizontal Line Annotation in MAUI Chart](Annotation_image/Horizontal_vertical_annotation.png)
 
-## Displaying axis label for Vertical and Horizontal Line Annotations
+## Displaying Axis Label for Vertical and Horizontal Line Annotations
 The [VerticalLineAnnotation](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.VerticalLineAnnotation.html) and [HorizontalLineAnnotation](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.HorizontalLineAnnotation.html) allow for the display of axis labels at the line's position using the [ShowAxisLabel](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.VerticalLineAnnotation.html#Syncfusion_Maui_Toolkit_Charts_VerticalLineAnnotation_ShowAxisLabel) property. The default value of the [ShowAxisLabel](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.VerticalLineAnnotation.html#Syncfusion_Maui_Toolkit_Charts_VerticalLineAnnotation_ShowAxisLabel) property is `false` as shown in the code snippet below:
 
 {% tabs %}
@@ -440,7 +440,7 @@ this.Content = chart;
 
 ![Vertical and horizontal Line Annotation with axis label in MAUI Chart](Annotation_image/axis_label.png)
 
-## Axis label customization
+## Axis Label Customization
 The default appearance of the axis label can also be customized using the [AxisLabelStyle](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.HorizontalLineAnnotation.html#Syncfusion_Maui_Toolkit_Charts_HorizontalLineAnnotation_AxisLabelStyle) property. The [AxisLabelStyle](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.HorizontalLineAnnotation.html#Syncfusion_Maui_Toolkit_Charts_HorizontalLineAnnotation_AxisLabelStyle) property allows you to customize the axis labels by changing the font family, font size, font attributes, and text color. The following styles are used to customize the axis label:
 
 * [TextColor](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartLabelStyle.html#Syncfusion_Maui_Toolkit_Charts_ChartLabelStyle_TextColor) - Gets or sets the text color of the label.
@@ -450,7 +450,7 @@ The default appearance of the axis label can also be customized using the [AxisL
 * [FontAttributes](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartLabelStyle.html#Syncfusion_Maui_Toolkit_Charts_ChartLabelStyle_FontAttributes) - Gets or sets the font style for the label.
 * [FontSize](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartLabelStyle.html#Syncfusion_Maui_Toolkit_Charts_ChartLabelStyle_FontSize) - Gets or sets the font size for the label.
 
-## Adding arrow to Vertical and Horizontal Line Annotations
+## Adding Arrow to Vertical and Horizontal Line Annotations
 To display a single-headed arrow, set the [LineCap](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.LineAnnotation.html#Syncfusion_Maui_Toolkit_Charts_LineAnnotation_LineCap) property to [Arrow](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartLineCap.html#Syncfusion_Maui_Toolkit_Charts_ChartLineCap_Arrow). The default value of the [LineCap](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.LineAnnotation.html#Syncfusion_Maui_Toolkit_Charts_LineAnnotation_LineCap) property is [None](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartLineCap.html#Syncfusion_Maui_Toolkit_Charts_ChartLineCap_None).
 
 {% tabs %}
@@ -486,7 +486,7 @@ this.Content = chart;
 
 N> The [LineCap](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.LineAnnotation.html#Syncfusion_Maui_Toolkit_Charts_LineAnnotation_LineCap) is applicable to line, horizontal, and vertical annotations.
 
-## Adding text in Shape Annotation
+## Adding Text in Shape Annotation
 For all shape annotations, the text can be displayed using the [Text](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ShapeAnnotation.html#Syncfusion_Maui_Toolkit_Charts_ShapeAnnotation_Text) property.
 
 {% tabs %}
@@ -516,7 +516,7 @@ this.Content = chart;
 
 ![Annotation in MAUI Chart](Annotation_image/Adding_annotation.png)
 
-## Text customization in Shape Annotation
+## Text Customization in Shape Annotation
 The [Text](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ShapeAnnotation.html#Syncfusion_Maui_Toolkit_Charts_ShapeAnnotation_Text) in shape annotation also can be customized by using the [LabelStyle](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ShapeAnnotation.html#Syncfusion_Maui_Toolkit_Charts_ShapeAnnotation_LabelStyle) property. The [LabelStyle](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ShapeAnnotation.html#Syncfusion_Maui_Toolkit_Charts_ShapeAnnotation_LabelStyle) property provides options to customize the font-family, font-size, font-attributes and text color of axis labels.
 
 * [TextColor](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartLabelStyle.html#Syncfusion_Maui_Toolkit_Charts_ChartLabelStyle_TextColor) - Gets or sets the text color of the label.

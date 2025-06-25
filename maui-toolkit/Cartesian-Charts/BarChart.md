@@ -107,8 +107,8 @@ ColumnSeries series = new ColumnSeries()
     ItemsSource = new ViewModel().Data,
     XBindingPath = "XValue",
     YBindingPath = "YValue",
-    Spacing = 0.3, // Set the spacing between columns (bars) in the series
-    Width = 0.5 // Set the width of the columns (bars) in the series
+    Spacing = 0.3, // Set the spacing between columns (bars) in the series.
+    Width = 0.5 // Set the width of the columns (bars) in the series.
 };
 
 chart.Series.Add(series);

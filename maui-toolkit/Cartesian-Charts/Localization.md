@@ -10,7 +10,7 @@ keywords: .net maui chart localization, sfCartesianchart localization in .net ma
 
 # Localization in .NET MAUI Chart (SfCartesianChart)
 
-Localization is the process of translating the application resources into different languages for specific cultures. The `SfCartesianChart` can be localized by adding a `resource` file. 
+Localization is the process of translating the application resources into different languages for specific cultures. The [SfCartesianChart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html) can be localized by adding a `resource` file. 
 
 ## Setting CurrentUICulture to the application
 
@@ -21,7 +21,6 @@ Application culture can be changed by setting `CurrentUICulture` in the `App.xam
 
 using Syncfusion.Maui.Toolkit.Charts;
 using System.Resources;
-using System.Globalization;
 
 public partial class App : Application
 {
@@ -48,21 +47,21 @@ N> The required `resx` files with `Build Action` as `EmbeddedResource` (File nam
 
 To localize the `Chart` based on `CurrentUICulture` using `resource` files, follow these steps:
 
-1. Right-click on the `Resources` folder, select `Add` and then `New Item`.
+	1. Right-click on the `Resources` folder, select `Add` and then `New Item`.
 
-2. In Add New Item, select the Resource File option and name the filename as `SfCartesianChart.<culture name>.resx`. For example, give the name as `SfCartesianChart.fr-FR.resx` for French culture.
+	2. In Add New Item, select the Resource File option and name the filename as `SfCartesianChart.<culture name>.resx`. For example, give the name as `SfCartesianChart.fr-FR.resx` for French culture.
 
-3. The culture name indicates the name of the language and country.
+	3. The culture name indicates the name of the language and country.
 
-   ![shows-the-name-of-resource-file-to-be-added-for-maui-chart](Localization_images/name_of_resource_file.png)
+    ![shows-the-name-of-resource-file-to-be-added-for-maui-chart](Localization_images/name_of_resource_file.png)
 
-4. Now, select `Add` option to add the resource file in **Resources** folder.
+	4. Now, select `Add` option to add the resource file in **Resources** folder.
 
-   ![shows-the-added-resource-file-for-french-language-in-maui-chart](Localization_images/shows-the-added-resource-file-for-french-language-in-maui-chart.png)
+    ![shows-the-added-resource-file-for-french-language-in-maui-chart](Localization_images/shows-the-added-resource-file-for-french-language-in-maui-chart.png)
 
-5. Add the Name/Value pair in Resource Designer of `SfCartesianChart.fr-FR.resx` file and change its corresponding value to the appropriate culture.
+	5. Add the Name/Value pair in Resource Designer of `SfCartesianChart.fr-FR.resx` file and change its corresponding value to the appropriate culture.
 
-   ![shows-the-added-resource-file-name-value-pair-in-the-resource-designer-in-maui-chart](Localization_images/shows-the-added-resource-file-name-value-pair-in-the-resource-designer-in-maui-chart.png)
+    ![shows-the-added-resource-file-name-value-pair-in-the-resource-designer-in-maui-chart](Localization_images/shows-the-added-resource-file-name-value-pair-in-the-resource-designer-in-maui-chart.png)
 
 Here, you can see how localization was performed for the tooltip.
    ![example-for-localization](Localization_images/example_for_localization.png)
