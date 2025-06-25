@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Legend in .NET MAUI Chart control | Syncfusion
-description: This section explains about how to initialize legend and its customization in Syncfusion® .NET MAUI Chart (SfPyramidChart) control.
+description: This section explains how to initialize legend and its customization in Syncfusion® .NET MAUI Chart (SfPyramidChart) control.
 platform: maui-toolkit
 control: SfPyramidChart
 documentation: ug
@@ -11,7 +11,6 @@ keywords: .net maui pyramid chart, pyramid-chart, chart legend, legend-wrap, leg
 # Legend in .NET MAUI Chart (SfPyramidChart)
 
 The [Legend](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartBase.html#Syncfusion_Maui_Toolkit_Charts_ChartBase_Legend) provides a list of data points, helping to identify the corresponding data points in the chart. Here's a detailed guide on how to define and customize the legend in the pyramid chart.
-
 
 ## Defining the legend
 To define the legend in the chart, initialize the [ChartLegend](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartLegend.html) class and assign it to the [Legend](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartBase.html#Syncfusion_Maui_Toolkit_Charts_ChartBase_Legend) property.
@@ -183,7 +182,7 @@ The legend can be positioned to the left, right, top, or bottom of the chart are
 
 {% highlight xaml %}
 
-<chart:SfPyramidChart ItemsSource ="{Binding Data}" 
+<chart:SfPyramidChart ItemsSource="{Binding Data}" 
                       XBindingPath="Name" 
                       YBindingPath="Value">
     <chart:SfPyramidChart.Legend>
@@ -300,7 +299,7 @@ The [ItemsLayout](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.To
                       XBindingPath="Name"  
                       YBindingPath="Value">
     <chart:SfPyramidChart.Legend>
-        <chart:ChartLegend >
+        <chart:ChartLegend>
             <chart:ChartLegend.ItemsLayout>
                 <FlexLayout Wrap="Wrap"
                             WidthRequest="400">
@@ -338,7 +337,7 @@ this.Content = chart;
 {% endtabs %}
 
 ## Item template
-The [ChartLegend](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartLegend.html) supports customizing the appearance of legend items using the [ItemTemplate](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartLegend.html#Syncfusion_Maui_Toolkit_Charts_ChartLegend_ItemTemplate) property. The default value of ItemsTemplate is `null`.
+The [ChartLegend](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartLegend.html) supports customizing the appearance of legend items using the [ItemTemplate](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartLegend.html#Syncfusion_Maui_Toolkit_Charts_ChartLegend_ItemTemplate) property. The default value of ItemTemplate is `null`.
 
 N> The BindingContext of the template is the corresponding underlying legend item provided in the `ChartLegendItem` class.
 
