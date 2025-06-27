@@ -1,6 +1,6 @@
 ---
 layout: post
-title: About .NET MAUI Text Input Layout control | Syncfusion<sup>®</sup>
+title: About .NET MAUI Text Input Layout control | Syncfusion
 description: Learn here all about introduction of Syncfusion<sup>®</sup> .NET MAUI Text Input Layout (SfTextInputLayout) control, its elements and more.
 platform: maui-toolkit
 control: SfTextInputLayout
