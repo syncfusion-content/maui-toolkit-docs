@@ -5,6 +5,7 @@ description: Learn here all about how to enable tooltips and customize them in t
 platform: maui-toolkit
 control: SfPolarChart
 documentation: ug
+keywords: .net maui polar chart, tooltip customization, tooltip enable, custom tooltip template, tooltip methods, tooltip duration, maui toolkit
 ---
 
 # Tooltip in .NET MAUI Chart

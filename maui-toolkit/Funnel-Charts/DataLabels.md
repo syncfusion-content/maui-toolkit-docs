@@ -5,6 +5,7 @@ description: This section explains about how to configure the data labels and it
 platform: maui-toolkit
 control: SfFunnelChart
 documentation: ug
+keywords: .net maui funnel chart, enable data labels, data label customization, funnel data label context, data label style, maui toolkit
 ---
 
 # Data Labels in .NET MAUI Chart

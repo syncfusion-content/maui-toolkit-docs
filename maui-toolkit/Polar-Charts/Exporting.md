@@ -5,6 +5,7 @@ description: Learn here how to export the chart view as an image and stream in t
 platform: maui-toolkit
 control: SfPolarChart
 documentation: ug
+keywords: .net maui polar chart, export chart as image, export chart as stream, image formats, save chart image, get chart stream, maui toolkit
 ---
 
 # Exporting in .NET MAUI Chart

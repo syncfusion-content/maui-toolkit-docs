@@ -5,6 +5,7 @@ description: Learn how to customize segment spacing in Syncfusion® .NET MAUI Fu
 platform: maui-toolkit
 control: SfFunnelChart
 documentation: ug
+keywords: .net maui funnel chart, segment spacing, chart customization, gap ratio, funnel chart elements
 ---
 
 # Segment Spacing in .NET MAUI Funnel Chart

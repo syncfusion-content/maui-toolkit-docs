@@ -5,7 +5,7 @@ description: This section explains about how to initialize legend and its custom
 platform: maui-toolkit
 control: SfPolarChart
 documentation: ug
-keywords: .net maui polar chart, polar-chart, chart legend, legend-wrap, legend view, legend layout, chart legend items, legend alignment.
+keywords: .net maui polar chart, polar-chart, chart legend, legend-wrap, legend view, legend layout, chart legend items, legend alignment, maui toolkit.
 ---
 
 # Legend in .NET MAUI Chart (SfPolarChart)

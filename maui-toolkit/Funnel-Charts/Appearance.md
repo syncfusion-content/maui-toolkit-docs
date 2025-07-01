@@ -5,6 +5,7 @@ description: Learn here all about appearance customization in .NET MAUI Chart (S
 platform: maui-toolkit
 control: SfFunnelChart
 documentation: ug
+keywords: .net maui funnel chart, appearance customization, palette brushes, gradient effects, custom palette, maui toolkit
 ---
 
 # Appearance in .NET MAUI Funnel Chart

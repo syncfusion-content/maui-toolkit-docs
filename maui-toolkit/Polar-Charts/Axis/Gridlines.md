@@ -5,6 +5,7 @@ description: Learn here all about the chart axis grid lines and their customizat
 platform: maui-toolkit
 control: SfPolarChart
 documentation: ug
+keywords: .net maui polar chart, axis grid lines, major grid lines, minor grid lines, grid line customization, chart customization, maui toolkit
 ---
 
 # Grid Lines in .NET MAUI Chart

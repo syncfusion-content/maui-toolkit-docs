@@ -5,6 +5,7 @@ description: Learn here all about segment spacing customization in Syncfusion® 
 platform: maui-toolkit
 control: SfPyramidChart
 documentation: ug
+keywords: .net maui pyramid chart, segment spacing, gapratio, pyramid chart customization, segment gap, chart configuration, maui toolkit
 ---
 
 # Segment Spacing in .NET MAUI Pyramid Chart

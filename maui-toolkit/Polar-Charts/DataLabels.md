@@ -5,6 +5,8 @@ description: Learn about configuring data labels and their features in Syncfusio
 platform: maui-toolkit
 control: SfPolarChart
 documentation: ug
+keywords: .net maui polar chart, data labels, label customization, enabling data labels, series brush application, label formatting, label template, maui toolkit
+
 ---
 
 # Data Labels in .NET MAUI Chart

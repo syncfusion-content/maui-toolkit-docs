@@ -5,6 +5,7 @@ description: Learn about the introduction of Syncfusion® .NET MAUI Pyramid Char
 platform: maui-toolkit
 control: SfPyramidChart
 documentation: ug
+keywords: .net maui pyramid chart, sfpyramidchart, hierarchical data visualization, data proportions, interactive features, selection, tooltips, chart legends, customization options, segment spacing, maui toolkit
 ---
 
 # .NET MAUI Pyramid Chart Overview

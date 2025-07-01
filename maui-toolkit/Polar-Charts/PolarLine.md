@@ -5,6 +5,7 @@ description: Learn here all about the Polar line chart type and its features in 
 platform: maui-toolkit
 control: SfPolarChart
 documentation: ug
+keywords: .net maui polar chart, polar line chart, polar series, grid line type, closed series, marker customization, maui toolkit
 ---
 
 # Polar Line Chart in .NET MAUI Chart

@@ -5,6 +5,7 @@ description: Learn about appearance customization in Syncfusion® .NET MAUI Char
 platform: maui-toolkit
 control: SfPolarChart
 documentation: ug
+keywords: .net maui polar chart, appearance customization, palette brushes, gradient customization, plotting area customization, chart styling, custom brushes, maui toolkit
 ---
 
 # Appearance in .NET MAUI Polar Chart

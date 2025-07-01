@@ -5,6 +5,7 @@ description: Learn here all about axis labels and their customization in the Syn
 platform: maui-toolkit
 control: SfPolarChart
 documentation: ug
+keywords: .net maui polar chart, axis labels, label positioning, label customization, edge label visibility, label formatting, axis customization, maui toolkit
 ---
 
 # Axis labels in .NET MAUI Chart

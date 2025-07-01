@@ -5,6 +5,7 @@ description: Learn here all about the chart axis line and its customization in t
 documentation: ug
 platform: maui-toolkit
 control: SfPolarChart
+keywords: .net maui polar chart, axis line customization, axis line style, axis line offset, axis customization, maui toolkit
 ---
 
 # Axis line in .NET MAUI Chart

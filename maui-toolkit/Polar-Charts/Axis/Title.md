@@ -5,6 +5,7 @@ description: Learn here all about chart axis title, title style, title template,
 platform: maui-toolkit
 control: SfPolarChart
 documentation: ug
+keywords: .net maui polar chart, axis title, title customization, label extent, axis label-to-title gap, axis title style, maui toolkit
 ---
 
 # Axis Title in .NET MAUI Chart

@@ -5,7 +5,7 @@ description: This section explains how to initialize legend and its customizatio
 platform: maui-toolkit
 control: SfFunnelChart
 documentation: ug
-keywords: .net maui funnel chart, funnel-chart, chart legend, legend-wrap, legend view, legend layout, chart legend items, legend alignment.
+keywords: .net maui funnel chart, funnel-chart, chart legend, legend-wrap, legend view, legend layout, chart legend items, legend alignment
 ---
 
 # Legend in .NET MAUI Chart (SfFunnelChart)

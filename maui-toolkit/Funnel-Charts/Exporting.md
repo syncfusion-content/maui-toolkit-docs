@@ -5,6 +5,7 @@ description: Learn here how to export the chart view as an image and stream in t
 platform: maui-toolkit
 control: SfFunnelChart
 documentation: ug
+keywords: .net maui funnel chart, export chart as image, save chart image, get chart stream, image formats, export chart view, maui toolkit
 ---
 
 # Exporting in .NET MAUI Chart

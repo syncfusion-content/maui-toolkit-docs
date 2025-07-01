@@ -5,6 +5,7 @@ description: Learn here all about appearance customization in .NET MAUI Chart (S
 platform: maui-toolkit
 control: SfPyramidChart
 documentation: ug
+keywords: .net maui pyramid chart, appearance customization, custom palette brushes, gradient application, pyramid modes, maui toolkit
 ---
 
 # Appearance in .NET MAUI Pyramid Chart

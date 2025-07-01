@@ -5,6 +5,7 @@ description: Learn about the Syncfusion .NET MAUI Funnel Chart (SfFunnelChart) c
 platform: maui-toolkit
 control: SfFunnelChart
 documentation: ug
+keywords: .net maui funnel chart, business funnel visualization, sales process analysis, segment selection, interactive funnel chart, chart customization, chart legends
 ---
 
 # .NET MAUI Funnel Chart Overview

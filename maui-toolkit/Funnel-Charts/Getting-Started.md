@@ -5,6 +5,7 @@ description: Learn here all about getting started with Syncfusion® .NET MAUI Ch
 platform: maui-toolkit
 control: SfFunnelChart
 documentation: ug
+keywords: .net maui funnel chart, getting started with funnel chart, chart data binding, chart title, enable data labels, chart legend, tooltips, maui toolkit
 ---
 
 # Getting Started with .NET MAUI Funnel Chart

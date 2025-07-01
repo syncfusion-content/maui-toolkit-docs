@@ -5,6 +5,7 @@ description: This section explains how to enable tooltip and its customization i
 platform: maui-toolkit
 control: SfPyramidChart
 documentation: ug
+keywords: .net maui pyramid chart, tooltip customization, enable tooltip, tooltip template, tooltip duration, maui toolkit
 ---
 
 # Tooltip in .NET MAUI Chart

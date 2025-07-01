@@ -5,6 +5,7 @@ description: Learn here all about the chart axis tick lines and their customizat
 documentation: ug
 platform: maui-toolkit
 control: SfPolarChart
+keywords: .net maui polar chart, axis tick lines, tick line customization, major tick lines, minor tick lines, tick positioning, maui toolkit
 ---
 
 # Tick Lines in .NET MAUI Chart

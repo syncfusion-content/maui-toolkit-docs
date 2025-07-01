@@ -5,6 +5,7 @@ description: Learn here all about the introduction of Syncfusion® .NET MAUI Cha
 platform: maui-toolkit
 control: SfPolarChart
 documentation: ug
+keywords: .net maui polar chart, polar chart overview, chart types, multi-series chart, axis customization, gridline customization, maui toolkit
 ---
 
 # .NET MAUI Polar Chart Overview

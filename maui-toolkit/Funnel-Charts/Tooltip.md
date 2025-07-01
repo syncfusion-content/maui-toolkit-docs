@@ -5,6 +5,7 @@ description: This section explains how to enable tooltips and customize them in 
 platform: maui-toolkit
 control: SfFunnelChart
 documentation: ug
+keywords: .net maui funnel chart, chart tooltip, enable tooltip, tooltip customization, tooltip template, interactive charts
 ---
 
 # Tooltip in .NET MAUI Chart

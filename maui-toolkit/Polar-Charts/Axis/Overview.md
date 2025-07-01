@@ -5,6 +5,7 @@ description: Learn here all about the chart axis and its key features in the Syn
 platform: maui-toolkit
 control: SfPolarChart
 documentation: ug
+keywords: .net maui polar chart, chart axis, axis types, category axis, numeric axis, datetime axis, axis customization, maui toolkit
 ---
 
 # Axis in .NET MAUI Chart

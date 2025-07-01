@@ -5,6 +5,7 @@ description: Learn here all about axis types and their features in Syncfusion® 
 platform: maui-toolkit
 control: SfPolarChart
 documentation: ug
+keywords: .net maui polar chart, axis types, numerical axis, category axis, datetime axis, axis customization, maui toolkit
 ---
 
 # Types of Axis in .NET MAUI Chart

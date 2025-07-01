@@ -5,6 +5,7 @@ description: This section explains about the getting started with Syncfusion® .
 platform: maui-toolkit
 control: SfPolarChart
 documentation: ug
+keywords: .net maui polar chart, chart axis, chart series, chart title, data labels, chart legend, tooltip, markers, maui toolkit
 ---
 
 # Getting Started with .NET MAUI Polar Chart

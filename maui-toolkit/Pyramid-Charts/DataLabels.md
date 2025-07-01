@@ -5,6 +5,7 @@ description: This section explains how to configure data labels and their featur
 platform: maui-toolkit
 control: SfPyramidChart
 documentation: ug
+keywords: .net maui pyramid chart, data labels, label customization, enable data labels, label placement, label style, maui toolkit
 ---
 
 # Data Labels in .NET MAUI Chart

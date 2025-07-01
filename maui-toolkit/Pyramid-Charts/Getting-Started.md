@@ -5,6 +5,7 @@ description: Learn here all about getting started with Syncfusion® .NET MAUI Ch
 platform: maui-toolkit
 control: SfPyramidChart
 documentation: ug
+keywords: .net maui pyramid chart, getting started, create .net maui project, add pyramid chart, enable data labels, enable legend, enable tooltip, bind data to chart, maui toolkit
 ---
 
 # Getting Started with .NET MAUI Pyramid Chart
