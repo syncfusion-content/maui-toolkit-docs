@@ -67,11 +67,10 @@ The gradient for the circular chart can be set by using the [PaletteBrushes](htt
 {% highlight xaml %}
 <chart:SfCircularChart>
     <!-- Other chart configurations -->
-    <chart:PieSeries
-             ItemsSource="{Binding Data}"
-			 XBindingPath="XValue" 
-			 YBindingPath="YValue"
-			 PaletteBrushes="{Binding CustomBrushes}"/>
+    <chart:PieSeries ItemsSource="{Binding Data}"
+                     XBindingPath="XValue" 
+                     YBindingPath="YValue"
+                     PaletteBrushes="{Binding CustomBrushes}"/>
 </chart:SfCircularChart>
 {% endhighlight %}
 
