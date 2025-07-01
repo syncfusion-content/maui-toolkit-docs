@@ -53,7 +53,6 @@ N> The Cartesian chart has a [Series](https://help.syncfusion.com/cr/maui-toolki
 
     </chart:SfCartesianChart>
 
-
 {% endhighlight %}
 
 {% highlight c# %}
@@ -67,7 +66,7 @@ N> The Cartesian chart has a [Series](https://help.syncfusion.com/cr/maui-toolki
     ViewModel viewModel = new ViewModel();
 
     // Create a StackingLine100Series for the chart
-    StackingLine100Series series1 = new  StackingLine100Series()
+    StackingLine100Series series1 = new StackingLine100Series()
     {
         ItemsSource = viewModel.Data1,
         XBindingPath = "Month",
@@ -80,6 +79,7 @@ N> The Cartesian chart has a [Series](https://help.syncfusion.com/cr/maui-toolki
         XBindingPath = "Month",
         YBindingPath = "Value",
     };
+    
     StackingLine100Series series3 = new StackingLine100Series()
     {
         ItemsSource = viewModel.Data3,
@@ -89,7 +89,7 @@ N> The Cartesian chart has a [Series](https://help.syncfusion.com/cr/maui-toolki
 
     StackingLine100Series series4 = new StackingLine100Series()
     {
-        ItemsSource = viewModel.Data4
+        ItemsSource = viewModel.Data4,
         XBindingPath = "Month",
         YBindingPath = "Value",
     };
@@ -169,8 +169,8 @@ The [StrokeDashArray](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Mau
     DoubleCollection doubleCollection = new DoubleCollection();
     doubleCollection.Add(5);
     doubleCollection.Add(2);
-    . . .
-    StackingLine100Series series1 = new  StackingLine100Series()
+    
+    StackingLine100Series series1 = new StackingLine100Series()
     {
         ItemsSource = viewModel.Data1,
         XBindingPath = "Month",
@@ -255,7 +255,7 @@ A marker, also known as a symbol, is used to determine or highlight the position
 
     ViewModel viewModel = new ViewModel();
     ...
-    StackingLine100Series series1 = new  StackingLine100Series()
+    StackingLine100Series series1 = new StackingLine100Series()
     {
         ItemsSource = viewModel.Data1,
         XBindingPath = "Month",
@@ -340,7 +340,7 @@ In order to change the series markers appearance, create an instance of the [Mar
     ViewModel viewModel = new ViewModel();
     ...
     // Configure marker settings for the data points in the chart series.
-    ChartMarkerSettings chartMarker= new ChartMarkerSettings()
+    ChartMarkerSettings chartMarker = new ChartMarkerSettings()
     {
         Type = ShapeType.Diamond,
         Fill = Colors.White,
@@ -349,12 +349,12 @@ In order to change the series markers appearance, create an instance of the [Mar
         Width = 8,
     };
 
-    StackingLine100Series series = new  StackingLine100Series()
+    StackingLine100Series series = new StackingLine100Series()
     {
         ItemsSource = viewModel.Data,
         XBindingPath = "Month",
         YBindingPath = "Value",
-        ShowMarkers= true,
+        ShowMarkers = true,
         MarkerSettings = chartMarker, // Apply the marker settings configured above.
     };
 
