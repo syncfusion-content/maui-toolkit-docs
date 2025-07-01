@@ -68,7 +68,7 @@ The gradient for the circular chart can be set by using the [PaletteBrushes](htt
 <chart:SfCircularChart>
     <!-- Other chart configurations -->
     <chart:PieSeries
-        ItemsSource="{Binding Data}"
+             ItemsSource="{Binding Data}"
 			 XBindingPath="XValue" 
 			 YBindingPath="YValue"
 			 PaletteBrushes="{Binding CustomBrushes}"/>
@@ -99,8 +99,8 @@ public class ViewModel
         LinearGradientBrush gradientColor2 = new LinearGradientBrush();
         gradientColor2.GradientStops = new GradientStopCollection()
         {
-            new GradientStop() { Offset = 1, Color = Color.FromRgb(180, 225, 151) },
-            new GradientStop() { Offset = 0, Color = Color.FromRgb(111, 183, 214) }
+            new GradientStop() { Offset = 1, Color = Color.FromRgb(250, 221, 125) },
+            new GradientStop() { Offset = 0, Color = Color.FromRgb(252, 204, 45) }
         };
 
         // Create and configure gradient brush 3
@@ -122,10 +122,10 @@ public class ViewModel
         // Create and configure gradient brush 5
         LinearGradientBrush gradientColor5 = new LinearGradientBrush();
         gradientColor5.GradientStops = new GradientStopCollection()
-{
+        {
             new GradientStop() { Offset = 1, Color = Color.FromRgb(168, 234, 238) },
             new GradientStop() { Offset = 0, Color = Color.FromRgb(123, 176, 249) }
-};
+        };
 
         // Add all gradient brushes to the CustomBrushes list
         CustomBrushes.Add(gradientColor1);
@@ -186,7 +186,7 @@ AbsoluteLayout absoluteLayout = new AbsoluteLayout();
 // Create a border for the chart plot area
 var border = new Border()
 {
-    Stroke = new SolidColorBrush(Colors.Red),
+    Stroke = Colors.Red,
     StrokeThickness = 2
 };
 AbsoluteLayout.SetLayoutBounds(border, new Rect(0, 0, 1, 1));
