@@ -5,6 +5,7 @@ description: Learn here how to export the chart view as an image and stream in t
 platform: maui-toolkit
 control: SfCircularChart
 documentation: ug
+keywords: .net maui chart export image, save chart as image maui, syncfusion chart stream export, export chart jpeg png maui, maui chart image stream.
 ---
 
 # Exporting in .NET MAUI Chart

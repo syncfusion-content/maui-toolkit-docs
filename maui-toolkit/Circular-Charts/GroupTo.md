@@ -5,6 +5,7 @@ description: This section explains about how to group data points in SyncfusionÂ
 platform: maui-toolkit
 control: SfCircularChart
 documentation: ug
+keywords: .net maui chart group data, group small segments maui chart, syncfusion circular chart grouping, pie chart group segment maui, data point grouping maui chart
 ---
 
 # Grouping Data Points in .NET MAUI SfCircularChart

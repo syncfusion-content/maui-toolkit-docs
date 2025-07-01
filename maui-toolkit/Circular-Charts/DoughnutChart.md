@@ -5,6 +5,7 @@ description: Learn here all about doughnut chart and its features in SyncfusionÂ
 platform: maui-toolkit
 control: SfCircularChart
 documentation: ug
+keywords: .net maui chart doughnut, syncfusion doughnut chart maui, doughnut series maui chart, circular chart inner radius maui, semi doughnut chart maui, center view doughnut chart maui
 ---
 
 # Doughnut Chart in .NET MAUI Chart

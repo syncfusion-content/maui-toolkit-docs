@@ -5,6 +5,7 @@ description: Learn here all about getting started with Syncfusion® .NET MAUI Ch
 platform: maui-toolkit
 control: SfCircularChart
 documentation: ug
+keywords: .net maui chart setup, syncfusion chart beginners guide, initialize circular chart maui, configure chart series maui.
 ---
 
 # Getting Started with .NET MAUI Circular Chart

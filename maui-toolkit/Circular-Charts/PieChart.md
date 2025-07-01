@@ -5,6 +5,7 @@ description: Learn here all about the pie chart and its features in Syncfusion®
 platform: maui-toolkit
 control: SfCircularChart
 documentation: ug
+keywords: .net maui pie chart, pie series circular chart, maui pie chart features, syncfusion pie chart maui, pie chart customization.
 ---
 
 # Pie Chart in .NET MAUI Chart

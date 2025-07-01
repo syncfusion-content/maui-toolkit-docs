@@ -5,6 +5,7 @@ description: Learn here all about radial bar chart and its features in Syncfusio
 platform: maui-toolkit
 control: SfCircularChart
 documentation: ug
+keywords: .net maui chart radial bar, circular chart custom size maui, radial bar cap style maui, segment spacing radial bar chart, radial bar center view maui.
 ---
 
 # Radial Bar Chart in .NET MAUI Chart
