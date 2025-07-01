@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Segment Spacing in .NET MAUI Chart Control | Syncfusion
-description: Learn how to customize segment spacing in Syncfusion .NET MAUI Funnel Chart (SfFunnelChart) control and its elements.
+description: Learn how to customize segment spacing in Syncfusion® .NET MAUI Funnel Chart (SfFunnelChart) control and its elements.
 platform: maui-toolkit
 control: SfFunnelChart
 documentation: ug

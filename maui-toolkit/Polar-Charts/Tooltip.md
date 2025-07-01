@@ -21,7 +21,9 @@ To define the tooltip in the series, set the [EnableTooltip](https://help.syncfu
 
 <chart:SfPolarChart>
     . . .
-    <chart:PolarAreaSeries ItemsSource="{Binding PlantDetails}" XBindingPath="Direction" YBindingPath="Tree" 
+    <chart:PolarAreaSeries ItemsSource="{Binding PlantDetails}" 
+                           XBindingPath="Direction" 
+                           YBindingPath="Tree" 
                            EnableTooltip="True"/>
 </chart:SfPolarChart>
 

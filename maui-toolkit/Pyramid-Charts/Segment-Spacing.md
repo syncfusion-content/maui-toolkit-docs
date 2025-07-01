@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Segment Spacing in .NET MAUI Chart Control | Syncfusion
-description: Learn here all about segment spacing customization in Syncfusion .NET MAUI Pyramid Chart (SfPyramidChart) control and more.
+description: Learn here all about segment spacing customization in Syncfusion® .NET MAUI Pyramid Chart (SfPyramidChart) control and more.
 platform: maui-toolkit
 control: SfPyramidChart
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 # Segment Spacing in .NET MAUI Pyramid Chart
 
-The gap between each segment in the pyramid chart can be customized using the [GapRatio](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Charts.SfPyramidChart.html#Syncfusion_Maui_Charts_SfPyramidChart_GapRatio) property. The default value of the `GapRatio` property is `0`, and its value ranges from `0` to `1`.
+The gap between each segment in the pyramid chart can be customized using the [GapRatio](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfPyramidChart.html#Syncfusion_Maui_Toolkit_Charts_SfPyramidChart_GapRatio) property. The default value of the `GapRatio` property is `0`, and its value ranges from `0` to `1`.
 
 {% tabs %}
 

@@ -25,7 +25,9 @@ The [ShowDataLabels](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui
 
 <chart:SfPolarChart>
     <!-- Other chart settings -->
-    <chart:PolarLineSeries ItemsSource="{Binding PlantDetails}" XBindingPath="Direction" YBindingPath="Tree"
+    <chart:PolarLineSeries ItemsSource="{Binding PlantDetails}" 
+                           XBindingPath="Direction" 
+                           YBindingPath="Tree"
                            ShowDataLabels="True"/>
 </chart:SfPolarChart>
 
@@ -58,11 +60,11 @@ this.Content = chart;
 Data labels can be customized using the [DataLabelSettings](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.PolarSeries.html#Syncfusion_Maui_Toolkit_Charts_PolarSeries_DataLabelSettings) property of chart series. To customize them, create an instance of [PolarDataLabelSettings](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.PolarDataLabelSettings.html) and set it to the DataLabelSettings property. The following properties are available in PolarDataLabelSettings for customization:
 
 * [LabelStyle](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartDataLabelSettings.html#Syncfusion_Maui_Toolkit_Charts_ChartDataLabelSettings_LabelStyle) - Customizes data labels.
-* [UseSeriesPalette](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartDataLabelSettings.html#Syncfusion_Maui_Toolkit_Charts_ChartDataLabelSettings_UseSeriesPalette) - Indicates whether the data label should reflect the series' interior.
+* [UseSeriesPalette](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartDataLabelSettings.html#Syncfusion_Maui_Toolkit_Charts_ChartDataLabelSettings_UseSeriesPalette) - Indicates whether the data label should reflect the series interior.
 
 ## Applying Series Brush
 
-The [UseSeriesPalette](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartDataLabelSettings.html#Syncfusion_Maui_Toolkit_Charts_ChartDataLabelSettings_UseSeriesPalette) property sets the series' interior as the data marker background.
+The [UseSeriesPalette](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartDataLabelSettings.html#Syncfusion_Maui_Toolkit_Charts_ChartDataLabelSettings_UseSeriesPalette) property sets the series interior as the data marker background.
 
 {% tabs %}
 
@@ -116,8 +118,11 @@ Customize the label content using the [LabelContext](https://help.syncfusion.com
 
 <chart:SfPolarChart>
     <!-- Other chart settings -->
-    <chart:PolarAreaSeries ItemsSource="{Binding PlantDetails}" XBindingPath="Direction" YBindingPath="Tree"
-                           ShowDataLabels="True" LabelContext="Percentage"/>
+    <chart:PolarAreaSeries ItemsSource="{Binding PlantDetails}" 
+                           XBindingPath="Direction" 
+                           YBindingPath="Tree"
+                           ShowDataLabels="True" 
+                           LabelContext="Percentage"/>
 </chart:SfPolarChart>
 
 {% endhighlight %}

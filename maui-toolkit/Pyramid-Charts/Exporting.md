@@ -43,7 +43,7 @@ Add the following code snippet to the "Info.plist" file:
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 <dict>
     ...    
     <key>NSPhotoLibraryUsageDescription</key>    

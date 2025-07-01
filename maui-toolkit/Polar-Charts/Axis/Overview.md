@@ -1,7 +1,7 @@
 ---
 layout: post
 title: About Axis in .NET MAUI Chart Control | Syncfusion
-description: Learn here all about the chart axis and its key features in the Syncfusion .NET MAUI Chart (SfPolarChart) control.
+description: Learn here all about the chart axis and its key features in the Syncfusion® .NET MAUI Chart (SfPolarChart) control.
 platform: maui-toolkit
 control: SfPolarChart
 documentation: ug
@@ -19,6 +19,6 @@ The Polar chart supports the following types of chart axes:
 
 ## Key Features
 
-* Support for different axis types such as Category, Numeric, and DateTime
-* Customization options for chart axis elements including axis lines, grid lines, and tick lines
-* Ability to adjust the start angle of the axis
+* Support for different axis types such as Category, Numeric, and DateTime.
+* Customization options for chart axis elements including axis lines, grid lines, and tick lines.
+* Ability to adjust the start angle of the axis.

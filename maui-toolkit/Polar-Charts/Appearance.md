@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Appearance in .NET MAUI Chart Control – Syncfusion
-description: Learn about appearance customization in Syncfusion .NET MAUI Chart (SfPolarChart), including its elements and more.
+title: Appearance in .NET MAUI Chart Control | Syncfusion
+description: Learn about appearance customization in Syncfusion® .NET MAUI Chart (SfPolarChart), including its elements and more.
 platform: maui-toolkit
 control: SfPolarChart
 documentation: ug
@@ -30,7 +30,7 @@ By default, the chart applies predefined brushes to the series in a specific ord
 // Create a new SfPolarChart instance
 SfPolarChart chart = new SfPolarChart();
 var viewModel = new ViewModel();
-
+. . .
 // Define the first PolarLineSeries
 PolarLineSeries series1 = new PolarLineSeries()
 {
@@ -153,7 +153,7 @@ public class ViewModel
             new GradientStop() { Offset = 1, Color = Color.FromRgb(255, 231, 199) },
             new GradientStop() { Offset = 0, Color = Color.FromRgb(252, 182, 159) }
         };
-
+        // Add all created gradient brushes to the CustomBrushes list
         CustomBrushes.Add(gradientColor1);
         CustomBrushes.Add(gradientColor2);
         CustomBrushes.Add(gradientColor3);

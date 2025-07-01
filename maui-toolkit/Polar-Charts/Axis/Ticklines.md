@@ -13,7 +13,7 @@ Tick lines are small lines drawn on the axis line that represent axis labels. By
 
 Minor tick lines can be added to the axis by defining the [MinorTicksPerInterval](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.RangeAxisBase.html#Syncfusion_Maui_Toolkit_Charts_RangeAxisBase_MinorTicksPerInterval) property. This property adds minor tick lines to every interval based on the specified value.
 
-> For category axis, minor tick lines are not applicable as it is rendered based on index positions.
+N> For category axis, minor tick lines are not applicable as it is rendered based on index positions.
 
 {% tabs %}
 
@@ -55,7 +55,7 @@ this.Content = chart;
 
 The tick lines can be positioned inside or outside the chart area using the [TickPosition](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxis.html#Syncfusion_Maui_Toolkit_Charts_ChartAxis_TickPosition) property. The default value of [TickPosition](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxis.html#Syncfusion_Maui_Toolkit_Charts_ChartAxis_TickPosition) is `AxisElementPosition.Outside`.
 
-> This is only applicable to the secondary axis of Polar chart.
+N> This is only applicable to the secondary axis of Polar chart.
 
 {% tabs %}
 

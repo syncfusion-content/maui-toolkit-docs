@@ -9,7 +9,7 @@ documentation: ug
 
 # .NET MAUI Funnel Chart Overview
 
-The Syncfusion .NET MAUI Funnel Chart (SfFunnelChart) provides a visually appealing way to represent data across different stages in a process. It is ideal for analyzing business funnels, such as sales processes or conversion rates, in high-quality .NET MAUI applications.
+The Syncfusion<sup>®</sup> .NET MAUI Funnel Chart (SfFunnelChart) provides a visually appealing way to represent data across different stages in a process. It is ideal for analyzing business funnels, such as sales processes or conversion rates, in high-quality .NET MAUI applications.
 
 ## Key Features
 
