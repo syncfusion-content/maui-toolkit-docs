@@ -63,7 +63,7 @@ FastScatterSeries scatterSeries2 = new FastScatterSeries
 {
    ItemsSource = new ViewModel().Data2,
    XBindingPath = "XValue",
-   YBindingPath = "XValue",
+   YBindingPath = "YValue",
 };
 
 chart.Series.Add(scatterSeries1);

@@ -12,11 +12,11 @@ keywords: .net maui candle chart, candle chart customization .net maui, syncfusi
 
 ## Candle Chart
 
-Candle charts are a type of financial chart used to represent the price movement of an asset over time. The chart is made up of a series of rectangular bars, called candlesticks, that represent a specific time, typically one day. To render a candle chart, create an instance of [CandleSeries](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.CandleSeries.html), and add it to the [Series](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html#Syncfusion_Maui_Toolkit_Charts_SfCartesianChart_Series) collection property of [SfCartesianChart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html).
+Candle charts are a type of financial chart used to represent the price movement of an asset over time. The chart consists of a series of rectangular bars, called candlesticks, that represent a specific time period, typically one day. To render a candle chart, create an instance of [CandleSeries](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.CandleSeries.html), and add it to the [Series](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html#Syncfusion_Maui_Toolkit_Charts_SfCartesianChart_Series) collection property of [SfCartesianChart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html).
 
 N> The Cartesian chart has [Series](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html#Syncfusion_Maui_Toolkit_Charts_SfCartesianChart_Series) as its default content.
 
-To plot a point on a candlestick chart, a collection of five values is required, including the X-value, open value, high value, low value, and close value. You can use the below collection.
+To plot a point on a candlestick chart, a collection of five values is required: X-value, open value, high value, low value, and close value. You can use the collection shown below:
 
 {% tabs %}
 
@@ -91,7 +91,7 @@ this.Content = chart;
 
 ## Bull and Bear Color
 
-In the Candle chart, the [BullishFill](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.FinancialSeriesBase.html#Syncfusion_Maui_Toolkit_Charts_FinancialSeriesBase_BullishFill) property is used to specify a fill color for the segments that indicates an increase in the stock price in the measured time interval, and the [BearishFill](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.FinancialSeriesBase.html#Syncfusion_Maui_Toolkit_Charts_FinancialSeriesBase_BearishFill) property is used to specify a fill color for the segments that indicates a decrease in the stock price in the measured time interval.
+In the Candle chart, the [BullishFill](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.FinancialSeriesBase.html#Syncfusion_Maui_Toolkit_Charts_FinancialSeriesBase_BullishFill) property is used to specify a fill color for segments that indicate an increase in stock price during the measured time interval. The [BearishFill](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.FinancialSeriesBase.html#Syncfusion_Maui_Toolkit_Charts_FinancialSeriesBase_BearishFill) property is used to specify a fill color for segments that indicate a decrease in stock price during the measured time interval.
 
 {% tabs %}
 

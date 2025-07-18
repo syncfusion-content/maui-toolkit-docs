@@ -12,13 +12,15 @@ Keywords: .net maui waterfall chart, .net maui bridge chart, waterfall chart cus
 
 ## Waterfall Chart
 
-[WaterfallSeries](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.WaterfallSeries.html) clarifies the cumulative effect of a set of provided positive and negative values. The series is represented by a rectangle and a connector between the rectangles. To render a waterfall chart, create an instance of [WaterfallSeries](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.WaterfallSeries.html), and add it to the [Series](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html#Syncfusion_Maui_Toolkit_Charts_SfCartesianChart_Series) collection property of the [SfCartesianChart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html)
+The [WaterfallSeries](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.WaterfallSeries.html) visualizes the cumulative effect of a set of positive and negative values. The series is represented by rectangles and connectors between the rectangles. To render a waterfall chart, create an instance of [WaterfallSeries](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.WaterfallSeries.html) and add it to the [Series](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html#Syncfusion_Maui_Toolkit_Charts_SfCartesianChart_Series) collection property of the [SfCartesianChart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html).
 
-* [SummaryBindingPath](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.WaterfallSeries.html#Syncfusion_Maui_Toolkit_Charts_WaterfallSeries_SummaryBindingPath) of the string type is used to get or set the path value on the source subject to serve summary values to the series.
-* [SummaryPointsBrush](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.WaterfallSeries.html#Syncfusion_Maui_Toolkit_Charts_WaterfallSeries_SummaryPointsBrush) of brush type is used to change the fill of the summary segment of the series. .
+The following properties are available for customizing the waterfall chart:
+
+* [SummaryBindingPath](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.WaterfallSeries.html#Syncfusion_Maui_Toolkit_Charts_WaterfallSeries_SummaryBindingPath) of string type is used to get or set the path value on the source object to serve summary values to the series.
+* [SummaryPointsBrush](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.WaterfallSeries.html#Syncfusion_Maui_Toolkit_Charts_WaterfallSeries_SummaryPointsBrush) of brush type is used to change the fill of the summary segment of the series.
 * [NegativePointsBrush](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.WaterfallSeries.html#Syncfusion_Maui_Toolkit_Charts_WaterfallSeries_NegativePointsBrush) of brush type is used to change the fill of the negative segment of the series.
-* [AllowAutoSum](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.WaterfallSeries.html#Syncfusion_Maui_Toolkit_Charts_WaterfallSeries_AllowAutoSum) of bool type is used to change the summary segment calculation. By default, the property is true. When disabling this property, it renders the segment by using the y value of provided ItemsSource collection.
-* [ShowConnectorLine](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.WaterfallSeries.html#Syncfusion_Maui_Toolkit_Charts_WaterfallSeries_ShowConnectorLine) of bool type is used to enable or disable the connector line. By default, the property value is `true`.
+* [AllowAutoSum](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.WaterfallSeries.html#Syncfusion_Maui_Toolkit_Charts_WaterfallSeries_AllowAutoSum) of bool type is used to control the summary segment calculation. By default, this property is true. When this property is disabled, it renders the segment using the Y value of the provided ItemsSource collection.
+* [ShowConnectorLine](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.WaterfallSeries.html#Syncfusion_Maui_Toolkit_Charts_WaterfallSeries_ShowConnectorLine) of bool type is used to enable or disable the connector line. By default, this property value is `true`.
 
 {% tabs %}
 
@@ -80,10 +82,10 @@ this.Content = chart;
 
 ![Waterfall Chart in MAUI Chart](Chart-types-images/maui_waterfall_Basic.png)
 
-## Connector line customization
+## Connector Line Customization
 
-The connector line can be customized by applying the [ConnectorLineStyle](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.WaterfallSeries.html#Syncfusion_Maui_Toolkit_Charts_WaterfallSeries_ConnectorLineStyle) property of the series.
-The following code example illustrates how to apply style for connector line.
+The connector lines can be customized using the [ConnectorLineStyle](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.WaterfallSeries.html#Syncfusion_Maui_Toolkit_Charts_WaterfallSeries_ConnectorLineStyle) property of the series.
+The following code example demonstrates how to apply a style to connector lines:
 
 {% tabs %}
 
@@ -103,7 +105,7 @@ The following code example illustrates how to apply style for connector line.
 
 {% highlight c# %}
 
-// Define the style for the connector lines in the waterfall chart.
+// Define the style for the connector lines in the waterfall chart
 ChartLineStyle lineStyle = new ChartLineStyle()
 {
     Stroke = new SolidColorBrush(Colors.DarkViolet),
@@ -115,7 +117,7 @@ WaterfallSeries series = new WaterfallSeries()
     ItemsSource = new viewModel().Sales,
     XBindingPath = "Department",
     YBindingPath = "Value",
-    ConnectorLineStyle = lineStyle, // Apply the previously defined line style to the connector lines in the series.
+    ConnectorLineStyle = lineStyle, // Apply the defined line style to the connector lines
 };
     
 {% endhighlight %}

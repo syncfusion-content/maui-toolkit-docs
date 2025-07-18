@@ -12,7 +12,7 @@ keywords: .net maui range area chart, maui range area chart, .net maui chart ran
 
 ## Range Area Chart
 
-Range Area Chart is a type of data visualization useful for displaying the relationship between two variables over time. In this Series, the area between two lines is filled to indicate a range of values, such as a high and low price range or an upper and lower limit.
+Range Area Chart is a type of data visualization useful for displaying the relationship between two variables over time. In this series, the area between two lines is filled to indicate a range of values, such as a high and low price range or an upper and lower limit.
 
 By displaying ranges of data, range area series can make it easier to compare multiple datasets at once.
 
@@ -58,7 +58,7 @@ RangeAreaSeries series = new RangeAreaSeries()
     ItemsSource = new ViewModel().Data,
     XBindingPath = "XValue",
     High = "HighValue",
-    Low="LowValue",
+    Low = "LowValue",
 };
 
 // Add the configured series to the chart
@@ -104,7 +104,7 @@ RangeAreaSeries series = new RangeAreaSeries()
 };
 
 chart.Series.Add(series);
-this.Content= chart;
+this.Content = chart;
 
 {% endhighlight %}
 
@@ -112,7 +112,7 @@ this.Content= chart;
 
 ### Marker Customization
 
-In order to change the series markers appearance, create an instance of the [MarkerSettings](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.RangeAreaSeries.html#Syncfusion_Maui_Toolkit_Charts_RangeAreaSeries_MarkerSettings) property. The following properties are used to customize marker appearance.
+In order to change the series markers appearance, create an instance of the [MarkerSettings](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.RangeAreaSeries.html#Syncfusion_Maui_Toolkit_Charts_RangeAreaSeries_MarkerSettings) property. The following properties are used to customize marker appearance:
 
 * [Type](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartMarkerSettings.html#Syncfusion_Maui_Toolkit_Charts_ChartMarkerSettings_Type), of type `ShapeType`, describes the shape of the series marker. The default value of this property is the [ShapeType.Circle](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ShapeType.html#Syncfusion_Maui_Toolkit_Charts_ShapeType_Circle).
 * [Stroke](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartMarkerSettings.html#Syncfusion_Maui_Toolkit_Charts_ChartMarkerSettings_Stroke), of type `Brush`, indicates the brush used to paint the marker border.
@@ -131,7 +131,7 @@ In order to change the series markers appearance, create an instance of the [Mar
                            XBindingPath="XValue"
                            High="HighValue"
                            Low="LowValue"
-                           ShowMarkers = "True">
+                           ShowMarkers="True">
         <chart:RangeAreaSeries.MarkerSettings>
             <chart:ChartMarkerSettings Type="Diamond"
                                        Fill="Brown"
@@ -150,7 +150,7 @@ In order to change the series markers appearance, create an instance of the [Mar
 SfCartesianChart chart = new SfCartesianChart();
 ...
 // Configure marker settings for the series
-ChartMarkerSettings chartMarker= new ChartMarkerSettings()
+ChartMarkerSettings chartMarker = new ChartMarkerSettings()
 {
     Type = ShapeType.Diamond,
     Fill = Colors.Brown,
