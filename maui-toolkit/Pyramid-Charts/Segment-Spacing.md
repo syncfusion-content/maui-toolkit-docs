@@ -1,22 +1,23 @@
 ---
 layout: post
-title: Segment spacing in .NET MAUI Chart control Syncfusion
-description: Learn here all about segment spacing customization in .NET MAUI Chart (SfPyramidChart), its elements and more.
+title: Segment Spacing in .NET MAUI Chart Control | Syncfusion
+description: Learn here all about segment spacing customization in Syncfusion® .NET MAUI Pyramid Chart (SfPyramidChart) control and more.
 platform: maui-toolkit
 control: SfPyramidChart
 documentation: ug
+keywords: .net maui pyramid chart, segment spacing, gapratio, pyramid chart customization, segment gap, chart configuration, maui toolkit
 ---
 
-# Segment spacing in .NET MAUI Pyramid Chart
+# Segment Spacing in .NET MAUI Pyramid Chart
 
-The gap between each segment in the pyramid chart can be set using the [GapRatio](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfPyramidChart.html#Syncfusion_Maui_Toolkit_Charts_SfPyramidChart_GapRatio) property. The default value of [GapRatio](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfPyramidChart.html#Syncfusion_Maui_Toolkit_Charts_SfPyramidChart_GapRatio) property is `0` and its value ranges from `0 to 1`.
+The gap between each segment in the pyramid chart can be customized using the [GapRatio](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfPyramidChart.html#Syncfusion_Maui_Toolkit_Charts_SfPyramidChart_GapRatio) property. The default value of the `GapRatio` property is `0`, and its value ranges from `0` to `1`.
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <chart:SfPyramidChart GapRatio="0.2">
-. . .
+    <!-- Chart configuration -->
 </chart:SfPyramidChart>
 
 {% endhighlight %}
@@ -24,12 +25,13 @@ The gap between each segment in the pyramid chart can be set using the [GapRatio
 {% highlight c# %}
 
 SfPyramidChart chart = new SfPyramidChart();
-. . .
-chart.GapRatio = 0.2; // Set gap ratio between pyramid segments.
-. . .
+// Chart configuration
+chart.GapRatio = 0.2; // Set gap ratio between pyramid segments
+// Additional configuration
 this.Content = chart;
+
 {% endhighlight %}
 
 {% endtabs %}
 
-![Segment spacing in MAUI Chart](Segment_Spacing_images/MAUI_spacing_chart.png)
+![Segment spacing in .NET MAUI Pyramid Chart](Segment_Spacing_images/MAUI_spacing_chart.png)

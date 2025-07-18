@@ -5,6 +5,7 @@ description: Learn here all about axis labels and their customization in the Syn
 platform: maui-toolkit
 control: SfPolarChart
 documentation: ug
+keywords: .net maui polar chart, axis labels, label positioning, label customization, edge label visibility, label formatting, axis customization, maui toolkit
 ---
 
 # Axis labels in .NET MAUI Chart
@@ -13,9 +14,9 @@ Axis labels are used to display the units, measures, or category values of an ax
 
 ## Positioning the labels
 
-The [LabelsPosition](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxis.html#Syncfusion_Maui_Toolkit_Charts_ChartAxis_LabelsPosition) property is used to position the axis labels inside or outside the chart area. [LabelsPosition](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxis.html#Syncfusion_Maui_Toolkit_Charts_ChartAxis_LabelsPosition) property default value is `AxisElementPosition.Outside`.
+The [LabelsPosition](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxis.html#Syncfusion_Maui_Toolkit_Charts_ChartAxis_LabelsPosition) property is used to position the axis labels inside or outside the chart area. The default value is `AxisElementPosition.Outside`.
 
-N> This is only applicable to the secondary axis of Polar chart.Maui.Toolkit.Charts
+N> This is only applicable to the secondary axis of Polar chart.
 
 {% tabs %}
 
@@ -27,7 +28,6 @@ N> This is only applicable to the secondary axis of Polar chart.Maui.Toolkit.Cha
         <chart:NumericalAxis LabelsPosition="Inside"/>
     </chart:SfPolarChart.SecondaryAxis>
 </chart:SfPolarChart>
-
 
 {% endhighlight %}
 
@@ -113,7 +113,7 @@ N> EdgeLabelsDrawingMode and EdgeLabelsVisibilityMode can only be customized for
 
 **Always Visible**
 
-The `AlwaysVisible` option in [EdgeLabelsVisibilityMode](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.RangeAxisBase.html#Syncfusion_Maui_Toolkit_Charts_RangeAxisBase_EdgeLabelsVisibilityMode) is used to display the edge labels even when the chart area is zoomed state.
+The `AlwaysVisible` option in [EdgeLabelsVisibilityMode](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.RangeAxisBase.html#Syncfusion_Maui_Toolkit_Charts_RangeAxisBase_EdgeLabelsVisibilityMode) is used to display the edge labels even when the chart area is in zoomed state.
 
 {% tabs %}
 
