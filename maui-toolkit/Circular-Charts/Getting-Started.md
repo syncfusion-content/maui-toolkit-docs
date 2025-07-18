@@ -5,7 +5,7 @@ description: Learn here all about getting started with Syncfusion® .NET MAUI Ch
 platform: maui-toolkit
 control: SfCircularChart
 documentation: ug
-keywords: .net maui chart setup, syncfusion chart beginners guide, initialize circular chart maui, configure chart series maui.
+keywords: .net maui, maui chart, maui toolkit chart, chart setup, syncfusion chart beginners guide, initialize circular chart, configure chart series.
 ---
 
 # Getting Started with .NET MAUI Circular Chart
@@ -88,8 +88,8 @@ In the **MauiProgram.cs** file, register the handler for Syncfusion<sup>®</sup>
 {% highlight C# %}
 
 using Syncfusion.Maui.Toolkit.Charts;
-
 // Other using statements
+
 public partial class MainPage : ContentPage
 {
     public MainPage()
@@ -185,8 +185,8 @@ In the **MauiProgram.cs** file, register the handler for Syncfusion<sup>®</sup>
 {% highlight C# %}
 
 using Syncfusion.Maui.Toolkit.Charts;
-
 // Other using statements
+
 public partial class MainPage : ContentPage
 {
     public MainPage()
@@ -280,8 +280,8 @@ In the **MauiProgram.cs** file, register the handler for Syncfusion<sup>®</sup>
 {% highlight C# %}
 
 using Syncfusion.Maui.Toolkit.Charts;
-
 // Other using statements
+
 public partial class MainPage : ContentPage
 {
     public MainPage()
@@ -369,8 +369,8 @@ N> If you prefer to set the `BindingContext` in XAML, make sure to add the appro
 {% highlight C# %} 
 
 using Syncfusion.Maui.Toolkit.Charts;
-
 // Other using statements
+
 public partial class MainPage : ContentPage
 {
     public MainPage()

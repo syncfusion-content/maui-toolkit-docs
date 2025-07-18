@@ -5,7 +5,7 @@ description: This section explains about how to initialize legend and its custom
 platform: maui-toolkit
 control: SfCircularChart
 documentation: ug
-keywords: .net maui circular chart, chart legend, legend-wrap, legend view, legend layout, chart legend items, legend alignment.
+keywords: .net maui, maui chart, maui toolkit chart, circular chart, chart legend, legend-wrap, legend view, legend layout, chart legend items. 
 ---
 
 # Legend in .NET MAUI Chart (SfCircularChart)

@@ -5,7 +5,7 @@ description: Learn here how to export the chart view as an image and stream in t
 platform: maui-toolkit
 control: SfCircularChart
 documentation: ug
-keywords: .net maui chart export image, save chart as image maui, syncfusion chart stream export, export chart jpeg png maui, maui chart image stream.
+keywords: .net maui, maui chart, maui toolkit chart, export chart, export chart as image, export chart as stream, save chart, save chart as image, save chart as stream, export chart jpeg png maui, maui chart image stream.
 ---
 
 # Exporting in .NET MAUI Chart
@@ -52,7 +52,7 @@ Add the following code snippet to the "Info.plist" file:
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <dict>
     ...    

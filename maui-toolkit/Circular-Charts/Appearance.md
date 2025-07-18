@@ -5,7 +5,7 @@ description: Learn here all about appearance customization in .NET MAUI Chart (S
 platform: maui-toolkit
 control: SfCircularChart
 documentation: ug
-keywords: .net maui chart appearance, series brushes maui chart, syncfusion circular chart custom palette, gradient brushes circular chart, plotting area customization maui chart.
+keywords: .net maui, maui chart, maui toolkit chart, chart appearance, circular chart, syncfusion circular chart, series brushes, custom palette, gradient brushes, plotting area customization.
 ---
 
 # Appearance in .NET MAUI Circular Chart
