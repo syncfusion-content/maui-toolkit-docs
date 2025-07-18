@@ -5,7 +5,7 @@ description: This section explains about how to explode single segment or all se
 platform: maui-toolkit
 control: SfCircularChart
 documentation: ug
-keywords: .net maui chart explode, circular chart explode segments, segment explosion maui chart, syncfusion chart explode feature, explode all segments
+keywords: .net maui, maui chart, maui toolkit chart, explode segments, explode all segments, explode single segment, explode index, explode radius, explode on touch.
 ---
 
 # Explode Segments in .NET MAUI SfCircularChart

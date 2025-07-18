@@ -5,7 +5,7 @@ description: This section explains about how to enable tooltip and its customiza
 platform: maui-toolkit
 control: SfCircularChart
 documentation: ug
-keywords: .net maui chart tooltip, enable tooltip maui chart, syncfusion circular chart tooltip customization, tooltip template maui chart, chart series tooltip behavior.
+keywords: .net maui, maui chart, maui toolkit chart, circular chart, chart tooltip, chart tooltip behavior, enable tooltip, chart tooltip customization, tooltip template.
 ---
 
 # Tooltip in .NET MAUI Chart

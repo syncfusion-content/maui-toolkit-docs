@@ -5,7 +5,7 @@ description: Learn here all about introduction of Syncfusion® .NET MAUI Chart (
 platform: maui-toolkit
 control: SfCircularChart
 documentation: ug
-keywords: .net maui circular charts overview, chart features maui toolkit, syncfusion circular chart overview, circular chart key features, chart types maui chart.
+keywords: .net maui, maui chart, maui toolkit chart, circular chart, chart features, chart types, chart key features, circular charts overview.
 ---
 
 # .NET MAUI Circular Chart Overview

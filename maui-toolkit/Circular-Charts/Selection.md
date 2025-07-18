@@ -5,7 +5,7 @@ description: This section explains about how to configure the selection support 
 platform: maui-toolkit
 control: SfCircularChart
 documentation: ug
-keywords: .net maui chart selection, data point selection maui chart, chart selection behavior maui, syncfusion chart selection customization, highlight chart segment.
+keywords: .net maui, maui chart, maui toolkit chart, circular chart, chart selection, chart selection behavior, data point selection, highlight chart segment, chart selection customization.
 ---
 
 # Selection in .NET MAUI Chart

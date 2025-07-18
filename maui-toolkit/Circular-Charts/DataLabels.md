@@ -5,7 +5,7 @@ description: This section explains how to configure the data labels and their fe
 platform: maui-toolkit
 control: SfCircularChart
 documentation: ug
-keywords: .net maui chart data labels, enable data labels maui chart, customize data labels syncfusion, smart labels maui chart, connector line style maui chart.
+keywords: .net maui, maui chart, maui toolkit chart, data labels, enable data labels, customize data labels, smart labels, connector line style.
 ---
 
 # Data Labels in .NET MAUI Chart
