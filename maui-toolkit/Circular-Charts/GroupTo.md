@@ -38,7 +38,7 @@ PieSeries series = new PieSeries()
     ItemsSource = new ViewModel().Data,
     XBindingPath = "Product", 
     YBindingPath = "SalesRate",
-    GroupMode = ChartGroupMode.Value, // Set the mode for grouping smaller slices into a single slice
+    GroupMode = PieGroupMode.Value, // Set the mode for grouping smaller slices into a single slice
     GroupTo = 15 // Define a threshold value for the group mode
 };
 
