@@ -743,7 +743,7 @@ namespace ChartGettingStarted
                 DataLabelSettings = new CartesianDataLabelSettings()
                 {
                     LabelPlacement = DataLabelPlacement.Inner
-                }              
+                }           
             };  
 
             //Adding Series to the Chart Series Collection
