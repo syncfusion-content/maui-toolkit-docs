@@ -122,6 +122,27 @@ SfOtpInput otpInput = new SfOtpInput()
 
 ![Input length](images/length.png)
 
+## Input box size
+
+You can specify the width and height of each input box by using the BoxWidth and BoxHeight properties. This customization allows you to tailor the OTP input appearance to match your application's design. The default values are 40 for both width and height.
+
+{% tabs %} 
+{% highlight xaml %} 
+
+<otpInput:SfOtpInput BoxWidth="50" BoxHeight="50" /> 
+
+{% endhighlight %} 
+{% highlight C# %} 
+
+SfOtpInput otpInput = new SfOtpInput() 
+{ 
+    BoxWidth = 50, 
+    BoxHeight = 50 
+}; 
+
+{% endhighlight %} 
+{% endtabs %}
+
 ## Input background
 
 The [InputBackground](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.OtpInput.SfOtpInput.html#Syncfusion_Maui_Toolkit_OtpInput_SfOtpInput_InputBackground) property customizes the appearance of input fields. This property works when [StylingMode](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.OtpInput.SfOtpInput.html#Syncfusion_Maui_Toolkit_OtpInput_SfOtpInput_StylingMode) is set to [Filled](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.OtpInput.OtpInputStyle.html#Syncfusion_Maui_Toolkit_OtpInput_OtpInputStyle_Filled).
