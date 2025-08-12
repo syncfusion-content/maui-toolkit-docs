@@ -2,9 +2,10 @@
 layout: post
 title: Axis line in .NET MAUI Chart control | Syncfusion
 description: Learn here all about the chart axis line and its customization in the Syncfusion® .NET MAUI Chart (SfPolarChart) control.
+documentation: ug
 platform: maui-toolkit
 control: SfPolarChart
-documentation: ug
+keywords: .net maui polar chart, axis line customization, axis line style, axis line offset, axis customization, maui toolkit
 ---
 
 # Axis line in .NET MAUI Chart
@@ -24,7 +25,7 @@ N> The customization of axis lines using the AxisLineStyle property can only be 
     <chart:SfPolarChart.SecondaryAxis>
         <chart:NumericalAxis>
             <chart:NumericalAxis.AxisLineStyle>
-                <chart:ChartLineStyle StrokeWidth ="2" Stroke="Red"/>
+                <chart:ChartLineStyle StrokeWidth="2" Stroke="Red"/>
             </chart:NumericalAxis.AxisLineStyle>
         </chart:NumericalAxis>
     </chart:SfPolarChart.SecondaryAxis>
@@ -48,6 +49,7 @@ secondaryAxis.AxisLineStyle = axisLineStyle;
 chart.SecondaryAxis = secondaryAxis;
 . . .
 this.Content = chart;
+
 {% endhighlight %}
 
 {% endtabs %}
@@ -65,7 +67,7 @@ The padding to the axis line is defined by using the [AxisLineOffset](https://he
     <chart:SfPolarChart.SecondaryAxis>
         <chart:NumericalAxis AxisLineOffset="25">
             <chart:NumericalAxis.AxisLineStyle>
-                <chart:ChartLineStyle StrokeWidth ="2" Stroke="Red"/>
+                <chart:ChartLineStyle StrokeWidth="2" Stroke="Red"/>
             </chart:NumericalAxis.AxisLineStyle>
         </chart:NumericalAxis>
     </chart:SfPolarChart.SecondaryAxis>
@@ -88,6 +90,7 @@ secondaryAxis.AxisLineStyle = axisLineStyle;
 chart.SecondaryAxis = secondaryAxis;
 . . .
 this.Content = chart;
+
 {% endhighlight %}
 
 {% endtabs %}

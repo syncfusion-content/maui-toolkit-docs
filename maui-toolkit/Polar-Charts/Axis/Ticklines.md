@@ -2,16 +2,17 @@
 layout: post
 title: Axis Tick Line in .NET MAUI Chart Control | Syncfusion
 description: Learn here all about the chart axis tick lines and their customization in the Syncfusion® .NET MAUI Chart (SfPolarChart) control.
+documentation: ug
 platform: maui-toolkit
 control: SfPolarChart
-documentation: ug
+keywords: .net maui polar chart, axis tick lines, tick line customization, major tick lines, minor tick lines, tick positioning, maui toolkit
 ---
 
 # Tick Lines in .NET MAUI Chart
 
-Tick lines are the small lines which is drawn on the axis line representing the axis labels. By default, tick lines are drawn outside of the axis.
+Tick lines are small lines drawn on the axis line that represent axis labels. By default, tick lines are drawn outside of the axis.
 
-Minor tick lines can be added to the axis by defining the [MinorTicksPerInterval](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.RangeAxisBase.html#Syncfusion_Maui_Toolkit_Charts_RangeAxisBase_MinorTicksPerInterval) property. This property will add the minor tick lines to every interval based on value.
+Minor tick lines can be added to the axis by defining the [MinorTicksPerInterval](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.RangeAxisBase.html#Syncfusion_Maui_Toolkit_Charts_RangeAxisBase_MinorTicksPerInterval) property. This property adds minor tick lines to every interval based on the specified value.
 
 N> For category axis, minor tick lines are not applicable as it is rendered based on index positions.
 
@@ -36,7 +37,7 @@ N> For category axis, minor tick lines are not applicable as it is rendered base
 
 SfPolarChart chart = new SfPolarChart();
 . . .
-NumericalAxis primaryAxis = new NumericalAxis()
+NumericalAxis primaryAxis = new NumericalAxis();
 chart.PrimaryAxis = primaryAxis;
 NumericalAxis secondaryAxis = new NumericalAxis()
 {
@@ -46,13 +47,14 @@ NumericalAxis secondaryAxis = new NumericalAxis()
 chart.SecondaryAxis = secondaryAxis;
 . . .
 this.Content = chart;
+
 {% endhighlight %}
 
 {% endtabs %}
 
-## Positioning the ticks
+## Positioning the Ticks
 
-The tick lines can be positioned inside or outside the chart area using the [TickPosition](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxis.html#Syncfusion_Maui_Toolkit_Charts_ChartAxis_TickPosition) property. [TickPosition](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxis.html#Syncfusion_Maui_Toolkit_Charts_ChartAxis_TickPosition) property default value is `AxisElementPosition.Outside`.
+The tick lines can be positioned inside or outside the chart area using the [TickPosition](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxis.html#Syncfusion_Maui_Toolkit_Charts_ChartAxis_TickPosition) property. The default value of [TickPosition](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxis.html#Syncfusion_Maui_Toolkit_Charts_ChartAxis_TickPosition) is `AxisElementPosition.Outside`.
 
 N> This is only applicable to the secondary axis of Polar chart.
 
@@ -81,6 +83,7 @@ NumericalAxis secondaryAxis = new NumericalAxis()
 chart.SecondaryAxis = secondaryAxis;
 . . .
 this.Content = chart;
+
 {% endhighlight %}
 
 {% endtabs %}
@@ -89,7 +92,7 @@ this.Content = chart;
 
 ## Customization
 
-Both major and minor tick lines can be customized using the [MajorTickStyle](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxis.html#Syncfusion_Maui_Toolkit_Charts_ChartAxis_MajorTickStyle) and [MinorTickStyle](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.RangeAxisBase.html#Syncfusion_Maui_Toolkit_Charts_RangeAxisBase_MinorTickStyle) properties respectively. They provide options to change the [StrokeWidth](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxisTickStyle.html#Syncfusion_Maui_Toolkit_Charts_ChartAxisTickStyle_StrokeWidth), [TickSize](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxisTickStyle.html#Syncfusion_Maui_Toolkit_Charts_ChartAxisTickStyle_TickSize), [Stroke](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxisTickStyle.html#Syncfusion_Maui_Toolkit_Charts_ChartAxisTickStyle_Stroke) of tick lines. By default, minor tick lines will not be visible.
+Both major and minor tick lines can be customized using the [MajorTickStyle](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxis.html#Syncfusion_Maui_Toolkit_Charts_ChartAxis_MajorTickStyle) and [MinorTickStyle](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.RangeAxisBase.html#Syncfusion_Maui_Toolkit_Charts_RangeAxisBase_MinorTickStyle) properties respectively. They provide options to change the [StrokeWidth](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxisTickStyle.html#Syncfusion_Maui_Toolkit_Charts_ChartAxisTickStyle_StrokeWidth), [TickSize](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxisTickStyle.html#Syncfusion_Maui_Toolkit_Charts_ChartAxisTickStyle_TickSize), and [Stroke](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxisTickStyle.html#Syncfusion_Maui_Toolkit_Charts_ChartAxisTickStyle_Stroke) of tick lines. By default, minor tick lines are not visible.
 
 {% tabs %}
 
@@ -124,17 +127,18 @@ chart.PrimaryAxis = primaryAxis;
 
 NumericalAxis secondaryAxis = new NumericalAxis()
 {
-     // Define the style for major ticks on the secondary axis
+    MinorTicksPerInterval = 4,
+    // Define the style for major ticks on the secondary axis
     MajorTickStyle = new ChartAxisTickStyle()
     {
-        Stroke = Color.Red,
+        Stroke = Colors.Red,
         StrokeWidth = 1,
         TickSize = 10
     },
     // Define the style for minor ticks on the secondary axis
     MinorTickStyle = new ChartAxisTickStyle()
     {
-        Stroke = Color.Red,
+        Stroke = Colors.Red,
         StrokeWidth = 1
     }
 };
@@ -142,6 +146,7 @@ NumericalAxis secondaryAxis = new NumericalAxis()
 chart.SecondaryAxis = secondaryAxis;
 . . .
 this.Content = chart;
+
 {% endhighlight %}
 
 {% endtabs %}
