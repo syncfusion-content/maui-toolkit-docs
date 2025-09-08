@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Axis labels in .NET MAUI Chart control | Syncfusion
+title: .NET MAUI Chart Axis labels | Syncfusion
 description: Learn here all about axis labels and its customization in Syncfusion® .NET MAUI Chart (SfCartesianChart) control.
 platform: maui-toolkit
 control: SfCartesianChart
@@ -30,7 +30,6 @@ The [LabelsPosition](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui
         <chart:NumericalAxis LabelsPosition="Inside"/>
     </chart:SfCartesianChart.YAxes>
 </chart:SfCartesianChart>
-
 
 {% endhighlight %}
 
