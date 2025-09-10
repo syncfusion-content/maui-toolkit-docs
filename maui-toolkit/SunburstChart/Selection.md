@@ -2,7 +2,7 @@
 layout: post
 title: Selection in .NET MAUI Sunburst Chart control | Syncfusion
 description: This section explains how to enable and customize selection in the Syncfusion<sup>®</sup> .NET MAUI Sunburst Chart control.
-platform: maui
+platform: maui-toolkit
 control: SfSunburstChart
 documentation: ug
 ---
@@ -108,7 +108,7 @@ SunburstSelectionSettings selectionSettings = new SunburstSelectionSettings
     Type = SunburstSelectionType.Parent
 };
 sunburstChart.SelectionSettings = selectionSettings;
-this.Content = sunburst;
+this.Content = sunburstChart;
 
 {% endhighlight %}
 
@@ -140,7 +140,7 @@ SunburstSelectionSettings selectionSettings = new SunburstSelectionSettings
     Type = SunburstSelectionType.Single
 };
 sunburstChart.SelectionSettings = selectionSettings;
-this.Content = sunburst;
+this.Content = sunburstChart;
 
 {% endhighlight %}
 
@@ -180,7 +180,7 @@ SunburstSelectionSettings selectionSettings = new SunburstSelectionSettings
     Type = SunburstSelectionType.Child,
 };
 sunburstChart.SelectionSettings = selectionSettings;
-this.Content = sunburst;
+this.Content = sunburstChart;
 
 {% endhighlight %}
 
@@ -216,7 +216,7 @@ SunburstSelectionSettings selectionSettings = new SunburstSelectionSettings
     Type = SunburstSelectionType.Child,
 };
 sunburstChart.SelectionSettings = selectionSettings;
-this.Content = sunburst;
+this.Content = sunburstChart;
 
 {% endhighlight %}
 
@@ -253,7 +253,7 @@ SunburstSelectionSettings selectionSettings = new SunburstSelectionSettings
     Type = SunburstSelectionType.Child,
 };
 sunburstChart.SelectionSettings = selectionSettings;
-this.Content = sunburst;
+this.Content = sunburstChart;
 
 {% endhighlight %}
 
