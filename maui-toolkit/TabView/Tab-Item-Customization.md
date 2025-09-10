@@ -137,6 +137,93 @@ The following image shows a tab item with its content:
 
 ![Content](images/TabItem_Content.png) 
 
+### HeaderContent
+
+The `HeaderContent` property allows you to define a custom view for the tab header. This is useful when you want to display more than just text or image—such as combining icons, labels, or even interactive elements like buttons.
+
+You can set the `HeaderContent` in both XAML and C# as shown below.
+
+{% tabs %} 
+
+{% highlight xaml %}
+<!-- Define the SfTabView control -->
+<tabView:SfTabView>
+	<!-- Define a tab item with the HeaderContent-->
+	<tabView:SfTabItem>
+		<!-- Define the HeaderContent of the tab item -->		
+		<tabView:SfTabItem.HeaderContent>
+			<Grid ColumnSpacing="5" HorizontalOptions="Center" VerticalOptions="Center">
+				<Grid.ColumnDefinitions>
+					<ColumnDefinition Width="Auto"/>
+					<ColumnDefinition Width="*"/>
+				</Grid.ColumnDefinitions>
+				<Image Source="call.png" HeightRequest="20" WidthRequest="20"/>
+				<Label Grid.Column="1" Text="Call" HorizontalTextAlignment="Center"  VerticalTextAlignment="Center"/>
+			</Grid>
+		</tabView:SfTabItem.HeaderContent>
+		<tabView:SfTabItem.Content>
+			<ListView>
+				<!-- Add your items here -->
+			</ListView>
+		</tabView:SfTabItem.Content>
+	</tabView:SfTabItem>
+</tabView:SfTabView>
+{% endhighlight %}
+
+{% highlight C# %}
+// Create an instance of the SfTabView control
+SfTabView tabView = new SfTabView();
+
+var callHeader = new Grid
+{
+    ColumnSpacing = 5,
+    HorizontalOptions = LayoutOptions.Center,
+    VerticalOptions = LayoutOptions.Center,
+    ColumnDefinitions =
+    {
+        new ColumnDefinition { Width = GridLength.Auto },
+        new ColumnDefinition { Width = GridLength.Star }
+    }
+};
+var callImage = new Image { Source = "call.png", HeightRequest = 20, WidthRequest = 20 };
+Grid.SetColumn(callImage, 0);
+
+var callLabel = new Label
+{
+    Text = "Call",
+    HorizontalTextAlignment = TextAlignment.Center,
+    VerticalTextAlignment = TextAlignment.Center
+};
+Grid.SetColumn(callLabel, 1);
+
+callHeader.Children.Add(callImage);
+callHeader.Children.Add(callLabel);
+
+// Create a collection of tab items with HeaderContent
+var tabItems = new TabItemCollection
+{
+	new SfTabItem
+	{
+		HeaderContent = callHeader,
+		Content = new ListView
+		{
+			// Add your items here
+		}
+	}
+};
+
+// Set the Items property of the SfTabView to the collection of tab items
+tabView.Items = tabItems;
+{% endhighlight %}
+
+{% endtabs %}
+
+The following image shows a tab item with custom header content:
+
+![HeaderContent](images/HeaderContent.png)
+
+N> When using `HeaderContent,` the `Header` property will be ignored. Ensure consistent sizing and alignment for better visual balance across tabs.
+
 ## Image position options 
 
 The .NET MAUI Tab View provides four options that determine how the image in the tab aligns relative to the text. The options are left, top, right, and bottom. You can set this alignment using the [ImagePosition](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SfTabItem.html#Syncfusion_Maui_Toolkit_TabView_SfTabItem_ImagePosition) property of the [SfTabItem](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SfTabItem.html) class.
@@ -670,3 +757,61 @@ this.Content = stackLayout;
 {% endhighlight %}
 
 {% endtabs %}
+
+## Animation Easing
+
+The `AnimationEasing` property of the [SfTabView](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SfTabView.html) allows you to specify the easing function for the transition animation when switching between tab contents. This provides more control over the animation's acceleration and deceleration, allowing for more natural and visually appealing transitions. The default value of the `AnimationEasing` property is [Easing.Linear](https://learn.microsoft.com/en-us/dotnet/api/microsoft.maui.easing.linear?view=net-maui-9.0#microsoft-maui-easing-linear).
+
+The `AnimationEasing` property can be set in both XAML and C# as shown below.
+
+{% tabs %}
+
+{% highlight xaml %}
+<!-- Define the SfTabView control with AnimationEasing -->
+<tabView:SfTabView AnimationEasing="{x:Static Easing.BounceOut}"
+                   ContentTransitionDuration="500">
+    <!-- Define a tab items -->
+</tabView:SfTabView>
+{% endhighlight %}
+
+{% highlight C# %}
+// Create an instance of the SfTabView control
+SfTabView tabView = new SfTabView();
+
+// Set the AnimationEasing property
+tabView.AnimationEasing = Easing.BounceOut;
+tabView.ContentTransitionDuration = 500;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![AnimationEasing](images/AnimationEasing.gif)
+
+## Enable Ripple Animation
+
+The `EnableRippleAnimation` property of the [SfTabView](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SfTabView.html) allows you to enable or disable the ripple animation for tab headers. This animation provides visual feedback when a tab header is tapped. The default value of the `EnableRippleAnimation` property is `true`.
+
+You can disable the ripple animation in XAML and C#, as shown in the following examples.
+
+{% tabs %}
+
+{% highlight xaml %}
+<!-- Define the SfTabView control with the ripple animation disabled -->
+<tabView:SfTabView EnableRippleAnimation="False">
+    <!-- Define tab items -->
+</tabView:SfTabView>
+{% endhighlight %}
+
+{% highlight C# %}
+// Create an instance of the SfTabView control
+SfTabView tabView = new SfTabView();
+
+// Disable the ripple animation
+tabView.EnableRippleAnimation = false;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![EnableRippleAnimation](images/EnableRippleAnimation.gif)
