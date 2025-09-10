@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started with .NET MAUI Sunburst Chart
 
-This section explains how to populate the sunburst chart with data, a title, data labels, a legend, and a tooltip, as well as the essential aspects of getting started with the [SfSunburstChart](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.SunburstChart.SfSunburstChart.html).
+This section explains how to populate the sunburst chart with data, a title, data labels, a legend, and a tooltip, as well as the essential aspects of getting started with the `SfSunburstChart`.
 
 {% tabcontents %}
 {% tabcontent Visual Studio %}
@@ -65,7 +65,7 @@ public static class MauiProgram
 ## Step 4: Add .NET MAUI Sunburst Chart
 
 1. To initialize the control, import the `Syncfusion.Maui.Toolkit.SunburstChart` namespace into your code.
-2. Initialize an instance of the [SfSunburstChart](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.SunburstChart.SfSunburstChart.html) control.
+2. Initialize an instance of the `SfSunburstChart` control.
 
 {% tabs %} 
 {% highlight xaml %}
@@ -159,14 +159,14 @@ public static class MauiProgram
 ## Step 4: Add .NET MAUI Sunburst Chart
 
 1. To initialize the control, import the `Syncfusion.Maui.Toolkit.SunburstChart` namespace into your code.
-2. Initialize an instance of the [SfSunburstChart](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.SunburstChart.SfSunburstChart.html) control.
+2. Initialize an instance of the `SfSunburstChart` control.
 
 {% tabs %} 
 {% highlight xaml %}
 
 <ContentPage   
     . . .
-   xmlns:chart="clr-namespace:Syncfusion.Maui.Toolkit.SunburstChart;assembly=Syncfusion.Maui.Toolkit">
+    xmlns:chart="clr-namespace:Syncfusion.Maui.Toolkit.SunburstChart;assembly=Syncfusion.Maui.Toolkit">
 
     <chart:SfSunburstChart/>
 
@@ -250,15 +250,16 @@ In the **MauiProgram.cs** file, register the handler for Syncfusion<sup>®</sup>
 ## Step 4: Add .NET MAUI sunburst Chart
 
 1. To initialize the control, import the `Syncfusion.Maui.Toolkit.SunburstChart` namespace into your code.
-2. Initialize an instance of the [SfSunburstChart](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.SunburstChart.SfSunburstChart.html) control.
+2. Initialize an instance of the `SfSunburstChart` control.
 
 {% tabs %}
 {% highlight XAML %}
 
-<ContentPage ...
-             xmlns:chart="clr-namespace:Syncfusion.Maui.Toolkit.SunburstChart;assembly=Syncfusion.Maui.Toolkit">
+<ContentPage 
+    ...
+    xmlns:chart="clr-namespace:Syncfusion.Maui.Toolkit.SunburstChart;assembly=Syncfusion.Maui.Toolkit">
 
-        <chart:SfSunburstChart/>
+    <chart:SfSunburstChart/>
 
 </ContentPage>
 
@@ -386,8 +387,8 @@ this.BindingContext = new SunburstViewModel();
 
 ### Populate Chart with Data
 
-Bind `DataSource` to the Sunburst chart [ItemsSource](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.SunburstChart.SfSunburstChart.html#Syncfusion_Maui_SunburstChart_SfSunburstChart_ItemsSource) property from its BindingContext to create your Sunburst chart.
-Then, add the [SunburstHierarchicalLevel](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.SunburstChart.SunburstHierarchicalLevel.html) to [Levels](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.SunburstChart.SfSunburstChart.html#Syncfusion_Maui_SunburstChart_SfSunburstChart_Levels) collection. Each hierarchy level is formed based on the property specified in the [GroupMemberPath](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.SunburstChart.SunburstHierarchicalLevel.html#Syncfusion_Maui_SunburstChart_SunburstHierarchicalLevel_GroupMemberPath) property, and each arc segment size is calculated using the [ValueMemberPath](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.SunburstChart.SfSunburstChart.html#Syncfusion_Maui_SunburstChart_SfSunburstChart_ValueMemberPath) property.
+Bind `DataSource` to the Sunburst chart `ItemsSource` property from its BindingContext to create your Sunburst chart.
+Then, add the `SunburstHierarchicalLevel` to `Levels` collection. Each hierarchy level is formed based on the property specified in the `GroupMemberPath` property, and each arc segment size is calculated using the `ValueMemberPath` property.
 
 {% tabs %}   
 
@@ -395,12 +396,12 @@ Then, add the [SunburstHierarchicalLevel](https://help.syncfusion.com/cr/maui/Sy
         
 <ContentPage
     . . .
-     xmlns:chart="clr-namespace:Syncfusion.Maui.Toolkit.SunburstChart;assembly=Syncfusion.Maui.Toolkit"
+    xmlns:chart="clr-namespace:Syncfusion.Maui.Toolkit.SunburstChart;assembly=Syncfusion.Maui.Toolkit"
     xmlns:model="clr-namespace:SunburstGettingStarted">
 
     <chart:SfSunburstChart x:Name="sunburst" 
-                              ItemsSource="{Binding DataSource}" 
-                              ValueMemberPath="EmployeesCount">
+                           ItemsSource="{Binding DataSource}" 
+                           ValueMemberPath="EmployeesCount">
 
         <chart:SfSunburstChart.Levels>
             <chart:SunburstHierarchicalLevel GroupMemberPath="Country"/>
@@ -431,7 +432,7 @@ this.Content = sunburst;
 {% endtabs %} 
 
 ### Add a Title
-The title of the sunburst chart provides quick information to the user about the data being plotted in the chart. The [Title](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.SunburstChart.SfSunburstChart.html#Syncfusion_Maui_SunburstChart_SfSunburstChart_Title) property is used to set title for the sunburst chart as follows.
+The title of the sunburst chart provides quick information to the user about the data being plotted in the chart. The `Title` property is used to set title for the sunburst chart as follows.
 
 {% tabs %} 
 
@@ -462,7 +463,7 @@ this.Content = sunburst;
 
 ### Enable the Data Labels
 
-The [ShowLabels](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.SunburstChart.SfSunburstChart.html#Syncfusion_Maui_SunburstChart_SfSunburstChart_ShowLabels) property of the chart can be used to enable data labels to improve the readability of the sunburst chart. The label visibility is set to `False` by default.
+The `ShowLabels` property of the chart can be used to enable data labels to improve the readability of the sunburst chart. The label visibility is set to `False` by default.
 
 {% tabs %} 
 
@@ -487,7 +488,7 @@ this.Content = sunburst;
 
 ### Enable a Legend
 
-The legend provides information about the data points displayed in the sunburst chart. The [Legend](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.SunburstChart.SfSunburstChart.html#Syncfusion_Maui_SunburstChart_SfSunburstChart_Legend) property of the chart enables the [SunburstLegend](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.SunburstChart.SunburstLegend.html).
+The legend provides information about the data points displayed in the sunburst chart. The `Legend` property of the chart enables the `SunburstLegend`.
 
 {% tabs %} 
 
@@ -515,7 +516,7 @@ this.Content = sunburst;
 
 ### Enable Tooltip
 
-Tooltips are used to display information about a segment when the mouse hovers over it. Enable the tooltips by setting the chart's [EnableTooltip](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.SunburstChart.SfSunburstChart.html#Syncfusion_Maui_SunburstChart_SfSunburstChart_EnableTooltip) property to `True`.
+Tooltips are used to display information about a segment when the mouse hovers over it. Enable the tooltips by setting the chart's `EnableTooltip` property to `True`.
 
 {% tabs %} 
 
@@ -550,9 +551,9 @@ The following code example gives you the complete code of above configurations.
     xmlns:model="clr-namespace:SunburstGettingStarted">
 
     <chart:SfSunburstChart ItemsSource="{Binding DataSource}" 
-                              ShowLabels="True"  
-                              EnableTooltip="True"
-                              ValueMemberPath="EmployeesCount">
+                           ShowLabels="True"  
+                           EnableTooltip="True"
+                           ValueMemberPath="EmployeesCount">
 
         <chart:SfSunburstChart.BindingContext>
             <model:SunburstViewModel/>
