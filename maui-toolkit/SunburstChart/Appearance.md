@@ -2,7 +2,7 @@
 layout: post
 title: Sunburst Chart in .NET MAUI Sunburst Chart control | Syncfusion
 description: Learn here all about Sunburst Chart appearance in Syncfusion<sup>®</sup> .NET MAUI Sunburst Chart control.
-platform: maui
+platform: maui-toolkit
 control: SfSunburstChart
 documentation: ug
 ---

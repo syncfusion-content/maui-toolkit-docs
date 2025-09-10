@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Data label in .NET MAUI Sunburst Chart control | Syncfusion
-description: This section explains about how to configure the data labels and its features in .NET MAUI Sunburst Chart.
-platform: maui
+description: This section explains about how to configure the data labels and its features in Syncfusion<sup>®</sup> .NET MAUI Sunburst Chart.
+platform: maui-toolkit
 control: SfSunburstChart
 documentation: ug
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: CenterView in .NET MAUI Sunburst Chart control | Syncfusion
 description: This section explains about how to add a center view in the Syncfusion<sup>®</sup> .NET MAUI Sunburst Chart control.
-platform: maui
+platform: maui-toolkit
 control: SfSunburstChart
 documentation: ug
 ---
