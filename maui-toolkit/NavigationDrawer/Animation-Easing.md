@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Customize Transition Animation in .NET MAUI Navigation Drawer
+title: Easing Functions in .NET MAUI Navigation Drawer Control | Syncfusion®
 description: Learn about Animation Easing support in the Syncfusion® .NET MAUI Navigation Drawer (SfNavigationDrawer) control and more. 
 platform: maui-toolkit
 control: SfNavigationDrawer
 documentation: UG
 ---
 
-# Customize Transition Animation in .NET MAUI Navigation Drawer
+# Easing Functions in .NET MAUI Navigation Drawer
 
 The `AnimationEasing` property allows you to specify the easing function for the drawer's transition animations during opening and closing. This provides more control over the animation's acceleration and deceleration, allowing for more natural and visually appealing transitions. The default value of the `AnimationEasing` property is [Easing.Linear](https://learn.microsoft.com/en-us/dotnet/api/microsoft.maui.easing.linear?view=net-maui-9.0#microsoft-maui-easing-linear).
 
