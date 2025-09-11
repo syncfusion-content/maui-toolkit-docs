@@ -19,7 +19,7 @@ The `CenterHoleSize` property of SfSunburstChart is used to get the diameter val
 
 {% highlight xaml %}
 
-<chart:SfSunburstChart.CenterView>
+<sunburst:SfSunburstChart.CenterView>
     <Border x:Name="border" HeightRequest="{Binding CenterHoleSize}" 
             WidthRequest="{Binding CenterHoleSize}" BackgroundColor="GhostWhite">
         <Border.StrokeShape>
@@ -40,7 +40,7 @@ The `CenterHoleSize` property of SfSunburstChart is used to get the diameter val
                    HorizontalOptions="CenterAndExpand"/> 
         </VerticalStackLayout>
     </Border>
-</chart:SfSunburstChart.CenterView>
+</sunburst:SfSunburstChart.CenterView>
 
 {% endhighlight %}
 

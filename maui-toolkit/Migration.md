@@ -137,8 +137,8 @@ By preserving similar APIs and functionality, developers can easily update their
 </tr>
 <tr>
   <td>SfSunburstChart</td>
-  <td>xmlns:chart="clr-namespace:Syncfusion.Maui.SunburstChart;assembly=Syncfusion.Maui.SunburstChart"</td>
-  <td>xmlns:chart="clr-namespace:Syncfusion.Maui.Toolkit.SunburstChart;assembly=Syncfusion.Maui.Toolkit"</td>
+  <td>xmlns:sunburst="clr-namespace:Syncfusion.Maui.SunburstChart;assembly=Syncfusion.Maui.SunburstChart"</td>
+  <td>xmlns:sunburst="clr-namespace:Syncfusion.Maui.Toolkit.SunburstChart;assembly=Syncfusion.Maui.Toolkit"</td>
   <td>Defines the XAML namespace for SfSunburstChart control.</td>
 </tr>
 <tr>
@@ -270,7 +270,7 @@ By preserving similar APIs and functionality, developers can easily update their
   <td>SfSunburstChart</td>
   <td>Syncfusion.Maui.SunburstChart</td>
   <td>Syncfusion.Maui.Toolkit.SunburstChart</td>
-  <td>Defines the XAML namespace for SfSunburstChart control.</td>
+  <td>Defines the namespace for SfSunburstChart control.</td>
 </tr>
 <tr>
   <td><a href="https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SfTabView.html">SfTabView</a></td>

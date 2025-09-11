@@ -54,10 +54,10 @@ Both alignment properties have the following enum types:
 
 <sunburst:SfSunburstChart EnableDrillDown="True">
     . . .
-    <chart:SfSunburstChart.ToolbarSettings>
-        <chart:SunburstToolbarSettings HorizontalAlignment="End" 
+    <sunburst:SfSunburstChart.ToolbarSettings>
+        <sunburst:SunburstToolbarSettings HorizontalAlignment="End" 
                                        VerticalAlignment="End"/>
-    </chart:SfSunburstChart.ToolbarSettings>
+    </sunburst:SfSunburstChart.ToolbarSettings>
 </sunburst:SfSunburstChart>
     
 {% endhighlight %}
@@ -91,9 +91,9 @@ The toolbar's position within the Sunburst Chart can be adjusted both horizontal
 
 <sunburst:SfSunburstChart EnableDrillDown="True">
     . . .
-    <chart:SfSunburstChart.ToolbarSettings >
-        <chart:SunburstToolbarSettings OffsetX="-50" OffsetY="200"/>
-    </chart:SfSunburstChart.ToolbarSettings>
+    <sunburst:SfSunburstChart.ToolbarSettings >
+        <sunburst:SunburstToolbarSettings OffsetX="-50" OffsetY="200"/>
+    </sunburst:SfSunburstChart.ToolbarSettings>
 </sunburst:SfSunburstChart>
     
 {% endhighlight %}
@@ -130,9 +130,9 @@ The appearance of the drill-down toolbar in the Sunburst Chart can be customized
 
 <sunburst:SfSunburstChart EnableDrillDown="True">
     . . .
-    <chart:SfSunburstChart.ToolbarSettings>
-        <chart:SunburstToolbarSettings IconBrush="White" Background="#2989F9"/>
-    </chart:SfSunburstChart.ToolbarSettings>
+    <sunburst:SfSunburstChart.ToolbarSettings>
+        <sunburst:SunburstToolbarSettings IconBrush="White" Background="#2989F9"/>
+    </sunburst:SfSunburstChart.ToolbarSettings>
 </sunburst:SfSunburstChart>
     
 {% endhighlight %}

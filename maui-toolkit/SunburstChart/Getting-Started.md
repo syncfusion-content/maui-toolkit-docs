@@ -38,7 +38,7 @@ Before proceeding, ensure that the following are set up:
  In the **MauiProgram.cs** file, register the handler for Syncfusion<sup>®</sup> Toolkit.
 
 {% tabs %}
-{% highlight C# tabtitle="MauiProgram.cs" hl_lines="6 17" %}
+{% highlight C# tabtitle="MauiProgram.cs" hl_lines="1 9" %}
 
 using Syncfusion.Maui.Toolkit.Hosting;
 
@@ -72,9 +72,9 @@ public static class MauiProgram
 
 <ContentPage   
     . . .
-    xmlns:chart="clr-namespace:Syncfusion.Maui.Toolkit.SunburstChart;assembly=Syncfusion.Maui.Toolkit">
+    xmlns:sunburst="clr-namespace:Syncfusion.Maui.Toolkit.SunburstChart;assembly=Syncfusion.Maui.Toolkit">
 
-    <chart:SfSunburstChart/>
+    <sunburst:SfSunburstChart/>
 
 </ContentPage>
  
@@ -91,9 +91,9 @@ public partial class MainPage : ContentPage
     {
         InitializeComponent();
         // Create a new instance of SfSunburstChart which is a type of chart control.           
-        SfSunburstChart chart = new SfSunburstChart();
-        // Set the newly created chart as the content of the current view.
-        this.Content = chart;
+        SfSunburstChart sunburst = new SfSunburstChart();
+        // Set the newly created sunburst as the content of the current view.
+        this.Content = sunburst;
     }
 }   
 
@@ -132,7 +132,7 @@ Before proceeding, ensure that the following are set up:
  In the **MauiProgram.cs** file, register the handler for Syncfusion<sup>®</sup> Toolkit.
 
 {% tabs %}
-{% highlight C# tabtitle="MauiProgram.cs" hl_lines="6 17" %}
+{% highlight C# tabtitle="MauiProgram.cs" hl_lines="1 9" %}
 
 using Syncfusion.Maui.Toolkit.Hosting;
 
@@ -166,9 +166,9 @@ public static class MauiProgram
 
 <ContentPage   
     . . .
-    xmlns:chart="clr-namespace:Syncfusion.Maui.Toolkit.SunburstChart;assembly=Syncfusion.Maui.Toolkit">
+    xmlns:sunburst="clr-namespace:Syncfusion.Maui.Toolkit.SunburstChart;assembly=Syncfusion.Maui.Toolkit">
 
-    <chart:SfSunburstChart/>
+    <sunburst:SfSunburstChart/>
 
 </ContentPage>
  
@@ -184,9 +184,9 @@ public partial class MainPage : ContentPage
     {
         InitializeComponent();
          // Create a new instance of SfSunburstChart which is a type of chart control.          
-        SfSunburstChart chart = new SfSunburstChart();
-        // Set the newly created chart as the content of the current view.
-        this.Content = chart;
+        SfSunburstChart sunburst = new SfSunburstChart();
+        // Set the newly created sunburst as the content of the current view.
+        this.Content = sunburst;
     }
 }   
 
@@ -247,7 +247,7 @@ In the **MauiProgram.cs** file, register the handler for Syncfusion<sup>®</sup>
 {% endhighlight %}
 {% endtabs %}
 
-## Step 4: Add .NET MAUI sunburst Chart
+## Step 4: Add .NET MAUI Sunburst Chart
 
 1. To initialize the control, import the `Syncfusion.Maui.Toolkit.SunburstChart` namespace into your code.
 2. Initialize an instance of the `SfSunburstChart` control.
@@ -257,9 +257,9 @@ In the **MauiProgram.cs** file, register the handler for Syncfusion<sup>®</sup>
 
 <ContentPage 
     ...
-    xmlns:chart="clr-namespace:Syncfusion.Maui.Toolkit.SunburstChart;assembly=Syncfusion.Maui.Toolkit">
+    xmlns:sunburst="clr-namespace:Syncfusion.Maui.Toolkit.SunburstChart;assembly=Syncfusion.Maui.Toolkit">
 
-    <chart:SfSunburstChart/>
+    <sunburst:SfSunburstChart/>
 
 </ContentPage>
 
@@ -277,9 +277,9 @@ public partial class MainPage : ContentPage
     {
         InitializeComponent();
         // Create a new instance of SfSunburstChart which is a type of chart control.
-        SfSunburstChart chart = new SfSunburstChart();
-        // Set the newly created chart as the content of the current view.
-        this.Content = chart;
+        SfSunburstChart sunburst = new SfSunburstChart();
+        // Set the newly created sunburst as the content of the current view.
+        this.Content = sunburst;
     }
 }
 
@@ -366,7 +366,7 @@ N> Add the namespace of the `SunburstViewModel` class to your XAML Page, if you 
 
 <ContentPage
     . . .
-    xmlns:chart="clr-namespace:Syncfusion.Maui.Toolkit.SunburstChart;assembly=Syncfusion.Maui.Toolkit"
+    xmlns:sunburst="clr-namespace:Syncfusion.Maui.Toolkit.SunburstChart;assembly=Syncfusion.Maui.Toolkit"
     xmlns:model="clr-namespace:SunburstGettingStarted">
 
     <ContentPage.BindingContext>
@@ -396,20 +396,20 @@ Then, add the `SunburstHierarchicalLevel` to `Levels` collection. Each hierarchy
         
 <ContentPage
     . . .
-    xmlns:chart="clr-namespace:Syncfusion.Maui.Toolkit.SunburstChart;assembly=Syncfusion.Maui.Toolkit"
+    xmlns:sunburst="clr-namespace:Syncfusion.Maui.Toolkit.SunburstChart;assembly=Syncfusion.Maui.Toolkit"
     xmlns:model="clr-namespace:SunburstGettingStarted">
 
-    <chart:SfSunburstChart x:Name="sunburst" 
+    <sunburst:SfSunburstChart x:Name="sunburst" 
                            ItemsSource="{Binding DataSource}" 
                            ValueMemberPath="EmployeesCount">
 
-        <chart:SfSunburstChart.Levels>
-            <chart:SunburstHierarchicalLevel GroupMemberPath="Country"/>
-            <chart:SunburstHierarchicalLevel GroupMemberPath="JobDescription"/>
-            <chart:SunburstHierarchicalLevel GroupMemberPath="JobGroup"/>
-        </chart:SfSunburstChart.Levels>
+        <sunburst:SfSunburstChart.Levels>
+            <sunburst:SunburstHierarchicalLevel GroupMemberPath="Country"/>
+            <sunburst:SunburstHierarchicalLevel GroupMemberPath="JobDescription"/>
+            <sunburst:SunburstHierarchicalLevel GroupMemberPath="JobGroup"/>
+        </sunburst:SfSunburstChart.Levels>
 
-    </chart:SfSunburstChart>
+    </sunburst:SfSunburstChart>
 </ContentPage>
 
 {% endhighlight %}
@@ -438,12 +438,12 @@ The title of the sunburst chart provides quick information to the user about the
 
 {% highlight xaml %}
 
-<chart:SfSunburstChart>
-    <chart:SfSunburstChart.Title>
+<sunburst:SfSunburstChart>
+    <sunburst:SfSunburstChart.Title>
         <Label Text="Employees Count"/>
-    </chart:SfSunburstChart.Title>
+    </sunburst:SfSunburstChart.Title>
     . . .
-</chart:SfSunburstChart>
+</sunburst:SfSunburstChart>
 
 {% endhighlight %}
 
@@ -494,12 +494,12 @@ The legend provides information about the data points displayed in the sunburst 
 
 {% highlight xaml %}
 
-<chart:SfSunburstChart>
+<sunburst:SfSunburstChart>
     . . .
-    <chart:SfSunburstChart.Legend>
-        <chart:SunburstLegend/>
-    </chart:SfSunburstChart.Legend>
-</chart:SfSunburstChart>
+    <sunburst:SfSunburstChart.Legend>
+        <sunburst:SunburstLegend/>
+    </sunburst:SfSunburstChart.Legend>
+</sunburst:SfSunburstChart>
 
 {% endhighlight %}
 
@@ -547,32 +547,32 @@ The following code example gives you the complete code of above configurations.
 
 <ContentPage
     . . .
-    xmlns:chart="clr-namespace:Syncfusion.Maui.Toolkit.SunburstChart;assembly=Syncfusion.Maui.Toolkit"
+    xmlns:sunburst="clr-namespace:Syncfusion.Maui.Toolkit.SunburstChart;assembly=Syncfusion.Maui.Toolkit"
     xmlns:model="clr-namespace:SunburstGettingStarted">
 
-    <chart:SfSunburstChart ItemsSource="{Binding DataSource}" 
+    <sunburst:SfSunburstChart ItemsSource="{Binding DataSource}" 
                            ShowLabels="True"  
                            EnableTooltip="True"
                            ValueMemberPath="EmployeesCount">
 
-        <chart:SfSunburstChart.BindingContext>
+        <sunburst:SfSunburstChart.BindingContext>
             <model:SunburstViewModel/>
-        </chart:SfSunburstChart.BindingContext>
+        </sunburst:SfSunburstChart.BindingContext>
 
-        <chart:SfSunburstChart.Title>
+        <sunburst:SfSunburstChart.Title>
             <Label Text="Employees Count"/>
-        </chart:SfSunburstChart.Title>
+        </sunburst:SfSunburstChart.Title>
 
-        <chart:SfSunburstChart.Legend>
+        <sunburst:SfSunburstChart.Legend>
             <sunburst:SunburstLegend/>
-        </chart:SfSunburstChart.Legend> 
+        </sunburst:SfSunburstChart.Legend> 
 
-        <chart:SfSunburstChart.Levels>
-            <chart:SunburstHierarchicalLevel GroupMemberPath="Country"/>
-            <chart:SunburstHierarchicalLevel GroupMemberPath="JobDescription"/>
-            <chart:SunburstHierarchicalLevel GroupMemberPath="JobGroup"/>
-        </chart:SfSunburstChart.Levels>
-    </chart:SfSunburstChart>
+        <sunburst:SfSunburstChart.Levels>
+            <sunburst:SunburstHierarchicalLevel GroupMemberPath="Country"/>
+            <sunburst:SunburstHierarchicalLevel GroupMemberPath="JobDescription"/>
+            <sunburst:SunburstHierarchicalLevel GroupMemberPath="JobGroup"/>
+        </sunburst:SfSunburstChart.Levels>
+    </sunburst:SfSunburstChart>
 
 </ContentPage>
  

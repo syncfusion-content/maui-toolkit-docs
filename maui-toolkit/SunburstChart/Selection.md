@@ -26,24 +26,24 @@ The following code shows the `Child` selection type.
 
 {% highlight xaml %}
 
-<chart:SfSunburstChart>
+<sunburst:SfSunburstChart>
     . . .
-    <chart:SfSunburstChart.SelectionSettings>
-        <chart:SunburstSelectionSettings Type="Child"/>
-    </chart:SfSunburstChart.SelectionSettings>
-</chart:SfSunburstChart>
+    <sunburst:SfSunburstChart.SelectionSettings>
+        <sunburst:SunburstSelectionSettings Type="Child"/>
+    </sunburst:SfSunburstChart.SelectionSettings>
+</sunburst:SfSunburstChart>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-SfSunburstChart sunburstChart = new SfSunburstChart();
+SfSunburstChart sunburst = new SfSunburstChart();
 . . .
 SunburstSelectionSettings selectionSettings = new SunburstSelectionSettings
 {
     Type = SunburstSelectionType.Child
 };
-sunburstChart.SelectionSettings = selectionSettings;
+sunburst.SelectionSettings = selectionSettings;
 this.Content = sunburst;
 
 {% endhighlight %}
@@ -58,24 +58,24 @@ The following code shows the `Group` selection type.
 
 {% highlight xaml %}
 
-<chart:SfSunburstChart>
+<sunburst:SfSunburstChart>
     . . .
-    <chart:SfSunburstChart.SelectionSettings>
-        <chart:SunburstSelectionSettings Type="Group"/>
-    </chart:SfSunburstChart.SelectionSettings>
-</chart:SfSunburstChart>
+    <sunburst:SfSunburstChart.SelectionSettings>
+        <sunburst:SunburstSelectionSettings Type="Group"/>
+    </sunburst:SfSunburstChart.SelectionSettings>
+</sunburst:SfSunburstChart>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-SfSunburstChart sunburstChart = new SfSunburstChart();
+SfSunburstChart sunburst = new SfSunburstChart();
 . . .
 SunburstSelectionSettings selectionSettings = new SunburstSelectionSettings
 {
     Type = SunburstSelectionType.Group
 };
-sunburstChart.SelectionSettings = selectionSettings;
+sunburst.SelectionSettings = selectionSettings;
 this.Content = sunburst;
 
 {% endhighlight %}
@@ -90,25 +90,25 @@ The following code shows the `Parent` selection type.
 
 {% highlight xaml %}
 
-<chart:SfSunburstChart>
+<sunburst:SfSunburstChart>
     . . .
-    <chart:SfSunburstChart.SelectionSettings>
-        <chart:SunburstSelectionSettings Type="Parent"/>
-    </chart:SfSunburstChart.SelectionSettings>
-</chart:SfSunburstChart>
+    <sunburst:SfSunburstChart.SelectionSettings>
+        <sunburst:SunburstSelectionSettings Type="Parent"/>
+    </sunburst:SfSunburstChart.SelectionSettings>
+</sunburst:SfSunburstChart>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-SfSunburstChart sunburstChart = new SfSunburstChart();
+SfSunburstChart sunburst = new SfSunburstChart();
 . . .
 SunburstSelectionSettings selectionSettings = new SunburstSelectionSettings
 {
     Type = SunburstSelectionType.Parent
 };
-sunburstChart.SelectionSettings = selectionSettings;
-this.Content = sunburstChart;
+sunburst.SelectionSettings = selectionSettings;
+this.Content = sunburst;
 
 {% endhighlight %}
 
@@ -122,25 +122,25 @@ The following code shows the `Single` selection type.
 
 {% highlight xaml %}
 
-<chart:SfSunburstChart>
+<sunburst:SfSunburstChart>
     . . .
-    <chart:SfSunburstChart.SelectionSettings>
-        <chart:SunburstSelectionSettings Type="Single"/>
-    </chart:SfSunburstChart.SelectionSettings>
-</chart:SfSunburstChart>
+    <sunburst:SfSunburstChart.SelectionSettings>
+        <sunburst:SunburstSelectionSettings Type="Single"/>
+    </sunburst:SfSunburstChart.SelectionSettings>
+</sunburst:SfSunburstChart>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-SfSunburstChart sunburstChart = new SfSunburstChart();
+SfSunburstChart sunburst = new SfSunburstChart();
 . . .
 SunburstSelectionSettings selectionSettings = new SunburstSelectionSettings
 {
     Type = SunburstSelectionType.Single
 };
-sunburstChart.SelectionSettings = selectionSettings;
-this.Content = sunburstChart;
+sunburst.SelectionSettings = selectionSettings;
+this.Content = sunburst;
 
 {% endhighlight %}
 
@@ -160,18 +160,18 @@ This mode highlights the selected segment using the brush defined in the `Fill` 
 
 {% highlight xaml %}
 
-<chart:SfSunburstChart>
+<sunburst:SfSunburstChart>
     . . .
-    <chart:SfSunburstChart.SelectionSettings>
-        <chart:SunburstSelectionSettings Fill="DarkRed" DisplayMode="HighlightByBrush" Type="Child"/>
-    </chart:SfSunburstChart.SelectionSettings>
-</chart:SfSunburstChart>
+    <sunburst:SfSunburstChart.SelectionSettings>
+        <sunburst:SunburstSelectionSettings Fill="DarkRed" DisplayMode="HighlightByBrush" Type="Child"/>
+    </sunburst:SfSunburstChart.SelectionSettings>
+</sunburst:SfSunburstChart>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-SfSunburstChart sunburstChart = new SfSunburstChart();
+SfSunburstChart sunburst = new SfSunburstChart();
 . . .
 SunburstSelectionSettings selectionSettings = new SunburstSelectionSettings
 {
@@ -179,8 +179,8 @@ SunburstSelectionSettings selectionSettings = new SunburstSelectionSettings
     DisplayMode = SunburstSelectionDisplayMode.HighlightByBrush,
     Type = SunburstSelectionType.Child,
 };
-sunburstChart.SelectionSettings = selectionSettings;
-this.Content = sunburstChart;
+sunburst.SelectionSettings = selectionSettings;
+this.Content = sunburst;
 
 {% endhighlight %}
 
@@ -196,18 +196,18 @@ This mode highlights the selected segment with full opacity as 1, while unselect
 
 {% highlight xaml %}
 
-<chart:SfSunburstChart>
+<sunburst:SfSunburstChart>
     . . .
-    <chart:SfSunburstChart.SelectionSettings>
-        <chart:SunburstSelectionSettings Opacity="0.6" DisplayMode="HighlightByOpacity" Type="Child"/>
-    </chart:SfSunburstChart.SelectionSettings>
-</chart:SfSunburstChart>
+    <sunburst:SfSunburstChart.SelectionSettings>
+        <sunburst:SunburstSelectionSettings Opacity="0.6" DisplayMode="HighlightByOpacity" Type="Child"/>
+    </sunburst:SfSunburstChart.SelectionSettings>
+</sunburst:SfSunburstChart>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-SfSunburstChart sunburstChart = new SfSunburstChart();
+SfSunburstChart sunburst = new SfSunburstChart();
 . . .
 SunburstSelectionSettings selectionSettings = new SunburstSelectionSettings
 {
@@ -215,8 +215,8 @@ SunburstSelectionSettings selectionSettings = new SunburstSelectionSettings
     DisplayMode = SunburstSelectionDisplayMode.HighlightByOpacity,
     Type = SunburstSelectionType.Child,
 };
-sunburstChart.SelectionSettings = selectionSettings;
-this.Content = sunburstChart;
+sunburst.SelectionSettings = selectionSettings;
+this.Content = sunburst;
 
 {% endhighlight %}
 
@@ -232,18 +232,18 @@ This mode highlights the selected segment by applying stroke to it. The color an
 
 {% highlight xaml %}
 
-<chart:SfSunburstChart>
+<sunburst:SfSunburstChart>
     . . .
-    <chart:SfSunburstChart.SelectionSettings>
-        <chart:SunburstSelectionSettings Stroke="Black" StrokeWidth="3" DisplayMode="HighlightByStroke" Type="Child"/>
-    </chart:SfSunburstChart.SelectionSettings>
-</chart:SfSunburstChart>
+    <sunburst:SfSunburstChart.SelectionSettings>
+        <sunburst:SunburstSelectionSettings Stroke="Black" StrokeWidth="3" DisplayMode="HighlightByStroke" Type="Child"/>
+    </sunburst:SfSunburstChart.SelectionSettings>
+</sunburst:SfSunburstChart>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-SfSunburstChart sunburstChart = new SfSunburstChart();
+SfSunburstChart sunburst = new SfSunburstChart();
 . . .
 SunburstSelectionSettings selectionSettings = new SunburstSelectionSettings
 {
@@ -252,8 +252,8 @@ SunburstSelectionSettings selectionSettings = new SunburstSelectionSettings
     DisplayMode = SunburstSelectionDisplayMode.HighlightByStroke,
     Type = SunburstSelectionType.Child,
 };
-sunburstChart.SelectionSettings = selectionSettings;
-this.Content = sunburstChart;
+sunburst.SelectionSettings = selectionSettings;
+this.Content = sunburst;
 
 {% endhighlight %}
 
