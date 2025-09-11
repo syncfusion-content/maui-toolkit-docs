@@ -48,8 +48,8 @@ public static class MauiProgram
     {
         var builder = MauiApp.CreateBuilder();
         builder
-        .UseMauiApp<App>()
         .ConfigureSyncfusionToolkit()
+        .UseMauiApp<App>()
         .ConfigureFonts(fonts =>
         {
             fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
@@ -142,8 +142,8 @@ public static class MauiProgram
     {
         var builder = MauiApp.CreateBuilder();
         builder
-        .UseMauiApp<App>()
         .ConfigureSyncfusionToolkit()
+        .UseMauiApp<App>()
         .ConfigureFonts(fonts =>
         {
             fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
@@ -224,25 +224,25 @@ In the **MauiProgram.cs** file, register the handler for Syncfusion<sup>®</sup>
 {% tabs %}
 {% highlight C# tabtitle="MauiProgram.cs" hl_lines="1 9" %}
 
-    using Syncfusion.Maui.Toolkit.Hosting;
+using Syncfusion.Maui.Toolkit.Hosting;
 
-    public static class MauiProgram
+public static class MauiProgram
+{
+    public static MauiApp CreateMauiApp()
     {
-	    public static MauiApp CreateMauiApp()
-	    {
-	        var builder = MauiApp.CreateBuilder();
-		    builder
-			    .ConfigureSyncfusionToolkit()
-			    .UseMauiApp<App>()
-			    .ConfigureFonts(fonts =>
-			    {
-				    fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
-				    fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
-			    });
+        var builder = MauiApp.CreateBuilder();
+        builder
+            .ConfigureSyncfusionToolkit()
+            .UseMauiApp<App>()
+            .ConfigureFonts(fonts =>
+            {
+                fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
+                fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
+            });
 
-		    return builder.Build();
-	    }
+        return builder.Build();
     }
+}
 
 {% endhighlight %}
 {% endtabs %}
