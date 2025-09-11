@@ -65,17 +65,17 @@ using Syncfusion.Maui.Toolkit.Hosting;
 ## Step 4: Add .NET MAUI Spark Chart
 
 1. To initialize the control, import the `Syncfusion.Maui.Toolkit.Charts` namespace into your code.
-2. Initialize an instance of the [SfSparkChart](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Toolkit.Charts.SfSparkChart.html) control.
+2. Initialize an instance of the [SfSparkLineChart](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Toolkit.Charts.SfSparkLineChart.html) control.
 
 {% tabs %} 
 {% highlight xaml %}
 
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:chart="clr-namespace:Syncfusion.Maui.Toolkit.Charts;assembly=Syncfusion.Maui.Toolkit"
+             xmlns:chart="clr-namespace:Syncfusion.Maui.Toolkit.SparkCharts;assembly=Syncfusion.Maui.Toolkit"
              x:Class="GettingStarted.MainPage">
 
-        <chart:SfSparkChart/>
+        <chart:SfSparkLineChart/>
 
 </ContentPage>
  
@@ -83,7 +83,7 @@ using Syncfusion.Maui.Toolkit.Hosting;
 
 {% highlight C# %}
 
-using Syncfusion.Maui.Toolkit.Charts; // Import the namespace required for Syncfusion MAUI Toolkit Charts.
+using Syncfusion.Maui.Toolkit.SparkCharts; 
 
 . . .
 
@@ -92,8 +92,8 @@ public partial class MainPage : ContentPage
     public MainPage()
     {
         InitializeComponent();
-        SfSparkChart chart = new SfSparkChart(); // Create an instance of the SfSparkChart.
-        this.Content = chart; // Set the chart as the content of the page.
+        SfSparkLineChart chart = new SfSparkLineChart(); 
+        this.Content = chart; 
     }
 } 
 
@@ -159,17 +159,17 @@ using Syncfusion.Maui.Toolkit.Hosting;
 ## Step 4: Add .NET MAUI Spark Chart
 
 1. To initialize the control, import the `Syncfusion.Maui.Toolkit.Charts` namespace.
-2. Initialize [SfSparkChart](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Toolkit.Charts.SfSparkChart.html).
+2. Initialize [SfSparkLineChart](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Toolkit.Charts.SfSparkLineChart.html).
 
 {% tabs %} 
 {% highlight xaml %}
 
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:chart="clr-namespace:Syncfusion.Maui.Toolkit.Charts;assembly=Syncfusion.Maui.Toolkit"
+             xmlns:chart="clr-namespace:Syncfusion.Maui.Toolkit.SparkCharts;assembly=Syncfusion.Maui.Toolkit"
              x:Class="GettingStarted.MainPage">
 
-        <chart:SfSparkChart/>
+        <chart:SfSparkLineChart/>
 
 </ContentPage>
  
@@ -177,7 +177,7 @@ using Syncfusion.Maui.Toolkit.Hosting;
 
 {% highlight C# %}
 
-using Syncfusion.Maui.Toolkit.Charts; // Import the namespace required for Syncfusion MAUI Toolkit Charts.
+using Syncfusion.Maui.Toolkit.SparkCharts; 
 
 . . .
 
@@ -186,8 +186,8 @@ public partial class MainPage : ContentPage
     public MainPage()
     {
         InitializeComponent();
-        SfSparkChart chart = new SfSparkChart(); // Create an instance of the SfSparkChart.
-        this.Content = chart; // Set the chart as the content of the page.
+        SfSparkLineChart chart = new SfSparkLineChart(); 
+        this.Content = chart; 
     }
 } 
 {% endhighlight %}
@@ -250,17 +250,17 @@ using Syncfusion.Maui.Toolkit.Hosting;
 ## Step 4: Add .NET MAUI Spark Chart
 
 1. To initialize the control, import the `Syncfusion.Maui.Toolkit.Charts` namespace.
-2. Initialize [SfSparkChart](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Toolkit.Charts.SfSparkChart.html).
+2. Initialize [SfSparkLineChart](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Toolkit.Charts.SfSparkLineChart.html).
 
 {% tabs %} 
 {% highlight xaml %}
 
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:chart="clr-namespace:Syncfusion.Maui.Toolkit.Charts;assembly=Syncfusion.Maui.Toolkit"
+             xmlns:chart="clr-namespace:Syncfusion.Maui.Toolkit.SparkCharts;assembly=Syncfusion.Maui.Toolkit"
              x:Class="GettingStarted.MainPage">
 
-        <chart:SfSparkChart/>
+        <chart:SfSparkLineChart/>
 
 </ContentPage>
  
@@ -268,7 +268,7 @@ using Syncfusion.Maui.Toolkit.Hosting;
 
 {% highlight C# %}
 
-using Syncfusion.Maui.Toolkit.Charts; // Import the namespace required for Syncfusion MAUI Toolkit Charts.
+using Syncfusion.Maui.Toolkit.SparkCharts;
 
 . . .
 
@@ -277,8 +277,8 @@ public partial class MainPage : ContentPage
     public MainPage()
     {
         InitializeComponent();
-        SfSparkChart chart = new SfSparkChart(); // Create an instance of the SfSparkChart.
-        this.Content = chart; // Set the chart as the content of the page.
+        SfSparkLineChart chart = new SfSparkLineChart();
+        this.Content = chart;
     }
 } 
 {% endhighlight %}
@@ -347,21 +347,21 @@ N> Add the namespace of `SparkDataViewModel` class to your XAML Page, if you pre
 
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:chart="clr-namespace:Syncfusion.Maui.Toolkit.Charts;assembly=Syncfusion.Maui.Toolkit"
+             xmlns:chart="clr-namespace:Syncfusion.Maui.Toolkit.SparkCharts;assembly=Syncfusion.Maui.Toolkit"
              xmlns:model="clr-namespace:GettingStarted"
              x:Class="GettingStarted.MainPage">
-    <chart:SfSparkChart>
-        <chart:SfSparkChart.BindingContext>
+    <chart:SfSparkLineChart>
+        <chart:SfSparkLineChart.BindingContext>
             <model:SparkDataViewModel/>
-        </chart:SfSparkChart.BindingContext>
-    </chart:SfSparkChart>
+        </chart:SfSparkLineChart.BindingContext>
+    </chart:SfSparkLineChart>
 </ContentPage>
 
 {% endhighlight %}
 
 {% highlight C# %}
 
-SfSparkChart chart = new SfSparkChart();
+SfSparkLineChart chart = new SfSparkLineChart();
 SparkDataViewModel viewModel = new SparkDataViewModel();
 chart.BindingContext = viewModel;
 
@@ -373,65 +373,30 @@ chart.BindingContext = viewModel;
 
 Binding `Data` to the spark chart [ItemsSource](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfSparkChart.html#Syncfusion_Maui_Toolkit_Charts_SfSparkChart_ItemsSource) property from its BindingContext to create our own spark chart.
 
-{% tabs %}   
+{% tabs %}
 
 {% highlight xaml %}
 
-<chart:SfSparkChart ItemsSource="{Binding Data}" 
-                    Stroke="DodgerBlue" 
-                    StrokeWidth="2" 
-                    ShowMarkers="True" 
-                    MarkerSize="6">
+<chart:SfSparkLineChart ItemsSource="{Binding Data}" 
+                    YBindingPath="Value">
 . . .
-</chart:SfSparkChart>
+</chart:SfSparkLineChart>
 
 {% endhighlight %}
 
-{% highlight C# %}
+{% highlight c# %}
 
-SfSparkChart chart = new SfSparkChart { 
-    Stroke = Colors.DodgerBlue, 
-    StrokeWidth = 2, 
-    ShowMarkers = true, 
-    MarkerSize = 6 
+SfSparkLineChart crt = new SfSparkLineChart()
+{
+    ItemsSource = new SparkDataViewModel().Data,
+    YBindingPath = "Value",
 };
-SparkDataViewModel viewModel = new SparkDataViewModel(); 
-chart.ItemsSource = viewModel.Data; 
+
 this.Content = chart;
 
 {% endhighlight %}
 
-{% endtabs %} 
-
-### Enable Tooltip
-
-Trackball behavior provides tooltip-like interaction by displaying the value of the nearest data point on tap or hover.
-
-{% tabs %} 
-
-{% highlight xaml %}
-
-<chart:SfSparkChart ItemsSource="{Binding Data}" ...>
-    <chart:SfSparkChart.TrackballBehavior>
-        <chart:SparkChartTrackballBehavior 
-            ShowTrackballInfo="True"
-            ActivationMode="Tap" />
-    </chart:SfSparkChart.TrackballBehavior>
-</chart:SfSparkChart>
-
-{% endhighlight %}
-
-{% highlight C# %}
-
-chart.TrackballBehavior = new SparkChartTrackballBehavior
-{
-    ShowTrackballInfo = true,
-    ActivationMode = SparkChartActivationMode.Tap
-};
-
-{% endhighlight %}
-
-{% endtabs %} 
+{% endtabs %}
 
 ![Spark chart in .NET MAUI Chart]()
 

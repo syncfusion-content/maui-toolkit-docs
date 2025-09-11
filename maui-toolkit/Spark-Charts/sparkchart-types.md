@@ -13,16 +13,116 @@ The SfSparkChart control supports four different types of series: Line, Column, 
 
 ## Line Spark chart
 
-The line chart is a series of data points connected by a line. A line chart is often used to visualize a trend in data over intervals of time, but can also be used to compare two items. The following code shows a simple line series in the spark chart.
+The `SfSparkLineChart` chart is used for identifying patterns and trends in the data such as seasonal effects, large changes and turning points over a period of time.
+
+The following properties are used to customize the appearance:
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<chart:SfSparkLineChart ItemsSource="{Binding Data}" 
+                    YBindingPath="Value">
+. . .
+</chart:SfSparkLineChart>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfSparkLineChart crt = new SfSparkLineChart()
+{
+    ItemsSource = new SparkDataViewModel().Data,
+    YBindingPath = "Value",
+};
+
+this.Content = chart;
+
+{% endhighlight %}
+
+{% endtabs %}
 
 ## Column Spark chart
 
-The column chart uses vertical bars to show the comparison between the different data.
+The `SfSparkColumnChart` uses vertical bars to show the comparison between the different data.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<chart:SfSparkColumnChart ItemsSource="{Binding Data}" 
+                    YBindingPath="Value">
+. . .
+</chart:SfSparkColumnChart>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfSparkColumnChart chart = new SfSparkColumnChart()
+{
+    ItemsSource = new SparkDataViewModel().Data,
+    YBindingPath = "YValue",
+};
+this.Content = chart;
+
+{% endhighlight %}
+
+{% endtabs %}
 
 ## Area Spark chart
 
-The area chart is used to show the data as a filled area. It can be used to compare two or more quantities.
+The `SfSparkAreaChart` is used to emphasize a change in values. This is primarily used when the magnitude of the trend is to be communicated rather than individual data values.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<chart:SfSparkAreaChart ItemsSource="{Binding Data}" 
+                    YBindingPath="Value">
+. . .
+</chart:SfSparkAreaChart>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfSparkAreaChart chart = new SfSparkAreaChart()
+{
+    ItemsSource = new SparkDataViewModel().Data,
+    YBindingPath = "Value",
+};
+
+this.Content = chart;
+
+{% endhighlight %}
+
+{% endtabs %}
 
 ## Win-Loss Spark chart
 
-The win-loss chart is similar to a column chart and is used to represent positive and negative values.
+The `SfSparkWinLossChart` is used to show whether each value is positive or negative visualizing a Win/Loss scenario.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<chart:SfSparkWinLossChart ItemsSource="{Binding Data}" 
+                     YBindingPath="YValue">
+. . .
+</chart:SfSparkWinLossChart>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfSparkWinLossChart chart = new SfSparkWinLossChart()
+{
+    ItemsSource = new SparkDataViewModel().Data,
+    YBindingPath = "YValue",
+};
+this.Content = chart;
+
+{% endhighlight %}
+
+{% endtabs %}
