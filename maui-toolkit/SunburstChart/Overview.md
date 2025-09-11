@@ -9,7 +9,7 @@ documentation: ug
 
 # .NET MAUI Sunburst Chart Overview
 
-The Syncfusion<sup>®</sup> Toolkit for .NET MAUI Sunburst Chart (`SfSunburstChart`) provides an efficient way to visualize hierarchical data structures. The chart organizes data in multiple levels, where each level represents a different category or subcategory. This visualization helps users understand relationships and dependencies within the data in an intuitive and user-friendly way.
+The Syncfusion<sup>®</sup> .NET MAUI Toolkit Sunburst Chart (`SfSunburstChart`) provides an efficient way to visualize hierarchical data structures. The chart organizes data in multiple levels, where each level represents a different category or subcategory. This visualization helps users understand relationships and dependencies within the data in an intuitive and user-friendly way.
 
 ![Overview of MAUI Sunburst Chart.](Overview_image/Overview_Image.png)
 
