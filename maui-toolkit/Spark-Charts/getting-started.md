@@ -1,13 +1,11 @@
 ---
 layout: post
-title: Getting Started with .NET MAUI Chart control | Syncfusion
+title: Getting Started with .NET MAUI Spark Chart control | Syncfusion
 description: Learn here all about getting started with Syncfusion® .NET MAUI Chart (SfSparkChart) control, its elements, and more.
-platform: maui
+platform: maui-toolkit
 control: SfSparkChart
 documentation: ug
 ---
-
-> **Notice**: After **Volume 1 2025 (Mid of March 2025)**, feature enhancements for this control will no longer be available in the Syncfusion® package. Please switch to the **Syncfusion® Toolkit for .NET MAUI** for continued support. For a smooth transition, refer to this [migration document](https://help.syncfusion.com/maui-toolkit/migration).
 
 # Getting Started with .NET MAUI Spark Charts (SparkChart)
 
@@ -37,7 +35,7 @@ Before proceeding, ensure that the following are set up:
 In the **MauiProgram.cs** file, register the handler for Syncfusion® Toolkit.
 
 {% tabs %}
-{% highlight C# tabtitle="MauiProgram.cs" hl_lines="6 17" %}
+{% highlight C# tabtitle="MauiProgram.cs" hl_lines="1 9" %}
 
 using Syncfusion.Maui.Toolkit.Hosting;
 
@@ -62,10 +60,10 @@ using Syncfusion.Maui.Toolkit.Hosting;
 {% endhighlight %}
 {% endtabs %} 
 
-## Step 4: Add .NET MAUI Spark Chart
+## Step 4: Add .NET MAUI Spark Charts
 
-1. To initialize the control, import the `Syncfusion.Maui.Toolkit.Charts` namespace into your code.
-2. Initialize an instance of the [SfSparkLineChart](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Toolkit.Charts.SfSparkLineChart.html) control.
+1. To initialize the control, import the `Syncfusion.Maui.Toolkit.SparkCharts` namespace into your code.
+2. Initialize an instance of the `SfSparkLineChart` control.
 
 {% tabs %} 
 {% highlight xaml %}
@@ -131,7 +129,7 @@ Before proceeding, ensure that the following are set up:
 In the **MauiProgram.cs** file, register the handler for Syncfusion<sup>®</sup> Toolkit.
 
 {% tabs %}
-{% highlight C# tabtitle="MauiProgram.cs" hl_lines="6 17" %}
+{% highlight C# tabtitle="MauiProgram.cs" hl_lines="1 9" %}
 
 using Syncfusion.Maui.Toolkit.Hosting;
 
@@ -156,10 +154,10 @@ using Syncfusion.Maui.Toolkit.Hosting;
 {% endhighlight %} 
 {% endtabs %}
 
-## Step 4: Add .NET MAUI Spark Chart
+## Step 4: Add .NET MAUI Spark Charts
 
-1. To initialize the control, import the `Syncfusion.Maui.Toolkit.Charts` namespace.
-2. Initialize [SfSparkLineChart](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Toolkit.Charts.SfSparkLineChart.html).
+1. To initialize the control, import the `Syncfusion.Maui.Toolkit.SparkCharts` namespace.
+2. Initialize `SfSparkLineChart`.
 
 {% tabs %} 
 {% highlight xaml %}
@@ -222,7 +220,7 @@ Before proceeding, ensure the following are set up:
 In the **MauiProgram.cs** file, register the handler for Syncfusion<sup>®</sup> core.
 
 {% tabs %}
-{% highlight C# tabtitle="MauiProgram.cs" hl_lines="6 17" %}
+{% highlight C# tabtitle="MauiProgram.cs" hl_lines="1 9" %}
 
 using Syncfusion.Maui.Toolkit.Hosting;
 
@@ -247,10 +245,10 @@ using Syncfusion.Maui.Toolkit.Hosting;
 {% endhighlight %}
 {% endtabs %} 
 
-## Step 4: Add .NET MAUI Spark Chart
+## Step 4: Add .NET MAUI Spark Charts
 
-1. To initialize the control, import the `Syncfusion.Maui.Toolkit.Charts` namespace.
-2. Initialize [SfSparkLineChart](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Toolkit.Charts.SfSparkLineChart.html).
+1. To initialize the control, import the `Syncfusion.Maui.Toolkit.SparkCharts` namespace.
+2. Initialize `SfSparkLineChart`.
 
 {% tabs %} 
 {% highlight xaml %}
@@ -371,7 +369,7 @@ chart.BindingContext = viewModel;
 
 ### Populate chart with data
 
-Binding `Data` to the spark chart [ItemsSource](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfSparkChart.html#Syncfusion_Maui_Toolkit_Charts_SfSparkChart_ItemsSource) property from its BindingContext to create our own spark chart.
+Binding `Data` to the spark chart `ItemsSource` property from its BindingContext to create our own spark chart.
 
 {% tabs %}
 
@@ -400,6 +398,6 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Spark chart in .NET MAUI Chart]()
+![Spark chart in .NET MAUI Chart](images/MAUI_Spark_Chart.png)
 
-You can find the complete getting started sample from this [link](https://github.com/SyncfusionExamples/GettingStarted_SparkChart_MAUI).
+You can find the complete getting started sample from this [link](https://github.com/SyncfusionExamples/maui-toolkit-samples/tree/master/SparkChart/GettingStarted).

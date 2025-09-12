@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Markers in .NET MAUI Spark Charts | Syncfusion
+title: Markers in .NET MAUI Spark Chart Control | Syncfusion
 description: Learn here all about the markers supported in Syncfusion .NET MAUI Spark Charts (SfSparkChart) control and more.
-platform: maui
+platform: maui-toolkit
 control: SfSparkChart
 documentation: ug
 ---
@@ -11,9 +11,9 @@ documentation: ug
 
 ## Markers
 
-Markers are used to provide information about the exact point location. You can enable markers using the `ShowMarkers` property in both `SfSparkLineChart` and `SfSparkAreaChart` widgets.
+Markers are used to provide information about the exact point location. You can enable markers using the `ShowMarkers` property in both `SfSparkLineChart` and `SfSparkAreaChart`.
 
-* [ShowMarkers] - Enables or disables the display of markers for all data points.
+* `ShowMarkers` - Enables or disables the display of markers for all data points. Defaults to `false`.
 
 {% tabs %}
 
@@ -29,7 +29,7 @@ Markers are used to provide information about the exact point location. You can 
 
 {% highlight c# %}
 
-SfSparkChart chart = new SfSparkLineChart()
+SfSparkLineChart chart = new SfSparkLineChart()
 {
     ItemsSource = new SparkDataViewModel().Data,
     YBindingPath = "Value",
@@ -46,12 +46,12 @@ this.Content = chart;
 
 You can customize the appearance of markers using the `MarkerSettings` property. This allows you to control visual aspects such as color, shape, and size.
 
-* [Fill] - Used to set the interior color of the marker.
-* [Stroke] - Used to define the border color of the marker.
-* [StrokeWidth] - Used to specify the thickness of the marker border.
-* [Height] - Used to define the vertical size of the marker.
-* [Width] - Used to define the horizontal size of the marker.
-* [Shape] - Used to set the shape of the marker. Supported values include Circle, Square, Diamond, and Triangle.
+* `Fill` - Used to set the interior color of the marker.
+* `Stroke` - Used to define the border color of the marker.
+* `StrokeWidth` - Used to specify the thickness of the marker border. Defaults to `1.0`.
+* `Height` - Used to define the vertical size of the marker.
+* `Width` - Used to define the horizontal size of the marker.
+* `Shape` - Used to set the shape of the marker. Supported values include Circle, Square, Diamond, and Triangle.
 
 {% tabs %}
 

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Chart types in .NET MAUI Spark Charts | Syncfusion
+title: Chart types in .NET MAUI Spark Chart Control | Syncfusion
 description: Learn here all about chart types supported in Syncfusion .NET MAUI Spark Charts (SfSparkChart) control and more.
-platform: maui
+platform: maui-toolkit
 control: SfSparkChart
 documentation: ug
 ---
@@ -11,7 +11,7 @@ documentation: ug
 
 The SfSparkChart control supports four different types of series: Line, Column, Area, and Win-loss. The series type can be set by using the `Type` property. The default series type is `Line`.
 
-## Line Spark chart
+## Line Sparkline
 
 The `SfSparkLineChart` chart is used for identifying patterns and trends in the data, such as seasonal effects, large changes, and turning points over a period of time.
 
@@ -42,7 +42,7 @@ this.Content = chart;
 
 {% endtabs %}
 
-## Column Spark chart
+## Column Sparkline
 
 The `SfSparkColumnChart` uses vertical bars to show the comparison between the different data.
 
@@ -70,7 +70,7 @@ this.Content = chart;
 
 {% endtabs %}
 
-## Area Spark chart
+## Area Sparkline
 
 The `SfSparkAreaChart` is used to emphasize a change in values. This is primarily used when the magnitude of the trend is to be communicated rather than individual data values.
 
@@ -99,7 +99,7 @@ this.Content = chart;
 
 {% endtabs %}
 
-## Win-Loss Spark chart
+## WinLoss Sparkline
 
 The `SfSparkWinLossChart` is used to show whether each value is positive or negative visualizing a Win/Loss scenario.
 
