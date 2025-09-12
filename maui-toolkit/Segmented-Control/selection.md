@@ -210,6 +210,86 @@ public partial class MainPage : ContentPage
 
 ![Bottom border selection in .NET MAUI Segmented control.](images/selection/bottom-border.png)
 
+## Selection Mode
+
+You can select the segment item by tapping the item in the Segmented Control. SfSegmentedControl provides two types of modes such as Single and SingleDeselect. The default SelectionMode is Single.
+
+### Single Selection
+
+The Single selection can be performed in the `Segmented Control` by setting the `SelectionMode` property to `Single`. In this selection, you can select a single item at a time in the segmented control.
+
+{% tabs %}
+{% highlight XAML %}
+
+<ContentPage   
+    xmlns:segmentedControl="clr-namespace:Syncfusion.Maui.Toolkit.SegmentedControl;assembly=Syncfusion.Maui.Toolkit">
+    <segmentedControl:SfSegmentedControl>
+        <segmentedControl:SfSegmentedControl.SelectionIndicatorSettings>
+            <segmentedControl:SelectionIndicatorSettings 
+                SelectionMode="Single"
+                Background="Blue"/>
+        </segmentedControl:SfSegmentedControl.SelectionIndicatorSettings>
+    </segmentedControl:SfSegmentedControl>
+</ContentPage>
+
+{% endhighlight %}
+{% highlight C# %}
+
+using Syncfusion.Maui.Toolkit.SegmentedControl;
+. . .
+
+public partial class MainPage : ContentPage
+{
+    public MainPage()
+    {
+        InitializeComponent();
+        SfSegmentedControl segmentedControl = new SfSegmentedControl();
+        segmentedControl.SelectionMode = SegmentSelectionMode.Single;
+        this.Content = segmentedControl;
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+### Single Deselection
+
+The Single Deselection can be performed in the `Segmented Control` by setting the `SelectionMode` property to `SingleDeselect`. In this mode, only one item can be selected at a time, and you can deselect the currently selected item by simply clicking on it again. This provides a quick way to clear the selection without needing additional actions.
+
+{% tabs %}
+{% highlight XAML %}
+
+<ContentPage   
+    xmlns:segmentedControl="clr-namespace:Syncfusion.Maui.Toolkit.SegmentedControl;assembly=Syncfusion.Maui.Toolkit">
+    <segmentedControl:SfSegmentedControl>
+        <segmentedControl:SfSegmentedControl.SelectionIndicatorSettings>
+            <segmentedControl:SelectionIndicatorSettings 
+                SelectionMode="SingleDeselect"
+                Background="Blue"/>
+        </segmentedControl:SfSegmentedControl.SelectionIndicatorSettings>
+    </segmentedControl:SfSegmentedControl>
+</ContentPage>
+
+{% endhighlight %}
+{% highlight C# %}
+
+using Syncfusion.Maui.Toolkit.SegmentedControl;
+. . .
+
+public partial class MainPage : ContentPage
+{
+    public MainPage()
+    {
+        InitializeComponent();
+        SfSegmentedControl segmentedControl = new SfSegmentedControl();
+        segmentedControl.SelectionMode = SegmentSelectionMode.SingleDeselect;
+        this.Content = segmentedControl;
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
 ## Customize selected segment
 The selected segment of the Segmented control is customized using the [SelectionIndicatorSettings](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SegmentedControl.html#Syncfusion_Maui_Toolkit_SegmentedControl_SelectionIndicatorSettings) property of [SfSegmentedControl](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SegmentedControl.html).
 
@@ -511,39 +591,3 @@ public partial class MainPage : ContentPage
 {% endtabs %}
 
 ![Enable or Disable Ripple Effect Animation in .NET MAUI Toolkit Segmented control.](images/selection/enable-ripple-effect.gif)
-
-## Notifying segment selection changes
-The [SelectionChanged](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SegmentedControl.SfSegmentedControl.html#Syncfusion_Maui_Toolkit_SegmentedControl_SfSegmentedControl_SelectionChanged) event is triggered once the segment is selected in the segmented control. The [SelectionChangedEventArgs](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SegmentedControl.SelectionChangedEventArgs.html) has the following values, which provide information for the `SelectionChanged` event.
-
-* OldIndex
-* NewIndex
-* OldValue
-* NewValue
-
-{% tabs %}
-{% highlight C# %}
-
-using Syncfusion.Maui.Toolkit.SegmentedControl;
-. . .
-
-public partial class MainPage : ContentPage
-{
-    public MainPage()
-    {
-        InitializeComponent();
-        SfSegmentedControl segmentedControl = new SfSegmentedControl();
-        segmentedControl.SelectionChanged += OnSegmentedControlSelectionChanged;
-        this.Content = segmentedControl;
-    }
-
-    private void OnSegmentedControlSelectionChanged(object sender, Syncfusion.Maui.Toolkit.SegmentedControl.SelectionChangedEventArgs e)
-    {
-        var newValue = e.NewValue;
-        var oldValue = e.OldValue;
-        var newIndex = e.NewIndex;
-        var oldIndex = e.OldIndex;
-    }
-}
-
-{% endhighlight %}
-{% endtabs %}
