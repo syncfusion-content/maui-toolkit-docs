@@ -305,7 +305,7 @@ public class SparkDataModel
 
 {% endtabs %} 
 
-Next, create a view SparkDataViewModel class that holds a list of `SparkDataModel` objects as follows.
+Next, create a view `SparkDataViewModel` class that holds a list of `SparkDataModel` objects as follows.
 
 {% tabs %}  
 
