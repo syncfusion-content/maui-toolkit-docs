@@ -319,16 +319,30 @@ public class SparkChartViewModel
     {
         Data = new List<SparkDataModel>()
         {
-            new SparkDataModel() { Value = 10 },
-            new SparkDataModel() { Value = 20 },
-            new SparkDataModel() { Value = 15 },
-            new SparkDataModel() { Value = 25 },
-            new SparkDataModel() { Value = 30 },
-            new SparkDataModel() { Value = 18 },
-            new SparkDataModel() { Value = 22 },
-            new SparkDataModel() { Value = 28 },
-            new SparkDataModel() { Value = 35 },
-            new SparkDataModel() { Value = 40 },
+            new SparkDataModel { Value = 5 },
+            new SparkDataModel { Value = 6 },
+            new SparkDataModel { Value = 5 },
+            new SparkDataModel { Value = 7 },
+            new SparkDataModel { Value = 4 },
+            new SparkDataModel { Value = 3 },
+            new SparkDataModel { Value = 9 },
+            new SparkDataModel { Value = 5 },
+            new SparkDataModel { Value = 6 },
+            new SparkDataModel { Value = 5 },
+            new SparkDataModel { Value = 7 },
+            new SparkDataModel { Value = 8 },
+            new SparkDataModel { Value = 4 },
+            new SparkDataModel { Value = 5 },
+            new SparkDataModel { Value = 3 },
+            new SparkDataModel { Value = 4 },
+            new SparkDataModel { Value = 11 },
+            new SparkDataModel { Value = 10 },
+            new SparkDataModel { Value = 2 },
+            new SparkDataModel { Value = 12 },
+            new SparkDataModel { Value = 4 },
+            new SparkDataModel { Value = 7 },
+            new SparkDataModel { Value = 6 },
+            new SparkDataModel { Value = 8 }
         };
     }
 }
@@ -378,7 +392,8 @@ Binding `Data` to the spark chart [ItemsSource](https://help.syncfusion.com/cr/m
 {% highlight xaml %}
 
 <chart:SfSparkLineChart ItemsSource="{Binding Data}" 
-                    YBindingPath="Value">
+                    YBindingPath="Value"
+                    Padding="20">
 . . .
 </chart:SfSparkLineChart>
 
@@ -390,6 +405,7 @@ SfSparkLineChart crt = new SfSparkLineChart()
 {
     ItemsSource = new SparkDataViewModel().Data,
     YBindingPath = "Value",
+    Padding = new Thickness(20),
 };
 
 this.Content = chart;
