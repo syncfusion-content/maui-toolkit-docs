@@ -11,6 +11,9 @@ documentation: ug
 
 This section explains how to populate the spark chart with data, configure the chart type, enable markers and data labels, and customize its appearance as, well as the essential aspects for getting started with the spark chart.
 
+{% tabcontents %}
+{% tabcontent Visual Studio %}
+
 ## Prerequisites
 
 Before proceeding, ensure that the following are set up:
