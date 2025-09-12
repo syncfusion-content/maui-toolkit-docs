@@ -13,7 +13,7 @@ The SfSparkChart control supports four different types of series: Line, Column, 
 
 ## Line Spark chart
 
-The `SfSparkLineChart` chart is used for identifying patterns and trends in the data such as seasonal effects, large changes and turning points over a period of time.
+The `SfSparkLineChart` chart is used for identifying patterns and trends in the data, such as seasonal effects, large changes, and turning points over a period of time.
 
 The following properties are used to customize the appearance:
 

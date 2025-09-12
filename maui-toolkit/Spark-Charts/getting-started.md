@@ -7,11 +7,11 @@ control: SfSparkChart
 documentation: ug
 ---
 
-> **Notice**: After **Volume 1 2025 (Mid of March 2025)**, feature enhancements for this control will no longer be available in the Syncfusion® package. Please switch to the **Syncfusion® Toolkit for .NET MAUI** for continued support. For a smooth transition refer this [migration document](https://help.syncfusion.com/maui-toolkit/migration).
+> **Notice**: After **Volume 1 2025 (Mid of March 2025)**, feature enhancements for this control will no longer be available in the Syncfusion® package. Please switch to the **Syncfusion® Toolkit for .NET MAUI** for continued support. For a smooth transition, refer to this [migration document](https://help.syncfusion.com/maui-toolkit/migration).
 
 # Getting Started with .NET MAUI Spark Charts (SparkChart)
 
-This section explains how to populate the spark chart with data, configure chart type, enable markers and data labels, and customize its appearance as well as the essential aspects for getting started with the spark chart.
+This section explains how to populate the spark chart with data, configure the chart type, enable markers and data labels, and customize its appearance as, well as the essential aspects for getting started with the spark chart.
 
 ## Prerequisites
 
@@ -110,7 +110,7 @@ Before proceeding, ensure that the following are set up:
 
 1. Install [.NET 8 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/8.0) or later is installed.
 2. Set up a .NET MAUI environment with Visual Studio Code.
-3. Ensure that the .NET MAUI extension is installed and configured as described [here.](https://learn.microsoft.com/en-us/dotnet/maui/get-started/installation?view=net-maui-8.0&tabs=visual-studio-code)
+3. Ensure that the .NET MAUI extension is installed and configured as described [here](https://learn.microsoft.com/en-us/dotnet/maui/get-started/installation?view=net-maui-8.0&tabs=visual-studio-code)
 
 ## Step 1: Create a new .NET MAUI project
 
@@ -337,9 +337,9 @@ public class SparkChartViewModel
 
 {% endtabs %} 
 
-Create a `SparkDataViewModel` instance and set it as the chart's `BindingContext`. This enables property binding from `SparkDataViewModel` class.
+Create a `SparkDataViewModel` instance and set it as the chart's `BindingContext`. This enables property binding from the  `SparkDataViewModel` class.
 
-N> Add the namespace of `SparkDataViewModel` class to your XAML Page, if you prefer to set `BindingContext` in XAML.
+N> Add the namespace of the `SparkDataViewModel` class to your XAML Page, if you prefer to set `BindingContext` in XAML.
 
 {% tabs %} 
 
@@ -400,4 +400,4 @@ this.Content = chart;
 
 ![Spark chart in .NET MAUI Chart]()
 
-You can find the complete getting started sample from this [link](https://github.com/SyncfusionExamples/GettingStarted_FunnelChart_MAUI).
+You can find the complete getting started sample from this [link](https://github.com/SyncfusionExamples/GettingStarted_SparkChart_MAUI).

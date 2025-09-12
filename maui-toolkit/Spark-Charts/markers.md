@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Markers in .NET MAUI Spark Charts | Syncfusion
-description: Learn here all about markers supported in Syncfusion .NET MAUI Spark Charts (SfSparkChart) control and more.
+description: Learn here all about the markers supported in Syncfusion .NET MAUI Spark Charts (SfSparkChart) control and more.
 platform: maui
 control: SfSparkChart
 documentation: ug
@@ -11,7 +11,7 @@ documentation: ug
 
 ## Markers
 
-Markers are used to provide information about the exact point location. You can enable markers using the `ShowMarkers` property in both `SfSparkLineChart`, and `SfSparkAreaChart` widgets.
+Markers are used to provide information about the exact point location. You can enable markers using the `ShowMarkers` property in both `SfSparkLineChart` and `SfSparkAreaChart` widgets.
 
 * [ShowMarkers] - Enables or disables the display of markers for all data points.
 

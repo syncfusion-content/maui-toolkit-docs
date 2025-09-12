@@ -9,7 +9,7 @@ documentation: ug
 
 # Customize Data Points in .NET MAUI Spark Charts
 
-Color of the first, last, high, low and negative data points can be customized using the following properties.
+Color of the first, last, high, low, and negative data points can be customized using the following properties.
 
 * [FirstPointFill] - Used to highlight the first point.
 * [LastPointFill] - Used to highlight the last point.
