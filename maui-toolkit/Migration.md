@@ -136,6 +136,12 @@ By preserving similar APIs and functionality, developers can easily update their
   <td>Defines the XAML namespace for <a href="https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Shimmer.SfShimmer.html">SfShimmer</a> control.</td>
 </tr>
 <tr>
+  <td>SfSunburstChart</td>
+  <td>xmlns:sunburst="clr-namespace:Syncfusion.Maui.SunburstChart;assembly=Syncfusion.Maui.SunburstChart"</td>
+  <td>xmlns:sunburst="clr-namespace:Syncfusion.Maui.Toolkit.SunburstChart;assembly=Syncfusion.Maui.Toolkit"</td>
+  <td>Defines the XAML namespace for SfSunburstChart control.</td>
+</tr>
+<tr>
   <td><a href="https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SfTabView.html">SfTabView</a></td>
   <td>xmlns:tabView="clr-namespace:Syncfusion.Maui.TabView;assembly=Syncfusion.Maui.TabView"</td>
   <td>xmlns:tabView="clr-namespace:Syncfusion.Maui.Toolkit.TabView;assembly=Syncfusion.Maui.Toolkit"</td>
@@ -259,6 +265,12 @@ By preserving similar APIs and functionality, developers can easily update their
   <td>Syncfusion.Maui.Shimmer</td>
   <td>Syncfusion.Maui.Toolkit.Shimmer</td>
   <td>Defines the namespace for <a href="https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Shimmer.SfShimmer.html">SfShimmer</a> control.</td>
+</tr>
+<tr>
+  <td>SfSunburstChart</td>
+  <td>Syncfusion.Maui.SunburstChart</td>
+  <td>Syncfusion.Maui.Toolkit.SunburstChart</td>
+  <td>Defines the namespace for SfSunburstChart control.</td>
 </tr>
 <tr>
   <td><a href="https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SfTabView.html">SfTabView</a></td>
