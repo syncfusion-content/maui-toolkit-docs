@@ -319,30 +319,16 @@ public class SparkChartViewModel
     {
         Data = new List<SparkDataModel>()
         {
-            new SparkDataModel { Value = 5 },
-            new SparkDataModel { Value = 6 },
-            new SparkDataModel { Value = 5 },
-            new SparkDataModel { Value = 7 },
-            new SparkDataModel { Value = 4 },
-            new SparkDataModel { Value = 3 },
-            new SparkDataModel { Value = 9 },
-            new SparkDataModel { Value = 5 },
-            new SparkDataModel { Value = 6 },
-            new SparkDataModel { Value = 5 },
-            new SparkDataModel { Value = 7 },
-            new SparkDataModel { Value = 8 },
-            new SparkDataModel { Value = 4 },
-            new SparkDataModel { Value = 5 },
-            new SparkDataModel { Value = 3 },
-            new SparkDataModel { Value = 4 },
-            new SparkDataModel { Value = 11 },
-            new SparkDataModel { Value = 10 },
-            new SparkDataModel { Value = 2 },
-            new SparkDataModel { Value = 12 },
-            new SparkDataModel { Value = 4 },
-            new SparkDataModel { Value = 7 },
-            new SparkDataModel { Value = 6 },
-            new SparkDataModel { Value = 8 }
+            new SparkDataModel(){ Value = 5000},
+            new SparkDataModel(){ Value = 9000},
+            new SparkDataModel(){ Value = 5000},
+            new SparkDataModel(){ Value = 0},
+            new SparkDataModel(){ Value = 3000},
+            new SparkDataModel(){ Value = -4000},
+            new SparkDataModel(){ Value = 5000},
+            new SparkDataModel(){ Value = 0},
+            new SparkDataModel(){ Value = 9000},
+            new SparkDataModel(){ Value = -9000},
         };
     }
 }
@@ -362,7 +348,7 @@ N> Add the namespace of the `SparkDataViewModel` class to your XAML Page, if you
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:chart="clr-namespace:Syncfusion.Maui.Toolkit.SparkCharts;assembly=Syncfusion.Maui.Toolkit"
-             xmlns:model="clr-namespace:GettingStarted"
+             xmlns:model="clr-namespace:GettingStarted.ViewModel"
              x:Class="GettingStarted.MainPage">
     <chart:SfSparkLineChart>
         <chart:SfSparkLineChart.BindingContext>
