@@ -469,9 +469,9 @@ The `ShowLabels` property of the chart can be used to enable data labels to impr
 
 {% highlight xaml %}
 
-<chart:SfSunburstChart ShowLabels="True">
+<sunburst:SfSunburstChart ShowLabels="True">
     . . .
-</chart:SfSunburstChart>
+</sunburst:SfSunburstChart>
 
 {% endhighlight %}
 
