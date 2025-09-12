@@ -613,4 +613,4 @@ public partial class MainPage : ContentPage
 
 {% endtabs %}
 
-![Getting started sample in MAUI Sunburst Chart.](Getting_started_image/maui_getting_started_image.png)
+![Getting started for .Net MAUI Sunburst Chart.](Getting_started_image/maui_sunburst_chart.png)
