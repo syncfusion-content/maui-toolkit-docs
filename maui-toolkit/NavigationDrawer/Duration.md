@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Animation Duration and Easing in .NET MAUI Navigation Drawer Control | Syncfusion®
+title: Animation Duration and Easing in .NET MAUI Navigation Drawer | Syncfusion®
 description: Learn about Animation Duration and Easing support in the Syncfusion® .NET MAUI Navigation Drawer (SfNavigationDrawer) control and more.
 platform: maui-toolkit
 control: SfNavigationDrawer
