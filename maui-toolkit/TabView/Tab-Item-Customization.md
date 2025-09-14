@@ -7,7 +7,7 @@ control: SfTabView
 documentation: UG
 ---
 
-# Configure the Appearance of Tab Items in .NET MAUI Tab View (SfTabView)
+# Customizing Tab Item Appearance in .NET MAUI Tab View (SfTabView)
 
 A tab item consists of several elements that can be customized to enhance its appearance and functionality. This guide will walk you through the various customization options available for tab items in [SfTabView](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SfTabView.html).
 
@@ -136,6 +136,91 @@ tabView.Items = tabItems;
 The following image shows a tab item with its content:
 
 ![Content](images/TabItem_Content.png) 
+
+### Customizing tab header content
+
+The `HeaderContent` property allows you to define a custom view for the tab header. When built-in view is not needed, it can be overridden by adding custom views to the header in tabs. The tab view header can be customized by adding different views such as image, button, and label inside the header content. The following code sample demonstrates how to customize the header content as needed.
+
+{% tabs %} 
+
+{% highlight xaml %}
+<!-- Define the SfTabView control -->
+<tabView:SfTabView>
+	<!-- Define a tab item with the HeaderContent-->
+	<tabView:SfTabItem>
+		<!-- Define the HeaderContent of the tab item -->		
+		<tabView:SfTabItem.HeaderContent>
+			<Grid ColumnSpacing="5" HorizontalOptions="Center" VerticalOptions="Center">
+				<Grid.ColumnDefinitions>
+					<ColumnDefinition Width="Auto"/>
+					<ColumnDefinition Width="*"/>
+				</Grid.ColumnDefinitions>
+				<Image Source="call.png" HeightRequest="20" WidthRequest="20"/>
+				<Label Grid.Column="1" Text="Call" HorizontalTextAlignment="Center"  VerticalTextAlignment="Center"/>
+			</Grid>
+		</tabView:SfTabItem.HeaderContent>
+		<tabView:SfTabItem.Content>
+			<ListView>
+				<!-- Add your items here -->
+			</ListView>
+		</tabView:SfTabItem.Content>
+	</tabView:SfTabItem>
+</tabView:SfTabView>
+{% endhighlight %}
+
+{% highlight C# %}
+// Create an instance of the SfTabView control
+SfTabView tabView = new SfTabView();
+
+var callHeader = new Grid
+{
+    ColumnSpacing = 5,
+    HorizontalOptions = LayoutOptions.Center,
+    VerticalOptions = LayoutOptions.Center,
+    ColumnDefinitions =
+    {
+        new ColumnDefinition { Width = GridLength.Auto },
+        new ColumnDefinition { Width = GridLength.Star }
+    }
+};
+var callImage = new Image { Source = "call.png", HeightRequest = 20, WidthRequest = 20 };
+Grid.SetColumn(callImage, 0);
+
+var callLabel = new Label
+{
+    Text = "Call",
+    HorizontalTextAlignment = TextAlignment.Center,
+    VerticalTextAlignment = TextAlignment.Center
+};
+Grid.SetColumn(callLabel, 1);
+
+callHeader.Children.Add(callImage);
+callHeader.Children.Add(callLabel);
+
+// Create a collection of tab items with HeaderContent
+var tabItems = new TabItemCollection
+{
+	new SfTabItem
+	{
+		HeaderContent = callHeader,
+		Content = new ListView
+		{
+			// Add your items here
+		}
+	}
+};
+
+// Set the Items property of the SfTabView to the collection of tab items
+tabView.Items = tabItems;
+{% endhighlight %}
+
+{% endtabs %}
+
+The following image shows a tab item with custom header content:
+
+![HeaderContent](images/HeaderContent.png)
+
+N> Ensure consistent sizing and alignment to achieve a visually balanced layout across all tabs in `HeaderContent`.
 
 ## Image position options 
 
@@ -622,6 +707,34 @@ tabView.ContentTransitionDuration = 300;
 
 {% endtabs %}
 
+## Animation easing
+
+The `AnimationEasing` property of the [SfTabView](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SfTabView.html) allows you to specify the easing function for the transition animation when switching between tab contents. This provides more control over the animation's acceleration and deceleration, allowing for more natural and visually appealing transitions. The default value of the `AnimationEasing` property is [Easing.Linear](https://learn.microsoft.com/en-us/dotnet/api/microsoft.maui.easing.linear?view=net-maui-9.0#microsoft-maui-easing-linear).
+
+{% tabs %}
+
+{% highlight xaml %}
+<!-- Define the SfTabView control with AnimationEasing -->
+<tabView:SfTabView AnimationEasing="{x:Static Easing.BounceOut}"
+                   ContentTransitionDuration="500">
+    <!-- Define a tab items -->
+</tabView:SfTabView>
+{% endhighlight %}
+
+{% highlight C# %}
+// Create an instance of the SfTabView control
+SfTabView tabView = new SfTabView();
+
+// Set the AnimationEasing property
+tabView.AnimationEasing = Easing.BounceOut;
+tabView.ContentTransitionDuration = 500;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![AnimationEasing](images/AnimationEasing.gif)
+
 ## Enable content transition
 
 The .NET MAUI Tab View allows users to enable or disable the transition animation for tab content when switching between tabs using [IsContentTransitionEnabled](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SfTabView.html#Syncfusion_Maui_Toolkit_TabView_SfTabView_IsContentTransitionEnabled) property. 
@@ -667,6 +780,60 @@ var tabItems = new TabItemCollection
 tabView.Items = tabItems;
 stackLayout.Children.Add(tabView);
 this.Content = stackLayout;
+{% endhighlight %}
+
+{% endtabs %}
+
+## Disable ripple effect on item click
+
+The `EnableRippleAnimation` property of the [SfTabView](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SfTabView.html) allows you to enable or disable the ripple animation for tab headers. This animation provides visual feedback when a tab header is tapped. The default value of the `EnableRippleAnimation` property is `true`.
+
+{% tabs %}
+
+{% highlight xaml %}
+<!-- Define the SfTabView control with the ripple animation disabled -->
+<tabView:SfTabView EnableRippleAnimation="False">
+    <!-- Define tab items -->
+</tabView:SfTabView>
+{% endhighlight %}
+
+{% highlight C# %}
+// Create an instance of the SfTabView control
+SfTabView tabView = new SfTabView();
+
+// Disable the ripple animation
+tabView.EnableRippleAnimation = false;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![EnableRippleAnimation](images/EnableRippleAnimation.gif)
+
+## How to
+
+### Disable hover effect on tab item
+
+To disable the hover effect when the mouse pointer is over a [TabItem](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SfTabItem.html) header, set color value `Transparent` to the built-in key `SfTabViewHoverBackground`.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+			 xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+			 ... >
+	<ContentPage.Resources>
+		<x:String x:Key="SfTabViewTheme">CustomTheme</x:String>
+		<Color x:Key="SfTabViewHoverBackground">Transparent</Color>
+	</ContentPage.Resources>
+	<ContentPage.Content>
+        <tabView:SfTabView x:Name="tabView" EnableRippleAnimation="False">
+			<!-- Define tab items -->
+        </tabView:SfTabView>
+	</ContentPage.Content>
+</ContentPage>
+
 {% endhighlight %}
 
 {% endtabs %}
