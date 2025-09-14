@@ -212,7 +212,7 @@ public partial class MainPage : ContentPage
 
 ## Selection Mode
 
-You can select the segment item by tapping the item in the Segmented Control. SfSegmentedControl provides two types of modes such as `Single` and `SingleDeselect`. The default `SelectionMode` is `x`.
+You can select the segment item by tapping the item in the Segmented Control. SfSegmentedControl provides two types of modes such as `Single` and `SingleDeselect`. The default `SelectionMode` is `Single`.
 
 ### Single Selection
 
