@@ -9,7 +9,7 @@ documentation: ug
 
 # Customize Data Points in .NET MAUI Spark Charts
 
-Color of the first, last, high, low, and negative data points can be customized using the following properties.
+Color of the first, last, high, low, and negative data points can be customized using the following `Brush` type properties.
 
 * `FirstPointFill` - Used to highlight the first point.
 * `LastPointFill` - Used to highlight the last point.
@@ -21,7 +21,7 @@ Color of the first, last, high, low, and negative data points can be customized 
 
 {% highlight xaml %}
 
-<chart:SfSparkLineChart ItemsSource="{Binding Data}" 
+<sparkchart:SfSparkLineChart ItemsSource="{Binding Data}" 
                     YBindingPath="Value"
                     FirstPointFill="Green"
                     LastPointFill="Blue"
@@ -29,15 +29,15 @@ Color of the first, last, high, low, and negative data points can be customized 
                     LowPointFill="Red"
                     ShowMarkers="True">
 . . .
-</chart:SfSparkLineChart>
+</sparkchart:SfSparkLineChart>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-SfSparkLineChart chart = new SfSparkLineChart()
+SfSparkLineChart sparkchart = new SfSparkLineChart()
 {
-    ItemsSource = new SparkDataViewModel().Data,
+    ItemsSource = new SparkChartViewModel().Data,
     YBindingPath = "Value",
     FirstPointFill = new SolidColorBrush(Colors.Green),
     LastPointFill = new SolidColorBrush(Colors.Blue),
@@ -45,10 +45,10 @@ SfSparkLineChart chart = new SfSparkLineChart()
     LowPointFill = new SolidColorBrush(Colors.Red),
     ShowMarkers = true
 };
-this.Content = chart;
+this.Content = sparkchart;
 
 {% endhighlight %}
 
 {% endtabs %}
 
-N> `NegativePointsColor` is applicable for `SfColumnSparkline` and `SfWinLossSparkline` alone.
+N> `NegativePointsFill` is applicable for `SfSparkColumnChart` and `SfSparkWinLossChart` alone.

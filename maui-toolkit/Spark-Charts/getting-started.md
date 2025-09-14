@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started with .NET MAUI Spark Charts (SparkChart)
 
-This section explains how to populate the spark chart with data, configure the chart type, enable markers and data labels, and customize its appearance as, well as the essential aspects for getting started with the spark chart.
+This section explains how to populate the spark chart with data, configure the chart type, enable markers and data labels, and customize its appearance. It also covers the essential aspects for getting started with the spark chart.
 
 {% tabcontents %}
 {% tabcontent Visual Studio %}
@@ -18,7 +18,7 @@ This section explains how to populate the spark chart with data, configure the c
 
 Before proceeding, ensure that the following are set up:
 
-1. Install [.NET 8 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/8.0) or later is installed.
+1. Install [.NET 8 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/8.0) or later.
 2. Set up a .NET MAUI environment with Visual Studio 2022 (v17.8 or later).
 
 ## Step 1: Create a new .NET MAUI project
@@ -73,10 +73,10 @@ using Syncfusion.Maui.Toolkit.Hosting;
 
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:chart="clr-namespace:Syncfusion.Maui.Toolkit.SparkCharts;assembly=Syncfusion.Maui.Toolkit"
+             xmlns:sparkchart="clr-namespace:Syncfusion.Maui.Toolkit.SparkCharts;assembly=Syncfusion.Maui.Toolkit"
              x:Class="GettingStarted.MainPage">
 
-        <chart:SfSparkLineChart/>
+        <sparkchart:SfSparkLineChart/>
 
 </ContentPage>
  
@@ -93,8 +93,8 @@ public partial class MainPage : ContentPage
     public MainPage()
     {
         InitializeComponent();
-        SfSparkLineChart chart = new SfSparkLineChart(); 
-        this.Content = chart; 
+        SfSparkLineChart sparkchart = new SfSparkLineChart(); 
+        this.Content = sparkchart; 
     }
 } 
 
@@ -167,10 +167,10 @@ using Syncfusion.Maui.Toolkit.Hosting;
 
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:chart="clr-namespace:Syncfusion.Maui.Toolkit.SparkCharts;assembly=Syncfusion.Maui.Toolkit"
+             xmlns:sparkchart="clr-namespace:Syncfusion.Maui.Toolkit.SparkCharts;assembly=Syncfusion.Maui.Toolkit"
              x:Class="GettingStarted.MainPage">
 
-        <chart:SfSparkLineChart/>
+        <sparkchart:SfSparkLineChart/>
 
 </ContentPage>
  
@@ -187,8 +187,8 @@ public partial class MainPage : ContentPage
     public MainPage()
     {
         InitializeComponent();
-        SfSparkLineChart chart = new SfSparkLineChart(); 
-        this.Content = chart; 
+        SfSparkLineChart sparkchart = new SfSparkLineChart(); 
+        this.Content = sparkchart; 
     }
 } 
 {% endhighlight %}
@@ -258,10 +258,10 @@ using Syncfusion.Maui.Toolkit.Hosting;
 
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:chart="clr-namespace:Syncfusion.Maui.Toolkit.SparkCharts;assembly=Syncfusion.Maui.Toolkit"
+             xmlns:sparkchart="clr-namespace:Syncfusion.Maui.Toolkit.SparkCharts;assembly=Syncfusion.Maui.Toolkit"
              x:Class="GettingStarted.MainPage">
 
-        <chart:SfSparkLineChart/>
+        <sparkchart:SfSparkLineChart/>
 
 </ContentPage>
  
@@ -278,8 +278,8 @@ public partial class MainPage : ContentPage
     public MainPage()
     {
         InitializeComponent();
-        SfSparkLineChart chart = new SfSparkLineChart();
-        this.Content = chart;
+        SfSparkLineChart sparkchart = new SfSparkLineChart();
+        this.Content = sparkchart;
     }
 } 
 {% endhighlight %}
@@ -306,7 +306,7 @@ public class SparkDataModel
 
 {% endtabs %} 
 
-Next, create a view `SparkDataViewModel` class that holds a list of `SparkDataModel` objects as follows.
+Next, create a `SparkChartViewModel` class that holds a list of `SparkDataModel` objects as follows.
 
 {% tabs %}  
 
@@ -338,9 +338,9 @@ public class SparkChartViewModel
 
 {% endtabs %} 
 
-Create a `SparkDataViewModel` instance and set it as the chart's `BindingContext`. This enables property binding from the  `SparkDataViewModel` class.
+Create a `SparkChartViewModel` instance and set it as the spark chart's `BindingContext`. This enables property binding from the `SparkChartViewModel` class.
 
-N> Add the namespace of the `SparkDataViewModel` class to your XAML Page, if you prefer to set `BindingContext` in XAML.
+N> Add the namespace of the `SparkChartViewModel` class to your XAML Page, if you prefer to set `BindingContext` in XAML.
 
 {% tabs %} 
 
@@ -348,23 +348,23 @@ N> Add the namespace of the `SparkDataViewModel` class to your XAML Page, if you
 
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:chart="clr-namespace:Syncfusion.Maui.Toolkit.SparkCharts;assembly=Syncfusion.Maui.Toolkit"
-             xmlns:model="clr-namespace:GettingStarted.ViewModel"
+             xmlns:sparkchart="clr-namespace:Syncfusion.Maui.Toolkit.SparkCharts;assembly=Syncfusion.Maui.Toolkit"
+             xmlns:model="clr-namespace:GettingStarted"
              x:Class="GettingStarted.MainPage">
-    <chart:SfSparkLineChart>
-        <chart:SfSparkLineChart.BindingContext>
-            <model:SparkDataViewModel/>
-        </chart:SfSparkLineChart.BindingContext>
-    </chart:SfSparkLineChart>
+    <sparkchart:SfSparkLineChart>
+        <sparkchart:SfSparkLineChart.BindingContext>
+            <model:SparkChartViewModel/>
+        </sparkchart:SfSparkLineChart.BindingContext>
+    </sparkchart:SfSparkLineChart>
 </ContentPage>
 
 {% endhighlight %}
 
 {% highlight C# %}
 
-SfSparkLineChart chart = new SfSparkLineChart();
-SparkDataViewModel viewModel = new SparkDataViewModel();
-chart.BindingContext = viewModel;
+SfSparkLineChart sparkchart = new SfSparkLineChart();
+SparkChartViewModel viewModel = new SparkChartViewModel();
+sparkchart.BindingContext = viewModel;
 
 {% endhighlight %}
 
@@ -378,28 +378,78 @@ Binding `Data` to the spark chart `ItemsSource` property from its BindingContext
 
 {% highlight xaml %}
 
-<chart:SfSparkLineChart ItemsSource="{Binding Data}" 
-                    YBindingPath="Value"
-                    Padding="20">
+<sparkchart:SfSparkLineChart ItemsSource="{Binding Data}" 
+                    YBindingPath="Value">
 . . .
-</chart:SfSparkLineChart>
+</sparkchart:SfSparkLineChart>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-SfSparkLineChart crt = new SfSparkLineChart()
+SfSparkLineChart sparkchart = new SfSparkLineChart()
 {
-    ItemsSource = new SparkDataViewModel().Data,
+    ItemsSource = new SparkChartViewModel().Data,
     YBindingPath = "Value",
-    Padding = new Thickness(20),
 };
 
-this.Content = chart;
+this.Content = sparkchart;
 
 {% endhighlight %}
 
 {% endtabs %}
+
+The following code example gives you the complete code of above configurations.
+
+{% tabs %} 
+
+{% highlight xaml %}
+
+ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:sparkchart="clr-namespace:Syncfusion.Maui.Toolkit.SparkCharts;assembly=Syncfusion.Maui.Toolkit"
+             xmlns:model="clr-namespace:GettingStarted"
+             x:Class="GettingStarted.MainPage">
+
+    <sparkchart:SfSparkLineChart ItemsSource="{Binding Data}" 
+            YBindingPath="Value">
+        <sparkchart:SfSparkLineChart.BindingContext>
+            <model:SparkChartViewModel/>
+        </sparkchart:SfSparkLineChart.BindingContext>
+
+    </sparkchart:SfSparkLineChart>
+
+</ContentPage>
+
+{% endhighlight %}
+
+{% highlight C# %}
+
+using Syncfusion.Maui.Toolkit.SparkCharts;
+
+. . .
+
+public partial class MainPage : ContentPage
+{
+    public MainPage()
+    {
+        InitializeComponent();
+        SparkChartViewModel viewModel = new SparkChartViewModel();
+        SfSparkLineChart sparkchart = new SfSparkLineChart()
+        {
+            ItemsSource = new SparkChartViewModel().Data,
+            YBindingPath = "Value",
+            BindingContext = viewModel;
+        };
+        this.Content = sparkchart;
+    }
+} 
+
+{% endhighlight %}
+
+{% endtabs %}
+
+The following spark chart is created as a result of the previous codes.
 
 ![Spark chart in .NET MAUI Chart](images/MAUI_Spark_Chart.png)
 

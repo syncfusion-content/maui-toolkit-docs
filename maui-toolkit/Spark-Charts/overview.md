@@ -20,3 +20,4 @@ The Syncfusion® .NET MAUI Sparkline Chart (SfSparkChart) is a lightweight micro
     *   **SparkColumn Chart**: Represents data as a series of vertical bars.
     *   **SparkWinLoss Chart**: A specialized chart that shows positive and negative values, often used to represent wins and losses.
 *   **Markers**: For line and area chart types, markers can be displayed on individual data points to highlight their values.
+*   **Data point styling**: Customize the appearance of first, last, high, low, and negative data points using dedicated color properties.

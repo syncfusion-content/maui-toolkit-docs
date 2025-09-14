@@ -9,34 +9,32 @@ documentation: ug
 
 # Chart types in .NET MAUI Spark Charts
 
-The SfSparkChart control supports four different types of series: Line, Column, Area, and Win-loss. The series type can be set by using the `Type` property. The default series type is `Line`.
+The `SfSparkChart` control supports four different chart types such as Line, Column, Area, and Win-loss.
 
 ## Line Sparkline
 
 The `SfSparkLineChart` chart is used for identifying patterns and trends in the data, such as seasonal effects, large changes, and turning points over a period of time.
 
-The following properties are used to customize the appearance:
-
 {% tabs %}
 
 {% highlight xaml %}
 
-<chart:SfSparkLineChart ItemsSource="{Binding Data}" 
+<sparkchart:SfSparkLineChart ItemsSource="{Binding Data}" 
                     YBindingPath="Value">
 . . .
-</chart:SfSparkLineChart>
+</sparkchart:SfSparkLineChart>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-SfSparkLineChart crt = new SfSparkLineChart()
+SfSparkLineChart sparkchart = new SfSparkLineChart()
 {
-    ItemsSource = new SparkDataViewModel().Data,
+    ItemsSource = new SparkChartViewModel().Data,
     YBindingPath = "Value",
 };
 
-this.Content = chart;
+this.Content = sparkchart;
 
 {% endhighlight %}
 
@@ -50,21 +48,21 @@ The `SfSparkColumnChart` uses vertical bars to show the comparison between the d
 
 {% highlight xaml %}
 
-<chart:SfSparkColumnChart ItemsSource="{Binding Data}" 
+<sparkchart:SfSparkColumnChart ItemsSource="{Binding Data}" 
                     YBindingPath="Value">
 . . .
-</chart:SfSparkColumnChart>
+</sparkchart:SfSparkColumnChart>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-SfSparkColumnChart chart = new SfSparkColumnChart()
+SfSparkColumnChart sparkchart = new SfSparkColumnChart()
 {
-    ItemsSource = new SparkDataViewModel().Data,
+    ItemsSource = new SparkChartViewModel().Data,
     YBindingPath = "YValue",
 };
-this.Content = chart;
+this.Content = sparkchart;
 
 {% endhighlight %}
 
@@ -78,22 +76,22 @@ The `SfSparkAreaChart` is used to emphasize a change in values. This is primaril
 
 {% highlight xaml %}
 
-<chart:SfSparkAreaChart ItemsSource="{Binding Data}" 
+<sparkchart:SfSparkAreaChart ItemsSource="{Binding Data}" 
                     YBindingPath="Value">
 . . .
-</chart:SfSparkAreaChart>
+</sparkchart:SfSparkAreaChart>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-SfSparkAreaChart chart = new SfSparkAreaChart()
+SfSparkAreaChart sparkchart = new SfSparkAreaChart()
 {
-    ItemsSource = new SparkDataViewModel().Data,
+    ItemsSource = new SparkChartViewModel().Data,
     YBindingPath = "Value",
 };
 
-this.Content = chart;
+this.Content = sparkchart;
 
 {% endhighlight %}
 
@@ -107,21 +105,21 @@ The `SfSparkWinLossChart` is used to show whether each value is positive or nega
 
 {% highlight xaml %}
 
-<chart:SfSparkWinLossChart ItemsSource="{Binding Data}" 
+<sparkchart:SfSparkWinLossChart ItemsSource="{Binding Data}" 
                      YBindingPath="YValue">
 . . .
-</chart:SfSparkWinLossChart>
+</sparkchart:SfSparkWinLossChart>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-SfSparkWinLossChart chart = new SfSparkWinLossChart()
+SfSparkWinLossChart sparkchart = new SfSparkWinLossChart()
 {
-    ItemsSource = new SparkDataViewModel().Data,
+    ItemsSource = new SparkChartViewModel().Data,
     YBindingPath = "YValue",
 };
-this.Content = chart;
+this.Content = sparkchart;
 
 {% endhighlight %}
 
