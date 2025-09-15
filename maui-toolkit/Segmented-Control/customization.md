@@ -408,11 +408,9 @@ Use the `IsSelected` property of `SfSegmentItem` to customize the selected segme
             </buttons:SfSegmentedControl.ItemsSource>
             <buttons:SfSegmentedControl.SegmentTemplate>
                 <DataTemplate>
-                    <Grid BackgroundColor="LightCyan">
+                    <Grid BackgroundColor="LightGrey">
                         <Label Text="{Binding Text}"
-                               TextColor="{Binding IsSelected, Converter={StaticResource TextColorConverter}}"
-                               FontAttributes="Bold"
-                               Margin="6"/>
+                               TextColor="{Binding IsSelected, Converter={StaticResource TextColorConverter}}"/>
                     </Grid>
                 </DataTemplate>
             </buttons:SfSegmentedControl.SegmentTemplate>
@@ -434,10 +432,10 @@ public partial class MainPage : ContentPage
         SfSegmentedControl segmentedControl = new SfSegmentedControl();
         List<SfSegmentItem> segmentItems = new List<SfSegmentItem>
             {
-                new SfSegmentItem() {Text="Day", Background = Colors.LightBlue},
-                new SfSegmentItem() {Text="Week", Background = Colors.LightBlue},
-                new SfSegmentItem() {Text="Month", Background = Colors.LightBlue},
-                new SfSegmentItem() {Text="Year", Background = Colors.LightBlue},
+                new SfSegmentItem() {Text="Day", Background = Colors.LightGrey},
+                new SfSegmentItem() {Text="Week", Background = Colors.LightGrey},
+                new SfSegmentItem() {Text="Month", Background = Colors.LightGrey},
+                new SfSegmentItem() {Text="Year", Background = Colors.LightGrey},
             };
         segmentedControl.ItemsSource = segmentItems;
         this.Content = segmentedControl;
@@ -453,7 +451,7 @@ public class TextColorConverter : IValueConverter
     {
         if (value is bool isSelected)
         {
-            return isSelected ? Colors.Green : Colors.Red;
+            return isSelected ? Colors.Red : Colors.Black;
         }
 
         return Colors.Black;
