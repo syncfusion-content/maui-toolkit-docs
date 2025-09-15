@@ -40,7 +40,7 @@ this.Content = sparkchart;
 
 {% endtabs %}
 
-![Spark chart in .NET MAUI Chart](sparkchart_types_images/MAUI_Line_Sparkline.png)
+![Spark Line chart in MAUI Spark Chart](sparkchart_types_images/MAUI_Line_Sparkline.png)
 
 ## Column Sparkline
 
@@ -70,7 +70,7 @@ this.Content = sparkchart;
 
 {% endtabs %}
 
-![Spark chart in .NET MAUI Chart](sparkchart_types_images/MAUI_Column_Sparkline.png)
+![Spark Column chart in MAUI Spark Chart](sparkchart_types_images/MAUI_Column_Sparkline.png)
 
 ## Area Sparkline
 
@@ -101,7 +101,7 @@ this.Content = sparkchart;
 
 {% endtabs %}
 
-![Spark chart in .NET MAUI Chart](sparkchart_types_images/MAUI_Area_Sparkline.png)
+![Spark Area chart in MAUI Spark Chart](sparkchart_types_images/MAUI_Area_Sparkline.png)
 
 ## WinLoss Sparkline
 
@@ -131,4 +131,4 @@ this.Content = sparkchart;
 
 {% endtabs %}
 
-![Spark chart in .NET MAUI Chart](sparkchart_types_images/MAUI_WinLoss_Sparkline.png)
+![Spark WinLoss chart in MAUI Spark Chart](sparkchart_types_images/MAUI_WinLoss_Sparkline.png)

@@ -53,7 +53,7 @@ this.Content = sparkchart;
 
 N> `NegativePointsFill` is applicable for `SfSparkColumnChart` and `SfSparkWinLossChart` alone.
 
-![Spark chart in .NET MAUI Chart](customize_datapoints_images/MAUI_Line_segments.png)
+![Customized data points in MAUI Spark Line Chart](customize_datapoints_images/MAUI_Line_segments.png)
 
 Code snippet to customize the segments
 
@@ -91,11 +91,11 @@ this.Content = sparkchart;
 
 {% endtabs %}
 
-![Spark chart in .NET MAUI Chart](customize_datapoints_images/MAUI_Column_segments.png)
+![Customized data points in MAUI Spark Column Chart](customize_datapoints_images/MAUI_Column_segments.png)
 
 ## Padding
 
-The `padding` property represents the distance between an element and its child elements. Padding can be applied in specific direction or in all directions. Padding can be applied for all sparkline types.
+The `Padding` property represents the distance between an element and its child elements. Padding can be applied in specific direction or in all directions. Padding can be applied for all sparkline types.
 
 {% tabs %}
 
@@ -124,20 +124,22 @@ The `padding` property represents the distance between an element and its child 
 
 {% highlight c# %}
 
-SfSparkColumnChart sparkchart = new SfSparkColumnChart()
+var viewModel = new SparkDataViewModel();
+SfSparkLineChart sparkchart = new SfSparkLineChart()
 {
-    ItemsSource = new SparkChartViewModel().Data,
+    BindingContext = viewModel,
+    ItemsSource = viewModel.Data,
     Padding = new Thickness(20),
     ShowMarkers = true,
     YBindingPath = "Value",
     MarkerSettings = new SparkChartMarkerSettings
     {
-        Fill= Colors.white,
+        Fill= Colors.White,
         StrokeWidth = 2,
         Stroke = new SolidColorBrush(Colors.LightBlue),
         Height = 8,
         Width = 8,
-        Shape = SparkChartMarkerShape.Circle
+        ShapeType = SparkChartMarkerShape.Circle
     }
 };
 this.Content = sparkchart;
@@ -146,5 +148,5 @@ this.Content = sparkchart;
 
 {% endtabs %}
 
-![Spark chart in .NET MAUI Chart](customize_datapoints_images/MAUI_Line_Sparkline_without_padding.png)
-![Spark chart in .NET MAUI Chart](customize_datapoints_images/MAUI_Line_Sparkline_with_padding.png)
+![Spark Line Chart Without Padding](customize_datapoints_images/MAUI_Line_Sparkline_without_padding.png)
+![Spark Line Chart With Padding](customize_datapoints_images/MAUI_Line_Sparkline_with_padding.png)

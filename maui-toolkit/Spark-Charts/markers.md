@@ -42,7 +42,7 @@ this.Content = sparkchart;
 
 {% endtabs %}
 
-![Spark chart in .NET MAUI Chart](markers_images/MAUI_marker.png)
+![Spark Line Chart With Marker](markers_images/MAUI_marker.png)
 
 ## Marker Customization
 
@@ -99,4 +99,4 @@ this.Content = sparkchart;
 
 {% endtabs %}
 
-![Spark chart in .NET MAUI Chart](markers_images/MAUI_marker_customized.png)
+![Spark Line Chart With Marker Settings](markers_images/MAUI_marker_customized.png)

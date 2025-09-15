@@ -437,7 +437,7 @@ public partial class MainPage : ContentPage
         SparkChartViewModel viewModel = new SparkChartViewModel();
         SfSparkLineChart sparkchart = new SfSparkLineChart()
         {
-            ItemsSource = new SparkChartViewModel().Data,
+            ItemsSource = viewModel.Data,
             YBindingPath = "Value",
             BindingContext = viewModel;
         };
@@ -451,6 +451,6 @@ public partial class MainPage : ContentPage
 
 The following spark chart is created as a result of the previous codes.
 
-![Spark chart in .NET MAUI Chart](getting_started_images/MAUI_Spark_Chart.png)
+![Spark Line Chart in MAUI Spark Chart](getting_started_images/MAUI_Spark_Chart.png)
 
 You can find the complete getting started sample from this [link](https://github.com/SyncfusionExamples/maui-toolkit-samples/tree/master/SparkChart/GettingStarted).
