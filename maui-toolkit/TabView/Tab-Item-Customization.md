@@ -733,8 +733,6 @@ tabView.ContentTransitionDuration = 500;
 
 {% endtabs %}
 
-![AnimationEasing](images/AnimationEasing.gif)
-
 ## Enable content transition
 
 The .NET MAUI Tab View allows users to enable or disable the transition animation for tab content when switching between tabs using [IsContentTransitionEnabled](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SfTabView.html#Syncfusion_Maui_Toolkit_TabView_SfTabView_IsContentTransitionEnabled) property. 
@@ -808,8 +806,6 @@ tabView.EnableRippleAnimation = false;
 
 {% endtabs %}
 
-![EnableRippleAnimation](images/EnableRippleAnimation.gif)
-
 ## How to
 
 ### Disable hover effect on tab item
@@ -828,9 +824,9 @@ To disable the hover effect when the mouse pointer is over a [TabItem](https://h
 		<Color x:Key="SfTabViewHoverBackground">Transparent</Color>
 	</ContentPage.Resources>
 	<ContentPage.Content>
-        <tabView:SfTabView x:Name="tabView" EnableRippleAnimation="False">
+		<tabView:SfTabView x:Name="tabView" EnableRippleAnimation="False">
 			<!-- Define tab items -->
-        </tabView:SfTabView>
+		</tabView:SfTabView>
 	</ContentPage.Content>
 </ContentPage>
 
