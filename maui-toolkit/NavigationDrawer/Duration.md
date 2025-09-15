@@ -46,7 +46,7 @@ The following screenshot illustrates the result of the above code.
 
 ## Animation easing effects
 
-The `AnimationEasing` property of the [SfNavigationDrawer](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NavigationDrawer.SfNavigationDrawer.html) allows you to customize the acceleration and deceleration of the drawer’s transition animations when opening and closing. The default value for `AnimationEasing` is [Easing.Linear](https://learn.microsoft.com/en-us/dotnet/api/microsoft.maui.easing.linear?view=net-maui-9.0#microsoft-maui-easing-linear), which provides a constant animation
+The `AnimationEasing` property of the [SfNavigationDrawer](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NavigationDrawer.SfNavigationDrawer.html) allows you to customize the acceleration and deceleration of the drawer’s transition animations when opening and closing. The default value for `AnimationEasing` is [Easing.Linear](https://learn.microsoft.com/en-us/dotnet/api/microsoft.maui.easing.linear?view=net-maui-9.0#microsoft-maui-easing-linear).
 
 {% tabs %}
 {% highlight xaml %}
