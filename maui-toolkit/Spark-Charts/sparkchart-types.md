@@ -40,6 +40,8 @@ this.Content = sparkchart;
 
 {% endtabs %}
 
+![Spark chart in .NET MAUI Chart](sparkchart_types_images/MAUI_Line_Sparkline.png)
+
 ## Column Sparkline
 
 The `SfSparkColumnChart` uses vertical bars to show the comparison between the different data.
@@ -67,6 +69,8 @@ this.Content = sparkchart;
 {% endhighlight %}
 
 {% endtabs %}
+
+![Spark chart in .NET MAUI Chart](sparkchart_types_images/MAUI_Column_Sparkline.png)
 
 ## Area Sparkline
 
@@ -97,6 +101,8 @@ this.Content = sparkchart;
 
 {% endtabs %}
 
+![Spark chart in .NET MAUI Chart](sparkchart_types_images/MAUI_Area_Sparkline.png)
+
 ## WinLoss Sparkline
 
 The `SfSparkWinLossChart` is used to show whether each value is positive or negative visualizing a Win/Loss scenario.
@@ -124,3 +130,5 @@ this.Content = sparkchart;
 {% endhighlight %}
 
 {% endtabs %}
+
+![Spark chart in .NET MAUI Chart](sparkchart_types_images/MAUI_WinLoss_Sparkline.png)
