@@ -70,5 +70,3 @@ this.Content = navigationDrawer;
 
 {% endhighlight %}
 {% endtabs %}
-
-![AnimationEasing](Images/animation-duration/AnimationEasing.gif)
