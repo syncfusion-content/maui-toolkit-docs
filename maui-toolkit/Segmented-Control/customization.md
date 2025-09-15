@@ -408,7 +408,7 @@ Use the `IsSelected` property of `SfSegmentItem` to customize the selected segme
             </buttons:SfSegmentedControl.ItemsSource>
             <buttons:SfSegmentedControl.SegmentTemplate>
                 <DataTemplate>
-                    <Grid BackgroundColor="LightGrey">
+                    <Grid BackgroundColor="{Binding Background}">
                         <Label Text="{Binding Text}"
                                TextColor="{Binding IsSelected, Converter={StaticResource TextColorConverter}}"/>
                     </Grid>
