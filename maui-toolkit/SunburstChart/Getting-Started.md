@@ -614,3 +614,5 @@ public partial class MainPage : ContentPage
 {% endtabs %}
 
 ![Getting started for .Net MAUI Sunburst Chart.](Getting_started_image/maui_sunburst_chart.png)
+
+You can find the complete getting started sample from this [link](https://github.com/SyncfusionExamples/maui-toolkit-samples/tree/master/SunburstChart/GettingStarted).
