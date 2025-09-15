@@ -467,3 +467,5 @@ public class TextColorConverter : IValueConverter
 
 N>
 * The BindingContext of the `SegmentTemplate` is the `SfSegmentItem`.
+
+![Customization for the selected segment item in .NET MAUI Segmented control.](images/customization/selected-segment.png)
