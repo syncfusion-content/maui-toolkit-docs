@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Legend in .NET MAUI Chart control | Syncfusion
+title: Legend in .NET MAUI Pyramid Chart control | Syncfusion
 description: This section explains how to initialize legend and its customization in Syncfusion® .NET MAUI Chart (SfPyramidChart) control.
 platform: maui-toolkit
 control: SfPyramidChart
