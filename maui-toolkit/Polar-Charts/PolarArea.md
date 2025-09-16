@@ -5,6 +5,7 @@ description: Learn here all about the Polar area chart type and its features in 
 platform: maui-toolkit
 control: SfPolarChart
 documentation: ug
+keywords: .net maui polar chart, polar area chart, polar series, grid line type, closed series, marker customization, maui toolkit
 ---
 
 # Polar Area Chart in .NET MAUI Chart
@@ -60,9 +61,9 @@ this.Content = chart;
 
 ![Polar area chart type in MAUI Chart](Chart-types_images/MAUI_polar_area_chart.png)
 
-## Grid line Type
+## Grid Line Type
 
-The [GridLineType](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfPolarChart.html#Syncfusion_Maui_Toolkit_Charts_SfPolarChart_GridLineType) property used to customize the rendering style of axis grid lines. The default [GridLineType](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfPolarChart.html#Syncfusion_Maui_Toolkit_Charts_SfPolarChart_GridLineType) is [Circle](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.PolarChartGridLineType.html#Syncfusion_Maui_Toolkit_Charts_PolarChartGridLineType_Circle). Switching to the [Polygon](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.PolarChartGridLineType.html#Syncfusion_Maui_Toolkit_Charts_PolarChartGridLineType_Polygon) grid line type transforms the polar chart appearance, resembling a spider, or web chart.
+The [GridLineType](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfPolarChart.html#Syncfusion_Maui_Toolkit_Charts_SfPolarChart_GridLineType) property is used to customize the rendering style of axis grid lines. The default [GridLineType](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfPolarChart.html#Syncfusion_Maui_Toolkit_Charts_SfPolarChart_GridLineType) is [Circle](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.PolarChartGridLineType.html#Syncfusion_Maui_Toolkit_Charts_PolarChartGridLineType_Circle). Switching to the [Polygon](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.PolarChartGridLineType.html#Syncfusion_Maui_Toolkit_Charts_PolarChartGridLineType_Polygon) grid line type transforms the polar chart appearance, resembling a spider or web chart.
 
 {% tabs %}
 
@@ -105,7 +106,7 @@ this.Content = chart;
 
 ## Closed Series
 
-The [IsClosed](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.PolarSeries.html#Syncfusion_Maui_Toolkit_Charts_PolarSeries_IsClosed) property is used to render the series with or without closed path. The default value of [IsClosed](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.PolarSeries.html#Syncfusion_Maui_Toolkit_Charts_PolarSeries_IsClosed) is `true`.
+The [IsClosed](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.PolarSeries.html#Syncfusion_Maui_Toolkit_Charts_PolarSeries_IsClosed) property is used to render the series with or without a closed path. The default value of [IsClosed](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.PolarSeries.html#Syncfusion_Maui_Toolkit_Charts_PolarSeries_IsClosed) is `true`.
 
 {% tabs %}
 
@@ -135,7 +136,7 @@ PolarAreaSeries series = new PolarAreaSeries()
     
     // Set whether the series should be closed or open
     // False means the series will not be closed (no line connecting start and end points)
-    IsClosed = "False"
+    IsClosed = false
 };
 
 // Add the series to the chart's Series collection
@@ -222,11 +223,11 @@ SfPolarChart chart = new SfPolarChart();
 ...
 
 // Create and configure chart marker settings
-ChartMarkerSettings chartMarker= new ChartMarkerSettings();
+ChartMarkerSettings chartMarker = new ChartMarkerSettings();
 chartMarker.Type = ShapeType.Diamond;  // Set marker shape to diamond
 chartMarker.Fill = Colors.Brown; // Set fill color of markers
 chartMarker.Stroke = Colors.Black; // Set outline color of markers
-chartMarker.StrokeWidth= 1; // Set outline width of markers
+chartMarker.StrokeWidth = 1; // Set outline width of markers
 chartMarker.Height = 8; // Set height of markers
 chartMarker.Width = 8; // Set width of markers
 
