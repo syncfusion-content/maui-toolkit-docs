@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started with .NET MAUI Chart control | Syncfusion
+title: Getting Started with .NET MAUI Chart Circular control | Syncfusion
 description: Learn here all about getting started with Syncfusion® .NET MAUI Chart (SfCircularChart) control, its elements, and more.
 platform: maui-toolkit
 control: SfCircularChart

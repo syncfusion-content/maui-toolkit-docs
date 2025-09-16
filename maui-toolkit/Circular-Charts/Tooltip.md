@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Tooltip in .NET MAUI Chart control | Syncfusion
+title: Tooltip in .NET MAUI Chart Circular control | Syncfusion
 description: This section explains about how to enable tooltip and its customization in Syncfusion® .NET MAUI Chart (SfCircularChart) control
 platform: maui-toolkit
 control: SfCircularChart
@@ -8,7 +8,7 @@ documentation: ug
 keywords: .net maui, maui chart, maui toolkit chart, circular chart, chart tooltip, chart tooltip behavior, enable tooltip, chart tooltip customization, tooltip template.
 ---
 
-# Tooltip in .NET MAUI Chart
+# Tooltip in .NET Circular MAUI Chart
 
 Tooltip is used to display information or metadata of the tapped segment. The Circular Chart provides tooltip support for all series.
 

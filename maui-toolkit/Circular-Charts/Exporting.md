@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Exporting in .NET MAUI Chart control | Syncfusion
+title: Exporting in .NET MAUI Chart Circular control | Syncfusion
 description: Learn here how to export the chart view as an image and stream in the Syncfusion® .NET MAUI Chart (SfCircularChart) control.
 platform: maui-toolkit
 control: SfCircularChart
@@ -8,7 +8,7 @@ documentation: ug
 keywords: .net maui, maui chart, maui toolkit chart, export chart, export chart as image, export chart as stream, save chart, save chart as image, save chart as stream, export chart jpeg png maui, maui chart image stream.
 ---
 
-# Exporting in .NET MAUI Chart
+# Exporting in .NET MAUI Circular Chart
 
 ## Export as an Image
 
@@ -46,9 +46,9 @@ The exported image will be saved in different locations across platforms:
 
 To save the image on Android and Windows Phone devices, you must enable file writing permissions on the device storage.
 
-To save the image in the photo album on iOS devices, you must enable permission to access the device storage in the "Info.plist" file.
+To save the image in the photo album on iOS devices, you must enable permission to access the device storage in the `Info.plist` file.
 
-Add the following code snippet to the "Info.plist" file:
+Add the following code snippet to the `Info.plist` file:
 
 {% tabs %}
 
