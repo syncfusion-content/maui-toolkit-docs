@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Exporting in .NET MAUI Chart Cartesian control | Syncfusion
+title: Exporting in .NET MAUI Cartesian Chart control | Syncfusion
 description: Learn here how to export the chart view as an image and stream in the Syncfusion® .NET MAUI Chart (SfCartesianChart) control.
 platform: maui-toolkit
 control: SfCartesianChart
