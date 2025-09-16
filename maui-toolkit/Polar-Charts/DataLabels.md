@@ -9,7 +9,7 @@ keywords: .net maui polar chart, data labels, label customization, enabling data
 
 ---
 
-# Data Labels in .NET MAUI Chart
+# Data Labels in .NET MAUI Polar Chart
 
 Data labels display values related to a chart segment. They can show values from a data point (x, y) or other custom properties from a data source.
 

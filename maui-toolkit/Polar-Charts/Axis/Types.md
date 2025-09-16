@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Axis types in .NET MAUI Chart Control | Syncfusion
+title: Axis types in .NET MAUI Polar Chart Control | Syncfusion
 description: Learn here all about axis types and their features in Syncfusion® .NET MAUI Chart (SfPolarChart) control and more.
 platform: maui-toolkit
 control: SfPolarChart
@@ -8,7 +8,7 @@ documentation: ug
 keywords: .net maui polar chart, axis types, numerical axis, category axis, datetime axis, axis customization, maui toolkit
 ---
 
-# Types of Axis in .NET MAUI Chart
+# Types of Axis in .NET MAUI Polar Chart
 
 Polar chart supports the following types of chart axis:
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Data label in .NET MAUI Chart control | .NET MAUI | Syncfusion
+title: Data label in .NET MAUI Funnel Chart control | .NET MAUI | Syncfusion
 description: This section explains about how to configure the data labels and its features in .NET MAUI Chart (SfFunnelChart).
 platform: maui-toolkit
 control: SfFunnelChart
@@ -8,7 +8,7 @@ documentation: ug
 keywords: .net maui funnel chart, enable data labels, data label customization, funnel data label context, data label style, maui toolkit
 ---
 
-# Data Labels in .NET MAUI Chart
+# Data Labels in .NET MAUI Funnel Chart
 
 Data labels are used to display values related to a chart segment. Values from data point(x, y) or other custom properties from a data source can be displayed. 
 

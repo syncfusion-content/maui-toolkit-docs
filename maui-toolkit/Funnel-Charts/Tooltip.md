@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Tooltip in .NET MAUI Chart control | Syncfusion
+title: Tooltip in .NET MAUI Funnel Chart control | Syncfusion
 description: This section explains how to enable tooltips and customize them in the Syncfusion® .NET MAUI Chart (SfFunnelChart) control
 platform: maui-toolkit
 control: SfFunnelChart
@@ -8,7 +8,7 @@ documentation: ug
 keywords: .net maui funnel chart, chart tooltip, enable tooltip, tooltip customization, tooltip template, interactive charts
 ---
 
-# Tooltip in .NET MAUI Chart
+# Tooltip in .NET MAUI Funnel Chart
 
 Tooltips provide additional information when hovering over a funnel segment. By default, the value of the funnel process (Y value) is displayed in the tooltip.
 

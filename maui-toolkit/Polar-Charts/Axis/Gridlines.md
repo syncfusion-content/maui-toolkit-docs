@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Axis Grid Lines in .NET MAUI Chart Control | Syncfusion
+title: Axis Grid lines in .NET MAUI Polar Chart Control | Syncfusion
 description: Learn here all about the chart axis grid lines and their customization in Syncfusion® .NET MAUI Chart (SfPolarChart).
 platform: maui-toolkit
 control: SfPolarChart
@@ -8,7 +8,7 @@ documentation: ug
 keywords: .net maui polar chart, axis grid lines, major grid lines, minor grid lines, grid line customization, chart customization, maui toolkit
 ---
 
-# Grid Lines in .NET MAUI Chart
+# Grid Lines in .NET MAUI Polar Chart
 
 ## Major Grid Lines
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Data Labels in .NET MAUI Chart control | .NET MAUI | Syncfusion
+title: Data Labels in .NET MAUI Pyramid Chart control | .NET MAUI | Syncfusion
 description: This section explains how to configure data labels and their features in .NET MAUI Chart (SfPyramidChart).
 platform: maui-toolkit
 control: SfPyramidChart
@@ -8,7 +8,7 @@ documentation: ug
 keywords: .net maui pyramid chart, data labels, label customization, enable data labels, label placement, label style, maui toolkit
 ---
 
-# Data Labels in .NET MAUI Chart
+# Data Labels in .NET MAUI Pyramid Chart
 
 Data labels are used to display values related to a chart segment. Values from data points (x, y) or other custom properties from a data source can be displayed.
 

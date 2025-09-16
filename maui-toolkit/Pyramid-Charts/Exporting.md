@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Exporting in .NET MAUI Chart control | Syncfusion
+title: Exporting in .NET MAUI Pyramid Chart control | Syncfusion
 description: Learn here how to export the chart view as an image and stream in the Syncfusion® .NET MAUI Chart (SfPyramidChart) control.
 platform: maui-toolkit
 control: SfPyramidChart
@@ -8,7 +8,7 @@ documentation: ug
 keywords: .net maui pyramid chart, export chart as image, export chart as stream, image formats, save chart image, get chart stream, maui toolkit
 ---
 
-# Exporting in .NET MAUI Chart
+# Exporting in .NET MAUI Pyramid Chart
 
 ## Export as an image
 
@@ -38,9 +38,9 @@ The exported image will be saved in different locations across platforms:
 
 To save the image on Android and Windows Phone devices, you must enable file writing permissions on the device storage.
 
-To save the image in the photo album on iOS devices, you must enable permission to access the device storage in the "Info.plist" file. 
+To save the image in the photo album on iOS devices, you must enable permission to access the device storage in the "Info" file. 
 
-Add the following code snippet to the "Info.plist" file:
+Add the following code snippet to the "Info" file:
 
 {% tabs %}
 

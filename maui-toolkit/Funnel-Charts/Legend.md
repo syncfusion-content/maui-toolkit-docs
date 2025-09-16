@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Legend in .NET MAUI Chart control | Syncfusion
+title: Legend in .NET MAUI Funnel Chart control | Syncfusion
 description: This section explains how to initialize legend and its customization in Syncfusion® .NET MAUI Chart (SfFunnelChart) control.
 platform: maui-toolkit
 control: SfFunnelChart

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Exporting in .NET MAUI Chart control | Syncfusion
+title: Exporting in .NET MAUI Chart Funnel control | Syncfusion
 description: Learn here how to export the chart view as an image and stream in the Syncfusion® .NET MAUI Chart (SfFunnelChart) control.
 platform: maui-toolkit
 control: SfFunnelChart
@@ -8,7 +8,7 @@ documentation: ug
 keywords: .net maui funnel chart, export chart as image, save chart image, get chart stream, image formats, export chart view, maui toolkit
 ---
 
-# Exporting in .NET MAUI Chart
+# Exporting in .NET MAUI Funnel Chart 
 
 ## Export as an image
 
@@ -41,7 +41,7 @@ The exported image will be saved in different locations across platforms:
 
 For Android and Windows Phone devices, you must enable file writing permissions on the device storage to save images.
 
-For iOS devices, you need to enable permission to access the device storage in the "Info.plist" file. Add the following code snippet to the file:
+For iOS devices, you need to enable permission to access the device storage in the "Info" file. Add the following code snippet to the file:
 
 {% tabs %}
 
