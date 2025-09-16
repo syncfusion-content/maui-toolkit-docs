@@ -9,6 +9,10 @@ documentation: ug
 
 # Customize Data Points in .NET MAUI Spark Charts
 
+Customizing data point colors improves visual clarity by distinguishing key values. This enables efficient interpretation of chart data and helps identify critical trends at a glance.
+
+## Data point styling
+
 Color of the first, last, high, low, and negative data points can be customized using the following `Brush` type properties.
 
 * `FirstPointFill` - Used to highlight the first point.
