@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Axis labels in .NET MAUI Chart control | Syncfusion
+title: Axis labels in .NET MAUI Cartesian Chart control | Syncfusion
 description: Learn here all about axis labels and their customization in Syncfusion® .NET MAUI Chart (SfCartesianChart) control.
 platform: maui-toolkit
 control: SfCartesianChart
