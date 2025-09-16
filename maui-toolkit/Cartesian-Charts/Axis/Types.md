@@ -8,7 +8,7 @@ documentation: ug
 keywords: .net maui cartesian charts, .net maui axis types, cartesian chart axis types, syncfusion cartesian charts maui, maui chart axis customization, .net maui chart axis, cartesian chart axis guide maui, .net maui sfCartesianChart axis.
 ---
 
-# Types of Axis in .NET MAUI Chart
+# Types of Axis in .NET MAUI Cartesian Chart
 
 Cartesian chart supports the following types of chart axis:
 

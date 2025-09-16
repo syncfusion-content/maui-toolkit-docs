@@ -8,7 +8,7 @@ documentation: ug
 keywords: .net maui chart axis line, .net maui chart axis customization, .net maui chart axisline guide, maui chart axis line settings, syncfusion maui chart axis line, .net maui chart axis styling, customize axis line .net maui chart.
 ---
 
-# Axis line in .NET MAUI Chart
+# Axis Line in .NET MAUI Cartesian Chart
 
 ## Customization
 

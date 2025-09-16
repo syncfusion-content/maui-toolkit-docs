@@ -1,6 +1,6 @@
 ---
 layout: post
-title: About Axis in .NET MAUI Cartesian Chart control | Syncfusion
+title: About axis in .NET MAUI Cartesian Chart control | Syncfusion
 description: Learn here all about chart axis and its key features of Syncfusion® .NET MAUI Chart (SfCartesianChart) control.
 platform: maui-toolkit
 control: SfCartesianChart
@@ -8,7 +8,7 @@ documentation: ug
 keywords: .net maui chart axis overview, .net maui chart control axis, .net maui chart axis features, .net maui chart control axis functionality.
 ---
 
-# Axis in .NET MAUI Chart
+# Axis in .NET MAUI Cartesian Chart
 
 [ChartAxis](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxis.html) is used to locate data points inside the chart area. Charts typically have two axes that are used to measure and categorize data: a vertical (Y) axis and a horizontal (X) axis.
 

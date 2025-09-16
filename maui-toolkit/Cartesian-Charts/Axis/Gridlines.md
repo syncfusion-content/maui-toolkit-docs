@@ -8,7 +8,7 @@ documentation: ug
 keywords: .net maui chart grid lines, .net maui chart grid customization, syncfusion maui chart grid lines, cartesian chart grid lines maui, .net maui chart axis grid lines, customize grid lines .net maui chart.
 ---
 
-# Grid Lines in .NET MAUI Chart
+# Grid Lines in .NET MAUI Cartesian Chart
 
 ## Major Grid Lines
 

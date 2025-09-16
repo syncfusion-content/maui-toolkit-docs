@@ -8,7 +8,7 @@ documentation: ug
 keywords: .net maui chart exporting, maui chart exporting, .net maui chart exporting options, syncfusion maui chart exporting, .net maui chart exporting visualization, .net maui cartesian chart export support.
 ---
 
-# Exporting in .NET MAUI Chart
+# Exporting in .NET MAUI Cartesian Chart
 
 ## Export as an image
 
