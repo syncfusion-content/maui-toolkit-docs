@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Date Picker Events in .NET MAUI Date Picker Control | Syncfusion<sup>&reg;</sup>
+title: Events in .NET MAUI Date Picker Control | Syncfusion<sup>&reg;</sup>
 description: Learn about date picker events in Syncfusion<sup>&reg;</sup> .NET MAUI Date Picker (SfDatePicker) control and its basic features.
 platform: maui
 control: SfDatePicker
@@ -43,6 +43,8 @@ private void OnDatePickerSelectionChanged(object sender, DatePickerSelectionChan
 {% endhighlight %}
 
 {% endtabs %}
+
+N> In `SfDatePicker`, the [SelectedDate](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Picker.SfDatePicker.html#Syncfusion_Maui_Picker_SfDatePicker_SelectedDate) is confirmed only when the OK button in the footer view is tapped. This behavior applies when the [Mode](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Picker.PickerBase.html#Syncfusion_Maui_Toolkit_Picker_PickerBase_Mode) is set to `Dialog` or `RelativeDialog`, the [Height](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Picker.PickerFooterView.html#Syncfusion_Maui_Toolkit_Picker_PickerFooterView_Height) of the PickerFooterView is greater than zero, and [ShowOkButton](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Picker.PickerFooterView.html#Syncfusion_Maui_Picker_PickerFooterView_ShowOkButton) is enabled.
 
 ## Events in dialog mode (SfDatePicker)
 

@@ -1691,6 +1691,137 @@ This page lists the keys for each control and the element to which it is mapped 
     </tr>
 </table>
 
+## SfSunburst Chart
+
+ <table>
+    <tr>
+        <th>Theme Dictionary<br/>
+            <br/></th>        
+        <th>
+          Keys
+            <br/>
+            <br/>
+        </th>
+        <th>
+            Description
+            <br/>
+            <br/>
+        </th>
+    </tr>
+     <tr>
+         <td rowspan="7">
+             SfSunburstChartStyles  
+             <br/> 
+             <br/>
+         </td>
+         <td> 
+            SfSunburstChartTheme 
+             <br/> 
+             <br/>
+         </td>
+         <td>    
+             By merging this key in application resources, you can customize the appearance of SfSunburstChart without merging common theme resource and control style resource dictionaries.
+             
+{% highlight xaml %}
+
+ <Application xmlns:syncTheme="clr-namespace:Syncfusion.Maui.Toolkit.Themes;assembly=Syncfusion.Maui.Toolkit"
+              ...>
+  <Application.Resources>
+     <ResourceDictionary>
+         <ResourceDictionary.MergedDictionaries>
+             <syncTheme:SyncfusionThemeResourceDictionary />
+             <ResourceDictionary>
+                 <x:String x:Key="SfSunburstChartTheme">CommonTheme</x:String>
+                 <Color x:Key="SfSunburstChartBackground">LightGreen</Color>
+                 <Color x:Key="SfSunburstChartTooltipBackground">LightYellow</Color>
+             </ResourceDictionary>
+         </ResourceDictionary.MergedDictionaries>
+     </ResourceDictionary>
+  </Application.Resources>
+  
+  ....
+
+  </Application>
+
+ {% endhighlight %}
+             <br/>
+             <br/>
+         </td>
+         </tr>
+    <tr>
+        <td>
+           SfSunburstChartBackground
+            <br/>
+            <br/>
+        </td>
+        <td>
+           Background color of the sunburst chart
+            <br/>
+            <br/>
+        </td>
+    </tr>
+    <tr>
+        <td>
+           SfSunburstChartTooltipBackground
+            <br/>
+            <br/>
+        </td>
+        <td>
+           Background of the tooltip
+            <br/>
+            <br/>
+        </td>
+    </tr>
+    <tr>
+        <td>
+           SfSunburstChartTooltipTextColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+           Text color of the tooltip
+            <br/>
+            <br/>
+        </td>
+    </tr>
+    <tr>
+        <td>
+           SfSunburstChartTooltipTextFontSize
+            <br/>
+            <br/>
+        </td>
+        <td>
+           Font size of the tooltip text
+            <br/>
+            <br/>
+        </td>
+    </tr>
+    <tr>
+        <td>
+           SfSunburstChartLegendTextColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+           Text color of the legend
+            <br/>
+            <br/>
+        </td>
+    </tr>
+    <tr>
+        <td>
+           SfSunburstChartLegendFontSize
+            <br/>
+            <br/>
+        </td>
+        <td>
+           Font size of the legend
+            <br/>
+            <br/>
+        </td>
+    </tr>    
+</table>
+
 ## SfTabView
 
 <table>

@@ -381,3 +381,91 @@ Use the [SegmentTemplate](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion
 {% endtabs %}
 
 ![Appearance customization using DataTemplate in .NET MAUI Segmented control.](images/customization/segment-template.png)
+
+## Customize selected segment item appearance using DataTemplate
+
+Use the `IsSelected` property of `SfSegmentItem` to customize the selected segment item appearance. The following example code shows how to create a custom segmented control using a data template.
+
+{% tabs %}
+{% highlight XAML %}
+
+<ContentPage 
+    xmlns:buttons="clr-namespace:Syncfusion.Maui.Toolkit.SegmentedControl;assembly=Syncfusion.Maui.Toolkit">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <local:TextColorConverter x:Key="TextColorConverter" />
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <StackLayout Spacing="20" VerticalOptions="Center">
+        <buttons:SfSegmentedControl x:Name="segmentedControl">
+            <buttons:SfSegmentedControl.ItemsSource>
+                <x:Array Type="{x:Type x:String}">
+                    <x:String>Day</x:String>
+                    <x:String>Week</x:String>
+                    <x:String>Month</x:String>
+                    <x:String>Year</x:String>
+                </x:Array>
+            </buttons:SfSegmentedControl.ItemsSource>
+            <buttons:SfSegmentedControl.SegmentTemplate>
+                <DataTemplate>
+                    <Grid BackgroundColor="{Binding Background}">
+                        <Label Text="{Binding Text}"
+                               TextColor="{Binding IsSelected, Converter={StaticResource TextColorConverter}}"/>
+                    </Grid>
+                </DataTemplate>
+            </buttons:SfSegmentedControl.SegmentTemplate>
+        </buttons:SfSegmentedControl>
+    </StackLayout>
+</ContentPage>
+
+{% endhighlight %}
+{% highlight C# tabtitle="MainPage.xaml.cs" %}
+
+using Syncfusion.Maui.Toolkit.SegmentedControl;
+. . .
+
+public partial class MainPage : ContentPage
+{
+    public MainPage()
+    {
+        InitializeComponent();
+        SfSegmentedControl segmentedControl = new SfSegmentedControl();
+        List<SfSegmentItem> segmentItems = new List<SfSegmentItem>
+            {
+                new SfSegmentItem() {Text="Day", Background = Colors.LightGrey},
+                new SfSegmentItem() {Text="Week", Background = Colors.LightGrey},
+                new SfSegmentItem() {Text="Month", Background = Colors.LightGrey},
+                new SfSegmentItem() {Text="Year", Background = Colors.LightGrey},
+            };
+        segmentedControl.ItemsSource = segmentItems;
+        this.Content = segmentedControl;
+    }
+}
+
+{% endhighlight %}
+{% highlight C# tabtitle="TextColorConverter.cs" %}
+
+public class TextColorConverter : IValueConverter
+{
+    public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
+    {
+        if (value is bool isSelected)
+        {
+            return isSelected ? Colors.Red : Colors.Black;
+        }
+
+        return Colors.Black;
+    }
+
+    public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
+    {
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+N>
+* The BindingContext of the `SegmentTemplate` is the `SfSegmentItem`.
+
+![Customization for the selected segment item in .NET MAUI Segmented control.](images/customization/selected-segment.png)
