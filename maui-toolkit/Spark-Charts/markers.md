@@ -42,6 +42,8 @@ this.Content = sparkchart;
 
 {% endtabs %}
 
+![Spark Line Chart With Marker](markers_images/MAUI_marker.png)
+
 ## Marker Customization
 
 To change the appearance of markers in the `SfSparkLineChart` and `SfSparkAreaChart`, create an instance of the `MarkerSettings` property. The following properties can be used to customize the marker's appearance.
@@ -96,3 +98,5 @@ this.Content = sparkchart;
 {% endhighlight %}
 
 {% endtabs %}
+
+![Spark Line Chart With Marker Settings](markers_images/MAUI_marker_customized.png)
