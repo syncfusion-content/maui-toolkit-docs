@@ -1,36 +1,35 @@
 ---
 layout: post
-title: Data label in .NET MAUI Chart control | .NET MAUI | Syncfusion
-description: This section explains about how to configure the data labels and its features in .NET MAUI Chart (SfCircularChart).
+title: Data labels in .NET MAUI Chart control | .NET MAUI | Syncfusion
+description: This section explains how to configure the data labels and their features in .NET MAUI Chart (SfCircularChart).
 platform: maui-toolkit
 control: SfCircularChart
 documentation: ug
+keywords: .net maui, maui chart, maui toolkit chart, data labels, enable data labels, customize data labels, smart labels, connector line style.
 ---
 
 # Data Labels in .NET MAUI Chart
 
-Data labels are used to display values related to a chart segment. Values from data point(x, y) or other custom properties from a data source can be displayed. 
+Data labels are used to display values related to a chart segment. Values from data points (x, y) or other custom properties from a data source can be displayed.
 
-Each data label can be represented by the following:
-
+Each data label consists of the following components:
 * Label - displays the segment label content at the (X, Y) point.
-* Connector line - used to connect the (X, Y) point and the label element.
+* Connector line - connects the (X, Y) point and the label element.
 
 ## Enable Data Labels 
 
-[ShowDataLabels](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartSeries.html#Syncfusion_Maui_Toolkit_Charts_ChartSeries_ShowDataLabels) property of series is used to enable the data labels.
+The [ShowDataLabels](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartSeries.html#Syncfusion_Maui_Toolkit_Charts_ChartSeries_ShowDataLabels) property of series is used to enable the data labels.
 
 {% tabs %}
 
 {% highlight xaml %}
 
 <chart:SfCircularChart>
-    . . .
+    <!-- Other chart configurations -->
     <chart:PieSeries ItemsSource="{Binding Data}"  
                      XBindingPath="Product" 
                      YBindingPath="SalesRate"
                      ShowDataLabels="True"/>
-    . . .
 </chart:SfCircularChart>
 
 {% endhighlight %}
@@ -38,11 +37,11 @@ Each data label can be represented by the following:
 {% highlight c# %}
 
 SfCircularChart chart = new SfCircularChart();
-. . .
+// Other chart configurations
 PieSeries series = new PieSeries();
 // Enable data labels for this series
 series.ShowDataLabels = true;
-. . .
+// Other series configurations
 chart.Series.Add(series);
 
 this.Content = chart;
@@ -51,7 +50,7 @@ this.Content = chart;
 
 {% endtabs %} 
 
-Data labels can be customized by using the [DataLabelSettings](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.CircularSeries.html#Syncfusion_Maui_Toolkit_Charts_CircularSeries_DataLabelSettings) property of chart series. For customizing, need to create an instance of [CircularDataLabelSettings](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.CircularDataLabelSettings.html) and set to the [DataLabelSettings](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.CircularSeries.html#Syncfusion_Maui_Toolkit_Charts_CircularSeries_DataLabelSettings) property. Following properties are used to customize the data labels which are available in [CircularDataLabelSettings](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.CircularDataLabelSettings.html).
+Data labels can be customized using the [DataLabelSettings](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.CircularSeries.html#Syncfusion_Maui_Toolkit_Charts_CircularSeries_DataLabelSettings) property of chart series. For customization, create an instance of [CircularDataLabelSettings](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.CircularDataLabelSettings.html) and set it to the [DataLabelSettings](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.CircularSeries.html#Syncfusion_Maui_Toolkit_Charts_CircularSeries_DataLabelSettings) property. The following properties are available in [CircularDataLabelSettings](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.CircularDataLabelSettings.html) for customization:
 
 * [LabelPosition](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.CircularDataLabelSettings.html#Syncfusion_Maui_Toolkit_Charts_CircularDataLabelSettings_LabelPosition) - Gets or sets the data label position, either inside or outside of the chart segment.
 * [SmartLabelAlignment](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.CircularDataLabelSettings.html#Syncfusion_Maui_Toolkit_Charts_CircularDataLabelSettings_SmartLabelAlignment) - Gets or sets the option to smartly arrange the data labels to avoid intersection when labels overlap.
@@ -65,14 +64,13 @@ N> Data label support is applicable only for [PieSeries](https://help.syncfusion
 
 ## Data Label Position
 
-The [LabelPosition](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.CircularDataLabelSettings.html#Syncfusion_Maui_Toolkit_Charts_CircularDataLabelSettings_LabelPosition) property is used to place the data labels either [Inside](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartDataLabelPosition.html#Syncfusion_Maui_Toolkit_Charts_ChartDataLabelPosition_Inside) or [Outside](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartDataLabelPosition.html#Syncfusion_Maui_Toolkit_Charts_ChartDataLabelPosition_Outside) of the chart segment. By default the data labels are placed inside the series.
+The [LabelPosition](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.CircularDataLabelSettings.html#Syncfusion_Maui_Toolkit_Charts_CircularDataLabelSettings_LabelPosition) property is used to place the data labels either [Inside](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartDataLabelPosition.html#Syncfusion_Maui_Toolkit_Charts_ChartDataLabelPosition_Inside) or [Outside](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartDataLabelPosition.html#Syncfusion_Maui_Toolkit_Charts_ChartDataLabelPosition_Outside) of the chart segment. By default, the data labels are placed inside the series.
 
 {% tabs %}
 
 {% highlight xaml %}
 
 <chart:SfCircularChart>
-
     <chart:PieSeries ItemsSource="{Binding Data}" 
                      ShowDataLabels="True"
                      XBindingPath="Product" 
@@ -82,7 +80,6 @@ The [LabelPosition](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.
             </chart:CircularDataLabelSettings>
         </chart:PieSeries.DataLabelSettings>
     </chart:PieSeries>
-
 </chart:SfCircularChart>
 
 {% endhighlight %}
@@ -90,7 +87,7 @@ The [LabelPosition](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.
 {% highlight c# %}
 
 SfCircularChart chart = new SfCircularChart();
-. . .
+// Other configurations
 PieSeries series = new PieSeries();
 series.ItemsSource = new SalesViewModel().Data;
 series.XBindingPath = "Product";
@@ -111,23 +108,23 @@ this.Content = chart;
 
 {% endtabs %}
 
-## Smart labels
+## Smart Labels
 
-The [SmartLabelAlignment](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.CircularDataLabelSettings.html#Syncfusion_Maui_Toolkit_Charts_CircularDataLabelSettings_SmartLabelAlignment) property is used to arrange the data labels smartly to avoid intersection when labels overlap. The [SmartLabelAlignment](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SmartLabelAlignment.html) enum contains the following values.
+The [SmartLabelAlignment](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.CircularDataLabelSettings.html#Syncfusion_Maui_Toolkit_Charts_CircularDataLabelSettings_SmartLabelAlignment) property is used to arrange the data labels smartly to avoid intersection when labels overlap. The [SmartLabelAlignment](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SmartLabelAlignment.html) enum contains the following values:
 
 * [Shift](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SmartLabelAlignment.html#Syncfusion_Maui_Toolkit_Charts_SmartLabelAlignment_Shift) - Gets or sets the option to smartly arrange the overlapped data labels.
 * [Hide](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SmartLabelAlignment.html#Syncfusion_Maui_Toolkit_Charts_SmartLabelAlignment_Hide) - Gets or sets the option to hide the intersected data labels.
 * [None](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SmartLabelAlignment.html#Syncfusion_Maui_Toolkit_Charts_SmartLabelAlignment_None) - Gets or sets the option to keep the intersected data labels visible.
 
-By default, value for [SmartLabelAlignment](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.CircularDataLabelSettings.html#Syncfusion_Maui_Toolkit_Charts_CircularDataLabelSettings_SmartLabelAlignment) property is [Shift](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SmartLabelAlignment.html#Syncfusion_Maui_Toolkit_Charts_SmartLabelAlignment_Shift).
+By default, the value for the [SmartLabelAlignment](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.CircularDataLabelSettings.html#Syncfusion_Maui_Toolkit_Charts_CircularDataLabelSettings_SmartLabelAlignment) property is [Shift](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SmartLabelAlignment.html#Syncfusion_Maui_Toolkit_Charts_SmartLabelAlignment_Shift).
 
 If the [LabelPosition](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.CircularDataLabelSettings.html#Syncfusion_Maui_Toolkit_Charts_CircularDataLabelSettings_LabelPosition) is [Inside](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartDataLabelPosition.html#Syncfusion_Maui_Toolkit_Charts_ChartDataLabelPosition_Inside) and the [SmartLabelAlignment](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.CircularDataLabelSettings.html#Syncfusion_Maui_Toolkit_Charts_CircularDataLabelSettings_SmartLabelAlignment) is [Shift](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SmartLabelAlignment.html#Syncfusion_Maui_Toolkit_Charts_SmartLabelAlignment_Shift), then the overlapped labels will shift to outside the slices and arrange smartly. If the [LabelPosition](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.CircularDataLabelSettings.html#Syncfusion_Maui_Toolkit_Charts_CircularDataLabelSettings_LabelPosition) is [Inside](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartDataLabelPosition.html#Syncfusion_Maui_Toolkit_Charts_ChartDataLabelPosition_Inside) and the [SmartLabelAlignment](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.CircularDataLabelSettings.html#Syncfusion_Maui_Toolkit_Charts_CircularDataLabelSettings_SmartLabelAlignment) is [Hide](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SmartLabelAlignment.html#Syncfusion_Maui_Toolkit_Charts_SmartLabelAlignment_Hide), then the overlapped labels will be hidden.
 
 If the [LabelPosition](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.CircularDataLabelSettings.html#Syncfusion_Maui_Toolkit_Charts_CircularDataLabelSettings_LabelPosition) is [Outside](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartDataLabelPosition.html#Syncfusion_Maui_Toolkit_Charts_ChartDataLabelPosition_Outside) and the [SmartLabelAlignment](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.CircularDataLabelSettings.html#Syncfusion_Maui_Toolkit_Charts_CircularDataLabelSettings_SmartLabelAlignment) is [Shift](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SmartLabelAlignment.html#Syncfusion_Maui_Toolkit_Charts_SmartLabelAlignment_Shift), then the overlapped labels arrange smartly. If the [LabelPosition](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.CircularDataLabelSettings.html#Syncfusion_Maui_Toolkit_Charts_CircularDataLabelSettings_LabelPosition) is [Outside](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartDataLabelPosition.html#Syncfusion_Maui_Toolkit_Charts_ChartDataLabelPosition_Outside) and the [SmartLabelAlignment](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.CircularDataLabelSettings.html#Syncfusion_Maui_Toolkit_Charts_CircularDataLabelSettings_SmartLabelAlignment) is [Hide](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SmartLabelAlignment.html#Syncfusion_Maui_Toolkit_Charts_SmartLabelAlignment_Hide), then the overlapped labels will be hidden.
 
-If the [SmartLabelAlignment](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.CircularDataLabelSettings.html#Syncfusion_Maui_Toolkit_Charts_CircularDataLabelSettings_SmartLabelAlignment) is [None](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SmartLabelAlignment.html#Syncfusion_Maui_Toolkit_Charts_SmartLabelAlignment_None), then the overlapped labels will be visible irrespective of LabelPosition.
+If the [SmartLabelAlignment](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.CircularDataLabelSettings.html#Syncfusion_Maui_Toolkit_Charts_CircularDataLabelSettings_SmartLabelAlignment) is [None](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SmartLabelAlignment.html#Syncfusion_Maui_Toolkit_Charts_SmartLabelAlignment_None), then the overlapped labels will be visible irrespective of the LabelPosition.
 
-When the [SmartLabelAlignment](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.CircularDataLabelSettings.html#Syncfusion_Maui_Toolkit_Charts_CircularDataLabelSettings_SmartLabelAlignment) is [Shift](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SmartLabelAlignment.html#Syncfusion_Maui_Toolkit_Charts_SmartLabelAlignment_Shift), and if the data label goes out of the chart area, then the labels got trimmed.
+When the [SmartLabelAlignment](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.CircularDataLabelSettings.html#Syncfusion_Maui_Toolkit_Charts_CircularDataLabelSettings_SmartLabelAlignment) is [Shift](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SmartLabelAlignment.html#Syncfusion_Maui_Toolkit_Charts_SmartLabelAlignment_Shift), and if the data label goes out of the chart area, then the labels will be trimmed.
 
 {% tabs %}
 
@@ -136,7 +133,7 @@ When the [SmartLabelAlignment](https://help.syncfusion.com/cr/maui-toolkit/Syncf
 <chart:SfCircularChart>
     <chart:SfCircularChart.Resources>
         <DataTemplate x:Key="labelTemplate">
-        ...
+            <!-- Template content -->
         </DataTemplate>
     </chart:SfCircularChart.Resources>
 
@@ -157,7 +154,7 @@ When the [SmartLabelAlignment](https://help.syncfusion.com/cr/maui-toolkit/Syncf
 {% highlight c# %}
 
 SfCircularChart chart = new SfCircularChart();
-. . .
+// Other configurations
 PieSeries series = new PieSeries();
 series.ItemsSource = new ViewModel().Data;
 series.XBindingPath = "XValue";
@@ -166,7 +163,7 @@ series.ShowDataLabels = true;
 
 DataTemplate labelTemplate = new DataTemplate(() =>
 {
-    // ... (Custom label template definition goes here)
+    // Custom label template definition
 });
 
 series.LabelTemplate = labelTemplate;
@@ -189,14 +186,14 @@ this.Content = chart;
 
 ## Applying Series Brush
 
-[UseSeriesPalette](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartDataLabelSettings.html#Syncfusion_Maui_Toolkit_Charts_ChartDataLabelSettings_UseSeriesPalette) property is used to set the interior of the series to the data label background. 
+The [UseSeriesPalette](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartDataLabelSettings.html#Syncfusion_Maui_Toolkit_Charts_ChartDataLabelSettings_UseSeriesPalette) property is used to set the interior of the series to the data label background.
 
 {% tabs %}
 
 {% highlight xaml %}
 
 <chart:SfCircularChart>
-    . . .
+    <!-- Other chart configurations -->
     <chart:PieSeries ShowDataLabels="True">
         <chart:PieSeries.DataLabelSettings>
             <chart:CircularDataLabelSettings UseSeriesPalette="True"/>
@@ -209,7 +206,7 @@ this.Content = chart;
 {% highlight c# %}
 
 SfCircularChart chart = new SfCircularChart();
-. . .
+// Other configurations
 PieSeries series = new PieSeries();
 
 series.ShowDataLabels = true;
@@ -232,18 +229,17 @@ this.Content = chart;
 
 ## Formatting Label Context
 
-The content of the label can be customized using the [LabelContext](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartSeries.html#Syncfusion_Maui_Toolkit_Charts_ChartSeries_LabelContext) property. Following are the two options that are supported now,
+The content of the label can be customized using the [LabelContext](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartSeries.html#Syncfusion_Maui_Toolkit_Charts_ChartSeries_LabelContext) property. Currently, the following two options are supported:
 
-* [Percentage](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.LabelContext.html#Syncfusion_Maui_Toolkit_Charts_LabelContext_Percentage) - This will show the percentage value of corresponding data point Y value.
-
-* [YValue](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.LabelContext.html#Syncfusion_Maui_Toolkit_Charts_LabelContext_YValue) - This will show the corresponding Y value.
+* [Percentage](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.LabelContext.html#Syncfusion_Maui_Toolkit_Charts_LabelContext_Percentage) - Shows the percentage value of the corresponding data point Y value.
+* [YValue](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.LabelContext.html#Syncfusion_Maui_Toolkit_Charts_LabelContext_YValue) - Shows the corresponding Y value.
 
 {% tabs %}
 
 {% highlight xaml %}
 
 <chart:SfCircularChart>
-    . . .   
+    <!-- Other chart configurations -->
     <chart:PieSeries ItemsSource="{Binding Data}" 
                      XBindingPath="Product" 
                      YBindingPath="SalesRate"
@@ -256,7 +252,7 @@ The content of the label can be customized using the [LabelContext](https://help
 {% highlight c# %}
 
 SfCircularChart chart = new SfCircularChart();
-// ... (other chart configurations)
+// Other chart configurations
 
 PieSeries series = new PieSeries()
 {
@@ -270,7 +266,6 @@ PieSeries series = new PieSeries()
 chart.Series.Add(series);
 this.Content = chart;
 
-        
 {% endhighlight %}
 
 {% endtabs %}
@@ -286,7 +281,6 @@ The [SfCircularChart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Mau
 {% highlight xaml %}
 
 <chart:SfCircularChart>
-
     <chart:SfCircularChart.Resources>
         <DataTemplate x:Key="labelTemplate">
             <HorizontalStackLayout Spacing="5">
@@ -303,7 +297,6 @@ The [SfCircularChart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Mau
                      ShowDataLabels="True"
                      LabelTemplate="{StaticResource labelTemplate}">
     </chart:PieSeries>
-
 </chart:SfCircularChart>
 
 {% endhighlight %}
