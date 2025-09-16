@@ -49,7 +49,6 @@ N> The Cartesian chart has a [Series](https://help.syncfusion.com/cr/maui-toolki
                               YBindingPath="Value"/>         
 </chart:SfCartesianChart>
 
-
 {% endhighlight %}
 
 {% highlight c# %}
@@ -63,29 +62,30 @@ chart.YAxes.Add(secondaryAxis);
 ViewModel viewModel = new ViewModel();
 
 // Create a StackingAreaSeries for the chart
-StackingAreaSeries series1 = new  StackingAreaSeries()
+StackingAreaSeries series1 = new StackingAreaSeries()
 {
-    ItemsSource = viewModel.Data1
+    ItemsSource = viewModel.Data1,
     XBindingPath = "Year",
     YBindingPath = "Value",
 };
 
 StackingAreaSeries series2 = new StackingAreaSeries()
 {
-    ItemsSource = viewModel.Data2
+    ItemsSource = viewModel.Data2,
     XBindingPath = "Year",
     YBindingPath = "Value",
 };
+
 StackingAreaSeries series3 = new StackingAreaSeries()
 {
-    ItemsSource = viewModel.Data3
+    ItemsSource = viewModel.Data3,
     XBindingPath = "Year",
     YBindingPath = "Value",
 };
 
 StackingAreaSeries series4 = new StackingAreaSeries()
 {
-    ItemsSource = viewModel.Data4
+    ItemsSource = viewModel.Data4,
     XBindingPath = "Year",
     YBindingPath = "Value",
 };
@@ -134,17 +134,17 @@ StackingAreaSeries series = new StackingAreaSeries()
 };
 
 chart.Series.Add(series);
-this.Content= chart;
+this.Content = chart;
 
 {% endhighlight %}
 
 {% endtabs %}
 
-### Marker customization
+### Marker Customization
 
-In order to change the series markers appearance, create an instance of the [MarkerSettings](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.StackingAreaSeries.html#Syncfusion_Maui_Toolkit_Charts_StackingAreaSeries_MarkerSettings) property. The following properties are used to customize marker appearance.
+To change the series markers appearance, create an instance of the [MarkerSettings](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.StackingAreaSeries.html#Syncfusion_Maui_Toolkit_Charts_StackingAreaSeries_MarkerSettings) property. The following properties are used to customize marker appearance:
 
-* [Type](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartMarkerSettings.html#Syncfusion_Maui_Toolkit_Charts_ChartMarkerSettings_Type), of type `ShapeType`, describes the shape of the series marker. The default value of this property is the [ShapeType.Circle](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ShapeType.html#Syncfusion_Maui_Toolkit_Charts_ShapeType_Circle).
+* [Type](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartMarkerSettings.html#Syncfusion_Maui_Toolkit_Charts_ChartMarkerSettings_Type), of type `ShapeType`, describes the shape of the series marker. The default value of this property is [ShapeType.Circle](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ShapeType.html#Syncfusion_Maui_Toolkit_Charts_ShapeType_Circle).
 * [Stroke](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartMarkerSettings.html#Syncfusion_Maui_Toolkit_Charts_ChartMarkerSettings_Stroke), of type `Brush`, indicates the brush used to paint the marker border.
 * [StrokeWidth](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartMarkerSettings.html#Syncfusion_Maui_Toolkit_Charts_ChartMarkerSettings_StrokeWidth), of type `double`, indicates the width of the marker border.
 * [Fill](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartMarkerSettings.html#Syncfusion_Maui_Toolkit_Charts_ChartMarkerSettings_Fill), of type `Brush`, indicates the color of the marker.
@@ -180,7 +180,7 @@ In order to change the series markers appearance, create an instance of the [Mar
 SfCartesianChart chart = new SfCartesianChart();
 ...
 // Configure chart marker settings, defining appearance and style
-ChartMarkerSettings chartMarker= new ChartMarkerSettings()
+ChartMarkerSettings chartMarker = new ChartMarkerSettings()
 {
     Type = ShapeType.Diamond,
     Fill = Colors.LightBlue,

@@ -12,7 +12,7 @@ keywords: .net maui chart exporting, maui chart exporting, .net maui chart expor
 
 ## Export as an image
 
-You can export the chart view as an image in the desired file format using the [SaveAsImage](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartBase.html#Syncfusion_Maui_Toolkit_Charts_ChartBase_SaveAsImage_System_String_) method of [SfCartesianChart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html). The supported image formats are **JPEG and PNG**. By default, i.e., if you didn’t mention any image format with the filename, the chart view will be exported as an image in the PNG format.
+You can export the chart view as an image in the desired file format using the [SaveAsImage](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartBase.html#Syncfusion_Maui_Toolkit_Charts_ChartBase_SaveAsImage_System_String_) method of [SfCartesianChart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html). The supported image formats are **JPEG and PNG**. By default, if you don't specify any image format with the filename, the chart view will be exported as an image in the PNG format.
 
 N> The chart view can be exported as an image only when the chart view is added to the visual tree.
 
@@ -30,14 +30,13 @@ this.Content = chart;
 // Dynamically save the chart as an image file named "ChartSample.jpeg"
 chart.SaveAsImage("ChartSample.jpeg");
 
-
 {% endhighlight %}
 
 {% endtabs %}
 
-T> We can change the image formats in above code by changing its extension as .jpg, .png.
+T> You can change the image format by changing the file extension to .jpg or .png.
 
-The exported image will be saved in the different location across the platforms.
+The exported image will be saved in different locations across platforms:
 
 **Windows Phone, Android and MAC** – The image will be saved inside the 'Pictures' directory of the file system.
 
@@ -70,7 +69,7 @@ Add the following code snippet to the "Info" file:
 
 The [GetStreamAsync](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartBase.html#Syncfusion_Maui_Toolkit_Charts_ChartBase_GetStreamAsync_Syncfusion_Maui_Toolkit_ImageFileFormat_) method of [SfCartesianChart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html) is used to asynchronously get the chart view as a stream in the desired ImageFileFormat. The output stream can be passed as an input to other components that accept streams, such as PDF, Excel, and Word. The supported image file formats are **JPEG and PNG**.
 
-N> The charts stream can only be rendered when the chart view is added to the visual tree.
+N> The chart's stream can only be rendered when the chart view is added to the visual tree.
 
 The following code snippet demonstrates the usage of this method:
 
@@ -86,7 +85,7 @@ this.Content = chart;
 // Export the chart as a JPEG image stream asynchronously
 await chart.GetStreamAsync(ImageFileFormat.Jpeg);
 
-
 {% endhighlight %}
 
 {% endtabs %}
+

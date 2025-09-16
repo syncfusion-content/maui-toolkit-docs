@@ -10,12 +10,11 @@ keywords: .net maui cartesian charts, .net maui axis types, cartesian chart axis
 
 # Types of Axis in .NET MAUI Chart
 
-Cartesian chart supports the following types of chart axis.
+Cartesian chart supports the following types of chart axis:
 
 * NumericalAxis
 * CategoryAxis
 * DateTimeAxis
-* DateTimeCategoryAxis
 * LogarithmicAxis
 
 ## Numerical Axis
@@ -40,19 +39,19 @@ Cartesian chart supports the following types of chart axis.
 
 {% highlight c# %}
 
-    SfCartesianChart chart = new SfCartesianChart();
-    . . .
-    // Create a numerical axis for the X-axis
-    NumericalAxis primaryAxis = new NumericalAxis();
-    // Add the primary axis to the chart's XAxes collection
-    chart.XAxes.Add(primaryAxis);
+SfCartesianChart chart = new SfCartesianChart();
+. . .
+// Create a numerical axis for the X-axis
+NumericalAxis primaryAxis = new NumericalAxis();
+// Add the primary axis to the chart's XAxes collection
+chart.XAxes.Add(primaryAxis);
 
-    // Create a numerical axis for the Y-axis
-    NumericalAxis secondaryAxis = new NumericalAxis();
-    // Add the secondary axis to the chart's YAxes collection
-    chart.YAxes.Add(secondaryAxis);
+// Create a numerical axis for the Y-axis
+NumericalAxis secondaryAxis = new NumericalAxis();
+// Add the secondary axis to the chart's YAxes collection
+chart.YAxes.Add(secondaryAxis);
 
-    this.Content = chart;
+this.Content = chart;
 {% endhighlight %}
 
 {% endtabs %}
@@ -102,7 +101,7 @@ this.Content = chart;
 
 ### Customizing the Range
 
-[Maximum](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.NumericalAxis.html#Syncfusion_Maui_Toolkit_Charts_NumericalAxis_Maximum) and [Minimum](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.NumericalAxis.html#Syncfusion_Maui_Toolkit_Charts_NumericalAxis_Minimum) properties of axis is used for setting the maximum and minimum value of the axis range respectively.
+[Maximum](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.NumericalAxis.html#Syncfusion_Maui_Toolkit_Charts_NumericalAxis_Maximum) and [Minimum](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.NumericalAxis.html#Syncfusion_Maui_Toolkit_Charts_NumericalAxis_Minimum) properties of axis are used for setting the maximum and minimum value of the axis range respectively.
 
 N> If minimum or maximum value is set, the other value is calculated by default internally.
 
@@ -115,7 +114,7 @@ N> If minimum or maximum value is set, the other value is calculated by default 
     <chart:SfCartesianChart.YAxes>
       <chart:NumericalAxis Maximum="2750" Minimum="250" Interval="250"/>
     </chart:SfCartesianChart.YAxes>
-
+    . . .
 </chart:SfCartesianChart>
 
 {% endhighlight %}
@@ -131,7 +130,7 @@ NumericalAxis secondaryAxis = new NumericalAxis()
 };
 chart.YAxes.Add(secondaryAxis);
 
- this.Content = chart;
+this.Content = chart;
 {% endhighlight %}
 
 {% endtabs %}
@@ -149,6 +148,7 @@ The [CategoryAxis](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.T
     <chart:SfCartesianChart.XAxes>
         <chart:CategoryAxis/>
     </chart:SfCartesianChart.XAxes>
+    . . .
 </chart:SfCartesianChart>
 
 {% endhighlight %}
@@ -162,7 +162,7 @@ CategoryAxis primaryAxis = new CategoryAxis();
 // Add the primaryAxis to the chart's XAxes collection
 chart.XAxes.Add(primaryAxis);
 
- this.Content = chart;
+this.Content = chart;
 {% endhighlight %}
 
 {% endtabs %}
@@ -171,7 +171,7 @@ chart.XAxes.Add(primaryAxis);
 
 ### Label placement
 
-The [LabelPlacement](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.CategoryAxis.html#Syncfusion_Maui_Toolkit_Charts_CategoryAxis_LabelPlacement) property in [CategoryAxis](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.CategoryAxis.html) is used to placed the axis labels based on ticks and between ticks. The default value of [LabelPlacement](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.CategoryAxis.html#Syncfusion_Maui_Toolkit_Charts_CategoryAxis_LabelPlacement) is [OnTicks](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.LabelPlacement.html#Syncfusion_Maui_Toolkit_Charts_LabelPlacement_OnTicks).
+The [LabelPlacement](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.CategoryAxis.html#Syncfusion_Maui_Toolkit_Charts_CategoryAxis_LabelPlacement) property in [CategoryAxis](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.CategoryAxis.html) is used to place the axis labels based on ticks and between ticks. The default value of [LabelPlacement](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.CategoryAxis.html#Syncfusion_Maui_Toolkit_Charts_CategoryAxis_LabelPlacement) is [OnTicks](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.LabelPlacement.html#Syncfusion_Maui_Toolkit_Charts_LabelPlacement_OnTicks).
 
 {% tabs %}
 
@@ -182,6 +182,7 @@ The [LabelPlacement](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui
     <chart:SfCartesianChart.XAxes>
         <chart:CategoryAxis LabelPlacement="BetweenTicks"/>
     </chart:SfCartesianChart.XAxes>
+    . . .
 </chart:SfCartesianChart>
 
 {% endhighlight %}
@@ -197,7 +198,7 @@ CategoryAxis primaryAxis = new CategoryAxis()
 };
 chart.XAxes.Add(primaryAxis);
 
- this.Content = chart;
+this.Content = chart;
 {% endhighlight %}
 
 {% endtabs %}
@@ -206,7 +207,7 @@ chart.XAxes.Add(primaryAxis);
 
 ### Interval
 
-By default, the [CategoryAxis](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.CategoryAxis.html) axis labels are display with fixed interval 1. It can customized by using the [Interval](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.CategoryAxis.html#Syncfusion_Maui_Toolkit_Charts_CategoryAxis_Interval) property of axis.
+By default, the [CategoryAxis](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.CategoryAxis.html) axis labels are displayed with fixed interval 1. It can be customized by using the [Interval](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.CategoryAxis.html#Syncfusion_Maui_Toolkit_Charts_CategoryAxis_Interval) property of axis.
 
 {% tabs %}
 
@@ -217,6 +218,7 @@ By default, the [CategoryAxis](https://help.syncfusion.com/cr/maui-toolkit/Syncf
     <chart:SfCartesianChart.XAxes>
         <chart:CategoryAxis Interval="2"/>
     </chart:SfCartesianChart.XAxes>
+    . . .
 </chart:SfCartesianChart>
 
 {% endhighlight %}
@@ -322,6 +324,7 @@ this.Content = chart;
     <chart:SfCartesianChart.XAxes>
         <chart:DateTimeAxis/>
     </chart:SfCartesianChart.XAxes>
+    . . .
 </chart:SfCartesianChart>
 
 {% endhighlight %}
@@ -335,7 +338,7 @@ DateTimeAxis primaryAxis = new DateTimeAxis();
 // Add the DateTimeAxis instance to the chart's XAxes collection
 chart.XAxes.Add(primaryAxis); 
 
- this.Content = chart;
+this.Content = chart;
 {% endhighlight %}
 
 {% endtabs %}
@@ -349,10 +352,11 @@ In [DateTimeAxis](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.To
 {% highlight xaml %}
 
 <chart:SfCartesianChart>
-    ...
+    . . .
     <chart:SfCartesianChart.XAxes>
         <chart:DateTimeAxis Interval="6" IntervalType="Months"/>
     </chart:SfCartesianChart.XAxes>
+    . . .
 </chart:SfCartesianChart>
 
 {% endhighlight %}
@@ -369,7 +373,7 @@ DateTimeAxis primaryAxis = new DateTimeAxis()
 };
 chart.XAxes.Add(primaryAxis);
 
- this.Content = chart;
+this.Content = chart;
 {% endhighlight %}
 
 {% endtabs %}
@@ -389,6 +393,7 @@ chart.XAxes.Add(primaryAxis);
     <chart:SfCartesianChart.XAxes>
         <chart:DateTimeAxis Minimum="2021/05/10" Maximum="2021/11/01"/>
     </chart:SfCartesianChart.XAxes>
+    . . .
 </chart:SfCartesianChart>
 
 {% endhighlight %}
@@ -413,79 +418,6 @@ this.Content = chart;
 
 ![DateTimeAxis range customization support in MAUI Chart](Axis_Images/maui_chart_datetime_axis_range.jpg)
 
-## DateTimeCategoryAxis
-
-The `DateTimeCategoryAxis` is a specialized type of axis primarily used with financial series. Similar to the [CategoryAxis](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.CategoryAxis.html), all data points are plotted with equal spacing, eliminating gaps for missing dates. The intervals and ranges for this axis are calculated similarly to the [DateTimeAxis](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.DateTimeAxis.html). There are no visual gaps between points, even if the difference between two points exceeds a year.
-
-{% tabs %}
-
-{% highlight xaml %}
-
-<chart:SfCartesianChart>
-    . . .
-    <chart:SfCartesianChart.XAxes>
-        <chart:DateTimeCategoryAxis/>
-    </chart:SfCartesianChart.XAxes>
-    . . .
-</chart:SfCartesianChart>
-
-{% endhighlight %}
-
-{% highlight c# %}
-
-SfCartesianChart chart = new SfCartesianChart(); 
-. . . 
-// Create an instance of the DateTimeCategoryAxis, used for displaying DateTime values as categories 
-DateTimeCategoryAxis primaryAxis = new DateTimeCategoryAxis(); 
-// Add the DateTimeCategoryAxis instance to the chart's XAxes collection 
-chart.XAxes.Add(primaryAxis);
-
-this.Content = chart; 
-
-{% endhighlight %}
-
-{% endtabs %}
-
-![DateTimeCategory Axis support in MAUI Chart](Axis_Images/maui_dateTimeCategory_axis.png)
-
-### Interval
-
-In `DateTimeCategoryAxis`, intervals can be customized by using the Interval and IntervalType properties, similar to [DateTimeAxis](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.DateTimeAxis.html). For example, setting `Interval` as 5 and `IntervalType` as `Days` will consider 5 days as an interval.
-{% tabs %}
-
-{% highlight xaml %}
-
-<chart:SfCartesianChart> 
-    . . .
-        <chart:SfCartesianChart.XAxes>
-            <chart:DateTimeCategoryAxis 
-            Interval="5" 
-            IntervalType="Days"/> 
-        </chart:SfCartesianChart.XAxes> 
-    . . .
-</chart:SfCartesianChart>
-
-{% endhighlight %}
-
-{% highlight c# %}
-
-SfCartesianChart chart = new SfCartesianChart(); 
-. . .
-DateTimeCategoryAxis primaryAxis = new DateTimeCategoryAxis() 
-{ 
-    Interval = 5, 
-    IntervalType = DateTimeIntervalType.Days 
-}; 
-chart.XAxes.Add(primaryAxis);
-. . .
-this.Content = chart; 
-
-{% endhighlight %}
-
-{% endtabs %}
-
-![DateTimeCategory Axis support in MAUI Chart](Axis_Images/maui_dateTimeCategory_interval.png)
-
 ## Logarithmic Axis
 
 The [LogarithmicAxis](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.LogarithmicAxis.html) uses a logarithmic scale, and it is very useful in visualizing data when the given data range has a big difference. It can be used either on the x-axis or the chart's y-axis.
@@ -499,6 +431,7 @@ The [LogarithmicAxis](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Mau
     <chart:SfCartesianChart.YAxes>
         <chart:LogarithmicAxis/>
     </chart:SfCartesianChart.YAxes>
+    . . .
 </chart:SfCartesianChart>
 
 {% endhighlight %}
@@ -532,6 +465,7 @@ Axis interval can be customized using the [Interval](https://help.syncfusion.com
     <chart:SfCartesianChart.YAxes>
         <chart:LogarithmicAxis Interval="2"/>
     </chart:SfCartesianChart.YAxes>
+    . . .
 </chart:SfCartesianChart>
 
 {% endhighlight %}
@@ -565,6 +499,7 @@ To customize the range of the log axis, you can use the [Minimum](https://help.s
     <chart:SfCartesianChart.YAxes>
         <chart:LogarithmicAxis Minimum="100" Maximum="10000"/>
     </chart:SfCartesianChart.YAxes>
+    . . .
 </chart:SfCartesianChart>
 
 {% endhighlight %}
@@ -600,6 +535,7 @@ The logarithmic axis base can be customized using the [LogarithmicBase](https://
     <chart:SfCartesianChart.YAxes>
         <chart:LogarithmicAxis LogarithmicBase="5"/>
     </chart:SfCartesianChart.YAxes>
+    . . .
 </chart:SfCartesianChart>
 
 {% endhighlight %}
@@ -636,6 +572,7 @@ Axis can be inverted by using the [IsInversed](https://help.syncfusion.com/cr/ma
     <chart:SfCartesianChart.YAxes>
         <chart:NumericalAxis IsInversed="True"/>
     </chart:SfCartesianChart.YAxes>
+    . . .
 </chart:SfCartesianChart>
 
 {% endhighlight %}
@@ -656,72 +593,57 @@ this.Content = chart;
 ![Inversed axis support in MAUI Chart](Axis_Images/maui_chart_axis_isInversed.jpg)
 
 ## Axis Visibility
-
 Axis visibility can be controlled using the [IsVisible](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxis.html#Syncfusion_Maui_Toolkit_Charts_ChartAxis_IsVisible) property of axis. Default value of [IsVisible](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxis.html#Syncfusion_Maui_Toolkit_Charts_ChartAxis_IsVisible) property is `True`.
 
 {% tabs %}
-
 {% highlight xaml %}
-
 <chart:SfCartesianChart>
     . . .
     <chart:SfCartesianChart.YAxes>
         <chart:NumericalAxis IsVisible="False"/>
     </chart:SfCartesianChart.YAxes>
+    . . .
 </chart:SfCartesianChart>
-
 {% endhighlight %}
-
 {% highlight c# %}
-
 SfCartesianChart chart = new SfCartesianChart();
 . . .
 NumericalAxis secondaryAxis = new NumericalAxis() 
 {
-	IsVisible = false // Set the IsVisible property to false, making this axis hidden/not visible in the chart
+    IsVisible = false // Set the IsVisible property to false, making this axis hidden/not visible in the chart
 };
 chart.YAxes.Add(secondaryAxis);
-
 this.Content = chart;
 {% endhighlight %}
-
 {% endtabs %}
 
 ## Multiple Axes
+Cartesian charts provides support to arrange multiple series inside the same chart area with specified x-axis and y-axis. There are two properties [XAxisName](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.CartesianSeries.html#Syncfusion_Maui_Toolkit_Charts_CartesianSeries_XAxisName) and [YAxisName](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.CartesianSeries.html#Syncfusion_Maui_Toolkit_Charts_CartesianSeries_YAxisName) in all the Cartesian series types, which are used to provide multiple axes support. These axes can be arranged in a stacking order or in a side-by-side pattern.
 
-Cartesian charts provides support to arrange the multiple series inside the same chart area with specified x-axis and y-axis. There are two properties [XAxisName](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.CartesianSeries.html#Syncfusion_Maui_Toolkit_Charts_CartesianSeries_XAxisName) and [YAxisName](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.CartesianSeries.html#Syncfusion_Maui_Toolkit_Charts_CartesianSeries_YAxisName) in all the Cartesian series type, which is used to provide multiple axes support. These axes can be arranged in a stacking order or in a side by side pattern.
-
-By default, The 0th index value of XAxes and YAxes is used to plot all of the series.
+By default, the 0th index value of XAxes and YAxes is used to plot all of the series.
 
 {% tabs %}
-
 {% highlight xaml %}
-
-    <chart:SfCartesianChart>
-        . . .
-        <chart:SfCartesianChart.XAxes>
-            <chart:DateTimeAxis ShowMajorGridLines="False"/>
-        </chart:SfCartesianChart.XAxes>
-
-        <chart:SfCartesianChart.YAxes>
-            <chart:NumericalAxis ShowMajorGridLines="False"/>
-            <chart:NumericalAxis Name="series_YAxis" CrossesAt="{Static x:Double.MaxValue}" ShowMajorGridLines="False"/>
-        </chart:SfCartesianChart.YAxes>
-
-        <chart:ColumnSeries ItemsSource="{Binding Data1}" 
-                            XBindingPath="Date"
-                            YBindingPath="Value" YAxisName="series_YAxis"/>
-        <chart:SplineSeries ItemsSource="{Binding Data2}" 
-                            XBindingPath="Date"
-                            YBindingPath="Value"/>
-    </chart:SfCartesianChart>
-
+<chart:SfCartesianChart>
+    . . .
+    <chart:SfCartesianChart.XAxes>
+        <chart:DateTimeAxis ShowMajorGridLines="False"/>
+    </chart:SfCartesianChart.XAxes>
+    <chart:SfCartesianChart.YAxes>
+        <chart:NumericalAxis ShowMajorGridLines="False"/>
+        <chart:NumericalAxis Name="series_YAxis" CrossesAt="{Static x:Double.MaxValue}" ShowMajorGridLines="False"/>
+    </chart:SfCartesianChart.YAxes>
+    <chart:ColumnSeries ItemsSource="{Binding Data1}" 
+                    XBindingPath="Date"
+                    YBindingPath="Value" 
+                    YAxisName="series_YAxis"/>
+    <chart:SplineSeries ItemsSource="{Binding Data2}" 
+                    XBindingPath="Date"
+                    YBindingPath="Value"/>
+</chart:SfCartesianChart>
 {% endhighlight %}
-
 {% highlight c# %}
-
 SfCartesianChart chart = new SfCartesianChart();
-
 DateTimeAxis primaryAxis = new DateTimeAxis()
 {
     ShowMajorGridLines = false
@@ -760,14 +682,11 @@ SplineSeries series2 = new SplineSeries()
 
 chart.Series.Add(series1);
 chart.Series.Add(series2);
-
 this.Content = chart;
-
 {% endhighlight %}
-
 {% endtabs %}
 
-![Mulitipe axis support in MAUI Chart](Axis_Images/multiple_axis.png)
+![Multiple axis support in MAUI Chart](Axis_Images/multiple_axis.png)
 
 In the above image, the [ColumnSeries](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ColumnSeries.html) is plotted based on additional axes of [YAxes](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html#Syncfusion_Maui_Toolkit_Charts_SfCartesianChart_YAxes) collection, and [SplineSeries](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SplineSeries.html) is plotted based on axis of the collection's 0th index.
 
@@ -776,37 +695,27 @@ To learn how to add and customize the multiple axes in .NET MAUI Cartesian Chart
 {% youtube "https://youtu.be/Mvno-lDRpxU" %}
 
 ## Axis Crossing
-
-The chart allows you to customize the origin, by default the axis will be rendered with (0,0) as the origin in x and y-axes. An axis can be positioned anywhere in the chart area by using the [CrossesAt](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxis.html#Syncfusion_Maui_Toolkit_Charts_ChartAxis_CrossesAt) property. This property specifies where the horizontal axis intersects or crosses the vertical axis, and vice versa. The default value of the CrossesAt property is `double.NaN`.
+The chart allows you to customize the origin. By default, the axis will be rendered with (0,0) as the origin in x and y-axes. An axis can be positioned anywhere in the chart area by using the [CrossesAt](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxis.html#Syncfusion_Maui_Toolkit_Charts_ChartAxis_CrossesAt) property. This property specifies where the horizontal axis intersects or crosses the vertical axis, and vice versa. The default value of the CrossesAt property is `double.NaN`.
 
 {% tabs %}
-
 {% highlight xaml %}
-
 <chart:SfCartesianChart>
-
     <chart:SfCartesianChart.XAxes>
         <chart:NumericalAxis CrossesAt="0"
-			                 Minimum="-8"
-                             Maximum="8"
-                             ShowMajorGridLines="False"/>
+                            Minimum="-8"
+                            Maximum="8"
+                            ShowMajorGridLines="False"/>
     </chart:SfCartesianChart.XAxes>
-
     <chart:SfCartesianChart.YAxes>
         <chart:NumericalAxis CrossesAt="0"
-			                 Minimum="-8"
-			                 Maximum="8"
-			                 ShowMajorGridLines="False"/>
+                            Minimum="-8"
+                            Maximum="8"
+                            ShowMajorGridLines="False"/>
     </chart:SfCartesianChart.YAxes>
-
 </chart:SfCartesianChart>
-
 {% endhighlight %}
-
 {% highlight c# %}
-
 SfCartesianChart chart = new SfCartesianChart();
-
 NumericalAxis primaryAxis = new NumericalAxis();
 primaryAxis.CrossesAt = 0; // Sets the point where the axis crosses the other axis at 0
 primaryAxis.Minimum = -8; // Sets the minimum value of the axis to -8
@@ -820,40 +729,28 @@ secondaryAxis.Minimum = -8; // Sets the minimum value of the axis to -8
 secondaryAxis.Maximum = 8; // Sets the maximum value of the axis to 8
 secondaryAxis.ShowMajorGridLines = false;
 chart.YAxes.Add(secondaryAxis);
-
 this.Content = chart;
 {% endhighlight %}
-
 {% endtabs %}
 
 ![Axis crossing support in MAUI Chart](Axis_Images/maui_chart_axis_crossing.png)
 
 ### Positioning the axis elements while crossing
-
 The [RenderNextToCrossingValue](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxis.html#Syncfusion_Maui_Toolkit_Charts_ChartAxis_RenderNextToCrossingValue) property is used to determine whether the crossing axis should be placed at crossing position or not. The default value of [RenderNextToCrossingValue](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxis.html#Syncfusion_Maui_Toolkit_Charts_ChartAxis_RenderNextToCrossingValue) property is true.
 
 {% tabs %}
-
 {% highlight xaml %}
-
 <chart:SfCartesianChart>
-    
     <chart:SfCartesianChart.XAxes>
         <chart:NumericalAxis CrossesAt="0" RenderNextToCrossingValue="False"/>
     </chart:SfCartesianChart.XAxes>
-
     <chart:SfCartesianChart.YAxes>
         <chart:NumericalAxis CrossesAt="0"/>
     </chart:SfCartesianChart.YAxes>
-
 </chart:SfCartesianChart>
-
 {% endhighlight %}
-
 {% highlight c# %}
-
 SfCartesianChart chart = new SfCartesianChart();
-
 NumericalAxis primaryAxis = new NumericalAxis();
 primaryAxis.CrossesAt = 0;
 primaryAxis.RenderNextToCrossingValue = false; // Ensure the X-axis is not rendered next to its crossing value
@@ -862,110 +759,78 @@ chart.XAxes.Add(primaryAxis);
 NumericalAxis secondaryAxis = new NumericalAxis();
 secondaryAxis.CrossesAt = 0;
 chart.YAxes.Add(secondaryAxis);
-
 this.Content = chart;
 {% endhighlight %}
-
 {% endtabs %}
 
 ![RenderNextToCrossingValue support in MAUI Chart](Axis_Images/maui_chart_axis_rendernexttocrossingvalue.png)
 
 ### Crossing the date-time axis
-
 For the crossing in date time horizontal axis, date object should be provided as value for `CrossesAt` property of vertical axis.
 
 {% tabs %}
-
 {% highlight xaml %}
-
 <chart:SfCartesianChart>
-    
     <chart:SfCartesianChart.XAxes>
         <chart:DateTimeAxis CrossesAt="2021/01/01"/>
     </chart:SfCartesianChart.XAxes>
-
-    <chart:SfCartesianChart.yAxes>
+    <chart:SfCartesianChart.YAxes>
         <chart:NumericalAxis/>
-    </chart:SfCartesianChart.yAxes>
-
+    </chart:SfCartesianChart.YAxes>
 </chart:SfCartesianChart>
-
 {% endhighlight %}
-
 {% highlight c# %}
-
 SfCartesianChart chart = new SfCartesianChart();
-
 DateTimeAxis primaryAxis = new DateTimeAxis();
 primaryAxis.CrossesAt = new DateTime(2021, 01, 01); // Set the primary X-axis to start with a specific date
 chart.XAxes.Add(primaryAxis);
 
 NumericalAxis secondaryAxis = new NumericalAxis();
 chart.YAxes.Add(secondaryAxis);
-
 this.Content = chart;
-
 {% endhighlight %}
-
 {% endtabs %}
 
 ![DateTimeAxis crossing support in MAUI Chart](Axis_Images/maui_chart_datetime_axis_crossing.png)
 
 ### Opposite Side Axis with CrossesAt
-
 The chart allows you to position the axis to opposed position by setting the value as `double.MaxValue` to the [CrossesAt](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxis.html#Syncfusion_Maui_Toolkit_Charts_ChartAxis_CrossesAt) property.
 
 {% tabs %}
-
 {% highlight xaml %}
-
 <chart:SfCartesianChart>
-
     <chart:SfCartesianChart.XAxes>
         <chart:NumericalAxis/>
     </chart:SfCartesianChart.XAxes>
-
     <chart:SfCartesianChart.YAxes>
         <chart:NumericalAxis CrossesAt="{Static x:Double.MaxValue}"/>
     </chart:SfCartesianChart.YAxes>
-
 </chart:SfCartesianChart>
-
 {% endhighlight %}
-
 {% highlight c# %}
-
 SfCartesianChart chart = new SfCartesianChart();
-
 NumericalAxis primaryAxis = new NumericalAxis();
 chart.XAxes.Add(primaryAxis);
 
 NumericalAxis secondaryAxis = new NumericalAxis();
 secondaryAxis.CrossesAt = double.MaxValue;
 chart.YAxes.Add(secondaryAxis);
-
 this.Content = chart;
 {% endhighlight %}
-
 {% endtabs %}
 
 ![Axis opposite position in MAUI Chart](Axis_Images/maui_chart_axis_opposite_position.png)
 
 ## Events
-
 ### ActualRangeChanged
-
 The [ActualRangeChanged](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxis.html#Syncfusion_Maui_Toolkit_Charts_ChartAxis_ActualRangeChanged) event is triggered when the actual range of the axis is changed. The argument contains the following information:
-
 * [ActualMinimum](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ActualRangeChangedEventArgs.html#Syncfusion_Maui_Toolkit_Charts_ActualRangeChangedEventArgs_ActualMinimum) - used to get the actual minimum value of the axis.
 * [ActualMaximum](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ActualRangeChangedEventArgs.html#Syncfusion_Maui_Toolkit_Charts_ActualRangeChangedEventArgs_ActualMaximum) - used to get the actual maximum value of the axis.
 
 N> The actual range is changed by specifying the [ZoomPosition](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxis.html#Syncfusion_Maui_Toolkit_Charts_ChartAxis_ZoomPosition) and [ZoomFactor](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxis.html#Syncfusion_Maui_Toolkit_Charts_ChartAxis_ZoomFactor) properties or zooming the chart interactively.
 
 ### LabelCreated
-
 The [LabelCreated](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxis.html#Syncfusion_Maui_Toolkit_Charts_ChartAxis_LabelCreated) event is triggered when the axis label is created. The argument contains the following information:
-
 * [Label](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxisLabelEventArgs.html#Syncfusion_Maui_Toolkit_Charts_ChartAxisLabelEventArgs_Label) - Used to get or set the text of axis label.
 * [Position](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxisLabelEventArgs.html#Syncfusion_Maui_Toolkit_Charts_ChartAxisLabelEventArgs_Position) - Used to get the position of label.
 * [LabelStyle](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxisLabelEventArgs.html#Syncfusion_Maui_Toolkit_Charts_ChartAxisLabelEventArgs_LabelStyle) - Used to customize the appearance of axis labels.
