@@ -372,7 +372,7 @@ sparkchart.BindingContext = viewModel;
 
 ### Populate chart with data
 
-Binding `Data` to the spark chart `ItemsSource` property from its BindingContext to create our own spark chart.
+Binding `Data` to the spark chart [ItemsSource](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SparkCharts.SfSparkChart.html#Syncfusion_Maui_Toolkit_SparkCharts_SfSparkChart_ItemsSource) property from its BindingContext to create our own spark chart.
 
 {% tabs %}
 
