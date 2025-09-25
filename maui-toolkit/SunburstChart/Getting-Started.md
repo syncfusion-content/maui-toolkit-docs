@@ -387,7 +387,7 @@ this.BindingContext = new SunburstViewModel();
 
 ### Populate Chart with Data
 
-Bind `DataSource` to the Sunburst chart `ItemsSource` property from its BindingContext to create your Sunburst chart.
+Bind `DataSource` to the Sunburst chart [ItemsSource](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SunburstChart.SfSunburstChart.html#Syncfusion_Maui_Toolkit_SunburstChart_SfSunburstChart_ItemsSource) property from its BindingContext to create your Sunburst chart.
 Then, add the [SunburstHierarchicalLevel](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SunburstChart.SunburstHierarchicalLevel.html) to [Levels](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SunburstChart.SfSunburstChart.html#Syncfusion_Maui_Toolkit_SunburstChart_SfSunburstChart_Levels) collection. Each hierarchy level is formed based on the property specified in the [GroupMemberPath](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SunburstChart.SunburstHierarchicalLevel.html#Syncfusion_Maui_Toolkit_SunburstChart_SunburstHierarchicalLevel_GroupMemberPath) property, and each arc segment size is calculated using the [ValueMemberPath](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SunburstChart.SfSunburstChart.html#Syncfusion_Maui_Toolkit_SunburstChart_SfSunburstChart_ValueMemberPath) property.
 
 {% tabs %}   
@@ -614,3 +614,5 @@ public partial class MainPage : ContentPage
 {% endtabs %}
 
 ![Getting started for .Net MAUI Sunburst Chart.](Getting_started_image/maui_sunburst_chart.png)
+
+You can find the complete getting started sample from this [link](https://github.com/SyncfusionExamples/maui-toolkit-samples/tree/master/SunburstChart/GettingStarted).
