@@ -15,11 +15,11 @@ Customizing data point colors improves visual clarity by distinguishing key valu
 
 Color of the first, last, high, low, and negative data points can be customized using the following `Brush` type properties.
 
-* `FirstPointFill` - Used to highlight the first point.
-* `LastPointFill` - Used to highlight the last point.
-* `HighPointFill` - Used to highlight the highest point.
-* `LowPointFill` - Used to highlight the lowest point.
-* `NegativePointsFill` - Used to highlight the negative points.
+* [FirstPointFill](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SparkCharts.SfSparkLineChart.html#Syncfusion_Maui_Toolkit_SparkCharts_SfSparkLineChart_FirstPointFill) - Used to highlight the first point.
+* [LastPointFill](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SparkCharts.SfSparkLineChart.html#Syncfusion_Maui_Toolkit_SparkCharts_SfSparkLineChart_LastPointFill) - Used to highlight the last point.
+* [HighPointFill](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SparkCharts.SfSparkLineChart.html#Syncfusion_Maui_Toolkit_SparkCharts_SfSparkLineChart_HighPointFill) - Used to highlight the highest point.
+* [LowPointFill](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SparkCharts.SfSparkLineChart.html#Syncfusion_Maui_Toolkit_SparkCharts_SfSparkLineChart_LastPointFill) - Used to highlight the lowest point.
+* [NegativePointsFill](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SparkCharts.SfSparkLineChart.html#Syncfusion_Maui_Toolkit_SparkCharts_SfSparkLineChart_NegativePointsFill) - Used to highlight the negative points.
 
 {% tabs %}
 
@@ -55,7 +55,7 @@ this.Content = sparkchart;
 
 {% endtabs %}
 
-N> `NegativePointsFill` is applicable for `SfSparkColumnChart` and `SfSparkWinLossChart` alone.
+N> [NegativePointsFill](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SparkCharts.SfSparkLineChart.html#Syncfusion_Maui_Toolkit_SparkCharts_SfSparkLineChart_NegativePointsFill) is applicable for [SfSparkColumnChart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SparkCharts.SfSparkColumnChart.html) and [SfSparkWinLossChart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SparkCharts.SfSparkWinLossChart.html) alone.
 
 ![Customized data points in MAUI Spark Line Chart](customize_datapoints_images/MAUI_Line_segments.png)
 
@@ -99,7 +99,7 @@ this.Content = sparkchart;
 
 ## Padding
 
-The `Padding` property represents the distance between an element and its child elements. Padding can be applied in specific direction or in all directions. Padding can be applied for all sparkline types.
+The [Padding](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SparkCharts.SfSparkChart.html#Syncfusion_Maui_Toolkit_SparkCharts_SfSparkChart_Padding) property represents the distance between an element and its child elements. Padding can be applied in specific direction or in all directions. Padding can be applied for all sparkline types.
 
 {% tabs %}
 
@@ -152,5 +152,4 @@ this.Content = sparkchart;
 
 {% endtabs %}
 
-![Spark Line Chart Without Padding](customize_datapoints_images/MAUI_Line_Sparkline_without_padding.png)
 ![Spark Line Chart With Padding](customize_datapoints_images/MAUI_Line_Sparkline_with_padding.png)
