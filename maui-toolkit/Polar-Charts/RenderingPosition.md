@@ -3,6 +3,7 @@ layout: post
 title: Polar Axis Angle in .NET MAUI Chart control | Syncfusion
 description: Learn here all about the rendering position of the axis in the Syncfusion® .NET MAUI Chart (SfPolarChart) control.
 platform: maui-toolkit
+control: SfPolarChart
 documentation: ug
 keywords: .net maui polar chart, rendering position, start angle, series rotation, axis angle customization, maui toolkit
 ---
