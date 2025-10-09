@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Segment Spacing in .NET MAUI Chart Control | Syncfusion
+title: Segment Spacing in .NET MAUI Pyramid Chart Control | Syncfusion
 description: Learn here all about segment spacing customization in Syncfusion® .NET MAUI Pyramid Chart (SfPyramidChart) control and more.
 platform: maui-toolkit
 control: SfPyramidChart

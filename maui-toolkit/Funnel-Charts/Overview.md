@@ -1,7 +1,7 @@
 ---
 layout: post
 title: About .NET MAUI Funnel Chart Control | Syncfusion
-description: Learn about the Syncfusion .NET MAUI Funnel Chart (SfFunnelChart) control, its key features, and capabilities for visualizing process data.
+description: Learn about the Syncfusion® .NET MAUI Funnel Chart (SfFunnelChart) control, its key features, and capabilities for visualizing process data.
 platform: maui-toolkit
 control: SfFunnelChart
 documentation: ug

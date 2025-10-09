@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Tooltip in .NET MAUI Chart control | Syncfusion
+title: Tooltip in .NET MAUI Pyramid Chart control | Syncfusion
 description: This section explains how to enable tooltip and its customization in Syncfusion® .NET MAUI Chart (SfPyramidChart) control
 platform: maui-toolkit
 control: SfPyramidChart
