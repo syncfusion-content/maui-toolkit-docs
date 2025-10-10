@@ -66,7 +66,7 @@ using Syncfusion.Maui.Toolkit.Hosting;
 ## Step 4: Add .NET MAUI Spark Charts
 
 1. To initialize the control, import the `Syncfusion.Maui.Toolkit.SparkCharts` namespace into your code.
-2. Initialize an instance of the `SfSparkLineChart` control.
+2. Initialize an instance of the [SfSparkLineChart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SparkCharts.SfSparkLineChart.html) control.
 
 {% tabs %} 
 {% highlight xaml %}
@@ -160,7 +160,7 @@ using Syncfusion.Maui.Toolkit.Hosting;
 ## Step 4: Add .NET MAUI Spark Charts
 
 1. To initialize the control, import the `Syncfusion.Maui.Toolkit.SparkCharts` namespace.
-2. Initialize `SfSparkLineChart`.
+2. Initialize [SfSparkLineChart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SparkCharts.SfSparkLineChart.html).
 
 {% tabs %} 
 {% highlight xaml %}
@@ -251,7 +251,7 @@ using Syncfusion.Maui.Toolkit.Hosting;
 ## Step 4: Add .NET MAUI Spark Charts
 
 1. To initialize the control, import the `Syncfusion.Maui.Toolkit.SparkCharts` namespace.
-2. Initialize `SfSparkLineChart`.
+2. Initialize [SfSparkLineChart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SparkCharts.SfSparkLineChart.html).
 
 {% tabs %} 
 {% highlight xaml %}
@@ -372,7 +372,7 @@ sparkchart.BindingContext = viewModel;
 
 ### Populate chart with data
 
-Binding `Data` to the spark chart `ItemsSource` property from its BindingContext to create our own spark chart.
+Binding `Data` to the spark chart [ItemsSource](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SparkCharts.SfSparkChart.html#Syncfusion_Maui_Toolkit_SparkCharts_SfSparkChart_ItemsSource) property from its BindingContext to create our own spark chart.
 
 {% tabs %}
 
