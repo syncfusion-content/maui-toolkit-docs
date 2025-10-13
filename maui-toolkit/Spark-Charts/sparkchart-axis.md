@@ -1,30 +1,28 @@
 ---
 layout: post
-title: Axis line in .NET MAUI Spark Chart Control | Syncfusion
-description: Learn how to display and customize the axis line in Syncfusion® .NET MAUI Spark Charts (SfSparkChart) using ShowAxis, AxisOrigin, and AxisLineStyle.
+title: Axis in .NET MAUI Spark Chart Control | Syncfusion
+description: Learn how to display and customize the axis in Syncfusion® .NET MAUI Spark Charts (SfSparkChart) using ShowAxis, AxisOrigin, and AxisLineStyle.
 platform: maui-toolkit
 control: SfSparkChart
 documentation: ug
 ---
 
-# Axis line in .NET MAUI Spark Charts (SfSparkChart)
+# Axis in .NET MAUI Spark Charts (SfSparkChart)
 
-The Spark Chart axis line is a horizontal reference line that helps highlight a axis line (for example, zero) or any custom Y value. It is supported by all Spark Chart types of `SfSparkChart`.
+Axis of the `SfSparkChart` can be configured and customized using following properties. This feature is applicable for all the `SfSparkChart` types except `SfSparkWinLossChart`.
 
-Axis of the `SfSparkChart` can be configured and customized using following properties:
-
-- `ShowAxis`: Enables or disables the axis line. Default `false`.
-- `AxisOrigin`: Sets the Y-value where the axis line is drawn. Default it renders at `0`.
-- `AxisLineStyle`: Customizes the appearance of the axis line. AxisLineStyle includes:
-  - `Stroke`: Specifies the line color of the axis line.
-  - `StrokeWidth`: Specifies the line thickness of the axis line. Default: 1.
-  - `StrokeDashArray`: Specifies the dash pattern for the axis line. Default: null.
+- `ShowAxis`: Enables or disables the axis. Default `false`.
+- `AxisOrigin`: Sets the Y-value where the axis is drawn. Default it renders at `0`.
+- `AxisLineStyle`: Customizes the appearance of the axis. AxisLineStyle includes:
+  - `Stroke`: Specifies the line color of the axis.
+  - `StrokeWidth`: Specifies the line thickness of the axis. Default: 1.
+  - `StrokeDashArray`: Specifies the dash pattern for the axis. Default: null.
 
 ---
 
-## Enable the axis line
+## Enable the axis
 
-Use `ShowAxis="True"` to display the axis line at the default origin of SfSparkChart. Default axis line is set to `False`.
+Use `ShowAxis="True"` to display the axis at the default origin of SfSparkChart. Default axis is set to `False`.
 
 {% tabs %}
 
@@ -51,7 +49,7 @@ var chart = new SfSparkLineChart
 
 {% endtabs %}
 
-![Axis line in .NET MAUI Spark Line](sparkchart_axis_line_images\Default_axis_line.png)
+![Axis in .NET MAUI Spark Line](sparkchart_axis_line_images\Default_axis_line.png)
 
 ---
 
@@ -80,15 +78,15 @@ chart.AxisOrigin = 8;
 
 {% endtabs %}
 
-![Axis line origin in .NET MAUI Spark Line](sparkchart_axis_line_images\axis_origin.png)
+![Axis origin in .NET MAUI Spark Line](sparkchart_axis_line_images\axis_origin.png)
 
 ---
 
-## Style the axis line
+## Style the axis
 
 ### Stroke width
 
-Controls the thickness of the axis line of SfSparkChart.
+Controls the thickness of the axis of SfSparkChart.
 
 {% tabs %}
 
@@ -111,11 +109,11 @@ chart.AxisLineStyle = new SparkChartLineStyle
 
 {% endtabs %}
 
-![Axis line stroke width in .NET MAUI Spark Line](sparkchart_axis_line_images\axis_stroke_width.png)
+![Axis stroke width in .NET MAUI Spark Line](sparkchart_axis_line_images\axis_stroke_width.png)
 
 ### Stroke color
 
-Sets the color of the axis line of SfSparkChart.
+Sets the color of the axis of SfSparkChart.
 
 {% tabs %}
 
@@ -142,11 +140,11 @@ chart.AxisLineStyle = new SparkChartLineStyle
 
 {% endtabs %}
 
-![Axis line stroke color in .NET MAUI Spark Line](sparkchart_axis_line_images\axis_stroke_color.png)
+![Axis stroke color in .NET MAUI Spark Line](sparkchart_axis_line_images\axis_stroke_color.png)
 
 ### Dashed line (StrokeDashArray)
 
-Applies a dash pattern to the axis line of SfSparkChart.
+Applies a dash pattern to the axis of SfSparkChart.
 
 {% tabs %}
 
