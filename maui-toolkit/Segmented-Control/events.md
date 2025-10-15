@@ -25,10 +25,10 @@ Below is a list of the arguments:
 
 The [SelectionChanged](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SegmentedControl.SfSegmentedControl.html#Syncfusion_Maui_Toolkit_SegmentedControl_SfSegmentedControl_SelectionChanged) event is triggered once the segment is selected in the segmented control. The [SelectionChangedEventArgs](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SegmentedControl.SelectionChangedEventArgs.html) has the following values, which provide information for the `SelectionChanged` event.
 
-* [OldIndex](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SegmentedControl.SelectionChangedEventArgs.html#Syncfusion_Maui_Toolkit_SegmentedControl_SelectionChangedEventArgs_OldIndex)
-* [NewIndex](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SegmentedControl.SelectionChangedEventArgs.html#Syncfusion_Maui_Toolkit_SegmentedControl_SelectionChangedEventArgs_NewIndex)
-* [OldValue](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SegmentedControl.SelectionChangedEventArgs.html#Syncfusion_Maui_Toolkit_SegmentedControl_SelectionChangedEventArgs_OldValue)
-* [NewValue](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SegmentedControl.SelectionChangedEventArgs.html#Syncfusion_Maui_Toolkit_SegmentedControl_SelectionChangedEventArgs_NewValue)
+* OldIndex
+* NewIndex
+* OldValue
+* NewValue
 
 {% tabs %}
 {% highlight C# %}
