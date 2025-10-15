@@ -212,11 +212,11 @@ public partial class MainPage : ContentPage
 
 ## Selection Mode
 
-You can select the segment item by tapping the item in the Segmented Control. SfSegmentedControl provides two types of modes such as `Single` and `SingleDeselect`. The default `SelectionMode` is `Single`.
+You can select the segment item by tapping the item in the Segmented Control. SfSegmentedControl provides two types of modes such as [Single](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SegmentedControl.SegmentSelectionMode.html#Syncfusion_Maui_Toolkit_SegmentedControl_SegmentSelectionMode_Single) and [SingleDeselect](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SegmentedControl.SegmentSelectionMode.html#Syncfusion_Maui_Toolkit_SegmentedControl_SegmentSelectionMode_SingleDeselect). The default [SelectionMode](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SegmentedControl.SfSegmentedControl.html#Syncfusion_Maui_Toolkit_SegmentedControl_SfSegmentedControl_SelectionMode) is `Single`.
 
 ### Single Selection
 
-The Single selection can be performed in the `Segmented Control` by setting the `SelectionMode` property to `Single`. In this selection, you can select a single item at a time in the segmented control.
+The Single selection can be performed in the `Segmented Control` by setting the [SelectionMode](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SegmentedControl.SfSegmentedControl.html#Syncfusion_Maui_Toolkit_SegmentedControl_SfSegmentedControl_SelectionMode) property to [Single](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SegmentedControl.SegmentSelectionMode.html#Syncfusion_Maui_Toolkit_SegmentedControl_SegmentSelectionMode_Single). In this selection, you can select a single item at a time in the segmented control.
 
 {% tabs %}
 {% highlight XAML %}
@@ -254,7 +254,7 @@ public partial class MainPage : ContentPage
 
 ### Single Deselection
 
-The Single Deselection can be performed in the `Segmented Control` by setting the `SelectionMode` property to `SingleDeselect`. In this mode, only one item can be selected at a time, and you can deselect the currently selected item by simply clicking on it again. This provides a quick way to clear the selection without needing additional actions.
+The Single Deselection can be performed in the `Segmented Control` by setting the [SelectionMode](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SegmentedControl.SfSegmentedControl.html#Syncfusion_Maui_Toolkit_SegmentedControl_SfSegmentedControl_SelectionMode) property to [SingleDeselect](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SegmentedControl.SegmentSelectionMode.html#Syncfusion_Maui_Toolkit_SegmentedControl_SegmentSelectionMode_SingleDeselect). In this mode, only one item can be selected at a time, and you can deselect the currently selected item by simply clicking on it again. This provides a quick way to clear the selection without needing additional actions.
 
 {% tabs %}
 {% highlight XAML %}
