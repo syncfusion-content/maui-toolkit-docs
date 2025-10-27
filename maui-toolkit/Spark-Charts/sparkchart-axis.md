@@ -7,9 +7,9 @@ control: SfSparkChart
 documentation: ug
 ---
 
-# Axis in .NET MAUI Spark Charts (SfSparkChart)
+# Axis in .NET MAUI Spark Charts
 
-Axis of the [SfSparkChart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SparkCharts.SfSparkChart.html) can be configured and customized using following properties. This feature is applicable for all the `SfSparkChart` types except [SfSparkWinLossChart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SparkCharts.SfSparkWinLossChart.html).
+Axis can be configured and customized using following properties. This feature is applicable for all the [SfSparkChart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SparkCharts.SfSparkChart.html) types except [SfSparkWinLossChart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SparkCharts.SfSparkWinLossChart.html).
 
 - [ShowAxis](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SparkCharts.SfSparkChart.html#Syncfusion_Maui_Toolkit_SparkCharts_SfSparkChart_ShowAxisProperty) : Enables or disables the axis. Default value is `false`.
 - [AxisOrigin](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SparkCharts.SfSparkChart.html#Syncfusion_Maui_Toolkit_SparkCharts_SfSparkChart_AxisOriginProperty) : Sets the Y-value where the axis is drawn. Default it renders at `0`.
@@ -18,11 +18,9 @@ Axis of the [SfSparkChart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusio
   - [StrokeWidth](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SparkCharts.SparkChartLineStyle.html#Syncfusion_Maui_Toolkit_SparkCharts_SparkChartLineStyle_StrokeWidthProperty) : Specifies the line thickness of the axis. Default it is set to 1.
   - [StrokeDashArray](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SparkCharts.SparkChartLineStyle.html#Syncfusion_Maui_Toolkit_SparkCharts_SparkChartLineStyle_StrokeDashArrayProperty) : Specifies the dash pattern for the axis. Default it is set to null.
 
----
-
 ## Enable the axis
 
-Set the [ShowAxis](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SparkCharts.SfSparkChart.html#Syncfusion_Maui_Toolkit_SparkCharts_SfSparkChart_ShowAxisProperty) property to display the axis at the chart’s origin in SfSparkChart; by default, the  axis is set to `False`.
+Set the [ShowAxis](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SparkCharts.SfSparkChart.html#Syncfusion_Maui_Toolkit_SparkCharts_SfSparkChart_ShowAxisProperty) property to display the axis at the chart’s origin in [SfSparkChart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SparkCharts.SfSparkChart.html); by default, the  axis is set to `False`.
 
 {% tabs %}
 
@@ -51,11 +49,9 @@ var chart = new SfSparkLineChart
 
 ![Axis in .NET MAUI Spark Line](sparkchart_axis_line_images\Default_axis_line.png)
 
----
-
 ## Axis origin
 
-Set [AxisOrigin](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SparkCharts.SfSparkChart.html#Syncfusion_Maui_Toolkit_SparkCharts_SfSparkChart_AxisOriginProperty) to draw the line at a specific Y value (for example, `0` to emphasize zero, or any custom value) of `SfSparkChart`.
+Set [AxisOrigin](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SparkCharts.SfSparkChart.html#Syncfusion_Maui_Toolkit_SparkCharts_SfSparkChart_AxisOriginProperty) to draw the line at a specific Y value (for example, `0` to emphasize zero, or any custom value) of [SfSparkChart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SparkCharts.SfSparkChart.html).
 
 {% tabs %}
 
@@ -80,13 +76,11 @@ chart.AxisOrigin = 8;
 
 ![Axis origin in .NET MAUI Spark Line](sparkchart_axis_line_images\axis_origin.png)
 
----
-
 ## Style the axis
 
 ### Stroke width
 
-Controls the thickness of the axis of SfSparkChart.
+Controls the thickness of the axis of [SfSparkChart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SparkCharts.SfSparkChart.html).
 
 {% tabs %}
 
@@ -113,7 +107,7 @@ chart.AxisLineStyle = new SparkChartLineStyle
 
 ### Stroke color
 
-Sets the color of the axis of SfSparkChart.
+Sets the color of the axis of [SfSparkChart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SparkCharts.SfSparkChart.html).
 
 {% tabs %}
 
@@ -144,7 +138,7 @@ chart.AxisLineStyle = new SparkChartLineStyle
 
 ### Dashed line (StrokeDashArray)
 
-Applies a dash pattern to the axis of SfSparkChart.
+Applies a dash pattern to the axis of [SfSparkChart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SparkCharts.SfSparkChart.html).
 
 {% tabs %}
 
@@ -173,5 +167,3 @@ chart.AxisLineStyle = new SparkChartLineStyle
 {% endtabs %}
 
 ![Axis StrokeDashArray in .NET MAUI Spark Line](sparkchart_axis_line_images\axis_line_stye.png)
-
----
