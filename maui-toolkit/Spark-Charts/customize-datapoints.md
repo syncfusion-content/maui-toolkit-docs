@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Customize Data Points in .NET MAUI Spark Chart Control | Syncfusion
-description: Learn here all about how to customize data points in Syncfusion .NET MAUI Spark Charts (SfSparkChart) control and more.
+description: Learn here all about how to customize data points in Syncfusion® .NET MAUI Spark Charts (SfSparkChart) control and more.
 platform: maui-toolkit
 control: SfSparkChart
 documentation: ug

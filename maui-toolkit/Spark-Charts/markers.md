@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Markers in .NET MAUI Spark Chart Control | Syncfusion
-description: Learn here all about the markers supported in Syncfusion .NET MAUI Spark Charts (SfSparkChart) control and more.
+description: Learn here all about the markers supported in Syncfusion® .NET MAUI Spark Charts (SfSparkChart) control and more.
 platform: maui-toolkit
 control: SfSparkChart
 documentation: ug
