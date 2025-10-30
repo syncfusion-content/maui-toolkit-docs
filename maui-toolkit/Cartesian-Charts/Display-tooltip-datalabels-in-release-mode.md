@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Display tooltip and datalabels in release mode in SfCartesianChart
+title: Display tooltip and datalabels in release mode in Syncfusion SfCartesianChart
 description: Learn here all about displaying tooltip and datalabels in release mode in SfCartesianChart in Syncfusion® .NET MAUI Chart (SfCartesianChart) control.
 platform: maui-toolkit
 control: SfCartesianChart
@@ -8,9 +8,9 @@ documentation: ug
 keywords: .NET MAUI chart tooltip, .NET MAUI chart data label, TooltipInfo Item binding, ChartDataLabel Item binding, Release mode trimming, Preserve attribute MAUI.
 ---
 
-# Display tooltip and datalabels in release mode
+# Display tooltip and data labels in release mode
 
-The `binding context` inside tooltip and datalabels templates is not your model directly. These templates run in the scope of [TooltipInfo](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Charts.TooltipInfo.html) and [ChartDataLabel](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Charts.ChartDataLabel.html), which expose an `Item` property that contains the actual data model from the charts [ItemsSource](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Charts.ChartSeries.html#Syncfusion_Maui_Charts_ChartSeries_ItemsSource). To read your model’s fields in a template, bind through Item or converter.
+The `binding context` inside tooltip and data labels templates is not your model directly. These templates run in the scope of [TooltipInfo](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Charts.TooltipInfo.html) and [ChartDataLabel](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Charts.ChartDataLabel.html), which expose an `Item` property that contains the actual data model from the charts [ItemsSource](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Charts.ChartSeries.html#Syncfusion_Maui_Charts_ChartSeries_ItemsSource). To read your model’s fields in a template, bind through Item or converter.
 
 
 {% highlight xaml %}
@@ -67,4 +67,4 @@ The `binding context` inside tooltip and datalabels templates is not your model 
 
 ## See also 
 
-[How to display tooltip and datalabels in release mode .NET MAUI SfCartesianChart](https://support.syncfusion.com/kb/article/21677/why-tooltip-and-datalabel-are-not-showing-in-release-mode-in-net-maui-sfcartesianchart)
+[How to display tooltip and data labels in release mode .NET MAUI SfCartesianChart](https://support.syncfusion.com/kb/article/21677/why-tooltip-and-datalabel-are-not-showing-in-release-mode-in-net-maui-sfcartesianchart)
