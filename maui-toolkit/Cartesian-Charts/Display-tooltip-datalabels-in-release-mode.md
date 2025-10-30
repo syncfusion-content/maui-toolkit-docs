@@ -10,7 +10,10 @@ keywords: .NET MAUI chart tooltip, .NET MAUI chart data label, TooltipInfo Item 
 
 # Display tooltip and data labels in release mode
 
-The `binding context` inside tooltip and data labels templates is not your model directly. These templates run in the scope of [TooltipInfo](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Charts.TooltipInfo.html) and [ChartDataLabel](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Charts.ChartDataLabel.html), which expose an `Item` property that contains the actual data model from the charts [ItemsSource](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Charts.ChartSeries.html#Syncfusion_Maui_Charts_ChartSeries_ItemsSource). To read your model’s fields in a template, bind through Item or converter.
+The binding context inside tooltip and data labels templates is not your model directly. These templates run in the scope of [TooltipInfo](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Charts.TooltipInfo.html) and [ChartDataLabel](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Charts.ChartDataLabel.html), which expose an `Item` property that contains the actual data model from the charts [ItemsSource](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Charts.ChartSeries.html#Syncfusion_Maui_Charts_ChartSeries_ItemsSource). To read your model’s fields in a template, bind through Item or use a converter.
+
+
+With .NET 9 compiled bindings, tooltip templates run with **x:DataType="chart:TooltipInfo"** and data label templates run with **x:DataType="chart:ChartDataLabel"**. Inside these templates, bind to the model via the Item property. Use a value converter to pull the required field from Item. In Release builds, trimming/AOT can remove XAML-only types, so preserve your ViewModel, Model, and the converter to keep these bindings working.
 
 
 {% highlight xaml %}
