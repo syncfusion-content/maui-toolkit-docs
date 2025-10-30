@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Display tooltip and datalabels in release mode in Syncfusion SfCartesianChart
+title: Show tooltip and datalabels in release mode | Syncfusion
 description: Learn here all about displaying tooltip and datalabels in release mode in SfCartesianChart in Syncfusion® .NET MAUI Chart (SfCartesianChart) control.
 platform: maui-toolkit
 control: SfCartesianChart
