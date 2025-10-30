@@ -189,3 +189,49 @@ this.Content = chart;
 ![Customize EmptyPoints in MAUI Chart](EmptyPoints_images\Customize_EmptyPoints.png)
 
 N> EmptyPoint support is not applicable for Histogram and BoxAndWhisker series.
+
+## Empty Points in FastLineSeries
+
+### Introduction
+
+[FastLineSeries](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.FastLineSeries.html) now supports Empty Points through the [EmptyPointMode](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.EmptyPointMode.html) property, offering three modes `None`, `Zero`, and `Average` to control how missing data is visually handled in the chart.
+
+### Code Example
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<chart:SfCartesianChart>
+   <chart:FastLineSeries ItemsSource="{Binding Data}"
+      XBindingPath="DateTime" 
+      YBindingPath="Value"
+      EmptyPointMode="None" />
+</chart:SfCartesianChart>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+var chart = new SfCartesianChart();
+var series = new FastLineSeries
+{
+    ItemsSource = new ViewModel().Data,
+    XBindingPath = "DateTime",
+    YBindingPath = "Value",
+    EmptyPointMode = EmptyPointMode.None
+};
+chart.Series.Add(series);
+this.Content = chart;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+### Remarks
+
+- Optimized for large datasets (10K+ points).
+- Animations and tooltips work seamlessly with empty points.
+- Performance may slightly degrade when handling empty points, as additional calculations are required during rendering.
+
+![Customize EmptyPoints in MAUI Chart FastLineSeries](EmptyPoints_images\Customize_EmptyPoints_FastLineSeries.png)
