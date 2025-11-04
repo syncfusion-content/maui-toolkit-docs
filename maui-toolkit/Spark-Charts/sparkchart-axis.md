@@ -69,7 +69,7 @@ chart.AxisOrigin = 8;
 
 ![Axis origin in .NET MAUI Spark Line](sparkchart_axis_line_images\axis_origin.png)
 
-### Axis stroke customization
+### Axis customization
 
 [AxisLineStyle](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SparkCharts.SfSparkChart.html#Syncfusion_Maui_Toolkit_SparkCharts_SfSparkChart_AxisLineStyleProperty) customizes the axis appearance.
   - [Stroke color](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SparkCharts.SparkChartLineStyle.html#Syncfusion_Maui_Toolkit_SparkCharts_SparkChartLineStyle_StrokeProperty) - Specifies the line color of the axis.
