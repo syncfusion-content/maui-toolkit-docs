@@ -40,7 +40,7 @@ var chart = new SfSparkLineChart
 
 {% endtabs %}
 
-![Axis in .NET MAUI Spark Line](sparkchart_axis_line_images\default_axis_line.png)
+![Axis in .NET MAUI Spark Line](sparkchart_axis_line_images\default_axis.png)
 
 ## Axis origin
 
