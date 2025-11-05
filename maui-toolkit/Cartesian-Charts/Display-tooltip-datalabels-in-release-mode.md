@@ -19,33 +19,38 @@ With .NET 9 compiled bindings, tooltip templates run with **x:DataType="chart:To
 {% highlight xaml %}
 
     <chart:SfCartesianChart>
-    .....
-    <chart:SfCartesianChart.Resources>
+        <chart:SfCartesianChart.Resources>
+            <local:ValueConverter x:Key="valueConverter" />
 
-        <DataTemplate x:Key="TooltipTemplate">
-            <StackLayout x:DataType="chart:TooltipInfo" Orientation="Vertical">
-                <Label Text="{Binding Item,
-                            Converter={StaticResource TooltipConverter},
-                            ConverterParameter=Planned,
-                            StringFormat='Planned : {0}h'}"/>
-            </StackLayout>
-        </DataTemplate>
+            <DataTemplate x:Key="tooltiptemplate">
+                <StackLayout x:DataType="chart:TooltipInfo" Orientation="Vertical">
+                    <Label Text="{Binding Item, Converter={StaticResource valueConverter},
+                                          ConverterParameter=Planned,
+                                          StringFormat='Planned : {0}h'}"
+                           TextColor="White" />
+                </StackLayout>
+            </DataTemplate>
 
-        <DataTemplate x:Key="DataLabelTemplate">
-            <StackLayout x:DataType="chart:ChartDataLabel" Orientation="Vertical">
-                <Label Text="{Binding Item,
-                            Converter={StaticResource TooltipConverter},
-                            ConverterParameter=Planned,
-                            StringFormat='Planned : {0}h'}" />
-            </StackLayout>
-        </DataTemplate>
-    </chart:SfCartesianChart.Resources>
+            <DataTemplate x:Key="labelTemplate">
+                <StackLayout x:DataType="chart:ChartDataLabel" Orientation="Vertical">
+                    <Label Text="{Binding Item, Converter={StaticResource valueConverter},
+                                          ConverterParameter=Planned,
+                                          StringFormat='Label : {0}h'}"
+                           TextColor="Black" />
+                </StackLayout>
+            </DataTemplate>
+        </chart:SfCartesianChart.Resources>
 
-    <chart:SplineAreaSeries
-        ....
-        TooltipTemplate="{StaticResource TooltipTemplate}"
-        ShowDataLabels="True"
-        LabelTemplate="{StaticResource DataLabelTemplate}" />
+        <chart:SplineAreaSeries x:Name="series"
+                                ItemsSource="{Binding ChartData}"
+                                XBindingPath="WeekNumber"
+                                YBindingPath="Planned"
+                                EnableTooltip="True"
+                                ShowDataLabels="True"
+                                LabelTemplate="{StaticResource labelTemplate}"
+                                TooltipTemplate="{StaticResource tooltiptemplate}">
+        </chart:SplineAreaSeries>
+
     </chart:SfCartesianChart>
 
 {% endhighlight %}
@@ -53,7 +58,7 @@ With .NET 9 compiled bindings, tooltip templates run with **x:DataType="chart:To
 
 {% highlight C# %}
 
-    public class TooltipConverter : IValueConverter
+    public class ValueConverter : IValueConverter
     {
         public object? Convert(object? value, Type targetType, object? parameter, CultureInfo culture)
         {
