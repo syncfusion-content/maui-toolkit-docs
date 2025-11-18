@@ -1,11 +1,11 @@
 ---
 layout: post
-title: Legend in .NET MAUI Chart control | Syncfusion
-description: This section explains about how to initialize legend and its customization in Syncfusion® .NET MAUI Chart (SfFunnelChart) control.
+title: Legend in .NET MAUI Funnel Chart control | Syncfusion
+description: This section explains how to initialize legend and its customization in Syncfusion® .NET MAUI Chart (SfFunnelChart) control.
 platform: maui-toolkit
 control: SfFunnelChart
 documentation: ug
-keywords: .net maui funnel chart, funnel-chart, chart legend, legend-wrap, legend view, legend layout, chart legend items, legend alignment.
+keywords: .net maui funnel chart, funnel-chart, chart legend, legend-wrap, legend view, legend layout, chart legend items, legend alignment
 ---
 
 # Legend in .NET MAUI Chart (SfFunnelChart)
@@ -142,7 +142,7 @@ this.Content = chart;
 ![Legend labels customization support in Maui Chart](Legend-images/legend_label_style.png)
 
 ## Legend icon
-To specify the legend icon based on associate series type using the [LegendIcon](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfFunnelChart.html#Syncfusion_Maui_Toolkit_Charts_SfFunnelChart_LegendIcon) and change its type using [ChartLegendIconType](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartLegendIconType.html) enum values.
+To specify the legend icon based on the associated series type, use the [LegendIcon](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfFunnelChart.html#Syncfusion_Maui_Toolkit_Charts_SfFunnelChart_LegendIcon) property and change its type using [ChartLegendIconType](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartLegendIconType.html) enum values.
 
 {% tabs %}
 
@@ -248,13 +248,13 @@ funnelChart.Legend = new ChartLegend()
     ToggleSeriesVisibility = true // Enable the toggle visibility of the series using legend.
 };
 
-this.Content = chart;
+this.Content = funnelChart;
 {% endhighlight %}
 
 {% endtabs %}
 
 ## Legend maximum size request
-To set the maximum size request for the legend view, override the [GetMaximumSizeCoefficient](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartLegend.html#Syncfusion_Maui_Toolkit_Charts_ChartLegend_GetMaximumSizeCoefficient) protected method in [ChartLegend](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartLegend.html) class. The value should be between 0 and 1, representing the maximum size request, not the desired size for the legend items layout.
+To set the maximum size request for the legend view, override the [GetMaximumSizeCoefficient](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartLegend.html#Syncfusion_Maui_Toolkit_Charts_ChartLegend_GetMaximumSizeCoefficient) protected method in the [ChartLegend](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartLegend.html) class. The value should be between 0 and 1, representing the maximum size request, not the desired size for the legend items layout.
 
 {% tabs %}
 
@@ -339,7 +339,7 @@ this.Content = chart;
 
 ## Item template
 
-The [ChartLegend](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartLegend.html) supports customizing the appearance of legend items using the [ItemTemplate](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartLegend.html#Syncfusion_Maui_Toolkit_Charts_ChartLegend_ItemTemplate) property. The default value of ItemsTemplate is `null`.
+The [ChartLegend](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartLegend.html) supports customizing the appearance of legend items using the [ItemTemplate](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartLegend.html#Syncfusion_Maui_Toolkit_Charts_ChartLegend_ItemTemplate) property. The default value of ItemTemplate is `null`.
 
 N> The BindingContext of the template is the corresponding underlying legend item provided in the ChartLegendItem class.
 
@@ -410,6 +410,7 @@ The [`LegendItemCreated`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion
 * [`DisableBrush`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.ILegendItem.html#Syncfusion_Maui_Toolkit_ILegendItem_DisableBrush) - used to get or set the color of the legend when toggled.
 * [`Index`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.ILegendItem.html#Syncfusion_Maui_Toolkit_ILegendItem_Index) - used to get index position of the legend.
 * [`Item`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.ILegendItem.html#Syncfusion_Maui_Toolkit_ILegendItem_Item) - used to get the corresponding data points for the legend item.
+
 ## Limitations
 * Do not add items explicitly.
 * When using BindableLayouts, do not bind ItemsSource explicitly.

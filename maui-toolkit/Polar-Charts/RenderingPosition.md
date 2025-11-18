@@ -5,13 +5,14 @@ description: Learn here all about the rendering position of the axis in the Sync
 platform: maui-toolkit
 control: SfPolarChart
 documentation: ug
+keywords: .net maui polar chart, rendering position, start angle, series rotation, axis angle customization, maui toolkit
 ---
 
 # Rendering Position in .NET MAUI Chart
 
 ## Start Angle
 
-Adjust the rendering position of series on polar chart by leveraging the [StartAngle](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfPolarChart.html#Syncfusion_Maui_Toolkit_Charts_SfPolarChart_StartAngle) property, offering four degree values: 0, 90, 180, and 270. The default setting for the [StartAngle](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfPolarChart.html#Syncfusion_Maui_Toolkit_Charts_SfPolarChart_StartAngle) property is [Rotate270](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartPolarAngle.html#Syncfusion_Maui_Toolkit_Charts_ChartPolarAngle_Rotate270).
+You can adjust the rendering position of series on polar chart by using the [StartAngle](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfPolarChart.html#Syncfusion_Maui_Toolkit_Charts_SfPolarChart_StartAngle) property. This property offers four degree values: 0, 90, 180, and 270. The default setting for the [StartAngle](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfPolarChart.html#Syncfusion_Maui_Toolkit_Charts_SfPolarChart_StartAngle) property is [Rotate270](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartPolarAngle.html#Syncfusion_Maui_Toolkit_Charts_ChartPolarAngle_Rotate270).
 
 {% tabs %}
 
@@ -36,8 +37,8 @@ Adjust the rendering position of series on polar chart by leveraging the [StartA
 // Create a new instance of SfPolarChart
 SfPolarChart chart = new SfPolarChart();
 
-
-chart.StartAngle = ChartPolarAngle.Rotate0; // Set the start angle of the chart to 0 degrees
+// Set the start angle of the chart to 0 degrees
+chart.StartAngle = ChartPolarAngle.Rotate0;
 
 // Create and set the primary (X) axis as a CategoryAxis
 CategoryAxis primaryAxis = new CategoryAxis();
@@ -50,7 +51,9 @@ chart.SecondaryAxis = secondaryAxis;
 // Create a new PolarAreaSeries
 PolarAreaSeries series = new PolarAreaSeries()
 {
-    . . .
+    ItemsSource = new ViewModel().PlantDetails,
+    XBindingPath = "Direction",
+    YBindingPath = "Tree"
 };
 
 // Add the series to the chart's collection of series

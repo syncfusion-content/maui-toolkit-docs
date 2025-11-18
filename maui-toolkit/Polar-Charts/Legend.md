@@ -1,11 +1,11 @@
 ---
 layout: post
-title: Legend in .NET MAUI Chart control | Syncfusion
+title: Legend in .NET MAUI Polar Chart control | Syncfusion
 description: This section explains about how to initialize legend and its customization in Syncfusion® .NET MAUI Chart (SfPolarChart) control.
 platform: maui-toolkit
 control: SfPolarChart
 documentation: ug
-keywords: .net maui polar chart, polar-chart, chart legend, legend-wrap, legend view, legend layout, chart legend items, legend alignment.
+keywords: .net maui polar chart, polar-chart, chart legend, legend-wrap, legend view, legend layout, chart legend items, legend alignment, maui toolkit.
 ---
 
 # Legend in .NET MAUI Chart (SfPolarChart)
@@ -25,7 +25,6 @@ To define the legend in the chart, initialize the [ChartLegend](https://help.syn
     </chart:SfPolarChart.Legend>
     . . .
 </chart:SfPolarChart>
-
 
 {% endhighlight %}
 
@@ -54,7 +53,7 @@ The visibility of the chart legend can be controlled using the [IsVisible](https
 <chart:SfPolarChart>
     ...
     <chart:SfPolarChart.Legend>
-        <chart:ChartLegend IsVisible = "True"/>
+        <chart:ChartLegend IsVisible="True"/>
     </chart:SfPolarChart.Legend>
     ...
 </chart:SfPolarChart>
@@ -90,8 +89,8 @@ The visibility of individual legend items for specific series can be controlled 
         <chart:ChartLegend/>
     </chart:SfPolarChart.Legend> 
 
-    <chart:PolarAreaSeries ItemsSource="{Binding  PlantDetails}" 
-                           IsVisibleOnLegend="True"  Label="Tree"
+    <chart:PolarAreaSeries ItemsSource="{Binding PlantDetails}" 
+                           IsVisibleOnLegend="True" Label="Tree"
                            XBindingPath="Direction" YBindingPath="Tree"/>
 
     <chart:PolarAreaSeries ItemsSource="{Binding PlantDetails}" 
@@ -118,17 +117,17 @@ PolarAreaSeries series1 = new PolarAreaSeries()
     YBindingPath = "Tree", 
     ItemsSource = polarViewModel.PlantDetails, 
     Label = "Tree",              // Set the label for this series
-    IsVisibleOnLegend =  true, 
+    IsVisibleOnLegend = true, 
 };
 
 // Create the second PolarAreaSeries
 PolarAreaSeries series2 = new PolarAreaSeries()
 {
     XBindingPath = "Direction", 
-    YBindingPath = "Tree",  
+    YBindingPath = "Weed",  
     ItemsSource = polarViewModel.PlantDetails, 
     Label = "Weed",              // Set the label for this series
-    IsVisibleOnLegend =  false,  // Hide this series from the legend
+    IsVisibleOnLegend = false,  // Hide this series from the legend
 };
 
 // Add both series to the chart
@@ -144,13 +143,13 @@ this.Content = chart;
 
 ## Customizing labels
 
-The [`Label`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.PolarSeries.html#Syncfusion_Maui_Toolkit_Charts_PolarSeries_Label) property of [`PolarSeries`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.PolarSeries.html) is used to define the label for the corresponding polar series legend item. The appearance of the label can be customized using the [`LabelStyle`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartLegend.html#Syncfusion_Maui_Toolkit_Charts_ChartLegend_LabelStyle) property. 
+The [Label](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.PolarSeries.html#Syncfusion_Maui_Toolkit_Charts_PolarSeries_Label) property of [PolarSeries](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.PolarSeries.html) is used to define the label for the corresponding polar series legend item. The appearance of the label can be customized using the [LabelStyle](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartLegend.html#Syncfusion_Maui_Toolkit_Charts_ChartLegend_LabelStyle) property. 
 
-* [`TextColor`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartLegendLabelStyle.html#Syncfusion_Maui_Toolkit_Charts_ChartLegendLabelStyle_TextColor) – Gets or sets the color of the label.
-* [`FontFamily`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartLegendLabelStyle.html#Syncfusion_Maui_Toolkit_Charts_ChartLegendLabelStyle_FontFamily) - Gets or sets the font family for the legend label. 
-* [`FontAttributes`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartLegendLabelStyle.html#Syncfusion_Maui_Toolkit_Charts_ChartLegendLabelStyle_FontAttributes) - Gets or sets the font style for the legend label. 
-* [`FontSize`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartLegendLabelStyle.html#Syncfusion_Maui_Toolkit_Charts_ChartLegendLabelStyle_FontSize) - Gets or sets the font size for the legend label.
-* [`Margin`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartLegendLabelStyle.html#Syncfusion_Maui_Toolkit_Charts_ChartLegendLabelStyle_Margin) - Gets or sets the margin size of labels.
+* [TextColor](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartLegendLabelStyle.html#Syncfusion_Maui_Toolkit_Charts_ChartLegendLabelStyle_TextColor) – Gets or sets the color of the label.
+* [FontFamily](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartLegendLabelStyle.html#Syncfusion_Maui_Toolkit_Charts_ChartLegendLabelStyle_FontFamily) - Gets or sets the font family for the legend label. 
+* [FontAttributes](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartLegendLabelStyle.html#Syncfusion_Maui_Toolkit_Charts_ChartLegendLabelStyle_FontAttributes) - Gets or sets the font style for the legend label. 
+* [FontSize](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartLegendLabelStyle.html#Syncfusion_Maui_Toolkit_Charts_ChartLegendLabelStyle_FontSize) - Gets or sets the font size for the legend label.
+* [Margin](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartLegendLabelStyle.html#Syncfusion_Maui_Toolkit_Charts_ChartLegendLabelStyle_Margin) - Gets or sets the margin size of labels.
 
 {% tabs %} 
 
@@ -179,7 +178,7 @@ ChartLegend legend = new ChartLegend();
 // Create and configure the ChartLegendLabelStyle
 ChartLegendLabelStyle labelStyle = new ChartLegendLabelStyle()
 {
-    TextColor = Color.Blue, 
+    TextColor = Colors.Blue, 
     Margin = new Thickness(5), 
     FontSize = 18, 
     FontAttributes = FontAttributes.Bold, 
@@ -210,8 +209,8 @@ To specify the legend icon based on the associated series type, use the [LegendI
         <chart:ChartLegend/>
     </chart:SfPolarChart.Legend> 
 
-    <chart:PolarAreaSeries ItemsSource="{Binding  PlantDetails}" 
-                           LegendIcon = "Diamond" Label="Tree"
+    <chart:PolarAreaSeries ItemsSource="{Binding PlantDetails}" 
+                           LegendIcon="Diamond" Label="Tree"
                            XBindingPath="Direction" 
                            YBindingPath="Tree"/>
 </chart:SfPolarChart>
@@ -293,8 +292,8 @@ The visibility of polar series can be controlled by tapping the legend item usin
         <chart:ChartLegend ToggleSeriesVisibility="True"/>
     </chart:SfPolarChart.Legend> 
     
-    <chart:PolarAreaSeries ItemsSource="{Binding  PlantDetails}" 
-                           IsVisibleOnLegend="True"  Label="Tree"
+    <chart:PolarAreaSeries ItemsSource="{Binding PlantDetails}" 
+                           IsVisibleOnLegend="True" Label="Tree"
                            XBindingPath="Direction" YBindingPath="Tree"/>
 
     <chart:PolarAreaSeries ItemsSource="{Binding PlantDetails}" 
@@ -354,7 +353,6 @@ To set the maximum size request for the legend view, override the [GetMaximumSiz
     . . .
 </chart:SfPolarChart>
 
-
 {% endhighlight %}
 
 {% highlight c# %}
@@ -376,7 +374,6 @@ SfPolarChart chart = new SfPolarChart();
 // Set the chart's legend to use the custom LegendExt class
 chart.Legend = new LegendExt();
 
-
 {% endhighlight %}
 
 {% endtabs %}
@@ -393,15 +390,15 @@ An [ItemsLayout](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Too
     <chart:SfPolarChart.Legend>
         <chart:ChartLegend>
             <chart:ChartLegend.ItemsLayout>
-                    <FlexLayout  HorizontalOptions="Start" 
-                                 Margin="10"
-                                 WidthRequest="{Binding Width, Source={x:Reference Chart1}}">
-                    </FlexLayout>
+                <FlexLayout HorizontalOptions="Start" 
+                           Margin="10"
+                           WidthRequest="{Binding Width, Source={x:Reference Chart1}}">
+                </FlexLayout>
             </chart:ChartLegend.ItemsLayout>
         </chart:ChartLegend>
     </chart:SfPolarChart.Legend>
 
-    <chart:PolarAreaSeries ItemsSource="{Binding  PlantDetails}" 
+    <chart:PolarAreaSeries ItemsSource="{Binding PlantDetails}" 
                            Label="Tree"
                            XBindingPath="Direction"
                            YBindingPath="Tree"/>
@@ -445,22 +442,21 @@ this.Content = chart;
 {% endtabs %}
 
 ## Item template
-The [ChartLegend](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartLegend.html) supports customizing the appearance of legend items using the [ItemTemplate](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartLegend.html#Syncfusion_Maui_Toolkit_Charts_ChartLegend_ItemTemplate) property. The default value of ItemsTemplate is `null`.
+The [ChartLegend](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartLegend.html) supports customizing the appearance of legend items using the [ItemTemplate](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartLegend.html#Syncfusion_Maui_Toolkit_Charts_ChartLegend_ItemTemplate) property. The default value of ItemTemplate is `null`.
 
 N> The BindingContext of the template is the corresponding underlying legend item provided in the ChartLegendItem class.
-
 
 {% tabs %}
 
 {% highlight xaml %}
 
-<chart:SfPolarChart >
+<chart:SfPolarChart>
     <chart:SfPolarChart.Resources>
         <DataTemplate x:Key="legendTemplate">
             <StackLayout Orientation="Horizontal">
                 <Rectangle HeightRequest="12" 
                            WidthRequest="12" Margin="3"
-                           Background="{Binding IconBrush}"/>
+                           Fill="{Binding IconBrush}"/>
                 <Label Text="{Binding Text}" 
                        Margin="3"/>
             </StackLayout>
@@ -472,7 +468,7 @@ N> The BindingContext of the template is the corresponding underlying legend ite
         </chart:ChartLegend>
     </chart:SfPolarChart.Legend>
 
-    <chart:PolarAreaSeries ItemsSource="{Binding  PlantDetails}" 
+    <chart:PolarAreaSeries ItemsSource="{Binding PlantDetails}" 
                            Label="Tree"
                            XBindingPath="Direction"
                            YBindingPath="Tree"/>
@@ -484,7 +480,6 @@ N> The BindingContext of the template is the corresponding underlying legend ite
 </chart:SfPolarChart>
 
 {% endhighlight %}
-
 
 {% highlight c# %}
 
@@ -515,22 +510,22 @@ this.Content = chart;
 
 **LegendItemCreated**
 
-The [`LegendItemCreated`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartLegend.html#Syncfusion_Maui_Toolkit_Charts_ChartLegend_LegendItemCreated) event is triggered when the chart legend item is created. The argument contains the [`LegendItem`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.LegendItemEventArgs.html#Syncfusion_Maui_Toolkit_LegendItemEventArgs_LegendItem) object. The following properties are present in [`LegendItem`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.LegendItemEventArgs.html#Syncfusion_Maui_Toolkit_LegendItemEventArgs_LegendItem).
+The [LegendItemCreated](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartLegend.html#Syncfusion_Maui_Toolkit_Charts_ChartLegend_LegendItemCreated) event is triggered when the chart legend item is created. The argument contains the [LegendItem](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.LegendItemEventArgs.html#Syncfusion_Maui_Toolkit_LegendItemEventArgs_LegendItem) object. The following properties are present in [LegendItem](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.LegendItemEventArgs.html#Syncfusion_Maui_Toolkit_LegendItemEventArgs_LegendItem).
 
-* [`Text`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.ILegendItem.html#Syncfusion_Maui_Toolkit_ILegendItem_Text) – used to get or set the text of the label.
-* [`TextColor`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.ILegendItem.html#Syncfusion_Maui_Toolkit_ILegendItem_TextColor) – used to get or set the color of the label.
-* [`FontFamily`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.ILegendItem.html#Syncfusion_Maui_Toolkit_ILegendItem_FontFamily) - used to get or set the font family for the legend label. 
-* [`FontAttributes`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.ILegendItem.html#Syncfusion_Maui_Toolkit_ILegendItem_FontAttributes) - used to get or set the font style for the legend label. 
-* [`FontSize`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.ILegendItem.html#Syncfusion_Maui_Toolkit_ILegendItem_FontSize) - used to get or set the font size for the legend label.
-* [`TextMargin`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.ILegendItem.html#Syncfusion_Maui_Toolkit_ILegendItem_TextMargin) - used to get or set the margin size of labels.
-* [`IconBrush`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.ILegendItem.html#Syncfusion_Maui_Toolkit_ILegendItem_IconBrush) - used to change the color of the legend icon.
-* [`IconType`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.ILegendItem.html#Syncfusion_Maui_Toolkit_ILegendItem_IconType) - used to get or set the icon type for the legend icon.
-* [`IconHeight`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.ILegendItem.html#Syncfusion_Maui_Toolkit_ILegendItem_IconHeight) - used to get or set the icon height of the legend icon.
-* [`IconWidth`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.ILegendItem.html#Syncfusion_Maui_Toolkit_ILegendItem_IconWidth) - used to get or set the icon width of the legend icon.
-* [`IsToggled`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.ILegendItem.html#Syncfusion_Maui_Toolkit_ILegendItem_IsToggled) - used to get or set the toggle visibility of the legend.
-* [`DisableBrush`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.ILegendItem.html#Syncfusion_Maui_Toolkit_ILegendItem_DisableBrush) - used to get or set the color of the legend when toggled.
-* [`Index`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.ILegendItem.html#Syncfusion_Maui_Toolkit_ILegendItem_Index) - used to get index position of the legend.
-* [`Item`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.ILegendItem.html#Syncfusion_Maui_Toolkit_ILegendItem_Item) - used to get the corresponding series for the legend item.
+* [Text](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.ILegendItem.html#Syncfusion_Maui_Toolkit_ILegendItem_Text) – used to get or set the text of the label.
+* [TextColor](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.ILegendItem.html#Syncfusion_Maui_Toolkit_ILegendItem_TextColor) – used to get or set the color of the label.
+* [FontFamily](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.ILegendItem.html#Syncfusion_Maui_Toolkit_ILegendItem_FontFamily) - used to get or set the font family for the legend label. 
+* [FontAttributes](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.ILegendItem.html#Syncfusion_Maui_Toolkit_ILegendItem_FontAttributes) - used to get or set the font style for the legend label. 
+* [FontSize](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.ILegendItem.html#Syncfusion_Maui_Toolkit_ILegendItem_FontSize) - used to get or set the font size for the legend label.
+* [TextMargin](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.ILegendItem.html#Syncfusion_Maui_Toolkit_ILegendItem_TextMargin) - used to get or set the margin size of labels.
+* [IconBrush](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.ILegendItem.html#Syncfusion_Maui_Toolkit_ILegendItem_IconBrush) - used to change the color of the legend icon.
+* [IconType](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.ILegendItem.html#Syncfusion_Maui_Toolkit_ILegendItem_IconType) - used to get or set the icon type for the legend icon.
+* [IconHeight](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.ILegendItem.html#Syncfusion_Maui_Toolkit_ILegendItem_IconHeight) - used to get or set the icon height of the legend icon.
+* [IconWidth](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.ILegendItem.html#Syncfusion_Maui_Toolkit_ILegendItem_IconWidth) - used to get or set the icon width of the legend icon.
+* [IsToggled](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.ILegendItem.html#Syncfusion_Maui_Toolkit_ILegendItem_IsToggled) - used to get or set the toggle visibility of the legend.
+* [DisableBrush](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.ILegendItem.html#Syncfusion_Maui_Toolkit_ILegendItem_DisableBrush) - used to get or set the color of the legend when toggled.
+* [Index](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.ILegendItem.html#Syncfusion_Maui_Toolkit_ILegendItem_Index) - used to get index position of the legend.
+* [Item](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.ILegendItem.html#Syncfusion_Maui_Toolkit_ILegendItem_Item) - used to get the corresponding series for the legend item.
 
 ## Limitations
 * Do not add items explicitly.

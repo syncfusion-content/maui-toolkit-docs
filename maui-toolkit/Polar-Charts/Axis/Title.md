@@ -1,13 +1,14 @@
 ---
 layout: post
-title: Title for axis in .NET MAUI Chart Control | Syncfusion
+title: Title for axis in .NET MAUI Polar Chart Control | Syncfusion
 description: Learn here all about chart axis title, title style, title template, and its customization in the Syncfusion® .NET MAUI chart (SfPolarChart).
 platform: maui-toolkit
 control: SfPolarChart
 documentation: ug
+keywords: .net maui polar chart, axis title, title customization, label extent, axis label-to-title gap, axis title style, maui toolkit
 ---
 
-# Axis Title in MAUI Chart
+# Axis Title in .NET MAUI Chart
 
 The [Title](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxis.html#Syncfusion_Maui_Toolkit_Charts_ChartAxis_Title) property is used to set the title for the chart axis.
 
@@ -55,7 +56,7 @@ this.Content = chart;
 
 ## Customization
 
-The [Title](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxis.html#Syncfusion_Maui_Toolkit_Charts_ChartAxis_Title) property in axis provides options to customize the text and font of the axis title. The axis does not display the title by default. The title can be customized using following properties,
+The [Title](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxis.html#Syncfusion_Maui_Toolkit_Charts_ChartAxis_Title) property in axis provides options to customize the text and font of the axis title. The axis does not display the title by default. The title can be customized using the following properties:
 
 * `Text` - Gets or sets the title for axis.
 * `Background` - Gets or sets the background color of the labels.
@@ -68,9 +69,9 @@ The [Title](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.
 * `StrokeWidth` - Gets or sets the border thickness of the label.
 * `TextColor` - Gets or sets the color for the text of the label.
 
-## Label extent
+## Label Extent
 
-The [LabelExtent](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxis.html#Syncfusion_Maui_Toolkit_Charts_ChartAxis_LabelExtent) property allows you to set the gap between axis labels and the title. This is typically used to maintain the fixed gap between axis labels and title when the digits of the axis value changed in live update.
+The [LabelExtent](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxis.html#Syncfusion_Maui_Toolkit_Charts_ChartAxis_LabelExtent) property allows you to set the gap between axis labels and the title. This is typically used to maintain a fixed gap between axis labels and title when the digits of the axis value change in live updates.
 
 {% tabs %}
 
