@@ -228,8 +228,8 @@ absoluteLayout.Children.Add(copyRight);
 
 var watermark = new Label()
 {
-    	Text = "CONFIDENTIAL",
-    	Rotation = 340,
+    Text = "CONFIDENTIAL",
+    Rotation = 340,
 	FontSize = 80,
 	FontAttributes = FontAttributes.Bold,
 	TextColor = Colors.Gray, 

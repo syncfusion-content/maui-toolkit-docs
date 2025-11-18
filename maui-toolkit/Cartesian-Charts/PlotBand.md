@@ -26,7 +26,7 @@ Plot bands are classified into [NumericalPlotBand](https://help.syncfusion.com/c
 
 ## Numerical PlotBand 
 
-[NumericalPlotBands](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.NumericalPlotBand.html) are used to draw plot bands for [NumericalAxis](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.NumericalAxis.html) and [CategoryAxis](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.CategoryAxis.html). To add a plot band, create an instance of [NumericalPlotBandCollection](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.NumericalPlotBandCollection.html) and specify numerical values for the [Start](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.NumericalPlotBand.html#Syncfusion_Maui_Toolkit_Charts_NumericalPlotBand_Start) and [End](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.NumericalPlotBand.html#Syncfusion_Maui_Toolkit_Charts_NumericalPlotBand_End) parameters. These parameters determine the beginning and end of the plot band.
+[NumericalPlotBands](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.NumericalPlotBand.html) are used to draw plot bands for [NumericalAxis](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.NumericalAxis.html), [CategoryAxis](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.CategoryAxis.html)  and `DateTimeCategoryAxis`. To add a plot band, create an instance of [NumericalPlotBandCollection](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.NumericalPlotBandCollection.html) and specify numerical values for the [Start](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.NumericalPlotBand.html#Syncfusion_Maui_Toolkit_Charts_NumericalPlotBand_Start) and [End](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.NumericalPlotBand.html#Syncfusion_Maui_Toolkit_Charts_NumericalPlotBand_End) parameters. These parameters determine the beginning and end of the plot band.
 
 {% tabs %}
 
@@ -183,9 +183,9 @@ NumericalPlotBand plotBand = new NumericalPlotBand()
 {
     Start = 20,
     End = 22,
-    IsRepeatable = true,
-    RepeatUntil = 32,
-    RepeatEvery = 4,
+    IsRepeatable = true, // Enable repeating the plot band
+    RepeatUntil = 32, // Repeat the plot band until this value
+    RepeatEvery = 4, // Interval at which the plot band repeats 
     Fill = Colors.LightGray
 };
 

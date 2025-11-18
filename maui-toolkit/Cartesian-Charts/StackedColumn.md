@@ -147,8 +147,8 @@ this.Content = chart;
 
 ## Appearance Customization
 
-* [Spacing](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.StackingColumnSeries.html#Syncfusion_Maui_Toolkit_Charts_StackingColumnSeries_Spacing) - A `Double` property that changes the spacing between two segments. The default value is 0, with a range from 0 to 1.
-* [Width](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.StackingColumnSeries.html#Syncfusion_Maui_Toolkit_Charts_StackingColumnSeries_Width) - A `Double` property that changes the width of the rectangle. The default value is 0.8, with a range from 0 to 1.
-* [CornerRadius](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.StackingColumnSeries.html#Syncfusion_Maui_Toolkit_Charts_StackingColumnSeries_CornerRadius) - A `CornerRadius` property that defines the rounded corners for the stacked column.
-* [Stroke](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.StackingSeriesBase.html#Syncfusion_Maui_Toolkit_Charts_StackingSeriesBase_Stroke) - A `Brush` property that defines the color used for the border of the stacked column.
-* [StrokeWidth](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.XYDataSeries.html#Syncfusion_Maui_Toolkit_Charts_XYDataSeries_StrokeWidth) - A `Double` property that defines the width of the stacked segment border.
+* [Spacing](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.StackingColumnSeries.html#Syncfusion_Maui_Toolkit_Charts_StackingColumnSeries_Spacing) of the `Double` type that changes the spacing between two segments. The default value is 0, with a range from 0 to 1.
+* [Width](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.StackingColumnSeries.html#Syncfusion_Maui_Toolkit_Charts_StackingColumnSeries_Width) of the `Double` type that changes the width of the rectangle. The default value is 0.8, with a range from 0 to 1.
+* [CornerRadius](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.StackingColumnSeries.html#Syncfusion_Maui_Toolkit_Charts_StackingColumnSeries_CornerRadius) of the type `CornerRadius`, defines the rounded corners for the stacked column.
+* [Stroke](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.StackingSeriesBase.html#Syncfusion_Maui_Toolkit_Charts_StackingSeriesBase_Stroke) of the type `Brush` defines the color used for the border of the stacked column..
+* [StrokeWidth](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.XYDataSeries.html#Syncfusion_Maui_Toolkit_Charts_XYDataSeries_StrokeWidth) of the type `Double` defines the width of the stacked segment border.

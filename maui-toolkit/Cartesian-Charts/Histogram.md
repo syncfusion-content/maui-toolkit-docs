@@ -107,7 +107,7 @@ HistogramSeries histogramSeries = new HistogramSeries
     // Customize the appearance of the distribution curve
     CurveStyle = new ChartLineStyle()
     {
-        Stroke = Color.Blue,
+        Stroke = Colors.Blue,
         StrokeWidth = 2
     }
 };
