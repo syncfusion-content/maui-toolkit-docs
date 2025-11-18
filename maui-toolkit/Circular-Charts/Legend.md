@@ -1,17 +1,17 @@
 ---
 layout: post
-title: Legend in .NET MAUI Chart control | Syncfusion
+title: Legend in .NET MAUI Circular Chart control | Syncfusion
 description: This section explains about how to initialize legend and its customization in Syncfusion® .NET MAUI Chart (SfCircularChart) control.
 platform: maui-toolkit
 control: SfCircularChart
 documentation: ug
-keywords: .net maui circular chart, chart legend, legend-wrap, legend view, legend layout, chart legend items, legend alignment.
+keywords: .net maui, maui chart, maui toolkit chart, circular chart, chart legend, legend-wrap, legend view, legend layout, chart legend items. 
 ---
 
 # Legend in .NET MAUI Chart (SfCircularChart)
 The [Legend](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartBase.html#Syncfusion_Maui_Toolkit_Charts_ChartBase_Legend) provides a list of data points, helping to identify the corresponding data points in the chart. Here's a detailed guide on how to define and customize the legend in the circular chart.
 
-## Defining the legend
+## Defining the Legend
 To define the legend in the chart, initialize the [ChartLegend](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartLegend.html) class and assign it to the [Legend](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartBase.html#Syncfusion_Maui_Toolkit_Charts_ChartBase_Legend) property.
 
 {% tabs %}
@@ -24,7 +24,6 @@ To define the legend in the chart, initialize the [ChartLegend](https://help.syn
     </chart:SfCircularChart.Legend>
 </chart:SfCircularChart>
 
-
 {% endhighlight %}
 
 {% highlight c# %}
@@ -32,13 +31,13 @@ To define the legend in the chart, initialize the [ChartLegend](https://help.syn
 SfCircularChart chart = new SfCircularChart();
 // Create and assign a new ChartLegend to the chart's Legend property
 chart.Legend = new ChartLegend();
-. . .
+// Other configurations
 this.Content = chart;
 {% endhighlight %}
 
 {% endtabs %}
 
-## Legend visibility
+## Legend Visibility
 The visibility of the chart legend can be controlled using the [IsVisible](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartLegend.html#Syncfusion_Maui_Toolkit_Charts_ChartLegend_IsVisible) property. By default, the IsVisible property is set to `true`.
 
 {% tabs %}
@@ -61,14 +60,14 @@ chart.Legend = new ChartLegend()
 { 
     IsVisible = true // Set the visibility of the legend to true
 };
-. . .
+// Other configurations
 this.Content = chart;
 
 {% endhighlight %}
 
 {% endtabs %}
 
-## Legend item visibility
+## Legend Item Visibility
 
 The visibility of individual legend items for specific series can be controlled using the [IsVisibleOnLegend](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartSeries.html#Syncfusion_Maui_Toolkit_Charts_ChartSeries_IsVisibleOnLegend) property of the series. The default value for IsVisibleOnLegend is `true`.
 
@@ -108,7 +107,7 @@ this.Content = chart;
 
 {% endtabs %}
 
-## Customizing labels
+## Customizing Labels
 
 The appearance of the legend label can be customized using the [`LabelStyle`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartLegend.html#Syncfusion_Maui_Toolkit_Charts_ChartLegend_LabelStyle) property. 
 
@@ -159,8 +158,8 @@ this.Content = chart;
 
 ![Legend labels customization support in Maui Chart](Legend-images/legend_label_style.png)
 
-## Legend icon
-To specify the legend icon based on the associated series type, use the [LegendIcon](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartSeries.html#Syncfusion_Maui_Toolkit_Charts_ChartSeries_LegendIcon) property and change its type using the [ChartLegendIconType](https://help.syncfusion.c om/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartLegendIconType.html) enum values. The default value of the LegendIcon property is `Circle`.
+## Legend Icon
+To specify the legend icon based on the associated series type, use the [LegendIcon](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartSeries.html#Syncfusion_Maui_Toolkit_Charts_ChartSeries_LegendIcon) property and change its type using the [ChartLegendIconType](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartLegendIconType.html) enum values. The default value of the LegendIcon property is `Circle`.
 
 {% tabs %}
 
@@ -174,7 +173,7 @@ To specify the legend icon based on the associated series type, use the [LegendI
     <chart:PieSeries ItemsSource="{Binding Data}"
                      XBindingPath="XValue"
                      YBindingPath="YValue"
-                     LegendIcon = "Diamond"/>
+                     LegendIcon="Diamond"/>
 </chart:SfCircularChart>
 
 {% endhighlight %}
@@ -229,7 +228,7 @@ this.Content = chart;
 
 {% endtabs %}
 
-## Toggle the series visibility
+## Toggle the Series Visibility
 The visibility of circular series data points can be controlled by tapping the legend item using the [ToggleSeriesVisibility](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartLegend.html#Syncfusion_Maui_Toolkit_Charts_ChartLegend_ToggleSeriesVisibility) property. The default value of ToggleSeriesVisibility is `false`.
 
 {% tabs %}
@@ -259,19 +258,18 @@ this.Content = chart;
 
 {% endtabs %}
 
-## Legend maximum size request
-To set the maximum size request for the legend view, override the [GetMaximumSizeCoefficient](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartLegend.html#Syncfusion_Maui_Toolkit_Charts_ChartLegend_GetMaximumSizeCoefficient) protected method in [ChartLegend](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartLegend.html) class. The value should be between 0 and 1, representing the maximum size request, not the desired size for the legend items layout.
+## Legend Maximum Size Request
+To set the maximum size request for the legend view, override the [GetMaximumSizeCoefficient](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartLegend.html#Syncfusion_Maui_Toolkit_Charts_ChartLegend_GetMaximumSizeCoefficient) protected method in the [ChartLegend](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartLegend.html) class. The value should be between 0 and 1, representing the maximum size request, not the desired size for the legend items layout.
 
 {% tabs %}
 
 {% highlight xaml %}
     
-<chart:SfCircularChart >
-    . . .
+<chart:SfCircularChart>
+    <!-- Other chart configurations -->
     <chart:SfCircularChart.Legend>
         <chart:LegendExt/>
     </chart:SfCircularChart.Legend>
-    . . .
 </chart:SfCircularChart>
 
 {% endhighlight %}
@@ -295,12 +293,11 @@ this.Content = chart;
 
 {% endtabs %}
 
-## Items layout
+## Items Layout
 
 The [ItemsLayout](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartLegend.html#Syncfusion_Maui_Toolkit_Charts_ChartLegend_ItemsLayout) property is used to customize the arrangement and position of each legend item. The default value is `null`. This property accepts any layout type.
 
-For more details about the layout alignment refer to this [article](https://support.syncfusion.com/kb/article/16201/how-to-align-the-chart-legend-items-in-net-maui-circular-chart).
-
+For more details about layout alignment, refer to this [article](https://support.syncfusion.com/kb/article/16201/how-to-align-the-chart-legend-items-in-net-maui-circular-chart).
 
 {% tabs %}
 
@@ -323,7 +320,7 @@ For more details about the layout alignment refer to this [article](https://supp
 {% highlight c# %}
 
 SfCircularChart chart = new SfCircularChart();
-. . .
+// Other chart configurations
 ChartLegend legend = new ChartLegend();
 legend.ItemsLayout = new FlexLayout()
 {
@@ -338,8 +335,8 @@ this.Content = chart;
 
 {% endtabs %}
 
-## Item template
-The [ChartLegend](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartLegend.html) supports customizing the appearance of legend items using the [ItemTemplate](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartLegend.html#Syncfusion_Maui_Toolkit_Charts_ChartLegend_ItemTemplate) property. The default value of ItemsTemplate is `null`.
+## Item Template
+The [ChartLegend](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartLegend.html) supports customizing the appearance of legend items using the [ItemTemplate](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartLegend.html#Syncfusion_Maui_Toolkit_Charts_ChartLegend_ItemTemplate) property. The default value of ItemTemplate is `null`.
 
 N> The BindingContext of the template is the corresponding underlying legend item provided in the ChartLegendItem class.
 
@@ -364,11 +361,10 @@ N> The BindingContext of the template is the corresponding underlying legend ite
         <chart:ChartLegend ItemTemplate="{StaticResource legendTemplate}">
         </chart:ChartLegend>
     </chart:SfCircularChart.Legend>
-    . . .
+    <!-- Other chart configurations -->
 </chart:SfCircularChart>
 
 {% endhighlight %}
-
 
 {% highlight c# %}
 
@@ -376,7 +372,7 @@ SfCircularChart chart = new SfCircularChart();
 ChartLegend legend = new ChartLegend();
 // Assign a custom item template to the legend using a `DataTemplate` resource from the chart's resources.
 legend.ItemTemplate = chart.Resources["legendTemplate"] as DataTemplate;
-...
+// Other chart configurations
 chart.Legend = legend;
 this.Content = chart;
         

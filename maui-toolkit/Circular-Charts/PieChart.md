@@ -5,6 +5,7 @@ description: Learn here all about the pie chart and its features in Syncfusion®
 platform: maui-toolkit
 control: SfCircularChart
 documentation: ug
+keywords: .net maui, maui chart, maui toolkit chart, circular chart, pie chart, pie chart features, pie chart customization.
 ---
 
 # Pie Chart in .NET MAUI Chart
@@ -35,7 +36,7 @@ series.ItemsSource = (new SalesViewModel()).Data;
 series.XBindingPath = "Product";
 series.YBindingPath = "SalesRate";
 
-// Add the configured series to the chart's series collection.
+// Add the configured series to the chart's series collection
 chart.Series.Add(series);
 this.Content = chart;
 
@@ -70,7 +71,7 @@ PieSeries series = new PieSeries();
 series.ItemsSource = (new SalesViewModel()).Data;
 series.XBindingPath = "Product";
 series.YBindingPath = "SalesRate";
-series.Radius = 0.9; // Set the radius of the pie chart 
+series.Radius = 0.9; // Set the radius of the pie chart (90% of available space)
 
 chart.Series.Add(series);
 this.Content = chart;
@@ -107,8 +108,8 @@ PieSeries series = new PieSeries();
 series.ItemsSource = (new SalesViewModel()).Data;
 series.XBindingPath = "Product";
 series.YBindingPath = "SalesRate";
-series.StartAngle = 180; // Set the starting angle for the pie slices
-series.EndAngle = 360; // Set the ending angle for the pie slices
+series.StartAngle = 180; // Set the starting angle for the pie slices (in degrees)
+series.EndAngle = 360; // Set the ending angle for the pie slices (in degrees)
 
 chart.Series.Add(series);
 this.Content = chart;
