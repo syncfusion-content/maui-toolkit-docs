@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Axis line in .NET MAUI Chart control | Syncfusion
+title: Axis line in .NET MAUI Cartesian Chart control | Syncfusion
 description: Learn here all about the chart axis line and its customization in Syncfusion® .NET MAUI Chart (SfCartesianChart) control.
 platform: maui-toolkit
 control: SfCartesianChart
@@ -8,11 +8,11 @@ documentation: ug
 keywords: .net maui chart axis line, .net maui chart axis customization, .net maui chart axisline guide, maui chart axis line settings, syncfusion maui chart axis line, .net maui chart axis styling, customize axis line .net maui chart.
 ---
 
-# Axis line in .NET MAUI Chart
+# Axis Line in .NET MAUI Cartesian Chart
 
 ## Customization
 
-Cartesian chart axis provides support to customize the style of axis line by defining the [AxisLineStyle](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxis.html#Syncfusion_Maui_Toolkit_Charts_ChartAxis_AxisLineStyle) property as shown in the below code snippet.
+Cartesian chart axis provides support to customize the style of the axis line by defining the [AxisLineStyle](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxis.html#Syncfusion_Maui_Toolkit_Charts_ChartAxis_AxisLineStyle) property as shown in the code snippet below:
 
 {% tabs %}
 
@@ -48,6 +48,7 @@ primaryAxis.AxisLineStyle = axisLineStyle; // Apply the defined axis line style 
 chart.XAxes.Add(primaryAxis);
 . . .
 this.Content = chart;
+
 {% endhighlight %}
 
 {% endtabs %}
@@ -56,7 +57,7 @@ this.Content = chart;
 
 ## Offset
 
-The padding to the axis line is defined by using the [AxisLineOffset](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxis.html#Syncfusion_Maui_Toolkit_Charts_ChartAxis_AxisLineOffset) property.
+The padding to the axis line can be defined using the [AxisLineOffset](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxis.html#Syncfusion_Maui_Toolkit_Charts_ChartAxis_AxisLineOffset) property.
 
 {% tabs %}
 
@@ -92,8 +93,9 @@ primaryAxis.AxisLineStyle = axisLineStyle;
 chart.XAxes.Add(primaryAxis);
 . . .
 this.Content = chart;
+
 {% endhighlight %}
 
 {% endtabs %}
 
-![Padding support for axis line in WinUI](Axis_images/maui_chart_axis_line_offset.jpg)
+![Padding support for axis line in .NET MAUI Chart](Axis_images/maui_chart_axis_line_offset.jpg)

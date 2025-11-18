@@ -16,7 +16,7 @@ Spline Range Area Chart is used to visualize data points with smooth curves. In 
 
 To render a spline range area chart, create an instance of [SplineRangeAreaSeries](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SplineRangeAreaSeries.html) and add it to the [Series](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html#Syncfusion_Maui_Toolkit_Charts_SfCartesianChart_Series) collection property of [SfCartesianChart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html).
 
-Since the [SplineRangeAreaSeries](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SplineRangeAreaSeries.html) requires two Y values for each point, your data should contain both the high and low values. These high and low values specify the maximum and minimum ranges of the point.
+Since the [SplineRangeAreaSeries](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SplineRangeAreaSeries.html) requires two Y values for each point, your data should contain both high and low values. These high and low values specify the maximum and minimum ranges of the point.
 
 N> The Cartesian chart has [Series](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html#Syncfusion_Maui_Toolkit_Charts_SfCartesianChart_Series) as its default content.
 
@@ -72,11 +72,11 @@ this.Content = chart;
 
 ![Spline range area chart type in MAUI Chart](Chart-types-images/maui_spline_range_area_chart.png)
 
-## Spline rendering types
+## Spline Rendering Types
 
-The [Type](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SplineRangeAreaSeries.html#Syncfusion_Maui_Toolkit_Charts_SplineRangeAreaSeries_Type) property allows to change the rendering type of spline curve in series. The default value of [Type](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SplineRangeAreaSeries.html#Syncfusion_Maui_Toolkit_Charts_SplineRangeAreaSeries_Type) is [Natural](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SplineType.html#Syncfusion_Maui_Toolkit_Charts_SplineType_Natural).
+The [Type](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SplineRangeAreaSeries.html#Syncfusion_Maui_Toolkit_Charts_SplineRangeAreaSeries_Type) property allows you to change the rendering type of the spline curve in the series. The default value of [Type](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SplineRangeAreaSeries.html#Syncfusion_Maui_Toolkit_Charts_SplineRangeAreaSeries_Type) is [Natural](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SplineType.html#Syncfusion_Maui_Toolkit_Charts_SplineType_Natural).
 
-The following types are used in [SplineRangeAreaSeries](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SplineRangeAreaSeries.html):
+The following types are available in [SplineRangeAreaSeries](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SplineRangeAreaSeries.html):
 
 * `Natural`
 * `Monotonic`
@@ -136,9 +136,9 @@ this.Content = chart;
 
 ![Spline types in MAUI Spline range area chart](Chart-types-images/maui_spline_range_area_types_chart.png)
 
-## Enable Marker
+## Enable Markers
 
-A marker, also known as a symbol, is used to determine or highlight the position of the data point. To enable markers in the series, set the [ShowMarkers](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SplineRangeAreaSeries.html#Syncfusion_Maui_Toolkit_Charts_SplineRangeAreaSeries_ShowMarkers) property to true.
+A marker, also known as a symbol, is used to indicate or highlight the position of a data point. To enable markers in the series, set the [ShowMarkers](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SplineRangeAreaSeries.html#Syncfusion_Maui_Toolkit_Charts_SplineRangeAreaSeries_ShowMarkers) property to true.
 
 {% tabs %}
 
@@ -169,7 +169,7 @@ SplineRangeAreaSeries series = new SplineRangeAreaSeries()
 };
 
 chart.Series.Add(series);
-this.Content= chart;
+this.Content = chart;
 
 {% endhighlight %}
 
@@ -177,7 +177,7 @@ this.Content= chart;
 
 ### Marker Customization
 
-In order to change the series markers appearance, create an instance of the [MarkerSettings](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SplineRangeAreaSeries.html#Syncfusion_Maui_Toolkit_Charts_SplineRangeAreaSeries_MarkerSettings) property. The following properties are used to customize marker appearance.
+To customize the appearance of series markers, create an instance of the [MarkerSettings](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SplineRangeAreaSeries.html#Syncfusion_Maui_Toolkit_Charts_SplineRangeAreaSeries_MarkerSettings) property. The following properties are used to customize marker appearance:
 
 * [Type](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartMarkerSettings.html#Syncfusion_Maui_Toolkit_Charts_ChartMarkerSettings_Type), of type `ShapeType`, describes the shape of the series marker. The default value of this property is the [ShapeType.Circle](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ShapeType.html#Syncfusion_Maui_Toolkit_Charts_ShapeType_Circle).
 * [Stroke](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartMarkerSettings.html#Syncfusion_Maui_Toolkit_Charts_ChartMarkerSettings_Stroke), of type `Brush`, indicates the brush used to paint the marker border.
@@ -215,7 +215,7 @@ In order to change the series markers appearance, create an instance of the [Mar
 SfCartesianChart chart = new SfCartesianChart();
 ...
 // Configure marker settings for the chart series
-ChartMarkerSettings chartMarker= new ChartMarkerSettings()
+ChartMarkerSettings chartMarker = new ChartMarkerSettings()
 {
     Type = ShapeType.Diamond,
     Fill = Colors.Brown,

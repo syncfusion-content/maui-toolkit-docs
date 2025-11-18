@@ -10,7 +10,7 @@ keywords: .net maui stacked column 100 chart, stacked column 100 chart customiza
 
 # StackedColumn100 Chart in .NET MAUI Chart
 
-The Stacked column 100 % series chart is a type of Stacked chart that is used to display the proportion of different categories within a single column. The columns are stacked on top of each other, and a cumulative portion of each stacked element always comes to a total of 100%.
+The Stacked Column 100% chart is a type of stacked chart that displays the proportion of different categories within a single column. The columns are stacked on top of each other, and the cumulative portion of each stacked element always totals 100%.
 
 ## StackedColumn100 Chart
 
@@ -46,7 +46,7 @@ N> The cartesian chart has [Series](https://help.syncfusion.com/cr/maui-toolkit/
 
 </chart:SfCartesianChart>
 
-{% endhighlight xaml %}
+{% endhighlight %}
 
 {% highlight c# %}
 
@@ -82,7 +82,7 @@ chart.Series.Add(series2);
 chart.Series.Add(series3);
 this.Content = chart;
 
-{% endhighlight C# %}
+{% endhighlight %}
 
 {% endtabs %}
 
@@ -90,7 +90,7 @@ this.Content = chart;
 
 ## Grouping Series 
 
-We can group and stack the similar stacked column 100 series type using the [GroupingLabel](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.StackingSeriesBase.html#Syncfusion_Maui_Toolkit_Charts_StackingSeriesBase_GroupingLabel) property. 
+You can group and stack similar stacked column 100 series types using the [GroupingLabel](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.StackingSeriesBase.html#Syncfusion_Maui_Toolkit_Charts_StackingSeriesBase_GroupingLabel) property. 
 
 {% tabs %}
 
@@ -128,7 +128,7 @@ We can group and stack the similar stacked column 100 series type using the [Gro
 
 </chart:SfCartesianChart>
 
-{% endhighlight xaml %}
+{% endhighlight %}
 
 {% highlight c# %}
 
@@ -174,6 +174,6 @@ chart.Series.Add(series3);
 chart.Series.Add(series4);
 this.Content = chart;
 
-{% endhighlight C# %}
+{% endhighlight %}
 
 {% endtabs %}

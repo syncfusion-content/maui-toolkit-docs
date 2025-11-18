@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Trackball in .NET MAUI Chart control | Syncfusion
-description: This section explains about how to enable trackball and its customization in Syncfusion® .NET MAUI Chart (SfCartesianChart) control.
+description: This section explains how to enable trackball and its customization in Syncfusion® .NET MAUI Chart (SfCartesianChart) control.
 platform: maui-toolkit
 control: SfCartesianChart
 documentation: ug
@@ -10,15 +10,15 @@ keywords: .net maui chart trackball, maui chart trackball, .net maui trackball c
 
 # Trackball in .NET MAUI Chart
 
-Trackball, which allows you to show the tooltip for the nearest data points when you interact with the chart area. On mobile, long press the chart to show the trackball, and drag the chart to change the trackball's location constantly. To display the trackball on the desktop, move the cursor over the chart area.
+Trackball allows you to show tooltips for the nearest data points when you interact with the chart area. On mobile, long press the chart to show the trackball, and drag the chart to change the trackball's location continuously. To display the trackball on desktop, move the cursor over the chart area.
 
 ## Enable Trackball 
 
-To enable the trackball in the chart, create an instance of the [ChartTrackballBehavior](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartTrackballBehavior.html) and set it to the [TrackballBehavior](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html#Syncfusion_Maui_Toolkit_Charts_SfCartesianChart_TrackballBehavior) property. The following properties are used to show or hide the line and tooltip.
+To enable the trackball in the chart, create an instance of the [ChartTrackballBehavior](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartTrackballBehavior.html) and set it to the [TrackballBehavior](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html#Syncfusion_Maui_Toolkit_Charts_SfCartesianChart_TrackballBehavior) property. The following properties are used to show or hide the line and tooltip:
 
-* [ShowLabel](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartTrackballBehavior.html#Syncfusion_Maui_Toolkit_Charts_ChartTrackballBehavior_ShowLabel), of type `bool`, indicates the shows or hides the trackball label. The default value is `True`.
-* [ShowMarkers](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartTrackballBehavior.html#Syncfusion_Maui_Toolkit_Charts_ChartTrackballBehavior_ShowMarkershttps://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartTrackballBehavior.html#Syncfusion_Maui_Toolkit_Charts_ChartTrackballBehavior_ShowMarkers), of type `bool`, indicates the shows or hides trackball markers. The default value is `True`.
-* [ShowLine](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartTrackballBehavior.html#Syncfusion_Maui_Toolkit_Charts_ChartTrackballBehavior_ShowLine), of type `bool`, indicates the shows or hides the trackball line. The default value is `True`.
+* [ShowLabel](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartTrackballBehavior.html#Syncfusion_Maui_Toolkit_Charts_ChartTrackballBehavior_ShowLabel), of type `bool`, indicates whether to show or hide the trackball label. The default value is `True`.
+* [ShowMarkers](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartTrackballBehavior.html#Syncfusion_Maui_Toolkit_Charts_ChartTrackballBehavior_ShowMarkers), of type `bool`, indicates whether to show or hide trackball markers. The default value is `True`.
+* [ShowLine](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartTrackballBehavior.html#Syncfusion_Maui_Toolkit_Charts_ChartTrackballBehavior_ShowLine), of type `bool`, indicates whether to show or hide the trackball line. The default value is `True`.
 
 
 {% tabs %}
@@ -42,7 +42,7 @@ SfCartesianChart chart = new SfCartesianChart();
 // Create a trackball behavior for the chart
 ChartTrackballBehavior trackball = new ChartTrackballBehavior();
 // Set the trackball behavior to the chart
-chart.TrackballBehavior= trackball;
+chart.TrackballBehavior = trackball;
 
 this.Content = chart;
 
@@ -52,7 +52,7 @@ this.Content = chart;
 
 ## Enable Label Display Mode
 
-The [DisplayMode](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartTrackballBehavior.html#Syncfusion_Maui_Toolkit_Charts_ChartTrackballBehavior_DisplayMode) property specifies whether a label should be displayed for all data points along the trackball line or only the nearest data point label. The following choices are available for this property.
+The [DisplayMode](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartTrackballBehavior.html#Syncfusion_Maui_Toolkit_Charts_ChartTrackballBehavior_DisplayMode) property specifies whether a label should be displayed for all data points along the trackball line or only the nearest data point label. The following choices are available for this property:
 
 * `FloatAllPoints` – Displays labels for all the data points along the vertical line.
 * `NearestPoint` – Displays a label for a single data point nearer to the touch point on the chart area.
@@ -82,14 +82,14 @@ ChartTrackballBehavior trackball = new ChartTrackballBehavior()
     ShowLine = true,
     DisplayMode = LabelDisplayMode.NearestPoint  // Set the display mode of the trackball label
 };
-chart.TrackballBehavior= trackball;
+chart.TrackballBehavior = trackball;
 . . . 
 this.Content = chart;
 {% endhighlight %}
 
 {% endtabs %}
 
-## Activation mode
+## Activation Mode
 
 The [ActivationMode](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartTrackballBehavior.html#Syncfusion_Maui_Toolkit_Charts_ChartTrackballBehavior_ActivationMode) property is used to restrict the visibility of trackball based on the touch actions. 
 
@@ -121,22 +121,22 @@ ChartTrackballBehavior trackball = new ChartTrackballBehavior()
 {
     ActivationMode = ChartTrackballActivationMode.LongPress // Set the activation mode of the trackball
 };
-chart.TrackballBehavior= trackball;
+chart.TrackballBehavior = trackball;
 . . . 
 this.Content = chart;
 {% endhighlight %}
 
 {% endtabs %}
 
-N> The default value of [ActivationMode](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartTrackballBehavior.html#Syncfusion_Maui_Toolkit_Charts_ChartTrackballBehavior_ActivationMode) property is `ChartTrackballActivationMode.LongPress` for Android and iOS platform and default value for MacOS and Windows platform is `ChartTrackballActivationMode.TouchMove`.
+N> The default value of [ActivationMode](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartTrackballBehavior.html#Syncfusion_Maui_Toolkit_Charts_ChartTrackballBehavior_ActivationMode) property is `ChartTrackballActivationMode.LongPress` for Android and iOS platforms and the default value for MacOS and Windows platforms is `ChartTrackballActivationMode.TouchMove`.
 
-N> On Windows, LongPress gestures are supported only through touch input, not with a mouse. Consequently, when ActivationMode is set to LongPress, the trackball activates only via touch interaction, not with a mouse interaction.
+N> On Windows, LongPress gestures are supported only through touch input, not with a mouse. Consequently, when ActivationMode is set to LongPress, the trackball activates only via touch interaction, not with mouse interaction.
 
-## Appearance customization
+## Appearance Customization
 
-### Trackball Labels customization
+### Trackball Labels Customization
 
-The [LabelStyle](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartTrackballBehavior.html#Syncfusion_Maui_Toolkit_Charts_ChartTrackballBehavior_LabelStyle) property provides to customize the trackball labels. These options are:
+The [LabelStyle](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartTrackballBehavior.html#Syncfusion_Maui_Toolkit_Charts_ChartTrackballBehavior_LabelStyle) property provides options to customize the trackball labels:
 
 * `Background`, of type `Brush`, used to change the label background color.
 * `Margin`, of type `Thickness`, used to change the margin of the label.
@@ -156,13 +156,17 @@ The [LabelStyle](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Too
 
 <chart:SfCartesianChart>
     ...
-    <chart:ChartTrackballBehavior.LabelStyle>
-        <chart:ChartLabelStyle Background="LightBlue"   
-                               FontSize="15" 
-                               CornerRadius="5"
-                               StrokeWidth="2" 
-                               Stroke="Gray"/>
-    </chart:ChartTrackballBehavior.LabelStyle>
+    <chart:SfCartesianChart.TrackballBehavior>
+        <chart:ChartTrackballBehavior>
+            <chart:ChartTrackballBehavior.LabelStyle>
+                <chart:ChartLabelStyle Background="LightBlue"   
+                                       FontSize="15" 
+                                       CornerRadius="5"
+                                       StrokeWidth="2" 
+                                       Stroke="Gray"/>
+            </chart:ChartTrackballBehavior.LabelStyle>
+        </chart:ChartTrackballBehavior>
+    </chart:SfCartesianChart.TrackballBehavior>
     ...
 </chart:SfCartesianChart>
 
@@ -177,15 +181,15 @@ ChartTrackballBehavior trackball = new ChartTrackballBehavior();
 // Define a label style for the trackball
 ChartLabelStyle labelStyle = new ChartLabelStyle()
 {
-    Background = Color.LightBlue,
+    Background = Colors.LightBlue,
     FontSize = 15,
     CornerRadius = 5,
     StrokeWidth = 2,
-    Stroke = Color.Gray
+    Stroke = Colors.Gray
 };
 
-trackballBehavior.LabelStyle = labelStyle; // Apply the custom label style to the trackball behavior
-chart.TrackballBehavior= trackball;
+trackball.LabelStyle = labelStyle; // Apply the custom label style to the trackball behavior
+chart.TrackballBehavior = trackball;
 
 this.Content = chart;
 
@@ -195,7 +199,7 @@ this.Content = chart;
 
 ### Trackball Line Customization
 
- The [LineStyle](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartTrackballBehavior.html#Syncfusion_Maui_Toolkit_Charts_ChartTrackballBehavior_LineStyle) property provides to customize the trackball line. These options are:
+The [LineStyle](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartTrackballBehavior.html#Syncfusion_Maui_Toolkit_Charts_ChartTrackballBehavior_LineStyle) property provides options to customize the trackball line:
 
 * `StrokeWidth`, of type `double`, used to change the stroke width of the line.
 * `Stroke`, of type `Brush`, used to change the stroke color of the line.
@@ -207,10 +211,14 @@ this.Content = chart;
 
 <chart:SfCartesianChart>
     ...
-    <chart:ChartTrackballBehavior.LineStyle>
-        <chart:ChartLineStyle Stroke="Gray"   
-                              StrokeWidth="4"/>     
-    </chart:ChartTrackballBehavior.LineStyle>
+    <chart:SfCartesianChart.TrackballBehavior>
+        <chart:ChartTrackballBehavior>
+            <chart:ChartTrackballBehavior.LineStyle>
+                <chart:ChartLineStyle Stroke="Gray"   
+                                      StrokeWidth="4"/>     
+            </chart:ChartTrackballBehavior.LineStyle>
+        </chart:ChartTrackballBehavior>
+    </chart:SfCartesianChart.TrackballBehavior>
     ...
 </chart:SfCartesianChart>
 
@@ -228,8 +236,8 @@ ChartLineStyle lineStyle = new ChartLineStyle()
     Stroke = Colors.Gray,
     StrokeWidth = 4
 };
-trackballBehavior.LineStyle = lineStyle; // Assign the configured line style to the trackball behavior
-chart.TrackballBehavior= trackball;
+trackball.LineStyle = lineStyle; // Assign the configured line style to the trackball behavior
+chart.TrackballBehavior = trackball;
 
 this.Content = chart;
             
@@ -239,7 +247,7 @@ this.Content = chart;
 
 ### Trackball Markers Customization
 
-The [MarkerSettings](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartTrackballBehavior.html#Syncfusion_Maui_Toolkit_Charts_ChartTrackballBehavior_MarkerSettings) property provides to customize the trackball markers. The trackball marker can be customized using the following properties.
+The [MarkerSettings](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartTrackballBehavior.html#Syncfusion_Maui_Toolkit_Charts_ChartTrackballBehavior_MarkerSettings) property provides options to customize the trackball markers:
 
 * `Type`, of type `ShapeType`, used to set the marker shape type.
 * `Stroke`, of type `Brush`, used to change the marker border color.
@@ -256,9 +264,9 @@ The [MarkerSettings](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui
     ...
     <chart:SfCartesianChart.TrackballBehavior>
         <chart:ChartTrackballBehavior>
-                <chart:ChartTrackballBehavior.MarkerSettings>
-                    <chart:ChartMarkerSettings Height="10" Width="10" Fill="Red"/>
-                </chart:ChartTrackballBehavior.MarkerSettings>
+            <chart:ChartTrackballBehavior.MarkerSettings>
+                <chart:ChartMarkerSettings Height="10" Width="10" Fill="Red"/>
+            </chart:ChartTrackballBehavior.MarkerSettings>
         </chart:ChartTrackballBehavior>
     </chart:SfCartesianChart.TrackballBehavior>
     ...
@@ -273,8 +281,9 @@ SfCartesianChart chart = new SfCartesianChart();
 // Configure the settings for the marker that appears along with the trackball.
 var markerSettings = new ChartMarkerSettings()
 {
-    Height = 10, Width = 10,
-    Fill = new SolidColorBrush(Colors.Red),
+    Height = 10, 
+    Width = 10,
+    Fill = Colors.Red,
 };
 chart.TrackballBehavior = new ChartTrackballBehavior()
 {
@@ -409,7 +418,7 @@ this.Content = chart;
 
 ![Trackball Label Template support in MAUI chart](Trackball_images/maui_chart_trackball_label_template.png)
 
-## Trackball axis label template
+## Trackball Axis Label Template
 
 To customize the appearance of axis labels on the trackball, you can use the [TrackballLabelTemplate](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxis.html#Syncfusion_Maui_Toolkit_Charts_ChartAxis_TrackballLabelTemplate) property of the [ChartAxis](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxis.html).
 
@@ -532,7 +541,9 @@ When the trackball moves across the axis, this feature highlights the related ax
 
 <chart:SfCartesianChart>
     ...
-    <chart:CategoryAxis ShowTrackballLabel="False"/> 
+    <chart:SfCartesianChart.XAxes>
+        <chart:CategoryAxis ShowTrackballLabel="False"/> 
+    </chart:SfCartesianChart.XAxes>
 </chart:SfCartesianChart>
 
 {% endhighlight %}
@@ -543,9 +554,10 @@ SfCartesianChart chart = new SfCartesianChart();
 . . .
 CategoryAxis chartAxis = new CategoryAxis()
 {
-  chartAxis.ShowTrackballLabel = false
-}
+  ShowTrackballLabel = false
+};
 
+chart.XAxes.Add(chartAxis);
 this.Content = chart;
         
 {% endhighlight %}
@@ -561,7 +573,7 @@ this.Content = chart;
 
 ### TrackballCreated
 
-The [`TrackballCreated`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html#Syncfusion_Maui_Toolkit_Charts_SfCartesianChart_TrackballCreated) event occurs when the trackball moves from one data point to another. This argument contains an object of the `TrackballPointInfo`. The following properties are available in the [TrackballPointInfo](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.TrackballPointInfo.html) class to customize the appearance of the trackball label based on a condition.
+The [`TrackballCreated`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html#Syncfusion_Maui_Toolkit_Charts_SfCartesianChart_TrackballCreated) event occurs when the trackball moves from one data point to another. This argument contains an object of the `TrackballPointInfo`. The following properties are available in the [TrackballPointInfo](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.TrackballPointInfo.html) class to customize the appearance of the trackball label based on a condition:
 
 * [Label](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.TrackballPointInfo.html#Syncfusion_Maui_Toolkit_Charts_TrackballPointInfo_Label) of type `string`: Used to change the text of the trackball label.
 * [LabelStyle](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.TrackballPointInfo.html#Syncfusion_Maui_Toolkit_Charts_TrackballPointInfo_LabelStyle) of type `ChartLabelStyle`: Used to customize the appearance of the trackball label.

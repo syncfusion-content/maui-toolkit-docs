@@ -12,7 +12,7 @@ keywords: .net maui step area chart, maui step area chart, .net maui chart step 
 
 ## Step Area Chart
 The step area chart displays data that changes over time or across different categories. 
-In a step area chart, the data points are connected by horizontal and vertical lines to create a series of steps. Each step represents a specific time interval or category. The area between the steps is then filled with a color or shading. To render an area chart, create an instance of [StepAreaSeries](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.StepAreaSeries.html), and add it to the [Series](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html#Syncfusion_Maui_Toolkit_Charts_SfCartesianChart_Series) collection property of the [SfCartesianChart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html). 
+In a step area chart, the data points are connected by horizontal and vertical lines to create a series of steps. Each step represents a specific time interval or category. The area between the steps is then filled with a color or shading. To render a step area chart, create an instance of [StepAreaSeries](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.StepAreaSeries.html), and add it to the [Series](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html#Syncfusion_Maui_Toolkit_Charts_SfCartesianChart_Series) collection property of the [SfCartesianChart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html). 
 
 N> The Cartesian chart has [Series](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html#Syncfusion_Maui_Toolkit_Charts_SfCartesianChart_Series) as its default content.
 
@@ -66,7 +66,7 @@ this.Content = chart;
 
 ## Enable Marker
 
-A marker, also known as a symbol, determines or highlights the data point’s position. To enable markers in the series, set the [ShowMarkers](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.AreaSeries.html#Syncfusion_Maui_Toolkit_Charts_AreaSeries_ShowMarkers) property to true.
+A marker, also known as a symbol, determines or highlights the data point's position. To enable markers in the series, set the [ShowMarkers](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.AreaSeries.html#Syncfusion_Maui_Toolkit_Charts_AreaSeries_ShowMarkers) property to true.
 
 {% tabs %}
 
@@ -92,19 +92,19 @@ StepAreaSeries series = new StepAreaSeries()
     ItemsSource = new ViewModel().Data,
     XBindingPath = "Month",
     YBindingPath = "Value",
-    ShowMarkers= true, // Enable markers to display data points clearly
- };
+    ShowMarkers = true, // Enable markers to display data points clearly
+};
 
 chart.Series.Add(series);
-this.Content= chart;
+this.Content = chart;
 
 {% endhighlight %}
 
 {% endtabs %}
 
-### Marker customization
+### Marker Customization
 
-To change the series markers appearance, create an instance of the [MarkerSettings](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.AreaSeries.html#Syncfusion_Maui_Toolkit_Charts_AreaSeries_MarkerSettings) property. The following properties are used to customize marker appearance.
+To change the series markers appearance, create an instance of the [MarkerSettings](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.AreaSeries.html#Syncfusion_Maui_Toolkit_Charts_AreaSeries_MarkerSettings) property. The following properties are used to customize marker appearance:
 
 * [Type](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartMarkerSettings.html#Syncfusion_Maui_Toolkit_Charts_ChartMarkerSettings_Type), of type `ShapeType`, describes the shape of the series marker. The default value of this property is [ShapeType.Circle](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ShapeType.html#Syncfusion_Maui_Toolkit_Charts_ShapeType_Circle).
 * [Stroke](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartMarkerSettings.html#Syncfusion_Maui_Toolkit_Charts_ChartMarkerSettings_Stroke), of type `Brush`, indicates the brush used to paint the marker border.
@@ -141,7 +141,7 @@ To change the series markers appearance, create an instance of the [MarkerSettin
 SfCartesianChart chart = new SfCartesianChart();
 ...
 // Configure chart marker settings to customize the appearance of markers in the chart.
-ChartMarkerSettings chartMarker= new ChartMarkerSettings()
+ChartMarkerSettings chartMarker = new ChartMarkerSettings()
 {
     Type = ShapeType.Diamond,
     Fill = Colors.Brown,

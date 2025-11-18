@@ -1,28 +1,28 @@
 ---
 layout: post
-title: About Axis in .NET MAUI Chart control | Syncfusion
-description: Learn here all about chart axis and its keys features of Syncfusion® .NET MAUI Chart (SfCartesianChart) control.
+title: About axis in .NET MAUI Cartesian Chart control | Syncfusion
+description: Learn here all about chart axis and its key features of Syncfusion® .NET MAUI Chart (SfCartesianChart) control.
 platform: maui-toolkit
 control: SfCartesianChart
 documentation: ug
 keywords: .net maui chart axis overview, .net maui chart control axis, .net maui chart axis features, .net maui chart control axis functionality.
 ---
 
-# Axis in .NET MAUI Chart
+# Axis in .NET MAUI Cartesian Chart
 
-[ChartAxis](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxis.html) is used to locate a data point inside the chart area. Charts typically have two axes that are used to measure and categorize data: a vertical (Y) axis, and a horizontal (X) axis.
+[ChartAxis](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxis.html) is used to locate data points inside the chart area. Charts typically have two axes that are used to measure and categorize data: a vertical (Y) axis and a horizontal (X) axis.
 
-Vertical(Y) axis always uses numerical scale. Horizontal(X) axis supports the following types of scale:
+The vertical (Y) axis always uses a numerical scale. The horizontal (X) axis supports the following types of scales:
 
 * Category
 * Numeric
-* Date time
-* Logarithm
+* DateTime
+* Logarithmic
 
 ## Key features
 
-* Axis supports different type of axis such as Category, Numeric, Logarithmic and Date time.
-* Allow you to customize the chart axis line such as grid lines, tick lines, and support to customize the style of the axis line by defining the [AxisLineStyle](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxis.html#Syncfusion_Maui_Toolkit_Charts_ChartAxis_AxisLineStyle). 
-* Axis allow you to customize the origin of the chart axis. 
-* Provides options to set padding for axis and axis visible range.
-* Multiple axes support provides a way to arrange multiple series inside the same chart area, gives more space for X and Y axis.
+* Axis supports different types of scales such as Category, Numeric, Logarithmic, and DateTime.
+* Allows you to customize the chart axis elements such as grid lines and tick lines, and supports customizing the style of the axis line by defining the [AxisLineStyle](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxis.html#Syncfusion_Maui_Toolkit_Charts_ChartAxis_AxisLineStyle).
+* Provides options to customize the origin of the chart axis.
+* Offers settings to adjust padding for the axis and axis visible range.
+* Multiple axes support enables arranging multiple series inside the same chart area, providing more space for X and Y axes.

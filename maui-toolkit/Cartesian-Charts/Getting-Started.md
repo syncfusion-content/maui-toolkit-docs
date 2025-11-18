@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting started with .NET MAUI Chart control | Syncfusion
+title: Getting started with .NET MAUI Cartesian Chart control | Syncfusion
 description: This section explains about the getting started with Syncfusion® MAUI Chart (SfCartesianChart) control.
 platform: maui-toolkit
 control: SfCartesianChart
@@ -19,18 +19,18 @@ This section explains how to populate the Cartesian chart with data, a title, da
 
 Before proceeding, ensure that the following are set up:
 
-1. Install [.NET 8 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/8.0) or later is installed.
+1. Install [.NET 8 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/8.0) or later.
 2. Set up a .NET MAUI environment with Visual Studio 2022 (v17.8 or later).
 
 ## Step 1: Create a new .NET MAUI project
 
 1. Go to **File > New > Project** and choose the **.NET MAUI App** template.
-2. Name the project and choose a location. Then, click **Next.**
-3. Select the .NET framework version and click **Create.**
+2. Name the project and choose a location. Then, click **Next**.
+3. Select the .NET framework version and click **Create**.
 
 ## Step 2: Install the Syncfusion<sup>®</sup> MAUI Toolkit Package
 
-1. In **Solution Explorer,** right-click the project and choose **Manage NuGet Packages.**
+1. In **Solution Explorer**, right-click the project and choose **Manage NuGet Packages**.
 2. Search for [Syncfusion.Maui.Toolkit](https://www.nuget.org/packages/Syncfusion.Maui.Toolkit/) and install the latest version.
 3. Ensure the necessary dependencies are installed correctly, and the project is restored.
 
@@ -113,16 +113,16 @@ public partial class MainPage : ContentPage
 
 Before proceeding, ensure that the following are set up:
 
-1. Install [.NET 8 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/8.0) or later is installed.
+1. Install [.NET 8 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/8.0) or later.
 2. Set up a .NET MAUI environment with Visual Studio Code.
-3. Ensure that the .NET MAUI extension is installed and configured as described [here.](https://learn.microsoft.com/en-us/dotnet/maui/get-started/installation?view=net-maui-8.0&tabs=visual-studio-code)
+3. Ensure that the .NET MAUI extension is installed and configured as described [here](https://learn.microsoft.com/en-us/dotnet/maui/get-started/installation?view=net-maui-8.0&tabs=visual-studio-code).
 
 ## Step 1: Create a new .NET MAUI project
 
 1. Open the command palette by pressing `Ctrl+Shift+P` and type **.NET:New Project** and enter.
 2. Choose the **.NET MAUI App** template.
-3. Select the project location, type the project name and press **Enter.**
-4. Then choose **Create project.**
+3. Select the project location, type the project name and press **Enter**.
+4. Then choose **Create project**.
 
 ## Step 2: Install the Syncfusion<sup>®</sup> MAUI Toolkit Package
 
@@ -211,18 +211,18 @@ public partial class MainPage : ContentPage
 Before proceeding, ensure the following are set up:
 
 1. Ensure you have the latest version of JetBrains Rider.
-2. Install [.NET 8 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/8.0) or later is installed.
-3. Make sure the MAUI workloads are installed and configured as described [here.](https://www.jetbrains.com/help/rider/MAUI.html#before-you-start)
+2. Install [.NET 8 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/8.0) or later.
+3. Make sure the MAUI workloads are installed and configured as described [here](https://www.jetbrains.com/help/rider/MAUI.html#before-you-start).
 
 ## Step 1: Create a new .NET MAUI Project
 
-1. Go to **File > New Solution,** Select .NET (C#) and choose the .NET MAUI App template.
+1. Go to **File > New Solution**, Select .NET (C#) and choose the .NET MAUI App template.
 2. Enter the Project Name, Solution Name, and Location.
 3. Select the .NET framework version and click Create.
 
 ## Step 2: Install the Syncfusion<sup>®</sup> MAUI Toolkit NuGet Package
 
-1. In **Solution Explorer,** right-click the project and choose **Manage NuGet Packages.**
+1. In **Solution Explorer**, right-click the project and choose **Manage NuGet Packages**.
 2. Search for [Syncfusion.Maui.Toolkit](https://www.nuget.org/packages/Syncfusion.Maui.Toolkit/) and install the latest version.
 3. Ensure the necessary dependencies are installed correctly, and the project is restored. If not, Open the Terminal in Rider and manually run: `dotnet restore`
 
@@ -419,7 +419,7 @@ NumericalAxis secondaryAxis = new NumericalAxis();
 // Add the secondary axis to the chart's YAxes collection
 chart.YAxes.Add(secondaryAxis);
 
- this.Content = chart;
+this.Content = chart;
 
 {% endhighlight %}
 
@@ -502,7 +502,7 @@ this.Content = chart;
 
 ### Add a title
 
-The title of the chart provide quick information to the user about the data being plotted in the chart. The [Title](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartBase.html#Syncfusion_Maui_Toolkit_Charts_ChartBase_Title) property is used to set title for the chart as follows.
+The title of the chart provides quick information to the user about the data being plotted in the chart. The [Title](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartBase.html#Syncfusion_Maui_Toolkit_Charts_ChartBase_Title) property is used to set title for the chart as follows.
 
 {% tabs %} 
 
@@ -548,7 +548,7 @@ The [ShowDataLabels](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui
 
 {% highlight C# %}
 
-SfCartesianChart chart = new SfCartesianChart()
+SfCartesianChart chart = new SfCartesianChart();
 . . .
 ColumnSeries series = new ColumnSeries();
 series.ShowDataLabels = true; // Enable data labels to be displayed on the data points in the column series.
@@ -579,7 +579,7 @@ The legend provides information about the data point displayed in the chart. The
 {% highlight C# %}
 
 SfCartesianChart chart = new SfCartesianChart();
-chart.Legend = new ChartLegend (); 
+chart.Legend = new ChartLegend(); 
 this.Content = chart;
 {% endhighlight %}
 
@@ -603,7 +603,7 @@ N> Additionally, set label for each series using the `Label` property of chart s
 
 {% highlight C# %}
 
-ColumnSeries series = new ColumnSeries (); 
+ColumnSeries series = new ColumnSeries(); 
 series.ItemsSource = (new PersonViewModel()).Data;
 series.XBindingPath = "Name"; 
 series.YBindingPath = "Height"; 

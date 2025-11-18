@@ -1,20 +1,20 @@
 ---
 layout: post
-title: Axis labels in .NET MAUI Chart control | Syncfusion
-description: Learn here all about axis labels and its customization in Syncfusion® .NET MAUI Chart (SfCartesianChart) control.
+title: Axis labels in .NET MAUI Cartesian Chart control | Syncfusion
+description: Learn here all about axis labels and their customization in Syncfusion® .NET MAUI Chart (SfCartesianChart) control.
 platform: maui-toolkit
 control: SfCartesianChart
 documentation: ug
 keywords: .net maui chart axis labels, axis labels customization .net maui, syncfusion maui chart axis labels, cartesian chart axis labels maui, customize axis labels .net maui chart.
 ---
 
-# Axis labels in .NET MAUI Chart
+# Axis Labels in .NET MAUI Cartesian Chart
 
-Axis labels are used to show the units or measures or category value of axis to visualize the data user friendly. It will be generated based on the range and the values binded to [XBindingPath](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartSeries.html#Syncfusion_Maui_Toolkit_Charts_ChartSeries_XBindingPath) or [YBindingPath](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.XYDataSeries.html#Syncfusion_Maui_Toolkit_Charts_XYDataSeries_YBindingPath) properties of series.
+Axis labels are used to display units, measurements, or category values on an axis to help users visualize data more effectively. Labels are generated based on the axis range and the values bound to the [XBindingPath](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartSeries.html#Syncfusion_Maui_Toolkit_Charts_ChartSeries_XBindingPath) or [YBindingPath](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.XYDataSeries.html#Syncfusion_Maui_Toolkit_Charts_XYDataSeries_YBindingPath) properties of the series.
 
 ## Positioning the labels
 
-The [LabelsPosition](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxis.html#Syncfusion_Maui_Toolkit_Charts_ChartAxis_LabelsPosition) property is used to position the axis labels inside or outside the chart area. [LabelsPosition](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxis.html#Syncfusion_Maui_Toolkit_Charts_ChartAxis_LabelsPosition) property default value is `AxisElementPosition.Outside`.
+The [LabelsPosition](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxis.html#Syncfusion_Maui_Toolkit_Charts_ChartAxis_LabelsPosition) property is used to position axis labels inside or outside the chart area. The default value is `AxisElementPosition.Outside`.
 
 {% tabs %}
 
@@ -30,7 +30,6 @@ The [LabelsPosition](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui
         <chart:NumericalAxis LabelsPosition="Inside"/>
     </chart:SfCartesianChart.YAxes>
 </chart:SfCartesianChart>
-
 
 {% endhighlight %}
 
@@ -87,7 +86,7 @@ this.Content = chart;
 
 ## Label customization
 
-The [LabelStyle](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxis.html#Syncfusion_Maui_Toolkit_Charts_ChartAxis_LabelStyle) property of axis provides options to customize the font-family, font-size, font-attributes and text color of axis labels. The axis labels can be customized using following properties:
+The [LabelStyle](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxis.html#Syncfusion_Maui_Toolkit_Charts_ChartAxis_LabelStyle) property of the axis provides options to customize the font-family, font-size, font-attributes, and text color of axis labels. The axis labels can be customized using the following properties:
 
 * `Background` - Gets or sets the background color of the labels.
 * `CornerRadius` - Gets or sets a value that defines the rounded corners for labels.
@@ -103,17 +102,16 @@ The [LabelStyle](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Too
 * `MaxWidth` - Gets or sets the wrap width of the axis labels.
 * `WrappedLabelAlignment` - Gets or sets the horizontal rendering position of the wrapped axis labels. The default value is `Start`, other available values are `Center` and `End`.
 
-
 ## Edge Labels Drawing Mode
 
-Chart axis provides support to customize the rendering position of the edge labels using the [EdgeLabelsDrawingMode](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxis.html#Syncfusion_Maui_Toolkit_Charts_ChartAxis_EdgeLabelsDrawingMode) property. [EdgeLabelsDrawingMode](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxis.html#Syncfusion_Maui_Toolkit_Charts_ChartAxis_EdgeLabelsDrawingMode) property default value is `Shift`.
+Chart axis provides support to customize the rendering position of edge labels using the [EdgeLabelsDrawingMode](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxis.html#Syncfusion_Maui_Toolkit_Charts_ChartAxis_EdgeLabelsDrawingMode) property. The default value is `Shift`.
 
 | Action | Description |
 |--|--|
 | Center | Indicates that the edge label should appear at the center of its GridLines. |
 | Fit | Indicates that the edge labels should be fit within the area of SfCartesianChart. |
-| Hide | Indicates that the edge labels will be hidden |
-| Shift | Indicates that edge labels should be shifted to either left or right so that it comes within the area of Chart. |
+| Hide | Indicates that the edge labels will be hidden. |
+| Shift | Indicates that edge labels should be shifted to either left or right so that they come within the area of Chart. |
 
 {% tabs %}
 
@@ -147,11 +145,11 @@ this.Content = chart;
 
 ## Edge Labels Visibility
  
-The visibility of the edge labels of the axis can be controlled using the [EdgeLabelsVisibilityMode](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.RangeAxisBase.html#Syncfusion_Maui_Toolkit_Charts_RangeAxisBase_EdgeLabelsVisibilityMode) property. The default value of [EdgeLabelsVisibilityMode](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.RangeAxisBase.html#Syncfusion_Maui_Toolkit_Charts_RangeAxisBase_EdgeLabelsVisibilityMode) is `Default`, which displays the edge label based on auto interval calculations.
+The visibility of the edge labels of the axis can be controlled using the [EdgeLabelsVisibilityMode](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.RangeAxisBase.html#Syncfusion_Maui_Toolkit_Charts_RangeAxisBase_EdgeLabelsVisibilityMode) property. The default value is `Default`, which displays the edge label based on auto interval calculations.
 
 **Always Visible**
 
-`AlwaysVisible` option in [EdgeLabelsVisibilityMode](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.RangeAxisBase.html#Syncfusion_Maui_Toolkit_Charts_RangeAxisBase_EdgeLabelsVisibilityMode) is used to view the edge labels even in chart area zoomed state.
+The `AlwaysVisible` option in [EdgeLabelsVisibilityMode](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.RangeAxisBase.html#Syncfusion_Maui_Toolkit_Charts_RangeAxisBase_EdgeLabelsVisibilityMode) is used to view the edge labels even when the chart area is zoomed.
 
 {% tabs %}
 
@@ -172,7 +170,6 @@ SfCartesianChart chart = new SfCartesianChart();
 . . .
 NumericalAxis primaryAxis = new NumericalAxis()
 {
-    // Set the edge labels to always be visible, ensuring they don't get clipped or hidden.
     EdgeLabelsVisibilityMode = EdgeLabelsVisibilityMode.AlwaysVisible
 };
 chart.XAxes.Add(primaryAxis);
@@ -184,7 +181,7 @@ this.Content = chart;
 
 **Visible**
 
-`Visible` option is used to display the edge labels irrespective of the auto interval calculation until zooming (i.e., in normal state).
+The `Visible` option is used to display the edge labels irrespective of the auto interval calculation until zooming (i.e., in normal state).
 
 {% tabs %}
 
@@ -216,7 +213,7 @@ this.Content = chart;
 
 ## Smart Axis Labels
 
-Axis labels may overlap with each other based on chart dimensions and label size. The [LabelsIntersectAction](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxis.html#Syncfusion_Maui_Toolkit_Charts_ChartAxis_LabelsIntersectAction) property of axis is used to avoid overlapping of axis labels. The default value of the LabelsIntersectAction is `Hide`, other available values are `MultipleRows`, `None`, and `Wrap`.
+Axis labels may overlap with each other based on chart dimensions and label size. The [LabelsIntersectAction](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxis.html#Syncfusion_Maui_Toolkit_Charts_ChartAxis_LabelsIntersectAction) property of axis is used to avoid overlapping of axis labels. The default value is `Hide`, other available values are `MultipleRows`, `None`, and `Wrap`.
 
 {% tabs %}
 
@@ -247,6 +244,6 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Smart axis lable support in .NET MAUI SfCartesianChart.](axis_images/maui_chart_smart_axis_labels.png)
+![Smart axis label support in .NET MAUI SfCartesianChart.](axis_images/maui_chart_smart_axis_labels.png)
 
-N> If the [LabelsIntersectAction](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxis.html#Syncfusion_Maui_Toolkit_Charts_ChartAxis_LabelsIntersectAction) is set to Wrap, we should set the width of the wrap using the [MaxWidth](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxisLabelStyle.html#Syncfusion_Maui_Toolkit_Charts_ChartAxisLabelStyle_MaxWidth) property. We can align the wrapped axis label using the [WrappedLabelAlignment](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxisLabelStyle.html#Syncfusion_Maui_Toolkit_Charts_ChartAxisLabelStyle_WrappedLabelAlignment) property.
+N> If the [LabelsIntersectAction](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxis.html#Syncfusion_Maui_Toolkit_Charts_ChartAxis_LabelsIntersectAction) is set to Wrap, you should set the width of the wrap using the [MaxWidth](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxisLabelStyle.html#Syncfusion_Maui_Toolkit_Charts_ChartAxisLabelStyle_MaxWidth) property. You can align the wrapped axis label using the [WrappedLabelAlignment](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxisLabelStyle.html#Syncfusion_Maui_Toolkit_Charts_ChartAxisLabelStyle_WrappedLabelAlignment) property.
