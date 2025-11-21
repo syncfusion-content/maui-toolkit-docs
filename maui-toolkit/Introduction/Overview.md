@@ -30,7 +30,7 @@ The Syncfusion<sup>®</sup> Toolkit for .NET MAUI is a comprehensive collection 
 ## Supported .NET versions
 
 * .NET 9.0
-* .NET 8.0
+* .NET 10.0
 
 ## Support
 
