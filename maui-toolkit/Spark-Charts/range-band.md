@@ -5,6 +5,7 @@ description: Learn here all about the Range Band support in Syncfusion® .NET MA
 platform: maui-toolkit
 control: SfSparkChart
 documentation: ug
+keywords: .NET MAUI spark chart range band, MAUI range band, range band customization, Syncfusion MAUI spark chart range band, .NET MAUI shaded region spark chart, spark chart Y-axis range band, .NET MAUI range band highlight region
 ---
 
 # Range Band in .NET MAUI Spark Charts
