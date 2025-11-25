@@ -24,7 +24,6 @@ Range bands are used to highlight a particular region in the spark chart along t
                              RangeBandStart="10" 
                              RangeBandEnd="30" 
                              RangeFill="LightBlue">
-. . . 
 </sparkchart:SfSparkLineChart>
 
 {% endhighlight %}
