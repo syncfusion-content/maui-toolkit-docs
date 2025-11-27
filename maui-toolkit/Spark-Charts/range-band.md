@@ -14,17 +14,17 @@ Range bands are used to highlight a particular region in the spark chart along t
 
 * `RangeBandStart` - Specifies the starting Y-axis value where the range band begins.
 * `RangeBandEnd` - Specifies the ending Y-axis value where the range band ends.
-* `RangeFill` - Specifies the fill color for the range band. This color is applied to the area between RangeBandStart and RangeBandEnd values on the Y-axis.
+* `RangeBandFill` - Specifies the fill color for the range band. This color is applied to the area between RangeBandStart and RangeBandEnd values on the Y-axis.
 
 {% tabs %}
 
 {% highlight xaml %}
 
-<sparkchart:SfSparkLineChart ItemsSource="{Binding Data}" 
-                             YBindingPath="Value"
-                             RangeBandStart="10" 
-                             RangeBandEnd="30" 
-                             RangeFill="LightBlue">
+<sparkchart:SfSparkLineChart ItemsSource = "{Binding Data}" 
+                             YBindingPath = "Value"
+                             RangeBandStart = "10" 
+                             RangeBandEnd = "30" 
+                             RangeBandFill = "LightBlue">
 </sparkchart:SfSparkLineChart>
 
 {% endhighlight %}
@@ -37,7 +37,7 @@ SfSparkLineChart sparkchart = new SfSparkLineChart()
     YBindingPath = "Value",
     RangeBandStart = 10,
     RangeBandEnd = 30,
-    RangeFill =  new SolidColorBrush(Colors.LightBlue)
+    RangeBandFill  =  new SolidColorBrush(Colors.LightBlue)
 };
 
 this.Content = sparkchart;
