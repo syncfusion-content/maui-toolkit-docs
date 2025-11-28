@@ -18,7 +18,7 @@ The `XBindingPath` property specifies the data source property that contains the
 
 ## AxisType Property
 
-The `AxisType` property of the SfSparkLineChart determines how the chart interprets the X-axis values. It accepts the following SparkChartAxisType enum values like Category, DateTime and Numeric. Its default value is `SparkChartAxisType.Numeric`.
+The `AxisType` property of the spark charts determines how the chart interprets the X-axis values. It accepts the following SparkChartAxisType enum values like Category, DateTime and Numeric. Its default value is `SparkChartAxisType.Numeric`.
 
 ### Category AxisType
 
@@ -70,7 +70,7 @@ The `DateTime` AxisType treats X-axis values as date-time instances. This axis t
 
 {% highlight c# %}
 
-SfSparkAreaChart sparkchart = new SfSparkAreaChart()
+SfSparkColumnChart sparkchart = new SfSparkColumnChart()
 {
     ItemsSource = new SparkChartViewModel().Data,
     YBindingPath = "Value",
@@ -103,7 +103,7 @@ The `Numeric` AxisType treats X-axis values as numbers. Use this when your X-axi
 
 {% highlight c# %}
 
-SfSparkWinLossChart sparkchart = new SfSparkWinLossChart()
+SfSparkColumnChart sparkchart = new SfSparkColumnChart()
 {
     ItemsSource = new SparkChartViewModel().Data,
     YBindingPath = "Value",
