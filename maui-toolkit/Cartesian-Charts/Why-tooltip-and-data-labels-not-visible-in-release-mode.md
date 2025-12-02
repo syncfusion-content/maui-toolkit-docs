@@ -10,10 +10,14 @@ keywords: .NET MAUI chart tooltip, .NET MAUI chart data label, TooltipInfo Item 
 
 # Display tooltip and data labels in release mode
 
-The binding context inside tooltip and data labels templates is not your model directly. These templates run in the scope of [TooltipInfo](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Charts.TooltipInfo.html) and [ChartDataLabel](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Charts.ChartDataLabel.html), which expose an `Item` property that contains the actual data model from the charts [ItemsSource](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Charts.ChartSeries.html#Syncfusion_Maui_Charts_ChartSeries_ItemsSource). To read your model’s fields in a template, bind through Item or use a converter.
+In [SfCartesianChart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html), the binding context inside tooltip and data label templates is not your business model directly. These templates run with Chart specific contexts.
 
+* Tooltip template: chart:[TooltipInfo](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.TooltipInfo.html)
+* Data label template: chart:[ChartDataLabel](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartDataLabel.html)
 
-With .NET 9 compiled bindings, tooltip templates run with **x:DataType="chart:TooltipInfo"** and data label templates run with **x:DataType="chart:ChartDataLabel"**. Inside these templates, bind to the model via the Item property. Use a value converter to pull the required field from Item. In Release builds, trimming/AOT can remove XAML-only types, so preserve your ViewModel, Model, and the converter to keep these bindings working.
+Both provide an `Item` property that references the actual data object from the series [ItemsSource](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartSeries.html#Syncfusion_Maui_Toolkit_Charts_ChartSeries_ItemsSourceProperty). Bind your fields through Item to display values from your business model.
+
+Release builds can remove types that are referenced only from XAML. To prevent this, reference a value converter from XAML and preserve your ViewModel, business model, and converter classes. With .NET 9 compiled bindings, set **x:DataType="chart:TooltipInfo"** for tooltip templates and **x:DataType="chart:ChartDataLabel"** for data label templates, then bind via Item. Use the converter to extract the required property from Item.
 
 
 {% highlight xaml %}
@@ -60,19 +64,16 @@ With .NET 9 compiled bindings, tooltip templates run with **x:DataType="chart:To
 
     public class ValueConverter : IValueConverter
     {
-        public object? Convert(object? value, Type targetType, object? parameter, CultureInfo culture)
+        public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
         {
-            // value is TooltipInfo.Item or ChartDataLabel.Item -> your Model
-            if (value is Model model && parameter?.ToString() == "Planned")
-                return model.Planned;
-
-            return value;
+            return value is WeekPlan weekPlan ? weekPlan.Planned : value;
         }
-        public object? ConvertBack(object? value, Type targetType, object? parameter, CultureInfo culture) => value;
+
+        public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture) => value;
     }
 
 {% endhighlight %}
 
 ## See also 
 
-[How to display tooltip and data labels in release mode .NET MAUI SfCartesianChart](https://support.syncfusion.com/kb/article/21677/why-tooltip-and-datalabel-are-not-showing-in-release-mode-in-net-maui-sfcartesianchart)
+[Why Tooltip and DataLabel Are Missing in Release Mode .NET MAUI Chart?](https://support.syncfusion.com/kb/article/21677/why-tooltip-and-datalabel-are-not-showing-in-release-mode-in-net-maui-sfcartesianchart)
