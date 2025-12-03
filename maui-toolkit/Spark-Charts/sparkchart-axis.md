@@ -9,11 +9,11 @@ documentation: ug
 
 # Axis in .NET MAUI Spark Charts
 
-Axis can be configured and customized using following properties.
+The axis is a baseline that helps compare values above and below it in spark charts. Use it to highlight zero or any target value.
 
 ## Enable the axis
 
-Set the [ShowAxis](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SparkCharts.SfSparkChart.html#Syncfusion_Maui_Toolkit_SparkCharts_SfSparkChart_ShowAxisProperty) property to display the axis at the chart’s origin in [SfSparkChart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SparkCharts.SfSparkChart.html); by default, the  axis is set to `False`.
+Set the [ShowAxis](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SparkCharts.SfSparkChart.html#fields) property to display the axis at the chart’s origin in [SfSparkChart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SparkCharts.SfSparkChart.html), by default, the  axis is set to `False`.
 
 {% tabs %}
 
@@ -31,10 +31,12 @@ Set the [ShowAxis](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.T
 
 var chart = new SfSparkLineChart
 {
-    ItemsSource = new SparkChartViewModel().Data,
+    ItemsSource = viewmodel.Data,
     YBindingPath = "Value",
     ShowAxis = true
 };
+
+Content = chart;
 
 {% endhighlight %}
 
@@ -61,7 +63,15 @@ Set [AxisOrigin](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Too
 
 {% highlight c# %}
 
+var chart = new SfSparkLineChart
+{
+    ItemsSource = viewmodel.Data,
+    YBindingPath = "Value",
+    ShowAxis = true
+};
+
 chart.AxisOrigin = 8;
+Content = chart;
 
 {% endhighlight %}
 
@@ -71,10 +81,12 @@ chart.AxisOrigin = 8;
 
 ### Axis customization
 
-[AxisLineStyle](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SparkCharts.SfSparkChart.html#Syncfusion_Maui_Toolkit_SparkCharts_SfSparkChart_AxisLineStyleProperty) customizes the axis appearance.
-  - [Stroke color](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SparkCharts.SparkChartLineStyle.html#Syncfusion_Maui_Toolkit_SparkCharts_SparkChartLineStyle_StrokeProperty) - Specifies the line color of the axis.
-  - [Stroke width](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SparkCharts.SparkChartLineStyle.html#Syncfusion_Maui_Toolkit_SparkCharts_SparkChartLineStyle_StrokeWidthProperty) - Specifies the line thickness of the axis. Default it is set to 1.
-  - [StrokeDashArray](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SparkCharts.SparkChartLineStyle.html#Syncfusion_Maui_Toolkit_SparkCharts_SparkChartLineStyle_StrokeDashArrayProperty) - Specifies the dash pattern for the axis. Default it is set to null.
+The [AxisLineStyle](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SparkCharts.SfSparkChart.html#Syncfusion_Maui_Toolkit_SparkCharts_SfSparkChart_AxisLineStyleProperty) property lets you customize the appearance of the axis in [SfSparkChart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SparkCharts.SfSparkChart.html). You can adjust its color, thickness, and dash pattern.
+
+- [Stroke color](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SparkCharts.SparkChartLineStyle.html#Syncfusion_Maui_Toolkit_SparkCharts_SparkChartLineStyle_StrokeProperty) – Sets the axis line color.
+- [Stroke width](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SparkCharts.SparkChartLineStyle.html#Syncfusion_Maui_Toolkit_SparkCharts_SparkChartLineStyle_StrokeWidthProperty) – Sets the axis line thickness. Default is 1.
+- [StrokeDashArray](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SparkCharts.SparkChartLineStyle.html#Syncfusion_Maui_Toolkit_SparkCharts_SparkChartLineStyle_StrokeDashArrayProperty) – Sets the dash pattern for the axis line. Default is null.
+
 
 {% tabs %}
 
@@ -102,7 +114,9 @@ chart.AxisLineStyle = new SparkChartLineStyle
     Stroke = new SolidColorBrush(Color.FromArgb("#333333")),
     StrokeWidth = 2,
     StrokeDashArray = new DoubleCollection { 4, 2 }
-};
+}
+
+this.content = chart;
 
 {% endhighlight %}
 
