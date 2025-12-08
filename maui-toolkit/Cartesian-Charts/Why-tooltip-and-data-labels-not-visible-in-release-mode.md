@@ -10,10 +10,11 @@ keywords: .NET MAUI chart tooltip, .NET MAUI chart data label, TooltipInfo Item 
 
 # Display tooltip and data labels in release mode
 
-In [SfCartesianChart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html), the tooltip and data label templates do not use item from [ItemsSource](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartSeries.html#Syncfusion_Maui_Toolkit_Charts_ChartSeries_ItemsSourceProperty) as their binding context. These elements are created by the chart at runtime and can represent calculated points, so the chart supplies its own context with all needed metadata. For tooltips this context is [TooltipInfo](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.TooltipInfo.html), and for data labels it is [ChartDataLabel](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartDataLabel.html). Both provide an `Item` property that points back to your original data object when a direct mapping exists. If you need fields from your model inside the template, bind through `Item` (or use a converter).
+In [SfCartesianChart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html), the tooltip and data label templates do not use item from [ItemsSource](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartSeries.html#Syncfusion_Maui_Toolkit_Charts_ChartSeries_ItemsSourceProperty) as their binding context. These elements are created by the chart at runtime and can represent calculated points, so the chart supplies its own context with all needed metadata. For tooltips this context is [TooltipInfo](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.TooltipInfo.html), and for data labels it is [ChartDataLabel](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartDataLabel.html). Both provide an Item property that points back to your original data object when a direct mapping exists. If you need fields from your model inside the template, bind through Item (or use a converter).
 
 Release builds can remove types that are referenced only from XAML. To prevent this, reference a value converter from XAML and preserve your ViewModel, business model, and converter classes. With .NET 9 compiled bindings, set **x:DataType="chart:TooltipInfo"** for tooltip templates and **x:DataType="chart:ChartDataLabel"** for data label templates, then bind via Item. Use the converter to extract the required property from Item.
 
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -68,6 +69,8 @@ Release builds can remove types that are referenced only from XAML. To prevent t
     }
 
 {% endhighlight %}
+
+{% endtabs %}
 
 ## See also 
 
