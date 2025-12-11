@@ -94,16 +94,7 @@ The [AxisLineStyle](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.
 {% highlight xaml %}
 
     <spark:SfSparkColumnChart.AxisLineStyle>
-        <spark:SparkChartLineStyle StrokeWidth="1.5" Stroke="#333333">
-
-            <spark:SparkChartLineStyle.StrokeDashArray>
-                <DoubleCollection>
-                    x:Double>4</x:Double>
-                    <x:Double>2</x:Double>
-                </DoubleCollection>
-            </spark:SparkChartLineStyle.StrokeDashArray>
-
-        </spark:SparkChartLineStyle>
+        <sparkchart:SparkChartLineStyle StrokeWidth="1.5" Stroke="#333333" StrokeDashArray="4,2" />
     </spark:SfSparkColumnChart.AxisLineStyle>
 
 {% endhighlight %}
