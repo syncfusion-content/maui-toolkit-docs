@@ -82,7 +82,7 @@ Content = chart;
 
 ### Axis customization
 
-The [AxisLineStyle](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SparkCharts.SparkChartLineStyle.html) properties lets you customize the appearance of the axis in [SfSparkChart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SparkCharts.SfSparkChart.html). You can adjust its color, thickness, and dash pattern.
+The [AxisLineStyle](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SparkCharts.SfSparkChart.html#Syncfusion_Maui_Toolkit_SparkCharts_SfSparkChart_AxisLineStyle) properties lets you customize the appearance of the axis in [SfSparkChart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SparkCharts.SfSparkChart.html). You can adjust its color, thickness, and dash pattern.
 
 - [Stroke](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SparkCharts.SparkChartLineStyle.html#Syncfusion_Maui_Toolkit_SparkCharts_SparkChartLineStyle_Stroke) - Gets or sets the axis line color.
 - [StrokeWidth](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SparkCharts.SparkChartLineStyle.html#Syncfusion_Maui_Toolkit_SparkCharts_SparkChartLineStyle_StrokeWidth) - Gets or sets the axis line thickness. Default is 1.
@@ -94,16 +94,7 @@ The [AxisLineStyle](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.
 {% highlight xaml %}
 
     <spark:SfSparkColumnChart.AxisLineStyle>
-        <spark:SparkChartLineStyle StrokeWidth="1.5" Stroke="#333333">
-
-            <spark:SparkChartLineStyle.StrokeDashArray>
-                  <DoubleCollection>
-                        <x:Double>4</x:Double>
-                        <x:Double>2</x:Double>
-                    </DoubleCollection>
-            </spark:SparkChartLineStyle.StrokeDashArray>
-
-        </spark:SparkChartLineStyle>
+        <sparkchart:SparkChartLineStyle StrokeWidth="1.5" Stroke="#333333" StrokeDashArray="4,2" />
     </spark:SfSparkColumnChart.AxisLineStyle>
 
 {% endhighlight %}
