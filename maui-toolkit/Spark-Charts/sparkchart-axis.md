@@ -1,13 +1,14 @@
 ---
 layout: post
-title: Axis in .NET MAUI Spark Chart Control | Syncfusion
+title: Axis line in .NET MAUI Spark Charts | Syncfusion
 description: Learn how to display and customize the axis in Syncfusion® .NET MAUI Spark Charts (SfSparkChart) using ShowAxis, AxisOrigin, and AxisLineStyle.
 platform: maui-toolkit
 control: SfSparkChart
 documentation: ug
+keywords: .net maui spark chart axis line, .net maui spark chart axis customization, .net maui spark chart axisline guide, syncfusion maui spark chart axis line, customize axis line .net maui spark chart.
 ---
 
-# Axis in .NET MAUI Spark Charts
+# Axis line in .NET MAUI Spark Charts
 
 The axis is a baseline that helps compare values above and below it in spark charts. Use it to highlight zero or any target value.
 
