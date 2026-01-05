@@ -18,11 +18,13 @@ The `XBindingPath` property specifies the data source property that contains the
 
 ## AxisType Property
 
-The `AxisType` property of the spark charts determines how the chart interprets the X-axis values. It accepts the following SparkChartAxisType enum values like Category, DateTime and Numeric. Its default value is `SparkChartAxisType.Numeric`.
+The `AxisType` property of the spark charts determines how the chart interprets the X-axis values. Its default value is `SparkChartAxisType.Numeric`. It accepts the following SparkChartAxisType enum values
 
-### Category AxisType
+* `Category` - treats X-axis values as discrete categories. Use this for categorical or text-based data where each data point represents a distinct group or classification.
 
-The `Category` AxisType treats X-axis values as discrete categories. Use this for categorical or text-based data where each data point represents a distinct group or classification.
+* `DateTime` - treats X-axis values as date-time instances. This axis type is used to emphasize changes in values over time, primarily for communicating trends and chronological data visualization rather than individual data values.
+
+* `Numeric` - treats X-axis values as numbers. Use this when your X-axis data contains numerical values that represent quantities, indices, or continuous numerical data on a numerical scale.
 
 {% tabs %}
 
@@ -51,67 +53,3 @@ this.Content = sparkchart;
 
 {% endtabs %}
 
-
-### DateTime AxisType
-
-The `DateTime` AxisType treats X-axis values as date-time instances. This axis type is used to emphasize changes in values over time, primarily for communicating trends and chronological data visualization rather than individual data values.
-
-{% tabs %}
-
-{% highlight xaml %}
-
-<sparkchart:SfSparkColumnChart ItemsSource="{Binding Data}" 
-                               YBindingPath="Value"
-                               XBindingPath="OrderDate" 
-                               AxisType="DateTime">
-</sparkchart:SfSparkColumnChart>
-
-{% endhighlight %}
-
-{% highlight c# %}
-
-SfSparkColumnChart sparkchart = new SfSparkColumnChart()
-{
-    ItemsSource = new SparkChartViewModel().Data,
-    YBindingPath = "Value",
-    XBindingPath = "OrderDate",
-    AxisType = SparkChartAxisType.DateTime
-};
-
-this.Content = sparkchart;
-
-{% endhighlight %}
-
-{% endtabs %}
-
-
-### Numeric AxisType
-
-The `Numeric` AxisType treats X-axis values as numbers. Use this when your X-axis data contains numerical values that represent quantities, indices, or continuous numerical data on a numerical scale.
-
-{% tabs %}
-
-{% highlight xaml %}
-
-<sparkchart:SfSparkColumnChart ItemsSource="{Binding Data}" 
-                               YBindingPath="Value"
-                               XBindingPath="OrderID" 
-                               AxisType="Numeric">
-</sparkchart:SfSparkColumnChart>
-
-{% endhighlight %}
-
-{% highlight c# %}
-
-SfSparkColumnChart sparkchart = new SfSparkColumnChart()
-{
-    ItemsSource = new SparkChartViewModel().Data,
-    YBindingPath = "Value",
-    XBindingPath = "OrderID",
-    AxisType = SparkChartAxisType.Numeric
-};
-this.Content = sparkchart;
-
-{% endhighlight %}
-
-{% endtabs %}
