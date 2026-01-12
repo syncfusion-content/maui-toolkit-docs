@@ -20,11 +20,11 @@ The `XBindingPath` property specifies the data source property that contains the
 
 The `AxisType` property of the spark charts determines how the chart interprets the X-axis values. Its default value is `SparkChartAxisType.Numeric`. It accepts the following SparkChartAxisType enum values
 
-* `Category` - treats X-axis values as discrete categories. Use this for categorical or text-based data where each data point represents a distinct group or classification.
+* `Category` - Treats X‑axis values as discrete categories. Use this for text or labels where each point represents a distinct group.
 
-* `DateTime` - treats X-axis values as date-time instances. This axis type is used to emphasize changes in values over time, primarily for communicating trends and chronological data visualization rather than individual data values.
+* `DateTime` - Treats X‑axis values as dates/times. Use this to highlight trends and changes over time.
 
-* `Numeric` - treats X-axis values as numbers. Use this when your X-axis data contains numerical values that represent quantities, indices, or continuous numerical data on a numerical scale.
+* `Numeric` - Treats X‑axis values as numbers. Use this for quantities, indices, or other continuous numeric data.
 
 {% tabs %}
 
