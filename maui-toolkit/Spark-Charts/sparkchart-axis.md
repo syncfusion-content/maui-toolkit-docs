@@ -45,7 +45,7 @@ Content = chart;
 
 ![Axis in .NET MAUI Spark Line](sparkchart_axis_line_images\default_axis.png)
 
-## Axis types
+## Types
 
 Spark charts consist of two axes for measuring and categorizing data: a vertical (Y) axis and a horizontal (X) axis. The Y-axis always uses a numerical scale to measure data values, while the X-axis provides flexibility to change its type using the `AxisType` property, supporting Numeric, Category, and DateTime scales.
 
@@ -90,7 +90,7 @@ this.Content = sparkchart;
 
 {% endtabs %}
 
-## Axis origin
+## Origin
 
 Set [AxisOrigin](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SparkCharts.SfSparkChart.html#Syncfusion_Maui_Toolkit_SparkCharts_SfSparkChart_AxisOrigin) to draw the line at a specific Y value (for example, `0` to emphasize zero, or any custom value) of [SfSparkChart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SparkCharts.SfSparkChart.html).
 
@@ -125,7 +125,7 @@ Content = chart;
 
 ![Axis origin in .NET MAUI Spark Line](sparkchart_axis_line_images\axis_origin.png)
 
-### Axis customization
+## Customization
 
 The [AxisLineStyle](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SparkCharts.SfSparkChart.html#Syncfusion_Maui_Toolkit_SparkCharts_SfSparkChart_AxisLineStyle) properties lets you customize the appearance of the axis in [SfSparkChart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SparkCharts.SfSparkChart.html). You can adjust its color, thickness, and dash pattern.
 
