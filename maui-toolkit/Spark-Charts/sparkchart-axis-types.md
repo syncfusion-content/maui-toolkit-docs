@@ -22,7 +22,7 @@ The `AxisType` property of the spark charts determines how the chart interprets 
 
 * `Category` - Treats X‑axis values as discrete categories. Use this for text or labels where each point represents a distinct group.
 
-* `DateTime` - Treats X‑axis values as dates/times. Use this to highlight trends and changes over time.
+* `DateTime` - Treats X‑axis values as date-time. Use this to highlight trends and changes over time.
 
 * `Numeric` - Treats X‑axis values as numbers. Use this for quantities, indices, or other continuous numeric data.
 
