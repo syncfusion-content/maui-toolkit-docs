@@ -9,7 +9,7 @@ documentation: ug
 
 # Modal Window in MAUI Popup (SfPopup)
 
-You can use the popup as a modal window using the built-in close icon and the `SfPopup.StaysOpen` property prevents interaction with your application until you close the window.
+You can use the popup as a modal window using the built-in close icon and the [SfPopup.StaysOpen](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Popup.SfPopup.html#Syncfusion_Maui_Toolkit_Popup_SfPopup_StaysOpen) property prevents interaction with your application until you close the window.
 
 `Modal`: Window loads under the parent window surrounded by an overlay which prevents clicking anywhere else on the screen apart from the control of the modal.
 
