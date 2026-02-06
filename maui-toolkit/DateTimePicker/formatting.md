@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Formatting in .NET MAUI Date Time Picker Control | Syncfusion<sup>&reg;</sup>
+title: Formatting in .NET MAUI Date Time Picker Control | Syncfusion®
 description: Learn about formatting in Syncfusion<sup>&reg;</sup> .NET MAUI Date Time Picker (SfDateTimePicker) control and its basic features.
 platform: maui
 control: SfDateTimePicker
@@ -64,7 +64,11 @@ The different types of formats are:
 
 [`H_mm_ss`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Picker.PickerTimeFormat.html#Syncfusion_Maui_Toolkit_Picker_PickerTimeFormat_H_mm_ss) - Represents the hour minute second in H_mm_ss format.
 
+[`H_mm_ss_fff`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Picker.PickerTimeFormat.html#Syncfusion_Maui_Toolkit_Picker_PickerTimeFormat_H_mm_ss_fff) - Represents the hour minute second millisecond in H_mm_ss_fff format.
+
 [`h_mm_ss_tt`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Picker.PickerTimeFormat.html#Syncfusion_Maui_Toolkit_Picker_PickerTimeFormat_h_mm_ss_tt) - Represents the hour minute second meridiem in h_mm_ss_tt format.
+
+[`h_mm_ss_fff_tt`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Picker.PickerTimeFormat.html#Syncfusion_Maui_Toolkit_Picker_PickerTimeFormat_h_mm_ss_fff_tt) - Represents the hour minute second millisecond meridiem in h_mm_ss_fff_tt format.
 
 [`h_mm_tt`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Picker.PickerTimeFormat.html#Syncfusion_Maui_Toolkit_Picker_PickerTimeFormat_h_mm_tt) - Represents the hour minute meridiem in h_mm_tt format.
 
@@ -78,6 +82,11 @@ The different types of formats are:
 
 [`hh_tt`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Picker.PickerTimeFormat.html#Syncfusion_Maui_Toolkit_Picker_PickerTimeFormat_hh_tt) - Represents the hour meridiem in hh_tt format.
 
+[`ss_fff`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Picker.PickerTimeFormat.html#Syncfusion_Maui_Toolkit_Picker_PickerTimeFormat_ss_fff) - Represents the second millisecond in ss_fff format.
+
+[`mm_ss`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Picker.PickerTimeFormat.html#Syncfusion_Maui_Toolkit_Picker_PickerTimeFormat_mm_ss) - Represents the minute second in mm_ss format.
+
+[`mm_ss_fff`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Picker.PickerTimeFormat.html#Syncfusion_Maui_Toolkit_Picker_PickerTimeFormat_mm_ss_fff) - Represents the minute second millisecond in mm_ss_fff format.
 
 [`Default`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Picker.PickerTimeFormat.html#Syncfusion_Maui_Toolkit_Picker_PickerTimeFormat_Default) - Represents the hour minute second meridiem in default culture based format.
 

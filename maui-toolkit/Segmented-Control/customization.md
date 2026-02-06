@@ -384,7 +384,7 @@ Use the [SegmentTemplate](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion
 
 ## Customize selected segment item appearance using DataTemplate
 
-Use the `IsSelected` property of `SfSegmentItem` to customize the selected segment item appearance. The following example code shows how to create a custom segmented control using a data template.
+Use the [IsSelected](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SegmentedControl.SfSegmentItem.html#Syncfusion_Maui_Toolkit_SegmentedControl_SfSegmentItem_IsSelected) property of [SfSegmentItem](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SegmentedControl.SfSegmentItem.html) to customize the selected segment item appearance. The following example code shows how to create a custom segmented control using a data template.
 
 {% tabs %}
 {% highlight XAML %}
@@ -466,6 +466,6 @@ public class TextColorConverter : IValueConverter
 {% endtabs %}
 
 N>
-* The BindingContext of the `SegmentTemplate` is the `SfSegmentItem`.
+* The BindingContext of the [SegmentTemplate](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SegmentedControl.SfSegmentedControl.html#Syncfusion_Maui_Toolkit_SegmentedControl_SfSegmentedControl_SegmentTemplate) is the [SfSegmentItem](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SegmentedControl.SfSegmentItem.html).
 
 ![Customization for the selected segment item in .NET MAUI Segmented control.](images/customization/selected-segment.png)
