@@ -405,7 +405,7 @@ The following code example gives you the complete code of above configurations.
 
 {% highlight xaml %}
 
-ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:sparkchart="clr-namespace:Syncfusion.Maui.Toolkit.SparkCharts;assembly=Syncfusion.Maui.Toolkit"
              xmlns:model="clr-namespace:GettingStarted"
