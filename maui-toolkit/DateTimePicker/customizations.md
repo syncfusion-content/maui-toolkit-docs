@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Customizations in .NET MAUI Date Time Picker Control | Syncfusion<sup>&reg;</sup>
+title: Customizations in .NET MAUI Date Time Picker Control | Syncfusion®
 description: Learn about customizations in Syncfusion<sup>&reg;</sup> .NET MAUI Date Time Picker (SfDateTimePicker) control and its basic features.
 platform: maui
 control: SfDateTimePicker
@@ -66,7 +66,7 @@ Customize the header text style and background color of the `Date Time picker` u
 </picker:SfDateTimePicker>
 
 {% endhighlight %}
-{% highlight c# tabtitle="C#"%}
+{% highlight c# tabtitle="C#" %}
 
 SfDateTimePicker picker = new SfDateTimePicker();
 picker.HeaderView = new DateTimePickerHeaderView()
@@ -92,7 +92,7 @@ Customize the Date Time Picker column header by using the `ColumnHeaderView` pro
 
 ### Set the custom column header
 
-The `SfDateTimePicker` provides a custom text to its column header by setting the [ColumnHeaderView](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Picker.SfDateTimePicker.html#Syncfusion_Maui_Toolkit_Picker_SfDateTimePicker_ColumnHeaderView) property of the [SfDateTimePicker](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Picker.SfDateTimePicker.html), which has [DayHeaderText](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Picker.DateTimePickerColumnHeaderView.html#Syncfusion_Maui_Toolkit_Picker_DateTimePickerColumnHeaderView_DayHeaderText), [MonthHeaderText](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Picker.DateTimePickerColumnHeaderView.html#Syncfusion_Maui_Toolkit_Picker_DateTimePickerColumnHeaderView_MonthHeaderText), [YearHeaderText](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Picker.DateTimePickerColumnHeaderView.html#Syncfusion_Maui_Toolkit_Picker_DateTimePickerColumnHeaderView_YearHeaderText), [HourHeaderText](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Picker.DateTimePickerColumnHeaderView.html#Syncfusion_Maui_Toolkit_Picker_DateTimePickerColumnHeaderView_HourHeaderText), [MinuteHeaderText](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Picker.DateTimePickerColumnHeaderView.html#Syncfusion_Maui_Toolkit_Picker_DateTimePickerColumnHeaderView_MinuteHeaderText), [SecondHeaderText](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Picker.DateTimePickerColumnHeaderView.html#Syncfusion_Maui_Toolkit_Picker_DateTimePickerColumnHeaderView_SecondHeaderText), and [MeridiemHeaderText](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Picker.DateTimePickerColumnHeaderView.html#Syncfusion_Maui_Toolkit_Picker_DateTimePickerColumnHeaderView_MeridiemHeaderText) properties in the [DateTimePickerColumnHeaderView](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Picker.DateTimePickerColumnHeaderView.html). The default value of `DayHeaderText` is "Day", `MonthHeaderText` is "Month", `YearHeaderText` is "Year", `HourHeaderText` is "Hour", `MinuteHeaderText` is "Minute", `SecondHeaderText` is "Second", and `MeridiemHeaderText` is "string.Empty".
+The `SfDateTimePicker` provides a custom text to its column header by setting the [ColumnHeaderView](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Picker.SfDateTimePicker.html#Syncfusion_Maui_Toolkit_Picker_SfDateTimePicker_ColumnHeaderView) property of the [SfDateTimePicker](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Picker.SfDateTimePicker.html), which has [DayHeaderText](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Picker.DateTimePickerColumnHeaderView.html#Syncfusion_Maui_Toolkit_Picker_DateTimePickerColumnHeaderView_DayHeaderText), [MonthHeaderText](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Picker.DateTimePickerColumnHeaderView.html#Syncfusion_Maui_Toolkit_Picker_DateTimePickerColumnHeaderView_MonthHeaderText), [YearHeaderText](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Picker.DateTimePickerColumnHeaderView.html#Syncfusion_Maui_Toolkit_Picker_DateTimePickerColumnHeaderView_YearHeaderText), [HourHeaderText](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Picker.DateTimePickerColumnHeaderView.html#Syncfusion_Maui_Toolkit_Picker_DateTimePickerColumnHeaderView_HourHeaderText), [MinuteHeaderText](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Picker.DateTimePickerColumnHeaderView.html#Syncfusion_Maui_Toolkit_Picker_DateTimePickerColumnHeaderView_MinuteHeaderText), [SecondHeaderText](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Picker.DateTimePickerColumnHeaderView.html#Syncfusion_Maui_Toolkit_Picker_DateTimePickerColumnHeaderView_SecondHeaderText), [MilliSecondHeaderText](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Picker.DateTimePickerColumnHeaderView.html#Syncfusion_Maui_Toolkit_Picker_DateTimePickerColumnHeaderView_MilliSecondHeaderText), and [MeridiemHeaderText](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Picker.DateTimePickerColumnHeaderView.html#Syncfusion_Maui_Toolkit_Picker_DateTimePickerColumnHeaderView_MeridiemHeaderText) properties in the [DateTimePickerColumnHeaderView](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Picker.DateTimePickerColumnHeaderView.html). The default value of `DayHeaderText` is "Day", `MonthHeaderText` is "Month", `YearHeaderText` is "Year", `HourHeaderText` is "Hour", `MinuteHeaderText` is "Minute", `SecondHeaderText` is "Second", `MilliSecondHeaderText` is "MilliSecond", and `MeridiemHeaderText` is "string.Empty".
 
 {% tabs %}
 {% highlight xaml tabtitle="XAML" %}
@@ -101,8 +101,7 @@ The `SfDateTimePicker` provides a custom text to its column header by setting th
     <picker:SfDateTimePicker.ColumnHeaderView>
         <picker:DateTimePickerColumnHeaderView 
             DayHeaderText="Day Column" MonthHeaderText="Month Column" YearHeaderText="Year Column" 
-            HourHeaderText="Hour Column" MinuteHeaderText="Minute Column" SecondHeaderText="Second Column" 
-            MeridiemHeaderText="Meridiem Column" />
+            HourHeaderText="Hour Column" MinuteHeaderText="Minute Column" SecondHeaderText="Second Column" MilliSecondHeaderText="MilliSecond Column" MeridiemHeaderText="Meridiem Column" />
     </picker:SfDateTimePicker.ColumnHeaderView>
 </picker:SfDateTimePicker>
 
@@ -118,7 +117,8 @@ picker.ColumnHeaderView = new DateTimePickerColumnHeaderView()
     HourHeaderText = "Hour Column",
     MinuteHeaderText = "Minute Column",
     SecondHeaderText = "Second Column",
-    MeridiemHeaderText = "Meridiem Column",
+    MilliSecondHeaderText = "MilliSecond Column",
+    MeridiemHeaderText = "Meridiem Column", 
 };
 
 this.Content = picker;
