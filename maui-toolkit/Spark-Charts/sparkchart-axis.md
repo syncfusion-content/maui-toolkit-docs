@@ -47,21 +47,21 @@ Content = chart;
 
 ## Types
 
-Spark charts consist of two axes for measuring and categorizing data: a vertical (Y) axis and a horizontal (X) axis. The Y-axis always uses a numerical scale to measure data values, while the X-axis provides flexibility to change its type using the `AxisType` property, supporting Numeric, Category, and DateTime scales.
+Spark charts consist of two axes for measuring and categorizing data: a vertical (Y) axis and a horizontal (X) axis. The Y-axis always uses a numerical scale to measure data values, while the X-axis provides flexibility to change its type using the [AxisType](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SparkCharts.SfSparkChart.html#Syncfusion_Maui_Toolkit_SparkCharts_SfSparkChart_AxisType) property, supporting Numeric, Category, and DateTime scales.
 
 **XBindingPath Property**
 
-The `XBindingPath` property specifies the data source property that contains the X-axis values. It binds your collection’s data to the horizontal axis of the spark chart.
+The [XBindingPath](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SparkCharts.SfSparkChart.html#Syncfusion_Maui_Toolkit_SparkCharts_SfSparkChart_XBindingPath) property specifies the data source property that contains the X-axis values. It binds your collection’s data to the horizontal axis of the spark chart.
 
 **AxisType Property**
 
-The `AxisType` property of the spark charts determines how the chart interprets the X-axis values. Its default value is `SparkChartAxisType.Numeric`. It accepts the following SparkChartAxisType enum values
+The [AxisType](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SparkCharts.SfSparkChart.html#Syncfusion_Maui_Toolkit_SparkCharts_SfSparkChart_AxisType) property of the spark charts determines how the chart interprets the X-axis values. Its default value is `SparkChartAxisType.Numeric`. It accepts the following [SparkChartAxisType](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SparkCharts.SparkChartAxisType.html) enum values
 
-* `Category` - Treats X‑axis values as discrete categories. Use this for text or labels where each point represents a distinct group.
+* [Category](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SparkCharts.SparkChartAxisType.html#Syncfusion_Maui_Toolkit_SparkCharts_SparkChartAxisType_Category) - Treats X‑axis values as discrete categories. Use this for text or labels where each point represents a distinct group.
 
-* `DateTime` - Treats X‑axis values as dates/times. Use this to highlight trends and changes over time.
+* [DateTime](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SparkCharts.SparkChartAxisType.html#Syncfusion_Maui_Toolkit_SparkCharts_SparkChartAxisType_DateTime) - Treats X‑axis values as dates/times. Use this to highlight trends and changes over time.
 
-* `Numeric` - Treats X‑axis values as numbers. Use this for quantities, indices, or other continuous numeric data.
+* [Numeric](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SparkCharts.SparkChartAxisType.html#Syncfusion_Maui_Toolkit_SparkCharts_SparkChartAxisType_Numeric) - Treats X‑axis values as numbers. Use this for quantities, indices, or other continuous numeric data.
 
 {% tabs %}
 
