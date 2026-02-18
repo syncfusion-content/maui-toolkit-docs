@@ -12,9 +12,9 @@ keywords: .NET MAUI spark chart range band, MAUI range band, range band customiz
 
 Range bands are used to highlight a particular region in the spark chart along the Y-axis, making it easy to identify specific value ranges or thresholds.
 
-* `RangeBandStart` - Specifies the starting Y-axis value where the range band begins.
-* `RangeBandEnd` - Specifies the ending Y-axis value where the range band ends.
-* `RangeBandFill` - Specifies the fill color for the range band. This color is applied to the area between RangeBandStart and RangeBandEnd values on the Y-axis.
+* [RangeBandStart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SparkCharts.SfSparkChart.html#Syncfusion_Maui_Toolkit_SparkCharts_SfSparkChart_RangeBandStart) - Specifies the starting Y-axis value where the range band begins.
+* [RangeBandEnd](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SparkCharts.SfSparkChart.html#Syncfusion_Maui_Toolkit_SparkCharts_SfSparkChart_RangeBandEnd) - Specifies the ending Y-axis value where the range band ends.
+* [RangeBandFill](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SparkCharts.SfSparkChart.html#Syncfusion_Maui_Toolkit_SparkCharts_SfSparkChart_RangeBandFill) - Specifies the fill color for the range band. This color is applied to the area between RangeBandStart and RangeBandEnd values on the Y-axis.
 
 {% tabs %}
 
