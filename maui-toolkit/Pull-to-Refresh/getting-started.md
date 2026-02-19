@@ -17,8 +17,8 @@ This section provides instructions for setting up and configuring PullToRefresh 
 ## Prerequisites
 Before proceeding, ensure the following are in place:
 
- 1. Install [.NET 8 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/8.0) or later.
- 2. Set up a .NET MAUI environment with Visual Studio 2022 (v17.12 or later) or VS Code.
+ 1. Install [.NET 9 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/9.0) or later.
+ 2. Set up a .NET MAUI environment with Visual Studio 2026 (v18.0.0 or later).
 
 ## Step 1: Create a .NET MAUI project
 
