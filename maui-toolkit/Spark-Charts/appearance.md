@@ -153,3 +153,4 @@ this.Content = sparkchart;
 {% endtabs %}
 
 ![Spark Line Chart With Padding](customize_datapoints_images/MAUI_Line_Sparkline_with_padding.png)
+
