@@ -161,5 +161,4 @@ this.content = chart;
 
 ![Axis customization in .NET MAUI Spark Line](sparkchart_axis_line_images/axis_customization.png)
 
-
 N> Axis feature is applicable for all the [SfSparkChart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SparkCharts.SfSparkChart.html) types except [SfSparkWinLossChart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SparkCharts.SfSparkWinLossChart.html).
