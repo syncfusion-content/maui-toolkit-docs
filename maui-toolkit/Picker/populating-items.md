@@ -174,7 +174,7 @@ In picker control, the items can be customized with a custom view of all items b
 
     <Grid>
         <Grid.Resources>
-            <DataTemplate x:Key="customView">
+            <DataTemplate x:Key="customView" x:DataType="picker:PickerItemDetails">
                 <Grid>
                     <Label HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="Red" Text="{Binding Data}"/>    
                 </Grid>
