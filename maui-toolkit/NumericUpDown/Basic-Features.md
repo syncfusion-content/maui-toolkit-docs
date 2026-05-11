@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Basic Features in .NET MAUI Numeric UpDown control | Syncfusion<sup>®</sup>
+title: Basic Features in .NET MAUI Numeric UpDown control | Syncfusion
 description: Learn about Basic Features support in Syncfusion<sup>®</sup> .NET MAUI Numeric UpDown (SfNumericUpDown) control and more.
 platform: maui
 control: SfNumericUpDown
