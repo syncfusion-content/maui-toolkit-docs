@@ -391,3 +391,41 @@ this.Content = picker;
 {% endtabs %}
 
    ![Date Time picker coloumn divider color in .NET MAUI Date Time picker.](images/customizations/maui-time-picker-column-divider-color.png)
+
+## Customization of Active View
+
+### Active View
+
+You can control the initial active tab (Date or Time) in the [SfDateTimePicker](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Picker.SfDateTimePicker.html) by setting the [ActiveView]() property. This property uses the [DateTimePickerView](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Picker.PickerBase.html) enumeration with two values: `Date` and `Time`. The default value is `Date`.
+
+{% tabs %}
+
+{% highlight xaml tabtitle="XAML" %}
+
+<picker:SfDateTimePicker ActiveView="Time">
+    
+</picker:SfDateTimePicker>
+
+{% endhighlight %}
+
+{% highlight c# tabtitle="C#" %}
+
+using Syncfusion.Maui.Toolkit.Picker;
+. . .
+
+public partial class MainPage : ContentPage
+{
+    public MainPage()
+    {
+        InitializeComponent();
+        SfDateTimePicker sfDateTimePicker = new SfDateTimePicker();
+        sfDateTimePicker.ActiveView = DateTimePickerView.Time;
+        this.Content = sfDateTimePicker;
+    }
+}
+
+{% endhighlight %}
+
+{% endtabs %}
+
+   ![Active View in the .NET MAUI Date Time Picker](images/customizations/maui-date-time-picker-active-view.gif){:width="260" height="260"}
