@@ -29,6 +29,36 @@ The different types of formats are:
 
 [`yyyy_MM_dd`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Picker.PickerDateFormat.html#Syncfusion_Maui_Toolkit_Picker_PickerDateFormat_yyyy_MM_dd) - Represents the year month day in yyyy/MM/dd format.
 
+[`MM_dd`]() - Represents the month day in MM/dd format.
+
+[`MMM_dd_yyyy`]() - Represents the  month day year in MMM/dd/yyyy format.
+
+[`MMMM_dd_yyyy`]() - Represents the month day year in MMMM/dd/yyyy format.
+
+[`MMMM_yyyy`]() - Represents the  month year in MMMM/yyyy format.
+
+[`yyyy_MM`]() - Represents the year month in yyyy/MM format.
+
+[`yyyy_MMM`]() - Represents the year month in yyyy/MMM format.
+
+[`yyyy_MMMM`]() - Represents the year month in yyyy/MMMM format.
+
+[`yyyy_MMM_dd`]() - Represents the year month day in yyyy/MMM/dd format.
+
+[`yyyy_MMMM_dd`]() - Represents the year month day in yyyy/MMMM/dd format.
+
+[`dd_MMM`]() - Represents the day month in dd/MMM format.
+
+[`dd_MMMM`]() - Represents the day month in dd/MMMM format.
+
+[`dd_MMMM_yyyy`]() - Represents the day month year in dd/MMMM/yyyy format.
+
+[`ddd_dd_MM_YYYY`]() - Represents the weekday day month year in ddd/dd/MM/YYYY format.
+
+[`yyyy_MM_dd_ddd`]() - Represents the year month day weekday in yyyy/MM/dd/ddd format.
+
+[`MM_ddd_ddd_yyyy`]() - Represents the month, followed by the abbreviated weekday repeated twice, and then the year in MM/ddd/ddd/yyyy format.
+
 [`Default`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Picker.PickerDateFormat.html#Syncfusion_Maui_Toolkit_Picker_PickerDateFormat_Default) - Represents the day month year in default culture based format.
 
 The following example demonstrates the Date Picker with the custom format [PickerDateFormat.MM_dd_yyyy](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Picker.PickerDateFormat.html#Syncfusion_Maui_Toolkit_Picker_PickerDateFormat_MM_dd_yyyy).
