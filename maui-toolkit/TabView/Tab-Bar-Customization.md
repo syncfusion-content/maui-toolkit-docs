@@ -145,6 +145,23 @@ SfTabView tabView = new SfTabView();
 
 {% endtabs %}
 
+## Header Item Spacing
+
+The [HeaderItemSpacing](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SfTabView.html#Syncfusion_Maui_Toolkit_TabView_SfTabView_HeaderItemSpacing) property is used to control the spacing between adjacent tab header items in the SfTabView. This property helps improve readability and visual alignment by adjusting the gap between each tab header.
+
+{% tabs %}
+
+{% highlight xaml %}
+<tabView:SfTabView HeaderItemSpacing="20"/>
+{% endhighlight %}
+
+{% highlight C# %}
+SfTabView tabView = new SfTabView();
+tabView.HeaderItemSpacing= 20 ;
+{% endhighlight %}
+
+{% endtabs %}
+
 ## Tab bar placement options 
 
 The .NET MAUI Tab View provides two options for determining how the tab bar aligns relative to the tab content. The options are top and bottom. This can be done using the [TabBarPlacement](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SfTabView.html#Syncfusion_Maui_Toolkit_TabView_SfTabView_TabBarPlacement) property.

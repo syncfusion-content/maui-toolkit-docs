@@ -298,3 +298,42 @@ this.Content = navigationDrawer;
 {% endtabs %}
 
 ![Content](Images/panel-content/navigation_drawer_content.png)
+
+## Drawer contentBackground
+
+You can customize the background color of the drawer’s content area by setting the [ContentBackground](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NavigationDrawer.DrawerSettings.html#Syncfusion_Maui_Toolkit_NavigationDrawer_DrawerSettings_ContentBackground) property in `DrawerSettings`.
+
+{% tabs %}
+
+{% highlight xaml %} 
+
+<navigationdrawer:SfNavigationDrawer x:Name="navigationDrawer">
+    <navigationdrawer:SfNavigationDrawer.DrawerSettings>
+        <navigationdrawer:DrawerSettings ContentBackground="Red">
+            <navigationdrawer:DrawerSettings.DrawerContentView>
+                <Grid BackgroundColor="#6750A4">
+                    <VerticalStackLayout VerticalOptions="Center"
+                     HorizontalOptions="Center">
+                        <Label Text="Drawer Content"/>
+                    </VerticalStackLayout>
+                </Grid>
+            </navigationdrawer:DrawerSettings.DrawerContentView>
+        </navigationdrawer:DrawerSettings>
+    </navigationdrawer:SfNavigationDrawer.DrawerSettings>
+</navigationdrawer:SfNavigationDrawer>
+	
+{% endhighlight %}
+
+{% highlight c# %}
+        
+SfNavigationDrawer navigationDrawer = new SfNavigationDrawer();
+DrawerSettings drawerSettings = new DrawerSettings()
+{
+    ContentBackground = Colors.Red
+};
+navigationDrawer.DrawerSettings = drawerSettings;
+this.Content = navigationDrawer;
+  
+{% endhighlight %}
+
+{% endtabs %}
