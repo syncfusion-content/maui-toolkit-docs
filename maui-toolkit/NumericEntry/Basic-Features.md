@@ -16,22 +16,46 @@ You can prompt the user with any information using the [Placeholder](https://hel
 {% tabs %}
 {% highlight xaml %}
 
-<editors:SfNumberBox HorizontalOptions="Center" 
+<editors:SfNumericEntry HorizontalOptions="Center" 
                      VerticalOptions="Center" 
                      Placeholder="Enter input here..." />
 
 {% endhighlight %}
 {% highlight C# %}
 
-SfNumberBox SfNumberBox= new SfNumberBox();
-SfNumberBox.Placeholder = "Enter input here...";
-sfNumberBox.HorizontalOptions = LayoutOptions.Center;
-sfNumberBox.VerticalOptions = LayoutOptions.Center;
+SfNumericEntry SfNumericEntry= new SfNumericEntry();
+SfNumericEntry.Placeholder = "Enter input here...";
+SfNumericEntry.HorizontalOptions = LayoutOptions.Center;
+SfNumericEntry.VerticalOptions = LayoutOptions.Center;
 
 {% endhighlight %}
 {% endtabs %}
 
 ![.NET MAUI NumericEntry Placeholder Text](GettingStarted_images/placeholder_text.png)
+
+## Placeholder Color
+
+The color of the placeholder text in the `NumericEntry` control can be customized using the [PlaceholderColor](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericEntry.SfNumericEntry.html#Syncfusion_Maui_Toolkit_NumericEntry_SfNumericEntry_PlaceholderColor) property.
+
+{% tabs %}
+{% highlight xaml %}
+
+<editors:SfNumericEntry HorizontalOptions="Center"
+                        VerticalOptions="Center"
+                        Placeholder="Enter input here..."
+                        PlaceholderColor="Gray" />
+
+{% endhighlight %}
+{% highlight C# %}
+
+SfNumericEntry sfNumericEntry = new SfNumericEntry();
+sfNumericEntry.HorizontalOptions = LayoutOptions.Center;
+sfNumericEntry.VerticalOptions = LayoutOptions.Center;
+sfNumericEntry.Placeholder = "Enter input here...";
+sfNumericEntry.PlaceholderColor = Colors.Gray;
+
+{% endhighlight %}
+{% endtabs %}
 
 ## Clear button visibility 
 
@@ -65,6 +89,30 @@ If IsEditable is true
 If IsEditable is false
 
 ![.NET MAUI NumericEntry without Clear Button](GettingStarted_images/clearbutton_collapsed.png)
+
+## Clear Button Color
+
+The color of the clear button in the `NumericEntry` control can be customized using the [ClearButtonColor](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericEntry.SfNumericEntry.html#Syncfusion_Maui_Toolkit_NumericEntry_SfNumericEntry_ClearButtonColor) property.
+
+{% tabs %}
+{% highlight xaml %}
+
+<editors:SfNumericEntry ShowClearButton="True"
+                        IsEditable="True"
+                        Value="10"
+                        ClearButtonColor="Red" />
+
+{% endhighlight %}
+{% highlight C# %}
+
+SfNumericEntry sfNumericEntry = new SfNumericEntry();
+sfNumericEntry.Value = 10;
+sfNumericEntry.ShowClearButton = true;
+sfNumericEntry.IsEditable = true;
+sfNumericEntry.ClearButtonColor = Colors.Red;
+
+{% endhighlight %}
+{% endtabs %}
 
 ## Value Change Mode
 
@@ -230,6 +278,112 @@ The following image illustrates the result of the above code:
 
 ![HorizontalTextAlignment](GettingStarted_images/textalignment.png)
 
+## Font Customization
+
+The `NumericEntry` control allows you to customize the appearance of the text using the [TextColor](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericEntry.SfNumericEntry.html#Syncfusion_Maui_Toolkit_NumericEntry_SfNumericEntry_TextColor), [FontSize](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericEntry.SfNumericEntry.html#Syncfusion_Maui_Toolkit_NumericEntry_SfNumericEntry_FontSize), [FontFamily](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericEntry.SfNumericEntry.html#Syncfusion_Maui_Toolkit_NumericEntry_SfNumericEntry_FontFamily), and [FontAttributes](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericEntry.SfNumericEntry.html#Syncfusion_Maui_Toolkit_NumericEntry_SfNumericEntry_FontAttributes) properties.
+
+### Text Color
+
+The color of the text in the `NumericEntry` control can be customized using the [TextColor](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericEntry.SfNumericEntry.html#Syncfusion_Maui_Toolkit_NumericEntry_SfNumericEntry_TextColor) property.
+
+{% tabs %}
+{% highlight xaml %}
+
+<editors:SfNumericEntry HorizontalOptions="Center"
+                        VerticalOptions="Center"
+                        Value="100"
+                        TextColor="Blue" />
+
+{% endhighlight %}
+{% highlight C# %}
+
+SfNumericEntry sfNumericEntry = new SfNumericEntry();
+sfNumericEntry.HorizontalOptions = LayoutOptions.Center;
+sfNumericEntry.VerticalOptions = LayoutOptions.Center;
+sfNumericEntry.Value = 100;
+sfNumericEntry.TextColor = Colors.Blue;
+
+{% endhighlight %}
+{% endtabs %}
+
+![.NET MAUI NumericEntry Text Color](GettingStarted_images/textcolor.png)
+
+### Font Size
+
+The size of the text in the `NumericEntry` control can be customized using the [FontSize](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericEntry.SfNumericEntry.html#Syncfusion_Maui_Toolkit_NumericEntry_SfNumericEntry_FontSize) property.
+
+{% tabs %}
+{% highlight xaml %}
+
+<editors:SfNumericEntry HorizontalOptions="Center"
+                        VerticalOptions="Center"
+                        Value="100"
+                        FontSize="20" />
+
+{% endhighlight %}
+{% highlight C# %}
+
+SfNumericEntry sfNumericEntry = new SfNumericEntry();
+sfNumericEntry.HorizontalOptions = LayoutOptions.Center;
+sfNumericEntry.VerticalOptions = LayoutOptions.Center;
+sfNumericEntry.Value = 100;
+sfNumericEntry.FontSize = 20;
+
+{% endhighlight %}
+{% endtabs %}
+
+![.NET MAUI NumericEntry Font Size](GettingStarted_images/fontsize.png)
+
+### Font Family
+
+The font family of the text in the `NumericEntry` control can be customized using the [FontFamily](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericEntry.SfNumericEntry.html#Syncfusion_Maui_Toolkit_NumericEntry_SfNumericEntry_FontFamily) property.
+
+{% tabs %}
+{% highlight xaml %}
+
+<editors:SfNumericEntry HorizontalOptions="Center"
+                        VerticalOptions="Center"
+                        Value="100"
+                        FontFamily="OpenSansRegular" />
+
+{% endhighlight %}
+{% highlight C# %}
+
+SfNumericEntry sfNumericEntry = new SfNumericEntry();
+sfNumericEntry.HorizontalOptions = LayoutOptions.Center;
+sfNumericEntry.VerticalOptions = LayoutOptions.Center;
+sfNumericEntry.Value = 100;
+sfNumericEntry.FontFamily = "OpenSansRegular";
+
+{% endhighlight %}
+{% endtabs %}
+
+![.NET MAUI NumericEntry Font Family](GettingStarted_images/fontfamily.png)
+
+### Font Attributes
+
+The font style of the text in the `NumericEntry` control can be customized using the [FontAttributes](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericEntry.SfNumericEntry.html#Syncfusion_Maui_Toolkit_NumericEntry_SfNumericEntry_FontAttributes) property. The supported font attributes are `Bold`, `Italic`, and `None`.
+
+{% tabs %}
+{% highlight xaml %}
+
+<editors:SfNumericEntry HorizontalOptions="Center"
+                        VerticalOptions="Center"
+                        Value="100"
+                        FontAttributes="Bold" />
+
+{% endhighlight %}
+{% highlight C# %}
+
+SfNumericEntry sfNumericEntry = new SfNumericEntry();
+sfNumericEntry.HorizontalOptions = LayoutOptions.Center;
+sfNumericEntry.VerticalOptions = LayoutOptions.Center;
+sfNumericEntry.Value = 100;
+sfNumericEntry.FontAttributes = FontAttributes.Bold;
+
+{% endhighlight %}
+{% endtabs %}
+
 ## ReturnType
 
 The `ReturnType` property specifies the return button (e.g., Next, Done, Go) of the keyboard. It helps manage the flow between multiple input fields by defining what happens when the action button is pressed.
@@ -255,6 +409,56 @@ sfNumericEntry.ReturnType = ReturnType.Next;
 {% endtabs %}
 
 ![.NET MAUI NumericEntry ReturnType](GettingStarted_images/returntype.png)
+
+## Cursor Position
+
+The [CursorPosition](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericEntry.SfNumericEntry.html#Syncfusion_Maui_Toolkit_NumericEntry_SfNumericEntry_CursorPosition) property is used to get or set the position of the cursor within the `NumericEntry` control. The cursor position index starts from **0**.
+
+{% tabs %}
+{% highlight xaml %}
+
+<editors:SfNumericEntry HorizontalOptions="Center"
+                        VerticalOptions="Center"
+                        Value="12345"
+                        CursorPosition="3" />
+
+{% endhighlight %}
+{% highlight C# %}
+
+SfNumericEntry sfNumericEntry = new SfNumericEntry();
+sfNumericEntry.HorizontalOptions = LayoutOptions.Center;
+sfNumericEntry.VerticalOptions = LayoutOptions.Center;
+sfNumericEntry.Value = 12345;
+sfNumericEntry.CursorPosition = 3;
+
+{% endhighlight %}
+{% endtabs %}
+
+## Selection Length
+
+The [SelectionLength](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericEntry.SfNumericEntry.html#Syncfusion_Maui_Toolkit_NumericEntry_SfNumericEntry_SelectionLength) property is used to get or set the length of the selected text in the `NumericEntry` control. This can be used with the `CursorPosition` property to programmatically select a portion of the numeric text.
+
+{% tabs %}
+{% highlight xaml %}
+
+<editors:SfNumericEntry HorizontalOptions="Center"
+                        VerticalOptions="Center"
+                        Value="12345"
+                        CursorPosition="1"
+                        SelectionLength="3" />
+
+{% endhighlight %}
+{% highlight C# %}
+
+SfNumericEntry sfNumericEntry = new SfNumericEntry();
+sfNumericEntry.HorizontalOptions = LayoutOptions.Center;
+sfNumericEntry.VerticalOptions = LayoutOptions.Center;
+sfNumericEntry.Value = 12345;
+sfNumericEntry.CursorPosition = 1;
+sfNumericEntry.SelectionLength = 3;
+
+{% endhighlight %}
+{% endtabs %}
 
 ## Clear button customization
 

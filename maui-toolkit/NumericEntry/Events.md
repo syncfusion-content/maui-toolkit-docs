@@ -84,3 +84,153 @@ private void sfNumericEntry_Completed(object sender, EventArgs e)
 
 {% endhighlight %}
 {% endtabs %}
+
+## Focused
+
+The [Focused](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericEntry.SfNumericEntry.html#Syncfusion_Maui_Toolkit_NumericEntry_SfNumericEntry_Focused) event is triggered when the `NumericEntry` control receives focus. This event can be used to perform actions such as highlighting the control, displaying helper text, or resetting validation messages when the user starts interacting with the field.
+
+{% tabs %}
+{% highlight xaml %}
+
+<editors:SfNumericEntry HorizontalOptions="Center"
+                        VerticalOptions="Center"
+                        Focused="sfNumericEntry_Focused" />
+
+{% endhighlight %}
+{% highlight C# %}
+
+SfNumericEntry sfNumericEntry = new SfNumericEntry();
+sfNumericEntry.HorizontalOptions = LayoutOptions.Center;
+sfNumericEntry.VerticalOptions = LayoutOptions.Center;
+sfNumericEntry.Focused += sfNumericEntry_Focused;
+
+{% endhighlight %}
+{% endtabs %}
+
+You can handle the event as follows.
+
+{% tabs %}
+{% highlight C# %}
+
+private void sfNumericEntry_Focused(object sender, FocusEventArgs e)
+{
+    // To do your requirement here.
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+## Unfocused
+
+The [Unfocused](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericEntry.SfNumericEntry.html#Syncfusion_Maui_Toolkit_NumericEntry_SfNumericEntry_Unfocused) event is triggered when the `NumericEntry` control loses focus. This event can be used to perform actions such as validating input, saving data, or updating the UI when the user moves away from the field.
+
+{% tabs %}
+{% highlight xaml %}
+
+<editors:SfNumericEntry HorizontalOptions="Center"
+                        VerticalOptions="Center"
+                        Unfocused="sfNumericEntry_Unfocused" />
+
+{% endhighlight %}
+{% highlight C# %}
+
+SfNumericEntry sfNumericEntry = new SfNumericEntry();
+sfNumericEntry.HorizontalOptions = LayoutOptions.Center;
+sfNumericEntry.VerticalOptions = LayoutOptions.Center;
+sfNumericEntry.Unfocused += sfNumericEntry_Unfocused;
+
+{% endhighlight %}
+{% endtabs %}
+
+You can handle the event as follows.
+
+{% tabs %}
+{% highlight C# %}
+
+private void sfNumericEntry_Unfocused(object sender, FocusEventArgs e)
+{
+    // To do your requirement here.
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+## Methods
+
+### Focus
+
+The [Focus()](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericEntry.SfNumericEntry.html) method is used to programmatically set focus to the `NumericEntry` control. This is useful when you want to automatically focus the control on page load or after a specific user action.
+
+{% tabs %}
+{% highlight xaml %}
+
+<editors:SfNumericEntry x:Name="sfNumericEntry"
+                        HorizontalOptions="Center"
+                        VerticalOptions="Center" />
+
+<Button Text="Set Focus" Clicked="OnSetFocusClicked" />
+
+{% endhighlight %}
+{% highlight C# %}
+
+SfNumericEntry sfNumericEntry = new SfNumericEntry();
+sfNumericEntry.HorizontalOptions = LayoutOptions.Center;
+sfNumericEntry.VerticalOptions = LayoutOptions.Center;
+
+// Programmatically set focus.
+sfNumericEntry.Focus();
+
+{% endhighlight %}
+{% endtabs %}
+
+You can handle the button click to set focus as follows.
+
+{% tabs %}
+{% highlight C# %}
+
+private void OnSetFocusClicked(object sender, EventArgs e)
+{
+    sfNumericEntry.Focus();
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+### Unfocus
+
+The [Unfocus()](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericEntry.SfNumericEntry.html) method is used to programmatically remove focus from the `NumericEntry` control. This is useful when you want to dismiss the keyboard or trigger validation after a specific action.
+
+{% tabs %}
+{% highlight xaml %}
+
+<editors:SfNumericEntry x:Name="sfNumericEntry"
+                        HorizontalOptions="Center"
+                        VerticalOptions="Center" />
+
+<Button Text="Remove Focus" Clicked="OnRemoveFocusClicked" />
+
+{% endhighlight %}
+{% highlight C# %}
+
+SfNumericEntry sfNumericEntry = new SfNumericEntry();
+sfNumericEntry.HorizontalOptions = LayoutOptions.Center;
+sfNumericEntry.VerticalOptions = LayoutOptions.Center;
+
+// Programmatically remove focus.
+sfNumericEntry.Unfocus();
+
+{% endhighlight %}
+{% endtabs %}
+
+You can handle the button click to remove focus as follows.
+
+{% tabs %}
+{% highlight C# %}
+
+private void OnRemoveFocusClicked(object sender, EventArgs e)
+{
+    sfNumericEntry.Unfocus();
+}
+
+{% endhighlight %}
+{% endtabs %}
