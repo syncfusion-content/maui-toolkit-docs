@@ -299,7 +299,7 @@ this.Content = navigationDrawer;
 
 ![Content](Images/panel-content/navigation_drawer_content.png)
 
-## Drawer contentBackground
+## Drawer content background
 
 You can customize the background color of the drawer’s content area by setting the [ContentBackground](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NavigationDrawer.DrawerSettings.html#Syncfusion_Maui_Toolkit_NavigationDrawer_DrawerSettings_ContentBackground) property in `DrawerSettings`.
 

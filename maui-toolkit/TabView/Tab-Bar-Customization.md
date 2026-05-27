@@ -145,7 +145,7 @@ SfTabView tabView = new SfTabView();
 
 {% endtabs %}
 
-## Header Item Spacing
+## Header item spacing
 
 The [HeaderItemSpacing](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SfTabView.html#Syncfusion_Maui_Toolkit_TabView_SfTabView_HeaderItemSpacing) property is used to control the spacing between adjacent tab header items in the SfTabView. This property helps improve readability and visual alignment by adjusting the gap between each tab header.
 
