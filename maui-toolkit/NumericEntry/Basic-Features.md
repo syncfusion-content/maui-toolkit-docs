@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Basic Features in .NET MAUI Numeric Entry control | Syncfusion<sup>®</sup>
+title: Basic Features in .NET MAUI Numeric Entry control | Syncfusion®
 description: Learn about Basic Features support in Syncfusion<sup>®</sup> .NET MAUI Numeric Entry (SfNumericEntry) control and more.
 platform: maui
 control: SfNumericEntry
@@ -306,8 +306,6 @@ sfNumericEntry.TextColor = Colors.Blue;
 {% endhighlight %}
 {% endtabs %}
 
-![.NET MAUI NumericEntry Text Color](GettingStarted_images/textcolor.png)
-
 ### Font Size
 
 The size of the text in the `NumericEntry` control can be customized using the [FontSize](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericEntry.SfNumericEntry.html#Syncfusion_Maui_Toolkit_NumericEntry_SfNumericEntry_FontSize) property.
@@ -332,8 +330,6 @@ sfNumericEntry.FontSize = 20;
 {% endhighlight %}
 {% endtabs %}
 
-![.NET MAUI NumericEntry Font Size](GettingStarted_images/fontsize.png)
-
 ### Font Family
 
 The font family of the text in the `NumericEntry` control can be customized using the [FontFamily](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericEntry.SfNumericEntry.html#Syncfusion_Maui_Toolkit_NumericEntry_SfNumericEntry_FontFamily) property.
@@ -357,8 +353,6 @@ sfNumericEntry.FontFamily = "OpenSansRegular";
 
 {% endhighlight %}
 {% endtabs %}
-
-![.NET MAUI NumericEntry Font Family](GettingStarted_images/fontfamily.png)
 
 ### Font Attributes
 
