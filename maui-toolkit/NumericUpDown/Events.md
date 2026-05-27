@@ -84,3 +84,153 @@ private void sfNumericUpDown_Completed(object sender, EventArgs e)
 
 {% endhighlight %}
 {% endtabs %}
+
+## Focused
+
+The [Focused](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericEntry.SfNumericEntry.html#Syncfusion_Maui_Toolkit_NumericEntry_SfNumericEntry_Focused) event is triggered when the `NumericUpDown` control receives focus. This event can be used to perform actions such as highlighting the control or displaying additional information when it becomes active.
+
+{% tabs %}
+{% highlight xaml %}
+
+<editors:SfNumericUpDown HorizontalOptions="Center"
+                         VerticalOptions="Center"
+                         Focused="sfNumericUpDown_Focused" />
+
+{% endhighlight %}
+{% highlight C# %}
+
+SfNumericUpDown sfNumericUpDown = new SfNumericUpDown();
+sfNumericUpDown.HorizontalOptions = LayoutOptions.Center;
+sfNumericUpDown.VerticalOptions = LayoutOptions.Center;
+sfNumericUpDown.Focused += sfNumericUpDown_Focused;
+
+{% endhighlight %}
+{% endtabs %}
+
+You can handle the event as follows.
+
+{% tabs %}
+{% highlight C# %}
+
+private void sfNumericUpDown_Focused(object sender, FocusEventArgs e)
+{
+    // To do your requirement here.
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+## Unfocused
+
+The [Unfocused](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericEntry.SfNumericEntry.html#Syncfusion_Maui_Toolkit_NumericEntry_SfNumericEntry_Unfocused) event is triggered when the `NumericUpDown` control loses focus. This event can be used to perform actions such as validating the entered value or updating the UI when the control becomes inactive.
+
+{% tabs %}
+{% highlight xaml %}
+
+<editors:SfNumericUpDown HorizontalOptions="Center"
+                         VerticalOptions="Center"
+                         Unfocused="sfNumericUpDown_Unfocused" />
+
+{% endhighlight %}
+{% highlight C# %}
+
+SfNumericUpDown sfNumericUpDown = new SfNumericUpDown();
+sfNumericUpDown.HorizontalOptions = LayoutOptions.Center;
+sfNumericUpDown.VerticalOptions = LayoutOptions.Center;
+sfNumericUpDown.Unfocused += sfNumericUpDown_Unfocused;
+
+{% endhighlight %}
+{% endtabs %}
+
+You can handle the event as follows.
+
+{% tabs %}
+{% highlight C# %}
+
+private void sfNumericUpDown_Unfocused(object sender, FocusEventArgs e)
+{
+    // To do your requirement here.
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+## Methods
+
+### Focus
+
+The [Focus()](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericEntry.SfNumericEntry.html) method is used to programmatically set the focus to the `NumericUpDown` control.
+
+{% tabs %}
+{% highlight xaml %}
+
+<editors:SfNumericUpDown x:Name="sfNumericUpDown"
+                         HorizontalOptions="Center"
+                         VerticalOptions="Center" />
+
+<Button Text="Set Focus" Clicked="OnSetFocusClicked" />
+
+{% endhighlight %}
+{% highlight C# %}
+
+SfNumericUpDown sfNumericUpDown = new SfNumericUpDown();
+sfNumericUpDown.HorizontalOptions = LayoutOptions.Center;
+sfNumericUpDown.VerticalOptions = LayoutOptions.Center;
+
+// Call Focus() method to programmatically focus the control.
+sfNumericUpDown.Focus();
+
+{% endhighlight %}
+{% endtabs %}
+
+You can handle the button click as follows.
+
+{% tabs %}
+{% highlight C# %}
+
+private void OnSetFocusClicked(object sender, EventArgs e)
+{
+    sfNumericUpDown.Focus();
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+### Unfocus
+
+The [Unfocus()](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericEntry.SfNumericEntry.html) method is used to programmatically remove the focus from the `NumericUpDown` control.
+
+{% tabs %}
+{% highlight xaml %}
+
+<editors:SfNumericUpDown x:Name="sfNumericUpDown"
+                         HorizontalOptions="Center"
+                         VerticalOptions="Center" />
+
+<Button Text="Remove Focus" Clicked="OnRemoveFocusClicked" />
+
+{% endhighlight %}
+{% highlight C# %}
+
+SfNumericUpDown sfNumericUpDown = new SfNumericUpDown();
+sfNumericUpDown.HorizontalOptions = LayoutOptions.Center;
+sfNumericUpDown.VerticalOptions = LayoutOptions.Center;
+
+// Call Unfocus() method to programmatically remove focus from the control.
+sfNumericUpDown.Unfocus();
+
+{% endhighlight %}
+{% endtabs %}
+
+You can handle the button click as follows.
+
+{% tabs %}
+{% highlight C# %}
+
+private void OnRemoveFocusClicked(object sender, EventArgs e)
+{
+    sfNumericUpDown.Unfocus();
+}
+
+{% endhighlight %}
+{% endtabs %}
