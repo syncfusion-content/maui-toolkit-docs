@@ -92,26 +92,15 @@ The [Focused](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolki
 {% tabs %}
 {% highlight xaml %}
 
-<editors:SfNumericUpDown HorizontalOptions="Center"
-                         VerticalOptions="Center"
-                         Focused="sfNumericUpDown_Focused" />
+<editors:SfNumericUpDown Focused="sfNumericUpDown_Focused" />
 
 {% endhighlight %}
 {% highlight C# %}
 
 SfNumericUpDown sfNumericUpDown = new SfNumericUpDown();
-sfNumericUpDown.HorizontalOptions = LayoutOptions.Center;
-sfNumericUpDown.VerticalOptions = LayoutOptions.Center;
 sfNumericUpDown.Focused += sfNumericUpDown_Focused;
 
-{% endhighlight %}
-{% endtabs %}
-
-You can handle the event as follows.
-
-{% tabs %}
-{% highlight C# %}
-
+// You can handle the event as follows.
 private void sfNumericUpDown_Focused(object sender, FocusEventArgs e)
 {
     // To do your requirement here.
@@ -127,26 +116,15 @@ The [Unfocused](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Tool
 {% tabs %}
 {% highlight xaml %}
 
-<editors:SfNumericUpDown HorizontalOptions="Center"
-                         VerticalOptions="Center"
-                         Unfocused="sfNumericUpDown_Unfocused" />
+<editors:SfNumericUpDown Unfocused="sfNumericUpDown_Unfocused" />
 
 {% endhighlight %}
 {% highlight C# %}
 
 SfNumericUpDown sfNumericUpDown = new SfNumericUpDown();
-sfNumericUpDown.HorizontalOptions = LayoutOptions.Center;
-sfNumericUpDown.VerticalOptions = LayoutOptions.Center;
 sfNumericUpDown.Unfocused += sfNumericUpDown_Unfocused;
 
-{% endhighlight %}
-{% endtabs %}
-
-You can handle the event as follows.
-
-{% tabs %}
-{% highlight C# %}
-
+// You can handle the event as follows.
 private void sfNumericUpDown_Unfocused(object sender, FocusEventArgs e)
 {
     // To do your requirement here.
@@ -164,9 +142,7 @@ The [Focus()](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolki
 {% tabs %}
 {% highlight xaml %}
 
-<editors:SfNumericUpDown x:Name="sfNumericUpDown"
-                         HorizontalOptions="Center"
-                         VerticalOptions="Center" />
+<editors:SfNumericUpDown x:Name="sfNumericUpDown" />
 
 <Button Text="Set Focus" Clicked="OnSetFocusClicked" />
 
@@ -174,20 +150,11 @@ The [Focus()](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolki
 {% highlight C# %}
 
 SfNumericUpDown sfNumericUpDown = new SfNumericUpDown();
-sfNumericUpDown.HorizontalOptions = LayoutOptions.Center;
-sfNumericUpDown.VerticalOptions = LayoutOptions.Center;
 
 // Call Focus() method to programmatically focus the control.
 sfNumericUpDown.Focus();
 
-{% endhighlight %}
-{% endtabs %}
-
-You can handle the button click as follows.
-
-{% tabs %}
-{% highlight C# %}
-
+// You can handle the button click as follows.
 private void OnSetFocusClicked(object sender, EventArgs e)
 {
     sfNumericUpDown.Focus();
@@ -203,9 +170,7 @@ The [Unfocus()](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Tool
 {% tabs %}
 {% highlight xaml %}
 
-<editors:SfNumericUpDown x:Name="sfNumericUpDown"
-                         HorizontalOptions="Center"
-                         VerticalOptions="Center" />
+<editors:SfNumericUpDown x:Name="sfNumericUpDown" />
 
 <Button Text="Remove Focus" Clicked="OnRemoveFocusClicked" />
 
@@ -213,20 +178,11 @@ The [Unfocus()](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Tool
 {% highlight C# %}
 
 SfNumericUpDown sfNumericUpDown = new SfNumericUpDown();
-sfNumericUpDown.HorizontalOptions = LayoutOptions.Center;
-sfNumericUpDown.VerticalOptions = LayoutOptions.Center;
 
 // Call Unfocus() method to programmatically remove focus from the control.
 sfNumericUpDown.Unfocus();
 
-{% endhighlight %}
-{% endtabs %}
-
-You can handle the button click as follows.
-
-{% tabs %}
-{% highlight C# %}
-
+// You can handle the button click as follows.
 private void OnRemoveFocusClicked(object sender, EventArgs e)
 {
     sfNumericUpDown.Unfocus();

@@ -35,22 +35,18 @@ SfNumericEntry.VerticalOptions = LayoutOptions.Center;
 
 ## Placeholder Color
 
-The color of the placeholder text in the `NumericEntry` control can be customized using the [PlaceholderColor](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericEntry.SfNumericEntry.html#Syncfusion_Maui_Toolkit_NumericEntry_SfNumericEntry_PlaceholderColor) property.
+The [PlaceholderColor](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericEntry.SfNumericEntry.html#Syncfusion_Maui_Toolkit_NumericEntry_SfNumericEntry_PlaceholderColor) propertyis used to customize the color of the placeholder text in the `NumericEntry`. By default, the placeholder uses the control's default text color.
 
 {% tabs %}
 {% highlight xaml %}
 
-<editors:SfNumericEntry HorizontalOptions="Center"
-                        VerticalOptions="Center"
-                        Placeholder="Enter input here..."
+<editors:SfNumericEntry Placeholder="Enter input here..."
                         PlaceholderColor="Gray" />
 
 {% endhighlight %}
 {% highlight C# %}
 
 SfNumericEntry sfNumericEntry = new SfNumericEntry();
-sfNumericEntry.HorizontalOptions = LayoutOptions.Center;
-sfNumericEntry.VerticalOptions = LayoutOptions.Center;
 sfNumericEntry.Placeholder = "Enter input here...";
 sfNumericEntry.PlaceholderColor = Colors.Gray;
 
@@ -92,7 +88,7 @@ If IsEditable is false
 
 ## Clear Button Color
 
-The color of the clear button in the `NumericEntry` control can be customized using the [ClearButtonColor](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericEntry.SfNumericEntry.html#Syncfusion_Maui_Toolkit_NumericEntry_SfNumericEntry_ClearButtonColor) property.
+The [ClearButtonColor](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericEntry.SfNumericEntry.html#Syncfusion_Maui_Toolkit_NumericEntry_SfNumericEntry_ClearButtonColor) property is used to customize the color of the clear button in the `NumericEntry`. By default, the clear button uses the control's default tint.
 
 {% tabs %}
 {% highlight xaml %}
@@ -284,22 +280,18 @@ The `NumericEntry` control allows you to customize the appearance of the text us
 
 ### Text Color
 
-The color of the text in the `NumericEntry` control can be customized using the [TextColor](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericEntry.SfNumericEntry.html#Syncfusion_Maui_Toolkit_NumericEntry_SfNumericEntry_TextColor) property.
+The [TextColor](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericEntry.SfNumericEntry.html#Syncfusion_Maui_Toolkit_NumericEntry_SfNumericEntry_TextColor) property is used to customize the color of the text in the `NumericEntry`. By default, the control uses its standard text color.
 
 {% tabs %}
 {% highlight xaml %}
 
-<editors:SfNumericEntry HorizontalOptions="Center"
-                        VerticalOptions="Center"
-                        Value="100"
+<editors:SfNumericEntry Value="100"
                         TextColor="Blue" />
 
 {% endhighlight %}
 {% highlight C# %}
 
 SfNumericEntry sfNumericEntry = new SfNumericEntry();
-sfNumericEntry.HorizontalOptions = LayoutOptions.Center;
-sfNumericEntry.VerticalOptions = LayoutOptions.Center;
 sfNumericEntry.Value = 100;
 sfNumericEntry.TextColor = Colors.Blue;
 
@@ -308,22 +300,18 @@ sfNumericEntry.TextColor = Colors.Blue;
 
 ### Font Size
 
-The size of the text in the `NumericEntry` control can be customized using the [FontSize](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericEntry.SfNumericEntry.html#Syncfusion_Maui_Toolkit_NumericEntry_SfNumericEntry_FontSize) property.
+The [FontSize](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericEntry.SfNumericEntry.html#Syncfusion_Maui_Toolkit_NumericEntry_SfNumericEntry_FontSize) property is used to set the size of the text in the `NumericEntry`. By default, the control uses its standard font size.
 
 {% tabs %}
 {% highlight xaml %}
 
-<editors:SfNumericEntry HorizontalOptions="Center"
-                        VerticalOptions="Center"
-                        Value="100"
+<editors:SfNumericEntry Value="100"
                         FontSize="20" />
 
 {% endhighlight %}
 {% highlight C# %}
 
 SfNumericEntry sfNumericEntry = new SfNumericEntry();
-sfNumericEntry.HorizontalOptions = LayoutOptions.Center;
-sfNumericEntry.VerticalOptions = LayoutOptions.Center;
 sfNumericEntry.Value = 100;
 sfNumericEntry.FontSize = 20;
 
@@ -332,22 +320,18 @@ sfNumericEntry.FontSize = 20;
 
 ### Font Family
 
-The font family of the text in the `NumericEntry` control can be customized using the [FontFamily](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericEntry.SfNumericEntry.html#Syncfusion_Maui_Toolkit_NumericEntry_SfNumericEntry_FontFamily) property.
+The [FontFamily](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericEntry.SfNumericEntry.html#Syncfusion_Maui_Toolkit_NumericEntry_SfNumericEntry_FontFamily) property is used to set the font family for the text in the `NumericEntry`. By default, the control uses the platform/default font family.
 
 {% tabs %}
 {% highlight xaml %}
 
-<editors:SfNumericEntry HorizontalOptions="Center"
-                        VerticalOptions="Center"
-                        Value="100"
+<editors:SfNumericEntry Value="100"
                         FontFamily="OpenSansRegular" />
 
 {% endhighlight %}
 {% highlight C# %}
 
 SfNumericEntry sfNumericEntry = new SfNumericEntry();
-sfNumericEntry.HorizontalOptions = LayoutOptions.Center;
-sfNumericEntry.VerticalOptions = LayoutOptions.Center;
 sfNumericEntry.Value = 100;
 sfNumericEntry.FontFamily = "OpenSansRegular";
 
@@ -356,22 +340,18 @@ sfNumericEntry.FontFamily = "OpenSansRegular";
 
 ### Font Attributes
 
-The font style of the text in the `NumericEntry` control can be customized using the [FontAttributes](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericEntry.SfNumericEntry.html#Syncfusion_Maui_Toolkit_NumericEntry_SfNumericEntry_FontAttributes) property. The supported font attributes are `Bold`, `Italic`, and `None`.
+The [FontAttributes](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericEntry.SfNumericEntry.html#Syncfusion_Maui_Toolkit_NumericEntry_SfNumericEntry_FontAttributes) property is used to set the font style for the text in the `NumericEntry`. Supported values are `Bold`, `Italic`, and `None`. By default, the control uses its default font attributes.
 
 {% tabs %}
 {% highlight xaml %}
 
-<editors:SfNumericEntry HorizontalOptions="Center"
-                        VerticalOptions="Center"
-                        Value="100"
+<editors:SfNumericEntry Value="100"
                         FontAttributes="Bold" />
 
 {% endhighlight %}
 {% highlight C# %}
 
 SfNumericEntry sfNumericEntry = new SfNumericEntry();
-sfNumericEntry.HorizontalOptions = LayoutOptions.Center;
-sfNumericEntry.VerticalOptions = LayoutOptions.Center;
 sfNumericEntry.Value = 100;
 sfNumericEntry.FontAttributes = FontAttributes.Bold;
 
@@ -411,17 +391,13 @@ The [CursorPosition](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui
 {% tabs %}
 {% highlight xaml %}
 
-<editors:SfNumericEntry HorizontalOptions="Center"
-                        VerticalOptions="Center"
-                        Value="12345"
+<editors:SfNumericEntry Value="12345"
                         CursorPosition="3" />
 
 {% endhighlight %}
 {% highlight C# %}
 
 SfNumericEntry sfNumericEntry = new SfNumericEntry();
-sfNumericEntry.HorizontalOptions = LayoutOptions.Center;
-sfNumericEntry.VerticalOptions = LayoutOptions.Center;
 sfNumericEntry.Value = 12345;
 sfNumericEntry.CursorPosition = 3;
 
@@ -435,9 +411,7 @@ The [SelectionLength](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Mau
 {% tabs %}
 {% highlight xaml %}
 
-<editors:SfNumericEntry HorizontalOptions="Center"
-                        VerticalOptions="Center"
-                        Value="12345"
+<editors:SfNumericEntry Value="12345"
                         CursorPosition="1"
                         SelectionLength="3" />
 
@@ -445,8 +419,6 @@ The [SelectionLength](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Mau
 {% highlight C# %}
 
 SfNumericEntry sfNumericEntry = new SfNumericEntry();
-sfNumericEntry.HorizontalOptions = LayoutOptions.Center;
-sfNumericEntry.VerticalOptions = LayoutOptions.Center;
 sfNumericEntry.Value = 12345;
 sfNumericEntry.CursorPosition = 1;
 sfNumericEntry.SelectionLength = 3;

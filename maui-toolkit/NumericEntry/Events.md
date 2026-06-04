@@ -92,26 +92,15 @@ The [Focused](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolki
 {% tabs %}
 {% highlight xaml %}
 
-<editors:SfNumericEntry HorizontalOptions="Center"
-                        VerticalOptions="Center"
-                        Focused="sfNumericEntry_Focused" />
+<editors:SfNumericEntry Focused="sfNumericEntry_Focused" />
 
 {% endhighlight %}
 {% highlight C# %}
 
 SfNumericEntry sfNumericEntry = new SfNumericEntry();
-sfNumericEntry.HorizontalOptions = LayoutOptions.Center;
-sfNumericEntry.VerticalOptions = LayoutOptions.Center;
 sfNumericEntry.Focused += sfNumericEntry_Focused;
 
-{% endhighlight %}
-{% endtabs %}
-
-You can handle the event as follows.
-
-{% tabs %}
-{% highlight C# %}
-
+// You can handle the event as follows.
 private void sfNumericEntry_Focused(object sender, FocusEventArgs e)
 {
     // To do your requirement here.
@@ -127,26 +116,15 @@ The [Unfocused](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Tool
 {% tabs %}
 {% highlight xaml %}
 
-<editors:SfNumericEntry HorizontalOptions="Center"
-                        VerticalOptions="Center"
-                        Unfocused="sfNumericEntry_Unfocused" />
+<editors:SfNumericEntry Unfocused="sfNumericEntry_Unfocused" />
 
 {% endhighlight %}
 {% highlight C# %}
 
 SfNumericEntry sfNumericEntry = new SfNumericEntry();
-sfNumericEntry.HorizontalOptions = LayoutOptions.Center;
-sfNumericEntry.VerticalOptions = LayoutOptions.Center;
 sfNumericEntry.Unfocused += sfNumericEntry_Unfocused;
 
-{% endhighlight %}
-{% endtabs %}
-
-You can handle the event as follows.
-
-{% tabs %}
-{% highlight C# %}
-
+// You can handle the event as follows.
 private void sfNumericEntry_Unfocused(object sender, FocusEventArgs e)
 {
     // To do your requirement here.
@@ -164,9 +142,7 @@ The [Focus()](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolki
 {% tabs %}
 {% highlight xaml %}
 
-<editors:SfNumericEntry x:Name="sfNumericEntry"
-                        HorizontalOptions="Center"
-                        VerticalOptions="Center" />
+<editors:SfNumericEntry x:Name="sfNumericEntry" />
 
 <Button Text="Set Focus" Clicked="OnSetFocusClicked" />
 
@@ -174,20 +150,11 @@ The [Focus()](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolki
 {% highlight C# %}
 
 SfNumericEntry sfNumericEntry = new SfNumericEntry();
-sfNumericEntry.HorizontalOptions = LayoutOptions.Center;
-sfNumericEntry.VerticalOptions = LayoutOptions.Center;
 
 // Programmatically set focus.
 sfNumericEntry.Focus();
 
-{% endhighlight %}
-{% endtabs %}
-
-You can handle the button click to set focus as follows.
-
-{% tabs %}
-{% highlight C# %}
-
+// You can handle the button click to set focus as follows.
 private void OnSetFocusClicked(object sender, EventArgs e)
 {
     sfNumericEntry.Focus();
@@ -203,9 +170,7 @@ The [Unfocus()](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Tool
 {% tabs %}
 {% highlight xaml %}
 
-<editors:SfNumericEntry x:Name="sfNumericEntry"
-                        HorizontalOptions="Center"
-                        VerticalOptions="Center" />
+<editors:SfNumericEntry x:Name="sfNumericEntry" />
 
 <Button Text="Remove Focus" Clicked="OnRemoveFocusClicked" />
 
@@ -213,20 +178,11 @@ The [Unfocus()](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Tool
 {% highlight C# %}
 
 SfNumericEntry sfNumericEntry = new SfNumericEntry();
-sfNumericEntry.HorizontalOptions = LayoutOptions.Center;
-sfNumericEntry.VerticalOptions = LayoutOptions.Center;
 
 // Programmatically remove focus.
 sfNumericEntry.Unfocus();
 
-{% endhighlight %}
-{% endtabs %}
-
-You can handle the button click to remove focus as follows.
-
-{% tabs %}
-{% highlight C# %}
-
+// You can handle the button click to remove focus as follows.
 private void OnRemoveFocusClicked(object sender, EventArgs e)
 {
     sfNumericEntry.Unfocus();
