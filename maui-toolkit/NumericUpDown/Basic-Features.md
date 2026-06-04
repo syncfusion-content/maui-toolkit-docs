@@ -35,7 +35,7 @@ numericUpDown.VerticalOptions = LayoutOptions.Center;
 
 ## Placeholder Color
 
-The [PlaceholderColor](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericEntry.SfNumericEntry.html#Syncfusion_Maui_Toolkit_NumericEntry_SfNumericEntry_PlaceholderColor) propertyis used to customize the color of the placeholder text in the `NumericUpDown`. By default, the placeholder uses the control's default text color.
+The [PlaceholderColor](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericEntry.SfNumericEntry.html#Syncfusion_Maui_Toolkit_NumericEntry_SfNumericEntry_PlaceholderColor) property is used to customize the color of the placeholder text in the `NumericUpDown`. By default, the placeholder uses the control's default text color.
 
 {% tabs %}
 {% highlight xaml %}
