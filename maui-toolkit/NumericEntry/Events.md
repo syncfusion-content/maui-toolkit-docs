@@ -92,16 +92,16 @@ The [Focused](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolki
 {% tabs %}
 {% highlight xaml %}
 
-<editors:SfNumericEntry Focused="sfNumericEntry_Focused" />
+<editors:SfNumericEntry Focused="OnNumericEntryFocused" />
 
 {% endhighlight %}
 {% highlight C# %}
 
 SfNumericEntry sfNumericEntry = new SfNumericEntry();
-sfNumericEntry.Focused += sfNumericEntry_Focused;
+sfNumericEntry.Focused += OnNumericEntryFocused;
 
 // You can handle the event as follows.
-private void sfNumericEntry_Focused(object sender, FocusEventArgs e)
+private void OnNumericEntryFocused(object sender, FocusEventArgs e)
 {
     // To do your requirement here.
 }
@@ -116,16 +116,16 @@ The [Unfocused](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Tool
 {% tabs %}
 {% highlight xaml %}
 
-<editors:SfNumericEntry Unfocused="sfNumericEntry_Unfocused" />
+<editors:SfNumericEntry Unfocused="OnNumericEntryUnFocused" />
 
 {% endhighlight %}
 {% highlight C# %}
 
 SfNumericEntry sfNumericEntry = new SfNumericEntry();
-sfNumericEntry.Unfocused += sfNumericEntry_Unfocused;
+sfNumericEntry.Unfocused += OnNumericEntryUnFocused;
 
 // You can handle the event as follows.
-private void sfNumericEntry_Unfocused(object sender, FocusEventArgs e)
+private void OnNumericEntryUnFocused(object sender, FocusEventArgs e)
 {
     // To do your requirement here.
 }
@@ -137,15 +137,14 @@ private void sfNumericEntry_Unfocused(object sender, FocusEventArgs e)
 
 ### Focus
 
-The [Focus()](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericEntry.SfNumericEntry.html) method is used to programmatically set focus to the `NumericEntry` control. This is useful when you want to automatically focus the control on page load or after a specific user action.
+The `NumericEntry` allows for programmatically setting focus to the control using the [Focus()](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericEntry.SfNumericEntry.html) method. This is useful when you want to automatically focus the control on page load or after a specific user action.
 
 {% tabs %}
 {% highlight xaml %}
-
-<editors:SfNumericEntry x:Name="sfNumericEntry" />
-
-<Button Text="Set Focus" Clicked="OnSetFocusClicked" />
-
+<VerticalStackLayout Spacing="10">
+    <editors:SfNumericEntry x:Name="sfNumericEntry" />
+    <Button Text="Set Focus" Clicked="OnFocusClicked" />
+</VerticalStackLayout>
 {% endhighlight %}
 {% highlight C# %}
 
@@ -155,7 +154,7 @@ SfNumericEntry sfNumericEntry = new SfNumericEntry();
 sfNumericEntry.Focus();
 
 // You can handle the button click to set focus as follows.
-private void OnSetFocusClicked(object sender, EventArgs e)
+private void OnFocusClicked(object sender, EventArgs e)
 {
     sfNumericEntry.Focus();
 }
@@ -165,14 +164,15 @@ private void OnSetFocusClicked(object sender, EventArgs e)
 
 ### Unfocus
 
-The [Unfocus()](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericEntry.SfNumericEntry.html) method is used to programmatically remove focus from the `NumericEntry` control. This is useful when you want to dismiss the keyboard or trigger validation after a specific action.
+The `NumericEntry` allows for programmatically setting unfocus to the control using the [Unfocus()](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericEntry.SfNumericEntry.html) method. This is useful when you want to automatically unfocus the control on page load or after a specific user action.
+
 
 {% tabs %}
 {% highlight xaml %}
-
-<editors:SfNumericEntry x:Name="sfNumericEntry" />
-
-<Button Text="Remove Focus" Clicked="OnRemoveFocusClicked" />
+<VerticalStackLayout Spacing="10">
+    <editors:SfNumericEntry x:Name="sfNumericEntry" />
+    <Button Text="Remove Focus" Clicked="OnUnFocusClicked" />
+</VerticalStackLayout>
 
 {% endhighlight %}
 {% highlight C# %}
@@ -183,7 +183,7 @@ SfNumericEntry sfNumericEntry = new SfNumericEntry();
 sfNumericEntry.Unfocus();
 
 // You can handle the button click to remove focus as follows.
-private void OnRemoveFocusClicked(object sender, EventArgs e)
+private void OnUnFocusClicked(object sender, EventArgs e)
 {
     sfNumericEntry.Unfocus();
 }
