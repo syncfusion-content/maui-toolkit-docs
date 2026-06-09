@@ -244,10 +244,7 @@ SfBottomSheet bottomSheet = new SfBottomSheet();
 {% endtabcontent %}
 {% endtabcontents %}
 
-## Add a Bottom Sheet with detailed content
-The following code demonstrates how to add a Bottom Sheet that displays detailed book information. It uses a ViewModel for effective data binding to ensure seamless updates and interaction.
-
-### Model
+## Step 5: Create Model
 Create a simple data model and save it as `Book.cs` file.
 
 {% tabs %}
@@ -266,7 +263,7 @@ public class Book
 {% endhighlight %}
 {% endtabs %}
 
-### View Model
+## Step 6: Initialize View Model
 Create a model repository class with a `Books` collection property initialized with a set of data objects, and save it as `BookViewModel.cs` file:
 
 {% tabs %}
@@ -316,69 +313,7 @@ public class BookViewModel
                 Rating = 4.7,
                 Price = 34.99
             },
-            new Book
-            {
-                Title = "Neural Networks Using C#",
-                Genre = "Programming",
-                Published = "October 1999",
-                Description = "Neural networks are an exciting field of software development",
-                Rating = 4.9,
-                Price = 49.99
-            },
-            new Book
-            {
-                Title = "Visual Studio Code",
-                Genre = "Software Development",
-                Published = "November 2018",
-                Description = "It is a powerful tool for editing code and serves for end-to-end programming",
-                Rating = 4.6,
-                Price = 45.99
-            },
-            new Book
-            {
-                Title = "Android Programming",
-                Genre = "Algorithms, Computer Science",
-                Published = "July 2009",
-                Description = "It provides a useful overview of the Android application life cycle",
-                Rating = 4.5,
-                Price = 94.99
-            },
-            new Book
-            {
-                Title = "iOS Succinctly",
-                Genre = "Software Design",
-                Published = "October 1994",
-                Description = "It is for developers looking to step into frightening world of iPhone",
-                Rating = 4.8,
-                Price = 54.99
-            },
-            new Book
-            {
-                Title = "Visual Studio 2015",
-                Genre = "Programming, Software Design",
-                Published = "October 2004",
-                Description = "The new version of the widely-used integrated development environment",
-                Rating = 4.7,
-                Price = 44.99
-            },
-            new Book
-            {
-                Title = "Xamarin.Forms",
-                Genre = "Software Design, Software Engineering",
-                Published = "August 2003",
-                Description = "It creates mappings from its C# classes and controls directly",
-                Rating = 4.6,
-                Price = 49.99
-            },
-            new Book
-            {
-                Title = "Windows Store Apps",
-                Genre = "Programming, Web Development",
-                Published = "March 2023",
-                Description = "Windows Store apps present a radical shift in Windows development",
-                Rating = 4.9,
-                Price = 59.99
-            }
+            . . .
         };
     }
 }
@@ -389,9 +324,6 @@ public class BookViewModel
 {% tabs %}
 {% highlight xaml %}
 
-<ContentPage
-    xmlns:local="clr-namespace:BottomSheetGettingStarted.ViewModel"
-    xmlns:bottomSheet="clr-namespace:Syncfusion.Maui.Toolkit.BottomSheet;assembly=Syncfusion.Maui.Toolkit">
    <Grid>
         <Grid.BindingContext>
             <local:BookViewModel />
@@ -405,7 +337,7 @@ public class BookViewModel
                                 <Label Text="{Binding Title}" FontSize="20" FontAttributes="Bold"/>
                                 <Label Text="{Binding Description}" FontSize="14" TextColor="Gray"/>
                             </VerticalStackLayout>
-                            <Label Text="{Binding Rating, StringFormat='{}{0} / 5'}" Grid.Column="1" HorizontalOptions="Center" VerticalOptions="Center"/>
+                            <Label Text="{Binding Rating, StringFormat='{}{0} / 5'}" Grid.Column="1" />
                         </Grid>
                     </ViewCell>
                 </DataTemplate>
@@ -422,25 +354,7 @@ public class BookViewModel
                         <Label Text="Genre:" FontSize="20" FontAttributes="Bold"/>
                         <Label Text="{Binding Genre}" FontSize="16" VerticalTextAlignment="Center" Grid.Column="1"/>
                     </Grid>
-                    <Grid ColumnDefinitions="120, *" ColumnSpacing="10">
-                        <Label Text="Published:" FontSize="20" FontAttributes="Bold"/>
-                        <Label Text="{Binding Published}" FontSize="16" VerticalTextAlignment="Center" Grid.Column="1"/>
-                    </Grid>
-                    <Grid ColumnDefinitions="120, *" ColumnSpacing="10">
-                        <Label Text="Description:" FontSize="20" FontAttributes="Bold"/>
-                        <Label Text="{Binding Description}" FontSize="16" VerticalTextAlignment="Center" Grid.Column="1"/>
-                    </Grid>
-                    <Grid ColumnDefinitions="120, *" ColumnSpacing="10">
-                        <Label Text="Price:" FontSize="20" FontAttributes="Bold"/>
-                        <Label FontSize="16" VerticalTextAlignment="Center" Grid.Column="1">
-                            <Label.FormattedText>
-                                <FormattedString>
-                                    <Span Text="$" FontAttributes="Bold" />
-                                    <Span Text="{Binding Price, StringFormat='{0:F2}'}" />
-                                </FormattedString>
-                            </Label.FormattedText>
-                        </Label>
-                    </Grid>
+                    . . .
                 </VerticalStackLayout>
             </bottomSheet:SfBottomSheet.BottomSheetContent>
         </bottomSheet:SfBottomSheet>
