@@ -235,157 +235,64 @@ Step 3: Set the control to content in `ContentPage.`
 {% endtabcontent %}
 {% endtabcontents %}
 
-## For SfChip
+## Step 5: Define the view model
+
+Now, define a simple data model of person with the name properties.
 
 {% tabs %}
+{% highlight c# tabtitle="C#" %}
 
-{% highlight xaml %}
-
-<ContentPage.Content>    
-    <ChipControl:SfChip x:Name="chips" />
-</ContentPage.Content>
-
-{% endhighlight %}
-
-{% highlight c# %}
-          
-SfChip chips = new SfChip(); 
-Content = chips;  
-
-{% endhighlight %}
-
-{% endtabs %}
-
-## For SfChipGroup
-
-Initialize an empty `SfChipGroup` as shown in the following code snippet
-
-{% tabs %}
-
-{% highlight xaml %}
-
-<ContentPage.Content>
-	<Grid>
-		<ChipControl:SfChipGroup/>
-	</Grid>
-</ContentPage.Content>
-
-
-{% endhighlight %}
-
-{% highlight c# %}
-
-using Syncfusion.Maui.Toolkit.Chips;
-Grid grid = new Grid();
-SfChipGroup chipGroup = new SfChipGroup();
-grid.Children.Add(chipGroup);
-this.Content = grid;
-		
-{% endhighlight %}
-
-{% endtabs %}
-
-## Set layout for the control
-
-The chips control creates chip for each object and arranges chips in a `StackLayout` with horizontal orientation. Any layout can be used to arrange the chips in the chips control. In the following example, the `FlexLayout` has been used. 
-
-{% tabs %}
-
-{% highlight xaml %}
-
-<ContentPage.Content>
-	<Grid>
-		<ChipControl:SfChipGroup DisplayMemberPath="Name">
-			<ChipControl:SfChipGroup.ChipLayout>
-				<FlexLayout 
-					HorizontalOptions="Start" 
-					VerticalOptions="Center"/> 
-			</ChipControl:SfChipGroup.ChipLayout>
-		</ChipControl:SfChipGroup> 
-	</Grid>
-</ContentPage.Content>
-
-{% endhighlight %}
-
-{% highlight c# %}
-
-using Syncfusion.Maui.Toolkit.Chips;
-Grid grid = new Grid();
-SfChipGroup chipGroup = new SfChipGroup();
-chipGroup.DispalyMemberPath="Name";
-grid.Children.Add(chipGroup);
-FlexLayout layout = new FlexLayout()
+//Model class for chips
+public class Person
 {
-	HorizontalOptions = LayoutOptions.Start,
-	VerticalOptions = LayoutOptions.Center,
-};
-chipGroup.ChipLayout = layout;
-this.Content = grid;
-		
-{% endhighlight %}
-
-{% endtabs %}
-
-## Populating business objects
-
-Now, define a simple data model of Employee with the name and image properties. Create a view model class and initialize a collection of Employee as shown in the following code sample.
-
-{% highlight c# %}
-
-namespace Chips
-{
-	//Model class for chips
-	public class Employee
+	public string Name
 	{
-		public string Name
+		get;
+		set;
+	}
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+Next, create a view model class and initialize a collection of persons as shown in the following code sample.
+
+{% tabs %}
+{% highlight c# tabtitle="C#" %}
+
+//View model class for chips
+public class ViewModel : INotifyPropertyChanged
+{
+	private ObservableCollection<Person> employees;
+	public ObservableCollection<Person> Employees
+	{
+		get { return employees; }
+		set { Employees = value; OnPropertyChanged("Employees"); }
+	}
+
+	public ViewModel()
+	{
+		employees = new ObservableCollection<Person>();
+		employees.Add(new Person() { Name = "John" });
+		employees.Add(new Person() { Name = "James" });
+		employees.Add(new Person() { Name = "Linda" });
+		employees.Add(new Person() { Name = "Rose" });
+		employees.Add(new Person() { Name = "Mark" });
+	}
+
+	public event PropertyChangedEventHandler PropertyChanged;
+
+	public void OnPropertyChanged(string property)
+	{
+		if (PropertyChanged != null)
 		{
-			get;
-			set;
+			PropertyChanged(this, new PropertyChangedEventArgs(property));
 		}
 	}
 }
 
 {% endhighlight %}
-
-{% highlight c# %}
-
-using System.Collections.ObjectModel;
-using System.ComponentModel;
-namespace Chips
-{
-	//View model class for chips
-	public class ViewModel : INotifyPropertyChanged
-	{
-		private ObservableCollection<Employee> employees;
-		public ObservableCollection<Employee> Employees
-		{
-			get { return employees; }
-			set { Employees = value; OnPropertyChanged("Employees"); }
-		}
-
-		public ViewModel()
-		{
-			employees = new ObservableCollection<Employee>();
-			employees.Add(new Employee() { Name = "John" });
-			employees.Add(new Employee() { Name = "James" });
-			employees.Add(new Employee() { Name = "Linda" });
-			employees.Add(new Employee() { Name = "Rose" });
-			employees.Add(new Employee() { Name = "Mark" });
-		}
-
-		public event PropertyChangedEventHandler PropertyChanged;
-
-		public void OnPropertyChanged(string property)
-		{
-			if (PropertyChanged != null)
-			{
-				PropertyChanged(this, new PropertyChangedEventArgs(property));
-			}
-		}
-	}
-}
-
-{% endhighlight %}
+{% endtabs %}
 
 Create an instance of ViewModel class,and then set it as the `BindingContext`. Bind the `ItemsSource` property with a collection, and then set the `DisplayMemberPath` property:
 
@@ -398,7 +305,7 @@ Create an instance of ViewModel class,and then set it as the `BindingContext`. B
 </ContentPage.BindingContext>
 <ContentPage.Content>
 	<Grid>
-		<ChipControl:SfChipGroup 
+		<chip:SfChipGroup 
 			ItemsSource="{Binding Employees}" 
 			ChipPadding="8,8,0,0" 
 			DisplayMemberPath="Name"
@@ -406,7 +313,7 @@ Create an instance of ViewModel class,and then set it as the `BindingContext`. B
 			ChipTextColor="Black"
 			HorizontalOptions="Start" 
 			VerticalOptions="Center">
-		</ChipControl:SfChipGroup>  
+		</chip:SfChipGroup>  
 	</Grid>
 </ContentPage.Content>
 
@@ -414,131 +321,27 @@ Create an instance of ViewModel class,and then set it as the `BindingContext`. B
 
 {% highlight c# %}
 
-using Syncfusion.Maui.Toolkit.Chips;
-using System.Collections.ObjectModel;
-using System.ComponentModel;
-
-Grid grid = new Grid();
-SfChipGroup chipGroup = new SfChipGroup();
-grid.Children.Add(chipGroup);
 this.BindingContext = new ViewModel();
+Grid grid = new Grid();
+SfChipGroup chipGroup = new SfChipGroup()
+{
+	DisplayMemberPath = "Name",
+	HorizontalOptions = LayoutOptions.Start,
+	VerticalOptions = LayoutOptions.Center,
+	ChipTextColor = Colors.Black,
+	ChipBackground = Colors.White,
+	ChipPadding = new Thickness(8, 8, 0, 0),
+};
 chipGroup.SetBinding(SfChipGroup.ItemsSourceProperty, "Employees");
-chipGroup.DisplayMemberPath = "Name";
-chipGroup.HorizontalOptions = LayoutOptions.Start;
-chipGroup.VerticalOptions = LayoutOptions.Center;
-chipGroup.ChipTextColor = Colors.Black;
-chipGroup.ChipBackground = Colors.White;
-chipGroup.ChipPadding = new Thickness(8, 8, 0, 0);
+grid.Children.Add(chipGroup);
 this.Content = grid;
 		
 {% endhighlight %}
 
 {% endtabs %}
 
+The following screenshot illustrates the result of the above code.
+
 ![ChipGroup sample with display member path and itemsSource demo](images/getting-started/getting_started.png)
 
 N> When publishing in AOT mode on iOS, ensure `[Preserve(AllMembers = true)]` is added to the model class to maintain DisplayMemberPath binding
-
-## Set types of chip group
-
-The functionality of chips control differ based on its [ChipType](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Chips.SfChipGroup.html#Syncfusion_Maui_Toolkit_Chips_SfChipGroup_ChipType) property.
-By default type of chips control have Input type. Input chip types have close button, using it chip can be can removed dynamically from children and the layout.
-
-The following code example uses the [Action](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Chips.SfChipsType.html#Syncfusion_Maui_Toolkit_Chips_SfChipsType_Action) type. In Action type, [Command](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Chips.SfChipGroup.html#Syncfusion_Maui_Toolkit_Chips_SfChipGroup_Command) property of [SfChipGroup](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Chips.SfChipGroup.html) is executed when any chip in the group is tapped. Here the Employee name of corresponding chip is set as label text when the Command is executed.
-
-{% tabs %}
-
-{% highlight xaml %}
-
-<ContentPage.BindingContext>
-	<local:ViewModel/>
-</ContentPage.BindingContext>
-<ContentPage.Content>
-	<StackLayout>
-		<ChipControl:SfChipGroup
-			Command="{Binding ActionCommand}" 
-			ItemsSource="{Binding Employees}"
-			DisplayMemberPath="Name"
-			ChipType="Action">
-		</ChipControl:SfChipGroup>
-		<StackLayout Orientation="Horizontal">
-		<Label 
-			Text="Name:" 
-			FontAttributes="Bold" 
-			FontSize="14" />
-		<Label 
-			Text="{Binding Result}"
-			FontAttributes="Bold" 
-			FontSize="14" />
-		</StackLayout>
-	</StackLayout>  
-</ContentPage.Content>
-{% endhighlight %}
-{% highlight c# %}
-
-using System;
-using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using System.ComponentModel;
-using System.Windows.Input;
-
-namespace Chips
-{
-	public class ViewModel :INotifyPropertyChanged
-	{
-		private ICommand actionCommand;
-		private ObservableCollection<Employee> employees;
-		private string result;
-		public ICommand ActionCommand
-    	{
-			get { return actionCommand; }
-			set { actionCommand = value; }
-    	}
-    
-    	public ObservableCollection<Employee> Employees
-    	{
-        	get { return employees; }
-        	set { Employees = value; OnPropertyChanged("Employees"); }
-    	}
-
-		public string Result
-		{
-			get { return result; }
-			set { result = value; OnPropertyChanged("Result"); }
-		}
-
-		public ViewModel()
-		{
-			ActionCommand = new Command(HandleAction);
-			employees = new ObservableCollection<Employee>();
-			employees.Add(new Employee() { Name = "John" });
-			employees.Add(new Employee() { Name = "James" });
-			employees.Add(new Employee() { Name = "Linda" });
-			employees.Add(new Employee() { Name = "Rose" });
-			employees.Add(new Employee() { Name = "Mark" });
-		}
-
-		public event PropertyChangedEventHandler PropertyChanged;
-
-		public void OnPropertyChanged(string property)
-		{
-			if (PropertyChanged != null)
-			{
-				PropertyChanged(this, new PropertyChangedEventArgs(property));
-			}
-		}
-
-		private void HandleAction(object obj)
-		{
-			Result = (obj as Employee).Name.ToString();
-		}
-	}
-}
-
-{% endhighlight %}
-
-{% endtabs %}
-
-![ChipGroup sample with display member path and itemsSource demo](images/getting-started/action.png)
-
-
