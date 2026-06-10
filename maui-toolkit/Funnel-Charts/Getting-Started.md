@@ -296,7 +296,7 @@ public partial class MainPage : ContentPage
 {% endtabcontent %}
 {% endtabcontents %}
 
-### Initialize view model
+## Step 5: Initialize view model
 
 Define a simple data model to represent a data point in the chart:
 
@@ -384,153 +384,9 @@ public partial class MainPage : ContentPage
 
 {% endtabs %} 
 
-### Populate chart with data
+## Step 6: Populate chart with data
 
 Binding `Data` to the funnel chart [ItemsSource](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfFunnelChart.html#Syncfusion_Maui_Toolkit_Charts_SfFunnelChart_ItemsSource) property from its BindingContext to create our own funnel chart.
-
-{% tabs %}   
-
-{% highlight xaml %}
-
-<chart:SfFunnelChart ItemsSource="{Binding Data}" 
-                     XBindingPath="XValue" 
-                     YBindingPath="YValue">
-. . .            
-</chart:SfFunnelChart>
-
-{% endhighlight %}
-
-{% highlight C# %}
-
-SfFunnelChart chart = new SfFunnelChart();
-AdmissionViewModel viewModel = new AdmissionViewModel();
-
-// Bind the chart's data source to the ViewModel's data collection.
-chart.ItemsSource = viewModel.Data; 
-
-// Set X-axis binding to the 'XValue' property in the ViewModel.
-chart.XBindingPath = "XValue"; 
-
-// Set Y-axis binding to the 'YValue' property in the ViewModel.
-chart.YBindingPath = "YValue";
-this.Content = chart;
-
-{% endhighlight %}
-
-{% endtabs %} 
-
-### Add a title
-
-The title of the chart acts as the title to provide quick information to the user about the data being plotted in the chart. You can set the title using the [Title](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartBase.html#Syncfusion_Maui_Toolkit_Charts_ChartBase_Title) property of the funnel chart as follows.
-
-{% tabs %} 
-
-{% highlight xaml %}
-
-<chart:SfFunnelChart>
-    <chart:SfFunnelChart.Title>
-        <Label Text="School Admission"/>
-    </chart:SfFunnelChart.Title>
-    . . .
-</chart:SfFunnelChart>
-
-{% endhighlight %}
-
-{% highlight C# %}
-
-SfFunnelChart chart = new SfFunnelChart();
-
-// Set the title of the chart.
-chart.Title = new Label()
-{
-    Text = "School Admission"
-};
-. . .
-this.Content = chart;
-
-{% endhighlight %}
-
-{% endtabs %}  
-
-### Enable the data labels
-
-The [ShowDataLabels](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfFunnelChart.html#Syncfusion_Maui_Toolkit_Charts_SfFunnelChart_ShowDataLabels) property of the chart can be used to enable data labels to improve the readability of the funnel chart. The label visibility is set to `False` by default.
-
-{% tabs %} 
-
-{% highlight xaml %}
-
-<chart:SfFunnelChart ShowDataLabels="True">
-    . . .
-</chart:SfFunnelChart>
-
-{% endhighlight %}
-
-{% highlight C# %}
-
-SfFunnelChart chart = new SfFunnelChart();
-. . .
-chart.ShowDataLabels = true; // Enable data labels in the chart.
-this.Content = chart;
-
-{% endhighlight %}
-
-{% endtabs %} 
-
-### Enable a legend
-
-The legend provides information about the data point displayed in the funnel chart. The [Legend](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartBase.html#Syncfusion_Maui_Toolkit_Charts_ChartBase_Legend) property of the chart was used to enable it.
-
-{% tabs %} 
-
-{% highlight xaml %}
-
-<chart:SfFunnelChart>
-    . . .
-    <chart:SfFunnelChart.Legend>
-        <chart:ChartLegend/>
-    </chart:SfFunnelChart.Legend>
-</chart:SfFunnelChart>
-
-{% endhighlight %}
-
-{% highlight C# %}
-
-SfFunnelChart chart = new SfFunnelChart();
-. . .
-chart.Legend = new ChartLegend(); // Enable legend in the chart.
-this.Content = chart;
-
-{% endhighlight %}
-
-{% endtabs %} 
-
-### Enable Tooltip
-
-Tooltips are used to show information about the segment, when mouse over on it. Enable tooltip by setting the chart [EnableTooltip](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfFunnelChart.html#Syncfusion_Maui_Toolkit_Charts_SfFunnelChart_EnableTooltip) property as `true`.
-
-{% tabs %} 
-
-{% highlight xaml %}
-
-<chart:SfFunnelChart EnableTooltip="True">
-    . . .
-</chart:SfFunnelChart>
-
-{% endhighlight %}
-
-{% highlight C# %}
-
-SfFunnelChart chart = new SfFunnelChart();
-. . .
-chart.EnableTooltip = true; // Enable tooltip in the chart.
-this.Content = chart;
-
-{% endhighlight %}
-
-{% endtabs %}
-
-The following code example gives you the complete code of above configurations.
 
 {% tabs %} 
 

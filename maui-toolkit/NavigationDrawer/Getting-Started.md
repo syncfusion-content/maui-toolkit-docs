@@ -306,53 +306,7 @@ namespace NavigationDrawerGettingStarted
 
 N> It is mandatory to set [ContentView](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NavigationDrawer.SfNavigationDrawer.html#Syncfusion_Maui_Toolkit_NavigationDrawer_SfNavigationDrawer_ContentView) for [SfNavigationDrawer](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NavigationDrawer.SfNavigationDrawer.html) upon initializing.
 
-## Adjust drawer size
-
-The default position of the navigation pane is on the left. Change the drawer width to 250 using the [DrawerWidth](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NavigationDrawer.DrawerSettings.html#Syncfusion_Maui_Toolkit_NavigationDrawer_DrawerSettings_DrawerWidth) property.
-
-{% tabs %}	
-{% highlight xaml %}
-
-<navigationdrawer:SfNavigationDrawer x:Name="navigationDrawer">
-    <navigationdrawer:SfNavigationDrawer.DrawerSettings>
-        <navigationdrawer:DrawerSettings DrawerWidth="250"/>
-    </navigationdrawer:SfNavigationDrawer.DrawerSettings>
-    <navigationdrawer:SfNavigationDrawer.ContentView>
-        <Grid/>
-    </navigationdrawer:SfNavigationDrawer.ContentView>
-</navigationdrawer:SfNavigationDrawer>
-	
-{% endhighlight %}
-{% highlight c# %}
-
-using Syncfusion.Maui.Toolkit.NavigationDrawer;
-
-namespace NavigationDrawerGettingStarted;
-
-public partial class NavigationDrawerPage : ContentPage
-{
-	public NavigationDrawerPage()
-	{
-		InitializeComponent();
-        SfNavigationDrawer navigationDrawer = new SfNavigationDrawer();
-        Grid grid = new Grid();
-        navigationDrawer.ContentView = grid;
-        navigationDrawer.DrawerSettings = new DrawerSettings()
-        {
-            DrawerWidth = 250,
-        };
-        this.Content = navigationDrawer;
-    }
-}
-
-{% endhighlight %}
-
-{% endtabs %}
-
-
-N> To change the side of the navigation pane, utilize the [Position](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NavigationDrawer.DrawerSettings.html#Syncfusion_Maui_Toolkit_NavigationDrawer_DrawerSettings_Position) property. Adjust the drawer height in the Top and Bottom positions using the [DrawerHeight](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NavigationDrawer.DrawerSettings.html#Syncfusion_Maui_Toolkit_NavigationDrawer_DrawerSettings_DrawerHeight) property.
-
-## Add hamburger menu for toggling drawer
+## Step 5: Add hamburger menu for toggling drawer
 
 Create an ImageButton and set the required image to the `Source` property. Ensure the image is placed in the `Resources/Images` directory. Subscribe to the Clicked event of the button and invoke the [ToggleDrawer()](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NavigationDrawer.SfNavigationDrawer.html#Syncfusion_Maui_Toolkit_NavigationDrawer_SfNavigationDrawer_ToggleDrawer) method to toggle the drawer. Properly align the layout of [ContentView](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NavigationDrawer.SfNavigationDrawer.html#Syncfusion_Maui_Toolkit_NavigationDrawer_SfNavigationDrawer_ContentView) to position the hamburger icon at the top left, as demonstrated in the following code.
 

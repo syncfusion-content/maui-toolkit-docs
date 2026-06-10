@@ -278,6 +278,33 @@ using Syncfusion.Maui.Toolkit.Buttons;
 {% endtabcontent %}
 {% endtabcontents %}
 
+## Step 5: Define the Button
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<buttons:SfButton x:Name="button"
+                  Text="Button"
+                  TextColor="White">
+</buttons:SfButton>
+	
+{% endhighlight %}
+{% highlight C# %}
+
+SfButton button = new SfButton();
+button.Text = "Button";
+button.TextColor = Colors.White;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+The following screenshot illustrates the result of the above code.
+
+![.NET MAUI Button](images/customization-images/Button_textcolor.png)
+
+
 ## Button icon
 
 The button icon can be defined using the [ImageSource](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Core.ButtonBase.html#Syncfusion_Maui_Core_ButtonBase_ImageSource) and [ShowIcon](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Core.ButtonBase.html#Syncfusion_Maui_Core_ButtonBase_ShowIcon) properties of [SfButton](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Buttons.SfButton.html).
@@ -308,34 +335,3 @@ button.CornerRadius= 2;
 {% endtabs %}
 
 ![.NET MAUI Button with button icon.](images/getting-started/net-maui-button-with-icon.png)
-
-
-## Button background image
-
-The button background image can be defined using the [BackgroundImageSource](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.ButtonBase.html#Syncfusion_Maui_Toolkit_ButtonBase_BackgroundImageSource) property of [SfButton](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Buttons.SfButton.html).
-
-{% tabs %}
-{% highlight xaml %}
-
-<buttons:SfButton x:Name="SfButton" 
-                    Text="Nature"
-                    FontAttributes="Bold" 
-                    BackgroundImageSource="button_background.png" 
-                    CornerRadius="10" 
-                    WidthRequest="150"/>
-
-{% endhighlight %}
-{% highlight c# %}
-
-SfButton button = new SfButton();
-button.Text = "Nature";
-button.FontAttributes = FontAttributes.Bold;
-button.BackgroundImageSource = "button_background.png";
-button.CornerRadius = 10;
-button.WidthRequest = 150;
-
-{% endhighlight %}
-{% endtabs %}
-
-![.NET MAUI Button with background image.](images/getting-started/net-maui-button-with-background-image.png)
-
