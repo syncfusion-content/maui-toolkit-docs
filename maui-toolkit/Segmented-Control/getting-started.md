@@ -99,53 +99,6 @@ public partial class MainPage : ContentPage
 {% endhighlight %}
 {% endtabs %}
 
-## Step 5: Populating segmented items
-
-You can use [ItemsSource](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SegmentedControl.SfSegmentedControl.html#Syncfusion_Maui_Toolkit_SegmentedControl_SfSegmentedControl_ItemsSource ) property of [SfSegmentedControl](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SegmentedControl.SfSegmentedControl.html) to populate the segmented items.
-
-{% tabs %}
-{% highlight XAML %}
-
-<ContentPage   
-    xmlns:segmentedControl="clr-namespace:Syncfusion.Maui.Toolkit.SegmentedControl;assembly=Syncfusion.Maui.Toolkit">
-    <segmentedControl:SfSegmentedControl>
-        <segmentedControl:SfSegmentedControl.ItemsSource>
-            <x:Array Type="{x:Type x:String}">
-                <x:String>Day</x:String>
-                <x:String>Week</x:String>
-                <x:String>Month</x:String>
-                <x:String>Year</x:String>
-            </x:Array>
-        </segmentedControl:SfSegmentedControl.ItemsSource>
-    </segmentedControl:SfSegmentedControl>
-</ContentPage>
-
-{% endhighlight %}
-{% highlight C# %}
-
-using Syncfusion.Maui.Toolkit.SegmentedControl;
-. . .
-
-public partial class MainPage : ContentPage
-{
-    public MainPage()
-    {
-        InitializeComponent();
-          SfSegmentedControl segmentedControl = new SfSegmentedControl();
-          segmentedControl.ItemsSource = new List<SfSegmentItem>
-          {
-            new SfSegmentItem { Text = "Day" },
-            new SfSegmentItem { Text = "Week" },
-            new SfSegmentItem { Text = "Month" },
-            new SfSegmentItem { Text = "Year" }
-         };
-        this.Content = segmentedControl;
-    }
-}
-
-{% endhighlight %}
-{% endtabs %}
-
 {% endtabcontent %}
 {% tabcontent Visual Studio Code %}
 
@@ -227,53 +180,6 @@ public partial class MainPage : ContentPage
     {
         InitializeComponent();
         SfSegmentedControl segmentedControl = new SfSegmentedControl();
-        this.Content = segmentedControl;
-    }
-}
-
-{% endhighlight %}
-{% endtabs %}
-
-## Step 5: Populating segmented items
-
-You can use [ItemsSource](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SegmentedControl.SfSegmentedControl.html#Syncfusion_Maui_Toolkit_SegmentedControl_SfSegmentedControl_ItemsSource ) property of [SfSegmentedControl](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SegmentedControl.SfSegmentedControl.html) to populate the segmented items.
-
-{% tabs %}
-{% highlight XAML %}
-
-<ContentPage   
-    xmlns:segmentedControl="clr-namespace:Syncfusion.Maui.Toolkit.SegmentedControl;assembly=Syncfusion.Maui.Toolkit">
-    <segmentedControl:SfSegmentedControl>
-        <segmentedControl:SfSegmentedControl.ItemsSource>
-            <x:Array Type="{x:Type x:String}">
-                <x:String>Day</x:String>
-                <x:String>Week</x:String>
-                <x:String>Month</x:String>
-                <x:String>Year</x:String>
-            </x:Array>
-        </segmentedControl:SfSegmentedControl.ItemsSource>
-    </segmentedControl:SfSegmentedControl>
-</ContentPage>
-
-{% endhighlight %}
-{% highlight C# %}
-
-using Syncfusion.Maui.Toolkit.SegmentedControl;
-. . .
-
-public partial class MainPage : ContentPage
-{
-    public MainPage()
-    {
-        InitializeComponent();
-          SfSegmentedControl segmentedControl = new SfSegmentedControl();
-          segmentedControl.ItemsSource = new List<SfSegmentItem>
-          {
-            new SfSegmentItem { Text = "Day" },
-            new SfSegmentItem { Text = "Week" },
-            new SfSegmentItem { Text = "Month" },
-            new SfSegmentItem { Text = "Year" }
-         };
         this.Content = segmentedControl;
     }
 }
@@ -370,5 +276,52 @@ public partial class MainPage : ContentPage
 {% endtabs %}
 {% endtabcontent %}
 {% endtabcontents %}
+
+## Step 5: Populating segmented items
+
+You can use [ItemsSource](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SegmentedControl.SfSegmentedControl.html#Syncfusion_Maui_Toolkit_SegmentedControl_SfSegmentedControl_ItemsSource ) property of [SfSegmentedControl](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SegmentedControl.SfSegmentedControl.html) to populate the segmented items.
+
+{% tabs %}
+{% highlight XAML %}
+
+<ContentPage   
+    xmlns:segmentedControl="clr-namespace:Syncfusion.Maui.Toolkit.SegmentedControl;assembly=Syncfusion.Maui.Toolkit">
+    <segmentedControl:SfSegmentedControl>
+        <segmentedControl:SfSegmentedControl.ItemsSource>
+            <x:Array Type="{x:Type x:String}">
+                <x:String>Day</x:String>
+                <x:String>Week</x:String>
+                <x:String>Month</x:String>
+                <x:String>Year</x:String>
+            </x:Array>
+        </segmentedControl:SfSegmentedControl.ItemsSource>
+    </segmentedControl:SfSegmentedControl>
+</ContentPage>
+
+{% endhighlight %}
+{% highlight C# %}
+
+using Syncfusion.Maui.Toolkit.SegmentedControl;
+. . .
+
+public partial class MainPage : ContentPage
+{
+    public MainPage()
+    {
+        InitializeComponent();
+          SfSegmentedControl segmentedControl = new SfSegmentedControl();
+          segmentedControl.ItemsSource = new List<SfSegmentItem>
+          {
+            new SfSegmentItem { Text = "Day" },
+            new SfSegmentItem { Text = "Week" },
+            new SfSegmentItem { Text = "Month" },
+            new SfSegmentItem { Text = "Year" }
+         };
+        this.Content = segmentedControl;
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
 
 ![Getting started in .NET MAUI Segmented control.](images/getting-started/getting-started.png)

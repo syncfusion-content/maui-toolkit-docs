@@ -276,7 +276,7 @@ public partial class MainPage : ContentPage
 {% endtabcontent %}
 {% endtabcontents %}
 
-## Change different shimmer views
+## Step 5: Change different shimmer views
 
 The `.NET MAUI Shimmer` control provides seven different shimmer types of views. It can be assigned to the control using the [Type](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Shimmer.SfShimmer.html#Syncfusion_Maui_Toolkit_Shimmer_SfShimmer_Type) property. By default, the control is assigned to the [CirclePersona](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Shimmer.ShimmerType.html#Syncfusion_Maui_Toolkit_Shimmer_ShimmerType_CirclePersona) view.
 
@@ -314,7 +314,7 @@ this.Content = shimmer;
 
 ![Circle persona Shimmer view in .NET MAUI.](images/overview/maui-circle-persona.gif)
 
-## Loading shimmer content
+## Step 6: Loading shimmer content
 
 Shimmer content is loaded when the [`IsActive`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Shimmer.SfShimmer.html#Syncfusion_Maui_Toolkit_Shimmer_SfShimmer_IsActive) property of the [`SfShimmer`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Shimmer.SfShimmer.html) is disabled.
 

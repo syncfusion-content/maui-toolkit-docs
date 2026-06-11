@@ -296,10 +296,6 @@ public partial class MainPage : ContentPage
 {% endhighlight %}
 {% endtabs %}
 
-## Step 6: Running the Application
-
-Press **F5** to build and run the application. Once compiled, perform pull-to-refresh action on pullable content view to refresh the view.
-
 ![.NET MAUI PullToRefresh with slide on top transition mode](Images/getting-started//maui-pull-to-refresh-slideontop-mode.gif)
 
 If we run the above sample with `TransitionMode` set to `Push`, the output will be as shown in the following.

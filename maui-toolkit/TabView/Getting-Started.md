@@ -296,7 +296,7 @@ namespace TabViewGettingStarted
 {% endtabcontent %}
 {% endtabcontents %}
 
-## Populate tab items in Tab View
+## Step 5: Populate tab items in Tab View
 
 Tab items can be added to the control using the [Items](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SfTabView.html#Syncfusion_Maui_Toolkit_TabView_SfTabView_Items) property of [SfTabView](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SfTabView.html).
 
@@ -449,7 +449,7 @@ namespace TabViewGettingStarted
 
 N> View [sample](https://github.com/SyncfusionExamples/maui-toolkit-samples/tree/master/TabView/TabViewGettingStarted) in GitHub.
 
-## Populate tab items using ItemsSource
+## Step 6: Populate tab items using ItemsSource
 
 The [ItemsSource](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SfTabView.html#Syncfusion_Maui_Toolkit_TabView_SfTabView_ItemsSource) property provides a flexible way to populate the `SfTabView` with data from a collection. This approach is particularly useful when you want to bind the tab items to a data source. 
 

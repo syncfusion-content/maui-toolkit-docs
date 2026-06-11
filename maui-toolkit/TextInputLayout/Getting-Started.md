@@ -255,7 +255,7 @@ Add any input view control such as [Entry](https://learn.microsoft.com/en-us/dot
 {% endtabcontent %}
 {% endtabcontents %}
 
-## Initialize TextInputLayout
+## Step 5: Initialize TextInputLayout
 
 {% tabs %} 
 
@@ -304,33 +304,3 @@ When focusing on the input view, the hint label will be moved to the top positio
 Run the project, and check if you get the following output to ensure that the project has been appropriately configured to add the text input layout control.
 
 ![Hint text in .NET MAUI TextInputLayout.](images/GettingStarted/GettingStarted.png)
-
-## Enabling password visibility toggle
-
-The password visibility toggle is used to show or hide the visibility of characters in the input view added to the control. You can enable this toggle by setting the [EnablePasswordVisibilityToggle](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TextInputLayout.SfTextInputLayout.html#Syncfusion_Maui_Toolkit_TextInputLayout_SfTextInputLayout_EnablePasswordVisibilityToggle) property to `true.`
-
-{% tabs %} 
-
-{% highlight xaml %} 
-
-<inputLayout:SfTextInputLayout  Hint="Password" 
-                                EnablePasswordVisibilityToggle="true">
-    <Entry Text="1234"/>
-</inputLayout:SfTextInputLayout>  
- 
-{% endhighlight %}
-
-{% highlight C# %} 
-
-var inputLayout = new SfTextInputLayout();
-inputLayout.Hint = "Password";
-inputLayout.EnablePasswordVisibilityToggle = true;
-inputLayout.Content = new Entry() { Text = "1234" }; 
-
-{% endhighlight %}
-
-{% endtabs %}
-
-![Password toggle button in .NET MAUI TextInputLayout.](images/GettingStarted/PasswordGettingStarted.png)
-
-N> Password visibility toggle can be enabled only for [Entry](https://learn.microsoft.com/en-us/dotnet/maui/user-interface/controls/entry) control.

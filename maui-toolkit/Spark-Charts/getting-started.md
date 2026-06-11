@@ -289,7 +289,7 @@ public partial class MainPage : ContentPage
 
 {% endtabcontents %}
 
-### Initialize view model
+## Step 5: Initialize view model
 
 Define a simple data model to represent a data point in the chart:
 
@@ -370,7 +370,7 @@ sparkchart.BindingContext = viewModel;
 
 {% endtabs %} 
 
-### Populate chart with data
+## Step 6: Populate chart with data
 
 Binding `Data` to the spark chart [ItemsSource](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SparkCharts.SfSparkChart.html#Syncfusion_Maui_Toolkit_SparkCharts_SfSparkChart_ItemsSource) property from its BindingContext to create our own spark chart.
 

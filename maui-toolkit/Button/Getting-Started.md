@@ -303,35 +303,3 @@ button.TextColor = Colors.White;
 The following screenshot illustrates the result of the above code.
 
 ![.NET MAUI Button](images/customization-images/Button_textcolor.png)
-
-
-## Button icon
-
-The button icon can be defined using the [ImageSource](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Core.ButtonBase.html#Syncfusion_Maui_Core_ButtonBase_ImageSource) and [ShowIcon](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Core.ButtonBase.html#Syncfusion_Maui_Core_ButtonBase_ShowIcon) properties of [SfButton](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Buttons.SfButton.html).
-
-N> Ensure that the images mentioned in the code snippets are located in the **Resources** folder of your sample project.
-
-{% tabs %}
-{% highlight xaml %}
-
-<buttons:SfButton x:Name="SfButton" 
-                    Text="Button"
-                    TextColor="White" 
-                    ShowIcon="True"
-                    CornerRadius="2" 
-                    ImageSource="button_Heart.png"/>
-
-{% endhighlight %}
-{% highlight c# %}
-
-SfButton button = new SfButton();
-button.Text = "Button";
-button.TextColor = Colors.White;
-button.ImageSource = "button_Heart.png";
-button.ShowIcon = true;
-button.CornerRadius= 2;
-
-{% endhighlight %}
-{% endtabs %}
-
-![.NET MAUI Button with button icon.](images/getting-started/net-maui-button-with-icon.png)

@@ -232,7 +232,7 @@ SfOtpInput otpInput = new SfOtpInput();
 {% endtabcontent %}
 {% endtabcontents %}
 
-## Value
+## Step 5: Load the Value
 
 You can specify the value of OTP Input by using the [Value](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.OtpInput.SfOtpInput.html#Syncfusion_Maui_Toolkit_OtpInput_SfOtpInput_Value) property.
 

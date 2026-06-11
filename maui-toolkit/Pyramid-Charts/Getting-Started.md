@@ -293,7 +293,7 @@ public partial class MainPage : ContentPage
 {% endtabcontent %}
 {% endtabcontents %}
 
-### Initialize view model
+## Step 5: Initialize view model
 
 Define a simple data model to represent a data point in the chart:
 
@@ -380,153 +380,9 @@ public partial class MainPage : ContentPage
 
 {% endtabs %} 
 
-### Populate chart with data
+## Step 6: Populate chart with data
 
 Binding `Data` to the pyramid chart [ItemsSource](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfPyramidChart.html#Syncfusion_Maui_Toolkit_Charts_SfPyramidChart_ItemsSource) property from its BindingContext to create our own pyramid chart.
-
-{% tabs %}   
-
-{% highlight xaml %}
-
-<chart:SfPyramidChart ItemsSource="{Binding Data}" 
-                      XBindingPath="Name" 
-                      YBindingPath="Value"/>
-. . .            
-</chart:SfPyramidChart>
-
-{% endhighlight %}
-
-{% highlight C# %}
-
-SfPyramidChart chart = new SfPyramidChart();
-StageViewModel viewModel = new StageViewModel();
-chart.BindingContext = viewModel;
-
-// Bind the chart's data source to the ViewModel's data collection.
-chart.ItemsSource = viewModel.Data; 
-
-// Set X-axis binding to the 'Name' property in the ViewModel.
-chart.XBindingPath = "Name";
-
-// Set Y-axis binding to the 'Value' property in the ViewModel.
-chart.YBindingPath = "Value"; 
-this.Content = chart;
-
-{% endhighlight %}
-
-{% endtabs %} 
-
-### Add a title
-
-The title of the chart acts as the title to provide quick information to the user about the data being plotted in the chart. You can set the title using the [Title](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartBase.html#Syncfusion_Maui_Toolkit_Charts_ChartBase_Title) property of the pyramid chart as follows.
-
-{% tabs %} 
-
-{% highlight xaml %}
-
-<chart:SfPyramidChart>
-    <chart:SfPyramidChart.Title>
-        <Label Text="Pyramid Stages"/>
-    </chart:SfPyramidChart.Title>
-    . . .
-</chart:SfPyramidChart>
-
-{% endhighlight %}
-
-{% highlight C# %}
-
-SfPyramidChart chart = new SfPyramidChart();
-
-// Set the title of the chart.
-chart.Title = new Label()
-{
-    Text = "Pyramid Stages",
-};
-this.Content = chart;
-
-{% endhighlight %}
-
-{% endtabs %}  
-
-### Enable the data labels
-
-The [ShowDataLabels](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfPyramidChart.html#Syncfusion_Maui_Toolkit_Charts_SfPyramidChart_ShowDataLabels) property of the chart can be used to enable data labels to improve the readability of the pyramid chart. The label visibility is set to `False` by default.
-
-{% tabs %} 
-
-{% highlight xaml %}
-
-<chart:SfPyramidChart ShowDataLabels="True">
-    . . .
-</chart:SfPyramidChart>
-
-{% endhighlight %}
-
-{% highlight C# %}
-
-SfPyramidChart chart = new SfPyramidChart();
-. . .
-chart.ShowDataLabels = true; // Enable data labels in the chart.
-this.Content = chart;
-
-{% endhighlight %}
-
-{% endtabs %} 
-
-### Enable a legend
-
-The legend provides information about the data point displayed in the pyramid chart. The [Legend](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartBase.html#Syncfusion_Maui_Toolkit_Charts_ChartBase_Legend) property of the chart was used to enable it.
-
-{% tabs %} 
-
-{% highlight xaml %}
-
-<chart:SfPyramidChart>
-    . . .
-    <chart:SfPyramidChart.Legend>
-    <chart:ChartLegend/>
-    </chart:SfPyramidChart.Legend>
-</chart:SfPyramidChart>
-
-{% endhighlight %}
-
-{% highlight C# %}
-
-SfPyramidChart chart = new SfPyramidChart();
-. . .
-chart.Legend = new ChartLegend(); // Enable legend in the chart.
-this.Content = chart;
-
-{% endhighlight %}
-
-{% endtabs %} 
-
-### Enable Tooltip
-
-Tooltips are used to show information about the segment, when mouse over on it. Enable tooltip by setting the chart [EnableTooltip](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfPyramidChart.html#Syncfusion_Maui_Toolkit_Charts_SfPyramidChart_EnableTooltip) property as true.
-
-{% tabs %} 
-
-{% highlight xaml %}
-
-<chart:SfPyramidChart EnableTooltip="True">
-    . . .
-</chart:SfPyramidChart>
-
-{% endhighlight %}
-
-{% highlight C# %}
-
-SfPyramidChart chart = new SfPyramidChart();
-. . .
-chart.EnableTooltip = true; // Enable tooltip in the chart.
-this.Content = chart;
-
-{% endhighlight %}
-
-{% endtabs %}
-
-The following code example gives you the complete code of above configurations.
 
 {% tabs %} 
 

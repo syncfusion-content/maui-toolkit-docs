@@ -7,7 +7,6 @@ control: SfExpander
 documentation: ug
 ---
 
-
 ## Animation duration
 
 The `SfExpander` allows you to customize the duration of the expanding and collapsing animations by using the `AnimationDuration` property. By default, the animation duration is set to `300 milliseconds`.

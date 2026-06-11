@@ -12,6 +12,36 @@ keywords: .net maui text input layout, syncfusion text input layout, text input 
 
 Assistive labels provide additional information about text entered in the input view controls.
 
+## Enabling password visibility toggle
+
+The password visibility toggle is used to show or hide the visibility of characters in the input view added to the control. You can enable this toggle by setting the [EnablePasswordVisibilityToggle](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TextInputLayout.SfTextInputLayout.html#Syncfusion_Maui_Toolkit_TextInputLayout_SfTextInputLayout_EnablePasswordVisibilityToggle) property to `true.`
+
+{% tabs %} 
+
+{% highlight xaml %} 
+
+<inputLayout:SfTextInputLayout  Hint="Password" 
+                                EnablePasswordVisibilityToggle="true">
+    <Entry Text="1234"/>
+</inputLayout:SfTextInputLayout>  
+ 
+{% endhighlight %}
+
+{% highlight C# %} 
+
+var inputLayout = new SfTextInputLayout();
+inputLayout.Hint = "Password";
+inputLayout.EnablePasswordVisibilityToggle = true;
+inputLayout.Content = new Entry() { Text = "1234" }; 
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Password toggle button in .NET MAUI TextInputLayout.](images/GettingStarted/PasswordGettingStarted.png)
+
+N> Password visibility toggle can be enabled only for [Entry](https://learn.microsoft.com/en-us/dotnet/maui/user-interface/controls/entry) control.
+
 ## Helper text
 
 Helper text conveys additional guidance about the input field, such as how it will be used. It can be set using the [HelperText](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TextInputLayout.SfTextInputLayout.html#Syncfusion_Maui_Toolkit_TextInputLayout_SfTextInputLayout_HelperText) property.

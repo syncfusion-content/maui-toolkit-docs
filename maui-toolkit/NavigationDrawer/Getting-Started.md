@@ -441,7 +441,7 @@ private void hamburgerButton_Clicked(object sender, EventArgs e)
 
 ![CustomView](Images/getting-started/getting_main_content.png)
 
-## Set ListView as DrawerContentView
+## Step 6: Set ListView as DrawerContentView
 
 Create a ListView with items and set it as [DrawerContentView](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NavigationDrawer.DrawerSettings.html#Syncfusion_Maui_Toolkit_NavigationDrawer_DrawerSettings_DrawerContentView).
 
