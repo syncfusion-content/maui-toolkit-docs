@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Selection in .NET MAUI Date Picker Control | Syncfusion<sup>&reg;</sup>
+title: Selection in .NET MAUI Date Picker | Syncfusion<sup>&reg;</sup>
 description: Learn about Selection in Syncfusion<sup>&reg;</sup> .NET MAUI Toolkit Date Picker (SfDatePicker) control and more.
 platform: maui
 control: SfDatePicker
