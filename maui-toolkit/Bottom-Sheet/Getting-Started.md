@@ -321,7 +321,7 @@ public class BookViewModel
 {% endhighlight %}
 {% endtabs %}
 
-## Step 6: Bind the Itemssource
+## Step 6: Populate the Bottom Sheet
 
 {% tabs %}
 {% highlight xaml %}

@@ -6,6 +6,7 @@ platform: maui-toolkit
 control: SfExpander
 documentation: ug
 ---
+# Customization in .NET MAUI Expander
 
 ## Animation duration
 
