@@ -2,12 +2,12 @@
 layout: post
 title: Globalization in Syncfusion® .NET MAUI Toolkit Controls
 description: Learn about localization, RTL layout, time zone handling, screen reader, and keyboard navigation in Syncfusion® .NET MAUI Toolkit controls.
-platform: MAUI Toolkit
+platform: maui-toolkit
 control: .NET MAUI Toolkit
 documentation: UG
 ---
 
-# Globalization Support in Syncfusion<sup>®</sup> .NET MAUI Toolkit Controls
+# Globalization in Syncfusion<sup>®</sup> .NET MAUI Toolkit
 
 Syncfusion<sup>®</sup> .NET MAUI Toolkit controls are lightweight, open-source UI components designed to deliver consistent and adaptable user experiences across global audiences. These controls support essential globalization and accessibility features to help developers build culturally-aware and inclusive applications.
 
