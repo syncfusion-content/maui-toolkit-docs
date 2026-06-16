@@ -142,3 +142,5 @@ N> By default, the value of progress should be specified between 0 and 100. To d
 Run the project, and check if you get following output to make sure that the project has been configured properly to add the circular progress bar.
 
 ![.NET MAUI Circular ProgressBar](images/getting-started/progress-bar.png)
+
+You can download the Circular ProgressBar Getting Started sample from [here](https://github.com/SyncfusionExamples/getting-started-with-the-dotnet-maui-circular-progress-bar)

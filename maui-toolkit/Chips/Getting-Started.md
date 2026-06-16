@@ -225,3 +225,5 @@ The following screenshot illustrates the result of the above code.
 ![ChipGroup sample with display member path and itemsSource demo](images/getting-started/getting_started.png)
 
 N> When publishing in AOT mode on iOS, ensure `[Preserve(AllMembers = true)]` is added to the model class to maintain DisplayMemberPath binding
+
+You can download the Chips Getting Started sample from [here](https://github.com/SyncfusionExamples/Getting-Started-with-.NET-MAUI-Chips)

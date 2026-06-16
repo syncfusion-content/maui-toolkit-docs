@@ -142,3 +142,5 @@ sfNumericUpDown.CustomFormat = "0.000";
 {% endtabs %}
 
 ![.NET MAUI NumericUpDown value editing](GettingStarted_images/editing_value.gif)
+
+You can download the Numeric UpDown Getting Started sample from [here]

@@ -146,3 +146,5 @@ private void ClickToShowPopup_Clicked(object sender, EventArgs e)
 ![Popup with default appearance](Images/getting-started//maui-popup-with-default-appearance.png)
 
 {% endtabcontent %}
+
+You can download the Popup Getting Started sample from [here](https://github.com/SyncfusionExamples/getting-started-.net-maui-popup)

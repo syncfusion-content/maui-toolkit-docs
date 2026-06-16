@@ -143,3 +143,5 @@ this.Content = picker;
 {% endtabs %}
 
 ![Set header view in .NET MAUI Time picker.](images/getting-started/maui-time-picker-set-header-view.png)
+
+You can download the Time Picker Getting Started sample from [here](https://github.com/SyncfusionExamples/dotnet-maui-timepicker-sample)

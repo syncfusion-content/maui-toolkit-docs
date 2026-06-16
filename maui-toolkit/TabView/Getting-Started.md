@@ -202,3 +202,5 @@ this.Content = tabView;
 ![Getting started with .NET MAUI Tab View.](images/tab-view-gettingstarted.png)
 
 N> View [sample](https://github.com/SyncfusionExamples/maui-toolkit-samples/tree/master/TabView/TabViewGettingStarted) in GitHub.
+
+You can download the TabView Getting Started sample from [here](https://github.com/SyncfusionExamples/Getting-Started-with-.NET-MAUI-TabView/tree/master/TabViewGettingStarted)

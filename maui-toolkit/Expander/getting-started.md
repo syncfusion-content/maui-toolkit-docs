@@ -391,3 +391,5 @@ N> Loading the `Label` as direct children of the `Header` or `Content` of the Ex
 The following screenshot illustrates the result of the above code.
 
 ![.NET MAUI Expander](Images/gettingstarted/maui-expander-with-gettingstarted.png)
+
+You can download the Expander Getting Started sample from [here](https://github.com/SyncfusionExamples/getting-started-with-.net-maui-expander)

@@ -157,3 +157,5 @@ this.Content = shimmer;
 {% endtabs %}
 
 ![Circle persona Shimmer view in .NET MAUI.](images/overview/maui-circle-persona.gif)
+
+You can download the Shimmer Getting Started sample from [here](https://github.com/SyncfusionExamples/Getting-started-with-the-.NET-MAUI-Shimmer-control)

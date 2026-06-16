@@ -218,3 +218,5 @@ The following code example illustrates how to add the collection in Carousel,
 {% endtabs %}
 
 ![OverView image for Carousel](images/gettingstarted.png)
+
+You can download the Carousel View Getting Started sample from [here](https://github.com/SyncfusionExamples/Getting-Started-with-.NET-MAUI-SfCarousel)

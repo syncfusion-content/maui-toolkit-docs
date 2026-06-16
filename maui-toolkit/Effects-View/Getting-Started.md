@@ -226,3 +226,5 @@ var border = new Border
 {% endtabs %}
 
 ![Effects View initialization](Getting-Started_images/RippleEffect.gif)
+
+You can download the EffectsView Getting Started sample from [here](https://github.com/SyncfusionExamples/Getting-Started-with-.NET-MAUI-EffectsView)

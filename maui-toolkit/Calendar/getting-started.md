@@ -134,3 +134,5 @@ this.calendar.View = CalendarView.Month;
 The following screenshot illustrates the result of the above code.
 
 ![Change different calendar views in .NET MAUI Calendar.](images/getting-started/net-maui-calendar-month-view.png)
+
+You can download the Calendar Getting Started sample from [here](https://github.com/syncfusion/maui-demos/tree/master/MAUI/Calendar)

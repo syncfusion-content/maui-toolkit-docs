@@ -263,3 +263,5 @@ Create an ImageButton and set the required image to the `Source` property. Ensur
 {% endtabs %}
 
 ![.NET MAUI Navigation Drawer](Images/getting-started/gettingstarted.png)
+
+You can download the Navigation Drawer Getting Started sample from [here](https://github.com/SyncfusionExamples/Getting-started-with-.NET-MAUI-NavigationDrawer)
