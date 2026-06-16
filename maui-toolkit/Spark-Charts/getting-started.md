@@ -33,76 +33,7 @@ Before proceeding, ensure that the following are set up:
 2. Search for [Syncfusion.Maui.Toolkit](https://www.nuget.org/packages/Syncfusion.Maui.Toolkit/) and install the latest version.
 3. Ensure the necessary dependencies are installed correctly, and the project is restored.
 
-## Step 3: Register the handler
-
-In the **MauiProgram.cs** file, register the handler for Syncfusion® Toolkit.
-
-{% tabs %}
-{% highlight C# tabtitle="MauiProgram.cs" hl_lines="1 9" %}
-
-using Syncfusion.Maui.Toolkit.Hosting;
-
-    public static class MauiProgram
-    {
-	    public static MauiApp CreateMauiApp()
-	    {
-	        var builder = MauiApp.CreateBuilder();
-		    builder
-			    .ConfigureSyncfusionToolkit()
-			    .UseMauiApp<App>()
-			    .ConfigureFonts(fonts =>
-			    {
-				    fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
-				    fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
-			    });
-
-		    return builder.Build();
-	    }
-    }
-
-{% endhighlight %}
-{% endtabs %} 
-
-## Step 4: Add .NET MAUI Spark Charts
-
-1. To initialize the control, import the `Syncfusion.Maui.Toolkit.SparkCharts` namespace into your code.
-2. Initialize an instance of the [SfSparkLineChart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SparkCharts.SfSparkLineChart.html) control.
-
-{% tabs %} 
-{% highlight xaml %}
-
-<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:sparkchart="clr-namespace:Syncfusion.Maui.Toolkit.SparkCharts;assembly=Syncfusion.Maui.Toolkit"
-             x:Class="GettingStarted.MainPage">
-
-        <sparkchart:SfSparkLineChart/>
-
-</ContentPage>
- 
-{% endhighlight %}
-
-{% highlight C# %}
-
-using Syncfusion.Maui.Toolkit.SparkCharts; 
-
-. . .
-
-public partial class MainPage : ContentPage
-{
-    public MainPage()
-    {
-        InitializeComponent();
-        SfSparkLineChart sparkchart = new SfSparkLineChart(); 
-        this.Content = sparkchart; 
-    }
-} 
-
-{% endhighlight %}
-{% endtabs %}
-
 {% endtabcontent %}
-
 {% tabcontent Visual Studio Code %}
 
 ## Prerequisites
@@ -127,75 +58,7 @@ Before proceeding, ensure that the following are set up:
 3. Run the command `dotnet add package Syncfusion.Maui.Toolkit` to install the Syncfusion<sup>®</sup> .NET MAUI Toolkit NuGet package.
 4. To ensure all dependencies are installed, run `dotnet restore`.
 
-## Step 3: Register the handler
-
-In the **MauiProgram.cs** file, register the handler for Syncfusion<sup>®</sup> Toolkit.
-
-{% tabs %}
-{% highlight C# tabtitle="MauiProgram.cs" hl_lines="1 9" %}
-
-using Syncfusion.Maui.Toolkit.Hosting;
-
-    public static class MauiProgram
-    {
-	    public static MauiApp CreateMauiApp()
-	    {
-	        var builder = MauiApp.CreateBuilder();
-		    builder
-			    .ConfigureSyncfusionToolkit()
-			    .UseMauiApp<App>()
-			    .ConfigureFonts(fonts =>
-			    {
-				    fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
-				    fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
-			    });
-
-		    return builder.Build();
-	    }
-    }
-
-{% endhighlight %} 
-{% endtabs %}
-
-## Step 4: Add .NET MAUI Spark Charts
-
-1. To initialize the control, import the `Syncfusion.Maui.Toolkit.SparkCharts` namespace.
-2. Initialize [SfSparkLineChart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SparkCharts.SfSparkLineChart.html).
-
-{% tabs %} 
-{% highlight xaml %}
-
-<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:sparkchart="clr-namespace:Syncfusion.Maui.Toolkit.SparkCharts;assembly=Syncfusion.Maui.Toolkit"
-             x:Class="GettingStarted.MainPage">
-
-        <sparkchart:SfSparkLineChart/>
-
-</ContentPage>
- 
-{% endhighlight %}
-
-{% highlight C# %}
-
-using Syncfusion.Maui.Toolkit.SparkCharts; 
-
-. . .
-
-public partial class MainPage : ContentPage
-{
-    public MainPage()
-    {
-        InitializeComponent();
-        SfSparkLineChart sparkchart = new SfSparkLineChart(); 
-        this.Content = sparkchart; 
-    }
-} 
-{% endhighlight %}
-{% endtabs %}
-
 {% endtabcontent %}
-
 {% tabcontent JetBrains Rider %}
 
 ## Prerequisites
@@ -218,80 +81,26 @@ Before proceeding, ensure the following are set up:
 2. Search for [Syncfusion.Maui.Toolkit](https://www.nuget.org/packages/Syncfusion.Maui.Toolkit/) and install the latest version.
 3. Ensure the necessary dependencies are installed correctly, and the project is restored. If not, Open the Terminal in Rider and manually run: `dotnet restore`
 
-## Step 3: Register the handler
-
-In the **MauiProgram.cs** file, register the handler for Syncfusion<sup>®</sup> core.
-
-{% tabs %}
-{% highlight C# tabtitle="MauiProgram.cs" hl_lines="1 9" %}
-
-using Syncfusion.Maui.Toolkit.Hosting;
-
-    public static class MauiProgram
-    {
-	    public static MauiApp CreateMauiApp()
-	    {
-	        var builder = MauiApp.CreateBuilder();
-		    builder
-			    .ConfigureSyncfusionToolkit()
-			    .UseMauiApp<App>()
-			    .ConfigureFonts(fonts =>
-			    {
-				    fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
-				    fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
-			    });
-
-		    return builder.Build();
-	    }
-    }
-
-{% endhighlight %}
-{% endtabs %} 
-
-## Step 4: Add .NET MAUI Spark Charts
-
-1. To initialize the control, import the `Syncfusion.Maui.Toolkit.SparkCharts` namespace.
-2. Initialize [SfSparkLineChart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SparkCharts.SfSparkLineChart.html).
-
-{% tabs %} 
-{% highlight xaml %}
-
-<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:sparkchart="clr-namespace:Syncfusion.Maui.Toolkit.SparkCharts;assembly=Syncfusion.Maui.Toolkit"
-             x:Class="GettingStarted.MainPage">
-
-        <sparkchart:SfSparkLineChart/>
-
-</ContentPage>
- 
-{% endhighlight %}
-
-{% highlight C# %}
-
-using Syncfusion.Maui.Toolkit.SparkCharts;
-
-. . .
-
-public partial class MainPage : ContentPage
-{
-    public MainPage()
-    {
-        InitializeComponent();
-        SfSparkLineChart sparkchart = new SfSparkLineChart();
-        this.Content = sparkchart;
-    }
-} 
-{% endhighlight %}
-{% endtabs %}
-
 {% endtabcontent %}
-
 {% endtabcontents %}
 
-## Step 5: Initialize view model
+## Step 3: Register Syncfusion handler
 
-Define a simple data model to represent a data point in the chart:
+Make sure to add the namespace.
+ 
+{% highlight MauiProgram.cs %}
+using Syncfusion.Maui.Toolkit.Hosting;
+{% endhighlight %}
+ 
+Register the Syncfusion core handler in your CreateMauiApp method of `MauiProgram.cs` file to use Syncfusion controls.
+ 
+{% highlight MauiProgram.cs %}
+builder.ConfigureSyncfusionToolkit();
+{% endhighlight %}
+
+## Step 4: Create the Model
+
+Define a simple data Model to represent a data point in the chart:
 
 {% tabs %}  
 
@@ -305,6 +114,8 @@ public class SparkDataModel
 {% endhighlight %} 
 
 {% endtabs %} 
+
+## Step 5: Initialize the ViewModel
 
 Next, create a `SparkChartViewModel` class that holds a list of `SparkDataModel` objects as follows.
 
@@ -338,119 +149,58 @@ public class SparkChartViewModel
 
 {% endtabs %} 
 
-Create a `SparkChartViewModel` instance and set it as the spark chart's `BindingContext`. This enables property binding from the `SparkChartViewModel` class.
+## Step 6: Import Spark Chart namespace
 
-N> Add the namespace of the `SparkChartViewModel` class to your XAML Page, if you prefer to set `BindingContext` in XAML.
-
-{% tabs %} 
-
+Add the following namespace in your XAML or C#.
+{% tabs %}
 {% highlight xaml %}
 
-<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:sparkchart="clr-namespace:Syncfusion.Maui.Toolkit.SparkCharts;assembly=Syncfusion.Maui.Toolkit"
-             xmlns:model="clr-namespace:GettingStarted"
-             x:Class="GettingStarted.MainPage">
-    <sparkchart:SfSparkLineChart>
-        <sparkchart:SfSparkLineChart.BindingContext>
-            <model:SparkChartViewModel/>
-        </sparkchart:SfSparkLineChart.BindingContext>
-    </sparkchart:SfSparkLineChart>
+xmlns:sparkchart="clr-namespace:Syncfusion.Maui.Toolkit.SparkCharts;assembly=Syncfusion.Maui.Toolkit"
+
+{% endhighlight %}
+{% highlight c# %}
+
+using Syncfusion.Maui.Toolkit.SparkCharts;
+
+{% endhighlight %}
+{% endtabs %}
+
+{% endtabcontent %}
+{% endtabcontents %}
+
+## Step 7: Add the Spark Charts component
+
+Binding `Data` to the spark chart [ItemsSource](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SparkCharts.SfSparkChart.html#Syncfusion_Maui_Toolkit_SparkCharts_SfSparkChart_ItemsSource) property from its BindingContext to create our own spark chart.
+
+{% tabs %} 
+{% highlight xaml %}
+
+<sparkchart:SfSparkLineChart ItemsSource="{Binding Data}" 
+                             YBindingPath="Value">
+    <sparkchart:SfSparkLineChart.BindingContext>
+        <model:SparkChartViewModel/>
+    </sparkchart:SfSparkLineChart.BindingContext>
+</sparkchart:SfSparkLineChart>
+
 </ContentPage>
 
 {% endhighlight %}
 
 {% highlight C# %}
 
-SfSparkLineChart sparkchart = new SfSparkLineChart();
 SparkChartViewModel viewModel = new SparkChartViewModel();
-sparkchart.BindingContext = viewModel;
-
-{% endhighlight %}
-
-{% endtabs %} 
-
-## Step 6: Populate chart with data
-
-Binding `Data` to the spark chart [ItemsSource](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SparkCharts.SfSparkChart.html#Syncfusion_Maui_Toolkit_SparkCharts_SfSparkChart_ItemsSource) property from its BindingContext to create our own spark chart.
-
-{% tabs %}
-
-{% highlight xaml %}
-
-<sparkchart:SfSparkLineChart ItemsSource="{Binding Data}" 
-                    YBindingPath="Value">
-. . .
-</sparkchart:SfSparkLineChart>
-
-{% endhighlight %}
-
-{% highlight c# %}
-
 SfSparkLineChart sparkchart = new SfSparkLineChart()
 {
-    ItemsSource = new SparkChartViewModel().Data,
+    ItemsSource = viewModel.Data,
     YBindingPath = "Value",
+    BindingContext = viewModel;
 };
-
 this.Content = sparkchart;
 
 {% endhighlight %}
 
 {% endtabs %}
 
-The following code example gives you the complete code of above configurations.
-
-{% tabs %} 
-
-{% highlight xaml %}
-
-<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:sparkchart="clr-namespace:Syncfusion.Maui.Toolkit.SparkCharts;assembly=Syncfusion.Maui.Toolkit"
-             xmlns:model="clr-namespace:GettingStarted"
-             x:Class="GettingStarted.MainPage">
-
-    <sparkchart:SfSparkLineChart ItemsSource="{Binding Data}" 
-            YBindingPath="Value">
-        <sparkchart:SfSparkLineChart.BindingContext>
-            <model:SparkChartViewModel/>
-        </sparkchart:SfSparkLineChart.BindingContext>
-
-    </sparkchart:SfSparkLineChart>
-
-</ContentPage>
-
-{% endhighlight %}
-
-{% highlight C# %}
-
-using Syncfusion.Maui.Toolkit.SparkCharts;
-
-. . .
-
-public partial class MainPage : ContentPage
-{
-    public MainPage()
-    {
-        InitializeComponent();
-        SparkChartViewModel viewModel = new SparkChartViewModel();
-        SfSparkLineChart sparkchart = new SfSparkLineChart()
-        {
-            ItemsSource = viewModel.Data,
-            YBindingPath = "Value",
-            BindingContext = viewModel;
-        };
-        this.Content = sparkchart;
-    }
-} 
-
-{% endhighlight %}
-
-{% endtabs %}
-
-The following spark chart is created as a result of the previous codes.
-
 ![Spark Line Chart in MAUI Spark Chart](getting_started_images/MAUI_Spark_Chart.png)
 
-You can find the complete getting started sample from this [link](https://github.com/SyncfusionExamples/maui-toolkit-samples/tree/master/SparkChart/GettingStarted).
+You can download the Sunburst Chart Getting Started sample from [here](https://github.com/SyncfusionExamples/maui-toolkit-samples/tree/master/SparkChart/GettingStarted).

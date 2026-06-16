@@ -32,77 +32,6 @@ Before proceeding, ensure the following are setup:
 2. Search for [Syncfusion.Maui.Toolkit](https://www.nuget.org/packages/Syncfusion.Maui.Toolkit/) and install the latest version.
 3. Ensure the necessary dependencies are installed correctly, and the project is restored.
 
-## Step 3: Register the handler
-
-In the **MauiProgram.cs** file, register the handler for Syncfusion<sup>®</sup> Toolkit.
-
-{% tabs %}
-{% highlight C# tabtitle="MauiProgram.cs" hl_lines="1 9" %}
-using Syncfusion.Maui.Toolkit.Hosting;
-
-public static class MauiProgram
-{
-    public static MauiApp CreateMauiApp()
-    {
-        var builder = MauiApp.CreateBuilder();
-        builder
-            .ConfigureSyncfusionToolkit()
-            .UseMauiApp<App>()
-            .ConfigureFonts(fonts =>
-            {
-                fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
-                fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
-            });
-
-        return builder.Build();
-    }
-}
-{% endhighlight %}
-{% endtabs %} 
-
-## Step 4: Add a basic Tab View
-
-1. To initialize the control, import the `Syncfusion.Maui.Toolkit.TabView` namespace.
-
-2. Initialize [SfTabView](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SfTabView.html).
-
-{% tabs %}
-
-{% highlight xaml %}
-<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="TabViewGettingStarted.MainPage"
-             xmlns:local="clr-namespace:TabViewGettingStarted"
-             xmlns:tabView="clr-namespace:Syncfusion.Maui.Toolkit.TabView;assembly=Syncfusion.Maui.Toolkit">
-    <!-- Define the content of the ContentPage -->
-    <ContentPage.Content>
-        <!-- Add a SfTabView control to the ContentPage -->
-        <tabView:SfTabView />
-    </ContentPage.Content>
-</ContentPage>
-{% endhighlight %}
-
-{% highlight C# %}
-using Syncfusion.Maui.Toolkit.TabView;
-namespace TabViewGettingStarted
-{
-    public partial class MainPage : ContentPage
-    {
-        public MainPage()
-        {
-            InitializeComponent();
-            // Create an instance of the SfTabView control
-            SfTabView tabView = new SfTabView();
-            // Set the Content property of the ContentPage to the newly created SfTabView instance
-            this.Content = tabView;
-        }
-    }
-}
-{% endhighlight %}
-
-{% endtabs %}
-
 {% endtabcontent %}
 {% tabcontent Visual Studio Code %}
 
@@ -127,79 +56,7 @@ Before proceeding, ensure the following are setup:
 3. Run the command `dotnet add package Syncfusion.Maui.Toolkit` to install the Syncfusion<sup>®</sup> .NET MAUI Toolkit NuGet package.
 4. To ensure all dependencies are installed, run `dotnet restore`.
 
-## Step 3: Register the handler
-
-In the **MauiProgram.cs** file, register the handler for Syncfusion<sup>®</sup> Toolkit.
-
-{% tabs %}
-{% highlight C# tabtitle="MauiProgram.cs" hl_lines="1 9" %}
-using Syncfusion.Maui.Toolkit.Hosting;
-
-public static class MauiProgram
-{
-    public static MauiApp CreateMauiApp()
-    {
-        var builder = MauiApp.CreateBuilder();
-        builder
-            .ConfigureSyncfusionToolkit()
-            .UseMauiApp<App>()
-            .ConfigureFonts(fonts =>
-            {
-                fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
-                fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
-            });
-
-        return builder.Build();
-    }
-}
-{% endhighlight %}
-{% endtabs %} 
-
-## Step 4: Add a basic Tab View
-
-1. To initialize the control, import the `Syncfusion.Maui.Toolkit.TabView` namespace.
-
-2. Initialize [SfTabView](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SfTabView.html).
-
-{% tabs %}
-
-{% highlight xaml %}
-<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="TabViewGettingStarted.MainPage"
-             xmlns:local="clr-namespace:TabViewGettingStarted"
-             xmlns:tabView="clr-namespace:Syncfusion.Maui.Toolkit.TabView;assembly=Syncfusion.Maui.Toolkit">
-    <!-- Define the content of the ContentPage -->
-    <ContentPage.Content>
-        <!-- Add a SfTabView control to the ContentPage -->
-        <tabView:SfTabView />
-    </ContentPage.Content>
-</ContentPage>
-{% endhighlight %}
-
-{% highlight C# %}
-using Syncfusion.Maui.Toolkit.TabView;
-namespace TabViewGettingStarted
-{
-    public partial class MainPage : ContentPage
-    {
-        public MainPage()
-        {
-            InitializeComponent();
-            // Create an instance of the SfTabView control
-            SfTabView tabView = new SfTabView();
-            // Set the Content property of the ContentPage to the newly created SfTabView instance
-            this.Content = tabView;
-        }
-    }
-}
-{% endhighlight %}
-
-{% endtabs %}
-
 {% endtabcontent %}
-
 {% tabcontent JetBrains Rider %}
 
 ## Prerequisites
@@ -222,81 +79,43 @@ Before proceeding, ensure the following are set up:
 2. Search for [Syncfusion.Maui.Toolkit](https://www.nuget.org/packages/Syncfusion.Maui.Toolkit/) and install the latest version.
 3. Ensure the necessary dependencies are installed correctly, and the project is restored. If not, open the Terminal in Rider and manually run: `dotnet restore`.
 
-## Step 3: Register the handler
+{% endtabcontent %}
+{% endtabcontents %}
 
-In the **MauiProgram.cs** file, register the handler for Syncfusion<sup>®</sup> Toolkit.
+## Step 3: Register Syncfusion handler
 
-{% tabs %}
-{% highlight C# tabtitle="MauiProgram.cs" hl_lines="1 9" %}
+Make sure to add the namespace.
+ 
+{% highlight MauiProgram.cs %}
 using Syncfusion.Maui.Toolkit.Hosting;
-
-public static class MauiProgram
-{
-    public static MauiApp CreateMauiApp()
-    {
-        var builder = MauiApp.CreateBuilder();
-        builder
-            .ConfigureSyncfusionToolkit()
-            .UseMauiApp<App>()
-            .ConfigureFonts(fonts =>
-            {
-                fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
-                fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
-            });
-
-        return builder.Build();
-    }
-}
 {% endhighlight %}
-{% endtabs %} 
+ 
+Register the Syncfusion core handler in your CreateMauiApp method of `MauiProgram.cs` file to use Syncfusion controls.
+ 
+{% highlight MauiProgram.cs %}
+builder.ConfigureSyncfusionToolkit();
+{% endhighlight %}
 
-## Step 4: Add a basic Tab View
+## Step 4: Import Tab View namespace
 
-1. To initialize the control, import the `Syncfusion.Maui.Toolkit.TabView` namespace.
-
-2. Initialize [SfTabView](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SfTabView.html).
-
+Add the following namespace in your XAML or C#.
 {% tabs %}
-
 {% highlight xaml %}
-<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="TabViewGettingStarted.MainPage"
-             xmlns:local="clr-namespace:TabViewGettingStarted"
-             xmlns:tabView="clr-namespace:Syncfusion.Maui.Toolkit.TabView;assembly=Syncfusion.Maui.Toolkit">
-    <!-- Define the content of the ContentPage -->
-    <ContentPage.Content>
-        <!-- Add a SfTabView control to the ContentPage -->
-        <tabView:SfTabView />
-    </ContentPage.Content>
-</ContentPage>
-{% endhighlight %}
 
-{% highlight C# %}
+xmlns:tabView="clr-namespace:Syncfusion.Maui.Toolkit.TabView;assembly=Syncfusion.Maui.Toolkit"
+
+{% endhighlight %}
+{% highlight c# %}
+
 using Syncfusion.Maui.Toolkit.TabView;
-namespace TabViewGettingStarted
-{
-    public partial class MainPage : ContentPage
-    {
-        public MainPage()
-        {
-            InitializeComponent();
-            // Create an instance of the SfTabView control
-            SfTabView tabView = new SfTabView();
-            // Set the Content property of the ContentPage to the newly created SfTabView instance
-            this.Content = tabView;
-        }
-    }
-}
-{% endhighlight %}
 
+{% endhighlight %}
 {% endtabs %}
 
 {% endtabcontent %}
 {% endtabcontents %}
 
-## Step 5: Populate tab items in Tab View
+## Step 5: Add the Tab View component
 
 Tab items can be added to the control using the [Items](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SfTabView.html#Syncfusion_Maui_Toolkit_TabView_SfTabView_Items) property of [SfTabView](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SfTabView.html).
 
@@ -304,132 +123,82 @@ The following examples demonstrate how to add tab items to the `SfTabView` contr
 
 {% tabs %}
 {% highlight xaml %}
-<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="TabViewGettingStarted.MainPage"
-             xmlns:tabView="clr-namespace:Syncfusion.Maui.Toolkit.TabView;assembly=Syncfusion.Maui.Toolkit"
-             BackgroundColor="{DynamicResource PageBackgroundColor}">
-    <ContentPage.Content>
-        <tabView:SfTabView x:Name="tabView">
-            <tabView:SfTabView.Items>
-                <tabView:SfTabItem Header="Call">                    
-                        <Grid BackgroundColor="Red" />
-                </tabView:SfTabItem>
-                <tabView:SfTabItem Header="Favorites">
-                        <ListView RowHeight="50">
-                            <ListView.ItemsSource>
-                                <x:Array Type="{x:Type x:String}">
-                                    <x:String>James</x:String>
-                                    <x:String>Richard</x:String>
-                                    <x:String>Michael</x:String>
-                                    <x:String>Alex</x:String>
-                                    <x:String>Clara</x:String>
-                                </x:Array>
-                            </ListView.ItemsSource>
-                            <ListView.ItemTemplate>
-                                <DataTemplate>
-                                    <ViewCell>
-                                        <Grid Margin="10,5">
-                                            <Label TextColor="#666666"
-                                                   Text="{Binding}" />
-                                        </Grid>
-                                    </ViewCell>
-                                </DataTemplate>
-                            </ListView.ItemTemplate>
-                        </ListView>
-                    </tabView:SfTabItem.Content>
-                </tabView:SfTabItem>
-                <tabView:SfTabItem Header="Contacts">
-                        <Grid BackgroundColor="Blue" />
-                </tabView:SfTabItem>
-            </tabView:SfTabView.Items>
-        </tabView:SfTabView>
-    </ContentPage.Content>
-</ContentPage>
+
+<tabView:SfTabView x:Name="tabView">
+    <tabView:SfTabView.Items>
+        <tabView:SfTabItem Header="Call">
+            <Grid BackgroundColor="Red" />
+        </tabView:SfTabItem>
+        <tabView:SfTabItem Header="Favorites">
+            <CollectionView>
+                <CollectionView.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>James</x:String>
+                        <x:String>Richard</x:String>
+                        <x:String>Michael</x:String>
+                        <x:String>Alex</x:String>
+                        <x:String>Clara</x:String>
+                    </x:Array>
+                </CollectionView.ItemsSource>
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Grid Margin="10,5" HeightRequest="40">
+                            <Label TextColor="#666666" Text="{Binding}"/>
+                        </Grid>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </tabView:SfTabItem>
+        <tabView:SfTabItem Header="Contacts">
+            <Grid BackgroundColor="Blue"/>
+        </tabView:SfTabItem>
+    </tabView:SfTabView.Items>
+</tabView:SfTabView>
+
 {% endhighlight %}
 
 {% highlight C# %}
-using Syncfusion.Maui.Toolkit.TabView;
-namespace TabViewGettingStarted
+
+var tabView = new SfTabView();
+var callTab = new SfTabItem { Header = "Call" };
+tabView.Items.Add(callTab);
+var favoritesTab = new SfTabItem { Header = "Favorites" };
+var collectionView = new CollectionView();
+var itemsSource = new string[] { "James", "Richard", "Michael", "Alex", "Clara" };
+collectionView.ItemsSource = itemsSource;
+collectionView.ItemTemplate = new DataTemplate(() =>
 {
-    public partial class MainPage : ContentPage
+    var grid = new Grid
     {
-        public MainPage()
-        {
-            InitializeComponent();
+        Margin = new Thickness(10, 5),
+        HeightRequest = 40
+    };
+    var label = new Label
+    {
+        VerticalOptions = LayoutOptions.Start,
+        HorizontalOptions = LayoutOptions.Start,
+        TextColor = Color.FromArgb("#666666"),
+        FontSize = 16
+    };
+    label.SetBinding(Label.TextProperty, ".");
+    grid.Children.Add(label);
+    return grid;
+});
 
-            // Create an instance of the SfTabView control
-            SfTabView tabView = new SfTabView();
+favoritesTab.Content = collectionView;
+tabView.Items.Add(favoritesTab);
+var contactsTab = new SfTabItem { Header = "Contacts" };
+contactsTab.Content = new Grid
+{
+    BackgroundColor = Colors.Blue
+};
+tabView.Items.Add(contactsTab);
 
-            // Create a Grid with a red background for the "Call" tab
-            Grid allContactsGrid = new Grid { BackgroundColor = Colors.Red };
-
-            // Create a ListView for the "Favorites" tab with predefined items
-            var favorites = new ListView
-            {
-                RowHeight = 50,
-                ItemsSource = new string[] { "James", "Richard", "Michael", "Alex", "Clara" },
-                ItemTemplate = new DataTemplate(() =>
-                {
-                    var grid = new Grid
-                    {
-                        Margin = new Thickness(10, 5)
-                    };
-
-                    var label = new Label
-                    {
-                        VerticalOptions = LayoutOptions.Start,
-                        HorizontalOptions = LayoutOptions.Start,
-                        TextColor = Color.FromArgb("#666666"),
-                        FontSize = 16
-                    };
-                    label.SetBinding(Label.TextProperty, ".");
-
-                    grid.Children.Add(label);
-
-                    return new ViewCell
-                    {
-                        View = grid
-                    };
-                })
-            };
-
-            // Create a Grid with a blue background for the "Contacts" tab
-            Grid contactsGrid = new Grid { BackgroundColor = Colors.Blue };
-
-            // Create a collection of tab items and add the previously created content to each tab
-            var tabItems = new TabItemCollection
-            {
-                new SfTabItem()
-                {
-                    Header = "Call",
-                    Content = allContactsGrid
-                },
-                new SfTabItem()
-                {
-                    Header = "Favorites",
-                    Content = favorites
-                },
-                new SfTabItem()
-                {
-                    Header = "Contacts",
-                    Content = contactsGrid
-                }
-            };
-
-            // Assign the collection of tab items to the SfTabView
-            tabView.Items = tabItems;
-
-            // Set the Content property of the ContentPage to the SfTabView instance
-            this.Content = tabView;
-        }
-    }
-}
+this.Content = tabView;
 
 {% endhighlight %}
 {% endtabs %}
 
-![.NET MAUI Tab View](images/net-maui-tab-view-getting-started.png)
+![Getting started with .NET MAUI Tab View.](images/tab-view-gettingstarted.png)
 
 N> View [sample](https://github.com/SyncfusionExamples/maui-toolkit-samples/tree/master/TabView/TabViewGettingStarted) in GitHub.

@@ -35,70 +35,6 @@ Before proceeding, ensure the following are setup:
 2. Search for [Syncfusion.Maui.Toolkit](https://www.nuget.org/packages/Syncfusion.Maui.Toolkit/) and install the latest version.
 3. Ensure the necessary dependencies are installed correctly, and the project is restored.
 
-## Step 3: Register the handler
-
-In the **MauiProgram.cs** file, register the handler for Syncfusion<sup>&reg;</sup> Toolkit.
-
-{% tabs %}
-{% highlight C# tabtitle="MauiProgram.cs" hl_lines="1 9" %}
-    using Syncfusion.Maui.Toolkit.Hosting;
-
-    public static class MauiProgram
-    {
-	    public static MauiApp CreateMauiApp()
-	    {
-	        var builder = MauiApp.CreateBuilder();
-		    builder
-			    .ConfigureSyncfusionToolkit()
-			    .UseMauiApp<App>()
-			    .ConfigureFonts(fonts =>
-			    {
-				    fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
-				    fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
-			    });
-
-		    return builder.Build();
-	    }
-    }
-
-{% endhighlight %}
-{% endtabs %}
-
-## Step 4: Add .NET MAUI Segmented Control
-
-1. To initialize the control, import the `Syncfusion.Maui.Toolkit.SegmentedControl` namespace into your code.
-2. Initialize [SfSegmentedControl](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SegmentedControl.SfSegmentedControl.html) class.
-
-{% tabs %}
-{% highlight XAML %}
-
-<ContentPage   
-    xmlns:segmentedControl="clr-namespace:Syncfusion.Maui.Toolkit.SegmentedControl;assembly=Syncfusion.Maui.Toolkit">
-
-    <segmentedControl:SfSegmentedControl />
-
-</ContentPage>
-
-{% endhighlight %}
-{% highlight C# %}
-
-using Syncfusion.Maui.Toolkit.SegmentedControl;
-
-. . .
-
-public partial class MainPage : ContentPage
-{
-    public MainPage()
-    {
-        InitializeComponent();
-        SfSegmentedControl segmentedControl = new SfSegmentedControl();
-        this.Content = segmentedControl;
-    }
-}
-
-{% endhighlight %}
-{% endtabs %}
-
 {% endtabcontent %}
 {% tabcontent Visual Studio Code %}
 
@@ -123,72 +59,7 @@ Before proceeding, ensure the following are setup:
 3. Run the command `dotnet add package Syncfusion.Maui.Toolkit` to install the Syncfusion<sup>&reg;</sup> .NET MAUI Toolkit NuGet package.
 4. To ensure all dependencies are installed, run `dotnet restore`.
 
-## Step 3: Register the handler
-
-In the **MauiProgram.cs** file, register the handler for Syncfusion<sup>&reg;</sup> Toolkit.
-
-{% tabs %}
-{% highlight C# tabtitle="MauiProgram.cs" hl_lines="1 9" %}
-    using Syncfusion.Maui.Toolkit.Hosting;
-
-    public static class MauiProgram
-    {
-	    public static MauiApp CreateMauiApp()
-	    {
-	        var builder = MauiApp.CreateBuilder();
-		    builder
-			    .ConfigureSyncfusionToolkit()
-			    .UseMauiApp<App>()
-			    .ConfigureFonts(fonts =>
-			    {
-				    fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
-				    fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
-			    });
-
-		    return builder.Build();
-	    }
-    }
-
-{% endhighlight %}
-{% endtabs %}
-
-## Step 4: Add .NET MAUI Segmented Control
-
-1. To initialize the control, import the `Syncfusion.Maui.Toolkit.SegmentedControl` namespace into your code.
-2. Initialize [SfSegmentedControl](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SegmentedControl.SfSegmentedControl.html) class.
-
-{% tabs %}
-{% highlight XAML %}
-
-<ContentPage   
-    xmlns:segmentedControl="clr-namespace:Syncfusion.Maui.Toolkit.SegmentedControl;assembly=Syncfusion.Maui.Toolkit">
-
-    <segmentedControl:SfSegmentedControl />
-
-</ContentPage>
-
-{% endhighlight %}
-{% highlight C# %}
-
-using Syncfusion.Maui.Toolkit.SegmentedControl;
-
-. . .
-
-public partial class MainPage : ContentPage
-{
-    public MainPage()
-    {
-        InitializeComponent();
-        SfSegmentedControl segmentedControl = new SfSegmentedControl();
-        this.Content = segmentedControl;
-    }
-}
-
-{% endhighlight %}
-{% endtabs %}
-
 {% endtabcontent %}
-
 {% tabcontent JetBrains Rider %}
 
 ## Prerequisites
@@ -211,115 +82,69 @@ Before proceeding, ensure the following are set up:
 2. Search for [Syncfusion.Maui.Toolkit](https://www.nuget.org/packages/Syncfusion.Maui.Toolkit/) and install the latest version.
 3. Ensure the necessary dependencies are installed correctly, and the project is restored. If not, Open the Terminal in Rider and manually run: `dotnet restore`
 
-## Step 3: Register the handler
-
-In the **MauiProgram.cs** file, register the handler for Syncfusion<sup>&reg;</sup> Toolkit.
-
-{% tabs %}
-{% highlight C# tabtitle="MauiProgram.cs" hl_lines="1 9" %}
-    using Syncfusion.Maui.Toolkit.Hosting;
-
-    public static class MauiProgram
-    {
-	    public static MauiApp CreateMauiApp()
-	    {
-	        var builder = MauiApp.CreateBuilder();
-		    builder
-			    .ConfigureSyncfusionToolkit()
-			    .UseMauiApp<App>()
-			    .ConfigureFonts(fonts =>
-			    {
-				    fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
-				    fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
-			    });
-
-		    return builder.Build();
-	    }
-    }
-
-{% endhighlight %}
-{% endtabs %}
-
-## Step 4: Add .NET MAUI Segmented Control
-
-1. To initialize the control, import the `Syncfusion.Maui.Toolkit.SegmentedControl` namespace into your code.
-2. Initialize [SfSegmentedControl](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SegmentedControl.SfSegmentedControl.html) class.
-
-{% tabs %}
-{% highlight XAML %}
-
-<ContentPage   
-    xmlns:segmentedControl="clr-namespace:Syncfusion.Maui.Toolkit.SegmentedControl;assembly=Syncfusion.Maui.Toolkit">
-
-    <segmentedControl:SfSegmentedControl />
-
-</ContentPage>
-
-{% endhighlight %}
-{% highlight C# %}
-
-using Syncfusion.Maui.Toolkit.SegmentedControl;
-
-. . .
-
-public partial class MainPage : ContentPage
-{
-    public MainPage()
-    {
-        InitializeComponent();
-        SfSegmentedControl segmentedControl = new SfSegmentedControl();
-        this.Content = segmentedControl;
-    }
-}
-
-{% endhighlight %}
-{% endtabs %}
 {% endtabcontent %}
 {% endtabcontents %}
 
-## Step 5: Populating segmented items
+## Step 3: Register Syncfusion handler
+
+Make sure to add the namespace.
+ 
+{% highlight MauiProgram.cs %}
+using Syncfusion.Maui.Toolkit.Hosting;
+{% endhighlight %}
+ 
+Register the Syncfusion core handler in your CreateMauiApp method of `MauiProgram.cs` file to use Syncfusion controls.
+ 
+{% highlight MauiProgram.cs %}
+builder.ConfigureSyncfusionToolkit();
+{% endhighlight %}
+
+## Step 4: Import Segmented Control namespace
+
+Add the following namespace in your XAML or C#.
+{% tabs %}
+{% highlight xaml %}
+
+xmlns:segmentedControl="clr-namespace:Syncfusion.Maui.Toolkit.SegmentedControl;assembly=Syncfusion.Maui.Toolkit"
+
+{% endhighlight %}
+{% highlight c# %}
+
+using Syncfusion.Maui.Toolkit.SegmentedControl;
+
+{% endhighlight %}
+{% endtabs %}
+
+## Step 5: Add the Segmented Control component
 
 You can use [ItemsSource](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SegmentedControl.SfSegmentedControl.html#Syncfusion_Maui_Toolkit_SegmentedControl_SfSegmentedControl_ItemsSource ) property of [SfSegmentedControl](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SegmentedControl.SfSegmentedControl.html) to populate the segmented items.
 
 {% tabs %}
 {% highlight XAML %}
 
-<ContentPage   
-    xmlns:segmentedControl="clr-namespace:Syncfusion.Maui.Toolkit.SegmentedControl;assembly=Syncfusion.Maui.Toolkit">
-    <segmentedControl:SfSegmentedControl>
-        <segmentedControl:SfSegmentedControl.ItemsSource>
-            <x:Array Type="{x:Type x:String}">
-                <x:String>Day</x:String>
-                <x:String>Week</x:String>
-                <x:String>Month</x:String>
-                <x:String>Year</x:String>
-            </x:Array>
-        </segmentedControl:SfSegmentedControl.ItemsSource>
-    </segmentedControl:SfSegmentedControl>
-</ContentPage>
+<segmentedControl:SfSegmentedControl>
+    <segmentedControl:SfSegmentedControl.ItemsSource>
+        <x:Array Type="{x:Type x:String}">
+            <x:String>Day</x:String>
+            <x:String>Week</x:String>
+            <x:String>Month</x:String>
+            <x:String>Year</x:String>
+        </x:Array>
+    </segmentedControl:SfSegmentedControl.ItemsSource>
+</segmentedControl:SfSegmentedControl>
 
 {% endhighlight %}
 {% highlight C# %}
 
-using Syncfusion.Maui.Toolkit.SegmentedControl;
-. . .
-
-public partial class MainPage : ContentPage
+SfSegmentedControl segmentedControl = new SfSegmentedControl();
+segmentedControl.ItemsSource = new List<SfSegmentItem>
 {
-    public MainPage()
-    {
-        InitializeComponent();
-          SfSegmentedControl segmentedControl = new SfSegmentedControl();
-          segmentedControl.ItemsSource = new List<SfSegmentItem>
-          {
-            new SfSegmentItem { Text = "Day" },
-            new SfSegmentItem { Text = "Week" },
-            new SfSegmentItem { Text = "Month" },
-            new SfSegmentItem { Text = "Year" }
-         };
-        this.Content = segmentedControl;
-    }
-}
+    new SfSegmentItem { Text = "Day" },
+    new SfSegmentItem { Text = "Week" },
+    new SfSegmentItem { Text = "Month" },
+    new SfSegmentItem { Text = "Year" }
+};
+this.Content = segmentedControl;
 
 {% endhighlight %}
 {% endtabs %}

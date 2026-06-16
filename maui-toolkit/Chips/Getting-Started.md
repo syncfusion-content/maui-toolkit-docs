@@ -33,104 +33,6 @@ Before proceeding, ensure the following are setup:
 2. Search for [Syncfusion.Maui.Toolkit](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.html) and install the latest version.
 3. Ensure the necessary dependencies are installed correctly, and the project is restored.
 
-## Step 3: Register the Handler 
-
-In the **MauiProgram.cs file**, register the handler for Syncfusion<sup>®</sup> Toolkit.
-
-{% highlight c# hl_lines="1 9" %}
-
-using Syncfusion.Maui.Toolkit.Hosting;
-public static class MauiProgram
-{
-	public static MauiApp CreateMauiApp()
-	{
-		var builder = MauiApp.CreateBuilder();
-		builder
-		.UseMauiApp<App>()
-		.ConfigureSyncfusionToolkit()
-		.ConfigureFonts(fonts =>
-		{
-			fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
-		});
-
-		return builder.Build();
-	}      
-}
-   
-{% endhighlight %} 
-
-## Step 4: Add a .NET MAUI Chips control
-
-Step 1. To initialize the control, import the `Syncfusion.Maui.Toolkit.Chips` namespace into your code.
-
-Step 2. Initialize `SfChip` class.
-
-{% tabs %}
-
-{% highlight xaml %}
-	
-	xmlns:ChipControl="clr-namespace:Syncfusion.Maui.Toolkit.Chips;assembly=Syncfusion.Maui.Toolkit"
-       
-{% endhighlight %}
-
-{% highlight c# %}
-
-    using Syncfusion.Maui.Toolkit.Chips;
-
-{% endhighlight %}
-
-{% endtabs %}
-
-Step 3: Set the control to content in `ContentPage.`
-
-**For SfChip**
-
-{% tabs %}
-
-{% highlight xaml %}
-
-<ContentPage.Content>    
-    <chip:SfChip x:Name="chips" />
-</ContentPage.Content>
-
-{% endhighlight %}
-
-{% highlight c# %}
-          
-SfChip chips = new SfChip(); 
-Content = chips;  
-
-{% endhighlight %}
-
-{% endtabs %}
-
-**For SfChipGroup**
-
-Initialize an empty [`SfChipGroup`] as shown in the following code snippet
-
-{% tabs %}
-
-{% highlight xaml %}
-
-<ContentPage.Content>
-	<Grid>
-		<chip:SfChipGroup/>
-	</Grid>
-</ContentPage.Content>
-
-{% endhighlight %}
-
-{% highlight c# %}
-
-	Grid grid = new Grid();
-	SfChipGroup chipGroup = new SfChipGroup();
-	grid.Children.Add(chipGroup);
-	this.Content = grid;
-		
-{% endhighlight %}
-
-{% endtabs %}
-
 {% endtabcontent %}
 {% tabcontent Visual Studio Code %}
 
@@ -156,104 +58,6 @@ Before proceeding, ensure the following are set up:
 3. Run the command `dotnet add package Syncfusion.Maui.Toolkit` to install the Syncfusion<sup>®</sup> .NET MAUI Toolkit NuGet package.
 4. To ensure all dependencies are installed, run `dotnet restore`.
 
-## Step 3: Register the Handler 
-
-In the **MauiProgram.cs file**, register the handler for Syncfusion<sup>®</sup> Toolkit.
-
-{% highlight c# hl_lines="1 9" %}
-
-using Syncfusion.Maui.Toolkit.Hosting;
-public static class MauiProgram
-{
-	public static MauiApp CreateMauiApp()
-	{
-		var builder = MauiApp.CreateBuilder();
-		builder
-		.UseMauiApp<App>()
-		.ConfigureSyncfusionToolkit()
-		.ConfigureFonts(fonts =>
-		{
-			fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
-		});
-
-		return builder.Build();
-	}      
-}
-   
-{% endhighlight %} 
-
-## Step 4: Add a .NET MAUI Chips control
-
-Step 1. To initialize the control, import the `Syncfusion.Maui.Toolkit.Chips` namespace into your code.
-
-Step 2. Initialize `SfChip` class.
-
-{% tabs %}
-
-{% highlight xaml %}
-	
-	xmlns:ChipControl="clr-namespace:Syncfusion.Maui.Toolkit.Chips;assembly=Syncfusion.Maui.Toolkit"
-       
-{% endhighlight %}
-
-{% highlight c# %}
-
-    using Syncfusion.Maui.Toolkit.Chips;
-
-{% endhighlight %}
-
-{% endtabs %}
-
-Step 3: Set the control to content in `ContentPage.`
-
-**For SfChip**
-
-{% tabs %}
-
-{% highlight xaml %}
-
-<ContentPage.Content>    
-    <chip:SfChip x:Name="chips" />
-</ContentPage.Content>
-
-{% endhighlight %}
-
-{% highlight c# %}
-          
-SfChip chips = new SfChip(); 
-Content = chips;  
-
-{% endhighlight %}
-
-{% endtabs %}
-
-**For SfChipGroup**
-
-Initialize an empty [`SfChipGroup`] as shown in the following code snippet
-
-{% tabs %}
-
-{% highlight xaml %}
-
-<ContentPage.Content>
-	<Grid>
-		<chip:SfChipGroup/>
-	</Grid>
-</ContentPage.Content>
-
-
-{% endhighlight %}
-
-{% highlight c# %}
-
-	Grid grid = new Grid();
-	SfChipGroup chipGroup = new SfChipGroup();
-	grid.Children.Add(chipGroup);
-	this.Content = grid;
-		
-{% endhighlight %}
-
-{% endtabs %}
 {% endtabcontent %}
 
 {% tabcontent JetBrains Rider %}
@@ -278,109 +82,24 @@ Before proceeding, ensure the following are set up:
 2. Search for [Syncfusion.Maui.Toolkit](https://www.nuget.org/packages/Syncfusion.Maui.Toolkit/) and install the latest version.
 3. Ensure the necessary dependencies are installed correctly, and the project is restored. If not, Open the Terminal in Rider and manually run: `dotnet restore`
 
-## Step 3: Register the Handler 
-
-In the **MauiProgram.cs file**, register the handler for Syncfusion<sup>®</sup> Toolkit.
-
-{% highlight c# hl_lines="1 9" %}
-
-using Syncfusion.Maui.Toolkit.Hosting;
-public static class MauiProgram
-{
-	public static MauiApp CreateMauiApp()
-	{
-		var builder = MauiApp.CreateBuilder();
-		builder
-		.UseMauiApp<App>()
-		.ConfigureSyncfusionToolkit()
-		.ConfigureFonts(fonts =>
-		{
-			fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
-		});
-
-		return builder.Build();
-	}      
-}
-   
-{% endhighlight %} 
-
-## Step 4: Add a .NET MAUI Chips control
-
-Step 1. To initialize the control, import the `Syncfusion.Maui.Toolkit.Chips` namespace into your code.
-
-Step 2. Initialize `SfChip` class.
-
-{% tabs %}
-
-{% highlight xaml %}
-	
-	xmlns:ChipControl="clr-namespace:Syncfusion.Maui.Toolkit.Chips;assembly=Syncfusion.Maui.Toolkit"
-       
-{% endhighlight %}
-
-{% highlight c# %}
-
-    using Syncfusion.Maui.Toolkit.Chips;
-
-{% endhighlight %}
-
-{% endtabs %}
-
-Step 3: Set the control to content in `ContentPage.`
-
-**For SfChip**
-
-{% tabs %}
-
-{% highlight xaml %}
-
-<ContentPage.Content>    
-    <chip:SfChip x:Name="chips" />
-</ContentPage.Content>
-
-{% endhighlight %}
-
-{% highlight c# %}
-          
-SfChip chips = new SfChip(); 
-Content = chips;  
-
-{% endhighlight %}
-
-{% endtabs %}
-
-**For SfChipGroup**
-
-Initialize an empty [`SfChipGroup`] as shown in the following code snippet
-
-{% tabs %}
-
-{% highlight xaml %}
-
-<ContentPage.Content>
-	<Grid>
-		<chip:SfChipGroup/>
-	</Grid>
-</ContentPage.Content>
-
-
-{% endhighlight %}
-
-{% highlight c# %}
-
-	Grid grid = new Grid();
-	SfChipGroup chipGroup = new SfChipGroup();
-	grid.Children.Add(chipGroup);
-	this.Content = grid;
-		
-{% endhighlight %}
-
-{% endtabs %}
-
 {% endtabcontent %}
 {% endtabcontents %}
 
-## Step 5: Define the view model
+## Step 3: Register Syncfusion handler
+
+Make sure to add the namespace.
+ 
+{% highlight MauiProgram.cs %}
+using Syncfusion.Maui.Toolkit.Hosting;
+{% endhighlight %}
+ 
+Register the Syncfusion core handler in your CreateMauiApp method of `MauiProgram.cs` file to use Syncfusion controls.
+ 
+{% highlight MauiProgram.cs %}
+builder.ConfigureSyncfusionToolkit();
+{% endhighlight %}
+
+## Step 4: Define the Model
 
 Now, define a simple data model of person with the name properties.
 
@@ -399,6 +118,8 @@ public class Person
 
 {% endhighlight %}
 {% endtabs %}
+
+## Step 5: Initialize the ViewModel
 
 Next, create a view model class and initialize a collection of persons as shown in the following code sample.
 
@@ -439,29 +160,43 @@ public class ViewModel : INotifyPropertyChanged
 {% endhighlight %}
 {% endtabs %}
 
+## Step 6: Import Chips namespace
+
+Add the following namespace in your XAML or C#.
+{% tabs %}
+{% highlight xaml %}
+
+xmlns:chip="clr-namespace:Syncfusion.Maui.Toolkit.Chips;assembly=Syncfusion.Maui.Toolkit"
+
+{% endhighlight %}
+{% highlight c# %}
+
+using Syncfusion.Maui.Toolkit.Chips;
+
+{% endhighlight %}
+{% endtabs %}
+
+## Step 7: Add the Chips component
+
 Create an instance of ViewModel class,and then set it as the `BindingContext`. Bind the `ItemsSource` property with a collection, and then set the `DisplayMemberPath` property:
 
 {% tabs %}
 
 {% highlight xaml %}
-
-<ContentPage.BindingContext>
-	<local:ViewModel x:Name="viewModel"/>
-</ContentPage.BindingContext>
-<ContentPage.Content>
-	<Grid>
-		<chip:SfChipGroup 
-			ItemsSource="{Binding Employees}" 
-			ChipPadding="8,8,0,0" 
-			DisplayMemberPath="Name"
-			ChipBackground="white"
-			ChipTextColor="Black"
-			HorizontalOptions="Start" 
-			VerticalOptions="Center">
-		</chip:SfChipGroup>  
-	</Grid>
-</ContentPage.Content>
-
+<Grid>
+	<chip:SfChipGroup 
+		ItemsSource="{Binding Employees}" 
+		ChipPadding="8,8,0,0" 
+		DisplayMemberPath="Name"
+		ChipBackground="white"
+		ChipTextColor="Black"
+		HorizontalOptions="Start" 
+		VerticalOptions="Center">
+		<chip:SfChipGroup.BindingContext>
+			<local:ViewModel x:Name="viewModel"/>
+		</chip:SfChipGroup.BindingContext>
+	</chip:SfChipGroup>  
+</Grid>
 {% endhighlight %}
 
 {% highlight c# %}

@@ -35,78 +35,6 @@ Before proceeding, ensure the following are set up:
 2. Search for [Syncfusion.Maui.Toolkit](https://www.nuget.org/packages/Syncfusion.Maui.Toolkit/) and install the latest version.
 3. Ensure the necessary dependencies are installed correctly, and the project is restored.
 
-## Step 3: Register the handler
-
-In the **MauiProgram.cs** file, register the handler for Syncfusion<sup>&reg;</sup> toolkit.
-
-{% tabs %}
-{% highlight C# tabtitle="MauiProgram.cs" hl_lines="1 10" %}
-
-using Syncfusion.Maui.Toolkit.Hosting;
-namespace GettingStarted
-{
-    public static class MauiProgram
-    {
-        public static MauiApp CreateMauiApp()
-        {
-            var builder = MauiApp.CreateBuilder();
-
-            builder.ConfigureSyncfusionToolkit();
-            builder
-            .UseMauiApp<App>()
-            .ConfigureFonts(fonts =>
-            {
-                fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
-            });
-
-            return builder.Build();
-        }
-    }
-}
-
-{% endhighlight %}
-{% endtabs %}
-
-## Step 4: Add .NET MAUI Linear progress bar control
-
-1. To initialize the control, import the `Syncfusion.Maui.Toolkit.ProgressBar` namespace into your code.
-2. Initialize [SfLinearProgressBar](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.ProgressBar.SfLinearProgressBar.html).
-
-{% tabs %}
-
-{% highlight xaml %}
-
-xmlns:progressBar="clr-namespace:Syncfusion.Maui.Toolkit.ProgressBar;assembly=Syncfusion.Maui.Toolkit"
-
-{% endhighlight %}
-
-{% highlight c# %}
-
-using Syncfusion.Maui.Toolkit.ProgressBar;
-
-{% endhighlight %}
-
-{% endtabs %}
-
-Create an instance for the linear progress bar control, and add it as content.
-
-{% tabs %}
-
-{% highlight xaml %}
-
-<progressBar:SfLinearProgressBar Progress="75"/>
-
-{% endhighlight %}
-
-{% highlight c# %}
-
-SfLinearProgressBar linearProgressBar = new SfLinearProgressBar { Progress = 75 };
-this.Content = linearProgressBar;
-
-{% endhighlight %}
-
-{% endtabs %}
-
 {% endtabcontent %}
 {% tabcontent Visual Studio Code %}
 
@@ -130,79 +58,6 @@ Before proceeding, ensure the following are set up:
 2. Ensure you're in the project root directory where your .csproj file is located.
 3. Run the command `dotnet add package Syncfusion.Maui.Toolkit` to install the Syncfusion<sup>®</sup> .NET MAUI Toolkit NuGet package.
 4. To ensure all dependencies are installed, run `dotnet restore`.
-
-## Step 3: Register the handler
-
-In the **MauiProgram.cs** file, register the handler for Syncfusion<sup>&reg;</sup> toolkit.
-
-{% tabs %}
-{% highlight C# tabtitle="MauiProgram.cs" hl_lines="1 10" %}
-
-using Syncfusion.Maui.Toolkit.Hosting;
-namespace GettingStarted
-{
-    public static class MauiProgram
-    {
-        public static MauiApp CreateMauiApp()
-        {
-            var builder = MauiApp.CreateBuilder();
-
-            builder.ConfigureSyncfusionToolkit();
-            builder
-            .UseMauiApp<App>()
-            .ConfigureFonts(fonts =>
-            {
-                fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
-            });
-
-            return builder.Build();
-        }
-    }
-}
-
-{% endhighlight %}
-{% endtabs %}
-
-## Step 4: Add .NET MAUI Linear progress bar control
-
-1. To initialize the control, import the `Syncfusion.Maui.Toolkit.ProgressBar` namespace into your code.
-2. Initialize [SfLinearProgressBar](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.ProgressBar.SfLinearProgressBar.html).
-
-{% tabs %}
-
-{% highlight xaml %}
-
-xmlns:progressBar="clr-namespace:Syncfusion.Maui.Toolkit.ProgressBar;assembly=Syncfusion.Maui.Toolkit"
-
-{% endhighlight %}
-
-{% highlight c# %}
-
-using Syncfusion.Maui.Toolkit.ProgressBar;
-
-{% endhighlight %}
-
-{% endtabs %}
-
-Create an instance for the linear progress bar control, and add it as content.
-
-{% tabs %}
-
-{% highlight xaml %}
-
-<progressBar:SfLinearProgressBar Progress="75"/>
-
-{% endhighlight %}
-
-{% highlight c# %}
-
-SfLinearProgressBar linearProgressBar = new SfLinearProgressBar { Progress = 75 };
-this.Content = linearProgressBar;
-
-{% endhighlight %}
-
-{% endtabs %}
-
 
 {% endtabcontent %}
 
@@ -228,81 +83,56 @@ Before proceeding, ensure the following are set up:
 2. Search for [Syncfusion.Maui.Toolkit](https://www.nuget.org/packages/Syncfusion.Maui.Toolkit/) and install the latest version.
 3. Ensure the necessary dependencies are installed correctly, and the project is restored. If not, Open the Terminal in Rider and manually run: `dotnet restore`
 
+{% endtabcontent %}
+{% endtabcontents %}
+
 ## Step 3: Register the handler
 
-In the **MauiProgram.cs** file, register the handler for Syncfusion<sup>&reg;</sup> toolkit.
-
-{% tabs %}
-{% highlight C# tabtitle="MauiProgram.cs" hl_lines="1 10" %}
-
+Make sure to add the namespace.
+ 
+{% highlight MauiProgram.cs %}
 using Syncfusion.Maui.Toolkit.Hosting;
-namespace GettingStarted
-{
-    public static class MauiProgram
-    {
-        public static MauiApp CreateMauiApp()
-        {
-            var builder = MauiApp.CreateBuilder();
-
-            builder.ConfigureSyncfusionToolkit();
-            builder
-            .UseMauiApp<App>()
-            .ConfigureFonts(fonts =>
-            {
-                fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
-            });
-
-            return builder.Build();
-        }
-    }
-}
-
 {% endhighlight %}
-{% endtabs %}
+ 
+Register the Syncfusion core handler in your CreateMauiApp method of `MauiProgram.cs` file to use Syncfusion controls.
+ 
+{% highlight MauiProgram.cs %}
+builder.ConfigureSyncfusionToolkit();
+{% endhighlight %}
 
-## Step 4: Add .NET MAUI Linear progress bar control
+## Step 4: Import Linear ProgressBar namespace
 
-1. To initialize the control, import the `Syncfusion.Maui.Toolkit.ProgressBar` namespace into your code.
-2. Initialize [SfLinearProgressBar](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.ProgressBar.SfLinearProgressBar.html).
-
+Add the following namespace in your XAML or C#.
 {% tabs %}
-
 {% highlight xaml %}
 
 xmlns:progressBar="clr-namespace:Syncfusion.Maui.Toolkit.ProgressBar;assembly=Syncfusion.Maui.Toolkit"
 
 {% endhighlight %}
-
 {% highlight c# %}
 
 using Syncfusion.Maui.Toolkit.ProgressBar;
 
 {% endhighlight %}
-
 {% endtabs %}
+
+## Step 5: Add the Linear ProgressBar component
 
 Create an instance for the linear progress bar control, and add it as content.
 
 {% tabs %}
-
 {% highlight xaml %}
 
 <progressBar:SfLinearProgressBar Progress="75"/>
 
 {% endhighlight %}
-
 {% highlight c# %}
 
 SfLinearProgressBar linearProgressBar = new SfLinearProgressBar { Progress = 75 };
 this.Content = linearProgressBar;
 
 {% endhighlight %}
-
 {% endtabs %}
-
-
-{% endtabcontent %}
-{% endtabcontents %}
 
 N> By default, the value of progress should be specified between 0 and 100. To determine the progress value between 0 and 1, set the Minimum property to 0 and the Maximum property to 1.
 

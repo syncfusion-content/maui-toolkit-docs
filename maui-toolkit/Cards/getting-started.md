@@ -34,83 +34,6 @@ Before proceeding, ensure the following are set up:
 2. Search for [Syncfusion.Maui.Toolkit](https://www.nuget.org/packages/Syncfusion.Maui.Toolkit/) and install the latest version.
 3. Ensure the necessary dependencies are installed correctly, and the project is restored.
 
-## Step 3: Register the handler
-
-In the **MauiProgram.cs** file, register the handler for Syncfusion<sup>&reg;</sup> toolkit.
-
-{% tabs %}
-{% highlight C# tabtitle="MauiProgram.cs" hl_lines="1 10" %}
-
-using Syncfusion.Maui.Toolkit.Hosting;
-namespace GettingStarted
-{
-    public static class MauiProgram
-    {
-        public static MauiApp CreateMauiApp()
-        {
-            var builder = MauiApp.CreateBuilder();
-
-            builder.ConfigureSyncfusionToolkit();
-            builder
-            .UseMauiApp<App>()
-            .ConfigureFonts(fonts =>
-            {
-                fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
-            });
-
-            return builder.Build();
-        }
-    }
-}
-
-{% endhighlight %}
-{% endtabs %}
-
-## Step 4: Add a basic Cards control
-
-1. To initialize the control, import the `Syncfusion.Maui.Toolkit.Cards` namespace into your code.
-2. Initialize [SfCards](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Cards.html).
-
-{% tabs %}
-{% highlight xaml tabtitle="MainPage.xaml" hl_lines="3 5 6 7" %}
-
-<ContentPage   
-    . . .
-    xmlns:cards="clr-namespace:Syncfusion.Maui.Toolkit.Cards;assembly=Syncfusion.Maui.Toolkit">
-
-<cards:SfCardView>
-    <Label Text="CardView" Background="PeachPuff" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
-</cards:SfCardView>
-
-</ContentPage>
-
-{% endhighlight %}
-{% highlight c# tabtitle="MainPage.xaml.cs" hl_lines="1 9 11 18" %}
-
-using Syncfusion.Maui.Toolkit.Cards;
-. . .
-
-public partial class MainPage : ContentPage
-{
-    public MainPage()
-    {
-        InitializeComponent();
-        SfCardView cardView = new SfCardView();
-
-        cardView.Content = new Label()
-        {
-            Text = "CardView",
-            HorizontalTextAlignment = TextAlignment.Center,
-            VerticalTextAlignment = TextAlignment.Center,
-            BackgroundColor = Colors.PeachPuff
-        };
-        this.Content = cardView;
-    }
-}
-
-{% endhighlight %}
-{% endtabs %}
-
 {% endtabcontent %}
 {% tabcontent Visual Studio Code %}
 
@@ -134,83 +57,6 @@ Before proceeding, ensure the following are set up:
 2. Ensure you're in the project root directory where your .csproj file is located.
 3. Run the command `dotnet add package Syncfusion.Maui.Toolkit` to install the Syncfusion<sup>®</sup> .NET MAUI Toolkit NuGet package.
 4. To ensure all dependencies are installed, run `dotnet restore`.
-
-## Step 3: Register the handler
-
-In the **MauiProgram.cs** file, register the handler for Syncfusion<sup>&reg;</sup> toolkit.
-
-{% tabs %}
-{% highlight C# tabtitle="MauiProgram.cs" hl_lines="1 10" %}
-
-using Syncfusion.Maui.Toolkit.Hosting;
-namespace GettingStarted
-{
-    public static class MauiProgram
-    {
-        public static MauiApp CreateMauiApp()
-        {
-            var builder = MauiApp.CreateBuilder();
-
-            builder.ConfigureSyncfusionToolkit();
-            builder
-            .UseMauiApp<App>()
-            .ConfigureFonts(fonts =>
-            {
-                fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
-            });
-
-            return builder.Build();
-        }
-    }
-}
-
-{% endhighlight %}
-{% endtabs %}
-
-## Step 4: Add a basic Cards control
-
-1. To initialize the control, import the `Syncfusion.Maui.Toolkit.Cards` namespace into your code.
-2. Initialize [SfCards](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Cards.html).
-
-{% tabs %}
-{% highlight xaml tabtitle="MainPage.xaml" hl_lines="3 5 6 7" %}
-
-<ContentPage   
-    . . .
-    xmlns:cards="clr-namespace:Syncfusion.Maui.Toolkit.Cards;assembly=Syncfusion.Maui.Toolkit">
-
-<cards:SfCardView>
-    <Label Text="CardView" Background="PeachPuff" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
-</cards:SfCardView>
-
-</ContentPage>
-
-{% endhighlight %}
-{% highlight c# tabtitle="MainPage.xaml.cs" hl_lines="1 9 11 18" %}
-
-using Syncfusion.Maui.Toolkit.Cards;
-. . .
-
-public partial class MainPage : ContentPage
-{
-    public MainPage()
-    {
-        InitializeComponent();
-        SfCardView cardView = new SfCardView();
-
-        cardView.Content = new Label()
-        {
-            Text = "CardView",
-            HorizontalTextAlignment = TextAlignment.Center,
-            VerticalTextAlignment = TextAlignment.Center,
-            BackgroundColor = Colors.PeachPuff
-        };
-        this.Content = cardView;
-    }
-}
-
-{% endhighlight %}
-{% endtabs %}
 
 {% endtabcontent %}
 
@@ -236,135 +82,107 @@ Before proceeding, ensure the following are set up:
 2. Search for [Syncfusion.Maui.Toolkit](https://www.nuget.org/packages/Syncfusion.Maui.Toolkit/) and install the latest version.
 3. Ensure the necessary dependencies are installed correctly, and the project is restored. If not, Open the Terminal in Rider and manually run: `dotnet restore`
 
-## Step 3: Register the handler
-
-In the **MauiProgram.cs** file, register the handler for Syncfusion<sup>&reg;</sup> toolkit.
-
-{% tabs %}
-{% highlight C# tabtitle="MauiProgram.cs" hl_lines="1 10" %}
-
-using Syncfusion.Maui.Toolkit.Hosting;
-namespace GettingStarted
-{
-    public static class MauiProgram
-    {
-        public static MauiApp CreateMauiApp()
-        {
-            var builder = MauiApp.CreateBuilder();
-
-            builder.ConfigureSyncfusionToolkit();
-            builder
-            .UseMauiApp<App>()
-            .ConfigureFonts(fonts =>
-            {
-                fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
-            });
-
-            return builder.Build();
-        }
-    }
-}
-
-{% endhighlight %}
-{% endtabs %}
-
-## Step 4: Add a basic Cards control
-
-1. To initialize the control, import the `Syncfusion.Maui.Toolkit.Cards` namespace into your code.
-2. Initialize [SfCards](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Cards.html).
-
-{% tabs %}
-{% highlight xaml tabtitle="MainPage.xaml" hl_lines="3 5 6 7" %}
-
-<ContentPage   
-    . . .
-    xmlns:cards="clr-namespace:Syncfusion.Maui.Toolkit.Cards;assembly=Syncfusion.Maui.Toolkit">
-
-<cards:SfCardView>
-    <Label Text="CardView" Background="PeachPuff" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
-</cards:SfCardView>
-
-</ContentPage>
-
-{% endhighlight %}
-{% highlight c# tabtitle="MainPage.xaml.cs" hl_lines="1 9 11 18" %}
-
-using Syncfusion.Maui.Toolkit.Cards;
-. . .
-
-public partial class MainPage : ContentPage
-{
-    public MainPage()
-    {
-        InitializeComponent();
-        SfCardView cardView = new SfCardView();
-
-        cardView.Content = new Label()
-        {
-            Text = "CardView",
-            HorizontalTextAlignment = TextAlignment.Center,
-            VerticalTextAlignment = TextAlignment.Center,
-            BackgroundColor = Colors.PeachPuff
-        };
-        this.Content = cardView;
-    }
-}
-
-{% endhighlight %}
-{% endtabs %}
-
 {% endtabcontent %}
 
 {% endtabcontents %}
 
 ![MAUI SfCardView image](images/maui-card-initial.png)
 
-## Step 5: Define the CardLayout
+## Step 3: Register Syncfusion handler
+
+Make sure to add the namespace.
+ 
+{% highlight MauiProgram.cs %}
+using Syncfusion.Maui.Toolkit.Hosting;
+{% endhighlight %}
+ 
+Register the Syncfusion core handler in your CreateMauiApp method of `MauiProgram.cs` file to use Syncfusion controls.
+ 
+{% highlight MauiProgram.cs %}
+builder.ConfigureSyncfusionToolkit();
+{% endhighlight %}
+
+## Step 4: Import Cards namespace
+
+Add the following namespace in your XAML or C#.
+{% tabs %}
+{% highlight xaml %}
+
+xmlns:chart="clr-namespace:Syncfusion.Maui.Toolkit.Cards;assembly=Syncfusion.Maui.Toolkit"
+
+{% endhighlight %}
+{% highlight c# %}
+
+using Syncfusion.Maui.Toolkit.Cards;
+
+{% endhighlight %}
+{% endtabs %}
+
+## Step 5: Add the Cards component
+
+Create an instance for the Card control, and add it as content.
+
+{% tabs %}
+{% highlight xaml tabtitle="MainPage.xaml" %}
+<cards:SfCardView>
+    <Label Text="CardView" 
+           Background="PeachPuff" 
+           HorizontalTextAlignment="Center" 
+           VerticalTextAlignment="Center"/>
+</cards:SfCardView>
+{% endhighlight %}
+{% highlight c# tabtitle="MainPage.xaml.cs" %}
+    SfCardView cardView = new SfCardView();
+    cardView.Content = new Label()
+    {
+        Text = "CardView",
+        HorizontalTextAlignment = TextAlignment.Center,
+        VerticalTextAlignment = TextAlignment.Center,
+        BackgroundColor = Colors.PeachPuff
+    };
+    this.Content = cardView;
+{% endhighlight %}
+{% endtabs %}
+
+The following screenshot illustrates the result of the above code.
+
+![MAUI SfCardView image](images/maui-card-initial.png)
+
+### Define the card layout
 
 Initialize a card layout with a card view using the provided code sample below.
 
 {% tabs %}
-{% highlight xaml tabtitle="MainPage.xaml" hl_lines="1 3 4 5 15" %}
+{% highlight xaml tabtitle="MainPage.xaml" %}
 
 <cards:SfCardLayout HeightRequest="500" BackgroundColor="#F0F0F0">
 
     <cards:SfCardView CornerRadius="10">
-        <Label  Text="Peach" BackgroundColor="PeachPuff" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
+        <Label  Text="Peach" BackgroundColor="PeachPuff"/>
     </cards:SfCardView>
 
     <cards:SfCardView CornerRadius="10">
-        <Label  Text="MediumPurple" BackgroundColor="MediumPurple" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
+        <Label  Text="MediumPurple" BackgroundColor="MediumPurple"/>
     </cards:SfCardView>
+
     <cards:SfCardView CornerRadius="10" >
-        <Label  Text="LightPink" BackgroundColor="LightPink" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
+        <Label  Text="LightPink" BackgroundColor="LightPink"/>
     </cards:SfCardView>
 
 </cards:SfCardLayout>
 
 {% endhighlight %}
-{% highlight c# tabtitle="MainPage.xaml.cs" hl_lines="1 9 12" %}
+{% highlight c# tabtitle="MainPage.xaml.cs" %}
+    SfCardLayout cardLayout = new SfCardLayout();
 
-using Syncfusion.Maui.Cards;
-. . .
+    //Add children for card layout 
+    cardLayout.Children.Add(new SfCardView() { Content = new Label() { Text = "Peach", BackgroundColor = Colors.PeachPuff }, CornerRadius = 15 });
 
-public partial class MainPage : ContentPage
-{
-	public MainPage()
-	{
-		InitializeComponent();
-        SfCardLayout cardLayout = new SfCardLayout();
+    cardLayout.Children.Add(new SfCardView() { Content = new Label() { Text = "MediumPurple", BackgroundColor = Colors.MediumPurple },CornerRadius = 15 });
 
-		//Add children for card layout 
-		cardLayout.Children.Add(new SfCardView() { Content = new Label() { Text = "Peach", BackgroundColor = Colors.PeachPuff, HorizontalTextAlignment = TextAlignment.Center, VerticalTextAlignment = TextAlignment.Center }, CornerRadius = 15 });
+    cardLayout.Children.Add(new SfCardView() { Content = new Label() { Text = "LightPink", BackgroundColor = Colors.LightPink },CornerRadius = 15 });
 
-		cardLayout.Children.Add(new SfCardView() { Content = new Label() { Text = "MediumPurple", BackgroundColor = Colors.MediumPurple, HorizontalTextAlignment = TextAlignment.Center, VerticalTextAlignment = TextAlignment.Center },CornerRadius = 15 });
-
-		cardLayout.Children.Add(new SfCardView() { Content = new Label() { Text = "LightPink", BackgroundColor = Colors.LightPink, HorizontalTextAlignment = TextAlignment.Center, VerticalTextAlignment = TextAlignment.Center },CornerRadius = 15 });
-
-		this.Content = cardLayout;
-	}
-}
-
+    this.Content = cardLayout;
 {% endhighlight %}
 {% endtabs %}	
 

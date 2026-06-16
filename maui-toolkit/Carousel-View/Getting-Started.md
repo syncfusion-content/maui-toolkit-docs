@@ -32,81 +32,6 @@ Before proceeding, ensure the following are setup:
 2. Search for [Syncfusion.Maui.Toolkit](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.html) and install the latest version.
 3. Ensure the necessary dependencies are installed correctly, and the project is restored.
 
-## Step 3: Register the handler
-
-In the **MauiProgram.cs** file, register the handler for Syncfusion<sup>®</sup> Toolkit.
-
-{% tabs %}
-
-{% highlight C# tabtitle="MauiProgram.cs" hl_lines="1 9" %}
-
-    using Syncfusion.Maui.Toolkit.Hosting;
-
-    public static class MauiProgram
-    {
-	    public static MauiApp CreateMauiApp()
-	    {
-	        var builder = MauiApp.CreateBuilder();
-		    builder
-			    .ConfigureSyncfusionToolkit()
-			    .UseMauiApp<App>()
-			    .ConfigureFonts(fonts =>
-			    {
-				    fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
-				    fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
-			    });
-
-		    return builder.Build();
-	    }
-    }
-
-{% endhighlight %}
-
-{% endtabs %} 
-
-## Step 4: Add a Basic Carousel
-
-1. To initialize the control, import the `Syncfusion.Maui.Toolkit.Carousel` namespace into your code.
-
-2. Initialize [SfCarousel](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Carousel.SfCarousel.html)
-
-{% tabs %}
-
-{% highlight xaml %}
-
-<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:carousel="clr-namespace:Syncfusion.Maui.Toolkit.Carousel;assembly=Syncfusion.Maui.Toolkit"
-             xmlns:local="clr-namespace:CarouselSample"
-             x:Class="CarouselSample.MainPage">
-    <ContentPage.Content> 
-        <carousel:SfCarousel />
-    </ContentPage.Content>  
-</ContentPage>
-	
-{% endhighlight %}
-
-{% highlight C# %}
-
-using Syncfusion.Maui.Toolkit.Carousel;
-namespace CarouselGettingStarted
-{
-    public partial class MainPage : ContentPage
-    {
-        public MainPage()
-        {
-            InitializeComponent();           
-            SfCarousel carousel = new SfCarousel();
-            this.Content = carousel;
-        }
-    }   
-}
-
-{% endhighlight %}
-
-{% endtabs %}
-
 {% endtabcontent %}
 {% tabcontent Visual Studio Code %}
 
@@ -132,81 +57,6 @@ Before proceeding, ensure the following are set up:
 3. Run the command `dotnet add package Syncfusion.Maui.Toolkit` to install the Syncfusion<sup>®</sup> .NET MAUI Toolkit NuGet package.
 4. To ensure all dependencies are installed, run `dotnet restore`.
 
-## Step 3: Register the handler
-
-In the **MauiProgram.cs** file, register the handler for Syncfusion<sup>®</sup> Toolkit.
-
-{% tabs %}
-
-{% highlight C# tabtitle="MauiProgram.cs" hl_lines="1 9" %}
-
-    using Syncfusion.Maui.Toolkit.Hosting;
-
-    public static class MauiProgram
-    {
-	    public static MauiApp CreateMauiApp()
-	    {
-	        var builder = MauiApp.CreateBuilder();
-		    builder
-			    .ConfigureSyncfusionToolkit()
-			    .UseMauiApp<App>()
-			    .ConfigureFonts(fonts =>
-			    {
-				    fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
-				    fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
-			    });
-
-		    return builder.Build();
-	    }
-    }
-
-{% endhighlight %}
-
-{% endtabs %} 
-
-## Step 4: Add a Basic Carousel
-
-1. To initialize the control, import the `Syncfusion.Maui.Toolkit.Carousel` namespace into your code.
-
-2. Initialize [SfCarousel](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Carousel.SfCarousel.html)
-
-{% tabs %}
-
-{% highlight xaml %}
-
-<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:carousel="clr-namespace:Syncfusion.Maui.Toolkit.Carousel;assembly=Syncfusion.Maui.Toolkit"
-             xmlns:local="clr-namespace:CarouselSample"
-             x:Class="CarouselSample.MainPage">
-    <ContentPage.Content> 
-        <carousel:SfCarousel />
-    </ContentPage.Content>  
-</ContentPage>
-	
-{% endhighlight %}
-
-{% highlight C# %}
-
-using Syncfusion.Maui.Toolkit.Carousel;
-namespace CarouselGettingStarted
-{
-    public partial class MainPage : ContentPage
-    {
-        public MainPage()
-        {
-            InitializeComponent();           
-            SfCarousel carousel = new SfCarousel();
-            this.Content = carousel;
-        }
-    }   
-}
-
-{% endhighlight %}
-
-{% endtabs %}
-
 {% endtabcontent %}
 
 {% tabcontent JetBrains Rider %}
@@ -231,85 +81,40 @@ Before proceeding, ensure the following are set up:
 2. Search for [Syncfusion.Maui.Toolkit](https://www.nuget.org/packages/Syncfusion.Maui.Toolkit/) and install the latest version.
 3. Ensure the necessary dependencies are installed correctly, and the project is restored. If not, Open the Terminal in Rider and manually run: `dotnet restore`
 
-## Step 3: Register the handler
-
-In the **MauiProgram.cs** file, register the handler for Syncfusion<sup>®</sup> Toolkit.
-
-{% tabs %}
-
-{% highlight C# tabtitle="MauiProgram.cs" hl_lines="1 9" %}
-
-    using Syncfusion.Maui.Toolkit.Hosting;
-
-    public static class MauiProgram
-    {
-	    public static MauiApp CreateMauiApp()
-	    {
-	        var builder = MauiApp.CreateBuilder();
-		    builder
-			    .ConfigureSyncfusionToolkit()
-			    .UseMauiApp<App>()
-			    .ConfigureFonts(fonts =>
-			    {
-				    fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
-				    fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
-			    });
-
-		    return builder.Build();
-	    }
-    }
-
-{% endhighlight %}
-
-{% endtabs %} 
-
-## Step 4: Add a Basic Carousel
-
-1. To initialize the control, import the `Syncfusion.Maui.Toolkit.Carousel` namespace into your code.
-
-2. Initialize [SfCarousel](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Carousel.SfCarousel.html)
-
-{% tabs %}
-
-{% highlight xaml %}
-
-<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:carousel="clr-namespace:Syncfusion.Maui.Toolkit.Carousel;assembly=Syncfusion.Maui.Toolkit"
-             xmlns:local="clr-namespace:CarouselSample"
-             x:Class="CarouselSample.MainPage">
-    <ContentPage.Content> 
-        <carousel:SfCarousel />
-    </ContentPage.Content>  
-</ContentPage>
-	
-{% endhighlight %}
-
-{% highlight C# %}
-
-using Syncfusion.Maui.Toolkit.Carousel;
-namespace CarouselGettingStarted
-{
-    public partial class MainPage : ContentPage
-    {
-        public MainPage()
-        {
-            InitializeComponent();           
-            SfCarousel carousel = new SfCarousel();
-            this.Content = carousel;
-        }
-    }   
-}
-
-{% endhighlight %}
-
-{% endtabs %}
-
 {% endtabcontent %}
 {% endtabcontents %}
 
-## Step 5: Populate Carousel Items in .NET MAUI Carousel
+## Step 3: Register Syncfusion handler
+
+Make sure to add the namespace.
+ 
+{% highlight MauiProgram.cs %}
+using Syncfusion.Maui.Toolkit.Hosting;
+{% endhighlight %}
+ 
+Register the Syncfusion core handler in your CreateMauiApp method of `MauiProgram.cs` file to use Syncfusion controls.
+ 
+{% highlight MauiProgram.cs %}
+builder.ConfigureSyncfusionToolkit();
+{% endhighlight %}
+
+## Step 4: Import Carousel View namespace
+
+Add the following namespace in your XAML or C#.
+{% tabs %}
+{% highlight xaml %}
+
+xmlns:carousel="clr-namespace:Syncfusion.Maui.Toolkit.Carousel;assembly=Syncfusion.Maui.Toolkit"
+
+{% endhighlight %}
+{% highlight c# %}
+
+using Syncfusion.Maui.Toolkit.Carousel;
+
+{% endhighlight %}
+{% endtabs %}
+
+## Step 5: Define the Model and ViewModel
 
 Carousel items can be added to the control using the [ItemsSource](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Carousel.SfCarousel.html#Syncfusion_Maui_Toolkit_Carousel_SfCarousel_ItemsSource) property of [SfCarousel](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Carousel.SfCarousel.html). Objects of any class can be given as items for `SfCarousel` by using `ItemsSource`. The views corresponding to the objects can be set using the [ItemTemplate](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Carousel.SfCarousel.html#Syncfusion_Maui_Toolkit_Carousel_SfCarousel_ItemTemplate) for the content.
 
@@ -318,7 +123,6 @@ Create a model class using the image collection property that is initialized wit
 {% highlight C# %}
 
 // Model
-
 public class GalleryModel
 {
     public GalleryModel(string imageString)
@@ -335,7 +139,6 @@ public class GalleryModel
 }
 
 //View Model
-
 public class GalleryViewModel
 {
     public GalleryViewModel()
@@ -358,143 +161,60 @@ public class GalleryViewModel
 
 N> The images used in the above view model should be added in the Resources folder of the Application.
 
+## Step 6: Add the Carousel View component
 The following code example illustrates how to add the collection in Carousel,
 
 {% tabs %}
 
 {% highlight xaml %}
+<ContentPage.Resources>
+    <ResourceDictionary>
+        <DataTemplate x:Key="itemTemplate">
+            <Image Source="{Binding Image}" 
+                    Aspect="AspectFit"/>
+        </DataTemplate>
+    </ResourceDictionary>
+<ContentPage.Resources>
 
-<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:carousel="clr-namespace:Syncfusion.Maui.Toolkit.Carousel;assembly=Syncfusion.Maui.Toolkit"
-             xmlns:local="clr-namespace:CarouselSample"
-             x:Class="CarouselSample.MainPage">
-             
-    <ContentPage.BindingContext>
-        <local:GalleryViewModel/>
-    </ContentPage.BindingContext>
-
-    <ContentPage.Resources>
-        <ResourceDictionary>
-            <DataTemplate x:Key="itemTemplate">
-                <Image Source="{Binding ImageName}" 
-                        Aspect="AspectFit"/>
-            </DataTemplate>
-        </ResourceDictionary>
-    </ContentPage.Resources>
-    <ContentPage.Content>
-        <carousel:SfCarousel x:Name="carousel"  
-                            ItemTemplate="{StaticResource itemTemplate}" 
-                            ItemsSource="{Binding ImageCollection}" />
-    </ContentPage.Content>
-    </ContentPage>
-
+    <carousel:SfCarousel x:Name="carousel"
+                         ItemTemplate="{StaticResource itemTemplate}" 
+                         ItemsSource="{Binding ImageCollection}"
+                         ItemHeight="170"
+                         ItemWidth="270"
+                         SelectedIndex="4">
+        <carousel:SfCarousel.BindingContext>
+            <local:CarouselViewModel/>
+        </carousel:SfCarousel.BindingContext>
+    </carousel:SfCarousel>
 {% endhighlight %}
 
 {% highlight C# %}
+    CarouselViewModel carouselViewModel = new CarouselViewModel();
 
-using Syncfusion.Maui.Toolkit.Carousel;
-using System.Collections.ObjectModel;
-
-namespace CarouselSample
-{
-    public partial class MainPage : ContentPage
+    SfCarousel carousel = new SfCarousel()
     {
-        public MainPage()
-        {
-            InitializeComponent();
-            GalleryViewModel galleryViewModel = new GalleryViewModel();
+        ItemHeight = 170,
+        ItemWidth = 270,
+        SelectedIndex = 4
+    };
 
-            SfCarousel carousel = new SfCarousel();
+    var itemTemplate = new DataTemplate(() =>
+    {
+        var grid = new Grid();
+        var nameLabel = new Image();
+        nameLabel.SetBinding(Image.SourceProperty, "Image");
+        grid.Children.Add(nameLabel);
+        return grid;
+    });
 
-            var itemTemplate = new DataTemplate(() =>
-            {
-                var grid = new Grid();
-                var nameLabel = new Image();
-                nameLabel.SetBinding(Image.SourceProperty, "ImageName");
-                grid.Children.Add(nameLabel);
-                return grid;
-            });
+    carousel.BindingContext = carouselViewModel;
+    carousel.ItemTemplate = itemTemplate;
+    carousel.SetBinding(SfCarousel.ItemsSourceProperty, "ImageCollection");
 
-            carousel.BindingContext = galleryViewModel;
-            carousel.ItemTemplate = itemTemplate;
-            carousel.SetBinding(SfCarousel.ItemsSourceProperty, "ImageCollection");
-
-            this.Content = carousel;
-        }
-    }
-}
+    this.Content = carousel;
 
 {% endhighlight %}
 
 {% endtabs %}
-
-## Step 6: Setting the height and width of the carousel item
-
-[ItemHeight](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Carousel.SfCarousel.html#Syncfusion_Maui_Toolkit_Carousel_SfCarousel_ItemHeight) and [ItemWidth](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Carousel.SfCarousel.html#Syncfusion_Maui_Toolkit_Carousel_SfCarousel_ItemWidth) properties are used to change the height and width of carouselItem in carousel panel.
-
-{% tabs %}
-
-{% highlight xaml %}
-
-<carousel:SfCarousel x:Name="carousel"
-                     ItemTemplate="{StaticResource itemTemplate}" 
-                     ItemsSource="{Binding ImageCollection}"
-                     ItemHeight="170"
-                     ItemWidth="270"/>
-
-{% endhighlight %}
-
-{% highlight C# %}
-
-SfCarousel carousel = new SfCarousel()
-{
-    ItemWidth = 170,
-    ItemHeight = 250
-};
-
-carousel.ItemTemplate = itemTemplate;
-carousel.SetBinding(SfCarousel.ItemsSourceProperty, "ImageCollection");
-
-{% endhighlight %}
-
-{% endtabs %}
-
-## Step 7: Set Desire Item to be Selected
-
-We can bring particular item to the center of the screen using [SelectedIndex](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Carousel.SfCarousel.html#Syncfusion_Maui_Toolkit_Carousel_SfCarousel_SelectedIndex) property in [SfCarousel](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Carousel.SfCarousel.html) control.
-
-{% tabs %}
-
-{% highlight xaml %}
-
-<carousel:SfCarousel x:Name="carousel"
-                     ItemTemplate="{StaticResource itemTemplate}" 
-                     ItemsSource="{Binding ImageCollection}"
-                     ItemHeight="170"
-                     ItemWidth="270"
-                     SelectedIndex="4"/>
-	
-{% endhighlight %}
-
-{% highlight C# %}
-
-SfCarousel carousel = new SfCarousel()
-{
-    ItemWidth = 170,
-    ItemHeight = 250,
-    SelectedIndex = 4,
-};
-
-carousel.ItemTemplate = itemTemplate;
-carousel.SetBinding(SfCarousel.ItemsSourceProperty, "ImageCollection");
-
-{% endhighlight %}
-
-{% endtabs %}
-
-N> The [SelectedIndex](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Carousel.SfCarousel.html#Syncfusion_Maui_Toolkit_Carousel_SfCarousel_SelectedIndex)  property will be 0 by default.
 
 ![OverView image for Carousel](images/gettingstarted.png)
-
-N> You can find the complete getting started sample from this [link].

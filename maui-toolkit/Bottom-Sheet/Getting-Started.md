@@ -36,58 +36,6 @@ Before proceeding, ensure the following are set up:
 2. Search for [Syncfusion.Maui.Toolkit](https://www.nuget.org/packages/Syncfusion.Maui.Toolkit/) and install the latest version.
 3. Ensure the necessary dependencies are installed correctly, and the project is restored.
 
-## Step 3: Register the handler
-
-In the `MauiProgram.cs` file, register the handler for the Syncfusion<sup>®</sup> Toolkit.
-
-{% tabs %}
-{% highlight C# tabtitle="MauiProgram.cs" hl_lines="1 9" %}
-using Syncfusion.Maui.Toolkit.Hosting;
-
-public static class MauiProgram
-{
-    public static MauiApp CreateMauiApp()
-    {
-        var builder = MauiApp.CreateBuilder();
-        builder
-            .ConfigureSyncfusionToolkit()
-            .UseMauiApp<App>()
-            .ConfigureFonts(fonts =>
-            {
-                fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
-                fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
-            });
-
-        return builder.Build();
-    }
-}
-
-{% endhighlight %}
-{% endtabs %}
-
-## Step 4: Add a basic Bottom Sheet
-
-1. To initialize the control, import the `Syncfusion.Maui.Toolkit.BottomSheet` namespace into your code.
-
-2. Initialize [SfBottomSheet](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.BottomSheet.SfBottomSheet.html).
-
-{% tabs %}
-{% highlight xaml %}
-
-<bottomSheet:SfBottomSheet x:Name="bottomSheet">
-    <bottomSheet:SfBottomSheet.BottomSheetContent>
-        <!--Add your content here-->
-    </bottomSheet:SfBottomSheet.BottomSheetContent>
-</bottomSheet:SfBottomSheet>
-
-{% endhighlight %}
-{% highlight c# %}
-
-SfBottomSheet bottomSheet = new SfBottomSheet();
-
-{% endhighlight %}
-{% endtabs %}
-
 {% endtabcontent %}
 {% tabcontent Visual Studio Code %}
 
@@ -113,58 +61,6 @@ Before proceeding, ensure the following are set up:
 3. Run the command `dotnet add package Syncfusion.Maui.Toolkit` to install the Syncfusion<sup>®</sup> .NET MAUI Toolkit NuGet package.
 4. To ensure all dependencies are installed, run `dotnet restore`.
 
-## Step 3: Register the handler
-
-In the `MauiProgram.cs` file, register the handler for the Syncfusion<sup>®</sup> Toolkit.
-
-{% tabs %}
-{% highlight C# tabtitle="MauiProgram.cs" hl_lines="1 9" %}
-using Syncfusion.Maui.Toolkit.Hosting;
-
-public static class MauiProgram
-{
-    public static MauiApp CreateMauiApp()
-    {
-        var builder = MauiApp.CreateBuilder();
-        builder
-            .ConfigureSyncfusionToolkit()
-            .UseMauiApp<App>()
-            .ConfigureFonts(fonts =>
-            {
-                fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
-                fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
-            });
-
-        return builder.Build();
-    }
-}
-
-{% endhighlight %}
-{% endtabs %} 
-
-## Step 4: Add a basic Bottom Sheet
-
-1. To initialize the control, import the `Syncfusion.Maui.Toolkit.BottomSheet` namespace into your code.
-
-2. Initialize [SfBottomSheet](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.BottomSheet.SfBottomSheet.html).
-
-{% tabs %}
-{% highlight xaml %}
-
-<bottomSheet:SfBottomSheet x:Name="bottomSheet">
-    <bottomSheet:SfBottomSheet.BottomSheetContent>
-        <!--Add your content here-->
-    </bottomSheet:SfBottomSheet.BottomSheetContent>
-</bottomSheet:SfBottomSheet>
-
-{% endhighlight %}
-{% highlight c# %}
-
-SfBottomSheet bottomSheet = new SfBottomSheet();
-
-{% endhighlight %}
-{% endtabs %}
-
 {% endtabcontent %}
 
 {% tabcontent JetBrains Rider %}
@@ -189,62 +85,27 @@ Before proceeding, ensure the following are set up:
 2. Search for [Syncfusion.Maui.Toolkit](https://www.nuget.org/packages/Syncfusion.Maui.Toolkit/) and install the latest version.
 3. Ensure the necessary dependencies are installed correctly, and the project is restored. If not, open the Terminal in Rider and manually run: `dotnet restore`.
 
-## Step 3: Register the handler
-
-In the `MauiProgram.cs` file, register the handler for the Syncfusion<sup>®</sup> Toolkit.
-
-{% tabs %}
-{% highlight C# tabtitle="MauiProgram.cs" hl_lines="1 9" %}
-using Syncfusion.Maui.Toolkit.Hosting;
-
-public static class MauiProgram
-{
-    public static MauiApp CreateMauiApp()
-    {
-        var builder = MauiApp.CreateBuilder();
-        builder
-            .ConfigureSyncfusionToolkit()
-            .UseMauiApp<App>()
-            .ConfigureFonts(fonts =>
-            {
-                fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
-                fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
-            });
-
-        return builder.Build();
-    }
-}
-
-{% endhighlight %}
-{% endtabs %} 
-
-## Step 4: Add a basic Bottom Sheet
-
-1. To initialize the control, import the `Syncfusion.Maui.Toolkit.BottomSheet` namespace into your code.
-
-2. Initialize [SfBottomSheet](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.BottomSheet.SfBottomSheet.html).
-
-{% tabs %}
-{% highlight xaml %}
-
-<bottomSheet:SfBottomSheet x:Name="bottomSheet">
-    <bottomSheet:SfBottomSheet.BottomSheetContent>
-        <!--Add your content here-->
-    </bottomSheet:SfBottomSheet.BottomSheetContent>
-</bottomSheet:SfBottomSheet>
-
-{% endhighlight %}
-{% highlight c# %}
-
-SfBottomSheet bottomSheet = new SfBottomSheet();
-
-{% endhighlight %}
-{% endtabs %}
-
 {% endtabcontent %}
 {% endtabcontents %}
 
-## Step 5: Create Model
+## Step 3: Register Syncfusion handler
+
+Make sure to add the namespace.
+ 
+{% highlight MauiProgram.cs %}
+using Syncfusion.Maui.Toolkit.Hosting;
+{% endhighlight %}
+ 
+Register the Syncfusion core handler in your CreateMauiApp method of `MauiProgram.cs` file to use Syncfusion controls.
+ 
+{% highlight MauiProgram.cs %}
+builder.ConfigureSyncfusionToolkit();
+{% endhighlight %}
+
+## Step 4: Create Model
+
+The following code demonstrates how to add a Bottom Sheet that displays detailed book information. It uses a ViewModel for effective data binding to ensure seamless updates and interaction.
+
 Create a simple data model and save it as `Book.cs` file.
 
 {% tabs %}
@@ -263,7 +124,7 @@ public class Book
 {% endhighlight %}
 {% endtabs %}
 
-## Step 6: Initialize View Model
+## Step 5: Initialize View Model
 Create a model repository class with a `Books` collection property initialized with a set of data objects, and save it as `BookViewModel.cs` file:
 
 {% tabs %}
@@ -313,7 +174,7 @@ public class BookViewModel
                 Rating = 4.7,
                 Price = 34.99
             },
-            . . .
+            // Add more items
         };
     }
 }
@@ -321,47 +182,64 @@ public class BookViewModel
 {% endhighlight %}
 {% endtabs %}
 
-## Step 6: Populate the Bottom Sheet
+## Step 6: Import BottomSheet namespace
+
+Add the following namespace in your XAML or C#.
+{% tabs %}
+{% highlight xaml %}
+
+xmlns:bottomSheet="clr-namespace:Syncfusion.Maui.Toolkit.BottomSheet;assembly=Syncfusion.Maui.Toolkit"
+
+{% endhighlight %}
+{% highlight c# %}
+
+using Syncfusion.Maui.Toolkit.BottomSheet;
+
+{% endhighlight %}
+{% endtabs %}
+
+## Step 7: Add the Bottom Sheet component
+
+Initilaize the `Bottom Sheet` component with properties and events.
 
 {% tabs %}
 {% highlight xaml %}
 
-   <Grid>
-        <Grid.BindingContext>
-            <local:BookViewModel />
-        </Grid.BindingContext>
-        <ListView ItemsSource="{Binding Books}" ItemTapped="ListView_ItemTapped" HasUnevenRows="True">
-            <ListView.ItemTemplate>
-                <DataTemplate>
-                    <ViewCell>
-                        <Grid ColumnDefinitions="*, 60" Padding="10">
-                            <VerticalStackLayout>
-                                <Label Text="{Binding Title}" FontSize="20" FontAttributes="Bold"/>
-                                <Label Text="{Binding Description}" FontSize="14" TextColor="Gray"/>
-                            </VerticalStackLayout>
-                            <Label Text="{Binding Rating, StringFormat='{}{0} / 5'}" Grid.Column="1" />
-                        </Grid>
-                    </ViewCell>
-                </DataTemplate>
-            </ListView.ItemTemplate>
-        </ListView>
-        <bottomSheet:SfBottomSheet x:Name="bottomSheet" CornerRadius="15, 15, 0, 0" HalfExpandedRatio="0.35" ContentPadding="10">
-            <bottomSheet:SfBottomSheet.BottomSheetContent>
-                <VerticalStackLayout Spacing="5" x:Name="bottomSheetContent">
-                    <Grid ColumnDefinitions="120, *" ColumnSpacing="10">
-                        <Label Text="Title:" FontSize="20" FontAttributes="Bold"/>
-                        <Label Text="{Binding Title}" FontSize="16" VerticalTextAlignment="Center" Grid.Column="1"/>
+<Grid>
+    <Grid.BindingContext>
+        <local:BookViewModel />
+    </Grid.BindingContext>
+    <ListView ItemsSource="{Binding Books}" ItemTapped="ListView_ItemTapped" HasUnevenRows="True">
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <ViewCell>
+                    <Grid ColumnDefinitions="*, 60" Padding="10">
+                        <VerticalStackLayout>
+                            <Label Text="{Binding Title}" FontSize="20" FontAttributes="Bold"/>
+                            <Label Text="{Binding Description}" FontSize="14" TextColor="Gray"/>
+                        </VerticalStackLayout>
+                        <Label Text="{Binding Rating, StringFormat='{}{0} / 5'}" Grid.Column="1" />
                     </Grid>
-                    <Grid ColumnDefinitions="120, *" ColumnSpacing="10">
-                        <Label Text="Genre:" FontSize="20" FontAttributes="Bold"/>
-                        <Label Text="{Binding Genre}" FontSize="16" VerticalTextAlignment="Center" Grid.Column="1"/>
-                    </Grid>
-                    . . .
-                </VerticalStackLayout>
-            </bottomSheet:SfBottomSheet.BottomSheetContent>
-        </bottomSheet:SfBottomSheet>
-    </Grid>
-</ContentPage>
+                </ViewCell>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+    </ListView>
+    <bottomSheet:SfBottomSheet x:Name="bottomSheet" CornerRadius="15, 15, 0, 0" HalfExpandedRatio="0.35" ContentPadding="10">
+        <bottomSheet:SfBottomSheet.BottomSheetContent>
+            <VerticalStackLayout Spacing="5" x:Name="bottomSheetContent">
+                <Grid ColumnDefinitions="120, *" ColumnSpacing="10">
+                    <Label Text="Title:" FontSize="20" FontAttributes="Bold"/>
+                    <Label Text="{Binding Title}" FontSize="16" VerticalTextAlignment="Center" Grid.Column="1"/>
+                </Grid>
+                <Grid ColumnDefinitions="120, *" ColumnSpacing="10">
+                    <Label Text="Genre:" FontSize="20" FontAttributes="Bold"/>
+                    <Label Text="{Binding Genre}" FontSize="16" VerticalTextAlignment="Center" Grid.Column="1"/>
+                </Grid>
+                <!--Add more items -->
+            </VerticalStackLayout>
+        </bottomSheet:SfBottomSheet.BottomSheetContent>
+    </bottomSheet:SfBottomSheet>
+</Grid>
     
 {% endhighlight %}
 {% highlight c# %}
@@ -378,3 +256,5 @@ private void OnListViewItemTapped(object? sender, ItemTappedEventArgs e)
 N> Using [Content](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.BottomSheet.SfBottomSheet.html#Syncfusion_Maui_Toolkit_BottomSheet_SfBottomSheet_Content), place the main content inside the Bottom Sheet's `Content` property. Without using `Content`, place the main content outside the [BottomSheet](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.BottomSheet.SfBottomSheet.html), ensuring that the Bottom Sheet is the last element in the Grid layout.
 
 ![Getting Started with Bottom Sheet](images/gettingStarted.png)
+
+You can download the Bottom Sheet Getting Started sample from [here](https://github.com/SyncfusionExamples/Getting-Started-with-MAUI-Bottom-Sheet)

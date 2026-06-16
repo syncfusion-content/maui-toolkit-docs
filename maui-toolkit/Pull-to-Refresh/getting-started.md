@@ -32,64 +32,7 @@ Before proceeding, ensure the following are in place:
  2. Search for [Syncfusion.Maui.ToolKit](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.html) and install the latest version.
  3. Ensure the necessary dependencies are installed correctly, and the project is restored.
 
-## Step 3: Register the handler
-
-In the **MauiProgram.cs file**, register the handler for Syncfusion<sup>®</sup> Toolkit.
-
-{% tabs %}
-{% highlight c# tabtitle="MauiProgram.cs" hl_lines="1 15" %}
-
-using Syncfusion.Maui.Toolkit.Hosting;
-
-public class MauiProgram 
-{
-    public static MauiApp CreateMauiApp()
-    {
-        var builder = MauiApp.CreateBuilder();
-        builder
-        .UseMauiApp<App>()
-        .ConfigureFonts(fonts =>
-        {
-            fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
-        });
-
-        builder.ConfigureSyncfusionToolkit();
-        return builder.Build();
-    }
-}
-
-{% endhighlight %} 
-{% endtabs %}
- 
-## Step 4: Add a Basic PullToRefresh control
- 
- 1. To initialize the control, import the `Syncfusion.Maui.Toolkit.PullToRefresh` namespace into your code.
-
- 2. Initialize `SfPullToRefresh` class.
- 
-{% tabs %}
-{% highlight xaml hl_lines="4" %}
-<ContentPage   
-    xmlns:syncfusion=xmlns:syncfusion="clr-namespace:Syncfusion.Maui.Toolkit.PullToRefresh;assembly=Syncfusion.Maui.Toolkit">
-    <syncfusion:SfPullToRefresh />
-</ContentPage>
-{% endhighlight %}
-
-{% highlight c# hl_lines="8" %}
-using Syncfusion.Maui.Toolkit.PullToRefresh;
-. . .
-public partial class MainPage : ContentPage
-{
-    public MainPage()
-    {
-        InitializeComponent();
-        SfPullToRefresh pullToRefresh = new SfPullToRefresh();
-    }
-}
-{% endhighlight %}
-{% endtabs %}
 {% endtabcontent %}
-
 {% tabcontent Visual Studio Code %}
 
 ## Prerequisites
@@ -113,64 +56,7 @@ Before proceeding, ensure the following are set up:
 3. Run the command `dotnet add package Syncfusion.Maui.Toolkit` to install the Syncfusion<sup>®</sup> .NET MAUI Toolkit NuGet package.
 4. To ensure all dependencies are installed, run `dotnet restore`.
 
-## Step 3: Register the handler
-
-In the **MauiProgram.cs file**, register the handler for Syncfusion<sup>®</sup> Toolkit.
-
-{% tabs %}
-{% highlight c# tabtitle="MauiProgram.cs" hl_lines="1 15" %}
-
-using Syncfusion.Maui.Toolkit.Hosting;
-
-public class MauiProgram 
-{
-    public static MauiApp CreateMauiApp()
-    {
-        var builder = MauiApp.CreateBuilder();
-        builder
-        .UseMauiApp<App>()
-        .ConfigureFonts(fonts =>
-        {
-            fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
-        });
-
-        builder.ConfigureSyncfusionToolkit();
-        return builder.Build();
-    }
-}
-
-{% endhighlight %} 
-{% endtabs %}
-
-## Step 4: Add a Basic PullToRefresh control
- 
- 1. To initialize the control, import the `Syncfusion.Maui.Toolkit.PullToRefresh` namespace into your code.
-
- 2. Initialize `SfPullToRefresh` class.
- 
-{% tabs %}
-{% highlight xaml hl_lines="4" %}
-<ContentPage   
-    xmlns:syncfusion=xmlns:syncfusion="clr-namespace:Syncfusion.Maui.Toolkit.PullToRefresh;assembly=Syncfusion.Maui.Toolkit">
-    <syncfusion:SfPullToRefresh />
-</ContentPage>
-{% endhighlight %}
-
-{% highlight c# hl_lines="8" %}
-using Syncfusion.Maui.Toolkit.PullToRefresh;
-. . .
-public partial class MainPage : ContentPage
-{
-    public MainPage()
-    {
-        InitializeComponent();
-        SfPullToRefresh pullToRefresh = new SfPullToRefresh();
-    }
-}
-{% endhighlight %}
-{% endtabs %}
 {% endtabcontent %}
-
 {% tabcontent JetBrains Rider %}
 
 ## Prerequisites
@@ -193,66 +79,40 @@ Before proceeding, ensure the following are set up:
 2. Search for [Syncfusion.Maui.Toolkit](https://www.nuget.org/packages/Syncfusion.Maui.Toolkit/) and install the latest version.
 3. Ensure the necessary dependencies are installed correctly, and the project is restored. If not, Open the Terminal in Rider and manually run: `dotnet restore`
 
-## Step 3: Register the handler
-
-In the **MauiProgram.cs file**, register the handler for Syncfusion<sup>®</sup> Toolkit.
-
-{% tabs %}
-{% highlight c# tabtitle="MauiProgram.cs" hl_lines="1 15" %}
-
-using Syncfusion.Maui.Toolkit.Hosting;
-
-public class MauiProgram 
-{
-    public static MauiApp CreateMauiApp()
-    {
-        var builder = MauiApp.CreateBuilder();
-        builder
-        .UseMauiApp<App>()
-        .ConfigureFonts(fonts =>
-        {
-            fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
-        });
-
-        builder.ConfigureSyncfusionToolkit();
-        return builder.Build();
-    }
-}
-
-{% endhighlight %} 
-{% endtabs %}
-
-## Step 4: Add a Basic PullToRefresh control
- 
- 1. To initialize the control, import the `Syncfusion.Maui.Toolkit.PullToRefresh` namespace into your code.
-
- 2. Initialize `SfPullToRefresh` class.
- 
-{% tabs %}
-{% highlight xaml hl_lines="4" %}
-<ContentPage   
-    xmlns:syncfusion=xmlns:syncfusion="clr-namespace:Syncfusion.Maui.Toolkit.PullToRefresh;assembly=Syncfusion.Maui.Toolkit">
-    <syncfusion:SfPullToRefresh />
-</ContentPage>
-{% endhighlight %}
-
-{% highlight c# hl_lines="8" %}
-using Syncfusion.Maui.Toolkit.PullToRefresh;
-. . .
-public partial class MainPage : ContentPage
-{
-    public MainPage()
-    {
-        InitializeComponent();
-        SfPullToRefresh pullToRefresh = new SfPullToRefresh();
-    }
-}
-{% endhighlight %}
-{% endtabs %}
 {% endtabcontent %}
 {% endtabcontents %}
 
-## Step 5: Define the PullableContent
+## Step 3: Register the handler
+
+Make sure to add the namespace.
+ 
+{% highlight MauiProgram.cs %}
+using Syncfusion.Maui.Toolkit.Hosting;
+{% endhighlight %}
+ 
+Register the Syncfusion core handler in your CreateMauiApp method of `MauiProgram.cs` file to use Syncfusion controls.
+ 
+{% highlight MauiProgram.cs %}
+builder.ConfigureSyncfusionToolkit();
+{% endhighlight %}
+
+## Step 4: Import PullToRefresh namespace
+
+Add the following namespace in your XAML or C#.
+{% tabs %}
+{% highlight xaml %}
+
+xmlns:syncfusion=xmlns:syncfusion="clr-namespace:Syncfusion.Maui.Toolkit.PullToRefresh;assembly=Syncfusion.Maui.Toolkit"
+
+{% endhighlight %}
+{% highlight c# %}
+
+using Syncfusion.Maui.Toolkit.PullToRefresh;
+
+{% endhighlight %}
+{% endtabs %}
+
+## Step 5: Add the PullToRefresh component
 
 The `PullableContent` view serves as the designated area where users can initiate the pull-to-refresh action, enabling them to refresh and update the content within the view.
 
@@ -261,36 +121,28 @@ To show the progress indicator while updating the view, set `IsRefreshing` prope
 {% tabs %}
 {% highlight xaml tabtitle="MainPage.xaml" hl_lines="7 11" %}
 
-<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="GettingStarted.MainPage"
-             xmlns:PullToRefreshControl="clr-namespace:Syncfusion.Maui.Toolkit.PullToRefresh;assembly=Syncfusion.Maui.Toolkit">
-    <PullToRefreshControl:SfPullToRefresh x:Name="pullToRefresh">
-        <PullToRefreshControl:SfPullToRefresh.PullableContent>
-            <StackLayout>
-                <Label Text="sample page" />
-            </StackLayout>
-        </PullToRefreshControl:SfPullToRefresh.PullableContent>
-    </PullToRefreshControl:SfPullToRefresh>
-</ContentPage>
+<PullToRefreshControl:SfPullToRefresh x:Name="pullToRefresh">
+    <PullToRefreshControl:SfPullToRefresh.PullableContent>
+        <StackLayout>
+            <Label Text="sample page" />
+        </StackLayout>
+    </PullToRefreshControl:SfPullToRefresh.PullableContent>
+</PullToRefreshControl:SfPullToRefresh>
 
 {% endhighlight %}
 {% highlight c# tabtitle="MainPage.xaml.cs" hl_lines="12" %}
 
-public partial class MainPage : ContentPage
+public MainPage()
 {
-    public MainPage()
-    {
-        InitializeComponent();
-        this.pullToRefresh.Refreshing += PullToRefresh_Refreshing;
-    }
+    InitializeComponent();
+    this.pullToRefresh.Refreshing += PullToRefresh_Refreshing;
+}
 
-    private async void PullToRefresh_Refreshing(object sender, EventArgs e)
-    {
-        this.pullToRefresh.IsRefreshing = true;
-        await Task.Delay(2000);
-        this.pullToRefresh.IsRefreshing = false;
-    }
+private async void PullToRefresh_Refreshing(object? sender, EventArgs e)
+{
+    this.pullToRefresh.IsRefreshing = true;
+    await Task.Delay(2000);
+    this.pullToRefresh.IsRefreshing = false;
 }
 
 {% endhighlight %}

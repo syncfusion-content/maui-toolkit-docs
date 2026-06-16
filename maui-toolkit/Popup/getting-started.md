@@ -32,72 +32,6 @@ Before proceeding, ensure the following are in place:
  2. Search for [Syncfusion.Maui.Toolkit](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.html) and install the latest version.
  3. Ensure the necessary dependencies are installed correctly, and the project is restored.
 
-## Step 3: Register the handler
-
-In the **MauiProgram.cs file**, register the handler for Syncfusion Toolkit.
-
-{% tabs %}
-{% highlight c# tabtitle="MauiProgram.cs" hl_lines="4 20" %}
-using Microsoft.Maui.Controls.Hosting;
-using Microsoft.Maui.Controls.Xaml;
-using Microsoft.Maui.Hosting;
-using Syncfusion.Maui.Toolkit.Hosting;
-
-namespace GettingStarted
-{
-    public class MauiProgram 
-    {
-        public static MauiApp CreateMauiApp()
-        {
-            var builder = MauiApp.CreateBuilder();
-            builder
-                .UseMauiApp<App>()
-                .ConfigureFonts(fonts =>
-                {
-                    fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
-                });
-
-            builder.ConfigureSyncfusionToolkit();
-            return builder.Build();
-        }
-    }
-}
-{% endhighlight %} 
-{% endtabs %}
-
-## Step 4: Add a Basic Popup
-
- 1. To initialize the control, import the `Syncfusion.Maui.Toolkit.Popup` namespace into your code.
- 2. Initialize `SfPopup` class.
- 
-{% tabs %}
-{% highlight xaml tabtitle="MainPage.xaml" %}
-
-<ContentPage   
-    . . .
-    xmlns:syncfusion="clr-namespace:Syncfusion.Maui.Toolkit.Popup;assembly=Syncfusion.Maui.Toolkit">
-
-    <syncfusion:SfPopup />
-</ContentPage>
-
-{% endhighlight %}
-{% highlight c# tabtitle="MainPage.xaml.cs" %}
-
-using Syncfusion.Maui.Toolkit.Popup;
-. . .
-
-public partial class MainPage : ContentPage
-{
-    public MainPage()
-    {
-        InitializeComponent();
-        SfPopup popup = new SfPopup();
-    }
-}
-
-{% endhighlight %}
-{% endtabs %}
-
 {% endtabcontent %}
 {% tabcontent Visual Studio Code %}
 
@@ -123,72 +57,7 @@ Before proceeding, ensure the following are set up:
 3. Run the command `dotnet add package Syncfusion.Maui.Toolkit` to install the Syncfusion<sup>®</sup> .NET MAUI Toolkit NuGet package.
 4. To ensure all dependencies are installed, run `dotnet restore`.
 
-## Step 3: Register the handler
-
-In the **MauiProgram.cs file**, register the handler for Syncfusion Toolkit.
-
-{% tabs %}
-{% highlight c# tabtitle="MauiProgram.cs" hl_lines="4 20" %}
-using Microsoft.Maui.Controls.Hosting;
-using Microsoft.Maui.Controls.Xaml;
-using Microsoft.Maui.Hosting;
-using Syncfusion.Maui.Toolkit.Hosting;
-
-namespace GettingStarted
-{
-    public class MauiProgram 
-    {
-        public static MauiApp CreateMauiApp()
-        {
-            var builder = MauiApp.CreateBuilder();
-            builder
-                .UseMauiApp<App>()
-                .ConfigureFonts(fonts =>
-                {
-                    fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
-                });
-
-            builder.ConfigureSyncfusionToolkit();
-            return builder.Build();
-        }
-    }
-}
-{% endhighlight %} 
 {% endtabs %}
-
-## Step 4: Add a Basic Popup
-
- 1. To initialize the control, import the `Syncfusion.Maui.Toolkit.Popup` namespace into your code.
- 2. Initialize `SfPopup` class.
- 
-{% tabs %}
-{% highlight xaml tabtitle="MainPage.xaml" %}
-
-<ContentPage   
-    . . .
-    xmlns:syncfusion="clr-namespace:Syncfusion.Maui.Toolkit.Popup;assembly=Syncfusion.Maui.Toolkit">
-
-    <syncfusion:SfPopup />
-</ContentPage>
-
-{% endhighlight %}
-{% highlight c# tabtitle="MainPage.xaml.cs" %}
-
-using Syncfusion.Maui.Toolkit.Popup;
-. . .
-
-public partial class MainPage : ContentPage
-{
-    public MainPage()
-    {
-        InitializeComponent();
-        SfPopup popup = new SfPopup();
-    }
-}
-
-{% endhighlight %}
-{% endtabs %}
-
 {% tabcontent JetBrains Rider %}
 
 ## Prerequisites
@@ -211,73 +80,38 @@ Before proceeding, ensure the following are set up:
 2. Search for [Syncfusion.Maui.Toolkit](https://www.nuget.org/packages/Syncfusion.Maui.Toolkit/) and install the latest version.
 3. Ensure the necessary dependencies are installed correctly, and the project is restored. If not, Open the Terminal in Rider and manually run: `dotnet restore`
 
-## Step 3: Register the handler
-
-In the **MauiProgram.cs file**, register the handler for Syncfusion Toolkit.
-
-{% tabs %}
-{% highlight c# tabtitle="MauiProgram.cs" hl_lines="4 20" %}
-using Microsoft.Maui.Controls.Hosting;
-using Microsoft.Maui.Controls.Xaml;
-using Microsoft.Maui.Hosting;
-using Syncfusion.Maui.Toolkit.Hosting;
-
-namespace GettingStarted
-{
-    public class MauiProgram 
-    {
-        public static MauiApp CreateMauiApp()
-        {
-            var builder = MauiApp.CreateBuilder();
-            builder
-                .UseMauiApp<App>()
-                .ConfigureFonts(fonts =>
-                {
-                    fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
-                });
-
-            builder.ConfigureSyncfusionToolkit();
-            return builder.Build();
-        }
-    }
-}
-{% endhighlight %} 
-{% endtabs %}
-
-## Step 4: Add a Basic Popup
-
- 1. To initialize the control, import the `Syncfusion.Maui.Toolkit.Popup` namespace into your code.
- 2. Initialize `SfPopup` class.
- 
-{% tabs %}
-{% highlight xaml tabtitle="MainPage.xaml" %}
-
-<ContentPage   
-    . . .
-    xmlns:syncfusion="clr-namespace:Syncfusion.Maui.Toolkit.Popup;assembly=Syncfusion.Maui.Toolkit">
-
-    <syncfusion:SfPopup />
-</ContentPage>
-
-{% endhighlight %}
-{% highlight c# tabtitle="MainPage.xaml.cs" %}
-
-using Syncfusion.Maui.Toolkit.Popup;
-. . .
-
-public partial class MainPage : ContentPage
-{
-    public MainPage()
-    {
-        InitializeComponent();
-        SfPopup popup = new SfPopup();
-    }
-}
-
-{% endhighlight %}
-{% endtabs %}
 {% endtabcontent %}
 {% endtabcontents %}
+
+## Step 3: Register the handler
+
+Make sure to add the namespace.
+ 
+{% highlight MauiProgram.cs %}
+using Syncfusion.Maui.Toolkit.Hosting;
+{% endhighlight %}
+ 
+Register the Syncfusion core handler in your CreateMauiApp method of `MauiProgram.cs` file to use Syncfusion controls.
+ 
+{% highlight MauiProgram.cs %}
+builder.ConfigureSyncfusionToolkit();
+{% endhighlight %}
+
+## Step 4: Import PullToRefresh namespace
+
+Add the following namespace in your XAML or C#.
+{% tabs %}
+{% highlight xaml %}
+
+xmlns:syncfusion="clr-namespace:Syncfusion.Maui.Toolkit.Popup;assembly=Syncfusion.Maui.Toolkit"
+
+{% endhighlight %}
+{% highlight c# %}
+
+using Syncfusion.Maui.Toolkit.Popup;
+
+{% endhighlight %}
+{% endtabs %}
 
 ## Step 5: Displaying popup
 
@@ -289,38 +123,20 @@ Refer to the following code example for displaying popup using Button's Click ev
 
 {% highlight xaml tabtitle="MainPage.xaml" %}
 
-<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:local="clr-namespace:GettingStarted"
-			 xmlns:syncfusion="clr-namespace:Syncfusion.Maui.Toolkit.Popup;assembly=Syncfusion.Maui.Toolkit"
-             x:Class="GettingStarted.MainPage" 
-             Padding="0,40,0,0">
-     <StackLayout x:Name="mainLayout">
-       <Button x:Name="clickToShowPopup" Text="ClickToShowPopup" 
-               VerticalOptions="Start" HorizontalOptions="Center"
-               Clicked="ClickToShowPopup_Clicked" />
-               <syncfusion:SfPopup x:Name="popup" />
-     </StackLayout>
-</ContentPage>
+<StackLayout x:Name="mainLayout">
+    <Button x:Name="clickToShowPopup" Text="ClickToShowPopup" 
+            VerticalOptions="Start" HorizontalOptions="Center"
+            Clicked="ClickToShowPopup_Clicked" />
+        <syncfusion:SfPopup x:Name="popup" />
+</StackLayout>
 
 {% endhighlight %}
 
-{% highlight c# tabtitle="MainPage.xaml.cs" hl_lines="12" %}
-namespace GettingStarted
-{
-    public partial class MainPage : ContentPage
-    {
-        public MainPage()
-        {
-            InitializeComponent();
-        }
+{% highlight c# tabtitle="MainPage.xaml.cs" hl_lines="3" %}
 
-        private void ClickToShowPopup_Clicked(object sender, EventArgs e)
-        {
-            popup.Show();
-        }
-    }
+private void ClickToShowPopup_Clicked(object sender, EventArgs e)
+{
+    popup.Show();
 }
 
 {% endhighlight %}

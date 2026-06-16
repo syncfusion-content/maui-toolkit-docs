@@ -33,76 +33,6 @@ Before proceeding, ensure that the following are set up:
 2. Search for [Syncfusion.Maui.Toolkit](https://www.nuget.org/packages/Syncfusion.Maui.Toolkit/) and install the latest version.
 3. Ensure the necessary dependencies are installed correctly, and the project is restored.
 
-## Step 3: Register the handler
-
-In the **MauiProgram.cs** file, register the handler for Syncfusion<sup>®</sup> Toolkit.
-
-{% tabs %}
-{% highlight C# tabtitle="MauiProgram.cs" hl_lines="1 9" %}
-
-    using Syncfusion.Maui.Toolkit.Hosting;
-
-    public static class MauiProgram
-    {
-	    public static MauiApp CreateMauiApp()
-	    {
-	        var builder = MauiApp.CreateBuilder();
-		    builder
-			    .ConfigureSyncfusionToolkit()
-			    .UseMauiApp<App>()
-			    .ConfigureFonts(fonts =>
-			    {
-				    fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
-				    fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
-			    });
-
-		    return builder.Build();
-	    }
-    }
-
-{% endhighlight %}
-{% endtabs %}
-
-## Step 4: Add .NET MAUI Funnel Chart
-
-1. To initialize the control, import the `Syncfusion.Maui.Toolkit.Charts` namespace into your code.
-
-2. Initialize an instance of the [SfFunnelChart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfFunnelChart.html) control.
-
-{% tabs %}
-
-{% highlight xaml %}
-
-<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:chart="clr-namespace:Syncfusion.Maui.Toolkit.Charts;assembly=Syncfusion.Maui.Toolkit"
-             x:Class="GettingStarted.MainPage">
-
-        <chart:SfFunnelChart/>
-
-</ContentPage>
-
-{% endhighlight %}
-
-{% highlight C# %}
-
-using Syncfusion.Maui.Toolkit.Charts; // Import the namespace required for Syncfusion MAUI Toolkit Charts.
-
-. . .
-
-public partial class MainPage : ContentPage
-{
-    public MainPage()
-    {
-        InitializeComponent();
-        SfFunnelChart chart = new SfFunnelChart(); // Create an instance of the SfFunnelChart.
-        this.Content = chart; // Set the chart as the content of the page.
-    }
-}
-
-{% endhighlight %}
-{% endtabs %}
-
 {% endtabcontent %}
 
 {% tabcontent Visual Studio Code %}
@@ -129,76 +59,6 @@ Before proceeding, ensure that the following are set up:
 3. Run the command `dotnet add package Syncfusion.Maui.Toolkit` to install the Syncfusion<sup>®</sup> .NET MAUI Toolkit NuGet package.
 4. To ensure all dependencies are installed, run `dotnet restore`.
 
-## Step 3: Register the handler
-
-In the **MauiProgram.cs** file, register the handler for Syncfusion<sup>®</sup> Toolkit.
-
-{% tabs %}
-{% highlight C# tabtitle="MauiProgram.cs" hl_lines="1 9" %}
-
-    using Syncfusion.Maui.Toolkit.Hosting;
-
-    public static class MauiProgram
-    {
-	    public static MauiApp CreateMauiApp()
-	    {
-	        var builder = MauiApp.CreateBuilder();
-		    builder
-			    .ConfigureSyncfusionToolkit()
-			    .UseMauiApp<App>()
-			    .ConfigureFonts(fonts =>
-			    {
-				    fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
-				    fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
-			    });
-
-		    return builder.Build();
-	    }
-    }
-
-{% endhighlight %}
-{% endtabs %}
-
-## Step 4: Add .NET MAUI Funnel Chart
-
-1. To initialize the control, import the `Syncfusion.Maui.Toolkit.Charts` namespace into your code.
-
-2. Initialize an instance of the [SfFunnelChart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfFunnelChart.html) control.
-
-{% tabs %}
-
-{% highlight xaml %}
-
-<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:chart="clr-namespace:Syncfusion.Maui.Toolkit.Charts;assembly=Syncfusion.Maui.Toolkit"
-             x:Class="GettingStarted.MainPage">
-
-        <chart:SfFunnelChart/>
-
-</ContentPage>
-
-{% endhighlight %}
-
-{% highlight C# %}
-
-using Syncfusion.Maui.Toolkit.Charts; // Import the namespace required for Syncfusion MAUI Toolkit Charts.
-
-. . .
-
-public partial class MainPage : ContentPage
-{
-    public MainPage()
-    {
-        InitializeComponent();
-        SfFunnelChart chart = new SfFunnelChart(); // Create an instance of the SfFunnelChart.
-        this.Content = chart; // Set the chart as the content of the page.
-    }
-}
-
-{% endhighlight %}
-{% endtabs %}
-
 {% endtabcontent %}
 
 {% tabcontent JetBrains Rider %}
@@ -223,80 +83,24 @@ Before proceeding, ensure the following are set up:
 2. Search for [Syncfusion.Maui.Toolkit](https://www.nuget.org/packages/Syncfusion.Maui.Toolkit/) and install the latest version.
 3. Ensure the necessary dependencies are installed correctly, and the project is restored. If not, Open the Terminal in Rider and manually run: `dotnet restore`
 
-## Step 3: Register the handler
-
-In the **MauiProgram.cs** file, register the handler for Syncfusion<sup>®</sup> Toolkit.
-
-{% tabs %}
-{% highlight C# tabtitle="MauiProgram.cs" hl_lines="1 9" %}
-
-    using Syncfusion.Maui.Toolkit.Hosting;
-
-    public static class MauiProgram
-    {
-	    public static MauiApp CreateMauiApp()
-	    {
-	        var builder = MauiApp.CreateBuilder();
-		    builder
-			    .ConfigureSyncfusionToolkit()
-			    .UseMauiApp<App>()
-			    .ConfigureFonts(fonts =>
-			    {
-				    fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
-				    fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
-			    });
-
-		    return builder.Build();
-	    }
-    }
-
-{% endhighlight %}
-{% endtabs %}
-
-## Step 4: Add .NET MAUI Funnel Chart
-
-1. To initialize the control, import the `Syncfusion.Maui.Toolkit.Charts` namespace into your code.
-
-2. Initialize an instance of the [SfFunnelChart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfFunnelChart.html) control.
-
-{% tabs %}
-
-{% highlight xaml %}
-
-<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:chart="clr-namespace:Syncfusion.Maui.Toolkit.Charts;assembly=Syncfusion.Maui.Toolkit"
-             x:Class="GettingStarted.MainPage">
-
-        <chart:SfFunnelChart/>
-
-</ContentPage>
-
-{% endhighlight %}
-
-{% highlight C# %}
-
-using Syncfusion.Maui.Toolkit.Charts; // Import the namespace required for Syncfusion MAUI Toolkit Charts.
-
-. . .
-
-public partial class MainPage : ContentPage
-{
-    public MainPage()
-    {
-        InitializeComponent();
-        SfFunnelChart chart = new SfFunnelChart(); // Create an instance of the SfFunnelChart.
-        this.Content = chart; // Set the chart as the content of the page.
-    }
-}
-
-{% endhighlight %}
-{% endtabs %}
-
 {% endtabcontent %}
 {% endtabcontents %}
 
-## Step 5: Initialize view model
+## Step 3: Register Syncfusion handler
+
+Make sure to add the namespace.
+ 
+{% highlight MauiProgram.cs %}
+using Syncfusion.Maui.Toolkit.Hosting;
+{% endhighlight %}
+ 
+Register the Syncfusion core handler in your CreateMauiApp method of `MauiProgram.cs` file to use Syncfusion controls.
+ 
+{% highlight MauiProgram.cs %}
+builder.ConfigureSyncfusionToolkit();
+{% endhighlight %}
+
+## Step 4: Create the Model
 
 Define a simple data model to represent a data point in the chart:
 
@@ -313,6 +117,8 @@ public class AdmissionModel
 {% endhighlight %} 
 
 {% endtabs %} 
+
+## Step 5: Initialize the ViewModel
 
 Next, create a `AdmissionViewModel` class and initialize a list of `AdmissionModel` objects:
 
@@ -340,51 +146,23 @@ public class AdmissionViewModel
 
 {% endtabs %} 
 
-Set the `AdmissionViewModel` instance as the `BindingContext` of your view to bind the `AdmissionViewModel` properties to the chart:
- 
-N> If you prefer to set the `BindingContext` in XAML, make sure to add the appropriate namespace for the `AdmissionViewModel` class in your XAML page.
+## Step 6: Import Funnel Charts namespace
 
-{% tabs %} 
-
+Add the following namespace in your XAML or C#.
+{% tabs %}
 {% highlight xaml %}
 
-<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:chart="clr-namespace:Syncfusion.Maui.Toolkit.Charts;assembly=Syncfusion.Maui.Toolkit"
-             xmlns:model="clr-namespace:GettingStarted"
-             x:Class="GettingStarted.MainPage">
-    <chart:SfFunnelChart>
-        <chart:SfFunnelChart.BindingContext>
-            <model:AdmissionViewModel/>
-        </chart:SfFunnelChart.BindingContext>
-    </chart:SfFunnelChart>
-</ContentPage>
+xmlns:chart="clr-namespace:Syncfusion.Maui.Toolkit.Charts;assembly=Syncfusion.Maui.Toolkit"
 
 {% endhighlight %}
-
-{% highlight C# %}
+{% highlight c# %}
 
 using Syncfusion.Maui.Toolkit.Charts;
 
-. . .
-
-public partial class MainPage : ContentPage
-{
-    public MainPage()
-    {
-        InitializeComponent();
-        SfFunnelChart chart = new SfFunnelChart();
-        AdmissionViewModel viewModel = new AdmissionViewModel(); // Create an instance of the AdmissionViewModel
-        chart.BindingContext = viewModel; // Set the view model as the BindingContext of the chart
-        this.Content = chart;
-    }
-}
-
 {% endhighlight %}
+{% endtabs %}
 
-{% endtabs %} 
-
-## Step 6: Populate chart with data
+## Step 7: Add the Funnel Charts component
 
 Binding `Data` to the funnel chart [ItemsSource](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfFunnelChart.html#Syncfusion_Maui_Toolkit_Charts_SfFunnelChart_ItemsSource) property from its BindingContext to create our own funnel chart.
 
@@ -392,62 +170,41 @@ Binding `Data` to the funnel chart [ItemsSource](https://help.syncfusion.com/cr/
 
 {% highlight xaml %}
 
-<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:chart="clr-namespace:Syncfusion.Maui.Toolkit.Charts;assembly=Syncfusion.Maui.Toolkit"
-             xmlns:model="clr-namespace:GettingStarted"
-             x:Class="GettingStarted.MainPage">
-
-    <chart:SfFunnelChart ItemsSource="{Binding Data}" 
+<chart:SfFunnelChart ItemsSource="{Binding Data}" 
                      ShowDataLabels="True" 
                      EnableTooltip="True" 
                      XBindingPath="XValue" 
                      YBindingPath="YValue">
-
         <chart:SfFunnelChart.Title>
             <Label Text="School Admission"/>
         </chart:SfFunnelChart.Title>
-
         <chart:SfFunnelChart.BindingContext>
             <model:AdmissionViewModel/>
         </chart:SfFunnelChart.BindingContext>
-
         <chart:SfFunnelChart.Legend>
             <chart:ChartLegend/>
         </chart:SfFunnelChart.Legend>
-
-    </chart:SfFunnelChart>
-
-</ContentPage>
+</chart:SfFunnelChart>
 
 {% endhighlight %}
 
 {% highlight C# %}
 
-using Syncfusion.Maui.Toolkit.Charts;
+SfFunnelChart chart = new SfFunnelChart();
+chart.Title = new Label()
+{
+    Text = "School Admission"
+};
+chart.Legend = new ChartLegend();
+AdmissionViewModel viewModel = new AdmissionViewModel();
+chart.BindingContext = viewModel;
 
-. . .
-public partial class MainPage : ContentPage
-{   
-    public MainWindow()
-    {
-        SfFunnelChart chart = new SfFunnelChart();
-        chart.Title = new Label()
-        {
-            Text = "School Admission"
-        };
-        chart.Legend = new ChartLegend();
-        AdmissionViewModel viewModel = new AdmissionViewModel();
-        chart.BindingContext = viewModel;
-
-        chart.ItemsSource = viewModel.Data;
-        chart.XBindingPath = "XValue";
-        chart.YBindingPath = "YValue";
-        chart.EnableTooltip = true;
-        chart.ShowDataLabels = true;
-        this.Content = chart;
-    }
-}
+chart.ItemsSource = viewModel.Data;
+chart.XBindingPath = "XValue";
+chart.YBindingPath = "YValue";
+chart.EnableTooltip = true;
+chart.ShowDataLabels = true;
+this.Content = chart;
 
 {% endhighlight %}
 
@@ -455,4 +212,4 @@ public partial class MainPage : ContentPage
 
 ![Funnel chart in .NET MAUI Chart](Getting-Started_Images/MAUI_funnel_chart.png)
 
-You can find the complete getting started sample from this [link](https://github.com/SyncfusionExamples/maui-toolkit-samples/tree/master/FunnelChart/GettingStarted).
+You can find the complete Funnel Charts getting started sample from this [link](https://github.com/SyncfusionExamples/maui-toolkit-samples/tree/master/FunnelChart/GettingStarted).

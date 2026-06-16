@@ -32,73 +32,6 @@ Before proceeding, ensure the following are set up:
 2. Search for [Syncfusion.Maui.Toolkit](https://www.nuget.org/packages/Syncfusion.Maui.Toolkit/) and install the latest version.
 3. Ensure the necessary dependencies are installed correctly, and the project is restored.
 
-## Step 3: Register the handler
-
-The [Syncfusion.Maui.Toolkit](https://www.nuget.org/packages/Syncfusion.Maui.Toolkit/) NuGet is a dependent package for all Syncfusion<sup>&reg;</sup> controls of .NET MAUI. In the **MauiProgram.cs** file, register the handler for Syncfusion<sup>&reg;</sup> toolkit.
-
-{% tabs %}
-{% highlight C# tabtitle="MauiProgram.cs" hl_lines="1 10" %}
-
-using Syncfusion.Maui.Toolkit.Hosting;
-namespace GettingStarted
-{
-    public static class MauiProgram
-    {
-        public static MauiApp CreateMauiApp()
-        {
-            var builder = MauiApp.CreateBuilder();
-
-            builder.ConfigureSyncfusionToolkit();
-            builder
-            .UseMauiApp<App>()
-            .ConfigureFonts(fonts =>
-            {
-                fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
-            });
-
-            return builder.Build();
-        }
-    }
-}
-
-{% endhighlight %}
-{% endtabs %}
-
-## Step 4: Add .NET MAUI Calendar control
-
-1. To initialize the control, import the `Syncfusion.Maui.Toolkit.Calendar` namespace into your code.
-2. Initialize [SfCalendar](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Calendar.SfCalendar.html).
-
-{% tabs %}
-{% highlight XAML hl_lines="3 5" %}
-
-<ContentPage   
-    . . .
-    xmlns:calendar="clr-namespace:Syncfusion.Maui.Toolkit.Calendar;assembly=Syncfusion.Maui.Toolkit">
-
-    <calendar:SfCalendar />
-</ContentPage>
-
-{% endhighlight %}
-{% highlight C# hl_lines="1 9 10" %}
-
-using Syncfusion.Maui.Toolkit.Calendar;
-. . .
-
-public partial class MainPage : ContentPage
-{
-    public MainPage()
-    {
-        InitializeComponent();
-        SfCalendar calendar = new SfCalendar();
-        this.Content = calendar;
-    }
-}
-
-{% endhighlight %}
-{% endtabs %}
-
-
 {% endtabcontent %}
 {% tabcontent Visual Studio Code %}
 
@@ -123,72 +56,6 @@ Before proceeding, ensure the following are set up:
 3. Run the command `dotnet add package Syncfusion.Maui.Toolkit` to install the Syncfusion<sup>®</sup> .NET MAUI Toolkit NuGet package.
 4. To ensure all dependencies are installed, run `dotnet restore`.
 
-## Step 3: Register the handler
-
-The [Syncfusion.Maui.Toolkit](https://www.nuget.org/packages/Syncfusion.Maui.Toolkit/) NuGet is a dependent package for all Syncfusion<sup>&reg;</sup> controls of .NET MAUI. In the **MauiProgram.cs** file, register the handler for Syncfusion<sup>&reg;</sup> toolkit.
-
-{% tabs %}
-{% highlight C# tabtitle="MauiProgram.cs" hl_lines="1 10" %}
-
-using Syncfusion.Maui.Toolkit.Hosting;
-namespace GettingStarted
-{
-    public static class MauiProgram
-    {
-        public static MauiApp CreateMauiApp()
-        {
-            var builder = MauiApp.CreateBuilder();
-
-            builder.ConfigureSyncfusionToolkit();
-            builder
-            .UseMauiApp<App>()
-            .ConfigureFonts(fonts =>
-            {
-                fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
-            });
-
-            return builder.Build();
-        }
-    }
-}
-
-{% endhighlight %}
-{% endtabs %}
-
-## Step 4: Add .NET MAUI Calendar control
-
-1. To initialize the control, import the `Syncfusion.Maui.Toolkit.Calendar` namespace into your code.
-2. Initialize [SfCalendar](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Calendar.SfCalendar.html).
-
-{% tabs %}
-{% highlight XAML hl_lines="3 5" %}
-
-<ContentPage   
-    . . .
-    xmlns:calendar="clr-namespace:Syncfusion.Maui.Toolkit.Calendar;assembly=Syncfusion.Maui.Toolkit">
-
-    <calendar:SfCalendar />
-</ContentPage>
-
-{% endhighlight %}
-{% highlight C# hl_lines="1 9 10" %}
-
-using Syncfusion.Maui.Toolkit.Calendar;
-. . .
-
-public partial class MainPage : ContentPage
-{
-    public MainPage()
-    {
-        InitializeComponent();
-        SfCalendar calendar = new SfCalendar();
-        this.Content = calendar;
-    }
-}
-
-{% endhighlight %}
-{% endtabs %}
-
 {% endtabcontent %}
 {% tabcontent JetBrains Rider %}
 
@@ -212,76 +79,41 @@ Before proceeding, ensure the following are set up:
 2. Search for [Syncfusion.Maui.Toolkit](https://www.nuget.org/packages/Syncfusion.Maui.Toolkit/) and install the latest version.
 3. Ensure the necessary dependencies are installed correctly, and the project is restored. If not, Open the Terminal in Rider and manually run: `dotnet restore`
 
-## Step 3: Register the handler
-
-The [Syncfusion.Maui.Toolkit](https://www.nuget.org/packages/Syncfusion.Maui.Toolkit/) NuGet is a dependent package for all Syncfusion<sup>&reg;</sup> controls of .NET MAUI. In the **MauiProgram.cs** file, register the handler for Syncfusion<sup>&reg;</sup> toolkit.
-
-{% tabs %}
-{% highlight C# tabtitle="MauiProgram.cs" hl_lines="1 10" %}
-
-using Syncfusion.Maui.Toolkit.Hosting;
-namespace GettingStarted
-{
-    public static class MauiProgram
-    {
-        public static MauiApp CreateMauiApp()
-        {
-            var builder = MauiApp.CreateBuilder();
-
-            builder.ConfigureSyncfusionToolkit();
-            builder
-            .UseMauiApp<App>()
-            .ConfigureFonts(fonts =>
-            {
-                fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
-            });
-
-            return builder.Build();
-        }
-    }
-}
-
-{% endhighlight %}
-{% endtabs %}
-
-## Step 4: Add .NET MAUI Calendar control
-
-1. To initialize the control, import the `Syncfusion.Maui.Toolkit.Calendar` namespace into your code.
-2. Initialize [SfCalendar](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Calendar.SfCalendar.html).
-
-{% tabs %}
-{% highlight XAML hl_lines="3 5" %}
-
-<ContentPage   
-    . . .
-    xmlns:calendar="clr-namespace:Syncfusion.Maui.Toolkit.Calendar;assembly=Syncfusion.Maui.Toolkit">
-
-    <calendar:SfCalendar />
-</ContentPage>
-
-{% endhighlight %}
-{% highlight C# hl_lines="1 9 10" %}
-
-using Syncfusion.Maui.Toolkit.Calendar;
-. . .
-
-public partial class MainPage : ContentPage
-{
-    public MainPage()
-    {
-        InitializeComponent();
-        SfCalendar calendar = new SfCalendar();
-        this.Content = calendar;
-    }
-}
-
-{% endhighlight %}
-{% endtabs %}
-
 {% endtabcontent %}
 {% endtabcontents %}
 
-## Define the Calendar View
+## Step 3: Register Syncfusion handler
+
+Make sure to add the namespace.
+ 
+{% highlight MauiProgram.cs %}
+using Syncfusion.Maui.Toolkit.Hosting;
+{% endhighlight %}
+ 
+Register the Syncfusion core handler in your CreateMauiApp method of `MauiProgram.cs` file to use Syncfusion controls.
+ 
+{% highlight MauiProgram.cs %}
+builder.ConfigureSyncfusionToolkit();
+{% endhighlight %}
+
+## Step 4: Import Calendar namespace
+
+Add the following namespace in your XAML or C#.
+{% tabs %}
+{% highlight xaml %}
+
+xmlns:chart="clr-namespace:Syncfusion.Maui.Toolkit.Calendar;assembly=Syncfusion.Maui.Toolkit"
+
+{% endhighlight %}
+{% highlight c# %}
+
+using Syncfusion.Maui.Toolkit.Calendar;
+
+{% endhighlight %}
+{% endtabs %}
+
+## Step 5: Add the Calendar component
+
 The [.NET MAUI Calendar](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Calendar.SfCalendar.html) control provides four different types of views to display dates, and it can be assigned to the control using the [View](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Calendar.SfCalendar.html#Syncfusion_Maui_Toolkit_Calendar_SfCalendar_View) property. By default, the control is assigned to the [Month](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Calendar.CalendarView.html#Syncfusion_Maui_Toolkit_Calendar_CalendarView_Month) view. Initially, all Calendar views will show the current date.
 
 {% tabs %}
@@ -302,51 +134,3 @@ this.calendar.View = CalendarView.Month;
 The following screenshot illustrates the result of the above code.
 
 ![Change different calendar views in .NET MAUI Calendar.](images/getting-started/net-maui-calendar-month-view.png)
-
-
-## Change different calendar views
-
-The [.NET MAUI Calendar](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Calendar.SfCalendar.html) control provides four different types of views to display dates, and it can be assigned to the control using the [View](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Calendar.SfCalendar.html#Syncfusion_Maui_Toolkit_Calendar_SfCalendar_View) property. By default, the control is assigned to the [Month](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Calendar.CalendarView.html#Syncfusion_Maui_Toolkit_Calendar_CalendarView_Month) view. Initially, all Calendar views will show the current date.
-
-{% tabs %}
-{% highlight xaml tabtitle="MainPage.xaml" %}
-
-<calendar:SfCalendar  x:Name="calendar" 
-                        View="Month">
-</calendar:SfCalendar>
-
-{% endhighlight %}
-{% highlight c# tabtitle="MainPage.xaml.cs" %}
-
-this.calendar.View = CalendarView.Month;
-
-{% endhighlight %}
-{% endtabs %}
-
-![Change different calendar views in .NET MAUI Calendar.](images/getting-started/net-maui-calendar-month-view.png)
-
-## Date selection
-
-The [Calendar](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Calendar.SfCalendar.html) allows the user to select a single date, multiple dates, or a range of dates by interaction or programmatic selection. The default selection mode is `Single`.
-
-The selection details can be obtained by using the [SelectionChanged](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Calendar.SfCalendar.html#Syncfusion_Maui_Toolkit_Calendar_SfCalendar_SelectionChanged) event of the calendar. It returns `CalendarSelectionChangedEventArgs`, which holds the details about the selected date or range.
-
-The following code explains how to show the Calendar with `Multiple` as the Selection mode.
-
-{% tabs %}  
-{% highlight xaml tabtitle="MainPage.xaml" %}
-
-<calendar:SfCalendar  x:Name="calendar" 
-                      SelectionMode="Multiple">
-</calendar:SfCalendar>
-
-{% endhighlight %}
-{% highlight c# tabtitle="MainPage.xaml.cs" %}
-
-this.calendar.SelectionMode = CalendarSelectionMode.Multiple;
-
-{% endhighlight %}  
-{% endtabs %}
-
-![Change selection mode in .NET MAUI Calendar.](images/getting-started/net-maui-calendar-multiple-selection.png)
-
