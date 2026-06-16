@@ -31,29 +31,83 @@ Syncfusion<sup>Â®</sup> .NET MAUI Toolkit controls are lightweight, open-source 
 
 Below is the summary of globalization capabilities supported by Syncfusion<sup>Â®</sup> .NET MAUI Toolkit controls.
 
-<div style="display:flex; align-items:center; justify-content:flex-start; gap:8px; width:auto; margin-bottom:6px;">
-    <img src="../Images/full-support.svg" alt="full-support" width="16">
-    <span>Full Support</span>
-</div>
+<style>
+#legend
+{
+border:0 !important;
+}
+#legend tr {
+  border:0 !important;
+}
+#legend td {
+  border:0 !important;
+  vertical-align: top;
+}
+</style>
 
-<div style="display:flex; align-items:center; justify-content:flex-start; gap:8px; width:auto; margin-bottom:6px;">
-    <img src="../Images/partial-support.svg" alt="partial-support" width="16">
-    <span>Partial Support</span>
-</div>
+<table id="legend" style="border-collapse:collapse;">
+    <tr style="border:0;">
+        <td style="border:0; display:flex; align-items:center; gap:8px; padding:4px;">
+            <img src="../Images/full-support.svg" alt="full-support" width="16">
+            <span>Full Support</span>
+        </td>
+    </tr>
 
-<div style="display:flex; align-items:center; justify-content:flex-start; gap:8px; width:auto; margin-bottom:6px;">
-    <img src="../Images/no-support.svg" alt="no-support" width="16">
-    <span>No Support</span>
-</div>
+  <tr>
+      <td style="border:0; display:flex; align-items:center; gap:8px; padding:4px;">
+          <img src="../Images/partial-support.svg" alt="partial-support" width="16">
+          <span>Partial Support</span>
+      </td>
+  </tr>
 
-<div style="display:flex; align-items:center; justify-content:flex-start; gap:8px; width:auto;">
-    <img src="../Images/not-applicable.svg" alt="not-applicable" width="16">
-    <span>Not Applicable</span>
-</div>
+  <tr>
+      <td style="border:0; display:flex; align-items:center; gap:8px; padding:4px;">
+          <img src="../Images/no-support.svg" alt="no-support" width="16">
+          <span>No Support</span>
+      </td>
+  </tr>
 
-<br>
+  <tr>
+      <td style="border:0; display:flex; align-items:center; gap:8px; padding:4px;">
+          <img src="../Images/not-applicable.svg" alt="not-applicable" width="16">
+          <span>Not Applicable</span>
+      </td>
+  </tr>
+</table>
 
-<table>
+<style>
+
+<style>
+#table {
+  border-collapse: collapse;
+}
+
+#table td, #table th {
+  padding: 6px 10px;
+  vertical-align: middle;
+}
+
+#table td {
+  text-align: center;
+  vertical-align: middle;
+  line-height: normal;
+}
+
+#table td:first-child {
+  text-align: left;
+}
+#table td img {
+  display: inline-block;
+  vertical-align: middle;
+}
+#table img {
+  display: block;
+  margin: 0 auto;
+}
+</style>
+
+
+<table id="table">
 <tr>
   <th>Control</th>
   <th>Localization</th>
@@ -65,11 +119,11 @@ Below is the summary of globalization capabilities supported by Syncfusion<sup>Â
 
 <tr>
   <td><a href="/maui-toolkit/accordion/overview">Accordion</a></td>
-  <td><img src="../Images/not-applicable.svg" alt="not-applicable" width="16" /><br/></td>
-  <td><img src="../Images/full-support.svg" alt="full-support" width="16" /><br/></td>
-  <td><img src="../Images/not-applicable.svg" alt="not-applicable" width="16" /><br/></td>
-  <td><img src="../Images/partial-support.svg" alt="partial-support" width="16" /><br/></td>
-  <td><img src="../Images/full-support.svg" alt="full-support" width="16" /><br/></td>
+  <td><img src="../Images/not-applicable.svg" alt="not-applicable" width="16" /></td>
+  <td><img src="../Images/full-support.svg" alt="full-support" width="16" /></td>
+  <td><img src="../Images/not-applicable.svg" alt="not-applicable" width="16" /></td>
+  <td><img src="../Images/partial-support.svg" alt="partial-support" width="16" /></td>
+  <td><img src="../Images/full-support.svg" alt="full-support" width="16" /></td>
 </tr>
 
 <tr>
@@ -92,38 +146,38 @@ Below is the summary of globalization capabilities supported by Syncfusion<sup>Â
 
 <tr>
 <td><a href="/maui-toolkit/calendar/overview">Calendar</a></td>
-<td><img src="../Images/full-support.svg" alt="full-support" width="16" /><br/></td>
-<td><img src="../Images/full-support.svg" alt="full-support" width="16" /><br/></td>
-<td><img src="../Images/full-support.svg" alt="full-support" width="16" /><br/></td>
-<td><img src="../Images/full-support.svg" alt="full-support" width="16" /><br/></td>
-<td><img src="../Images/full-support.svg" alt="full-support" width="16" /><br/></td>
+<td><img src="../Images/full-support.svg" alt="full-support" width="16" /></td>
+<td><img src="../Images/full-support.svg" alt="full-support" width="16" /></td>
+<td><img src="../Images/full-support.svg" alt="full-support" width="16" /></td>
+<td><img src="../Images/full-support.svg" alt="full-support" width="16" /></td>
+<td><img src="../Images/full-support.svg" alt="full-support" width="16" /></td>
 </tr> 
 
 <tr>
 <td><a href="/maui-toolkit/cards/overview">Cards</a></td>
-<td><img src="../Images/not-applicable.svg" alt="not-applicable" width="16" /><br/></td>
-<td><img src="../Images/full-support.svg" alt="full-support" width="16" /><br/></td>
-<td><img src="../Images/not-applicable.svg" alt="not-applicable" width="16" /><br/></td>
-<td><img src="../Images/not-applicable.svg" alt="not-applicable" width="16" /><br/></td>
-<td><img src="../Images/not-applicable.svg" alt="not-applicable" width="16" /><br/></td>
+<td><img src="../Images/not-applicable.svg" alt="not-applicable" width="16" /></td>
+<td><img src="../Images/full-support.svg" alt="full-support" width="16" /></td>
+<td><img src="../Images/not-applicable.svg" alt="not-applicable" width="16" /></td>
+<td><img src="../Images/not-applicable.svg" alt="not-applicable" width="16" /></td>
+<td><img src="../Images/not-applicable.svg" alt="not-applicable" width="16" /></td>
 </tr> 
 
 <tr>
 <td><a href="/maui-toolkit/carousel-view/overview">Carousel</a></td>
-<td><img src="../Images/not-applicable.svg" alt="not-applicable" width="16" /><br/></td>
-<td><img src="../Images/full-support.svg" alt="full-support" width="16" /><br/></td>
-<td><img src="../Images/not-applicable.svg" alt="not-applicable" width="16" /><br/></td>
-<td><img src="../Images/full-support.svg" alt="full-support" width="16" /><br/></td>
-<td><img src="../Images/not-applicable.svg" alt="not-applicable" width="16" /><br/></td>
+<td><img src="../Images/not-applicable.svg" alt="not-applicable" width="16" /></td>
+<td><img src="../Images/full-support.svg" alt="full-support" width="16" /></td>
+<td><img src="../Images/not-applicable.svg" alt="not-applicable" width="16" /></td>
+<td><img src="../Images/full-support.svg" alt="full-support" width="16" /></td>
+<td><img src="../Images/not-applicable.svg" alt="not-applicable" width="16" /></td>
 </tr> 
 
 <tr>
 <td><a href="/maui-toolkit/cartesian-charts/overview">Cartesian Charts</a></td>
-<td><img src="../Images/partial-support.svg" alt="partial-support" width="16" /><br/></td>
-<td><img src="../Images/partial-support.svg" alt="partial-support" width="16" /><br/></td>
-<td><img src="../Images/full-support.svg" alt="full-support" width="16" /><br/></td>
-<td><img src="../Images/not-applicable.svg" alt="not-applicable" width="16" /><br/></td>
-<td><img src="../Images/not-applicable.svg" alt="not-applicable" width="16" /><br/></td>
+<td><img src="../Images/partial-support.svg" alt="partial-support" width="16" /></td>
+<td><img src="../Images/partial-support.svg" alt="partial-support" width="16" /></td>
+<td><img src="../Images/full-support.svg" alt="full-support" width="16" /></td>
+<td><img src="../Images/not-applicable.svg" alt="not-applicable" width="16" /></td>
+<td><img src="../Images/not-applicable.svg" alt="not-applicable" width="16" /></td>
 </tr>
 
 <tr>
@@ -137,47 +191,47 @@ Below is the summary of globalization capabilities supported by Syncfusion<sup>Â
 
 <tr>
 <td><a href="/maui-toolkit/circular-charts/overview">Circular Charts</a></td>
-<td><img src="../Images/partial-support.svg" alt="partial-support" width="16" /><br/></td>
-<td><img src="../Images/partial-support.svg" alt="partial-support" width="16" /><br/></td>
-<td><img src="../Images/no-support.svg" alt="no-support" width="16" /><br/></td>
-<td><img src="../Images/not-applicable.svg" alt="not-applicable" width="16" /><br/></td>
-<td><img src="../Images/not-applicable.svg" alt="not-applicable" width="16" /><br/></td>
+<td><img src="../Images/partial-support.svg" alt="partial-support" width="16" /></td>
+<td><img src="../Images/partial-support.svg" alt="partial-support" width="16" /></td>
+<td><img src="../Images/no-support.svg" alt="no-support" width="16" /></td>
+<td><img src="../Images/not-applicable.svg" alt="not-applicable" width="16" /></td>
+<td><img src="../Images/not-applicable.svg" alt="not-applicable" width="16" /></td>
 </tr>
 
 <tr>
 <td><a href="/maui-toolkit/circularprogressbar/overview">Circular Progress Bar</a></td>
-<td><img src="../Images/not-applicable.svg" alt="not-applicable" width="16" /><br/></td>
-<td><img src="../Images/not-applicable.svg" alt="not-applicable" width="16" /><br/></td>
-<td><img src="../Images/not-applicable.svg" alt="not-applicable" width="16" /><br/></td>
-<td><img src="../Images/not-applicable.svg" alt="not-applicable" width="16" /><br/></td>
-<td><img src="../Images/not-applicable.svg" alt="not-applicable" width="16" /><br/></td>
+<td><img src="../Images/not-applicable.svg" alt="not-applicable" width="16" /></td>
+<td><img src="../Images/not-applicable.svg" alt="not-applicable" width="16" /></td>
+<td><img src="../Images/not-applicable.svg" alt="not-applicable" width="16" /></td>
+<td><img src="../Images/not-applicable.svg" alt="not-applicable" width="16" /></td>
+<td><img src="../Images/not-applicable.svg" alt="not-applicable" width="16" /></td>
 </tr> 
 
 <tr>
 <td><a href="/maui-toolkit/datepicker/overview">Date Picker</a></td>
-<td><img src="../Images/full-support.svg" alt="full-support" width="16" /><br/></td>
-<td><img src="../Images/full-support.svg" alt="full-support" width="16" /><br/></td>
-<td><img src="../Images/full-support.svg" alt="full-support" width="16" /><br/></td>
-<td><img src="../Images/full-support.svg" alt="full-support" width="16" /><br/></td>
-<td><img src="../Images/full-support.svg" alt="full-support" width="16" /><br/></td>
+<td><img src="../Images/full-support.svg" alt="full-support" width="16" /></td>
+<td><img src="../Images/full-support.svg" alt="full-support" width="16" /></td>
+<td><img src="../Images/full-support.svg" alt="full-support" width="16" /></td>
+<td><img src="../Images/full-support.svg" alt="full-support" width="16" /></td>
+<td><img src="../Images/full-support.svg" alt="full-support" width="16" /></td>
 </tr> 
 
 <tr>
 <td><a href="/maui-toolkit/datetimrpicker/overview">Date Time Picker</a></td>
-<td><img src="../Images/full-support.svg" alt="full-support" width="16" /><br/></td>
-<td><img src="../Images/full-support.svg" alt="full-support" width="16" /><br/></td>
-<td><img src="../Images/full-support.svg" alt="full-support" width="16" /><br/></td>
-<td><img src="../Images/full-support.svg" alt="full-support" width="16" /><br/></td>
-<td><img src="../Images/full-support.svg" alt="full-support" width="16" /><br/></td>
+<td><img src="../Images/full-support.svg" alt="full-support" width="16" /></td>
+<td><img src="../Images/full-support.svg" alt="full-support" width="16" /></td>
+<td><img src="../Images/full-support.svg" alt="full-support" width="16" /></td>
+<td><img src="../Images/full-support.svg" alt="full-support" width="16" /></td>
+<td><img src="../Images/full-support.svg" alt="full-support" width="16" /></td>
 </tr> 
 
 <tr>
 <td><a href="/maui/effects-view/overview">Effects View</a></td>
-<td><img src="../Images/not-applicable.svg" alt="not-applicable" width="16" /><br/></td>
-<td><img src="../Images/not-applicable.svg" alt="not-applicable" width="16" /><br/></td>
-<td><img src="../Images/not-applicable.svg" alt="not-applicable" width="16" /><br/></td>
-<td><img src="../Images/not-applicable.svg" alt="not-applicable" width="16" /><br/></td>
-<td><img src="../Images/not-applicable.svg" alt="not-applicable" width="16" /><br/></td>
+<td><img src="../Images/not-applicable.svg" alt="not-applicable" width="16" /></td>
+<td><img src="../Images/not-applicable.svg" alt="not-applicable" width="16" /></td>
+<td><img src="../Images/not-applicable.svg" alt="not-applicable" width="16" /></td>
+<td><img src="../Images/not-applicable.svg" alt="not-applicable" width="16" /></td>
+<td><img src="../Images/not-applicable.svg" alt="not-applicable" width="16" /></td>
 </tr> 
 
 <tr>
@@ -191,20 +245,20 @@ Below is the summary of globalization capabilities supported by Syncfusion<sup>Â
 
 <tr>
 <td><a href="/maui/funnel-charts/overview">Funnel Charts</a></td>
-<td><img src="../Images/no-support.svg" alt="no-support" width="16" /><br/></td>
-<td><img src="../Images/partial-support.svg" alt="partial-support" width="16" /><br/></td>
-<td><img src="../Images/no-support.svg" alt="no-support" width="16" /><br/></td>
-<td><img src="../Images/not-applicable.svg" alt="not-applicable" width="16" /><br/></td>
-<td><img src="../Images/not-applicable.svg" alt="not-applicable" width="16" /><br/></td>
+<td><img src="../Images/no-support.svg" alt="no-support" width="16" /></td>
+<td><img src="../Images/partial-support.svg" alt="partial-support" width="16" /></td>
+<td><img src="../Images/no-support.svg" alt="no-support" width="16" /></td>
+<td><img src="../Images/not-applicable.svg" alt="not-applicable" width="16" /></td>
+<td><img src="../Images/not-applicable.svg" alt="not-applicable" width="16" /></td>
 </tr>
 
 <tr>
 <td><a href="/maui/linearprogressbar/overview">Linear Progress Bar</a></td>
-<td><img src="../Images/not-applicable.svg" alt="not-applicable" width="16" /><br/></td>
-<td><img src="../Images/not-applicable.svg" alt="not-applicable" width="16" /><br/></td>
-<td><img src="../Images/not-applicable.svg" alt="not-applicable" width="16" /><br/></td>
-<td><img src="../Images/not-applicable.svg" alt="not-applicable" width="16" /><br/></td>
-<td><img src="../Images/not-applicable.svg" alt="not-applicable" width="16" /><br/></td>
+<td><img src="../Images/not-applicable.svg" alt="not-applicable" width="16" /></td>
+<td><img src="../Images/not-applicable.svg" alt="not-applicable" width="16" /></td>
+<td><img src="../Images/not-applicable.svg" alt="not-applicable" width="16" /></td>
+<td><img src="../Images/not-applicable.svg" alt="not-applicable" width="16" /></td>
+<td><img src="../Images/not-applicable.svg" alt="not-applicable" width="16" /></td>
 </tr> 
 
 <tr>
@@ -218,11 +272,11 @@ Below is the summary of globalization capabilities supported by Syncfusion<sup>Â
 
 <tr>
 <td><a href="/maui/numericentry/overview">Numeric Entry</a></td>
-<td><img src="../Images/full-support.svg" alt="full-support" width="16" /><br/></td>
-<td><img src="../Images/full-support.svg" alt="full-support" width="16" /><br/></td>
-<td><img src="../Images/not-applicable.svg" alt="not-applicable" width="16" /><br/></td>
-<td><img src="../Images/full-support.svg" alt="full-support" width="16" /><br/></td>
-<td><img src="../Images/full-support.svg" alt="full-support" width="16" /><br/></td>
+<td><img src="../Images/full-support.svg" alt="full-support" width="16" /></td>
+<td><img src="../Images/full-support.svg" alt="full-support" width="16" /></td>
+<td><img src="../Images/not-applicable.svg" alt="not-applicable" width="16" /></td>
+<td><img src="../Images/full-support.svg" alt="full-support" width="16" /></td>
+<td><img src="../Images/full-support.svg" alt="full-support" width="16" /></td>
 </tr> 
 
 <tr>
@@ -245,83 +299,83 @@ Below is the summary of globalization capabilities supported by Syncfusion<sup>Â
 
 <tr>
 <td><a href="/maui/picker/overview">Picker</a></td>
-<td><img src="../Images/full-support.svg" alt="full-support" width="16" /><br/></td>
-<td><img src="../Images/full-support.svg" alt="full-support" width="16" /><br/></td>
-<td><img src="../Images/not-applicable.svg" alt="not-applicable" width="16" /><br/></td>
-<td><img src="../Images/full-support.svg" alt="full-support" width="16" /><br/></td>
-<td><img src="../Images/full-support.svg" alt="full-support" width="16" /><br/></td>
+<td><img src="../Images/full-support.svg" alt="full-support" width="16" /></td>
+<td><img src="../Images/full-support.svg" alt="full-support" width="16" /></td>
+<td><img src="../Images/not-applicable.svg" alt="not-applicable" width="16" /></td>
+<td><img src="../Images/full-support.svg" alt="full-support" width="16" /></td>
+<td><img src="../Images/full-support.svg" alt="full-support" width="16" /></td>
 </tr> 
 
 <tr>
 <td><a href="/maui-toolkit/polar-charts/overview">Polar Charts</a></td>
-<td><img src="../Images/no-support.svg" alt="no-support" width="16" /><br/></td>
-<td><img src="../Images/partial-support.svg" alt="partial-support" width="16" /><br/></td>
-<td><img src="../Images/no-support.svg" alt="no-support" width="16" /><br/></td>
-<td><img src="../Images/not-applicable.svg" alt="not-applicable" width="16" /><br/></td>
-<td><img src="../Images/not-applicable.svg" alt="not-applicable" width="16" /><br/></td>
+<td><img src="../Images/no-support.svg" alt="no-support" width="16" /></td>
+<td><img src="../Images/partial-support.svg" alt="partial-support" width="16" /></td>
+<td><img src="../Images/no-support.svg" alt="no-support" width="16" /></td>
+<td><img src="../Images/not-applicable.svg" alt="not-applicable" width="16" /></td>
+<td><img src="../Images/not-applicable.svg" alt="not-applicable" width="16" /></td>
 </tr>
 
 <tr>
 <td><a href="/maui-toolkit/popup/overview">Popup</a></td>
-<td><img src="../Images/full-support.svg" alt="full-support" width="16" /><br/></td>
-<td><img src="../Images/full-support.svg" alt="full-support" width="16" /><br/></td>
-<td><img src="../Images/not-applicable.svg" alt="not-applicable" width="16" /><br/></td>
-<td><img src="../Images/not-applicable.svg" alt="not-applicable" width="16" /><br/></td>
-<td><img src="../Images/not-applicable.svg" alt="not-applicable" width="16" /><br/></td>
+<td><img src="../Images/full-support.svg" alt="full-support" width="16" /></td>
+<td><img src="../Images/full-support.svg" alt="full-support" width="16" /></td>
+<td><img src="../Images/not-applicable.svg" alt="not-applicable" width="16" /></td>
+<td><img src="../Images/not-applicable.svg" alt="not-applicable" width="16" /></td>
+<td><img src="../Images/not-applicable.svg" alt="not-applicable" width="16" /></td>
 </tr>
 
 <tr>
 <td><a href="/maui-toolkit/pull-to-refresh/overview">Pull To Refresh</a></td>
-<td><img src="../Images/not-applicable.svg" alt="not-applicable" width="16" /><br/></td>
-<td><img src="../Images/full-support.svg" alt="full-support" width="16" /><br/></td>
-<td><img src="../Images/not-applicable.svg" alt="not-applicable" width="16" /><br/></td>
-<td><img src="../Images/not-applicable.svg" alt="not-applicable" width="16" /><br/></td>
-<td><img src="../Images/not-applicable.svg" alt="not-applicable" width="16" /><br/></td>
+<td><img src="../Images/not-applicable.svg" alt="not-applicable" width="16" /></td>
+<td><img src="../Images/full-support.svg" alt="full-support" width="16" /></td>
+<td><img src="../Images/not-applicable.svg" alt="not-applicable" width="16" /></td>
+<td><img src="../Images/not-applicable.svg" alt="not-applicable" width="16" /></td>
+<td><img src="../Images/not-applicable.svg" alt="not-applicable" width="16" /></td>
 </tr> 
 
 <tr>
 <td><a href="/maui-toolkit/pyramid-charts/overview">Pyramid Charts</a></td>
-<td><img src="../Images/no-support.svg" alt="no-support" width="16" /><br/></td>
-<td><img src="../Images/partial-support.svg" alt="partial-support" width="16" /><br/></td>
-<td><img src="../Images/no-support.svg" alt="no-support" width="16" /><br/></td>
-<td><img src="../Images/not-applicable.svg" alt="not-applicable" width="16" /><br/></td>
-<td><img src="../Images/not-applicable.svg" alt="not-applicable" width="16" /><br/></td>
+<td><img src="../Images/no-support.svg" alt="no-support" width="16" /></td>
+<td><img src="../Images/partial-support.svg" alt="partial-support" width="16" /></td>
+<td><img src="../Images/no-support.svg" alt="no-support" width="16" /></td>
+<td><img src="../Images/not-applicable.svg" alt="not-applicable" width="16" /></td>
+<td><img src="../Images/not-applicable.svg" alt="not-applicable" width="16" /></td>
 </tr>
 
 <tr>
 <td><a href="/maui-toolkit/segmented-control/overview">Segmented Control</a></td>
-<td><img src="../Images/full-support.svg" alt="full-support" width="16" /><br/></td>
-<td><img src="../Images/full-support.svg" alt="full-support" width="16" /><br/></td>
-<td><img src="../Images/not-applicable.svg" alt="not-applicable" width="16" /><br/></td>
-<td><img src="../Images/full-support.svg" alt="full-support" width="16" /><br/></td>
-<td><img src="../Images/full-support.svg" alt="full-support" width="16" /><br/></td>
+<td><img src="../Images/full-support.svg" alt="full-support" width="16" /></td>
+<td><img src="../Images/full-support.svg" alt="full-support" width="16" /></td>
+<td><img src="../Images/not-applicable.svg" alt="not-applicable" width="16" /></td>
+<td><img src="../Images/full-support.svg" alt="full-support" width="16" /></td>
+<td><img src="../Images/full-support.svg" alt="full-support" width="16" /></td>
 </tr> 
 
 <tr>
 <td><a href="/maui-toolkit/shimmer/overview">Shimmer</a></td>
-<td><img src="../Images/not-applicable.svg" alt="not-applicable" width="16" /><br/></td>
-<td><img src="../Images/not-applicable.svg" alt="not-applicable" width="16" /><br/></td>
-<td><img src="../Images/not-applicable.svg" alt="not-applicable" width="16" /><br/></td>
-<td><img src="../Images/not-applicable.svg" alt="not-applicable" width="16" /><br/></td>
-<td><img src="../Images/not-applicable.svg" alt="not-applicable" width="16" /><br/></td>
+<td><img src="../Images/not-applicable.svg" alt="not-applicable" width="16" /></td>
+<td><img src="../Images/not-applicable.svg" alt="not-applicable" width="16" /></td>
+<td><img src="../Images/not-applicable.svg" alt="not-applicable" width="16" /></td>
+<td><img src="../Images/not-applicable.svg" alt="not-applicable" width="16" /></td>
+<td><img src="../Images/not-applicable.svg" alt="not-applicable" width="16" /></td>
 </tr> 
 
 <tr>
 <td><a href="/maui-toolkit/shimmer/overview">Spark Charts</a></td>
-<td><img src="../Images/no-support.svg" alt="no-support" width="16" /><br/></td>
-<td><img src="../Images/no-support.svg" alt="no-support" width="16" /><br/></td>
-<td><img src="../Images/full-support.svg" alt="full-support" width="16" /><br/></td>
-<td><img src="../Images/not-applicable.svg" alt="not-applicable" width="16" /><br/></td>
-<td><img src="../Images/not-applicable.svg" alt="not-applicable" width="16" /><br/></td>
+<td><img src="../Images/no-support.svg" alt="no-support" width="16" /></td>
+<td><img src="../Images/no-support.svg" alt="no-support" width="16" /></td>
+<td><img src="../Images/full-support.svg" alt="full-support" width="16" /></td>
+<td><img src="../Images/not-applicable.svg" alt="not-applicable" width="16" /></td>
+<td><img src="../Images/not-applicable.svg" alt="not-applicable" width="16" /></td>
 </tr> 
 
 <tr>
 <td><a href="/maui-toolkit/sunburstchart/overview">Sunburst Chart</a></td>
-<td><img src="../Images/no-support.svg" alt="no-support" width="16" /><br/></td>
-<td><img src="../Images/partial-support.svg" alt="partial-support" width="16" /><br/></td>
-<td><img src="../Images/no-support.svg" alt="no-support" width="16" /><br/></td>
-<td><img src="../Images/not-applicable.svg" alt="not-applicable" width="16" /><br/></td>
-<td><img src="../Images/not-applicable.svg" alt="not-applicable" width="16" /><br/></td>
+<td><img src="../Images/no-support.svg" alt="no-support" width="16" /></td>
+<td><img src="../Images/partial-support.svg" alt="partial-support" width="16" /></td>
+<td><img src="../Images/no-support.svg" alt="no-support" width="16" /></td>
+<td><img src="../Images/not-applicable.svg" alt="not-applicable" width="16" /></td>
+<td><img src="../Images/not-applicable.svg" alt="not-applicable" width="16" /></td>
 </tr>
 
 <tr>
@@ -335,20 +389,20 @@ Below is the summary of globalization capabilities supported by Syncfusion<sup>Â
 
 <tr>
 <td><a href="/maui-toolkit/textinputlayout/overview">Text Input Layout</a></td>
-<td><img src="../Images/not-applicable.svg" alt="not-applicable" width="16" /><br/></td>
-<td><img src="../Images/full-support.svg" alt="full-support" width="16" /><br/></td>
-<td><img src="../Images/not-applicable.svg" alt="not-applicable" width="16" /><br/></td>
-<td><img src="../Images/full-support.svg" alt="full-support" width="16" /><br/></td>
-<td><img src="../Images/full-support.svg" alt="full-support" width="16" /><br/></td>
+<td><img src="../Images/not-applicable.svg" alt="not-applicable" width="16" /></td>
+<td><img src="../Images/full-support.svg" alt="full-support" width="16" /></td>
+<td><img src="../Images/not-applicable.svg" alt="not-applicable" width="16" /></td>
+<td><img src="../Images/full-support.svg" alt="full-support" width="16" /></td>
+<td><img src="../Images/full-support.svg" alt="full-support" width="16" /></td>
 </tr> 
 
 <tr>
 <td><a href="/maui-toolkit/timepicker/overview">Time Picker</a></td>
-<td><img src="../Images/full-support.svg" alt="full-support" width="16" /><br/></td>
-<td><img src="../Images/full-support.svg" alt="full-support" width="16" /><br/></td>
-<td><img src="../Images/full-support.svg" alt="full-support" width="16" /><br/></td>
-<td><img src="../Images/full-support.svg" alt="full-support" width="16" /><br/></td>
-<td><img src="../Images/full-support.svg" alt="full-support" width="16" /><br/></td>
+<td><img src="../Images/full-support.svg" alt="full-support" width="16" /></td>
+<td><img src="../Images/full-support.svg" alt="full-support" width="16" /></td>
+<td><img src="../Images/full-support.svg" alt="full-support" width="16" /></td>
+<td><img src="../Images/full-support.svg" alt="full-support" width="16" /></td>
+<td><img src="../Images/full-support.svg" alt="full-support" width="16" /></td>
 </tr> 
 </table>
 
