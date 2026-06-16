@@ -200,7 +200,7 @@ using Syncfusion.Maui.Toolkit.BottomSheet;
 
 ## Step 7: Add the Bottom Sheet component
 
-Initilaize the `Bottom Sheet` component with properties and events.
+Initialize the `Bottom Sheet` component with properties and events.
 
 {% tabs %}
 {% highlight xaml %}

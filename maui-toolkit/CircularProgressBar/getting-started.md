@@ -116,7 +116,7 @@ using Syncfusion.Maui.Toolkit.ProgressBar;
 {% endhighlight %}
 {% endtabs %}
 
-## Step 5: Add the Ciruclar ProgressBar component
+## Step 5: Add the Circular ProgressBar component
 
 Create an instance for the circular progress bar control, and add it as content.
 
