@@ -133,4 +133,4 @@ The following gif image illustrates the result of the above code.
 
 ![Set Height and Width in .NET MAUI Date Time picker.](images/getting-started/maui-date-time-picker-set-height-and-width.png)
 
-You can download the DateTimePicker Getting Started sample from [here](https://github.com/SyncfusionExamples/dotnet-maui-datetimepicker-sample-)
+You can download the DateTimePicker Getting Started sample from [here](https://github.com/SyncfusionExamples/dotnet-maui-datetimepicker-sample)

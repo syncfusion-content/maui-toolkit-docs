@@ -190,4 +190,4 @@ The following screenshot illustrates the result of the above code.
 
 ![MAUI SfCardView image](images/maui-card-cardlayout.gif)
 
-You can download the Cards Getting Started sample from [here](https://github.com/SyncfusionExamples/dotnet-maui-cards-sample)
+You can download the Cards Getting Started sample from [here](https://github.com/syncfusion/maui-demos/tree/master/MAUI/Cards).
