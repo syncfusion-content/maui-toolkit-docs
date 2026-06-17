@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Syncfusion® .NET MAUI Toolkit Agent Skills for AI Assistants | Syncfusion
+title: Syncfusion® .NET MAUI Toolkit Skills for AI Assistants | Syncfusion®
 description: Learn how to install and use Syncfusion® Toolkit Agent Skills to enhance AI assistants with accurate Syncfusion® .NET MAUI Toolkit component guidance.
 control: Skills
 platform: maui
