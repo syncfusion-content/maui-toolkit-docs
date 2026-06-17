@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Syncfusion .NET MAUI Toolkit Agent Skills for AI Assistants | Syncfusion
-description: Learn how to install and use Syncfusion Toolkit Agent Skills to enhance AI assistants with accurate Syncfusion .NET MAUI Toolkit component guidance.
+title: Syncfusion® .NET MAUI Toolkit Agent Skills for AI Assistants | Syncfusion
+description: Learn how to install and use Syncfusion® Toolkit Agent Skills to enhance AI assistants with accurate Syncfusion® .NET MAUI Toolkit component guidance.
 control: Skills
 platform: maui
 documentation: ug
 ---
 
-# Syncfusion .NET MAUI Toolkit Agent Skills for AI Assistants
+# Syncfusion® .NET MAUI Toolkit Agent Skills for AI Assistants
 
-This guide introduces **Syncfusion .NET MAUI Toolkit Skills**, a knowledge package that enables AI assistants (VS Code, Cursor, CodeStudio, etc.) to understand and generate accurate Syncfusion® .NET MAUI Toolkit code using official APIs, patterns, and theming guidelines.
+This guide introduces **Syncfusion® .NET MAUI Toolkit Skills**, a knowledge package that enables AI assistants (VS Code, Cursor, CodeStudio, etc.) to understand and generate accurate Syncfusion® .NET MAUI Toolkit code using official APIs, patterns, and theming guidelines.
 
 Syncfusion® Toolkit Skills eliminate common issues with generic AI suggestions by grounding the assistant in accurate Syncfusion® Toolkit component usage patterns, API structures, supported features, and project-specific configuration.
 
@@ -24,7 +24,7 @@ Before installing Syncfusion® .NET MAUI Toolkit Agent Skills, ensure the follow
 ## Key Benefits
 
 1. **Component Usage & API Knowledge** - Curated, Skill-based guidance that captures how to add, configure, and compose Syncfusion® .NET MAUI Toolkit components, including key properties, events, required NuGet packages, and common integration patterns.
-2. **Patterns & Best Practices** - Practical recommendations for API structures, MVVM data-binding approaches, and feature configuration workflows (for example data presentation, item selection, and user interactions for data components). All guidance is authored directly within the Skill file rather than being fetched from documentation.
+2. **Patterns & Best Practices** - Practical recommendations for API structures, MVVM data-binding approaches, and feature configuration workflows (for example sorting, and filtering for data components). All guidance is authored directly within the Skill file rather than being fetched from documentation.
 3. **Design-System Guidance** - Includes information related to themes, dark/light variants, and icon usage patterns across Syncfusion®.NET MAUI Toolkit components.
 
 ## Installation
@@ -116,9 +116,9 @@ To learn more about the Skills CLI, refer [here](https://skills.sh/docs).
 
 ## How Syncfusion® Toolkit Agent Skills Work
 
-1. **Reads relevant Skill files based on queries**, retrieving component usage patterns, APIs, and best‑practice guidance from installed Syncfusion® Toolkit Skills. The assistant initially loads only skill names and descriptions, then dynamically loads the required skill and reference files as needed to provide accurate Syncfusion guidance.
+1. **Reads relevant Skill files based on queries**, retrieving component usage patterns, APIs, and best‑practice guidance from installed Syncfusion® Toolkit Skills. The assistant initially loads only skill names and descriptions, then dynamically loads the required skill and reference files as needed to provide accurate Syncfusion® guidance.
 2. **Enforces Syncfusion® best practices**, including:
-   - Referencing the correct NuGet packages for each component.
+   - Referencing the correct NuGet package for each component.
    - Applying MVVM data-binding patterns and platform-specific initialization (for example, `MauiProgram.cs` handler registration).
    - Adding the correct theme resource dictionaries and style imports.
 3. **Generates component-accurate code**, avoiding invalid properties or unsupported patterns.
@@ -129,7 +129,7 @@ Once skills are installed, the assistant can be used to generate and update Sync
 
 - "Add a Chips control with data binding, item templates, and selection handling."
 - "Create a date selection interface using DatePicker."
-- "Apply the Material Dark theme to all Syncfusion toolkit components."
+- "Apply the Material Dark theme to all Syncfusion® toolkit components."
 
 ## Skills CLI Commands
 
