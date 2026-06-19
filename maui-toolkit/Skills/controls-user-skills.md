@@ -202,4 +202,4 @@ Verify that skills are installed in the correct agent directory, restart the IDE
 ## See also
 
 - [Agent Skills Standards](https://agentskills.io/home)
-- [SKills CLI](https://skills.sh/docs)
+- [Skills CLI](https://skills.sh/docs)
