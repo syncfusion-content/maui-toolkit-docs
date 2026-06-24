@@ -76,8 +76,8 @@ The following table summarizes the globalization support available in this contr
 ## Related controls
 
 - [Cards](https://help.syncfusion.com/maui-toolkit/cards/overview) for implementing swipe-based card layouts.
-- [ListView](https://help.syncfusion.com/maui-toolkit/listview/overview) for displaying items in a structured list format.
-- [Rotator](https://help.syncfusion.com/maui-toolkit/rotator/overview) for cycle through items one at a time with navigation options.
+- [Tab View](https://help.syncfusion.com/maui-toolkit/tabview/overview) for organizing content into tabbed sections.
+- [Chips](https://help.syncfusion.com/maui-toolkit/chips/overview) for compact interactive elements.
 
 ## See Also
 
