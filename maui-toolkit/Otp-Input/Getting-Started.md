@@ -88,10 +88,11 @@ Before proceeding, ensure the following are set up:
 {% endtabcontent %}
 {% endtabcontents %}
 
-## Step 3: Register Syncfusion handler
+## Step 3: Register the handler
 
 Make sure to add the namespace.
  
+{% tabs %}
 {% highlight MauiProgram.cs %}
 using Syncfusion.Maui.Toolkit.Hosting;
 {% endhighlight %}
@@ -101,6 +102,7 @@ Register the Syncfusion core handler in your CreateMauiApp method of `MauiProgra
 {% highlight MauiProgram.cs %}
 builder.ConfigureSyncfusionToolkit();
 {% endhighlight %}
+{% endtabs %}
 
 ## Step 4: Import OTP Input namespace
 
@@ -141,4 +143,4 @@ SfOtpInput otpInput = new SfOtpInput()
 
 ![Value](images/value.png)
 
-You can download the OTP Input getting started sample from [here](https://github.com/SyncfusionExamples/Getting-Started-with-the-MAUI-OTP-Input-control)
+You can download the OTP Input getting started sample from [here](https://github.com/SyncfusionExamples/Getting-Started-with-the-MAUI-OTP-Input-control).

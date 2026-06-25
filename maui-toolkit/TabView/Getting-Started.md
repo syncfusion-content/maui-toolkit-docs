@@ -82,10 +82,11 @@ Before proceeding, ensure the following are set up:
 {% endtabcontent %}
 {% endtabcontents %}
 
-## Step 3: Register Syncfusion handler
+## Step 3: Register the handler
 
 Make sure to add the namespace.
  
+{% tabs %}
 {% highlight MauiProgram.cs %}
 using Syncfusion.Maui.Toolkit.Hosting;
 {% endhighlight %}
@@ -95,6 +96,7 @@ Register the Syncfusion core handler in your CreateMauiApp method of `MauiProgra
 {% highlight MauiProgram.cs %}
 builder.ConfigureSyncfusionToolkit();
 {% endhighlight %}
+{% endtabs %}
 
 ## Step 4: Import Tab View namespace
 
@@ -136,8 +138,6 @@ The following examples demonstrate how to add tab items to the `SfTabView` contr
                         <x:String>James</x:String>
                         <x:String>Richard</x:String>
                         <x:String>Michael</x:String>
-                        <x:String>Alex</x:String>
-                        <x:String>Clara</x:String>
                     </x:Array>
                 </CollectionView.ItemsSource>
                 <CollectionView.ItemTemplate>
@@ -164,7 +164,7 @@ var callTab = new SfTabItem { Header = "Call" };
 tabView.Items.Add(callTab);
 var favoritesTab = new SfTabItem { Header = "Favorites" };
 var collectionView = new CollectionView();
-var itemsSource = new string[] { "James", "Richard", "Michael", "Alex", "Clara" };
+var itemsSource = new string[] { "James", "Richard", "Michael" };
 collectionView.ItemsSource = itemsSource;
 collectionView.ItemTemplate = new DataTemplate(() =>
 {
@@ -203,4 +203,4 @@ this.Content = tabView;
 
 N> View [sample](https://github.com/SyncfusionExamples/maui-toolkit-samples/tree/master/TabView/TabViewGettingStarted) in GitHub.
 
-You can download the TabView Getting Started sample from [here](https://github.com/SyncfusionExamples/Getting-Started-with-.NET-MAUI-TabView/tree/master/TabViewGettingStarted)
+You can download the TabView Getting Started sample from [here](https://github.com/SyncfusionExamples/Getting-Started-with-.NET-MAUI-TabView/tree/master/TabViewGettingStarted).

@@ -90,6 +90,7 @@ N> It is mandatory to set [ContentView](https://help.syncfusion.com/cr/maui-tool
 
 Make sure to add the namespace.
  
+{% tabs %}
 {% highlight MauiProgram.cs %}
 using Syncfusion.Maui.Toolkit.Hosting;
 {% endhighlight %}
@@ -99,6 +100,7 @@ Register the Syncfusion core handler in your CreateMauiApp method of `MauiProgra
 {% highlight MauiProgram.cs %}
 builder.ConfigureSyncfusionToolkit();
 {% endhighlight %}
+{% endtabs %}
 
 ## Step 4: Import NavigationDrawer namespace
 
@@ -264,4 +266,4 @@ Create an ImageButton and set the required image to the `Source` property. Ensur
 
 ![.NET MAUI Navigation Drawer](Images/getting-started/gettingstarted.png)
 
-You can download the Navigation Drawer Getting Started sample from [here](https://github.com/SyncfusionExamples/Getting-started-with-.NET-MAUI-NavigationDrawer)
+You can download the Navigation Drawer Getting Started sample from [here](https://github.com/SyncfusionExamples/Getting-started-with-.NET-MAUI-NavigationDrawer).

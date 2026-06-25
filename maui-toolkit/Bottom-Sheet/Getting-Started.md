@@ -88,10 +88,11 @@ Before proceeding, ensure the following are set up:
 {% endtabcontent %}
 {% endtabcontents %}
 
-## Step 3: Register Syncfusion handler
+## Step 3: Register the handler
 
 Make sure to add the namespace.
  
+{% tabs %}
 {% highlight MauiProgram.cs %}
 using Syncfusion.Maui.Toolkit.Hosting;
 {% endhighlight %}
@@ -101,6 +102,7 @@ Register the Syncfusion core handler in your CreateMauiApp method of `MauiProgra
 {% highlight MauiProgram.cs %}
 builder.ConfigureSyncfusionToolkit();
 {% endhighlight %}
+{% endtabs %}
 
 ## Step 4: Create Model
 
@@ -109,7 +111,7 @@ The following code demonstrates how to add a Bottom Sheet that displays detailed
 Create a simple data model and save it as `Book.cs` file.
 
 {% tabs %}
-{% highlight C# tabtitle="Book.cs" %}
+{% highlight %}
 
 public class Book
 {
@@ -128,7 +130,7 @@ public class Book
 Create a model repository class with a `Books` collection property initialized with a set of data objects, and save it as `BookViewModel.cs` file:
 
 {% tabs %}
-{% highlight C# tabtitle="BookViewModel.cs" %}
+{% highlight C# %}
 
 public class BookViewModel
 {
@@ -257,4 +259,4 @@ N> Using [Content](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.T
 
 ![Getting Started with Bottom Sheet](images/gettingStarted.png)
 
-You can download the Bottom Sheet Getting Started sample from [here](https://github.com/SyncfusionExamples/Getting-Started-with-MAUI-Bottom-Sheet)
+You can download the Bottom Sheet Getting Started sample from [here](https://github.com/SyncfusionExamples/Getting-Started-with-MAUI-Bottom-Sheet).
