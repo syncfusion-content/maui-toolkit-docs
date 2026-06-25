@@ -86,6 +86,7 @@ The following table summarizes the globalization support available in this contr
 - [Getting Started](https://help.syncfusion.com/maui-toolkit/otp-input/getting-started) shows a step‑by‑step guide to begin using the OTP Input control.  
 - [Input Types](https://help.syncfusion.com/maui-toolkit/otp-input/input-types) explains the different input modes supported.  
 - [Customization](https://help.syncfusion.com/maui-toolkit/otp-input/otpinput-customization) describes how to adjust appearance and layout behavior.
+- [UI Kit](https://www.syncfusion.com/demos/maui#maui-ui-control) provides interactive demos and ready-made UI examples. 
 
 ## Resources
 
