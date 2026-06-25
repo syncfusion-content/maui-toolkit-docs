@@ -23,8 +23,6 @@ Before proceeding, ensure the following are set up:
 
 1. Install [.NET 9 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/9.0) or later.
 2. Set up a .NET MAUI environment with Visual Studio 2022 v17.12 or later.
-Download .NET 9.0 (Linux, macOS, and Windows) | .NET
-.NET 9.0 downloads for Linux, macOS, and Windows. .NET is a free, cross-platform, open-source developer platform for building many different types of applications.
 
 ## Step 1: Create a new .NET MAUI project
 
@@ -88,6 +86,7 @@ Before proceeding, ensure the following are set up:
 
 {% endtabcontent %}
 {% endtabcontents %}
+
 ## Step 3: Register the handler
 
 Make sure to add the namespace.

@@ -11,7 +11,6 @@ keywords: .net maui text input layout, syncfusion text input layout, text input 
 # Getting Started with .NET MAUI TextInputLayout
 
 This section guides you through setting up and configuring a [Text Input Layout](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TextInputLayout.SfTextInputLayout.html) in your .NET MAUI application. Follow the steps below to add a basic TextInputLayout to your project.
-
 {% tabcontents %}
 {% tabcontent Visual Studio %}
 
@@ -21,8 +20,6 @@ Before proceeding, ensure the following are set up:
 
 1. Install [.NET 9 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/9.0) or later.
 2. Set up a .NET MAUI environment with Visual Studio 2022 v17.12 or later.
-Download .NET 9.0 (Linux, macOS, and Windows) | .NET
-.NET 9.0 downloads for Linux, macOS, and Windows. .NET is a free, cross-platform, open-source developer platform for building many different types of applications.
 
 ## Step 1: Create a new .NET MAUI project
 
