@@ -9,7 +9,7 @@ documentation: ug
 
 # .NET MAUI Spark Chart Overview
 
-The Syncfusion® .NET MAUI Spark Chart (SfSparkChart) control is used to visualize data trends in a compact and lightweight format. It is ideal for displaying quick insights within limited space, such as dashboards, grids, and summary views in .NET MAUI applications.
+The Syncfusion® .NET MAUI Spark Chart ([`SfSparkChart`](https://www.syncfusion.com/maui-controls/maui-spark-charts)) control is used to visualize data trends in a compact and lightweight format. It is ideal for displaying quick insights within limited space, such as dashboards, grids, and summary views in .NET MAUI applications.
 
 ## Business use cases
 
