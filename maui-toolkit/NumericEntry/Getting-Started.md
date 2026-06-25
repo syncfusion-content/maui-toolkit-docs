@@ -83,18 +83,19 @@ Before proceeding, ensure the following are set up:
 
 {% endtabcontent %}
 {% endtabcontents %}
+
 ## Step 3: Register the handler
 
 Make sure to add the namespace.
  
 {% tabs %}
-{% highlight MauiProgram.cs %}
+{% highlight C# %}
 using Syncfusion.Maui.Toolkit.Hosting;
 {% endhighlight %}
  
 Register the Syncfusion core handler in your CreateMauiApp method of `MauiProgram.cs` file to use Syncfusion controls.
  
-{% highlight MauiProgram.cs %}
+{% highlight C# %}
 builder.ConfigureSyncfusionToolkit();
 {% endhighlight %}
 {% endtabs %}
