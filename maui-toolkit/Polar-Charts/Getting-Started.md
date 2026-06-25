@@ -89,16 +89,17 @@ Before proceeding, ensure the following are set up:
 Make sure to add the namespace.
  
 {% tabs %}
-{% highlight MauiProgram.cs %}
+{% highlight C# %}
 using Syncfusion.Maui.Toolkit.Hosting;
 {% endhighlight %}
  
 Register the Syncfusion core handler in your CreateMauiApp method of `MauiProgram.cs` file to use Syncfusion controls.
  
-{% highlight MauiProgram.cs %}
+{% highlight C# %}
 builder.ConfigureSyncfusionToolkit();
 {% endhighlight %}
 {% endtabs %}
+
 ## Step 4: Create the Model
 
 Define a simple data model to represent a data point in the chart:
