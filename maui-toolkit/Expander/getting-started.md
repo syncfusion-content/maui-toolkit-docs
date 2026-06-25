@@ -70,7 +70,7 @@ public class MauiProgram
 {% tabs %}
 {% highlight xaml hl_lines="4" %}
 <ContentPage   
-    xmlns:syncfusion=xmlns:syncfusion="clr-namespace:Syncfusion.Maui.Toolkit.Expander;assembly=Syncfusion.Maui.Toolkit">
+    xmlns:syncfusion="clr-namespace:Syncfusion.Maui.Toolkit.Expander;assembly=Syncfusion.Maui.Toolkit">
     <syncfusion:SfExpander />
 </ContentPage>
 {% endhighlight %}
@@ -151,7 +151,7 @@ public class MauiProgram
 {% tabs %}
 {% highlight xaml hl_lines="4" %}
 <ContentPage   
-    xmlns:syncfusion=xmlns:syncfusion="clr-namespace:Syncfusion.Maui.Toolkit.Expander;assembly=Syncfusion.Maui.Toolkit">
+    xmlns:syncfusion="clr-namespace:Syncfusion.Maui.Toolkit.Expander;assembly=Syncfusion.Maui.Toolkit">
     <syncfusion:SfExpander />
 </ContentPage>
 {% endhighlight %}
@@ -231,7 +231,7 @@ public class MauiProgram
 {% tabs %}
 {% highlight xaml hl_lines="4" %}
 <ContentPage   
-    xmlns:syncfusion=xmlns:syncfusion="clr-namespace:Syncfusion.Maui.Toolkit.Expander;assembly=Syncfusion.Maui.Toolkit">
+    xmlns:syncfusion="clr-namespace:Syncfusion.Maui.Toolkit.Expander;assembly=Syncfusion.Maui.Toolkit">
     <syncfusion:SfExpander />
 </ContentPage>
 {% endhighlight %}
