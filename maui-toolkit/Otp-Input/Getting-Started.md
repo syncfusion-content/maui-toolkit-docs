@@ -27,62 +27,14 @@ Before proceeding, ensure the following are set up:
 ## Step 1: Create a new .NET MAUI project
 
 1. Go to **File > New > Project** and choose the **.NET MAUI App** template.
-2. Name the project and choose a location. Then, click **Next**.
+2. Name the project and choose a location. Then click **Next**.
 3. Select the .NET framework version and click **Create**.
 
-## Step 2: Install the Syncfusion<sup>®</sup> MAUI Toolkit package
+## Step 2: Install the Syncfusion<sup>&reg;</sup> .NET MAUI Toolkit NuGet package
 
-1. In **Solution Explorer**, right-click the project and choose **Manage NuGet Packages**.
+1. In **Solution Explorer,** right-click the project and choose **Manage NuGet Packages.**
 2. Search for [Syncfusion.Maui.Toolkit](https://www.nuget.org/packages/Syncfusion.Maui.Toolkit/) and install the latest version.
-3. Ensure all necessary dependencies are installed correctly and the project is restored.
-
-## Step 3: Register the handler
-
-In the `MauiProgram.cs` file, register the handler for the Syncfusion<sup>®</sup> Toolkit.
-
-{% tabs %}
-{% highlight C# tabtitle="MauiProgram.cs" hl_lines="1 9" %}
-using Syncfusion.Maui.Toolkit.Hosting;
-
-public static class MauiProgram
-{
-    public static MauiApp CreateMauiApp()
-    {
-        var builder = MauiApp.CreateBuilder();
-        builder
-            .ConfigureSyncfusionToolkit()
-            .UseMauiApp<App>()
-            .ConfigureFonts(fonts =>
-            {
-                fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
-                fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
-            });
-
-        return builder.Build();
-    }
-}
-
-{% endhighlight %}
-{% endtabs %} 
-
-## Step 4: Add a basic OTP Input
-
-1. To initialize the control, import the `Syncfusion.Maui.Toolkit.OtpInput` namespace.
-
-2. Initialize [SfOtpInput](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.OtpInput.SfOtpInput.html).
-
-{% tabs %}
-{% highlight xaml %}
-
-<otpInput:SfOtpInput />
-
-{% endhighlight %}
-{% highlight c# %}
-
-SfOtpInput otpInput = new SfOtpInput();
-
-{% endhighlight %}
-{% endtabs %}
+3. Ensure the necessary dependencies are installed correctly, and the project is restored.
 
 {% endtabcontent %}
 {% tabcontent Visual Studio Code %}
@@ -91,7 +43,7 @@ SfOtpInput otpInput = new SfOtpInput();
 
 Before proceeding, ensure the following are set up:
 
-1. Install [.NET 9 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/9.0) or later.
+1. Install [.NET 9 SDK](Download .NET 9.0 (Linux, macOS, and Windows) | .NET) or later.
 2. Set up a .NET MAUI environment with Visual Studio Code.
 3. Ensure that the .NET MAUI workloads are installed and configured as described [here](https://learn.microsoft.com/en-us/dotnet/maui/get-started/installation?view=net-maui-9.0&tabs=visual-studio-code).
 
@@ -100,139 +52,74 @@ Before proceeding, ensure the following are set up:
 1. Open the command palette by pressing `Ctrl+Shift+P` and type **.NET:New Project** and enter.
 2. Choose the **.NET MAUI App** template.
 3. Select the project location, type the project name and press **Enter**.
-4. Then choose **Create project**.
+4. Then choose **Create project.**
 
-## Step 2: Install the Syncfusion<sup>®</sup> MAUI Toolkit package
+## Step 2: Install the Syncfusion<sup>&reg;</sup> .NET MAUI Toolkit NuGet package
 
 1. Press <kbd>Ctrl</kbd> + <kbd>`</kbd> (backtick) to open the integrated terminal in Visual Studio Code.
 2. Ensure you're in the project root directory where your .csproj file is located.
 3. Run the command `dotnet add package Syncfusion.Maui.Toolkit` to install the Syncfusion<sup>®</sup> .NET MAUI Toolkit NuGet package.
 4. To ensure all dependencies are installed, run `dotnet restore`.
 
-## Step 3: Register the handler
-
-In the `MauiProgram.cs` file, register the handler for Syncfusion<sup>®</sup> Toolkit.
-
-{% tabs %}
-{% highlight C# tabtitle="MauiProgram.cs" hl_lines="1 9" %}
-using Syncfusion.Maui.Toolkit.Hosting;
-
-public static class MauiProgram
-{
-    public static MauiApp CreateMauiApp()
-    {
-        var builder = MauiApp.CreateBuilder();
-        builder
-            .ConfigureSyncfusionToolkit()
-            .UseMauiApp<App>()
-            .ConfigureFonts(fonts =>
-            {
-                fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
-                fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
-            });
-
-        return builder.Build();
-    }
-}
-
-{% endhighlight %}
-{% endtabs %} 
-
-## Step 4: Add a basic OTP Input
-
-1. To initialize the control, import the `Syncfusion.Maui.Toolkit.OtpInput` namespace.
-
-2. Initialize [SfOtpInput](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.OtpInput.SfOtpInput.html).
-
-{% tabs %}
-{% highlight xaml %}
-
-<otpInput:SfOtpInput />
-
-{% endhighlight %}
-{% highlight c# %}
-
-SfOtpInput otpInput = new SfOtpInput();
-
-{% endhighlight %}
-{% endtabs %}
-
 {% endtabcontent %}
-
 {% tabcontent JetBrains Rider %}
 
 ## Prerequisites
 
 Before proceeding, ensure the following are set up:
 
-1. Install [.NET 9 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/9.0) or later.
+1. Install [.NET 9 SDK](Download .NET 9.0 (Linux, macOS, and Windows) | .NET) or later.
 2. Set up a .NET MAUI environment with JetBrains Rider 2024.3 or later.
-3. Make sure the MAUI workloads are installed and configured as described [here](https://www.jetbrains.com/help/rider/MAUI.html#before-you-start).
+3. Make sure the MAUI workloads are installed and configured as described [here.](https://www.jetbrains.com/help/rider/MAUI.html#before-you-start)
 
 ## Step 1: Create a new .NET MAUI project
 
-1. Go to **File > New Solution**, select .NET (C#) and choose the **.NET MAUI App** template.
+1. Go to **File > New Solution,** Select .NET (C#) and choose the .NET MAUI App template.
 2. Enter the Project Name, Solution Name, and Location.
-3. Select the .NET framework version and click **Create**.
+3. Select the .NET framework version and click Create.
 
 ## Step 2: Install the Syncfusion<sup>®</sup> MAUI Toolkit NuGet package
 
-1. In **Solution Explorer**, right-click the project and choose **Manage NuGet Packages**.
+1. In **Solution Explorer,** right-click the project and choose **Manage NuGet Packages.**
 2. Search for [Syncfusion.Maui.Toolkit](https://www.nuget.org/packages/Syncfusion.Maui.Toolkit/) and install the latest version.
-3. Ensure the necessary dependencies are installed correctly, and the project is restored. If not, open the Terminal in Rider and manually run: `dotnet restore`.
-
-## Step 3: Register the handler
-
-In the `MauiProgram.cs` file, register the handler for Syncfusion<sup>®</sup> Toolkit.
-
-{% tabs %}
-{% highlight C# tabtitle="MauiProgram.cs" hl_lines="1 9" %}
-using Syncfusion.Maui.Toolkit.Hosting;
-
-public static class MauiProgram
-{
-    public static MauiApp CreateMauiApp()
-    {
-        var builder = MauiApp.CreateBuilder();
-        builder
-            .ConfigureSyncfusionToolkit()
-            .UseMauiApp<App>()
-            .ConfigureFonts(fonts =>
-            {
-                fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
-                fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
-            });
-
-        return builder.Build();
-    }
-}
-
-{% endhighlight %}
-{% endtabs %} 
-
-## Step 4: Add a basic OTP Input
-
-1. To initialize the control, import the `Syncfusion.Maui.Toolkit.OtpInput` namespace.
-
-2. Initialize [SfOtpInput](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.OtpInput.SfOtpInput.html).
-
-{% tabs %}
-{% highlight xaml %}
-
-<otpInput:SfOtpInput />
-
-{% endhighlight %}
-{% highlight c# %}
-
-SfOtpInput otpInput = new SfOtpInput();
-
-{% endhighlight %}
-{% endtabs %}
+3. Ensure the necessary dependencies are installed correctly, and the project is restored. If not, Open the Terminal in Rider and manually run: `dotnet restore`
 
 {% endtabcontent %}
 {% endtabcontents %}
 
-## Value
+## Step 3: Register the handler
+
+Make sure to add the namespace.
+ 
+{% tabs %}
+{% highlight MauiProgram.cs %}
+using Syncfusion.Maui.Toolkit.Hosting;
+{% endhighlight %}
+ 
+Register the Syncfusion core handler in your CreateMauiApp method of `MauiProgram.cs` file to use Syncfusion controls.
+ 
+{% highlight MauiProgram.cs %}
+builder.ConfigureSyncfusionToolkit();
+{% endhighlight %}
+{% endtabs %}
+
+## Step 4: Import OTP Input namespace
+
+Add the following namespace in your XAML or C#.
+{% tabs %}
+{% highlight xaml %}
+
+xmlns:picker="clr-namespace:Syncfusion.Maui.Toolkit.Picker;assembly=Syncfusion.Maui.Toolkit"
+
+{% endhighlight %}
+{% highlight c# %}
+
+using Syncfusion.Maui.Toolkit.Picker;
+
+{% endhighlight %}
+{% endtabs %}
+
+## Step 5: Add the OTP Input component
 
 You can specify the value of OTP Input by using the [Value](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.OtpInput.SfOtpInput.html#Syncfusion_Maui_Toolkit_OtpInput_SfOtpInput_Value) property.
 
@@ -254,3 +141,5 @@ SfOtpInput otpInput = new SfOtpInput()
 {% endtabs %}
 
 ![Value](images/value.png)
+
+You can download the OTP Input getting started sample from [here](https://github.com/SyncfusionExamples/Getting-Started-with-the-MAUI-OTP-Input-control).
