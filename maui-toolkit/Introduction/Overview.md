@@ -7,7 +7,7 @@ control: Overview
 documentation: UG
 ---
 
-# Build Modern Apps Faster with Syncfusion<sup>®</sup> Toolkit for .NET MAUI
+# Build Modern .NET MAUI Apps with Syncfusion® Toolkit
 
 The Syncfusion<sup>®</sup> Toolkit for .NET MAUI provides a powerful collection of UI components designed to help you create rich, high-performance mobile and desktop applications with ease.
 
@@ -119,7 +119,7 @@ line-height: 1;
 .sf-icon-calendars:before { content: "\e703"; }
 .sf-icon-cards:before { content: "\e704"; }
 .sf-icon-carousel:before { content: "\e705"; }
-.sf-icon-cartesian-chart:before { content: "\e706"; }
+.sf-icon-Cartesian-chart:before { content: "\e706"; }
 .sf-icon-chips:before { content: "\e707"; }
 .sf-icon-circular-chart:before { content: "\e708"; }
 .sf-icon-circular-progressbar:before { content: "\e709"; }
@@ -132,7 +132,7 @@ line-height: 1;
 .sf-icon-navigation-drawer:before { content: "\e710"; }
 .sf-icon-numeric-entry:before { content: "\e711"; }
 .sf-icon-numeric-updown:before { content: "\e712"; }
-.sf-icon-otp-input:before { content: "\e713"; }
+.sf-icon-Otp-input:before { content: "\e713"; }
 .sf-icon-picker:before { content: "\e714"; }
 .sf-icon-polar-chart:before { content: "\e715"; }
 .sf-icon-popup:before { content: "\e716"; }
@@ -208,7 +208,7 @@ line-height: 1;
 </a>
 </div>
 
-<div class="controlanchorlink"><a target="_self" href="https://help.syncfusion.com/maui-toolkit/otp-input/overview"><span class="sf-home-icon sf-icon-otp-input"></span>OTP Input</a></div>
+<div class="controlanchorlink"><a target="_self" href="https://help.syncfusion.com/maui-toolkit/otp-input/overview"><span class="sf-home-icon sf-icon-Otp-input"></span>OTP Input</a></div>
 
 <div><p class="category-topics">BUTTONS</p></div>
 
@@ -290,7 +290,7 @@ line-height: 1;
 </div>
 <div class="controlanchorlink">
     <a href="https://help.syncfusion.com/maui-toolkit/cartesian-charts/overview">
-        <span class="sf-home-icon sf-icon-cartesian-chart"></span>Cartesian Charts
+        <span class="sf-home-icon sf-icon-Cartesian-chart"></span>Cartesian Charts
     </a>
 </div>
 <div class="controlanchorlink">
