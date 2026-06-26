@@ -467,7 +467,7 @@ line-height: 1;
     <h3 class="form-title">Feature Tour</h3>
 </div>
 <div class="form-description">Get a quick overview of key features and capabilities to kick start your journey.</div>
-<a href="https://www.syncfusion.com/maui-controls" class="explore-link">
+<a href="https://www.syncfusion.com/net-maui-toolkit" class="explore-link">
 Explore Features
   <span class="card-icon card-arrow"></span>
 </a>
@@ -480,11 +480,11 @@ Explore Features
     <div class="icon-circle">
     <span class="card-icon card-showcase"></span>
   </div>
-    <h3 class="form-title">Showcase Samples</h3>
+    <h3 class="form-title">GitHub Source</h3>
 </div>
-    <div class="form-description"> Explore real-world sample apps to see components in action and learn by example.</div>
+    <div class="form-description"> Explore the complete source code for all toolkit controls.</div>
     <a href="https://github.com/syncfusion/maui-toolkit" class="explore-link">
-    View Samples
+    View Source
   <span class="card-icon card-arrow"></span>
 </a>
   </div>
@@ -537,7 +537,7 @@ Search KB's
     <div class="form-description">
       Discover in‑depth articles, use cases and expert insights from our developers.
     </div>
-    <a href="https://www.syncfusion.com/blogs/category/net-maui" class="explore-link">
+    <a href="https://www.syncfusion.com/blogs/tag/maui-toolkit" class="explore-link">
 Read Blogs
   <span class="card-icon card-arrow"></span>
   </a>
