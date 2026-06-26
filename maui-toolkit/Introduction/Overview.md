@@ -327,9 +327,7 @@ line-height: 1;
 </td>
 </tr>
 </table>
-
 <br>
-
 
 ## Resources
 
@@ -542,17 +540,16 @@ Search KB's
     <a href="https://www.syncfusion.com/blogs/category/net-maui" class="explore-link">
 Read Blogs
   <span class="card-icon card-arrow"></span>
+  </a>
 </div>
-  </div>
 </div>
-
 </div>
 
 
 ## Support
 
 <div style="display:flex; flex-wrap:wrap; gap:20px; margin-top:10px;">
-<div  class="form-card" target="_blank">
+<div class="form-card" target="_blank">
     <div class="form-content">
         <div class="card-header">
             <div class="icon-circle">
