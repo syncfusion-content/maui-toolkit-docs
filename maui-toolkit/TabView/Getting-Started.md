@@ -116,9 +116,6 @@ using Syncfusion.Maui.Toolkit.TabView;
 {% endhighlight %}
 {% endtabs %}
 
-{% endtabcontent %}
-{% endtabcontents %}
-
 ## Step 5: Add the Tab View component
 
 Tab items can be added to the control using the [Items](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SfTabView.html#Syncfusion_Maui_Toolkit_TabView_SfTabView_Items) property of [SfTabView](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SfTabView.html).
