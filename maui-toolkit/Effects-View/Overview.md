@@ -34,13 +34,6 @@ The Syncfusion<sup>&reg;</sup> [.NET MAUI EffectsView](https://www.syncfusion.co
 
 ## See Also
 
-- [Getting Started](https://help.syncfusion.com/maui-toolkit/datepicker/getting-started) shows a step‑by‑step guide to begin using the Date Picker control.  
-- [Formatting](https://help.syncfusion.com/maui-toolkit/datepicker/formatting) explains how to configure how date values are displayed.  
-- [Customizations](https://help.syncfusion.com/maui-toolkit/datepicker/customizations) helps modify appearance and interaction behavior.  
-- [UI Kit](https://www.syncfusion.com/demos/maui#maui-ui-control) provides interactive demos and ready‑made UI examples.  
-
-## See Also
-
 - [Getting Started](https://help.syncfusion.com/maui-toolkit/effects-view/getting-started) shows a step‑by‑step guide to begin using the Effects View control.  
 - [Effects](https://help.syncfusion.com/maui-toolkit/effects-view/effects/highlight) lets you apply visual effects like highlight, ripple, or selection to make interactions stand out.  
 - [Features](https://help.syncfusion.com/maui-toolkit/effects-view/features) helps you discover built‑in options that enhance visuals and improve user experience.  
