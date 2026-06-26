@@ -14,9 +14,6 @@ This section guides you through setting up and configuring a `Popup` in your .NE
 {% tabcontents %}
 {% tabcontent Visual Studio %}
 
-{% tabcontents %}
-{% tabcontent Visual Studio %}
-
 ## Prerequisites
 
 Before proceeding, ensure the following are set up:
@@ -43,7 +40,7 @@ Before proceeding, ensure the following are set up:
 
 Before proceeding, ensure the following are set up:
 
-1. Install [.NET 9 SDK](Download .NET 9.0 (Linux, macOS, and Windows) | .NET) or later.
+1. Install [.NET 9 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/9.0) or later.
 2. Set up a .NET MAUI environment with Visual Studio Code.
 3. Ensure that the .NET MAUI workloads are installed and configured as described [here](https://learn.microsoft.com/en-us/dotnet/maui/get-started/installation?view=net-maui-9.0&tabs=visual-studio-code).
 
@@ -68,7 +65,7 @@ Before proceeding, ensure the following are set up:
 
 Before proceeding, ensure the following are set up:
 
-1. Install [.NET 9 SDK](Download .NET 9.0 (Linux, macOS, and Windows) | .NET) or later.
+1. Install [.NET 9 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/9.0) or later.
 2. Set up a .NET MAUI environment with JetBrains Rider 2024.3 or later.
 3. Make sure the MAUI workloads are installed and configured as described [here.](https://www.jetbrains.com/help/rider/MAUI.html#before-you-start)
 
@@ -87,18 +84,20 @@ Before proceeding, ensure the following are set up:
 {% endtabcontent %}
 {% endtabcontents %}
 
-## Step 3: Register the handler
-
+## Step 3: Register Syncfusion handler
+ 
 Make sure to add the namespace.
  
 {% tabs %}
-{% highlight C# %}
+{% highlight c# %}
 using Syncfusion.Maui.Toolkit.Hosting;
 {% endhighlight %}
+{% endtabs %}
  
-Register the Syncfusion core handler in your CreateMauiApp method of `MauiProgram.cs` file to use Syncfusion controls.
+Register the Syncfusion toolkit handler in your `CreateMauiApp` method of `MauiProgram.cs` file to use Syncfusion controls.
  
-{% highlight C# %}
+{% tabs %}
+{% highlight c# %}
 builder.ConfigureSyncfusionToolkit();
 {% endhighlight %}
 {% endtabs %}
