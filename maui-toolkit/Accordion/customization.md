@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Customization in .NET MAUI Accordion control | Syncfusion
-description: Learn here all about Customization support in Syncfusion® Toolkit for .NET MAUI Accordion control and more details. 
+description: Learn here all about Customization support in SyncfusionÂ® Toolkit for .NET MAUI Accordion control and more details. 
 platform: maui-toolkit
 control: SfAccordion
 documentation: ug

@@ -110,7 +110,7 @@ The following code demonstrates how to add a Bottom Sheet that displays detailed
 Create a simple data model and save it as `Book.cs` file.
 
 {% tabs %}
-{% highlight %}
+{% highlight C# %}
 
 public class Book
 {
