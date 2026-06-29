@@ -9,7 +9,7 @@ documentation: UG
 
 # .NET MAUI Bottom Sheet (SfBottomSheet) Overview
 
-The Syncfusion<sup>&reg;</sup> .NET MAUI Bottom Sheet (SfBottomSheet) control is used to present additional content or actions in a sliding panel from the bottom of the screen. It provides an interactive and space-efficient way to display contextual information without navigating away from the current view, making it suitable for modern mobile and desktop applications.
+The Syncfusion<sup>&reg;</sup> [.NET MAUI Bottom Sheet](https://www.syncfusion.com/maui-controls/maui-bottomsheet) (SfBottomSheet) control is used to present additional content or actions in a sliding panel from the bottom of the screen. It provides an interactive and space-efficient way to display contextual information without navigating away from the current view, making it suitable for modern mobile and desktop applications.
 
 ![.NET MAUI Bottom Sheet.](images/overview.png)
 
@@ -79,7 +79,7 @@ The following table summarizes the globalization support available in this contr
 
 - [Popup](https://help.syncfusion.com/maui-toolkit/popup/overview) for displaying overlay dialogs with customizable layouts.  
 - [NavigationDrawer](https://help.syncfusion.com/maui-toolkit/navigationdrawer/overview) for presenting content in sliding side panels.  
-- [OtpInput](https://help.syncfusion.com/maui-toolkit/otp-input/overview) for digit‑based input scenarios like verification codes.
+- [TabView](https://help.syncfusion.com/maui-toolkit/tabview/overview) for organizing content into tabbed views with easy navigation.
 
 ## See Also
 
@@ -224,7 +224,7 @@ The following table summarizes the globalization support available in this contr
     <h3 class="form-title">Feature Tour</h3>
 </div>
 <div class="form-description">Get a quick overview of key features and capabilities to kick start your journey.</div>
-<a href="https://www.syncfusion.com/maui-controls" class="explore-link">
+<a href="https://www.syncfusion.com/maui-controls/maui-bottomsheet" class="explore-link">
 Explore Features
   <span class="card-icon card-arrow"></span>
 </a>
