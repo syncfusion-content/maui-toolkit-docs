@@ -81,7 +81,7 @@ The following table summarizes the globalization support available in this contr
 
 - [Numeric Entry](https://help.syncfusion.com/maui-toolkit/numericentry/overview) for structured numeric input fields.
 - [Numeric UpDown](https://help.syncfusion.com/maui-toolkit/numericupdown/overview) for increment/decrement numeric input.
-- [Otp Input](https://help.syncfusion.com/maui-toolkit/otp-input/overview) for digit‑based entry scenarios. 
+- [OTP Input](https://help.syncfusion.com/maui-toolkit/otp-input/overview) for digit‑based entry scenarios. 
 
 ## See Also
 

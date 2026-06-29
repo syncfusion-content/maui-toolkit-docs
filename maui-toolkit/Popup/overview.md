@@ -85,7 +85,7 @@ The following table summarizes the globalization support available in this contr
 
 - [Bottom Sheet](https://help.syncfusion.com/maui-toolkit/bottom-sheet/overview) for overlay content at screen bottom.
 - [Navigation Drawer](https://help.syncfusion.com/maui-toolkit/navigationdrawer/overview) for slide‑in panels.
-- [Otp Input](https://help.syncfusion.com/maui-toolkit/otp-input/overview) for digit‑based input scenarios.
+- [OTP Input](https://help.syncfusion.com/maui-toolkit/otp-input/overview) for digit‑based input scenarios.
 
 ## See Also
 

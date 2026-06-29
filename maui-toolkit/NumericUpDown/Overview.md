@@ -9,7 +9,7 @@ documentation: ug
 
 # .NET MAUI NumericUpDown Overview
 
-The .NET MAUI NumericUpDown (`SfNumericUpDown`) control is used to input and adjust numeric values using increment and decrement buttons. It provides an intuitive way to modify values with built-in validation and formatting support, making it suitable for precise numeric input scenarios in .NET MAUI applications.
+The Syncfusion<sup>&reg;</sup> [.NET MAUI NumericUpDown](https://www.syncfusion.com/maui-controls/maui-numericupdown) (`SfNumericUpDown`) control is used to input and adjust numeric values using increment and decrement buttons. It provides an intuitive way to modify values with built-in validation and formatting support, making it suitable for precise numeric input scenarios in .NET MAUI applications.
 
 ![.NET MAUI NumericUpDown](Overview_images/overview_img.png)
 
@@ -79,7 +79,7 @@ The following table summarizes the globalization support available in this contr
 
 - [Numeric Entry](https://help.syncfusion.com/maui-toolkit/numericentry/overview) for precise numeric input and validation scenarios, complementing OTP’s digit‑based entry.
 - [Text Input Layout](https://help.syncfusion.com/maui-toolkit/textinputlayout/overview) for enhancing text input fields with floating labels, validation UI, and better form clarity.
-- [OtpInput](https://help.syncfusion.com/maui-toolkit/otp-input/overview) for digit‑based input scenarios like verification codes. 
+- [OTP Input](https://help.syncfusion.com/maui-toolkit/otp-input/overview) for digit‑based input scenarios like verification codes. 
 
 ## See Also
 
@@ -224,7 +224,7 @@ The following table summarizes the globalization support available in this contr
     <h3 class="form-title">Feature Tour</h3>
 </div>
 <div class="form-description">Get a quick overview of key features and capabilities to kick start your journey.</div>
-<a href="https://www.syncfusion.com/maui-controls" class="explore-link">
+<a href="https://www.syncfusion.com/maui-controls/maui-numericupdown" class="explore-link">
 Explore Features
   <span class="card-icon card-arrow"></span>
 </a>
