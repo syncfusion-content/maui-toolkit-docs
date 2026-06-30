@@ -24,79 +24,14 @@ Before proceeding, ensure the following are set up:
 ## Step 1: Create a new .NET MAUI project
 
 1. Go to **File > New > Project** and choose the **.NET MAUI App** template.
-2. Name the project and choose a location. Then, click **Next**.
+2. Name the project and choose a location. Then click **Next**.
 3. Select the .NET framework version and click **Create**.
 
-## Step 2: Install the Syncfusion<sup>®</sup> .NET MAUI Toolkit Package
+## Step 2: Install the Syncfusion<sup>&reg;</sup> .NET MAUI Toolkit NuGet package
 
-1. In **Solution Explorer**, right-click the project and choose **Manage NuGet Packages**.
+1. In **Solution Explorer,** right-click the project and choose **Manage NuGet Packages.**
 2. Search for [Syncfusion.Maui.Toolkit](https://www.nuget.org/packages/Syncfusion.Maui.Toolkit/) and install the latest version.
-3. Ensure all necessary dependencies are installed correctly, and the project is restored.
-
-## Step 3: Register the handler
-
-In the **MauiProgram.cs** file, register the handler for Syncfusion<sup>®</sup> Toolkit.
-
-{% tabs %}
-{% highlight C# tabtitle="MauiProgram.cs" hl_lines="1 9" %}
-    using Syncfusion.Maui.Toolkit.Hosting;
-
-    public static class MauiProgram
-    {
-	    public static MauiApp CreateMauiApp()
-	    {
-	        var builder = MauiApp.CreateBuilder();
-		    builder
-			    .ConfigureSyncfusionToolkit()
-			    .UseMauiApp<App>()
-			    .ConfigureFonts(fonts =>
-			    {
-				    fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
-				    fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
-			    });
-
-		    return builder.Build();
-	    }
-    }
-
-{% endhighlight %}
-{% endtabs %}
-
-## Step 4: Add a Effects View
-
-1. To initialize the control, import the `Syncfusion.Maui.Toolkit.EffectsView` namespace.
-2. Initialize [SfEffectsView](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.EffectsView.SfEffectsView.html) class.
-
-{% tabs %}
-
-{% highlight xaml %}
-
-<ContentPage 
-    xmlns:effectsView="clr-namespace:Syncfusion.Maui.Toolkit.EffectsView;assembly=Syncfusion.Maui.Toolkit">
-    <ContentPage.Content> 
-	 	<effectsView:SfEffectsView /> 
-	</ContentPage.Content> 
-</ContentPage>
-	
-{% endhighlight %}
-
-{% highlight C# %}
-
-using Syncfusion.Maui.Toolkit.EffectsView;
-
-	public partial class MainPage : ContentPage                  
-	{ 
-		public MainPage()   
-		{   
-			InitializeComponent();       
-			SfEffectsView effectsView = new SfEffectsView(); 
-			this.Content = effectsView;  
-		}  
-	}  
-
-{% endhighlight %}
-
-{% endtabs %}
+3. Ensure the necessary dependencies are installed correctly, and the project is restored.
 
 {% endtabcontent %}
 {% tabcontent Visual Studio Code %}
@@ -114,79 +49,14 @@ Before proceeding, ensure the following are set up:
 1. Open the command palette by pressing `Ctrl+Shift+P` and type **.NET:New Project** and enter.
 2. Choose the **.NET MAUI App** template.
 3. Select the project location, type the project name and press **Enter**.
-4. Then choose **Create project**.
+4. Then choose **Create project.**
 
-## Step 2: Install the Syncfusion<sup>®</sup> .NET MAUI Toolkit package
+## Step 2: Install the Syncfusion<sup>&reg;</sup> .NET MAUI Toolkit NuGet package
 
 1. Press <kbd>Ctrl</kbd> + <kbd>`</kbd> (backtick) to open the integrated terminal in Visual Studio Code.
 2. Ensure you're in the project root directory where your .csproj file is located.
 3. Run the command `dotnet add package Syncfusion.Maui.Toolkit` to install the Syncfusion<sup>®</sup> .NET MAUI Toolkit NuGet package.
 4. To ensure all dependencies are installed, run `dotnet restore`.
-
-## Step 3: Register the handler
-
-In the **MauiProgram.cs** file, register the handler for Syncfusion<sup>®</sup> Toolkit.
-
-{% tabs %}
-{% highlight C# tabtitle="MauiProgram.cs" hl_lines="1 9" %}
-    using Syncfusion.Maui.Toolkit.Hosting;
-
-    public static class MauiProgram
-    {
-	    public static MauiApp CreateMauiApp()
-	    {
-	        var builder = MauiApp.CreateBuilder();
-		    builder
-			    .ConfigureSyncfusionToolkit()
-			    .UseMauiApp<App>()
-			    .ConfigureFonts(fonts =>
-			    {
-				    fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
-				    fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
-			    });
-
-		    return builder.Build();
-	    }
-    }
-
-{% endhighlight %}
-{% endtabs %}
-
-## Step 4: Add a Effects View
-
-1. To initialize the control, import the `Syncfusion.Maui.Toolkit.EffectsView` namespace.
-2. Initialize [SfEffectsView](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.EffectsView.SfEffectsView.html) class.
-
-{% tabs %}
-
-{% highlight xaml %}
-
-<ContentPage 
-    xmlns:effectsView="clr-namespace:Syncfusion.Maui.Toolkit.EffectsView;assembly=Syncfusion.Maui.Toolkit">
-    <ContentPage.Content> 
-	 	<effectsView:SfEffectsView /> 
-	</ContentPage.Content> 
-</ContentPage>
-	
-{% endhighlight %}
-
-{% highlight C# %}
-
-using Syncfusion.Maui.Toolkit.EffectsView;
-
-	public partial class MainPage : ContentPage                  
-	{ 
-		public MainPage()   
-		{   
-			InitializeComponent();       
-			SfEffectsView effectsView = new SfEffectsView(); 
-			this.Content = effectsView;  
-		}  
-	}  
-
-{% endhighlight %}
-
-{% endtabs %}
 
 {% endtabcontent %}
 {% tabcontent JetBrains Rider %}
@@ -201,82 +71,164 @@ Before proceeding, ensure the following are set up:
 
 ## Step 1: Create a new .NET MAUI project
 
-1. Go to **File > New Solution**, select .NET (C#) and choose the **.NET MAUI App** template.
+1. Go to **File > New Solution,** Select .NET (C#) and choose the .NET MAUI App template.
 2. Enter the Project Name, Solution Name, and Location.
-3. Select the .NET framework version and click **Create**.
+3. Select the .NET framework version and click Create.
 
 ## Step 2: Install the Syncfusion<sup>®</sup> MAUI Toolkit NuGet package
 
-1. In **Solution Explorer**, right-click the project and choose **Manage NuGet Packages**.
+1. In **Solution Explorer,** right-click the project and choose **Manage NuGet Packages.**
 2. Search for [Syncfusion.Maui.Toolkit](https://www.nuget.org/packages/Syncfusion.Maui.Toolkit/) and install the latest version.
-3. Ensure the necessary dependencies are installed correctly, and the project is restored. If not, open the Terminal in Rider and manually run: `dotnet restore`.
-
-## Step 3: Register the handler
-
-In the **MauiProgram.cs** file, register the handler for Syncfusion<sup>®</sup> Toolkit.
-
-{% tabs %}
-{% highlight C# tabtitle="MauiProgram.cs" hl_lines="1 9" %}
-    using Syncfusion.Maui.Toolkit.Hosting;
-
-    public static class MauiProgram
-    {
-	    public static MauiApp CreateMauiApp()
-	    {
-	        var builder = MauiApp.CreateBuilder();
-		    builder
-			    .ConfigureSyncfusionToolkit()
-			    .UseMauiApp<App>()
-			    .ConfigureFonts(fonts =>
-			    {
-				    fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
-				    fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
-			    });
-
-		    return builder.Build();
-	    }
-    }
-
-{% endhighlight %}
-{% endtabs %}
-
-## Step 4: Add a Effects View
-
-1. To initialize the control, import the `Syncfusion.Maui.Toolkit.EffectsView` namespace.
-2. Initialize [SfEffectsView](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.EffectsView.SfEffectsView.html) class.
-
-{% tabs %}
-
-{% highlight xaml %}
-
-<ContentPage 
-    xmlns:effectsView="clr-namespace:Syncfusion.Maui.Toolkit.EffectsView;assembly=Syncfusion.Maui.Toolkit">
-    <ContentPage.Content> 
-	 	<effectsView:SfEffectsView /> 
-	</ContentPage.Content> 
-</ContentPage>
-	
-{% endhighlight %}
-
-{% highlight C# %}
-
-using Syncfusion.Maui.Toolkit.EffectsView;
-
-	public partial class MainPage : ContentPage                  
-	{ 
-		public MainPage()   
-		{   
-			InitializeComponent();       
-			SfEffectsView effectsView = new SfEffectsView(); 
-			this.Content = effectsView;  
-		}  
-	}  
-
-{% endhighlight %}
-
-{% endtabs %}
+3. Ensure the necessary dependencies are installed correctly, and the project is restored. If not, Open the Terminal in Rider and manually run: `dotnet restore`
 
 {% endtabcontent %}
 {% endtabcontents %}
 
+## Step 3: Register Syncfusion handler
+ 
+Make sure to add the namespace.
+ 
+{% tabs %}
+{% highlight c# %}
+using Syncfusion.Maui.Toolkit.Hosting;
+{% endhighlight %}
+{% endtabs %}
+ 
+Register the Syncfusion toolkit handler in your `CreateMauiApp` method of `MauiProgram.cs` file to use Syncfusion controls.
+ 
+{% tabs %}
+{% highlight c# %}
+builder.ConfigureSyncfusionToolkit();
+{% endhighlight %}
+{% endtabs %}
+
+## Step 4: Import EffectsView namespace
+
+Add the following namespace in your XAML or C#.
+{% tabs %}
+{% highlight xaml %}
+
+xmlns:effectsView="clr-namespace:Syncfusion.Maui.Toolkit.EffectsView;assembly=Syncfusion.Maui.Toolkit"
+
+{% endhighlight %}
+{% highlight c# %}
+
+using Syncfusion.Maui.Toolkit.EffectsView;
+
+{% endhighlight %}
+{% endtabs %}
+
+## Step 5: Add the EffectsView component
+
+Initialize the [SfEffectsView](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.EffectsView.SfEffectsView.html) and add the desired UI elements such as an image, label, or any custom view within it to apply visual effects.
+
+{% tabs %}
+{% highlight xaml %}
+
+<Border HorizontalOptions="Center" VerticalOptions="Center">
+    <Border.StrokeShape>
+        <RoundRectangle CornerRadius="18" />
+    </Border.StrokeShape>
+    <Border.Background>
+        <LinearGradientBrush EndPoint="1,0">
+            <GradientStop Color="#4E54C8" Offset="0.0" />
+            <GradientStop Color="#8F94FB" Offset="1.0" />
+        </LinearGradientBrush>
+    </Border.Background>
+    <effectsView:SfEffectsView>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="90" />
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Image Source="laura.png" 
+                   Margin="7" 
+                   VerticalOptions="Center"
+                   WidthRequest="72" 
+                   HeightRequest="72" />
+                <StackLayout Grid.Column="1" VerticalOptions="Center">
+                    <Label Text="Laura Steffi" Margin="10,0,10,0" FontSize="18" />
+                    <Label Text="Data Science Analyst" Margin="10,0,10,0" FontSize="12"/>
+                </StackLayout>
+       </Grid>
+        </effectsView:SfEffectsView>
+    </Border>
+
+{% endhighlight %}
+{% highlight C# %}
+
+var border = new Border
+{
+    HorizontalOptions = LayoutOptions.Center,
+    VerticalOptions = LayoutOptions.Center,
+    StrokeShape = new RoundRectangle
+    {
+        CornerRadius = 18
+    },
+    Background = new LinearGradientBrush
+    {
+        EndPoint = new Point(1, 0),
+        GradientStops = new GradientStopCollection
+            {
+                new GradientStop(Color.FromArgb("#4E54C8"), 0.0f),
+                new GradientStop(Color.FromArgb("#8F94FB"), 1.0f)
+            }
+    }
+};
+
+    var grid = new Grid
+    {
+        ColumnDefinitions =
+        {
+            new ColumnDefinition { Width = 90 },
+            new ColumnDefinition { Width = GridLength.Star }
+        }
+    };
+
+    var image = new Image
+    {
+        Source = "laura.png",
+        Margin = new Thickness(7),
+        VerticalOptions = LayoutOptions.Center,
+        WidthRequest = 72,
+        HeightRequest = 72
+    };
+
+    var nameLabel = new Label
+    {
+        Text = "Laura Steffi",
+        Margin = new Thickness(10, 0),
+        FontSize = 18
+    };
+
+    var roleLabel = new Label
+    {
+        Text = "Data Science Analyst",
+        Margin = new Thickness(10, 0),
+        FontSize = 12
+    };
+
+    var stackLayout = new StackLayout
+    {
+        VerticalOptions = LayoutOptions.Center,
+        Children = { nameLabel, roleLabel }
+    };
+
+    grid.Add(image);
+    grid.Add(stackLayout, 1, 0);
+
+    var effectsView = new SfEffectsView
+    {
+        Content = grid
+    };
+
+    border.Content = effectsView;
+
+    Content = border;
+
+{% endhighlight %}
+{% endtabs %}
+
 ![Effects View initialization](Getting-Started_images/RippleEffect.gif)
+
+You can download the EffectsView Getting Started sample from [here](https://github.com/SyncfusionExamples/Getting-Started-with-.NET-MAUI-EffectsView).
