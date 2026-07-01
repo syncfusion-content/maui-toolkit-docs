@@ -17,9 +17,10 @@ This section explains how to add the [.NET MAUI Shimmer](https://help.syncfusion
 ## Prerequisites
 
 Before proceeding, ensure the following are set up:
+
 1. Install [.NET 9 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/9.0) or later.
 2. Set up a .NET MAUI environment with Visual Studio 2022 v17.12 or later.
- 
+
 ## Step 1: Create a new .NET MAUI project
 
 1. Go to **File > New > Project** and choose the **.NET MAUI App** template.

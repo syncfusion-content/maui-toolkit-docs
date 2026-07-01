@@ -65,11 +65,7 @@ Before proceeding, ensure the following are set up:
 
 Before proceeding, ensure the following are set up:
 
-<<<<<<< HEAD
 1. Install [.NET 9 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/9.0) or later.
-=======
-1. Install [.NET 9 SDK](Download .NET 9.0 (Linux, macOS, and Windows) | .NET) or later.
->>>>>>> remotes/origin/development
 2. Set up a .NET MAUI environment with JetBrains Rider 2024.3 or later.
 3. Make sure the MAUI workloads are installed and configured as described [here.](https://www.jetbrains.com/help/rider/MAUI.html#before-you-start)
 

@@ -16,6 +16,7 @@ This section explains how to add the [.NET MAUI Picker](https://www.syncfusion.c
 ## Prerequisites
 
 Before proceeding, ensure the following are set up:
+
 1. Install [.NET 9 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/9.0) or later.
 2. Set up a .NET MAUI environment with Visual Studio 2022 v17.12 or later.
 
@@ -37,6 +38,7 @@ Before proceeding, ensure the following are set up:
 ## Prerequisites
 
 Before proceeding, ensure the following are set up:
+
 1. Install [.NET 9 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/9.0) or later.
 2. Set up a .NET MAUI environment with Visual Studio Code.
 3. Ensure that the .NET MAUI workloads are installed and configured as described [here](https://learn.microsoft.com/en-us/dotnet/maui/get-started/installation?view=net-maui-9.0&tabs=visual-studio-code).
