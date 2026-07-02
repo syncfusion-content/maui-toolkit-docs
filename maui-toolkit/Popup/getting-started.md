@@ -149,5 +149,3 @@ private void ClickToShowPopup_Clicked(object sender, EventArgs e)
 {% endtabs %}
 
 ![Popup with default appearance](Images/getting-started//maui-popup-with-default-appearance.png)
-
-{% endtabcontent %}
