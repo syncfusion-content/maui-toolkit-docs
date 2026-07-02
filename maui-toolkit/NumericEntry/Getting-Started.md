@@ -102,7 +102,7 @@ builder.ConfigureSyncfusionToolkit();
 {% endhighlight %}
 {% endtabs %}
 
-## Step 4: Import OTP Input namespace
+## Step 4: Import NumericEntry namespace
 
 Add the following namespace in your XAML or C#.
 {% tabs %}

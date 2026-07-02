@@ -169,9 +169,6 @@ using Syncfusion.Maui.Toolkit.SparkCharts;
 {% endhighlight %}
 {% endtabs %}
 
-{% endtabcontent %}
-{% endtabcontents %}
-
 ## Step 7: Add the Spark Charts component
 
 Binding `Data` to the spark chart [ItemsSource](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SparkCharts.SfSparkChart.html#Syncfusion_Maui_Toolkit_SparkCharts_SfSparkChart_ItemsSource) property from its BindingContext to create our own spark chart.

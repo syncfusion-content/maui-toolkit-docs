@@ -125,7 +125,7 @@ The `PullableContent` view serves as the designated area where users can initiat
 To show the progress indicator while updating the view, set `IsRefreshing` property to `True` using `Refreshing` event. Once view is updated, remove the progress indicator by setting `IsRefreshing` property to `False`.
 
 {% tabs %}
-{% highlight xaml tabtitle="MainPage.xaml" hl_lines="7 11" %}
+{% highlight xaml %}
 
 <PullToRefreshControl:SfPullToRefresh x:Name="pullToRefresh">
     <PullToRefreshControl:SfPullToRefresh.PullableContent>
@@ -136,7 +136,7 @@ To show the progress indicator while updating the view, set `IsRefreshing` prope
 </PullToRefreshControl:SfPullToRefresh>
 
 {% endhighlight %}
-{% highlight c# tabtitle="MainPage.xaml.cs" hl_lines="12" %}
+{% highlight c# %}
 
 public MainPage()
 {

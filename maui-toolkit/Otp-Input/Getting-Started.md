@@ -111,12 +111,12 @@ Add the following namespace in your XAML or C#.
 {% tabs %}
 {% highlight xaml %}
 
-xmlns:picker="clr-namespace:Syncfusion.Maui.Toolkit.Picker;assembly=Syncfusion.Maui.Toolkit"
+xmlns:picker="clr-namespace:Syncfusion.Maui.Toolkit.OtpInput;assembly=Syncfusion.Maui.Toolkit"
 
 {% endhighlight %}
 {% highlight c# %}
 
-using Syncfusion.Maui.Toolkit.Picker;
+using Syncfusion.Maui.Toolkit.OtpInput;
 
 {% endhighlight %}
 {% endtabs %}
