@@ -109,7 +109,6 @@ Now, define a simple data model of person with the name properties.
 {% tabs %}
 {% highlight c# tabtitle="C#" %}
 
-//Model class for chips
 public class Person
 {
 	public string Name
@@ -129,7 +128,6 @@ Next, create a view model class and initialize a collection of persons as shown 
 {% tabs %}
 {% highlight c# tabtitle="C#" %}
 
-//View model class for chips
 public class ViewModel : INotifyPropertyChanged
 {
 	private ObservableCollection<Person> employees;
@@ -184,22 +182,20 @@ using Syncfusion.Maui.Toolkit.Chips;
 Create an instance of ViewModel class,and then set it as the `BindingContext`. Bind the `ItemsSource` property with a collection, and then set the `DisplayMemberPath` property:
 
 {% tabs %}
-
 {% highlight xaml %}
-<Grid>
-	<chip:SfChipGroup 
-		ItemsSource="{Binding Employees}" 
-		ChipPadding="8,8,0,0" 
-		DisplayMemberPath="Name"
-		ChipBackground="white"
-		ChipTextColor="Black"
-		HorizontalOptions="Start" 
-		VerticalOptions="Center">
-		<chip:SfChipGroup.BindingContext>
-			<local:ViewModel x:Name="viewModel"/>
-		</chip:SfChipGroup.BindingContext>
-	</chip:SfChipGroup>  
-</Grid>
+
+<chip:SfChipGroup ItemsSource="{Binding Employees}" 
+				  ChipPadding="8,8,0,0" 
+				  DisplayMemberPath="Name"
+				  ChipBackground="white"
+				  ChipTextColor="Black"
+				  HorizontalOptions="Start" 
+				  VerticalOptions="Center">
+	<chip:SfChipGroup.BindingContext>
+		<local:ViewModel x:Name="viewModel"/>
+	</chip:SfChipGroup.BindingContext>
+</chip:SfChipGroup>  
+
 {% endhighlight %}
 
 {% highlight c# %}

@@ -162,9 +162,6 @@ using Syncfusion.Maui.Toolkit.SunburstChart;
 {% endhighlight %}
 {% endtabs %}
 
-{% endtabcontent %}
-{% endtabcontents %}
-
 ## Step 6: Add Sunburst Chart component
 
 Bind `DataSource` to the Sunburst chart [ItemsSource](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SunburstChart.SfSunburstChart.html#Syncfusion_Maui_Toolkit_SunburstChart_SfSunburstChart_ItemsSource) property from its BindingContext to create your Sunburst chart.
