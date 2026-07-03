@@ -302,3 +302,23 @@ SfOtpInput otpInput = new SfOtpInput()
 {% endtabs %}
 
 ![Error state](images/error.png)
+
+## Auto focus
+
+The [AutoFocus](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.OtpInput.SfOtpInput.html#Syncfusion_Maui_Toolkit_OtpInput_SfOtpInput_AutoFocus) property in SfOtpInput is used to automatically set focus to the first input field when the control is loaded. This improves usability by allowing users to start entering the OTP immediately without manually selecting a field.
+
+{% tabs %}
+{% highlight xaml %}
+
+<otpInput:SfOtpInput AutoFocus="True" />
+
+{% endhighlight %}
+{% highlight C# %}
+
+SfOtpInput otpInput = new SfOtpInput()
+{
+    AutoFocus = true
+};
+
+{% endhighlight %}
+{% endtabs %}
