@@ -70,7 +70,7 @@ Before proceeding, ensure the following are set up:
 
 1. Install [.NET 9 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/9.0) or later.
 2. Set up a .NET MAUI environment with JetBrains Rider 2024.3 or later.
-3. Make sure the MAUI workloads are installed and configured as described [here](https://www.jetbrains.com/help/rider/MAUI.html#before-you-start).
+3. Make sure the MAUI workloads are installed and configured as described [here.](https://www.jetbrains.com/help/rider/MAUI.html#before-you-start)
 
 ## Step 1: Create a new .NET MAUI project
 
@@ -111,12 +111,12 @@ Add the following namespace in your XAML or C#.
 {% tabs %}
 {% highlight xaml %}
 
-xmlns:picker="clr-namespace:Syncfusion.Maui.Toolkit.Picker;assembly=Syncfusion.Maui.Toolkit"
+xmlns:picker="clr-namespace:Syncfusion.Maui.Toolkit.OtpInput;assembly=Syncfusion.Maui.Toolkit"
 
 {% endhighlight %}
 {% highlight c# %}
 
-using Syncfusion.Maui.Toolkit.Picker;
+using Syncfusion.Maui.Toolkit.OtpInput;
 
 {% endhighlight %}
 {% endtabs %}

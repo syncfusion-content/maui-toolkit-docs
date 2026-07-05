@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started with .NET MAUI Pyramid Chart control | Syncfusion
+title: Getting Started with .NET MAUI Chart control | Syncfusion
 description: Learn here all about getting started with Syncfusion® .NET MAUI Chart (SfPyramidChart) control, its elements, and more.
 platform: maui-toolkit
 control: SfPyramidChart
@@ -18,7 +18,7 @@ This section explains how to populate the Pyramid Chart with data, including add
 
 Before proceeding, ensure the following are set up:
 
-1. Install [.NET 8 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/9.0) or later is installed.
+1. Install [.NET 9 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/9.0) or later.
 2. Set up a .NET MAUI environment with Visual Studio 2022 v17.12 or later.
 
 ## Step 1: Create a new .NET MAUI project

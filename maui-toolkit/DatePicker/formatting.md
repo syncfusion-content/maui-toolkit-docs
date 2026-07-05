@@ -57,7 +57,7 @@ The different types of formats are:
 
 [`yyyy_MM_dd_ddd`]() - Represents the year month day weekday in yyyy/MM/dd/ddd format.
 
-[`MM_ddd_ddd_yyyy`]() - Represents the month, followed by the abbreviated weekday repeated twice, and then the year in MM/ddd/ddd/yyyy format.
+[`MM_ddd_ddd_yyyy`]() - Represents the month, followed by the abbreviated weekday repeated twice, and then the year in MM/ddd/ddd/yyyy format. 
 
 [`Default`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Picker.PickerDateFormat.html#Syncfusion_Maui_Toolkit_Picker_PickerDateFormat_Default) - Represents the day month year in default culture based format.
 
