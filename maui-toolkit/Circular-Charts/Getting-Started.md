@@ -100,7 +100,7 @@ builder.ConfigureSyncfusionToolkit();
 {% endhighlight %}
 {% endtabs %}
 
-## Step 4: Initialize view model
+## Step 4: Initialize the model and viewmodel 
 
 Define a simple data model to represent a data point in the chart:
 
