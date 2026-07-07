@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Basic Features in .NET MAUI Numeric Entry control | Syncfusion<sup>®</sup>
+title: Basic Features in .NET MAUI Numeric Entry control | Syncfusion®
 description: Learn about Basic Features support in Syncfusion<sup>®</sup> .NET MAUI Numeric Entry (SfNumericEntry) control and more.
 platform: maui
 control: SfNumericEntry
@@ -16,22 +16,42 @@ You can prompt the user with any information using the [Placeholder](https://hel
 {% tabs %}
 {% highlight xaml %}
 
-<editors:SfNumberBox HorizontalOptions="Center" 
+<editors:SfNumericEntry HorizontalOptions="Center" 
                      VerticalOptions="Center" 
                      Placeholder="Enter input here..." />
 
 {% endhighlight %}
 {% highlight C# %}
 
-SfNumberBox SfNumberBox= new SfNumberBox();
-SfNumberBox.Placeholder = "Enter input here...";
-sfNumberBox.HorizontalOptions = LayoutOptions.Center;
-sfNumberBox.VerticalOptions = LayoutOptions.Center;
+SfNumericEntry SfNumericEntry= new SfNumericEntry();
+SfNumericEntry.Placeholder = "Enter input here...";
+SfNumericEntry.HorizontalOptions = LayoutOptions.Center;
+SfNumericEntry.VerticalOptions = LayoutOptions.Center;
 
 {% endhighlight %}
 {% endtabs %}
 
 ![.NET MAUI NumericEntry Placeholder Text](GettingStarted_images/placeholder_text.png)
+
+## Placeholder Color
+
+The [PlaceholderColor](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericEntry.SfNumericEntry.html#Syncfusion_Maui_Toolkit_NumericEntry_SfNumericEntry_PlaceholderColor) property is used to customize the color of the placeholder text in the `NumericEntry`. By default, the placeholder uses the control's default text color.
+
+{% tabs %}
+{% highlight xaml %}
+
+<editors:SfNumericEntry Placeholder="Enter input here..."
+                        PlaceholderColor="Gray" />
+
+{% endhighlight %}
+{% highlight C# %}
+
+SfNumericEntry sfNumericEntry = new SfNumericEntry();
+sfNumericEntry.Placeholder = "Enter input here...";
+sfNumericEntry.PlaceholderColor = Colors.Gray;
+
+{% endhighlight %}
+{% endtabs %}
 
 ## Clear button visibility 
 
@@ -65,6 +85,30 @@ If IsEditable is true
 If IsEditable is false
 
 ![.NET MAUI NumericEntry without Clear Button](GettingStarted_images/clearbutton_collapsed.png)
+
+## Clear Button Color
+
+The [ClearButtonColor](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericEntry.SfNumericEntry.html#Syncfusion_Maui_Toolkit_NumericEntry_SfNumericEntry_ClearButtonColor) property is used to customize the color of the clear button in the `NumericEntry`. By default, the clear button uses the control's default tint.
+
+{% tabs %}
+{% highlight xaml %}
+
+<editors:SfNumericEntry ShowClearButton="True"
+                        IsEditable="True"
+                        Value="10"
+                        ClearButtonColor="Red" />
+
+{% endhighlight %}
+{% highlight C# %}
+
+SfNumericEntry sfNumericEntry = new SfNumericEntry();
+sfNumericEntry.Value = 10;
+sfNumericEntry.ShowClearButton = true;
+sfNumericEntry.IsEditable = true;
+sfNumericEntry.ClearButtonColor = Colors.Red;
+
+{% endhighlight %}
+{% endtabs %}
 
 ## Value Change Mode
 
@@ -230,6 +274,90 @@ The following image illustrates the result of the above code:
 
 ![HorizontalTextAlignment](GettingStarted_images/textalignment.png)
 
+## Font Customization
+
+The `NumericEntry` control allows you to customize the appearance of the text using the [TextColor](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericEntry.SfNumericEntry.html#Syncfusion_Maui_Toolkit_NumericEntry_SfNumericEntry_TextColor), [FontSize](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericEntry.SfNumericEntry.html#Syncfusion_Maui_Toolkit_NumericEntry_SfNumericEntry_FontSize), [FontFamily](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericEntry.SfNumericEntry.html#Syncfusion_Maui_Toolkit_NumericEntry_SfNumericEntry_FontFamily), and [FontAttributes](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericEntry.SfNumericEntry.html#Syncfusion_Maui_Toolkit_NumericEntry_SfNumericEntry_FontAttributes) properties.
+
+### Text Color
+
+The [TextColor](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericEntry.SfNumericEntry.html#Syncfusion_Maui_Toolkit_NumericEntry_SfNumericEntry_TextColor) property is used to customize the color of the text in the `NumericEntry`. By default, the control uses its standard text color.
+
+{% tabs %}
+{% highlight xaml %}
+
+<editors:SfNumericEntry Value="100"
+                        TextColor="Blue" />
+
+{% endhighlight %}
+{% highlight C# %}
+
+SfNumericEntry sfNumericEntry = new SfNumericEntry();
+sfNumericEntry.Value = 100;
+sfNumericEntry.TextColor = Colors.Blue;
+
+{% endhighlight %}
+{% endtabs %}
+
+### Font Size
+
+The [FontSize](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericEntry.SfNumericEntry.html#Syncfusion_Maui_Toolkit_NumericEntry_SfNumericEntry_FontSize) property is used to set the size of the text in the `NumericEntry`. By default, the control uses its standard font size.
+
+{% tabs %}
+{% highlight xaml %}
+
+<editors:SfNumericEntry Value="100"
+                        FontSize="20" />
+
+{% endhighlight %}
+{% highlight C# %}
+
+SfNumericEntry sfNumericEntry = new SfNumericEntry();
+sfNumericEntry.Value = 100;
+sfNumericEntry.FontSize = 20;
+
+{% endhighlight %}
+{% endtabs %}
+
+### Font Family
+
+The [FontFamily](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericEntry.SfNumericEntry.html#Syncfusion_Maui_Toolkit_NumericEntry_SfNumericEntry_FontFamily) property is used to set the font family for the text in the `NumericEntry`. By default, the control uses the platform/default font family.
+
+{% tabs %}
+{% highlight xaml %}
+
+<editors:SfNumericEntry Value="100"
+                        FontFamily="OpenSansRegular" />
+
+{% endhighlight %}
+{% highlight C# %}
+
+SfNumericEntry sfNumericEntry = new SfNumericEntry();
+sfNumericEntry.Value = 100;
+sfNumericEntry.FontFamily = "OpenSansRegular";
+
+{% endhighlight %}
+{% endtabs %}
+
+### Font Attributes
+
+The [FontAttributes](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericEntry.SfNumericEntry.html#Syncfusion_Maui_Toolkit_NumericEntry_SfNumericEntry_FontAttributes) property is used to set the font style for the text in the `NumericEntry`. Supported values are `Bold`, `Italic`, and `None`. By default, the control uses its default font attributes.
+
+{% tabs %}
+{% highlight xaml %}
+
+<editors:SfNumericEntry Value="100"
+                        FontAttributes="Bold" />
+
+{% endhighlight %}
+{% highlight C# %}
+
+SfNumericEntry sfNumericEntry = new SfNumericEntry();
+sfNumericEntry.Value = 100;
+sfNumericEntry.FontAttributes = FontAttributes.Bold;
+
+{% endhighlight %}
+{% endtabs %}
+
 ## ReturnType
 
 The `ReturnType` property specifies the return button (e.g., Next, Done, Go) of the keyboard. It helps manage the flow between multiple input fields by defining what happens when the action button is pressed.
@@ -255,6 +383,48 @@ sfNumericEntry.ReturnType = ReturnType.Next;
 {% endtabs %}
 
 ![.NET MAUI NumericEntry ReturnType](GettingStarted_images/returntype.png)
+
+## Cursor Position
+
+The [CursorPosition](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericEntry.SfNumericEntry.html#Syncfusion_Maui_Toolkit_NumericEntry_SfNumericEntry_CursorPosition) property is used to get or set the position of the cursor within the `NumericEntry` control. The cursor position index starts from **0**.
+
+{% tabs %}
+{% highlight xaml %}
+
+<editors:SfNumericEntry Value="12345"
+                        CursorPosition="3" />
+
+{% endhighlight %}
+{% highlight C# %}
+
+SfNumericEntry sfNumericEntry = new SfNumericEntry();
+sfNumericEntry.Value = 12345;
+sfNumericEntry.CursorPosition = 3;
+
+{% endhighlight %}
+{% endtabs %}
+
+## Selection Length
+
+The [SelectionLength](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericEntry.SfNumericEntry.html#Syncfusion_Maui_Toolkit_NumericEntry_SfNumericEntry_SelectionLength) property is used to get or set the length of the selected text in the `NumericEntry` control. This can be used with the `CursorPosition` property to programmatically select a portion of the numeric text.
+
+{% tabs %}
+{% highlight xaml %}
+
+<editors:SfNumericEntry Value="12345"
+                        CursorPosition="1"
+                        SelectionLength="3" />
+
+{% endhighlight %}
+{% highlight C# %}
+
+SfNumericEntry sfNumericEntry = new SfNumericEntry();
+sfNumericEntry.Value = 12345;
+sfNumericEntry.CursorPosition = 1;
+sfNumericEntry.SelectionLength = 3;
+
+{% endhighlight %}
+{% endtabs %}
 
 ## Clear button customization
 

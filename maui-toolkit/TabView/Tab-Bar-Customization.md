@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Customize the Tab Bar in .NET MAUI Tab View (SfTabView) | Syncfusion®
-description: Learn how to customize the header in Syncfusion® .NET MAUI Tab View (SfTabView) control.
+description: Learn how to customize tab bar layout, header appearance, spacing, alignment, and background in Syncfusion® .NET MAUI Tab View (SfTabView) control.
 platform: maui-toolkit
 control: SfTabView
 documentation: UG
@@ -141,6 +141,23 @@ N> The [TabHeaderAlignment](https://help.syncfusion.com/cr/maui-toolkit/Syncfusi
 {% highlight C# %}
 SfTabView tabView = new SfTabView();
  tabView.TabHeaderAlignment = TabHeaderAlignment.Center;
+{% endhighlight %}
+
+{% endtabs %}
+
+## Header item spacing
+
+The [HeaderItemSpacing](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SfTabView.html#Syncfusion_Maui_Toolkit_TabView_SfTabView_HeaderItemSpacing) property is used to control the spacing between adjacent tab header items in the SfTabView. This property helps improve readability and visual alignment by adjusting the gap between each tab header.
+
+{% tabs %}
+
+{% highlight xaml %}
+<tabView:SfTabView HeaderItemSpacing="20"/>
+{% endhighlight %}
+
+{% highlight C# %}
+SfTabView tabView = new SfTabView();
+tabView.HeaderItemSpacing= 20 ;
 {% endhighlight %}
 
 {% endtabs %}
