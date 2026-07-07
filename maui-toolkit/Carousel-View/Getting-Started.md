@@ -102,23 +102,7 @@ builder.ConfigureSyncfusionToolkit();
 {% endhighlight %}
 {% endtabs %}
 
-## Step 4: Import Carousel View namespace
-
-Add the following namespace in your XAML or C#.
-{% tabs %}
-{% highlight xaml %}
-
-xmlns:carousel="clr-namespace:Syncfusion.Maui.Toolkit.Carousel;assembly=Syncfusion.Maui.Toolkit"
-
-{% endhighlight %}
-{% highlight c# %}
-
-using Syncfusion.Maui.Toolkit.Carousel;
-
-{% endhighlight %}
-{% endtabs %}
-
-## Step 5: Define the Model and ViewModel
+## Step 4: Define the Model and ViewModel
 
 Carousel items can be added to the control using the [ItemsSource](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Carousel.SfCarousel.html#Syncfusion_Maui_Toolkit_Carousel_SfCarousel_ItemsSource) property of [SfCarousel](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Carousel.SfCarousel.html). Objects of any class can be given as items for `SfCarousel` by using `ItemsSource`. The views corresponding to the objects can be set using the [ItemTemplate](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Carousel.SfCarousel.html#Syncfusion_Maui_Toolkit_Carousel_SfCarousel_ItemTemplate) for the content.
 
@@ -162,6 +146,23 @@ public class GalleryViewModel
 {% endhighlight %}
 
 N> The images used in the above view model should be added in the Resources folder of the Application.
+
+## Step 5: Import Carousel View namespace
+
+Add the following namespace in your XAML or C#.
+{% tabs %}
+{% highlight xaml %}
+
+xmlns:carousel="clr-namespace:Syncfusion.Maui.Toolkit.Carousel;assembly=Syncfusion.Maui.Toolkit"
+
+{% endhighlight %}
+{% highlight c# %}
+
+using Syncfusion.Maui.Toolkit.Carousel;
+
+{% endhighlight %}
+{% endtabs %}
+
 
 ## Step 6: Add the Carousel View component
 The following code example illustrates how to add the collection in Carousel,

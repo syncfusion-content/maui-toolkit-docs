@@ -111,11 +111,11 @@ Now, define a simple data model of person with the name properties.
 
 public class Person
 {
-	public string Name
-	{
-		get;
-		set;
-	}
+    public string Name
+    {
+        get;
+        set;
+    }
 }
 
 {% endhighlight %}

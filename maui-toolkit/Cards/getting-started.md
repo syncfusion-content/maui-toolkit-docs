@@ -107,7 +107,7 @@ Add the following namespace in your XAML or C#.
 {% tabs %}
 {% highlight xaml %}
 
-xmlns:chart="clr-namespace:Syncfusion.Maui.Toolkit.Cards;assembly=Syncfusion.Maui.Toolkit"
+xmlns:cards="clr-namespace:Syncfusion.Maui.Toolkit.Cards;assembly=Syncfusion.Maui.Toolkit"
 
 {% endhighlight %}
 {% highlight c# %}
@@ -131,6 +131,7 @@ Create an instance for the Card control, and add it as content.
 </cards:SfCardView>
 {% endhighlight %}
 {% highlight c# %}
+
     SfCardView cardView = new SfCardView();
     cardView.Content = new Label()
     {
@@ -139,7 +140,7 @@ Create an instance for the Card control, and add it as content.
         VerticalTextAlignment = TextAlignment.Center,
         BackgroundColor = Colors.PeachPuff
     };
-    this.Content = cardView;
+
 {% endhighlight %}
 {% endtabs %}
 
@@ -172,16 +173,16 @@ Initialize a card layout with a card view using the provided code sample below.
 
 {% endhighlight %}
 {% highlight c# %}
-    SfCardLayout cardLayout = new SfCardLayout();
 
-    //Add children for card layout 
-    cardLayout.Children.Add(new SfCardView() { Content = new Label() { Text = "Peach", BackgroundColor = Colors.PeachPuff }, CornerRadius = 15 });
+SfCardLayout cardLayout = new SfCardLayout();
 
-    cardLayout.Children.Add(new SfCardView() { Content = new Label() { Text = "MediumPurple", BackgroundColor = Colors.MediumPurple },CornerRadius = 15 });
+//Add children for card layout 
+cardLayout.Children.Add(new SfCardView() { Content = new Label() { Text = "Peach", BackgroundColor = Colors.PeachPuff }, CornerRadius = 15 });
 
-    cardLayout.Children.Add(new SfCardView() { Content = new Label() { Text = "LightPink", BackgroundColor = Colors.LightPink },CornerRadius = 15 });
+cardLayout.Children.Add(new SfCardView() { Content = new Label() { Text = "MediumPurple", BackgroundColor = Colors.MediumPurple },CornerRadius = 15 });
 
-    this.Content = cardLayout;
+cardLayout.Children.Add(new SfCardView() { Content = new Label() { Text = "LightPink", BackgroundColor = Colors.LightPink },CornerRadius = 15 });
+
 {% endhighlight %}
 {% endtabs %}	
 
