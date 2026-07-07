@@ -183,8 +183,6 @@ Binding `Data` to the spark chart [ItemsSource](https://help.syncfusion.com/cr/m
     </sparkchart:SfSparkLineChart.BindingContext>
 </sparkchart:SfSparkLineChart>
 
-</ContentPage>
-
 {% endhighlight %}
 
 {% highlight C# %}

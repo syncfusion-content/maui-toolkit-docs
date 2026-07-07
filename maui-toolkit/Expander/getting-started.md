@@ -108,7 +108,7 @@ Add the following namespace in your XAML or C#.
 {% tabs %}
 {% highlight xaml %}
 
-xmlns:syncfusion=xmlns:syncfusion="clr-namespace:Syncfusion.Maui.Toolkit.Expander;assembly=Syncfusion.Maui.Toolkit"
+xmlns:expander=xmlns:syncfusion="clr-namespace:Syncfusion.Maui.Toolkit.Expander;assembly=Syncfusion.Maui.Toolkit"
 
 {% endhighlight %}
 {% highlight c# %}
@@ -143,8 +143,8 @@ N> Loading the `Label` as direct children of the `Header` or `Content` of the Ex
                         Value="0.25" />
             </Style>
         </Border.Resources>
-        <syncfusion:SfExpander IsExpanded="True">
-            <syncfusion:SfExpander.Header>
+        <expander:SfExpander IsExpanded="True">
+            <expander:SfExpander.Header>
                 <Grid RowDefinitions="48"
                       ColumnDefinitions="35,*">
                     <Label Text="&#xe703;"
@@ -156,23 +156,23 @@ N> Loading the `Label` as direct children of the `Header` or `Content` of the Ex
                            Grid.Column="1"
                            VerticalOptions="Center" />
                 </Grid>
-            </syncfusion:SfExpander.Header>
-            <syncfusion:SfExpander.Content>
+            </expander:SfExpander.Header>
+            <expander:SfExpander.Content>
                 <Grid Padding="18,8,0,18">
                     <Label Text="11:03 AM, 15 January 2019"
                            FontSize="14" />
                 </Grid>
-            </syncfusion:SfExpander.Content>
-        </syncfusion:SfExpander>
+            </expander:SfExpander.Content>
+        </expander:SfExpander>
     </Border>
     <Border StrokeShape="RoundRectangle 8,8,8,8"
             Margin="{OnPlatform Default='8,0,8,8',WinUI='8,0,6,8',MacCatalyst='8,0,6,8'}"
             Stroke="#CAC4D0"
             StrokeThickness="{OnPlatform MacCatalyst=2,Default=1}"
             WidthRequest="{OnPlatform MacCatalyst=460,WinUI=340}">
-        <syncfusion:SfExpander AnimationDuration="200"
+        <expander:SfExpander AnimationDuration="200"
                                IsExpanded="False">
-            <syncfusion:SfExpander.Header>
+            <expander:SfExpander.Header>
                 <Grid>
                     <Grid.RowDefinitions>
                         <RowDefinition Height="48" />
@@ -194,8 +194,8 @@ N> Loading the `Label` as direct children of the `Header` or `Content` of the Ex
                            Grid.Column="1"
                            VerticalOptions="CenterAndExpand" />
                 </Grid>
-            </syncfusion:SfExpander.Header>
-            <syncfusion:SfExpander.Content>
+            </expander:SfExpander.Header>
+            <expander:SfExpander.Content>
                 <Grid Padding="18,8,18,18"
                       RowSpacing="6">
                     <Grid.Resources>
@@ -244,8 +244,8 @@ N> Loading the `Label` as direct children of the `Header` or `Content` of the Ex
                            Grid.Row="2"
                            Grid.Column="1" />
                 </Grid>
-            </syncfusion:SfExpander.Content>
-        </syncfusion:SfExpander>
+            </expander:SfExpander.Content>
+        </expander:SfExpander>
     </Border>
 </StackLayout>
 {% endhighlight %}

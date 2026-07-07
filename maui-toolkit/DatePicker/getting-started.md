@@ -123,11 +123,15 @@ Create an instance of Date Picker and add it to your page.
 
 {% tabs %}
 {% highlight xaml tabtitle="XAML" %}
-    <picker:SfDatePicker />
+
+<picker:SfDatePicker />
+
 {% endhighlight %}
 {% highlight c# tabtitle="C#" %}
-    SfDatePicker picker = new SfDatePicker();
-    this.Content = picker;
+
+SfDatePicker picker = new SfDatePicker();
+this.Content = picker;
+
 {% endhighlight %}
 {% endtabs %}
 
