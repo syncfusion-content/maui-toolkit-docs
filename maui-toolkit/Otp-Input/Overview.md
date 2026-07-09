@@ -7,7 +7,7 @@ control: SfOtpInput
 documentation: UG
 ---
 
-# .NET MAUI OTP Input (SfOtpInput) Overview
+# Overview of .NET MAUI OTP Input
 
 The Syncfusion<sup>&reg;</sup> [.NET MAUI OTP Input](https://www.syncfusion.com/maui-controls/maui-otpinput) (`SfOtpInput`) control is used to capture one-time passwords (OTP) in a structured and user-friendly format. It simplifies the process of entering verification codes received through SMS, email, or authentication apps, improving usability and security in .NET MAUI applications.
 

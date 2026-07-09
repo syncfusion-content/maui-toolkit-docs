@@ -7,7 +7,7 @@ control: SfNumericUpDown
 documentation: ug
 ---
 
-# .NET MAUI NumericUpDown Overview
+# Overview of .NET MAUI NumericUpDown
 
 The Syncfusion<sup>&reg;</sup> [.NET MAUI NumericUpDown](https://www.syncfusion.com/maui-controls/maui-numericupdown) (`SfNumericUpDown`) control is used to input and adjust numeric values using increment and decrement buttons. It provides an intuitive way to modify values with built-in validation and formatting support, making it suitable for precise numeric input scenarios in .NET MAUI applications.
 
