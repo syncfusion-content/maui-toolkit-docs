@@ -1,6 +1,6 @@
 ---
 layout: post
-title: About .NET MAUI Shimmer control | Syncfusion
+title: Built-in views in .NET MAUI Shimmer control | Syncfusion
 description: Learn here about the Built-in types support of Syncfusion .NET MAUI Shimmer (SfShimmer) control and more.
 platform: maui-toolkit
 control: SfShimmer
