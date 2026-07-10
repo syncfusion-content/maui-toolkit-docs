@@ -38,7 +38,7 @@ The background of the `SfShimmer` view can be customized by using the [Fill](htt
 </shimmer:SfShimmer>
 
 {% endhighlight %}
-{% highlight c# tabtitle="C#" hl_lines="4"%}
+{% highlight c# tabtitle="C#" hl_lines="4" %}
 
 SfShimmer Shimmer = new SfShimmer()
 {
