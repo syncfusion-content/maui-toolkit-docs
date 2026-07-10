@@ -8,7 +8,7 @@ documentation: ug
 keywords: .net maui sfCartesianChart overview,  introduction to sfCartesianChart in .net maui, exploring sfCartesianChart in .net maui.
 ---
 
-# .NET MAUI Cartesian Chart Overview
+# Overview of .NET MAUI Cartesian Chart
 
 The Syncfusion® Toolkit for [.NET MAUI Cartesian chart](https://www.syncfusion.com/maui-controls/maui-cartesian-charts) (SfCartesianChart) provides an efficient way to visualize data with a focus on development productivity, simplicity, and high user interaction. It supports a wide range of charting features to visualize large data sets, offering flexibility in data binding and extensive user customization.
 
