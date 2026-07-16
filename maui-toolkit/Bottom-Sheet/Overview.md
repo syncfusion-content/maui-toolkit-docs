@@ -7,7 +7,7 @@ control: SfBottomSheet
 documentation: UG
 ---
 
-# .NET MAUI Bottom Sheet (SfBottomSheet) Overview
+# Overview of .NET MAUI Bottom Sheet
 
 The Syncfusion<sup>&reg;</sup> [.NET MAUI Bottom Sheet](https://www.syncfusion.com/maui-controls/maui-bottomsheet) (SfBottomSheet) control is used to present additional content or actions in a sliding panel from the bottom of the screen. It provides an interactive and space-efficient way to display contextual information without navigating away from the current view, making it suitable for modern mobile and desktop applications.
 

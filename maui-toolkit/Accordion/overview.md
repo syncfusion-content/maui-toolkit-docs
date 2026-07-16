@@ -6,7 +6,7 @@ description: Learn here about overall key features in Toolkit for .NET MAUI SfAc
 control: SfAccrodion
 ---
 
-# Overview of .NET MAUI Accordion (SfAccordion)
+# Overview of .NET MAUI Accordion
 
 The **[.NET MAUI Accordion](https://www.syncfusion.com/maui-controls/maui-accordion)** (SfAccordion) offers a vertically collapsible panel with stacked headers, allowing the expansion or collapse of one or multiple items simultaneously.
 

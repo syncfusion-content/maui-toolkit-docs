@@ -1,6 +1,6 @@
 ---
 layout: post
-title: About .NET MAUI Shimmer control | Syncfusion
+title: Customization in .NET MAUI Shimmer control | Syncfusion
 description: Learn here about the customization of Syncfusion .NET MAUI Shimmer (SfShimmer) control, its basic features, elements and more.
 platform: maui-toolkit
 control: SfShimmer
@@ -38,7 +38,7 @@ The background of the `SfShimmer` view can be customized by using the [Fill](htt
 </shimmer:SfShimmer>
 
 {% endhighlight %}
-{% highlight c# tabtitle="C#" hl_lines="4"%}
+{% highlight c# tabtitle="C#" hl_lines="4" %}
 
 SfShimmer Shimmer = new SfShimmer()
 {
