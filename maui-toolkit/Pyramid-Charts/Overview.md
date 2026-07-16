@@ -7,7 +7,7 @@ control: SfPyramidChart
 documentation: ug
 ---
 
-# .NET MAUI Pyramid Chart Overview
+# Overview of .NET MAUI Pyramid Chart
 
 The Syncfusion® Toolkit for .NET MAUI Pyramid Chart ([SfPyramidChart](https://www.syncfusion.com/maui-controls/maui-pyramid-charts)) provides a visually appealing way to represent proportions within hierarchical data. It is widely used to display data as percentages of a total, with each segment representing a part of the whole. This single-series chart, without axes, is perfect for high-quality .NET MAUI applications.
 
