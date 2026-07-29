@@ -42,7 +42,7 @@ The Syncfusion<sup>&reg;</sup> [.NET MAUI Date Time Picker](https://www.syncfusi
 
 - **Time interval support** allows configuring intervals for hours, minutes, and seconds.
 
-- **User interaction support** allows selecting values through intuitive tap and scroll gestures.
+- **User interaction support** allows selecting values through intuitive tap and scroll gestures. 
 
 ## Globalization
 

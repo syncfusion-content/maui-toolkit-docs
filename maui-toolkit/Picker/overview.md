@@ -34,7 +34,8 @@ Syncfusion® .NET MAUI Picker ([SfPicker](https://www.syncfusion.com/maui-contro
 
 - **User interaction** allows selecting items through tap and scroll gestures.  
 
-- **Item template support** allows customizing how items are displayed within the picker.  
+- **Item template support** allows customizing how items are displayed within the picker. 
+ 
 
 ## Globalization
 

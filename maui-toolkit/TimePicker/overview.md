@@ -37,6 +37,7 @@ Syncfusion<sup>&reg;</sup> .NET MAUI Time Picker ([SfTimePicker](https://www.syn
 - **Interval** allows defining custom intervals for hours, minutes, and seconds.
 
 - **User interaction** allows selecting time values through tap and scroll gestures. 
+ 
 
 ## Globalization
 
