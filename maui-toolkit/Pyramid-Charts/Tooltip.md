@@ -7,7 +7,7 @@ control: SfPyramidChart
 documentation: ug
 ---
 
-# Tooltip in .NET MAUI Chart
+# Tooltip in .NET MAUI Pyramid Chart
 
 The tooltip helps in providing additional information while hovering over the funnel segment. By default, the value of the pyramid process (Y value) will be shown in the tooltip.
 

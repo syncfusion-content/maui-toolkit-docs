@@ -7,7 +7,7 @@ control: SfPolarChart
 documentation: ug
 ---
 
-# Tooltip in .NET MAUI Chart
+# Tooltip in .NET MAUI Polar Chart
 
 A tooltip is used to display information or metadata of the tapped segment. The Polar chart provides tooltip support for all series.
 
