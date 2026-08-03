@@ -7,7 +7,7 @@ control: SfFunnelChart
 documentation: ug
 ---
 
-# Tooltip in .NET MAUI Chart
+# Tooltip in .NET MAUI Funnel Chart
 
 The tooltip helps in providing additional information while hovering over the funnel segment. By default, the value of the funnel process (Y value) will be shown in the tooltip.
 
