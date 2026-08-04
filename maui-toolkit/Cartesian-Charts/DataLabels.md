@@ -282,3 +282,62 @@ this.Content = chart;
 {% endtabs %}
 
 ![Label template in MAUI Chart](DataLabel_images/maui_chart_data_label_template.png)
+
+## Event
+
+### DataLabelTapped
+
+The [DataLabelTapped]() event occurs when a user taps on a data label in a chart series. The [DataLabelTappedEventArgs]() object exposes the following properties:
+
+* `Series` - Gets the chart series associated with the tapped data label.
+* `DataIndex` - Gets the zero-based index of the tapped data point in the series.
+* `DataItem` - Gets the original data object from the series `ItemsSource`.
+* `Position` - Gets the screen coordinates (X, Y) of the tap location in device-independent pixels.
+* `Segment` - Gets the chart segment associated with the tapped data point. This value may be `null`.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<chart:SfCartesianChart DataLabelTapped="OnDataLabelTapped">
+
+    <chart:SfCartesianChart.XAxes>
+        <chart:CategoryAxis />
+    </chart:SfCartesianChart.XAxes>
+
+    <chart:SfCartesianChart.YAxes>
+        <chart:NumericalAxis />
+    </chart:SfCartesianChart.YAxes>
+
+    <chart:ColumnSeries ItemsSource="{Binding Data}"
+                        XBindingPath="Category"
+                        YBindingPath="Value"
+                        ShowDataLabels="True"/>
+</chart:SfCartesianChart>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+private void OnDataLabelTapped(object sender, DataLabelTappedEventArgs e)
+{
+    var series = e.Series;
+    var dataIndex = e.DataIndex;
+    var dataItem = e.DataItem;
+    var tapPosition = e.Position;
+    var segment = e.Segment;
+
+    string message = $"Series: {series}\n" +
+                     $"Segment: {segment}\n" +
+                     $"Data Item: {dataItem}\n" +
+                     $"Data Index: {dataIndex}\n" +
+                     $"Tap Location: ({tapPosition.X:F0}, {tapPosition.Y:F0})";
+
+    DisplayAlertAsync("Data Label Details", message, "OK");
+}
+
+{% endhighlight %}
+
+{% endtabs %}
+
+N> The `DataLabelTapped` event is triggered only when the [ShowDataLabels](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartSeries.html#Syncfusion_Maui_Toolkit_Charts_ChartSeries_ShowDataLabels) property is set to `true`.
