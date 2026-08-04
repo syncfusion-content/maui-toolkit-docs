@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Data label in .NET MAUI Chart control | .NET MAUI | Syncfusion
+title: Data label in .NET MAUI Circular Chart control | Syncfusion
 description: This section explains about how to configure the data labels and its features in .NET MAUI Chart (SfCircularChart).
 platform: maui-toolkit
 control: SfCircularChart
 documentation: ug
 ---
 
-# Data Labels in .NET MAUI Chart
+# Data Labels in .NET MAUI Circular Chart
 
 Data labels are used to display values related to a chart segment. Values from data point(x, y) or other custom properties from a data source can be displayed. 
 

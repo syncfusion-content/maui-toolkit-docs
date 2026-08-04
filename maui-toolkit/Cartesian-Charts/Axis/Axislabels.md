@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Axis labels in .NET MAUI Chart control | Syncfusion
+title: Axis labels in .NET MAUI Cartesian Chart control | Syncfusion
 description: Learn here all about axis labels and its customization in Syncfusion® .NET MAUI Chart (SfCartesianChart) control.
 platform: maui-toolkit
 control: SfCartesianChart
@@ -8,7 +8,7 @@ documentation: ug
 keywords: .net maui chart axis labels, axis labels customization .net maui, syncfusion maui chart axis labels, cartesian chart axis labels maui, customize axis labels .net maui chart.
 ---
 
-# Axis labels in .NET MAUI Chart
+# Axis labels in .NET MAUI Cartesian Chart
 
 Axis labels are used to show the units or measures or category value of axis to visualize the data user friendly. It will be generated based on the range and the values binded to [XBindingPath](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartSeries.html#Syncfusion_Maui_Toolkit_Charts_ChartSeries_XBindingPath) or [YBindingPath](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.XYDataSeries.html#Syncfusion_Maui_Toolkit_Charts_XYDataSeries_YBindingPath) properties of series.
 
@@ -250,3 +250,51 @@ this.Content = chart;
 ![Smart axis lable support in .NET MAUI SfCartesianChart.](axis_images/maui_chart_smart_axis_labels.png)
 
 N> If the [LabelsIntersectAction](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxis.html#Syncfusion_Maui_Toolkit_Charts_ChartAxis_LabelsIntersectAction) is set to Wrap, we should set the width of the wrap using the [MaxWidth](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxisLabelStyle.html#Syncfusion_Maui_Toolkit_Charts_ChartAxisLabelStyle_MaxWidth) property. We can align the wrapped axis label using the [WrappedLabelAlignment](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxisLabelStyle.html#Syncfusion_Maui_Toolkit_Charts_ChartAxisLabelStyle_WrappedLabelAlignment) property.
+
+## Events
+
+### AxisLabelTapped
+
+The [AxisLabelTapped]() event occurs when a user taps on an axis label. The [AxisLabelTappedEventArgs]() class provides the following properties:
+
+* [Axis]() — Gets the associated axis where the label was tapped.
+* [AxisLabel]() — Gets the [ChartAxisLabel](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxisLabel.html) object containing details about the tapped label.
+* [Position]() — Gets the screen coordinates (X, Y) of the tap location in device-independent pixels.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<chart:SfCartesianChart AxisLabelTapped="OnAxisLabelTapped">
+    <chart:SfCartesianChart.XAxes>
+        <chart:CategoryAxis/>
+    </chart:SfCartesianChart.XAxes>
+
+    <chart:SfCartesianChart.YAxes>
+        <chart:NumericalAxis/>
+    </chart:SfCartesianChart.YAxes>
+
+    <chart:ColumnSeries ItemsSource="{Binding Data}" XBindingPath="Category" YBindingPath="Value"/>
+</chart:SfCartesianChart>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+private void OnAxisLabelTapped(object sender, AxisLabelTappedEventArgs e)
+{
+    var axis = e.Axis;
+    var axisLabel = e.AxisLabel;
+    var tapPosition = e.Position;
+
+    string message = $"Label: {axisLabel.Content}\n" +
+                     $"Position: {axisLabel.Position:F2}\n" +
+                     $"Axis: {axis.GetType().Name}\n" +
+                     $"Tap Location: ({tapPosition.X:F0}, {tapPosition.Y:F0})";
+
+    DisplayAlertAsync("Axis Label Details", message, "OK");
+}
+
+{% endhighlight %}
+
+{% endtabs %}
