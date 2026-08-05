@@ -285,7 +285,7 @@ Explore Features
        Find practical solutions, troubleshooting tips and how‑to guides for common scenarios.
     </div>
     <a href="https://support.syncfusion.com/kb/cross-platforms/section/2353" class="explore-link" target="_blank">
-Search KBs
+Search KB's
   <span class="card-icon card-arrow"></span>
 </a>
   </div>
