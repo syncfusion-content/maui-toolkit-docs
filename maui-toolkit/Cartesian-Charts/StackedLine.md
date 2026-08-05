@@ -1,28 +1,31 @@
 ---
 layout: post
-title: Stacked Line Chart in .NET MAUI Chart control | Syncfusion
-description: Learn here all about stacked line chart support in Syncfusion® .NET MAUI Chart (SfCartesianChart) control.
+title: Stacked Line Chart in .NET MAUI Cartesian Chart | Syncfusion®
+description: Stacked Line Chart in .NET MAUI Cartesian Chart displays cumulative data using stacked lines, helping visualize overall trends and contributions across series.
 platform: maui-toolkit
 control: SfCartesianChart
 documentation: ug
+keywords: .net maui stacked line chart, maui stacked line chart, stacked line chart customization .net maui, syncfusion maui stacked line chart, cartesian stacked line chart maui, .net maui chart stacked line visualization, .net maui cumulative line chart
 ---
 
-# Stacked Line Chart in .NET MAUI Chart
+# Stacked Line Chart in .NET MAUI Cartesian Chart
 
 ## Stacked Line Chart
 
 The stacked line chart is a type of chart that displays multiple line series stacked on top of each other, with the values of each series combined to show a cumulative value of the data points.
 
-To render a stacked line chart, create an instance of the [StackingLineSeries](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.StackingLineSeries.html) and add it to the [Series](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html#Syncfusion_Maui_Toolkit_Charts_SfCartesianChart_Series) collection property of the [SfCartesianChart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html).
+To render a stacked line chart, create an instance of the [StackingLineSeries](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.StackingLineSeries.html) and add it to the [Series](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html#Syncfusion_Maui_Charts_SfCartesianChart_Series) collection property of the [SfCartesianChart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html).
 
-N> The Cartesian chart has a [Series](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html#Syncfusion_Maui_Toolkit_Charts_SfCartesianChart_Series) as its default content.
+N> **Prerequisite:** Ensure that the required NuGet package is installed, the necessary namespaces are imported, and the **SfCartesianChart** control is properly configured in your application. For detailed setup and configuration instructions, refer to the **[Getting Started](https://help.syncfusion.com/maui/cartesian-charts/getting-started)** guide.
+
+N> The Cartesian chart has a [Series](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html#Syncfusion_Maui_Charts_SfCartesianChart_Series) as its default content.
 
 {% tabs %}
 
 {% highlight xaml %}
 
 <chart:SfCartesianChart>
-    ...
+
     <chart:SfCartesianChart.XAxes>
         <chart:CategoryAxis/>
     </chart:SfCartesianChart.XAxes>
@@ -53,15 +56,16 @@ N> The Cartesian chart has a [Series](https://help.syncfusion.com/cr/maui-toolki
 {% highlight c# %}
 
 SfCartesianChart chart = new SfCartesianChart();
+
 CategoryAxis primaryAxis = new CategoryAxis();
 chart.XAxes.Add(primaryAxis);
+
 NumericalAxis secondaryAxis = new NumericalAxis();
 chart.YAxes.Add(secondaryAxis);
 
 ViewModel viewModel = new ViewModel();
 
-// Create a StackingLineSeries for the chart
-StackingLineSeries series1 = new  StackingLineSeries()
+StackingLineSeries series1 = new StackingLineSeries()
 {
     ItemsSource = viewModel.Data1,
     XBindingPath = "Month",
@@ -74,7 +78,8 @@ StackingLineSeries series2 = new StackingLineSeries()
     XBindingPath = "Month",
     YBindingPath = "Value",
 };
-StackingLineSeries series3 = new StackingLineSeries()       
+
+StackingLineSeries series3 = new StackingLineSeries()
 {
     ItemsSource = viewModel.Data3,
     XBindingPath = "Month",
@@ -88,11 +93,10 @@ StackingLineSeries series4 = new StackingLineSeries()
     YBindingPath = "Value",
 };
 
-// Add each series to the chart's Series collection
 chart.Series.Add(series1);
-chart.Series.Add(series2);     
-chart.Series.Add(series3); 
-chart.Series.Add(series4); 
+chart.Series.Add(series2);
+chart.Series.Add(series3);
+chart.Series.Add(series4);
 
 this.Content = chart;
 
@@ -100,11 +104,11 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Stacking Line Chart in .NET MAUI Cartesian Charts.](chart-types-images\net-maui-cartesian-charts-stacked-line-chart.png)
+![Stacking Line Chart in .NET MAUI Cartesian Chart](Chart-types-images/net-maui-cartesian-charts-stacked-line-chart.png)
 
 ## Dashed Stacked Line
 
-The [StrokeDashArray](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.StackingSeriesBase.html#Syncfusion_Maui_Toolkit_Charts_StackingSeriesBase_StrokeDashArray) property of [StackingLineSeries](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.StackingLineSeries.html) is used to render the stacked line series with dashes. Odd value is considered as rendering size and even value is considered as gap.
+The [StrokeDashArray](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.StackingSeriesBase.html#Syncfusion_Maui_Charts_StackingSeriesBase_StrokeDashArray) property of [StackingLineSeries](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.StackingLineSeries.html) is used to render the stacked line series with dashes. Odd value is considered as rendering size and even value is considered as gap.
 
 {% tabs %}
 
@@ -119,11 +123,11 @@ The [StrokeDashArray](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Mau
     </chart:SfCartesianChart.Resources>
 
     <chart:SfCartesianChart.XAxes>
-        <chart:CategoryAxis/>
+        <chart:CategoryAxis />
     </chart:SfCartesianChart.XAxes>
 
     <chart:SfCartesianChart.YAxes>
-        <chart:NumericalAxis/>
+        <chart:NumericalAxis />
     </chart:SfCartesianChart.YAxes>  
 
     <chart:StackingLineSeries ItemsSource="{Binding Data1}"
@@ -152,24 +156,25 @@ The [StrokeDashArray](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Mau
 {% highlight c# %}
 
 SfCartesianChart chart = new SfCartesianChart();
+
 CategoryAxis primaryAxis = new CategoryAxis();
 chart.XAxes.Add(primaryAxis);
+
 NumericalAxis secondaryAxis = new NumericalAxis();
 chart.YAxes.Add(secondaryAxis);
 
 ViewModel viewModel = new ViewModel();
 
-// Create a DoubleCollection to define the stroke dash patterns for the lines
 DoubleCollection doubleCollection = new DoubleCollection();
 doubleCollection.Add(5);
 doubleCollection.Add(2);
-. . .
+
 StackingLineSeries series1 = new  StackingLineSeries()
 {
     ItemsSource = viewModel.Data1,
     XBindingPath = "Month",
     YBindingPath = "Value",
-    StrokeDashArray = doubleCollection // Define dashed line style
+    StrokeDashArray = doubleCollection
 };
 
 StackingLineSeries series2 = new StackingLineSeries()
@@ -177,15 +182,15 @@ StackingLineSeries series2 = new StackingLineSeries()
     ItemsSource = viewModel.Data2,
     XBindingPath = "Month",
     YBindingPath = "Value",
-    StrokeDashArray = doubleCollection // Define dashed line style
+    StrokeDashArray = doubleCollection
 };
 
 StackingLineSeries series3 = new StackingLineSeries()       
 {
-    ItemsSource = viewModel.Data3,
+    ItemsSource = viewModel.Data3,     
     XBindingPath = "Month",
     YBindingPath = "Value",
-    StrokeDashArray = doubleCollection // Define dashed line style
+    StrokeDashArray = doubleCollection
 };
 
 StackingLineSeries series4 = new StackingLineSeries()
@@ -193,7 +198,7 @@ StackingLineSeries series4 = new StackingLineSeries()
     ItemsSource = viewModel.Data4,
     XBindingPath = "Month",
     YBindingPath = "Value",
-    StrokeDashArray = doubleCollection // Define dashed line style
+    StrokeDashArray = doubleCollection
 };
 
 chart.Series.Add(series1);
@@ -207,18 +212,18 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Dashed Stacked Line chart in MAUI](Chart-types-images/maui_dashed_stacked_line_chart.png)
+![Dashed Stacked Line chart in .NET MAUI Cartesian Chart](Chart-types-images/maui_dashed_stacked_line_chart.png)
 
 ## Enable Marker
 
-A marker, also known as a symbol, is used to determine or highlight the position of the data point. To enable markers in the series, set the [ShowMarkers](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.StackingLineSeries.html#Syncfusion_Maui_Toolkit_Charts_StackingLineSeries_ShowMarkers) property to `true`.
+A marker, also known as a symbol, is used to determine or highlight the position of the data point. To enable markers in the series, set the [ShowMarkers](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.StackingLineSeries.html#Syncfusion_Maui_Charts_StackingLineSeries_ShowMarkers) property to `true`.
 
 {% tabs %}
 
 {% highlight xaml %}
 
 <chart:SfCartesianChart>
- . . .
+    <!-- code omitted for brevity -->
     <chart:StackingLineSeries ItemsSource="{Binding Data1}"
                               XBindingPath="Month"
                               YBindingPath="Value"
@@ -247,13 +252,14 @@ A marker, also known as a symbol, is used to determine or highlight the position
 SfCartesianChart chart = new SfCartesianChart();
 
 ViewModel viewModel = new ViewModel();
-. . .
-StackingLineSeries series1 = new  StackingLineSeries()
+
+// code omitted for brevity
+StackingLineSeries series1 = new StackingLineSeries()
 {
     ItemsSource = viewModel.Data1,
     XBindingPath = "Month",
     YBindingPath = "Value",
-    ShowMarkers = true, // Display markers on data points
+    ShowMarkers = true,
 };
 
 StackingLineSeries series2 = new StackingLineSeries()
@@ -261,15 +267,15 @@ StackingLineSeries series2 = new StackingLineSeries()
     ItemsSource = viewModel.Data2,
     XBindingPath = "Month",
     YBindingPath = "Value",
-    ShowMarkers = true, // Display markers on data points
+    ShowMarkers = true,
 };
 
-StackingLineSeries series3 = new StackingLineSeries()       
+StackingLineSeries series3 = new StackingLineSeries()
 {
     ItemsSource = viewModel.Data3,
     XBindingPath = "Month",
     YBindingPath = "Value",
-    ShowMarkers = true, // Display markers on data points
+    ShowMarkers = true,
 };
 
 StackingLineSeries series4 = new StackingLineSeries()
@@ -277,13 +283,13 @@ StackingLineSeries series4 = new StackingLineSeries()
     ItemsSource = viewModel.Data4,
     XBindingPath = "Month",
     YBindingPath = "Value",
-    ShowMarkers = true, // Display markers on data points
+    ShowMarkers = true,
 };
 
 chart.Series.Add(series1);
-chart.Series.Add(series2);     
-chart.Series.Add(series3); 
-chart.Series.Add(series4); 
+chart.Series.Add(series2);
+chart.Series.Add(series3);
+chart.Series.Add(series4);
 
 this.Content = chart;
 
@@ -291,35 +297,35 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Stacked Line Marker support in MAUI Chart](Chart-types-images/stacked_line_marker_support.png)
+![Stacked Line Marker support in .NET MAUI Cartesian Chart](Chart-types-images/stacked_line_marker_support.png)
 
 ### Marker customization
 
-In order to change the series markers appearance, create an instance of the [MarkerSettings](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.StackingLineSeries.html#Syncfusion_Maui_Toolkit_Charts_StackingLineSeries_MarkerSettings) property. The following properties are used to customize marker appearance.
+To change the series markers appearance, create an instance of the [MarkerSettings](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.StackingLineSeries.html#Syncfusion_Maui_Charts_StackingLineSeries_MarkerSettings) property. The following properties are used to customize marker appearance.
 
-* [Type](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartMarkerSettings.html#Syncfusion_Maui_Toolkit_Charts_ChartMarkerSettings_Type), of type `ShapeType`, describes the shape of the series marker. The default value of this property is [ShapeType.Circle](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ShapeType.html#Syncfusion_Maui_Toolkit_Charts_ShapeType_Circle).
-* [Stroke](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartMarkerSettings.html#Syncfusion_Maui_Toolkit_Charts_ChartMarkerSettings_Stroke), of type `Brush`, indicates the brush used to paint the marker border.
-* [StrokeWidth](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartMarkerSettings.html#Syncfusion_Maui_Toolkit_Charts_ChartMarkerSettings_StrokeWidth), of type `double`, indicates the width of the marker border.
-* [Fill](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartMarkerSettings.html#Syncfusion_Maui_Toolkit_Charts_ChartMarkerSettings_Fill), of type `Brush`, indicates the color of the marker.
-* [Width](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartMarkerSettings.html#Syncfusion_Maui_Toolkit_Charts_ChartMarkerSettings_Width), of type `double`, indicates the width of the marker.
-* [Height](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartMarkerSettings.html#Syncfusion_Maui_Toolkit_Charts_ChartMarkerSettings_Height), of type `double`, indicates the height of the marker.
+* [Type](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartMarkerSettings.html#Syncfusion_Maui_Charts_ChartMarkerSettings_Type), of type `ShapeType`, describes the shape of the series marker. The default value of this property is [ShapeType.Circle](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ShapeType.html#Syncfusion_Maui_Charts_ShapeType_Circle).
+* [Stroke](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartMarkerSettings.html#Syncfusion_Maui_Charts_ChartMarkerSettings_Stroke), of type `Brush`, indicates the brush used to paint the marker border.
+* [StrokeWidth](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartMarkerSettings.html#Syncfusion_Maui_Charts_ChartMarkerSettings_StrokeWidth), of type `double`, indicates the width of the marker border.
+* [Fill](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartMarkerSettings.html#Syncfusion_Maui_Charts_ChartMarkerSettings_Fill), of type `Brush`, indicates the color of the marker.
+* [Width](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartMarkerSettings.html#Syncfusion_Maui_Charts_ChartMarkerSettings_Width), of type `double`, indicates the width of the marker.
+* [Height](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartMarkerSettings.html#Syncfusion_Maui_Charts_ChartMarkerSettings_Height), of type `double`, indicates the height of the marker.
 
 {% tabs %}
 
 {% highlight xaml %}
 
 <chart:SfCartesianChart>
-    ...
+    <!-- code omitted for brevity -->
     <chart:StackingLineSeries ItemsSource="{Binding Data1}"
-                              XBindingPath="Month"
-                              YBindingPath="Value"
-                              ShowMarkers="True">
+                                XBindingPath="Month"
+                                YBindingPath="Value"
+                                ShowMarkers="True">
         <chart:StackingLineSeries.MarkerSettings>
             <chart:ChartMarkerSettings Type="Diamond" 
-                                       StrokeWidth="2"
-                                       Fill="White"
-                                       Height="8"
-                                       Width="8"/>
+                                        StrokeWidth="2"
+                                        Fill="White"
+                                        Height="8"
+                                        Width="8"/>
         </chart:StackingLineSeries.MarkerSettings>    
     </chart:StackingLineSeries>
 </chart:SfCartesianChart>
@@ -331,24 +337,25 @@ In order to change the series markers appearance, create an instance of the [Mar
 SfCartesianChart chart = new SfCartesianChart();
 
 ViewModel viewModel = new ViewModel();
-...
-// Define settings for the chart markers
+
+// code omitted for brevity
 ChartMarkerSettings chartMarker= new ChartMarkerSettings()
 {
     Type = ShapeType.Diamond,
-    Fill = Colors.White,
-    StrokeWidth = 2,
+    Fill = Colors.Brown,
+    Stroke = Colors.Black,
+    StrokeWidth = 1,
     Height = 8,
-    Width = 8,
+    Width = 8
 };
 
-StackingLineSeries series = new  StackingLineSeries()
+StackingLineSeries series = new StackingLineSeries()
 {
-    ItemsSource = viewModel.Data,
     XBindingPath = "Month",
     YBindingPath = "Value",
+    ItemsSource = viewModel.Data1,
     ShowMarkers = true,
-    MarkerSettings = chartMarker, // Apply the defined marker settings
+    MarkerSettings = chartMarker,
 };
 
 chart.Series.Add(series);

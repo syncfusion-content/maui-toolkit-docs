@@ -1,24 +1,26 @@
 ---
 layout: post
-title: Range Column Chart in .NET MAUI Chart control | Syncfusion
-description: Learn here all about range column and range bar chart support in Syncfusion® .NET MAUI Chart (SfCartesianChart) control.
+title: Range Column Chart in .NET MAUI Cartesian Chart
+description: Range Column Chart in .NET MAUI Cartesian Chart displays value ranges using vertical columns, making it easy to compare minimum and maximum values.
 platform: maui-toolkit
 control: SfCartesianChart
 documentation: ug
 keywords: .net maui range column chart, maui range column chart, range column chart customization .net maui, syncfusion maui range column chart, cartesian range column chart maui, .net maui chart range column visualization, .net maui interval column chart.
 ---
 
-# Range Column Chart in .NET MAUI Chart
+# Range Column Chart in .NET MAUI Cartesian Chart
 
 ## Range Column Chart
 
 Range Column Chart is used to visualize data points with columns, with the height of each column representing the difference between the lowest and highest values of the data point. 
 
-To render a range column chart, create an instance of [RangeColumnSeries](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.RangeColumnSeries.html), and add it to the [Series](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html#Syncfusion_Maui_Toolkit_Charts_SfCartesianChart_Series) collection property of [SfCartesianChart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html).
+N> **Prerequisite:** Ensure that the required NuGet package is installed, the necessary namespaces are imported, and the **SfCartesianChart** control is properly configured in your application. For detailed setup and configuration instructions, refer to the **[Getting Started](https://help.syncfusion.com/maui/cartesian-charts/getting-started)** guide.
+
+To render a range column chart, create an instance of [RangeColumnSeries](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.RangeColumnSeries.html), and add it to the [Series](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html#Syncfusion_Maui_Charts_SfCartesianChart_Series) collection property of [SfCartesianChart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html).
 
 Since the [RangeColumnSeries](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.RangeColumnSeries.html) requires two Y values for each point, your data should contain both the high and low values. These high and low values specify the maximum and minimum ranges of the point.
 
-N> The Cartesian chart has [Series](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html#Syncfusion_Maui_Toolkit_Charts_SfCartesianChart_Series) as its default content.
+N> The Cartesian chart has [Series](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html#Syncfusion_Maui_Charts_SfCartesianChart_Series) as its default content.
 
 {% tabs %}
 
@@ -35,9 +37,9 @@ N> The Cartesian chart has [Series](https://help.syncfusion.com/cr/maui-toolkit/
     </chart:SfCartesianChart.YAxes>   
 
     <chart:RangeColumnSeries ItemsSource="{Binding Data}"
-			                 XBindingPath="XValue"
+                             XBindingPath="XValue"
                              High="HighValue"
-			                 Low="LowValue"/>
+                             Low="LowValue"/>
 
 </chart:SfCartesianChart>
 
@@ -46,12 +48,13 @@ N> The Cartesian chart has [Series](https://help.syncfusion.com/cr/maui-toolkit/
 {% highlight c# %}
 
 SfCartesianChart chart = new SfCartesianChart();
+
 CategoryAxis primaryAxis = new CategoryAxis();
 chart.XAxes.Add(primaryAxis);
+
 NumericalAxis secondaryAxis = new NumericalAxis();
 chart.YAxes.Add(secondaryAxis);
 
-// Create a RangeColumnSeries to represent data with high and low values
 RangeColumnSeries series = new RangeColumnSeries()
 {
     ItemsSource = new ViewModel().Data,
@@ -60,7 +63,6 @@ RangeColumnSeries series = new RangeColumnSeries()
     Low = "LowValue",
 };
 
-// Add the series to the chart
 chart.Series.Add(series);
 this.Content = chart;
 
@@ -68,13 +70,13 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Range column chart type in MAUI Chart](Chart-Types-images/maui_range_column.png)
+![Range column chart type in .NET MAUI Cartesian Chart](Chart-types-images/maui_range_column.png)
 
 ## Spacing and Width
 
-The [Spacing](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.RangeColumnSeries.html#Syncfusion_Maui_Toolkit_Charts_RangeColumnSeries_Spacing) property is used to change the spacing between two segments. The default value of spacing is 0, and the value ranges from 0 to 1. Here, 1 and 0 correspond to 100% and 0% of the available space, respectively. 
+The [Spacing](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.RangeColumnSeries.html#Syncfusion_Maui_Charts_RangeColumnSeries_Spacing) property is used to change the spacing between two segments. The default value of spacing is 0, and the value ranges from 0 to 1. Here, 1 and 0 correspond to 100% and 0% of the available space, respectively. 
 
-The [Width](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.RangeColumnSeries.html#Syncfusion_Maui_Toolkit_Charts_RangeColumnSeries_Width) property is used to change the width of the segment. The default value of the width is 0.8, and the value ranges from 0 to 1.
+The [Width](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.RangeColumnSeries.html#Syncfusion_Maui_Charts_RangeColumnSeries_Width) property is used to change the width of the segment. The default value of the width is 0.8, and the value ranges from 0 to 1.
 
 {% tabs %}
 
@@ -91,11 +93,11 @@ The [Width](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.
     </chart:SfCartesianChart.YAxes>  
     
     <chart:RangeColumnSeries ItemsSource="{Binding Data}"
-			                 XBindingPath="XValue"
+                             XBindingPath="XValue"
                              High="HighValue"
-			                 Low="LowValue"
+                             Low="LowValue"
                              Spacing="0.3"
-		                     Width="0.7"/>
+                             Width="0.7"/>
 </chart:SfCartesianChart>
 
 {% endhighlight %}
@@ -116,8 +118,8 @@ RangeColumnSeries series = new RangeColumnSeries()
     XBindingPath = "XValue",
     High = "HighValue",
     Low = "LowValue",
-    Spacing = 0.3, // Set the spacing between columns
-    Width = 0.7, // Set the width of the columns
+    Spacing = 0.3,
+    Width = 0.7,
 };
 
 chart.Series.Add(series);
@@ -127,4 +129,4 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Range column segment spacing in MAUI Chart](Chart-Types-images/maui_rangeColumn_space_width.png)
+![Range column segment spacing in .NET MAUI Cartesian Chart](Chart-types-images/maui_rangeColumn_space_width.png)

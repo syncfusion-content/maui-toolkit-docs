@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Annotations in .NET MAUI Chart control | Syncfusion
-description: Learn here all about annotation support and its features in Syncfusion® .NET MAUI Chart (SfCartesianChart) control.
+title: Annotations in .NET MAUI Cartesian Chart | Syncfusion®
+description: Annotations in .NET MAUI Cartesian Chart allow custom content to be displayed within the chart area, highlighting key data points and insights.
 platform: maui-toolkit
 control: SfCartesianChart
 documentation: ug
-keywords: .net maui chart annotations, .net maui annotations customization, syncfusion maui chart annotations, .net maui chart text annotation, .net maui chart shape annotation,  .net maui chart view annotation.
+keywords: .net maui cartesian chart annotations, .net maui annotations customization, syncfusion maui cartesian chart annotations, .net maui cartesian chart text annotation, .net maui cartesian chart shape annotation, .net maui cartesian chart view annotation.
 ---
 
-# Annotations in .NET MAUI Chart
+# Annotations in .NET MAUI Cartesian Chart
 
 [SfCartesianChart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html) provides annotation support that allows you to mark specific areas of interest in the chart area. This feature enables you to add text, images, and custom views using the following annotations.
 
@@ -16,26 +16,24 @@ keywords: .net maui chart annotations, .net maui annotations customization, sync
 * Shape annotation
 * View annotation
 
+N> **Prerequisite:** Ensure that the required NuGet package is installed, the necessary namespaces are imported, and the **SfCartesianChart** control is properly configured in your application. For detailed setup and configuration instructions, refer to the **[Getting Started](https://help.syncfusion.com/maui/cartesian-charts/getting-started)** guide.
+
+To learn how to add and customize annotations in .NET MAUI Cartesian Charts quickly, you can check the below video.
+
+{% youtube "https://youtu.be/v1u774lp9pQ" %}
+
 ## Adding Annotations
 
-To add annotations, create an instance of any type of annotation and add it to the [Annotations](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html#Syncfusion_Maui_Toolkit_Charts_SfCartesianChart_Annotations) collection. For example, the [EllipseAnnotation](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.EllipseAnnotation.html) can be added.
+To add annotations, create an instance of any type of annotation and add it to the [Annotations](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html#Syncfusion_Maui_Charts_SfCartesianChart_Annotations) collection. For example, the [EllipseAnnotation](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.EllipseAnnotation.html) can be added.
 
 {% tabs %}
 
 {% highlight xaml %}
 
 <chart:SfCartesianChart>
-    <!-- Other chart elements go here -->
-    ...
-    <!-- Annotations section of the chart -->
+    <!-- code omitted for brevity -->
     <chart:SfCartesianChart.Annotations>
-        <!-- Ellipse annotation -->
-        <chart:EllipseAnnotation 
-            X1="2"  
-            X2="4"  
-            Y1="10" 
-            Y2="15" 
-            Text="Ellipse"/>        
+        <chart:EllipseAnnotation X1="2" X2="4" Y1="10" Y2="15" Text="Ellipse"/>        
     </chart:SfCartesianChart.Annotations>    
 </chart:SfCartesianChart>
 
@@ -43,42 +41,36 @@ To add annotations, create an instance of any type of annotation and add it to t
 
 {% highlight c# %}
 
-// Create a new SfCartesianChart instance
 SfCartesianChart chart = new SfCartesianChart();
-...
-// Other chart elements go here
-// Create a new EllipseAnnotation
+//code omitted for brevity
 var ellipse = new EllipseAnnotation()
 {
-    X1 = 2,  // Set the X-coordinate of the start point
-    Y1 = 10, // Set the Y-coordinate of the start point
-    X2 = 4,  // Set the X-coordinate of the end point
-    Y2 = 15, // Set the Y-coordinate of the end point
-    Text = "Ellipse" // Set the text to display with the annotation
+    X1 = 2,
+    Y1 = 10,
+    X2 = 4,
+    Y2 = 15,
+    Text = "Ellipse"
 };
 
-// Add the ellipse annotation to the chart's Annotations collection
 chart.Annotations.Add(ellipse);
-
-// Set the chart as the content of the current view
 this.Content = chart;
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![Annotations in MAUI Chart](Annotation_image/Adding_annotation.png)
+![Annotations in .NET MAUI Cartesian Chart](Annotation_image/Adding_annotation.png)
 
 ## Positioning the annotation
 
-[Annotations](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html#Syncfusion_Maui_Toolkit_Charts_SfCartesianChart_Annotations) can be positioned in the plot area based on the [X1](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAnnotation.html#Syncfusion_Maui_Toolkit_Charts_ChartAnnotation_X1) and [Y1](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAnnotation.html#Syncfusion_Maui_Toolkit_Charts_ChartAnnotation_Y1) properties. For shape annotations, specify the [X2](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ShapeAnnotation.html#Syncfusion_Maui_Toolkit_Charts_ShapeAnnotation_X2) and [Y2](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ShapeAnnotation.html#Syncfusion_Maui_Toolkit_Charts_ShapeAnnotation_Y2) properties, if needed. The X and Y values can be specified using axis units or pixel units, which can be identified by the [CoordinateUnit](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAnnotation.html#Syncfusion_Maui_Toolkit_Charts_ChartAnnotation_CoordinateUnit) property, as shown in the following code snippet:
+[Annotations](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html#Syncfusion_Maui_Charts_SfCartesianChart_Annotations) can be positioned in the plot area based on the [X1](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAnnotation.html#Syncfusion_Maui_Charts_ChartAnnotation_X1) and [Y1](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAnnotation.html#Syncfusion_Maui_Charts_ChartAnnotation_Y1) properties. For shape annotations, specify the [X2](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ShapeAnnotation.html#Syncfusion_Maui_Charts_ShapeAnnotation_X2) and [Y2](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ShapeAnnotation.html#Syncfusion_Maui_Charts_ShapeAnnotation_Y2) properties, if needed. The X and Y values can be specified using axis units or pixel units, which can be identified by the [CoordinateUnit](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAnnotation.html#Syncfusion_Maui_Charts_ChartAnnotation_CoordinateUnit) property, as shown in the following code snippet:
 
 {% tabs %}
 
 {% highlight xaml %}
 
 <chart:SfCartesianChart>
-    ...
+    <!-- code omitted for brevity -->
     <chart:SfCartesianChart.Annotations>        
         <chart:RectangleAnnotation X1="0" Y1="100" X2="300" Y2="400" Text="Pixel value" CoordinateUnit="Pixel"/>
     </chart:SfCartesianChart.Annotations>
@@ -88,44 +80,37 @@ this.Content = chart;
 
 {% highlight c# %}
     
-// Create a new SfCartesianChart object
-SfCartesianChart chart = new SfCartesianChart();     
-
-// Other chart elements go here
-
-// Create a new RectangleAnnotation object
+SfCartesianChart chart = new SfCartesianChart(); 
+//code omitted for brevity
 var rectangle = new RectangleAnnotation()
 {
     X1 = 0,
     Y1 = 100,
     X2 = 300,
     Y2 = 400,
-    CoordinateUnit = ChartCoordinateUnit.Pixel,  // Set the coordinate unit to Pixel
+    CoordinateUnit = ChartCoordinateUnit.Pixel,
     Text = "Pixel value"
 };
 
-// Add the rectangle annotation to the chart's Annotations collection
 chart.Annotations.Add(rectangle);
-
-// Set the Content of the current view to the chart
 this.Content = chart;
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![Annotations in pixel value in MAUI Chart](Annotation_image/Rectangle_with_pixel.png)
+![Annotations in pixel value in .NET MAUI Cartesian Chart](Annotation_image/Rectangle_with_pixel.png)
 
 ## Adding annotation for multiple axes
 
-When there are multiple axes, annotations can be added to a particular axis using the [XAxisName](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAnnotation.html#Syncfusion_Maui_Toolkit_Charts_ChartAnnotation_XAxisName) and [YAxisName](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAnnotation.html#Syncfusion_Maui_Toolkit_Charts_ChartAnnotation_YAxisName) properties. This is demonstrated in the code snippet below:
+When there are multiple axes, annotations can be added to a particular axis using the [XAxisName](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAnnotation.html#Syncfusion_Maui_Charts_ChartAnnotation_XAxisName) and [YAxisName](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAnnotation.html#Syncfusion_Maui_Charts_ChartAnnotation_YAxisName) properties. This is demonstrated in the code snippet below:
 
 {% tabs %}
 
 {% highlight xaml %}
 
 <chart:SfCartesianChart>
-    ...
+    <!-- code omitted for brevity -->
     <chart:SfCartesianChart.YAxes>
         <chart:NumericalAxis Minimum="0" Maximum="1"/>
         <chart:NumericalAxis Name="YAxis" CrossesAt="{Static x:Double.MaxValue}"/>
@@ -140,55 +125,47 @@ When there are multiple axes, annotations can be added to a particular axis usin
 
 {% highlight c# %}
 
-// Create a new Cartesian chart
 SfCartesianChart chart = new SfCartesianChart();
-
-// Create and configure the first Y-axis
+//code omitted for brevity
 NumericalAxis yAxis1 = new NumericalAxis();
 yAxis1.Minimum = 0;
 yAxis1.Maximum = 1;
 chart.YAxes.Add(yAxis1);
 
-// Create and configure the second Y-axis
 NumericalAxis yAxis2 = new NumericalAxis();
 yAxis2.Name = "YAxis";
-yAxis2.CrossesAt = double.MaxValue; // Position the axis at the far right
+yAxis2.CrossesAt = double.MaxValue;
 chart.YAxes.Add(yAxis2);
 
-// Create an ellipse annotation
 var ellipse = new EllipseAnnotation()
 {
-    X1 = 2, 
-    Y1 = 10, 
-    X2 = 4, 
-    Y2 = 15, 
-    Text = "Ellipse", 
-    YAxisName = "YAxis" // Specify which Y-axis to use for positioning
+    X1 = 2,
+    Y1 = 10,
+    X2 = 4,
+    Y2 = 15,
+    Text = "Ellipse",
+    YAxisName = "YAxis"
 };
 
-// Add the ellipse annotation to the chart
 chart.Annotations.Add(ellipse);
-
-// Set the chart as the content of the current view
 this.Content = chart;
-
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![Annotations in multiple axes in MAUI Chart](Annotation_image/Annotation_with_multiple_axes.png)
+![Annotations in multiple axes in .NET MAUI Cartesian Chart](Annotation_image/Annotation_with_multiple_axes.png)
 
 ## Text annotation
 
-The [TextAnnotation](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.TextAnnotation.html) is used to add simple text at specific points in the chart area using the [Text](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.TextAnnotation.html#Syncfusion_Maui_Toolkit_Charts_TextAnnotation_Text) property.
+The [TextAnnotation](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.TextAnnotation.html) is used to add simple text at specific points in the chart area using the [Text](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.TextAnnotation.html#Syncfusion_Maui_Charts_TextAnnotation_Text) property.
 
 {% tabs %}
 
 {% highlight xaml %}
 
 <chart:SfCartesianChart>
-    ...
+    <!-- code omitted for brevity -->
     <chart:SfCartesianChart.Annotations>
         <chart:TextAnnotation X1="2" Y1="25" Text="Text Annotation"/>
     </chart:SfCartesianChart.Annotations>
@@ -198,44 +175,36 @@ The [TextAnnotation](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui
 
 {% highlight c# %}
 
-// Create a new instance of SfCartesianChart
 SfCartesianChart chart = new SfCartesianChart();
-
-// Other chart elements go here
-
-// Create a new TextAnnotation object
+//code omitted for brevity
 var text = new TextAnnotation()
 {
-    X1 = 2, 
+    X1 = 2,
     Y1 = 25,
-    Text = "Text Annotation"  // Set the text content of the annotation    
+    Text = "Text Annotation"    
 };
 
-// Add the TextAnnotation to the chart's Annotations collection
 chart.Annotations.Add(text);
-
-// Set the chart as the content of the current view/page
 this.Content = chart;
-
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![Text annotation in MAUI Chart](Annotation_image/Text_annotation.png)
+![Text annotation in .NET MAUI Cartesian Chart](Annotation_image/Text_annotation.png)
 
 ## Text Customization
 
-The [TextAnnotation](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.TextAnnotation.html) can be customized using the [LabelStyle](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.TextAnnotation.html#Syncfusion_Maui_Toolkit_Charts_TextAnnotation_LabelStyle) property. The [LabelStyle](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.TextAnnotation.html#Syncfusion_Maui_Toolkit_Charts_TextAnnotation_LabelStyle) property provides options to customize the font-family, font-size, font-attributes, and text color of axis labels. The following properties are used to customize the text:
+The [TextAnnotation](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.TextAnnotation.html) can be customized using the [LabelStyle](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.TextAnnotation.html#Syncfusion_Maui_Charts_TextAnnotation_LabelStyle) property. The [LabelStyle](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.TextAnnotation.html#Syncfusion_Maui_Charts_TextAnnotation_LabelStyle) property provides options to customize the font-family, font-size, font-attributes, and text color of axis labels. The following properties are used to customize the text:
 
-* [TextColor](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartLabelStyle.html#Syncfusion_Maui_Toolkit_Charts_ChartLabelStyle_TextColor) - Gets or sets the text color of the label.
-* [Background](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartLabelStyle.html#Syncfusion_Maui_Toolkit_Charts_ChartLabelStyle_Background) - Gets or sets the background color of the labels.
-* [Margin](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartLabelStyle.html#Syncfusion_Maui_Toolkit_Charts_ChartLabelStyle_Margin) - Gets or sets the margin of the label to customize the appearance of label.
-* [FontFamily](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartLabelStyle.html#Syncfusion_Maui_Toolkit_Charts_ChartLabelStyle_FontFamily) -  Gets or sets the font family name for the label.
-* [FontAttributes](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartLabelStyle.html#Syncfusion_Maui_Toolkit_Charts_ChartLabelStyle_FontAttributes) - Gets or sets the font style for the label.
-* [FontSize](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartLabelStyle.html#Syncfusion_Maui_Toolkit_Charts_ChartLabelStyle_FontSize) - Gets or sets the font size for the label.
-* [HorizontalTextAlignment](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAnnotationLabelStyle.html#Syncfusion_Maui_Toolkit_Charts_ChartAnnotationLabelStyle_HorizontalTextAlignment) - Gets or sets the horizontal alignment of the label.
-* [VerticalTextAlignment](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAnnotationLabelStyle.html#Syncfusion_Maui_Toolkit_Charts_ChartAnnotationLabelStyle_VerticalTextAlignment) - Gets or sets the vertical alignment of the label.
+* [TextColor](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartLabelStyle.html#Syncfusion_Maui_Charts_ChartLabelStyle_TextColor) - Gets or sets the text color of the label.
+* [Background](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartLabelStyle.html#Syncfusion_Maui_Charts_ChartLabelStyle_Background) - Gets or sets the background color of the labels.
+* [Margin](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartLabelStyle.html#Syncfusion_Maui_Charts_ChartLabelStyle_Margin) - Gets or sets the margin of the label to customize the appearance of label.
+* [FontFamily](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartLabelStyle.html#Syncfusion_Maui_Charts_ChartLabelStyle_FontFamily) -  Gets or sets the font family name for the label.
+* [FontAttributes](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartLabelStyle.html#Syncfusion_Maui_Charts_ChartLabelStyle_FontAttributes) - Gets or sets the font style for the label.
+* [FontSize](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartLabelStyle.html#Syncfusion_Maui_Charts_ChartLabelStyle_FontSize) - Gets or sets the font size for the label.
+* [HorizontalTextAlignment](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAnnotationLabelStyle.html#Syncfusion_Maui_Charts_ChartAnnotationLabelStyle_HorizontalTextAlignment) - Gets or sets the horizontal alignment of the label.
+* [VerticalTextAlignment](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAnnotationLabelStyle.html#Syncfusion_Maui_Charts_ChartAnnotationLabelStyle_VerticalTextAlignment) - Gets or sets the vertical alignment of the label.
   
 ## Shape annotation
 
@@ -249,14 +218,14 @@ The [ShapeAnnotation](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Mau
 
 The following APIs are commonly used in all ShapeAnnotation:
 
-* [X2](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ShapeAnnotation.html#Syncfusion_Maui_Toolkit_Charts_ShapeAnnotation_X2) - Gets or sets the X2 coordinate of the shape annotation.
-* [Y2](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ShapeAnnotation.html#Syncfusion_Maui_Toolkit_Charts_ShapeAnnotation_Y2) - Gets or sets the Y2 coordinate of the shape annotation.
-* [Fill](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ShapeAnnotation.html#Syncfusion_Maui_Toolkit_Charts_ShapeAnnotation_Fill) - Gets or sets the background color of the shape annotation.
-* [Stroke](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ShapeAnnotation.html#Syncfusion_Maui_Toolkit_Charts_ShapeAnnotation_Stroke) - Gets or sets the stroke color of the shape annotation.
-* [StrokeWidth](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ShapeAnnotation.html#Syncfusion_Maui_Toolkit_Charts_ShapeAnnotation_StrokeWidth) - Gets or sets the stroke width of the shape annotation.
-* [StrokeDashArray](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ShapeAnnotation.html#Syncfusion_Maui_Toolkit_Charts_ShapeAnnotation_StrokeDashArray) - Gets or sets the stroke dash pattern of the shape annotation.
-* [Text](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ShapeAnnotation.html#Syncfusion_Maui_Toolkit_Charts_ShapeAnnotation_Text) - Gets or sets the annotation text of the shape annotation.
-* [LabelStyle](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ShapeAnnotation.html#Syncfusion_Maui_Toolkit_Charts_ShapeAnnotation_LabelStyle) - Gets or sets the style for customizing the annotation text of the shape annotation.
+* [X2](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ShapeAnnotation.html#Syncfusion_Maui_Charts_ShapeAnnotation_X2) - Gets or sets the X2 coordinate of the shape annotation.
+* [Y2](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ShapeAnnotation.html#Syncfusion_Maui_Charts_ShapeAnnotation_Y2) - Gets or sets the Y2 coordinate of the shape annotation.
+* [Fill](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ShapeAnnotation.html#Syncfusion_Maui_Charts_ShapeAnnotation_Fill) - Gets or sets the background color of the shape annotation.
+* [Stroke](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ShapeAnnotation.html#Syncfusion_Maui_Charts_ShapeAnnotation_Stroke) - Gets or sets the stroke color of the shape annotation.
+* [StrokeWidth](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ShapeAnnotation.html#Syncfusion_Maui_Charts_ShapeAnnotation_StrokeWidth) - Gets or sets the stroke width of the shape annotation.
+* [StrokeDashArray](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ShapeAnnotation.html#Syncfusion_Maui_Charts_ShapeAnnotation_StrokeDashArray) - Gets or sets the stroke dash pattern of the shape annotation.
+* [Text](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ShapeAnnotation.html#Syncfusion_Maui_Charts_ShapeAnnotation_Text) - Gets or sets the annotation text of the shape annotation.
+* [LabelStyle](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ShapeAnnotation.html#Syncfusion_Maui_Charts_ShapeAnnotation_LabelStyle) - Gets or sets the style for customizing the annotation text of the shape annotation.
 
 ## Rectangle annotation
 
@@ -267,7 +236,7 @@ The [RectangleAnnotation](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion
 {% highlight xaml %}
 
 <chart:SfCartesianChart>
-    ...
+    <!-- code omitted for brevity -->
     <chart:SfCartesianChart.Annotations>
         <chart:RectangleAnnotation X1="1" Y1="40" X2="2" Y2="20"/>
     </chart:SfCartesianChart.Annotations>
@@ -278,17 +247,15 @@ The [RectangleAnnotation](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion
 {% highlight c# %}
 
 SfCartesianChart chart = new SfCartesianChart();
-
-// Create a new rectangle annotation
+//code omitted for brevity
 var rectangle = new RectangleAnnotation()
 {
     X1 = 1,
     Y1 = 40,
     X2 = 2,
-    Y2 = 20,                
+    Y2 = 20,
 };
 
-// Add the rectangle annotation to the chart's annotations collection
 chart.Annotations.Add(rectangle);
 this.Content = chart;
 
@@ -296,18 +263,18 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Rectangle annotation in MAUI Chart](Annotation_image/Rectangle_annotation.png)
+![Rectangle annotation in .NET MAUI Cartesian Chart](Annotation_image/Rectangle_annotation.png)
 
 ## Ellipse annotation
 
-The [EllipseAnnotation](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.EllipseAnnotation.html) is used to draw an oval or a circle at specific points in the chart area. You can also specify the height and width of the [EllipseAnnotation](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.EllipseAnnotation.html) by using the [Height](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.EllipseAnnotation.html#Syncfusion_Maui_Toolkit_Charts_EllipseAnnotation_Height) and [Width](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.EllipseAnnotation.html#Syncfusion_Maui_Toolkit_Charts_EllipseAnnotation_Width) properties, respectively.
+The [EllipseAnnotation](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.EllipseAnnotation.html) is used to draw an oval or a circle at specific points in the chart area. You can also specify the height and width of the [EllipseAnnotation](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.EllipseAnnotation.html) by using the [Height](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.EllipseAnnotation.html#Syncfusion_Maui_Charts_EllipseAnnotation_Height) and [Width](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.EllipseAnnotation.html#Syncfusion_Maui_Charts_EllipseAnnotation_Width) properties, respectively.
 
 {% tabs %}
 
 {% highlight xaml %}
 
 <chart:SfCartesianChart>
-    ...
+    <!-- code omitted for brevity -->
     <chart:SfCartesianChart.Annotations>
         <chart:EllipseAnnotation X1="2" X2="4" Y1="10" Y2="15" Width="20" Height="20"/>
     </chart:SfCartesianChart.Annotations>
@@ -318,19 +285,17 @@ The [EllipseAnnotation](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.M
 {% highlight c# %}
 
 SfCartesianChart chart = new SfCartesianChart();
-
-// Create an instance of EllipseAnnotation to display an ellipse on the chart.
+//code omitted for brevity
 var ellipse = new EllipseAnnotation()
 {
     X1 = 2,
     Y1 = 10,
     X2 = 4,
-    Y2 = 15,    
+    Y2 = 15,
     Width = 20,
     Height = 20
 };
 
-// Add the ellipse annotation to the chart's annotations collection.
 chart.Annotations.Add(ellipse);
 this.Content = chart;
 
@@ -338,9 +303,9 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Ellipse annotation in MAUI Chart](Annotation_image/Ellipse_annotation.png)
+![Ellipse annotation in .NET MAUI Cartesian Chart](Annotation_image/Ellipse_annotation.png)
 
-N> When the [X2](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ShapeAnnotation.html#Syncfusion_Maui_Toolkit_Charts_ShapeAnnotation_X2) and [Y2](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ShapeAnnotation.html#Syncfusion_Maui_Toolkit_Charts_ShapeAnnotation_Y2) properties of the [EllipseAnnotation](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.EllipseAnnotation.html) are set, the [Height](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.EllipseAnnotation.html#Syncfusion_Maui_Toolkit_Charts_EllipseAnnotation_Height) and [Width](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.EllipseAnnotation.html#Syncfusion_Maui_Toolkit_Charts_EllipseAnnotation_Width) properties become ineffective.
+N> When the [X2](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ShapeAnnotation.html#Syncfusion_Maui_Charts_ShapeAnnotation_X2) and [Y2](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ShapeAnnotation.html#Syncfusion_Maui_Charts_ShapeAnnotation_Y2) properties of the [EllipseAnnotation](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.EllipseAnnotation.html) are set, the [Height](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.EllipseAnnotation.html#Syncfusion_Maui_Charts_EllipseAnnotation_Height) and [Width](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.EllipseAnnotation.html#Syncfusion_Maui_Charts_EllipseAnnotation_Width) properties become ineffective.
 
 ## Line annotation
 
@@ -351,7 +316,7 @@ The [LineAnnotation](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui
 {% highlight xaml %}
 
 <chart:SfCartesianChart>
-    ...
+    <!-- code omitted for brevity -->
     <chart:SfCartesianChart.Annotations>
         <chart:LineAnnotation X1="0.5" Y1="10" X2="3.5" Y2="20" Text="Line"/>
     </chart:SfCartesianChart.Annotations>
@@ -362,8 +327,7 @@ The [LineAnnotation](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui
 {% highlight c# %}
 
 SfCartesianChart chart = new SfCartesianChart();
-
-// Create and configure a LineAnnotation with specified coordinates
+//code omitted for brevity
 var line = new LineAnnotation()
 {
     X1 = 0.5,
@@ -373,7 +337,6 @@ var line = new LineAnnotation()
     Text = "Line"
 };
 
-// Add the line annotation to the annotations collection of the chart
 chart.Annotations.Add(line);
 this.Content = chart;
 
@@ -381,7 +344,7 @@ this.Content = chart;
 
 {% endtabs %}
    
-![Line Annotation in MAUI Chart](Annotation_image/Line_annotation.png)
+![Line Annotation in .NET MAUI Cartesian Chart](Annotation_image/Line_annotation.png)
 
 ## Vertical and Horizontal line annotations
 
@@ -392,7 +355,7 @@ The [VerticalLineAnnotation](https://help.syncfusion.com/cr/maui-toolkit/Syncfus
 {% highlight xaml %}
 
 <chart:SfCartesianChart>
-    ...
+    <!-- code omitted for brevity -->
     <chart:SfCartesianChart.Annotations>
         <chart:VerticalLineAnnotation X1="2"/>
         <chart:HorizontalLineAnnotation Y1="20"/>
@@ -404,20 +367,17 @@ The [VerticalLineAnnotation](https://help.syncfusion.com/cr/maui-toolkit/Syncfus
 {% highlight c# %}
 
 SfCartesianChart chart = new SfCartesianChart();
-. . .
-// Create a vertical line annotation
+//code omitted for brevity
 var verticalLineAnnotation = new VerticalLineAnnotation()
 {
     X1 = 2,
 };
 
-// Create a horizontal line annotation
 var horizontalLineAnnotation = new HorizontalLineAnnotation()
 {
     Y1 = 20,
 };
 
-// Add the vertical and horizontal line annotations to the chart's annotations.
 chart.Annotations.Add(verticalLineAnnotation);
 chart.Annotations.Add(horizontalLineAnnotation);
 this.Content = chart;
@@ -426,18 +386,18 @@ this.Content = chart;
 
 {% endtabs %}  
 
-![Vertical and horizontal Line Annotation in MAUI Chart](Annotation_image/Horizontal_vertical_annotation.png)
+![Vertical and horizontal Line Annotation in .NET MAUI Cartesian Chart](Annotation_image/Horizontal_vertical_annotation.png)
 
 ## Displaying axis label for vertical and horizontal line annotations
 
-The [VerticalLineAnnotation](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.VerticalLineAnnotation.html) and [HorizontalLineAnnotation](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.HorizontalLineAnnotation.html) allow for the display of axis labels at the line's position using the [ShowAxisLabel](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.VerticalLineAnnotation.html#Syncfusion_Maui_Toolkit_Charts_VerticalLineAnnotation_ShowAxisLabel) property. The default value of the [ShowAxisLabel](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.VerticalLineAnnotation.html#Syncfusion_Maui_Toolkit_Charts_VerticalLineAnnotation_ShowAxisLabel) property is `false` as shown in the code snippet below:
+The [VerticalLineAnnotation](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.VerticalLineAnnotation.html) and [HorizontalLineAnnotation](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.HorizontalLineAnnotation.html) allow for the display of axis labels at the line's position using the [ShowAxisLabel](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.VerticalLineAnnotation.html#Syncfusion_Maui_Charts_VerticalLineAnnotation_ShowAxisLabel) property. The default value of the [ShowAxisLabel](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.HorizontalLineAnnotation.html#Syncfusion_Maui_Charts_HorizontalLineAnnotation_ShowAxisLabel) property is 'false' as shown in the code snippet below:
 
 {% tabs %}
 
 {% highlight xaml %}
 
 <chart:SfCartesianChart>
-    ...
+    <!-- code omitted for brevity -->
     <chart:SfCartesianChart.Annotations>
         <chart:VerticalLineAnnotation X1="2.5" ShowAxisLabel="True"/>
         <chart:HorizontalLineAnnotation Y1="25" ShowAxisLabel="True"/>
@@ -449,17 +409,17 @@ The [VerticalLineAnnotation](https://help.syncfusion.com/cr/maui-toolkit/Syncfus
 {% highlight c# %}
 
 SfCartesianChart chart = new SfCartesianChart();
-. . .
+//code omitted for brevity
 var verticalLineAnnotation = new VerticalLineAnnotation()
 {
     X1 = 2.5,
-    ShowAxisLabel = true // Display the label on the X-axis where the line intersects
+    ShowAxisLabel = true
 };
 
 var horizontalLineAnnotation = new HorizontalLineAnnotation()
 {
     Y1 = 25,
-    ShowAxisLabel = true // Display the label on the Y-axis where the line intersects
+    ShowAxisLabel = true
 };
 
 chart.Annotations.Add(verticalLineAnnotation);
@@ -470,29 +430,29 @@ this.Content = chart;
 
 {% endtabs %}  
 
-![Vertical and horizontal Line Annotation with axis label in MAUI Chart](Annotation_image/axis_label.png)
+![Vertical and horizontal Line Annotation with axis label in .NET MAUI Cartesian Chart](Annotation_image/axis_label.png)
 
 ## Axis label customization
 
-The default appearance of the axis label can also be customized using the [AxisLabelStyle](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.HorizontalLineAnnotation.html#Syncfusion_Maui_Toolkit_Charts_HorizontalLineAnnotation_AxisLabelStyle) property. The [AxisLabelStyle](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.HorizontalLineAnnotation.html#Syncfusion_Maui_Toolkit_Charts_HorizontalLineAnnotation_AxisLabelStyle) property allows you to customize the axis labels by changing the font family, font size, font attributes, and text color. The following styles are used to customize the axis label:
+The default appearance of the axis label can also be customized using the [AxisLabelStyle](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.HorizontalLineAnnotation.html#Syncfusion_Maui_Charts_HorizontalLineAnnotation_AxisLabelStyle) property. The [AxisLabelStyle](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.HorizontalLineAnnotation.html#Syncfusion_Maui_Charts_HorizontalLineAnnotation_AxisLabelStyle) property allows you to customize the axis labels by changing the font family, font size, font attributes, and text color. The following styles are used to customize the axis label:
 
-* [TextColor](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartLabelStyle.html#Syncfusion_Maui_Toolkit_Charts_ChartLabelStyle_TextColor) - Gets or sets the text color of the label.
-* [Background](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartLabelStyle.html#Syncfusion_Maui_Toolkit_Charts_ChartLabelStyle_Background) - Gets or sets the background color of the labels.
-* [Margin](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartLabelStyle.html#Syncfusion_Maui_Toolkit_Charts_ChartLabelStyle_Margin) - Gets or sets the margin of the label to customize the appearance of label.
-* [FontFamily](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartLabelStyle.html#Syncfusion_Maui_Toolkit_Charts_ChartLabelStyle_FontFamily) - Gets or sets the font family name for the label.
-* [FontAttributes](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartLabelStyle.html#Syncfusion_Maui_Toolkit_Charts_ChartLabelStyle_FontAttributes) - Gets or sets the font style for the label.
-* [FontSize](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartLabelStyle.html#Syncfusion_Maui_Toolkit_Charts_ChartLabelStyle_FontSize) - Gets or sets the font size for the label.
+* [TextColor](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartLabelStyle.html#Syncfusion_Maui_Charts_ChartLabelStyle_TextColor) - Gets or sets the text color of the label.
+* [Background](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartLabelStyle.html#Syncfusion_Maui_Charts_ChartLabelStyle_Background) - Gets or sets the background color of the labels.
+* [Margin](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartLabelStyle.html#Syncfusion_Maui_Charts_ChartLabelStyle_Margin) - Gets or sets the margin of the label to customize the appearance of label.
+* [FontFamily](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartLabelStyle.html#Syncfusion_Maui_Charts_ChartLabelStyle_FontFamily) - Gets or sets the font family name for the label.
+* [FontAttributes](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartLabelStyle.html#Syncfusion_Maui_Charts_ChartLabelStyle_FontAttributes) - Gets or sets the font style for the label.
+* [FontSize](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartLabelStyle.html#Syncfusion_Maui_Charts_ChartLabelStyle_FontSize) - Gets or sets the font size for the label.
 
 ## Adding arrow to vertical and horizontal line annotations
 
-To display a single-headed arrow, set the [LineCap](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.LineAnnotation.html#Syncfusion_Maui_Toolkit_Charts_LineAnnotation_LineCap) property to [Arrow](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartLineCap.html#Syncfusion_Maui_Toolkit_Charts_ChartLineCap_Arrow). The default value of the [LineCap](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.LineAnnotation.html#Syncfusion_Maui_Toolkit_Charts_LineAnnotation_LineCap) property is [None](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartLineCap.html#Syncfusion_Maui_Toolkit_Charts_ChartLineCap_None).
+To display a single-headed arrow, set the [LineCap](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.LineAnnotation.html#Syncfusion_Maui_Charts_LineAnnotation_LineCap) property to [Arrow](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartLineCap.html#Syncfusion_Maui_Charts_ChartLineCap_Arrow). The default value of the [LineCap](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.LineAnnotation.html#Syncfusion_Maui_Charts_LineAnnotation_LineCap) property is [None](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartLineCap.html#Syncfusion_Maui_Charts_ChartLineCap_None).
 
 {% tabs %}
 
 {% highlight xaml %}
 
 <chart:SfCartesianChart>
-    ...
+    <!-- code omitted for brevity -->
     <chart:SfCartesianChart.Annotations>
         <chart:VerticalLineAnnotation X1="2.5" LineCap="Arrow"/>
         <chart:HorizontalLineAnnotation Y1="25" LineCap="Arrow"/>
@@ -504,17 +464,17 @@ To display a single-headed arrow, set the [LineCap](https://help.syncfusion.com/
 {% highlight c# %}
 
 SfCartesianChart chart = new SfCartesianChart();
-. . .
+//code omitted for brevity
 var verticalLineAnnotation = new VerticalLineAnnotation()
 {
     X1 = 2.5,
-    LineCap = ChartLineCap.Arrow // Add an arrow cap to the end of the line
+    LineCap = ChartLineCap.Arrow
 };
 
 var horizontalLineAnnotation = new HorizontalLineAnnotation()
 {
     Y1 = 25,
-    LineCap = ChartLineCap.Arrow // Add an arrow cap to the end of the line
+    LineCap = ChartLineCap.Arrow
 };
 
 chart.Annotations.Add(verticalLineAnnotation);
@@ -525,20 +485,20 @@ this.Content = chart;
 
 {% endtabs %}  
 
-![Vertical and horizontal Line Annotations with linecap in MAUI Chart](Annotation_image/Horizontal_vertical_with_cap.png)
+![Vertical and horizontal Line Annotations with linecap in .NET MAUI Cartesian Chart](Annotation_image/Horizontal_vertical_with_cap.png)
 
-N> The [LineCap](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.LineAnnotation.html#Syncfusion_Maui_Toolkit_Charts_LineAnnotation_LineCap) is applicable to line, horizontal, and vertical annotations.
+N> The [LineCap](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.LineAnnotation.html#Syncfusion_Maui_Charts_LineAnnotation_LineCap) is applicable to line, horizontal, and vertical annotations.
 
 ## Adding text in shape annotation
 
-For all shape annotations, the text can be displayed using the [Text](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ShapeAnnotation.html#Syncfusion_Maui_Toolkit_Charts_ShapeAnnotation_Text) property.
+For all shape annotations, the text can be displayed using the [Text](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ShapeAnnotation.html#Syncfusion_Maui_Charts_ShapeAnnotation_Text) property.
 
 {% tabs %}
 
 {% highlight xaml %}
 
 <chart:SfCartesianChart>
-    ...
+    <!-- code omitted for brevity -->
     <chart:SfCartesianChart.Annotations>
         <chart:EllipseAnnotation X1="2" X2="4" Y1="10" Y2="15" Text="Ellipse"/>
     </chart:SfCartesianChart.Annotations>
@@ -549,14 +509,14 @@ For all shape annotations, the text can be displayed using the [Text](https://he
 {% highlight c# %}
 
 SfCartesianChart chart = new SfCartesianChart();
-...
+//code omitted for brevity
 var ellipseAnnotation = new EllipseAnnotation()
 {
     X1 = 2,
     Y1 = 10,
     X2 = 4,
     Y2 = 15,
-    Text = "Ellipse" // Set the text label for the ellipse.
+    Text = "Ellipse"
 };
 
 chart.Annotations.Add(ellipseAnnotation);
@@ -566,31 +526,31 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Annotation in MAUI Chart](Annotation_image/Adding_annotation.png)
+![Annotation in .NET MAUI Cartesian Chart](Annotation_image/Adding_annotation.png)
 
 ## Text customization in shape annotation
 
-The [Text](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ShapeAnnotation.html#Syncfusion_Maui_Toolkit_Charts_ShapeAnnotation_Text) in shape annotation also can be customized by using the [LabelStyle](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ShapeAnnotation.html#Syncfusion_Maui_Toolkit_Charts_ShapeAnnotation_LabelStyle) property. The [LabelStyle](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ShapeAnnotation.html#Syncfusion_Maui_Toolkit_Charts_ShapeAnnotation_LabelStyle) property provides options to customize the font-family, font-size, font-attributes and text color of axis labels.
+The [Text](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ShapeAnnotation.html#Syncfusion_Maui_Charts_ShapeAnnotation_Text) in shape annotation also can be customized by using the [LabelStyle](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ShapeAnnotation.html#Syncfusion_Maui_Charts_ShapeAnnotation_LabelStyle) property. The [LabelStyle](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ShapeAnnotation.html#Syncfusion_Maui_Charts_ShapeAnnotation_LabelStyle) property provides options to customize the font-family, font-size, font-attributes and text color of axis labels.
 
-* [TextColor](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartLabelStyle.html#Syncfusion_Maui_Toolkit_Charts_ChartLabelStyle_TextColor) - Gets or sets the text color of the label.
-* [Background](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartLabelStyle.html#Syncfusion_Maui_Toolkit_Charts_ChartLabelStyle_Background) - Gets or sets the background color of the labels.
-* [Margin](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartLabelStyle.html#Syncfusion_Maui_Toolkit_Charts_ChartLabelStyle_Margin) - Gets or sets the margin of the label to customize the appearance of label.
-* [FontFamily](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartLabelStyle.html#Syncfusion_Maui_Toolkit_Charts_ChartLabelStyle_FontFamily) - Gets or sets the font family name for the label.
-* [FontAttributes](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartLabelStyle.html#Syncfusion_Maui_Toolkit_Charts_ChartLabelStyle_FontAttributes) - Gets or sets the font style for the label.
-* [FontSize](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartLabelStyle.html#Syncfusion_Maui_Toolkit_Charts_ChartLabelStyle_FontSize) - Gets or sets the font size for the label.
-* [HorizontalTextAlignment](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAnnotationLabelStyle.html#Syncfusion_Maui_Toolkit_Charts_ChartAnnotationLabelStyle_HorizontalTextAlignment) -  Gets or sets the horizontal alignment of the label.
-* [VerticalTextAlignment](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAnnotationLabelStyle.html#Syncfusion_Maui_Toolkit_Charts_ChartAnnotationLabelStyle_VerticalTextAlignment) - Gets or sets the vertical alignment of the label.
+* [TextColor](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartLabelStyle.html#Syncfusion_Maui_Charts_ChartLabelStyle_TextColor) - Gets or sets the text color of the label.
+* [Background](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartLabelStyle.html#Syncfusion_Maui_Charts_ChartLabelStyle_Background) - Gets or sets the background color of the labels.
+* [Margin](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartLabelStyle.html#Syncfusion_Maui_Charts_ChartLabelStyle_Margin) - Gets or sets the margin of the label to customize the appearance of label.
+* [FontFamily](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartLabelStyle.html#Syncfusion_Maui_Charts_ChartLabelStyle_FontFamily) - Gets or sets the font family name for the label.
+* [FontAttributes](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartLabelStyle.html#Syncfusion_Maui_Charts_ChartLabelStyle_FontAttributes) - Gets or sets the font style for the label.
+* [FontSize](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartLabelStyle.html#Syncfusion_Maui_Charts_ChartLabelStyle_FontSize) - Gets or sets the font size for the label.
+* [HorizontalTextAlignment](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAnnotationLabelStyle.html#Syncfusion_Maui_Charts_ChartAnnotationLabelStyle_HorizontalTextAlignment) -  Gets or sets the horizontal alignment of the label.
+* [VerticalTextAlignment](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAnnotationLabelStyle.html#Syncfusion_Maui_Charts_ChartAnnotationLabelStyle_VerticalTextAlignment) - Gets or sets the vertical alignment of the label.
   
 ## View annotation
 
-The [ViewAnnotation](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ViewAnnotation.html) allows you to add annotations in the form of your own custom view using the [View](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ViewAnnotation.html#Syncfusion_Maui_Toolkit_Charts_ViewAnnotation_View) property at a specific area of interest in the chart area. Additionally, the [ViewAnnotation](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ViewAnnotation.html) can be aligned using the [VerticalAlignment](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ViewAnnotation.html#Syncfusion_Maui_Toolkit_Charts_ViewAnnotation_VerticalAlignment) and [HorizontalAlignment](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ViewAnnotation.html#Syncfusion_Maui_Toolkit_Charts_ViewAnnotation_HorizontalAlignment) properties.
+The [ViewAnnotation](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ViewAnnotation.html) allows you to add annotations in the form of your own custom view using the [View](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ViewAnnotation.html#Syncfusion_Maui_Charts_ViewAnnotation_View) property at a specific area of interest in the chart area. Additionally, the [ViewAnnotation](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ViewAnnotation.html) can be aligned using the [VerticalAlignment](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ViewAnnotation.html#Syncfusion_Maui_Charts_ViewAnnotation_VerticalAlignment) and [HorizontalAlignment](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ViewAnnotation.html#Syncfusion_Maui_Charts_ViewAnnotation_HorizontalAlignment) properties.
 
 {% tabs %}
 
 {% highlight xaml %}
 
 <chart:SfCartesianChart>
-    ...
+    <!-- code omitted for brevity -->
     <chart:SfCartesianChart.Annotations>
         <chart:ViewAnnotation X1="3" Y1="30">
             <chart:ViewAnnotation.View>
@@ -605,34 +565,32 @@ The [ViewAnnotation](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui
 {% highlight c# %}
 
 SfCartesianChart chart = new SfCartesianChart();
-...
-// Define a new ViewAnnotation to add a graphical element to the chart.
+//code omitted for brevity
 var viewAnnotation = new ViewAnnotation()
 {
     X1 = 3,
     Y1 = 30,
-    View = new Image() { Source = "cloud.png" };
+    View = new Image() { Source = "cloud.png" }
 };
 
-// Add the created ViewAnnotation to the chart's Annotations collection.
 chart.Annotations.Add(viewAnnotation);
 this.Content = chart;
 {% endhighlight %}
 
 {% endtabs %}
 
-![View Annotation in MAUI Chart](Annotation_image/View_annotation.png)
+![View Annotation in .NET MAUI Cartesian Chart](Annotation_image/View_annotation.png)
 
 ## Annotation Visibility
 
-The [IsVisible](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAnnotation.html#Syncfusion_Maui_Toolkit_Charts_ChartAnnotation_IsVisible) property of [ChartAnnotation](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAnnotation.html) is used to toggle the visibility of the annotation.
+The [IsVisible](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAnnotation.html#Syncfusion_Maui_Charts_ChartAnnotation_IsVisible) property of [ChartAnnotation](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAnnotation.html) is used to toggle the visibility of the annotation.
 
 {% tabs %}
 
 {% highlight xaml %}
 
 <chart:SfCartesianChart>
-    ...
+    <!-- code omitted for brevity -->
     <chart:SfCartesianChart.Annotations>
         <chart:EllipseAnnotation X1="2" X2="4" Y1="10" Y2="15" Text="Ellipse" IsVisible="False"/>
     </chart:SfCartesianChart.Annotations>
@@ -651,12 +609,56 @@ var ellipseAnnotation = new EllipseAnnotation()
     X2 = 4,
     Y2 = 15,
     Text = "Ellipse",
-    IsVisible = false  // Set the visibility of the annotation
+    IsVisible = false
 };
 
 chart.Annotations.Add(ellipse);
 this.Content = chart;
 
 {% endhighlight %}
+
+{% endtabs %}
+
+## Event
+
+**AnnotationTapped**
+
+The [AnnotationTapped](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html#Syncfusion_Maui_Charts_SfCartesianChart_AnnotationTapped) event occurs when an annotation is tapped. The [AnnotationTappedEventArgs](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.Chart.Events.AnnotationTappedEventArgs.html) provides the following details:
+
+* [Annotation](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.Chart.Events.AnnotationTappedEventArgs.html#Syncfusion_Maui_Charts_Chart_Events_AnnotationTappedEventArgs_Annotation) – the annotation instance that was tapped.
+* [X](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.Chart.Events.AnnotationTappedEventArgs.html#Syncfusion_Maui_Charts_Chart_Events_AnnotationTappedEventArgs_X) – the X coordinate of the touch or mouse click position.
+* [Y](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.Chart.Events.AnnotationTappedEventArgs.html#Syncfusion_Maui_Charts_Chart_Events_AnnotationTappedEventArgs_Y) – the Y coordinate of the touch or mouse click position.
+
+## Public methods
+
+The following override methods allow you to handle touch interactions on annotations:
+
+* [OnTouchDown()](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAnnotation.html#Syncfusion_Maui_Charts_ChartAnnotation_OnTouchDown_System_Single_System_Single_) – triggered when touch starts (down) on the annotation.
+* [OnTouchMove()](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAnnotation.html#Syncfusion_Maui_Charts_ChartAnnotation_OnTouchMove_System_Single_System_Single_) – triggered when moving (dragging) the finger or mouse across the annotation.
+* [OnTouchUp()](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAnnotation.html#Syncfusion_Maui_Charts_ChartAnnotation_OnTouchUp_System_Single_System_Single_) – triggered when touch ends (up) by lifting the finger or releasing the mouse from the annotation.
+
+{% tabs %}
+
+{% highlight c# %}
+
+public class LineAnnotationExt : LineAnnotation
+{
+    protected override void OnTouchDown(float pointX, float pointY)
+    {
+       base.OnTouchDown(pointX, pointY);
+    }
+
+    protected override void OnTouchMove(float pointX, float pointY)
+    {
+       base.OnTouchMove(pointX, pointY);
+    }
+
+    protected override void OnTouchUp(float pointX, float pointY)
+    {
+       base.OnTouchUp(pointX, pointY);
+    }
+}
+
+{% endhighlight  %}
 
 {% endtabs %}
