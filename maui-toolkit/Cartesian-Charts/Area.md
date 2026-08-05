@@ -1,20 +1,22 @@
 ---
 layout: post
-title: Area Chart in .NET MAUI Chart control | Syncfusion
-description: Learn here all about the area chart types and its features in Syncfusion® .NET MAUI Chart (SfCartesianChart) control.
+title: Area Chart in .NET MAUI Cartesian Chart | Syncfusion®
+description: Area Chart in .NET MAUI Cartesian Chart visualizes data trends by filling the area beneath a line series, making comparisons and patterns easier to identify.
 platform: maui-toolkit
 control: SfCartesianChart
 documentation: ug
 keywords: .net maui area chart, .net maui chart area type, area chart customization .net maui, syncfusion maui area chart, cartesian area chart maui, .net maui chart filled line visualization.
 ---
 
-# Area Chart in .NET MAUI Chart
+# Area Chart in .NET MAUI Cartesian Chart
 
 ## Area Chart
 
-The area chart is rendered by using a collection of line segments connected to form a closed loop area, filled with the specified color. To render a area chart, create an instance of [AreaSeries](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.AreaSeries.html) and add it to the [Series](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html#Syncfusion_Maui_Toolkit_Charts_SfCartesianChart_Series) collection property of the chart.
+The area chart is rendered by using a collection of line segments connected to form a closed loop area, filled with the specified color. To render an area chart, create an instance of [AreaSeries](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.AreaSeries.html) and add it to the [Series](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html#Syncfusion_Maui_Charts_SfCartesianChart_Series) collection property of the chart.
 
-N> The Cartesian chart has [Series](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html#Syncfusion_Maui_Toolkit_Charts_SfCartesianChart_Series) as its default content.
+N> The Cartesian chart has [Series](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html#Syncfusion_Maui_Charts_SfCartesianChart_Series) as its default content.
+
+N> **Prerequisite:** Ensure that the required NuGet package is installed, the necessary namespaces are imported, and the **SfCartesianChart** control is properly configured in your application. For detailed setup and configuration instructions, refer to the **[Getting Started](https://help.syncfusion.com/maui/cartesian-charts/getting-started)** guide.
 
 {% tabs %}
 
@@ -41,12 +43,13 @@ N> The Cartesian chart has [Series](https://help.syncfusion.com/cr/maui-toolkit/
 {% highlight c# %}
 
 SfCartesianChart chart = new SfCartesianChart();
+
 CategoryAxis primaryAxis = new CategoryAxis();
 chart.XAxes.Add(primaryAxis);
+
 NumericalAxis secondaryAxis = new NumericalAxis();
 chart.YAxes.Add(secondaryAxis);
 
-// Create a AreaSeries for the chart
 AreaSeries series = new AreaSeries()
 {
     ItemsSource = new ViewModel().Data,
@@ -54,19 +57,18 @@ AreaSeries series = new AreaSeries()
     YBindingPath = "Year2010",
 };
 
-// Add the series to the chart's series collection
-chart.Series.Add(series); 
+chart.Series.Add(series);
 this.Content = chart;
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![Area chart type in MAUI Chart](Chart-types-images/maui_area_chart.png)
+![Area chart type in .NET MAUI Cartesian Chart](Chart-types-images/maui_area_chart.png)
 
 ## Spline Area Chart
 
-The [SplineAreaSeries](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SplineAreaSeries.html) connects a series of data points using smooth bezier line curves, with the underlying areas filled.
+The [SplineAreaSeries](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SplineAreaSeries.html) connects a series of data points using smooth bezier curves, with the underlying area filled. It supports the same marker and customization options as `AreaSeries`. To change the curve behavior, set the [SplineType](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SplineAreaSeries.html#Syncfusion_Maui_Charts_SplineAreaSeries_SplineType) property (`Natural`, `Cardinal`, `Clamped`, or `Monotonic`). Its default value is `Natural`.
 
 {% tabs %}
 
@@ -93,12 +95,13 @@ The [SplineAreaSeries](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Ma
 {% highlight c# %}
 
 SfCartesianChart chart = new SfCartesianChart();
+
 CategoryAxis primaryAxis = new CategoryAxis();
 chart.XAxes.Add(primaryAxis);
+
 NumericalAxis secondaryAxis = new NumericalAxis();
 chart.YAxes.Add(secondaryAxis);
 
-// Create a SplineAreaSeries for the chart
 SplineAreaSeries series = new SplineAreaSeries()
 {
     ItemsSource = new ViewModel().Data,
@@ -106,7 +109,6 @@ SplineAreaSeries series = new SplineAreaSeries()
     YBindingPath = "Year2010",
 };
 
-// Add the series to the chart's series collection
 chart.Series.Add(series);
 this.Content = chart;
 
@@ -114,21 +116,21 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Spline area chart type in MAUI Chart](Chart-types-images/maui_spline_area_chart.png)
+![Spline area chart type in .NET MAUI Cartesian Chart](Chart-types-images/maui_spline_area_chart.png)
 
 ## Enable Marker
 
-A marker, also known as a symbol, is used to determine or highlight the position of the data point. To enable markers in the series, set the [ShowMarkers](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.AreaSeries.html#Syncfusion_Maui_Toolkit_Charts_AreaSeries_ShowMarkers) property to `true`.
+A marker, also known as a symbol, is used to determine or highlight the position of the data point. To enable markers in the series, set the [ShowMarkers](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.AreaSeries.html#Syncfusion_Maui_Charts_AreaSeries_ShowMarkers) property to `true`.
 
 {% tabs %}
 
 {% highlight xaml %}
 
 <chart:SfCartesianChart>
-    ...
-    <chart:AreaSeries ItemsSource="{Binding Data}" 
-                      XBindingPath="Year"
-                      YBindingPath="Percentage"
+    <!-- code omitted for brevity -->
+    <chart:AreaSeries ItemsSource="{Binding Data}"
+                      XBindingPath="Demand"
+                      YBindingPath="Year2010"
                       ShowMarkers="True"/>
 </chart:SfCartesianChart>
 
@@ -137,17 +139,18 @@ A marker, also known as a symbol, is used to determine or highlight the position
 {% highlight c# %}
 
 SfCartesianChart chart = new SfCartesianChart();
-...
+
+// code omitted for brevity
 AreaSeries series = new AreaSeries()
 {
     ItemsSource = new ViewModel().Data,
-    XBindingPath = "Year",
-    YBindingPath = "Percentage",
-    ShowMarkers = true, // Enable markers on data points for better visibility
- };
+    XBindingPath = "Demand",
+    YBindingPath = "Year2010",
+    ShowMarkers = true,
+};
 
 chart.Series.Add(series);
-this.Content= chart;
+this.Content = chart;
 
 {% endhighlight %}
 
@@ -155,24 +158,24 @@ this.Content= chart;
 
 ### Marker customization
 
-In order to change the series markers appearance, create an instance of the [MarkerSettings](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.AreaSeries.html#Syncfusion_Maui_Toolkit_Charts_AreaSeries_MarkerSettings) property. The following properties are used to customize marker appearance.
+To change the series marker appearance, set the [MarkerSettings](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.AreaSeries.html#Syncfusion_Maui_Charts_AreaSeries_MarkerSettings) property to a new instance of [ChartMarkerSettings](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartMarkerSettings.html). The following properties are used to customize marker appearance.
 
-* [Type](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartMarkerSettings.html#Syncfusion_Maui_Toolkit_Charts_ChartMarkerSettings_Type), of type `ShapeType`, describes the shape of the series marker. The default value of this property is [ShapeType.Circle](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ShapeType.html#Syncfusion_Maui_Toolkit_Charts_ShapeType_Circle).
-* [Stroke](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartMarkerSettings.html#Syncfusion_Maui_Toolkit_Charts_ChartMarkerSettings_Stroke), of type `Brush`, indicates the brush used to paint the marker border.
-* [StrokeWidth](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartMarkerSettings.html#Syncfusion_Maui_Toolkit_Charts_ChartMarkerSettings_StrokeWidth), of type `double`, indicates the width of the marker border.
-* [Fill](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartMarkerSettings.html#Syncfusion_Maui_Toolkit_Charts_ChartMarkerSettings_Fill), of type `Brush`, indicates the color of the marker.
-* [Width](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartMarkerSettings.html#Syncfusion_Maui_Toolkit_Charts_ChartMarkerSettings_Width), of type `double`, indicates the width of the marker.
-* [Height](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartMarkerSettings.html#Syncfusion_Maui_Toolkit_Charts_ChartMarkerSettings_Height), of type `double`, indicates the height of the marker.
+* [Type](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartMarkerSettings.html#Syncfusion_Maui_Charts_ChartMarkerSettings_Type), of type `ShapeType`, describes the shape of the series marker. The default value of this property is [ShapeType.Circle](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ShapeType.html#Syncfusion_Maui_Charts_ShapeType_Circle).
+* [Stroke](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartMarkerSettings.html#Syncfusion_Maui_Charts_ChartMarkerSettings_Stroke), of type `Brush`, indicates the brush used to paint the marker border.
+* [StrokeWidth](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartMarkerSettings.html#Syncfusion_Maui_Charts_ChartMarkerSettings_StrokeWidth), of type `double`, indicates the width of the marker border.
+* [Fill](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartMarkerSettings.html#Syncfusion_Maui_Charts_ChartMarkerSettings_Fill), of type `Brush`, indicates the color of the marker.
+* [Width](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartMarkerSettings.html#Syncfusion_Maui_Charts_ChartMarkerSettings_Width), of type `double`, indicates the width of the marker.
+* [Height](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartMarkerSettings.html#Syncfusion_Maui_Charts_ChartMarkerSettings_Height), of type `double`, indicates the height of the marker.
 
 {% tabs %}
 
 {% highlight xaml %}
 
 <chart:SfCartesianChart>
-    ...
-    <chart:AreaSeries ItemsSource="{Binding Data}" 
-                      XBindingPath="Year"
-                      YBindingPath="Percentage"
+    <!-- code omitted for brevity -->
+    <chart:AreaSeries ItemsSource="{Binding Data}"
+                      XBindingPath="Demand"
+                      YBindingPath="Year2010"
                       ShowMarkers="True">
         <chart:AreaSeries.MarkerSettings>
             <chart:ChartMarkerSettings Type="Diamond"
@@ -190,9 +193,9 @@ In order to change the series markers appearance, create an instance of the [Mar
 {% highlight c# %}
 
 SfCartesianChart chart = new SfCartesianChart();
-...
-// Configure the marker settings for the chart series
-ChartMarkerSettings chartMarker= new ChartMarkerSettings()
+
+// code omitted for brevity
+ChartMarkerSettings chartMarker = new ChartMarkerSettings()
 {
     Type = ShapeType.Diamond,
     Fill = Colors.Brown,
@@ -204,11 +207,11 @@ ChartMarkerSettings chartMarker= new ChartMarkerSettings()
 
 AreaSeries series = new AreaSeries()
 {
-   ItemsSource = new ViewModel().Data,
-   XBindingPath = "Year",
-   YBindingPath = "Percentage",
-   ShowMarkers = true,
-   MarkerSettings = chartMarker // Apply the configured marker settings
+    ItemsSource = new ViewModel().Data,
+    XBindingPath = "Demand",
+    YBindingPath = "Year2010",
+    ShowMarkers = true,
+    MarkerSettings = chartMarker
 };
 
 chart.Series.Add(series);

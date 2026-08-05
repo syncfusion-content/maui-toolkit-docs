@@ -1,20 +1,22 @@
 ---
 layout: post
-title: Fast Line Chart in .NET MAUI Chart control | Syncfusion
-description: Learn here all about the fast line chart and its features in Syncfusion® .NET MAUI Chart (SfCartesianChart) control.
+title: Fast Line Chart in .NET MAUI Cartesian Chart | Syncfusion®
+description: Fast Line Chart in .NET MAUI Cartesian Chart renders large data sets efficiently, delivering high-performance visualization for real-time and continuous data.
 platform: maui-toolkit
 control: SfCartesianChart
 documentation: ug
-Keywords: .net maui fast line chart, .net maui performance line chart, fast line chart customization .net maui, syncfusion maui fast line chart, cartesian fast line chart maui, cartesian performance line chart maui, .net maui chart fast line visualization.
+keywords: .net maui fast line chart, .net maui performance line chart, fast line chart customization .net maui, syncfusion maui fast line chart, cartesian fast line chart maui, cartesian performance line chart maui, .net maui chart fast line visualization.
 ---
 
-# Fast Line Chart in .NET MAUI Chart
+# Fast Line Chart in .NET MAUI Cartesian Chart
 
 ## Fast Line Chart
 
-The [FastLineSeries](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.FastLineSeries.html) is a special kind of line series that can render a collection with large number of datapoints. To render a fast line chart, create an instance of [FastLineSeries](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.FastLineSeries.html), and add it to the [Series](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html#Syncfusion_Maui_Toolkit_Charts_SfCartesianChart_Series) collection property of [SfCartesianChart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html). 
+The [FastLineSeries](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.FastLineSeries.html) is a special kind of line series that can render a collection with a large number of data points. It is optimized for performance when compared to the regular [LineSeries](https://help.syncfusion.com/maui/cartesian-charts/line), making it suitable for large datasets. To render a fast line chart, create an instance of [FastLineSeries](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.FastLineSeries.html) and add it to the [Series](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html#Syncfusion_Maui_Charts_SfCartesianChart_Series) collection property of [SfCartesianChart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html). 
 
-N> The Cartesian chart has [Series](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html#Syncfusion_Maui_Toolkit_Charts_SfCartesianChart_Series) as its default content.
+N> **Prerequisite:** Ensure that the required NuGet package is installed, the necessary namespaces are imported, and the **SfCartesianChart** control is properly configured in your application. For detailed setup and configuration instructions, refer to the **[Getting Started](https://help.syncfusion.com/maui/cartesian-charts/getting-started)** guide.
+
+N> The Cartesian chart has [Series](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html#Syncfusion_Maui_Charts_SfCartesianChart_Series) as its default content.
 
 {% tabs %}
 
@@ -39,12 +41,13 @@ N> The Cartesian chart has [Series](https://help.syncfusion.com/cr/maui-toolkit/
 {% highlight c# %}
 
 SfCartesianChart chart = new SfCartesianChart();
+
 DateTimeAxis primaryAxis = new DateTimeAxis();
 chart.XAxes.Add(primaryAxis);
+
 NumericalAxis secondaryAxis = new NumericalAxis();
 chart.YAxes.Add(secondaryAxis);
 
-// Create a FastLineSeries for the chart
 FastLineSeries series = new FastLineSeries()
 {
     ItemsSource = new ViewModel().Data,
@@ -59,11 +62,11 @@ this.Content = chart;
 
 {% endtabs %}
 
-![FastLine chart type in MAUI Chart](Chart-types-images/maui_fastline_chart.png)
+![Fast line chart type in .NET MAUI Cartesian Chart](Chart-types-images/maui_fastline_chart.png)
 
 ### Dashed line
 
-The [StrokeDashArray](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.FastLineSeries.html#Syncfusion_Maui_Toolkit_Charts_FastLineSeries_StrokeDashArray) property of [FastLineSeries](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.FastLineSeries.html) is used to render the line with dashes. The odd value is considered as the rendering size, while the even value is considered as the gap.
+The [StrokeDashArray](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.FastLineSeries.html#Syncfusion_Maui_Charts_FastLineSeries_StrokeDashArray) property of [FastLineSeries](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.FastLineSeries.html), of type `DoubleCollection`, is used to render the line with dashes. Values at odd indices define the dash length, while values at even indices define the gap.
 
 {% tabs %}
 
@@ -78,7 +81,7 @@ The [StrokeDashArray](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Mau
     </chart:SfCartesianChart.Resources>
 
     <chart:SfCartesianChart.XAxes>
-        <chart:chart:DateTimeAxis/>
+        <chart:DateTimeAxis/>
     </chart:SfCartesianChart.XAxes>
 
     <chart:SfCartesianChart.YAxes>
@@ -96,22 +99,23 @@ The [StrokeDashArray](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Mau
 {% highlight c# %}
 
 SfCartesianChart chart = new SfCartesianChart();
+
 DateTimeAxis primaryAxis = new DateTimeAxis();
 chart.XAxes.Add(primaryAxis);
+
 NumericalAxis secondaryAxis = new NumericalAxis();
 chart.YAxes.Add(secondaryAxis);
 
-// Create a DoubleCollection to define a custom stroke dash pattern for the series line
 DoubleCollection doubleCollection = new DoubleCollection();
 doubleCollection.Add(5);
 doubleCollection.Add(2);
-. . .
+
 FastLineSeries series = new FastLineSeries()
 {
     ItemsSource = new ViewModel().Data,
     XBindingPath = "XValue",
     YBindingPath = "YValue",
-    StrokeDashArray = doubleCollection // Apply the custom stroke dash pattern
+    StrokeDashArray = doubleCollection
 
 };
 
@@ -123,22 +127,22 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Dashed fast line chart in MAUI](Chart-types-images/maui_dashed_fastline_chart.png)
+![Dashed fast line chart in .NET MAUI Cartesian Chart](Chart-types-images/maui_dashed_fastline_chart.png)
 
 ### Anti-aliasing
 
-There may be some jagged lines at the edges. This can be reduced by using the [EnableAntiAliasing](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.FastLineSeries.html#Syncfusion_Maui_Toolkit_Charts_FastLineSeries_EnableAntiAliasing) property.
+There may be some jagged lines at the edges. This can be reduced by using the [EnableAntiAliasing](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.FastLineSeries.html#Syncfusion_Maui_Charts_FastLineSeries_EnableAntiAliasing) property. The default value is `false`. Enabling anti-aliasing improves visual quality but may impact performance with very large datasets.
 
 {% tabs %}
 
 {% highlight xaml %}
 
 <chart:SfCartesianChart>
-    ...
-    <chart:FastLineSeries EnableAntiAliasing="True"
-                          ItemsSource="{Binding Data}"
+    <!-- code omitted for brevity -->
+    <chart:FastLineSeries ItemsSource="{Binding Data}"
                           XBindingPath="XValue"
-                          YBindingPath="YValue"/>
+                          YBindingPath="YValue"
+                          EnableAntiAliasing="True"/>
 </chart:SfCartesianChart>
 
 {% endhighlight %}
@@ -146,13 +150,13 @@ There may be some jagged lines at the edges. This can be reduced by using the [E
 {% highlight c# %}
 
 SfCartesianChart chart = new SfCartesianChart();
-. . .
+// code omitted for brevity
 FastLineSeries series = new FastLineSeries()
 {
     ItemsSource = new ViewModel().Data,
     XBindingPath = "XValue",
     YBindingPath = "YValue",
-    EnableAntiAliasing = true  // Enable anti-aliasing for smoother lines in the chart
+    EnableAntiAliasing = true
 };
 
 chart.Series.Add(series);
