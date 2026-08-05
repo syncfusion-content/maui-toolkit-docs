@@ -10,13 +10,13 @@ keywords: .net maui chart axis line, .net maui chart axis customization, .net ma
 
 # Axis Line in .NET MAUI Cartesian Chart
 
-The axis line in .NET MAUI Cartesian Chart visually represents the axis itself in the chart area. You can customize its appearance, including stroke color, width, and dash patterns, using the [AxisLineStyle](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxis.html#Syncfusion_Maui_Charts_ChartAxis_AxisLineStyle) property. Additionally, you can control the spacing between the axis and the chart area using the [AxisLineOffset](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxis.html#Syncfusion_Maui_Charts_ChartAxis_AxisLineOffset) property.
+The axis line in .NET MAUI Cartesian Chart visually represents the axis itself in the chart area. You can customize its appearance, including stroke color, width, and dash patterns, using the [AxisLineStyle](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxis.html#Syncfusion_Maui_Toolkit_Charts_ChartAxis_AxisLineStyle) property. Additionally, you can control the spacing between the axis and the chart area using the [AxisLineOffset](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxis.html#Syncfusion_Maui_Toolkit_Charts_ChartAxis_AxisLineOffset) property.
 
 N> **Prerequisite:** Ensure that the required NuGet package is installed, the necessary namespaces are imported, and the **Cartesian Chart** control is properly configured in your application. For detailed setup and configuration instructions, refer to the **[Getting Started](https://help.syncfusion.com/maui/cartesian-charts/getting-started)** guide.
 
 ## Customizing axis line style
 
-The [AxisLineStyle](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxis.html#Syncfusion_Maui_Charts_ChartAxis_AxisLineStyle) property allows you to customize the axis line appearance. The [ChartLineStyle](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartLineStyle.html) class provides the following properties:
+The [AxisLineStyle](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxis.html#Syncfusion_Maui_Toolkit_Charts_ChartAxis_AxisLineStyle) property allows you to customize the axis line appearance. The [ChartLineStyle](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartLineStyle.html) class provides the following properties:
 
 * `Stroke` — Sets the color of the axis line.
 * `StrokeWidth` — Sets the width of the axis line in pixels.
@@ -62,7 +62,7 @@ this.Content = chart;
 
 ## Axis line offset
 
-The [AxisLineOffset](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxis.html#Syncfusion_Maui_Charts_ChartAxis_AxisLineOffset) property controls the distance between the axis line and the chart area in device-independent pixels (DIPs). The default value is `0`. A positive value moves the axis line away from the chart area, while a negative value moves it closer.
+The [AxisLineOffset](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxis.html#Syncfusion_Maui_Toolkit_Charts_ChartAxis_AxisLineOffset) property controls the distance between the axis line and the chart area in device-independent pixels (DIPs). The default value is `0`. A positive value moves the axis line away from the chart area, while a negative value moves it closer.
 
 {% tabs %}
 

@@ -12,8 +12,8 @@ keywords: .net maui chart data point collection, get data points by region, sfCa
 
 [CartesianSeries](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.CartesianSeries.html) provides the following methods to get a collection of data under a particular region.
 
-* [`GetDataPoints(Rect rectangle)`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.CartesianSeries.html#Syncfusion_Maui_Charts_CartesianSeries_GetDataPoints_Microsoft_Maui_Graphics_Rect_) - Gets the collection of data that falls inside the given rectangle region.
-* [`GetDataPoints(double startX, double endX, double startY, double endY)`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.CartesianSeries.html#Syncfusion_Maui_Charts_CartesianSeries_GetDataPoints_System_Double_System_Double_System_Double_System_Double_) - Gets the collection of data from the given axis visible range.
+* [`GetDataPoints(Rect rectangle)`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.CartesianSeries.html#Syncfusion_Maui_Toolkit_Charts_CartesianSeries_GetDataPoints_Microsoft_Maui_Graphics_Rect_) - Gets the collection of data that falls inside the given rectangle region.
+* [`GetDataPoints(double startX, double endX, double startY, double endY)`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.CartesianSeries.html#Syncfusion_Maui_Toolkit_Charts_CartesianSeries_GetDataPoints_System_Double_System_Double_System_Double_System_Double_) - Gets the collection of data from the given axis visible range.
 
 N> **Prerequisite:** Ensure that the required NuGet package is installed, the necessary namespaces are imported, and the **SfCartesianChart** control is properly configured in your application. For detailed setup and configuration instructions, refer to the **[Getting Started](https://help.syncfusion.com/maui/cartesian-charts/getting-started)** guide.
 
@@ -31,7 +31,7 @@ List<object> dataPoints = Series.GetDataPoints(startX, endX, startY, endY);
 
 {% endtabs %}
 
-N> You can get the visible plotting region of the series in the chart using the [SeriesBounds](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartBase.html#Syncfusion_Maui_Charts_ChartBase_SeriesBounds) property at runtime.
+N> You can get the visible plotting region of the series in the chart using the [SeriesBounds](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartBase.html#Syncfusion_Maui_Toolkit_Charts_ChartBase_SeriesBounds) property at runtime.
 
 ## See also
 

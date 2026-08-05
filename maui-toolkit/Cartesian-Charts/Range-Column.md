@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Range Column Chart in .NET MAUI Cartesian Chart
-description: Range Column Chart in .NET MAUI Cartesian Chart displays value ranges using vertical columns, making it easy to compare minimum and maximum values.
+title: Range Column Chart in .NET MAUI Cartesian Chart | Syncfusion®
+description: Range Column Chart in .NET MAUI Cartesian Chart displays value ranges using vertical columns, helping compare minimum and maximum values effectively.
 platform: maui-toolkit
 control: SfCartesianChart
 documentation: ug
@@ -16,11 +16,11 @@ Range Column Chart is used to visualize data points with columns, with the heigh
 
 N> **Prerequisite:** Ensure that the required NuGet package is installed, the necessary namespaces are imported, and the **SfCartesianChart** control is properly configured in your application. For detailed setup and configuration instructions, refer to the **[Getting Started](https://help.syncfusion.com/maui/cartesian-charts/getting-started)** guide.
 
-To render a range column chart, create an instance of [RangeColumnSeries](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.RangeColumnSeries.html), and add it to the [Series](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html#Syncfusion_Maui_Charts_SfCartesianChart_Series) collection property of [SfCartesianChart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html).
+To render a range column chart, create an instance of [RangeColumnSeries](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.RangeColumnSeries.html), and add it to the [Series](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html#Syncfusion_Maui_Toolkit_Charts_SfCartesianChart_Series) collection property of [SfCartesianChart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html).
 
 Since the [RangeColumnSeries](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.RangeColumnSeries.html) requires two Y values for each point, your data should contain both the high and low values. These high and low values specify the maximum and minimum ranges of the point.
 
-N> The Cartesian chart has [Series](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html#Syncfusion_Maui_Charts_SfCartesianChart_Series) as its default content.
+N> The Cartesian chart has [Series](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html#Syncfusion_Maui_Toolkit_Charts_SfCartesianChart_Series) as its default content.
 
 {% tabs %}
 
@@ -74,9 +74,9 @@ this.Content = chart;
 
 ## Spacing and Width
 
-The [Spacing](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.RangeColumnSeries.html#Syncfusion_Maui_Charts_RangeColumnSeries_Spacing) property is used to change the spacing between two segments. The default value of spacing is 0, and the value ranges from 0 to 1. Here, 1 and 0 correspond to 100% and 0% of the available space, respectively. 
+The [Spacing](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.RangeColumnSeries.html#Syncfusion_Maui_Toolkit_Charts_RangeColumnSeries_Spacing) property is used to change the spacing between two segments. The default value of spacing is 0, and the value ranges from 0 to 1. Here, 1 and 0 correspond to 100% and 0% of the available space, respectively. 
 
-The [Width](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.RangeColumnSeries.html#Syncfusion_Maui_Charts_RangeColumnSeries_Width) property is used to change the width of the segment. The default value of the width is 0.8, and the value ranges from 0 to 1.
+The [Width](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.RangeColumnSeries.html#Syncfusion_Maui_Toolkit_Charts_RangeColumnSeries_Width) property is used to change the width of the segment. The default value of the width is 0.8, and the value ranges from 0 to 1.
 
 {% tabs %}
 

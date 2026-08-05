@@ -22,7 +22,7 @@ N> **Prerequisite:** Ensure that the required NuGet package is installed, the ne
 
 ## Numerical Axis
 
-[NumericalAxis](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.NumericalAxis.html) is used to plot numerical values on the chart. [NumericalAxis](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.NumericalAxis.html) can be defined for both [XAxes](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html#Syncfusion_Maui_Charts_SfCartesianChart_XAxes) and [YAxes](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html#Syncfusion_Maui_Charts_SfCartesianChart_YAxes).
+[NumericalAxis](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.NumericalAxis.html) is used to plot numerical values on the chart. [NumericalAxis](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.NumericalAxis.html) can be defined for both [XAxes](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html#Syncfusion_Maui_Toolkit_Charts_SfCartesianChart_XAxes) and [YAxes](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html#Syncfusion_Maui_Toolkit_Charts_SfCartesianChart_YAxes).
 
 {% tabs %}
 
@@ -68,7 +68,7 @@ To customize the [NumericalAxis](https://help.syncfusion.com/cr/maui-toolkit/Syn
 
 ### Interval
 
-The axis interval can be customized by using the [Interval](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.NumericalAxis.html#Syncfusion_Maui_Charts_NumericalAxis_Interval) property, of type `double`, with a default value of `double.NaN`. By default, the interval will be calculated based on the minimum and maximum values of the provided data.
+The axis interval can be customized by using the [Interval](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.NumericalAxis.html#Syncfusion_Maui_Toolkit_Charts_NumericalAxis_Interval) property, of type `double`, with a default value of `double.NaN`. By default, the interval will be calculated based on the minimum and maximum values of the provided data.
 
 {% tabs %}
 
@@ -114,7 +114,7 @@ this.Content = chart;
 
 ### Customizing the range
 
-[Maximum](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.NumericalAxis.html#Syncfusion_Maui_Charts_NumericalAxis_Maximum) and [Minimum](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.NumericalAxis.html#Syncfusion_Maui_Charts_NumericalAxis_Minimum) properties of the axis are used for setting the maximum and minimum values of the axis range respectively.
+[Maximum](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.NumericalAxis.html#Syncfusion_Maui_Toolkit_Charts_NumericalAxis_Maximum) and [Minimum](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.NumericalAxis.html#Syncfusion_Maui_Toolkit_Charts_NumericalAxis_Minimum) properties of the axis are used for setting the maximum and minimum values of the axis range respectively.
 
 N> If the minimum or maximum value is set, the other value is calculated by default internally.
 
@@ -191,7 +191,7 @@ To customize the [CategoryAxis](https://help.syncfusion.com/cr/maui-toolkit/Sync
 
 ### Label placement
 
-The [LabelPlacement](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.CategoryAxis.html#Syncfusion_Maui_Charts_CategoryAxis_LabelPlacement) property in [CategoryAxis](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.CategoryAxis.html) is used to place axis labels either on ticks or between ticks. The default value of [LabelPlacement](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.CategoryAxis.html#Syncfusion_Maui_Charts_CategoryAxis_LabelPlacement) is [OnTicks](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.LabelPlacement.html#Syncfusion_Maui_Charts_LabelPlacement_OnTicks).
+The [LabelPlacement](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.CategoryAxis.html#Syncfusion_Maui_Toolkit_Charts_CategoryAxis_LabelPlacement) property in [CategoryAxis](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.CategoryAxis.html) is used to place axis labels either on ticks or between ticks. The default value of [LabelPlacement](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.CategoryAxis.html#Syncfusion_Maui_Toolkit_Charts_CategoryAxis_LabelPlacement) is [OnTicks](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.LabelPlacement.html#Syncfusion_Maui_Toolkit_Charts_LabelPlacement_OnTicks).
 
 {% tabs %}
 
@@ -230,7 +230,7 @@ this.Content = chart;
 
 ### Interval
 
-By default, the [CategoryAxis](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.CategoryAxis.html) labels are displayed at a fixed interval of 1. This can be customized by using the [Interval](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.CategoryAxis.html#Syncfusion_Maui_Charts_CategoryAxis_Interval) property of the axis.
+By default, the [CategoryAxis](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.CategoryAxis.html) labels are displayed at a fixed interval of 1. This can be customized by using the [Interval](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.CategoryAxis.html#Syncfusion_Maui_Toolkit_Charts_CategoryAxis_Interval) property of the axis.
 
 {% tabs %}
 
@@ -269,11 +269,11 @@ this.Content = chart;
 
 ### Indexed category axis
 
-In Cartesian Charts, the [ArrangeByIndex](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.CategoryAxis.html#Syncfusion_Maui_Charts_CategoryAxis_ArrangeByIndex) property is used to determine how the items in a category axis are arranged.
+In Cartesian Charts, the [ArrangeByIndex](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.CategoryAxis.html#Syncfusion_Maui_Toolkit_Charts_CategoryAxis_ArrangeByIndex) property is used to determine how the items in a category axis are arranged.
 
-When [ArrangeByIndex](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.CategoryAxis.html#Syncfusion_Maui_Charts_CategoryAxis_ArrangeByIndex) is set to `true`, the items in the category axis will be arranged according to their index values. Conversely, when set to `false`, the items will be arranged according to their values. By default, [ArrangeByIndex](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.CategoryAxis.html#Syncfusion_Maui_Charts_CategoryAxis_ArrangeByIndex) is `true`.
+When [ArrangeByIndex](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.CategoryAxis.html#Syncfusion_Maui_Toolkit_Charts_CategoryAxis_ArrangeByIndex) is set to `true`, the items in the category axis will be arranged according to their index values. Conversely, when set to `false`, the items will be arranged according to their values. By default, [ArrangeByIndex](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.CategoryAxis.html#Syncfusion_Maui_Toolkit_Charts_CategoryAxis_ArrangeByIndex) is `true`.
 
-The following code illustrates how to define the property [ArrangeByIndex](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.CategoryAxis.html#Syncfusion_Maui_Charts_CategoryAxis_ArrangeByIndex) in chart.
+The following code illustrates how to define the property [ArrangeByIndex](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.CategoryAxis.html#Syncfusion_Maui_Toolkit_Charts_CategoryAxis_ArrangeByIndex) in chart.
 
 {% tabs %}
 
@@ -375,7 +375,7 @@ To customize the [DateTimeAxis](https://help.syncfusion.com/cr/maui-toolkit/Sync
 
 ### Interval
 
-In [DateTimeAxis](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.DateTimeAxis.html), intervals can be customized by using the [Interval](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.DateTimeAxis.html#Syncfusion_Maui_Charts_DateTimeAxis_Interval) and [IntervalType](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.DateTimeAxis.html#Syncfusion_Maui_Charts_DateTimeAxis_IntervalType) properties. For example, setting [Interval](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.DateTimeAxis.html#Syncfusion_Maui_Charts_DateTimeAxis_Interval) as 6 and [IntervalType](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.DateTimeAxis.html#Syncfusion_Maui_Charts_DateTimeAxis_IntervalType) as [Months](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.DateTimeIntervalType.html#Syncfusion_Maui_Charts_DateTimeIntervalType_Months) will consider 6 months as an interval. The default value of the IntervalType is `DateTimeIntervalType.Auto`.
+In [DateTimeAxis](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.DateTimeAxis.html), intervals can be customized by using the [Interval](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.DateTimeAxis.html#Syncfusion_Maui_Toolkit_Charts_DateTimeAxis_Interval) and [IntervalType](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.DateTimeAxis.html#Syncfusion_Maui_Toolkit_Charts_DateTimeAxis_IntervalType) properties. For example, setting [Interval](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.DateTimeAxis.html#Syncfusion_Maui_Toolkit_Charts_DateTimeAxis_Interval) as 6 and [IntervalType](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.DateTimeAxis.html#Syncfusion_Maui_Toolkit_Charts_DateTimeAxis_IntervalType) as [Months](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.DateTimeIntervalType.html#Syncfusion_Maui_Toolkit_Charts_DateTimeIntervalType_Months) will consider 6 months as an interval. The default value of the IntervalType is `DateTimeIntervalType.Auto`.
 
 {% tabs %}
 
@@ -415,7 +415,7 @@ this.Content = chart;
 
 ### Customizing the range
 
-[Minimum](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.DateTimeAxis.html#Syncfusion_Maui_Charts_DateTimeAxis_Minimum) and [Maximum](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.DateTimeAxis.html#Syncfusion_Maui_Charts_DateTimeAxis_Maximum) properties behave the same as in [NumericalAxis](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.NumericalAxis.html); instead of numeric values, `DateTime` values must be used.
+[Minimum](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.DateTimeAxis.html#Syncfusion_Maui_Toolkit_Charts_DateTimeAxis_Minimum) and [Maximum](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.DateTimeAxis.html#Syncfusion_Maui_Toolkit_Charts_DateTimeAxis_Maximum) properties behave the same as in [NumericalAxis](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.NumericalAxis.html); instead of numeric values, `DateTime` values must be used.
 
 {% tabs %}
 
@@ -491,7 +491,7 @@ this.Content = chart;
 
 ### Interval
 
-In [DateTimeCategoryAxis](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.DateTimeCategoryAxis.html), intervals can be customized by using the [Interval](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.DateTimeCategoryAxis.html#Syncfusion_Maui_Charts_DateTimeCategoryAxis_Interval) and [IntervalType](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.DateTimeCategoryAxis.html#Syncfusion_Maui_Charts_DateTimeCategoryAxis_IntervalType) properties, similar to [DateTimeAxis](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.DateTimeAxis.html). For example, setting [Interval](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.DateTimeCategoryAxis.html#Syncfusion_Maui_Charts_DateTimeCategoryAxis_Interval) as 5 and [IntervalType](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.DateTimeCategoryAxis.html#Syncfusion_Maui_Charts_DateTimeCategoryAxis_IntervalType) as [Days](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.DateTimeIntervalType.html#Syncfusion_Maui_Charts_DateTimeIntervalType_Days) will consider 5 days as an interval.
+In [DateTimeCategoryAxis](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.DateTimeCategoryAxis.html), intervals can be customized by using the [Interval](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.DateTimeCategoryAxis.html#Syncfusion_Maui_Toolkit_Charts_DateTimeCategoryAxis_Interval) and [IntervalType](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.DateTimeCategoryAxis.html#Syncfusion_Maui_Toolkit_Charts_DateTimeCategoryAxis_IntervalType) properties, similar to [DateTimeAxis](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.DateTimeAxis.html). For example, setting [Interval](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.DateTimeCategoryAxis.html#Syncfusion_Maui_Toolkit_Charts_DateTimeCategoryAxis_Interval) as 5 and [IntervalType](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.DateTimeCategoryAxis.html#Syncfusion_Maui_Toolkit_Charts_DateTimeCategoryAxis_IntervalType) as [Days](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.DateTimeIntervalType.html#Syncfusion_Maui_Toolkit_Charts_DateTimeIntervalType_Days) will consider 5 days as an interval.
 
 {% tabs %}
 
@@ -572,7 +572,7 @@ To customize the [LogarithmicAxis](https://help.syncfusion.com/cr/maui-toolkit/S
 
 ### Interval
 
-The axis interval can be customized using the [Interval](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.LogarithmicAxis.html#Syncfusion_Maui_Charts_LogarithmicAxis_Interval) property of the axis. By default, the interval will be calculated based on the minimum and maximum values of the provided data. The default value of the interval is `double.NaN`.
+The axis interval can be customized using the [Interval](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.LogarithmicAxis.html#Syncfusion_Maui_Toolkit_Charts_LogarithmicAxis_Interval) property of the axis. By default, the interval will be calculated based on the minimum and maximum values of the provided data. The default value of the interval is `double.NaN`.
 
 {% tabs %}
 
@@ -609,7 +609,7 @@ this.Content = chart;
 
 ### Customizing the range
 
-To customize the range of the log axis, you can use the [Minimum](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.LogarithmicAxis.html#Syncfusion_Maui_Charts_LogarithmicAxis_Minimum) and [Maximum](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.LogarithmicAxis.html#Syncfusion_Maui_Charts_LogarithmicAxis_Maximum) properties of the [LogarithmicAxis](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.LogarithmicAxis.html). By default, an optimal range will be calculated automatically based on the provided data.
+To customize the range of the log axis, you can use the [Minimum](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.LogarithmicAxis.html#Syncfusion_Maui_Toolkit_Charts_LogarithmicAxis_Minimum) and [Maximum](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.LogarithmicAxis.html#Syncfusion_Maui_Toolkit_Charts_LogarithmicAxis_Maximum) properties of the [LogarithmicAxis](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.LogarithmicAxis.html). By default, an optimal range will be calculated automatically based on the provided data.
 
 {% tabs %}
 
@@ -648,7 +648,7 @@ this.Content = chart;
 
 ### Customizing the base
 
-The logarithmic axis base can be customized using the [LogarithmicBase](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.LogarithmicAxis.html#Syncfusion_Maui_Charts_LogarithmicAxis_LogarithmicBase) property, of type `double`, of the axis. By default, the base value is `10`.
+The logarithmic axis base can be customized using the [LogarithmicBase](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.LogarithmicAxis.html#Syncfusion_Maui_Toolkit_Charts_LogarithmicAxis_LogarithmicBase) property, of type `double`, of the axis. By default, the base value is `10`.
 
 {% tabs %}
 
@@ -691,7 +691,7 @@ To customize the [ChartAxis](https://help.syncfusion.com/cr/maui-toolkit/Syncfus
 
 ## Inverse axis
 
-An axis can be inverted by using the [IsInversed](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxis.html#Syncfusion_Maui_Charts_ChartAxis_IsInversed) property. The default value of this property is `false`.
+An axis can be inverted by using the [IsInversed](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxis.html#Syncfusion_Maui_Toolkit_Charts_ChartAxis_IsInversed) property. The default value of this property is `false`.
 
 {% tabs %}
 
@@ -728,7 +728,7 @@ this.Content = chart;
 
 ## Axis visibility
 
-Axis visibility can be controlled using the [IsVisible](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxis.html#Syncfusion_Maui_Charts_ChartAxis_IsVisible) property of the axis. The default value of the [IsVisible](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxis.html#Syncfusion_Maui_Charts_ChartAxis_IsVisible) property is `true`.
+Axis visibility can be controlled using the [IsVisible](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxis.html#Syncfusion_Maui_Toolkit_Charts_ChartAxis_IsVisible) property of the axis. The default value of the [IsVisible](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxis.html#Syncfusion_Maui_Toolkit_Charts_ChartAxis_IsVisible) property is `true`.
 
 {% tabs %}
 
@@ -765,7 +765,7 @@ this.Content = chart;
 
 ## Multiple axes
 
-Cartesian charts provide support to arrange multiple series inside the same chart area with a specified X-axis and Y-axis. There are two properties, [XAxisName](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.CartesianSeries.html#Syncfusion_Maui_Charts_CartesianSeries_XAxisName) and [YAxisName](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.CartesianSeries.html#Syncfusion_Maui_Charts_CartesianSeries_YAxisName), in all the Cartesian series types, which are used to provide multiple axes support. These axes can be arranged in a stacking order or in a side-by-side pattern.
+Cartesian charts provide support to arrange multiple series inside the same chart area with a specified X-axis and Y-axis. There are two properties, [XAxisName](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.CartesianSeries.html#Syncfusion_Maui_Toolkit_Charts_CartesianSeries_XAxisName) and [YAxisName](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.CartesianSeries.html#Syncfusion_Maui_Toolkit_Charts_CartesianSeries_YAxisName), in all the Cartesian series types, which are used to provide multiple axes support. These axes can be arranged in a stacking order or in a side-by-side pattern.
 
 By default, the 0th index value of XAxes and YAxes is used to plot all the series.
 
@@ -847,11 +847,11 @@ this.Content = chart;
 
 ![Multiple axes support in .NET MAUI Cartesian Chart](Axis_images/maui_chart_multiple_axes.png)
 
-In the above image, the [ColumnSeries](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ColumnSeries.html) is plotted based on additional axes of [YAxes](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html#Syncfusion_Maui_Charts_SfCartesianChart_YAxes) collection, and [SplineSeries](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SplineSeries.html) is plotted based on axis of the collection's 0th index.
+In the above image, the [ColumnSeries](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ColumnSeries.html) is plotted based on additional axes of [YAxes](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html#Syncfusion_Maui_Toolkit_Charts_SfCartesianChart_YAxes) collection, and [SplineSeries](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SplineSeries.html) is plotted based on axis of the collection's 0th index.
 
 ## Axis crossing
 
-The chart allows you to customize the origin; by default, the axis will be rendered with (0,0) as the origin in the X and Y axes. An axis can be positioned anywhere in the chart area by using the [CrossesAt](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxis.html#Syncfusion_Maui_Charts_ChartAxis_CrossesAt) property. This property specifies where the horizontal axis crosses the vertical axis, and vice versa. The default value of the CrossesAt property is `double.NaN`.
+The chart allows you to customize the origin; by default, the axis will be rendered with (0,0) as the origin in the X and Y axes. An axis can be positioned anywhere in the chart area by using the [CrossesAt](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxis.html#Syncfusion_Maui_Toolkit_Charts_ChartAxis_CrossesAt) property. This property specifies where the horizontal axis crosses the vertical axis, and vice versa. The default value of the CrossesAt property is `double.NaN`.
 
 {% tabs %}
 
@@ -905,7 +905,7 @@ this.Content = chart;
 
 ### Positioning the axis elements while crossing
 
-The [RenderNextToCrossingValue](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxis.html#Syncfusion_Maui_Charts_ChartAxis_RenderNextToCrossingValue) property is used to determine whether the crossing axis should be placed at the crossing position or not. The default value of the [RenderNextToCrossingValue](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxis.html#Syncfusion_Maui_Charts_ChartAxis_RenderNextToCrossingValue) property is `true`.
+The [RenderNextToCrossingValue](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxis.html#Syncfusion_Maui_Toolkit_Charts_ChartAxis_RenderNextToCrossingValue) property is used to determine whether the crossing axis should be placed at the crossing position or not. The default value of the [RenderNextToCrossingValue](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxis.html#Syncfusion_Maui_Toolkit_Charts_ChartAxis_RenderNextToCrossingValue) property is `true`.
 
 {% tabs %}
 
@@ -990,7 +990,7 @@ this.Content = chart;
 
 ### Opposite side axis with CrossesAt
 
-The chart allows you to position the axis to the opposite position by setting the value as `double.MaxValue` for the [CrossesAt](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxis.html#Syncfusion_Maui_Charts_ChartAxis_CrossesAt) property.
+The chart allows you to position the axis to the opposite position by setting the value as `double.MaxValue` for the [CrossesAt](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxis.html#Syncfusion_Maui_Toolkit_Charts_ChartAxis_CrossesAt) property.
 
 {% tabs %}
 
@@ -1035,12 +1035,12 @@ this.Content = chart;
 
 ### ActualRangeChanged
 
-The [ActualRangeChanged](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxis.html#Syncfusion_Maui_Charts_ChartAxis_ActualRangeChanged) event is triggered when the actual range of the axis is changed. The [ActualRangeChangedEventArgs](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ActualRangeChangedEventArgs.html) contains the following information:
+The [ActualRangeChanged](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxis.html#Syncfusion_Maui_Toolkit_Charts_ChartAxis_ActualRangeChanged) event is triggered when the actual range of the axis is changed. The [ActualRangeChangedEventArgs](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ActualRangeChangedEventArgs.html) contains the following information:
 
-* [ActualMinimum](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ActualRangeChangedEventArgs.html#Syncfusion_Maui_Charts_ActualRangeChangedEventArgs_ActualMinimum) - used to get the actual minimum value of the axis.
-* [ActualMaximum](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ActualRangeChangedEventArgs.html#Syncfusion_Maui_Charts_ActualRangeChangedEventArgs_ActualMaximum) - used to get the actual maximum value of the axis.
+* [ActualMinimum](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ActualRangeChangedEventArgs.html#Syncfusion_Maui_Toolkit_Charts_ActualRangeChangedEventArgs_ActualMinimum) - used to get the actual minimum value of the axis.
+* [ActualMaximum](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ActualRangeChangedEventArgs.html#Syncfusion_Maui_Toolkit_Charts_ActualRangeChangedEventArgs_ActualMaximum) - used to get the actual maximum value of the axis.
 
-N> The actual range is changed by specifying the [ZoomPosition](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxis.html#Syncfusion_Maui_Charts_ChartAxis_ZoomPosition) and [ZoomFactor](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxis.html#Syncfusion_Maui_Charts_ChartAxis_ZoomFactor) properties or zooming the chart interactively.
+N> The actual range is changed by specifying the [ZoomPosition](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxis.html#Syncfusion_Maui_Toolkit_Charts_ChartAxis_ZoomPosition) and [ZoomFactor](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxis.html#Syncfusion_Maui_Toolkit_Charts_ChartAxis_ZoomFactor) properties or zooming the chart interactively.
 
 {% tabs %}
 
@@ -1063,11 +1063,11 @@ private void PrimaryAxis_ActualRangeChanged(object sender, ActualRangeChangedEve
 
 ### LabelCreated
 
-The [LabelCreated](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxis.html#Syncfusion_Maui_Charts_ChartAxis_LabelCreated) event is triggered when the axis label is created. The [ChartAxisLabelEventArgs](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxisLabelEventArgs.html) contains the following information:
+The [LabelCreated](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxis.html#Syncfusion_Maui_Toolkit_Charts_ChartAxis_LabelCreated) event is triggered when the axis label is created. The [ChartAxisLabelEventArgs](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxisLabelEventArgs.html) contains the following information:
 
-* [Label](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxisLabelEventArgs.html#Syncfusion_Maui_Charts_ChartAxisLabelEventArgs_Label) - used to get or set the text of the axis label.
-* [Position](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxisLabelEventArgs.html#Syncfusion_Maui_Charts_ChartAxisLabelEventArgs_Position) - used to get the position of the label.
-* [LabelStyle](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxisLabelEventArgs.html#Syncfusion_Maui_Charts_ChartAxisLabelEventArgs_LabelStyle) - used to customize the appearance of axis labels.
+* [Label](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxisLabelEventArgs.html#Syncfusion_Maui_Toolkit_Charts_ChartAxisLabelEventArgs_Label) - used to get or set the text of the axis label.
+* [Position](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxisLabelEventArgs.html#Syncfusion_Maui_Toolkit_Charts_ChartAxisLabelEventArgs_Position) - used to get the position of the label.
+* [LabelStyle](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxisLabelEventArgs.html#Syncfusion_Maui_Toolkit_Charts_ChartAxisLabelEventArgs_LabelStyle) - used to customize the appearance of axis labels.
 
 {% tabs %}
 

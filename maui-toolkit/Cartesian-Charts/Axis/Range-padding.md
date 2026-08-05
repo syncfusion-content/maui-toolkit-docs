@@ -10,13 +10,13 @@ keywords: .net maui cartesian chart axis range padding, .net maui cartesian char
 
 # Axis Range Padding in .NET MAUI Cartesian Chart
 
-Range padding is used to set the minimum and maximum extremes of the chart axis range by using the [RangePadding](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.NumericalAxis.html#Syncfusion_Maui_Charts_NumericalAxis_RangePadding) property. The [RangePadding](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.RangeAxisBase.html#Syncfusion_Maui_Charts_RangeAxisBase_RangePadding) property, available on axes derived from [RangeAxisBase](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.RangeAxisBase.html) such as [NumericalAxis](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.NumericalAxis.html), [DateTimeAxis](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.DateTimeAxis.html), and [LogarithmicAxis](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.LogarithmicAxis.html), can be used to add padding to the range of the chart axis.
+Range padding is used to set the minimum and maximum extremes of the chart axis range by using the [RangePadding](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.NumericalAxis.html#Syncfusion_Maui_Toolkit_Charts_NumericalAxis_RangePadding) property. The [RangePadding](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.RangeAxisBase.html#Syncfusion_Maui_Toolkit_Charts_RangeAxisBase_RangePadding) property, available on axes derived from [RangeAxisBase](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.RangeAxisBase.html) such as [NumericalAxis](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.NumericalAxis.html), [DateTimeAxis](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.DateTimeAxis.html), and [LogarithmicAxis](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.LogarithmicAxis.html), can be used to add padding to the range of the chart axis.
 
 N> **Prerequisite:** Ensure that the required NuGet package is installed, the necessary namespaces are imported, and the **SfCartesianChart** control is properly configured in your application. For detailed setup and configuration instructions, refer to the **[Getting Started](https://help.syncfusion.com/maui/cartesian-charts/getting-started)** guide.
 
 ## Numerical Range Padding
 
-The [RangePadding](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.NumericalAxis.html#Syncfusion_Maui_Charts_NumericalAxis_RangePadding) property is used to set the numeric range for the axis.
+The [RangePadding](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.NumericalAxis.html#Syncfusion_Maui_Toolkit_Charts_NumericalAxis_RangePadding) property is used to set the numeric range for the axis.
 
 The following [NumericalPadding](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.NumericalPadding.html) values are available for [NumericalAxis](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.NumericalAxis.html) range padding:
 
@@ -30,7 +30,7 @@ The following [NumericalPadding](https://help.syncfusion.com/cr/maui-toolkit/Syn
 * `PrependInterval` - The visible start range will be prepended with an additional interval.
 * `AppendInterval` - The visible end range will be appended with an additional interval.
 
-By default, the [RangePadding](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.NumericalAxis.html#Syncfusion_Maui_Charts_NumericalAxis_RangePadding) value for NumericalAxis is `Auto`.
+By default, the [RangePadding](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.NumericalAxis.html#Syncfusion_Maui_Toolkit_Charts_NumericalAxis_RangePadding) value for NumericalAxis is `Auto`.
 
 ### Additional
 
@@ -168,7 +168,7 @@ The following [DateTimeRangePadding](https://help.syncfusion.com/cr/maui-toolkit
 * `PrependInterval` - The visible start range will be prepended with an additional interval.
 * `AppendInterval` - The visible end range will be appended with an additional interval.
 
-By default, the [RangePadding](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.DateTimeAxis.html#Syncfusion_Maui_Charts_DateTimeAxis_RangePadding) value for the [DateTimeAxis](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.DateTimeAxis.html) is `Auto`.
+By default, the [RangePadding](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.DateTimeAxis.html#Syncfusion_Maui_Toolkit_Charts_DateTimeAxis_RangePadding) value for the [DateTimeAxis](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.DateTimeAxis.html) is `Auto`.
 
 ### Additional
 

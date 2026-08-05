@@ -10,13 +10,13 @@ keywords: .net maui chart axis labels, axis labels customization .net maui, sync
 
 # Axis Labels in .NET MAUI Cartesian Chart
 
-Axis labels display the units, measures, or category values of an axis to help users understand the data. They are generated based on the range and the values bound to [XBindingPath](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartSeries.html#Syncfusion_Maui_Charts_ChartSeries_XBindingPath) or [YBindingPath](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.XYDataSeries.html#Syncfusion_Maui_Charts_XYDataSeries_YBindingPath) properties of the series.
+Axis labels display the units, measures, or category values of an axis to help users understand the data. They are generated based on the range and the values bound to [XBindingPath](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartSeries.html#Syncfusion_Maui_Toolkit_Charts_ChartSeries_XBindingPath) or [YBindingPath](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.XYDataSeries.html#Syncfusion_Maui_Toolkit_Charts_XYDataSeries_YBindingPath) properties of the series.
 
 N> **Prerequisite:** Ensure that the required NuGet package is installed, the necessary namespaces are imported, and the **Cartesian Chart** control is properly configured in your application. For detailed setup and configuration instructions, refer to the **[Getting Started](https://help.syncfusion.com/maui/cartesian-charts/getting-started)** guide.
 
 ## Positioning the labels
 
-The [LabelsPosition](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxis.html#Syncfusion_Maui_Charts_ChartAxis_LabelsPosition) property is used to position the axis labels inside or outside the chart area. The [AxisElementPosition](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.AxisElementPosition.html) enum provides the following values:
+The [LabelsPosition](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxis.html#Syncfusion_Maui_Toolkit_Charts_ChartAxis_LabelsPosition) property is used to position the axis labels inside or outside the chart area. The [AxisElementPosition](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.AxisElementPosition.html) enum provides the following values:
 
 - `Inside` — Positions labels inside the chart area.
 - `Outside` (default) — Positions labels outside the chart area.
@@ -60,7 +60,7 @@ this.Content = chart;
 
 ## Label rotation
 
-The [LabelRotation](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxis.html#Syncfusion_Maui_Charts_ChartAxis_LabelRotation) property defines the rotation angle in degrees for the axis label content.
+The [LabelRotation](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxis.html#Syncfusion_Maui_Toolkit_Charts_ChartAxis_LabelRotation) property defines the rotation angle in degrees for the axis label content.
 
 {% tabs %}
 
@@ -93,7 +93,7 @@ this.Content = chart;
 
 ## Label customization
 
-The [LabelStyle](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxis.html#Syncfusion_Maui_Charts_ChartAxis_LabelStyle) property of the [ChartAxis](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxis.html) class provides options to customize axis labels. The [ChartAxisLabelStyle](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxisLabelStyle.html) class provides the following customization properties:
+The [LabelStyle](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxis.html#Syncfusion_Maui_Toolkit_Charts_ChartAxis_LabelStyle) property of the [ChartAxis](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxis.html) class provides options to customize axis labels. The [ChartAxisLabelStyle](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxisLabelStyle.html) class provides the following customization properties:
 
 **Appearance**
 
@@ -120,7 +120,7 @@ The [LabelStyle](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Too
 
 ## Edge labels drawing mode
 
-The [EdgeLabelsDrawingMode](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxis.html#Syncfusion_Maui_Charts_ChartAxis_EdgeLabelsDrawingMode) property customizes the rendering position of edge labels. The [EdgeLabelsDrawingMode](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.EdgeLabelsDrawingMode.html) enum provides the following values (default is `Shift`):
+The [EdgeLabelsDrawingMode](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxis.html#Syncfusion_Maui_Toolkit_Charts_ChartAxis_EdgeLabelsDrawingMode) property customizes the rendering position of edge labels. The [EdgeLabelsDrawingMode](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.EdgeLabelsDrawingMode.html) enum provides the following values (default is `Shift`):
 
 | Mode | Description |
 |--|--|
@@ -162,7 +162,7 @@ this.Content = chart;
 
 ## Edge labels visibility
 
-The [EdgeLabelsVisibilityMode](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.RangeAxisBase.html#Syncfusion_Maui_Charts_RangeAxisBase_EdgeLabelsVisibilityMode) property controls the visibility of edge labels. The [EdgeLabelsVisibilityMode](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.EdgeLabelsVisibilityMode.html) enum provides the following values:
+The [EdgeLabelsVisibilityMode](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.RangeAxisBase.html#Syncfusion_Maui_Toolkit_Charts_RangeAxisBase_EdgeLabelsVisibilityMode) property controls the visibility of edge labels. The [EdgeLabelsVisibilityMode](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.EdgeLabelsVisibilityMode.html) enum provides the following values:
 
 - `Default` (default) — Displays edge labels based on auto interval calculations.
 - `AlwaysVisible` — Shows edge labels even when the chart is zoomed.
@@ -236,12 +236,12 @@ this.Content = chart;
 
 ## Smart axis labels
 
-Axis labels may overlap based on chart dimensions and label size. The [LabelsIntersectAction](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxis.html#Syncfusion_Maui_Charts_ChartAxis_LabelsIntersectAction) property prevents overlapping. The [AxisLabelsIntersectAction](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.AxisLabelsIntersectAction.html) enum provides the following values (default is `Hide`):
+Axis labels may overlap based on chart dimensions and label size. The [LabelsIntersectAction](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxis.html#Syncfusion_Maui_Toolkit_Charts_ChartAxis_LabelsIntersectAction) property prevents overlapping. The [AxisLabelsIntersectAction](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.AxisLabelsIntersectAction.html) enum provides the following values (default is `Hide`):
 
 - `Hide` — Hides overlapping labels.
 - `MultipleRows` — Arranges overlapping labels in multiple rows.
 - `None` — Displays all labels without any action.
-- `Wrap` — Wraps label text to fit within specified width (requires [MaxWidth](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxisLabelStyle.html#Syncfusion_Maui_Charts_ChartAxisLabelStyle_MaxWidth) property). Alignment can be controlled using [WrappedLabelAlignment](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxisLabelStyle.html#Syncfusion_Maui_Charts_ChartAxisLabelStyle_WrappedLabelAlignment) property.
+- `Wrap` — Wraps label text to fit within specified width (requires [MaxWidth](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxisLabelStyle.html#Syncfusion_Maui_Toolkit_Charts_ChartAxisLabelStyle_MaxWidth) property). Alignment can be controlled using [WrappedLabelAlignment](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxisLabelStyle.html#Syncfusion_Maui_Toolkit_Charts_ChartAxisLabelStyle_WrappedLabelAlignment) property.
 
 {% tabs %}
 
@@ -276,7 +276,7 @@ this.Content = chart;
 
 ## Maximum labels
 
-The [MaximumLabels](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxis.html#Syncfusion_Maui_Charts_ChartAxis_MaximumLabels) property in [ChartAxis](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxis.html) controls the number of axis labels rendered per 100 pixels of axis. By default, 3 labels are displayed per 100 pixels. Set this property to override the default density.
+The [MaximumLabels](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxis.html#Syncfusion_Maui_Toolkit_Charts_ChartAxis_MaximumLabels) property in [ChartAxis](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxis.html) controls the number of axis labels rendered per 100 pixels of axis. By default, 3 labels are displayed per 100 pixels. Set this property to override the default density.
 
 N> `MaximumLabels` only applies during automatic interval calculation and has no effect if the `Interval` property is manually set on the axis.
 
@@ -315,11 +315,11 @@ this.Content = chart;
 
 ### AxisLabelTapped
 
-The [AxisLabelTapped](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html#Syncfusion_Maui_Charts_SfCartesianChart_AxisLabelTapped) event occurs when a user taps on an axis label. The [AxisLabelTappedEventArgs](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.AxisLabelTappedEventArgs.html) class provides the following properties:
+The [AxisLabelTapped](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html#Syncfusion_Maui_Toolkit_Charts_SfCartesianChart_AxisLabelTapped) event occurs when a user taps on an axis label. The [AxisLabelTappedEventArgs](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.AxisLabelTappedEventArgs.html) class provides the following properties:
 
-* [Axis](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.AxisLabelTappedEventArgs.html#Syncfusion_Maui_Charts_AxisLabelTappedEventArgs_Axis) — Gets the associated axis where the label was tapped.
-* [AxisLabel](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.AxisLabelTappedEventArgs.html#Syncfusion_Maui_Charts_AxisLabelTappedEventArgs_AxisLabel) — Gets the [ChartAxisLabel](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxisLabel.html) object containing details about the tapped label.
-* [Position](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.AxisLabelTappedEventArgs.html#Syncfusion_Maui_Charts_AxisLabelTappedEventArgs_Position) — Gets the screen coordinates (X, Y) of the tap location in device-independent pixels.
+* [Axis](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.AxisLabelTappedEventArgs.html#Syncfusion_Maui_Toolkit_Charts_AxisLabelTappedEventArgs_Axis) — Gets the associated axis where the label was tapped.
+* [AxisLabel](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.AxisLabelTappedEventArgs.html#Syncfusion_Maui_Toolkit_Charts_AxisLabelTappedEventArgs_AxisLabel) — Gets the [ChartAxisLabel](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxisLabel.html) object containing details about the tapped label.
+* [Position](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.AxisLabelTappedEventArgs.html#Syncfusion_Maui_Toolkit_Charts_AxisLabelTappedEventArgs_Position) — Gets the screen coordinates (X, Y) of the tap location in device-independent pixels.
 
 {% tabs %}
 

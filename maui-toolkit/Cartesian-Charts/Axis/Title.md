@@ -10,7 +10,7 @@ keywords: .net maui cartesian charts, .net maui axis title, cartesian chart axis
 
 # Axis Title in .NET MAUI Cartesian Chart
 
-The [Title](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxis.html#Syncfusion_Maui_Charts_ChartAxis_Title) property is used to set the title for the chart axis. The axis does not display a title by default.
+The [Title](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxis.html#Syncfusion_Maui_Toolkit_Charts_ChartAxis_Title) property is used to set the title for the chart axis. The axis does not display a title by default.
 
 N> **Prerequisite:** Ensure that the required NuGet package is installed, the necessary namespaces are imported, and the **SfCartesianChart** control is properly configured in your application. For detailed setup and configuration instructions, refer to the **[Getting Started](https://help.syncfusion.com/maui/cartesian-charts/getting-started)** guide.
 
@@ -66,18 +66,18 @@ this.Content = chart;
 
 ## Customization
 
-The [Title](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxis.html#Syncfusion_Maui_Charts_ChartAxis_Title) property accepts a [ChartAxisTitle](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxisTitle.html) object, which provides the following properties to customize the text and font of the axis title:
+The [Title](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxis.html#Syncfusion_Maui_Toolkit_Charts_ChartAxis_Title) property accepts a [ChartAxisTitle](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxisTitle.html) object, which provides the following properties to customize the text and font of the axis title:
 
-* [Text](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxisTitle.html#Syncfusion_Maui_Charts_ChartAxisTitle_Text), of type `string`, sets the title text for the axis.
-* [Background](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxisTitle.html#Syncfusion_Maui_Charts_ChartAxisTitle_Background), of type `Brush`, sets the background color of the title.
-* [CornerRadius](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxisTitle.html#Syncfusion_Maui_Charts_ChartAxisTitle_CornerRadius), of type `Thickness`, defines the rounded corners for the title.
-* [FontAttributes](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxisTitle.html#Syncfusion_Maui_Charts_ChartAxisTitle_FontAttributes), of type `FontAttributes`, sets the font style for the title.
-* [FontFamily](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxisTitle.html#Syncfusion_Maui_Charts_ChartAxisTitle_FontFamily), of type `string`, sets the font family name for the title.
-* [FontSize](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxisTitle.html#Syncfusion_Maui_Charts_ChartAxisTitle_FontSize), of type `double`, sets the font size for the title.
-* [Margin](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxisTitle.html#Syncfusion_Maui_Charts_ChartAxisTitle_Margin), of type `Thickness`, sets the margin of the title to customize its appearance.
-* [Stroke](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxisTitle.html#Syncfusion_Maui_Charts_ChartAxisTitle_Stroke), of type `Brush`, sets the border stroke color of the title.
-* [StrokeWidth](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxisTitle.html#Syncfusion_Maui_Charts_ChartAxisTitle_StrokeWidth), of type `double`, sets the border thickness of the title.
-* [TextColor](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxisTitle.html#Syncfusion_Maui_Charts_ChartAxisTitle_TextColor), of type `Color`, sets the color of the title text.
+* [Text](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxisTitle.html#Syncfusion_Maui_Toolkit_Charts_ChartAxisTitle_Text), of type `string`, sets the title text for the axis.
+* [Background](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxisTitle.html#Syncfusion_Maui_Toolkit_Charts_ChartAxisTitle_Background), of type `Brush`, sets the background color of the title.
+* [CornerRadius](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxisTitle.html#Syncfusion_Maui_Toolkit_Charts_ChartAxisTitle_CornerRadius), of type `Thickness`, defines the rounded corners for the title.
+* [FontAttributes](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxisTitle.html#Syncfusion_Maui_Toolkit_Charts_ChartAxisTitle_FontAttributes), of type `FontAttributes`, sets the font style for the title.
+* [FontFamily](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxisTitle.html#Syncfusion_Maui_Toolkit_Charts_ChartAxisTitle_FontFamily), of type `string`, sets the font family name for the title.
+* [FontSize](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxisTitle.html#Syncfusion_Maui_Toolkit_Charts_ChartAxisTitle_FontSize), of type `double`, sets the font size for the title.
+* [Margin](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxisTitle.html#Syncfusion_Maui_Toolkit_Charts_ChartAxisTitle_Margin), of type `Thickness`, sets the margin of the title to customize its appearance.
+* [Stroke](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxisTitle.html#Syncfusion_Maui_Toolkit_Charts_ChartAxisTitle_Stroke), of type `Brush`, sets the border stroke color of the title.
+* [StrokeWidth](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxisTitle.html#Syncfusion_Maui_Toolkit_Charts_ChartAxisTitle_StrokeWidth), of type `double`, sets the border thickness of the title.
+* [TextColor](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxisTitle.html#Syncfusion_Maui_Toolkit_Charts_ChartAxisTitle_TextColor), of type `Color`, sets the color of the title text.
 
 The following example demonstrates how to customize the appearance of the axis title:
 
@@ -122,7 +122,7 @@ this.Content = chart;
 
 ## Label extent
 
-The [LabelExtent](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxis.html#Syncfusion_Maui_Charts_ChartAxis_LabelExtent) property, of type `double` and measured in pixels (px), allows you to set the gap between the axis labels and the title. The default value is `0`. This is typically used to maintain a fixed gap between the axis labels and the title when the axis values change during live updates.
+The [LabelExtent](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxis.html#Syncfusion_Maui_Toolkit_Charts_ChartAxis_LabelExtent) property, of type `double` and measured in pixels (px), allows you to set the gap between the axis labels and the title. The default value is `0`. This is typically used to maintain a fixed gap between the axis labels and the title when the axis values change during live updates.
 
 {% tabs %}
 

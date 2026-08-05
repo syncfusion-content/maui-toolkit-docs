@@ -12,11 +12,11 @@ keywords: .net maui fast line chart, .net maui performance line chart, fast line
 
 ## Fast Line Chart
 
-The [FastLineSeries](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.FastLineSeries.html) is a special kind of line series that can render a collection with a large number of data points. It is optimized for performance when compared to the regular [LineSeries](https://help.syncfusion.com/maui/cartesian-charts/line), making it suitable for large datasets. To render a fast line chart, create an instance of [FastLineSeries](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.FastLineSeries.html) and add it to the [Series](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html#Syncfusion_Maui_Charts_SfCartesianChart_Series) collection property of [SfCartesianChart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html). 
+The [FastLineSeries](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.FastLineSeries.html) is a special kind of line series that can render a collection with a large number of data points. It is optimized for performance when compared to the regular [LineSeries](https://help.syncfusion.com/maui/cartesian-charts/line), making it suitable for large datasets. To render a fast line chart, create an instance of [FastLineSeries](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.FastLineSeries.html) and add it to the [Series](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html#Syncfusion_Maui_Toolkit_Charts_SfCartesianChart_Series) collection property of [SfCartesianChart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html). 
 
 N> **Prerequisite:** Ensure that the required NuGet package is installed, the necessary namespaces are imported, and the **SfCartesianChart** control is properly configured in your application. For detailed setup and configuration instructions, refer to the **[Getting Started](https://help.syncfusion.com/maui/cartesian-charts/getting-started)** guide.
 
-N> The Cartesian chart has [Series](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html#Syncfusion_Maui_Charts_SfCartesianChart_Series) as its default content.
+N> The Cartesian chart has [Series](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html#Syncfusion_Maui_Toolkit_Charts_SfCartesianChart_Series) as its default content.
 
 {% tabs %}
 
@@ -66,7 +66,7 @@ this.Content = chart;
 
 ### Dashed line
 
-The [StrokeDashArray](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.FastLineSeries.html#Syncfusion_Maui_Charts_FastLineSeries_StrokeDashArray) property of [FastLineSeries](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.FastLineSeries.html), of type `DoubleCollection`, is used to render the line with dashes. Values at odd indices define the dash length, while values at even indices define the gap.
+The [StrokeDashArray](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.FastLineSeries.html#Syncfusion_Maui_Toolkit_Charts_FastLineSeries_StrokeDashArray) property of [FastLineSeries](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.FastLineSeries.html), of type `DoubleCollection`, is used to render the line with dashes. Values at odd indices define the dash length, while values at even indices define the gap.
 
 {% tabs %}
 
@@ -131,7 +131,7 @@ this.Content = chart;
 
 ### Anti-aliasing
 
-There may be some jagged lines at the edges. This can be reduced by using the [EnableAntiAliasing](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.FastLineSeries.html#Syncfusion_Maui_Charts_FastLineSeries_EnableAntiAliasing) property. The default value is `false`. Enabling anti-aliasing improves visual quality but may impact performance with very large datasets.
+There may be some jagged lines at the edges. This can be reduced by using the [EnableAntiAliasing](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.FastLineSeries.html#Syncfusion_Maui_Toolkit_Charts_FastLineSeries_EnableAntiAliasing) property. The default value is `false`. Enabling anti-aliasing improves visual quality but may impact performance with very large datasets.
 
 {% tabs %}
 

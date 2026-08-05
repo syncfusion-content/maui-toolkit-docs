@@ -12,7 +12,7 @@ keywords: .net maui cartesian chart axis padding, .net maui cartesian chart axis
 
 ## PlotOffsetStart
 
-The [PlotOffsetStart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxis.html#Syncfusion_Maui_Charts_ChartAxis_PlotOffsetStart) property, of type `double` and measured in pixels (px), is used to provide padding to the axis at the start position. The default value is `0`. The following code sample demonstrates the padding applied to the start position for both the X and Y axes.
+The [PlotOffsetStart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxis.html#Syncfusion_Maui_Toolkit_Charts_ChartAxis_PlotOffsetStart) property, of type `double` and measured in pixels (px), is used to provide padding to the axis at the start position. The default value is `0`. The following code sample demonstrates the padding applied to the start position for both the X and Y axes.
 
 N> **Prerequisite:** Ensure that the required NuGet package is installed, the necessary namespaces are imported, and the **SfCartesianChart** control is properly configured in your application. For detailed setup and configuration instructions, refer to the **[Getting Started](https://help.syncfusion.com/maui/cartesian-charts/getting-started)** guide.
 
@@ -59,9 +59,9 @@ this.Content = chart;
 
 ## PlotOffsetEnd
 
-The [PlotOffsetEnd](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxis.html#Syncfusion_Maui_Charts_ChartAxis_PlotOffsetEnd) property, of type `double` and measured in pixels (px), is used to provide padding to the axis at the end position. The default value is `0`. The following code sample demonstrates the padding applied to the end position for both the X and Y axes.
+The [PlotOffsetEnd](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxis.html#Syncfusion_Maui_Toolkit_Charts_ChartAxis_PlotOffsetEnd) property, of type `double` and measured in pixels (px), is used to provide padding to the axis at the end position. The default value is `0`. The following code sample demonstrates the padding applied to the end position for both the X and Y axes.
 
-> **NOTE:** `PlotOffsetStart` and `PlotOffsetEnd` set padding at the edges of the plot area; for rounding/spacing of the visible axis range, use the [RangePadding](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.RangeAxisBase.html#Syncfusion_Maui_Charts_RangeAxisBase_RangePadding) property instead.
+> **NOTE:** `PlotOffsetStart` and `PlotOffsetEnd` set padding at the edges of the plot area; for rounding/spacing of the visible axis range, use the [RangePadding](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.RangeAxisBase.html#Syncfusion_Maui_Toolkit_Charts_RangeAxisBase_RangePadding) property instead.
 
 {% tabs %}
 

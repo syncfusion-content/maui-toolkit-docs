@@ -18,7 +18,7 @@ N> **Prerequisite:** Ensure that the required NuGet package is installed, the ne
 
 ## Enable zooming
 
-To enable zooming and panning in the chart, create an instance of [ChartZoomPanBehavior](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartZoomPanBehavior.html) and set it to the [ZoomPanBehavior](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html#Syncfusion_Maui_Charts_SfCartesianChart_ZoomPanBehavior) property of [SfCartesianChart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html).
+To enable zooming and panning in the chart, create an instance of [ChartZoomPanBehavior](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartZoomPanBehavior.html) and set it to the [ZoomPanBehavior](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html#Syncfusion_Maui_Toolkit_Charts_SfCartesianChart_ZoomPanBehavior) property of [SfCartesianChart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html).
 
 {% tabs %}
 
@@ -48,11 +48,11 @@ this.Content = chart;
 
 ## Zooming the plot area
 
-Zooming the plot area can be achieved by pinch zooming, and also using the properties [ZoomFactor](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxis.html#Syncfusion_Maui_Charts_ChartAxis_ZoomFactor) and [ZoomPosition](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxis.html#Syncfusion_Maui_Charts_ChartAxis_ZoomPosition).
+Zooming the plot area can be achieved by pinch zooming, and also using the properties [ZoomFactor](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxis.html#Syncfusion_Maui_Toolkit_Charts_ChartAxis_ZoomFactor) and [ZoomPosition](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxis.html#Syncfusion_Maui_Toolkit_Charts_ChartAxis_ZoomPosition).
 
 ### Pinch zooming
 
-Pinch zooming is enabled by setting the [EnablePinchZooming](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartZoomPanBehavior.html#Syncfusion_Maui_Charts_ChartZoomPanBehavior_EnablePinchZooming) property to `true` as shown in the below code snippet. The default value of this property is `true`.
+Pinch zooming is enabled by setting the [EnablePinchZooming](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartZoomPanBehavior.html#Syncfusion_Maui_Toolkit_Charts_ChartZoomPanBehavior_EnablePinchZooming) property to `true` as shown in the below code snippet. The default value of this property is `true`.
 
 {% tabs %}
 
@@ -86,7 +86,7 @@ this.Content = chart;
 
 ### Directional zooming
 
-The directional zooming feature enhances your zooming experience by allowing you to zoom in and out in a specific direction. This feature is enabled by setting the [EnableDirectionalZooming](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartZoomPanBehavior.html#Syncfusion_Maui_Charts_ChartZoomPanBehavior_EnableDirectionalZooming) property to `true` as shown in the following code sample. The default value of this property is `false`.
+The directional zooming feature enhances your zooming experience by allowing you to zoom in and out in a specific direction. This feature is enabled by setting the [EnableDirectionalZooming](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartZoomPanBehavior.html#Syncfusion_Maui_Toolkit_Charts_ChartZoomPanBehavior_EnableDirectionalZooming) property to `true` as shown in the following code sample. The default value of this property is `false`.
 
 {% tabs %}
 
@@ -119,13 +119,13 @@ this.Content = chart;
 
 {% endtabs %}
 
-T> [EnablePinchZooming](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartZoomPanBehavior.html#Syncfusion_Maui_Charts_ChartZoomPanBehavior_EnablePinchZooming) should be set to `true`, because directional zooming relies on the pinch gesture direction.
+T> [EnablePinchZooming](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartZoomPanBehavior.html#Syncfusion_Maui_Toolkit_Charts_ChartZoomPanBehavior_EnablePinchZooming) should be set to `true`, because directional zooming relies on the pinch gesture direction.
 
 N> The directional zooming feature is not supported on the macOS platform.
 
 ### Zooming by setting ZoomFactor and ZoomPosition
 
-[ZoomFactor](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxis.html#Syncfusion_Maui_Charts_ChartAxis_ZoomFactor), of type `double`, defines the percentage of the visible range from the total range of axis values. The default value is `1` (no zoom). [ZoomPosition](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxis.html#Syncfusion_Maui_Charts_ChartAxis_ZoomPosition), of type `double`, defines the position for the range of values that need to be displayed as a result of [ZoomFactor](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxis.html#Syncfusion_Maui_Charts_ChartAxis_ZoomFactor). The default value is `0`.
+[ZoomFactor](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxis.html#Syncfusion_Maui_Toolkit_Charts_ChartAxis_ZoomFactor), of type `double`, defines the percentage of the visible range from the total range of axis values. The default value is `1` (no zoom). [ZoomPosition](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxis.html#Syncfusion_Maui_Toolkit_Charts_ChartAxis_ZoomPosition), of type `double`, defines the position for the range of values that need to be displayed as a result of [ZoomFactor](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxis.html#Syncfusion_Maui_Toolkit_Charts_ChartAxis_ZoomFactor). The default value is `0`.
 
 {% tabs %}
 
@@ -162,7 +162,7 @@ this.Content = chart;
 
 ## Zooming mode
 
-Zooming can be done both horizontally and vertically. The zooming direction is defined by using the [ZoomMode](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartZoomPanBehavior.html#Syncfusion_Maui_Charts_ChartZoomPanBehavior_ZoomMode) property, which uses the [ZoomMode](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ZoomMode.html) enum with the following values. The default value is `XY`:
+Zooming can be done both horizontally and vertically. The zooming direction is defined by using the [ZoomMode](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartZoomPanBehavior.html#Syncfusion_Maui_Toolkit_Charts_ChartZoomPanBehavior_ZoomMode) property, which uses the [ZoomMode](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ZoomMode.html) enum with the following values. The default value is `XY`:
 
 * `X` - Zooms the chart only along the horizontal (x) axis.
 * `Y` - Zooms the chart only along the vertical (y) axis.
@@ -233,7 +233,7 @@ this.Content = chart;
 
 ## Maximum zoom level
 
-The [MaximumZoomLevel](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartZoomPanBehavior.html#Syncfusion_Maui_Charts_ChartZoomPanBehavior_MaximumZoomLevel), of type `double`, property is used to determine the maximum limit for zooming within the chart. The value represents the maximum magnification factor applied to the visible range (for example, `2` allows zooming in up to twice the default view). Once the zooming operation reaches its limit, further zooming actions are not carried out. The default value of this property is `double.NaN`.
+The [MaximumZoomLevel](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartZoomPanBehavior.html#Syncfusion_Maui_Toolkit_Charts_ChartZoomPanBehavior_MaximumZoomLevel), of type `double`, property is used to determine the maximum limit for zooming within the chart. The value represents the maximum magnification factor applied to the visible range (for example, `2` allows zooming in up to twice the default view). Once the zooming operation reaches its limit, further zooming actions are not carried out. The default value of this property is `double.NaN`.
 
 {% tabs %}
 
@@ -267,7 +267,7 @@ this.Content = chart;
 
 ## Enable panning
 
-The panning feature allows moving the visible area of the chart when it is zoomed in. To enable panning, set the [EnablePanning](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartZoomPanBehavior.html#Syncfusion_Maui_Charts_ChartZoomPanBehavior_EnablePanning) property to `true`. The default value of this property is `true`.
+The panning feature allows moving the visible area of the chart when it is zoomed in. To enable panning, set the [EnablePanning](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartZoomPanBehavior.html#Syncfusion_Maui_Toolkit_Charts_ChartZoomPanBehavior_EnablePanning) property to `true`. The default value of this property is `true`.
 
 {% tabs %}
 
@@ -300,7 +300,7 @@ this.Content = chart;
 
 ## Selection zooming
 
-The selection zooming feature allows users to interactively choose a particular area of the chart and zoom in. By setting the [EnableSelectionZooming](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartZoomPanBehavior.html#Syncfusion_Maui_Charts_ChartZoomPanBehavior_EnableSelectionZooming) property to `true` as shown in the following code sample, you can double-tap and drag to select a range on the chart to be zoomed in. The default value of this property is `false`.
+The selection zooming feature allows users to interactively choose a particular area of the chart and zoom in. By setting the [EnableSelectionZooming](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartZoomPanBehavior.html#Syncfusion_Maui_Toolkit_Charts_ChartZoomPanBehavior_EnableSelectionZooming) property to `true` as shown in the following code sample, you can double-tap and drag to select a range on the chart to be zoomed in. The default value of this property is `false`.
 
 N> To perform selection zooming on a desktop, hold the left mouse button, double-click, and drag. For mobile, hold your finger, double-click, and drag to create a selection rectangle.
 
@@ -338,10 +338,10 @@ chart.ZoomPanBehavior = zooming;
 
 You can customize the selection rectangle using the following properties, of the [ChartZoomPanBehavior](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartZoomPanBehavior.html) class:
 
-* [SelectionRectStrokeWidth](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartZoomPanBehavior.html#Syncfusion_Maui_Charts_ChartZoomPanBehavior_SelectionRectStrokeWidth), of type `double`, describes the stroke width of the selection rectangle.
-* [SelectionRectStroke](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartZoomPanBehavior.html#Syncfusion_Maui_Charts_ChartZoomPanBehavior_SelectionRectStroke), of type `Brush`, describes the stroke color of the selection rectangle.
-* [SelectionRectStrokeDashArray](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartZoomPanBehavior.html#Syncfusion_Maui_Charts_ChartZoomPanBehavior_SelectionRectStrokeDashArray), of type `DoubleCollection`, describes the stroke dashes of the selection rectangle.
-* [SelectionRectFill](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartZoomPanBehavior.html#Syncfusion_Maui_Charts_ChartZoomPanBehavior_SelectionRectFill), of type `Brush`, describes the fill color of the selection rectangle.
+* [SelectionRectStrokeWidth](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartZoomPanBehavior.html#Syncfusion_Maui_Toolkit_Charts_ChartZoomPanBehavior_SelectionRectStrokeWidth), of type `double`, describes the stroke width of the selection rectangle.
+* [SelectionRectStroke](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartZoomPanBehavior.html#Syncfusion_Maui_Toolkit_Charts_ChartZoomPanBehavior_SelectionRectStroke), of type `Brush`, describes the stroke color of the selection rectangle.
+* [SelectionRectStrokeDashArray](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartZoomPanBehavior.html#Syncfusion_Maui_Toolkit_Charts_ChartZoomPanBehavior_SelectionRectStrokeDashArray), of type `DoubleCollection`, describes the stroke dashes of the selection rectangle.
+* [SelectionRectFill](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartZoomPanBehavior.html#Syncfusion_Maui_Toolkit_Charts_ChartZoomPanBehavior_SelectionRectFill), of type `Brush`, describes the fill color of the selection rectangle.
 
 {% tabs %}
 
@@ -383,20 +383,20 @@ this.Content = chart;
 {% endtabs %}
 
 ### Show trackball axis labels
-The selection zooming trackball axis labels are enabled by setting the [ShowTrackballLabel](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxis.html#Syncfusion_Maui_Charts_ChartAxis_ShowTrackballLabel) property to `true`. The default value of the [ShowTrackballLabel](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxis.html#Syncfusion_Maui_Charts_ChartAxis_ShowTrackballLabel) is `false`. The [TrackballLabelStyle](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxis.html#Syncfusion_Maui_Charts_ChartAxis_TrackballLabelStyle) property provides customization options for the trackball axis labels, of the [ChartLabelStyle](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartLabelStyle.html) class:
+The selection zooming trackball axis labels are enabled by setting the [ShowTrackballLabel](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxis.html#Syncfusion_Maui_Toolkit_Charts_ChartAxis_ShowTrackballLabel) property to `true`. The default value of the [ShowTrackballLabel](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxis.html#Syncfusion_Maui_Toolkit_Charts_ChartAxis_ShowTrackballLabel) is `false`. The [TrackballLabelStyle](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxis.html#Syncfusion_Maui_Toolkit_Charts_ChartAxis_TrackballLabelStyle) property provides customization options for the trackball axis labels, of the [ChartLabelStyle](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartLabelStyle.html) class:
 
-* [Background](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartLabelStyle.html#Syncfusion_Maui_Charts_ChartLabelStyle_Background), of type `Brush`, describes the background color of the labels.
-* [CornerRadius](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartLabelStyle.html#Syncfusion_Maui_Charts_ChartLabelStyle_CornerRadius), of type `CornerRadius`, describes the corner radius of the label's border.
-* [FontAttributes](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartLabelStyle.html#Syncfusion_Maui_Charts_ChartLabelStyle_FontAttributes), of type `FontAttributes`, determines the text style.
-* [FontFamily](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartLabelStyle.html#Syncfusion_Maui_Charts_ChartLabelStyle_FontFamily), of type `string`, defines the font family of the label.
-* [FontSize](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartLabelStyle.html#Syncfusion_Maui_Charts_ChartLabelStyle_FontSize), of type `double`, defines the font size of the labels.
-* [Margin](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartLabelStyle.html#Syncfusion_Maui_Charts_ChartLabelStyle_Margin), of type `Thickness`, is used to change the margin of the labels.
-* [Stroke](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartLabelStyle.html#Syncfusion_Maui_Charts_ChartLabelStyle_Stroke), of type `Brush`, describes the border stroke color of the labels.
-* [StrokeWidth](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartLabelStyle.html#Syncfusion_Maui_Charts_ChartLabelStyle_StrokeWidth), of type `double`, defines the border thickness of the label.
-* [TextColor](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartLabelStyle.html#Syncfusion_Maui_Charts_ChartLabelStyle_TextColor), of type `Color`, describes the color of the label's text.
-* [LabelFormat](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartLabelStyle.html#Syncfusion_Maui_Charts_ChartLabelStyle_LabelFormat), of type `string`, defines the label format. This property is used to set a numeric or date-time format for the chart axis label.
+* [Background](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartLabelStyle.html#Syncfusion_Maui_Toolkit_Charts_ChartLabelStyle_Background), of type `Brush`, describes the background color of the labels.
+* [CornerRadius](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartLabelStyle.html#Syncfusion_Maui_Toolkit_Charts_ChartLabelStyle_CornerRadius), of type `CornerRadius`, describes the corner radius of the label's border.
+* [FontAttributes](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartLabelStyle.html#Syncfusion_Maui_Toolkit_Charts_ChartLabelStyle_FontAttributes), of type `FontAttributes`, determines the text style.
+* [FontFamily](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartLabelStyle.html#Syncfusion_Maui_Toolkit_Charts_ChartLabelStyle_FontFamily), of type `string`, defines the font family of the label.
+* [FontSize](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartLabelStyle.html#Syncfusion_Maui_Toolkit_Charts_ChartLabelStyle_FontSize), of type `double`, defines the font size of the labels.
+* [Margin](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartLabelStyle.html#Syncfusion_Maui_Toolkit_Charts_ChartLabelStyle_Margin), of type `Thickness`, is used to change the margin of the labels.
+* [Stroke](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartLabelStyle.html#Syncfusion_Maui_Toolkit_Charts_ChartLabelStyle_Stroke), of type `Brush`, describes the border stroke color of the labels.
+* [StrokeWidth](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartLabelStyle.html#Syncfusion_Maui_Toolkit_Charts_ChartLabelStyle_StrokeWidth), of type `double`, defines the border thickness of the label.
+* [TextColor](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartLabelStyle.html#Syncfusion_Maui_Toolkit_Charts_ChartLabelStyle_TextColor), of type `Color`, describes the color of the label's text.
+* [LabelFormat](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartLabelStyle.html#Syncfusion_Maui_Toolkit_Charts_ChartLabelStyle_LabelFormat), of type `string`, defines the label format. This property is used to set a numeric or date-time format for the chart axis label.
 
-N> If the axis labels in the selection zooming trackball are cropped or hidden, use the [LabelExtent](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxis.html#Syncfusion_Maui_Charts_ChartAxis_LabelExtent) property to extend the space between the axis labels and the axis title accordingly.
+N> If the axis labels in the selection zooming trackball are cropped or hidden, use the [LabelExtent](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxis.html#Syncfusion_Maui_Toolkit_Charts_ChartAxis_LabelExtent) property to extend the space between the axis labels and the axis title accordingly.
 
 The following code sample illustrates how to enable axis trackball labels during selection zooming.
 
@@ -473,66 +473,66 @@ this.Content = chart;
 
 ### ZoomStart
 
-The [ZoomStart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html#Syncfusion_Maui_Charts_SfCartesianChart_ZoomStart) event is triggered when the user initiates a zoom action by using a pinch gesture on the chart. This event can be canceled, allowing its action to be interrupted or stopped.
+The [ZoomStart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html#Syncfusion_Maui_Toolkit_Charts_SfCartesianChart_ZoomStart) event is triggered when the user initiates a zoom action by using a pinch gesture on the chart. This event can be canceled, allowing its action to be interrupted or stopped.
 
-* [Axis](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartZoomEventArgs.html#Syncfusion_Maui_Charts_ChartZoomEventArgs_Axis) - The ZoomStart event will be triggered for all the axes within the chart.
-* [CurrentZoomFactor](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartZoomEventArgs.html#Syncfusion_Maui_Charts_ChartZoomEventArgs_CurrentZoomFactor) - Used to get the updated zoom factor of the corresponding axis.
-* [CurrentZoomPosition](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartZoomEventArgs.html#Syncfusion_Maui_Charts_ChartZoomEventArgs_CurrentZoomPosition) - Used to get the updated zoom position of the corresponding axis.
-* [Cancel](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartZoomStartEventArgs.html#Syncfusion_Maui_Charts_ChartZoomStartEventArgs_Cancel) - Used to determine the value indicating whether the zooming process should be cancelled.
+* [Axis](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartZoomEventArgs.html#Syncfusion_Maui_Toolkit_Charts_ChartZoomEventArgs_Axis) - The ZoomStart event will be triggered for all the axes within the chart.
+* [CurrentZoomFactor](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartZoomEventArgs.html#Syncfusion_Maui_Toolkit_Charts_ChartZoomEventArgs_CurrentZoomFactor) - Used to get the updated zoom factor of the corresponding axis.
+* [CurrentZoomPosition](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartZoomEventArgs.html#Syncfusion_Maui_Toolkit_Charts_ChartZoomEventArgs_CurrentZoomPosition) - Used to get the updated zoom position of the corresponding axis.
+* [Cancel](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartZoomStartEventArgs.html#Syncfusion_Maui_Toolkit_Charts_ChartZoomStartEventArgs_Cancel) - Used to determine the value indicating whether the zooming process should be cancelled.
 
 ### ZoomDelta
 
-The [ZoomDelta](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html#Syncfusion_Maui_Charts_SfCartesianChart_ZoomDelta) event is activated during the zooming process, and it is a cancelable event.
+The [ZoomDelta](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html#Syncfusion_Maui_Toolkit_Charts_SfCartesianChart_ZoomDelta) event is activated during the zooming process, and it is a cancelable event.
 
-* [Axis](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartZoomEventArgs.html#Syncfusion_Maui_Charts_ChartZoomEventArgs_Axis) - The ZoomDelta event will be triggered for all the axes within the chart.
-* [PreviousZoomFactor](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartZoomDeltaEventArgs.html#Syncfusion_Maui_Charts_ChartZoomDeltaEventArgs_PreviousZoomFactor) - Used to get the previous zoom factor of the axis.
-* [PreviousZoomPosition](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartZoomDeltaEventArgs.html#Syncfusion_Maui_Charts_ChartZoomDeltaEventArgs_PreviousZoomPosition) - Used to get the previous zoom position of the axis.
-* [CurrentZoomFactor](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartZoomEventArgs.html#Syncfusion_Maui_Charts_ChartZoomEventArgs_CurrentZoomFactor) - Used to get the current zoom factor of the axis.
-* [CurrentZoomPosition](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartZoomEventArgs.html#Syncfusion_Maui_Charts_ChartZoomEventArgs_CurrentZoomPosition) - Used to get the current zoom position of the axis.
-* [Cancel](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartZoomDeltaEventArgs.html#Syncfusion_Maui_Charts_ChartZoomDeltaEventArgs_Cancel) - Used to determine the value indicating whether the zooming process should be cancelled.
+* [Axis](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartZoomEventArgs.html#Syncfusion_Maui_Toolkit_Charts_ChartZoomEventArgs_Axis) - The ZoomDelta event will be triggered for all the axes within the chart.
+* [PreviousZoomFactor](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartZoomDeltaEventArgs.html#Syncfusion_Maui_Toolkit_Charts_ChartZoomDeltaEventArgs_PreviousZoomFactor) - Used to get the previous zoom factor of the axis.
+* [PreviousZoomPosition](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartZoomDeltaEventArgs.html#Syncfusion_Maui_Toolkit_Charts_ChartZoomDeltaEventArgs_PreviousZoomPosition) - Used to get the previous zoom position of the axis.
+* [CurrentZoomFactor](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartZoomEventArgs.html#Syncfusion_Maui_Toolkit_Charts_ChartZoomEventArgs_CurrentZoomFactor) - Used to get the current zoom factor of the axis.
+* [CurrentZoomPosition](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartZoomEventArgs.html#Syncfusion_Maui_Toolkit_Charts_ChartZoomEventArgs_CurrentZoomPosition) - Used to get the current zoom position of the axis.
+* [Cancel](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartZoomDeltaEventArgs.html#Syncfusion_Maui_Toolkit_Charts_ChartZoomDeltaEventArgs_Cancel) - Used to determine the value indicating whether the zooming process should be cancelled.
 
 ### ZoomEnd
 
-The [ZoomEnd](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html#Syncfusion_Maui_Charts_SfCartesianChart_ZoomEnd) event is triggered once the zooming action finishes.
+The [ZoomEnd](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html#Syncfusion_Maui_Toolkit_Charts_SfCartesianChart_ZoomEnd) event is triggered once the zooming action finishes.
 
-* [Axis](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartZoomEventArgs.html#Syncfusion_Maui_Charts_ChartZoomEventArgs_Axis) - The ZoomEnd event will be triggered for all the axes within the chart.
-* [CurrentZoomFactor](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartZoomEventArgs.html#Syncfusion_Maui_Charts_ChartZoomEventArgs_CurrentZoomFactor) - Used to get the zoom factor after zooming process.
-* [CurrentZoomPosition](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartZoomEventArgs.html#Syncfusion_Maui_Charts_ChartZoomEventArgs_CurrentZoomPosition) - Used to get the zoom position after zooming process.
+* [Axis](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartZoomEventArgs.html#Syncfusion_Maui_Toolkit_Charts_ChartZoomEventArgs_Axis) - The ZoomEnd event will be triggered for all the axes within the chart.
+* [CurrentZoomFactor](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartZoomEventArgs.html#Syncfusion_Maui_Toolkit_Charts_ChartZoomEventArgs_CurrentZoomFactor) - Used to get the zoom factor after zooming process.
+* [CurrentZoomPosition](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartZoomEventArgs.html#Syncfusion_Maui_Toolkit_Charts_ChartZoomEventArgs_CurrentZoomPosition) - Used to get the zoom position after zooming process.
 
 ### SelectionZoomStart
 
-The [SelectionZoomStart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html#Syncfusion_Maui_Charts_SfCartesianChart_SelectionZoomStart) event is triggered when the user begins box selection zooming.
+The [SelectionZoomStart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html#Syncfusion_Maui_Toolkit_Charts_SfCartesianChart_SelectionZoomStart) event is triggered when the user begins box selection zooming.
 
-* [ZoomRect](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartSelectionZoomEventArgs.html#Syncfusion_Maui_Charts_ChartSelectionZoomEventArgs_ZoomRect) - Used to get the initial bounds of the box selection. 
+* [ZoomRect](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartSelectionZoomEventArgs.html#Syncfusion_Maui_Toolkit_Charts_ChartSelectionZoomEventArgs_ZoomRect) - Used to get the initial bounds of the box selection. 
 
 ### SelectionZoomDelta
 
-The [SelectionZoomDelta](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html#Syncfusion_Maui_Charts_SfCartesianChart_SelectionZoomDelta) event is activated during the process of selecting a region for zooming, and it is a cancelable event.
+The [SelectionZoomDelta](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html#Syncfusion_Maui_Toolkit_Charts_SfCartesianChart_SelectionZoomDelta) event is activated during the process of selecting a region for zooming, and it is a cancelable event.
 
-* [ZoomRect](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartSelectionZoomEventArgs.html#Syncfusion_Maui_Charts_ChartSelectionZoomEventArgs_ZoomRect) - Contains the bounds of the currently selected region.
-* [Cancel](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartSelectionZoomDeltaEventArgs.html#Syncfusion_Maui_Charts_ChartSelectionZoomDeltaEventArgs_Cancel) - Used to set the value indicating whether the box selection zooming process should be cancelled.
+* [ZoomRect](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartSelectionZoomEventArgs.html#Syncfusion_Maui_Toolkit_Charts_ChartSelectionZoomEventArgs_ZoomRect) - Contains the bounds of the currently selected region.
+* [Cancel](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartSelectionZoomDeltaEventArgs.html#Syncfusion_Maui_Toolkit_Charts_ChartSelectionZoomDeltaEventArgs_Cancel) - Used to set the value indicating whether the box selection zooming process should be cancelled.
 
 ### SelectionZoomEnd
 
-The [SelectionZoomEnd](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html#Syncfusion_Maui_Charts_SfCartesianChart_SelectionZoomEnd) event is triggered after the selection zooming ends.
+The [SelectionZoomEnd](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html#Syncfusion_Maui_Toolkit_Charts_SfCartesianChart_SelectionZoomEnd) event is triggered after the selection zooming ends.
 
-* [ZoomRect](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartSelectionZoomEventArgs.html#Syncfusion_Maui_Charts_ChartSelectionZoomEventArgs_ZoomRect) - Used to obtain the final bounds of the zoomed region.
+* [ZoomRect](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartSelectionZoomEventArgs.html#Syncfusion_Maui_Toolkit_Charts_ChartSelectionZoomEventArgs_ZoomRect) - Used to obtain the final bounds of the zoomed region.
 
 ### Scroll
 
-The [Scroll](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html#Syncfusion_Maui_Charts_SfCartesianChart_Scroll) event is triggered during panning, and it is a cancelable event.
+The [Scroll](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html#Syncfusion_Maui_Toolkit_Charts_SfCartesianChart_Scroll) event is triggered during panning, and it is a cancelable event.
 
-* [Axis](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartScrollEventArgs.html#Syncfusion_Maui_Charts_ChartScrollEventArgs_Axis) - The event will be triggered for all the axes within the chart.
-* [ZoomPosition](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartScrollEventArgs.html#Syncfusion_Maui_Charts_ChartScrollEventArgs_ZoomPosition) - Gets the current zoom position of the axis.
-* [Cancel](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartScrollEventArgs.html#Syncfusion_Maui_Charts_ChartScrollEventArgs_Cancel) - Used to indicate whether the scrolling should be cancelled.
+* [Axis](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartScrollEventArgs.html#Syncfusion_Maui_Toolkit_Charts_ChartScrollEventArgs_Axis) - The event will be triggered for all the axes within the chart.
+* [ZoomPosition](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartScrollEventArgs.html#Syncfusion_Maui_Toolkit_Charts_ChartScrollEventArgs_ZoomPosition) - Gets the current zoom position of the axis.
+* [Cancel](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartScrollEventArgs.html#Syncfusion_Maui_Toolkit_Charts_ChartScrollEventArgs_Cancel) - Used to indicate whether the scrolling should be cancelled.
 
 ### ResetZoom
 
-The [ResetZoom](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html#Syncfusion_Maui_Charts_SfCartesianChart_ResetZoom) event is triggered after the chart is reset by double-tapping.
+The [ResetZoom](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html#Syncfusion_Maui_Toolkit_Charts_SfCartesianChart_ResetZoom) event is triggered after the chart is reset by double-tapping.
 
-* [Axis](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartResetZoomEventArgs.html#Syncfusion_Maui_Charts_ChartResetZoomEventArgs_Axis) - The event will be triggered for all the axes within the chart.
-* [PreviousZoomFactor](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartResetZoomEventArgs.html#Syncfusion_Maui_Charts_ChartResetZoomEventArgs_PreviousZoomFactor) - Used to get the previous zoom factor of the axis.
-* [PreviousZoomPosition](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartResetZoomEventArgs.html#Syncfusion_Maui_Charts_ChartResetZoomEventArgs_PreviousZoomPosition) - Used to get the previous zoom position of the axis.
+* [Axis](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartResetZoomEventArgs.html#Syncfusion_Maui_Toolkit_Charts_ChartResetZoomEventArgs_Axis) - The event will be triggered for all the axes within the chart.
+* [PreviousZoomFactor](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartResetZoomEventArgs.html#Syncfusion_Maui_Toolkit_Charts_ChartResetZoomEventArgs_PreviousZoomFactor) - Used to get the previous zoom factor of the axis.
+* [PreviousZoomPosition](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartResetZoomEventArgs.html#Syncfusion_Maui_Toolkit_Charts_ChartResetZoomEventArgs_PreviousZoomPosition) - Used to get the previous zoom position of the axis.
 
 The following code sample illustrates how to subscribe to the zoom and selection zoom events.
 

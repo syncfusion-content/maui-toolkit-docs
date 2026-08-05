@@ -16,9 +16,9 @@ N> **Prerequisite:** Ensure that the required NuGet package is installed, the ne
 
 ## Step Line Chart
 
-To render the Step line chart, create an instance of the [StepLineSeries](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.StepLineSeries.html) and add it to the [Series](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html#Syncfusion_Maui_Charts_SfCartesianChart_Series) collection property of the [SfCartesianChart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html).
+To render the Step line chart, create an instance of the [StepLineSeries](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.StepLineSeries.html) and add it to the [Series](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html#Syncfusion_Maui_Toolkit_Charts_SfCartesianChart_Series) collection property of the [SfCartesianChart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html).
 
-N> The Cartesian chart has [Series](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html#Syncfusion_Maui_Charts_SfCartesianChart_Series) as its default content.
+N> The Cartesian chart has [Series](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html#Syncfusion_Maui_Toolkit_Charts_SfCartesianChart_Series) as its default content.
 
 {% tabs %}
 
@@ -44,7 +44,7 @@ N> The Cartesian chart has [Series](https://help.syncfusion.com/cr/maui-toolkit/
 
 </chart:SfCartesianChart>
 
-{% endhighlight xaml %}
+{% endhighlight %}
 
 {% highlight c# %}
 
@@ -72,7 +72,7 @@ chart.Series.Add(series1);
 chart.Series.Add(series2);
 this.Content = chart;
 
-{% endhighlight c# %}
+{% endhighlight %}
 
 {% endtabs %}
 
@@ -80,7 +80,7 @@ this.Content = chart;
 
 ## Dashed Step Line Chart
 
-The [StrokeDashArray](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.LineSeries.html#Syncfusion_Maui_Charts_LineSeries_StrokeDashArray) property of the [StepLineSeries](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.StepLineSeries.html) is used to render the Step line series with dashes. Values at odd indices define the dash length, while values at even indices define the gap.
+The [StrokeDashArray](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.LineSeries.html#Syncfusion_Maui_Toolkit_Charts_LineSeries_StrokeDashArray) property of the [StepLineSeries](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.StepLineSeries.html) is used to render the Step line series with dashes. Values at odd indices define the dash length, while values at even indices define the gap.
 
 {% tabs %}
 
@@ -110,7 +110,7 @@ The [StrokeDashArray](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Mau
 
 </chart:SfCartesianChart>
 
-{% endhighlight xaml %}
+{% endhighlight %}
 
 {% highlight c# %}
 
@@ -137,7 +137,7 @@ StepLineSeries steplineSeries = new StepLineSeries()
 chart.Series.Add(steplineSeries);
 this.Content = chart;
 
-{% endhighlight c# %}
+{% endhighlight %}
 
 {% endtabs %}
 
@@ -145,7 +145,7 @@ this.Content = chart;
 
 ## Vertical Step Line Chart 
 
-The [IsTransposed](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html#Syncfusion_Maui_Charts_SfCartesianChart_IsTransposedProperty) property of the [SfCartesianChart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html) is used to render the Step line series vertically. To enable the Step line series vertically, set the IsTransposed property to true.
+The [IsTransposed](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html#Syncfusion_Maui_Toolkit_Charts_SfCartesianChart_IsTransposedProperty) property of the [SfCartesianChart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html) is used to render the Step line series vertically. To enable the Step line series vertically, set the IsTransposed property to true.
 
 {% tabs %}
 
@@ -171,7 +171,7 @@ The [IsTransposed](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.T
 
 </chart:SfCartesianChart>
 
-{% endhighlight xaml %}
+{% endhighlight %}
 
 {% highlight c# %}
 
@@ -203,7 +203,7 @@ chart.Series.Add(steplineSeries);
 chart.Series.Add(steplineSeries1);
 this.Content = chart;
 
-{% endhighlight c# %}
+{% endhighlight %}
 
 {% endtabs %}
 
