@@ -1,13 +1,15 @@
 ---
 layout: post
 title: About .NET MAUI Spark Chart Control | Syncfusion
-description: Learn here all about introduction of Syncfusion® .NET MAUI Chart(SfSparkChart) control with key features and more
+description: Learn here all about introduction of Syncfusion® .NET MAUI Spark Chart (SfSparkChart) control with key features and more.
 platform: maui-toolkit
 control: SfSparkChart
 documentation: ug
 ---
 
-# Overview of .NET MAUI Spark Chart
+# Overview of .NET MAUI Spark Charts
+
+N> **Prerequisite:** Ensure that the required NuGet package is installed, the necessary namespaces are imported, and the **Spark Charts** control is properly configured in your application. For detailed setup and configuration instructions, refer to the **[Getting Started](https://help.syncfusion.com/maui-toolkit/spark-charts/getting-started)** guide.
 
 The Syncfusion® .NET MAUI Spark Chart ([`SfSparkChart`](https://www.syncfusion.com/maui-controls/maui-spark-charts)) control is used to visualize data trends in a compact and lightweight format. It is ideal for displaying quick insights within limited space, such as dashboards, grids, and summary views in .NET MAUI applications.
 
@@ -16,22 +18,22 @@ The Syncfusion® .NET MAUI Spark Chart ([`SfSparkChart`](https://www.syncfusion.
 - Dashboard applications that display quick data insights and trends within compact UI components.  
 - Financial applications that visualize stock movements or performance trends in small spaces.  
 - Data grids and reports that require embedded charts alongside tabular data.  
-- Business applications that provide summary-level analytics with minimal screen usage.  
+- Business applications that provide summary-level analytics with minimal screen usage.
 
 ## Key features
 
-- **Data binding support** allows binding to collections such as ObservableCollection, List, or any IEnumerable source.  
+- **Data binding support** allows binding to collections such as ObservableCollection, List, or any `IEnumerable` source.  
 - **Multiple chart type support** allows visualizing data using line, area, column, and win-loss chart styles.  
 - **Marker support** allows highlighting individual data points for better visibility in line and area charts.  
 - **Data point styling support** allows customizing first, last, high, low, and negative values using distinct colors.  
-- **Compact visualization support** allows representing trends clearly within limited space without clutter.  
+- **Compact visualization support** allows representing trends clearly within limited space without clutter.
 
 ## Globalization
 
-The following table summarizes the globalization support available in this control.
+The following table summarizes the per-feature globalization support available in this control.
 
 <style>
-.img{
+.globalization-table img{
   margin:0 !important;
 }
 
@@ -62,7 +64,7 @@ The following table summarizes the globalization support available in this contr
 
 </div>
 
-<table>
+<table class="globalization-table">
 <tr>
 <th align="center">Control</th>
 <th align="center">Localization</th>
@@ -85,13 +87,13 @@ The following table summarizes the globalization support available in this contr
 
 - [Cartesian Charts](https://help.syncfusion.com/maui-toolkit/cartesian-charts/overview) for visualizing detailed data trends using full-featured charts.  
 - [Circular Charts](https://help.syncfusion.com/maui-toolkit/circular-charts/overview) for representing proportional data such as pie and doughnut charts.  
-- [Pyramid Charts](https://help.syncfusion.com/maui-toolkit/pyramid-charts/overview) for showing hierarchical or comparative data across levels.  
+- [Pyramid Charts](https://help.syncfusion.com/maui-toolkit/pyramid-charts/overview) for showing hierarchical or comparative data across levels.
 
 ## See Also
 
-- [Getting Started](https://help.syncfusion.com/maui-toolkit/spark-charts/getting-started) shows a step‑by‑step guide to begin using the SparkChart control.  
+- [Getting Started](https://help.syncfusion.com/maui-toolkit/spark-charts/getting-started) shows a step‑by‑step guide to begin using the Spark Charts control.  
 - [Chart Types](https://help.syncfusion.com/maui-toolkit/spark-charts/sparkchart-types) explains the different chart types available.  
-- [Customization](https://help.syncfusion.com/maui-toolkit/spark-charts/appearance) describes how to adjust appearance and behavior. 
+- [Customize data points](https://help.syncfusion.com/maui-toolkit/spark-charts/appearance) describes how to adjust appearance and behavior.
 
 ## Resources
 
@@ -221,7 +223,7 @@ The following table summarizes the globalization support available in this contr
 
 <div style="display:flex; flex-wrap:wrap; gap:20px; margin-top:20px;">
 <!-- Card 1 -->
-<div class="form-card" target="_blank">
+<div class="form-card">
   <div class="form-content">
 <div class="card-header">
     <div class="icon-circle">
@@ -230,14 +232,14 @@ The following table summarizes the globalization support available in this contr
     <h3 class="form-title">Feature Tour</h3>
 </div>
 <div class="form-description">Get a quick overview of key features and capabilities to kick start your journey.</div>
-<a href="https://www.syncfusion.com/maui-controls/maui-spark-charts" class="explore-link">
+<a href="https://www.syncfusion.com/maui-controls/maui-spark-charts" class="explore-link" target="_blank">
 Explore Features
   <span class="card-icon card-arrow"></span>
 </a>
   </div>
 </div>
 <!-- Card 2 -->
-<div class="form-card" target="_blank">
+<div class="form-card">
   <div class="form-content">
   <div class="card-header">
     <div class="icon-circle">
@@ -246,14 +248,14 @@ Explore Features
     <h3 class="form-title">Showcase Samples</h3>
 </div>
     <div class="form-description">Explore real-world sample apps to see components in action and learn by example.</div>
-    <a href="https://github.com/syncfusion/maui-demos/tree/master/MAUI" class="explore-link">
+    <a href="https://github.com/syncfusion/maui-demos/tree/master/MAUI" class="explore-link" target="_blank">
     View Samples
   <span class="card-icon card-arrow"></span>
 </a>
   </div>
 </div>
 <!-- Card 3 -->
-<div class="form-card" target="_blank">
+<div class="form-card">
   <div class="form-content">
   <div class="card-header">
     <div class="icon-circle">
@@ -264,14 +266,14 @@ Explore Features
     <div class="form-description">
       Watch step‑by‑step video guides to quickly understand concepts and implementation.
     </div>
-    <a href="https://www.syncfusion.com/tutorial-videos/maui/spark-chart" class="explore-link">
-    Watch now
+    <a href="https://www.syncfusion.com/tutorial-videos/maui/spark-chart" class="explore-link" target="_blank">
+    Watch Now
   <span class="card-icon card-arrow"></span>
 </a>
   </div>
 </div>
 <!-- Card 4 -->
-<div class="form-card" target="_blank">
+<div class="form-card">
   <div class="form-content">
    <div class="card-header">
     <div class="icon-circle">
@@ -282,14 +284,14 @@ Explore Features
     <div class="form-description">
        Find practical solutions, troubleshooting tips and how‑to guides for common scenarios.
     </div>
-    <a href="https://support.syncfusion.com/kb/cross-platforms/section/2353" class="explore-link">
-Search KB's
+    <a href="https://support.syncfusion.com/kb/cross-platforms/section/2353" class="explore-link" target="_blank">
+Search KBs
   <span class="card-icon card-arrow"></span>
 </a>
   </div>
 </div>
 <!-- Card 5 -->
-<div class="form-card" target="_blank">
+<div class="form-card">
   <div class="form-content">
    <div class="card-header">
     <div class="icon-circle">
@@ -300,7 +302,7 @@ Search KB's
     <div class="form-description">
       Discover in‑depth articles, use cases and expert insights from our developers.
     </div>
-    <a href="https://www.syncfusion.com/blogs/category/net-maui" class="explore-link">
+    <a href="https://www.syncfusion.com/blogs/category/net-maui" class="explore-link" target="_blank">
 Read Blogs
   <span class="card-icon card-arrow"></span>
 </a>

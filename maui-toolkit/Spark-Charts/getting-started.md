@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with .NET MAUI Spark Chart control | Syncfusion
-description: Learn here all about getting started with Syncfusion® .NET MAUI Chart (SfSparkChart) control, its elements, and more.
+description: Learn here all about getting started with Syncfusion® .NET MAUI Spark Chart (SfSparkChart) control, its elements, and more.
 platform: maui-toolkit
 control: SfSparkChart
 documentation: ug
@@ -25,11 +25,11 @@ Before proceeding, ensure the following are set up:
 
 1. Go to **File > New > Project** and choose the **.NET MAUI App** template.
 2. Name the project and choose a location. Then click **Next**.
-3. Select the .NET framework version and click **Create**.
+3. Select the .NET version and click **Create**.
 
 ## Step 2: Install the Syncfusion<sup>&reg;</sup> .NET MAUI Toolkit NuGet package
 
-1. In **Solution Explorer,** right-click the project and choose **Manage NuGet Packages.**
+1. In **Solution Explorer**, right-click the project and choose **Manage NuGet Packages**.
 2. Search for [Syncfusion.Maui.Toolkit](https://www.nuget.org/packages/Syncfusion.Maui.Toolkit/) and install the latest version.
 3. Ensure the necessary dependencies are installed correctly, and the project is restored.
 
@@ -46,14 +46,14 @@ Before proceeding, ensure the following are set up:
 
 ## Step 1: Create a new .NET MAUI project
 
-1. Open the command palette by pressing `Ctrl+Shift+P` and type **.NET:New Project** and enter.
+1. Open the command palette by pressing `Ctrl+Shift+P`, type **.NET:New Project**, and press **Enter**.
 2. Choose the **.NET MAUI App** template.
-3. Select the project location, type the project name and press **Enter**.
-4. Then choose **Create project.**
+3. Select the project location, type the project name, and press **Enter**.
+4. Then choose **Create project**.
 
 ## Step 2: Install the Syncfusion<sup>&reg;</sup> .NET MAUI Toolkit NuGet package
 
-1. Press <kbd>Ctrl</kbd> + <kbd>`</kbd> (backtick) to open the integrated terminal in Visual Studio Code.
+1. Press <kbd>Ctrl</kbd> + <kbd>`</kbd> (backtick) to open the integrated terminal in Visual Studio Code, or open it via **View > Terminal**.
 2. Ensure you're in the project root directory where your .csproj file is located.
 3. Run the command `dotnet add package Syncfusion.Maui.Toolkit` to install the Syncfusion<sup>®</sup> .NET MAUI Toolkit NuGet package.
 4. To ensure all dependencies are installed, run `dotnet restore`.
@@ -71,40 +71,46 @@ Before proceeding, ensure the following are set up:
 
 ## Step 1: Create a new .NET MAUI project
 
-1. Go to **File > New Solution,** Select .NET (C#) and choose the .NET MAUI App template.
+1. Go to **File > New Solution**. Select .NET (C#) and choose the .NET MAUI App template.
 2. Enter the Project Name, Solution Name, and Location.
-3. Select the .NET framework version and click Create.
+3. Select the .NET version and click **Create**.
 
-## Step 2: Install the Syncfusion<sup>®</sup> MAUI Toolkit NuGet package
+## Step 2: Install the Syncfusion<sup>®</sup> .NET MAUI Toolkit NuGet package
 
-1. In **Solution Explorer,** right-click the project and choose **Manage NuGet Packages.**
+1. In **Solution Explorer**, right-click the project and choose **Manage NuGet Packages**.
 2. Search for [Syncfusion.Maui.Toolkit](https://www.nuget.org/packages/Syncfusion.Maui.Toolkit/) and install the latest version.
-3. Ensure the necessary dependencies are installed correctly, and the project is restored. If not, Open the Terminal in Rider and manually run: `dotnet restore`
+3. Ensure the necessary dependencies are installed correctly and the project is restored. If not, open the Terminal in Rider and manually run: `dotnet restore`
 
 {% endtabcontent %}
 {% endtabcontents %}
 
 ## Step 3: Register Syncfusion handler
  
-Make sure to add the namespace.
+Add the following namespace and register the Syncfusion toolkit handler in the `CreateMauiApp` method of your `MauiProgram.cs` file to use Syncfusion controls.
  
 {% tabs %}
 {% highlight c# %}
 using Syncfusion.Maui.Toolkit.Hosting;
-{% endhighlight %}
-{% endtabs %}
- 
-Register the Syncfusion toolkit handler in your `CreateMauiApp` method of `MauiProgram.cs` file to use Syncfusion controls.
- 
-{% tabs %}
-{% highlight c# %}
-builder.ConfigureSyncfusionToolkit();
+
+public static class MauiProgram
+{
+    public static MauiApp CreateMauiApp()
+    {
+        var builder = MauiApp.CreateBuilder();
+        builder
+            .UseMauiApp<App>()
+            .ConfigureSyncfusionToolkit();
+
+        //code omitted for brevity
+        return builder.Build();
+    }
+}
 {% endhighlight %}
 {% endtabs %}
 
 ## Step 4: Create the Model
 
-Define a simple data Model to represent a data point in the chart:
+Define a simple data model to represent a data point in the chart:
 
 {% tabs %}  
 
@@ -121,7 +127,7 @@ public class SparkDataModel
 
 ## Step 5: Initialize the ViewModel
 
-Next, create a `SparkChartViewModel` class that holds a list of `SparkDataModel` objects as follows.
+Next, create a `SparkChartViewModel` class that holds a list of `SparkDataModel` objects as shown below.
 
 {% tabs %}  
 
@@ -155,7 +161,8 @@ public class SparkChartViewModel
 
 ## Step 6: Import Spark Chart namespace
 
-Add the following namespace in your XAML or C#.
+Add the following namespaces in your XAML or C#. For the XAML `model:` prefix, use the `clr-namespace` of the project where `SparkChartViewModel` is defined (e.g., `YourProjectNamespace`).
+
 {% tabs %}
 {% highlight xaml %}
 
@@ -171,7 +178,7 @@ using Syncfusion.Maui.Toolkit.SparkCharts;
 
 ## Step 7: Add the Spark Charts component
 
-Binding `Data` to the spark chart [ItemsSource](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SparkCharts.SfSparkChart.html#Syncfusion_Maui_Toolkit_SparkCharts_SfSparkChart_ItemsSource) property from its BindingContext to create our own spark chart.
+Bind the `Data` collection to the spark chart's [ItemsSource](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SparkCharts.SfSparkChart.html#Syncfusion_Maui_Toolkit_SparkCharts_SfSparkChart_ItemsSource) property to create a spark line chart.
 
 {% tabs %} 
 {% highlight xaml %}
@@ -187,21 +194,28 @@ Binding `Data` to the spark chart [ItemsSource](https://help.syncfusion.com/cr/m
 
 {% endhighlight %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 SparkChartViewModel viewModel = new SparkChartViewModel();
 SfSparkLineChart sparkchart = new SfSparkLineChart()
 {
     ItemsSource = viewModel.Data,
     YBindingPath = "Value",
-    BindingContext = viewModel;
+    BindingContext = viewModel
 };
+//code omitted for brevity
 this.Content = sparkchart;
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![Spark Line Chart in MAUI Spark Chart](getting_started_images/MAUI_Spark_Chart.png)
+The following image shows the rendered spark line chart.
+
+![Spark Line Chart in .NET MAUI](getting_started_images/MAUI_Spark_Chart.png)
+
+## Step 8: Run the application
+
+Build and run the application on your preferred platform (Windows, macOS, Android, or iOS) to see the spark chart in action.
 
 You can download the Spark Chart Getting Started sample from [here](https://github.com/SyncfusionExamples/maui-toolkit-samples/tree/master/SparkChart/GettingStarted).
