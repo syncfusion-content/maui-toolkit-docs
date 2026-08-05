@@ -1,13 +1,13 @@
 ---
 layout: post
-title: About .NET MAUI Spark Chart Control | Syncfusion
-description: Learn here all about introduction of Syncfusion® .NET MAUI Spark Chart (SfSparkChart) control with key features and more.
+title: About Syncfusion® .NET MAUI Spark Charts Control | Syncfusion®
+description: Learn about the overview of Syncfusion® .NET MAUI Spark Charts control, including spark chart types, markers, customization, and data visualization features.
 platform: maui-toolkit
 control: SfSparkChart
 documentation: ug
 ---
 
-# Overview of .NET MAUI Spark Charts
+# About Syncfusion® .NET MAUI Spark Charts Control
 
 N> **Prerequisite:** Ensure that the required NuGet package is installed, the necessary namespaces are imported, and the **Spark Charts** control is properly configured in your application. For detailed setup and configuration instructions, refer to the **[Getting Started](https://help.syncfusion.com/maui-toolkit/spark-charts/getting-started)** guide.
 

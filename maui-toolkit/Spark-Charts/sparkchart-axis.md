@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Axis line in .NET MAUI Spark Charts | Syncfusion
-description: Learn how to display and customize the axis in Syncfusion® .NET MAUI Spark Charts (SfSparkChart) using ShowAxis, AxisOrigin, and AxisLineStyle.
+title: Axis Line in .NET MAUI Spark Charts | Syncfusion®
+description: Axis Line in .NET MAUI Spark Charts displays a reference line across the chart, improving data interpretation and providing visual context for values.
 platform: maui-toolkit
 control: SfSparkChart
 documentation: ug
 keywords: .net maui spark chart axis line, .net maui spark chart axis customization, .net maui spark chart axisline guide, syncfusion maui spark chart axis line, customize axis line .net maui spark chart.
 ---
 
-# Axis line in .NET MAUI Spark Charts
+# Axis Line in .NET MAUI Spark Charts
 
 N> **Prerequisite:** Ensure that the required NuGet package is installed, the necessary namespaces are imported, and the **Spark Charts** control is properly configured in your application. For detailed setup and configuration instructions, refer to the **[Getting Started](https://help.syncfusion.com/maui-toolkit/spark-charts/getting-started)** guide.
 

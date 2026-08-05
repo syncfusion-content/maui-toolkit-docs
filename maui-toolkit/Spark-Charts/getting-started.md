@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started with .NET MAUI Spark Chart control | Syncfusion
-description: Learn here all about getting started with Syncfusion® .NET MAUI Spark Chart (SfSparkChart) control, its elements, and more.
+title: Getting Started with .NET MAUI Spark Charts | Syncfusion®
+description: Learn how to get started with the Syncfusion® .NET MAUI Spark Charts control. Explore setup, spark chart types, customization, and data visualization features.
 platform: maui-toolkit
 control: SfSparkChart
 documentation: ug
 ---
 
-# Getting Started with .NET MAUI Spark Charts (SparkChart)
+# Getting Started with .NET MAUI Spark Charts
 
 This section explains how to populate the spark chart with data, configure the chart type, enable markers and data labels, and customize its appearance. It also covers the essential aspects for getting started with the spark chart.
 
