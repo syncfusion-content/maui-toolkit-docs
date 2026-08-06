@@ -110,4 +110,4 @@ sunburst.CenterView = border;
 
 {% endtabs %}
 
-![Center view in MAUI Sunburst Chart.](Center_view_images/maui_center_view_ouput_image.png)
+![Center view in MAUI Sunburst Chart.](Center_view_images/maui_centre_view_ouput_image.png)

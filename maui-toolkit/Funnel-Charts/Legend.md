@@ -215,55 +215,6 @@ this.Content = chart;
 
 {% endtabs %}
 
-## Floating legend
-
-The floating legend feature allows you to position the legend inside the chart area based on its defined placement. When [IsFloating](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartLegend.html#Syncfusion_Maui_Toolkit_Charts_ChartLegend_IsFloating) is set to true, the legend will start from the specified [Placement](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartLegend.html#Syncfusion_Maui_Toolkit_Charts_ChartLegend_Placement) (such as Top, Bottom, Left, or Right) and then move according to the offset values, enabling precise control over the legend’s location.
-
-* [OffsetX](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartLegend.html#Syncfusion_Maui_Toolkit_Charts_ChartLegend_OffsetX) — Specifies the horizontal distance from the defined placement position.
-* [OffsetY](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartLegend.html#Syncfusion_Maui_Toolkit_Charts_ChartLegend_OffsetY) — Specifies the vertical distance from the defined placement position.
-
-{% tabs %}
-
-{% highlight xml %}
-
-<chart:SfFunnelChart ItemsSource="{Binding Data}" 
-                     XBindingPath="XValue"  
-                     YBindingPath="YValue">
-    <chart:SfFunnelChart.Legend>
-        <chart:ChartLegend Placement="Right"
-                           IsFloating="True" 
-                           OffsetX="-250" 
-                           OffsetY="-100"/>
-    </chart:SfFunnelChart.Legend>
-</chart:SfFunnelChart>
-
-{% endhighlight %}
-
-{% highlight c# %}
-
-SfFunnelChart chart = new SfFunnelChart()
-{
-    XBindingPath = "XValue",
-    YBindingPath = "YValue",
-    ItemsSource = new ViewModel().Data,
-};
-   
-chart.Legend = new ChartLegend()
-{ 
-    Placement = LegendPlacement.Top,
-    IsFloating = true,
-    OffsetX = -170,
-    OffsetY = 30
-};
-
-this.Content = chart;
-
-{% endhighlight %}
-
-{% endtabs %}
-
-![Floating Legend support in MAUI Funnel Chart](Legend-images/floating_legend.png)
-
 ## Toggle segment visibility
 
 The visibility of segments in the funnel chart can be controlled by tapping the legend item using the [ToggleSeriesVisibility](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartLegend.html#Syncfusion_Maui_Toolkit_Charts_ChartLegend_ToggleSeriesVisibility) property. The default value of ToggleSeriesVisibility is `false`.
