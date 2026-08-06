@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Interaction in .NET MAUI Effects View Control | Syncfusion®
+title: Interaction in .NET MAUI Effects View | Syncfusion®
 description: Learn about Interaction support in Syncfusion® .NET MAUI Effects View (SfEffectsView) control and more.
 platform: maui-toolkit
 control: SfEffectsView
 documentation: UG
 ---
 
-# Interaction in .NET MAUI Effects View (SfEffectsView)
+# Interaction in .NET MAUI Effects View
 
 Effects can be set on different interactions. This section explains how to set effects on different interactions available in the Effects View.
 
