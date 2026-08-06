@@ -1,13 +1,13 @@
 ---
 ayout: post
-title: Events in .NET MAUI NumericUpDown control | Syncfusion<sup>®</sup>
-description: Learn here all about the Events support in Syncfusion<sup>®</sup> .NET MAUI NumericUpDown (SfNumericUpDown) control and more details.
+title: Events in .NET MAUI NumericUpDown control | Syncfusion®
+description: Learn here all about the Events support in Syncfusion® .NET MAUI Numeric UpDown (SfNumericUpDown) control and more details.
 platform: maui
 control: SfNumericUpDown
 documentation: ug
 ---
 
-# Events in .NET MAUI NumericUpDown (SfNumericUpDown)
+# Events in .NET MAUI Numeric UpDown
 
 The NumericUpDown control has the events `ValueChanged` and `Completed` to notify after user interactions in [.NET MAUI NumericUpDown](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericUpDown.SfNumericUpDown.html).
 

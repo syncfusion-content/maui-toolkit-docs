@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Change Number Format in .NET MAUI NumericUpDown | Syncfusion<sup>®</sup>
-description: Learn here about changing the number format of Syncfusion<sup>®</sup> .NET MAUI NumericUpDown (SfNumericUpDown) control and more.
+title: Change Number Format in .NET MAUI Numeric UpDown | Syncfusion®
+description: Learn here about changing the number format of Syncfusion® .NET MAUI Numeric UpDown (SfNumericUpDown) control and more.
 platform: MAUI
 control: SfNumericUpDown
 documentation: ug
 ---
 
-# Value Formatting with .NET MAUI NumericUpDown
+# Value Formatting with .NET MAUI Numeric UpDown
 
 This section explains how to change the value format of the [NumericUpDown](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericUpDown.SfNumericUpDown.html) control using the `CustomFormat` properties.
 

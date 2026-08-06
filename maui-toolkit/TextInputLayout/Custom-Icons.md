@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Custom Icons in .NET MAUI Text Input Layout control | Syncfusion
-description: Learn here all about Custom Icons support in Syncfusion<sup>®</sup> .NET MAUI Text Input Layout (SfTextInputLayout) control and more.
+title: Custom Icons in .NET MAUI Text Input Layout | Syncfusion®
+description: Learn here all about custom icons support in the Syncfusion® .NET MAUI Text Input Layout control and more.
 platform: maui-toolkit
 control: SfTextInputLayout
 documentation: ug
 keywords: .net maui text input layout, syncfusion text input layout, text input layout maui, .net maui leading icon entry.
 ---
 
-# Custom Icons in .NET MAUI Text Input Layout (SfTextInputLayout)
+# Custom Icons in .NET MAUI Text Input Layout
 
 Any custom icons can be added to the leading edge or the trailing edge of the input view in the text input layout control. The events and commands related to the custom icons should be handled at the application level.
 

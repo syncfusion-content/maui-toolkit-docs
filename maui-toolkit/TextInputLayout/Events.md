@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Events in MAUI TextInputLayout control | Syncfusion<sup>®</sup>
-description: Learn about Events support in Syncfusion<sup>®</sup> Toolkit for .NET MAUI TextInputLayout control, its elements, and more.
+title: Events in .NET MAUI Text Input Layout | Syncfusion®
+description: Learn about events support in Syncfusion®  .NET MAUI Text Input Layout control, its elements, and more.
 platform: maui-toolkit
 control: SfTextInputLayout
 documentation: ug
 keywords: .net maui text input layout, syncfusion text input layout, text input layout maui.
 ---
 
-# Events in MAUI TextInputLayout
+# Events in .NET MAUI Text Input Layout 
 
 ## PasswordVisibilityToggled Event
 
