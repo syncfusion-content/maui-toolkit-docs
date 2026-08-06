@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started with .NET MAUI OTP Input Control | Syncfusion®
+title: Getting Started with .NET MAUI OTP Input | Syncfusion®
 description: Learn how to get started with the Syncfusion® .NET MAUI OTP Input (SfOtpInput) control in your cross-platform applications.
 platform: maui-toolkit
 control: SfOtpInput
