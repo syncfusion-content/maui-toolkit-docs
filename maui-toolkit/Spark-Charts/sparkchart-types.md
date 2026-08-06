@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Chart types in .NET MAUI Spark Charts
-description: Chart Types in .NET MAUI Spark Charts support line, column, and area visualizations, enabling compact and effective trend analysis.
+title: Chart Types in .NET MAUI Spark Charts | Syncfusion®
+description: Chart Types in .NET MAUI Spark Charts support line, column, and area chart visualizations, enabling compact and effective trend analysis.
 platform: maui-toolkit
 control: SfSparkChart
 documentation: ug
