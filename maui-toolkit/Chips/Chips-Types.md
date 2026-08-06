@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Chips Types in .NET MAUI Chips control | Syncfusion®
-description: Learn about Chips Types support in Syncfusion<sup>®</sup> Toolkit for .NET MAUI Chips control, its elements and more.
+title: Chips Types in .NET MAUI Chips | Syncfusion®
+description: Learn about the four ChipType values (Input, Choice, Filter, Action) supported by the Syncfusion® .NET MAUI Chips control.
 platform: maui-toolkit
 control: Chips
 documentation: ug
 ---
 
-# Chips Types in .NET MAUI Chips
+# Chips Types in .NET MAUI Chips 
 
 ## Input
 

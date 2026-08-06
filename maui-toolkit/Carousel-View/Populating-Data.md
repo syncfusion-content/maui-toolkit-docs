@@ -1,13 +1,13 @@
 ---
 layout : post
-title: Populating Data in .NET MAUI Carousel View control | Syncfusion
-description: Learn here all about Populating Data support in Syncfusion<sup>®</sup> .NET MAUI Carousel View (SfCarousel) control and more.
+title: Populating Data in .NET MAUI Carousel | Syncfusion®
+description: Learn here all about Populating Data support in Syncfusion® .NET MAUI Carousel (SfCarousel) control and more.
 platform : maui
 control : Carousel
 documentation : ug
 ---
 
-# Populating Data in .NET MAUI Carousel View (SfCarousel)
+# Populating Data in .NET MAUI Carousel
 
 The [SfCarousel](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Carousel.SfCarousel.html) control supports binding to various item sources, such as IList and ObservableCollection.
 

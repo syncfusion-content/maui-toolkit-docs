@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Customization in .NET MAUI Chips control | Syncfusion<sup>®</sup>
-description: Learn about Customization support in Syncfusion<sup>®</sup> EToolkit for .NET MAUI Chips control, its elements and more.
+title: Customization in .NET MAUI Chips | Syncfusion®
+description: Learn about customization support in the Syncfusion® .NET MAUI Chips control, its elements and more.
 platform: maui-toolkit
 control: Chips
 documentation: ug
