@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Customize the Indicator in .NET MAUI Tab View (SfTabView) | Syncfusion®
+title: Indicator Customization in .NET MAUI Tab View | Syncfusion®
 description: Learn all about selection indicator customization support in the Syncfusion® .NET MAUI Tab View (SfTabView) control and more.
 platform: maui-toolkit
 control: SfTabView
 documentation: UG
 ---
 
-# Customize the Selection Indicator in .NET MAUI Tab View (SfTabView)
+# Customize the Selection Indicator in .NET MAUI Tab View
 
 ## Placement options
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Visual State Manager in .NET MAUI Tab View (SfTabView) | Syncfusion®
+title: Visual State Manager in .NET MAUI Tab View | Syncfusion®
 description: Learn how to implement the Visual State Manager in Syncfusion® .NET MAUI Tab View (SfTabView) to enhance the user interface based on different states.
 platform: maui-toolkit
 control: SfTabView
 documentation: UG
 ---
 
-# Visual State Manager in .NET MAUI Tab View (SfTabView)
+# Visual State Manager in .NET MAUI Tab View
 
 Use the [VisualStateManager](https://learn.microsoft.com/en-us/dotnet/api/microsoft.maui.controls.visualstatemanager?view=net-maui-8.0) to change the properties of the [SfTabView](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SfTabView.html) control based on visual states defined in your code. The applicable visual states are `Selected`, `Normal`, and `Disabled`. 
 
