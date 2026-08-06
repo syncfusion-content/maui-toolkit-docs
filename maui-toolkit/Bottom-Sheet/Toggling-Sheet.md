@@ -7,7 +7,7 @@ control: SfBottomSheet
 documentation: UG
 ---
 
-# Toggle Methods in .NET MAUI Bottom Sheet (SfBottomSheet)
+# Toggle Methods in .NET MAUI Bottom Sheet
 
 The Bottom Sheet can be toggled using
 

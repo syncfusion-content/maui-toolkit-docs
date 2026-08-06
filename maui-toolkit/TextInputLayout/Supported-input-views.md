@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Supported Input Views in .NET MAUI Text Input Layout | Syncfusion
-description: Learn here all about Supported Input Views support in the Syncfusion<sup>®</sup> .NET MAUI Text Input Layout (SfTextInputLayout) control and more.
+title: Supported Input Views in .NET MAUI Text Input Layout | Syncfusion®
+description: Learn here all about supported input views in the Syncfusion® .NET MAUI Text Input Layout (SfTextInputLayout) control and more.
 platform: maui-toolkit
 control: SfTextInputLayout
 documentation: ug
 keywords: .net maui text input layout, syncfusion text input layout, text input layout maui.
 ---
 
-# Supported Input Views in .NET MAUI TextInputLayout (SfTextInputLayout)
+# Supported Input Views in .NET MAUI Text Input Layout
 
 Input views can be added to the text input layout control by setting the [Content](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SfContentView.html#Syncfusion_Maui_Toolkit_SfContentView_Content) property.
 

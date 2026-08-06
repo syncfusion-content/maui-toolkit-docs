@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Right To Left in .NET MAUI Button Control | Syncfusion<sup>®</sup>
-description: Learn about the comprehensive support for right-to-left (RTL) directionality within the Syncfusion<sup>®</sup> .NET MAUI Button, also known as the SfButton control.
+title: Right To Left in .NET MAUI Button | Syncfusion®
+description: Learn about the right-to-left (RTL) directionality in the Syncfusion® .NET MAUI Button (SfButton) control.
 platform: maui
 control: SfButton
 documentation: ug
 ---
 
-# Right To Left in .NET MAUI Button (SfButton)
+# Right To Left in .NET MAUI Button
 
 [SfButton](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Buttons.SfButton.html) supports changing the layout direction of the control in the right-to-left direction by setting the [FlowDirection](https://learn.microsoft.com/en-us/dotnet/api/microsoft.maui.controls.device.flowdirection?view=net-maui-7.0) to `RightToLeft` or by changing the device language.
 
