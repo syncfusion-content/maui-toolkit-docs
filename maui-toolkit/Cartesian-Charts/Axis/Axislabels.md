@@ -117,6 +117,48 @@ The [LabelStyle](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Too
 * `MaxWidth` — Sets the wrap width of the axis labels.
 * `WrappedLabelAlignment` — Sets the horizontal rendering position of wrapped labels. Default is `Start`; other values are `Center` and `End`.
 
+## Edge labels drawing mode
+
+The [EdgeLabelsDrawingMode](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxis.html#Syncfusion_Maui_Toolkit_Charts_ChartAxis_EdgeLabelsDrawingMode) property customizes the rendering position of edge labels. The [EdgeLabelsDrawingMode](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.EdgeLabelsDrawingMode.html) enum provides the following values (default is `Shift`):
+
+| Mode | Description |
+|--|--|
+| Center | Edge label appears at the center of its grid lines. |
+| Fit | Edge labels are fitted within the chart area. |
+| Hide | Edge labels are hidden. |
+| Shift | Edge labels are shifted left or right to fit within the chart area. |
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<chart:SfCartesianChart>
+    <chart:SfCartesianChart.XAxes>
+        <chart:DateTimeAxis EdgeLabelsDrawingMode="Center"/>
+    </chart:SfCartesianChart.XAxes>
+    <!-- code omitted for brevity -->
+</chart:SfCartesianChart>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfCartesianChart chart = new SfCartesianChart();
+
+DateTimeAxis primaryAxis = new DateTimeAxis()
+{
+    EdgeLabelsDrawingMode = EdgeLabelsDrawingMode.Center
+};
+chart.XAxes.Add(primaryAxis);
+// code omitted for brevity
+this.Content = chart;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Axis edge label positioning support in .NET MAUI Cartesian Chart.](axis_images/maui_chart_axis_edge_labels_drawing.jpg)
+
 ## Edge labels visibility
 
 The [EdgeLabelsVisibilityMode](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.RangeAxisBase.html#Syncfusion_Maui_Toolkit_Charts_RangeAxisBase_EdgeLabelsVisibilityMode) property controls the visibility of edge labels. The [EdgeLabelsVisibilityMode](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.EdgeLabelsVisibilityMode.html) enum provides the following values:
@@ -230,6 +272,43 @@ this.Content = chart;
 {% endtabs %}
 
 ![Smart axis label support in .NET MAUI Cartesian Chart.](axis_images/maui_chart_smart_axis_labels.png)
+
+## Maximum labels
+
+The [MaximumLabels](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxis.html#Syncfusion_Maui_Toolkit_Charts_ChartAxis_MaximumLabels) property in [ChartAxis](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxis.html) controls the number of axis labels rendered per 100 pixels of axis. By default, 3 labels are displayed per 100 pixels. Set this property to override the default density.
+
+N> `MaximumLabels` only applies during automatic interval calculation and has no effect if the `Interval` property is manually set on the axis.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<chart:SfCartesianChart>
+    <chart:SfCartesianChart.YAxes>
+        <chart:NumericalAxis MaximumLabels="5"/>
+    </chart:SfCartesianChart.YAxes>
+    <!-- code omitted for brevity -->
+</chart:SfCartesianChart>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfCartesianChart chart = new SfCartesianChart();
+
+NumericalAxis axis = new()
+{
+    MaximumLabels = 5
+};
+chart.YAxes.Add(axis);
+// code omitted for brevity
+this.Content = chart;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Maximum labels in .NET MAUI Cartesian Chart.](axis_images/maui_chart_axis_maximum_labels.png)
 
 ## Events
 
