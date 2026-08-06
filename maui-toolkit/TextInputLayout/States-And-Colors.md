@@ -1,7 +1,7 @@
 ---
 layout: post
 title: States and Colors in .NET MAUI Text Input Layout | Syncfusion®
-description: Learn here all about States and Colors support in the  Syncfusion® .NET MAUI Text Input Layout control and more.
+description: Learn here all about States and Colors support in the Syncfusion® .NET MAUI Text Input Layout control and more.
 platform: maui-toolkit
 control: SfTextInputLayout
 documentation: ug
