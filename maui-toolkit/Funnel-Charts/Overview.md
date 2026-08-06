@@ -84,7 +84,6 @@ The following table summarizes the globalization support available in this contr
 
 - [Cartesian Charts](https://help.syncfusion.com/maui-toolkit/cartesian-charts/overview) for visualizing data using line, bar, and other chart types.  
 - [Circular Charts](https://help.syncfusion.com/maui-toolkit/circular-charts/overview) for representing proportional data using pie and doughnut charts.  
-- [TreeMap](https://help.syncfusion.com/maui-toolkit/treemap/overview) for displaying hierarchical and comparative data. 
 - [Pyramid Charts](https://help.syncfusion.com/maui-toolkit/pyramid-charts/overview) for hierarchical or comparative data representation.
 
 ## See Also
