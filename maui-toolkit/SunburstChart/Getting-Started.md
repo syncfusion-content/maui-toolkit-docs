@@ -242,6 +242,6 @@ this.Content = sunburst;
 
 {% endtabs %}
 
-![Getting started sample in MAUI Sunburst Chart.](Getting_started_image/maui_getting_started_image.png)
+![Getting started sample in MAUI Sunburst Chart.](Getting_started_image/maui_sunburst_chart.png)
 
 You can download the Sunburst Chart Getting Started sample from [GitHub](https://github.com/SyncfusionExamples/GettingStarted_SunburstChart_MAUI).
