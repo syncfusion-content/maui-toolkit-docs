@@ -763,6 +763,92 @@ this.Content = chart;
 
 {% endtabs %}
 
+## Multiple axes
+
+Cartesian charts provide support to arrange multiple series inside the same chart area with a specified X-axis and Y-axis. There are two properties, [XAxisName](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.CartesianSeries.html#Syncfusion_Maui_Toolkit_Charts_CartesianSeries_XAxisName) and [YAxisName](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.CartesianSeries.html#Syncfusion_Maui_Toolkit_Charts_CartesianSeries_YAxisName), in all the Cartesian series types, which are used to provide multiple axes support. These axes can be arranged in a stacking order or in a side-by-side pattern.
+
+By default, the 0th index value of XAxes and YAxes is used to plot all the series.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:sys="clr-namespace:System;assembly=mscorlib"
+             xmlns:chart="clr-namespace:Syncfusion.Maui.Charts;assembly=Syncfusion.Maui.Charts">
+
+    <chart:SfCartesianChart>
+        <chart:SfCartesianChart.XAxes>
+            <chart:DateTimeAxis ShowMajorGridLines="False"/>
+        </chart:SfCartesianChart.XAxes>
+
+        <chart:SfCartesianChart.YAxes>
+            <chart:NumericalAxis ShowMajorGridLines="False"/>
+            <chart:NumericalAxis Name="series_YAxis" CrossesAt="{x:Static Member=sys:Double.MaxValue}" ShowMajorGridLines="False"/>
+        </chart:SfCartesianChart.YAxes>
+
+        <chart:ColumnSeries ItemsSource="{Binding Demands}" 
+                            XBindingPath="Demand"
+                            YBindingPath="Year2011" 
+                            YAxisName="series_YAxis"/>
+        <chart:SplineSeries ItemsSource="{Binding Demands}" 
+                            XBindingPath="Date"
+                            YBindingPath="Year2011"/>
+    </chart:SfCartesianChart>
+</ContentPage>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfCartesianChart chart = new SfCartesianChart();
+
+DateTimeAxis primaryAxis = new DateTimeAxis()
+{
+    ShowMajorGridLines = false
+};
+chart.XAxes.Add(primaryAxis);
+
+NumericalAxis secondaryAxis = new NumericalAxis()
+{
+    CrossesAt = double.MaxValue,
+    ShowMajorGridLines = false
+};
+secondaryAxis.Name = "series_YAxis";
+chart.YAxes.Add(secondaryAxis);
+
+NumericalAxis secondaryAxis1 = new NumericalAxis();
+chart.YAxes.Add(secondaryAxis1);
+
+ColumnSeries series1 = new ColumnSeries()
+{
+    ItemsSource = new ViewModel().Demands,
+    XBindingPath = "Demand",
+    YBindingPath = "Year2011",
+    YAxisName = "series_YAxis"
+};
+
+SplineSeries series2 = new SplineSeries()
+{
+    ItemsSource = new ViewModel().Demands,
+    XBindingPath = "Date",
+    YBindingPath = "Year2011"
+};
+
+chart.Series.Add(series1);
+chart.Series.Add(series2);
+
+this.Content = chart;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Multiple axes support in .NET MAUI Cartesian Chart](Axis_images/maui_chart_multiple_axes.png)
+
+In the above image, the [ColumnSeries](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ColumnSeries.html) is plotted based on additional axes of [YAxes](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html#Syncfusion_Maui_Toolkit_Charts_SfCartesianChart_YAxes) collection, and [SplineSeries](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SplineSeries.html) is plotted based on axis of the collection's 0th index.
+
 ## Axis crossing
 
 The chart allows you to customize the origin; by default, the axis will be rendered with (0,0) as the origin in the X and Y axes. An axis can be positioned anywhere in the chart area by using the [CrossesAt](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartAxis.html#Syncfusion_Maui_Toolkit_Charts_ChartAxis_CrossesAt) property. This property specifies where the horizontal axis crosses the vertical axis, and vice versa. The default value of the CrossesAt property is `double.NaN`.
