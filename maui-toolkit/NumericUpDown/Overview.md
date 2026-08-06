@@ -1,13 +1,13 @@
 ---
 layout: post
-title: About .NET MAUI NumericUpDown Control | Syncfusion<sup>®</sup>
-description: Learn here all about introduction of Syncfusion<sup>®</sup> .NET MAUI NumericUpDown (SfNumericUpDown) control, its features, and more.
+title: About Syncfusion® .NET MAUI Numeric UpDown Control | Syncfusion®
+description: Learn here all about introduction of Syncfusion® .NET MAUI Numeric UpDown (SfNumericUpDown) control, its features, and more.
 platform: MAUI
 control: SfNumericUpDown
 documentation: ug
 ---
 
-# Overview of .NET MAUI NumericUpDown
+# About Syncfusion® .NET MAUI Numeric UpDown Control
 
 The Syncfusion<sup>&reg;</sup> [.NET MAUI NumericUpDown](https://www.syncfusion.com/maui-controls/maui-numericupdown) (`SfNumericUpDown`) control is used to input and adjust numeric values using increment and decrement buttons. It provides an intuitive way to modify values with built-in validation and formatting support, making it suitable for precise numeric input scenarios in .NET MAUI applications.
 
