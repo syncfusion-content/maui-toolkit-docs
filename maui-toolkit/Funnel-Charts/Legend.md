@@ -1,16 +1,18 @@
 ---
 layout: post
-title: Legend in .NET MAUI Chart control | Syncfusion
-description: This section explains about how to initialize legend and its customization in Syncfusion® .NET MAUI Chart (SfFunnelChart) control.
+title: Legend in .NET MAUI Funnel Chart | Syncfusion®
+description: Legend in .NET MAUI Funnel Chart displays chart segment information with customizable styles, helping users identify and understand data categories.
 platform: maui-toolkit
 control: SfFunnelChart
 documentation: ug
-keywords: .net maui funnel chart, funnel-chart, chart legend, legend-wrap, legend view, legend layout, chart legend items, legend alignment.
+keywords: .net maui funnel chart, chart legend, legend wrap, legend view, legend layout, chart legend items, legend alignment.
 ---
 
-# Legend in .NET MAUI Chart (SfFunnelChart)
+# Legend in .NET MAUI Funnel Chart
 
-The [Legend](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartBase.html#Syncfusion_Maui_Toolkit_Charts_ChartBase_Legend) provides a list of data points, helping to identify the corresponding data points in the chart. Here's a detailed guide on how to define and customize the legend in the funnel chart.
+The [Legend](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartBase.html#Syncfusion_Maui_Toolkit_Charts_ChartBase_Legend) provides a list of data points, helping to identify the corresponding funnel segments in the chart. Here's a detailed guide on how to define and customize the legend in the funnel chart.
+
+N> **Prerequisite:** Ensure that the required NuGet package is installed, the necessary namespaces are imported, and the **Funnel Chart** control is properly configured in your application. For detailed setup and configuration instructions, refer to the **[Getting Started](https://help.syncfusion.com/maui-toolkit/funnel-charts/getting-started)** guide.
 
 ## Defining the legend
 
@@ -18,10 +20,10 @@ To define the legend in the chart, initialize the [ChartLegend](https://help.syn
 
 {% tabs %}
 
-{% highlight xaml %}
+{% highlight xml %}
 
 <chart:SfFunnelChart ItemsSource="{Binding Data}" 
-                     XBindingPath="XValue" 
+                     XBindingPath="XValue"
                      YBindingPath="YValue">
     <chart:SfFunnelChart.Legend>
         <chart:ChartLegend/>
@@ -34,12 +36,12 @@ To define the legend in the chart, initialize the [ChartLegend](https://help.syn
 
 SfFunnelChart chart = new SfFunnelChart()
 {
-    ItemsSource = new AdmissionViewModel().Data,
+    ItemsSource = new ViewModel().Data,
     XBindingPath = "XValue",
     YBindingPath = "YValue",
 };
 
-chart.Legend = new ChartLegend(); // Initialize the legend for the chart.
+chart.Legend = new ChartLegend();
 this.Content = chart;
 
 {% endhighlight %}
@@ -47,11 +49,12 @@ this.Content = chart;
 {% endtabs %}
 
 ## Legend visibility
+
 The visibility of the chart legend can be controlled using the [IsVisible](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartLegend.html#Syncfusion_Maui_Toolkit_Charts_ChartLegend_IsVisible) property. By default, the IsVisible property is set to `true`.
 
 {% tabs %}
 
-{% highlight xaml %}
+{% highlight xml %}
     
 <chart:SfFunnelChart ItemsSource="{Binding Data}" 
                      XBindingPath="XValue"
@@ -67,17 +70,18 @@ The visibility of the chart legend can be controlled using the [IsVisible](https
 
 SfFunnelChart chart = new SfFunnelChart()
 {
+    ItemsSource = new ViewModel().Data,
     XBindingPath = "XValue",
     YBindingPath = "YValue",
-    ItemsSource = new AdmissionViewModel().Data,
 };
 
 chart.Legend = new ChartLegend()
 { 
-    IsVisible = true // Set the visibility of the chart legend.
+    IsVisible = true 
 };
 
 this.Content = chart;
+
 {% endhighlight %}
 
 {% endtabs %}
@@ -86,15 +90,15 @@ this.Content = chart;
 
 The appearance of the legend label can be customized using the [LabelStyle](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartLegend.html#Syncfusion_Maui_Toolkit_Charts_ChartLegend_LabelStyle) property. 
 
-* [`TextColor`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartLegendLabelStyle.html#Syncfusion_Maui_Toolkit_Charts_ChartLegendLabelStyle_TextColor) – Gets or sets the color of the label.
-* [`FontFamily`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartLegendLabelStyle.html#Syncfusion_Maui_Toolkit_Charts_ChartLegendLabelStyle_FontFamily) - Gets or sets the font family for the legend label. 
-* [`FontAttributes`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartLegendLabelStyle.html#Syncfusion_Maui_Toolkit_Charts_ChartLegendLabelStyle_FontAttributes) - Gets or sets the font style for the legend label. 
-* [`FontSize`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartLegendLabelStyle.html#Syncfusion_Maui_Toolkit_Charts_ChartLegendLabelStyle_FontSize) - Gets or sets the font size for the legend label.
-* [`Margin`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartLegendLabelStyle.html#Syncfusion_Maui_Toolkit_Charts_ChartLegendLabelStyle_Margin) - Gets or sets the margin size of labels.
+* [`TextColor`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartLegendLabelStyle.html#Syncfusion_Maui_Toolkit_Charts_ChartLegendLabelStyle_TextColor) — Gets or sets the color of the label.
+* [`FontFamily`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartLegendLabelStyle.html#Syncfusion_Maui_Toolkit_Charts_ChartLegendLabelStyle_FontFamily) — Gets or sets the font family for the legend label. 
+* [`FontAttributes`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartLegendLabelStyle.html#Syncfusion_Maui_Toolkit_Charts_ChartLegendLabelStyle_FontAttributes) — Gets or sets the font style for the legend label. 
+* [`FontSize`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartLegendLabelStyle.html#Syncfusion_Maui_Toolkit_Charts_ChartLegendLabelStyle_FontSize) — Gets or sets the font size for the legend label.
+* [`Margin`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartLegendLabelStyle.html#Syncfusion_Maui_Toolkit_Charts_ChartLegendLabelStyle_Margin) — Gets or sets the margin size of labels.
 
 {% tabs %} 
 
-{% highlight xaml %}
+{% highlight xml %}
 
 <chart:SfFunnelChart ItemsSource="{Binding Data}" 
                      XBindingPath="XValue"
@@ -102,8 +106,7 @@ The appearance of the legend label can be customized using the [LabelStyle](http
     <chart:SfFunnelChart.Legend>
         <chart:ChartLegend>
             <chart:ChartLegend.LabelStyle>
-                <chart:ChartLegendLabelStyle TextColor="Blue" Margin="5" FontSize="18"
-                     FontAttributes="Bold" FontFamily="PlaywriteAR-Regular"/>
+                <chart:ChartLegendLabelStyle TextColor="Blue" Margin="5" FontSize="18" FontAttributes="Bold" FontFamily="PlaywriteAR-Regular"/>
             </chart:ChartLegend.LabelStyle>
         </chart:ChartLegend>
     </chart:SfFunnelChart.Legend>
@@ -120,37 +123,36 @@ SfFunnelChart chart = new SfFunnelChart()
     ItemsSource = new ViewModel().Data,
 };
 
-ChartLegend legend = new ChartLegend(); // Initialize the legend.
-
-// Define the label style for the legend.
+chart.Legend = new ChartLegend();
 ChartLegendLabelStyle labelStyle = new ChartLegendLabelStyle()
 {
     TextColor = Colors.Blue,
-    Margin = new Thickness(5),
     FontSize = 18,
     FontAttributes = FontAttributes.Bold,
+    Margin = 5,
     FontFamily = "PlaywriteAR-Regular"
 };
-
-legend.LabelStyle = labelStyle; // Set the label style for the legend.
-chart.Legend = legend; // Set the legend for the chart.
+chart.Legend.LabelStyle = labelStyle;
 this.Content = chart;
+
 {% endhighlight %}
 
 {% endtabs %}
 
-![Legend labels customization support in Maui Chart](Legend-images/legend_label_style.png)
+![Legend labels customization support in MAUI Funnel Chart](Legend-images/legend_label_style.png)
 
 ## Legend icon
-To specify the legend icon based on associate series type using the [LegendIcon](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfFunnelChart.html#Syncfusion_Maui_Toolkit_Charts_SfFunnelChart_LegendIcon) and change its type using [ChartLegendIconType](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartLegendIconType.html) enum values.
+
+To specify the legend icon for the chart segments, use the [LegendIcon](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfFunnelChart.html#Syncfusion_Maui_Toolkit_Charts_SfFunnelChart_LegendIcon) property and change its type using the [ChartLegendIconType](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartLegendIconType.html) enum values. The default value of the LegendIcon property is `Circle`.
 
 {% tabs %}
 
-{% highlight xaml %}
+{% highlight xml %}
 
 <chart:SfFunnelChart ItemsSource="{Binding Data}" 
-                     XBindingPath="XValue"  LegendIcon="Diamond"
-                     YBindingPath="YValue">
+                     XBindingPath="XValue"
+                     YBindingPath="YValue"
+                     LegendIcon="Diamond">
     <chart:SfFunnelChart.Legend>
         <chart:ChartLegend/>
     </chart:SfFunnelChart.Legend>
@@ -162,12 +164,11 @@ To specify the legend icon based on associate series type using the [LegendIcon]
 
 SfFunnelChart chart = new SfFunnelChart()
 {
-    ItemsSource = new AdmissionViewModel().Data,
+    ItemsSource = new ViewModel().Data,
     XBindingPath = "XValue",
     YBindingPath = "YValue",
-    LegendIcon = ChartLegendIconType.Diamond // Set the legend icon type.
+    LegendIcon = ChartLegendIconType.Diamond
 };
-
 chart.Legend = new ChartLegend();
 
 this.Content = chart;
@@ -177,11 +178,12 @@ this.Content = chart;
 {% endtabs %}
 
 ## Placement
+
 The legend can be positioned to the left, right, top, or bottom of the chart area using the [Placement](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartLegend.html#Syncfusion_Maui_Toolkit_Charts_ChartLegend_Placement) property in the ChartLegend class. The default placement is `Top`.
 
 {% tabs %}
 
-{% highlight xaml %}
+{% highlight xml %}
 
 <chart:SfFunnelChart ItemsSource="{Binding Data}" 
                      XBindingPath="XValue"  
@@ -204,7 +206,7 @@ SfFunnelChart chart = new SfFunnelChart()
    
 chart.Legend = new ChartLegend()
 { 
-    Placement = LegendPlacement.Bottom // Set the legend placement.
+    Placement = LegendPlacement.Bottom 
 };
 
 this.Content = chart;
@@ -213,59 +215,109 @@ this.Content = chart;
 
 {% endtabs %}
 
-## Toggle the series visibility
-The visibility of segments in the funnel chart can be controlled by tapping the legend item using the [ToggleSeriesVisibility](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartLegend.html#Syncfusion_Maui_Toolkit_Charts_ChartLegend_ToggleSeriesVisibility) property. The default value of ToggleSeriesVisibility is `false`.
+## Floating legend
+
+The floating legend feature allows you to position the legend inside the chart area based on its defined placement. When [IsFloating](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartLegend.html#Syncfusion_Maui_Toolkit_Charts_ChartLegend_IsFloating) is set to true, the legend will start from the specified [Placement](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartLegend.html#Syncfusion_Maui_Toolkit_Charts_ChartLegend_Placement) (such as Top, Bottom, Left, or Right) and then move according to the offset values, enabling precise control over the legend’s location.
+
+* [OffsetX](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartLegend.html#Syncfusion_Maui_Toolkit_Charts_ChartLegend_OffsetX) — Specifies the horizontal distance from the defined placement position.
+* [OffsetY](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartLegend.html#Syncfusion_Maui_Toolkit_Charts_ChartLegend_OffsetY) — Specifies the vertical distance from the defined placement position.
 
 {% tabs %}
 
-{% highlight xaml %}
+{% highlight xml %}
 
 <chart:SfFunnelChart ItemsSource="{Binding Data}" 
-                     XBindingPath="XValue"         
+                     XBindingPath="XValue"  
                      YBindingPath="YValue">
-    . . .
     <chart:SfFunnelChart.Legend>
-        <chart:ChartLegend ToggleSeriesVisibility="True"/>
+        <chart:ChartLegend Placement="Right"
+                           IsFloating="True" 
+                           OffsetX="-250" 
+                           OffsetY="-100"/>
     </chart:SfFunnelChart.Legend>
-    . . .
 </chart:SfFunnelChart>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-AdmissionViewModel viewModel = new();
-
-SfFunnelChart funnelChart = new SfFunnelChart()
+SfFunnelChart chart = new SfFunnelChart()
 {
-    ItemsSource = viewModel.Data,
+    XBindingPath = "XValue",
+    YBindingPath = "YValue",
+    ItemsSource = new ViewModel().Data,
+};
+   
+chart.Legend = new ChartLegend()
+{ 
+    Placement = LegendPlacement.Top,
+    IsFloating = true,
+    OffsetX = -170,
+    OffsetY = 30
+};
+
+this.Content = chart;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Floating Legend support in MAUI Funnel Chart](Legend-images/floating_legend.png)
+
+## Toggle segment visibility
+
+The visibility of segments in the funnel chart can be controlled by tapping the legend item using the [ToggleSeriesVisibility](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartLegend.html#Syncfusion_Maui_Toolkit_Charts_ChartLegend_ToggleSeriesVisibility) property. The default value of ToggleSeriesVisibility is `false`.
+
+{% tabs %}
+
+{% highlight xml %}
+
+<chart:SfFunnelChart ItemsSource="{Binding Data}" 
+                     XBindingPath="XValue"         
+                     YBindingPath="YValue">
+    <chart:SfFunnelChart.Legend>
+        <chart:ChartLegend ToggleSeriesVisibility="True"/>
+    </chart:SfFunnelChart.Legend>
+</chart:SfFunnelChart>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfFunnelChart chart = new SfFunnelChart()
+{
+    ItemsSource = new ViewModel().Data,
     XBindingPath = "XValue",
     YBindingPath = "YValue"
 };
 
-funnelChart.Legend = new ChartLegend()
+chart.Legend = new ChartLegend()
 {
-    ToggleSeriesVisibility = true // Enable the toggle visibility of the series using legend.
+    ToggleSeriesVisibility = true
 };
 
 this.Content = chart;
+
 {% endhighlight %}
 
 {% endtabs %}
 
 ## Legend maximum size request
+
 To set the maximum size request for the legend view, override the [GetMaximumSizeCoefficient](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartLegend.html#Syncfusion_Maui_Toolkit_Charts_ChartLegend_GetMaximumSizeCoefficient) protected method in [ChartLegend](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartLegend.html) class. The value should be between 0 and 1, representing the maximum size request, not the desired size for the legend items layout.
 
 {% tabs %}
 
-{% highlight xaml %}
+{% highlight xml %}
+
+xmlns:chart="clr-namespace:Syncfusion.Maui.Charts;assembly=Syncfusion.Maui.Charts"
     
-<chart:SfFunnelChart>
-    . . .
+<chart:SfFunnelChart ItemsSource="{Binding Data}"
+                     XBindingPath="XValue"
+                     YBindingPath="YValue">
     <chart:SfFunnelChart.Legend>
         <chart:LegendExt/>
     </chart:SfFunnelChart.Legend>
-    . . .
 </chart:SfFunnelChart>
 
 {% endhighlight %}
@@ -274,26 +326,33 @@ To set the maximum size request for the legend view, override the [GetMaximumSiz
 
 public class LegendExt : ChartLegend
 {
-    // Set the maximum size request for the legend view.
     protected override double GetMaximumSizeCoefficient()
     {
         return 0.7;
     }
 }
 
-SfFunnelChart chart = new SfFunnelChart();
-chart.Legend = new LegendExt(); // Set the custom legend for the chart.
+SfFunnelChart chart = new SfFunnelChart()
+{
+    ItemsSource = new ViewModel().Data,
+    XBindingPath = "XValue",
+    YBindingPath = "YValue"
+};
+chart.Legend = new LegendExt();
+
 this.Content = chart;
+
 {% endhighlight %}
 
 {% endtabs %}
 
 ## Items layout
+
 The [ItemsLayout](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartLegend.html#Syncfusion_Maui_Toolkit_Charts_ChartLegend_ItemsLayout) property is used to customize the arrangement and position of each legend item. The default value is `null`. This property accepts any layout type.
 
 {% tabs %}
 
-{% highlight xaml %}
+{% highlight xml %}
 
 <chart:SfFunnelChart ItemsSource="{Binding Data}" 
                      XBindingPath="XValue"  
@@ -315,22 +374,19 @@ The [ItemsLayout](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.To
 
 SfFunnelChart chart = new SfFunnelChart()
 {
+    ItemsSource = new ViewModel().Data,
     XBindingPath = "XValue",
     YBindingPath = "YValue",
-    ItemsSource = new AdmissionViewModel().Data,
-    LegendIcon = ChartLegendIconType.Diamond,
 };
-. . .
-ChartLegend legend = new ChartLegend(); // Initialize the legend.
 
-// Define the layout for legend items.
+ChartLegend legend = new ChartLegend();
 legend.ItemsLayout = new FlexLayout()
 {
     Wrap = FlexWrap.Wrap,
     WidthRequest = 400
 };
 
-chart.Legend = legend; // Set the legend for the chart.
+chart.Legend = legend;
 this.Content = chart;
         
 {% endhighlight %}
@@ -339,26 +395,26 @@ this.Content = chart;
 
 ## Item template
 
-The [ChartLegend](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartLegend.html) supports customizing the appearance of legend items using the [ItemTemplate](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartLegend.html#Syncfusion_Maui_Toolkit_Charts_ChartLegend_ItemTemplate) property. The default value of ItemsTemplate is `null`.
+The [ChartLegend](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartLegend.html) supports customizing the appearance of legend items using the [ItemTemplate](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartLegend.html#Syncfusion_Maui_Toolkit_Charts_ChartLegend_ItemTemplate) property. The default value of ItemTemplate is `null`.
 
 N> The BindingContext of the template is the corresponding underlying legend item provided in the ChartLegendItem class.
 
 {% tabs %}
 
-{% highlight xaml %}
+{% highlight xml %}
 
-<chart:SfFunnelChart ItemsSource="{Binding Data}" 
+<chart:SfFunnelChart ItemsSource="{Binding Data}" x:Name="chart"
                      XBindingPath="XValue"  
-                     YBindingPath="YValue" x:Name="chart">
+                     YBindingPath="YValue">
     <chart:SfFunnelChart.Resources>
         <DataTemplate x:Key="legendTemplate">
-            <StackLayout Orientation="Horizontal">
+            <HorizontalStackLayout Padding="3">
                 <Rectangle HeightRequest="12" 
                            WidthRequest="12" Margin="3"
                            Background="{Binding IconBrush}"/>
                 <Label Text="{Binding XValue}" 
                        Margin="3"/>
-            </StackLayout>
+            </HorizontalStackLayout>
         </DataTemplate>
     </chart:SfFunnelChart.Resources>  
     
@@ -373,15 +429,15 @@ N> The BindingContext of the template is the corresponding underlying legend ite
 
 SfFunnelChart chart = new SfFunnelChart()
 {
+    ItemsSource = new ViewModel().Data,
     XBindingPath = "XValue",
     YBindingPath = "YValue",
-    ItemsSource = new AdmissionViewModel().Data,
 };
      
-ChartLegend legend = new ChartLegend(); // Initialize the legend.
-legend.ItemTemplate = chart.Resources["legendTemplate"] as DataTemplate; // Set the item template for the legend.
-...
-chart.Legend = legend; // Set the legend for the chart.
+ChartLegend legend = new ChartLegend();
+legend.ItemTemplate = chart.Resources["legendTemplate"] as DataTemplate;
+
+chart.Legend = legend;
 this.Content = chart;
         
 {% endhighlight %}
@@ -390,29 +446,29 @@ this.Content = chart;
 
 ![Legend layout for funnel chart](Legend-images/funnel_chart.png)
 
-## Event 
+## LegendItemCreated event
 
-**LegendItemCreated**
+The [`LegendItemCreated`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartLegend.html#Syncfusion_Maui_Toolkit_Charts_ChartLegend_LegendItemCreated) event is triggered when the chart legend item is created. The argument contains the [`LegendItem`](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Core.LegendItemEventArgs.html#Syncfusion_Maui_Core_LegendItemEventArgs_LegendItem) object. The following properties are present in [`LegendItem`](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Core.LegendItemEventArgs.html#Syncfusion_Maui_Core_LegendItemEventArgs_LegendItem).
 
-The [`LegendItemCreated`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartLegend.html#Syncfusion_Maui_Toolkit_Charts_ChartLegend_LegendItemCreated) event is triggered when the chart legend item is created. The argument contains the [`LegendItem`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.LegendItemEventArgs.html#Syncfusion_Maui_Toolkit_LegendItemEventArgs_LegendItem) object. The following properties are present in [`LegendItem`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.LegendItemEventArgs.html#Syncfusion_Maui_Toolkit_LegendItemEventArgs_LegendItem).
+* [`Text`](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Core.ILegendItem.html#Syncfusion_Maui_Core_ILegendItem_Text) — Used to get or set the text of the label.
+* [`TextColor`](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Core.ILegendItem.html#Syncfusion_Maui_Core_ILegendItem_TextColor) — Used to get or set the color of the label.
+* [`FontFamily`](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Core.ILegendItem.html#Syncfusion_Maui_Core_ILegendItem_FontFamily) — Used to get or set the font family for the legend label. 
+* [`FontAttributes`](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Core.ILegendItem.html#Syncfusion_Maui_Core_ILegendItem_FontAttributes) — Used to get or set the font style for the legend label. 
+* [`FontSize`](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Core.ILegendItem.html#Syncfusion_Maui_Core_ILegendItem_FontSize) — Used to get or set the font size for the legend label.
+* [`TextMargin`](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Core.ILegendItem.html#Syncfusion_Maui_Core_ILegendItem_TextMargin) — Used to get or set the margin size of labels.
+* [`IconBrush`](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Core.ILegendItem.html#Syncfusion_Maui_Core_ILegendItem_IconBrush) — Used to change the color of the legend icon.
+* [`IconType`](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Core.ILegendItem.html#Syncfusion_Maui_Core_ILegendItem_IconType) — Used to get or set the icon type for the legend icon.
+* [`IconHeight`](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Core.ILegendItem.html#Syncfusion_Maui_Core_ILegendItem_IconHeight) — Used to get or set the icon height of the legend icon.
+* [`IconWidth`](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Core.ILegendItem.html#Syncfusion_Maui_Core_ILegendItem_IconWidth) — Used to get or set the icon width of the legend icon.
+* [`IsToggled`](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Core.ILegendItem.html#Syncfusion_Maui_Core_ILegendItem_IsToggled) — Used to get or set the toggle visibility of the legend.
+* [`DisableBrush`](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Core.ILegendItem.html#Syncfusion_Maui_Core_ILegendItem_DisableBrush) — Used to get or set the color of the legend when toggled.
+* [`Index`](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Core.ILegendItem.html#Syncfusion_Maui_Core_ILegendItem_Index) — Used to get index position of the legend.
+* [`Item`](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Core.ILegendItem.html#Syncfusion_Maui_Core_ILegendItem_Item) — Used to get the corresponding segment for the legend item.
 
-* [`Text`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.ILegendItem.html#Syncfusion_Maui_Toolkit_ILegendItem_Text) – used to get or set the text of the label.
-* [`TextColor`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.ILegendItem.html#Syncfusion_Maui_Toolkit_ILegendItem_TextColor) – used to get or set the color of the label.
-* [`FontFamily`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.ILegendItem.html#Syncfusion_Maui_Toolkit_ILegendItem_FontFamily) - used to get or set the font family for the legend label. 
-* [`FontAttributes`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.ILegendItem.html#Syncfusion_Maui_Toolkit_ILegendItem_FontAttributes) - used to get or set the font style for the legend label. 
-* [`FontSize`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.ILegendItem.html#Syncfusion_Maui_Toolkit_ILegendItem_FontSize) - used to get or set the font size for the legend label.
-* [`TextMargin`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.ILegendItem.html#Syncfusion_Maui_Toolkit_ILegendItem_TextMargin) - used to get or set the margin size of labels.
-* [`IconBrush`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.ILegendItem.html#Syncfusion_Maui_Toolkit_ILegendItem_IconBrush) - used to change the color of the legend icon.
-* [`IconType`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.ILegendItem.html#Syncfusion_Maui_Toolkit_ILegendItem_IconType) - used to get or set the icon type for the legend icon.
-* [`IconHeight`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.ILegendItem.html#Syncfusion_Maui_Toolkit_ILegendItem_IconHeight) - used to get or set the icon height of the legend icon.
-* [`IconWidth`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.ILegendItem.html#Syncfusion_Maui_Toolkit_ILegendItem_IconWidth) - used to get or set the icon width of the legend icon.
-* [`IsToggled`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.ILegendItem.html#Syncfusion_Maui_Toolkit_ILegendItem_IsToggled) - used to get or set the toggle visibility of the legend.
-* [`DisableBrush`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.ILegendItem.html#Syncfusion_Maui_Toolkit_ILegendItem_DisableBrush) - used to get or set the color of the legend when toggled.
-* [`Index`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.ILegendItem.html#Syncfusion_Maui_Toolkit_ILegendItem_Index) - used to get index position of the legend.
-* [`Item`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.ILegendItem.html#Syncfusion_Maui_Toolkit_ILegendItem_Item) - used to get the corresponding data points for the legend item.
 ## Limitations
+
 * Do not add items explicitly.
 * When using BindableLayouts, do not bind ItemsSource explicitly.
 * For better UX, arrange items vertically for left and right dock positions, and horizontally for top and bottom dock positions.
-* If the layout's measured size is larger than the MaximumHeightRequest, scrolling will be enabled.
-* If MaximumHeightRequest is set to 1 and the chart's available size is smaller than the layout's measured size, the series may not have enough space to draw properly.
+* If the layout's measured size is larger than the available space, scrolling will be enabled.
+* If the chart's available size is smaller than the layout's measured size, segments may not have enough space to draw properly.

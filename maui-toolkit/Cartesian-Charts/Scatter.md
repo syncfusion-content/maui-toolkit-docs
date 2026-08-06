@@ -1,20 +1,22 @@
 ---
 layout: post
-title: Scatter Chart in .NET MAUI Chart control | Syncfusion
-description: Learn here all about the scatter chart and its features in Syncfusion® .NET MAUI Chart (SfCartesianChart) control.
+title: Scatter Chart in .NET MAUI Cartesian Chart | Syncfusion®
+description: Scatter Chart in .NET MAUI Cartesian Chart displays data as individual points, helping visualize relationships, distributions, and patterns between variables.
 platform: maui-toolkit
 control: SfCartesianChart
-documentation: ug 
+documentation: ug
 keywords: .net maui scatter chart, maui scatter chart, scatter chart customization .net maui, syncfusion maui scatter chart, cartesian scatter chart maui, .net maui chart scatter visualization, .net maui point chart.
 ---
 
-# Scatter Chart in .NET MAUI Chart
+# Scatter Chart in .NET MAUI Cartesian Chart
 
-The scatter chart is used to represent the each data point by a dot or circle with equal size.
+The scatter chart is used to represent each data point as a dot or circle of uniform size.
 
 ## Scatter Chart
 
-To render a scatter chart, create an instance of [ScatterSeries](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ScatterSeries.html), and add it to the [Series](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html#Syncfusion_Maui_Toolkit_Charts_SfCartesianChart_Series) collection property of [SfCartesianChart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html). The segment size can be defined by using the [PointHeight](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ScatterSeries.html#Syncfusion_Maui_Toolkit_Charts_ScatterSeries_PointHeight) and [PointWidth](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ScatterSeries.html#Syncfusion_Maui_Toolkit_Charts_ScatterSeries_PointWidth) properties.
+To render a scatter chart, create an instance of [ScatterSeries](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ScatterSeries.html) and add it to the [Series](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html#Syncfusion_Maui_Toolkit_Charts_SfCartesianChart_Series) collection property of [SfCartesianChart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html). The segment size can be defined using the [PointHeight](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ScatterSeries.html#Syncfusion_Maui_Toolkit_Charts_ScatterSeries_PointHeight) and [PointWidth](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ScatterSeries.html#Syncfusion_Maui_Toolkit_Charts_ScatterSeries_PointWidth) properties. Both properties are of type `double`, and the default value is `10`. The [Type](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ScatterSeries.html#Syncfusion_Maui_Toolkit_Charts_ScatterSeries_Type) property, of type `ShapeType`, allows you to change the rendering shape of the scatter segment. The default value is `ShapeType.Circle`.
+
+N> **Prerequisite:** Ensure that the required NuGet package is installed, the necessary namespaces are imported, and the **SfCartesianChart** control is properly configured in your application. For detailed setup and configuration instructions, refer to the **[Getting Started](https://help.syncfusion.com/maui-toolkit/cartesian-charts/getting-started)** guide.
 
 N> The Cartesian chart has [Series](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html#Syncfusion_Maui_Toolkit_Charts_SfCartesianChart_Series) as its default content.
 
@@ -50,7 +52,6 @@ chart.XAxes.Add(primaryAxis);
 NumericalAxis secondaryAxis = new NumericalAxis();
 chart.YAxes.Add(secondaryAxis);
 
-// Create a new ScatterSeries to plot data points on the chart
 ScatterSeries series = new ScatterSeries()
 {
     ItemsSource = new ViewModel().Data,
@@ -60,7 +61,6 @@ ScatterSeries series = new ScatterSeries()
     PointWidth = 7,
 };
 
-// Add the ScatterSeries to the chart's series collection
 chart.Series.Add(series);
 this.Content = chart;
 
@@ -68,4 +68,4 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Scatter chart type in MAUI Chart](Chart-types-images/maui_scatter_chart.jpg)
+![Scatter chart type in .NET MAUI Cartesian Chart](Chart-types-images/maui_scatter_chart.jpg)

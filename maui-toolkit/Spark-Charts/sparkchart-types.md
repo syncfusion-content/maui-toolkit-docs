@@ -1,19 +1,21 @@
 ---
 layout: post
-title: Chart types in .NET MAUI Spark Chart Control | Syncfusion
-description: Learn here all about chart types supported in Syncfusion® .NET MAUI Spark Charts (SfSparkChart) control and more.
+title: Chart types in .NET MAUI Spark Charts
+description: Chart Types in .NET MAUI Spark Charts support line, column, and area visualizations, enabling compact and effective trend analysis.
 platform: maui-toolkit
 control: SfSparkChart
 documentation: ug
 ---
 
-# Chart types in .NET MAUI Spark Charts
+# Chart Types in .NET MAUI Spark Charts
 
-The [SfSparkChart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SparkCharts.SfSparkChart.html) control supports four different chart types such as Line, Column, Area, and Win-loss.
+N> **Prerequisite:** Ensure that the required NuGet package is installed, the necessary namespaces are imported, and the **Spark Charts** control is properly configured in your application. For detailed setup and configuration instructions, refer to the **[Getting Started](https://help.syncfusion.com/maui-toolkit/spark-charts/getting-started)** guide.
+
+The [SfSparkChart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SparkCharts.SfSparkChart.html) control supports four chart types: line, area, column, and win-loss.
 
 ## Line chart
 
-The [SfSparkLineChart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SparkCharts.SfSparkLineChart.html) chart is used for identifying patterns and trends in the data, such as seasonal effects, large changes, and turning points over a period of time.
+The [SfSparkLineChart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SparkCharts.SfSparkLineChart.html) is used for identifying patterns and trends in the data, such as seasonal effects, large changes, and turning points over a period of time.
 
 {% tabs %}
 
@@ -21,7 +23,7 @@ The [SfSparkLineChart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Ma
 
 <sparkchart:SfSparkLineChart ItemsSource="{Binding Data}" 
                     YBindingPath="YValue">
-. . .
+    <!-- code omitted for brevity -->
 </sparkchart:SfSparkLineChart>
 
 {% endhighlight %}
@@ -33,7 +35,7 @@ SfSparkLineChart sparkchart = new SfSparkLineChart()
     ItemsSource = new SparkChartViewModel().Data,
     YBindingPath = "YValue",
 };
-
+//code omitted for brevity
 this.Content = sparkchart;
 
 {% endhighlight %}
@@ -44,7 +46,7 @@ this.Content = sparkchart;
 
 ## Area chart
 
-The [SfSparkAreaChart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SparkCharts.SfSparkAreaChart.html) is used to emphasize a change in values. This is primarily used when the magnitude of the trend is to be communicated rather than individual data values.
+The [SfSparkAreaChart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SparkCharts.SfSparkAreaChart.html) is used to emphasize a change in values. Use this to communicate the magnitude of a trend rather than individual data values.
 
 {% tabs %}
 
@@ -52,7 +54,7 @@ The [SfSparkAreaChart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Ma
 
 <sparkchart:SfSparkAreaChart ItemsSource="{Binding Data}" 
                     YBindingPath="YValue">
-. . .
+    <!-- code omitted for brevity -->
 </sparkchart:SfSparkAreaChart>
 
 {% endhighlight %}
@@ -64,7 +66,7 @@ SfSparkAreaChart sparkchart = new SfSparkAreaChart()
     ItemsSource = new SparkChartViewModel().Data,
     YBindingPath = "YValue",
 };
-
+//code omitted for brevity
 this.Content = sparkchart;
 
 {% endhighlight %}
@@ -73,9 +75,9 @@ this.Content = sparkchart;
 
 ![Spark Area chart in MAUI Spark Chart](sparkchart_types_images/MAUI_Area_Sparkline.png)
 
-## Column Chart
+## Column chart
 
-The [SfSparkColumnChart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SparkCharts.SfSparkColumnChart.html) uses vertical bars to show the comparison between the different data.
+The [SfSparkColumnChart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SparkCharts.SfSparkColumnChart.html) uses vertical bars to compare values across data points.
 
 {% tabs %}
 
@@ -83,7 +85,7 @@ The [SfSparkColumnChart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.
 
 <sparkchart:SfSparkColumnChart ItemsSource="{Binding Data}" 
                     YBindingPath="YValue">
-. . .
+    <!-- code omitted for brevity -->
 </sparkchart:SfSparkColumnChart>
 
 {% endhighlight %}
@@ -95,6 +97,7 @@ SfSparkColumnChart sparkchart = new SfSparkColumnChart()
     ItemsSource = new SparkChartViewModel().Data,
     YBindingPath = "YValue",
 };
+//code omitted for brevity
 this.Content = sparkchart;
 
 {% endhighlight %}
@@ -103,9 +106,9 @@ this.Content = sparkchart;
 
 ![Spark Column chart in MAUI Spark Chart](sparkchart_types_images/MAUI_Column_Sparkline.png)
 
-## WinLoss Chart
+## Win-loss chart
 
-The [SfSparkWinLossChart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SparkCharts.SfSparkWinLossChart.html) is used to show whether each value is positive or negative visualizing a Win/Loss scenario.
+The [SfSparkWinLossChart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SparkCharts.SfSparkWinLossChart.html) is used to show whether each value is positive or negative, visualizing a win-loss scenario. Positive values are rendered as bars above the axis, negative values as bars below the axis, and zero values are not rendered.
 
 {% tabs %}
 
@@ -113,7 +116,7 @@ The [SfSparkWinLossChart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion
 
 <sparkchart:SfSparkWinLossChart ItemsSource="{Binding Data}" 
                      YBindingPath="YValue">
-. . .
+    <!-- code omitted for brevity -->
 </sparkchart:SfSparkWinLossChart>
 
 {% endhighlight %}
@@ -125,6 +128,7 @@ SfSparkWinLossChart sparkchart = new SfSparkWinLossChart()
     ItemsSource = new SparkChartViewModel().Data,
     YBindingPath = "YValue",
 };
+//code omitted for brevity
 this.Content = sparkchart;
 
 {% endhighlight %}

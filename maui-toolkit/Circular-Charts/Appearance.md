@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Appearance in .NET MAUI Circular Chart control  Syncfusion
-description: Learn here all about appearance customization in .NET MAUI Chart (SfCircularChart), its elements and more.
+title: Appearance in .NET MAUI Circular Chart | Syncfusion®
+description: Appearance customization in .NET MAUI Circular Chart allows you to personalize chart visuals using colors, palettes, gradients.
 platform: maui-toolkit
 control: SfCircularChart
 documentation: ug
@@ -10,6 +10,8 @@ documentation: ug
 # Appearance in .NET MAUI Circular Chart
 
 The appearance of the [SfCircularChart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCircularChart.html) can be customized by using the predefined palettes, custom palettes, and gradient which allows enriching the application.
+
+N> **Prerequisite:** Ensure that the required NuGet package is installed, the necessary namespaces are imported, and the **SfCircularChart** control is properly configured in your application. For detailed setup and configuration instructions, refer to the **[Getting Started](https://help.syncfusion.com/maui-toolkit/circular-charts/getting-started)** guide.
 
 ## Add a title
 
@@ -23,22 +25,21 @@ The title of the chart acts as the title to provide quick information to the use
     <chart:SfCircularChart.Title>
         <Label Text="PRODUCT SALES"/>
     </chart:SfCircularChart.Title>
-    . . .
+    <!-- code omitted for brevity -->
 </chart:SfCircularChart>
 
 {% endhighlight %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 SfCircularChart chart = new SfCircularChart();
-
-// Set the chart title
 chart.Title = new Label()
 {
-    Text = "PRODUCT SALES",
+    Text = "PRODUCT SALES"
 };
-. . .
+// code omitted for brevity
 this.Content = chart;
+
 {% endhighlight %}
 
 {% endtabs %}  
@@ -52,48 +53,47 @@ The [SfCircularChart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Mau
 {% highlight xaml %}
 
 <chart:SfCircularChart>
-    . . .
-    <chart:PieSeries 
-        ItemsSource="{Binding Data}"
-        XBindingPath="XValue"
-        YBindingPath="YValue"
-        PaletteBrushes="{Binding CustomBrushes}"/>
+    <!-- code omitted for brevity -->
+    <chart:PieSeries ItemsSource="{Binding Data}" 
+                     XBindingPath="XValue" 
+                     YBindingPath="YValue"
+                     PaletteBrushes="{Binding CustomBrushes}"/>
 </chart:SfCircularChart>
-
 
 {% endhighlight %}
 
 {% highlight c# %}
 
+public class Model
+{
+    public string XValue { get; set; }
+    public double YValue { get; set; }
+}
+
 public class ViewModel
 {
-    // Collection to hold the data for the chart
     public ObservableCollection<Model> Data { get; set; }
 
-    // List to store custom brush colors for the chart
     public List<Brush> CustomBrushes { get; set; }
-
     public ViewModel()
     {
-        // Initialize the CustomBrushes list
+        Data = new ObservableCollection<Model>();
+        // code omitted for brevity
+
         CustomBrushes = new List<Brush>();
-
-        // Add custom color brushes to the list
-        CustomBrushes.Add(new SolidColorBrush(Color.FromRgb(38, 198, 218)));  // Light cyan
-        CustomBrushes.Add(new SolidColorBrush(Color.FromRgb(0, 188, 212)));   // Cyan
-        CustomBrushes.Add(new SolidColorBrush(Color.FromRgb(0, 172, 193)));   // Dark cyan
-        CustomBrushes.Add(new SolidColorBrush(Color.FromRgb(0, 151, 167)));   // Darker cyan
-        CustomBrushes.Add(new SolidColorBrush(Color.FromRgb(0, 131, 143)));   // Darkest cyan
+        CustomBrushes.Add(new SolidColorBrush(Color.FromRgb(38, 198, 218)));
+        CustomBrushes.Add(new SolidColorBrush(Color.FromRgb(0, 188, 212)));
+        CustomBrushes.Add(new SolidColorBrush(Color.FromRgb(0, 172, 193)));
+        CustomBrushes.Add(new SolidColorBrush(Color.FromRgb(0, 151, 167)));
+        CustomBrushes.Add(new SolidColorBrush(Color.FromRgb(0, 131, 143)));
     }
-
-    // ... Other methods and properties ...
 }
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![Custom PaletteBrushes in MAUI Chart](Appearance_images/MAUI_Circular_chart_Custom_palette.png)
+![Custom PaletteBrushes in .NET MAUI Circular Chart](Appearance_images/MAUI_Circular_chart_Custom_palette.png)
 
 ## Applying Gradient
 
@@ -104,11 +104,11 @@ The gradient for the circular chart can be set by using the [PaletteBrushes](htt
 {% highlight xaml %}
 
 <chart:SfCircularChart>
-	. . .
-	<chart:PieSeries ItemsSource="{Binding Data}" 
-			 XBindingPath="XValue" 
-			 YBindingPath="YValue"
-			 PaletteBrushes="{Binding CustomBrushes}"/>
+    <!-- code omitted for brevity -->
+    <chart:PieSeries ItemsSource="{Binding Data}" 
+                     XBindingPath="XValue" 
+                     YBindingPath="YValue"
+                     PaletteBrushes="{Binding CustomBrushes}"/>
 </chart:SfCircularChart>
 
 {% endhighlight %}
@@ -117,17 +117,15 @@ The gradient for the circular chart can be set by using the [PaletteBrushes](htt
 
 public class ViewModel
 {
-    // Collection to hold data models
     public ObservableCollection<Model> Data { get; set; }
-
-    // List to store custom brushes
     public List<Brush> CustomBrushes { get; set; }
 
     public ViewModel()
     {
-        CustomBrushes = new List<Brush>();
+        Data = new ObservableCollection<Model>();
+        // code omitted for brevity
 
-        // Create and configure gradient brush 1
+        CustomBrushes = new List<Brush>();
         LinearGradientBrush gradientColor1 = new LinearGradientBrush();
         gradientColor1.GradientStops = new GradientStopCollection()
         {
@@ -135,7 +133,6 @@ public class ViewModel
             new GradientStop() { Offset = 0, Color = Color.FromRgb(252, 182, 159) }
         };
 
-        // Create and configure gradient brush 2
         LinearGradientBrush gradientColor2 = new LinearGradientBrush();
         gradientColor2.GradientStops = new GradientStopCollection()
         {
@@ -143,7 +140,6 @@ public class ViewModel
             new GradientStop() { Offset = 0, Color = Color.FromRgb(252, 204, 45) }
         };
 
-        // Create and configure gradient brush 3
         LinearGradientBrush gradientColor3 = new LinearGradientBrush();
         gradientColor3.GradientStops = new GradientStopCollection()
         {
@@ -151,7 +147,6 @@ public class ViewModel
             new GradientStop() { Offset = 0, Color = Color.FromRgb(252, 182, 159) }
         };
 
-        // Create and configure gradient brush 4
         LinearGradientBrush gradientColor4 = new LinearGradientBrush();
         gradientColor4.GradientStops = new GradientStopCollection()
         {
@@ -159,7 +154,6 @@ public class ViewModel
             new GradientStop() { Offset = 0, Color = Color.FromRgb(250, 172, 168) }
         };
 
-        // Create and configure gradient brush 5
         LinearGradientBrush gradientColor5 = new LinearGradientBrush();
         gradientColor5.GradientStops = new GradientStopCollection()
         {
@@ -167,23 +161,99 @@ public class ViewModel
             new GradientStop() { Offset = 0, Color = Color.FromRgb(123, 176, 249) }
         };
 
-        // Add all gradient brushes to the CustomBrushes list
         CustomBrushes.Add(gradientColor1);
         CustomBrushes.Add(gradientColor2);
         CustomBrushes.Add(gradientColor3);
         CustomBrushes.Add(gradientColor4);
         CustomBrushes.Add(gradientColor5);
     }
-    // ... (other methods or properties)
 }
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![Gradient support in MAUI Chart](Appearance_images/MAUI_pie_chart_gradient.png)
+![Gradient support in .NET MAUI Circular Chart](Appearance_images/MAUI_pie_chart_gradient.png)
 
-## Plotting Area Customization:
+## Point Color Path
+
+The [SfCircularChart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCircularChart.html) supports using the [PointColorPath](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartSeries.html#Syncfusion_Maui_Toolkit_Charts_ChartSeries_PointColorPath) property to assign different colors to each data point. By binding this property to a color field in the data source, each segment can be dynamically styled with its own color.
+
+The following code example demonstrates how to define a data model with a `PointColor` property and bind it to the chart series.
+
+{% tabs %}
+
+{% highlight c# %}
+
+public class PointColorViewModel
+{
+public ObservableCollection<Model> Data { get; set; }
+
+public PointColorViewModel()
+{
+    Data = new ObservableCollection<Model>()
+    {
+        new() { XValue = "Purchases", YValue = 1000, PointColor = Color.FromArgb("#C695F0") },
+        new() { XValue = "Electronics", YValue = 1300, PointColor = Color.FromArgb("#A35DE5") },
+        new() { XValue = "Investment", YValue = 2000, PointColor = Color.FromArgb("#551E8B") },
+        new() { XValue = "Research", YValue = 1700, PointColor = Color.FromArgb("#8933DE") },
+        new() { XValue = "Jewelry", YValue = 1100, PointColor = Color.FromArgb("#D1A8F3") },
+        };
+    }
+}
+
+public class Model
+{
+    public string? XValue { get; set; }
+    public double YValue { get; set; }
+    public Color? PointColor { get; set; }
+}
+
+{% endhighlight %}
+
+{% endtabs %}
+
+Set `ItemsSource` to your data collection and map `XBindingPath`, `YBindingPath`, and `PointColorPath` to the corresponding model properties.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<chart:SfCircularChart>
+    <!-- code omitted for brevity -->
+    <chart:PieSeries ItemsSource = "{Binding Data}"
+                     XBindingPath = "XValue"
+                     YBindingPath = "YValue"
+                     PointColorPath = "PointColor"/>
+</chart:SfCircularChart>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfCircularChart chart = new SfCircularChart();
+
+<!-- code omitted for brevity -->
+PieSeries series = new PieSeries()      
+{
+    ItemsSource = new PointColorViewModel().Data,
+    XBindingPath = "XValue",
+    YBindingPath = "YValue",
+    PointColorPath = "PointColor"
+};
+
+chart.Series.Add(series);
+this.Content = chart;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![PointColorPath in MAUI Chart](Appearance_images/MAUI_pie_chart_pointcolorpath.png)
+
+N> The priority for color assignment is as follows: `Fill`>`PointColorPath`>`PaletteBrushes`.
+
+## Plotting Area Customization
 
 [SfCircularChart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCircularChart.html?tabs=tabid-1) allows you to add any view to the chart plot area, which is useful for adding any relevant data, a watermark, or a color gradient to the background of the chart.
 
@@ -192,70 +262,59 @@ public class ViewModel
 {% highlight xaml %}
 
 <chart:SfCircularChart>
-. . .
     <chart:SfCircularChart.PlotAreaBackgroundView>
-      	<AbsoluteLayout>
-       		<Border Stroke="red"
-			StrokeThickness="2"
-			AbsoluteLayout.LayoutBounds="0,0,1,1"
-			AbsoluteLayout.LayoutFlags="All"/>
-       		<Label Text="Copyright @ 2001 - 2022 Syncfusion Inc"
-		       FontSize="18"
-		       AbsoluteLayout.LayoutBounds="1,1,-1,-1"
-		       AbsoluteLayout.LayoutFlags="PositionProportional"
-		       Opacity="0.4"/>
-       		<Label Text="CONFIDENTIAL"
-		       Rotation="340"
-		       FontSize="80"
-		       FontAttributes="Bold,Italic"
-		       TextColor="Gray"
-		       Margin="10,0,0,0"
-		       AbsoluteLayout.LayoutBounds="0.5,0.5,-1,-1"
-		       AbsoluteLayout.LayoutFlags="PositionProportional"
-	           Opacity="0.3"/>
-    	</AbsoluteLayout>
+        <AbsoluteLayout>
+            <Border Stroke="red"
+                    StrokeThickness="2"
+                    AbsoluteLayout.LayoutBounds="0,0,1,1"
+                    AbsoluteLayout.LayoutFlags="All"/>
+            <Label Text="Copyright @ 2001 - 2022 Syncfusion Inc"
+                   FontSize="18"
+                   AbsoluteLayout.LayoutBounds="1,1,-1,-1"
+                   AbsoluteLayout.LayoutFlags="PositionProportional"
+                   Opacity="0.4"/>
+            <Label Text="CONFIDENTIAL"
+                   Rotation="340"
+                   FontSize="80"
+                   FontAttributes="Bold,Italic"
+                   TextColor="Gray"
+                   Margin="10,0,0,0"
+                   AbsoluteLayout.LayoutBounds="0.5,0.5,-1,-1"
+                   AbsoluteLayout.LayoutFlags="PositionProportional"
+                   Opacity="0.3"/>
+        </AbsoluteLayout>
     </chart:SfCircularChart.PlotAreaBackgroundView>
+    <!-- code omitted for brevity -->
 </chart:SfCircularChart>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-// Create a new SfCircularChart
 SfCircularChart chart = new SfCircularChart();
-
-// Create an AbsoluteLayout to hold custom elements
 AbsoluteLayout absoluteLayout = new AbsoluteLayout();
-
-// Create a border for the chart plot area
-var border = new Border() 
+var border = new Border()
 {
     Stroke = Colors.Red,
     StrokeThickness = 2
 };
 
-// Set the border to cover the entire chart area
 AbsoluteLayout.SetLayoutBounds(border, new Rect(0, 0, 1, 1));
 AbsoluteLayout.SetLayoutFlags(border, Microsoft.Maui.Layouts.AbsoluteLayoutFlags.All);
 absoluteLayout.Children.Add(border);
-
-// Create a copyright label
-var copyRight = new Label() 
+var copyRight = new Label()
 {
     Text = "Copyright @ 2001 - 2022 Syncfusion Inc",
     FontSize = 18,
     Opacity = 0.4
 };
 
-// Position the copyright label at the bottom-right corner
 AbsoluteLayout.SetLayoutBounds(copyRight, new Rect(1, 1, -1, -1));
 AbsoluteLayout.SetLayoutFlags(copyRight, Microsoft.Maui.Layouts.AbsoluteLayoutFlags.PositionProportional);
 absoluteLayout.Children.Add(copyRight);
-
-// Create a watermark label
 var watermark = new Label()
 {
-    Text = "CONFIDENTIAL", 
+    Text = "CONFIDENTIAL",
     Rotation = 340,
     FontSize = 80,
     FontAttributes = FontAttributes.Bold,
@@ -263,19 +322,15 @@ var watermark = new Label()
     Opacity = 0.3
 };
 
-// Position the watermark label at the center of the plot area
 AbsoluteLayout.SetLayoutBounds(watermark, new Rect(0.5, 0.5, -1, -1));
 AbsoluteLayout.SetLayoutFlags(watermark, Microsoft.Maui.Layouts.AbsoluteLayoutFlags.PositionProportional);
 absoluteLayout.Children.Add(watermark);
-
-// Set the custom AbsoluteLayout as the chart's background
 chart.PlotAreaBackgroundView = absoluteLayout;
-
-// Set the chart as the content of the current page/view
+// code omitted for brevity
 this.Content = chart;
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![Watermark in .NET MAUI Charts](Appearance_images/water_mark.jpg)
+![Watermark in .NET MAUI Circular Chart](Appearance_images/water_mark.jpg)
