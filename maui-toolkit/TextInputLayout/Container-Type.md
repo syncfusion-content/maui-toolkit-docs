@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Container Type in .NET MAUI Text Input Layout control | Syncfusion
-description: Learn here all about Container Type support in Syncfusion<sup>®</sup> .NET MAUI Text Input Layout (SfTextInputLayout) control and more.
+title: Container Type in .NET MAUI Text Input Layout  | Syncfusion®
+description: Learn here all about Container Type support in the Syncfusion® .NET MAUI Text Input Layout control and more.
 platform: maui-toolkit
 control: SfTextInputLayout
 documentation: ug
 keywords: .net maui text input layout, syncfusion text input layout, text input layout maui.
 ---
 
-# Container Type in .NET MAUI Text Input Layout (SfTextInputLayout)
+# Container Type in .NET MAUI Text Input Layout 
 
 Containers improve the discoverability of input view by creating a contrast between the input view and assistive elements.
 
