@@ -2,9 +2,9 @@
 layout: post
 title: Change Number Format in .NET MAUI Numeric Entry | Syncfusion®
 description: Learn here about changing the number format of Syncfusion® .NET MAUI Numeric Entry (SfNumericEntry) control and more.
-platform: MAUI
+platform: maui-toolkit
 control: SfNumericEntry
-documentation: ug
+documentation: UG
 ---
 
 # Value Formatting in .NET MAUI Numeric Entry
