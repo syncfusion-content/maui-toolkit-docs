@@ -2,9 +2,9 @@
 layout: post
 title: Value Change Restriction in .NET MAUI Numeric Entry | Syncfusion®
 description: Learn here all about how to restrict the value change in Syncfusion® .NET MAUI Numeric Entry (SfNumericEntry) control and more.
-platform: maui-toolkit
-control: SfNumericEntry
-documentation: UG
+platform: MAUI
+control:  SfNumericEntry
+documentation: ug
 ---
 
 # Value Change Restriction in .NET MAUI Numeric Entry
