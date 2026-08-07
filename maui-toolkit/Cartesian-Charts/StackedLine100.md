@@ -1,13 +1,14 @@
 ---
 layout: post
-title: Stacked Line 100 Chart in .NET MAUI Chart control | Syncfusion
-description: Learn here all about stacked line 100 chart support in Syncfusion® .NET MAUI Chart (SfCartesianChart) control.
+title: Stacked Line 100 Chart in .NET MAUI Cartesian Chart | Syncfusion®
+description: Stacked Line 100 Chart in .NET MAUI Cartesian Chart displays percentage contributions using stacked lines, helping visualize proportional trends across series.
 platform: maui-toolkit
 control: SfCartesianChart
 documentation: ug
+keywords: .net maui stacked line 100 chart, maui stacked line 100 chart, stacked line 100 chart customization .net maui, syncfusion maui stacked line 100 chart, cartesian stacked line 100 chart maui, .net maui chart stacked line 100 visualization, .net maui 100% stacked line chart
 ---
 
-# Stacked Line 100 Chart in .NET MAUI Chart
+# Stacked Line 100 Chart in .NET MAUI Cartesian Chart
 
 ## Stacked Line 100
 
@@ -15,97 +16,100 @@ The stacked line 100 chart is a type of chart that displays multiple line series
 
 To render a stacked line 100 chart, create an instance of the [StackingLine100Series](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.StackingLine100Series.html) and add it to the [Series](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html#Syncfusion_Maui_Toolkit_Charts_SfCartesianChart_Series) collection property of the [SfCartesianChart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html).
 
+N> **Prerequisite:** Ensure that the required NuGet package is installed, the necessary namespaces are imported, and the **SfCartesianChart** control is properly configured in your application. For detailed setup and configuration instructions, refer to the **[Getting Started](https://help.syncfusion.com/maui-toolkit/cartesian-charts/getting-started)** guide.
+
 N> The Cartesian chart has a [Series](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html#Syncfusion_Maui_Toolkit_Charts_SfCartesianChart_Series) as its default content.
 
 {% tabs %}
 
 {% highlight xaml %}
 
-    <chart:SfCartesianChart>
+<chart:SfCartesianChart>
 
-        <chart:SfCartesianChart.XAxes>
-            <chart:CategoryAxis/>
-        </chart:SfCartesianChart.XAxes>
+    <chart:SfCartesianChart.XAxes>
+        <chart:CategoryAxis/>
+    </chart:SfCartesianChart.XAxes>
 
-        <chart:SfCartesianChart.YAxes>
-            <chart:NumericalAxis/>
-        </chart:SfCartesianChart.YAxes>
+    <chart:SfCartesianChart.YAxes>
+        <chart:NumericalAxis/>
+    </chart:SfCartesianChart.YAxes>
 
-        <chart:StackingLine100Series ItemsSource="{Binding Data1}"
-                                     XBindingPath="Month"
-                                     YBindingPath="Value">        
-        </chart:StackingLine100Series>
+    <chart:StackingLine100Series ItemsSource="{Binding Data1}"
+                                 XBindingPath="Month"
+                                 YBindingPath="Value">        
+    </chart:StackingLine100Series>
 
-        <chart:StackingLine100Series ItemsSource="{Binding Data2}"
-                                     XBindingPath="Month"
-                                     YBindingPath="Value">         
-        </chart:StackingLine100Series>
+    <chart:StackingLine100Series ItemsSource="{Binding Data2}"
+                                 XBindingPath="Month"
+                                 YBindingPath="Value">         
+    </chart:StackingLine100Series>
 
-        <chart:StackingLine100Series ItemsSource="{Binding Data3}"
-                                     XBindingPath="Month"
-                                     YBindingPath="Value">         
-        </chart:StackingLine100Series>
+    <chart:StackingLine100Series ItemsSource="{Binding Data3}"
+                                 XBindingPath="Month"
+                                    YBindingPath="Value">         
+    </chart:StackingLine100Series>
 
-        <chart:StackingLine100Series ItemsSource="{Binding Data4}"
-                                     XBindingPath="Month"
-                                     YBindingPath="Value">      
-        </chart:StackingLine100Series>
+    <chart:StackingLine100Series ItemsSource="{Binding Data4}"
+                                 XBindingPath="Month"
+                                 YBindingPath="Value">      
+    </chart:StackingLine100Series>
 
-    </chart:SfCartesianChart>
+</chart:SfCartesianChart>
 
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-    SfCartesianChart chart = new SfCartesianChart();
-    CategoryAxis primaryAxis = new CategoryAxis();
-    chart.XAxes.Add(primaryAxis);
-    NumericalAxis secondaryAxis = new NumericalAxis();
-    chart.YAxes.Add(secondaryAxis);
+SfCartesianChart chart = new SfCartesianChart();
 
-    ViewModel viewModel = new ViewModel();
+CategoryAxis primaryAxis = new CategoryAxis();
+chart.XAxes.Add(primaryAxis);
 
-    // Create a StackingLine100Series for the chart
-    StackingLine100Series series1 = new  StackingLine100Series()
-    {
-        ItemsSource = viewModel.Data1,
-        XBindingPath = "Month",
-        YBindingPath = "Value",
-    };
+NumericalAxis secondaryAxis = new NumericalAxis();
+chart.YAxes.Add(secondaryAxis);
 
-    StackingLine100Series series2 = new StackingLine100Series()
-    {
-        ItemsSource = viewModel.Data2,
-        XBindingPath = "Month",
-        YBindingPath = "Value",
-    };
-    StackingLine100Series series3 = new StackingLine100Series()
-    {
-        ItemsSource = viewModel.Data3,
-        XBindingPath = "Month",
-        YBindingPath = "Value",
-    };
+ViewModel viewModel = new ViewModel();
 
-    StackingLine100Series series4 = new StackingLine100Series()
-    {
-        ItemsSource = viewModel.Data4
-        XBindingPath = "Month",
-        YBindingPath = "Value",
-    };
+StackingLine100Series series1 = new StackingLine100Series()
+{
+    ItemsSource = viewModel.Data1,
+    XBindingPath = "Month",
+    YBindingPath = "Value",
+};
 
-    // Add all series to the chart
-    chart.Series.Add(series1);
-    chart.Series.Add(series2);     
-    chart.Series.Add(series3); 
-    chart.Series.Add(series4); 
-    this.Content = chart;
+StackingLine100Series series2 = new StackingLine100Series()
+{
+    ItemsSource = viewModel.Data2,
+    XBindingPath = "Month",
+    YBindingPath = "Value",
+};
+
+StackingLine100Series series3 = new StackingLine100Series()
+{
+    ItemsSource = viewModel.Data3,
+    XBindingPath = "Month",
+    YBindingPath = "Value",
+};
+
+StackingLine100Series series4 = new StackingLine100Series()
+{
+    ItemsSource = viewModel.Data4,
+    XBindingPath = "Month",
+    YBindingPath = "Value",
+};
+
+chart.Series.Add(series1);
+chart.Series.Add(series2);
+chart.Series.Add(series3);
+chart.Series.Add(series4);
+this.Content = chart;
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![Stacking Line 100 Chart in .NET MAUI Cartesian Charts.](chart-types-images\net-maui-cartesian-charts-stacked-line-100-chart.png)
+![Stacking Line 100 Chart in .NET MAUI Cartesian Chart](Chart-types-images/net-maui-cartesian-charts-stacked-line-100-chart.png)
 
 ## Dashed Stacked Line 100
 
@@ -115,105 +119,106 @@ The [StrokeDashArray](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Mau
 
 {% highlight xaml %}
 
-    <chart:SfCartesianChart>
+<chart:SfCartesianChart>
 
-        <chart:SfCartesianChart.Resources>
-            <DoubleCollection x:Key="dashArray">
-                <x:Double>5</x:Double>
-                <x:Double>2</x:Double>
-            </DoubleCollection>
-        </chart:SfCartesianChart.Resources>
+    <chart:SfCartesianChart.Resources>
+        <DoubleCollection x:Key="dashArray">
+            <x:Double>5</x:Double>
+            <x:Double>2</x:Double>
+        </DoubleCollection>
+    </chart:SfCartesianChart.Resources>
 
-        <chart:SfCartesianChart.XAxes>
-            <chart:CategoryAxis/>
-        </chart:SfCartesianChart.XAxes>
+    <chart:SfCartesianChart.XAxes>
+        <chart:CategoryAxis />
+    </chart:SfCartesianChart.XAxes>
 
-        <chart:SfCartesianChart.YAxes>
-            <chart:NumericalAxis/>
-        </chart:SfCartesianChart.YAxes>  
+    <chart:SfCartesianChart.YAxes>
+        <chart:NumericalAxis />
+    </chart:SfCartesianChart.YAxes>  
 
-        <chart:StackingLine100Series ItemsSource="{Binding Data1}"
-                                     XBindingPath="Month"
-                                     YBindingPath="Value"  
-                                     StrokeDashArray="{StaticResource dashArray}"/>
+    <chart:StackingLine100Series ItemsSource="{Binding Data1}"
+                                 XBindingPath="Month"
+                                 YBindingPath="Value"  
+                                 StrokeDashArray="{StaticResource dashArray}"/>
 
-        <chart:StackingLine100Series ItemsSource="{Binding Data2}"
-                                     XBindingPath="Month"
-                                     YBindingPath="Value"  
-                                     StrokeDashArray="{StaticResource dashArray}"/>
+    <chart:StackingLine100Series ItemsSource="{Binding Data2}"
+                                 XBindingPath="Month"
+                                 YBindingPath="Value"  
+                                 StrokeDashArray="{StaticResource dashArray}"/>
 
-        <chart:StackingLine100Series ItemsSource="{Binding Data3}"
-                                     XBindingPath="Month"
-                                     YBindingPath="Value"   
-                                     StrokeDashArray="{StaticResource dashArray}"/>
+    <chart:StackingLine100Series ItemsSource="{Binding Data3}"
+                                 XBindingPath="Month"
+                                 YBindingPath="Value"   
+                                 StrokeDashArray="{StaticResource dashArray}"/>
 
-        <chart:StackingLine100Series ItemsSource="{Binding Data4}"
-                                     XBindingPath="Month"
-                                     YBindingPath="Value"       
-                                     StrokeDashArray="{StaticResource dashArray}"/>
-    </chart:SfCartesianChart>
+    <chart:StackingLine100Series ItemsSource="{Binding Data4}"
+                                 XBindingPath="Month"
+                                 YBindingPath="Value"       
+                                 StrokeDashArray="{StaticResource dashArray}"/>
+</chart:SfCartesianChart>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-    SfCartesianChart chart = new SfCartesianChart();
-    CategoryAxis primaryAxis = new CategoryAxis();
-    chart.XAxes.Add(primaryAxis);
-    NumericalAxis secondaryAxis = new NumericalAxis();
-    chart.YAxes.Add(secondaryAxis);
+SfCartesianChart chart = new SfCartesianChart();
 
-    ViewModel viewModel = new ViewModel();
-    
-    // Create a collection of doubles to set the stroke dash pattern for the series
-    DoubleCollection doubleCollection = new DoubleCollection();
-    doubleCollection.Add(5);
-    doubleCollection.Add(2);
-    . . .
-    StackingLine100Series series1 = new  StackingLine100Series()
-    {
-        ItemsSource = viewModel.Data1,
-        XBindingPath = "Month",
-        YBindingPath = "Value",
-        StrokeDashArray = doubleCollection // Use defined dash pattern
-    };
+CategoryAxis primaryAxis = new CategoryAxis();
+chart.XAxes.Add(primaryAxis);
 
-    StackingLine100Series series2 = new StackingLine100Series()
-    {
-        ItemsSource = viewModel.Data2,
-        XBindingPath = "Month",
-        YBindingPath = "Value",
-        StrokeDashArray = doubleCollection // Use defined dash pattern
-    };
+NumericalAxis secondaryAxis = new NumericalAxis();
+chart.YAxes.Add(secondaryAxis);
 
-    StackingLine100Series series3 = new StackingLine100Series()       
-    {
-        ItemsSource = viewModel.Data3,
-        XBindingPath = "Month",
-        YBindingPath = "Value",
-        StrokeDashArray = doubleCollection // Use defined dash pattern
-    };
+ViewModel viewModel = new ViewModel();
 
-    StackingLine100Series series4 = new StackingLine100Series()
-    {
-        ItemsSource = viewModel.Data4,
-        XBindingPath = "Month",
-        YBindingPath = "Value",
-        StrokeDashArray = doubleCollection // Use defined dash pattern
-    };
+DoubleCollection doubleCollection = new DoubleCollection();
+doubleCollection.Add(5);
+doubleCollection.Add(2);
 
-    chart.Series.Add(series1);
-    chart.Series.Add(series2);     
-    chart.Series.Add(series3); 
-    chart.Series.Add(series4); 
+StackingLine100Series series1 = new  StackingLine100Series()
+{
+    ItemsSource = viewModel.Data1,
+    XBindingPath = "Month",
+    YBindingPath = "Value",
+    StrokeDashArray = doubleCollection
+};
 
-    this.Content = chart;
+StackingLine100Series series2 = new StackingLine100Series()
+{
+    ItemsSource = viewModel.Data2,
+    XBindingPath = "Month",
+    YBindingPath = "Value",
+    StrokeDashArray = doubleCollection
+};
+
+StackingLine100Series series3 = new StackingLine100Series()       
+{
+    ItemsSource = viewModel.Data3,
+    XBindingPath = "Month",
+    YBindingPath = "Value",
+    StrokeDashArray = doubleCollection
+};
+
+StackingLine100Series series4 = new StackingLine100Series()
+{
+    ItemsSource = viewModel.Data4,
+    XBindingPath = "Month",
+    YBindingPath = "Value",
+    StrokeDashArray = doubleCollection
+};
+
+chart.Series.Add(series1);
+chart.Series.Add(series2);     
+chart.Series.Add(series3); 
+chart.Series.Add(series4); 
+
+this.Content = chart;
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![Dashed Stacked 100 Line chart in MAUI](Chart-types-images/maui_dashed_stacked_line_100_chart.png)
+![Dashed Stacked 100 Line chart in .NET MAUI Cartesian Chart](Chart-types-images/maui_dashed_stacked_line_100_chart.png)
 
 ## Enable Marker
 
@@ -223,86 +228,86 @@ A marker, also known as a symbol, is used to determine or highlight the position
 
 {% highlight xaml %}
 
-    <chart:SfCartesianChart>
-        ...
-        <chart:StackingLine100Series ItemsSource="{Binding Data1}"
-                                     XBindingPath="Month"
-                                     YBindingPath="Value"
-                                     ShowMarkers="True"/>
+<chart:SfCartesianChart>
+    <!-- code omitted for brevity -->
+    <chart:StackingLine100Series ItemsSource="{Binding Data1}"
+                                 XBindingPath="Month"
+                                 YBindingPath="Value"
+                                 ShowMarkers="True"/>
 
-        <chart:StackingLine100Series ItemsSource="{Binding Data2}"
-                                     XBindingPath="Month"
-                                     YBindingPath="Value"
-                                     ShowMarkers="True"/>
+    <chart:StackingLine100Series ItemsSource="{Binding Data2}"
+                                 XBindingPath="Month"
+                                 YBindingPath="Value"
+                                 ShowMarkers="True"/>
 
-        <chart:StackingLine100Series ItemsSource="{Binding Data3}"
-                                     XBindingPath="Month"
-                                     YBindingPath="Value"
-                                     ShowMarkers="True"/>
+    <chart:StackingLine100Series ItemsSource="{Binding Data3}"
+                                 XBindingPath="Month"
+                                 YBindingPath="Value"
+                                 ShowMarkers="True"/>
 
-        <chart:StackingLine100Series ItemsSource="{Binding Data4}"
-                                     XBindingPath="Month"
-                                     YBindingPath="Value"
-                                     ShowMarkers="True"/>
+    <chart:StackingLine100Series ItemsSource="{Binding Data4}"
+                                 XBindingPath="Month"
+                                 YBindingPath="Value"
+                                 ShowMarkers="True"/>
 
-    </chart:SfCartesianChart>
+</chart:SfCartesianChart>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-    SfCartesianChart chart = new SfCartesianChart();
+SfCartesianChart chart = new SfCartesianChart();
 
-    ViewModel viewModel = new ViewModel();
-    ...
-    StackingLine100Series series1 = new  StackingLine100Series()
-    {
-        ItemsSource = viewModel.Data1,
-        XBindingPath = "Month",
-        YBindingPath = "Value",
-        ShowMarkers = true, // Enable markers on the series for data points
-    };
+ViewModel viewModel = new ViewModel();
+// code omitted for brevity
+StackingLine100Series series1 = new StackingLine100Series()
+{
+    ItemsSource = viewModel.Data1,
+    XBindingPath = "Month",
+    YBindingPath = "Value",
+    ShowMarkers = true,
+};
 
-    StackingLine100Series series2 = new StackingLine100Series()
-    {
-        ItemsSource = viewModel.Data2,
-        XBindingPath = "Month",
-        YBindingPath = "Value",
-        ShowMarkers = true, // Enable markers on the series for data points
-    };
+StackingLine100Series series2 = new StackingLine100Series()
+{
+    ItemsSource = viewModel.Data2,
+    XBindingPath = "Month",
+    YBindingPath = "Value",
+    ShowMarkers = true,
+};
 
-    StackingLine100Series series3 = new StackingLine100Series()       
-    {
-        ItemsSource = viewModel.Data3,
-        XBindingPath = "Month",
-        YBindingPath = "Value",
-        ShowMarkers = true, // Enable markers on the series for data points
-    };
+StackingLine100Series series3 = new StackingLine100Series()
+{
+    ItemsSource = viewModel.Data3,
+    XBindingPath = "Month",
+    YBindingPath = "Value",
+    ShowMarkers = true,
+};
 
-    StackingLine100Series series4 = new StackingLine100Series()
-    {
-        ItemsSource = viewModel.Data4,
-        XBindingPath = "Month",
-        YBindingPath = "Value",
-        ShowMarkers = true, // Enable markers on the series for data points
-    };
+StackingLine100Series series4 = new StackingLine100Series()
+{
+    ItemsSource = viewModel.Data4,
+    XBindingPath = "Month",
+    YBindingPath = "Value",
+    ShowMarkers = true,
+};
 
-    chart.Series.Add(series1);
-    chart.Series.Add(series2);     
-    chart.Series.Add(series3); 
-    chart.Series.Add(series4); 
+chart.Series.Add(series1);
+chart.Series.Add(series2);
+chart.Series.Add(series3);
+chart.Series.Add(series4);
 
-    this.Content = chart;
+this.Content = chart;
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![Stacked Line 100 Marker support in MAUI Chart](Chart-types-images/stacked_line_100_marker_support.png)
+![Stacked Line 100 Marker support in .NET MAUI Cartesian Chart](Chart-types-images/stacked_line_100_marker_support.png)
 
 ### Marker customization
 
-In order to change the series markers appearance, create an instance of the [MarkerSettings](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.StackingLineSeries.html#Syncfusion_Maui_Toolkit_Charts_StackingLineSeries_MarkerSettings) property. The following properties are used to customize marker appearance.
+To change the series markers appearance, create an instance of the [MarkerSettings](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.StackingLineSeries.html#Syncfusion_Maui_Toolkit_Charts_StackingLineSeries_MarkerSettings) property. The following properties are used to customize marker appearance.
 
 * [Type](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartMarkerSettings.html#Syncfusion_Maui_Toolkit_Charts_ChartMarkerSettings_Type), of type `ShapeType`, describes the shape of the series marker. The default value of this property is [ShapeType.Circle](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ShapeType.html#Syncfusion_Maui_Toolkit_Charts_ShapeType_Circle).
 * [Stroke](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartMarkerSettings.html#Syncfusion_Maui_Toolkit_Charts_ChartMarkerSettings_Stroke), of type `Brush`, indicates the brush used to paint the marker border.
@@ -315,51 +320,51 @@ In order to change the series markers appearance, create an instance of the [Mar
 
 {% highlight xaml %}
 
-    <chart:SfCartesianChart>
-        ...
-        <chart:StackingLine100Series ItemsSource="{Binding Data}"
-                                  XBindingPath="Month"
-                                  YBindingPath="Value"
-                                  ShowMarkers="True">
-            <chart:StackingLine100Series.MarkerSettings>
-                <chart:ChartMarkerSettings Type="Diamond" 
-                                           StrokeWidth="2"
-                                           Fill="White"
-                                           Height="8"
-                                           Width="8"/>
-            </chart:StackingLine100Series.MarkerSettings>    
-        </chart:StackingLine100Series>
-    </chart:SfCartesianChart>
+<chart:SfCartesianChart>
+    <!-- code omitted for brevity -->
+    <chart:StackingLine100Series ItemsSource="{Binding Data1}"
+                                XBindingPath="Month"
+                                YBindingPath="Value"
+                                ShowMarkers="True">
+        <chart:StackingLine100Series.MarkerSettings>
+            <chart:ChartMarkerSettings Type="Diamond" 
+                                        StrokeWidth="2"
+                                        Fill="White"
+                                        Height="8"
+                                        Width="8"/>
+        </chart:StackingLine100Series.MarkerSettings>    
+    </chart:StackingLine100Series>
+</chart:SfCartesianChart>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-    SfCartesianChart chart = new SfCartesianChart();
+SfCartesianChart chart = new SfCartesianChart();
 
-    ViewModel viewModel = new ViewModel();
-    ...
-    // Configure marker settings for the data points in the chart series.
-    ChartMarkerSettings chartMarker= new ChartMarkerSettings()
-    {
-        Type = ShapeType.Diamond,
-        Fill = Colors.White,
-        StrokeWidth = 2,
-        Height = 8,
-        Width = 8,
-    };
+ViewModel viewModel = new ViewModel();
+// code omitted for brevity
+ChartMarkerSettings chartMarker= new ChartMarkerSettings()
+{
+    Type = ShapeType.Diamond,
+    Fill = Colors.Brown,
+    Stroke = Colors.Black,
+    StrokeWidth = 1,
+    Height = 8,
+    Width = 8
+};
 
-    StackingLine100Series series = new  StackingLine100Series()
-    {
-        ItemsSource = viewModel.Data,
-        XBindingPath = "Month",
-        YBindingPath = "Value",
-        ShowMarkers= true,
-        MarkerSettings = chartMarker, // Apply the marker settings configured above.
-    };
+StackingLine100Series series = new StackingLine100Series()
+{
+    XBindingPath = "Month",
+    YBindingPath = "Value",
+    ItemsSource = viewModel.Data1,
+    ShowMarkers= true,
+    MarkerSettings = chartMarker,
+};
 
-    chart.Series.Add(series);
-    this.Content = chart;
+chart.Series.Add(series);
+this.Content = chart;
 
 {% endhighlight %}
 

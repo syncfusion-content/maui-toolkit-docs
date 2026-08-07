@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Customization in .NET MAUI OTP Input (SfOtpInput) | Syncfusion®
+title: Customization in .NET MAUI OTP Input | Syncfusion®
 description: Learn how to customize the Syncfusion® .NET MAUI OTP Input (SfOtpInput) control. Explore various options to enhance the appearance of your OTP Input.
 platform: maui-toolkit
 control: SfOtpInput
 documentation: UG
 ---
 
-# Customization in .NET MAUI OTP Input (SfOtpInput)
+# Customization in .NET MAUI OTP Input
 
 An [OTP Input](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.OtpInput.SfOtpInput.html) consists of multiple customizable elements to enhance its appearance and functionality.
 

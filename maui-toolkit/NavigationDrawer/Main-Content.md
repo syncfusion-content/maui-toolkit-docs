@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Set Main Content in .NET MAUI Navigation Drawer Control | Syncfusion®
+title: Set Main Content in .NET MAUI Navigation Drawer | Syncfusion®
 description: Learn all about setting Main Content support in the Syncfusion® .NET MAUI Navigation Drawer (SfNavigationDrawer) control and more.
 platform: maui-toolkit
 control: SfNavigationDrawer

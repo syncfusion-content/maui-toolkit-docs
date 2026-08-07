@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Fixed Hint Position in .NET MAUI TextInputLayout control | Syncfusion
-description: Learn here all about Fixed Hint Position support in Syncfusion<sup>®</sup> .NET MAUI Text Input Layout (SfTextInputLayout) control and more.
+title: Fixed Hint Position in .NET MAUI Text Input Layout | Syncfusion®
+description: Learn here all about Fixed Hint Position support in Syncfusion® .NET MAUI Text Input Layout control and more.
 platform: maui-toolkit
 control: SfTextInputLayout
 documentation: ug
 keywords: .net maui text input layout, syncfusion text input layout, text input layout maui, .net maui hint label.
 ---
 
-# Fixed Hint Position in .NET MAUI Text Input Layout (SfTextInputLayout)
+# Fixed Hint Position in .NET MAUI Text Input Layout
 
 Hint label for the text input layout is always fixed at the top position. This helps users make the hint label float even when the input view is not focused. It can be enabled by setting the [IsHintAlwaysFloated](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TextInputLayout.SfTextInputLayout.html#Syncfusion_Maui_Toolkit_TextInputLayout_SfTextInputLayout_IsHintAlwaysFloated) property.
 

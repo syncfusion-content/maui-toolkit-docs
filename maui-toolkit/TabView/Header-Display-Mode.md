@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Header Display Mode in .NET MAUI Tab View Control | Syncfusion®
+title: Header Display Mode in .NET MAUI Tab View | Syncfusion®
 description: Learn about header display mode support in Syncfusion® .NET MAUI Tab View (SfTabView) control and more.
 platform: maui-toolkit
 control: SfTabView
 documentation: UG
 ---
 
-# Header Display Mode in .NET MAUI Tab View control (SfTabView)
+# Header Display Mode in .NET MAUI Tab View
 
 By default, the [Tab View](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SfTabView.html) control displays the title of each Tab Item. It can be customized to display in any of the following modes:
 

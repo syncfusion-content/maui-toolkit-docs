@@ -1,17 +1,19 @@
 ---
 layout: post
-title: Polar Area Chart in .NET MAUI Chart Control | Syncfusion
-description: Learn here all about the Polar area chart type and its features in the Syncfusion® .NET MAUI Chart (SfPolarChart) control.
+title: Polar Area Chart in .NET MAUI Polar Chart | Syncfusion®
+description: Polar Area Chart in .NET MAUI Polar Chart displays data as proportional segments in a polar coordinate system, enabling effective comparison of values.
 platform: maui-toolkit
 control: SfPolarChart
 documentation: ug
 ---
 
-# Polar Area Chart in .NET MAUI Chart
+# Polar Area Chart in .NET MAUI Polar Chart
 
 ## Polar Area Chart
 
 To display an area series in a polar chart, instantiate the [PolarAreaSeries](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.PolarAreaSeries.html) and include it in the [Series](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfPolarChart.html#Syncfusion_Maui_Toolkit_Charts_SfPolarChart_Series) collection property of [SfPolarChart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfPolarChart.html).
+
+N> **Prerequisite:** Ensure that the required NuGet package is installed, the necessary namespaces are imported, and the **SfPolarChart** control is properly configured in your application. For detailed setup and configuration instructions, refer to the **[Getting Started](https://help.syncfusion.com/maui-toolkit/polar-charts/getting-started)** guide.
 
 {% tabs %}
 
@@ -26,31 +28,30 @@ To display an area series in a polar chart, instantiate the [PolarAreaSeries](ht
         <chart:NumericalAxis/>
     </chart:SfPolarChart.SecondaryAxis>   
 
-    <chart:PolarAreaSeries ItemsSource="{Binding PlantDetails}" XBindingPath="Direction" YBindingPath="Tree"/>  
+    <chart:PolarAreaSeries ItemsSource = "{Binding PlantDetails}"
+                           XBindingPath = "Direction" 
+                           YBindingPath = "Tree"/>  
 </chart:SfPolarChart>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-// Create a new instance of SfPolarChart
 SfPolarChart chart = new SfPolarChart();
 
-CategoryAxis primaryAxis = new CategoryAxis(); // Create a primary axis (CategoryAxis) for the chart
+CategoryAxis primaryAxis = new CategoryAxis();
 chart.PrimaryAxis = primaryAxis;
 
-NumericalAxis secondaryAxis = new NumericalAxis(); // Create a secondary axis (NumericalAxis) for the chart
+NumericalAxis secondaryAxis = new NumericalAxis();
 chart.SecondaryAxis = secondaryAxis;
 
-// Create a new PolarAreaSeries and configure its properties
 PolarAreaSeries series = new PolarAreaSeries()
 {
-    ItemsSource = new ViewModel().PlantDetails, // Set the data source for the series
-    XBindingPath = "Direction", // Specify the property to be used for X-axis values
-    YBindingPath = "Tree" // Specify the property to be used for Y-axis values
+    ItemsSource = new PlantViewModel().PlantDetails,
+    XBindingPath = "Direction",
+    YBindingPath = "Tree"
 };
 
-// Add the series to the chart's collection of series
 chart.Series.Add(series);
 this.Content = chart;
 
@@ -58,42 +59,40 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Polar area chart type in MAUI Chart](Chart-types_images/MAUI_polar_area_chart.png)
+![Polar area chart type in .NET MAUI Polar Chart](Chart-types_images/MAUI_polar_area_chart.png)
 
 ## Grid line Type
 
-The [GridLineType](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfPolarChart.html#Syncfusion_Maui_Toolkit_Charts_SfPolarChart_GridLineType) property used to customize the rendering style of axis grid lines. The default [GridLineType](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfPolarChart.html#Syncfusion_Maui_Toolkit_Charts_SfPolarChart_GridLineType) is [Circle](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.PolarChartGridLineType.html#Syncfusion_Maui_Toolkit_Charts_PolarChartGridLineType_Circle). Switching to the [Polygon](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.PolarChartGridLineType.html#Syncfusion_Maui_Toolkit_Charts_PolarChartGridLineType_Polygon) grid line type transforms the polar chart appearance, resembling a spider, or web chart.
+The [GridLineType](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfPolarChart.html#Syncfusion_Maui_Toolkit_Charts_SfPolarChart_GridLineType) property customizes the rendering style of axis grid lines:
+
+* **Circle** (default) — Renders concentric circular grid lines, creating a target-like appearance
+* **Polygon** — Renders polygonal grid lines, creating a web or spider chart appearance
 
 {% tabs %}
 
 {% highlight xaml %}
 
-<chart:SfPolarChart GridLineType="Polygon"> 
-    . . .
-    <chart:PolarAreaSeries ItemsSource="{Binding PlantDetails}" XBindingPath="Direction" YBindingPath="Tree"/>  
+<chart:SfPolarChart GridLineType= "Polygon"> 
+    <!-- code omitted for brevity -->
+    <chart:PolarAreaSeries ItemsSource = "{Binding PlantDetails}" 
+                           XBindingPath = "Direction"
+                           YBindingPath = "Tree"/>  
 </chart:SfPolarChart>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-// Create a new SfPolarChart instance
 SfPolarChart chart = new SfPolarChart();
-
-// Set the grid line type to Polygon
 chart.GridLineType = PolarChartGridLineType.Polygon;
-
-// ... (other chart configurations)
-
-// Create a new PolarAreaSeries
+// code omitted for brevity
 PolarAreaSeries series = new PolarAreaSeries()
 {
-    ItemsSource = new ViewModel().PlantDetails,
+    ItemsSource = new PlantViewModel().PlantDetails,
     XBindingPath = "Direction",
     YBindingPath = "Tree"
 };
 
-// Add the series to the chart's Series collection
 chart.Series.Add(series);
 this.Content = chart;
 
@@ -101,44 +100,40 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Polar gridline type in MAUI Chart](Chart-types_images/MAUI_polar_area_gridline.png)
+![Polar gridline type in .NET MAUI Polar Chart](Chart-types_images/MAUI_polar_area_gridline.png)
 
 ## Closed Series
 
-The [IsClosed](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.PolarSeries.html#Syncfusion_Maui_Toolkit_Charts_PolarSeries_IsClosed) property is used to render the series with or without closed path. The default value of [IsClosed](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.PolarSeries.html#Syncfusion_Maui_Toolkit_Charts_PolarSeries_IsClosed) is `true`.
+The [IsClosed](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.PolarSeries.html#Syncfusion_Maui_Toolkit_Charts_PolarSeries_IsClosed) property is used to render the series with or without a closed path. The default value is `true`, which creates a closed polygon shape. Set to `false` to create an open path that doesn't connect the last point to the first.
+
+**Note:** Negative Y values are not recommended for polar area charts as they may produce unexpected visualizations. Ensure all Y values are non-negative for optimal results.
 
 {% tabs %}
 
 {% highlight xaml %}
 
 <chart:SfPolarChart> 
-    . . .
-    <chart:PolarAreaSeries ItemsSource="{Binding PlantDetails}" 
-        XBindingPath="Direction" 
-        YBindingPath="Tree" 
-        IsClosed="False"/>  
+    <!-- code omitted for brevity -->
+    <chart:PolarAreaSeries ItemsSource = "{Binding PlantDetails}" 
+                           XBindingPath = "Direction" 
+                           YBindingPath = "Tree"
+                           IsClosed = "False"/>  
 </chart:SfPolarChart>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-// Create a new instance of SfPolarChart
 SfPolarChart chart = new SfPolarChart();
-. . .
-// Create a new PolarAreaSeries
+// code omitted for brevity
 PolarAreaSeries series = new PolarAreaSeries()
 {
-    ItemsSource = new ViewModel().PlantDetails,
+    ItemsSource = new PlantViewModel().PlantDetails,
     XBindingPath = "Direction",
     YBindingPath = "Tree",
-    
-    // Set whether the series should be closed or open
-    // False means the series will not be closed (no line connecting start and end points)
-    IsClosed = "False"
+    IsClosed  = false
 };
 
-// Add the series to the chart's Series collection
 chart.Series.Add(series);
 this.Content = chart;
 
@@ -146,7 +141,7 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Polar open series in MAUI Chart](Chart-types_images/MAUI_polar_area_IsClosed.png)
+![Polar open series in .NET MAUI Polar Chart](Chart-types_images/MAUI_polar_area_IsClosed.png)
 
 ## Enable Marker
 
@@ -157,31 +152,29 @@ A marker, also known as a symbol, is used to determine or highlight the position
 {% highlight xaml %}
 
 <chart:SfPolarChart>
-    ...
-    <chart:PolarAreaSeries ItemsSource="{Binding PlantDetails}" XBindingPath="Direction"
-            YBindingPath="Tree" 
-            ShowMarkers="True"/>
+    <!-- code omitted for brevity -->
+    <chart:PolarAreaSeries ItemsSource = "{Binding PlantDetails}" 
+                           XBindingPath = "Direction"  
+                           YBindingPath = "Tree"    
+                           ShowMarkers = "True"/>
 </chart:SfPolarChart>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-// Create a new instance of SfPolarChart
 SfPolarChart chart = new SfPolarChart();
-...
-// Create a new PolarAreaSeries
+// code omitted for brevity
 PolarAreaSeries series = new PolarAreaSeries()
 {
-    ItemsSource = new ViewModel().PlantDetails,
+    ItemsSource = new PlantViewModel().PlantDetails,
     XBindingPath = "Direction",
     YBindingPath = "Tree",
-    ShowMarkers = true // Enable markers for data points
-};
+    ShowMarkers= true
+ };
 
-// Add the series to the chart's Series collection
 chart.Series.Add(series);
-this.Content = chart;
+this.Content= chart;
 
 {% endhighlight %}
 
@@ -203,12 +196,18 @@ In order to change the series markers appearance, create an instance of the [Mar
 {% highlight xaml %}
 
 <chart:SfPolarChart>
-    ...
-    <chart:PolarAreaSeries ItemsSource="{Binding PlantDetails}" XBindingPath="Direction" YBindingPath="Tree"
-                           ShowMarkers="True">
+    <!-- code omitted for brevity -->
+    <chart:PolarAreaSeries ItemsSource = "{Binding PlantDetails}" 
+                           XBindingPath = "Direction" 
+                           YBindingPath = "Tree"
+                           ShowMarkers = "True">
         <chart:PolarAreaSeries.MarkerSettings>
-            <chart:ChartMarkerSettings Type="Diamond" Fill="Brown" Stroke="Black"
-                                       StrokeWidth="1" Height="8" Width="8"/>
+            <chart:ChartMarkerSettings Type = "Diamond" 
+                                       Fill = "Brown" 
+                                       Stroke = "Black"
+                                       StrokeWidth = "1" 
+                                       Height = "8" 
+                                       Width = "8"/>
         </chart:PolarAreaSeries.MarkerSettings>
     </chart:PolarAreaSeries>
 </chart:SfPolarChart>
@@ -217,30 +216,27 @@ In order to change the series markers appearance, create an instance of the [Mar
 
 {% highlight c# %}
 
-// Create a new instance of SfPolarChart
 SfPolarChart chart = new SfPolarChart();
-...
-
-// Create and configure chart marker settings
-ChartMarkerSettings chartMarker= new ChartMarkerSettings();
-chartMarker.Type = ShapeType.Diamond;  // Set marker shape to diamond
-chartMarker.Fill = Colors.Brown; // Set fill color of markers
-chartMarker.Stroke = Colors.Black; // Set outline color of markers
-chartMarker.StrokeWidth= 1; // Set outline width of markers
-chartMarker.Height = 8; // Set height of markers
-chartMarker.Width = 8; // Set width of markers
-
-// Create a new PolarAreaSeries
-PolarAreaSeries series = new PolarAreaSeries()
+// code omitted for brevity
+ChartMarkerSettings chartMarker = new ChartMarkerSettings()
 {
-    ItemsSource = new ViewModel().PlantDetails,
-    XBindingPath = "Direction",
-    YBindingPath = "Tree",
-    ShowMarkers = true,  // Enable markers for data points
-    MarkerSettings = chartMarker // Apply marker settings
+    Type = ShapeType.Diamond,
+    Fill = Colors.Brown,
+    Stroke = Colors.Black,
+    StrokeWidth = 1,
+    Height = 8,
+    Width = 8
 };
 
-// Add the series to the chart
+PolarAreaSeries series = new PolarAreaSeries()
+{
+    ItemsSource = new PlantViewModel().PlantDetails,
+    XBindingPath = "Direction",
+    YBindingPath = "Tree",
+    ShowMarkers = true,
+    MarkerSettings = chartMarker
+};
+
 chart.Series.Add(series);
 this.Content = chart;
 

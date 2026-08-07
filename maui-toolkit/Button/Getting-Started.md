@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with .NET MAUI Button | Syncfusion<sup>®</sup>
-description: Learn here about getting started with the Syncfusion<sup>®</sup> .NET MAUI Button (SfButton) control, its elements and more.
+title: Getting Started with .NET MAUI Button | Syncfusion®
+description: Learn here how to get started with the Syncfusion® .NET MAUI Button (SfButton) control, its elements and more.
 platform: MAUI
 control: SfButton
 documentation: ug
