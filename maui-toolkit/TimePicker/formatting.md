@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Formatting in .NET MAUI Time Picker Control | Syncfusion®
-description: Learn about formatting support in Syncfusion<sup>&reg;</sup> .NET MAUI Time Picker (SfTimePicker) control and its basic features.
+title: Formatting in .NET MAUI Time Picker control | Syncfusion®
+description: Learn how to customize time display formats using predefined formatting options in the Syncfusion .NET MAUI Time Picker control.
 platform: maui
 control: SfTimePicker
 documentation: ug
 ---
 
-# Formatting in .NET MAUI Time Picker (SfTimePicker)
+# Formatting in .NET MAUI Time Picker
 
 Format is a way to represent the time in a different string format. You can customize the time format using the [Format](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Picker.SfTimePicker.html#Syncfusion_Maui_Toolkit_Picker_SfTimePicker_Format) property in [PickerTimeFormat](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Picker.PickerTimeFormat.html). The default format is `HH_mm_ss`.
 
