@@ -7,7 +7,7 @@ control: SfTabView
 documentation: UG
 ---
 
-# Events in .NET MAUI Tab View 
+# Events in .NET MAUI Tab View
 
 This section provides information about the events available in the .NET MAUI Tab View control.
 
