@@ -143,7 +143,7 @@ Below is the summary of globalization capabilities supported by Syncfusion<sup>Â
 <td><img src="../Images/full-support.svg" alt="full-support" width="16" /></td>
 <td><img src="../Images/not-applicable.svg" alt="not-applicable" width="16" /></td>
 <td><img src="../Images/not-applicable.svg" alt="not-applicable" width="16" /></td>
-<td><img src="../Images/not-applicable.svg" alt="not-applicable" width="16" /></td>
+<td><img src="../Images/full-support.svg" alt="full-support" width="16" /></td>
 </tr> 
 
 <tr>
@@ -185,9 +185,9 @@ Below is the summary of globalization capabilities supported by Syncfusion<sup>Â
 <tr>
 <td><a href="/maui-toolkit/circularprogressbar/overview">Circular Progress Bar</a></td>
 <td><img src="../Images/not-applicable.svg" alt="not-applicable" width="16" /></td>
+<td><img src="../Images/not-applicable.svg" alt="not-applicable" width="16" /></td>
+<td><img src="../Images/not-applicable.svg" alt="not-applicable" width="16" /></td>
 <td><img src="../Images/no-support.svg" alt="no-support" width="16" /></td>
-<td><img src="../Images/not-applicable.svg" alt="not-applicable" width="16" /></td>
-<td><img src="../Images/not-applicable.svg" alt="not-applicable" width="16" /></td>
 <td><img src="../Images/not-applicable.svg" alt="not-applicable" width="16" /></td>
 </tr> 
 
@@ -239,9 +239,9 @@ Below is the summary of globalization capabilities supported by Syncfusion<sup>Â
 <tr>
 <td><a href="/maui-toolkit/linearprogressbar/overview">Linear Progress Bar</a></td>
 <td><img src="../Images/not-applicable.svg" alt="not-applicable" width="16" /></td>
+<td><img src="../Images/not-applicable.svg" alt="not-applicable" width="16" /></td>
+<td><img src="../Images/not-applicable.svg" alt="not-applicable" width="16" /></td>
 <td><img src="../Images/no-support.svg" alt="no-support" width="16" /></td>
-<td><img src="../Images/not-applicable.svg" alt="not-applicable" width="16" /></td>
-<td><img src="../Images/not-applicable.svg" alt="not-applicable" width="16" /></td>
 <td><img src="../Images/not-applicable.svg" alt="not-applicable" width="16" /></td>
 </tr> 
 
@@ -311,7 +311,7 @@ Below is the summary of globalization capabilities supported by Syncfusion<sup>Â
 <tr>
 <td><a href="/maui-toolkit/pull-to-refresh/overview">Pull To Refresh</a></td>
 <td><img src="../Images/not-applicable.svg" alt="not-applicable" width="16" /></td>
-<td><img src="../Images/full-support.svg" alt="full-support" width="16" /></td>
+<td><img src="../Images/not-applicable.svg" alt="not-applicable" width="16" /></td>
 <td><img src="../Images/not-applicable.svg" alt="not-applicable" width="16" /></td>
 <td><img src="../Images/not-applicable.svg" alt="not-applicable" width="16" /></td>
 <td><img src="../Images/not-applicable.svg" alt="not-applicable" width="16" /></td>
@@ -346,7 +346,7 @@ Below is the summary of globalization capabilities supported by Syncfusion<sup>Â
 
 <tr>
 <td><a href="/maui-toolkit/spark-charts/overview">Spark Charts</a></td>
-<td><img src="../Images/no-support.svg" alt="no-support" width="16" /></td>
+<td><img src="../Images/not-applicable.svg" alt="not-applicable" width="16" /></td>
 <td><img src="../Images/not-applicable.svg" alt="not-applicable" width="16" /></td>
 <td><img src="../Images/full-support.svg" alt="full-support" width="16" /></td>
 <td><img src="../Images/no-support.svg" alt="no-support" width="16" /></td>
