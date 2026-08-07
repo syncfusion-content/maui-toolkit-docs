@@ -1,21 +1,26 @@
 ---
 layout: post
-title: Empty Points in .NET MAUI Chart control | Syncfusion
-description: Learn here all about empty points support and its features in Syncfusion® .NET MAUI Chart (SfCartesianChart) control.
-platform: maui
+title: Empty Points in .NET MAUI Cartesian Chart | Syncfusion®
+description: Empty Points in .NET MAUI Cartesian Chart handle missing or null values using configurable modes, ensuring clear and meaningful data visualization.
+platform: maui-toolkit
 control: SfCartesianChart
 documentation: ug
 keywords: .net maui chart empty points, .net maui empty points customization, syncfusion maui chart empty points, maui chart empty points, .net maui chart empty points visualization, cartesian empty points maui, missing data handling
 ---
 
-# Empty Points in .NET MAUI Chart
-Empty Points are used to indicate missing or null data in a series. These empty points can occur when data is unavailable, improperly formatted, or explicitly set as null or double.NaN. The chart provides options to handle and customize these empty points to enhance visualization and maintain the integrity of data representation.
+# Empty Points in .NET MAUI Cartesian Chart
+
+Empty points are used to indicate missing or null data in a series. These empty points can occur when data is unavailable, improperly formatted, or explicitly set as null or `double.NaN`. The chart provides options to handle and customize these empty points to enhance visualization and maintain the integrity of data representation.
 
 [SfCartesianChart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html) provides support for empty points, allowing users to handle missing data effectively.
 
-The data collection that is passed to the chart can have NaN or Null values that are considered as empty points. The empty point can be defined as in the below code example.
+N> **Prerequisite:** Ensure that the required NuGet package is installed, the necessary namespaces are imported, and the **SfCartesianChart** control is properly configured in your application. For detailed setup and configuration instructions, refer to the **[Getting Started](https://help.syncfusion.com/maui-toolkit/cartesian-charts/getting-started)** guide.
 
-{% highlight C# %}
+The data collection that is passed to the chart can have `NaN` or null values that are considered as empty points. The empty points can be defined as in the following code example.
+
+{% tabs %}
+
+{% highlight c# %}
 
 ProductSales = new ObservableCollection<Model>();
 ProductSales.Add(new Model() { Product = "Electronics", Sales = 60 });
@@ -28,28 +33,30 @@ ProductSales.Add(new Model() { Product = "Books", Sales = 50 });
 
 {% endhighlight %}
 
-By default, the [EmptyPointMode](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.EmptyPointMode.html) property is `None`. So the empty points will not be rendered as shown in the below.
+{% endtabs %}
 
-![Empty Points in MAUI Chart](EmptyPoints_images/EmptyPoints_Default.png)
+By default, the [EmptyPointMode](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.EmptyPointMode.html) property is [None](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.EmptyPointMode.html#Syncfusion_Maui_Toolkit_Charts_EmptyPointMode_None). So the empty points will not be rendered as shown below.
 
-## Empty Point Mode
-The [EmptyPointMode](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.EmptyPointMode.html) property of series specifies how empty points should be handled. 
+![Empty points in .NET MAUI Cartesian Chart](EmptyPoints_images/EmptyPoints_Default.png)
 
-This property provides the following options.
+## Empty point mode
+
+The [EmptyPointMode](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.EmptyPointMode.html) property of the series specifies how empty points should be handled. 
+
+This property provides the following options:
 
 * **None** - Empty points are not rendered. This is the default behavior.
 * **Zero** - Empty points will be replaced with zero.
 * **Average** - Empty points will be replaced with the average value of the surrounding data points.
 
-The following code example shows the [EmptyPointMode](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.EmptyPointMode.html) as `Zero`.
+The following code example shows the [EmptyPointMode](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.EmptyPointMode.html) as [Zero](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.EmptyPointMode.html#Syncfusion_Maui_Toolkit_Charts_EmptyPointMode_Zero).
 
 {% tabs %}
 
 {% highlight xaml %}
 
 <chart:SfCartesianChart>
-        
-   .....
+    <!-- code omitted for brevity -->
    <chart:LineSeries ItemsSource="{Binding ProductSales}"
                   XBindingPath="Product"
                   YBindingPath="Sales"
@@ -63,8 +70,7 @@ The following code example shows the [EmptyPointMode](https://help.syncfusion.co
 {% highlight c# %}
 
 SfCartesianChart chart = new SfCartesianChart();
-
-.....
+//code omitted for brevity
 LineSeries series = new LineSeries()
 {
    ItemsSource = new ViewModel().ProductSales,
@@ -80,17 +86,16 @@ this.Content = chart;
 
 {% endtabs %}
 
-![EmptyPoint Mode Zero in MAUI Chart](EmptyPoints_images/EmptyPoints_Mode_Zero.png)
+![Empty point mode Zero in .NET MAUI Cartesian Chart](EmptyPoints_images/EmptyPoints_Mode_Zero.png)
 
-The following code example shows the [EmptyPointMode](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.EmptyPointMode.html) as `Average`.
+The following code example shows the [EmptyPointMode](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.EmptyPointMode.html) as [Average](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.EmptyPointMode.html#Syncfusion_Maui_Toolkit_Charts_EmptyPointMode_Average).
 
 {% tabs %}
 
 {% highlight xaml %}
 
 <chart:SfCartesianChart>
-
-   .....
+    <!-- code omitted for brevity -->
    <chart:ColumnSeries ItemsSource="{Binding ProductSales}"
                   XBindingPath="Product"
                   YBindingPath="Sales"
@@ -104,8 +109,7 @@ The following code example shows the [EmptyPointMode](https://help.syncfusion.co
 {% highlight c# %}
 
 SfCartesianChart chart = new SfCartesianChart();
-
-.....
+//code omitted for brevity
 ColumnSeries series = new ColumnSeries()
 {
    ItemsSource = new ViewModel().ProductSales,
@@ -121,9 +125,10 @@ this.Content = chart;
 
 {% endtabs %}
 
-![EmptyPoint Mode Average in MAUI Chart](EmptyPoints_images/EmptyPoints_Mode_Average.png)
+![Empty point mode Average in .NET MAUI Cartesian Chart](EmptyPoints_images/EmptyPoints_Mode_Average.png)
 
-## Empty Point Customization
+## Empty point customization
+
 The [EmptyPointSettings](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.EmptyPointSettings.html) property allows you to customize the appearance of empty points in a series. This enables you to adjust various visual aspects of empty points, making them more distinct from the other data points. You can modify the following properties within [EmptyPointSettings](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.EmptyPointSettings.html).
 
 * [Fill](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.EmptyPointSettings.html#Syncfusion_Maui_Toolkit_Charts_EmptyPointSettings_Fill) - Gets or sets the fill color for the empty points.
@@ -135,8 +140,7 @@ The [EmptyPointSettings](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.
 {% highlight xaml %}
 
 <chart:SfCartesianChart>
-
-   .....
+    <!-- code omitted for brevity -->
    <chart:LineSeries ItemsSource="{Binding ProductSales}"
                   XBindingPath="Product"
                   YBindingPath="Sales"
@@ -157,8 +161,7 @@ The [EmptyPointSettings](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.
 {% highlight c# %}
 
 SfCartesianChart chart = new SfCartesianChart();
-
-.....
+//code omitted for brevity
 LineSeries series = new LineSeries()
 {
    ItemsSource = new ViewModel().ProductSales,
@@ -186,6 +189,6 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Customize EmptyPoints in MAUI Chart](EmptyPoints_images\Customize_EmptyPoints.png)
+![Customize empty points in .NET MAUI Cartesian Chart](EmptyPoints_images/Customize_EmptyPoints.png)
 
 N> EmptyPoint support is not applicable for Histogram and BoxAndWhisker series.
