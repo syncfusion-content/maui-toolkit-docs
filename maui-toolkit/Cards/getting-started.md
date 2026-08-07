@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started with MAUI Card Control | Syncfusion®
-description:  Learn here about getting started with Syncfusion<sup>&reg;</sup> .NET MAUI Cards (SfCards) control and its basic features.
+title: Getting Started with .NET MAUI Cards | Syncfusion®
+description:  Learn how to get started with the Syncfusion® .NET MAUI Cards control. Explore setup, features, examples, and customization options.
 platform: maui
 control: SfCard
 documentation: ug
 ---
 
-# Getting started with .NET MAUI Card
+# Getting Started with .NET MAUI Cards
 This section details the process of integrating the [Cards](https://www.syncfusion.com/maui-controls/maui-cards) control and focuses solely on the fundamental features required for initiating your exploration of Syncfusion<sup>&reg;</sup> Card. Follow the steps below to add a basic Cards to your project.
 
 {% tabcontents %}
