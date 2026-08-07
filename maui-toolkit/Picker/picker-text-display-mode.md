@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Picker Text Dispaly Mode in .NET MAUI Picker Control | Syncfusion<sup>&reg;</sup>
-description: Learn about the picker text display mode in Syncfusion<sup>&reg;</sup> .NET MAUI Picker (SfPicker) control and its basic features.
+title: Text Display Mode in .NET MAUI Picker control | Syncfusion®
+description: Learn about text display mode in Syncfusion .NET MAUI Picker control with Default, Fade, Shrink options.
 platform: maui
 control: SfPicker
 documentation: ug
 ---
 
-# Picker Text display mode in .NET MAUI Picker (SfPicker)
+# Text Display Mode in .NET MAUI Picker control
 
 The picker text display mode is specified in the picker property enumeration, which is used to display the picker items based on the modes. It offers four modes: [Default](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Picker.PickerTextDisplayMode.html#Syncfusion_Maui_Toolkit_Picker_PickerTextDisplayMode_Default), [Fade](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Picker.PickerTextDisplayMode.html#Syncfusion_Maui_Toolkit_Picker_PickerTextDisplayMode_Fade), [Shrink](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Picker.PickerTextDisplayMode.html#Syncfusion_Maui_Toolkit_Picker_PickerTextDisplayMode_Shrink) and [FadeAndShrink](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Picker.PickerTextDisplayMode.html#Syncfusion_Maui_Toolkit_Picker_PickerTextDisplayMode_FadeAndShrink). The default picker text display mode is [Default](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Picker.PickerTextDisplayMode.html#Syncfusion_Maui_Toolkit_Picker_PickerTextDisplayMode_Default) in the [SfPicker](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Picker.SfPicker.html).
 
