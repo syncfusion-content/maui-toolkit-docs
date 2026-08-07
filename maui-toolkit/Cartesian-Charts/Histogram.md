@@ -1,16 +1,18 @@
 ---
 layout: post
-title: Histogram Chart in .NET MAUI Chart Control | Syncfusion
-description: Learn here all about the Histogram chart and its type in Syncfusion® .NET MAUI Chart (SfCartesianChart) control. 
+title: Histogram Chart in .NET MAUI Cartesian Chart | Syncfusion®
+description: Histogram Chart in .NET MAUI Cartesian Chart displays data distribution across value ranges, helping analyze frequency patterns and data variation.
 platform: maui-toolkit
 control: SfCartesianChart
 documentation: ug
 keywords: .net maui histogram chart, histogram chart customization .net maui, syncfusion maui histogram chart, cartesian histogram chart maui, .net maui chart histogram , .net maui frequency distribution chart.
 ---
 
-# Histogram Chart in .NET MAUI Chart
+# Histogram Chart in .NET MAUI Cartesian Chart
 
 [Histogram chart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.HistogramSeries.html) is a graphical representation that organizes a group of data points into user-specified ranges. It is similar in appearance to a column chart.
+
+N> **Prerequisite:** Ensure that the required NuGet package is installed, the necessary namespaces are imported, and the **SfCartesianChart** control is properly configured in your application. For detailed setup and configuration instructions, refer to the **[Getting Started](https://help.syncfusion.com/maui-toolkit/cartesian-charts/getting-started)** guide.
 
 Customize histogram intervals using the [HistogramInterval](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.HistogramSeries.html#Syncfusion_Maui_Toolkit_Charts_HistogramSeries_HistogramInterval) property and normal distribution curve can be collapsed using the [ShowNormalDistributionCurve](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.HistogramSeries.html#Syncfusion_Maui_Toolkit_Charts_HistogramSeries_ShowNormalDistributionCurve) property. 
 
@@ -19,7 +21,6 @@ Customize histogram intervals using the [HistogramInterval](https://help.syncfus
 {% highlight xaml %}
 
 <chart:SfCartesianChart>
-
     <chart:SfCartesianChart.XAxes>
         <chart:NumericalAxis/>
     </chart:SfCartesianChart.XAxes>
@@ -33,7 +34,6 @@ Customize histogram intervals using the [HistogramInterval](https://help.syncfus
                            YBindingPath="Size"
                            HistogramInterval="20" 
                            ShowNormalDistributionCurve="True"/>
-   
 </chart:SfCartesianChart>
 
 
@@ -49,7 +49,6 @@ chart.XAxes.Add(xAxis);
 NumericalAxis yAxis = new NumericalAxis();
 chart.YAxes.Add(yAxis);
 
-// Create a histogram series to visualize distribution in the chart
 HistogramSeries histogramSeries = new HistogramSeries
 {
     ItemsSource = new ViewModel().HistogramData, 
@@ -59,7 +58,6 @@ HistogramSeries histogramSeries = new HistogramSeries
     ShowNormalDistributionCurve = true
 };
 
-// Add the configured histogram series to the chart's series collection
 chart.Series.Add(histogramSeries);
 this.Content = chart;
 
@@ -67,18 +65,18 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Histogram Chart in MAUI](chart-types-images/maui_Histogram_chart.png)
+![Histogram Chart in .NET MAUI Cartesian Chart](Chart-types-images/maui_Histogram_chart.png)
 
 ## Customization of distribution curve
 
-Customize the normal distribution curve by using the [CurveStyle](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.HistogramSeries.html#Syncfusion_Maui_Toolkit_Charts_HistogramSeries_CurveStyle) property.
+Customize the normal distribution curve by using the [CurveLineStyle](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.HistogramSeries.html#Syncfusion_Maui_Toolkit_Charts_HistogramSeries_CurveStyle) property.
 
 {% tabs %}
 
 {% highlight xaml %}
 
 <chart:SfCartesianChart>
-    ....
+    <!-- code omitted for brevity -->
     <chart:HistogramSeries ItemsSource="{Binding HistogramData}" 
                            XBindingPath="Value" 
                            YBindingPath="Size"
@@ -86,7 +84,8 @@ Customize the normal distribution curve by using the [CurveStyle](https://help.s
                            ShowNormalDistributionCurve="True">
         <chart:HistogramSeries.CurveStyle>
             <chart:ChartLineStyle Stroke="Blue"
-                                  StrokeWidth="2">
+                                  StrokeWidth="2"
+                                  StrokeDashArray="5,6,3">
             </chart:ChartLineStyle>
         </chart:HistogramSeries.CurveStyle>
     </chart:HistogramSeries>
@@ -97,7 +96,7 @@ Customize the normal distribution curve by using the [CurveStyle](https://help.s
 {% highlight c# %}
 
 SfCartesianChart chart = new SfCartesianChart();
-....
+//code omitted for brevity
 HistogramSeries histogramSeries = new HistogramSeries
 {
     ItemsSource = new ViewModel().HistogramData, 
@@ -105,12 +104,12 @@ HistogramSeries histogramSeries = new HistogramSeries
     YBindingPath = "Size",
     HistogramInterval = 20,
     ShowNormalDistributionCurve = true,
-    // Customize the appearance of the distribution curve
     CurveStyle = new ChartLineStyle()
     {
-        Stroke = Color.Blue,
+        Stroke = Colors.Blue,
         StrokeWidth = 2,
-    };
+        StrokeDashArray = new double[] { 5, 6, 3 }
+    }
 };
 
 chart.Series.Add(histogramSeries);
@@ -120,4 +119,4 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Customized distribution curve of Histogram chart](chart-types-images/maui_Histogram_chart_distribution_curve.png)
+![Customized distribution curve of Histogram chart](Chart-types-images/maui_Histogram_chart_distribution_curve.png)

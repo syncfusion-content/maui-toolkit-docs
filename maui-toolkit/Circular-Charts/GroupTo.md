@@ -1,30 +1,45 @@
 ---
 layout: post
-title: Grouping data points in .NET MAUI Chart control | Syncfusion
-description: This section explains about how to group data points in Syncfusion® .NET MAUI Chart (SfCircularChart) control.
+title: Grouping Data Points in .NET MAUI Circular Chart | Syncfusion®
+description: Grouping data points in .NET MAUI Circular Chart combines smaller segments into a single category, improving readability and simplifying data visualization.
 platform: maui-toolkit
 control: SfCircularChart
 documentation: ug
 ---
 
-# Grouping Data Points in .NET MAUI SfCircularChart
+# Grouping Data Points in .NET MAUI Circular Chart
 
-The small segments in the circular chart can be grouped into an `Others` category using the [GroupTo](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.PieSeries.html#Syncfusion_Maui_Toolkit_Charts_PieSeries_GroupTo) and [GroupMode](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.PieSeries.html#Syncfusion_Maui_Toolkit_Charts_PieSeries_GroupMode) properties of the [PieSeries](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.PieSeries.html). The [GroupMode]() property is used to specify the grouping type based on slice angle, actual data point value, or percentage. The [GroupTo](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.PieSeries.html#Syncfusion_Maui_Toolkit_Charts_PieSeries_GroupTo) property is used to set the limit to group data points into a single slice. The grouped segment is labeled as `Others` in the chart legend.
+The small segments in the circular chart can be grouped into an `Others` category using the [GroupTo](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.PieSeries.html#Syncfusion_Maui_Toolkit_Charts_PieSeries_GroupTo) and [GroupMode](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.PieSeries.html#Syncfusion_Maui_Toolkit_Charts_PieSeries_GroupMode) properties of the [PieSeries](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.PieSeries.html). The [GroupMode](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.PieSeries.html#Syncfusion_Maui_Toolkit_Charts_PieSeries_GroupMode) property is used to specify the grouping type based on slice angle (`Angle`), actual data point value (`Value`), or percentage (`Percentage`). The [GroupTo](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.PieSeries.html#Syncfusion_Maui_Toolkit_Charts_PieSeries_GroupTo) property is used to set the limit to group data points into a single slice. The grouped segment is labeled as `Others` in the chart legend.
 
-N> [GroupTo](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.PieSeries.html#Syncfusion_Maui_Toolkit_Charts_PieSeries_GroupTo) only support for pie and doughnut chart.
+N> **Prerequisite:** Ensure that the required NuGet package is installed, the necessary namespaces are imported, and the **SfCircularChart** control is properly configured in your application. For detailed setup and configuration instructions, refer to the **[Getting Started](https://help.syncfusion.com/maui-toolkit/circular-charts/getting-started)** guide.
+
+
+## Group mode
+
+[GroupMode](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.PieSeries.html#Syncfusion_Maui_Toolkit_Charts_PieSeries_GroupMode), of type `ChartGroupMode`, specifies how the data points are grouped. The default value is `ChartGroupMode.Value`. The `ChartGroupMode` enum has the following values:
+
+- `Angle` - Groups data points whose slice angle is less than the [GroupTo](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.PieSeries.html#Syncfusion_Maui_Toolkit_Charts_PieSeries_GroupTo) value.
+- `Value` - Groups data points whose actual value is less than the [GroupTo](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.PieSeries.html#Syncfusion_Maui_Toolkit_Charts_PieSeries_GroupTo) value.
+- `Percentage` - Groups data points whose percentage value is less than the [GroupTo](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.PieSeries.html#Syncfusion_Maui_Toolkit_Charts_PieSeries_GroupTo) value.
+
+## Group to
+
+[GroupTo](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.PieSeries.html#Syncfusion_Maui_Toolkit_Charts_PieSeries_GroupTo), of type `double`, sets the threshold value against which data points are grouped. The default value is `double.NaN`, which means no grouping is applied.
+
+The following code sample demonstrates how to group the small segments of a pie series using the [GroupTo](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.PieSeries.html#Syncfusion_Maui_Toolkit_Charts_PieSeries_GroupTo) and [GroupMode](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.PieSeries.html#Syncfusion_Maui_Toolkit_Charts_PieSeries_GroupMode) properties.
+
+N> [GroupTo](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.PieSeries.html#Syncfusion_Maui_Toolkit_Charts_PieSeries_GroupTo) is only supported for the [PieSeries](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.PieSeries.html) and [DoughnutSeries](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.DoughnutSeries.html).
 
 {% tabs %}
 
 {% highlight xaml %}
 
 <chart:SfCircularChart>
-
-    <chart:PieSeries ItemsSource="{Binding Data}" 
+    <chart:PieSeries ItemsSource="{Binding Data}"
+                     XBindingPath="Product"
+                     YBindingPath="SalesRate"
                      GroupMode="Value"
-                     GroupTo="15"
-                     XBindingPath="Product" 
-                     YBindingPath="SalesRate"/>
-  
+                     GroupTo="15"/>
 </chart:SfCircularChart>
 
 {% endhighlight %}
@@ -32,20 +47,21 @@ N> [GroupTo](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit
 {% highlight c# %}
 
 SfCircularChart chart = new SfCircularChart();
-. . .
 PieSeries series = new PieSeries()
 {
-    ItemsSource = new ViewModel().Data,
-    XBindingPath = "Product", 
+    ItemsSource = (new SalesViewModel()).Data,
+    XBindingPath = "Product",
     YBindingPath = "SalesRate",
-    GroupMode = Value, // Set the mode for grouping smaller slices into a single slice.
-    GroupTo = 15 // Define a threshold value for the group mode. 
+    GroupMode = ChartGroupMode.Value,
+    GroupTo = 15
 };
 
 chart.Series.Add(series);
-this.Content = chart;
+
 {% endhighlight %}
 
 {% endtabs %}
 
-![Grouped data points pie chart in MAUI](GroupTo_images/GroupTo_in_CircularChart.png)
+The following screenshot illustrates the grouped `Others` segment of a pie chart.
+
+![Grouped data points pie chart in .NET MAUI Circular Chart](GroupTo_images/GroupTo_in_CircularChart.png)
