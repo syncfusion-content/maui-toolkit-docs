@@ -19,7 +19,7 @@ The SfTimePicker control has interact [Header Text](https://help.syncfusion.com/
 
 ## Column Header Layout
 
-The SfTimePicker control has interact column header text with localization of column header layout. It contains [HourHeaderText](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Picker.TimePickerColumnHeaderView.html#Syncfusion_Maui_Toolkit_Picker_TimePickerColumnHeaderView_HourHeaderText), [MinuteHeaderText](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Picker.TimePickerColumnHeaderView.html#Syncfusion_Maui_Toolkit_Picker_TimePickerColumnHeaderView_MinuteHeaderText), [SecondHeaderText](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Picker.TimePickerColumnHeaderView.html#Syncfusion_Maui_Toolkit_Picker_TimePickerColumnHeaderView_SecondHeaderText), and [MeridiemHeaderText](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Picker.TimePickerColumnHeaderView.html#Syncfusion_Maui_Toolkit_Picker_TimePickerColumnHeaderView_MeridiemHeaderText) properties of the [TimePickerColumnHeaderView](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Picker.TimePickerColumnHeaderView.html).. The default value of the `HourHeaderText` property is "Hour", `MinuteHeaderText` is "Minute", `SecondHeaderText` is "Second", and `MerdiemHeaderText` is "string.Empty".
+The SfTimePicker control has interact column header text with localization of column header layout. It contains [HourHeaderText](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Picker.TimePickerColumnHeaderView.html#Syncfusion_Maui_Toolkit_Picker_TimePickerColumnHeaderView_HourHeaderText), [MinuteHeaderText](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Picker.TimePickerColumnHeaderView.html#Syncfusion_Maui_Toolkit_Picker_TimePickerColumnHeaderView_MinuteHeaderText), [SecondHeaderText](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Picker.TimePickerColumnHeaderView.html#Syncfusion_Maui_Toolkit_Picker_TimePickerColumnHeaderView_SecondHeaderText), and [MeridiemHeaderText](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Picker.TimePickerColumnHeaderView.html#Syncfusion_Maui_Toolkit_Picker_TimePickerColumnHeaderView_MeridiemHeaderText) properties of the [TimePickerColumnHeaderView](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Picker.TimePickerColumnHeaderView.html).. The default value of the `HourHeaderText` property is "Hour", `MinuteHeaderText` is "Minute", `SecondHeaderText` is "Second", and `MeridiemHeaderText` is "string.Empty".
 
 ![Column Header Layout in .NET MAUI Time Picker.](images/accessibility/maui-accessibility-timepicker-headercolumn.png)
 
@@ -57,7 +57,7 @@ The SfTimePicker control has interact with the item source in picker items. The 
 
 ![Picker Items in .NET MAUI Time Picker.](images/accessibility/maui-accessibility-timepicker-items.png)
 
-# Keyboard
+## Keyboard
 `SfTimePicker` supports selection using keyboard interactions.
 
 <table>

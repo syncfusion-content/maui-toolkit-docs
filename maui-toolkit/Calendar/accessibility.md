@@ -45,9 +45,9 @@ Enhance .NET MAUI Calendar's accessibility with a user-friendly design, ensuring
 <td>Today</td>
 </tr>
 <tr>
-<td>Ok button</td>
+<td>OK button</td>
 <td>string</td>
-<td>Ok</td>
+<td>OK</td>
 </tr>
 <tr>
 <td>Cancel button</td>
