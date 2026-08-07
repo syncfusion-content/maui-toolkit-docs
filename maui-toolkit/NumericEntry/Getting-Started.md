@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started with .NET MAUI Numeric Entry | Syncfusion® 
-description: Learn how to get started with  Syncfusion® .NET MAUI Numeric Entry (SfNumericEntry) control, its elements, and more in here.
+title: Getting Started with .NET MAUI Numeric Entry | Syncfusion®
+description: Learn how to get started with Syncfusion® .NET MAUI Numeric Entry (SfNumericEntry) control, its elements, and more in here.
 platform: MAUI
 control: SfNumericEntry
 documentation: ug
 ---
 
-# Getting Started with .NET MAUI Numeric Entry 
+# Getting Started with .NET MAUI Numeric Entry
 
 This section guides you through setting up and configuring a [Numeric Entry](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericEntry.SfNumericEntry.html) in your .NET MAUI application. Follow the steps below to add a basic Numeric Entry to your project.
 
