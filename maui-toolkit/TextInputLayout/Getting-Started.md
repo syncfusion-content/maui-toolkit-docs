@@ -1,14 +1,14 @@
 ---
 layout: post
 title: Getting Started with .NET MAUI Text Input Layout | Syncfusion®
-description: Learn here about getting started with Syncfusion<sup>®</sup> .NET MAUI Text Input Layout (SfTextInputLayout) control, its elements and more.
+description: Learn how to get started with Syncfusion® .NET MAUI Text Input Layout (SfTextInputLayout) control, its elements and more.
 platform: maui-toolkit
 control: SfTextInputLayout
 documentation: ug
 keywords: .net maui text input layout, syncfusion text input layout, text input layout maui, .net maui hint label.
 ---
 
-# Getting Started with .NET MAUI TextInputLayout
+# Getting Started with .NET MAUI Text Input Layout
 
 This section guides you through setting up and configuring a [Text Input Layout](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TextInputLayout.SfTextInputLayout.html) in your .NET MAUI application. Follow the steps below to add a basic TextInputLayout to your project.
 

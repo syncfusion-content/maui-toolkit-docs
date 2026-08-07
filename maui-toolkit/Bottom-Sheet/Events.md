@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Events in .NET MAUI Bottom Sheet Control | Syncfusion®
-description: Learn about event support in the Syncfusion® Toolkit for .NET MAUI Bottom Sheet (SfBottomSheet) control and more.
+title: Events in .NET MAUI Bottom Sheet | Syncfusion®
+description: Learn about event support in the Syncfusion® .NET MAUI Bottom Sheet (SfBottomSheet) control and more.
 platform: maui-toolkit
 control: SfBottomSheet
 documentation: UG
 ---
 
-# Events in .NET MAUI Bottom Sheet (SfBottomSheet)
+# Events in .NET MAUI Bottom Sheet
 
 ## StateChanged event
 
