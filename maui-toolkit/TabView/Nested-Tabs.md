@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Nested Tabs in .NET MAUI Tab View (SfTabView) Control | Syncfusion®
-description: Learn about the nested tab support in Syncfusion® .NET MAUI Tab View (SfTabView) control and more.
+title: Nested Tabs in .NET MAUI Tab View | Syncfusion®
+description: Learn about the nested tabs support in the Syncfusion® .NET MAUI Tab View (SfTabView) control and more.
 platform: maui-toolkit
 control: SfTabView
 documentation: UG
 ---
 
-# Nested Tabs in .NET MAUI Tab View (SfTabView)
+# Nested Tabs in .NET MAUI Tab View
 
 The .NET MAUI Tab View (SfTabView) control supports nested tabs, allowing you to create a hierarchical structure of tab items. You can configure nested tab items in the Tab View using the [Items](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SfTabView.html#Syncfusion_Maui_Toolkit_TabView_SfTabView_Items) property of [SfTabView](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SfTabView.html). This property holds a [TabItemCollection](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.TabItemCollection.html), which can contain multiple [SfTabItem](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SfTabItem.html) instances.
 

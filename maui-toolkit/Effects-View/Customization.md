@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Customization in .NET MAUI Effects View Control | Syncfusion®
+title: Customization in .NET MAUI Effects View | Syncfusion®
 description: Learn about Customization support in Syncfusion® .NET MAUI Effects View (SfEffectsView) control and more.
 platform: maui-toolkit
 control: SfEffectsView
 documentation: UG
 ---
 
-# Customization in .NET MAUI Effects View (SfEffectsView)
+# Customization in .NET MAUI Effects View
 
 The [SfEffectsView](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.EffectsView.SfEffects.html) control provides support to customize animation duration, color, and more. This section explains how to customize the Effects View control.
 

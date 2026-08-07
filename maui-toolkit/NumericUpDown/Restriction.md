@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Value Change Restriction in .NET MAUI NumericUpDown | Syncfusion<sup>®</sup>
-description: Learn here all about how to restrict the value change in Syncfusion<sup>®</sup> .NET MAUI NumericUpDown (SfNumericUpDown) control and more.
+title: Value Change Restriction in .NET MAUI Numeric UpDown | Syncfusion®
+description: Learn here all about how to restrict the value change in Syncfusion® .NET MAUI Numeric UpDown (SfNumericUpDown) control and more.
 platform: MAUI
 control:  SfNumericUpDown
 documentation: ug
 ---
 
-# Value change restriction in .NET MAUI NumericUpDown
+# Value Change Restriction in .NET MAUI Numeric UpDown
 
 This section describes how to restrict the change in the value of the [NumericUpDown](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericUpDown.SfNumericUpDown.html) control using [AllowNull](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericEntry.SfNumericEntry.html#Syncfusion_Maui_Toolkit_NumericEntry_SfNumericEntry_AllowNull), [Minimum](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericEntry.SfNumericEntry.html#Syncfusion_Maui_Toolkit_NumericEntry_SfNumericEntry_Minimum), and [Maximum](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericEntry.SfNumericEntry.html#Syncfusion_Maui_Toolkit_NumericEntry_SfNumericEntry_Maximum) properties.
 

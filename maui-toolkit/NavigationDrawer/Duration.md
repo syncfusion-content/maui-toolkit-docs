@@ -7,7 +7,7 @@ control: SfNavigationDrawer
 documentation: UG
 ---
 
-# Animation in .NET MAUI Navigation Drawer (SfNavigationDrawer)
+# Animation in .NET MAUI Navigation Drawer
 
 ## Customizing animation duration
 

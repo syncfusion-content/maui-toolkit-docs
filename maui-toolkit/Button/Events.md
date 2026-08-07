@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Event in .NET MAUI Button Control | Syncfusion<sup>®</sup>
-description: Learn here about Event support in the Syncfusion<sup>®</sup> .NET MAUI Button (SfButton) control, its elements and more.
+title: Events in .NET MAUI Button | Syncfusion®
+description: Learn here about events support in the Syncfusion® .NET MAUI Button (SfButton) control, its elements and more.
 platform: maui
 control: SfButton
 documentation: ug 
 
 ---
 
-# Event in .NET MAUI Button (SfButton)
+# Events in .NET MAUI Button
 
 ## Clicked event
 

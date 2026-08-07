@@ -6,7 +6,7 @@ platform: maui-toolkit
 control: SfBottomSheet
 documentation: UG
 ---
-# Swiping in .NET MAUI Bottom Sheet (SfBottomSheet)
+# Swiping in .NET MAUI Bottom Sheet
 
 The [Bottom Sheet](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.BottomSheet.SfBottomSheet.html) supports swiping to expand the sheet.
 
