@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Customize Data Points in .NET MAUI Spark Chart Control | Syncfusion
-description: Learn here all about how to customize data points in Syncfusion® .NET MAUI Spark Charts (SfSparkChart) control and more.
+title: Customize Data Points in .NET MAUI Spark Charts | Syncfusion®
+description: Customize Data Points in .NET MAUI Spark Charts enables custom colors, markers, and styles for individual data points, improving data visualization.
 platform: maui-toolkit
 control: SfSparkChart
 documentation: ug
@@ -9,17 +9,21 @@ documentation: ug
 
 # Customize Data Points in .NET MAUI Spark Charts
 
+N> **Prerequisite:** Ensure that the required NuGet package is installed, the necessary namespaces are imported, and the **Spark Charts** control is properly configured in your application. For detailed setup and configuration instructions, refer to the **[Getting Started](https://help.syncfusion.com/maui-toolkit/spark-charts/getting-started)** guide.
+
 Customizing data point colors improves visual clarity by distinguishing key values. This enables efficient interpretation of chart data and helps identify critical trends at a glance.
 
 ## Data point styling
 
-Color of the first, last, high, low, and negative data points can be customized using the following `Brush` type properties.
+The color of the first, last, high, low, and negative data points can be customized using the following `Brush` type properties. For line and area charts, these fills render visibly only when the `ShowMarkers` property is enabled.
 
 * [FirstPointFill](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SparkCharts.SfSparkLineChart.html#Syncfusion_Maui_Toolkit_SparkCharts_SfSparkLineChart_FirstPointFill) - Used to highlight the first point.
 * [LastPointFill](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SparkCharts.SfSparkLineChart.html#Syncfusion_Maui_Toolkit_SparkCharts_SfSparkLineChart_LastPointFill) - Used to highlight the last point.
 * [HighPointFill](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SparkCharts.SfSparkLineChart.html#Syncfusion_Maui_Toolkit_SparkCharts_SfSparkLineChart_HighPointFill) - Used to highlight the highest point.
-* [LowPointFill](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SparkCharts.SfSparkLineChart.html#Syncfusion_Maui_Toolkit_SparkCharts_SfSparkLineChart_LastPointFill) - Used to highlight the lowest point.
+* [LowPointFill](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SparkCharts.SfSparkLineChart.html#Syncfusion_Maui_Toolkit_SparkCharts_SfSparkLineChart_LowPointFill) - Used to highlight the lowest point.
 * [NegativePointsFill](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SparkCharts.SfSparkLineChart.html#Syncfusion_Maui_Toolkit_SparkCharts_SfSparkLineChart_NegativePointsFill) - Used to highlight the negative points.
+
+The following code snippet demonstrates how to customize the data points in a spark line chart.
 
 {% tabs %}
 
@@ -32,7 +36,7 @@ Color of the first, last, high, low, and negative data points can be customized 
                     HighPointFill="Purple"
                     LowPointFill="Red"
                     ShowMarkers="True">
-. . .
+    <!-- code omitted for brevity -->
 </sparkchart:SfSparkLineChart>
 
 {% endhighlight %}
@@ -49,17 +53,18 @@ SfSparkLineChart sparkchart = new SfSparkLineChart()
     LowPointFill = new SolidColorBrush(Colors.Red),
     ShowMarkers = true
 };
+//code omitted for brevity
 this.Content = sparkchart;
 
 {% endhighlight %}
 
 {% endtabs %}
 
-N> [NegativePointsFill](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SparkCharts.SfSparkLineChart.html#Syncfusion_Maui_Toolkit_SparkCharts_SfSparkLineChart_NegativePointsFill) is applicable for [SfSparkColumnChart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SparkCharts.SfSparkColumnChart.html) and [SfSparkWinLossChart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SparkCharts.SfSparkWinLossChart.html) alone.
+N> [NegativePointsFill](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SparkCharts.SfSparkLineChart.html#Syncfusion_Maui_Toolkit_SparkCharts_SfSparkLineChart_NegativePointsFill) is applicable only to [SfSparkColumnChart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SparkCharts.SfSparkColumnChart.html) and [SfSparkWinLossChart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SparkCharts.SfSparkWinLossChart.html).
 
-![Customized data points in MAUI Spark Line Chart](customize_datapoints_images/MAUI_Line_segments.png)
+![Customized data points in .NET MAUI Spark Line Chart](customize_datapoints_images/MAUI_Line_segments.png)
 
-Code snippet to customize the segments
+The following code snippet demonstrates how to customize the segments in a spark column chart.
 
 {% tabs %}
 
@@ -70,9 +75,9 @@ Code snippet to customize the segments
                     FirstPointFill="Green"
                     LastPointFill="Purple"
                     HighPointFill="Maroon"
-                    LowPointFill= "Blue"
+                    LowPointFill="Blue"
                     NegativePointsFill="Red">
-. . .
+    <!-- code omitted for brevity -->
 </sparkchart:SfSparkColumnChart>
 
 {% endhighlight %}
@@ -89,17 +94,18 @@ SfSparkColumnChart sparkchart = new SfSparkColumnChart()
     LowPointFill = new SolidColorBrush(Colors.Blue),
     NegativePointsFill = new SolidColorBrush(Colors.Red)
 };
+//code omitted for brevity
 this.Content = sparkchart;
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![Customized data points in MAUI Spark Column Chart](customize_datapoints_images/MAUI_Column_segments.png)
+![Customized data points in .NET MAUI Spark Column Chart](customize_datapoints_images/MAUI_Column_segments.png)
 
 ## Padding
 
-The [Padding](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SparkCharts.SfSparkChart.html#Syncfusion_Maui_Toolkit_SparkCharts_SfSparkChart_Padding) property represents the distance between an element and its child elements. Padding can be applied in specific direction or in all directions. Padding can be applied for all sparkline types.
+The [Padding](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SparkCharts.SfSparkChart.html#Syncfusion_Maui_Toolkit_SparkCharts_SfSparkChart_Padding) property represents the distance between the spark chart and its surrounding plot area. Padding can be applied in a specific direction or in all directions. The default value is `0`. Padding can be applied to all spark chart types.
 
 {% tabs %}
 
@@ -110,7 +116,7 @@ The [Padding](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolki
                     ShowMarkers="True"
                     YBindingPath="Value">
     <sparkchart:SfSparkLineChart.BindingContext>
-        <model:SparkDataViewModel/>
+        <model:SparkChartViewModel/>
     </sparkchart:SfSparkLineChart.BindingContext>
 
     <sparkchart:SfSparkLineChart.MarkerSettings>
@@ -128,7 +134,7 @@ The [Padding](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolki
 
 {% highlight c# %}
 
-var viewModel = new SparkDataViewModel();
+var viewModel = new SparkChartViewModel();
 SfSparkLineChart sparkchart = new SfSparkLineChart()
 {
     BindingContext = viewModel,
@@ -152,4 +158,4 @@ this.Content = sparkchart;
 
 {% endtabs %}
 
-![Spark Line Chart With Padding](customize_datapoints_images/MAUI_Line_Sparkline_with_padding.png)
+![Spark Line Chart with padding in .NET MAUI](customize_datapoints_images/MAUI_Line_Sparkline_with_padding.png)
