@@ -1,19 +1,15 @@
 ---
 layout: post
-title: Getting Started with .NET MAUI Popup control | Syncfusion®
-canonical_url: "https://www.syncfusion.com/maui-controls/maui-popup"
-description: Learn here all about how to get started with Syncfusion® .NET MAUI Popup (SfPopup) control, its elements and more.
-platform: MAUI
+title: Getting Started with .NET MAUI Popup control | Syncfusion
+description: Learn here about getting started with Syncfusion .NET MAUI Popup (SfPopup) control, its elements and more.
+platform: maui-toolkit
 control: SfPopup
 documentation: ug
 ---
 
 # Getting Started with .NET MAUI Popup
 
-This section guides you through setting up and configuring a [Popup](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Popup.SfPopup.html) in your .NET MAUI application. Follow the steps below to add a basic Popup to your project.
-
-To quickly get started with the .NET MAUI Popup, watch this video:
-<style>#MAUIPopupVideoTutorial{width : 90% !important; height: 400px !important }</style> <iframe id='MAUIPopupVideoTutorial' src='https://www.youtube.com/embed/HTk6JAGP-qE'></iframe>
+This section guides you through setting up and configuring a `Popup` in your .NET MAUI application. Follow the steps below to add a basic Popup to your project.
 
 {% tabcontents %}
 {% tabcontent Visual Studio %}
@@ -28,14 +24,14 @@ Before proceeding, ensure the following are set up:
 ## Step 1: Create a new .NET MAUI project
 
 1. Go to **File > New > Project** and choose the **.NET MAUI App** template.
-2. Name the project and choose a location. Then, click **Next**.
+2. Name the project and choose a location. Then click **Next**.
 3. Select the .NET framework version and click **Create**.
 
-## Step 2: Install the Syncfusion<sup>®</sup> MAUI Popup NuGet package
+## Step 2: Install the Syncfusion<sup>&reg;</sup> .NET MAUI Toolkit NuGet package
 
- 1. In **Solution Explorer**, right-click the project and choose **Manage NuGet Packages**.
- 2. Search for [Syncfusion.Maui.Popup](https://www.nuget.org/packages/Syncfusion.Maui.Popup) and install the latest version.
- 3. Ensure the necessary dependencies are installed correctly, and the project is restored.
+1. In **Solution Explorer,** right-click the project and choose **Manage NuGet Packages.**
+2. Search for [Syncfusion.Maui.Toolkit](https://www.nuget.org/packages/Syncfusion.Maui.Toolkit/) and install the latest version.
+3. Ensure the necessary dependencies are installed correctly, and the project is restored.
 
 {% endtabcontent %}
 {% tabcontent Visual Studio Code %}
@@ -53,13 +49,14 @@ Before proceeding, ensure the following are set up:
 1. Open the command palette by pressing `Ctrl+Shift+P` and type **.NET:New Project** and enter.
 2. Choose the **.NET MAUI App** template.
 3. Select the project location, type the project name and press **Enter**.
-4. Then choose **Create project**.
+4. Then choose **Create project.**
 
-## Step 2: Install the Syncfusion<sup>®</sup> MAUI Popup NuGet package
+## Step 2: Install the Syncfusion<sup>&reg;</sup> .NET MAUI Toolkit NuGet package
 
- 1. In **Solution Explorer**, right-click the project and choose **Manage NuGet Packages**.
- 2. Search for [Syncfusion.Maui.Popup](https://www.nuget.org/packages/Syncfusion.Maui.Popup) and install the latest version.
- 3. Ensure the necessary dependencies are installed correctly, and the project is restored.
+1. Press <kbd>Ctrl</kbd> + <kbd>`</kbd> (backtick) to open the integrated terminal in Visual Studio Code.
+2. Ensure you're in the project root directory where your .csproj file is located.
+3. Run the command `dotnet add package Syncfusion.Maui.Toolkit` to install the Syncfusion<sup>®</sup> .NET MAUI Toolkit NuGet package.
+4. To ensure all dependencies are installed, run `dotnet restore`.
 
 {% endtabcontent %}
 {% tabcontent JetBrains Rider %}
@@ -74,57 +71,56 @@ Before proceeding, ensure the following are set up:
 
 ## Step 1: Create a new .NET MAUI project
 
-1. Go to **File > New Solution**, Select .NET (C#) and choose the .NET MAUI App template.
+1. Go to **File > New Solution,** Select .NET (C#) and choose the .NET MAUI App template.
 2. Enter the Project Name, Solution Name, and Location.
-3. Select the .NET framework version and click **Create**.
+3. Select the .NET framework version and click Create.
 
-## Step 2: Install the Syncfusion<sup>®</sup> MAUI Popup NuGet package
+## Step 2: Install the Syncfusion<sup>®</sup> MAUI Toolkit NuGet package
 
-1. In **Solution Explorer**, right-click the project and choose **Manage NuGet Packages**.
-2. Search for [Syncfusion.Maui.Popup](https://www.nuget.org/packages/Syncfusion.Maui.Popup) and install the latest version.
-3. Ensure the necessary dependencies are installed correctly, and the project is restored. If not, open the terminal in Rider and manually run: `dotnet restore`.
+1. In **Solution Explorer,** right-click the project and choose **Manage NuGet Packages.**
+2. Search for [Syncfusion.Maui.Toolkit](https://www.nuget.org/packages/Syncfusion.Maui.Toolkit/) and install the latest version.
+3. Ensure the necessary dependencies are installed correctly, and the project is restored. If not, Open the Terminal in Rider and manually run: `dotnet restore`
 
 {% endtabcontent %}
 {% endtabcontents %}
 
 ## Step 3: Register Syncfusion handler
-
-Add the following namespace to `MauiProgram.cs`:
-
+ 
+Make sure to add the namespace.
+ 
 {% tabs %}
 {% highlight c# %}
-using Syncfusion.Maui.Core.Hosting;
+using Syncfusion.Maui.Toolkit.Hosting;
+{% endhighlight %}
+{% endtabs %}
+ 
+Register the Syncfusion toolkit handler in your `CreateMauiApp` method of `MauiProgram.cs` file to use Syncfusion controls.
+ 
+{% tabs %}
+{% highlight c# %}
+builder.ConfigureSyncfusionToolkit();
 {% endhighlight %}
 {% endtabs %}
 
-Register the Syncfusion core handler in your `CreateMauiApp` method of `MauiProgram.cs` file to use Syncfusion controls.
-
-{% tabs %}
-{% highlight c# %}
-builder.ConfigureSyncfusionCore();
-{% endhighlight %} 
-{% endtabs %}
-
-## Step 4: Import Popup namespace
+## Step 4: Import PullToRefresh namespace
 
 Add the following namespace in your XAML or C#.
-
 {% tabs %}
 {% highlight xaml %}
 
-xmlns:syncfusion="clr-namespace:Syncfusion.Maui.Popup;assembly=Syncfusion.Maui.Popup"
+xmlns:syncfusion="clr-namespace:Syncfusion.Maui.Toolkit.Popup;assembly=Syncfusion.Maui.Toolkit"
 
 {% endhighlight %}
 {% highlight c# %}
 
-using Syncfusion.Maui.Popup;
+using Syncfusion.Maui.Toolkit.Popup;
 
 {% endhighlight %}
 {% endtabs %}
 
-## Step 5: Add the Popup component
+## Step 5: Displaying popup
 
-Display a popup over your view by calling the [Show](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Popup.SfPopup.html#Syncfusion_Maui_Popup_SfPopup_Show_System_Boolean_) method. The `Show` method accepts an optional `bool` parameter that indicates whether the popup is shown as a full-screen dialog (`true`) or as a non-full-screen popup (`false`, the default).
+Display a popup over your view by calling the `Show` method.
 
 Refer to the following code example for displaying popup using Button's Click event.
 
@@ -133,17 +129,17 @@ Refer to the following code example for displaying popup using Button's Click ev
 {% highlight xaml %}
 
 <StackLayout x:Name="mainLayout">
-    <Button x:Name="clickToShowPopup" Text="Show Popup"
+    <Button x:Name="clickToShowPopup" Text="ClickToShowPopup" 
             VerticalOptions="Start" HorizontalOptions="Center"
             Clicked="ClickToShowPopup_Clicked" />
-    <syncfusion:SfPopup x:Name="popup" />
+        <syncfusion:SfPopup x:Name="popup" />
 </StackLayout>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-private void ClickToShowPopup_Clicked(object? sender, EventArgs e)
+private void ClickToShowPopup_Clicked(object sender, EventArgs e)
 {
     popup.Show();
 }
@@ -153,5 +149,3 @@ private void ClickToShowPopup_Clicked(object? sender, EventArgs e)
 {% endtabs %}
 
 ![Popup with default appearance](Images/getting-started//maui-popup-with-default-appearance.png)
-
-You can download the Popup Getting Started sample from [GitHub](https://github.com/SyncfusionExamples/getting-started-.net-maui-popup).

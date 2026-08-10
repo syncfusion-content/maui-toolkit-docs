@@ -1,31 +1,32 @@
 ---
 layout: post
-title: Popup Animations in .NET MAUI Popup Control | Syncfusion®
-description: Learn here all about Animations support in the Syncfusion® .NET MAUI Popup (SfPopup) control and more.
-platform: MAUI
+title: Popup Animations in .NET MAUI Popup Control | Syncfusion
+description: Learn here all about Popup Animations support in the Syncfusion .NET MAUI Popup (SfPopup) control and more.
+platform: maui-toolkit
 control: SfPopup
 documentation: ug
 --- 
 
-# Animations in .NET MAUI Popup
+# Popup Animations in .NET MAUI Popup (SfPopup)
 
 ## Animation Modes
 
-Built-in animations are available in SfPopup, which is applied when the PopupView opens and closes in the screen. By default, the animation mode is set to `Fade`. The following animation modes are available in SfPopup:
+Built-in animations are available in SfPopup, which is applied when the Popup view opens and closes in the screen. By default, the animation mode is set to `Fade`
+The SfPopup has different animation modes as listed below:
 
-* [Zoom](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Popup.PopupAnimationMode.html#Syncfusion_Maui_Popup_PopupAnimationMode_Zoom)
-* [Fade](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Popup.PopupAnimationMode.html#Syncfusion_Maui_Popup_PopupAnimationMode_Fade)
-* [SlideOnLeft](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Popup.PopupAnimationMode.html#Syncfusion_Maui_Popup_PopupAnimationMode_SlideOnLeft)
-* [SlideOnRight](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Popup.PopupAnimationMode.html#Syncfusion_Maui_Popup_PopupAnimationMode_SlideOnRight)
-* [SlideOnTop](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Popup.PopupAnimationMode.html#Syncfusion_Maui_Popup_PopupAnimationMode_SlideOnTop)
-* [SlideOnBottom](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Popup.PopupAnimationMode.html#Syncfusion_Maui_Popup_PopupAnimationMode_SlideOnBottom)
-* [None](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Popup.PopupAnimationMode.html#Syncfusion_Maui_Popup_PopupAnimationMode_None)
+* `Zoom`
+* `Fade`
+* `SlideOnLeft`
+* `SlideOnRight`
+* `SlideOnTop`
+* `SlideOnBottom`
+* `None`
 
-N> The AnimationMode setting applies to both `Displaying popup when the SfPopup is set as root view` and `Displaying popup on the go`. 
+N> Setting of the AnimationMode is same for both `Displaying popup when the SfPopup is set as root view` and `Displaying popup on the go`. 
 
-### Zoom
+### Zoom 
 
-Zoom-out animation will be applied when the PopupView opens and Zoom-in animation will be applied when the PopupView closes.
+Zoom-out animation will be applied when the Popup view opens and Zoom-in animation will be applied when the Popup view closes.
 
 {% tabs %}
 
@@ -38,23 +39,21 @@ Zoom-out animation will be applied when the PopupView opens and Zoom-in animatio
 
 {% highlight c# %}
 
-using Syncfusion.Maui.Popup;
-
 public MainPage()
 {
     InitializeComponent();
-    popup.AnimationMode = PopupAnimationMode.Zoom;
+    popup.AnimationMode = AnimationMode.Zoom;
 }
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![Syncfusion .NET MAUI Popup with zoom animation](Images/popup-animation/maui-popup-zoom-animation.gif)
+![.NET MAUI Popup with zoom animation](Images/popup-animation//zoom-animation.gif)
 
-### Fade
+### Fade 
 
-Fade-out animation will be applied when the PopupView opens and Fade-in animation will be applied when the PopupView closes.
+Fade-out animation will be applied when the Popup view opens and Fade-in animation will be applied when the Popup view closes.
 
 {% tabs %}
 
@@ -67,23 +66,21 @@ Fade-out animation will be applied when the PopupView opens and Fade-in animatio
 
 {% highlight c# %}
 
-using Syncfusion.Maui.Popup;
-
 public MainPage()
 {
     InitializeComponent();
-    popup.AnimationMode = PopupAnimationMode.Fade;
+    popup.AnimationMode = AnimationMode.Fade;
 }
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![Syncfusion .NET MAUI Popup with fade animation](Images/popup-animation/maui-popup-fade-animation.gif)
+![.NET MAUI Popup with fade animation](Images/popup-animation//fade-animation.gif)
 
-### SlideOnLeft
+### SlideOnLeft 
 
-PopupView will be animated from left-to-right when it opens and from right-to-left when it closes.
+Popup view will be animated from left-to-right when it opens and from right-to-left when it closes.
 
 {% tabs %}
 
@@ -96,23 +93,21 @@ PopupView will be animated from left-to-right when it opens and from right-to-le
 
 {% highlight c# %}
 
-using Syncfusion.Maui.Popup;
-
 public MainPage()
 {
     InitializeComponent();
-    popup.AnimationMode = PopupAnimationMode.SlideOnLeft;
+    popup.AnimationMode = AnimationMode.SlideOnLeft;
 }
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![Syncfusion .NET MAUI Popup with SlideOnLeft animation](Images/popup-animation/maui-popup-slideonleft-animation.gif)
+![.NET MAUI Popup with slide on left animation](Images/popup-animation//slideonleft-animation.gif)
 
 ### SlideOnRight
 
-PopupView will be animated from right-to-left when it opens and from left-to-right when it closes.
+Popup view will be animated from right-to-left when it opens and from left-to-right when it closes.
 
 {% tabs %}
 
@@ -125,23 +120,21 @@ PopupView will be animated from right-to-left when it opens and from left-to-rig
 
 {% highlight c# %}
 
-using Syncfusion.Maui.Popup;
-
 public MainPage()
 {
     InitializeComponent();
-    popup.AnimationMode = PopupAnimationMode.SlideOnRight;
+    popup.AnimationMode = AnimationMode.SlideOnRight;
 }
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![Syncfusion .NET MAUI Popup with SlideOnRight animation](Images/popup-animation/maui-popup-slideonright-animation.gif)
+![.NET MAUI Popup with slide on right animation](Images/popup-animation//slideonright-animation.gif)
 
-### SlideOnTop
+### SlideOnTop 
 
-PopupView will be animated from top-to-bottom when it opens and from bottom-to-top when it closes.
+Popup view will be animated from top-to-bottom when it opens and from bottom-to-top when it closes.
 
 {% tabs %}
 
@@ -154,12 +147,10 @@ PopupView will be animated from top-to-bottom when it opens and from bottom-to-t
 
 {% highlight c# %}
 
-using Syncfusion.Maui.Popup;
-
 public MainPage()
 {
     InitializeComponent();
-    popup.AnimationMode = PopupAnimationMode.SlideOnTop;
+    popup.AnimationMode = AnimationMode.SlideOnTop;
 }
 
 {% endhighlight %}
@@ -167,11 +158,11 @@ public MainPage()
 {% endtabs %}
 
 
-![Syncfusion .NET MAUI Popup with SlideOnTop animation](Images/popup-animation/maui-popup-slideontop-animation.gif)
+![.NET MAUI Popup with slide on top animation](Images/popup-animation//slideontop-animation.gif)
 
 ### SlideOnBottom
 
-PopupView will be animated from bottom-to-top when it opens and from top-to-bottom when it closes.
+Popup view will be animated from bottom-to-top when it opens and from top-to-bottom when it closes.
 
 {% tabs %}
 
@@ -184,19 +175,17 @@ PopupView will be animated from bottom-to-top when it opens and from top-to-bott
 
 {% highlight c# %}
 
-using Syncfusion.Maui.Popup;
-
 public MainPage()
 {
     InitializeComponent();
-    popup.AnimationMode = PopupAnimationMode.SlideOnBottom;
+    popup.AnimationMode = AnimationMode.SlideOnBottom;
 }
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![Syncfusion .NET MAUI Popup with SlideOnBottom animation](Images/popup-animation/maui-popup-slideonbottom-animation.gif)
+![.NET MAUI Popup with slide on bottom animation](Images/popup-animation//slideonbottom-animation.gif)
 
 ### None
 
@@ -213,12 +202,10 @@ Animation will not be applied.
 
 {% highlight c# %}
 
-using Syncfusion.Maui.Popup;
-
 public MainPage()
 {
     InitializeComponent();
-    popup.AnimationMode = PopupAnimationMode.None;
+    popup.AnimationMode = AnimationMode.None;
 }
 
 {% endhighlight %}
@@ -227,7 +214,7 @@ public MainPage()
 
 ## Animation duration
 
-The `SfPopup` allows you to customize the opening and closing animation duration of the PopupView by using the `AnimationDuration` property. The duration is specified in milliseconds (ms), and the value must be greater than or equal to `0`. The default value is `300 ms`.
+The `SfPopup` allows you to customize the opening and closing animation duration of Popup view by using the `AnimationDuration` property. By default, the animation duration is set to `300 milliseconds`. 
 
 {% tabs %}
 {% highlight xaml %}
@@ -239,13 +226,10 @@ The `SfPopup` allows you to customize the opening and closing animation duration
 
 {% highlight c# %}
 
-using Syncfusion.Maui.Popup;
-
 public MainPage()
 {
     InitializeComponent();
-    popup.AnimationDuration = 150d;
-    popup.Show();
+    popup.AnimationDuration = 150;
 }
 
 {% endhighlight %}
@@ -253,7 +237,7 @@ public MainPage()
 
 ## Animation easing
 
-The `SfPopup` allows you to show the PopupView with various easing effects for all the available `SfPopup.AnimationMode` using the [SfPopup.AnimationEasing](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Popup.PopupAnimationEasing.html) property.
+The `SfPopup` allows to show the Popup view with various easing effects for all the available `SfPopup.AnimationMode` using the `SfPopup.AnimationEasing` property.
 
 {% tabs %}
 
@@ -266,13 +250,10 @@ The `SfPopup` allows you to show the PopupView with various easing effects for a
 
 {% highlight c# %}
 
-using Syncfusion.Maui.Popup;
-
 public MainPage()
 {
     InitializeComponent();
     popup.AnimationEasing = PopupAnimationEasing.SinIn;
-    popup.Show();
 }
 
 {% endhighlight %}

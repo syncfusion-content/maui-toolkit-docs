@@ -1,25 +1,22 @@
 ---
 layout: post
-title: BindableLayout in .NET MAUI Accordion control | Syncfusion®
-description: Learn here about how to bind AccordionItem to Syncfusion® .NET MAUI Accordion control using BindableLayout.
-platform: MAUI
+title: Bindable Layout in .NET MAUI Accordion control | Syncfusion®
+description: Learn about bindable layout support in Syncfusion® Toolkit for .NET MAUI Accordion control, its elements and more.
+platform: maui-toolkit
 control: SfAccordion
 documentation: ug
 ---
 
-# BindableLayout in .NET MAUI Accordion
+# BindableLayout in .NET MAUI Accordion (SfAccordion)
 
-The [SfAccordion](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Accordion.SfAccordion.html) control allows the use of [.NET MAUI BindableLayout](https://learn.microsoft.com/en-us/dotnet/maui/user-interface/layouts/bindablelayout) to bind a data collection using `BindableLayout.ItemsSource` and `BindableLayout.ItemTemplate` properties.
+The `SfAccordion` control allows the use of [.NET MAUI BindableLayout](https://learn.microsoft.com/en-us/dotnet/maui/user-interface/layouts/bindablelayout) to bind a data collection using `BindableLayout.ItemsSource` and `BindableLayout.ItemTemplate` properties.
 
-## Creating the data model
+## Creating Data Model
 
-Create a simple data model to bind to `SfAccordion` as shown in the following code example in a new class file, and save it as `EmployeeInfo.cs`:
+Create a simple data model to bind the data for `SfAccordion`, as shown in the following code example, in a new class file. Save it as `EmployeeInfo.cs`.
 
 {% tabs %}
 {% highlight c# %}
-using System.Collections.ObjectModel;
-using System.ComponentModel;
-
 public class EmployeeInfo : INotifyPropertyChanged
 {
     #region Fields
@@ -125,7 +122,7 @@ public class EmployeeInfo : INotifyPropertyChanged
         }
     }
 
-    public bool IsExpanded
+    public string IsExpanded
     {
         get { return isexpanded; }
         set
@@ -146,27 +143,14 @@ public class EmployeeInfo : INotifyPropertyChanged
     }
 
     #endregion
-
-    #region INotifyPropertyChanged
-
-    public event PropertyChangedEventHandler? PropertyChanged;
-
-    protected void OnPropertyChanged(string propertyName)
-    {
-        PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
-    }
-
-    #endregion
 }
 {% endhighlight %}
 {% endtabs %}
 
-Create a model repository class with the `EmployeeInfo` collection property initialized with the required number of data objects in a new class file, as shown in the following code example, and save it as `EmployeeDetails.cs`.
+Create a model repository class with the EmployeeInfo collection property initialized with required number of data objects in a new class file, as shown in the following code example, and save it as `EmployeeDetails.cs` file.
 
 {% tabs %}
 {% highlight c# %}
-using System.Collections.ObjectModel;
-
 public class EmployeeDetails
 {
     #region Fields
@@ -175,9 +159,8 @@ public class EmployeeDetails
 
     string[] Description = new string[]
     {
-    "Robin Rane, Chairman of ABC Inc., leads with dedication and vision. Under his guidance, the company thrives and continues to make a significant impact in the industry.",
-    "Paul Vent, General Manager of XYZ Corp., oversees daily operations, ensuring the company's success and growth through strategic planning and effective management practices.",
-    "Clara Venus, Asst. Manager at ABC Inc., efficiently handles multiple tasks. With her strong skill set and dedication, she contributes significantly to the company's growth and success.",
+    "Robin Rane, Chairman of ABC Inc., leads with dedication and vision.Under his guidance, the company thrives and continues to make a significant impact in the industry.",
+    "Paul Vent, General Manager of XYZ Corp., oversees daily operations, ensuring the company's success and growth through strategic planning and effective management practices.",        "Clara Venus, Asst. Manager at ABC Inc., efficiently handles multiple tasks. With her strong skill set and dedication, she contributes significantly to the company's growth and success.",
     "Maria Even, a highly experienced professional, holds the position of Executive Manager at XYZ Corp. She oversees crucial operations, enforcing company policies and practices.",
     "Mark Zuen, Senior Executive at ABC Inc., skillfully manages business operations. He is adept at leadership and strategic thinking."
     };
@@ -193,7 +176,6 @@ public class EmployeeDetails
         Employees.Add(new EmployeeInfo("Paul Vent", "emp_02.png", "General Manager", "XYZ Corp.", "05/27/1985", "New York", "(212) 555-1234", true, Description[1]));
         Employees.Add(new EmployeeInfo("Clara Venus", "emp_03.png", "Assistant Manager", "ABC Inc.", "07/22/1988", "California", "(415) 123-4567", false, Description[2]));
         Employees.Add(new EmployeeInfo("Maria Even", "emp_04.png", "Executive Manager", "XYZ Corp.", "04/16/1970", "New York", "(516) 345-6789", false, Description[3]));
-        Employees.Add(new EmployeeInfo("Mark Zuen", "emp_05.png", "Senior Executive", "ABC Inc.", "11/03/1982", "Seattle", "(206) 555-9876", false, Description[4]));
     }
 
     #endregion
@@ -211,9 +193,7 @@ public class EmployeeDetails
 {% endhighlight %}
 {% endtabs %}
 
-### Setting the BindingContext
-
-Set the ViewModel instance as the `BindingContext` of your page to bind the ViewModel properties to `SfAccordion`.
+Set the ViewModel instance as the `BindingContext` of your page to bind properties of the ViewModel to `SfAccordion`.
 
 {% tabs %} 
 {% highlight xaml %}
@@ -228,110 +208,85 @@ this.BindingContext = new EmployeeDetails();
 
 ## Binding data to SfAccordion
 
-`SfAccordion` can be bound with data by setting the `ItemsSource` property of `BindableLayout`.
+The `SfAccordion` can be bound to data by setting the `ItemsSource` property of the `BindableLayout`.
 
 The following code example binds the collection created in the previous step to the `BindableLayout.ItemsSource` property.
 
 {% tabs %}
-{% highlight xaml hl_lines="5" %}
-<?xml version="1.0" encoding="utf-8" ?>
+{% highlight xaml hl_lines="7" %}
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:syncfusion="clr-namespace:Syncfusion.Maui.Accordion;assembly=Syncfusion.Maui.Expander"
-             xmlns:local="clr-namespace:AccordionSample">
+             xmlns:syncfusion="clr-namespace:Syncfusion.Maui.Toolkit.Accordion;assembly=Syncfusion.Maui.Toolkit"
+             xmlns:local="clr-namespace:AccordionBindableLayout"
+             x:Class="AccordionBindableLayout.MainPage">
     <syncfusion:SfAccordion x:Name="Accordion"
                             BindableLayout.ItemsSource="{Binding Employees}"/>
 </ContentPage>      
 {% endhighlight %}
-{% highlight c# hl_lines="3" %}
-using Syncfusion.Maui.Accordion;
-using System.Collections.ObjectModel;
-
-EmployeeDetails viewModel = new EmployeeDetails();
+{% highlight c# hl_lines="2" %}
 SfAccordion Accordion = new SfAccordion();
-BindableLayout.SetItemsSource(Accordion, viewModel.Employees ?? new ObservableCollection<EmployeeInfo>());
+BindableLayout.SetItemsSource(Accordion, viewModel.Employees);
 {% endhighlight %}
 {% endtabs %}
 
 ## Defining the AccordionItem
 
-The [SfAccordion](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Accordion.SfAccordion.html) accepts the [AccordionItem](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Accordion.AccordionItem.html) as its child element. The appearance of each `AccordionItem` can be defined by setting the `BindableLayout.ItemTemplate` property.
-
-In the following template, an image file name is bound to the `Image.Source` property through an `ImageConverter` that converts the file name into an `ImageSource`. Define the converter in C# and expose it as a page resource with the key `image converter`, as shown below.
-
-{% tabs %}
-{% highlight c# %}
-using System.Globalization;
-using Microsoft.Maui.Controls;
-
-public class ImageConverter : IValueConverter
-{
-    public object? Convert(object? value, Type targetType, object? parameter, CultureInfo culture)
-    {
-        if (value is string imageName && !string.IsNullOrWhiteSpace(imageName))
-        {
-            return ImageSource.FromFile(imageName);
-        }
-
-        return null;
-    }
-
-    public object? ConvertBack(object? value, Type targetType, object? parameter, CultureInfo culture)
-    {
-        throw new NotSupportedException();
-    }
-}
-{% endhighlight %}
-{% endtabs %}
-
-{% tabs %}
-{% highlight xaml %}
-<ContentPage.Resources>
-    <local:ImageConverter x:Key="imageconverter"/>
-</ContentPage.Resources>
-{% endhighlight %}
-{% endtabs %}
-
-N> Refer to the [.NET MAUI fonts documentation](https://learn.microsoft.com/en-us/dotnet/maui/user-interface/fonts) for details on how to add and register the `AccordionFontIcons.ttf` font used by the phone icon in the following template.
+The `SfAccordion` accepts the `AccordionItem` as its child element. The appearance of each `AccordionItem` can be defined by setting the `BindableLayout.ItemTemplate` property.
 
 {% tabs %}
 {% highlight xaml hl_lines="2 3" %}
-<syncfusion:SfAccordion x:Name="accordion"
-                        BindableLayout.ItemsSource="{Binding Employees}">
+<syncfusion:SfAccordion  x:Name="accordion"
+                         BindableLayout.ItemsSource="{Binding Employees}" >
     <BindableLayout.ItemTemplate>
         <DataTemplate>
             <syncfusion:AccordionItem IsExpanded="{Binding IsExpanded}">
                 <syncfusion:AccordionItem.Header>
-                    <Grid HeightRequest="48">
+                    <Grid  HeightRequest="48">
                         <Label Text="{Binding Name}" Margin="16,14,0,14" CharacterSpacing="0.25" FontFamily="Roboto-Regular"  FontSize="14" />
-                    </Grid>
+                            </Grid>
                 </syncfusion:AccordionItem.Header>
                 <syncfusion:AccordionItem.Content>
-                    <Grid ColumnSpacing="10" RowSpacing="2" BackgroundColor="#f4f4f4">
-                        <Grid Margin="16,6,0,0" RowDefinitions="25,25,25,25,70,Auto" ColumnDefinitions="100,100,*">
+                    <Grid ColumnSpacing="10" RowSpacing="2" BackgroundColor="#f4f4f4"  >
+                        <Grid Margin="16,6,0,0">
                             <Grid.Resources>
                                 <Style TargetType="Label">
-                                    <Setter Property="FontFamily" Value="Roboto-Regular" />
+                                            <Setter Property="FontFamily" Value="Roboto-Regular"/>
                                 </Style>
                             </Grid.Resources>
-                            <Border Grid.RowSpan="4" Padding="0" Margin="0,0,12,7">
-                                <Image Source="{Binding Image,Converter={StaticResource imageconverter}}"/>
-                            </Border>
-                            <Label Text="Position" Grid.Column="1" Margin="6,0,0,0" />
-                            <Label Text="{Binding Position}" Grid.Column="2" />
-                            <Label Text="Organization " Grid.Row="1" Grid.Column="1" Margin="6,0,0,0" />
-                            <Label Text="{Binding OrganizationUnit}" Grid.Row="1" Grid.Column="2" />
-                            <Label Text="Date Of Birth " Grid.Row="2" Grid.Column="1" Margin="6,0,0,0" />
-                            <Label Text="{Binding DateOfBirth}" Grid.Row="2" Grid.Column="2" />
-                            <Label Text="Location " Grid.Row="3" Grid.Column="1" Margin="6,0,0,0" />
-                            <Label Text="{Binding Location}" Grid.Row="3" Grid.Column="2" />
-                            <Label Padding="0,10,0,10" Grid.Row="4" Grid.ColumnSpan="3"  LineBreakMode="WordWrap" FontSize="14" CharacterSpacing="0.25" VerticalTextAlignment="Center" 
-                                   Text="{Binding Description}">
+                            <Grid.RowDefinitions >
+                                <RowDefinition Height="25"/>
+                                <RowDefinition Height="25"/>
+                                <RowDefinition Height="25"/>
+                                <RowDefinition Height="25"/>
+                                <RowDefinition Height="{OnPlatform Default=90,Android=90,WinUI=70, iOS=100,MacCatalyst=70 }"/>
+                                <RowDefinition Height="Auto"/>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="100"/>
+                                <ColumnDefinition Width="100"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <Frame  Grid.RowSpan="4" BorderColor="Transparent" Grid.Row="0" Grid.Column="0"  Padding="0" Margin="0,0,0,7">
+                                <Image  Source="{Binding Image}"/>
+                            </Frame>
+                            <Label Text="Position" Grid.Column="1" Grid.Row="0" Margin="6,0,0,0"/>
+                            <Label Text="{Binding Position}" Grid.Row="0" Grid.Column="2"/>
+                            <Label Text="Organization " Grid.Row="1" Grid.Column="1" Margin="6,0,0,0"/>
+                            <Label Text="{Binding OrganizationUnit}" Grid.Row="1" Grid.Column="2"/>
+                            <Label Text="Date Of Birth " Grid.Row="2" Grid.Column="1" Margin="6,0,0,0"/>
+                            <Label Text="{Binding DateOfBirth}" Grid.Row="2" Grid.Column="2"/>
+                            <Label Text="Location " Grid.Row="3" Grid.Column="1" Margin="6,0,0,0"/>
+                            <Label Text="{Binding Location}" Grid.Row="3" Grid.Column="2"/>
+                            <Label Padding="0,10,0,10" Grid.Row="4" Grid.ColumnSpan="3"  LineBreakMode="WordWrap"  
+                                            FontSize="14" CharacterSpacing="0.25" VerticalTextAlignment="Center" 
+                                                Text="{Binding Description}">
                             </Label>
-                            <HorizontalStackLayout Grid.Row="5" Margin="0,0,0,12">
-                                <Label Text="&#xe700;" FontSize="16" Margin="0,2,2,2" FontFamily='{OnPlatform Android=AccordionFontIcons.ttf#,WinUI=AccordionFontIcons.ttf#AccordionFontIcons,MacCatalyst=AccordionFontIcons,iOS=AccordionFontIcons}' VerticalOptions="Center" VerticalTextAlignment="Center" />
-                                <Label Text="{Binding Phone}" VerticalOptions="Center" CharacterSpacing="0.25" FontSize="14" />
-                            </HorizontalStackLayout>
+                            <StackLayout Grid.Row="5" Orientation="Horizontal" Margin="0,0,0,12">
+                                <Label Text="&#xe700;" FontSize="16" Margin="0,2,2,2"
+                                           FontFamily='{OnPlatform Android=AccordionFontIcons.ttf#,WinUI=AccordionFontIcons.ttf#AccordionFontIcons,MacCatalyst=AccordionFontIcons,iOS=AccordionFontIcons}'
+                                                   VerticalOptions="Center" VerticalTextAlignment="Center"/>
+                                <Label Text="{Binding Phone}" Grid.Column="1" VerticalOptions="Center" CharacterSpacing="0.25" FontSize="14"/>
+                            </StackLayout>
                         </Grid>
                     </Grid>
                 </syncfusion:AccordionItem.Content>
@@ -340,109 +295,34 @@ N> Refer to the [.NET MAUI fonts documentation](https://learn.microsoft.com/en-u
     </BindableLayout.ItemTemplate>
 </syncfusion:SfAccordion>    
 {% endhighlight %}
-{% highlight c# hl_lines="27 28" %}
-using Syncfusion.Maui.Accordion;
-using System.Collections.ObjectModel;
-
-EmployeeDetails viewModel = new EmployeeDetails();
+{% highlight c# hl_lines="26 27" %}
 SfAccordion accordion = new SfAccordion();
 DataTemplate ItemTemplate = new DataTemplate(() =>
 {
     var accordionItem = new AccordionItem();
     var headerGrid = new Grid();
-    var headerLabel = new Label { Margin = new Thickness(16, 14, 0, 14), CharacterSpacing = 0.25, FontFamily = "Roboto-Regular", FontSize = 14 };
+    var headerLabel = new Label() { Text = "Robin Rane", Margin = new Thickness(16, 14, 0, 14), CharacterSpacing = 0.25, FontFamily = "Roboto-Regular", FontSize = 14 };
     headerLabel.SetBinding(Label.TextProperty, new Binding("Name"));
     headerGrid.Children.Add(headerLabel);
     headerGrid.HeightRequest = 48;
     accordionItem.Header = headerGrid;
-    accordionItem.SetBinding(AccordionItem.IsExpandedProperty, new Binding("IsExpanded"));
 
+    var content = new Grid();
+    content.ColumnSpacing = 10;
+    content.RowSpacing = 2;
+    content.BackgroundColor = Color.FromArgb("#f4f4f4");
     var contentGrid = new Grid();
-    contentGrid.ColumnSpacing = 10;
-    contentGrid.RowSpacing = 2;
-    contentGrid.BackgroundColor = Color.FromArgb("#f4f4f4");
-
-    var contentInnerGrid = new Grid
-    {
-        Margin = new Thickness(16, 6, 0, 0),
-        RowDefinitions = new RowDefinitionCollection
-        {
-            new RowDefinition { Height = 25 },
-            new RowDefinition { Height = 25 },
-            new RowDefinition { Height = 25 },
-            new RowDefinition { Height = 25 },
-            new RowDefinition { Height = 70 },
-            new RowDefinition { Height = GridLength.Auto }
-        },
-        ColumnDefinitions = new ColumnDefinitionCollection
-        {
-            new ColumnDefinition { Width = 100 },
-            new ColumnDefinition { Width = 100 },
-            new ColumnDefinition { Width = GridLength.Star }
-        }
-    };
-
-    var positionLabel = new Label { Text = "Position", Margin = new Thickness(6, 0, 0, 0) };
-    positionLabel.SetValue(Grid.ColumnProperty, 1);
-    var positionValue = new Label();
-    positionValue.SetBinding(Label.TextProperty, new Binding("Position"));
-    positionValue.SetValue(Grid.ColumnProperty, 2);
-
-    var organizationLabel = new Label { Text = "Organization ", Margin = new Thickness(6, 0, 0, 0) };
-    organizationLabel.SetValue(Grid.RowProperty, 1);
-    organizationLabel.SetValue(Grid.ColumnProperty, 1);
-    var organizationValue = new Label();
-    organizationValue.SetBinding(Label.TextProperty, new Binding("OrganizationUnit"));
-    organizationValue.SetValue(Grid.RowProperty, 1);
-    organizationValue.SetValue(Grid.ColumnProperty, 2);
-
-    var descriptionLabel = new Label
-    {
-        Padding = new Thickness(0, 10, 0, 10),
-        LineBreakMode = LineBreakMode.WordWrap,
-        FontSize = 14,
-        CharacterSpacing = 0.25,
-        VerticalTextAlignment = TextAlignment.Center
-    };
-    descriptionLabel.SetBinding(Label.TextProperty, new Binding("Description"));
-    descriptionLabel.SetValue(Grid.RowProperty, 4);
-    descriptionLabel.SetValue(Grid.ColumnSpanProperty, 3);
-
-    var phoneStack = new HorizontalStackLayout { Margin = new Thickness(0, 0, 0, 12) };
-    var phoneIcon = new Label
-    {
-        Text = "\ue700",
-        FontSize = 16,
-        Margin = new Thickness(0, 2, 2, 2),
-        VerticalOptions = LayoutOptions.Center,
-        VerticalTextAlignment = TextAlignment.Center
-    };
-    phoneIcon.SetValue(Grid.RowProperty, 5);
-    var phoneLabel = new Label { CharacterSpacing = 0.25, FontSize = 14, VerticalOptions = LayoutOptions.Center };
-    phoneLabel.SetBinding(Label.TextProperty, new Binding("Phone"));
-    phoneStack.Children.Add(phoneIcon);
-    phoneStack.Children.Add(phoneLabel);
-    phoneStack.SetValue(Grid.RowProperty, 5);
-
-    contentInnerGrid.Children.Add(positionLabel);
-    contentInnerGrid.Children.Add(positionValue);
-    contentInnerGrid.Children.Add(organizationLabel);
-    contentInnerGrid.Children.Add(organizationValue);
-    contentInnerGrid.Children.Add(descriptionLabel);
-    contentInnerGrid.Children.Add(phoneStack);
-    contentGrid.Children.Add(contentInnerGrid);
+    (......)
+    contentGrid.Children.Add(stack);
+    content.Children.Add(contentGrid);
     accordionItem.Content = contentGrid;
+    accordion.Items.Add(accordionItem);
     return accordionItem;
 });
-
 BindableLayout.SetItemTemplate(accordion, ItemTemplate);
-BindableLayout.SetItemsSource(accordion, viewModel.Employees ?? new ObservableCollection<EmployeeInfo>());
+BindableLayout.SetItemsSource(accordion, viewModel.Employees);
 {% endhighlight %}
 {% endtabs %}
 
-N> The `IsExpanded` property of the `EmployeeInfo` model is two-way bound to each `AccordionItem.IsExpanded`. Setting `IsExpanded = true` on a data item expands the corresponding accordion item at load, and the value is kept in sync when the user expands or collapses an item at runtime.
-
-![Syncfusion Maui Accordion with bound data](Images\bindablelayout\maui-accordion-with-bindablelayout.png) 
-
-N> [View Sample in GitHub](https://github.com/SyncfusionExamples/binding-items-using-bindable-layout-in-.net-maui-accordion).
+![.NET MAUI Forms Accordion with Bindable Layout](Images/bindablelayout/maui-accordion-with-bindablelayout.png)
 

@@ -1,48 +1,48 @@
 ---
 layout: post
-title: Popup Positioning in .NET MAUI Popup control | Syncfusion®
-description: Learn all about Popup Positioning support in the Syncfusion® .NET MAUI Popup (SfPopup) control, its elements, and more.
-platform: MAUI
+title: Popup Positioning in .NET MAUI Popup control | Syncfusion
+description: Learn all about Popup Positioning support in the Syncfusion .NET MAUI Popup (SfPopup) control, its elements, and more.
+platform: maui-toolkit
 control: SfPopup
 documentation: ug
 ---
 
-# Positioning the .NET MAUI Popup
+# Popup Positioning in MAUI Popup (SfPopup)
 
 The `SfPopup` allows showing the popup content at various available positions.
 
-Following is the list of options available to show SfPopup at various positions.
+Following are the list of options available to show SfPopup at various positions.
 
 <table>
 <tr>
 <th>Methods / Properties</th>
 <th>Description</th></tr>
 <tr>
-<td>{{'[IsOpen](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Popup.SfPopup.html#Syncfusion_Maui_Popup_SfPopup_IsOpen)'| markdownify }}</td>
-<td>Show the <code>SfPopup</code> at the Center.</td></tr>
+<td>{{'[IsOpen](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Popup.SfPopup.html#Syncfusion_Maui_Toolkit_Popup_SfPopup_IsOpen)'| markdownify }}</td>
+<td>Show the <code>SfPopup</code> at the center.</td></tr>
 <tr>
-<td>{{'[Show](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Popup.SfPopup.html#Syncfusion_Maui_Popup_SfPopup_Show_System_Boolean_)'| markdownify }}</td>
+<td>{{'[Show](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Popup.SfPopup.html#Syncfusion_Maui_Toolkit_Popup_SfPopup_Show_System_Boolean_)'| markdownify }}</td>
 <td>Similar as <code>SfPopup.IsOpen</code> property.</td></tr>
 <tr>
-<td>{{'[Show(x-position, y-position)](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Popup.SfPopup.html#Syncfusion_Maui_Popup_SfPopup_Show_System_Double_System_Double_)'| markdownify }}</td>
-<td>Show the <code>SfPopup</code> at the specified X and Y positions.</td></tr>
+<td>{{'[Show(x-position, y-position)](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Popup.SfPopup.html#Syncfusion_Maui_Toolkit_Popup_SfPopup_Show_System_Double_System_Double_)'| markdownify }}</td>
+<td>Show the <code>SfPopup</code> at the specified X and y positions.</td></tr>
 <tr>
-<td>{{'[ShowRelativeToView(View, RelativePosition)](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Popup.SfPopup.html#Syncfusion_Maui_Popup_SfPopup_ShowRelativeToView_Microsoft_Maui_Controls_View_Syncfusion_Maui_Popup_PopupRelativePosition_System_Double_System_Double_)'| markdownify }}</td>
+<td>{{'[ShowRelativeToView(View, RelativePosition)](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Popup.SfPopup.html#Syncfusion_Maui_Toolkit_Popup_SfPopup_ShowRelativeToView_Microsoft_Maui_Controls_View_Syncfusion_Maui_Toolkit_Popup_PopupRelativePosition_System_Double_System_Double_)'| markdownify }}</td>
 <td>Show the <code>SfPopup</code> at the position relative to the specified view.</td></tr>
 <tr>
-<td>{{'[ShowRelativeToView(View, RelativePosition, x-position, y-position)](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Popup.SfPopup.html#Syncfusion_Maui_Popup_SfPopup_ShowRelativeToView_Microsoft_Maui_Controls_View_Syncfusion_Maui_Popup_PopupRelativePosition_System_Double_System_Double_)'| markdownify }}</td>
+<td>{{'[ShowRelativeToView(View, RelativePosition, x-position, y-position)](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Popup.SfPopup.html#Syncfusion_Maui_Toolkit_Popup_SfPopup_ShowRelativeToView_Microsoft_Maui_Controls_View_Syncfusion_Maui_Toolkit_Popup_PopupRelativePosition_System_Double_System_Double_)'| markdownify }}</td>
 <td>Show the <code>SfPopup</code> at an absolute x, y coordinate from the relative position of the specified view.</td></tr>
 <tr>
-<td>{{'[IsFullScreen](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Popup.SfPopup.html#Syncfusion_Maui_Popup_SfPopup_IsFullScreen)'| markdownify }}</td>
+<td>{{'[IsFullScreen](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Popup.SfPopup.html#Syncfusion_Maui_Toolkit_Popup_SfPopup_IsFullScreen)'| markdownify }}</td>
 <td>Show the <code>SfPopup</code> in full width and height of the screen.</td></tr>
 <tr>
-<td>{{'[Show(bool)](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Popup.SfPopup.html#Syncfusion_Maui_Popup_SfPopup_Show_System_Boolean_)'| markdownify }}</td>
+<td>{{'[Show(bool)](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Popup.SfPopup.html#Syncfusion_Maui_Toolkit_Popup_SfPopup_Show_System_Boolean_)'| markdownify }}</td>
 <td>Similar as <code>SfPopup.IsFullScreen</code> property.</td></tr>
 <tr>
-<td>{{'[SfPopup.Show(string title, string message)](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Popup.SfPopup.html#Syncfusion_Maui_Popup_SfPopup_Show_System_String_System_String_System_Int32_)'| markdownify }}</td>
+<td>{{'[SfPopup.Show(string title, string message)](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Popup.SfPopup.html#Syncfusion_Maui_Toolkit_Popup_SfPopup_Show_System_String_System_String_System_Int32_)'| markdownify }}</td>
 <td>Static method to show a popup with the title and message.</td></tr>
 <tr>
-<td>{{'[SfPopup.Show(string title, string message, string acceptText)](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Popup.SfPopup.html#Syncfusion_Maui_Popup_SfPopup_Show_System_String_System_String_System_String_System_Int32_)'| markdownify }}</td>
+<td>{{'[SfPopup.Show(string title, string message, string acceptText)](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Popup.SfPopup.html#Syncfusion_Maui_Toolkit_Popup_SfPopup_Show_System_String_System_String_System_String_System_Int32_)'| markdownify }}</td>
 <td>Static method to show a popup with the title, message and acceptText.</td></tr>
 </table>
 
@@ -53,17 +53,17 @@ The `SfPopup` can be shown at the center by using the following options.
  * IsOpen property
  * SfPopup.Show
 
-To open the `SfPopup`, use the [IsOpen](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Popup.SfPopup.html#Syncfusion_Maui_Popup_SfPopup_IsOpen) property as in the following code sample.
+To open the `SfPopup`, use the [IsOpen](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Popup.SfPopup.html#Syncfusion_Maui_Toolkit_Popup_SfPopup_IsOpen) property as in the following code sample.
 
 {% tabs %}
 {% highlight xaml tabtitle="MainPage.xaml" %}
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:sfPopup="clr-namespace:Syncfusion.Maui.Popup;assembly=Syncfusion.Maui.Popup"
+             xmlns:sfPopup="clr-namespace:Syncfusion.Maui.Toolkit.Popup;assembly=Syncfusion.Maui.Toolkit"
              x:Class="PopupMauiPositioning.MainPage">
   <ContentPage.Content>
     <StackLayout Padding="20">
-      <Button x:Name="clickToShowPopup" Text="Click to show popup" 
+      <Button x:Name="clickToShowPopup" Text="ClickToShowPopup" 
               VerticalOptions="Start" HorizontalOptions="Center" 
               Clicked="ClickToShowPopup_Clicked" />
       <sfPopup:SfPopup x:Name="sfPopup">
@@ -81,17 +81,17 @@ private void ClickToShowPopup_Clicked(object sender, EventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-To open the SfPopup, use the [SfPopup.Show](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Popup.SfPopup.html#Syncfusion_Maui_Popup_SfPopup_Show_System_Boolean_) method as in the following code sample.
+To open the SfPopup, use the [SfPopup.Show](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Popup.SfPopup.html#Syncfusion_Maui_Toolkit_Popup_SfPopup_Show_System_Boolean_) method as in the following code sample.
 
 {% tabs %}
 {% highlight xaml tabtitle="MainPage.xaml" %}
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:sfPopup="clr-namespace:Syncfusion.Maui.Popup;assembly=Syncfusion.Maui.Popup"
+             xmlns:sfPopup="clr-namespace:Syncfusion.Maui.Toolkit.Popup;assembly=Syncfusion.Maui.Toolkit"
              x:Class="PopupMauiPositioning.MainPage">
   <ContentPage.Content>
     <StackLayout Padding="20">
-      <Button x:Name="clickToShowPopup" Text="Click to show popup" 
+      <Button x:Name="clickToShowPopup" Text="ClickToShowPopup" 
               VerticalOptions="Start" HorizontalOptions="Center" 
               Clicked="ClickToShowPopup_Clicked" />
       <sfPopup:SfPopup x:Name="sfPopup">
@@ -109,21 +109,21 @@ private void ClickToShowPopup_Clicked(object sender, EventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-![Syncfusion .NET MAUI Popup Displaying at the center of the screen.](Images/popup-positioning/maui-popup-with-center-positioning.png)
+![Displaying a .NET MAUI Popup at the center of the screen.](Images/popup-positioning/maui-popup-with-center-positioning.png)
 
 ## Absolute positioning
 
-To open the `SfPopup` in specific X and Y coordinates, use the [SfPopup.Show(x-position, y-position)](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Popup.SfPopup.html#Syncfusion_Maui_Popup_SfPopup_Show_System_Double_System_Double_) method as in the following code sample.
+To open the `SfPopup` in specific X and Y coordinates, use the [SfPopup.Show(x-position, y-position)](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Popup.SfPopup.html#Syncfusion_Maui_Toolkit_Popup_SfPopup_Show_System_Double_System_Double_) method as in the following code sample.
 
 {% tabs %}
 {% highlight xaml tabtitle="MainPage.xaml" %}
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:sfPopup="clr-namespace:Syncfusion.Maui.Popup;assembly=Syncfusion.Maui.Popup"
+             xmlns:sfPopup="clr-namespace:Syncfusion.Maui.Toolkit.Popup;assembly=Syncfusion.Maui.Toolkit"
              x:Class="PopupMauiPositioning.MainPage">
   <ContentPage.Content>
     <StackLayout Padding="20">
-      <Button x:Name="clickToShowPopup" Text="Click to show popup" 
+      <Button x:Name="clickToShowPopup" Text="ClickToShowPopup" 
               VerticalOptions="Start" HorizontalOptions="Center" 
               Clicked="ClickToShowPopup_Clicked" />
       <sfPopup:SfPopup x:Name="sfPopup">
@@ -141,17 +141,17 @@ private void ClickToShowPopup_Clicked(object sender, EventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-The [StartX](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Popup.SfPopup.html#Syncfusion_Maui_Popup_SfPopup_StartX) and [StartY](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Popup.SfPopup.html#Syncfusion_Maui_Popup_SfPopup_StartY) properties of the `SfPopup` control are used to define the coordinates for the popup to display.
+The [StartX](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Popup.SfPopup.html#Syncfusion_Maui_Toolkit_Popup_SfPopup_StartX) and [StartY](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Popup.SfPopup.html#Syncfusion_Maui_Toolkit_Popup_SfPopup_StartY) properties of the `SfPopup` control are used to define the coordinates for the popup to display.
 
 {% tabs %}
 {% highlight xaml tabtitle="MainPage.xaml" hl_lines="11 12" %}
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:sfPopup="clr-namespace:Syncfusion.Maui.Popup;assembly=Syncfusion.Maui.Popup"
+             xmlns:sfPopup="clr-namespace:Syncfusion.Maui.Toolkit.Popup;assembly=Syncfusion.Maui.Toolkit"
              x:Class="PopupMauiPositioning.MainPage">
   <ContentPage.Content>       
     <StackLayout>
-      <Button x:Name="clickToShowPopup" Text="Click to show popup" Margin="0,30,0,30"
+      <Button x:Name="clickToShowPopup" Text="ClickToShowPopup" Margin="0,30,0,30"
               HorizontalOptions="Center"
               Clicked="ClickToShowPopup_Clicked" />
       <sfPopup:SfPopup x:Name="sfPopup" 
@@ -170,7 +170,7 @@ private void ClickToShowPopup_Clicked(object sender, EventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-![Syncfusion .NET MAUI Popup Displaying at Absolute position.](Images/popup-positioning/maui-popup-absolute-positioning.png)
+![Displaying a .NET MAUI Popup at Absolute position.](Images/popup-positioning/maui-popup-absolute-positioning.png)
 
 ## Relative positioning
 
@@ -178,13 +178,13 @@ private void ClickToShowPopup_Clicked(object sender, EventArgs e)
 
 ### Display popup relative to a view
 
-To open the `SfPopup` relative to a view, use the [SfPopup.ShowRelativeToView(View, RelativePosition)](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Popup.SfPopup.html#Syncfusion_Maui_Popup_SfPopup_ShowRelativeToView_Microsoft_Maui_Controls_View_Syncfusion_Maui_Popup_PopupRelativePosition_System_Double_System_Double_) method.
+To open the `SfPopup` relative to a view, use the [SfPopup.ShowRelativeToView(View, RelativePosition)](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Popup.SfPopup.html#Syncfusion_Maui_Toolkit_Popup_SfPopup_ShowRelativeToView_Microsoft_Maui_Controls_View_Syncfusion_Maui_Toolkit_Popup_PopupRelativePosition_System_Double_System_Double_) method.
 
 {% tabs %}
 {% highlight xaml tabtitle="MainPage.xaml" %}
 <ContentPage.Content>       
   <StackLayout VerticalOptions="Start" HorizontalOptions="Center" Padding="20">
-    <Button x:Name="clickToShowPopup" Text="Click to show popup"
+    <Button x:Name="clickToShowPopup" Text="ClickToShowPopup"
             VerticalOptions="Start" HorizontalOptions="Start"
             Clicked="ClickToShowPopup_Clicked" />   
     <sfPopup:SfPopup x:Name="sfPopup">
@@ -201,19 +201,19 @@ private void ClickToShowPopup_Clicked(object sender, EventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-![Syncfusion .NET MAUI Popup Displaying at Relative position.](Images/popup-positioning/maui-popup-relative-positioning.png)
+![Displaying a .NET MAUI Popup at Relative position.](Images/popup-positioning/maui-popup-relative-positioning.png)
 
-### Display popup relative to a view with absolute coordinates
+### Display popup relatively to a view with absolute coordinates
 
 The `SfPopup` can be displayed at an absolute x, y coordinate from the relative position of the specified view by using the following method.
 
-To open the `SfPopup` in the specific x and y coordinate relative to a view, use the [SfPopup.ShowRelativeToView(View, RelativePosition, x-position, y-position)](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Popup.SfPopup.html#Syncfusion_Maui_Popup_SfPopup_ShowRelativeToView_Microsoft_Maui_Controls_View_Syncfusion_Maui_Popup_PopupRelativePosition_System_Double_System_Double_) method.
+To open the `SfPopup` in the specific x and y coordinate relative to a view, use the [SfPopup.ShowRelativeToView(View, RelativePosition, x-position, y-position)](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Popup.SfPopup.html#Syncfusion_Maui_Toolkit_Popup_SfPopup_ShowRelativeToView_Microsoft_Maui_Controls_View_Syncfusion_Maui_Toolkit_Popup_PopupRelativePosition_System_Double_System_Double_) method.
 
 {% tabs %}
 {% highlight xaml tabtitle="MainPage.xaml" %}
 <ContentPage.Content>       
   <StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="20">
-    <Button x:Name="clickToShowPopup" Text="Click to show popup"
+    <Button x:Name="clickToShowPopup" Text="ClickToShowPopup"
             VerticalOptions="Center" HorizontalOptions="Start"
             Clicked="ClickToShowPopup_Clicked" />
     <sfPopup:SfPopup x:Name="sfPopup">
@@ -230,20 +230,20 @@ private void ClickToShowPopup_Clicked(object sender, EventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-![Syncfusion .NET MAUI Popup Displaying at Absolute Relative position.](Images/popup-positioning/maui-popup-absolute-relative-positioning.png)
+![Displaying a .NET MAUI Popup at Absolute Relative position.](Images/popup-positioning/maui-popup-absolute-relative-positioning.png)
 
-You can pass both negative and positive values as parameters to the `SfPopup.ShowRelativeToView(View, RelativePosition, x-position, y-position)`. The popup will be positioned by considering the relative position as (0, 0) the center point. For example, if you have set the `RelativePosition` as `PopupRelativePosition.AlignBottomRight` and `RelativeView` as a button, bottom right corner of the button will be considered as the 0, 0 point and a negative x-position value will place the popup to the left of that point and a positive x-position value will place the popup to the right of that point. The same applies for y-position also.
+You can pass both negative and positive values as parameters to the [SfPopup.ShowRelativeToView(View, RelativePosition, x-position, y-position)](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Popup.SfPopup.html#Syncfusion_Maui_Toolkit_Popup_SfPopup_ShowRelativeToView_Microsoft_Maui_Controls_View_Syncfusion_Maui_Toolkit_Popup_PopupRelativePosition_System_Double_System_Double_). The popup will be positioned by considering the relative position as (0, 0) the center point. For example, if you have set the [RelativePosition](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Popup.SfPopup.html#Syncfusion_Maui_Toolkit_Popup_SfPopup_RelativePosition) as [PopupRelativePosition.AlignBottomRight](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Popup.PopupRelativePosition.html#Syncfusion_Maui_Toolkit_Popup_PopupRelativePosition_AlignBottomRight) and [RelativeView](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Popup.SfPopup.html#Syncfusion_Maui_Toolkit_Popup_SfPopup_RelativeView) as a button, bottom right corner of the button will be considered as the 0, 0 point and a negative x-position value will place the popup to the left of that point and a positive x-position value will place the popup to the right of that point. The same applies for y-position also.
 
 ### Show relative to view in MVVM
 
-To open the SfPopup relative to a view in MVVM, assign values to the [SfPopup.RelativeView](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Popup.SfPopup.html#Syncfusion_Maui_Popup_SfPopup_RelativeView) and [SfPopup.RelativePosition](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Popup.SfPopup.html#Syncfusion_Maui_Popup_SfPopup_RelativePosition) properties. Then, use the `SfPopup.IsOpen` property to open or close the popup using binding.
-The [AbsoluteX](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Popup.SfPopup.html#Syncfusion_Maui_Popup_SfPopup_AbsoluteX) and [AbsoluteY](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Popup.SfPopup.html#Syncfusion_Maui_Popup_SfPopup_AbsoluteY) are used to display popup at the specified coordinates when positioning it relatively to the specified `RelativeView` based on the `RelativePosition`.
+To open the SfPopup relative to a view in MVVM assign values to the [SfPopup.RelativeView](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Popup.SfPopup.html#Syncfusion_Maui_Toolkit_Popup_SfPopup_RelativeView) and [SfPopup.RelativePosition](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Popup.SfPopup.html#Syncfusion_Maui_Toolkit_Popup_SfPopup_RelativePosition) properties and use the [SfPopup.IsOpen](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Popup.SfPopup.html#Syncfusion_Maui_Toolkit_Popup_SfPopup_IsOpen) property to open or close the popup using binding.
+The [AbsoluteX](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Popup.SfPopup.html#Syncfusion_Maui_Toolkit_Popup_SfPopup_AbsoluteX) and [AbsoluteY](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Popup.SfPopup.html#Syncfusion_Maui_Toolkit_Popup_SfPopup_AbsoluteY) are used to display popup at the specified coordinates when positioning it relatively to the specified [RelativeView](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Popup.SfPopup.html#Syncfusion_Maui_Toolkit_Popup_SfPopup_RelativeView) based on the [RelativePosition](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Popup.SfPopup.html#Syncfusion_Maui_Toolkit_Popup_SfPopup_RelativePosition).
 
 {% tabs %}
 {% highlight xaml tabtitle="MainPage.xaml" hl_lines="19" %}
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:sfPopup="clr-namespace:Syncfusion.Maui.Popup;assembly=Syncfusion.Maui.Popup"
+             xmlns:sfPopup="clr-namespace:Syncfusion.Maui.Toolkit.Popup;assembly=Syncfusion.Maui.Toolkit"
              xmlns:local="clr-namespace:PopupMauiPositioning"
              x:Class="PopupMauiPositioning.MainPage">
   <ContentPage.BindingContext>
@@ -251,7 +251,7 @@ The [AbsoluteX](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Popup.SfPopu
   </ContentPage.BindingContext>
   <ContentPage.Content>       
     <StackLayout>
-      <Button x:Name="clickToShowPopup" Text="Click to show popup" Margin="0,30,0,30"
+      <Button x:Name="clickToShowPopup" Text="ClickToShowPopup" Margin="0,30,0,30"
               HorizontalOptions="Center"
               Clicked="ClickToShowPopup_Clicked" />
       <Label x:Name="relativeView" Text="Showing Popup at relative position in MVVM" 
@@ -284,7 +284,7 @@ public class ViewModel : INotifyPropertyChanged
   public bool DisplayPopup
   {
       get { return displayPopup; }
-      set { displayPopup = value; RaisePropertyChanged(nameof(DisplayPopup)); }
+      set { displayPopup = value; RaisePropertyChanged("DisplayPopup"); }
   }
   public ViewModel()
   {
@@ -300,11 +300,11 @@ public class ViewModel : INotifyPropertyChanged
 {% endhighlight %}
 {% endtabs %}
 
-![Syncfusion .NET MAUI Popup Relative positioning in MVVM](Images/popup-positioning/maui-popup-relative-positioning-in-mvvm.png)
+![Relative positioning of .NET MAUI Popup in MVVM](Images/popup-positioning/maui-popup-relative-positioning-in-mvvm.png)
 
 ## Close the popup
 
-To close the popup programmatically, you can call either the [Dismiss()](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Popup.SfPopup.html#Syncfusion_Maui_Popup_SfPopup_Dismiss) method or set the `IsOpen` property to false.
+To close the popup programmatically, you can call either the `Dismiss` method or set the `IsOpen` property to false.
 
 Refer to the following code example for dismissing popup.
 
@@ -324,7 +324,7 @@ private void ClickToDismissPopup_Clicked(object sender, EventArgs e)
 
 ## Close the popup automatically after timeout
 
-To close a popup automatically after a specified delay, you can use the [AutoCloseDuration](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Popup.SfPopup.html#Syncfusion_Maui_Popup_SfPopup_AutoCloseDuration) property, which allows you to give the duration in milliseconds for the popup to automatically close itself without any user interaction.
+To close a popup automatically after a specified delay, you can use the [AutoCloseDuration](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Popup.SfPopup.html#Syncfusion_Maui_Toolkit_Popup_SfPopup_AutoCloseDuration) property, which allows you to give the duration in milliseconds for the popup to automatically close itself without any user interaction.
 
 {% tabs %}
 {% highlight xaml hl_lines="3" %}
@@ -338,13 +338,13 @@ SfPopup popup = new SfPopup();
 popup.AutoCloseDuration = 3000;
 popup.IsOpen = true;
 {% endhighlight %}
-{% endtabs %}  
+{% endtabs %}
 
-![Syncfusion .NET MAUI Popup Close automatically after a specified delay](Images/popup-positioning/maui-popup-autocloseduration.gif)
+![Dismiss the popup automatically after a specified delay in the .NET MAUI Popup.](Images/popup-positioning/maui-popup-autocloseduration.gif)
 
 ## Position the popup over the action bar
 
-The SfPopup can be positioned without considering the action bar by using the [SfPopup.IgnoreActionBar](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Popup.SfPopup.html#Syncfusion_Maui_Popup_SfPopup_IgnoreActionBar) property. When set to true, this allows the popup to be positioned over the action bar without any constraints.
+The SfPopup can be positioned without considering the action bar by using the [SfPopup.IgnoreActionBar](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Popup.SfPopup.html#Syncfusion_Maui_Toolkit_Popup_SfPopup_IgnoreActionBar) property. When set to true, this allows the popup to be positioned over the action bar without any constraints.
 
 {% tabs %}
 {% highlight xaml hl_lines="2" %}
@@ -354,40 +354,22 @@ The SfPopup can be positioned without considering the action bar by using the [S
 {% endhighlight %}
 {% highlight c# hl_lines="2" %}
 SfPopup popup = new SfPopup();
-popup.IgnoreActionBar = true;
+popup.IgnoreActionBar = True;
 popup.Show(0,0);
 {% endhighlight %}
 {% endtabs %}
 
-![Syncfusion .NET MAUI Popup Positioning without considering action bar](Images/popup-positioning/maui-popup-popsitioning-without-actionbar-consideration.png)
+![Positioning the popup without considering action bar](Images/popup-positioning/maui-popup-popsitioning-without-actionbar-consideration.png)
 
-If `IgnoreActionBar` is set to false, the popup positioning will take the action bar into account, ensuring it does not overlap.
+If [IgnoreActionBar](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Popup.SfPopup.html#Syncfusion_Maui_Toolkit_Popup_SfPopup_IgnoreActionBar) is set to false, the popup positioning will take the action bar into account, ensuring it does not overlap.
 
-## Close the popup
-
-To close the popup programmatically, you can call either the [Dismiss](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Popup.SfPopup.html#Syncfusion_Maui_Popup_SfPopup_Dismiss) method or set the IsOpen property to false.
-
-Refer to the following code example for dismissing popup.
-
-{% tabs %}
-{% highlight c# tabtitle="MainPage.xaml.cs" hl_lines="4 7" %}
-    
-    private void ClickToDismissPopup_Clicked(object sender, EventArgs e)
-    {
-        // Dismiss SfPopup from the view.
-        sfPopup.Dismiss();
-
-        // Or
-        sfPopup.IsOpen = false;
-    }
-{% endhighlight %} 
-{% endtabs %}
+This feature is useful when you want to display the popup freely across the screen, including over the action bar.
 
 ## How to
 
 ### Returning result
 
-The [ShowAsync()](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Popup.SfPopup.html#Syncfusion_Maui_Popup_SfPopup_ShowAsync) method of the Popup allows you to display the popup and returns `true` if the user closes it using the accept button, or `false` if dismissed via the decline button or outside tap.
+The [ShowAsync()](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Popup.SfPopup.html#Syncfusion_Maui_Toolkit_Popup_SfPopup_ShowAsync) method of the Popup allows you to display the popup and returns `true` if the user closes it using the accept button, or `false` otherwise.
 
 {% tabs %}
 {% highlight xaml %}
@@ -395,11 +377,11 @@ The [ShowAsync()](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Popup.SfPo
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:PopupDemo"
-             xmlns:sfPopup="clr-namespace:Syncfusion.Maui.Popup;assembly=Syncfusion.Maui.Popup"
+             xmlns:sfPopup="clr-namespace:Syncfusion.Maui.Toolkit.Popup;assembly=Syncfusion.Maui.Toolkit"
              x:Class="PopupDemo.MainPage">
     <StackLayout padding="20">
         <Button x:Name="clickToShowPopup"
-                Text="Click to show popup"
+                Text="ClickToShowPopup"
                 VerticalOptions="Start"
                 HorizontalOptions="Center"
                 Clicked="ClickToShowPopup_Clicked" />
@@ -409,7 +391,7 @@ The [ShowAsync()](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Popup.SfPo
 </ContentPage>
 {% endhighlight %}
 {% highlight c# tabtitle="MainPage.xaml.cs" hl_lines="12" %}
-using Syncfusion.Maui.Popup;
+using Syncfusion.Maui.Toolkit.Popup;
 public partial class MainPage : ContentPage
 {
   SfPopup popup;
@@ -426,17 +408,17 @@ public partial class MainPage : ContentPage
 {% endhighlight %}
 {% endtabs %}
 
-The [Show(string title, string message, string acceptText, string declineText)](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Popup.SfPopup.html#Syncfusion_Maui_Popup_SfPopup_Show_System_String_System_String_System_String_System_String_System_Int32_) static method of the Popup allows you to display the popup and returns `true` if the user closes it using the accept button, or `false` if dismissed via the decline button or outside tap.
+The [Show(string title, string message, string acceptText, string declineText)](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Popup.SfPopup.html#Syncfusion_Maui_Toolkit_Popup_SfPopup_Show_System_String_System_String_System_String_System_String_System_Int32_) static method of the Popup allows you to display the popup and returns `true` if the user closes it using the accept button, or `false` otherwise.
 
 {% tabs %}
 {% highlight xaml tabtitle="MainPage.xaml" %}
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:sfPopup="clr-namespace:Syncfusion.Maui.Popup;assembly=Syncfusion.Maui.Popup"
+             xmlns:sfPopup="clr-namespace:Syncfusion.Maui.Toolkit.Popup;assembly=Syncfusion.Maui.Toolkit"
              x:Class="PopupMauiPositioning.MainPage">
   <ContentPage.Content>
     <StackLayout Padding="20">
-      <Button x:Name="clickToShowPopup" Text="Click to show popup" 
+      <Button x:Name="clickToShowPopup" Text="ClickToShowPopup" 
               VerticalOptions="Start" HorizontalOptions="Center" 
               Clicked="ClickToShowPopup_Clicked" />
     </StackLayout>
@@ -444,7 +426,7 @@ The [Show(string title, string message, string acceptText, string declineText)](
 </ContentPage>
 {% endhighlight %}
 {% highlight c# tabtitle="MainPage.xaml.cs" hl_lines="10" %}
-using Syncfusion.Maui.Popup;
+using Syncfusion.Maui.Toolkit.Popup;
 public partial class MainPage : ContentPage
 {
   public MainPage()
@@ -461,14 +443,14 @@ public partial class MainPage : ContentPage
 
 ### Load the SfPopup in CellTappedEvent of the SfDataGrid
 
-The `SfPopup` allows opening it in the [CellTapped](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.DataGrid.SfDataGrid.html#Syncfusion_Maui_DataGrid_SfDataGrid_CellTapped) event of the `SfDataGrid`.
+The `SfPopup` allows opening it in the `CellTapped` event of the `SfDataGrid`.
 
 {% tabs %}
 {% highlight xaml tabtitle="XAML" hl_lines="14" %}
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:sfDatagrid="clr-namespace:Syncfusion.Maui.DataGrid;assembly=Syncfusion.Maui.DataGrid"
-             xmlns:sfPopup="clr-namespace:Syncfusion.Maui.Popup;assembly=Syncfusion.Maui.Popup"
+             xmlns:sfPopup="clr-namespace:Syncfusion.Maui.Toolkit.Popup;assembly=Syncfusion.Maui.Toolkit"
              xmlns:local="clr-namespace:PopupMauiPositioning"
              x:Class="PopupMauiPositioning.MainPage">
   <ContentPage.BindingContext>
@@ -487,7 +469,7 @@ The `SfPopup` allows opening it in the [CellTapped](https://help.syncfusion.com/
                        ShowCloseButton="True">
         <sfPopup:SfPopup.ContentTemplate>
           <DataTemplate>
-            <Label Text="A Popup is a graphical user interface display area that suddenly appears in the foreground of the visual interface. Popup can be initiated by single or double tap or can be timed to occur. A Popup window should be smaller than the background window or interface; otherwise, it's a replacement interface."                               
+            <Label Text="A pop-up is a graphical user interface display area that suddenly appears in the foreground of the visual interface. Pop-up can be initiated by single or double tap or can be timed to occur. A pop-up window should be smaller than the background window or interface; otherwise, it's a replacement interface."                               
                    TextColor="Black" 
                    FontSize="14" 
                    FontFamily="Roboto" 
@@ -502,7 +484,7 @@ The `SfPopup` allows opening it in the [CellTapped](https://help.syncfusion.com/
 {% highlight c# tabtitle="C#" hl_lines="17" %}
 namespace PopupMauiPositioning;
 using Syncfusion.Maui.DataGrid;
-using Syncfusion.Maui.Popup;
+using Syncfusion.Maui.Toolkit.Popup;
 
 public partial class MainPage : ContentPage
 {
@@ -526,7 +508,7 @@ public partial class MainPage : ContentPage
     sfPopup.ContentTemplate = new DataTemplate(() =>
     {
         var label = new Label();
-        label.Text = "A Popup is a graphical user interface display area that suddenly appears in the foreground of the visual interface. The Popup can be initiated by a single or double tap or can be timed to occur. A Popup window should be smaller than the background window or interface; otherwise, it's a replacement interface.";
+        label.Text = "A pop-up is a graphical user interface display area that suddenly appears in the foreground of the visual interface. The pop-up can be initiated by a single or double tap or can be timed to occur. A pop-up window should be smaller than the background window or interface; otherwise, it's a replacement interface.";
         label.TextColor = Colors.Black;
         label.FontSize = 14;
         label.FontFamily = "Roboto";
@@ -548,20 +530,18 @@ private void OnDataGridCellTapped(object sender, Syncfusion.Maui.DataGrid.DataGr
 {% endhighlight %}
 {% endtabs %}
 
-![Syncfusion .NET MAUI Popup with DataGrid ](Images/popup-positioning/show-maui-popup-when-grid-cell-tap.png)
-
-Download the entire source code from GitHub [here](https://github.com/SyncfusionExamples/how-to-show-a-.net-maui-popup-when-tap-.net-maui-datagrid-cell).
+![.NET MAUI Popup with DataGrid ](Images/popup-positioning/show-maui-popup-when-grid-cell-tap.png)
 
 ### Open SfPopup in ItemTapped event of SfListView
 
-The `SfPopup` allows opening it in the [ItemTapped](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.ListView.SfListView.html#Syncfusion_Maui_ListView_SfListView_ItemTapped) event of the `SfListView`.
+The `SfPopup` allows opening it in the `ItemTapped` event of the `SfListView`.
 
 {% tabs %}
 {% highlight xaml tabtitle="XAML" hl_lines="15" %}
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:sfListView="clr-namespace:Syncfusion.Maui.ListView;assembly=Syncfusion.Maui.ListView"
-             xmlns:sfPopup="clr-namespace:Syncfusion.Maui.Popup;assembly=Syncfusion.Maui.Popup"
+             xmlns:sfPopup="clr-namespace:Syncfusion.Maui.Toolkit.Popup;assembly=Syncfusion.Maui.Toolkit"
              xmlns:local="clr-namespace:PopupMauiPositioning"
              x:Class="PopupMauiPositioning.MainPage">
   <ContentPage.BindingContext>
@@ -627,7 +607,7 @@ The `SfPopup` allows opening it in the [ItemTapped](https://help.syncfusion.com/
 {% highlight c# tabtitle="C#" hl_lines="72" %}
 namespace PopupMauiPositioning;
 using Syncfusion.Maui.ListView;
-using Syncfusion.Maui.Popup;
+using Syncfusion.Maui.Toolkit.Popup;
 
 public partial class MainPage : ContentPage
 {
@@ -699,7 +679,7 @@ public partial class MainPage : ContentPage
     listView.ItemTapped += OnListViewItemTapped;
     sfPopup = new SfPopup();
     sfPopup.WidthRequest = 220;
-    sfPopup.HeightRequest = 120;
+    sfPopup.HeightRequest = 120; ;
     sfPopup.ShowCloseButton = true;
     sfPopup.ContentTemplate = new DataTemplate(() =>
     {
@@ -726,19 +706,17 @@ private void OnListViewItemTapped(object sender, Syncfusion.Maui.ListView.ItemTa
 {% endhighlight %}
 {% endtabs %}
 
-![Syncfusion .NET MAUI Popup with ListView](Images/popup-positioning/show-maui-popup-when-listview-item-tap.png)
-
-Download the entire source code from GitHub [here](https://github.com/SyncfusionExamples/how-to-show-a-.net-maui-popup-when-tap-.net-maui-listview-item).
+![ListView with .NET MAUI Popup](Images/popup-positioning/show-maui-popup-when-listview-item-tap.png)
 
 ### Display popup when interacting with a switch
 
-[SfPopup.IsOpen](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Popup.SfPopup.html#Syncfusion_Maui_Popup_SfPopup_IsOpen) is a bindable property and hence can be bind to any property and based on its value the popup will open or close. In the following code example, we have bound the `IsOpen` property with the `IsToggled` property of the switch, and the popup will be opened or closed as the switch toggles.
+[SfPopup.IsOpen](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Popup.SfPopup.html#Syncfusion_Maui_Toolkit_Popup_SfPopup_IsOpen) is a bindable property and hence can be bind to any property and based on its value the popup will open or close. In the following code example, we have bound the [IsOpen](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Popup.SfPopup.html#Syncfusion_Maui_Toolkit_Popup_SfPopup_IsOpen) property with the `IsToggled` property of the switch, and the popup will be opened or closed as the switch toggles.
 
 {% tabs %}
 {% highlight xaml tabtitle="MainPage.xaml" hl_lines="11" %}
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"             
-             xmlns:sfPopup="clr-namespace:Syncfusion.Maui.Popup;assembly=Syncfusion.Maui.Popup"            
+             xmlns:sfPopup="clr-namespace:Syncfusion.Maui.Toolkit.Popup;assembly=Syncfusion.Maui.Toolkit"            
              x:Class="PopupMauiPositioning.MainPage">
   <ContentPage.Content>
     <StackLayout Padding="20">
@@ -752,4 +730,3 @@ Download the entire source code from GitHub [here](https://github.com/Syncfusion
 </ContentPage>
 {% endhighlight %}
 {% endtabs %}
-

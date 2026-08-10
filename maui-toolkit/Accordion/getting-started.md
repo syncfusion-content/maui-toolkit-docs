@@ -1,25 +1,21 @@
 ---
 layout: post
-title: Getting started with .NET MAUI Accordion | Syncfusion®
-canonical_url: "https://www.syncfusion.com/maui-controls/maui-accordion"
-description: Learn here all about getting started with the Syncfusion® .NET MAUI Accordion, its elements, and more.
-platform: MAUI
+title: Getting Started with .NET MAUI Accordion Control | Syncfusion®
+description: Learn here about getting started with Syncfusion® Toolkit for .NET MAUI Accordion control, its elements and more.
+platform: maui-toolkit
 control: SfAccordion
 documentation: ug
 ---
 
-# Getting Started with .NET MAUI Accordion
+# Getting Started with MAUI Accordion
 
-This section guides you through setting up and configuring a [Accordion](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Accordion.SfAccordion.html) in your .NET MAUI application. Follow the steps below to add a basic Accordion to your project.
-
-To quickly get started with the .NET MAUI Accordion, watch this video:
-
-<style>#MAUIAccordionVideoTutorial{width : 90% !important; height: 400px !important }</style> <iframe id='MAUIAccordionVideoTutorial' src='https://www.youtube.com/embed/AdZpwD3W2xE'></iframe>
+This section guides you through setting up and configuring a `Accordion` in your .NET MAUI application. Follow the steps below to add a basic Accordion to your project.
 
 {% tabcontents %}
 {% tabcontent Visual Studio %}
 
 ## Prerequisites
+
 Before proceeding, ensure the following are set up:
 
 1. Install [.NET 9 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/9.0) or later.
@@ -28,20 +24,20 @@ Before proceeding, ensure the following are set up:
 ## Step 1: Create a new .NET MAUI project
 
 1. Go to **File > New > Project** and choose the **.NET MAUI App** template.
-2. Name the project and choose a location. Then, click **Next.**
-3. Select the .NET framework version and click **Create.**
+2. Name the project and choose a location. Then click **Next**.
+3. Select the .NET framework version and click **Create**.
 
-## Step 2: Install the Syncfusion<sup>®</sup> MAUI Expander NuGet package
+## Step 2: Install the Syncfusion<sup>&reg;</sup> .NET MAUI Toolkit NuGet package
 
-1.  In **Solution Explorer**, right-click the project and choose **Manage NuGet Packages**.
-2.  Search for [Syncfusion.Maui.Expander](https://www.nuget.org/packages/Syncfusion.Maui.Expander/) and install the latest version.
-3.  Ensure the necessary dependencies are installed correctly, and the project is restored.
+1. In **Solution Explorer,** right-click the project and choose **Manage NuGet Packages.**
+2. Search for [Syncfusion.Maui.Toolkit](https://www.nuget.org/packages/Syncfusion.Maui.Toolkit/) and install the latest version.
+3. Ensure the necessary dependencies are installed correctly, and the project is restored.
 
 {% endtabcontent %}
-
 {% tabcontent Visual Studio Code %}
 
 ## Prerequisites
+
 Before proceeding, ensure the following are set up:
 
 1. Install [.NET 9 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/9.0) or later.
@@ -52,18 +48,17 @@ Before proceeding, ensure the following are set up:
 
 1. Open the command palette by pressing `Ctrl+Shift+P` and type **.NET:New Project** and enter.
 2. Choose the **.NET MAUI App** template.
-3. Select the project location, type the project name and press **Enter.**
+3. Select the project location, type the project name and press **Enter**.
 4. Then choose **Create project.**
 
-## Step 2: Install the Syncfusion<sup>®</sup> MAUI Expander NuGet package
+## Step 2: Install the Syncfusion<sup>&reg;</sup> .NET MAUI Toolkit NuGet package
 
 1. Press <kbd>Ctrl</kbd> + <kbd>`</kbd> (backtick) to open the integrated terminal in Visual Studio Code.
 2. Ensure you're in the project root directory where your .csproj file is located.
-3. Run the command `dotnet add package Syncfusion.Maui.Expander` to install the Syncfusion<sup>®</sup> .NET MAUI Expander package.
+3. Run the command `dotnet add package Syncfusion.Maui.Toolkit` to install the Syncfusion<sup>®</sup> .NET MAUI Toolkit NuGet package.
 4. To ensure all dependencies are installed, run `dotnet restore`.
 
 {% endtabcontent %}
-
 {% tabcontent JetBrains Rider %}
 
 ## Prerequisites
@@ -80,49 +75,52 @@ Before proceeding, ensure the following are set up:
 2. Enter the Project Name, Solution Name, and Location.
 3. Select the .NET framework version and click Create.
 
-## Step 2: Install the Syncfusion<sup>®</sup> MAUI Expander NuGet package
+## Step 2: Install the Syncfusion<sup>®</sup> MAUI Toolkit NuGet package
 
 1. In **Solution Explorer,** right-click the project and choose **Manage NuGet Packages.**
-2. Search for [Syncfusion.Maui.Expander](https://www.nuget.org/packages/Syncfusion.Maui.Expander/) and install the latest version.
+2. Search for [Syncfusion.Maui.Toolkit](https://www.nuget.org/packages/Syncfusion.Maui.Toolkit/) and install the latest version.
 3. Ensure the necessary dependencies are installed correctly, and the project is restored. If not, Open the Terminal in Rider and manually run: `dotnet restore`
- 
+
 {% endtabcontent %}
 {% endtabcontents %}
 
 ## Step 3: Register Syncfusion handler
-
+ 
 Make sure to add the namespace.
-
+ 
 {% tabs %}
 {% highlight c# %}
-using Syncfusion.Maui.Core.Hosting;
+using Syncfusion.Maui.Toolkit.Hosting;
 {% endhighlight %}
 {% endtabs %}
-
-Register the Syncfusion core handler in your `CreateMauiApp` method of `MauiProgram.cs` file to use Syncfusion controls.
-
+ 
+Register the Syncfusion toolkit handler in your `CreateMauiApp` method of `MauiProgram.cs` file to use Syncfusion controls.
+ 
 {% tabs %}
 {% highlight c# %}
-builder.ConfigureSyncfusionCore();
+builder.ConfigureSyncfusionToolkit();
 {% endhighlight %}
 {% endtabs %}
-
-## Step 4: Import the Accordion namespace
+ 
+## Step 4: Import Accordion namespace
 
 Add the following namespace in your XAML or C#.
-
 {% tabs %}
 {% highlight xaml %}
-xmlns:syncfusion="clr-namespace:Syncfusion.Maui.Accordion;assembly=Syncfusion.Maui.Expander"
+
+xmlns:syncfusion="clr-namespace:Syncfusion.Maui.Toolkit.Accordion;assembly=Syncfusion.Maui.Toolkit"
+
 {% endhighlight %}
-{% highlight c# tabtitle="C#" %}
-using Syncfusion.Maui.Accordion;
+{% highlight c# %}
+
+using Syncfusion.Maui.Toolkit.Accordion;
+
 {% endhighlight %}
 {% endtabs %}
 
-## Step 5: Add the Accordion component
+## Step 5: Add an Accordion component
 
-Create an instance for the Accordion control. Create the [AccordionItem](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Accordion.AccordionItem.html) instance that comprise a [header](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Accordion.AccordionItem.html#Syncfusion_Maui_Accordion_AccordionItem_Header) & [content](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Accordion.AccordionItem.html#Syncfusion_Maui_Accordion_AccordionItem_Content) and add it into [Items](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Accordion.SfAccordion.html#Syncfusion_Maui_Accordion_SfAccordion_Items) of `SfAccordion`.
+Create an `AccordionItem` instance containing a `header` and `content`, and then add it to the `Items` collection of SfAccordion.
 
 In this example, a Grid is loaded in both the header and content of accordion items.
 
@@ -278,17 +276,14 @@ item2.Content = contentGrid2;
 accordion.Items.Add(item1);
 accordion.Items.Add(item2);
 
-// Add the accordion to your page content
-mainPage.Content = accordion;
+Content = accordion;
 {% endhighlight %}
 {% endtabs %}
 
 The following screenshot illustrates the result of the above code.
 
-![Syncfusion Maui Accordion defining the items](Images/getting-started/maui-accordion-with-defining-accordion-items.png)
-
-You can download the Accordion Getting Started sample from [GitHub](https://github.com/SyncfusionExamples/getting-started-with-.net-maui-accordion).
+<img alt="Defining the Accordion items" src="Images\getting-started\maui-accordion-with-defining-accordion-items.png"/> 
 
 N> When adding the template control inside the `Grid` with a height set to `Auto`, the child element will not receive the height changes at runtime. Since the `SfAccordion` is a template-based control, the default height value cannot be determined. Therefore, it is recommended to provide the `HorizontalOptions` and `VerticalOptions` as `FillAndExpand` options for the control.
 
-N> You can refer to our [.NET MAUI Accordion](https://www.syncfusion.com/maui-controls/maui-accordion) feature tour page for its groundbreaking feature representations. You can also explore our [.NET MAUI Accordion Example](https://github.com/syncfusion/maui-demos/tree/master/MAUI/Accordion) that shows you how to render and configure the Accordion in .NET MAUI.
+You can download the Accordion Getting Started sample from [here](https://github.com/SyncfusionExamples/getting-started-with-.net-maui-accordion).
