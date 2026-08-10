@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Styles in .NET MAUI Popup control | Syncfusion
-description: Learn here all about Styles support in the Syncfusion .NET MAUI Popup (SfPopup) control, its elements, and more.
-platform: maui-toolkit
+title: Styles in .NET MAUI Popup control | Syncfusion®
+description: Learn here all about Styles support in the Syncfusion® .NET MAUI Popup (SfPopup) control, its elements, and more.
+platform: MAUI
 control: SfPopup
 documentation: ug
 --- 
 
-# Styles in .NET MAUI Popup (SfPopup)
+# Styles in .NET MAUI Popup
 
-The `SfPopup` applies style to all of its elements by using the `PopupStyle` property.
+The `SfPopup` applies style to all of its elements by using the [PopupStyle](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Popup.PopupStyle.html) property.
 
 ## Styling popup header
 
@@ -21,27 +21,27 @@ The `SfPopup` allows customizing the header appearance using the following prope
 <th> Description </th>
 </tr>
 <tr>
-<td> {{'`HeaderBackground`'| markdownify }} </td>
+<td> {{'[HeaderBackground](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Popup.PopupStyle.html#Syncfusion_Maui_Popup_PopupStyle_HeaderBackground)'| markdownify }} </td>
 <td> Gets or sets the background color for the header.</td>
 </tr>
 <tr>
-<td> {{'`HeaderFontAttribute`'| markdownify }} </td>
-<td> Gets or sets the font attribute for the header title.</td>
+<td> {{'[HeaderFontAttribute](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Popup.PopupStyle.html#Syncfusion_Maui_Popup_PopupStyle_HeaderFontAttribute)'| markdownify }} </td>
+<td> Gets or sets the font attribute (such as bold or italic) for the header title.</td>
 </tr>
 <tr>
-<td> {{'`HeaderFontFamily`'| markdownify }} </td>
-<td> Gets or sets the font style for the header title.</td>
+<td> {{'[HeaderFontFamily](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Popup.PopupStyle.html#Syncfusion_Maui_Popup_PopupStyle_HeaderFontFamily)'| markdownify }} </td>
+<td> Gets or sets the font family for the header title.</td>
 </tr>
 <tr>
-<td> {{'`HeaderFontSize`'| markdownify }} </td>
+<td> {{'[HeaderFontSize](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Popup.PopupStyle.html#Syncfusion_Maui_Popup_PopupStyle_HeaderFontSize)'| markdownify }} </td>
 <td> Gets or sets the font size for the header title.</td>
 </tr>
 <tr>
-<td> {{'`HeaderTextAlignment`'| markdownify }} </td>
+<td> {{'[HeaderTextAlignment](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Popup.PopupStyle.html#Syncfusion_Maui_Popup_PopupStyle_HeaderTextAlignment)'| markdownify }} </td>
 <td> Gets or sets the text alignment for the header.</td>
 </tr>
 <tr>
-<td> {{'`HeaderTextColor`'| markdownify }} </td>
+<td> {{'[HeaderTextColor](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Popup.PopupStyle.html#Syncfusion_Maui_Popup_PopupStyle_HeaderTextColor)'| markdownify }} </td>
 <td> Gets or sets the text color to be applied for the header title.</td>
 </tr>
 </table>
@@ -49,19 +49,34 @@ The `SfPopup` allows customizing the header appearance using the following prope
 Refer to the following code example for customizing the header elements.
 
 {% tabs %}
-{% highlight xaml hl_lines="3 4 5 6 7 8" %}
-<sfPopup:SfPopup x:Name="popup" >
-    <sfPopup:SfPopup.PopupStyle>
-        <sfPopup:PopupStyle HeaderBackground="DimGray"
-                            HeaderFontAttribute="Bold"
-                            HeaderFontFamily="Roboto-Medium"
-                            HeaderFontSize="25"
-                            HeaderTextAlignment="Center"
-                            HeaderTextColor="White"/>
-    </sfPopup:SfPopup.PopupStyle>
-</sfPopup:SfPopup>
+{% highlight xaml hl_lines="14 15 16 17 18 19" %}
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PopupDemo.MainPage"
+             xmlns:sfPopup="clr-namespace:Syncfusion.Maui.Popup;assembly=Syncfusion.Maui.Popup">
+    <StackLayout>
+        <Button x:Name="clickToShowPopup"
+                Text="ClickToShowPopup"
+                VerticalOptions="Start"
+                HorizontalOptions="Center"
+                Clicked="ClickToShowPopup_Clicked" />
+        <sfPopup:SfPopup x:Name="popup">
+            <sfPopup:SfPopup.PopupStyle>
+                <sfPopup:PopupStyle HeaderBackground="DimGray"
+                                    HeaderFontAttribute="Bold"
+                                    HeaderFontFamily="Roboto-Medium"
+                                    HeaderFontSize="25"
+                                    HeaderTextAlignment="Center"
+                                    HeaderTextColor="White"/>
+            </sfPopup:SfPopup.PopupStyle>
+        </sfPopup:SfPopup>
+    </StackLayout>
+</ContentPage>
 {% endhighlight %}
-{% highlight c# hl_lines="8 9 10 11 12 13" %}
+{% highlight c# hl_lines="10 11 12 13 14 15" %}
+using Syncfusion.Maui.Popup;
+
 public partial class MainPage : ContentPage
 {
     SfPopup popup;
@@ -76,15 +91,20 @@ public partial class MainPage : ContentPage
         popup.PopupStyle.HeaderTextAlignment = TextAlignment.Center;
         popup.PopupStyle.HeaderTextColor = Color.White;
     }
+
+    private void ClickToShowPopup_Clicked(object sender, EventArgs e)
+    {
+        popup.Show();
+    }
 }
 {% endhighlight %}
 {% endtabs %}
 
-![Displaying a .NET MAUI Popup with header customization](Images/styles/maui-popup-with-header-customization.png)
+![Syncfusion .NET MAUI Popup Displaying with header customization](Images/styles/maui-popup-with-header-customization.png)
 
 ## Styling popup footer
 
-The SfPopup allows customizing the footer appearance using the following properties.
+The `SfPopup` allows customizing the footer appearance using the following properties.
 
 <table>
 <tr>
@@ -96,23 +116,23 @@ The SfPopup allows customizing the footer appearance using the following propert
 <td> Gets or sets the background color for the footer.</td>
 </tr>
 <tr>
-<td> {{'`AcceptButtonBackground`'| markdownify }} </td>
+<td> {{'[AcceptButtonBackground](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Popup.PopupStyle.html#Syncfusion_Maui_Popup_PopupStyle_AcceptButtonBackground)'| markdownify }} </td>
 <td> Gets or sets the background color for the Accept button in the footer.</td>
 </tr>
 <tr>
-<td> {{'`AcceptButtonTextColor`'| markdownify }} </td>
+<td> {{'[AcceptButtonTextColor](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Popup.PopupStyle.html#Syncfusion_Maui_Popup_PopupStyle_AcceptButtonTextColor)'| markdownify }} </td>
 <td> Gets or sets the foreground color for the Accept button in the footer.</td>
 </tr>
 <tr>
-<td> {{'`DeclineButtonBackground`'| markdownify }} </td>
+<td> {{'[DeclineButtonBackground](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Popup.PopupStyle.html#Syncfusion_Maui_Popup_PopupStyle_DeclineButtonBackground)'| markdownify }} </td>
 <td> Gets or sets the background color for the Decline button in the footer.</td>
 </tr>
 <tr>
-<td> {{'`DeclineButtonTextColor`'| markdownify }} </td>
+<td> {{'[DeclineButtonTextColor](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Popup.PopupStyle.html#Syncfusion_Maui_Popup_PopupStyle_DeclineButtonTextColor)'| markdownify }} </td>
 <td> Gets or sets the foreground color for the Decline button in the footer.</td>
 </tr>
 <tr>
-<td> {{'`FooterButtonCornerRadius`'| markdownify }} </td>
+<td> {{'[FooterButtonCornerRadius](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Popup.PopupStyle.html#Syncfusion_Maui_Popup_PopupStyle_FooterButtonCornerRadius)'| markdownify }} </td>
 <td> Gets or sets the corner radius of the accept and decline buttons in the footer. The default value is 20.</td>
 </tr>
 </table>
@@ -120,19 +140,34 @@ The SfPopup allows customizing the footer appearance using the following propert
 Refer to the following code example for customizing the footer elements.
 
 {% tabs %}
-{% highlight xaml hl_lines="3 4 5 6 7 8" %}
-<sfPopup:SfPopup x:Name="popup" AppearanceMode="TwoButton" ShowFooter="True" >
-    <sfPopup:SfPopup.PopupStyle>
-        <sfPopup:PopupStyle FooterBackground="LightGray"
-                            AcceptButtonBackground ="DimGray"
-                            AcceptButtonTextColor="White"
-                            DeclineButtonBackground="DimGray"
-                            DeclineButtonTextColor="White"
-                            FooterButtonCornerRadius ="0,20,20,0"/>
-    </sfPopup:SfPopup.PopupStyle>
-</sfPopup:SfPopup>
+{% highlight xaml hl_lines="14 15 16 17 18 19" %}
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PopupDemo.MainPage"
+             xmlns:sfPopup="clr-namespace:Syncfusion.Maui.Popup;assembly=Syncfusion.Maui.Popup">
+    <StackLayout>
+        <Button x:Name="clickToShowPopup"
+                Text="ClickToShowPopup"
+                VerticalOptions="Start"
+                HorizontalOptions="Center"
+                Clicked="ClickToShowPopup_Clicked" />
+        <sfPopup:SfPopup x:Name="popup" AppearanceMode="TwoButton" ShowFooter="True">
+            <sfPopup:SfPopup.PopupStyle>
+                <sfPopup:PopupStyle FooterBackground="LightGray"
+                                    AcceptButtonBackground="DimGray"
+                                    AcceptButtonTextColor="White"
+                                    DeclineButtonBackground="DimGray"
+                                    DeclineButtonTextColor="White"
+                                    FooterButtonCornerRadius="0,20,20,0"/>
+            </sfPopup:SfPopup.PopupStyle>
+        </sfPopup:SfPopup>
+    </StackLayout>
+</ContentPage>
 {% endhighlight %}
-{% highlight c# hl_lines="14 15 16 17 18 19" %}
+{% highlight c# hl_lines="16 17 18 19 20 21" %}
+using Syncfusion.Maui.Popup;
+
 public partial class MainPage : ContentPage
 {
     SfPopup popup;
@@ -153,11 +188,16 @@ public partial class MainPage : ContentPage
         popup.PopupStyle.DeclineButtonTextColor = Color.White;
         popup.PopupStyle.FooterButtonCornerRadius = new CornerRadius(0,20,20,0);
     }
+
+    private void ClickToShowPopup_Clicked(object sender, EventArgs e)
+    {
+        popup.Show();
+    }
 }
 {% endhighlight %}
 {% endtabs %}
 
-![Displaying a .NET MAUI Popup with footer customization](Images/styles/maui-popup-with-footer-customization.png)
+![Syncfusion .NET MAUI Popup Displaying with footer customization](Images/styles/maui-popup-with-footer-customization.png)
 
 ## Styling popup message
 
@@ -169,27 +209,27 @@ The `SfPopup` allows customizing the message appearance using the following prop
 <th> Description </th>
 </tr>
 <tr>
-<td> {{'`MessageBackground`'| markdownify }} </td>
+<td> {{'[MessageBackground](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Popup.PopupStyle.html#Syncfusion_Maui_Popup_PopupStyle_MessageBackground)'| markdownify }} </td>
 <td> Gets or sets the background color of content.</td>
 </tr>
 <tr>
-<td> {{'`MessageFontAttribute`'| markdownify }} </td>
-<td> Gets or sets the font attribute to be applied for the content.</td>
+<td> {{'[MessageFontAttribute](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Popup.PopupStyle.html#Syncfusion_Maui_Popup_PopupStyle_MessageFontAttribute)'| markdownify }} </td>
+<td> Gets or sets the font attribute (such as bold or italic) to be applied for the content.</td>
 </tr>
 <tr>
-<td> {{'`MessageFontFamily`'| markdownify }} </td>
-<td> Gets or sets the font style to be applied for the content.</td>
+<td> {{'[MessageFontFamily](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Popup.PopupStyle.html#Syncfusion_Maui_Popup_PopupStyle_MessageFontFamily)'| markdownify }} </td>
+<td> Gets or sets the font family to be applied for the content.</td>
 </tr>
 <tr>
-<td> {{'`MessageFontSize`'| markdownify }} </td>
+<td> {{'[MessageFontSize](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Popup.PopupStyle.html#Syncfusion_Maui_Popup_PopupStyle_MessageFontSize)'| markdownify }} </td>
 <td> Gets or sets the font size of the content.</td>
 </tr>
 <tr>
-<td> {{'`MessageTextAlignment`'| markdownify }} </td>
+<td> {{'[MessageTextAlignment](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Popup.PopupStyle.html#Syncfusion_Maui_Popup_PopupStyle_MessageTextAlignment)'| markdownify }} </td>
 <td> Gets or sets the text alignment of the content.</td>
 </tr>
 <tr>
-<td> {{'`MessageTextColor`'| markdownify }} </td>
+<td> {{'[MessageTextColor](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Popup.PopupStyle.html#Syncfusion_Maui_Popup_PopupStyle_MessageTextColor)'| markdownify }} </td>
 <td> Gets or sets the foreground color of content.</td>
 </tr>
 </table>
@@ -197,19 +237,34 @@ The `SfPopup` allows customizing the message appearance using the following prop
 Refer to the following code example for customizing the message elements.
 
 {% tabs %}
-{% highlight xaml hl_lines="3 4 5 6 7" %}
-<sfPopup:SfPopup x:Name="popup">
-    <sfPopup:SfPopup.PopupStyle>
-        <sfPopup:PopupStyle MessageBackground="#4F6750A4"
-                            MessageFontAttribute="Bold"
-                            MessageFontFamily="Roboto-Medium"
-                            MessageFontSize="18"
-                            MessageTextAlignment="Center"
-                            MessageTextColor="Gray"/>
-    </sfPopup:SfPopup.PopupStyle>
-</sfPopup:SfPopup>
+{% highlight xaml hl_lines="14 15 16 17 18 19" %}
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PopupDemo.MainPage"
+             xmlns:sfPopup="clr-namespace:Syncfusion.Maui.Popup;assembly=Syncfusion.Maui.Popup">
+    <StackLayout>
+        <Button x:Name="clickToShowPopup"
+                Text="ClickToShowPopup"
+                VerticalOptions="Start"
+                HorizontalOptions="Center"
+                Clicked="ClickToShowPopup_Clicked" />
+        <sfPopup:SfPopup x:Name="popup">
+            <sfPopup:SfPopup.PopupStyle>
+                <sfPopup:PopupStyle MessageBackground="#4F6750A4"
+                                    MessageFontAttribute="Bold"
+                                    MessageFontFamily="Roboto-Medium"
+                                    MessageFontSize="18"
+                                    MessageTextAlignment="Center"
+                                    MessageTextColor="Gray"/>
+            </sfPopup:SfPopup.PopupStyle>
+        </sfPopup:SfPopup>
+    </StackLayout>
+</ContentPage>
 {% endhighlight %}
-{% highlight c# hl_lines="8 9 10 11 12 13" %}
+{% highlight c# hl_lines="10 11 12 13 14 15" %}
+using Syncfusion.Maui.Popup;
+
 public partial class MainPage : ContentPage
 {
     SfPopup popup;
@@ -222,13 +277,18 @@ public partial class MainPage : ContentPage
         popup.PopupStyle.MessageFontFamily = "Roboto-Medium";
         popup.PopupStyle.MessageFontSize = 18;
         popup.PopupStyle.MessageTextAlignment = TextAlignment.Center;
-        popup.PopupStyle.MessageTextColor = Colors.Gray;
+        popup.PopupStyle.MessageTextColor = Color.FromRgb(128, 128, 128);
+    }
+
+    private void ClickToShowPopup_Clicked(object sender, EventArgs e)
+    {
+        popup.Show();
     }
 }
 {% endhighlight %}
 {% endtabs %}
 
-![Displaying a .NET MAUI Popup with message customization](Images/styles/maui-popup-with-message-customization.png)
+![Syncfusion .NET MAUI Popup Displaying with message customization](Images/styles/maui-popup-with-message-customization.png)
 
 ## Stroke customization
 
@@ -240,34 +300,49 @@ The `SfPopup` allows customizing the stroke appearance using the following prope
 <th> Description </th>
 </tr>
 <tr>
-<td> {{'`Stroke`'| markdownify }} </td>
-<td> Gets or sets the stroke color for the PopupView.</td>
+<td> {{'[Stroke](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Popup.PopupStyle.html#Syncfusion_Maui_Popup_PopupStyle_Stroke)'| markdownify }} </td>
+<td> Gets or sets the stroke color for the popup.</td>
 </tr>
 <tr>
-<td> {{'`StrokeThickness'| markdownify }} </td>
-<td> Gets or sets the stroke thickness for the PopupView.</td>
+<td> {{'[StrokeThickness](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Popup.PopupStyle.html#Syncfusion_Maui_Popup_PopupStyle_StrokeThickness)'| markdownify }} </td>
+<td> Gets or sets the stroke thickness for the popup.</td>
 </tr>
 <tr>
-<td> {{'`CornerRadius`'| markdownify }} </td>
-<td> Gets or sets the corner radius for the PopupView.</td>
+<td> {{'[CornerRadius](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Popup.PopupStyle.html#Syncfusion_Maui_Popup_PopupStyle_CornerRadius)'| markdownify }} </td>
+<td> Gets or sets the corner radius for the popup.</td>
 </tr>
 </table>
 
-N> On Android 33 and above, it is possible to set different corner radii for each corner using the `CornerRadius` class. However, on versions below Android 33, a corner radius will be applied if the same value is provided for all corners. The corner radius may not be applied if different values are provided for each corner.
+N> On Android 33 and above, it is possible to set different corner radii for each corner using the [CornerRadius](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Popup.PopupStyle.html#Syncfusion_Maui_Popup_PopupStyle_CornerRadius) class. However, on versions below Android 33, a corner radius will be applied if the same value is provided for all corners. The corner radius may not be applied if different values are provided for each corner.
 
 Refer to the following code example for customizing the stroke elements.
 
 {% tabs %}
-{% highlight xaml hl_lines="3 4 5" %}
-<sfPopup:SfPopup x:Name="popup">
-    <sfPopup:SfPopup.PopupStyle>
-        <sfPopup:PopupStyle Stroke="LightBlue"
-                            StrokeThickness="10"
-                            CornerRadius="5" />
-    </sfPopup:SfPopup.PopupStyle>
-<sfPopup:SfPopup>
+{% highlight xaml hl_lines="14 15 16" %}
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PopupDemo.MainPage"
+             xmlns:sfPopup="clr-namespace:Syncfusion.Maui.Popup;assembly=Syncfusion.Maui.Popup">
+    <StackLayout>
+        <Button x:Name="clickToShowPopup"
+                Text="ClickToShowPopup"
+                VerticalOptions="Start"
+                HorizontalOptions="Center"
+                Clicked="ClickToShowPopup_Clicked" />
+        <sfPopup:SfPopup x:Name="popup">
+            <sfPopup:SfPopup.PopupStyle>
+                <sfPopup:PopupStyle Stroke="LightBlue"
+                                    StrokeThickness="10"
+                                    CornerRadius="5" />
+            </sfPopup:SfPopup.PopupStyle>
+        </sfPopup:SfPopup>
+    </StackLayout>
+</ContentPage>
 {% endhighlight %}
-{% highlight c# hl_lines="8 9 10" %}
+{% highlight c# hl_lines="10 11 12" %}
+using Syncfusion.Maui.Popup;
+
 public partial class MainPage : ContentPage
 {
     SfPopup popup;
@@ -275,29 +350,49 @@ public partial class MainPage : ContentPage
     {
         InitializeComponent();
         popup = new SfPopup();
-        popup.PopupStyle.Stroke = Colors.LightBlue;
+        popup.PopupStyle.Stroke = Color.FromRgb(173, 216, 230);
         popup.PopupStyle.StrokeThickness = 10;
         popup.PopupStyle.CornerRadius = 5;
     }
+
+    private void ClickToShowPopup_Clicked(object sender, EventArgs e)
+    {
+        popup.Show();
+    }
 }
 {% endhighlight %}
 {% endtabs %}
 
-![Displaying a .NET MAUI Popup with stroke customization](Images/styles/maui-popup-with-stroke-customization.png)
+![Syncfusion .NET MAUI Popup Displaying with stroke customization](Images/styles/maui-popup-with-stroke-customization.png)
 
-## popup background
+## Styling popup background
 
-The `SfPopup` allows to customize the background color of the popup view using the `PopupBackground` property.
+The `SfPopup` allows you to customize the background color of the popup using the [PopupBackground](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Popup.PopupStyle.html#Syncfusion_Maui_Popup_PopupStyle_PopupBackground) property.
 
 {% tabs %}
-{% highlight xaml hl_lines="3" %}
-    <sfPopup:SfPopup x:Name="popup">
-        <sfPopup:SfPopup.PopupStyle>
-            <sfPopup:PopupStyle PopupBackground="#C3B0D6" />
-        </sfPopup:SfPopup.PopupStyle>
-    </sfPopup:SfPopup>
+{% highlight xaml hl_lines="14" %}
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PopupDemo.MainPage"
+             xmlns:sfPopup="clr-namespace:Syncfusion.Maui.Popup;assembly=Syncfusion.Maui.Popup">
+    <StackLayout>
+        <Button x:Name="clickToShowPopup"
+                Text="ClickToShowPopup"
+                VerticalOptions="Start"
+                HorizontalOptions="Center"
+                Clicked="ClickToShowPopup_Clicked" />
+        <sfPopup:SfPopup x:Name="popup">
+            <sfPopup:SfPopup.PopupStyle>
+                <sfPopup:PopupStyle PopupBackground="#C3B0D6" />
+            </sfPopup:SfPopup.PopupStyle>
+        </sfPopup:SfPopup>
+    </StackLayout>
+</ContentPage>
 {% endhighlight %}
-{% highlight c# hl_lines="8" %}
+{% highlight c# hl_lines="10" %}
+using Syncfusion.Maui.Popup;
+
 public partial class MainPage : ContentPage
 {
     SfPopup popup;
@@ -305,27 +400,47 @@ public partial class MainPage : ContentPage
     {
         InitializeComponent();
         popup = new SfPopup();
-        popup.PopupStyle.PopupBackground = Color.FromArgb("C3B0D6");
+        popup.PopupStyle.PopupBackground = Color.FromArgb("#C3B0D6");
+    }
+
+    private void ClickToShowPopup_Clicked(object sender, EventArgs e)
+    {
+        popup.Show();
     }
 }
 {% endhighlight %}
 {% endtabs %}
 
-![Displaying a .NET MAUI Popup with the PopupView Background](Images/styles/maui-popup-with-popupview-background.png)
+![Syncfusion .NET MAUI Popup Displaying with the PopupView Background](Images/styles/maui-popup-with-popupview-background.png)
 
 ## Styling overlay background
 
-The SfPopup allows to customize the background color of overlay using the `OverlayColor` property.
+The `SfPopup` allows you to customize the background color of the overlay using the [OverlayColor](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Popup.PopupStyle.html#Syncfusion_Maui_Popup_PopupStyle_OverlayColor) property.
 
 {% tabs %}
-{% highlight xaml hl_lines="3" %}
+{% highlight xaml hl_lines="14" %}
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PopupDemo.MainPage"
+             xmlns:sfPopup="clr-namespace:Syncfusion.Maui.Popup;assembly=Syncfusion.Maui.Popup">
+    <StackLayout>
+        <Button x:Name="clickToShowPopup"
+                Text="ClickToShowPopup"
+                VerticalOptions="Start"
+                HorizontalOptions="Center"
+                Clicked="ClickToShowPopup_Clicked" />
         <sfPopup:SfPopup x:Name="popup">
             <sfPopup:SfPopup.PopupStyle>
-                    <sfPopup:PopupStyle OverlayColor="LightPink" />
-            </sfPopup:Sfpopup.PopupStyle>
+                <sfPopup:PopupStyle OverlayColor="LightPink" />
+            </sfPopup:SfPopup.PopupStyle>
         </sfPopup:SfPopup>
+    </StackLayout>
+</ContentPage>
 {% endhighlight %}
-{% highlight c# hl_lines="8" %}
+{% highlight c# hl_lines="10" %}
+using Syncfusion.Maui.Popup;
+
 public partial class MainPage : ContentPage
 {
     SfPopup popup;
@@ -333,27 +448,47 @@ public partial class MainPage : ContentPage
     {
         InitializeComponent();
         popup = new SfPopup();
-        popup.PopupStyle.OverlayColor = Colors.LightPink;
+        popup.PopupStyle.OverlayColor = Color.FromRgb(255, 182, 193);
+    }
+
+    private void ClickToShowPopup_Clicked(object sender, EventArgs e)
+    {
+        popup.Show();
     }
 }
 {% endhighlight %}
 {% endtabs %}
 
-![Displaying a .NET MAUI Popup with overlay customization](Images/styles/maui-popup-with-overlay-customization.png)
+![Syncfusion .NET MAUI Popup Displaying with overlay customization](Images/styles/maui-popup-with-overlay-customization.png)
 
 ### Set overlay opacity
 
-The `SfPopup` allows you adjust the opacity of the overlay color by setting the color value as rgba in hexadecimal value.
+The `SfPopup` allows you to adjust the opacity of the overlay color by setting the color value as rgba in hexadecimal value.
 
 {% tabs %}
-{% highlight xaml hl_lines="3" %}
+{% highlight xaml hl_lines="14" %}
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PopupDemo.MainPage"
+             xmlns:sfPopup="clr-namespace:Syncfusion.Maui.Popup;assembly=Syncfusion.Maui.Popup">
+    <StackLayout>
+        <Button x:Name="clickToShowPopup"
+                Text="ClickToShowPopup"
+                VerticalOptions="Start"
+                HorizontalOptions="Center"
+                Clicked="ClickToShowPopup_Clicked" />
         <sfPopup:SfPopup x:Name="popup">
             <sfPopup:SfPopup.PopupStyle>
-                    <sfPopup:PopupStyle OverlayColor="#30FF0000" />
-            </sfPopup:Sfpopup.PopupStyle>
+                <sfPopup:PopupStyle OverlayColor="#30FF0000" />
+            </sfPopup:SfPopup.PopupStyle>
         </sfPopup:SfPopup>
+    </StackLayout>
+</ContentPage>
 {% endhighlight %}
-{% highlight c# hl_lines="8" %}
+{% highlight c# hl_lines="10" %}
+using Syncfusion.Maui.Popup;
+
 public partial class MainPage : ContentPage
 {
     SfPopup popup;
@@ -363,13 +498,20 @@ public partial class MainPage : ContentPage
         popup = new SfPopup();
         popup.PopupStyle.OverlayColor = Color.FromArgb("#30FF0000");
     }
+
+    private void ClickToShowPopup_Clicked(object sender, EventArgs e)
+    {
+        popup.Show();
+    }
 }
 {% endhighlight %}
 {% endtabs %}
 
 ### Blurred background
 
-The `SfPopup` allows blurring of the background using the `OverlayMode` and `BlurIntensity` properties respectively.
+The `SfPopup` allows blurring of the background using the [OverlayMode](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Popup.SfPopup.html#Syncfusion_Maui_Popup_SfPopup_OverlayMode) and [BlurIntensity](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Popup.PopupStyle.html#Syncfusion_Maui_Popup_PopupStyle_BlurIntensity) properties respectively.
+
+N> `OverlayMode="Blur"` is supported only on Android, iOS, Mac Catalyst, and Windows. On unsupported platforms, the overlay falls back to the default solid `OverlayColor` and no blur is rendered.
 
 {% tabs %}
 {% highlight xaml hl_lines="13 16" %}
@@ -377,7 +519,7 @@ The `SfPopup` allows blurring of the background using the `OverlayMode` and `Blu
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="GettingStarted.MainPage"
-             xmlns:sfPopup="clr-namespace:Syncfusion.Maui.Toolkit.Popup;assembly=Syncfusion.Maui.Toolkit">
+             xmlns:sfPopup="clr-namespace:Syncfusion.Maui.Popup;assembly=Syncfusion.Maui.Popup">
     <StackLayout x:Name="layout">
         <Image Source="Blurred_Background.png" Aspect="Fill" >
              <Image.GestureRecognizers>
@@ -395,7 +537,7 @@ The `SfPopup` allows blurring of the background using the `OverlayMode` and `Blu
 </ContentPage>
 {% endhighlight %}
 {% highlight c# hl_lines="12 13" %}
-using Syncfusion.Maui.Toolkit.Popup;
+using Syncfusion.Maui.Popup;
 namespace GettingStarted
 {
     public partial class MainPage : ContentPage
@@ -426,11 +568,11 @@ namespace GettingStarted
 {% endhighlight %}
 {% endtabs %}
 
-![Displaying a .NET MAUI Popup with blur overlay](Images/styles/maui-popup-with-blurred-background.png)
+![Syncfusion .NET MAUI Popup Displaying with blur overlay](Images/styles/maui-popup-with-blurred-background.png)
 
 ### Set custom blur intensity
 
-The `SfPopup` allows customization of the blur effect by setting the `BlurIntensity` property to `Custom` and the `BlurRadius`, which adjusts the blur effect according to the specified value.
+The `SfPopup` allows customization of the blur effect by setting the `BlurIntensity` property to [Custom](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Popup.PopupBlurIntensity.html#Syncfusion_Maui_Popup_PopupBlurIntensity_Custom) and the [BlurRadius](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Popup.PopupStyle.html#Syncfusion_Maui_Popup_PopupStyle_BlurRadius), which adjusts the blur effect according to the specified value.
 
 {% tabs %}
 {% highlight xaml hl_lines="13 16" %}
@@ -438,7 +580,7 @@ The `SfPopup` allows customization of the blur effect by setting the `BlurIntens
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="GettingStarted.MainPage"
-             xmlns:sfPopup="clr-namespace:Syncfusion.Maui.Toolkit.Popup;assembly=Syncfusion.Maui.Toolkit">
+             xmlns:sfPopup="clr-namespace:Syncfusion.Maui.Popup;assembly=Syncfusion.Maui.Popup">
     <StackLayout x:Name="layout">
         <Image Source="Blurred_Background.png" Aspect="Fill" >
              <Image.GestureRecognizers>
@@ -457,7 +599,7 @@ The `SfPopup` allows customization of the blur effect by setting the `BlurIntens
 </ContentPage>
 {% endhighlight %}
 {% highlight c# hl_lines="12 13" %}
-using Syncfusion.Maui.Toolkit.Popup;
+using Syncfusion.Maui.Popup;
 namespace GettingStarted
 {
     public partial class MainPage : ContentPage
@@ -467,7 +609,7 @@ namespace GettingStarted
         {
             InitializeComponent();
             popup = new SfPopup();
-            popup.OverlayMode = OverlayMode.Blur;
+            popup.OverlayMode = Syncfusion.Maui.Popup.PopupOverlayMode.Blur;
             popup.PopupStyle.BlurIntensity = Syncfusion.Maui.Popup.PopupBlurIntensity.Custom;
             popup.PopupStyle.BlurRadius = 3;
             var layout = new StackLayout();
@@ -488,54 +630,11 @@ namespace GettingStarted
 {% endhighlight %}
 {% endtabs %}
 
-![Displaying a .NET MAUI Popup with blur radius](Images/styles/maui-popup-with-blur-radius.png)
+![Syncfusion .NET MAUI Popup Displaying with blur radius](Images/styles/maui-popup-with-blur-radius.png)
 
-### Change the close button icon
+## Changing the close button icon
 
-You can change the close button icon of the `SfPopup`, please find the code example of the same below.
-
-{% tabs %}
-{% highlight xaml hl_lines="16" %}
-<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:local="clr-namespace:PopupDemo"
-             xmlns:sfPopup="clr-namespace:Syncfusion.Maui.Toolkit.Popup;assembly=Syncfusion.Maui.Toolkit"
-             x:Class="PopupDemo.MainPage">
-    <StackLayout>
-        <Button x:Name="clickToShowPopup"
-                Text="ClickToShowPopup"
-                VerticalOptions="Start"
-                HorizontalOptions="Center"
-                Clicked="ClickToShowPopup_Clicked" />
-        <sfPopup:SfPopup x:Name="popup"
-                         ShowCloseButton="True">
-            <sfPopup:SfPopup.PopupStyle>
-                <sfPopup:PopupStyle CloseButtonIcon="closeicon.png" />
-            </sfPopup:SfPopup.PopupStyle>
-        </sfPopup:SfPopup>
-    </StackLayout>
-</ContentPage>
-{% endhighlight %}
-{% highlight c# hl_lines="8" %}
-public partial class MainPage : ContentPage
-{
-    SfPopup popup;
-    public MainPage()
-    {
-        InitializeComponent();
-        popup = new SfPopup();
-        popup.PopupStyle.ShowCloseButtonIcon = "closeicon.png";
-    }
-}
-{% endhighlight %}
-{% endtabs %}
-
-![Displaying a .NET MAUI Popup with close button icon](Images/styles/maui-popup-with-close-button-icon.png)
-
-### Change the close button icon color
-
-You can change the close button icon color of the [SfPopup](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Popup.SfPopup.html), please find the code example of the same below.
+You can change the close button icon of the [SfPopup](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Popup.SfPopup.html); see the following code example.
 
 {% tabs %}
 {% highlight xaml hl_lines="16" %}
@@ -554,13 +653,15 @@ You can change the close button icon color of the [SfPopup](https://help.syncfus
         <sfPopup:SfPopup x:Name="popup"
                          ShowCloseButton="True">
             <sfPopup:SfPopup.PopupStyle>
-                <sfPopup:PopupStyle CloseIconColor="OrangeRed" />
+                <sfPopup:PopupStyle CloseButtonIcon="closeicon.png" />
             </sfPopup:SfPopup.PopupStyle>
         </sfPopup:SfPopup>
     </StackLayout>
 </ContentPage>
 {% endhighlight %}
-{% highlight c# hl_lines="8" %}
+{% highlight c# hl_lines="10 11" %}
+using Syncfusion.Maui.Popup;
+
 public partial class MainPage : ContentPage
 {
     SfPopup popup;
@@ -568,17 +669,23 @@ public partial class MainPage : ContentPage
     {
         InitializeComponent();
         popup = new SfPopup();
-        popup.PopupStyle.CloseIconColor = "OrangeRed"";
+        popup.ShowCloseButton = true;
+        popup.PopupStyle.CloseButtonIcon = "closeicon.png";
+    }
+
+    private void ClickToShowPopup_Clicked(object sender, EventArgs e)
+    {
+        popup.Show();
     }
 }
 {% endhighlight %}
 {% endtabs %}
 
-![Displaying a .NET MAUI Popup with close button icon color](Images/styles/maui-popup-with-close-button-icon-color.png)
+![Syncfusion .NET MAUI Popup Displaying with close button icon](Images/styles/maui-popup-with-close-button-icon.png)
 
-### Set Shadow
+## Setting shadow
 
-The `SfPopup` allows you to add a shadow effect to the popup view. Refer to the code example below for reference.
+The `SfPopup` allows you to add a shadow effect to the popup. Refer to the code example below.
 
 {% tabs %}
 {% highlight xaml hl_lines="15" %}
@@ -586,7 +693,7 @@ The `SfPopup` allows you to add a shadow effect to the popup view. Refer to the 
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:PopupDemo"
-             xmlns:sfPopup="clr-namespace:Syncfusion.Maui.Toolkit.Popup;assembly=Syncfusion.Maui.Toolkit"
+             xmlns:sfPopup="clr-namespace:Syncfusion.Maui.Popup;assembly=Syncfusion.Maui.Popup"
              x:Class="PopupDemo.MainPage">
     <StackLayout>
         <Button x:Name="clickToShowPopup"
@@ -602,7 +709,9 @@ The `SfPopup` allows you to add a shadow effect to the popup view. Refer to the 
     </StackLayout>
 </ContentPage>
 {% endhighlight %}
-{% highlight c# hl_lines="8" %}
+{% highlight c# hl_lines="10" %}
+using Syncfusion.Maui.Popup;
+
 public partial class MainPage : ContentPage
 {
     SfPopup popup;
@@ -612,11 +721,16 @@ public partial class MainPage : ContentPage
         popup = new SfPopup();
         popup.PopupStyle.HasShadow = true;
     }
+
+    private void ClickToShowPopup_Clicked(object sender, EventArgs e)
+    {
+        popup.Show();
+    }
 }
 {% endhighlight %}
 {% endtabs %}
 
-![Displaying a .NET MAUI Popup with shadow](Images/styles/maui-popup-with-shadow.png)
+![Syncfusion .NET MAUI Popup Displaying with shadow](Images/styles/maui-popup-with-shadow.png)
 
 ## Limitations
 
