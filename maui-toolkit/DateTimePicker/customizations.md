@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Customizations in .NET MAUI Date Time Picker control | Syncfusion®
-description: Learn about customizations in Syncfusion .NET MAUI Date Time Picker control for headers, footers, and visual styling.
+description: Learn about customizations in Syncfusion® .NET MAUI Date Time Picker control for headers, footers, and visual styling.
 platform: maui
 control: SfDateTimePicker
 documentation: ug

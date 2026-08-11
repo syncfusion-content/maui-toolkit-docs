@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Selection in .NET MAUI Date Picker control | Syncfusion®
-description: Learn about selection in Syncfusion .NET MAUI Date Picker control to manage selected date and programmatic selection.
+description: Learn about selection in Syncfusion® .NET MAUI Date Picker control to manage selected date and programmatic selection.
 platform: maui
 control: SfDatePicker
 documentation: ug

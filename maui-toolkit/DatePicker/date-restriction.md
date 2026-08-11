@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Date Restriction in .NET MAUI Date Picker control | Syncfusion®
-description: Learn about date restriction in Syncfusion .NET MAUI Date Picker control to manage minimum and maximum date selection.
+description: Learn about date restriction in Syncfusion® .NET MAUI Date Picker control to manage minimum and maximum date selection.
 platform: maui
 control: SfDatePicker
 documentation: ug

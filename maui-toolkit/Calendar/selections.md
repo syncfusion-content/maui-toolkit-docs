@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Selections in .NET MAUI Calendar control | Syncfusion®
-description: Learn about selections in Syncfusion .NET MAUI Calendar control with Single, Multiple, and Range selection modes.
+description: Learn about selections in Syncfusion® .NET MAUI Calendar control with Single, Multiple, and Range selection modes.
 platform: maui
 control: SfCalendar
 documentation: ug
