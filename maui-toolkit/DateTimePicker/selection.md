@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Selection in .NET MAUI Date Time Picker control | Syncfusion®
-description: Learn about selection in Syncfusion .NET MAUI Date Time Picker control to manage selected date and time values.
+description: Learn about selection in Syncfusion® .NET MAUI Date Time Picker control to manage selected date and time values.
 platform: maui
 control: SfDateTimePicker
 documentation: ug

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: About Syncfusion .NET MAUI Picker Control | Syncfusion
+title: About Syncfusion .NET MAUI Picker Control | Syncfusion®
 description: Learn about introduction of Syncfusion<sup>&reg;</sup> Essential Studio .NET MAUI Picker control and more details.
 platform: maui
 control: SfPicker

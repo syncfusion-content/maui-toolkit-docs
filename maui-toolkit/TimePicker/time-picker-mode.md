@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Time Picker mode in .NET MAUI Time Picker control | Syncfusion
+title: Time Picker mode in .NET MAUI Time Picker | Syncfusion®
 description: Choose from Default, Dialog, and RelativeDialog modes to display time picker in the .NET MAUI Time Picker.
 platform: maui
 control: SfTimePicker

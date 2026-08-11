@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Mode in .NET MAUI Date Time Picker control | Syncfusion®
-description: Learn about mode in Syncfusion .NET MAUI Date Time Picker control with Default, Dialog, and RelativeDialog options.
+description: Learn about mode in Syncfusion® .NET MAUI Date Time Picker control with Default, Dialog, and RelativeDialog options.
 platform: maui
 control: SfDateTimePicker
 documentation: ug

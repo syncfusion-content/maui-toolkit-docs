@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Calendar Identifier in .NET MAUI Calendar control | Syncfusion®
-description: Learn about calendar identifier in Syncfusion .NET MAUI Calendar control to display different calendar types based on cultures.
+description: Learn about calendar identifier in Syncfusion® .NET MAUI Calendar control to display different calendar types based on cultures.
 platform: maui
 control: SfCalendar
 documentation: ug

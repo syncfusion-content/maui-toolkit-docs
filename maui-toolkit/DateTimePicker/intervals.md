@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Intervals in .NET MAUI Date Time Picker control | Syncfusion®
-description: Learn about intervals in Syncfusion .NET MAUI Date Time Picker control for day, month, year, and time step configuration.
+description: Learn about intervals in Syncfusion® .NET MAUI Date Time Picker control for day, month, year, and time step configuration.
 platform: maui
 control: SfDateTimePicker
 documentation: ug
