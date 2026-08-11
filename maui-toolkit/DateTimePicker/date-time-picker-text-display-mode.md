@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Text Display Mode in .NET MAUI Date Time Picker control | Syncfusion®
-description: Learn about text display mode in Syncfusion .NET MAUI Date Time Picker control with Default, Fade, Shrink options.
+description: Learn about text display mode in Syncfusion® .NET MAUI Date Time Picker control with Default, Fade, Shrink options.
 platform: maui
 control: SfDateTimePicker
 documentation: ug

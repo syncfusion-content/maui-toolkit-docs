@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Footer in .NET MAUI Calendar control | Syncfusion®
-description: Learn about footer in Syncfusion .NET MAUI Calendar control to customize footer view properties and action buttons.
+description: Learn about footer in Syncfusion® .NET MAUI Calendar control to customize footer view properties and action buttons.
 platform: maui
 control: SfCalendar
 documentation: ug

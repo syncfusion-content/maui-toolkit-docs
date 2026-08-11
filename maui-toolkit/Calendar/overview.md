@@ -1,7 +1,7 @@
 ---
 layout: post
-title: About Syncfusion .NET MAUI Calendar Control | Syncfusion
-description: Learn about introduction of Syncfusion Essential Studio .NET MAUI Calendar control and more details.
+title: About Syncfusion .NET MAUI Calendar Control | Syncfusion®
+description: Learn about introduction of Syncfusion® Essential Studio .NET MAUI Calendar control and more details.
 platform: maui
 control: SfCalendar
 documentation: ug
