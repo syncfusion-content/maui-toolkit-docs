@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Modal Window in .NET MAUI Popup control | Syncfusion
-description: Learn here all about Modal Window support in the Syncfusion .NET MAUI Popup (SfPopup) control, its elements, and more.
+title: Modal Window in .NET MAUI Popup control | Syncfusion®
+description: Learn here all about Modal Window support in the Syncfusion® .NET MAUI Popup (SfPopup) control, its elements, and more.
 platform: maui-toolkit
 control: SfPopup
 documentation: ug
 ---
 
-# Modal Window in MAUI Popup (SfPopup)
+# Modal Window in MAUI Popup
 
 You can use the popup as a modal window using the built-in close icon and the `SfPopup.StaysOpen` property prevents interaction with your application until you close the window.
 

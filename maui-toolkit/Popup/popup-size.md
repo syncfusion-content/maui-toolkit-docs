@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Popup Size in .NET MAUI Popup control | Syncfusion
-description: Learn all about Popup Size support in the Syncfusion .NET MAUI Popup (SfPopup) control and more.
+title: Sizing the .NET MAUI Popup control | Syncfusion®
+description: Learn all about Popup Size support in the Syncfusion® .NET MAUI Popup (SfPopup) control, its elements, and more.
 platform: maui-toolkit
 control: SfPopup
 documentation: ug
 ---
 
-# Popup size in .NET Maui Popup (SfPopup)
+# Sizing the .NET MAUI Popup
 
 The SfPopup allows the display of the Popup at any desired width and height by setting the `SfPopup.WidthRequest` and `SfPopup.HeightRequest`. The Popup size can also be changed by setting the width request and height request to the views loaded inside the templates of the Popup.
 

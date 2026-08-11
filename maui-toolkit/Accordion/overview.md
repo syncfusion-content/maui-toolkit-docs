@@ -2,7 +2,7 @@
 layout: post
 title: Overview | .NET MAUI Accordion Control | Syncfusion®
 platform: maui-toolkit
-description: Learn here about overall key features in Toolkit for .NET MAUI SfAccordion Control, its elements, and more.
+description: Learn here about overall key features in Toolkit for .NET MAUI Accordion (SfAccordion) Control, its elements, and more.
 control: SfAccrodion
 ---
 
