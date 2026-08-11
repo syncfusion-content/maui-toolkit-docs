@@ -154,11 +154,11 @@ private async void PullToRefresh_Refreshing(object? sender, EventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-![.NET MAUI PullToRefresh with slide on top transition mode](Images/getting-started//maui-pull-to-refresh-slideontop-mode.gif)
+![.NET MAUI Pull to Refresh with slide on top transition mode](Images/getting-started//maui-pull-to-refresh-slideontop-mode.gif)
 
 If we run the above sample with `TransitionMode` set to `Push`, the output will be as shown in the following.
 
-![.NET MAUI PullToRefresh with slide on top transition mode](Images/getting-started//maui-pull-to-refresh-push-mode.gif).
+![.NET MAUI Pull to Refresh with slide on top transition mode](Images/getting-started//maui-pull-to-refresh-push-mode.gif).
 
 N> PullToRefresh does not have a view. So, it is mandatory to set size or LayoutOptions when loaded inside any layouts.
 
