@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Date Interval in .NET MAUI Date Picker control | Syncfusion®
-description: Learn about date interval in Syncfusion .NET MAUI Date Picker control for day and month interval configuration.
+description: Learn about date interval in Syncfusion® .NET MAUI Date Picker control for day and month interval configuration.
 platform: maui
 control: SfDatePicker
 documentation: ug
