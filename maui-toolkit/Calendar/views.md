@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Views in .NET MAUI Calendar control | Syncfusion®
-description: Learn about calendar views in Syncfusion .NET MAUI Calendar control with Month, Year, Decade, and Century options.
+description: Learn about calendar views in Syncfusion® .NET MAUI Calendar control with Month, Year, Decade, and Century options.
 platform: maui
 control: Calendar
 documentation: ug

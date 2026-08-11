@@ -1,6 +1,6 @@
 ---
 layout: post
-title: About Syncfusion .NET MAUI Date Time Picker Control | Syncfusion
+title: About Syncfusion .NET MAUI Date Time Picker Control | Syncfusion®
 description: Learn about introduction of Syncfusion<sup>&reg;</sup>Essential Studio .NET MAUI Date Time Picker control and more details.
 platform: maui
 control: SfDateTimePicker

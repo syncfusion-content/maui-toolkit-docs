@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Formatting in .NET MAUI Date Time Picker control | Syncfusion®
-description: Learn about formatting in Syncfusion .NET MAUI Date Time Picker control to customize date and time display.
+description: Learn about formatting in Syncfusion® .NET MAUI Date Time Picker control to customize date and time display.
 platform: maui
 control: SfDateTimePicker
 documentation: ug

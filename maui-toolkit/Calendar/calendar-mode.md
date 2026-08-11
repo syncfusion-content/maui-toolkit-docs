@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Calendar Modes in .NET MAUI Calendar control | Syncfusion®
-description: Learn about calendar modes in Syncfusion .NET MAUI Calendar control with Default, Dialog, and RelativeDialog options.
+description: Learn about calendar modes in Syncfusion® .NET MAUI Calendar control with Default, Dialog, and RelativeDialog options.
 platform: maui
 control: SfCalendar
 documentation: ug
