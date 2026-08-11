@@ -9,7 +9,7 @@ documentation: ug
 
 # Customization in .NET MAUI Pull to Refresh
 
-The .NET MAUI PullToRefresh control supports customization of various features, including TransitionMode, PullingThreshold, ProgressBackground, ProgressColor, and more. The control can be personalized using the following properties.
+The .NET MAUI Pull to Refresh control supports customization of various features, including TransitionMode, PullingThreshold, ProgressBackground, ProgressColor, and more. The control can be personalized using the following properties.
 
 ## PullableContent
 
@@ -57,7 +57,7 @@ pullToRefresh.TransitionMode = PullToRefreshTransitionType.SlideOnTop;
 {% endhighlight %}
 {% endtabs %}
 
-![.NET MAUI PullToRefresh with slide on top transition mode.](Images/customization/net-maui-pulltorefresh-getting-started.png)
+![.NET MAUI Pull to Refresh with slide on top transition mode.](Images/customization/net-maui-pulltorefresh-getting-started.png)
 
 The following code example shows how to set the `TransitionMode` as `Push` to PullToRefresh. This transition moves the refresh content and main content simultaneously.
 
@@ -75,7 +75,7 @@ pullToRefresh.TransitionMode = PullToRefreshTransitionType.Push;
 {% endhighlight %}
 {% endtabs %}
 
-![.NET MAUI PullToRefresh with push transition mode.](Images/customization/net-maui-pulltorefresh-getting-started-push.png)
+![.NET MAUI Pull to Refresh with push transition mode.](Images/customization/net-maui-pulltorefresh-getting-started-push.png)
 
 ## RefreshViewThreshold
 
@@ -406,6 +406,6 @@ Refer to the following code example in which a [SfCircularProgressBar](https://h
 {% endhighlight %}
 {% endtabs %}
 
-![.NET MAUI PullToRefresh view Template.](Images/customization/net-maui-template-slideontop.gif)
+![.NET MAUI Pull to Refresh view Template.](Images/customization/net-maui-template-slideontop.gif)
 
 N> [View sample in GitHub](https://github.com/SyncfusionExamples/load-datagrid-as-pullable-content-of-.net-maui-pull-to-refresh).

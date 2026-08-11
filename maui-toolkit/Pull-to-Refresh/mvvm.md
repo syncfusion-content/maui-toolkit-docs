@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Working with MVVM in .NET MAUI Pull to Refresh control | Syncfusion®
-description: Learn about working with MVVM support in Syncfusion® .NET MAUI PullToRefresh (SfPullToRefresh) control and more.
+description: Learn about working with MVVM support in Syncfusion® .NET MAUI Pull to Refresh (SfPullToRefresh) control and more.
 platform: maui-toolkit
 control: SfPullToRefresh 
 documentation: ug
