@@ -46,7 +46,7 @@ Note: This property is automatically changed to `false` when you close the dialo
 {% highlight xaml tabtitle="MainPage.xaml" %}
 
 <Grid>
-    <picker:SfDatePicker x:Name="datepicker"
+    <picker:SfDatePicker x:Name="datePicker"
                          Mode="Dialog"/>
     <Button Text="Open Picker" 
             x:Name="pickerButton"
@@ -64,7 +64,7 @@ Note: This property is automatically changed to `false` when you close the dialo
 
 private void Button_Clicked(object sender, System.EventArgs e)
 {
-    this.datepicker.IsOpen = true;
+    this.datePicker.IsOpen = true;
 }
 
 {% endhighlight %}
@@ -111,7 +111,7 @@ Note: This property is automatically changed to `false` when you close the dialo
 
 private void Button_Clicked(object sender, System.EventArgs e)
 {
-    this.datepicker.IsOpen = true;
+    this.datePicker.IsOpen = true;
 }
 
 {% endhighlight %} 
@@ -151,8 +151,8 @@ N> It is only applicable in `RelativeDialog` mode. If `no relative view` is spec
 
 private void Button_Clicked(object sender, System.EventArgs e)
 {
-    this.datepicker.IsOpen = true;
-    this.datepicker.RelativeView = pickerButton;
+    this.datePicker.IsOpen = true;
+    this.datePicker.RelativeView = pickerButton;
 }
 
 {% endhighlight %}
