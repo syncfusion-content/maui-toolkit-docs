@@ -9,9 +9,9 @@ documentation: UG
 
 # Visual State Manager in .NET MAUI Tab View
 
-Use the [VisualStateManager](https://learn.microsoft.com/en-us/dotnet/api/microsoft.maui.controls.visualstatemanager?view=net-maui-8.0) to change the properties of the [SfTabView](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SfTabView.html) control based on visual states defined in your code. The applicable visual states are `Selected`, `Normal`, and `Disabled`. 
+Use the [VisualStateManager](https://learn.microsoft.com/en-us/dotnet/api/microsoft.maui.controls.visualstatemanager?view=net-maui-8.0) to change the properties of the [Tab View](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SfTabView.html) control based on visual states defined in your code. The applicable visual states are `Selected`, `Normal`, and `Disabled`. 
 
-Refer to the following example to implement Visual State Manager in the `SfTabView` control. This example demonstrates how to define visual states and apply them to the `SfTabView` control to change its appearance based on different states:
+Refer to the following example to implement Visual State Manager in the `Tab View` control. This example demonstrates how to define visual states and apply them to the `Tab View` control to change its appearance based on different states:
 
 Additionally, the C# example demonstrates how to create a `CustomTabItem` class that inherits from `SfTabItem`. This class sets up the visual states programmatically, allowing for more dynamic control over the visual states.
 
