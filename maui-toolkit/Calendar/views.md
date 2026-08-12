@@ -8,7 +8,7 @@ documentation: ug
 ---
 
 # Views in .NET MAUI Calendar control
-The `SfCalendar` control has four Calendar views to display. It can be assigned to the control by using the [View](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Calendar.SfCalendar.html#Syncfusion_Maui_Toolkit_Calendar_SfCalendar_View) property. By default, the `Month` view is initially rendered. The current date will be displayed initially for all the Calendar views.
+The .NET MAUI Calendar control has four Calendar views to display. It can be assigned to the control by using the [View](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Calendar.SfCalendar.html#Syncfusion_Maui_Toolkit_Calendar_SfCalendar_View) property. By default, the `Month` view is initially rendered. The current date will be displayed initially for all the Calendar views.
 
 ## Month view
 The Month view displays the current month days, and usually a few days of previous and next month. By default, initially displays the current month dates and the current date is highlighted by a separate color different from the rest of the dates color in `Month` view.
