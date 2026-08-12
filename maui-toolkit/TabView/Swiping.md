@@ -9,7 +9,7 @@ documentation: UG
 
 # Swiping in .NET MAUI Tab View
 
-The [EnableSwiping](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SfTabView.html#Syncfusion_Maui_Toolkit_TabView_SfTabView_EnableSwiping) property of `SfTabView` allows users to switch between tab contents by swiping. By default, the `EnableSwiping` property is set to `false`.
+The [EnableSwiping](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SfTabView.html#Syncfusion_Maui_Toolkit_TabView_SfTabView_EnableSwiping) property of `Tab View` allows users to switch between tab contents by swiping. By default, the `EnableSwiping` property is set to `false`.
 
 You can enable swiping by setting the `EnableSwiping` property to `true`, as shown in the following code snippets:
 

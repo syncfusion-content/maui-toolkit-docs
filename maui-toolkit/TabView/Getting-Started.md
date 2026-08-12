@@ -9,7 +9,7 @@ documentation: UG
 
 # Getting Started with .NET MAUI Tab View
 
-This section guides you through setting up and configuring a [SfTabView](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SfTabView.html) in your .NET MAUI application. Follow the steps below to add a basic Tab View to your project.
+This section guides you through setting up and configuring a [Tab View](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SfTabView.html) in your .NET MAUI application. Follow the steps below to add a basic Tab View to your project.
 
 {% tabcontents %}
 {% tabcontent Visual Studio %}
@@ -120,9 +120,9 @@ using Syncfusion.Maui.Toolkit.TabView;
 
 ## Step 5: Add the Tab View component
 
-Tab items can be added to the control using the [Items](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SfTabView.html#Syncfusion_Maui_Toolkit_TabView_SfTabView_Items) property of [SfTabView](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SfTabView.html).
+Tab items can be added to the control using the [Items](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SfTabView.html#Syncfusion_Maui_Toolkit_TabView_SfTabView_Items) property of [Tab View](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SfTabView.html).
 
-The following examples demonstrate how to add tab items to the `SfTabView` control using both XAML and C# approaches.
+The following examples demonstrate how to add tab items to the `Tab View` control using both XAML and C# approaches.
 
 {% tabs %}
 {% highlight xaml %}

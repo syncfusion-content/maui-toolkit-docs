@@ -9,9 +9,9 @@ documentation: UG
 
 # Nested Tabs in .NET MAUI Tab View
 
-The .NET MAUI Tab View (SfTabView) control supports nested tabs, allowing you to create a hierarchical structure of tab items. You can configure nested tab items in the Tab View using the [Items](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SfTabView.html#Syncfusion_Maui_Toolkit_TabView_SfTabView_Items) property of [SfTabView](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SfTabView.html). This property holds a [TabItemCollection](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.TabItemCollection.html), which can contain multiple [SfTabItem](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SfTabItem.html) instances.
+The .NET MAUI Tab View (SfTabView) control supports nested tabs, allowing you to create a hierarchical structure of tab items. You can configure nested tab items in the Tab View using the [Items](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SfTabView.html#Syncfusion_Maui_Toolkit_TabView_SfTabView_Items) property of [Tab View](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SfTabView.html). This property holds a [TabItemCollection](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.TabItemCollection.html), which can contain multiple [SfTabItem](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SfTabItem.html) instances.
 
-The following example demonstrates how to create nested tabs in the `SfTabView` control. In this sample, we will create a main Tab View with three tabs: **Photos**, **Collections**, and **Explore**. The **Photos** tab will contain a nested Tab View with four sub-tabs: **Camera**, **Video**, **Screenshots**, and **Wallpaper**.
+The following example demonstrates how to create nested tabs in the `Tab View` control. In this sample, we will create a main Tab View with three tabs: **Photos**, **Collections**, and **Explore**. The **Photos** tab will contain a nested Tab View with four sub-tabs: **Camera**, **Video**, **Screenshots**, and **Wallpaper**.
 
 {% tabs %}
 

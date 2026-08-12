@@ -151,6 +151,6 @@ When focusing on the input view, the hint label will be moved to the top positio
 
 Run the project, and check if you get the following output to ensure that the project has been appropriately configured to add the text input layout control.
 
-![Hint text in .NET MAUI TextInputLayout.](images/GettingStarted/GettingStarted.png)
+![Hint text in .NET MAUI Text Input Layout.](images/GettingStarted/GettingStarted.png)
 
 You can download the Text Input Layout Getting Started sample from [here](https://github.com/SyncfusionExamples/getting-started-with-the-dotnet-maui-text-input-layout).
