@@ -9,7 +9,7 @@ documentation: UG
 
 # Center Button Customization in .NET MAUI Tab View
 
-This section explains how to enable and customize the center button in .NET MAUI [SfTabView](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SfTabView.html).
+This section explains how to enable and customize the center button in .NET MAUI [Tab View](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SfTabView.html).
 
 ## Enable the center button 
 

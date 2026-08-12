@@ -44,7 +44,7 @@ inputLayout.Content = new Entry();
 
 {% endtabs %}
 
-![.NET MAUI TextInputLayout with filled container type.](images/FixedHintPosition/HintPositionFilled.png)
+![.NET MAUI Text Input Layout with filled container type.](images/FixedHintPosition/HintPositionFilled.png)
 
 ## Outlined
 
@@ -75,7 +75,7 @@ inputLayout.Content = new Entry();
 
 {% endtabs %}
 
-![.NET MAUI TextInputLayout with outlined container type.](images/FixedHintPosition/HintPositionOutlined.png)
+![.NET MAUI Text Input Layout with outlined container type.](images/FixedHintPosition/HintPositionOutlined.png)
 
 ## None
 
@@ -106,4 +106,4 @@ inputLayout.Content = new Entry();
 
 {% endtabs %}
 
-![.NET MAUI TextInputLayout without container background.](images/FixedHintPosition/HintPositionNone.png)
+![.NET MAUI Text Input Layout without container background.](images/FixedHintPosition/HintPositionNone.png)

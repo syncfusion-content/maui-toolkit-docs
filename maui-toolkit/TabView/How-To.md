@@ -11,7 +11,7 @@ documentation: UG
 
 ## Programmatically select the tab item
 
-You can use the [SelectedIndex](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SfTabView.html#Syncfusion_Maui_Toolkit_TabView_SfTabView_SelectedIndex) property of `SfTabView` to programmatically select a tab item. Below is a code snippet demonstrating how to do this:
+You can use the [SelectedIndex](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SfTabView.html#Syncfusion_Maui_Toolkit_TabView_SfTabView_SelectedIndex) property of `Tab View` to programmatically select a tab item. Below is a code snippet demonstrating how to do this:
 
 {% tabs %}
 
@@ -31,7 +31,7 @@ tabView.SelectedIndex = 2;
 
 The following image shows the tab item selected programmatically using the `SelectedIndex` property:
 
-![Tab item selected programmatically in .NET MAUI TabView](images/SelectedIndexTabView.png)
+![Tab item selected programmatically in .NET MAUI Tab View](images/SelectedIndexTabView.png)
 
 ## Get the selected tab item
 
