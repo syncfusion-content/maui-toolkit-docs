@@ -16,16 +16,16 @@ The Date picker provides an option to restrict the selection of date items by us
 {% tabs %}
 {% highlight xaml tabtitle="XAML" hl_lines="2" %}
 
-<picker:SfDatePicker x:Name="picker"
+<picker:SfDatePicker x:Name="datePicker"
                      MinimumDate="2000/05/15">
 </picker:SfDatePicker>
 
 {% endhighlight %}
 {% highlight c# tabtitle="C#" hl_lines="2" %}
 
-SfDatePicker picker = new SfDatePicker();
-picker.MinimumDate = new DateTime(2000, 05, 15);
-this.Content = picker;
+SfDatePicker datePicker = new SfDatePicker();
+datePicker.MinimumDate = new DateTime(2000, 05, 15);
+this.Content = datePicker;
 
 {% endhighlight %}  
 {% endtabs %}
@@ -39,16 +39,16 @@ The Date picker provides an option to restrict the selection of date items by us
 {% tabs %}
 {% highlight xaml tabtitle="XAML" hl_lines="2" %}
 
-<picker:SfDatePicker x:Name="picker"
+<picker:SfDatePicker x:Name="datePicker"
                      MaximumDate="2042/10/10">
 </picker:SfDatePicker>
 
 {% endhighlight %}
 {% highlight c# tabtitle="C#" hl_lines="2" %}
 
-SfDatePicker picker = new SfDatePicker();
-picker.MaximumDate = new DateTime(2042, 10, 10);
-this.Content = picker;
+SfDatePicker datePicker = new SfDatePicker();
+datePicker.MaximumDate = new DateTime(2042, 10, 10);
+this.Content = datePicker;
 
 {% endhighlight %}  
 {% endtabs %}
@@ -62,7 +62,7 @@ The [BlackoutDates](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.
 {% tabs %}
 {% highlight xaml tabtitle="XAML" %}
 
-<picker:SfDatePicker x:Name="picker">
+<picker:SfDatePicker x:Name="datePicker">
     <picker:SfDatePicker.BlackoutDates>
         <date:DateTime>2001-08-10</date:DateTime>
         <date:DateTime>2001-08-12</date:DateTime>
@@ -79,17 +79,17 @@ The [BlackoutDates](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.
 {% endhighlight %}
 {% highlight c# tabtitle="C#" %}
 
-SfDatePicker picker = new SfDatePicker();
-picker.BlackoutDates.Add(new DateTime(2001, 8, 10));
-picker.BlackoutDates.Add(new DateTime(2001, 8, 12));
-picker.BlackoutDates.Add(new DateTime(2001, 8, 14));
-picker.BlackoutDates.Add(new DateTime(2001, 8, 17));
-picker.BlackoutDates.Add(new DateTime(2001, 8, 18));
-picker.BlackoutDates.Add(new DateTime(2001, 8, 20));
-picker.BlackoutDates.Add(new DateTime(2001, 8, 23));
-picker.BlackoutDates.Add(new DateTime(2001, 8, 27));
-picker.BlackoutDates.Add(new DateTime(2001, 8, 3));
-this.Content = picker;
+SfDatePicker datePicker = new SfDatePicker();
+datePicker.BlackoutDates.Add(new DateTime(2001, 8, 10));
+datePicker.BlackoutDates.Add(new DateTime(2001, 8, 12));
+datePicker.BlackoutDates.Add(new DateTime(2001, 8, 14));
+datePicker.BlackoutDates.Add(new DateTime(2001, 8, 17));
+datePicker.BlackoutDates.Add(new DateTime(2001, 8, 18));
+datePicker.BlackoutDates.Add(new DateTime(2001, 8, 20));
+datePicker.BlackoutDates.Add(new DateTime(2001, 8, 23));
+datePicker.BlackoutDates.Add(new DateTime(2001, 8, 27));
+datePicker.BlackoutDates.Add(new DateTime(2001, 8, 3));
+this.Content = datePicker;
 
 {% endhighlight %}  
 {% endtabs %}

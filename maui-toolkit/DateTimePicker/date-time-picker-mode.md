@@ -18,16 +18,16 @@ The dialog mode is used to display the date time picker in a popup by setting th
 {% tabs %}
 {% highlight xaml tabtitle="XAML" hl_lines="2" %}
 
-<picker:SfDateTimePicker x:Name="picker"
+<picker:SfDateTimePicker x:Name="dateTimePicker"
                          Mode="Dialog">
 </picker:SfDateTimePicker>
 
 {% endhighlight %}
 {% highlight c# tabtitle="C#" hl_lines="2" %}
 
-SfDateTimePicker picker = new SfDateTimePicker();
-picker.Mode = PickerMode.Dialog;
-this.Content = picker;
+SfDateTimePicker dateTimePicker = new SfDateTimePicker();
+dateTimePicker.Mode = PickerMode.Dialog;
+this.Content = dateTimePicker;
 
 {% endhighlight %}  
 {% endtabs %}
@@ -40,7 +40,7 @@ Note: This property automatically changes to `false` when you close the dialog b
 {% highlight xaml tabtitle="MainPage.xaml" %}
 
 <Grid>
-    <picker:SfDateTimePicker x:Name="picker" 
+    <picker:SfDateTimePicker x:Name="dateTimePicker" 
                              Mode="Dialog">
     </picker:SfDateTimePicker>
     <Button Text="Open Date Time picker" 
@@ -58,7 +58,7 @@ Note: This property automatically changes to `false` when you close the dialog b
 
 private void Button_Clicked(object sender, EventArgs e)
 {
-    this.picker.IsOpen = true;
+    this.dateTimePicker.IsOpen = true;
 }
 
 {% endhighlight %}  
@@ -83,7 +83,7 @@ Note: This property is automatically changed to `false` when you close the dialo
 {% highlight xaml tabtitle="MainPage.xaml" %}
 
 <Grid>
-    <picker:SfDateTimePicker x:Name="picker" 
+    <picker:SfDateTimePicker x:Name="dateTimePicker" 
                              Mode="RelativeDialog"
                              RelativePosition="AlignTopLeft">
     </picker:SfDateTimePicker>
@@ -102,7 +102,7 @@ Note: This property is automatically changed to `false` when you close the dialo
 
 private void Button_Clicked(object sender, EventArgs e)
 {
-    this.picker.IsOpen = true;
+    this.dateTimePicker.IsOpen = true;
 }
 
 {% endhighlight %}  
@@ -119,7 +119,7 @@ N> It is only applicable in `RelativeDialog` mode. If `no relative view` is spec
 {% highlight xaml tabtitle="XAML" hl_lines="5" %}
 
 <Grid>
-    <picker:SfDateTimePicker x:Name="picker" 
+    <picker:SfDateTimePicker x:Name="dateTimePicker" 
                              Mode="RelativeDialog"
                              RelativePosition="AlignTopLeft"
                              RelativeView = "{x:Reference pickerButton}">
@@ -140,8 +140,8 @@ N> It is only applicable in `RelativeDialog` mode. If `no relative view` is spec
 
 private void Button_Clicked(object sender, EventArgs e)
 {
-    this.picker.IsOpen = true;
-    this.picker.RelativeView = pickerButton;
+    this.dateTimePicker.IsOpen = true;
+    this.dateTimePicker.RelativeView = pickerButton;
 }
 
 {% endhighlight %}

@@ -38,16 +38,16 @@ The different types of formats are:
 {% tabs %}
 {% highlight xaml tabtitle="XAML" hl_lines="2" %}
 
-<picker:SfDateTimePicker x:Name="picker"
+<picker:SfDateTimePicker x:Name="dateTimePicker"
                          DateFormat="dd_MMM_yyyy">
 </picker:SfDateTimePicker>
 
 {% endhighlight %}
 {% highlight c# tabtitle="C#" hl_lines="2" %}
 
-SfDateTimePicker picker = new SfDateTimePicker();
-picker.DateFormat = PickerDateFormat.dd_MMM_yyyy;
-this.Content = picker;
+SfDateTimePicker dateTimePicker = new SfDateTimePicker();
+dateTimePicker.DateFormat = PickerDateFormat.dd_MMM_yyyy;
+this.Content = dateTimePicker;
 
 {% endhighlight %}  
 {% endtabs %}
@@ -93,16 +93,16 @@ The different types of formats are:
 {% tabs %}
 {% highlight xaml tabtitle="XAML" hl_lines="2" %}
 
-<picker:SfDateTimePicker x:Name="picker"
+<picker:SfDateTimePicker x:Name="dateTimePicker"
                          TimeFormat="hh_mm_ss_tt">
 </picker:SfDateTimePicker>
 
 {% endhighlight %}
 {% highlight c# tabtitle="C#" hl_lines="2" %}
 
-SfDateTimePicker picker = new SfDateTimePicker();
-picker.TimeFormat = PickerTimeFormat.hh_mm_ss_tt;
-this.Content = picker;
+SfDateTimePicker dateTimePicker = new SfDateTimePicker();
+dateTimePicker.TimeFormat = PickerTimeFormat.hh_mm_ss_tt;
+this.Content = dateTimePicker;
 
 {% endhighlight %}  
 {% endtabs %}

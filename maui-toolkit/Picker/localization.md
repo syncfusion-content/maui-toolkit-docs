@@ -40,7 +40,7 @@ public partial class App : Application
 {% endhighlight %}
 {% endtabs %}
 
-   ![Picker localization in .NET MAUI Date Picker.](images/localization/maui-picker-localization.png)
+   ![Picker localization in .NET MAUI Picker.](images/localization/maui-picker-localization.png)
 
 N>
 The required `resx` files with `Build Action` as `EmbeddedResource` (File name should contain culture code) into the `Resources` folder.
