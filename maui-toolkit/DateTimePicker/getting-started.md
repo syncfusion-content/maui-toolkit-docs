@@ -126,8 +126,8 @@ Create an instance of DateTimepicker and add it to your page.
     <picker:SfDateTimePicker />
 {% endhighlight %}
 {% highlight c# tabtitle="C#" %}
-    SfDateTimePicker picker = new SfDateTimePicker();
-    this.Content = picker;
+    SfDateTimePicker dateTimePicker = new SfDateTimePicker();
+    this.Content = dateTimePicker;
 {% endhighlight %}
 {% endtabs %}
 

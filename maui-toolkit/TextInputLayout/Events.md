@@ -12,7 +12,7 @@ keywords: .net maui text input layout, syncfusion text input layout, text input 
 
 ## PasswordVisibilityToggled Event
 
-The [PasswordVisibilityToggled](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TextInputLayout.SfTextInputLayout.html#Syncfusion_Maui_Toolkit_TextInputLayout_SfTextInputLayout_PasswordVisibilityToggled) event will be triggered whenever you toggle the password toggle icon in the `SfTextInputLayout`. The event arguments are of type [PasswordVisibilityToggledEventArgs](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TextInputLayout.PasswordVisibilityToggledEventArgs.html) and expose the following property:
+The [PasswordVisibilityToggled](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TextInputLayout.SfTextInputLayout.html#Syncfusion_Maui_Toolkit_TextInputLayout_SfTextInputLayout_PasswordVisibilityToggled) event will be triggered whenever you toggle the password toggle icon in the `Text Input Layout`. The event arguments are of type [PasswordVisibilityToggledEventArgs](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TextInputLayout.PasswordVisibilityToggledEventArgs.html) and expose the following property:
 
 * [IsPasswordVisible](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TextInputLayout.PasswordVisibilityToggledEventArgs.html#Syncfusion_Maui_Toolkit_TextInputLayout_PasswordVisibilityToggledEventArgs_IsPasswordVisible): Its value is defined based on the visibility of the password.
 

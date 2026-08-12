@@ -66,7 +66,7 @@ The following table summarizes the globalization support available in this contr
 <th align="center">Keyboard navigation</th>
 </tr>
 <tr>
-<td><a href="/maui-toolkit/bottom-sheet/overview">BottomSheet</a></td>
+<td><a href="/maui-toolkit/bottom-sheet/overview" aria-label="MAUI BottomSheet control overview">BottomSheet</a></td>
 <td align="center"><img src="../Images/not-applicable.svg" alt="not-applicable" width="16" /></td>
 <td align="center"><img src="../Images/full-support.svg" alt="full-support" width="16" /></td>
 <td align="center"><img src="../Images/not-applicable.svg" alt="not-applicable" width="16" /></td>
@@ -84,7 +84,7 @@ The following table summarizes the globalization support available in this contr
 ## See Also
 
 - [Getting Started](https://help.syncfusion.com/maui-toolkit/bottom-sheet/getting-started) shows a step‑by‑step guide to begin using the Bottom Sheet control.  
-- [Setting BottomSheet Content](https://help.syncfusion.com/maui-toolkit/bottom-sheet/bottomsheet-content) describes how to define and manage the content inside the sheet.  
+- [Setting Bottom Sheet Content](https://help.syncfusion.com/maui-toolkit/bottom-sheet/bottomsheet-content) describes how to define and manage the content inside the sheet.
 - [UI Kit](https://www.syncfusion.com/demos/maui#maui-ui-control) provides interactive demos and ready-made UI examples.  
 
 ## Resources
