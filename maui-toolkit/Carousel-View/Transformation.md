@@ -46,7 +46,7 @@ carousel.ItemTemplate = itemTemplate;
 
 {% endtabs %}
 
-![Rotation angle in .NET MAUI Carousel View.](images/net-maui-carousel-view-rotationangle.png)
+![Rotation angle in .NET MAUI Carousel.](images/net-maui-carousel-view-rotationangle.png)
 
 ## Set Gap between Selected Item
 
@@ -82,7 +82,7 @@ carousel.ItemTemplate = itemTemplate;
 
 {% endtabs %}
 
-![SelectedItemOffset in .NET MAUI Carousel View.](images/net-maui-carousel-view-selectedoffset.png)
+![SelectedItemOffset in .NET MAUI Carousel.](images/net-maui-carousel-view-selectedoffset.png)
 
 ## Set Gap between unselected Items
 
@@ -120,7 +120,7 @@ carousel.ItemTemplate = itemTemplate;
 
 {% endtabs %}
 
-![Offset in .NET MAUI Carousel View.](images/net-maui-carousel-view-offset.png)
+![Offset in .NET MAUI Carousel.](images/net-maui-carousel-view-offset.png)
 
 ## Set Scaling for Carousel Items
 
@@ -155,7 +155,7 @@ carousel.ItemTemplate = itemTemplate;
 
 {% endtabs %}
 
-![Scale offset in .NET MAUI Carousel View.](images/net-maui-carousel-view-scaleoffset.png)
+![Scale offset in .NET MAUI Carousel.](images/net-maui-carousel-view-scaleoffset.png)
 
 ## Spacing between the Items in Linear mode
 
@@ -192,4 +192,4 @@ carousel.ItemTemplate = itemTemplate;
 
 {% endtabs %}
 
-![ItemSpacing in .NET MAUI Carousel View.](images/net-maui-carousel-view-itemspacing.png)
+![ItemSpacing in .NET MAUI Carousel.](images/net-maui-carousel-view-itemspacing.png)
