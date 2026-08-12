@@ -11,11 +11,11 @@ documentation: UG
 
 ## Step 6: Populate tab items using ItemsSource
 
-The [ItemsSource](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SfTabView.html#Syncfusion_Maui_Toolkit_TabView_SfTabView_ItemsSource) property provides a flexible way to populate the `SfTabView` with data from a collection. This approach is particularly useful when you want to bind the tab items to a data source. 
+The [ItemsSource](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SfTabView.html#Syncfusion_Maui_Toolkit_TabView_SfTabView_ItemsSource) property provides a flexible way to populate the `Tab View` with data from a collection. This approach is particularly useful when you want to bind the tab items to a data source. 
 
-Items can be added to the control using the `ItemsSource` property of [SfTabView](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SfTabView.html).
+Items can be added to the control using the `ItemsSource` property of [Tab View](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SfTabView.html).
 
-Objects of any class can be provided as items for `SfTabView` using `ItemsSource`. The views corresponding to the objects can be set using the [HeaderItemTemplate](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SfTabView.html#Syncfusion_Maui_Toolkit_TabView_SfTabView_HeaderItemTemplate) for the header items and [ContentItemTemplate](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SfTabView.html#Syncfusion_Maui_Toolkit_TabView_SfTabView_ContentItemTemplate) for the content.
+Objects of any class can be provided as items for `Tab View` using `ItemsSource`. The views corresponding to the objects can be set using the [HeaderItemTemplate](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SfTabView.html#Syncfusion_Maui_Toolkit_TabView_SfTabView_HeaderItemTemplate) for the header items and [ContentItemTemplate](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SfTabView.html#Syncfusion_Maui_Toolkit_TabView_SfTabView_ContentItemTemplate) for the content.
 
 Create a **Model** class for data binding, that implements `INotifyPropertyChanged` to support property change notifications, as shown in the following code example:
 
@@ -66,7 +66,7 @@ namespace TabViewGettingStarted
 
 {% endtabs %}
 
-Next, we will create a **ViewModel** class that will serve as the data source for our `SfTabView`. This class contains an `ObservableCollection` named `TabItems`, which will hold the data for each tab. The constructor initializes this collection with sample data.
+Next, we will create a **ViewModel** class that will serve as the data source for our `Tab View`. This class contains an `ObservableCollection` named `TabItems`, which will hold the data for each tab. The constructor initializes this collection with sample data.
 
 {% tabs %}
 
@@ -113,7 +113,7 @@ namespace TabViewGettingStarted
 
 {% endtabs %}
 
-Now that we have our **Model** and **ViewModel** set up, we can bind the `TabItems` collection to the `ItemsSource` property of `SfTabView`. The following code examples demonstrate how to set up this binding in both XAML and C#:
+Now that we have our **Model** and **ViewModel** set up, we can bind the `TabItems` collection to the `ItemsSource` property of `Tab View`. The following code examples demonstrate how to set up this binding in both XAML and C#:
 
 {% tabs %}
 
@@ -322,6 +322,6 @@ namespace TabViewGettingStarted
 
 {% endtabs %}
 
-The following image demonstrates the `SfTabView` displaying custom tab headers and content using `HeaderItemTemplate` and `ContentItemTemplate`.
+The following image demonstrates the `Tab View` displaying custom tab headers and content using `HeaderItemTemplate` and `ContentItemTemplate`.
 
 ![.NET MAUI Tab View Item Template](images/ItemTemplate.png)

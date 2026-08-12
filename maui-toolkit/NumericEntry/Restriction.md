@@ -9,7 +9,7 @@ documentation: ug
 
 # Value Change Restriction in .NET MAUI Numeric Entry
 
-This section describes how to restrict the change in the value of the [NumericEntry](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericEntry.SfNumericEntry.html) properties.
+This section describes how to restrict the change in the value of the [Numeric Entry](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericEntry.SfNumericEntry.html) properties.
 
 ## Restrict null value
 
@@ -39,7 +39,7 @@ sfNumericEntry.AllowNull = false;
 {% endhighlight %}
 {% endtabs %}
 
-![.NET MAUI NumericEntry value restriction](Restriction_images/restrict_nullvalue.gif)
+![.NET MAUI Numeric Entry value restriction](Restriction_images/restrict_nullvalue.gif)
 
 ## Restrict value within range
 
@@ -67,7 +67,7 @@ sfNumericEntry.Value = 50;
 {% endhighlight %}
 {% endtabs %}
 
-![.NET MAUI NumericEntry value restriction](GettingStarted_images/value_restriction_img.png)
+![.NET MAUI Numeric Entry value restriction](GettingStarted_images/value_restriction_img.png)
 
 ## Restrict text editing
 

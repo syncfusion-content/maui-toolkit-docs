@@ -38,7 +38,7 @@ inputLayout.Content = new Entry() { Text = "1234" };
 
 {% endtabs %}
 
-![Password toggle button in .NET MAUI TextInputLayout.](images/GettingStarted/PasswordGettingStarted.png)
+![Password toggle button in .NET MAUI Text Input Layout.](images/GettingStarted/PasswordGettingStarted.png)
 
 N> Password visibility toggle can be enabled only for [Entry](https://learn.microsoft.com/en-us/dotnet/maui/user-interface/controls/entry) control.
 
@@ -70,7 +70,7 @@ inputLayout.Content = new Entry();
 
 The visibility of the helper text can be disabled by setting the [ShowHelperText](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TextInputLayout.SfTextInputLayout.html#Syncfusion_Maui_Toolkit_TextInputLayout_SfTextInputLayout_ShowHelperText) property to false. By default, it is set to true.
 
-![Helper text in .NET MAUI TextInputLayout.](images/AssistiveLabels/Maui-TextInputLayout-HelperText.jpg)
+![Helper text in .NET MAUI Text Input Layout.](images/AssistiveLabels/Maui-TextInputLayout-HelperText.jpg)
 
 ## Error message
 
@@ -103,7 +103,7 @@ inputLayout.Content = new Entry();
 
 {% endtabs %}
 
-![Error text in .NET MAUI TextInputLayout.](images/AssistiveLabels/Maui-TextInputLayout-ErrorLabel.jpg)
+![Error text in .NET MAUI Text Input Layout.](images/AssistiveLabels/Maui-TextInputLayout-ErrorLabel.jpg)
 
 N> Error validations should be done in the application level.
 
@@ -136,7 +136,7 @@ inputLayout.Content = new Entry();
 
 {% endtabs %}
 
-![.NET MAUI TextInputLayout with maximum character length.](images/AssistiveLabels/MaxCharCount.png)
+![.NET MAUI Text Input Layout with maximum character length.](images/AssistiveLabels/MaxCharCount.png)
 
 N> When character count reaches the maximum character length, the error color will be applied to hint, border, and counter label.
 
@@ -168,4 +168,4 @@ inputLayout.Content = new Entry();
 
 {% endtabs %}
 
-![Reserve space for assistive label image in .NET MAUI TextInputLayout.](images/AssistiveLabels/ReserveSpace.png)
+![Reserve space for assistive label image in .NET MAUI Text Input Layout.](images/AssistiveLabels/ReserveSpace.png)

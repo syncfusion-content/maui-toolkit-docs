@@ -50,7 +50,7 @@ inputLayout.Content = new Entry();
 
 {% endtabs %}
 
-![.NET MAUI TextInputLayout with Leading view.](images/CustomIcons/LeadingView.png)
+![.NET MAUI Text Input Layout with Leading view.](images/CustomIcons/LeadingView.png)
 
 ## Trailing  view
 
@@ -84,7 +84,7 @@ inputLayout.Content = new Entry();
 
 {% endtabs %}
 
-![.NET MAUI TextInputLayout with Trailing view.](images/CustomIcons/TrailingView.png)
+![.NET MAUI Text Input Layout with Trailing view.](images/CustomIcons/TrailingView.png)
 
 
 ## Leading and trailing view visibility customization
