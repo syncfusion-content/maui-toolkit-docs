@@ -9,7 +9,7 @@ documentation: UG
 
 # Selection Effect in .NET MAUI Effects View
 
-The [SfEffects.Selection](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.EffectsView.SfEffects.html#Syncfusion_Maui_Toolkit_EffectsView_SfEffects_Selection) provides a smooth color transition to indicate whether the [SfEffectsView](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.EffectsView.SfEffectsView.html) state is selected or not.
+The [SfEffects.Selection](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.EffectsView.SfEffects.html#Syncfusion_Maui_Toolkit_EffectsView_SfEffects_Selection) provides a smooth color transition to indicate whether the [Effects View](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.EffectsView.SfEffectsView.html) state is selected or not.
 
 {% tabs %} 
 

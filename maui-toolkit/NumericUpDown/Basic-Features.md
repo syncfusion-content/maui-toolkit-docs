@@ -11,7 +11,7 @@ documentation: ug
 
 ## Setting Placeholder Text
 
-You can prompt the user with any information using the [Placeholder](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericEntry.SfNumericEntry.html#Syncfusion_Maui_Toolkit_NumericEntry_SfNumericEntry_Placeholder) property. Placeholder text will be displayed only when the value of the [AllowNull](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericEntry.SfNumericEntry.html#Syncfusion_Maui_Toolkit_NumericEntry_SfNumericEntry_AllowNull) property is **true** and the value of the `NumericUpDown` control is **null**. The default value of the `Placeholder` property is **string.Empty** (No string will be displayed).
+You can prompt the user with any information using the [Placeholder](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericEntry.SfNumericEntry.html#Syncfusion_Maui_Toolkit_NumericEntry_SfNumericEntry_Placeholder) property. Placeholder text will be displayed only when the value of the [AllowNull](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericEntry.SfNumericEntry.html#Syncfusion_Maui_Toolkit_NumericEntry_SfNumericEntry_AllowNull) property is **true** and the value of the `Numeric UpDown` control is **null**. The default value of the `Placeholder` property is **string.Empty** (No string will be displayed).
 
 {% tabs %}
 {% highlight xaml %}
@@ -31,11 +31,11 @@ numericUpDown.VerticalOptions = LayoutOptions.Center;
 {% endhighlight %}
 {% endtabs %}
 
-![.NET MAUI NumericUpDown Placeholder Text](GettingStarted_images/placeholder_text.png)
+![.NET MAUI Numeric UpDown Placeholder Text](GettingStarted_images/placeholder_text.png)
 
 ## Placeholder Color
 
-The [PlaceholderColor](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericEntry.SfNumericEntry.html#Syncfusion_Maui_Toolkit_NumericEntry_SfNumericEntry_PlaceholderColor) property is used to customize the color of the placeholder text in the `NumericUpDown`. By default, the placeholder uses the control's default text color.
+The [PlaceholderColor](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericEntry.SfNumericEntry.html#Syncfusion_Maui_Toolkit_NumericEntry_SfNumericEntry_PlaceholderColor) property is used to customize the color of the placeholder text in the `Numeric UpDown`. By default, the placeholder uses the control's default text color.
 
 {% tabs %}
 {% highlight xaml %}
@@ -57,7 +57,7 @@ sfNumericUpDown.PlaceholderColor = Colors.Red;
 
 ## Clear button visibility 
 
-The [ShowClearButton](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericEntry.SfNumericEntry.html#Syncfusion_Maui_Toolkit_NumericEntry_SfNumericEntry_ShowClearButton) property is used to show or hide the clear button in the `NumericUpDown`. By default, visibility of the clear button is enabled.
+The [ShowClearButton](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericEntry.SfNumericEntry.html#Syncfusion_Maui_Toolkit_NumericEntry_SfNumericEntry_ShowClearButton) property is used to show or hide the clear button in the `Numeric UpDown`. By default, visibility of the clear button is enabled.
 
 N> The clear button appears only when the text box is focused and the `IsEditable` property value is set to **true**.
 {% tabs %}
@@ -82,15 +82,15 @@ sfNumericUpDown.IsEditable = true;
 
 If IsEditable is true
 
-![.NET MAUI NumericUpDown with Clear Button](GettingStarted_images/clearbutton_visible.png)
+![.NET MAUI Numeric UpDown with Clear Button](GettingStarted_images/clearbutton_visible.png)
 
 If IsEditable is false
 
-![.NET MAUI NumericUpDown without Clear Button](GettingStarted_images/clearbutton_collapsed.png)
+![.NET MAUI Numeric UpDown without Clear Button](GettingStarted_images/clearbutton_collapsed.png)
 
 ## Clear Button Color
 
-The [ClearButtonColor](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericEntry.SfNumericEntry.html#Syncfusion_Maui_Toolkit_NumericEntry_SfNumericEntry_ClearButtonColor) property is used to customize the color of the clear button in the `NumericUpDown`. By default, the clear button uses the control's default tint.
+The [ClearButtonColor](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericEntry.SfNumericEntry.html#Syncfusion_Maui_Toolkit_NumericEntry_SfNumericEntry_ClearButtonColor) property is used to customize the color of the clear button in the `Numeric UpDown`. By default, the clear button uses the control's default tint.
 
 {% tabs %}
 {% highlight xaml %}
@@ -194,11 +194,11 @@ public partial class MainPage : ContentPage
 {% endhighlight %}
 {% endtabs %}
 
-![.NET MAUI NumericUpDown with ValueChange Mode](GettingStarted_images/valuechangemode.gif)
+![.NET MAUI Numeric UpDown with ValueChange Mode](GettingStarted_images/valuechangemode.gif)
 
 ## Stroke
 
-The NumericUpDown border color can be changed by using the [Stroke](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericEntry.SfNumericEntry.html#Syncfusion_Maui_Toolkit_NumericEntry_SfNumericEntry_Stroke) property. The default `Stroke` color is **Black**.
+The Numeric UpDown border color can be changed by using the [Stroke](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericEntry.SfNumericEntry.html#Syncfusion_Maui_Toolkit_NumericEntry_SfNumericEntry_Stroke) property. The default `Stroke` color is **Black**.
 
 {% tabs %}
 {% highlight xaml %}
@@ -220,7 +220,7 @@ sfNumericUpDown.Stroke = Colors.Red;
 
 ## Border visibility
 
-The [ShowBorder](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericEntry.SfNumericEntry.html#Syncfusion_Maui_Toolkit_NumericEntry_SfNumericEntry_ShowBorder) property of [SfNumericUpDown](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericUpDown.SfNumericUpDown.html) is used to modify the visibility of the border and its default value is **true**. The following code example demonstrates how to change the border visibility,
+The [ShowBorder](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericEntry.SfNumericEntry.html#Syncfusion_Maui_Toolkit_NumericEntry_SfNumericEntry_ShowBorder) property of [Numeric UpDown](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericUpDown.SfNumericUpDown.html) is used to modify the visibility of the border and its default value is **true**. The following code example demonstrates how to change the border visibility,
 
 {% tabs %}
 {% highlight xaml %}
@@ -242,11 +242,11 @@ sfNumericUpDown.ShowBorder = false;
 
 The following image illustrates the result of the above code:
 
-![.NET MAUI NumericUpDown ShowBorder](GettingStarted_images/showborder.png)
+![.NET MAUI Numeric UpDown ShowBorder](GettingStarted_images/showborder.png)
 
 ## TextAlignment
 
-The [SfNumericUpDown](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericUpDown.SfNumericUpDown.html) provides support to customize the text alignment by using the [HorizontalTextAlignment](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericEntry.SfNumericEntry.html#Syncfusion_Maui_Toolkit_NumericEntry_SfNumericEntry_HorizontalTextAlignment) and [VerticalTextAlignment](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericEntry.SfNumericEntry.html#Syncfusion_Maui_Toolkit_NumericEntry_SfNumericEntry_VerticalTextAlignment) properties.
+The [Numeric UpDown](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericUpDown.SfNumericUpDown.html) provides support to customize the text alignment by using the [HorizontalTextAlignment](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericEntry.SfNumericEntry.html#Syncfusion_Maui_Toolkit_NumericEntry_SfNumericEntry_HorizontalTextAlignment) and [VerticalTextAlignment](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericEntry.SfNumericEntry.html#Syncfusion_Maui_Toolkit_NumericEntry_SfNumericEntry_VerticalTextAlignment) properties.
 
 N> Dynamic changes to the `HorizontalTextAlignment` property may not be functioning as expected on Android platform.
 
@@ -276,7 +276,7 @@ The following image illustrates the result of the above code:
 
 ## Text Color
 
-The [TextColor](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericEntry.SfNumericEntry.html#Syncfusion_Maui_Toolkit_NumericEntry_SfNumericEntry_TextColor) property is used to customize the color of the text in the `NumericUpDown`. By default, the control uses its standard text color.
+The [TextColor](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericEntry.SfNumericEntry.html#Syncfusion_Maui_Toolkit_NumericEntry_SfNumericEntry_TextColor) property is used to customize the color of the text in the `Numeric UpDown`. By default, the control uses its standard text color.
 
 {% tabs %}
 {% highlight xaml %}
@@ -296,7 +296,7 @@ sfNumericUpDown.TextColor = Colors.Blue;
 
 ## Font Customization
 
-The `NumericUpDown` control allows you to customize the font of the displayed text using the [FontFamily](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericEntry.SfNumericEntry.html#Syncfusion_Maui_Toolkit_NumericEntry_SfNumericEntry_FontFamily), [FontSize](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericEntry.SfNumericEntry.html#Syncfusion_Maui_Toolkit_NumericEntry_SfNumericEntry_FontSize), and [FontAttributes](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericEntry.SfNumericEntry.html#Syncfusion_Maui_Toolkit_NumericEntry_SfNumericEntry_FontAttributes) properties.
+The `Numeric UpDown` control allows you to customize the font of the displayed text using the [FontFamily](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericEntry.SfNumericEntry.html#Syncfusion_Maui_Toolkit_NumericEntry_SfNumericEntry_FontFamily), [FontSize](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericEntry.SfNumericEntry.html#Syncfusion_Maui_Toolkit_NumericEntry_SfNumericEntry_FontSize), and [FontAttributes](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericEntry.SfNumericEntry.html#Syncfusion_Maui_Toolkit_NumericEntry_SfNumericEntry_FontAttributes) properties.
 
 {% tabs %}
 {% highlight xaml %}
@@ -320,7 +320,7 @@ sfNumericUpDown.FontAttributes = FontAttributes.Bold;
 
 ## Cursor Position
 
-The [CursorPosition](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericEntry.SfNumericEntry.html#Syncfusion_Maui_Toolkit_NumericEntry_SfNumericEntry_CursorPosition) property allows you to get or set the position of the cursor in the `NumericUpDown` control. The default value of the `CursorPosition` property is **0**.
+The [CursorPosition](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericEntry.SfNumericEntry.html#Syncfusion_Maui_Toolkit_NumericEntry_SfNumericEntry_CursorPosition) property allows you to get or set the position of the cursor in the `Numeric UpDown` control. The default value of the `CursorPosition` property is **0**.
 
 {% tabs %}
 {% highlight xaml %}
@@ -340,7 +340,7 @@ sfNumericUpDown.CursorPosition = 3;
 
 ## Selection Length
 
-The [SelectionLength](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericEntry.SfNumericEntry.html#Syncfusion_Maui_Toolkit_NumericEntry_SfNumericEntry_SelectionLength) property allows you to get or set the length of the selected text in the `NumericUpDown` control. The default value of the `SelectionLength` property is **0**.
+The [SelectionLength](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericEntry.SfNumericEntry.html#Syncfusion_Maui_Toolkit_NumericEntry_SfNumericEntry_SelectionLength) property allows you to get or set the length of the selected text in the `Numeric UpDown` control. The default value of the `SelectionLength` property is **0**.
 
 {% tabs %}
 {% highlight xaml %}
@@ -364,7 +364,7 @@ sfNumericUpDown.SelectionLength = 3;
 
 The [ReturnType](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericEntry.SfNumericEntry.html#Syncfusion_Maui_Toolkit_NumericEntry_SfNumericEntry_ReturnType) property specifies the return button (e.g., Next, Done, Go) of the keyboard. It helps manage the flow between multiple input fields by defining what happens when the action button is pressed.
 
-You can define the return key type of [SfNumericUpDown](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericUpDown.SfNumericUpDown.html) by using the ReturnType property.
+You can define the return key type of [Numeric UpDown](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericUpDown.SfNumericUpDown.html) by using the ReturnType property.
 
 N> Default value of ReturnType is `Default`.
 
@@ -384,11 +384,11 @@ sfNumericUpDown.ReturnType = ReturnType.Next;
 {% endhighlight %}
 {% endtabs %}
 
-![.NET MAUI NumericUpDown ReturnType](GettingStarted_images/returntype.png)
+![.NET MAUI Numeric UpDown ReturnType](GettingStarted_images/returntype.png)
 
 ## Clear button customization
 
-The `ClearButtonPath` property allows users to set the path for customizing the appearance of the [SfNumericUpDown](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericUpDown.SfNumericUpDown.html) clear button.
+The `ClearButtonPath` property allows users to set the path for customizing the appearance of the [Numeric UpDown](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericUpDown.SfNumericUpDown.html) clear button.
 
 {% tabs %}
 {% highlight xaml %}
@@ -428,7 +428,7 @@ numericUpDown.ClearButtonPath = path;
 
 The following image illustrates the result of the above code:
 
-![.NET MAUI NumericUpDown ClearButtonPath](GettingStarted_images/clearbuttoncustomization.png)
+![.NET MAUI Numeric UpDown ClearButtonPath](GettingStarted_images/clearbuttoncustomization.png)
 
 ## Return Command and Return Command Parameter
 

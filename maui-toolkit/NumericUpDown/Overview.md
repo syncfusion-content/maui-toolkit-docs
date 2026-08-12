@@ -9,9 +9,9 @@ documentation: ug
 
 # About Syncfusion® .NET MAUI Numeric UpDown Control
 
-The Syncfusion<sup>&reg;</sup> [.NET MAUI NumericUpDown](https://www.syncfusion.com/maui-controls/maui-numericupdown) (`SfNumericUpDown`) control is used to input and adjust numeric values using increment and decrement buttons. It provides an intuitive way to modify values with built-in validation and formatting support, making it suitable for precise numeric input scenarios in .NET MAUI applications.
+The Syncfusion<sup>&reg;</sup> [.NET MAUI Numeric UpDown](https://www.syncfusion.com/maui-controls/maui-numericupdown) (`SfNumericUpDown`) control is used to input and adjust numeric values using increment and decrement buttons. It provides an intuitive way to modify values with built-in validation and formatting support, making it suitable for precise numeric input scenarios in .NET MAUI applications.
 
-![.NET MAUI NumericUpDown](Overview_images/overview_img.png)
+![.NET MAUI Numeric UpDown](Overview_images/overview_img.png)
 
 ## Business use cases
 
@@ -83,7 +83,7 @@ The following table summarizes the globalization support available in this contr
 
 ## See Also
 
-- [Getting Started](https://help.syncfusion.com/maui-toolkit/numericupdown/getting-started) shows a step‑by‑step guide to begin using the NumericUpDown control.  
+- [Getting Started](https://help.syncfusion.com/maui-toolkit/numericupdown/getting-started) shows a step‑by‑step guide to begin using the Numeric UpDown control.
 - [Formatting](https://help.syncfusion.com/maui-toolkit/numericupdown/formatting) helps configure number formatting and display.  
 - [UpDown Button](https://help.syncfusion.com/maui-toolkit/numericupdown/updown-button) describes how to use increment and decrement buttons effectively. 
 
