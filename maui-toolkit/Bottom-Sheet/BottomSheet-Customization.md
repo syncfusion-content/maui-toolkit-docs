@@ -418,7 +418,7 @@ SfBottomSheet bottomSheet = new SfBottomSheet
 
 ## Animation duration
 
-The [AnimationDuration](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.BottomSheet.SfBottomSheet.html#Syncfusion_Maui_Toolkit_BottomSheet_SfBottomSheet_AnimationDuration) property in `SfBottomSheet` is used to control the duration of the animation when opening and closing the bottom sheet. It allows you to customize how fast or slow the transition occurs.
+The [AnimationDuration](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.BottomSheet.SfBottomSheet.html#Syncfusion_Maui_Toolkit_BottomSheet_SfBottomSheet_AnimationDuration) property in `Bottom Sheet` is used to control the duration of the animation when opening and closing the bottom sheet. It allows you to customize how fast or slow the transition occurs.
 
 {% tabs %}	
 {% highlight xaml %}

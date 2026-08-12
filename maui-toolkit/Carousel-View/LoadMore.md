@@ -9,7 +9,7 @@ documentation : ug
 
 # Load More in .NET MAUI Carousel
 
-Virtualization can be achieved by using the Load More concept. This support is used to handle the numerous items in the carousel control. Items are maintained in the viewport based on the [LoadMoreItemsCount](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Carousel.SfCarousel.html#Syncfusion_Maui_Toolkit_Carousel_SfCarousel_LoadMoreItemsCount) property. The LoadMore view is added after the last item in the collection of the carousel view. When tapping the LoadMore view, the next set of items in the collection can be added to the carousel.
+Virtualization can be achieved by using the Load More concept. This support is used to handle the numerous items in the carousel control. Items are maintained in the viewport based on the [LoadMoreItemsCount](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Carousel.SfCarousel.html#Syncfusion_Maui_Toolkit_Carousel_SfCarousel_LoadMoreItemsCount) property. The LoadMore view is added after the last item in the collection of the Carousel. When tapping the LoadMore view, the next set of items in the collection can be added to the carousel.
 
 The following properties are used to achieve this support:
 
@@ -21,7 +21,7 @@ The following properties are used to achieve this support:
 
 ## Allow Load More
 
-By enabling the [AllowLoadMore](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Carousel.SfCarousel.html#Syncfusion_Maui_Toolkit_Carousel_SfCarousel_AllowLoadMore) property, the LoadMore support works in the carousel view. 
+By enabling the [AllowLoadMore](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Carousel.SfCarousel.html#Syncfusion_Maui_Toolkit_Carousel_SfCarousel_AllowLoadMore) property, the LoadMore support works in the Carousel. 
 
 N> The default value of the [AllowLoadMore](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Carousel.SfCarousel.html#Syncfusion_Maui_Toolkit_Carousel_SfCarousel_AllowLoadMore) property is **false**.
 

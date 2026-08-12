@@ -120,7 +120,7 @@ using Syncfusion.Maui.Toolkit.NumericUpDown;
 
 ## Step 5: Add the NumericUpDown component
 
-The [NumericUpDown](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericUpDown.SfNumericUpDown.html) control enables numeric input and automatically blocks any alphabetic characters.
+The [Numeric UpDown](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericUpDown.SfNumericUpDown.html) control enables numeric input and automatically blocks any alphabetic characters.
 
 **OnKeyFocus Mode:** The entered value is validated immediately as the user types.
 **OnLostFocus Mode:** The value is validated and updated when the control loses focus or when the Enter key is pressed. The value is then formatted based on the specified settings.
@@ -145,4 +145,4 @@ sfNumericUpDown.CustomFormat = "0.000";
 {% endhighlight %}
 {% endtabs %}
 
-![.NET MAUI NumericUpDown value editing](GettingStarted_images/editing_value.gif)
+![.NET MAUI Numeric UpDown value editing](GettingStarted_images/editing_value.gif)
