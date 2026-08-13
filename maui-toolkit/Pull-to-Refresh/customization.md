@@ -260,7 +260,7 @@ pullToRefresh.EndRefreshing();
 
 The `PullToRefresh` control provides support for loading any custom control as pullable content. To host the .NET MAUI `DataGrid` inside the `PullToRefresh`, follow these steps.
 <ol>
-    <li> Add the required assembly references as discussed in the <a href="https://help.syncfusion.com/maui/datagrid/getting-started">DataGrid</a> and PullToRefresh.</li>
+    <li> Add the required assembly references as discussed in the <a href="https://help.syncfusion.com/maui/datagrid/getting-started" aria-label="Open Syncfusion MAUI DataGrid Getting Started documentation">DataGrid</a> and PullToRefresh.</li>
     <li> Define the `OrdersInfo` collection in a ViewModel and implement a `Refresh Item source(int count)` method that updates it.</li>
     <li> Import PullToRefresh and DataGrid control namespace as follows.</li>
     <br/>
@@ -372,7 +372,7 @@ If you run the above sample with the TransitionMode as Push, the output will loo
 
 To host the .NET MAUI `ListView` inside the `PullToRefresh` to update items in the list while performing the pull to refresh action, follow these steps.
 <ol>
-    <li>	Add the required assembly references as discussed in the <a href="https://help.syncfusion.com/maui/listview/getting-started">ListView</a> and PullToRefresh.</li>
+    <li>	Add the required assembly references as discussed in the <a href="https://help.syncfusion.com/maui/listview/getting-started" aria-label="Open Syncfusion MAUI ListView Getting Started documentation">ListView</a> and PullToRefresh.</li>
     <li>	Define the `InboxInfos` collection in a `ListViewInboxInfoViewModel` and implement an `AddItemsRefresh(int count)` method that adds new items.</li>
     <li>	Import the SfPullToRefresh control and SfListView control namespace as follows.</li>
     <br/>
