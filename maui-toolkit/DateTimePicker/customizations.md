@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Customizations in .NET MAUI Date Time Picker Control | Syncfusion®
-description: Learn about customizations in Syncfusion<sup>&reg;</sup> .NET MAUI Date Time Picker (SfDateTimePicker) control and its basic features.
+title: Customizations in .NET MAUI Date Time Picker control | Syncfusion®
+description: Learn about customizations in Syncfusion® .NET MAUI Date Time Picker control for headers, footers, and visual styling.
 platform: maui
 control: SfDateTimePicker
 documentation: ug
 ---
 
-# Customizations in .NET MAUI Date Time Picker (SfDateTimePicker)
+# Customizations in .NET MAUI Date Time Picker control
 
 The [.NET MAUI Date Time Picker](https://www.syncfusion.com/maui-controls/maui-datetimepicker) header, column header, footer, and selection views can be customized.
 
@@ -35,13 +35,13 @@ The SfDateTimePicker control allows you to customize the header divider color by
 {% endhighlight %}
 {% highlight c# tabtitle="C#" hl_lines="4" %}
 
-SfDateTimePicker picker = new SfDateTimePicker();
-picker.HeaderView = new DateTimePickerHeaderView()
+SfDateTimePicker dateTimePicker = new SfDateTimePicker();
+dateTimePicker.HeaderView = new DateTimePickerHeaderView()
 {
     DividerColor = Colors.Red,
 };
 
-this.Content = picker;
+this.Content = dateTimePicker;
 
 {% endhighlight %}
 {% endtabs %}
@@ -68,8 +68,8 @@ Customize the header text style and background color of the `Date Time picker` u
 {% endhighlight %}
 {% highlight c# tabtitle="C#" %}
 
-SfDateTimePicker picker = new SfDateTimePicker();
-picker.HeaderView = new DateTimePickerHeaderView()
+SfDateTimePicker dateTimePicker = new SfDateTimePicker();
+dateTimePicker.HeaderView = new DateTimePickerHeaderView()
 {
     Background = Color.FromArgb("#D3D3D3"),
     TextStyle = new PickerTextStyle()
@@ -79,7 +79,7 @@ picker.HeaderView = new DateTimePickerHeaderView()
     }
 };
 
-this.Content = picker;
+this.Content = dateTimePicker;
 
 {% endhighlight %}
 {% endtabs %}
@@ -108,8 +108,8 @@ The `SfDateTimePicker` provides a custom text to its column header by setting th
 {% endhighlight %}
 {% highlight c# tabtitle="C#" %}
 
-SfDateTimePicker picker = new SfDateTimePicker();
-picker.ColumnHeaderView = new DateTimePickerColumnHeaderView()
+SfDateTimePicker dateTimePicker = new SfDateTimePicker();
+dateTimePicker.ColumnHeaderView = new DateTimePickerColumnHeaderView()
 {
     DayHeaderText = "Day Column",
     MonthHeaderText = "Month Column",
@@ -121,7 +121,7 @@ picker.ColumnHeaderView = new DateTimePickerColumnHeaderView()
     MeridiemHeaderText = "Meridiem Column", 
 };
 
-this.Content = picker;
+this.Content = dateTimePicker;
 
 {% endhighlight %}
 {% endtabs %}
@@ -146,13 +146,13 @@ The SfDateTimePicker control allows you to customize the column header divider c
 
 {% highlight c# tabtitle="C#" %}
 
-SfDateTimePicker picker = new SfDateTimePicker();
-picker.ColumnHeaderView = new DateTimePickerColumnHeaderView()
+SfDateTimePicker dateTimePicker = new SfDateTimePicker();
+dateTimePicker.ColumnHeaderView = new DateTimePickerColumnHeaderView()
 {
     DividerColor = Colors.Red,
 };
 
-this.Content = picker;
+this.Content = dateTimePicker;
 
 {% endhighlight %}
 {% endtabs %}
@@ -179,8 +179,8 @@ Customize the column header view text style and background color of the `Date Ti
 {% endhighlight %}
 {% highlight c# tabtitle="C#" %}
 
-SfDateTimePicker picker = new SfDateTimePicker();
-picker.ColumnHeaderView = new DateTimePickerColumnHeaderView()
+SfDateTimePicker dateTimePicker = new SfDateTimePicker();
+dateTimePicker.ColumnHeaderView = new DateTimePickerColumnHeaderView()
 {
     Background = Color.FromArgb("#D3D3D3"),
     TextStyle = new PickerTextStyle()
@@ -190,7 +190,7 @@ picker.ColumnHeaderView = new DateTimePickerColumnHeaderView()
     },
 };
 
-this.Content = picker;
+this.Content = dateTimePicker;
 
 {% endhighlight %}
 {% endtabs %}
@@ -208,7 +208,7 @@ In the SfDateTimePicker control, validation buttons (OK and Cancel) can be custo
 {% tabs %}
 {% highlight xaml tabtitle="XAML" %}
 
-<picker:SfDateTimePicker x:Name="picker" >
+<picker:SfDateTimePicker x:Name="dateTimePicker" >
     <picker:SfDateTimePicker.FooterView >
         <picker:PickerFooterView Height="40" OkButtonText="Save"
                                  CancelButtonText="Exit"/>
@@ -218,15 +218,15 @@ In the SfDateTimePicker control, validation buttons (OK and Cancel) can be custo
 {% endhighlight %}
 {% highlight c# tabtitle="C#" %}
 
-SfDateTimePicker picker = new SfDateTimePicker();
-picker.FooterView = new PickerFooterView()
+SfDateTimePicker dateTimePicker = new SfDateTimePicker();
+dateTimePicker.FooterView = new PickerFooterView()
 {
     Height = 40,
     OkButtonText = "Save",
     CancelButtonText = "Exit",
 };
 
-this.Content = picker;
+this.Content = dateTimePicker;
 
 {% endhighlight %}
 {% endtabs %}
@@ -240,7 +240,7 @@ The SfDateTimePicker control allows you to customize the footer divider color by
 {% tabs %}
 {% highlight xaml tabtitle="XAML" %}
 
-<picker:SfDateTimePicker x:Name="picker" >
+<picker:SfDateTimePicker x:Name="dateTimePicker" >
     <picker:SfDateTimePicker.FooterView >
         <picker:PickerFooterView DividerColor="Red" />
     </picker:SfDateTimePicker.FooterView>
@@ -249,13 +249,13 @@ The SfDateTimePicker control allows you to customize the footer divider color by
 {% endhighlight %}
 {% highlight c# tabtitle="C#" %}
 
-SfDateTimePicker picker = new SfDateTimePicker();
-picker.FooterView = new PickerFooterView()
+SfDateTimePicker dateTimePicker = new SfDateTimePicker();
+dateTimePicker.FooterView = new PickerFooterView()
 {
     DividerColor = Colors.Red,
 };
 
-this.Content = picker;
+this.Content = dateTimePicker;
 
 {% endhighlight %}
 {% endtabs %}
@@ -269,7 +269,7 @@ Customize the footer text style and background color of the `Date Time Picker` u
 {% tabs %}
 {% highlight xaml tabtitle="XAML" %}
 
-<picker:SfDateTimePicker x:Name="picker" >
+<picker:SfDateTimePicker x:Name="dateTimePicker" >
     <picker:SfDateTimePicker.FooterView >
         <picker:PickerFooterView Background="#D3D3D3">
             <picker:PickerFooterView.TextStyle >
@@ -282,8 +282,8 @@ Customize the footer text style and background color of the `Date Time Picker` u
 {% endhighlight %}
 {% highlight c# tabtitle="C#" %}
 
-SfDateTimePicker picker = new SfDateTimePicker();
-picker.FooterView = new PickerFooterView()
+SfDateTimePicker dateTimePicker = new SfDateTimePicker();
+dateTimePicker.FooterView = new PickerFooterView()
 {
     Background = Color.FromArgb("#D3D3D3"),
     TextStyle = new PickerTextStyle()
@@ -293,7 +293,7 @@ picker.FooterView = new PickerFooterView()
     }
 };
 
-this.Content = picker;
+this.Content = dateTimePicker;
 
 {% endhighlight %}
 {% endtabs %}
@@ -311,7 +311,7 @@ In the SfDateTimePicker control, the corner radius, stroke , and padding can be 
 {% tabs %}
 {% highlight xaml tabtitle="XAML" %}
 
-<picker:SfDateTimePicker x:Name="picker" >
+<picker:SfDateTimePicker x:Name="dateTimePicker" >
     <picker:SfDateTimePicker.SelectionView >
         <picker:PickerSelectionView CornerRadius="10" Stroke="#36454F" Padding="10, 5, 10, 5" Background="#808080" />
     </picker:SfDateTimePicker.SelectionView>
@@ -320,8 +320,8 @@ In the SfDateTimePicker control, the corner radius, stroke , and padding can be 
 {% endhighlight %}
 {% highlight c# tabtitle="C#" %}
 
-SfDateTimePicker picker = new SfDateTimePicker();
-picker.SelectionView = new PickerSelectionView()
+SfDateTimePicker dateTimePicker = new SfDateTimePicker();
+dateTimePicker.SelectionView = new PickerSelectionView()
 {
     CornerRadius = 10,
     Stroke = Color.FromArgb("#36454F"),
@@ -329,7 +329,7 @@ picker.SelectionView = new PickerSelectionView()
     Background = Color.FromArgb("#808080"),
 };
 
-this.Content = picker;
+this.Content = dateTimePicker;
 
 {% endhighlight %}
 {% endtabs %}
@@ -343,7 +343,7 @@ Customize the selected view text style of the `Date Time Picker` using the [Sele
 {% tabs %}
 {% highlight xaml tabtitle="XAML" %}
 
-<picker:SfDateTimePicker x:Name="picker" >
+<picker:SfDateTimePicker x:Name="dateTimePicker" >
     <picker:SfDateTimePicker.SelectedTextStyle >
         <picker:PickerTextStyle FontSize="15" TextColor="White"/>
     </picker:SfDateTimePicker.SelectedTextStyle>
@@ -352,8 +352,8 @@ Customize the selected view text style of the `Date Time Picker` using the [Sele
 {% endhighlight %}
 {% highlight c# tabtitle="C#" %}
 
-SfDateTimePicker picker = new SfDateTimePicker();
-picker.SelectedTextStyle = new PickerTextStyle()
+SfDateTimePicker dateTimePicker = new SfDateTimePicker();
+dateTimePicker.SelectedTextStyle = new PickerTextStyle()
 {
     TextStyle = new PickerTextStyle()
     {
@@ -362,7 +362,7 @@ picker.SelectedTextStyle = new PickerTextStyle()
     }
 };
 
-this.Content = picker;
+this.Content = dateTimePicker;
 
 {% endhighlight %}
 {% endtabs %}
@@ -376,16 +376,16 @@ Customize the column divider color using the [ColumnDividerColor](https://help.s
 {% tabs %}
 {% highlight xaml tabtitle="XAML" %}
 
-<picker:SfDateTimePicker x:Name="picker"
+<picker:SfDateTimePicker x:Name="dateTimePicker"
                          ColumnDividerColor="Red">
 </picker:SfDateTimePicker>
 
 {% endhighlight %}
 {% highlight c# tabtitle="C#" %}
 
-SfDateTimePicker picker = new SfDateTimePicker();
-picker.ColumnDividerColor = Colors.Red;
-this.Content = picker;
+SfDateTimePicker dateTimePicker = new SfDateTimePicker();
+dateTimePicker.ColumnDividerColor = Colors.Red;
+this.Content = dateTimePicker;
 
 {% endhighlight %}
 {% endtabs %}

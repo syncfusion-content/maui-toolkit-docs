@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Formatting in .NET MAUI Date Time Picker Control | Syncfusion®
-description: Learn about formatting in Syncfusion<sup>&reg;</sup> .NET MAUI Date Time Picker (SfDateTimePicker) control and its basic features.
+title: Formatting in .NET MAUI Date Time Picker control | Syncfusion®
+description: Learn about formatting in Syncfusion® .NET MAUI Date Time Picker control to customize date and time display.
 platform: maui
 control: SfDateTimePicker
 documentation: ug
 ---
 
-# Formatting in .NET MAUI Date Time Picker (SfDateTimePicker)
+# Formatting in .NET MAUI Date Time Picker control
 Format is a way to represent the date and time value in a different string format.
 
 ## Date format
@@ -38,16 +38,16 @@ The different types of formats are:
 {% tabs %}
 {% highlight xaml tabtitle="XAML" hl_lines="2" %}
 
-<picker:SfDateTimePicker x:Name="picker"
+<picker:SfDateTimePicker x:Name="dateTimePicker"
                          DateFormat="dd_MMM_yyyy">
 </picker:SfDateTimePicker>
 
 {% endhighlight %}
 {% highlight c# tabtitle="C#" hl_lines="2" %}
 
-SfDateTimePicker picker = new SfDateTimePicker();
-picker.DateFormat = PickerDateFormat.dd_MMM_yyyy;
-this.Content = picker;
+SfDateTimePicker dateTimePicker = new SfDateTimePicker();
+dateTimePicker.DateFormat = PickerDateFormat.dd_MMM_yyyy;
+this.Content = dateTimePicker;
 
 {% endhighlight %}  
 {% endtabs %}
@@ -93,16 +93,16 @@ The different types of formats are:
 {% tabs %}
 {% highlight xaml tabtitle="XAML" hl_lines="2" %}
 
-<picker:SfDateTimePicker x:Name="picker"
+<picker:SfDateTimePicker x:Name="dateTimePicker"
                          TimeFormat="hh_mm_ss_tt">
 </picker:SfDateTimePicker>
 
 {% endhighlight %}
 {% highlight c# tabtitle="C#" hl_lines="2" %}
 
-SfDateTimePicker picker = new SfDateTimePicker();
-picker.TimeFormat = PickerTimeFormat.hh_mm_ss_tt;
-this.Content = picker;
+SfDateTimePicker dateTimePicker = new SfDateTimePicker();
+dateTimePicker.TimeFormat = PickerTimeFormat.hh_mm_ss_tt;
+this.Content = dateTimePicker;
 
 {% endhighlight %}  
 {% endtabs %}

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Customize the Tab Bar in .NET MAUI Tab View (SfTabView) | Syncfusion®
+title: Customize the Tab Bar in .NET MAUI Tab View | Syncfusion®
 description: Learn how to customize tab bar layout, header appearance, spacing, alignment, and background in Syncfusion® .NET MAUI Tab View (SfTabView) control.
 platform: maui-toolkit
 control: SfTabView
 documentation: UG
 ---
 
-# Customize the Tab Bar in .NET MAUI Tab View (SfTabView)
+# Customize the Tab Bar in .NET MAUI Tab View
 
 ## Tab width options
 
@@ -121,7 +121,7 @@ tabView.HeaderHorizontalTextAlignment = TextAlignment.Center;
 
 ## Tab header alignment 
 
-The .NET MAUI TabView allows header position customization using the [TabHeaderAlignment](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SfTabView.html#Syncfusion_Maui_Toolkit_TabView_SfTabView_TabHeaderAlignment) property for enhanced layout flexibility. The default position is Start. Supported values include:
+The .NET MAUI Tab View allows header position customization using the [TabHeaderAlignment](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SfTabView.html#Syncfusion_Maui_Toolkit_TabView_SfTabView_TabHeaderAlignment) property for enhanced layout flexibility. The default position is Start. Supported values include:
 
 By default, the header is positioned at the Start. This property supports the following values:
 

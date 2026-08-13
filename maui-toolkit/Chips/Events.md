@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Events in .NET MAUI Chips control | Syncfusion<sup>®</sup>
-description: Learn about Events support in Syncfusion<sup>®</sup> Toolkit for .NET MAUI Chips control, its elements and more.
+title: Events in .NET MAUI Chips | Syncfusion®
+description: Learn about Events support in the Syncfusion® Toolkit .NET MAUI Chips control, its elements and more.
 platform: maui-toolkit
 control: Chips
 documentation: ug
@@ -13,27 +13,27 @@ documentation: ug
 
 The [SelectionChanging](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Chips.SfChipGroup.html#Syncfusion_Maui_Toolkit_Chips_SfChipGroup_SelectionChanging) event is triggered before the Chip is selected. You can restrict a chip from being selected, by canceling this event, by setting `Cancel` property in the event argument to true. The argument contains the following information,
 
- * [AddedItem] - Used to get the selected chip from `SfChipGroup`.
- * [RemovedItem] - Used to get the previous selected or deselected chip from `SfChipGroup`.
+ * [AddedItem] - Used to get the selected chip from `Chip Group`.
+ * [RemovedItem] - Used to get the previous selected or deselected chip from `Chip Group`.
  * [Cancel] - Used to set the value indicating whether the selection should be canceled. 
 
 ## SelectionChanged Event
 The [SelectionChanged](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Chips.SfChipGroup.html#Syncfusion_Maui_Toolkit_Chips_SfChipGroup_SelectionChanged) event triggered after a chip is selected. The argument contains the following information,
 
- * [AddedItem] - Get the selected chip from `SfChipGroup`.
- * [RemovedItem] - Get the previous selected or deselected chip from `SfChipGroup`.
+ * [AddedItem] - Get the selected chip from `Chip Group`.
+ * [RemovedItem] - Get the previous selected or deselected chip from `Chip Group`.
 
 N>  Currently, [Choice](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Chips.SfChipsType.html#Syncfusion_Maui_Toolkit_Chips_SfChipsType_Choice) and [Filter](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Chips.SfChipsType.html#Syncfusion_Maui_Toolkit_Chips_SfChipsType_Filter) types are only supported for `SelectionChanging` and `SelectionChanged` events.
 
 ##  ChipClicked
 
-The [ChipClicked](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Chips.SfChipGroup.html#Syncfusion_Maui_Toolkit_Chips_SfChipGroup_ChipClicked) event is triggered when a chip clicked in the [SfChipGroup]. The event argument is type of `EventArgs`.
+The [ChipClicked](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Chips.SfChipGroup.html#Syncfusion_Maui_Toolkit_Chips_SfChipGroup_ChipClicked) event is triggered when a chip clicked in the [Chip Group]. The event argument is type of `EventArgs`.
 
 ## ItemRemoved Event
 
-The [ItemRemoved](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Chips.SfChipGroup.html#Syncfusion_Maui_Toolkit_Chips_SfChipGroup_ItemRemoved) event is triggered after the chip is removed from `SfChipGroup`. The argument contains the following information,
+The [ItemRemoved](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Chips.SfChipGroup.html#Syncfusion_Maui_Toolkit_Chips_SfChipGroup_ItemRemoved) event is triggered after the chip is removed from `Chip Group`. The argument contains the following information,
 
-* [RemovedItem] - Get the removed chip item from the `SfChipGroup`.
+* [RemovedItem] - Get the removed chip item from the `Chip Group`.
 
 N> The [ItemRemoved] event is supported only in the `Input` type.
 

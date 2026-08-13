@@ -1,14 +1,14 @@
 ---
 layout: post
 title: Getting Started with .NET MAUI Text Input Layout | Syncfusion®
-description: Learn here about getting started with Syncfusion<sup>®</sup> .NET MAUI Text Input Layout (SfTextInputLayout) control, its elements and more.
+description: Learn how to get started with Syncfusion® .NET MAUI Text Input Layout (SfTextInputLayout) control, its elements and more.
 platform: maui-toolkit
 control: SfTextInputLayout
 documentation: ug
 keywords: .net maui text input layout, syncfusion text input layout, text input layout maui, .net maui hint label.
 ---
 
-# Getting Started with .NET MAUI TextInputLayout
+# Getting Started with .NET MAUI Text Input Layout
 
 This section guides you through setting up and configuring a [Text Input Layout](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TextInputLayout.SfTextInputLayout.html) in your .NET MAUI application. Follow the steps below to add a basic TextInputLayout to your project.
 
@@ -151,6 +151,6 @@ When focusing on the input view, the hint label will be moved to the top positio
 
 Run the project, and check if you get the following output to ensure that the project has been appropriately configured to add the text input layout control.
 
-![Hint text in .NET MAUI TextInputLayout.](images/GettingStarted/GettingStarted.png)
+![Hint text in .NET MAUI Text Input Layout.](images/GettingStarted/GettingStarted.png)
 
 You can download the Text Input Layout Getting Started sample from [here](https://github.com/SyncfusionExamples/getting-started-with-the-dotnet-maui-text-input-layout).

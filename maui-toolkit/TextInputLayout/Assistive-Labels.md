@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Assistive Labels in .NET MAUI Text Input Layout control | Syncfusion<sup>®</sup>
-description: Learn here all about Assistive Labels support in Syncfusion<sup>®</sup> .NET MAUI Text Input Layout (SfTextInputLayout) control and more.
+title: Assistive Labels in .NET MAUI Text Input Layout | Syncfusion®
+description: Learn here all about Assistive Labels support in the Syncfusion® .NET MAUI Text Input Layout control and more.
 platform: maui-toolkit
 control: SfTextInputLayout
 documentation: ug
 keywords: .net maui text input layout, syncfusion text input layout, text input layout maui, .net maui error label, .net maui hint label.
 ---
 
-# Assistive Labels in .NET MAUI Text Input Layout (SfTextInputLayout)
+# Assistive Labels in .NET MAUI Text Input Layout
 
 Assistive labels provide additional information about text entered in the input view controls.
 
@@ -38,7 +38,7 @@ inputLayout.Content = new Entry() { Text = "1234" };
 
 {% endtabs %}
 
-![Password toggle button in .NET MAUI TextInputLayout.](images/GettingStarted/PasswordGettingStarted.png)
+![Password toggle button in .NET MAUI Text Input Layout.](images/GettingStarted/PasswordGettingStarted.png)
 
 N> Password visibility toggle can be enabled only for [Entry](https://learn.microsoft.com/en-us/dotnet/maui/user-interface/controls/entry) control.
 
@@ -70,7 +70,7 @@ inputLayout.Content = new Entry();
 
 The visibility of the helper text can be disabled by setting the [ShowHelperText](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TextInputLayout.SfTextInputLayout.html#Syncfusion_Maui_Toolkit_TextInputLayout_SfTextInputLayout_ShowHelperText) property to false. By default, it is set to true.
 
-![Helper text in .NET MAUI TextInputLayout.](images/AssistiveLabels/Maui-TextInputLayout-HelperText.jpg)
+![Helper text in .NET MAUI Text Input Layout.](images/AssistiveLabels/Maui-TextInputLayout-HelperText.jpg)
 
 ## Error message
 
@@ -103,7 +103,7 @@ inputLayout.Content = new Entry();
 
 {% endtabs %}
 
-![Error text in .NET MAUI TextInputLayout.](images/AssistiveLabels/Maui-TextInputLayout-ErrorLabel.jpg)
+![Error text in .NET MAUI Text Input Layout.](images/AssistiveLabels/Maui-TextInputLayout-ErrorLabel.jpg)
 
 N> Error validations should be done in the application level.
 
@@ -136,7 +136,7 @@ inputLayout.Content = new Entry();
 
 {% endtabs %}
 
-![.NET MAUI TextInputLayout with maximum character length.](images/AssistiveLabels/MaxCharCount.png)
+![.NET MAUI Text Input Layout with maximum character length.](images/AssistiveLabels/MaxCharCount.png)
 
 N> When character count reaches the maximum character length, the error color will be applied to hint, border, and counter label.
 
@@ -168,4 +168,4 @@ inputLayout.Content = new Entry();
 
 {% endtabs %}
 
-![Reserve space for assistive label image in .NET MAUI TextInputLayout.](images/AssistiveLabels/ReserveSpace.png)
+![Reserve space for assistive label image in .NET MAUI Text Input Layout.](images/AssistiveLabels/ReserveSpace.png)

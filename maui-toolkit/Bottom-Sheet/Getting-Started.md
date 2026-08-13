@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting started with .NET MAUI Bottom Sheet Control | Syncfusion®
-description: Learn how to get started with the Syncfusion® .NET MAUI Bottom Sheet (SfBottomSheet) control in your cross-platform applications.
+title: Getting Started with .NET MAUI Bottom Sheet Control | Syncfusion®
+description: Learn how to get started with the Syncfusion® .NET MAUI Bottom Sheet (SfBottomSheet) control and more.
 platform: maui-toolkit
 control: SfBottomSheet
 documentation: UG
@@ -256,7 +256,7 @@ private void OnListViewItemTapped(object? sender, ItemTappedEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-N> Using [Content](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.BottomSheet.SfBottomSheet.html#Syncfusion_Maui_Toolkit_BottomSheet_SfBottomSheet_Content), place the main content inside the Bottom Sheet's `Content` property. Without using `Content`, place the main content outside the [BottomSheet](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.BottomSheet.SfBottomSheet.html), ensuring that the Bottom Sheet is the last element in the Grid layout.
+N> Using [Content](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.BottomSheet.SfBottomSheet.html#Syncfusion_Maui_Toolkit_BottomSheet_SfBottomSheet_Content), place the main content inside the Bottom Sheet's `Content` property. Without using `Content`, place the main content outside the [Bottom Sheet](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.BottomSheet.SfBottomSheet.html), ensuring that the Bottom Sheet is the last element in the Grid layout.
 
 ![Getting Started with Bottom Sheet](images/gettingStarted.png)
 

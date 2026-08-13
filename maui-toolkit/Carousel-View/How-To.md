@@ -1,13 +1,13 @@
 ---
 layout : post
-title: Interaction in Syncfusion<sup>®</sup> Carousel Control in .NET MAUI.
-description: Learn how to perform an operation while changing the carouselItem or Collection in Carousel for .NET MAUI.
+title: How to Perform Actions in .NET MAUI Carousel | Syncfusion®
+description: Learn how to perform an operation while changing the CarouselItem or collection in .NET MAUI Carousel.
 platform : maui
 control : Carousel
 documentation : ug
 ---
 
-# How to perform an operation while changing the CarouselItem?
+# How to Perform an Action When an Item Changes in .NET MAUI Carousel
 
 We can perform the operation while changing the CarouselItem using the [SelectionChanged](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Carousel.SfCarousel.html#Syncfusion_Maui_Toolkit_Carousel_SfCarousel_SelectionChanged) event. The SelectionChanged event returns the OldItem and selected NewItem.
 

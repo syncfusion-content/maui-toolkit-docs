@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Supported Input Views in .NET MAUI Text Input Layout | Syncfusion
-description: Learn here all about Supported Input Views support in the Syncfusion<sup>®</sup> .NET MAUI Text Input Layout (SfTextInputLayout) control and more.
+title: Supported Input Views in .NET MAUI Text Input Layout | Syncfusion®
+description: Learn here all about supported input views in the Syncfusion® .NET MAUI Text Input Layout (SfTextInputLayout) control and more.
 platform: maui-toolkit
 control: SfTextInputLayout
 documentation: ug
 keywords: .net maui text input layout, syncfusion text input layout, text input layout maui.
 ---
 
-# Supported Input Views in .NET MAUI TextInputLayout (SfTextInputLayout)
+# Supported Input Views in .NET MAUI Text Input Layout
 
 Input views can be added to the text input layout control by setting the [Content](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SfContentView.html#Syncfusion_Maui_Toolkit_SfContentView_Content) property.
 
@@ -40,7 +40,7 @@ inputLayout.Content = new Entry();
 
 {% endtabs %}
 
-![Entry in .NET MAUI TextInputLayout.](images/SupportedInputViews/Entry.png)
+![Entry in .NET MAUI Text Input Layout.](images/SupportedInputViews/Entry.png)
 
 ## Editor
 
@@ -69,7 +69,7 @@ inputLayout.Content = new Editor();
 
 {% endtabs %}
 
-![Editor in .NET MAUI TextInputLayout.](images/SupportedInputViews/Editor.jpg)
+![Editor in .NET MAUI Text Input Layout.](images/SupportedInputViews/Editor.jpg)
 
 ## Picker
 
@@ -111,7 +111,7 @@ inputLayout.Content = picker;
 {% endhighlight %}
 {% endtabs %}
 
-![Picker in .NET MAUI TextInputLayout.](images/SupportedInputViews/Picker.jpg)
+![Picker in .NET MAUI Text Input Layout.](images/SupportedInputViews/Picker.jpg)
 
 N> Windows platform will not support `.NET MAUI Picker` as input view of the text input layout.
 
@@ -142,7 +142,7 @@ inputLayout.Content = new TimePicker();
 {% endhighlight %}
 {% endtabs %}
 
-![TimePicker in .NET MAUI TextInputLayout.](images/SupportedInputViews/TimePicker.jpg)
+![TimePicker in .NET MAUI Text Input Layout.](images/SupportedInputViews/TimePicker.jpg)
 
 N> Windows platform will not support `.NET MAUI TimePicker` as input view of the text input layout.
 
@@ -173,7 +173,7 @@ inputLayout.Content = new DatePicker();
 {% endhighlight %}
 {% endtabs %}
 
-![DatePicker in .NET MAUI TextInputLayout.](images/SupportedInputViews/DatePicker.jpg)
+![DatePicker in .NET MAUI Text Input Layout.](images/SupportedInputViews/DatePicker.jpg)
 
 N> Windows platform will not support `.NET MAUI DatePicker` as input view of the text input layout.
 

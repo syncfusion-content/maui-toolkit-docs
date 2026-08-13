@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Events in .NET MAUI Date Picker Control | Syncfusion<sup>&reg;</sup>
-description: Learn about date picker events in Syncfusion<sup>&reg;</sup> .NET MAUI Date Picker (SfDatePicker) control and its basic features.
+title: Events in .NET MAUI Date Picker control | Syncfusion®
+description: Learn about events in Syncfusion® .NET MAUI Date Picker control for SelectionChanged and user interactions.
 platform: maui
 control: SfDatePicker
 documentation: ug
 ---
 
-# Events in .NET MAUI Date Picker (SfDatePicker)
+# Events in .NET MAUI Date Picker control
 
 ## SelectionChanged
 
@@ -24,7 +24,7 @@ The [SelectionChanged](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Ma
 
 {% highlight xaml tabtitle="MainPage.xaml" hl_lines="2" %}
 
-<picker:SfDatePicker x:Name="picker"
+<picker:SfDatePicker x:Name="datePicker"
                      SelectionChanged="OnDatePickerSelectionChanged">
 </picker:SfDatePicker>
 
@@ -32,7 +32,7 @@ The [SelectionChanged](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Ma
 
 {% highlight c# tabtitle="MainPage.xaml.cs" hl_lines="1" %}
 
-this.picker.SelectionChanged += this.OnDatePickerSelectionChanged;
+this.datePicker.SelectionChanged += this.OnDatePickerSelectionChanged;
 
 private void OnDatePickerSelectionChanged(object sender, DatePickerSelectionChangedEventArgs e)
 {
@@ -65,7 +65,7 @@ The [Opened](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit
 {% tabs %}
 {% highlight xaml tabtitle="MainPage.xaml" hl_lines="2" %}
 
-<picker:SfDatePicker x:Name="picker"
+<picker:SfDatePicker x:Name="datePicker"
                      Opened="OnDatePickerPopUpOpened">
 </picker:SfDatePicker>
 
@@ -73,12 +73,12 @@ The [Opened](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit
 
 {% highlight c# tabtitle="MainPage.xaml.cs" hl_lines="1" %}
 
-this.picker.Opened += this.OnDatePickerPopUpOpened;
+this.datePicker.Opened += this.OnDatePickerPopUpOpened;
 
 private void OnDatePickerPopUpOpened(object sender, EventArgs e)
 {
     // If you need to open the picker, set IsOpen property to true.
-    this.picker.IsOpen = true;
+    this.datePicker.IsOpen = true;
 }
 
 {% endhighlight %}
@@ -98,7 +98,7 @@ The [Closing](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolki
 {% tabs %}
 {% highlight xaml tabtitle="MainPage.xaml" hl_lines="2" %}
 
-<picker:SfDatePicker x:Name="picker"
+<picker:SfDatePicker x:Name="datePicker"
                      Closing="OnDatePickerPopUpClosing">
 </picker:SfDatePicker>
 
@@ -106,7 +106,7 @@ The [Closing](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolki
 
 {% highlight c# tabtitle="MainPage.xaml.cs" hl_lines="1" %}
 
-this.picker.Closing += this.OnDatePickerPopUpClosing;
+this.datePicker.Closing += this.OnDatePickerPopUpClosing;
 
 private void OnDatePickerPopUpClosing(object sender, CancelEventArgs e)
 {
@@ -130,7 +130,7 @@ The [Closed](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit
 
 {% highlight xaml tabtitle="MainPage.xaml" hl_lines="2" %}
 
-<picker:SfDatePicker x:Name="picker"
+<picker:SfDatePicker x:Name="datePicker"
                      Closed="OnDatePickerPopUpClosed">
 </picker:SfDatePicker>
 
@@ -138,12 +138,12 @@ The [Closed](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit
 
 {% highlight c# tabtitle="MainPage.xaml.cs" hl_lines="1" %}
 
-this.picker.Closed += this.OnDatePickerPopUpClosed;
+this.datePicker.Closed += this.OnDatePickerPopUpClosed;
 
 private void OnDatePickerPopUpClosed(object sender, EventArgs e)
 {
     // If you need to close the picker, set the IsOpen property to false.
-    this.picker.IsOpen = false;
+    this.datePicker.IsOpen = false;
 }
 
 {% endhighlight %}
@@ -169,7 +169,7 @@ The `SfDatePicker` footer view provides two events. These events are not applica
 
 {% highlight xaml tabtitle="MainPage.xaml" hl_lines="2" %}
 
-<picker:SfDatePicker x:Name="picker"
+<picker:SfDatePicker x:Name="datePicker"
                      OkButtonClicked="OnDatePickerOkButtonClicked">
 </picker:SfDatePicker>
 
@@ -177,7 +177,7 @@ The `SfDatePicker` footer view provides two events. These events are not applica
 
 {% highlight c# tabtitle="MainPage.xaml.cs" hl_lines="1" %}
 
-this.picker.OkButtonClicked += this.OnDatePickerOkButtonClicked;
+this.datePicker.OkButtonClicked += this.OnDatePickerOkButtonClicked;
 
 private void OnDatePickerOkButtonClicked(object sender, EventArgs e)
 {
@@ -200,7 +200,7 @@ private void OnDatePickerOkButtonClicked(object sender, EventArgs e)
 
 {% highlight xaml tabtitle="MainPage.xaml" hl_lines="2" %}
 
-<picker:SfDatePicker x:Name="picker"
+<picker:SfDatePicker x:Name="datePicker"
                      CancelButtonClicked="OnDatePickerCancelButtonClicked">
 </picker:SfDatePicker>
 
@@ -208,7 +208,7 @@ private void OnDatePickerOkButtonClicked(object sender, EventArgs e)
 
 {% highlight c# tabtitle="MainPage.xaml.cs" hl_lines="1" %}
 
-this.picker.CancelButtonClicked += this.OnDatePickerCancelButtonClicked;
+this.datePicker.CancelButtonClicked += this.OnDatePickerCancelButtonClicked;
 
 private void OnDatePickerCancelButtonClicked(object sender, EventArgs e)
 {
@@ -228,7 +228,7 @@ The SfDatePicker includes a built-in event called `SelectionChanged` that is tri
 {% tabs %}
 {% highlight xaml tabtitle="MainPage.xaml" hl_lines="2" %}
 
-<picker:SfDatePicker x:Name="picker"
+<picker:SfDatePicker x:Name="datePicker"
                     SelectionChangedCommand="{Binding SelectionChangedCommand}">
 <ContentPage.BindingContext>
     <local:ViewModel/>
@@ -261,7 +261,7 @@ The SfDatePicker includes a built-in event called `OkButtonClicked`, which is tr
 {% tabs %}
 {% highlight xaml tabtitle="MainPage.xaml" hl_lines="2" %}
 
-<picker:SfDatePicker x:Name="picker"
+<picker:SfDatePicker x:Name="datePicker"
                     AcceptCommand="{Binding AcceptCommand}">
 <ContentPage.BindingContext>
     <local:ViewModel/>
@@ -294,7 +294,7 @@ The SfDatePicker includes a built-in event called `CancelButtonClicked`, which i
 {% tabs %}
 {% highlight xaml tabtitle="MainPage.xaml" hl_lines="2" %}
 
-<picker:SfDatePicker x:Name="picker"
+<picker:SfDatePicker x:Name="datePicker"
                     DeclineCommand="{Binding DeclineCommand}">
 <ContentPage.BindingContext>
     <local:ViewModel/>

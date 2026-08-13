@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Value Change Restriction in .NET MAUI NumericEntry | Syncfusion<sup>®</sup>
-description: Learn here all about how to restrict the value change in Syncfusion<sup>®</sup> .NET MAUI NumericEntry (SfNumericEntry) control and more.
+title: Value Change Restriction in .NET MAUI Numeric Entry | Syncfusion®
+description: Learn here all about how to restrict the value change in Syncfusion® .NET MAUI Numeric Entry (SfNumericEntry) control and more.
 platform: MAUI
 control:  SfNumericEntry
 documentation: ug
 ---
 
-# Value change restriction in .NET MAUI NumericEntry
+# Value Change Restriction in .NET MAUI Numeric Entry
 
-This section describes how to restrict the change in the value of the [NumericEntry](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericEntry.SfNumericEntry.html) properties.
+This section describes how to restrict the change in the value of the [Numeric Entry](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericEntry.SfNumericEntry.html) properties.
 
 ## Restrict null value
 
@@ -39,7 +39,7 @@ sfNumericEntry.AllowNull = false;
 {% endhighlight %}
 {% endtabs %}
 
-![.NET MAUI NumericEntry value restriction](Restriction_images/restrict_nullvalue.gif)
+![.NET MAUI Numeric Entry value restriction](Restriction_images/restrict_nullvalue.gif)
 
 ## Restrict value within range
 
@@ -67,7 +67,7 @@ sfNumericEntry.Value = 50;
 {% endhighlight %}
 {% endtabs %}
 
-![.NET MAUI NumericEntry value restriction](GettingStarted_images/value_restriction_img.png)
+![.NET MAUI Numeric Entry value restriction](GettingStarted_images/value_restriction_img.png)
 
 ## Restrict text editing
 

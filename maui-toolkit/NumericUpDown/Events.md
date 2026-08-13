@@ -1,19 +1,19 @@
 ---
 ayout: post
-title: Events in .NET MAUI NumericUpDown control | Syncfusion<sup>®</sup>
-description: Learn here all about the Events support in Syncfusion<sup>®</sup> .NET MAUI NumericUpDown (SfNumericUpDown) control and more details.
+title: Events in .NET MAUI Numeric UpDown control | Syncfusion®
+description: Learn here all about the Events support in Syncfusion® .NET MAUI Numeric UpDown (SfNumericUpDown) control and more details.
 platform: maui
 control: SfNumericUpDown
 documentation: ug
 ---
 
-# Events in .NET MAUI NumericUpDown (SfNumericUpDown)
+# Events in .NET MAUI Numeric UpDown
 
-The NumericUpDown control has the events `ValueChanged` and `Completed` to notify after user interactions in [.NET MAUI NumericUpDown](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericUpDown.SfNumericUpDown.html).
+The NumericUpDown control has the events `ValueChanged` and `Completed` to notify after user interactions in [.NET MAUI Numeric UpDown](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericUpDown.SfNumericUpDown.html).
 
 ## ValueChanged
 
-The [ValueChanged](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericEntry.SfNumericEntry.html#Syncfusion_Maui_Toolkit_NumericEntry_SfNumericEntry_ValuChanged) event is triggered when the [Value](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericEntry.SfNumericEntry.html#Syncfusion_Maui_Toolkit_NumericEntry_SfNumericEntry_Value) property of the `NumericUpDown` control is changed. The value will not be changed when the user enters the input. The value of the `NumericUpDown` control will be changed after validation is performed on the `Enter` keypress or when the focus is lost in the control. The `ValueChanged` contains the following properties.
+The [ValueChanged](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericEntry.SfNumericEntry.html#Syncfusion_Maui_Toolkit_NumericEntry_SfNumericEntry_ValuChanged) event is triggered when the [Value](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericEntry.SfNumericEntry.html#Syncfusion_Maui_Toolkit_NumericEntry_SfNumericEntry_Value) property of the `Numeric UpDown` control is changed. The value will not be changed when the user enters the input. The value of the `Numeric UpDown` control will be changed after validation is performed on the `Enter` keypress or when the focus is lost in the control. The `ValueChanged` contains the following properties.
 
  * `NewValue`- Contains the new input value.
  * `OldValue`- Contains the previous input value.
@@ -52,7 +52,7 @@ private void sfNumericUpDown_ValueChanged(object sender, Syncfusion.Maui.Toolkit
 
 ## Completed
 
-The `NumericUpDown` control includes a [Completed](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericEntry.SfNumericEntry.html#Syncfusion_Maui_Toolkit_NumericEntry_SfNumericEntry_Completed) event, which is triggered when the user finishes editing and presses the return key on the keyboard.This event enables handling actions such as input validation, submitting data, or automatically focusing on the next field.
+The `Numeric UpDown` control includes a [Completed](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericEntry.SfNumericEntry.html#Syncfusion_Maui_Toolkit_NumericEntry_SfNumericEntry_Completed) event, which is triggered when the user finishes editing and presses the return key on the keyboard.This event enables handling actions such as input validation, submitting data, or automatically focusing on the next field.
 
 {% tabs %}
 {% highlight xaml %}
@@ -87,7 +87,7 @@ private void sfNumericUpDown_Completed(object sender, EventArgs e)
 
 ## Focused
 
-The [Focused](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericEntry.SfNumericEntry.html#Syncfusion_Maui_Toolkit_NumericEntry_SfNumericEntry_Focused) event is triggered when the `NumericUpDown` control receives focus. This event can be used to perform actions such as highlighting the control or displaying additional information when it becomes active.
+The [Focused](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericEntry.SfNumericEntry.html#Syncfusion_Maui_Toolkit_NumericEntry_SfNumericEntry_Focused) event is triggered when the `Numeric UpDown` control receives focus. This event can be used to perform actions such as highlighting the control or displaying additional information when it becomes active.
 
 {% tabs %}
 {% highlight xaml %}
@@ -111,7 +111,7 @@ private void OnNumericUpDownFocused(object sender, FocusEventArgs e)
 
 ## Unfocused
 
-The [Unfocused](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericEntry.SfNumericEntry.html#Syncfusion_Maui_Toolkit_NumericEntry_SfNumericEntry_Unfocused) event is triggered when the `NumericUpDown` control loses focus. This event can be used to perform actions such as validating the entered value or updating the UI when the control becomes inactive.
+The [Unfocused](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericEntry.SfNumericEntry.html#Syncfusion_Maui_Toolkit_NumericEntry_SfNumericEntry_Unfocused) event is triggered when the `Numeric UpDown` control loses focus. This event can be used to perform actions such as validating the entered value or updating the UI when the control becomes inactive.
 
 {% tabs %}
 {% highlight xaml %}
@@ -137,7 +137,7 @@ private void OnNumericUpDownUnFocused(object sender, FocusEventArgs e)
 
 ### Focus
 
-The `NumericUpDown` allows for programmatically setting focus to the control using the [Focus()](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericEntry.SfNumericEntry.html) method. This is useful when you want to automatically focus the control on page load or after a specific user action.
+The `Numeric UpDown` allows for programmatically setting focus to the control using the [Focus()](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericEntry.SfNumericEntry.html) method. This is useful when you want to automatically focus the control on page load or after a specific user action.
 
 {% tabs %}
 {% highlight xaml %}
@@ -164,7 +164,7 @@ private void OnFocusClicked(object sender, EventArgs e)
 
 ### Unfocus
 
-The `NumericUpDown` allows for programmatically setting unfocus to the control using the [Unfocus()](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericEntry.SfNumericEntry.html) method. This is useful when you want to automatically unfocus the control on page load or after a specific user action.
+The `Numeric UpDown` allows for programmatically setting unfocus to the control using the [Unfocus()](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericEntry.SfNumericEntry.html) method. This is useful when you want to automatically unfocus the control on page load or after a specific user action.
 
 {% tabs %}
 {% highlight xaml %}

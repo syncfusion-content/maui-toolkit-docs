@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with .NET MAUI NumericEntry | Syncfusion<sup>®</sup>
-description: Learn how to get started with Syncfusion<sup>®</sup> .NET MAUI NumericEntry (SfNumericEntry) control, its elements, and more in here.
+title: Getting Started with .NET MAUI Numeric Entry | Syncfusion®
+description: Learn how to get started with Syncfusion® .NET MAUI Numeric Entry (SfNumericEntry) control, its elements, and more in here.
 platform: MAUI
 control: SfNumericEntry
 documentation: ug
@@ -120,7 +120,7 @@ using Syncfusion.Maui.Toolkit.NumericEntry;
 
 ## Step 5: Add the Numeric Entry component
 
-The [NumericEntry](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericEntry.SfNumericEntry.html) control enables numeric input and automatically blocks any alphabetic characters.
+The [Numeric Entry](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericEntry.SfNumericEntry.html) control enables numeric input and automatically blocks any alphabetic characters.
 
 **OnKeyFocus Mode:** The entered value is validated immediately as the user types.
 **OnLostFocus Mode:** The value is validated and updated when the control loses focus or when the Enter key is pressed. The value is then formatted based on the specified settings.
@@ -145,6 +145,6 @@ sfNumericEntry.CustomFormat = "0.000";
 {% endhighlight %}
 {% endtabs %}
 
-![.NET MAUI NumericEntry value editing](GettingStarted_images/editing_value.gif)
+![.NET MAUI Numeric Entry value editing](GettingStarted_images/editing_value.gif)
 
 You can download the NumericEntry Getting Started sample from [here](https://github.com/SyncfusionExamples/maui-numericentry-samples).

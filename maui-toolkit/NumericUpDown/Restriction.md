@@ -1,23 +1,23 @@
 ---
 layout: post
-title: Value Change Restriction in .NET MAUI NumericUpDown | Syncfusion<sup>®</sup>
-description: Learn here all about how to restrict the value change in Syncfusion<sup>®</sup> .NET MAUI NumericUpDown (SfNumericUpDown) control and more.
+title: Value Change Restriction in .NET MAUI Numeric UpDown | Syncfusion®
+description: Learn here all about how to restrict the value change in Syncfusion® .NET MAUI Numeric UpDown (SfNumericUpDown) control and more.
 platform: MAUI
 control:  SfNumericUpDown
 documentation: ug
 ---
 
-# Value change restriction in .NET MAUI NumericUpDown
+# Value Change Restriction in .NET MAUI Numeric UpDown
 
-This section describes how to restrict the change in the value of the [NumericUpDown](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericUpDown.SfNumericUpDown.html) control using [AllowNull](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericEntry.SfNumericEntry.html#Syncfusion_Maui_Toolkit_NumericEntry_SfNumericEntry_AllowNull), [Minimum](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericEntry.SfNumericEntry.html#Syncfusion_Maui_Toolkit_NumericEntry_SfNumericEntry_Minimum), and [Maximum](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericEntry.SfNumericEntry.html#Syncfusion_Maui_Toolkit_NumericEntry_SfNumericEntry_Maximum) properties.
+This section describes how to restrict the change in the value of the [Numeric UpDown](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericUpDown.SfNumericUpDown.html) control using [AllowNull](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericEntry.SfNumericEntry.html#Syncfusion_Maui_Toolkit_NumericEntry_SfNumericEntry_AllowNull), [Minimum](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericEntry.SfNumericEntry.html#Syncfusion_Maui_Toolkit_NumericEntry_SfNumericEntry_Minimum), and [Maximum](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericEntry.SfNumericEntry.html#Syncfusion_Maui_Toolkit_NumericEntry_SfNumericEntry_Maximum) properties.
 
 ## Restrict null value
 
-By default, an empty or null value is set in the `NumericUpDown` control when the input is cleared, as the default value of the `AllowNull` property is **true**. When the [AllowNull](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericEntry.SfNumericEntry.html#Syncfusion_Maui_Toolkit_NumericEntry_SfNumericEntry_AllowNull) property value is **false**, the `NumericUpDown` control returns the value to **0** in the editor after clearing the input.
+By default, an empty or null value is set in the `Numeric UpDown` control when the input is cleared, as the default value of the `AllowNull` property is **true**. When the [AllowNull](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericEntry.SfNumericEntry.html#Syncfusion_Maui_Toolkit_NumericEntry_SfNumericEntry_AllowNull) property value is **false**, the `Numeric UpDown` control returns the value to **0** in the editor after clearing the input.
 
-N> When the value of the `Minimum` property is **15**, and the `AllowNull` property is **true**, the **null** value is returned in the `NumericUpDown` control after clearing the input.
+N> When the value of the `Minimum` property is **15**, and the `AllowNull` property is **true**, the **null** value is returned in the `Numeric UpDown` control after clearing the input.
 
-N> When the value of the Minimum property is **15**, and the `AllowNull` property is **false**, the `minimum` value is returned in `NumericUpDown` control after clearing the input.
+N> When the value of the Minimum property is **15**, and the `AllowNull` property is **false**, the `minimum` value is returned in `Numeric UpDown` control after clearing the input.
 
 {% tabs %}
 {% highlight xaml %}
@@ -39,11 +39,11 @@ sfNumericUpDown.AllowNull = false;
 {% endhighlight %}
 {% endtabs %}
 
-![.NET MAUI NumericUpDown value restriction](Restriction_images/restrict_nullvalue.gif)
+![.NET MAUI Numeric UpDown value restriction](Restriction_images/restrict_nullvalue.gif)
 
 ## Restrict value within range
 
-You can restrict the users to enter input within a minimum and maximum range in the `NumericUpDown` control using the Minimum and Maximum properties. The default value of the [Minimum](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericEntry.SfNumericEntry.html#Syncfusion_Maui_Toolkit_NumericEntry_SfNumericEntry_Minimum) property is the **double.MinValue** and [Maximum](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericEntry.SfNumericEntry.html#Syncfusion_Maui_Toolkit_NumericEntry_SfNumericEntry_Maximum) property is **double.MaxValue**.
+You can restrict the users to enter input within a minimum and maximum range in the `Numeric UpDown` control using the Minimum and Maximum properties. The default value of the [Minimum](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericEntry.SfNumericEntry.html#Syncfusion_Maui_Toolkit_NumericEntry_SfNumericEntry_Minimum) property is the **double.MinValue** and [Maximum](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericEntry.SfNumericEntry.html#Syncfusion_Maui_Toolkit_NumericEntry_SfNumericEntry_Maximum) property is **double.MaxValue**.
 
 {% tabs %}
 {% highlight xaml %}
@@ -67,7 +67,7 @@ sfNumericUpDown.Value = 50;
 {% endhighlight %}
 {% endtabs %}
 
-![.NET MAUI NumericUpDown value restriction](Restriction_images/value_restriction_img.png)
+![.NET MAUI Numeric UpDown value restriction](Restriction_images/value_restriction_img.png)
 
 ## Restrict text editing
 

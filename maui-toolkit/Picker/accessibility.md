@@ -1,13 +1,12 @@
 ---
 layout: post
-title: Accessibility with .NET MAUI Picker Control | Syncfusion<sup>&reg;</sup>
-description: Learn here about accessibility with Syncfusion<sup>&reg;</sup> .NET MAUI Picker (SfPicker) control.
-platform: maui
+title: Accessibility in .NET MAUI Picker control | Syncfusion®
+description: Learn about accessibility in Syncfusion® .NET MAUI Picker control for inclusive design and user interactions.
 control: SfPicker
 documentation: ug
 ---
 
-# Accessibility in .NET MAUI Picker (SfPicker)
+# Accessibility in .NET MAUI Picker control
 
 The [.NET MAUI Picker](https://www.syncfusion.com/maui-controls/maui-picker) control has interact with the `Header`, `Column Header`, `Footer`, and `Picker Items`.
 

@@ -1,24 +1,28 @@
 ---
 layout: post
-title: Waterfall Chart in .NET MAUI Chart control | Syncfusion
-description: Learn here all about the Waterfall Series chart and its features in Syncfusion® .NET MAUI Chart (SfCartesianChart) control.
+title: Waterfall Chart in .NET MAUI Cartesian Chart | Syncfusion®
+description: Waterfall Chart in .NET MAUI Cartesian Chart shows cumulative changes from positive and negative values, helping analyze trends across sequential data points.
 platform: maui-toolkit
 control: SfCartesianChart
 documentation: ug
-Keywords: .net maui waterfall chart, .net maui bridge chart, waterfall chart customization .net maui, syncfusion maui waterfall chart, cartesian waterfall chart maui, .net maui chart waterfall visualization.
+keywords: .net maui waterfall chart, .net maui bridge chart, waterfall chart customization .net maui, syncfusion maui waterfall chart, cartesian waterfall chart maui, .net maui chart waterfall visualization.
 ---
 
-# Waterfall Chart in .NET MAUI Chart
+# Waterfall Chart in .NET MAUI Cartesian Chart
 
-## Waterfall Chart
+## Waterfall chart
 
-[WaterfallSeries](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.WaterfallSeries.html) clarifies the cumulative effect of a set of provided positive and negative values. The series is represented by a rectangle and a connector between the rectangles. To render a waterfall chart, create an instance of [WaterfallSeries](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.WaterfallSeries.html), and add it to the [Series](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html#Syncfusion_Maui_Toolkit_Charts_SfCartesianChart_Series) collection property of the [SfCartesianChart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html)
+[WaterfallSeries](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.WaterfallSeries.html) clarifies the cumulative effect of a set of provided positive and negative values. The series is represented by a rectangle and a connector between the rectangles. To render a waterfall chart, create an instance of [WaterfallSeries](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.WaterfallSeries.html), and add it to the [Series](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html#Syncfusion_Maui_Toolkit_Charts_SfCartesianChart_Series) collection property of the [SfCartesianChart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html).
 
-* [SummaryBindingPath](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.WaterfallSeries.html#Syncfusion_Maui_Toolkit_Charts_WaterfallSeries_SummaryBindingPath) of the string type is used to get or set the path value on the source subject to serve summary values to the series.
-* [SummaryPointsBrush](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.WaterfallSeries.html#Syncfusion_Maui_Toolkit_Charts_WaterfallSeries_SummaryPointsBrush) of brush type is used to change the fill of the summary segment of the series. .
-* [NegativePointsBrush](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.WaterfallSeries.html#Syncfusion_Maui_Toolkit_Charts_WaterfallSeries_NegativePointsBrush) of brush type is used to change the fill of the negative segment of the series.
-* [AllowAutoSum](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.WaterfallSeries.html#Syncfusion_Maui_Toolkit_Charts_WaterfallSeries_AllowAutoSum) of bool type is used to change the summary segment calculation. By default, the property is true. When disabling this property, it renders the segment by using the y value of provided ItemsSource collection.
-* [ShowConnectorLine](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.WaterfallSeries.html#Syncfusion_Maui_Toolkit_Charts_WaterfallSeries_ShowConnectorLine) of bool type is used to enable or disable the connector line. By default, the property value is `true`.
+The following properties customize the waterfall series:
+
+* [SummaryBindingPath](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.WaterfallSeries.html#Syncfusion_Maui_Toolkit_Charts_WaterfallSeries_SummaryBindingPath), of type `string`, is used to get or set the path value on the source subject to serve summary values to the series.
+* [SummaryPointsBrush](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.WaterfallSeries.html#Syncfusion_Maui_Toolkit_Charts_WaterfallSeries_SummaryPointsBrush), of type `Brush`, is used to change the fill of the summary segment of the series.
+* [NegativePointsBrush](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.WaterfallSeries.html#Syncfusion_Maui_Toolkit_Charts_WaterfallSeries_NegativePointsBrush), of type `Brush`, is used to change the fill of the negative segment of the series.
+* [AllowAutoSum](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.WaterfallSeries.html#Syncfusion_Maui_Toolkit_Charts_WaterfallSeries_AllowAutoSum), of type `bool`, is used to change the summary segment calculation. The default value is `true`. When this property is disabled, the segment is rendered using the y value of the provided ItemsSource collection.
+* [ShowConnectorLine](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.WaterfallSeries.html#Syncfusion_Maui_Toolkit_Charts_WaterfallSeries_ShowConnectorLine), of type `bool`, is used to enable or disable the connector line. The default value is `true`.
+
+N> **Prerequisite:** Ensure that the required NuGet package is installed, the necessary namespaces are imported, and the **SfCartesianChart** control is properly configured in your application. For detailed setup and configuration instructions, refer to the **[Getting Started](https://help.syncfusion.com/maui-toolkit/cartesian-charts/getting-started)** guide.
 
 {% tabs %}
 
@@ -50,6 +54,7 @@ Keywords: .net maui waterfall chart, .net maui bridge chart, waterfall chart cus
 {% highlight c# %}
 
 SfCartesianChart chart = new SfCartesianChart();
+
 CategoryAxis xAxis = new CategoryAxis();
 NumericalAxis yAxis = new NumericalAxis();
 chart.XAxes.Add(xAxis);
@@ -57,7 +62,6 @@ chart.YAxes.Add(yAxis);
    
 ViewModel viewModel = new ViewModel();
 
-// Create a new WaterfallSeries to display the data
 WaterfallSeries series = new WaterfallSeries()
 {
     ItemsSource = new viewModel().Sales,
@@ -69,8 +73,7 @@ WaterfallSeries series = new WaterfallSeries()
     SummaryPointsBrush = new SolidColorBrush(Colors.RoyalBlue),
     ShowConnectorLine = true,
 };
-
-// Add the created series to the chart   
+    
 chart.Series.Add(series);
 this.Content = chart;
 
@@ -78,7 +81,7 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Waterfall Chart in MAUI Chart](Chart-types-images/maui_waterfall_Basic.png)
+![Waterfall Chart in .NET MAUI Cartesian Chart](Chart-types-images/maui_waterfall_Basic.png)
 
 ## Connector line customization
 
@@ -103,7 +106,6 @@ The following code example illustrates how to apply style for connector line.
 
 {% highlight c# %}
 
-// Define the style for the connector lines in the waterfall chart.
 ChartLineStyle lineStyle = new ChartLineStyle()
 {
     Stroke = new SolidColorBrush(Colors.DarkViolet),
@@ -115,11 +117,13 @@ WaterfallSeries series = new WaterfallSeries()
     ItemsSource = new viewModel().Sales,
     XBindingPath = "Department",
     YBindingPath = "Value",
-    ConnectorLineStyle = lineStyle, // Apply the previously defined line style to the connector lines in the series.
+    ConnectorLineStyle = lineStyle,
 };
+
+chart.Series.Add(series);
     
 {% endhighlight %}
 
 {% endtabs %}
 
-![Connector line customization in Waterfall Chart](Chart-types-images/maui_waterfall_LineStyle.png)
+![Connector line customization for Waterfall Chart in .NET MAUI Cartesian Chart](Chart-types-images/maui_waterfall_LineStyle.png)

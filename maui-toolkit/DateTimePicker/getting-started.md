@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting started with .NET MAUI Date Time Picker control | Syncfusion
-description: Learn about getting started with Syncfusion<sup>&reg;</sup> .NET MAUI Date Time Picker (SfDateTimePicker) control and its basic features.
+title: Getting Started with .NET MAUI Date Time Picker | Syncfusion
+description: Learn how to get started with the Syncfusion<sup>&reg;</sup> .NET MAUI Date Time Picker control. Explore setup, features, examples, and customization options.
 platform: maui
 control: SfDateTimePicker
 documentation: ug
 ---
 
-# Getting Started with the .NET MAUI DateTimePicker
+# Getting Started with .NET MAUI Date Time Picker
 This section explains how to add the Date Time Picker control. It covers only the basic features needed to get started with Syncfusion<sup>&reg;</sup> Date Time Picker. Follow the steps below to add a .NET MAUI Date time picker to your project.
 
 {% tabcontents %}
@@ -126,8 +126,8 @@ Create an instance of DateTimepicker and add it to your page.
     <picker:SfDateTimePicker />
 {% endhighlight %}
 {% highlight c# tabtitle="C#" %}
-    SfDateTimePicker picker = new SfDateTimePicker();
-    this.Content = picker;
+    SfDateTimePicker dateTimePicker = new SfDateTimePicker();
+    this.Content = dateTimePicker;
 {% endhighlight %}
 {% endtabs %}
 

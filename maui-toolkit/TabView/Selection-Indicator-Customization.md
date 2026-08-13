@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Customize the Indicator in .NET MAUI Tab View (SfTabView) | Syncfusion®
+title: Indicator Customization in .NET MAUI Tab View | Syncfusion®
 description: Learn all about selection indicator customization support in the Syncfusion® .NET MAUI Tab View (SfTabView) control and more.
 platform: maui-toolkit
 control: SfTabView
 documentation: UG
 ---
 
-# Customize the Selection Indicator in .NET MAUI Tab View (SfTabView)
+# Customize the Selection Indicator in .NET MAUI Tab View
 
 ## Placement options
 
@@ -81,11 +81,11 @@ The following image shows the selection indicator filling the entire tab header:
 
 ## Background customization
 
-The background of the indicator can be customized using the [IndicatorBackground](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SfTabView.html#Syncfusion_Maui_Toolkit_TabView_SfTabView_IndicatorBackground) property of `SfTabView`.
+The background of the indicator can be customized using the [IndicatorBackground](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SfTabView.html#Syncfusion_Maui_Toolkit_TabView_SfTabView_IndicatorBackground) property of `Tab View`.
 
 ### Solid color 
 
-You can customize the selection indicator's background color using the [`IndicatorBackground`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SfTabView.html#Syncfusion_Maui_Toolkit_TabView_SfTabView_IndicatorBackground) property of `SfTabView`. Below are examples of how to set a solid background color using this property in XAML and C#:
+You can customize the selection indicator's background color using the [`IndicatorBackground`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SfTabView.html#Syncfusion_Maui_Toolkit_TabView_SfTabView_IndicatorBackground) property of `Tab View`. Below are examples of how to set a solid background color using this property in XAML and C#:
 
 {% tabs %}
 
@@ -203,7 +203,7 @@ The following image shows the selection indicator with the width mode set to `St
 
 ## Indicator corner radius
 
-You can customize the corner radius of the selection indicator using the [IndicatorCornerRadius](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SfTabView.html#Syncfusion_Maui_Toolkit_TabView_SfTabView_IndicatorCornerRadius) property in the `SfTabView`.
+You can customize the corner radius of the selection indicator using the [IndicatorCornerRadius](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SfTabView.html#Syncfusion_Maui_Toolkit_TabView_SfTabView_IndicatorCornerRadius) property in the `Tab View`.
 
 {% tabs %}
 

@@ -1,20 +1,22 @@
 ---
 layout: post
-title: StackedArea100 Chart in .NET MAUI Chart control | Syncfusion
-description: Learn here all about StackedArea100 chart support in Syncfusion® .NET MAUI Chart (SfCartesianChart) control.
+title: Stacked Area 100 Chart in .NET MAUI Cartesian Chart | Syncfusion®
+description: Stacked Area 100 Chart in .NET MAUI Cartesian Chart displays percentage contributions as stacked areas, helping visualize proportional data across categories.
 platform: maui-toolkit
 control: SfCartesianChart
 documentation: ug
-keywords: .net maui stacked area 100 chart, maui stacked area 100 chart, stacked area 100 chart customization .net maui, syncfusion maui stacked area 100 chart, cartesian stacked area 100 chart maui, .net maui chart stacked area 100 visualization, .net maui 100% stacked area chart.
+keywords: .net maui stacked area 100 chart, maui stacked area 100 chart, stacked area 100 chart customization .net maui, syncfusion maui stacked area 100 chart, cartesian stacked area 100 chart maui, .net maui chart stacked area 100 visualization, .net maui 100% stacked area chart
 ---
 
-# StackedArea100 Chart in .NET MAUI Chart
+# Stacked Area 100 Chart in .NET MAUI Cartesian Chart
 
 The stacked area 100% chart enables users to visually represent data points vertically, one above the other, to indicate the cumulative value of the data points at 100%.
 
+N> **Prerequisite:** Ensure that the required NuGet package is installed, the necessary namespaces are imported, and the **SfCartesianChart** control is properly configured in your application. For detailed setup and configuration instructions, refer to the **[Getting Started](https://help.syncfusion.com/maui-toolkit/cartesian-charts/getting-started)** guide.
+
 ## StackedArea100 Chart
 
-To render the StackedArea100 chart, create an instance of the [StackingArea100Series](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.StackingArea100Series.html), and add it to the [Series](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html#Syncfusion_Maui_Toolkit_Charts_SfCartesianChart_Series) collection property of the [SfCartesianChart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html).
+To render the StackedArea100 chart, create an instance of the [StackingArea100Series](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.StackingArea100Series.html) and add it to the [Series](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html#Syncfusion_Maui_Toolkit_Charts_SfCartesianChart_Series) collection property of the [SfCartesianChart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html).
 
 N> The Cartesian chart has a [Series](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfCartesianChart.html#Syncfusion_Maui_Toolkit_Charts_SfCartesianChart_Series) as its default content.
 
@@ -33,76 +35,76 @@ N> The Cartesian chart has a [Series](https://help.syncfusion.com/cr/maui-toolki
     </chart:SfCartesianChart.YAxes>   
 
     <chart:StackingArea100Series ItemsSource="{Binding Data1}"
-                                XBindingPath="Year"
-                                YBindingPath="Value"/>        
+                                 XBindingPath="Year"
+                                 YBindingPath="Value"/>        
 
     <chart:StackingArea100Series ItemsSource="{Binding Data2}"
-                                XBindingPath="Year"
-                                YBindingPath="Value"/>         
+                                 XBindingPath="Year"
+                                 YBindingPath="Value"/>         
 
     <chart:StackingArea100Series ItemsSource="{Binding Data3}"
-                                XBindingPath="Year"
-                                YBindingPath="Value"/>         
+                                 XBindingPath="Year"
+                                 YBindingPath="Value"/>         
 
     <chart:StackingArea100Series ItemsSource="{Binding Data4}"
-                                XBindingPath="Year"
-                                YBindingPath="Value"/>         
+                                 XBindingPath="Year"
+                                 YBindingPath="Value"/>         
 
 </chart:SfCartesianChart>
 
-{% endhighlight xaml %}
+{% endhighlight %}
 
 {% highlight c# %}
 
 SfCartesianChart chart = new SfCartesianChart();
+
 CategoryAxis primaryAxis = new CategoryAxis();
 chart.XAxes.Add(primaryAxis);
+
 NumericalAxis secondaryAxis = new NumericalAxis();
 chart.YAxes.Add(secondaryAxis);
 
 ViewModel viewModel = new ViewModel();
 
-// Create a StackingArea100Series for the chart
-StackingArea100Series series1 = new  StackingArea100Series()
+StackingArea100Series series1 = new StackingArea100Series()
 {
+    ItemsSource = viewModel.Data1,
     XBindingPath = "Year",
     YBindingPath = "Value",
-    ItemsSource = viewModel.Data1
 };
 
 StackingArea100Series series2 = new StackingArea100Series()
 {
+    ItemsSource = viewModel.Data2,
     XBindingPath = "Year",
     YBindingPath = "Value",
-    ItemsSource = viewModel.Data2
 };
 
 StackingArea100Series series3 = new StackingArea100Series()
 {
+    ItemsSource = viewModel.Data3,
     XBindingPath = "Year",
     YBindingPath = "Value",
-    ItemsSource = viewModel.Data3
 };
 
 StackingArea100Series series4 = new StackingArea100Series()
 {
+    ItemsSource = viewModel.Data4,
     XBindingPath = "Year",
     YBindingPath = "Value",
-    ItemsSource = viewModel.Data4
 };
 
-// Add the all series to the chart
 chart.Series.Add(series1);
-chart.Series.Add(series2);     
-chart.Series.Add(series3); 
+chart.Series.Add(series2);
+chart.Series.Add(series3);
 chart.Series.Add(series4);
 this.Content = chart;
 
-{% endhighlight C# %}
+{% endhighlight %}
 
 {% endtabs %}
 
-![Stacking Area 100 Chart in .NET MAUI Cartesian Charts](chart-types-images/net-maui-cartesian-charts-stacked-area-100-chart.png)
+![Stacking Area 100 Chart in .NET MAUI Cartesian Chart](Chart-types-images/net-maui-cartesian-charts-stacked-area-100-chart.png)
 
 ## Enable Marker
 
@@ -113,8 +115,8 @@ A marker, also known as a symbol, is used to determine or highlight the position
 {% highlight xaml %}
 
 <chart:SfCartesianChart>
-    ...
-    <chart:StackingArea100Series ItemsSource="{Binding Data}"
+    <!-- code omitted for brevity -->
+    <chart:StackingArea100Series ItemsSource="{Binding StackData}"
                                  XBindingPath="Year"
                                  YBindingPath="Value"
                                  ShowMarkers="True"/>
@@ -125,13 +127,13 @@ A marker, also known as a symbol, is used to determine or highlight the position
 {% highlight c# %}
 
 SfCartesianChart chart = new SfCartesianChart();
-...
+// code omitted for brevity
 StackingArea100Series series = new StackingArea100Series()
 {
-    ItemsSource = new ViewModel().Data,
+    ItemsSource = new ViewModel().StackData,
     XBindingPath = "Year",
     YBindingPath = "Value",
-    ShowMarkers = true // Display markers on the series
+    ShowMarkers = true
 };
 
 chart.Series.Add(series);
@@ -143,7 +145,7 @@ this.Content = chart;
 
 ### Marker customization
 
-In order to change the series markers appearance, create an instance of the [MarkerSettings](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.StackingAreaSeries.html#Syncfusion_Maui_Toolkit_Charts_StackingAreaSeries_MarkerSettings) property. The following properties are used to customize marker appearance.
+To change the series markers' appearance, create an instance of the [MarkerSettings](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.StackingAreaSeries.html#Syncfusion_Maui_Toolkit_Charts_StackingAreaSeries_MarkerSettings) property. The following properties are used to customize marker appearance.
 
 * [Type](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartMarkerSettings.html#Syncfusion_Maui_Toolkit_Charts_ChartMarkerSettings_Type), of type `ShapeType`, describes the shape of the series marker. The default value of this property is the [ShapeType.Circle](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ShapeType.html#Syncfusion_Maui_Toolkit_Charts_ShapeType_Circle).
 * [Stroke](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartMarkerSettings.html#Syncfusion_Maui_Toolkit_Charts_ChartMarkerSettings_Stroke), of type `Brush`, indicates the brush used to paint the marker border.
@@ -157,8 +159,8 @@ In order to change the series markers appearance, create an instance of the [Mar
 {% highlight xaml %}
 
 <chart:SfCartesianChart>
-    ...
-    <chart:StackingArea100Series ItemsSource="{Binding Data}"
+    <!-- code omitted for brevity -->
+    <chart:StackingArea100Series ItemsSource="{Binding StackData}"
                                  XBindingPath="Year"
                                  YBindingPath="Value"
                                  ShowMarkers="True">
@@ -171,7 +173,6 @@ In order to change the series markers appearance, create an instance of the [Mar
                                        Width="8"/>
         </chart:StackingArea100Series.MarkerSettings>
     </chart:StackingArea100Series>
-    ...
 </chart:SfCartesianChart>
 
 {% endhighlight %}
@@ -179,13 +180,12 @@ In order to change the series markers appearance, create an instance of the [Mar
 {% highlight c# %}
 
 SfCartesianChart chart = new SfCartesianChart();
-...
-// Configure chart marker settings, defining appearance and style
+// code omitted for brevity
 ChartMarkerSettings chartMarker= new ChartMarkerSettings()
 {
     Type = ShapeType.Diamond,
-    Fill = Colors.LightBlue,
-    Stroke = Colors.Blue,
+    Fill = Colors.Brown,
+    Stroke = Colors.Black,
     StrokeWidth = 1,
     Height = 8,
     Width = 8
@@ -193,13 +193,13 @@ ChartMarkerSettings chartMarker= new ChartMarkerSettings()
 
 StackingArea100Series series = new StackingArea100Series()
 {
-    ItemsSource = new ViewModel().Data,
+    ItemsSource = new ViewModel().StackData,
     XBindingPath = "Year",
     YBindingPath = "Value",
     ShowMarkers = true,
-    MarkerSettings = chartMarker  // Apply the defined marker settings to the series
+    MarkerSettings = chartMarker
 };
-...
+
 chart.Series.Add(series);
 this.Content = chart;
 

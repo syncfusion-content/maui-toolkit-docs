@@ -1,15 +1,15 @@
 ---
 layout: post
-title: About .NET MAUI Calendar control | Syncfusion
-description: Learn here about the overview of Syncfusion .NET MAUI Calendar (SfCalendar) control, its basic features, and calendar functionalities.
+title: About Syncfusion .NET MAUI Calendar Control | Syncfusion®
+description: Learn about introduction of Syncfusion® Essential Studio .NET MAUI Calendar control and more details.
 platform: maui
 control: SfCalendar
 documentation: ug
 ---
 
-# Overview of .NET MAUI Calendar
+# About Syncfusion .NET MAUI Calendar Control
 
-Syncfusion<sup>&reg;</sup> .NET MAUI Calendar ([SfCalendar](https://www.syncfusion.com/maui-controls/maui-calendar)) is a calendar control that allows users to select a Single date, Multiple dates, or a Range of dates. It provides various view options such as a Month, Year, Decade, and Century, which allow users to quickly navigate to the desired date. It also supports minimum dates, maximum dates, enable past dates, and disabled dates to restrict the date selection.
+Syncfusion<sup>&reg;</sup> [.NET MAUI Calendar](https://www.syncfusion.com/maui-controls/maui-calendar) is a calendar control that allows users to select a Single date, Multiple dates, or a Range of dates. It provides various view options such as a Month, Year, Decade, and Century, which allow users to quickly navigate to the desired date. It also supports minimum dates, maximum dates, enable past dates, and disabled dates to restrict the date selection.
 
 ![Multiple views in .NET MAUI Calendar.](images/overview/maui-multiple-views.png)
 
@@ -76,7 +76,7 @@ The following table summarizes the globalization support available in this contr
 <th align="center">Keyboard navigation</th>
 </tr>
 <tr>
-<td><a href="/maui-toolkit/calendar/overview">Calendar</a></td>
+<td><a href="/maui-toolkit/calendar/overview" aria-label="MAUI Calendar control overview">Calendar</a></td>
 <td align="center"><img src="../Images/full-support.svg" alt="full-support" width="16" /></td>
 <td align="center"><img src="../Images/full-support.svg" alt="full-support" width="16" /></td>
 <td align="center"><img src="../Images/full-support.svg" alt="full-support" width="16" /></td>
