@@ -358,6 +358,8 @@ public partial class MainPage : ContentPage
 
 The `SfExpander` allows you to customize the background color of the expander header by using the `HeaderBackground` property.
 
+{% tabs %}
+{% highlight xaml hl_lines="8 81" %}
 <ContentPage.Content>
     <ScrollView>
         <StackLayout HorizontalOptions="{OnPlatform MacCatalyst=Center,WinUI=Center}" >
