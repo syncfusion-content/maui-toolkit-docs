@@ -175,7 +175,7 @@ In the following code sample, the Popup is auto-sized in the height based on the
 
 {% tabs %}
 
-{% highlight xaml tabtitle="MainPage.xaml"  hl_lines="10"%}
+{% highlight xaml tabtitle="MainPage.xaml"  hl_lines="10" %}
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"

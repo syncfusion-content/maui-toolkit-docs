@@ -406,6 +406,6 @@ Refer to the following code example in which a [SfCircularProgressBar](https://h
 {% endhighlight %}
 {% endtabs %}
 
-![.NET MAUI Pull to Refresh view Template.](Images/customization/net-maui-template-slideontop.gif)
+![.NET MAUI PullToRefresh  view Template.](Images/customization/net-maui-template-slideontop.gif)
 
 N> [View sample in GitHub](https://github.com/SyncfusionExamples/load-datagrid-as-pullable-content-of-.net-maui-pull-to-refresh).
