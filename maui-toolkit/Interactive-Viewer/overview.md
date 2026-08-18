@@ -9,79 +9,34 @@ documentation : ug
 
 # About Syncfusion® .NET MAUI Interactive Viewer Control 
 
-The Syncfusion® .NET MAUI Interactive Viewer ([SfInteractiveViewer](https://www.syncfusion.com/maui-controls)) control enables users to zoom, pan, and rotate content, allowing smooth navigation and exploration of images, graphics, diagrams, and custom views within an interactive viewport.
-
+The .NET MAUI Interactive Viewer provides intuitive navigation of visual content through zooming, panning, and rotating. It delivers a smooth viewing experience across desktop and mobile platforms, making it ideal for displaying large images, diagrams, and other graphical content.
 ## Business use cases
 
-- Image viewer applications that require smooth zooming and panning for detailed image inspection.
-- Diagram, map, and engineering applications that need interactive zoom and scroll capabilities for detailed analysis.
-- Photo editing and design applications that support zooming, panning, and rotation for better content manipulation.
-- Dashboard and monitoring applications that enable users to explore complex charts, graphics, and visual data interactively.
+- Applications that require zooming, panning, and rotating of large images and graphical content.
+- Engineering and architectural systems for viewing technical drawings and blueprints.
+- Healthcare solutions for examining medical images and diagnostic reports.
+- E-commerce applications for interactive product image viewing.
+- Monitoring systems that require detailed inspection of visual content.
 
 ## Key features
 
-- **Zoom support** allows users to enlarge or reduce content for detailed viewing.
-- **Pan support** enables navigating content in horizontal, vertical, or both directions.
-- **Rotation support** allows rotating content in 90-degree clockwise increments.
-- **Custom content hosting** enables displaying images, diagrams, graphics.
+- **Zooming and panning** allows navigation of images and visual content for detailed viewing.
+- **Rotation** allows content to be rotated for viewing from different angles.
+- **Reset** allows quick restoration of the original view settings.
 - **Configurable zoom limits** allow controlling the minimum and maximum zoom levels.
-- **Interactive gesture support** enables intuitive touch, mouse, and touchpad-based interactions.
-
-## Globalization
-
-The following table summarizes the globalization support available in this control.
-
-<style>
-.img{
-  margin:0 !important;
-}
-
-.legend{
-  display: inline-flex !important;
-  flex-direction: row !important; 
-  gap: 16px !important;
-}
-</style>
-
-<div class="legend">
- 
-<span style="display: inline-flex; align-items: center; gap: 6px;">
-<img src="../Images/full-support.svg" width="16"> Full Support
-</span>
- 
-<span style="display: inline-flex; align-items: center; gap: 6px;">
-<img src="../Images/not-applicable.svg" width="16"> Not Applicable
-</span>
- 
-</div>
-
-<table>
-<tr>
-<th align="center">Control</th>
-<th align="center">Localization</th>
-<th align="center">RTL</th>
-<th align="center">Time zone</th>
-<th align="center">Screen reader</th>
-<th align="center">Keyboard navigation</th>
-</tr>
-<tr>
-<td><a href="/maui-toolkit/InteractiveViewer/overview">Interactive Viewer</a></td>
-<td align="center"><img src="../Images/not-applicable.svg" alt="not-applicable" width="16" /></td>
-<td align="center"><img src="../Images/not-applicable.svg" alt="not-applicable" width="16" /></td>
-<td align="center"><img src="../Images/not-applicable.svg" alt="not-applicable" width="16" /></td>
-<td align="center"><img src="../Images/not-applicable.svg" alt="not-applicable" width="16" /></td>
-<td align="center"><img src="../Images/full-support.svg" alt="full-support" width="16" /></td>
-</tr> 
-</table>
 
 ## Related controls
-
-- [TabView](https://help.syncfusion.com/maui-toolkit/tabview/overview) hosts content interactively with swipe gestures between tabs and supports touch interactions to navigate between views.  
-- [Carousel](https://help.syncfusion.com/maui-toolkit/carousel-view/overview) allows interactive navigation through a collection of image/data items with swipe gestures  
+  
+- [Carousel](https://help.syncfusion.com/maui-toolkit/carousel-view/overview) for displaying and navigating collections of images and visual content.
+- [Cards](https://help.syncfusion.com/maui-toolkit/cards/overview) for presenting visual content in structured and interactive layouts.
 
 ## See Also
 
-- [UI Kit](https://www.syncfusion.com/demos/maui#maui-ui-control) provides interactive demos and ready-made UI examples.
+- Getting Started shows how to begin using the Interactive Viewer control step by step.
+- Zooming and Panning shows how to navigate visual content using zoom and pan interactions.
+- Rotate shows how to rotate visual content to different orientations.
+- Reset shows how to restore the viewer to its default state.
+- [UI Kit](https://www.syncfusion.com/demos/maui#maui-ui-control) provides interactive demos and reference UI examples.
 
 ## Resources
 
