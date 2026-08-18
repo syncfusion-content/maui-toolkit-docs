@@ -10,6 +10,7 @@ documentation : ug
 # About Syncfusion® .NET MAUI Interactive Viewer Control 
 
 The .NET MAUI Interactive Viewer provides intuitive navigation of visual content through zooming, panning, and rotating. It delivers a smooth viewing experience across desktop and mobile platforms, making it ideal for displaying large images, diagrams, and other graphical content.
+
 ## Business use cases
 
 - Applications that require zooming, panning, and rotating of large images and graphical content.
