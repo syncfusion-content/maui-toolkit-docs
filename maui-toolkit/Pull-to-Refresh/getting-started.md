@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started with .NET MAUI PullToRefresh control | Syncfusion
-description: Learn here about getting started with Syncfusion .NET MAUI PullToRefresh (SfPullToRefresh) control, its elements, and more.
+title: Getting Started with .NET MAUI Pull to Refresh control | Syncfusion®
+description: Learn here about getting started with Syncfusion® .NET MAUI Pull to Refresh (SfPullToRefresh) control, its elements, and more.
 platform: maui-toolkit
 control: SfPullToRefresh
 documentation: ug
 ---
 
-# Getting Started with .NET MAUI PullToRefresh Control
+# Getting Started with .NET MAUI Pull to Refresh
 
 This section provides instructions for setting up and configuring PullToRefresh control (SfPullToRefresh) in your .NET MAUI application. Follow the steps below to integrate a basic PullToRefresh component into your project.
 
@@ -154,11 +154,11 @@ private async void PullToRefresh_Refreshing(object? sender, EventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-![.NET MAUI PullToRefresh with slide on top transition mode](Images/getting-started//maui-pull-to-refresh-slideontop-mode.gif)
+![.NET MAUI Pull to Refresh with slide on top transition mode](Images/getting-started//maui-pull-to-refresh-slideontop-mode.gif)
 
 If we run the above sample with `TransitionMode` set to `Push`, the output will be as shown in the following.
 
-![.NET MAUI PullToRefresh with slide on top transition mode](Images/getting-started//maui-pull-to-refresh-push-mode.gif).
+![.NET MAUI Pull to Refresh with slide on top transition mode](Images/getting-started//maui-pull-to-refresh-push-mode.gif).
 
 N> PullToRefresh does not have a view. So, it is mandatory to set size or LayoutOptions when loaded inside any layouts.
 

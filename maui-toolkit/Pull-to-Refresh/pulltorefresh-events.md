@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Events in .NET MAUI PullToRefresh control | Syncfusion
-description: Learn about Events support in the Syncfusion .NET MAUI PullToRefresh (SfPullToRefresh) control and more.
+title: Events in .NET MAUI Pull to Refresh control | Syncfusion®
+description: Learn about Events support in the Syncfusion® .NET MAUI Pull to Refresh (SfPullToRefresh) control and more.
 platform: maui-toolkit
 control: SfPullToRefresh
 documentation: ug
 --- 
 
-# Events in .NET MAUI SfPullToRefresh (SfPullToRefresh)
+# Events in .NET MAUI Pull to Refresh
 
 There are three built-in events in the PullToRefresh control, namely:
 
