@@ -15,7 +15,7 @@ The .NET MAUI Interactive Viewer provides intuitive navigation of visual content
 
 - Applications that require zooming, panning, and rotating of large images and graphical content.
 - Engineering and architectural systems for viewing technical drawings and blueprints.
-- Healthcare solutions for examining medical images and diagnostic reports.
+- Health care solutions for examining medical images and diagnostic reports.
 - E-commerce applications for interactive product image viewing.
 - Monitoring systems that require detailed inspection of visual content.
 
