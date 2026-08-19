@@ -1,7 +1,7 @@
 ---
 layout : post
 title: About Syncfusion® .NET MAUI Interactive Viewer Control | Syncfusion®
-description: Learn about introduction of Syncfusion® .NET MAUI Interactive Viewer control and more details.
+description: Learn about introduction of Syncfusion® .NET MAUI Interactive Viewer control. Explore key features, elements, and component details.
 platform : maui-toolkit
 control : Interactive Viewer
 documentation : ug
