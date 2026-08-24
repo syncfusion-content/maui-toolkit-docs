@@ -1,13 +1,13 @@
 ---
 layout : post
-title: Transformation in .NET MAUI Carousel View control | Syncfusion
-description: Learn here all about Transformation support in Syncfusion<sup>®</sup> .NET MAUI Carousel View (SfCarousel) control, its elements and more.
+title: Transformation in .NET MAUI Carousel | Syncfusion®
+description: Learn here all about transformation support in Syncfusion® .NET MAUI Carousel (SfCarousel) control, its elements and more.
 platform : maui
 control : Carousel
 documentation : ug
 ---
 
-# Transformation in .NET MAUI Carousel View (SfCarousel)
+# Transformation in .NET MAUI Carousel
 
 The [Offset](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Carousel.SfCarousel.html#Syncfusion_Maui_Toolkit_Carousel_SfCarousel_Offset) between selected and unselected item can be customized in  [SfCarousel](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Carousel.SfCarousel.html) control. And also the items can be scaled to the specified value.
 
@@ -46,7 +46,7 @@ carousel.ItemTemplate = itemTemplate;
 
 {% endtabs %}
 
-![Rotation angle in .NET MAUI Carousel View.](images/net-maui-carousel-view-rotationangle.png)
+![Rotation angle in .NET MAUI Carousel.](images/net-maui-carousel-view-rotationangle.png)
 
 ## Set Gap between Selected Item
 
@@ -82,7 +82,7 @@ carousel.ItemTemplate = itemTemplate;
 
 {% endtabs %}
 
-![SelectedItemOffset in .NET MAUI Carousel View.](images/net-maui-carousel-view-selectedoffset.png)
+![SelectedItemOffset in .NET MAUI Carousel.](images/net-maui-carousel-view-selectedoffset.png)
 
 ## Set Gap between unselected Items
 
@@ -120,7 +120,7 @@ carousel.ItemTemplate = itemTemplate;
 
 {% endtabs %}
 
-![Offset in .NET MAUI Carousel View.](images/net-maui-carousel-view-offset.png)
+![Offset in .NET MAUI Carousel.](images/net-maui-carousel-view-offset.png)
 
 ## Set Scaling for Carousel Items
 
@@ -155,7 +155,7 @@ carousel.ItemTemplate = itemTemplate;
 
 {% endtabs %}
 
-![Scale offset in .NET MAUI Carousel View.](images/net-maui-carousel-view-scaleoffset.png)
+![Scale offset in .NET MAUI Carousel.](images/net-maui-carousel-view-scaleoffset.png)
 
 ## Spacing between the Items in Linear mode
 
@@ -192,4 +192,4 @@ carousel.ItemTemplate = itemTemplate;
 
 {% endtabs %}
 
-![ItemSpacing in .NET MAUI Carousel View.](images/net-maui-carousel-view-itemspacing.png)
+![ItemSpacing in .NET MAUI Carousel.](images/net-maui-carousel-view-itemspacing.png)

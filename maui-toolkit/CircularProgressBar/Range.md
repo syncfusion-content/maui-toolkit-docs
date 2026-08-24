@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Define Range in .NET MAUI Circular ProgressBar control | Syncfusion<sup>&reg;</sup>
-description: Learn here all about Range support in Syncfusion<sup>&reg;</sup> .NET MAUI Circular ProgressBar control, its elements and more.
+title: Range in .NET MAUI Circular ProgressBar | Syncfusion®
+description: Learn about defining range with minimum and maximum values in Syncfusion® .NET MAUI Circular ProgressBar (SfCircularProgressBar) control.
 platform: MAUI
 control: SfCircularProgressBar
 documentation: ug
 ---
 
-# Define Range in .NET MAUI Circular ProgressBar
+# Range in .NET MAUI Circular ProgressBar
 
 The Range represents the entire span of the circular progress bar and can be defined using the [`Minimum`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.ProgressBar.ProgressBarBase.html#Syncfusion_Maui_Toolkit_ProgressBar_ProgressBarBase_Minimum) and [`Maximum`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.ProgressBar.ProgressBarBase.html#Syncfusion_Maui_Toolkit_ProgressBar_ProgressBarBase_Maximum) properties. The default value of the range is 0 to 100.
 

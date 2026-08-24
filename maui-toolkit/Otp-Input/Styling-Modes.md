@@ -7,7 +7,7 @@ control: SfOtpInput
 documentation: UG
 ---
 
-# Styling Modes in OTP Input
+# Styling Modes in .NET MAUI OTP Input
 
 Styling modes specify the visual style variants for input fields in the OTP Input component, allowing you to customize appearances according to your application's design needs.
 

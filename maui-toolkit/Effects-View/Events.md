@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Events in .NET MAUI Effects View Control | Syncfusion®
-description: Learn about Events support in Syncfusion® .NET Effects View (SfEffectsView) control and more.
+title: Events in .NET MAUI Effects View | Syncfusion®
+description: Learn about the events available in the Syncfusion® .NET MAUI Effects View (SfEffectsView) control and more.
 platform: maui-toolkit
 control: SfEffectsView
 documentation: UG
 ---
 
-# Events in .NET MAUI Effects View (SfEffectsView)
+# Events in .NET MAUI Effects View
 
 ## AnimationCompleted event
 
@@ -63,7 +63,7 @@ N> The [AnimationCompleted](https://help.syncfusion.com/cr/maui-toolkit/Syncfusi
 
 ## SelectionChanged event
 
-The [SelectionChanged](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.EffectsView.SfEffectsView.html#Syncfusion_Maui_Toolkit_EffectsView_SfEffectsView_SelectionChanged) event occurs when [SfEffectsView](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.EffectsView.SfEffectsView.html) is selected or unselected.
+The [SelectionChanged](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.EffectsView.SfEffectsView.html#Syncfusion_Maui_Toolkit_EffectsView_SfEffectsView_SelectionChanged) event occurs when [Effects View](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.EffectsView.SfEffectsView.html) is selected or unselected.
 
 {% tabs %} 
 
@@ -112,4 +112,4 @@ public partial class MainPage : ContentPage
 
 {% endtabs %}
 
-N> The [SelectionChanged](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.EffectsView.SfEffectsView.html#Syncfusion_Maui_Toolkit_EffectsView_SfEffectsView_SelectionChanged) event triggers both on rendering [SfEffects.Selection](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.EffectsView.SfEffects.html#Syncfusion_Maui_Toolkit_EffectsView_SfEffects_Selection) by direct interaction and on changing the [IsSelected](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.EffectsView.SfEffectsView.html#Syncfusion_Maui_Toolkit_EffectsView_SfEffectsView_IsSelected) property of [SfEffectsView](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.EffectsView.SfEffectsView.html).
+N> The [SelectionChanged](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.EffectsView.SfEffectsView.html#Syncfusion_Maui_Toolkit_EffectsView_SfEffectsView_SelectionChanged) event triggers both on rendering [SfEffects.Selection](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.EffectsView.SfEffects.html#Syncfusion_Maui_Toolkit_EffectsView_SfEffects_Selection) by direct interaction and on changing the [IsSelected](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.EffectsView.SfEffectsView.html#Syncfusion_Maui_Toolkit_EffectsView_SfEffectsView_IsSelected) property of [Effects View](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.EffectsView.SfEffectsView.html).

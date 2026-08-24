@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Overview | .NET MAUI Chips | Syncfusion<sup>®</sup>
+title: About Syncfusion® .NET MAUI Chips Control | Syncfusion®
 platform: maui-toolkit
-description: Learn here about overall key features in Toolkit for .NET MAUI SfChip Control, its elements, and more.
+description: Learn all about the introduction of the Syncfusion® Toolkit .NET MAUI Chips control and more details.
 control: SfChip
 ---
 
-# Overview of .NET MAUI Chips
+# About Syncfusion® .NET MAUI Chips Control
 
 The Syncfusion® [.NET MAUI Chips](https://www.syncfusion.com/maui-controls/maui-chips) control is a versatile and feature-rich component that allows you to present information in an interactive and customizable layout. It enables you to arrange multiple chips in a layout and group them, making a selection and interaction seamless.
 

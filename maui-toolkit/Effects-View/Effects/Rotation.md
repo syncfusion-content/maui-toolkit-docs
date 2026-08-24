@@ -1,15 +1,15 @@
 ---
 layout: post
-title: The .NET MAUI Rotate Animation | Effects View Control | Syncfusion®
-description: Learn all about rotation effect support in Syncfusion® .NET MAUI Effects View (SfEffectsView) control and more.
+title: Rotation Effect in .NET MAUI Effects View | Syncfusion®
+description: Learn about the rotation effect in the Syncfusion® .NET MAUI Effects View (SfEffectsView) control and more.
 platform: maui-toolkit
 control: SfEffectsView
 documentation: UG
 ---
 
-# Rotation Effect in .NET MAUI Effects View (SfEffectsView)
+# Rotation Effect in .NET MAUI Effects View
 
-The [SfEffects.Rotation](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.EffectsView.SfEffects.html#Syncfusion_Maui_Toolkit_EffectsView_SfEffects_Rotation) provides a circular movement to the [SfEffectsView](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.EffectsView.SfEffectsView.html) around its center, based on the specified [Angle](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.EffectsView.SfEffectsView.html#Syncfusion_Maui_Toolkit_EffectsView_SfEffectsView_Angle).
+The [SfEffects.Rotation](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.EffectsView.SfEffects.html#Syncfusion_Maui_Toolkit_EffectsView_SfEffects_Rotation) provides a circular movement to the [Effects View](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.EffectsView.SfEffectsView.html) around its center, based on the specified [Angle](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.EffectsView.SfEffectsView.html#Syncfusion_Maui_Toolkit_EffectsView_SfEffectsView_Angle).
 
 {% tabs %} 
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Localization in .NET MAUI Calendar | Syncfusion
-description: Learn here all about Localization feature of Syncfusion .NET MAUI Calendar(SfCalendar) control and more. 
+title: Localization in .NET MAUI Calendar control | Syncfusion®
+description: Learn about localization in Syncfusion® .NET MAUI Calendar control for multi-language and culture support.
 platform: maui
 control: SfCalendar
 documentation: ug
 ---
 
-# Localization in .NET MAUI Calendar (SfCalendar)
+# Localization in .NET MAUI Calendar control
 
 By default, the calendar control supports US English localizations. You can change to other languages by adding the `Globalization` namespace to your application.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Customization in .NET MAUI Bottom Sheet (SfBottomSheet) | Syncfusion®
-description: Learn how to customize the Syncfusion® .NET MAUI Bottom Sheet (SfbottomSheet). Explore the options to enhance your Bottom Sheet appearance.
+title: Customization in .NET MAUI Bottom Sheet | Syncfusion®
+description: Learn how to customize the appearance of the Syncfusion® .NET MAUI Bottom Sheet (SfBottomSheet) control and more.
 platform: maui-toolkit
 control: SfBottomSheet
 documentation: UG
 ---
 
-# Customization in .NET MAUI Bottom Sheet (SfBottomSheet)
+# Customization in .NET MAUI Bottom Sheet
 
 A [Bottom Sheet](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.BottomSheet.SfBottomSheet.html) consists of several elements that can be customized to enhance its appearance and functionality.
 
@@ -418,7 +418,7 @@ SfBottomSheet bottomSheet = new SfBottomSheet
 
 ## Animation duration
 
-The [AnimationDuration](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.BottomSheet.SfBottomSheet.html#Syncfusion_Maui_Toolkit_BottomSheet_SfBottomSheet_AnimationDuration) property in `SfBottomSheet` is used to control the duration of the animation when opening and closing the bottom sheet. It allows you to customize how fast or slow the transition occurs.
+The [AnimationDuration](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.BottomSheet.SfBottomSheet.html#Syncfusion_Maui_Toolkit_BottomSheet_SfBottomSheet_AnimationDuration) property in `Bottom Sheet` is used to control the duration of the animation when opening and closing the bottom sheet. It allows you to customize how fast or slow the transition occurs.
 
 {% tabs %}	
 {% highlight xaml %}

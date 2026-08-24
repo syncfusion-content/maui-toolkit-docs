@@ -6,13 +6,13 @@ platform: maui-toolkit
 control: SfNavigationDrawer
 documentation: UG
 ---
-# Swipe Gesture in .NET MAUI Navigation Drawer (SfNavigationDrawer)
+# Swipe Gesture in .NET MAUI Navigation Drawer
 
 The Navigation Drawer supports the swipe gesture for both opening and closing the drawer. 
 
 ## Enabling swipe gesture
 
-The [EnableSwipeGesture](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NavigationDrawer.DrawerSettings.html#Syncfusion_Maui_Toolkit_NavigationDrawer_DrawerSettings_EnableSwipeGesture) property can activate or deactivate the swipe functionality in the [SfNavigationDrawer](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NavigationDrawer.SfNavigationDrawer.html).
+The [EnableSwipeGesture](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NavigationDrawer.DrawerSettings.html#Syncfusion_Maui_Toolkit_NavigationDrawer_DrawerSettings_EnableSwipeGesture) property can activate or deactivate the swipe functionality in the [Navigation Drawer](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NavigationDrawer.SfNavigationDrawer.html).
 
 {% tabs %}
 
@@ -43,7 +43,7 @@ this.Content = navigationDrawer;
 
 ## Swipe sensitivity
 
-The [TouchThreshold](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NavigationDrawer.DrawerSettings.html#Syncfusion_Maui_Toolkit_NavigationDrawer_DrawerSettings_TouchThreshold) property in the [SfNavigationDrawer](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NavigationDrawer.SfNavigationDrawer.html) can expand the swipe region. The default value of TouchThreshold is `120`.
+The [TouchThreshold](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NavigationDrawer.DrawerSettings.html#Syncfusion_Maui_Toolkit_NavigationDrawer_DrawerSettings_TouchThreshold) property in the [Navigation Drawer](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NavigationDrawer.SfNavigationDrawer.html) can expand the swipe region. The default value of TouchThreshold is `120`.
 
 {% tabs %}
 

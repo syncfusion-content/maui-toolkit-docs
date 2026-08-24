@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Swiping in .NET MAUI Tab View (SfTabView) Control | Syncfusion®
-description: Learn about the swiping support and more in the Syncfusion® .NET MAUI Tab View (SfTabView) control.
+title: Swiping in .NET MAUI Tab View | Syncfusion®
+description: Learn about the swiping support in the Syncfusion® .NET MAUI Tab View (SfTabView) control and more details.
 platform: maui-toolkit
 control: SfTabView
 documentation: UG
 ---
 
-# Swiping in .NET MAUI Tab View (SfTabView)
+# Swiping in .NET MAUI Tab View
 
-The [EnableSwiping](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SfTabView.html#Syncfusion_Maui_Toolkit_TabView_SfTabView_EnableSwiping) property of `SfTabView` allows users to switch between tab contents by swiping. By default, the `EnableSwiping` property is set to `false`.
+The [EnableSwiping](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SfTabView.html#Syncfusion_Maui_Toolkit_TabView_SfTabView_EnableSwiping) property of `Tab View` allows users to switch between tab contents by swiping. By default, the `EnableSwiping` property is set to `false`.
 
 You can enable swiping by setting the `EnableSwiping` property to `true`, as shown in the following code snippets:
 
@@ -33,6 +33,6 @@ The following image demonstrates the swiping functionality in action:
 
 ![.NET MAUI Tab View Swiping](images/tabview-swiping.gif)
 
-### Limitations
+**Limitations**
 
 Interference Between Child Controls and Tab View Swiping: When a child control within a Tab View supports horizontal swiping or interaction (e.g., a horizontal ScrollView, a custom swipe-enabled control, or a carousel), it can interfere with the Tab View's touch gestures. This may result in unintended behavior, such as the Tab View swiping when the child control is meant to handle the gesture, or vice versa. The overlapping gestures can cause confusion and disrupt the expected user experience, leading to a less intuitive interface.

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with .NET MAUI Effects View control | Syncfusion®
-description: Learn here about getting started with Syncfusion® .NET MAUI Effects View (SfEffectsView) control, its elements and more.
+title: Getting Started with .NET MAUI Effects View | Syncfusion®
+description: Learn how to get started with Syncfusion® .NET MAUI Effects View (SfEffectsView) control, its elements and more.
 platform: maui-toolkit
 control: SfEffectsView
 documentation: UG
@@ -9,7 +9,7 @@ documentation: UG
 
 # Getting Started with .NET MAUI Effects View
 
-This section guides you through setting up and configuring the [SfEffectsView](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.EffectsView.SfEffectsView.html) in your .NET MAUI application. Follow the steps below to add `Effects View` to your project.
+This section guides you through setting up and configuring the [Effects View](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.EffectsView.SfEffectsView.html) in your .NET MAUI application. Follow the steps below to add `Effects View` to your project.
 
 {% tabcontents %}
 {% tabcontent Visual Studio %}
@@ -120,7 +120,7 @@ using Syncfusion.Maui.Toolkit.EffectsView;
 
 ## Step 5: Add the EffectsView component
 
-Initialize the [SfEffectsView](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.EffectsView.SfEffectsView.html) and add the desired UI elements such as an image, label, or any custom view within it to apply visual effects.
+Initialize the [Effects View](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.EffectsView.SfEffectsView.html) and add the desired UI elements such as an image, label, or any custom view within it to apply visual effects.
 
 {% tabs %}
 {% highlight xaml %}

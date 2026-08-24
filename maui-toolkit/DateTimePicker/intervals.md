@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Date Time intervals in .NET MAUI Date Time Picker | Syncfusion®
-description: Learn about date time intervals in Syncfusion<sup>&reg;</sup> .NET MAUI Date Time Picker (SfDateTimePicker) control and its basic features.
+title: Intervals in .NET MAUI Date Time Picker control | Syncfusion®
+description: Learn about intervals in Syncfusion® .NET MAUI Date Time Picker control for day, month, year, and time step configuration.
 platform: maui
 control: SfDateTimePicker
 documentation: ug
 ---
 
-# Date Time intervals in .NET MAUI Date Time Picker (SfDateTimePicker)
+# Intervals in .NET MAUI Date Time Picker control
 The `SfDateTimePicker` provides six intervals in [.NET MAUI Date Time Picker](https://www.syncfusion.com/maui-controls/maui-datetimepicker).
 
  * [`DayInterval`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Picker.SfDateTimePicker.html#Syncfusion_Maui_Toolkit_Picker_SfDateTimePicker_DayInterval)
@@ -24,15 +24,15 @@ Date Time picker provides an option to give an interval between days using the [
 {% tabs %}
 {% highlight xaml tabtitle="XAML" hl_lines="2" %}
 
-<picker:SfDateTimePicker x:Name="picker"
+<picker:SfDateTimePicker x:Name="dateTimePicker"
                          DayInterval="2"/>
 
 {% endhighlight %}
 {% highlight c# tabtitle="C#" hl_lines="2" %}
 
-SfDateTimePicker picker = new SfDateTimePicker();
-picker.DayInterval = 2;
-this.Content = picker;
+SfDateTimePicker dateTimePicker = new SfDateTimePicker();
+dateTimePicker.DayInterval = 2;
+this.Content = dateTimePicker;
 
 {% endhighlight %}
 {% endtabs %}
@@ -45,15 +45,15 @@ Date Time picker provides an option to give an interval between months using the
 {% tabs %}
 {% highlight xaml tabtitle="XAML" hl_lines="2" %}
 
-<picker:SfDateTimePicker x:Name="picker"
+<picker:SfDateTimePicker x:Name="dateTimePicker"
                          MonthInterval="2"/>
 
 {% endhighlight %}
 {% highlight c# tabtitle="C#" hl_lines="2" %}
 
-SfDateTimePicker picker = new SfDateTimePicker();
-picker.MonthInterval = 2;
-this.Content = picker;
+SfDateTimePicker dateTimePicker = new SfDateTimePicker();
+dateTimePicker.MonthInterval = 2;
+this.Content = dateTimePicker;
 
 {% endhighlight %}
 {% endtabs %}
@@ -66,15 +66,15 @@ Date Time picker provides an option to give an interval between years using the 
 {% tabs %}
 {% highlight xaml tabtitle="XAML" hl_lines="2" %}
 
-<picker:SfDateTimePicker x:Name="picker"
+<picker:SfDateTimePicker x:Name="dateTimePicker"
                          YearInterval="2"/>
 
 {% endhighlight %}
 {% highlight c# tabtitle="C#" hl_lines="2" %}
 
-SfDateTimePicker picker = new SfDateTimePicker();
-picker.YearInterval = 2;
-this.Content = picker;
+SfDateTimePicker dateTimePicker = new SfDateTimePicker();
+dateTimePicker.YearInterval = 2;
+this.Content = dateTimePicker;
 
 {% endhighlight %}
 {% endtabs %}
@@ -87,15 +87,15 @@ Date Time picker provides an option to give an interval between hours using the 
 {% tabs %}
 {% highlight xaml tabtitle="XAML" hl_lines="2" %}
 
-<picker:SfDateTimePicker x:Name="picker"
+<picker:SfDateTimePicker x:Name="dateTimePicker"
                          HourInterval="2"/>
 
 {% endhighlight %}
 {% highlight c# tabtitle="C#" hl_lines="2" %}  
 
-SfDateTimePicker picker = new SfDateTimePicker();
-picker.HourInterval = 2;
-this.Content = picker;
+SfDateTimePicker dateTimePicker = new SfDateTimePicker();
+dateTimePicker.HourInterval = 2;
+this.Content = dateTimePicker;
 
 {% endhighlight %}
 {% endtabs %}
@@ -108,15 +108,15 @@ Date Time picker provides an option to give an interval between minutes using th
 {% tabs %}
 {% highlight xaml tabtitle="XAML" hl_lines="2" %}
 
-<picker:SfDateTimePicker x:Name="picker"
+<picker:SfDateTimePicker x:Name="dateTimePicker"
                          MinuteInterval="2"/>
 
 {% endhighlight %}
 {% highlight c# tabtitle="C#" hl_lines="2" %}  
 
-SfDateTimePicker picker = new SfDateTimePicker();
-picker.MinuteInterval = 2;
-this.Content = picker;
+SfDateTimePicker dateTimePicker = new SfDateTimePicker();
+dateTimePicker.MinuteInterval = 2;
+this.Content = dateTimePicker;
 
 {% endhighlight %}
 {% endtabs %}
@@ -129,15 +129,15 @@ Date Time picker provides an option to give an interval between seconds using th
 {% tabs %}
 {% highlight xaml tabtitle="XAML" hl_lines="2" %}
 
-<picker:SfDateTimePicker x:Name="picker"
+<picker:SfDateTimePicker x:Name="dateTimePicker"
                          SecondInterval="2"/>
 
 {% endhighlight %}
 {% highlight c# tabtitle="C#" hl_lines="2" %}  
 
-SfDateTimePicker picker = new SfDateTimePicker()
-picker.SecondInterval = 2;
-this.Content = picker;
+SfDateTimePicker dateTimePicker = new SfDateTimePicker()
+dateTimePicker.SecondInterval = 2;
+this.Content = dateTimePicker;
 
 {% endhighlight %}
 {% endtabs %}
@@ -150,15 +150,15 @@ Date Time picker provides an option to give an interval between milliseconds usi
 {% tabs %}
 {% highlight xaml tabtitle="XAML" hl_lines="2" %}
 
-<picker:SfDateTimePicker x:Name="picker"
+<picker:SfDateTimePicker x:Name="dateTimePicker"
                          MilliSecondInterval="2"/>
 
 {% endhighlight %}
 {% highlight c# tabtitle="C#" hl_lines="2" %}  
 
-SfDateTimePicker picker = new SfDateTimePicker()
-picker.MilliSecondInterval = 2;
-this.Content = picker;
+SfDateTimePicker dateTimePicker = new SfDateTimePicker()
+dateTimePicker.MilliSecondInterval = 2;
+this.Content = dateTimePicker;
 
 {% endhighlight %}
 {% endtabs %}

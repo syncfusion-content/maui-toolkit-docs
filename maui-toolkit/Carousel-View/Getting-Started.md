@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting started with .NET MAUI Carousel View | Syncfusion<sup>®</sup>
-description: Learn how to set up, configure, and use the Syncfusion<sup>®</sup> .NET MAUI Carousel View (SfCarousel) control in your cross-platform applications.
+title: Getting Started with .NET MAUI Carousel | Syncfusion®
+description: Learn here about getting started with Syncfusion® .NET MAUI Carousel control, its elements and more.
 platform: maui
 control: Carousel
 documentation: ug
@@ -102,7 +102,7 @@ builder.ConfigureSyncfusionToolkit();
 {% endhighlight %}
 {% endtabs %}
 
-## Step 4: Import Carousel View namespace
+## Step 4: Import Carousel namespace
 
 Add the following namespace in your XAML or C#.
 {% tabs %}
@@ -120,7 +120,7 @@ using Syncfusion.Maui.Toolkit.Carousel;
 
 ## Step 5: Define the Model and ViewModel
 
-Carousel items can be added to the control using the [ItemsSource](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Carousel.SfCarousel.html#Syncfusion_Maui_Toolkit_Carousel_SfCarousel_ItemsSource) property of [SfCarousel](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Carousel.SfCarousel.html). Objects of any class can be given as items for `SfCarousel` by using `ItemsSource`. The views corresponding to the objects can be set using the [ItemTemplate](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Carousel.SfCarousel.html#Syncfusion_Maui_Toolkit_Carousel_SfCarousel_ItemTemplate) for the content.
+Carousel items can be added to the control using the [ItemsSource](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Carousel.SfCarousel.html#Syncfusion_Maui_Toolkit_Carousel_SfCarousel_ItemsSource) property of [SfCarousel](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Carousel.SfCarousel.html). Objects of any class can be given as items for `Carousel` by using `ItemsSource`. The views corresponding to the objects can be set using the [ItemTemplate](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Carousel.SfCarousel.html#Syncfusion_Maui_Toolkit_Carousel_SfCarousel_ItemTemplate) for the content.
 
 Create a model class using the image collection property that is initialized with the required number of data objects, as shown in the following code example.
 
@@ -163,7 +163,7 @@ public class GalleryViewModel
 
 N> The images used in the above view model should be added in the Resources folder of the Application.
 
-## Step 6: Add the Carousel View component
+## Step 6: Add the Carousel component
 The following code example illustrates how to add the collection in Carousel,
 
 {% tabs %}
@@ -221,4 +221,4 @@ The following code example illustrates how to add the collection in Carousel,
 
 ![OverView image for Carousel](images/gettingstarted.png)
 
-You can download the Carousel View Getting Started sample from [here](https://github.com/SyncfusionExamples/Getting-Started-with-.NET-MAUI-SfCarousel).
+You can download the Carousel Getting Started sample from [here](https://github.com/SyncfusionExamples/Getting-Started-with-.NET-MAUI-SfCarousel).

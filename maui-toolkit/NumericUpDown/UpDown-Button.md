@@ -1,21 +1,21 @@
 ---
 layout: post
-title: Use UpDown Button in .NET MAUI NumericUpDown | Syncfusion<sup>®</sup>
-description: Learn here all about how to use UpDown Button (SpinButton) in Syncfusion<sup>®</sup> .NET MAUI NumericUpDown (SfNumericUpDown) control and more.
+title: UpDown Button in .NET MAUI Numeric UpDown | Syncfusion®
+description: Learn here all about how to use UpDown Button (SpinButton) in Syncfusion® .NET MAUI Numeric UpDown (SfNumericUpDown) control and more.
 platform: MAUI
 control:  SfNumericUpDown
 documentation: ug
 ---
 
-# UpDown Button in .NET MAUI NumericUpDown
+# UpDown Button in .NET MAUI Numeric UpDown
 
-This section describes how to change the value in the [NumericUpDown](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericUpDown.SfNumericUpDown.html) control using keys, mouse scrolling, and the up-down button
+This section describes how to change the value in the [Numeric UpDown](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericUpDown.SfNumericUpDown.html) control using keys, mouse scrolling, and the up-down button
 
 ## Increase or decrease value
 
-You can increment or decrement the value in the `NumericUpDown` control using the **UpArrow**, **DownArrow**, **PageUp**, and **PageDown** keys. You can change the increment or decrement value when the Arrow keys are pressed using the [SmallChange](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericUpDown.SfNumericUpDown.html#Syncfusion_Maui_Toolkit_NumericUpDown_SfNumericUpDown_SmallChange) property and Page keys using the [LargeChange](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericUpDown.SfNumericUpDown.html#Syncfusion_Maui_Toolkit_NumericUpDown_SfNumericUpDown_Large) property. By default, the value of the `SmallChange` property is **1**, and the `LargeChange` property is **10**. 
+You can increment or decrement the value in the `Numeric UpDown` control using the **UpArrow**, **DownArrow**, **PageUp**, and **PageDown** keys. You can change the increment or decrement value when the Arrow keys are pressed using the [SmallChange](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericUpDown.SfNumericUpDown.html#Syncfusion_Maui_Toolkit_NumericUpDown_SfNumericUpDown_SmallChange) property and Page keys using the [LargeChange](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericUpDown.SfNumericUpDown.html#Syncfusion_Maui_Toolkit_NumericUpDown_SfNumericUpDown_Large) property. By default, the value of the `SmallChange` property is **1**, and the `LargeChange` property is **10**. 
 
-N> The value in the `NumericUpDown` can also be changed by mouse scrolling. The mouse scrolling increases or decreases the value based on the `SmallChange` property.
+N> The value in the `Numeric UpDown` can also be changed by mouse scrolling. The mouse scrolling increases or decreases the value based on the `SmallChange` property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -39,13 +39,13 @@ sfNumericUpDown.VerticalOptions = LayoutOptions.Center;
 {% endhighlight %}
 {% endtabs %}
 
-![.NET MAUI NumericUpDown Placeholder Text](UpDownButton_images/valuechange-bykeys.gif)
+![.NET MAUI Numeric UpDown Placeholder Text](UpDownButton_images/valuechange-bykeys.gif)
 
 ## UpDown button placement
 
-You can increase or decrease the value of the `NumericUpDown` control using the up-down button. By default, the value of the [UpDownPlacementMode](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericUpDown.SfNumericUpDown.html#Syncfusion_Maui_Toolkit_NumericUpDown_SfNumericUpDown_UpDownPlacementMode) property is **Inline** which positions the up-down buttons in a horizontal orientation. You can adjust the position of the up-down buttons by setting the `UpDownPlacementMode` property to **InlineVertical** for vertical orientation.
+You can increase or decrease the value of the `Numeric UpDown` control using the up-down button. By default, the value of the [UpDownPlacementMode](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericUpDown.SfNumericUpDown.html#Syncfusion_Maui_Toolkit_NumericUpDown_SfNumericUpDown_UpDownPlacementMode) property is **Inline** which positions the up-down buttons in a horizontal orientation. You can adjust the position of the up-down buttons by setting the `UpDownPlacementMode` property to **InlineVertical** for vertical orientation.
 
-N> When using the up-down button, the `NumericUpDown` control value changes based on the value of the `SmallChange` property.
+N> When using the up-down button, the `Numeric UpDown` control value changes based on the value of the `SmallChange` property.
 
 {% tabs %}
 {% highlight XAML %}
@@ -67,11 +67,11 @@ sfNumericUpDown.UpDownPlacementMode = NumericUpDownUpDownPlacementMode.Inline;
 {% endhighlight %}
 {% endtabs %}
 
-![UpDown Placement in .NET MAUI NumericUpDown](UpDownButton_images/UpDownButtonPlacement.png)
+![UpDown Placement in .NET MAUI Numeric UpDown](UpDownButton_images/UpDownButtonPlacement.png)
 
 ## UpDown button alignment
 
-The UpDown button alignment in the `NumericUpDown` control can be customized using the [UpDownButtonAlignment](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericUpDown.SfNumericUpDown.html#Syncfusion_Maui_Toolkit_NumericUpDown_SfNumericUpDown_UpDownButtonAlignment) property. The buttons can be aligned to the following positions:
+The UpDown button alignment in the `Numeric UpDown` control can be customized using the [UpDownButtonAlignment](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericUpDown.SfNumericUpDown.html#Syncfusion_Maui_Toolkit_NumericUpDown_SfNumericUpDown_UpDownButtonAlignment) property. The buttons can be aligned to the following positions:
 
 **Left**: Positions the buttons to the left of the control. 
 **Right**: Positions the buttons to the right of the control. 
@@ -99,13 +99,13 @@ sfNumericUpDown.UpDownButtonAlignment = NumericUpDownUpDownPlacementMode.Inline;
 {% endhighlight %}
 {% endtabs %}
 
-![UpDown Placement in .NET MAUI NumericUpDown](UpDownButton_images/upDownButtonAlignment.png)
+![UpDown Placement in .NET MAUI Numeric UpDown](UpDownButton_images/upDownButtonAlignment.png)
 
 ## UpDown button customization
 
 ## UpDown button color
 
-Customize the `NumericUpDown` control button color by using the [UpDownButtonColor](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericUpDown.SfNumericUpDown.html#Syncfusion_Maui_Toolkit_NumericUpDown_SfNumericUpDown_UpDownButtonColor) property.
+Customize the `Numeric UpDown` control button color by using the [UpDownButtonColor](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericUpDown.SfNumericUpDown.html#Syncfusion_Maui_Toolkit_NumericUpDown_SfNumericUpDown_UpDownButtonColor) property.
 
 {% tabs %}
 {% highlight XAML %}
@@ -132,11 +132,11 @@ sfNumericUpDown.UpDownButtonColor = Colors.Blue;
 {% endhighlight %}
 {% endtabs %}
 
-![UpDownButtonColor support in .NET MAUI NumericUpDown](UpDownButton_images/UpDownButtonColor.png)
+![UpDownButtonColor support in .NET MAUI Numeric UpDown](UpDownButton_images/UpDownButtonColor.png)
 
 ## UpDown button template
 
-The `NumericUpDown` control supports customization of the UpDownButton's appearance through the use of the [UpButtonTemplate](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericUpDown.SfNumericUpDown.html#Syncfusion_Maui_Toolkit_NumericUpDown_SfNumericUpDown_UpButtonTemplate) and [DownButtonTemplate](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericUpDown.SfNumericUpDown.html#Syncfusion_Maui_Toolkit_NumericUpDown_SfNumericUpDown_DownButtonTemplate) properties.
+The `Numeric UpDown` control supports customization of the UpDownButton's appearance through the use of the [UpButtonTemplate](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericUpDown.SfNumericUpDown.html#Syncfusion_Maui_Toolkit_NumericUpDown_SfNumericUpDown_UpButtonTemplate) and [DownButtonTemplate](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericUpDown.SfNumericUpDown.html#Syncfusion_Maui_Toolkit_NumericUpDown_SfNumericUpDown_DownButtonTemplate) properties.
 
 N> The UpDownButton template only supports Inline Placement mode.
 
@@ -232,7 +232,7 @@ N> The UpDownButton template only supports Inline Placement mode.
 {% endhighlight %}
 {% endtabs %}
 
-![UpDownButtonTemplate support in .NET MAUI NumericUpDown](UpDownButton_images/UpDownButtonTemplate.png)
+![UpDownButtonTemplate support in .NET MAUI Numeric UpDown](UpDownButton_images/UpDownButtonTemplate.png)
 
 ## Auto reverse in SfNumericUpDown
 
@@ -260,5 +260,5 @@ sfNumericUpDown.Maximum=10;
 {% endhighlight %}
 {% endtabs %}
 
-![AutoReverse support in .NET MAUI NumericUpDown](UpDownButton_images/AutoReverseSupport.gif)
+![AutoReverse support in .NET MAUI Numeric UpDown](UpDownButton_images/AutoReverseSupport.gif)
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: States and Colors the .NET MAUI Text Input Layout control | Syncfusion®
-description: Learn here all about States and Colors support in the Syncfusion<sup>®</sup> .NET MAUI Text Input Layout (SfTextInputLayout) control and more.
+title: States and Colors in .NET MAUI Text Input Layout | Syncfusion®
+description: Learn here all about States and Colors support in the Syncfusion® .NET MAUI Text Input Layout control and more.
 platform: maui-toolkit
 control: SfTextInputLayout
 documentation: ug
 keywords: .net maui text input layout, syncfusion text input layout, text input layout maui.
 ---
 
-# States and Colors in .NET MAUI Text Input Layout (SfTextInputLayout)
+# States and Colors in .NET MAUI Text Input Layout
 
 Use the visual state manager to change the [Stroke](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TextInputLayout.SfTextInputLayout.html#Syncfusion_Maui_Toolkit_TextInputLayout_SfTextInputLayout_Stroke) properties based on the visual states set from the code. The applicable visual states are normal, focused, and error.
 
@@ -99,7 +99,7 @@ inputLayout.Style = style;
 
 {% endtabs %}
 
-![Visual states in .NET MAUI TextInputLayout.](images/StatesAndColors/States.png)
+![Visual states in .NET MAUI Text Input Layout.](images/StatesAndColors/States.png)
 
 ## Disabled state
 
@@ -127,7 +127,7 @@ inputLayout.Content = new Entry();
 
 {% endtabs %}
 
-![.NET MAUI TextInputLayout in disabled state.](images/StatesAndColors/Disabled.jpg)
+![.NET MAUI Text Input Layout in disabled state.](images/StatesAndColors/Disabled.jpg)
 
 
 ## Container color
@@ -163,7 +163,7 @@ inputLayout.Content = new Entry() { Text = "John" };
 
 {% endtabs %}
 
-![Container background in .NET MAUI TextInputLayout.](images/StatesAndColors/FilledContainerBackground.png)
+![Container background in .NET MAUI Text Input Layout.](images/StatesAndColors/FilledContainerBackground.png)
 
 ### Outlined
 
@@ -244,4 +244,4 @@ inputLayout.ErrorLabelStyle = new LabelStyle() { TextColor = Color.Maroon };
 
 {% endtabs %}
 
-![UI customization in .NET MAUI TextInputLayout.](images/StatesAndColors/AssistiveColors.png)
+![UI customization in .NET MAUI Text Input Layout.](images/StatesAndColors/AssistiveColors.png)

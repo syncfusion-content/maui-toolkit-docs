@@ -1,13 +1,13 @@
 ---
 layout: post
-title: About .NET MAUI Bottom Sheet Control | Syncfusion®
-description: Learn about the introduction to Syncfusion® .NET MAUI Bottom Sheet (SfBottomSheet) control and its features.
+title: About Syncfusion® .NET MAUI Bottom Sheet Control | Syncfusion®
+description: Learn about the introduction of the Syncfusion® .NET MAUI Bottom Sheet (SfBottomSheet) control and its features.
 platform: maui-toolkit
 control: SfBottomSheet
 documentation: UG
 ---
 
-# Overview of .NET MAUI Bottom Sheet
+# About Syncfusion® .NET MAUI Bottom Sheet Control
 
 The Syncfusion<sup>&reg;</sup> [.NET MAUI Bottom Sheet](https://www.syncfusion.com/maui-controls/maui-bottomsheet) (SfBottomSheet) control is used to present additional content or actions in a sliding panel from the bottom of the screen. It provides an interactive and space-efficient way to display contextual information without navigating away from the current view, making it suitable for modern mobile and desktop applications.
 
@@ -66,7 +66,7 @@ The following table summarizes the globalization support available in this contr
 <th align="center">Keyboard navigation</th>
 </tr>
 <tr>
-<td><a href="/maui-toolkit/bottom-sheet/overview">BottomSheet</a></td>
+<td><a href="/maui-toolkit/bottom-sheet/overview" aria-label="MAUI BottomSheet control overview">BottomSheet</a></td>
 <td align="center"><img src="../Images/not-applicable.svg" alt="not-applicable" width="16" /></td>
 <td align="center"><img src="../Images/full-support.svg" alt="full-support" width="16" /></td>
 <td align="center"><img src="../Images/not-applicable.svg" alt="not-applicable" width="16" /></td>
@@ -84,7 +84,7 @@ The following table summarizes the globalization support available in this contr
 ## See Also
 
 - [Getting Started](https://help.syncfusion.com/maui-toolkit/bottom-sheet/getting-started) shows a step‑by‑step guide to begin using the Bottom Sheet control.  
-- [Setting BottomSheet Content](https://help.syncfusion.com/maui-toolkit/bottom-sheet/bottomsheet-content) describes how to define and manage the content inside the sheet.  
+- [Setting Bottom Sheet Content](https://help.syncfusion.com/maui-toolkit/bottom-sheet/bottomsheet-content) describes how to define and manage the content inside the sheet.
 - [UI Kit](https://www.syncfusion.com/demos/maui#maui-ui-control) provides interactive demos and ready-made UI examples.  
 
 ## Resources

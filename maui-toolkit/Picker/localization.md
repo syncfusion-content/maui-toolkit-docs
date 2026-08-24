@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Localization with .NET MAUI Picker Control | Syncfusion<sup>&reg;</sup>
-description: Learn here all about localization with Syncfusion<sup>&reg;</sup> .NET MAUI Picker (SfPicker) control.
+title: Localization in .NET MAUI Picker | Syncfusion®
+description: Learn about localization in Syncfusion® .NET MAUI Picker control for multi-language and culture support.
 platform: maui
 control: SfPicker
 documentation: ug
 ---
 
-# Localization in .NET MAUI Picker (SfPicker)
+# Localization in .NET MAUI Picker control
 
 Localization is the process of translating the application resources into different language for the specific cultures. The SfPicker can be localized by adding resource file.
 
@@ -40,7 +40,7 @@ public partial class App : Application
 {% endhighlight %}
 {% endtabs %}
 
-   ![Picker localization in .NET MAUI Date Picker.](images/localization/maui-picker-localization.png)
+   ![Picker localization in .NET MAUI Picker.](images/localization/maui-picker-localization.png)
 
 N>
 The required `resx` files with `Build Action` as `EmbeddedResource` (File name should contain culture code) into the `Resources` folder.

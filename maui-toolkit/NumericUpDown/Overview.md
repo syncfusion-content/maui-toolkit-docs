@@ -1,17 +1,17 @@
 ---
 layout: post
-title: About .NET MAUI NumericUpDown Control | Syncfusion<sup>®</sup>
-description: Learn here all about introduction of Syncfusion<sup>®</sup> .NET MAUI NumericUpDown (SfNumericUpDown) control, its features, and more.
+title: About Syncfusion® .NET MAUI Numeric UpDown Control | Syncfusion®
+description: Learn here all about introduction of Syncfusion® .NET MAUI Numeric UpDown (SfNumericUpDown) control, its features, and more.
 platform: MAUI
 control: SfNumericUpDown
 documentation: ug
 ---
 
-# Overview of .NET MAUI NumericUpDown
+# About Syncfusion® .NET MAUI Numeric UpDown Control
 
-The Syncfusion<sup>&reg;</sup> [.NET MAUI NumericUpDown](https://www.syncfusion.com/maui-controls/maui-numericupdown) (`SfNumericUpDown`) control is used to input and adjust numeric values using increment and decrement buttons. It provides an intuitive way to modify values with built-in validation and formatting support, making it suitable for precise numeric input scenarios in .NET MAUI applications.
+The Syncfusion<sup>&reg;</sup> [.NET MAUI Numeric UpDown](https://www.syncfusion.com/maui-controls/maui-numericupdown) (`SfNumericUpDown`) control is used to input and adjust numeric values using increment and decrement buttons. It provides an intuitive way to modify values with built-in validation and formatting support, making it suitable for precise numeric input scenarios in .NET MAUI applications.
 
-![.NET MAUI NumericUpDown](Overview_images/overview_img.png)
+![.NET MAUI Numeric UpDown](Overview_images/overview_img.png)
 
 ## Business use cases
 
@@ -66,7 +66,7 @@ The following table summarizes the globalization support available in this contr
 <th align="center">Keyboard navigation</th>
 </tr>
 <tr>
-<td><a href="/maui-toolkit/numericupdown/overview">NumericUpDown</a></td>
+<td><a href="/maui-toolkit/numericupdown/overview" aria-label="MAUI Numeric UpDown control overview">NumericUpDown</a></td>
 <td align="center"><img src="../Images/full-support.svg" alt="full-support" width="16" /></td>
 <td align="center"><img src="../Images/full-support.svg" alt="full-support" width="16" /></td>
 <td align="center"><img src="../Images/not-applicable.svg" alt="not-applicable" width="16" /></td>
@@ -83,7 +83,7 @@ The following table summarizes the globalization support available in this contr
 
 ## See Also
 
-- [Getting Started](https://help.syncfusion.com/maui-toolkit/numericupdown/getting-started) shows a step‑by‑step guide to begin using the NumericUpDown control.  
+- [Getting Started](https://help.syncfusion.com/maui-toolkit/numericupdown/getting-started) shows a step‑by‑step guide to begin using the Numeric UpDown control.
 - [Formatting](https://help.syncfusion.com/maui-toolkit/numericupdown/formatting) helps configure number formatting and display.  
 - [UpDown Button](https://help.syncfusion.com/maui-toolkit/numericupdown/updown-button) describes how to use increment and decrement buttons effectively. 
 

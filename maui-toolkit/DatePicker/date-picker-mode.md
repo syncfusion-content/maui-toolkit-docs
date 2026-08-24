@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Date Picker Mode in .NET MAUI Date Picker Control | Syncfusion<sup>&reg;</sup>
-description: Learn about the date picker mode in Syncfusion<sup>&reg;</sup> .NET MAUI Date Picker (SfDatePicker) control and its basic features.
+title: Date Picker Mode in .NET MAUI Date Picker control | Syncfusion®
+description: Learn about date picker modes in Syncfusion® .NET MAUI Date Picker control with Default, Dialog, and RelativeDialog options.
 platform: maui
 control: SfDatePicker
 documentation: ug
 ---
 
-# Date Picker mode in .NET MAUI Date Picker (SfDatePicker)
+# Date Picker Mode in .NET MAUI Date Picker control
 
 The date picker mode is specified in the picker property enumeration, which is used to display the date picker based on the modes. It offers three modes: `Default`, `Dialog`, and `RelativeDialog`. The default picker mode is `Default` in the [SfDatePicker](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Picker.SfDatePicker.html).
 
@@ -46,7 +46,7 @@ Note: This property is automatically changed to `false` when you close the dialo
 {% highlight xaml tabtitle="MainPage.xaml" %}
 
 <Grid>
-    <picker:SfDatePicker x:Name="datepicker"
+    <picker:SfDatePicker x:Name="datePicker"
                          Mode="Dialog"/>
     <Button Text="Open Picker" 
             x:Name="pickerButton"
@@ -64,7 +64,7 @@ Note: This property is automatically changed to `false` when you close the dialo
 
 private void Button_Clicked(object sender, System.EventArgs e)
 {
-    this.datepicker.IsOpen = true;
+    this.datePicker.IsOpen = true;
 }
 
 {% endhighlight %}
@@ -111,7 +111,7 @@ Note: This property is automatically changed to `false` when you close the dialo
 
 private void Button_Clicked(object sender, System.EventArgs e)
 {
-    this.datepicker.IsOpen = true;
+    this.datePicker.IsOpen = true;
 }
 
 {% endhighlight %} 
@@ -151,8 +151,8 @@ N> It is only applicable in `RelativeDialog` mode. If `no relative view` is spec
 
 private void Button_Clicked(object sender, System.EventArgs e)
 {
-    this.datepicker.IsOpen = true;
-    this.datepicker.RelativeView = pickerButton;
+    this.datePicker.IsOpen = true;
+    this.datePicker.RelativeView = pickerButton;
 }
 
 {% endhighlight %}
