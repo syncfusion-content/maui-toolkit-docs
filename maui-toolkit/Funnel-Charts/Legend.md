@@ -261,7 +261,7 @@ To set the maximum size request for the legend view, override the [GetMaximumSiz
 
 {% highlight xml %}
 
-xmlns:chart="clr-namespace:Syncfusion.Maui.Charts;assembly=Syncfusion.Maui.Charts"
+xmlns:chart="clr-namespace:Syncfusion.Maui.Toolkit.Charts;assembly=Syncfusion.Maui.Toolkit.Charts"
     
 <chart:SfFunnelChart ItemsSource="{Binding Data}"
                      XBindingPath="XValue"
