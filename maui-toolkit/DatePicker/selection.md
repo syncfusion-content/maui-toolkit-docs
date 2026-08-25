@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Selection in .NET MAUI Date Picker control | Syncfusion®
-description: Learn about selection in Syncfusion .NET MAUI Date Picker control to manage selected date and programmatic selection.
+description: Learn about selection in Syncfusion® .NET MAUI Date Picker control to manage selected date and programmatic selection.
 platform: maui
 control: SfDatePicker
 documentation: ug
@@ -16,19 +16,19 @@ The SfDatePicker control allows you to select the date using the [SelectedDate](
 {% tabs %}
 {% highlight xaml tabtitle="XAML" hl_lines="2" %}
 
-<picker:SfDatePicker x:Name="picker" 
+<picker:SfDatePicker x:Name="datePicker" 
                      SelectedDate="9/7/2023">
 </picker:SfDatePicker>
 
 {% endhighlight %}
 {% highlight c# tabtitle="C#" hl_lines="3" %}
 
-SfDatePicker picker = new SfDatePicker()
+SfDatePicker datePicker = new SfDatePicker()
 {
     SelectedDate = new DateTime(2023, 9, 7).Date,
 };
 
-this.Content = picker;
+this.Content = datePicker;
 
 {% endhighlight %}  
 {% endtabs %}
@@ -42,12 +42,12 @@ The .NET MAUI DatePicker provides clear selection support, allowing you to clear
 {% tabs %}
 {% highlight xaml tabtitle="MainPage.xaml" %}
 
-<picker:SfDatePicker x:Name="picker" />
+<picker:SfDatePicker x:Name="datePicker" />
 
 {% endhighlight %}
 {% highlight c# tabtitle="MainPage.xaml.cs" %}
 
-    this.picker.SelectedDate = null;
+    this.datePicker.SelectedDate = null;
 
 {% endhighlight %}  
 {% endtabs %}

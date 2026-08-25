@@ -1,6 +1,6 @@
 ---
 layout: post
-title: About Syncfusion .NET MAUI Picker Control | Syncfusion
+title: About Syncfusion .NET MAUI Picker Control | Syncfusion®
 description: Learn about introduction of Syncfusion<sup>&reg;</sup> Essential Studio .NET MAUI Picker control and more details.
 platform: maui
 control: SfPicker
@@ -9,7 +9,7 @@ documentation: ug
 
 # About Syncfusion .NET MAUI Picker Control
 
-Syncfusion® .NET MAUI Picker ([SfPicker](https://www.syncfusion.com/maui-controls/maui-picker)) control allows you to select an item and visualize its items inside a popup or a drop-down UI element. It supports multiple-column layout, header, footer, and selection view customizations. It provides customization as a date picker, time picker, date-time picker, country picker, color picker, and more.
+Syncfusion® [.NET MAUI Picker](https://www.syncfusion.com/maui-controls/maui-picker) control allows you to select an item and visualize its items inside a popup or a drop-down UI element. It supports multiple-column layout, header, footer, and selection view customizations. It provides customization as a date picker, time picker, date-time picker, country picker, color picker, and more.
 
 ![Header view in .NET MAUI Picker.](images/overview/maui-header-view.png)
 
@@ -75,7 +75,7 @@ The following table summarizes the globalization support available in this contr
 <th align="center">Keyboard navigation</th>
 </tr>
 <tr>
-<td><a href="/maui-toolkit/picker/overview">Picker</a></td>
+<td><a href="/maui-toolkit/picker/overview" aria-label="MAUI Picker control overview">Picker</a></td>
 <td align="center"><img src="../Images/full-support.svg" alt="full-support" width="16" /></td>
 <td align="center"><img src="../Images/full-support.svg" alt="full-support" width="16" /></td>
 <td align="center"><img src="../Images/not-applicable.svg" alt="not-applicable" width="16" /></td>

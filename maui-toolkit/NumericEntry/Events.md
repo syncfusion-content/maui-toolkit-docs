@@ -9,7 +9,7 @@ documentation: ug
 
 # Events in .NET MAUI Numeric Entry
 
-The NumericEntry control has the events `ValueChanged` and `Completed` to notify after user inputs in [.NET MAUI NumericEntry](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericEntry.SfNumericEntry.html).
+The NumericEntry control has the events `ValueChanged` and `Completed` to notify after user inputs in [.NET MAUI Numeric Entry](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericEntry.SfNumericEntry.html).
 
 ## ValueChanged
 

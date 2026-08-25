@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Localization in .NET MAUI Picker control | Syncfusion®
-description: Learn about localization in Syncfusion .NET MAUI Picker control for multi-language and culture support.
+title: Localization in .NET MAUI Picker | Syncfusion®
+description: Learn about localization in Syncfusion® .NET MAUI Picker control for multi-language and culture support.
 platform: maui
 control: SfPicker
 documentation: ug
@@ -40,7 +40,7 @@ public partial class App : Application
 {% endhighlight %}
 {% endtabs %}
 
-   ![Picker localization in .NET MAUI Date Picker.](images/localization/maui-picker-localization.png)
+   ![Picker localization in .NET MAUI Picker.](images/localization/maui-picker-localization.png)
 
 N>
 The required `resx` files with `Build Action` as `EmbeddedResource` (File name should contain culture code) into the `Resources` folder.

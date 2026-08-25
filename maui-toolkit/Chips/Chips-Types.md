@@ -98,7 +98,7 @@ public class EmployeeViewModel : INotifyPropertyChanged
 
 {% endtabs %}
 
-![Input type in .NET MAUI SfChipGroup](images/items/Input.png)
+![Input type in .NET MAUI Chip Group](images/items/Input.png)
 
 ## Choice
 Allows users to select a single chip from a group of items. Selecting a chip will automatically deselect the previously selected chips. 
@@ -201,7 +201,7 @@ public class EmployeeViewModel : INotifyPropertyChanged
 
 {% endhighlight %}
 
-![Choice typed in .NET MAUI SfChipGroup](images/items/Choice.png)
+![Choice typed in .NET MAUI Chip Group](images/items/Choice.png)
 
 ### ChoiceMode
 
@@ -373,9 +373,9 @@ public class EmployeeViewModel : INotifyPropertyChanged
 
 ## Action
 
-Action type of [SfChipGroup](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Chips.SfChipGroup.html) executes the [Command](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Chips.SfChipGroup.html#Syncfusion_Maui_Toolkit_Chips_SfChipGroup_Command) when clicking the chip in `SfChipGroup`. On its `Command` action, you can do our desired action.
+Action type of [Chip Group](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Chips.SfChipGroup.html) executes the [Command](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Chips.SfChipGroup.html#Syncfusion_Maui_Toolkit_Chips_SfChipGroup_Command) when clicking the chip in `Chip Group`. On its `Command` action, you can do our desired action.
 
-The `Command` will execute only for action typed `SfChipGroup`.
+The `Command` will execute only for action typed `Chip Group`.
 
 The following code illustrates how to get action typed ChipGroup.
 
@@ -504,7 +504,7 @@ public class ViewModel : INotifyPropertyChanged
 
 {% endtabs %}
 
-![Action typed in .NET MAUI SfChipGroup](images/items/Action.png)
+![Action typed in .NET MAUI Chip Group](images/items/Action.png)
 
 
 

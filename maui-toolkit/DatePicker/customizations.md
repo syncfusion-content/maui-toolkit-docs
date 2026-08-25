@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Customizations in .NET MAUI Date Picker control | Syncfusion®
-description: Learn about customizations in Syncfusion .NET MAUI Date Picker control for headers, footers, and visual elements.
+description: Learn about customizations in Syncfusion® .NET MAUI Date Picker control for headers, footers, and visual elements.
 platform: maui
 control: SfDatePicker
 documentation: ug
@@ -23,7 +23,7 @@ The SfDatePicker control allows you to add the header text by setting the [Text]
 
 {% highlight xaml tabtitle="XAML" %}
 
-<picker:SfDatePicker x:Name="datepicker" >
+<picker:SfDatePicker x:Name="datePicker" >
     <picker:SfDatePicker.HeaderView >
         <picker:PickerHeaderView Height="40" Text="Date Picker"/>
     </picker:SfDatePicker.HeaderView>
@@ -56,7 +56,7 @@ The SfDatePicker control allows you to customize the header divider color by set
 
 {% highlight xaml tabtitle="XAML" %}
 
-<picker:SfDatePicker x:Name="datepicker" >
+<picker:SfDatePicker x:Name="datePicker" >
     <picker:SfDatePicker.HeaderView >
         <picker:PickerHeaderView DividerColor="Red" />
     </picker:SfDatePicker.HeaderView>
@@ -67,7 +67,7 @@ The SfDatePicker control allows you to customize the header divider color by set
 {% highlight c# tabtitle="C#" %}
 
 SfDatePicker datePicker = new SfDatePicker();
-datepicker.HeaderView = new PickerHeaderView()
+datePicker.HeaderView = new PickerHeaderView()
 {
     DividerColor = Colors.Red,
 };
@@ -88,7 +88,7 @@ Customize the header text style and background color of the `Date picker` using 
 
 {% highlight xaml tabtitle="XAML" %}
 
-<picker:SfDatePicker x:Name="datepicker" >
+<picker:SfDatePicker x:Name="datePicker" >
     <picker:SfDatePicker.HeaderView >
         <picker:PickerHeaderView Background="#D3D3D3">
             <picker:PickerHeaderView.TextStyle >
@@ -133,7 +133,7 @@ The [SfDatePicker](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.T
 
 {% highlight xaml tabtitle="XAML" %}
 
-<picker:SfDatePicker x:Name="datepicker" >
+<picker:SfDatePicker x:Name="datePicker" >
     <picker:SfDatePicker.ColumnHeaderView >
         <picker:DatePickerColumnHeaderView DayHeaderText="Day Column"
                                            MonthHeaderText="Month Column"
@@ -169,7 +169,7 @@ The SfDatePicker control allows you to customize the column header divider color
 
 {% highlight xaml tabtitle="XAML" %}
 
-<picker:SfDatePicker x:Name="datepicker" >
+<picker:SfDatePicker x:Name="datePicker" >
     <picker:SfDatePicker.ColumnHeaderView >
         <picker:DatePickerColumnHeaderView DividerColor="Red" />
     </picker:SfDatePicker.ColumnHeaderView>
@@ -180,7 +180,7 @@ The SfDatePicker control allows you to customize the column header divider color
 {% highlight c# tabtitle="C#" %}
 
 SfDatePicker datePicker = new SfDatePicker();
-datepicker.ColumnHeaderView = new DatePickerColumnHeaderView()
+datePicker.ColumnHeaderView = new DatePickerColumnHeaderView()
 {
     DividerColor = Colors.Red,
 };
@@ -201,7 +201,7 @@ Customize the column header view text style and background color of the Date Pic
 
 {% highlight xaml tabtitle="XAML" %}
 
-<picker:SfDatePicker x:Name="datepicker" >
+<picker:SfDatePicker x:Name="datePicker" >
     <picker:SfDatePicker.ColumnHeaderView >
         <picker:DatePickerColumnHeaderView Background="#D3D3D3">
             <picker:DatePickerColumnHeaderView.TextStyle >
@@ -247,7 +247,7 @@ The Default value of the [OkButtonText](https://help.syncfusion.com/cr/maui-tool
 
 {% highlight xaml tabtitle="XAML" %}
 
-<picker:SfDatePicker x:Name="datepicker" >
+<picker:SfDatePicker x:Name="datePicker" >
     <picker:SfDatePicker.FooterView >
         <picker:PickerFooterView Height="40" OkButtonText="Save"
                                  CancelButtonText="Exit"/>
@@ -282,7 +282,7 @@ The SfDatePicker control allows you to customize the footer divider color by set
 
 {% highlight xaml tabtitle="XAML" %}
 
-<picker:SfDatePicker x:Name="datepicker" >
+<picker:SfDatePicker x:Name="datePicker" >
     <picker:SfDatePicker.FooterView >
         <picker:PickerFooterView DividerColor="Red" />
     </picker:SfDatePicker.FooterView>
@@ -293,7 +293,7 @@ The SfDatePicker control allows you to customize the footer divider color by set
 {% highlight c# tabtitle="C#" %}
 
 SfDatePicker datePicker = new SfDatePicker();
-datepicker.FooterView = new PickerFooterView()
+datePicker.FooterView = new PickerFooterView()
 {
     DividerColor = Colors.Red,
 };
@@ -314,7 +314,7 @@ Customize the footer text style and background color of the Date Picker using th
 
 {% highlight xaml tabtitle="XAML" %}
 
-<picker:SfDatePicker x:Name="datepicker" >
+<picker:SfDatePicker x:Name="datePicker" >
     <picker:SfDatePicker.FooterView >
         <picker:PickerFooterView Background="#D3D3D3">
             <picker:PickerFooterView.TextStyle >
@@ -359,7 +359,7 @@ In the SfDatePicker control, the corner radius, stroke, and padding can be custo
 
 {% highlight xaml tabtitle="XAML" %}
 
-<picker:SfDatePicker x:Name="datepicker" >
+<picker:SfDatePicker x:Name="datePicker" >
     <picker:SfDatePicker.SelectionView >
         <picker:PickerSelectionView CornerRadius="10" Stroke="#36454F" Padding="10, 5, 10, 5" Background="#808080" />
     </picker:SfDatePicker.SelectionView>
@@ -394,7 +394,7 @@ Customize the selected view text style of the Date Picker using the [SelectedTex
 
 {% highlight xaml tabtitle="XAML" %}
 
-<picker:SfDatePicker x:Name="datepicker" >
+<picker:SfDatePicker x:Name="datePicker" >
     <picker:SfDatePicker.SelectedTextStyle >
         <picker:PickerTextStyle FontSize="15" TextColor="White"/>
     </picker:SfDatePicker.SelectedTextStyle>
@@ -429,7 +429,7 @@ Customize the column divider color using the [ColumnDividerColor](https://help.s
 {% tabs %}
 {% highlight xaml tabtitle="XAML" %}
 
-<picker:SfDatePicker x:Name="datepicker"
+<picker:SfDatePicker x:Name="datePicker"
                      ColumnDividerColor="Red">
 
 </picker:SfDatePicker>
@@ -438,7 +438,7 @@ Customize the column divider color using the [ColumnDividerColor](https://help.s
 {% highlight c# tabtitle="C#" %}
 
 SfDatePicker datepicker = new SfDatePicker();
-datepicker.ColumnDividerColor = Colors.Red;
+datePicker.ColumnDividerColor = Colors.Red;
 this.Content = datepicker;
 
 {% endhighlight %}

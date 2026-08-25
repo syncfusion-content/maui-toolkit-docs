@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Events in .NET MAUI Date Time Picker control | Syncfusion®
-description: Learn about events in Syncfusion .NET MAUI Date Time Picker control for SelectionChanged and user interactions.
+description: Learn about events in Syncfusion® .NET MAUI Date Time Picker control for SelectionChanged and user interactions.
 platform: maui
 control: SfDateTimePicker
 documentation: ug
@@ -24,14 +24,14 @@ The [SelectionChanged](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Ma
 {% tabs %}
 {% highlight xaml tabtitle="MainPage.xaml" hl_lines="2" %}
 
-<picker:SfDateTimePicker x:Name="picker"
+<picker:SfDateTimePicker x:Name="dateTimePicker"
                          SelectionChanged="OnDateTimePickerSelectionChanged">
 </picker:SfDateTimePicker>
 
 {% endhighlight %}
 {% highlight c# tabtitle="MainPage.xaml.cs" hl_lines="1" %}
 
-this.picker.SelectionChanged += this.OnDateTimePickerSelectionChanged;
+this.dateTimePicker.SelectionChanged += this.OnDateTimePickerSelectionChanged;
 
 private void OnDateTimePickerSelectionChanged(object sender, DateTimePickerSelectionChangedEventArgs e)
         {
@@ -63,19 +63,19 @@ The [Opened](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit
 {% tabs %}
 {% highlight xaml tabtitle="MainPage.xaml" hl_lines="2" %}
 
-<picker:SfDateTimePicker x:Name="picker"
+<picker:SfDateTimePicker x:Name="dateTimePicker"
                          Opened="OnDateTimePickerPopUpOpened">
 </picker:SfDateTimePicker>
 
 {% endhighlight %}
 {% highlight c# tabtitle="MainPage.xaml.cs" hl_lines="1" %}
 
-this.picker.Opened += this.OnDateTimePickerPopUpOpened;
+this.dateTimePicker.Opened += this.OnDateTimePickerPopUpOpened;
 
 private void OnDateTimePickerPopUpOpened(object sender, EventArgs e)
         {
             // If you need to open the picker, set IsOpen property to true.
-            this.picker.IsOpen = true;
+            this.dateTimePicker.IsOpen = true;
         }
 
 {% endhighlight %}  
@@ -94,14 +94,14 @@ The [Closing](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolki
 {% tabs %}
 {% highlight xaml tabtitle="MainPage.xaml" hl_lines="2" %}
 
-<picker:SfDateTimePicker x:Name="picker"
+<picker:SfDateTimePicker x:Name="dateTimePicker"
                          Closing="OnDateTimePickerPopUpClosing">
 </picker:SfDateTimePicker>
 
 {% endhighlight %}
 {% highlight c# tabtitle="MainPage.xaml.cs" hl_lines="1" %}
 
-this.picker.Closing += this.OnDateTimePickerPopUpClosing;
+this.dateTimePicker.Closing += this.OnDateTimePickerPopUpClosing;
 
 private void OnDateTimePickerPopUpClosing(object sender, CancelEventArgs e)
         {
@@ -123,19 +123,19 @@ The [Closed](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit
 {% tabs %}
 {% highlight xaml tabtitle="MainPage.xaml" hl_lines="2" %}
 
-<picker:SfDateTimePicker x:Name="picker"
+<picker:SfDateTimePicker x:Name="dateTimePicker"
                          Closed="OnDateTimePickerPopUpClosed">
 </picker:SfDateTimePicker>
 
 {% endhighlight %}
 {% highlight c# tabtitle="MainPage.xaml.cs" hl_lines="1" %}
 
-this.picker.Closed += this.OnDateTimePickerPopUpClosed;
+this.dateTimePicker.Closed += this.OnDateTimePickerPopUpClosed;
 
 private void OnDateTimePickerPopUpClosed(object sender, EventArgs e)
         {
             // If you need to close the picker, set IsOpen property to false.
-            this.picker.IsOpen = false;
+            this.dateTimePicker.IsOpen = false;
         }
 
 {% endhighlight %}  
@@ -159,14 +159,14 @@ The `SfDateTimePicker` footer view provides two events. These events are not app
 {% tabs %}
 {% highlight xaml tabtitle="MainPage.xaml" hl_lines="2" %}
 
-<picker:SfDateTimePicker x:Name="picker"
+<picker:SfDateTimePicker x:Name="dateTimePicker"
                          OkButtonClicked="OnDateTimePickerOkButtonClicked">
 </picker:SfDateTimePicker>
 
 {% endhighlight %}
 {% highlight c# tabtitle="MainPage.xaml.cs" hl_lines="1" %}
 
-this.picker.OkButtonClicked += this.OnDateTimePickerOkButtonClicked;
+this.dateTimePicker.OkButtonClicked += this.OnDateTimePickerOkButtonClicked;
 
 private void OnDateTimePickerOkButtonClicked(object sender, EventArgs e)
         {
@@ -187,14 +187,14 @@ private void OnDateTimePickerOkButtonClicked(object sender, EventArgs e)
 {% tabs %}
 {% highlight xaml tabtitle="MainPage.xaml" hl_lines="2" %}
 
-<picker:SfDateTimePicker x:Name="picker"
+<picker:SfDateTimePicker x:Name="dateTimePicker"
                          CancelButtonClicked="OnDateTimePickerCancelButtonClicked">
 </picker:SfDateTimePicker>
 
 {% endhighlight %}
 {% highlight c# tabtitle="MainPage.xaml.cs" hl_lines="1" %}
 
-this.picker.CancelButtonClicked += this.OnDateTimePickerCancelButtonClicked;
+this.dateTimePicker.CancelButtonClicked += this.OnDateTimePickerCancelButtonClicked;
 
 private void OnDateTimePickerCancelButtonClicked(object sender, EventArgs e)
         {
@@ -213,7 +213,7 @@ The SfDateTimePicker includes a built-in event called `SelectionChanged` that is
 {% tabs %}
 {% highlight xaml tabtitle="MainPage.xaml" hl_lines="2" %}
 
-<picker:SfDateTimePicker x:Name="picker"
+<picker:SfDateTimePicker x:Name="dateTimePicker"
                     SelectionChangedCommand="{Binding SelectionChangedCommand}">
 <ContentPage.BindingContext>
     <local:ViewModel/>
@@ -246,7 +246,7 @@ The SfDateTimePicker includes a built-in event called `OkButtonClicked`, which i
 {% tabs %}
 {% highlight xaml tabtitle="MainPage.xaml" hl_lines="2" %}
 
-<picker:SfDateTimePicker x:Name="picker"
+<picker:SfDateTimePicker x:Name="dateTimePicker"
                     AcceptCommand="{Binding AcceptCommand}">
 <ContentPage.BindingContext>
     <local:ViewModel/>
@@ -279,7 +279,7 @@ The SfDateTimePicker includes a built-in event called `CancelButtonClicked`, whi
 {% tabs %}
 {% highlight xaml tabtitle="MainPage.xaml" hl_lines="2" %}
 
-<picker:SfDateTimePicker x:Name="picker"
+<picker:SfDateTimePicker x:Name="dateTimePicker"
                     DeclineCommand="{Binding DeclineCommand}">
 <ContentPage.BindingContext>
     <local:ViewModel/>

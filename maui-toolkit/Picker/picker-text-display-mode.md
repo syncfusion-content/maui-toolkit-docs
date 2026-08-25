@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Text Display Mode in .NET MAUI Picker control | Syncfusion®
-description: Learn about text display mode in Syncfusion .NET MAUI Picker control with Default, Fade, Shrink options.
+description: Learn about text display mode in Syncfusion® .NET MAUI Picker control with Default, Fade, Shrink options.
 platform: maui
 control: SfPicker
 documentation: ug
@@ -65,7 +65,7 @@ this.Content = picker;
 
 {% endtabs %}
 
-![Shrink mode in .NET MAUI Date picker.](images/text-display-mode/picker-shrink.png)
+![Shrink mode in .NET MAUI Picker.](images/text-display-mode/picker-shrink.png)
 
 ## FadeAndShrink Mode
 
@@ -93,4 +93,4 @@ this.Content = picker;
 
 {% endtabs %}
 
-![Fade and Shrink mode in .NET MAUI Date picker.](images/text-display-mode/picker-fade-shrink.png)
+![Fade and Shrink mode in .NET MAUI Picker.](images/text-display-mode/picker-fade-shrink.png)
