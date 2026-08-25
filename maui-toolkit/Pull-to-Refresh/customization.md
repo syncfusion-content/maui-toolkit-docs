@@ -13,7 +13,7 @@ The .NET MAUI PullToRefresh control supports customization of various features, 
 
 ## PullableContent
 
-The [PullableContent](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.PullToRefresh.SfPullToRefresh.html#Syncfusion_Maui_Toolkit_PullToRefresh_SfPullToRefresh_PullableContent) is the main view of the [PullToRefresh](https://helpstaging.syncfusion.com:14038/cr/maui-toolkit/Syncfusion.Maui.Toolkit.PullToRefresh.html) control on which the desired items can be placed.
+The [PullableContent](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.PullToRefresh.SfPullToRefresh.html#Syncfusion_Maui_Toolkit_PullToRefresh_SfPullToRefresh_PullableContent) is the main view of the [PullToRefresh](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.PullToRefresh.html) control on which the desired items can be placed.
 
 {% tabs %}
 {% highlight xaml tabtitle="MainPage.xaml" hl_lines="6 11" %}
@@ -38,7 +38,7 @@ The [PullableContent](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Mau
 
 The [TransitionMode](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.PullToRefresh.SfPullToRefresh.html#Syncfusion_Maui_Toolkit_PullToRefresh_SfPullToRefresh_TransitionMode) property specifies the mode of the animations. It has the following two modes:
 
-* [SlideOnTop](https://helpstaging.syncfusion.com:14038/cr/maui-toolkit/Syncfusion.Maui.Toolkit.PullToRefresh.PullToRefreshTransitionType.html#Syncfusion_Maui_Toolkit_PullToRefresh_PullToRefreshTransitionType_SlideOnTop)
+* [SlideOnTop](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.PullToRefresh.PullToRefreshTransitionType.html#Syncfusion_Maui_Toolkit_PullToRefresh_PullToRefreshTransitionType_SlideOnTop)
 * [Push](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.PullToRefresh.PullToRefreshTransitionType.html#Syncfusion_Maui_Toolkit_PullToRefresh_PullToRefreshTransitionType_Push)
 
 The default transition is `SlideOnTop` that draws the RefreshView on top of the `PullableContent`.
@@ -256,7 +256,234 @@ pullToRefresh.EndRefreshing();
 {% endhighlight %}
 {% endtabs %}
 
+## Host .NET MAUI DataGrid as pullable content
 
+The `PullToRefresh` control provides support for loading any custom control as pullable content. To host the .NET MAUI `DataGrid` inside the `PullToRefresh`, follow these steps.
+<ol>
+    <li> Add the required assembly references as discussed in the <a href="https://help.syncfusion.com/maui/datagrid/getting-started" aria-label="Open Syncfusion MAUI DataGrid Getting Started documentation">DataGrid</a> and PullToRefresh.</li>
+    <li> Define the `OrdersInfo` collection in a ViewModel and implement a `Refresh Item source(int count)` method that updates it.</li>
+    <li> Import PullToRefresh and DataGrid control namespace as follows.</li>
+    <br/>
+{% tabs %}
+{% highlight xaml tabtitle="MainPage.xaml" %}
+
+xmlns:sfgrid="clr-namespace:Syncfusion.Maui.DataGrid;assembly=Syncfusion.Maui.DataGrid"
+xmlns:pulltoRefresh="clr-namespace:Syncfusion.Maui.Toolkit.PullToRefresh;assembly=Syncfusion.Maui.Toolkit"
+
+{% endhighlight %}
+{% highlight c# tabtitle="MainPage.xaml.cs" %}
+
+using Syncfusion.Maui.DataGrid;
+using Syncfusion.Maui.Toolkit.PullToRefresh;
+
+{% endhighlight %}
+{% endtabs %}
+    <br/>
+    <li> Define the DataGrid as PullableContent of the PullToRefresh.</li> 
+    <li> Handle the pull to refresh events for refreshing the data. </li>
+    <li> Customize the required properties of the DataGrid and PullToRefresh based on your requirement.</li>
+</ol>
+
+This is how the final output will look like when hosting a Datagrid control as pullable content.
+
+{% tabs %}
+{% highlight xaml tabtitle="MainPage.xaml" hl_lines="23 24 36 37" %}
+
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            x:Class="PullToRefreshTemplate.MainPage"
+            xmlns:sfgrid="clr-namespace:Syncfusion.Maui.DataGrid;assembly=Syncfusion.Maui.DataGrid"
+            xmlns:pulltoRefresh="clr-namespace:Syncfusion.Maui.Toolkit.PullToRefresh;assembly=Syncfusion.Maui.Toolkit"
+            xmlns:local="clr-namespace:PullToRefreshTemplate">
+
+    <ContentPage.Behaviors>
+        <local:PullToRefreshTemplateBehavior />
+    </ContentPage.Behaviors>
+
+    <ContentPage.Content>
+        <Grid>
+            <pulltoRefresh:SfPullToRefresh x:Name="pullToRefresh"
+                                        RefreshViewHeight="50"
+                                        RefreshViewThreshold="30"
+                                        PullingThreshold="150"
+                                        RefreshViewWidth="50"
+                                        ProgressThickness='{OnPlatform Android="3", Default="2"}'
+                                        TransitionMode="SlideOnTop"
+                                        Margin="{StaticResource margin}"
+                                        IsRefreshing="False">
+                <pulltoRefresh:SfPullToRefresh.PullableContent>
+                    <sfgrid:SfDataGrid x:Name="dataGrid"
+                                    HeaderRowHeight="52"
+                                    RowHeight="48"
+                                    SortingMode="Single"
+                                    ItemsSource="{Binding OrdersInfo}"
+                                    AutoGenerateColumnsMode="None"
+                                    ColumnWidthMode="Fill"
+                                    HorizontalScrollBarVisibility="Always"
+                                    VerticalScrollBarVisibility="Always">
+
+                    </sfgrid:SfDataGrid>
+                </pulltoRefresh:SfPullToRefresh.PullableContent>
+            </pulltoRefresh:SfPullToRefresh>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
+
+{% endhighlight %}
+{% highlight c# tabtitle="MainPage.xaml.cs" %}
+
+using Syncfusion.Maui.DataGrid;
+using Syncfusion.Maui.ProgressBar;
+using Syncfusion.Maui.Toolkit.PullToRefresh;
+
+namespace PullToRefreshTemplate
+{
+    public class PullToRefreshTemplateBehavior : Behavior<ContentPage>
+    {
+        protected override void OnAttachedTo(ContentPage bindable)
+        {
+            this.viewModel = new OrderInfoViewModel();
+            bindable.BindingContext = this.viewModel;
+            this.pullToRefresh = bindable.FindByName<Syncfusion.Maui.Toolkit.PullToRefresh.SfPullToRefresh>("pullToRefresh");
+            this.dataGrid = bindable.FindByName<SfDataGrid>("dataGrid");
+            this.dataGrid.ItemsSource = this.viewModel.OrdersInfo;
+            this.pullToRefresh.Refreshing += this.PullToRefresh_Refreshing;
+            this.pullToRefresh.Pulling += this.PullToRefresh_Pulling;
+            base.OnAttachedTo(bindable);
+        }
+
+        private async void PullToRefresh_Refreshing(object? sender, EventArgs e)
+        {
+            this.viewModel!.RefreshItemsource(10);
+            await Task.Delay(10);
+            this.pullToRefresh.IsRefreshing = false;
+        }
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+If you run the above sample with the TransitionMode as Push, the output will look as follows.
+
+![Syncfusion .NET MAUI Pull to Refresh with DataGrid hosted with push transition mode.](Images/customization/net-maui-datagrid-push.gif)
+
+## Host .NET MAUI ListView as pullable content
+
+To host the .NET MAUI `ListView` inside the `PullToRefresh` to update items in the list while performing the pull to refresh action, follow these steps.
+<ol>
+    <li>	Add the required assembly references as discussed in the <a href="https://help.syncfusion.com/maui/listview/getting-started" aria-label="Open Syncfusion MAUI ListView Getting Started documentation">ListView</a> and PullToRefresh.</li>
+    <li>	Define the `InboxInfos` collection in a `ListViewInboxInfoViewModel` and implement an `AddItemsRefresh(int count)` method that adds new items.</li>
+    <li>	Import the SfPullToRefresh control and SfListView control namespace as follows.</li>
+    <br/>
+{% tabs %}
+{% highlight xaml tabtitle="MainPage.xaml" %}
+
+xmlns:ListView="clr-namespace:Syncfusion.Maui.ListView;assembly=Syncfusion.Maui.ListView"
+xmlns:pulltoRefresh="clr-namespace:Syncfusion.Maui.Toolkit.PullToRefresh;assembly=Syncfusion.Maui.Toolkit"
+
+{% endhighlight %}
+{% highlight c# tabtitle="MainPage.xaml.cs" %}
+
+using Syncfusion.Maui.ListView;
+using Syncfusion.Maui.Toolkit.PullToRefresh;
+
+{% endhighlight %}
+{% endtabs %}
+    <br/>
+    <li>	Define the ListView as PullableContent of the SfPullToRefresh.</li>
+    <li>	Handle the pull to refresh events for refreshing the data. </li>
+    <li>	Customize the required properties of ListView and PullToRefresh based on your requirement.</li>
+</ol>
+
+This is how the final output will look like when hosting a SfListView control as pullable content.
+
+{% tabs %}
+{% highlight xaml tabtitle="MainPage.xaml" hl_lines="21 23 33 35" %}
+
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            x:Class="RefreshableListView.MainPage"
+            xmlns:ListView="clr-namespace:Syncfusion.Maui.ListView;assembly=Syncfusion.Maui.ListView"
+            xmlns:pulltoRefresh="clr-namespace:Syncfusion.Maui.Toolkit.PullToRefresh;assembly=Syncfusion.Maui.Toolkit"
+            xmlns:local="clr-namespace:RefreshableListView">
+
+    <ContentPage.Behaviors>
+        <local:ListViewPullToRefreshBehavior />
+    </ContentPage.Behaviors>
+
+    <ContentPage.Content>
+        <Grid>
+            <pulltoRefresh:SfPullToRefresh x:Name="pullToRefresh"
+                                        RefreshViewHeight="50"
+                                        RefreshViewThreshold="30"
+                                        PullingThreshold="150"
+                                        RefreshViewWidth="50"
+                                        TransitionMode="SlideOnTop"
+                                        IsRefreshing="False">
+                <pulltoRefresh:SfPullToRefresh.PullableContent>
+                    <Grid x:Name="mainGrid">
+                        <ListView:SfListView Grid.Row="1"
+                                            x:Name="listView"
+                                            ItemsSource="{Binding InboxInfos}"
+                                            ItemSize="102"
+                                            SelectionMode="Single"
+                                            ScrollBarVisibility="Always"
+                                            AutoFitMode="Height">
+                            . . . 
+                            . . . .
+
+                        </ListView:SfListView>
+                    </Grid>
+                </pulltoRefresh:SfPullToRefresh.PullableContent>
+            </pulltoRefresh:SfPullToRefresh>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
+    
+{% endhighlight %}
+{% highlight c# tabtitle="MainPage.xaml.cs" %}
+
+using Syncfusion.Maui.DataSource;
+using Syncfusion.Maui.DataSource.Extensions;
+using Syncfusion.Maui.ListView;
+using Syncfusion.Maui.Toolkit.PullToRefresh;
+namespace RefreshableListView
+{
+    public class ListViewPullToRefreshBehavior : Behavior<ContentPage>
+    {
+        private SfPullToRefresh pullToRefresh;
+        private SfListView listView;
+        private ListViewInboxInfoViewModel ViewModel;
+
+        protected override void OnAttachedTo(ContentPage bindable)
+        {
+            ViewModel = new ListViewInboxInfoViewModel();
+            bindable.BindingContext = ViewModel;
+            pullToRefresh = bindable.FindByName<SfPullToRefresh>("pullToRefresh");
+            listView = bindable.FindByName<SfListView>("listView");
+            pullToRefresh.Refreshing += PullToRefresh_Refreshing;
+
+            base.OnAttachedTo(bindable);
+        }
+
+    private async void PullToRefresh_Refreshing(object? sender, EventArgs e)
+    {
+        pullToRefresh!.IsRefreshing = true;
+        await Task.Delay(2500);
+        ViewModel!.AddItemsRefresh(3);
+        pullToRefresh.IsRefreshing = false;
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+If you run the above sample with the TransitionMode as Push, the output will look as follows.
+
+![Syncfusion .NET MAUI Pull to Refresh with ListView hosted with push transition mode.](Images/customization/net-maui-listview-push.gif)
+
+## Pulling and refreshing template
 
 The `PullToRefresh` allows you to set a template for pulling and refreshing the view. The pulling and refreshing a template can be set using the [SfPullToRefresh.PullingViewTemplate](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.PullToRefresh.SfPullToRefresh.html#Syncfusion_Maui_PullToRefresh_SfPullToRefresh_PullingViewTemplate) and [SfPullToRefresh.RefreshingViewTemplate](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.PullToRefresh.SfPullToRefresh.html#Syncfusion_Maui_PullToRefresh_SfPullToRefresh_RefreshingViewTemplate) properties, respectively.
 
@@ -269,7 +496,7 @@ Refer to the following code example in which a [SfCircularProgressBar](https://h
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="PullToRefreshTemplate.MainPage"
              xmlns:sfgrid="clr-namespace:Syncfusion.Maui.DataGrid;assembly=Syncfusion.Maui.DataGrid"
-             xmlns:pulltoRefresh="clr-namespace:Syncfusion.Maui.PullToRefresh;assembly=Syncfusion.Maui.PullToRefresh"
+             xmlns:pulltoRefresh="clr-namespace:Syncfusion.Maui.Toolkit.PullToRefresh;assembly=Syncfusion.Maui.Toolkit"
              xmlns:local="clr-namespace:PullToRefreshTemplate">
 
         <ContentPage.Behaviors>
@@ -341,7 +568,7 @@ Refer to the following code example in which a [SfCircularProgressBar](https://h
             this.progressbar.Content = this.progressContent;
 
             bindable.BindingContext = this.viewModel;
-            this.pullToRefresh = bindable.FindByName<Syncfusion.Maui.PullToRefresh.SfPullToRefresh>("pullToRefresh");
+            this.pullToRefresh = bindable.FindByName<Syncfusion.Maui.Toolkit.PullToRefresh.SfPullToRefresh>("pullToRefresh");
             this.dataGrid = bindable.FindByName<SfDataGrid>("dataGrid");
             this.dataGrid.ItemsSource = this.viewModel.OrdersInfo;
             this.pullToRefresh.Refreshing += this.PullToRefresh_Refreshing;
