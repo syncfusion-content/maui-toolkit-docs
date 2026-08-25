@@ -13,7 +13,7 @@ The .NET MAUI Pull to Refresh control supports customization of various features
 
 ## PullableContent
 
-The [PullableContent](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.PullToRefresh.SfPullToRefresh.html#Syncfusion_Maui_Toolkit_PullToRefresh_SfPullToRefresh_PullableContent) is the main view of the [PullToRefresh](https://help.syncfusion.com:/maui-toolkit/Syncfusion.Maui.Toolkit.PullToRefresh.html) control on which the desired items can be placed.
+The [PullableContent](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.PullToRefresh.SfPullToRefresh.html#Syncfusion_Maui_Toolkit_PullToRefresh_SfPullToRefresh_PullableContent) is the main view of the [PullToRefresh](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.PullToRefresh.html) control on which the desired items can be placed.
 
 {% tabs %}
 {% highlight xaml tabtitle="MainPage.xaml" hl_lines="6 11" %}
@@ -38,7 +38,7 @@ The [PullableContent](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Mau
 
 The [TransitionMode](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.PullToRefresh.SfPullToRefresh.html#Syncfusion_Maui_Toolkit_PullToRefresh_SfPullToRefresh_TransitionMode) property specifies the mode of the animations. It has the following two modes:
 
-* [SlideOnTop](https://help.syncfusion.com:/maui-toolkit/Syncfusion.Maui.Toolkit.PullToRefresh.PullToRefreshTransitionType.html#Syncfusion_Maui_Toolkit_PullToRefresh_PullToRefreshTransitionType_SlideOnTop)
+* [SlideOnTop](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.PullToRefresh.PullToRefreshTransitionType.html#Syncfusion_Maui_Toolkit_PullToRefresh_PullToRefreshTransitionType_SlideOnTop)
 * [Push](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.PullToRefresh.PullToRefreshTransitionType.html#Syncfusion_Maui_Toolkit_PullToRefresh_PullToRefreshTransitionType_Push)
 
 The default transition is `SlideOnTop` that draws the RefreshView on top of the `PullableContent`.
