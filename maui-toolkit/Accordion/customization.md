@@ -9,17 +9,33 @@ documentation: ug
 
 # Customization in .NET MAUI Accordion
 
+## Animation duration
+
+The `SfAccordion` allows you to customize the expanding and collapsing duration of accordion items by using the `AnimationDuration` property. By default, the animation duration is set to `200 milliseconds`. 
+
+{% tabs %}
+{% highlight xaml hl_lines="2" %}
+<syncfusion:SfAccordion x:Name="accordion"
+                        AnimationDuration="150">
+</syncfusion:SfAccordion>
+{% endhighlight %}
+{% highlight c# hl_lines="2" %}
+var accordion = new SfAccordion();
+accordion.AnimationDuration = 150;
+{% endhighlight %}
+{% endtabs %}
+
 ## Animation easing
 
 You can customize the rate of change of a parameter over time or the animation style of an accordion item by using the `AnimationEasing` property. By default, the animation easing is set to `Linear`.  
 
 {% tabs %}
 {% highlight xaml hl_lines="2" %}
-         <syncfusion:SfAccordion x:Name="accordion"
-                                AnimationEasing="SinOut" />
+<syncfusion:SfAccordion x:Name="accordion"
+                        AnimationEasing="SinOut" />
 {% endhighlight %}
 {% highlight c# %}
-    accordion.AnimationEasing = ExpanderAnimationEasing.SinOut;
+accordion.AnimationEasing = ExpanderAnimationEasing.SinOut;
 {% endhighlight %}
 {% endtabs %}
 
@@ -29,11 +45,11 @@ The `SfAccordion` allows you to customize the scroll position of the expanded ac
 
 {% tabs %}
 {% highlight xaml hl_lines="2" %}
-    <syncfusion:SfAccordion x:Name="accordion"
-                             AutoScrollPosition="Top"/>
+<syncfusion:SfAccordion x:Name="accordion"
+                        AutoScrollPosition="Top"/>
 {% endhighlight %}
 {% highlight c# %}
-    accordion.AutoScrollPosition = AccordionAutoScrollPosition.Top;
+accordion.AutoScrollPosition = AccordionAutoScrollPosition.Top;
 {% endhighlight %}
 {% endtabs %}
 
@@ -122,11 +138,11 @@ You can expand single or multiple items using the `ExpandMode` property. By defa
 
 {% tabs %}
 {% highlight xaml hl_lines="2" %}
-    <syncfusion:SfAccordion x:Name="accordion" 
-                            ExpandMode="Multiple" />
+<syncfusion:SfAccordion x:Name="accordion" 
+                        ExpandMode="Multiple" />
 {% endhighlight %}
 {% highlight c# %}
-    accordion.ExpandMode = AccordionExpandMode.Multiple;
+accordion.ExpandMode = AccordionExpandMode.Multiple;
 {% endhighlight %}
 {% endtabs %}
 
@@ -136,8 +152,8 @@ The `SfAccordion` allows you to customize the vertical spacing between the accor
 
 {% tabs %}
 {% highlight xaml hl_lines="2" %}
-    <syncfusion:SfAccordion x:Name="accordion" 
-                            ItemSpacing="6.0d" />
+<syncfusion:SfAccordion x:Name="accordion" 
+                        ItemSpacing="6.0d" />
 {% endhighlight %}
 {% highlight c# %}
     accordion.ItemSpacing = 6.0d;

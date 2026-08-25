@@ -9,7 +9,7 @@ documentation: ug
 
 # Value Formatting in .NET MAUI Numeric Entry
 
-This section explains how to change the value format of the [NumericEntry](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericEntry.SfNumericEntry.html) control using the `CustomFormat` properties.
+This section explains how to change the value format of the [Numeric Entry](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericEntry.SfNumericEntry.html) control using the `CustomFormat` properties.
 
 ## Currency, percentage and decimal format
 
@@ -48,7 +48,7 @@ hoursWorked.CustomFormat = "N2";
 {% endhighlight %}
 {% endtabs %}
 
-![.NET MAUI NumericEntry customize format by NumberFormatter](Formatting_images/maui-numeric-entry-numberformatter.png)
+![.NET MAUI Numeric Entry customize format by NumberFormatter](Formatting_images/maui-numeric-entry-numberformatter.png)
 
 ## Format the integer digits
 
@@ -85,7 +85,7 @@ hoursWorked.CustomFormat = "00000.00";
 {% endhighlight %}
 {% endtabs %}
 
-![.NET MAUI NumericEntry customize decimal digits](Formatting_images/maui-numeric-entry-change-decimal-digits.png)
+![.NET MAUI Numeric Entry customize decimal digits](Formatting_images/maui-numeric-entry-change-decimal-digits.png)
 
 ## Format the fractional digits
 
@@ -112,7 +112,7 @@ hoursWorked.CustomFormat = "00.000";
 {% endhighlight %}
 {% endtabs %}
 
-![.NET MAUI NumericEntry customize fractional digits](Formatting_images/maui-numeric-entry-change-fractional-digits.png)
+![.NET MAUI Numeric Entry customize fractional digits](Formatting_images/maui-numeric-entry-change-fractional-digits.png)
 
 ## Apply custom format
 
@@ -141,7 +141,7 @@ hoursWorked.CustomFormat = "00.00##";
 {% endhighlight %}
 {% endtabs %}
 
-![.NET MAUI NumericEntry customize fractional digits](Formatting_images/maui-numeric-entry-apply-customformat.png)
+![.NET MAUI Numeric Entry customize fractional digits](Formatting_images/maui-numeric-entry-apply-customformat.png)
 
 
 ## Culture support
@@ -157,11 +157,11 @@ NumericEntry.Culture = culture;
 {% endhighlight %}
 {% endtabs %}
 
-![.NET MAUI NumericEntry culture based custom format](Formatting_images/maui-numeric-entry-culture_support.png)
+![.NET MAUI Numeric Entry culture based custom format](Formatting_images/maui-numeric-entry-culture_support.png)
 
 ## Customize percentage display
 
-When the [SfNumericEntry](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericEntry.SfNumericEntry.html) is in percentage format, the value can be displayed in two ways as follows:
+When the [Numeric Entry](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericEntry.SfNumericEntry.html) is in percentage format, the value can be displayed in two ways as follows:
 
 `Value`: Displays the actual value with percentage symbol.
 
@@ -186,7 +186,7 @@ sfNumericEntry.PercentDisplayMode = PercentDisplayMode.Value;
 {% endhighlight %}
 {% endtabs %}
 
-![.NET MAUI NumericEntry PercentDisplayMode](GettingStarted_images/percentdisplaymode_value.png)
+![.NET MAUI Numeric Entry PercentDisplayMode](GettingStarted_images/percentdisplaymode_value.png)
 
 `Compute`: Displays the computed value with percentage symbol.
 
@@ -210,7 +210,7 @@ sfNumericEntry.PercentDisplayMode = PercentDisplayMode.Compute;
 {% endhighlight %}
 {% endtabs %}
 
-![.NET MAUI NumericEntry PercentDisplayMode](GettingStarted_images/percentdisplaymode_compute.png)
+![.NET MAUI Numeric Entry PercentDisplayMode](GettingStarted_images/percentdisplaymode_compute.png)
 
 N> Default value of PercentDisplayMode is `Compute`.
 
@@ -238,4 +238,4 @@ sfNumericEntry.MaximumNumberDecimalDigits = 3;
 {% endhighlight %}
 {% endtabs %}
 
-![.NET MAUI NumericEntry MaximumNumberDecimalDigits](GettingStarted_images/maximumnumberdecimaldigits.png)
+![.NET MAUI Numeric Entry MaximumNumberDecimalDigits](GettingStarted_images/maximumnumberdecimaldigits.png)
