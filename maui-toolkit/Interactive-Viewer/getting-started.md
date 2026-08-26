@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Getting Started with .NET MAUI Interactive Viewer Control | Syncfusion®
-description: Learn here about getting started with Syncfusion® Toolkit for .NET MAUI Interactive Viewer control, its features and more.
+title: Getting Started with .NET MAUI Interactive Viewer | Syncfusion®
+description: Learn how to get started with the Syncfusion® .NET MAUI Interactive Viewer control. Explore setup, features, examples, and customization options.
 platform: maui-toolkit
 control: SfInteractiveViewer
 documentation: ug
 ---
 
-# Getting Started with MAUI Interactive Viewer
+# Getting Started with .NET MAUI Interactive Viewer
 
-This section guides you through setting up and configuring a `Interactive Viewer` in your .NET MAUI application. Follow the steps below to add a basic Interactive Viewer to your project.
+This section provides a quick overview of how to get started with the .NET MAUI Interactive Viewer (SfInteractiveViewer) and a walkthrough to configure the control in a real-time scenario. Follow the steps below to add the .NET MAUI Interactive Viewer control to your project.
 
 {% tabcontents %}
 {% tabcontent Visual Studio %}
@@ -118,34 +118,26 @@ using Syncfusion.Maui.Toolkit.InteractiveViewer;
 {% endhighlight %}
 {% endtabs %}
 
-## Step 5: Add an Interactive Viewer component
+## Step 5: Add the Interactive Viewer component
 
-You can use the Content property of `SfInteractiveViewer` to add content that users can zoom, pan, and rotate.
+Initialize the SfInteractiveViewer to display and interact with any .NET MAUI view.
 
 {% tabs %}
-{% highlight xaml %}
+{% highlight xaml hl_lines="2" %}
 
-<toolkit:SfInteractiveViewer>
-    <toolkit:SfInteractiveViewer.Content>
-        <Grid>
-            <Image Source="image.png" />
-        </Grid>
-    </toolkit:SfInteractiveViewer.Content>
-</toolkit:SfInteractiveViewer>
+ <toolkit:SfInteractiveViewer>
+     <Image Source="interactiveviewerimage.png" Aspect="AspectFit" />
+ </toolkit:SfInteractiveViewer>
 
 {% endhighlight %}
-{% highlight c# %}
+{% highlight C# hl_lines="3 4 5 6 7" %}
 
-SfInteractiveViewer interactiveViewer = new SfInteractiveViewer();
-
-interactiveViewer.Content = new Grid
+SfInteractiveViewer interactiveViewer = new SfInteractiveViewer()
 {
-    Children =
+    Content = new Image()
     {
-        new Image
-        {
-            Source = "image.png"
-        }
+        Source = "interactiveviewerimage.png",
+        Aspect = Aspect.AspectFit
     }
 };
 
