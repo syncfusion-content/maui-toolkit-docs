@@ -1,38 +1,37 @@
 ---
 layout: post
-title: Splitter Customization in .NET MAUI GridSplitter | Syncfusion®
-description: Learn how to customize the appearance and behavior of the Syncfusion® .NET MAUI GridSplitter control.
+title: Splitter Customization in .NET MAUI Grid Splitter | Syncfusion®
+description: Learn how to customize the appearance and behavior of the Syncfusion® .NET MAUI Grid Splitter control.
 platform: maui-toolkit
 control: SfGridSplitter
 documentation: UG
 ---
 
-# Splitter Customization in .NET MAUI GridSplitter
+# Splitter Customization in .NET MAUI Grid Splitter
 
-The `SfGridSplitter` control provides several customization options that allow you to modify the layout behavior and appearance of splitter separators. You can control pane arrangement, separator thickness, colors, resize icons, and right-to-left layout behavior.
+The [.NET MAUI Grid Splitter]() control provides several customization options that allow you to modify the layout behavior and appearance of splitter separators. You can control pane arrangement, separator thickness, colors, resize icons, and right-to-left layout behavior.
 
 ## Orientation
 
-The `Orientation` property determines how the panes are arranged within the GridSplitter.
+The `Orientation` property determines how the panes are arranged within the Grid Splitter.
 
 The `GridSplitterOrientation` enum contains the following values:
 
 | Value | Description |
 |---------|---------|
-| Horizontal | Arranges panes side-by-side from left to right. Resizing changes pane widths. |
-| Vertical | Arranges panes from top to bottom. Resizing changes pane heights. |
+| `Horizontal` | Arranges panes side-by-side from left to right. Resizing changes pane widths. |
+| `Vertical` | Arranges panes from top to bottom. Resizing changes pane heights. |
 
 ### Horizontal orientation
 
-By default, the GridSplitter uses horizontal orientation.
+By default, the Grid Splitter uses horizontal orientation.
 
 {% tabs %}
 {% highlight xaml %}
 
-<gridSplitter:SfGridSplitter
-    Orientation="Horizontal">
-        <gridSplitter:SplitterPane />
-        <gridSplitter:SplitterPane />
+<gridSplitter:SfGridSplitter Orientation="Horizontal">
+    <gridSplitter:SplitterPane />
+    <gridSplitter:SplitterPane />
 </gridSplitter:SfGridSplitter>
 
 {% endhighlight %}
@@ -40,15 +39,14 @@ By default, the GridSplitter uses horizontal orientation.
 
 ### Vertical orientation
 
-The following example arranges panes vertically.
+The following example arranges panes vertically in Grid Splitter.
 
 {% tabs %}
 {% highlight xaml %}
 
-<gridSplitter:SfGridSplitter
-    Orientation="Vertical">
-        <gridSplitter:SplitterPane />
-        <gridSplitter:SplitterPane />
+<gridSplitter:SfGridSplitter Orientation="Vertical">
+    <gridSplitter:SplitterPane />
+    <gridSplitter:SplitterPane />
 </gridSplitter:SfGridSplitter>
 
 {% endhighlight %}
@@ -56,23 +54,18 @@ The following example arranges panes vertically.
 
 ## SeparatorSize
 
-The `SeparatorSize` property specifies the thickness of the separator displayed between adjacent panes.
-
-The default value is `8`.
+The `SeparatorSize` property specifies the thickness of the separator displayed between adjacent panes. The default value is `8`.
 
 {% tabs %}
 {% highlight xaml %}
 
-<gridSplitter:SfGridSplitter
-    SeparatorSize="10">
+<gridSplitter:SfGridSplitter SeparatorSize="10">
     <gridSplitter:SplitterPane />
     <gridSplitter:SplitterPane />
 </gridSplitter:SfGridSplitter>
 
 {% endhighlight %}
 {% endtabs %}
-
-The following image shows a splitter with a larger separator.
 
 ## SeparatorBackground
 
@@ -81,8 +74,7 @@ The `SeparatorBackground` property allows you to customize the appearance of the
 {% tabs %}
 {% highlight xaml %}
 
-<gridSplitter:SfGridSplitter
-    SeparatorBackground="LightGray">
+<gridSplitter:SfGridSplitter SeparatorBackground="LightGray">
     <gridSplitter:SplitterPane />
     <gridSplitter:SplitterPane />
 </gridSplitter:SfGridSplitter>
@@ -98,14 +90,10 @@ You can use any solid color, dynamic resource, or theme resource to style the se
 {% highlight xaml %}
 
 <gridSplitter:SfGridSplitter
-    SeparatorBackground="{AppThemeBinding
-                          Light=#E0E0E0,
-                          Dark=#3C3C3C}" />
+    SeparatorBackground="{AppThemeBinding Light=#E0E0E0, Dark=#3C3C3C}" />
 
 {% endhighlight %}
 {% endtabs %}
-
-Images/customization/separator-background.png
 
 ## ResizeIconColor
 
@@ -114,10 +102,9 @@ The `ResizeIconColor` property customizes the color of the built-in resize indic
 {% tabs %}
 {% highlight xaml %}
 
-<gridSplitter:SfGridSplitter
-    ResizeIconColor="Blue">
-        <gridSplitter:SplitterPane />
-        <gridSplitter:SplitterPane />
+<gridSplitter:SfGridSplitter ResizeIconColor="Blue">
+    <gridSplitter:SplitterPane />
+    <gridSplitter:SplitterPane />
 </gridSplitter:SfGridSplitter>
 
 {% endhighlight %}
@@ -132,10 +119,8 @@ The icon is displayed only when the associated pane has its `IsCollapsible` prop
 {% tabs %}
 {% highlight xaml %}
 
-<gridSplitter:SfGridSplitter
-    ExpandCollapseIconColor="Red">
-        <gridSplitter:SplitterPane
-            IsCollapsible="True" />
+<gridSplitter:SfGridSplitter ExpandCollapseIconColor="Red">
+        <gridSplitter:SplitterPane IsCollapsible="True" />
         <gridSplitter:SplitterPane />
 </gridSplitter:SfGridSplitter>
 
@@ -152,18 +137,12 @@ The template is applied to all separators created by the GridSplitter.
 {% highlight xaml %}
 
 <gridSplitter:SfGridSplitter>
-
     <gridSplitter:SfGridSplitter.ResizeIconTemplate>
-
         <DataTemplate>
-
-            <Image
-            Source="resize_handle.png"
-            HeightRequest="16"
-            WidthRequest="16" />
-
+            <Image Source="resize_handle.png"
+                   HeightRequest="16"
+                   WidthRequest="16" />
         </DataTemplate>
-
     </gridSplitter:SfGridSplitter.ResizeIconTemplate>
 
     <gridSplitter:SplitterPane />
@@ -180,37 +159,23 @@ The template is applied to all separators created by the GridSplitter.
 {% highlight xaml %}
 
 <gridSplitter:SfGridSplitter>
-
     <gridSplitter:SfGridSplitter.ResizeIconTemplate>
-
         <DataTemplate>
-
-            <HorizontalStackLayout
-                Spacing="2"
-                HorizontalOptions="Center"
-                VerticalOptions="Center">
-
-                <BoxView
-                    WidthRequest="2"
-                    HeightRequest="12"
-                    Color="Gray" />
-
-                <BoxView
-                    WidthRequest="2"
-                    HeightRequest="12"
-                    Color="Gray" />
-
-                <BoxView
-                    WidthRequest="2"
-                    HeightRequest="12"
-                    Color="Gray" />
-
+            <HorizontalStackLayout Spacing="2"
+                                   HorizontalOptions="Center"
+                                   VerticalOptions="Center">
+                <BoxView WidthRequest="2"
+                         HeightRequest="12"
+                         olor="Gray" />
+                <BoxView WidthRequest="2"
+                         HeightRequest="12"
+                         Color="Gray" />
+                <BoxView WidthRequest="2"
+                         HeightRequest="12"
+                         Color="Gray" />
             </HorizontalStackLayout>
-
         </DataTemplate>
-
     </gridSplitter:SfGridSplitter.ResizeIconTemplate>
-
 </gridSplitter:SfGridSplitter>
 
 {% endhighlight %}
@@ -218,7 +183,7 @@ The template is applied to all separators created by the GridSplitter.
 
 ## Right-to-left (RTL)
 
-The GridSplitter supports right-to-left layouts through the `FlowDirection` property.
+The Grid Splitter supports right-to-left layouts through the `FlowDirection` property.
 
 When RTL is enabled:
 
@@ -227,22 +192,16 @@ When RTL is enabled:
 * Expand and collapse icons are rendered on the opposite side of the separator.
 * Resize behavior remains consistent with the application layout direction.
 
-### Enable RTL
-
 {% tabs %}
 {% highlight xaml %}
 
-<gridSplitter:SfGridSplitter
-    FlowDirection="RightToLeft">
-
+<gridSplitter:SfGridSplitter FlowDirection="RightToLeft">
         <gridSplitter:SplitterPane>
             <Label Text="Pane 1"/>
         </gridSplitter:SplitterPane>
-
         <gridSplitter:SplitterPane>
             <Label Text="Pane 2"/>
         </gridSplitter:SplitterPane>
-
 </gridSplitter:SfGridSplitter>
 
 {% endhighlight %}
@@ -255,30 +214,20 @@ The following example demonstrates several customization properties together.
 {% tabs %}
 {% highlight xaml %}
 
-<gridSplitter:SfGridSplitter
-    Orientation="Horizontal"
-    SeparatorSize="8"
-    SeparatorBackground="#E0E0E0"
-    ResizeIconColor="#6750A4"
-    ExpandCollapseIconColor="#6750A4">
-        <gridSplitter:SplitterPane
-            IsCollapsible="True"
-            Background="LightBlue">
-
+<gridSplitter:SfGridSplitter Orientation="Horizontal"
+                             SeparatorSize="8" 
+                             SeparatorBackground="#E0E0E0" 
+                             ResizeIconColor="#6750A4" ExpandCollapseIconColor="#6750A4">
+        <gridSplitter:SplitterPane IsCollapsible="True"
+                                   Background="LightBlue">
             <Label Text="Pane 1"/>
-
         </gridSplitter:SplitterPane>
-
-        <gridSplitter:SplitterPane
-            Background="LightGreen">
-
+        <gridSplitter:SplitterPane Background="LightGreen">
             <Label Text="Pane 2"/>
-
         </gridSplitter:SplitterPane>
-
 </gridSplitter:SfGridSplitter>
 
 {% endhighlight %}
 {% endtabs %}
 
-In this example, the GridSplitter uses a custom separator thickness, customized separator appearance, custom icon colors, and pane collapse support to create a personalized splitter layout.
+In this example, the Grid Splitter uses a custom separator thickness, customized separator appearance, custom icon colors, and pane collapse support to create a personalized splitter layout.

@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Splitter Panes in .NET MAUI GridSplitter | Syncfusion®
-description: Learn how to add and organize panes in the Syncfusion® .NET MAUI GridSplitter control, including dynamic pane management and nested pane layouts.
+title: Splitter Panes in .NET MAUI Grid Splitter | Syncfusion®
+description: Learn how to add and organize panes in the Syncfusion® .NET MAUI Grid Splitter control, including dynamic pane management and nested pane layouts.
 platform: maui-toolkit
 control: SfGridSplitter
 documentation: UG
 ---
 
-# Splitter Panes in .NET MAUI GridSplitter
+# Splitter Panes in .NET MAUI Grid Splitter
 
-The `SfGridSplitter` control organizes content into multiple resizable regions known as panes. These panes are represented by the `SplitterPane` class and are maintained through the `SplitterPanes` collection.
+The [.NET MAUI Grid Splitter]() control organizes content into multiple resizable regions known as panes. These panes are represented by the `SplitterPane` class and are maintained through the `SplitterPanes` collection.
 
 Each pane can host any .NET MAUI view such as layouts, text controls, images, charts, data grids, or custom controls. Users can resize adjacent panes at runtime by dragging the separator displayed between them.
 
@@ -29,14 +29,13 @@ The following example creates a GridSplitter with three panes.
         </gridSplitter:SplitterPane>
 
         <gridSplitter:SplitterPane>
-            <Label Text="Pane 2" VerticalTextAlignment="Center"     HorizontalTextAlignment="Center"/>
+            <Label Text="Pane 2" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
         </gridSplitter:SplitterPane>
 
         <gridSplitter:SplitterPane>
-            <Label Text="Pane 3" VerticalTextAlignment="Center"         HorizontalTextAlignment="Center"/>
+            <Label Text="Pane 3" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
         </gridSplitter:SplitterPane>
-    </gridSplitter:SfGridSplitter.SplitterPanes>
-</gridSplitter:SfGridSplitter>
+    </gridSplitter:SfGridSplitter.SplitterPanes></gridSplitter:SfGridSplitter>
 
 {% endhighlight %}
 
@@ -117,7 +116,7 @@ Content = gridSplitter;
 {% endhighlight %}
 {% endtabs %}
 
-In this example, the pane is inserted at index `1`, and the GridSplitter automatically rebuilds its layout and separators.
+In this example, the pane is inserted at index `1`, and the Grid Splitter automatically rebuilds its layout and separators.
 
 ## Remove panes dynamically
 
@@ -135,7 +134,7 @@ After the pane is removed, the control automatically updates its layout and sepa
 
 ## Nested panes
 
-A `SfGridSplitter` can be placed inside another `SplitterPane` to create advanced, multi-level layouts. This approach is useful for building IDE-style interfaces, dashboards, reporting applications, and workspace layouts where different sections need independent resizing behavior.
+A `Grid Splitter` can be placed inside another `SplitterPane` to create advanced, multi-level layouts. This approach is useful for building IDE-style interfaces, dashboards, reporting applications, and workspace layouts where different sections need independent resizing behavior.
 
 The following example creates a nested GridSplitter inside the second pane.
 
@@ -143,6 +142,8 @@ The following example creates a nested GridSplitter inside the second pane.
 {% highlight xaml %}
 
 <gridSplitter:SfGridSplitter>
+
+
 
     <gridSplitter:SplitterPane>
         <Label Text="Navigation Pane"
@@ -157,15 +158,13 @@ The following example creates a nested GridSplitter inside the second pane.
             <gridSplitter:SplitterPane>
                 <Label Text="Top Content"
                        HorizontalTextAlignment="Center"
-                       VerticalTextAlignment="Center" />
-            </gridSplitter:SplitterPane>
+                       VerticalTextAlignment="Center" />            </gridSplitter:SplitterPane>
 
             <gridSplitter:SplitterPane>
                 <Label Text="Bottom Content"
                        HorizontalTextAlignment="Center"
                        VerticalTextAlignment="Center" />
             </gridSplitter:SplitterPane>
-
         </gridSplitter:SfGridSplitter>
 
     </gridSplitter:SplitterPane>
@@ -201,7 +200,6 @@ SplitterPane bottomPane = new SplitterPane
 
 verticalSplitter.AddPane(topPane);
 verticalSplitter.AddPane(bottomPane);
-
 SfGridSplitter horizontalSplitter = new SfGridSplitter();
 
 SplitterPane navigationPane = new SplitterPane
@@ -231,14 +229,14 @@ Content = horizontalSplitter;
 
 In this layout:
 
-* The outer GridSplitter divides the screen into left and right sections.
-* The right pane hosts another GridSplitter.
-* The nested GridSplitter divides its content into top and bottom sections.
+* The outer Grid Splitter divides the screen into left and right sections.
+* The right pane hosts another Grid Splitter.
+* The nested Grid Splitter divides its content into top and bottom sections.
 * Users can independently resize both splitter levels.
 
 ## Complex nested layout
 
-The GridSplitter supports multiple levels of nesting, enabling the creation of sophisticated workspace layouts.
+The Grid Splitter supports multiple levels of nesting, enabling the creation of sophisticated workspace layouts.
 
 Examples include:
 

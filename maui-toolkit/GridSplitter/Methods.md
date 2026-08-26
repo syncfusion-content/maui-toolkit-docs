@@ -9,29 +9,11 @@ documentation: UG
 
 # Methods in .NET MAUI Grid Splitter
 
-The `SfGridSplitter` control provides methods to add, remove, collapse, and expand panes programmatically. These methods enable you to dynamically modify the splitter layout at runtime based on user actions or application requirements.
+The [.NET MAUI Grid Splitter] control provides methods to add, remove, collapse, and expand panes programmatically. These methods enable you to dynamically modify the splitter layout at runtime based on user actions or application requirements.
 
 ## AddPane
 
 The `AddPane` method adds a new pane to the `SplitterPanes` collection after the last existing pane.
-
-### Syntax
-
-{% tabs %}
-{% highlight c# %}
-
-void AddPane(SplitterPane addingPane)
-
-{% endhighlight %}
-{% endtabs %}
-
-### Parameters
-
-| Parameter | Description |
-|------------|-------------|
-| addingPane | Specifies the pane to be inserted. |
-
-### Add a pane
 
 The following example adds a new pane after the last existing pane.
 
@@ -52,22 +34,7 @@ gridSplitter.AddPane(pane);
 {% endhighlight %}
 {% endtabs %}
 
-### Output
-
-Before insertion:
-
-```text
-Pane 1 | Pane 2
-```
-
-After insertion:
-
-```text
-Pane 1 | New Pane | Pane 2
-```
-
-### Remarks
-
+N>
 * If the specified index equals the current pane count, the pane is appended to the end of the collection.
 * When a pane is added, the Grid Splitter automatically rebuilds its internal layout and separators.
 * If the index is outside the valid range, the operation is ignored.
@@ -78,24 +45,6 @@ Pane 1 | New Pane | Pane 2
 
 The `RemovePane` method removes the pane at the specified index.
 
-### Syntax
-
-{% tabs %}
-{% highlight c# %}
-
-void RemovePane(int index)
-
-{% endhighlight %}
-{% endtabs %}
-
-### Parameters
-
-| Parameter | Description |
-|------------|-------------|
-| index | Specifies the zero-based index of the pane to remove. |
-
-### Remove a pane
-
 {% tabs %}
 {% highlight c# %}
 
@@ -103,22 +52,6 @@ gridSplitter.RemovePane(1);
 
 {% endhighlight %}
 {% endtabs %}
-
-### Output
-
-Before removal:
-
-```text
-Pane 1 | Pane 2 | Pane 3
-```
-
-After removal:
-
-```text
-Pane 1 | Pane 3
-```
-
-### Remarks
 
 * The layout is automatically updated after the pane is removed.
 * Associated separators are recreated as needed.
@@ -131,8 +64,6 @@ Pane 1 | Pane 3
 
 The `CollapsePane` method collapses the pane at the specified index.
 
-### Syntax
-
 {% tabs %}
 {% highlight c# %}
 
@@ -140,24 +71,6 @@ void CollapsePane(int index)
 
 {% endhighlight %}
 {% endtabs %}
-
-### Parameters
-
-| Parameter | Description |
-|------------|-------------|
-| index | Specifies the zero-based index of the pane to collapse. |
-
-### Collapse a pane
-
-{% tabs %}
-{% highlight c# %}
-
-gridSplitter.CollapsePane(1);
-
-{% endhighlight %}
-{% endtabs %}
-
-### Example
 
 {% tabs %}
 {% highlight c# %}
@@ -176,8 +89,6 @@ gridSplitter.CollapsePane(0);
 {% endhighlight %}
 {% endtabs %}
 
-### Remarks
-
 * The pane size is reduced to zero.
 * The pane's `IsCollapsed` property becomes `true`.
 * The `Collapsing` and `Collapsed` events are raised.
@@ -190,34 +101,6 @@ gridSplitter.CollapsePane(0);
 
 The `ExpandPane` method restores a previously collapsed pane.
 
-### Syntax
-
-{% tabs %}
-{% highlight c# %}
-
-void ExpandPane(int index)
-
-{% endhighlight %}
-{% endtabs %}
-
-### Parameters
-
-| Parameter | Description |
-|------------|-------------|
-| index | Specifies the zero-based index of the pane to expand. |
-
-### Expand a pane
-
-{% tabs %}
-{% highlight c# %}
-
-gridSplitter.ExpandPane(1);
-
-{% endhighlight %}
-{% endtabs %}
-
-### Example
-
 {% tabs %}
 {% highlight c# %}
 
@@ -229,8 +112,6 @@ gridSplitter.ExpandPane(1);
 
 {% endhighlight %}
 {% endtabs %}
-
-### Remarks
 
 * The pane is restored to its previous size.
 * The pane's `IsCollapsed` property becomes `false`.
