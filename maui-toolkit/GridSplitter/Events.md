@@ -9,7 +9,7 @@ documentation: UG
 
 # Events in .NET MAUI Grid Splitter
 
-The `SfGridSplitter` control provides several events that allow you to monitor and respond to pane resizing, collapsing, and expanding operations.
+The [.NET MAUI Grid Splitter]() control provides several events that allow you to monitor and respond to pane resizing, collapsing, and expanding operations.
 
 These events can be used to validate user actions, synchronize UI state, update business logic, and customize user interactions.
 
@@ -25,9 +25,9 @@ The `GridSplitterResizeStartedEventArgs` class contains the following members:
 
 | Property | Description |
 |-----------|-------------|
-| Cancel | Gets or sets a value indicating whether the resize operation should be canceled. |
-| Indexes | Gets the zero-based indexes of the panes involved in the resize operation. The first value represents the leading pane, and the second value represents the trailing pane. |
-| Panes | Gets the affected panes involved in the resize operation. The first item is the leading pane, and the second item is the trailing pane. |
+| `Cancel` | Gets or sets a value indicating whether the resize operation should be canceled. |
+| `Indexes` | Gets the zero-based indexes of the panes involved in the resize operation. The first value represents the leading pane, and the second value represents the trailing pane. |
+| `Panes` | Gets the affected panes involved in the resize operation. The first item is the leading pane, and the second item is the trailing pane. |
 
 ### Handle ResizeStarted event
 
@@ -35,17 +35,15 @@ The `GridSplitterResizeStartedEventArgs` class contains the following members:
 {% highlight xaml %}
 
 <gridSplitter:SfGridSplitter
-    ResizeStarted="GridSplitter_ResizeStarted"/>
+    ResizeStarted="OnResizeStarted"/>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-private void GridSplitter_ResizeStarted(
-object sender,
-GridSplitterResizeStartedEventArgs e)
+private void OnResizeStarted(object sender, GridSplitterResizeStartedEventArgs e)
 {
-        e.Cancel = true;
+    e.Cancel = true;
 }
 
 {% endhighlight %}
@@ -65,8 +63,8 @@ The `GridSplitterResizingEventArgs` class contains the following members:
 
 | Property | Description |
 |-----------|-------------|
-| Indexes | Gets the zero-based indexes of the panes involved in the resize operation. The first value represents the leading pane, and the second value represents the trailing pane. |
-| Panes | Gets the affected panes involved in the resize operation. The first item is the leading pane, and the second item is the trailing pane. |
+| `Indexes` | Gets the zero-based indexes of the panes involved in the resize operation. The first value represents the leading pane, and the second value represents the trailing pane. |
+|`Panes` | Gets the affected panes involved in the resize operation. The first item is the leading pane, and the second item is the trailing pane. |
 
 ### Handle Resizing event
 
@@ -74,18 +72,15 @@ The `GridSplitterResizingEventArgs` class contains the following members:
 {% highlight xaml %}
 
 <gridSplitter:SfGridSplitter
-    Resizing="GridSplitter_Resizing"/>
+    Resizing="OnResizing"/>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-private void GridSplitter_Resizing(
-    object sender,
-    GridSplitterResizingEventArgs e)
+private void OnResizing(object sender, GridSplitterResizingEventArgs e)
 {
-    Debug.WriteLine(
-        $"Resizing pane at index {e.Indexes}");
+    Debug.WriteLine($"Resizing pane at index {e.Indexes}");
 }
 
 {% endhighlight %}
@@ -105,8 +100,8 @@ The `GridSplitterResizeStoppedEventArgs` class contains the following members:
 
 | Property | Description |
 |-----------|-------------|
-| Indexes | Gets the zero-based indexes of the panes involved in the resize operation. The first value represents the leading pane, and the second value represents the trailing pane. |
-| Panes | Gets the affected panes involved in the resize operation. The first item is the leading pane, and the second item is the trailing pane. |
+| `Indexes` | Gets the zero-based indexes of the panes involved in the resize operation. The first value represents the leading pane, and the second value represents the trailing pane. |
+| `Panes` | Gets the affected panes involved in the resize operation. The first item is the leading pane, and the second item is the trailing pane. |
 
 ### Handle ResizeStopped event
 
@@ -114,18 +109,15 @@ The `GridSplitterResizeStoppedEventArgs` class contains the following members:
 {% highlight xaml %}
 
 <gridSplitter:SfGridSplitter
-    ResizeStopped="GridSplitter_ResizeStopped"/>
+    ResizeStopped="OnResizeStopped"/>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-private void GridSplitter_ResizeStopped(
-    object sender,
-    GridSplitterResizeStoppedEventArgs e)
+private void OnResizeStopped(object sender, GridSplitterResizeStoppedEventArgs e)
 {
-    Debug.WriteLine(
-        $"Resize completed for pane {e.Indexes}");
+    Debug.WriteLine($"Resize completed for pane {e.Indexes}");
 }
 
 {% endhighlight %}
@@ -145,9 +137,9 @@ The `GridSplitterPaneCollapsingEventArgs` class contains the following members:
 
 | Property | Description |
 |-----------|-------------|
-| Cancel | Gets or sets a value indicating whether the collapse operation should be canceled. |
-| Indexes | Gets the zero-based indexes of the panes involved in the collapse operation. The first value represents the pane being collapsed, and the second value represents its adjacent pane. |
-| Panes | Gets the affected panes involved in the collapse operation. The first item is the pane being collapsed, and the second item is its adjacent pane. |
+| `Cancel` | Gets or sets a value indicating whether the collapse operation should be canceled. |
+| `Indexes` | Gets the zero-based indexes of the panes involved in the collapse operation. The first value represents the pane being collapsed, and the second value represents its adjacent pane. |
+| `Panes` | Gets the affected panes involved in the collapse operation. The first item is the pane being collapsed, and the second item is its adjacent pane. |
 
 ### Handle Collapsing event
 
@@ -155,15 +147,13 @@ The `GridSplitterPaneCollapsingEventArgs` class contains the following members:
 {% highlight xaml %}
 
 <gridSplitter:SfGridSplitter
-    Collapsing="GridSplitter_Collapsing"/>
+    Collapsing="OnCollapsing"/>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-private void GridSplitter_Collapsing(
-    object sender,
-    GridSplitterPaneCollapsingEventArgs e)
+private void OnCollapsing(object sender, GridSplitterPaneCollapsingEventArgs e)
 {
         e.Cancel = true;
 }
@@ -185,8 +175,8 @@ The `GridSplitterPaneCollapsedEventArgs` class contains the following members:
 
 | Property | Description |
 |-----------|-------------|
-| Indexes | Gets the zero-based indexes of the panes involved in the collapse operation. The first value represents the collapsed pane, and the second value represents its adjacent pane. |
-| Panes | Gets the affected panes involved in the collapse operation. The first item is the collapsed pane, and the second item is its adjacent pane. |
+|`Indexes` | Gets the zero-based indexes of the panes involved in the collapse operation. The first value represents the collapsed pane, and the second value represents its adjacent pane. |
+| `Panes` | Gets the affected panes involved in the collapse operation. The first item is the collapsed pane, and the second item is its adjacent pane. |
 
 ### Handle Collapsed event
 
@@ -194,18 +184,15 @@ The `GridSplitterPaneCollapsedEventArgs` class contains the following members:
 {% highlight xaml %}
 
 <gridSplitter:SfGridSplitter
-    Collapsed="GridSplitter_Collapsed"/>
+    Collapsed="OnCollapsed"/>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-private void GridSplitter_Collapsed(
-    object sender,
-    GridSplitterPaneCollapsedEventArgs e)
+private void OnCollapsed(object sender, GridSplitterPaneCollapsedEventArgs e)
 {
-    Debug.WriteLine(
-        $"Pane {e.Indexes} collapsed.");
+    Debug.WriteLine($"Pane {e.Indexes} collapsed.");
 }
 
 {% endhighlight %}
@@ -225,9 +212,9 @@ The `GridSplitterPaneExpandingEventArgs` class contains the following members:
 
 | Property | Description |
 |-----------|-------------|
-| Cancel | Gets or sets a value indicating whether the expand operation should be canceled. |
-| Indexes | Gets the zero-based indexes of the panes involved in the expand operation. The first value represents the pane being expanded, and the second value represents its adjacent pane. |
-| Panes | Gets the affected panes involved in the expand operation. The first item is the pane being expanded, and the second item is its adjacent pane. |
+| `Cancel` | Gets or sets a value indicating whether the expand operation should be canceled. |
+| `Indexes` | Gets the zero-based indexes of the panes involved in the expand operation. The first value represents the pane being expanded, and the second value represents its adjacent pane. |
+| `Panes` | Gets the affected panes involved in the expand operation. The first item is the pane being expanded, and the second item is its adjacent pane. |
 
 ### Handle Expanding event
 
@@ -235,18 +222,15 @@ The `GridSplitterPaneExpandingEventArgs` class contains the following members:
 {% highlight xaml %}
 
 <gridSplitter:SfGridSplitter
-    Expanding="GridSplitter_Expanding"/>
+    Expanding="OnExpanding"/>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-private void GridSplitter_Expanding(
-    object sender,
-    GridSplitterPaneExpandingEventArgs e)
+private void OnExpanding(object sender, GridSplitterPaneExpandingEventArgs e)
 {
-    Debug.WriteLine(
-        $"Expanding pane {e.Indexes}");
+    Debug.WriteLine($"Expanding pane {e.Indexes}");
 }
 
 {% endhighlight %}
@@ -266,8 +250,8 @@ The `GridSplitterPaneExpandedEventArgs` class contains the following members:
 
 | Property | Description |
 |-----------|-------------|
-| Indexes | Gets the zero-based indexes of the panes involved in the expand operation. The first value represents the expanded pane, and the second value represents its adjacent pane. |
-| Panes | Gets the affected panes involved in the expand operation. The first item is the expanded pane, and the second item is its adjacent pane. |
+| `Indexes` | Gets the zero-based indexes of the panes involved in the expand operation. The first value represents the expanded pane, and the second value represents its adjacent pane. |
+| `Panes` | Gets the affected panes involved in the expand operation. The first item is the expanded pane, and the second item is its adjacent pane. |
 
 ### Handle Expanded event
 
@@ -275,18 +259,15 @@ The `GridSplitterPaneExpandedEventArgs` class contains the following members:
 {% highlight xaml %}
 
 <gridSplitter:SfGridSplitter
-    Expanded="GridSplitter_Expanded"/>
+    Expanded="OnExpanded"/>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-private void GridSplitter_Expanded(
-    object sender,
-    GridSplitterPaneExpandedEventArgs e)
+private void OnExpanded(object sender, GridSplitterPaneExpandedEventArgs e)
 {
-    Debug.WriteLine(
-        $"Pane {e.Indexes} expanded.");
+    Debug.WriteLine($"Pane {e.Indexes} expanded.");
 }
 
 {% endhighlight %}
