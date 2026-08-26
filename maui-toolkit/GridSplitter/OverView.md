@@ -1,63 +1,98 @@
 ---
 layout: post
-title: Getting Started with .NET MAUI GridSplitter | Syncfusion®
-description: Learn how to get started with the Syncfusion® .NET MAUI GridSplitter control and create resizable pane layouts.
+title: About Syncfusion® .NET MAUI Grid Splitter Control | Syncfusion®
+description: Learn all about the Syncfusion® Toolkit .NET MAUI Grid Splitter control, its features, use cases, and customization options.
 platform: maui-toolkit
 control: SfGridSplitter
 documentation: UG
 ---
 
-# Getting Started with .NET MAUI GridSplitter
+# About Syncfusion® .NET MAUI Grid Splitter Control
 
-This section guides you through setting up and configuring the control in your .NET MAUI application. Follow the steps below to create a basic resizable layout with multiple panes.
+The Syncfusion® `.NET MAUI Grid Splitter` is a layout control that enables userslapse, and expand content panes at runtime. It provides an intuitive way to create flexible and responsive user interfaces by separating content into multiple resizable panes with interactive splitter separators.
 
-{% tabcontents %}
-{% tabcontent Visual Studio %}
+The control supports both horizontal and vertical layouts, allowing developers to build dashboard-style interfaces, workspace layouts, editors, and business applications with adjustable content regions.
 
-## Prerequisites
+- Dashboard applications that require dynamically resizable panels.
+- Workspace and IDE-style applications with adjustable editor and navigation areas.
+- Analytics and reporting applications with customizable layouts.
+- Content management systems that require multiple resizable regions.
+- Data entry and business applications with collapsible side panels.
+- Applications that need flexible screen space allocation across different devices.
 
-Before proceeding, ensure the following are set up:
+## Key features
 
-1. Install .NET 9 SDK or later.
-2. Set up a .NET MAUI environment with Visual Studio 2022 v17.12 or later.
+- **Resizable panes** allow users to resize adjacent content regions using drag interactions.
+- **Collapsible panes** allow users to expand or collapse panes through built-in expand and collapse icons.
+- **Horizontal and vertical orientations** support both side-by-side and top-to-bottom pane arrangements.
+- **Pane sizing constraints** allow defining minimum and maximum pane sizes.
+- **Runtime pane management** allows adding, removing, collapsing, and expanding panes programmatically.
+- **Customizable separators** allow changing separator size, color, resize icon, and icon templates.
+- **RTL support** provides seamless right-to-left layout behavior.
+- **Cross-platform consistency** provides uniform behavior across Android, iOS, Windows, and macOS.
 
-## Step 1: Create a new .NET MAUI project
+## Globalization
 
-1. Go to **File > New > Project** and choose the **.NET MAUI App** template.
-2. Name the project and choose a location. Then click **Next**.
-3. Select the .NET framework version and click **Create**.
+The following table summarizes the globalization support available in this control.
 
-## Step 2: Install the Syncfusion® .NET MAUI Toolkit NuGet package
+<table>
+<tr>
+<th>
+Control
+</th>
+<th>
+Localization
+</th>
+<th>
+RTL
+</th>
+<th>
+Time zone
+</th>
+<th>
+Screen reader
+</th>
+<th>
+Keyboard navigation
+</th>
+</tr>
+<tr>
+<td>
+Grid Splitter
+</td>
+<td>
+not-applicable
+</td>
+<td>
+full-support
+</td>
+<td>
+not-applicable
+</td>
+<td>
+full-support
+</td>
+<td>
+full-support
+</td>
+</tr>
+</table>
 
-1. In **Solution Explorer**, right-click the project and choose **Manage NuGet Packages**.
-2. Search for **Syncfusion.Maui.Toolkit** and install the latest version.
-3. Ensure the necessary dependencies are installed correctly and the project is restored.
+## Related controls
 
-{% endtabcontent %}
+- [Accordion](https://help.syncfusion.com/maui-toolkit/accordion/overview) for organizing expandable sections.
+- [Expander](https://help.syncfusion.com/maui-toolkit/expander/overview) for xpandable and collapsible content.
+- [Navigation Drawer] (https://help.syncfusion.com/maui-toolkit/navigationdrawer/overview) for side navigation layouts.
+- [Tab View](https://help.syncfusion.com/t/tabview/overview) for tab-based content organization.
 
-{% tabcontent Visual Studio Code %}
+## See Also
 
-## Prerequisites
+- `Getting Started` provides a step-by-step guide to begin using the Grid Splitter control.
 
-Before proceeding, ensure the following are set up:
+- `Splitter Panes` explains how to create, configure, and manage panes within the Grid Splitter control.
 
-1. Install .NET 9 SDK or later.
-2. Set up a .NET MAUI environment with Visual Studio Code.
-3. Ensure that the .NET MAUI workloads are installed.
+- `Customization` explains how to customize the splitter layout, separator appearance, resize icons, expand/collapse icons, and pane behavior.
 
-## Step 1: Create a new .NET MAUI project
+- `Events` explains how to handle pane resizing, collapsing, and expanding operations.
 
-1. Open the command palette by pressing `Ctrl+Shift+P`.
-2. Type **.NET: New Project** and press Enter.
-3. Choose the **.NET MAUI App** template.
-4. Select a project location and enter the project name.
-5. Choose **Create Project**.
-
-## Step 2: Install the Syncfusion® .NET MAUI Toolkit NuGet package
-
-1. Open the integrated terminal.
-2. Navigate to the project folder.
-3. Run:
-
-```bash
-dotnet add package Syncfusion.Maui.Toolkit
+- `Methods` describes the available APIs for adding, removing, collapsing, and expanding panes programmatically.
