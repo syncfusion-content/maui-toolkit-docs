@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with .NET MAUI Grid Splitter | Syncfusion®
-description: Learn how to get started with the Syncfusion® .NET MAUI Grid Splitter control and create resizable pane layouts.
+description: Learn how to customize panes in the Syncfusion® .NET MAUI Grid Splitter control, including content, background, sizing, and collapse behavior.
 platform: maui-toolkit
 control: SfGridSplitter
 documentation: UG
@@ -248,3 +248,5 @@ Content = gridSplitter;
 
 {% endhighlight %}
 {% endtabs %}
+
+![.NET MAUI Grid Splitter](Images/getting-started.png)

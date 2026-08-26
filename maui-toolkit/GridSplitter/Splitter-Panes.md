@@ -22,58 +22,66 @@ The following example creates a GridSplitter with three panes.
 {% tabs %}
 {% highlight xaml %}
 
-<gridSplitter:SfGridSplitter
-    Orientation="Horizontal">
-
+<gridSplitter:SfGridSplitter>
+    <gridSplitter:SfGridSplitter.SplitterPanes>
         <gridSplitter:SplitterPane>
-            <Label Text="Pane 1" />
+            <Label Text="Pane 1" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
         </gridSplitter:SplitterPane>
 
         <gridSplitter:SplitterPane>
-            <Label Text="Pane 2" />
+            <Label Text="Pane 2" VerticalTextAlignment="Center"     HorizontalTextAlignment="Center"/>
         </gridSplitter:SplitterPane>
 
         <gridSplitter:SplitterPane>
-            <Label Text="Pane 3" />
+            <Label Text="Pane 3" VerticalTextAlignment="Center"         HorizontalTextAlignment="Center"/>
         </gridSplitter:SplitterPane>
-
+    </gridSplitter:SfGridSplitter.SplitterPanes>
 </gridSplitter:SfGridSplitter>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-SfGridSplitter splitter = new SfGridSplitter();
-
-splitter.SplitterPanes.Add(
-    new SplitterPane
+SfGridSplitter gridSplitter = new SfGridSplitter
+{
+    SplitterPanes =
     {
-        Content = new Label
+        new SplitterPane
         {
-            Text = "Pane 1"
+            Content = new Label
+            {
+                Text = "Pane 1",
+                HorizontalTextAlignment = TextAlignment.Center,
+                VerticalTextAlignment = TextAlignment.Center
+            }
+        },
+        new SplitterPane
+        {
+            Content = new Label
+            {
+                Text = "Pane 2",
+                HorizontalTextAlignment = TextAlignment.Center,
+                VerticalTextAlignment = TextAlignment.Center
+            }
+        },
+        new SplitterPane
+        {
+            Content = new Label
+            {
+                Text = "Pane 3",
+                HorizontalTextAlignment = TextAlignment.Center,
+                VerticalTextAlignment = TextAlignment.Center
+            }
         }
-    });
+    }
+};
 
-splitter.SplitterPanes.Add(
-    new SplitterPane
-    {
-        Content = new Label
-        {
-            Text = "Pane 2"
-        }
-    });
-
-splitter.SplitterPanes.Add(
-    new SplitterPane
-    {
-        Content = new Label
-        {
-            Text = "Pane 3"
-        }
-    });
+Content = gridSplitter;
 
 {% endhighlight %}
 {% endtabs %}
+
+![.NET MAUI Grid Splitter Panes](Images/gridsplitter-panes.png)
 
 ## Add panes dynamically
 
@@ -84,15 +92,27 @@ You can add panes at runtime using the `AddPane` method. The pane is inserted at
 
 SfGridSplitter gridSplitter = new SfGridSplitter();
 
-SplitterPane pane = new SplitterPane()
+SplitterPane pane1 = new SplitterPane()
 {
     Content = new Label
     {
-        Text = "New Pane"
+        Text = "New Pane1",
+        VerticalTextAlignment = TextAlignment.Center,
+        HorizontalTextAlignment = TextAlignment.Center,
     }
 };
-
-gridSplitter.AddPane(pane);
+SplitterPane pane2 = new SplitterPane()
+{
+    Content = new Label
+    {
+        Text = "New Pane2",
+        VerticalTextAlignment = TextAlignment.Center,
+        HorizontalTextAlignment = TextAlignment.Center,
+    }
+};
+gridSplitter.AddPane(pane1);
+gridSplitter.AddPane(pane2);
+Content = gridSplitter;
 
 {% endhighlight %}
 {% endtabs %}
@@ -122,35 +142,92 @@ The following example creates a nested GridSplitter inside the second pane.
 {% tabs %}
 {% highlight xaml %}
 
-    <gridSplitter:SfGridSplitter
-    Orientation="Horizontal">
+<gridSplitter:SfGridSplitter>
 
-        <gridSplitter:SplitterPane>
-                <Label Text="Navigation Pane" />
+    <gridSplitter:SplitterPane>
+        <Label Text="Navigation Pane"
+               HorizontalTextAlignment="Center"
+               VerticalTextAlignment="Center" />
+    </gridSplitter:SplitterPane>
+
+    <gridSplitter:SplitterPane>
+
+        <gridSplitter:SfGridSplitter Orientation="Vertical">
+
+            <gridSplitter:SplitterPane>
+                <Label Text="Top Content"
+                       HorizontalTextAlignment="Center"
+                       VerticalTextAlignment="Center" />
             </gridSplitter:SplitterPane>
 
             <gridSplitter:SplitterPane>
-
-                <gridSplitter:SfGridSplitter
-                Orientation="Vertical">
-
-
-                        <gridSplitter:SplitterPane>
-                            <Label Text="Top Content" />
-                        </gridSplitter:SplitterPane>
-
-                <gridSplitter:SplitterPane>
-                    <Label Text="Bottom Content" />
-                </gridSplitter:SplitterPane>
-
-            </gridSplitter:SfGridSplitter>
-
+                <Label Text="Bottom Content"
+                       HorizontalTextAlignment="Center"
+                       VerticalTextAlignment="Center" />
             </gridSplitter:SplitterPane>
 
-    </gridSplitter:SfGridSplitter>
+        </gridSplitter:SfGridSplitter>
+
+    </gridSplitter:SplitterPane>
+
+</gridSplitter:SfGridSplitter>
+
+{% endhighlight %}
+{% highlight c# %}
+SfGridSplitter verticalSplitter = new SfGridSplitter
+{
+    Orientation = GridSplitterOrientation.Vertical
+};
+
+SplitterPane topPane = new SplitterPane
+{
+    Content = new Label
+    {
+        Text = "Top Content",
+        HorizontalTextAlignment = TextAlignment.Center,
+        VerticalTextAlignment = TextAlignment.Center
+    }
+};
+
+SplitterPane bottomPane = new SplitterPane
+{
+    Content = new Label
+    {
+        Text = "Bottom Content",
+        HorizontalTextAlignment = TextAlignment.Center,
+        VerticalTextAlignment = TextAlignment.Center
+    }
+};
+
+verticalSplitter.AddPane(topPane);
+verticalSplitter.AddPane(bottomPane);
+
+SfGridSplitter horizontalSplitter = new SfGridSplitter();
+
+SplitterPane navigationPane = new SplitterPane
+{
+    Content = new Label
+    {
+        Text = "Navigation Pane",
+        HorizontalTextAlignment = TextAlignment.Center,
+        VerticalTextAlignment = TextAlignment.Center
+    }
+};
+
+SplitterPane contentPane = new SplitterPane
+{
+    Content = verticalSplitter
+};
+
+horizontalSplitter.AddPane(navigationPane);
+horizontalSplitter.AddPane(contentPane);
+
+Content = horizontalSplitter;
 
 {% endhighlight %}
 {% endtabs %}
+
+![.NET MAUI Grid Splitter Nested Panest](Images/gridsplitter-nested-panes.png)
 
 In this layout:
 
@@ -194,11 +271,11 @@ The following simplified syntax produces the same result as the previous example
 <gridSplitter:SfGridSplitter>
 
     <gridSplitter:SplitterPane>
-        <Label Text="Pane 1" />
+        <Label Text="Pane 1" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
     </gridSplitter:SplitterPane>
 
     <gridSplitter:SplitterPane>
-        <Label Text="Pane 2" />
+        <Label Text="Pane 2" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
     </gridSplitter:SplitterPane>
 
 </gridSplitter:SfGridSplitter>
