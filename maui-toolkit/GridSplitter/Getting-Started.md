@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Getting Started with .NET MAUI GridSplitter | Syncfusion®
-description: Learn how to get started with the Syncfusion® .NET MAUI GridSplitter control and create resizable pane layouts.
+title: Getting Started with .NET MAUI Grid Splitter | Syncfusion®
+description: Learn how to get started with the Syncfusion® .NET MAUI Grid Splitter control and create resizable pane layouts.
 platform: maui-toolkit
 control: SfGridSplitter
 documentation: UG
 ---
 
-# Getting Started with .NET MAUI GridSplitter
+# Getting Started with .NET MAUI Grid Splitter
 
-This section guides you through setting up and configuring a GridSplitter in your .NET MAUI application. Follow the steps below to add a basic GridSplitter and create resizable panes within your application.
+This section guides you through setting up and configuring a [Grid Splitter]() in your .NET MAUI application. Follow the steps below to add a basic Grid Splitter and create resizable panes within your application.
 
 {% tabcontents %}
 {% tabcontent Visual Studio %}
@@ -132,58 +132,43 @@ using Syncfusion.Maui.Toolkit.GridSplitter;
 {% endhighlight %}
 {% endtabs %}
 
-## Step 5: Add a GridSplitter with resizable panes
+## Step 5: Add a Grid Splitter with resizable panes
 
-The `SfGridSplitter` control manages multiple panes through the `SplitterPanes` collection. Each `SplitterPane` can host any .NET MAUI view and users can resize adjacent panes by dragging the separator.
+The [SfGridSplitter]() control manages multiple panes through the `SplitterPanes` collection. Each `SplitterPane` can host any .NET MAUI view and users can resize adjacent panes by dragging the separator.
 
-The following example creates a horizontal GridSplitter with three resizable panes.
+The following example creates a horizontal Grid Splitter with three resizable panes.
 
 {% tabs %}
 {% highlight xaml %}
 
-<gridSplitter:SfGridSplitter
-    Orientation="Horizontal"
-    SeparatorSize="6">
+<gridSplitter:SfGridSplitter>
 
-        <gridSplitter:SplitterPane
-            Size="1"
-            Background="LightBlue">
+    <gridSplitter:SplitterPane>
+        <VerticalStackLayout Padding="16">
+            <Label Text="PARIS"
+                    FontSize="20"
+                    FontAttributes="Bold" />
+            <Label Text="Paris, the city of lights and love." />
+        </VerticalStackLayout>
+    </gridSplitter:SplitterPane>
 
-            <VerticalStackLayout Padding="16">
-                <Label Text="PARIS"
-                       FontSize="20"
-                       FontAttributes="Bold" />
-                <Label Text="Paris, the city of lights and love." />
-            </VerticalStackLayout>
+    <gridSplitter:SplitterPane>
+        <VerticalStackLayout Padding="16">
+            <Label Text="CAMEMBERT"
+                   FontSize="20"
+                   FontAttributes="Bold" />
+            <Label Text="A famous French cheese from Normandy." />
+        </VerticalStackLayout>
+    </gridSplitter:SplitterPane>
 
-        </gridSplitter:SplitterPane>
-
-        <gridSplitter:SplitterPane
-            Size="1"
-            IsCollapsible="True"
-            Background="LightGreen">
-
-            <VerticalStackLayout Padding="16">
-                <Label Text="CAMEMBERT"
-                       FontSize="20"
-                       FontAttributes="Bold" />
-                <Label Text="A famous French cheese from Normandy." />
-            </VerticalStackLayout>
-
-        </gridSplitter:SplitterPane>
-
-        <gridSplitter:SplitterPane
-            Size="1"
-            Background="LightYellow">
-
-            <VerticalStackLayout Padding="16">
-                <Label Text="GRENOBLE"
-                       FontSize="20"
-                       FontAttributes="Bold" />
-                <Label Text="Capital city of the French Alps." />
-            </VerticalStackLayout>
-
-        </gridSplitter:SplitterPane>
+    <gridSplitter:SplitterPane>
+        <VerticalStackLayout Padding="16">
+            <Label Text="GRENOBLE"
+                   FontSize="20"
+                   FontAttributes="Bold" />
+            <Label Text="Capital city of the French Alps." />
+        </VerticalStackLayout>
+    </gridSplitter:SplitterPane>
 
 </gridSplitter:SfGridSplitter>
 
@@ -191,45 +176,75 @@ The following example creates a horizontal GridSplitter with three resizable pan
 
 {% highlight c# %}
 
-SfGridSplitter splitter = new SfGridSplitter()
+SfGridSplitter gridSplitter = new SfGridSplitter();
+
+SplitterPane parisPane = new SplitterPane
 {
-    Orientation = GridSplitterOrientation.Horizontal,
-    SeparatorSize = 6
+    Content = new VerticalStackLayout
+    {
+        Padding = 16,
+        Children =
+            {
+                new Label
+                {
+                    Text = "PARIS",
+                    FontSize = 20,
+                    FontAttributes = FontAttributes.Bold
+                },
+                new Label
+                {
+                    Text = "Paris, the city of lights and love."
+                }
+            }
+    }
 };
 
-splitter.SplitterPanes.Add(new SplitterPane()
+SplitterPane camembertPane = new SplitterPane
 {
-    Size = "1*",
-    Background = Brush.LightBlue,
-    Content = new Label() { Text = "PARIS" }
-});
+    Content = new VerticalStackLayout
+    {
+        Padding = 16,
+        Children =
+        {
+            new Label
+            {
+                Text = "CAMEMBERT",
+                FontSize = 20,
+                FontAttributes = FontAttributes.Bold
+            },
+            new Label
+            {
+                Text = "A famous French cheese from Normandy."
+            }
+        }
+    }
+};
 
-splitter.SplitterPanes.Add(new SplitterPane()
+SplitterPane grenoblePane = new SplitterPane
 {
-    Size = "1*",
-    IsCollapsible = true,
-    Background = Brush.LightGreen,
-    Content = new Label() { Text = "CAMEMBERT" }
-});
+    Content = new VerticalStackLayout
+    {
+        Padding = 16,
+        Children =
+        {
+            new Label
+            {
+                Text = "GRENOBLE",
+                FontSize = 20,
+                FontAttributes = FontAttributes.Bold
+            },
+            new Label
+            {
+                Text = "Capital city of the French Alps."
+            }
+        }
+    }
+};
 
-splitter.SplitterPanes.Add(new SplitterPane()
-{
-    Size = "1*",
-    Background = Brush.LightYellow,
-    Content = new Label() { Text = "GRENOBLE" }
-});
-
-Content = splitter;
+gridSplitter.AddPane(parisPane);
+gridSplitter.AddPane(camembertPane);
+gridSplitter.AddPane(grenoblePane);
+Content = gridSplitter;
 
 {% endhighlight %}
 {% endtabs %}
-
-## Run the application
-
-When the application runs:
-
-* Three panes are displayed side-by-side.
-* Vertical separators are rendered between adjacent panes.
-* Users can drag the separators to resize the pane widths at runtime.
-* If a pane is collapsible, users can collapse or expand it using the separator's expand/collapse icon.
-* Pane sizing automatically respects the configured minimum and maximum size constraints.

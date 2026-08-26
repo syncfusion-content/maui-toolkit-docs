@@ -1,41 +1,32 @@
 ---
 layout: post
-title: Pane Customization in .NET MAUI GridSplitter | Syncfusion®
-description: Learn how to customize panes in the Syncfusion® .NET MAUI GridSplitter control.
+title: Pane Customization in .NET MAUI Grid Splitter | Syncfusion®
+description: Learn how to customize pane sizes using the Syncfusion® .NET MAUI Grid Splitter control for flexible, resizable user interfaces.
 platform: maui-toolkit
 control: SfGridSplitter
 documentation: UG
 ---
 
-# Pane Customization in .NET MAUI GridSplitter
+# Pane Customization in .NET MAUI Grid Splitter
 
-The `SplitterPane` class represents an individual pane within the `SfGridSplitter` control. Each pane can host custom content and provides several properties to control its appearance and behavior.
+The [SplitterPane]() class represents an individual pane within the [SfGridSplitter]() control. Each pane can host custom content and provides several properties to control its appearance and behavior.
 
-The following sections describe the pane customization options available in the GridSplitter control.
+The following sections describe the pane customization options available in the Grid Splitter control.
 
 ## Content
 
-The `Content` property allows you to display any .NET MAUI view inside a pane.
-
-A pane can host controls such as labels, images, layouts, charts, data grids, editors, or any custom view.
-
-### Add content to a pane
+The `Content` property allows you to display any .NET MAUI view inside a pane. A pane can host controls such as labels, images, layouts, charts, data grids, editors, or any custom view.
 
 {% tabs %}
 {% highlight xaml %}
 
 <gridSplitter:SplitterPane>
-
     <VerticalStackLayout Padding="16">
-
         <Label Text="Customer Details"
                FontSize="20"
                FontAttributes="Bold" />
-
         <Label Text="View and manage customer information." />
-
     </VerticalStackLayout>
-
 </gridSplitter:SplitterPane>
 
 {% endhighlight %}
@@ -63,34 +54,6 @@ SplitterPane pane = new SplitterPane()
 {% endhighlight %}
 {% endtabs %}
 
-### Display complex content
-
-Because a pane accepts any .NET MAUI view, you can host complex layouts and controls.
-
-{% tabs %}
-{% highlight xaml %}
-
-<gridSplitter:SplitterPane>
-
-    <Grid RowDefinitions="Auto,*">
-
-        <Label Text="Sales Report"
-               FontAttributes="Bold"
-               Padding="10"/>
-
-        <CollectionView Grid.Row="1"/>
-
-    </Grid>
-
-</gridSplitter:SplitterPane>
-
-{% endhighlight %}
-{% endtabs %}
-
-This allows the GridSplitter to be used in dashboard, reporting, and workspace applications.
-
----
-
 ## Background
 
 The `Background` property customizes the pane background using a `Brush`.
@@ -100,11 +63,8 @@ The `Background` property customizes the pane background using a `Brush`.
 {% tabs %}
 {% highlight xaml %}
 
-<gridSplitter:SplitterPane
-    Background="LightBlue">
-
+<gridSplitter:SplitterPane Background="LightBlue">
     <Label Text="Pane Content"/>
-
 </gridSplitter:SplitterPane>
 
 {% endhighlight %}
@@ -125,23 +85,16 @@ SplitterPane pane = new SplitterPane()
 {% highlight xaml %}
 
 <gridSplitter:SplitterPane>
-
     <gridSplitter:SplitterPane.Background>
-
         <LinearGradientBrush
             StartPoint="0,0"
             EndPoint="1,1">
-
             <GradientStop Color="#6750A4"
                           Offset="0.0"/>
-
             <GradientStop Color="#D0BCFF"
                           Offset="1.0"/>
-
         </LinearGradientBrush>
-
     </gridSplitter:SplitterPane.Background>
-
 </gridSplitter:SplitterPane>
 
 {% endhighlight %}
@@ -162,11 +115,8 @@ When enabled, an expand/collapse icon is displayed on the associated separator.
 {% tabs %}
 {% highlight xaml %}
 
-<gridSplitter:SplitterPane
-    IsCollapsible="True">
-
+<gridSplitter:SplitterPane IsCollapsible="True">
     <Label Text="Collapsible Pane"/>
-
 </gridSplitter:SplitterPane>
 
 {% endhighlight %}
@@ -183,25 +133,19 @@ SplitterPane pane = new SplitterPane()
 
 ### Multiple collapsible panes
 
+In this example, the first two panes can be collapsed or expanded through their corresponding separators.
+
 {% tabs %}
 {% highlight xaml %}
 
 <gridSplitter:SfGridSplitter>
-
-        <gridSplitter:SplitterPane
-            IsCollapsible="True"/>
-
-        <gridSplitter:SplitterPane
-            IsCollapsible="True"/>
-
-        <gridSplitter:SplitterPane/>
-
+    <gridSplitter:SplitterPane IsCollapsible="True"/>
+    <gridSplitter:SplitterPane IsCollapsible="True"/>
+    <gridSplitter:SplitterPane />
 </gridSplitter:SfGridSplitter>
 
 {% endhighlight %}
 {% endtabs %}
-
-In this example, the first two panes can be collapsed or expanded through their corresponding separators.
 
 ---
 
@@ -218,11 +162,8 @@ When this property is set to `false`, the separator associated with the pane ign
 {% tabs %}
 {% highlight xaml %}
 
-<gridSplitter:SplitterPane
-    IsResizable="False">
-
+<gridSplitter:SplitterPane IsResizable="False">
     <Label Text="Fixed Pane"/>
-
 </gridSplitter:SplitterPane>
 
 {% endhighlight %}
@@ -246,19 +187,17 @@ The following example shows a non-resizable navigation pane with a resizable con
 
 <gridSplitter:SfGridSplitter>
 
-        <gridSplitter:SplitterPane
+    <gridSplitter:SplitterPane
             IsResizable="False"
             Background="#ECECEC">
+        <Label Text="Navigation"/>
 
-            <Label Text="Navigation"/>
+    </gridSplitter:SplitterPane>
 
-        </gridSplitter:SplitterPane>
+    <gridSplitter:SplitterPane>
+        <Label Text="Content Area"/>
 
-        <gridSplitter:SplitterPane>
-
-            <Label Text="Content Area"/>
-
-        </gridSplitter:SplitterPane>
+    </gridSplitter:SplitterPane>
 
 </gridSplitter:SfGridSplitter>
 
@@ -282,12 +221,9 @@ A collapsed pane occupies no layout space and can be expanded later either by us
 {% tabs %}
 {% highlight xaml %}
 
-<gridSplitter:SplitterPane
-    IsCollapsible="True"
-    IsCollapsed="True">
-
+<gridSplitter:SplitterPane IsCollapsible="True"
+                           IsCollapsed="True">
     <Label Text="Initially Collapsed"/>
-
 </gridSplitter:SplitterPane>
 
 {% endhighlight %}
@@ -326,8 +262,7 @@ The `IsCollapsed` property supports two-way binding, allowing the pane state to 
 
 <gridSplitter:SplitterPane
     IsCollapsible="True"
-    IsCollapsed="{Binding IsPaneCollapsed,
-                          Mode=TwoWay}" />
+    IsCollapsed="{Binding IsPaneCollapsed, Mode=TwoWay}" />
 
 {% endhighlight %}
 {% endtabs %}

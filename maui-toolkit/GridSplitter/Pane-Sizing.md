@@ -1,21 +1,21 @@
 ---
 layout: post
-title: Pane Sizing in .NET MAUI GridSplitter | Syncfusion®
-description: Learn how to control pane sizing in the Syncfusion® .NET MAUI GridSplitter control using Size, MinimumSize, and MaximumSize properties.
+title: Pane Sizing in .NET MAUI Grid Splitter | Syncfusion®
+description: Learn how to control pane sizing in the Syncfusion® .NET MAUI Grid Splitter control using Size, MinimumSize, and MaximumSize properties.
 platform: maui-toolkit
 control: SfGridSplitter
 documentation: UG
 ---
 
-# Pane Sizing in .NET MAUI GridSplitter
+# Pane Sizing in .NET MAUI Grid Splitter
 
-The `SfGridSplitter` control provides flexible sizing options through the `Size`, `MinimumSize`, and `MaximumSize` properties of the `SplitterPane` class. These properties help define the initial pane size and control how far a pane can be resized at runtime.
+The `.NET MAUI Grid Splitter` control provides flexible sizing options through the `Size`, `MinimumSize`, and `MaximumSize` properties of the `SplitterPane` class. These properties help define the initial pane size and control how far a pane can be resized at runtime.
 
 ## Size
 
 The `Size` property specifies the initial size of a pane and determines how available space is distributed among adjacent panes.
 
-The default value is `1`.
+The default value is `1*`.
 
 A pane with a larger size value occupies more space relative to panes with smaller values.
 
@@ -28,17 +28,17 @@ The following example creates three panes with equal widths.
 
 <gridSplitter:SfGridSplitter>
 
-        <gridSplitter:SplitterPane Size="1*">
-            <Label Text="Pane 1"/>
-        </gridSplitter:SplitterPane>
+    <gridSplitter:SplitterPane Size="1*">
+        <Label Text="Pane 1"/>
+    </gridSplitter:SplitterPane>
 
-        <gridSplitter:SplitterPane Size="1*">
-            <Label Text="Pane 2"/>
-        </gridSplitter:SplitterPane>
+    <gridSplitter:SplitterPane Size="1*">
+        <Label Text="Pane 2"/>
+    </gridSplitter:SplitterPane>
 
-        <gridSplitter:SplitterPane Size="1*">
-            <Label Text="Pane 3"/>
-        </gridSplitter:SplitterPane>
+    <gridSplitter:SplitterPane Size="1*">
+        <Label Text="Pane 3"/>
+    </gridSplitter:SplitterPane>
 
 </gridSplitter:SfGridSplitter>
 
@@ -54,37 +54,24 @@ You can assign different size values to allocate space proportionally.
 
 <gridSplitter:SfGridSplitter>
 
-        <gridSplitter:SplitterPane Size="1*">
-            <Label Text="Pane 1"/>
-        </gridSplitter:SplitterPane>
+    <gridSplitter:SplitterPane Size="1*">
+        <Label Text="Pane 1"/>
+    </gridSplitter:SplitterPane>
 
-        <gridSplitter:SplitterPane Size="2*">
-            <Label Text="Pane 2"/>
-        </gridSplitter:SplitterPane>
+    <gridSplitter:SplitterPane Size="2*">
+        <Label Text="Pane 2"/>
+    </gridSplitter:SplitterPane>
 
-        <gridSplitter:SplitterPane Size="3*">
-            <Label Text="Pane 3"/>
-        </gridSplitter:SplitterPane>
+    <gridSplitter:SplitterPane Size="3*">
+        <Label Text="Pane 3"/>
+    </gridSplitter:SplitterPane>
 
 </gridSplitter:SfGridSplitter>
 
 {% endhighlight %}
 {% endtabs %}
 
-In this example, the panes are distributed in a ratio of **1:2:3**.
-
-### Set size programmatically
-
-{% tabs %}
-{% highlight c# %}
-
-SplitterPane pane = new SplitterPane()
-{
-    Size = "2*"
-};
-
-{% endhighlight %}
-{% endtabs %}
+In this example, the panes are distributed in a ratio of 1*:2*:3*.
 
 ---
 
@@ -103,20 +90,11 @@ The following example prevents a pane from shrinking below 120 device-independen
 {% tabs %}
 {% highlight xaml %}
 
-<gridSplitter:SplitterPane
-    Size="1"
-    MinimumSize="120">
-
+<gridSplitter:SplitterPane MinimumSize="120">
     <Label Text="Minimum Size = 120"/>
-
 </gridSplitter:SplitterPane>
 
 {% endhighlight %}
-{% endtabs %}
-
-### Set minimum size programmatically
-
-{% tabs %}
 {% highlight c# %}
 
 SplitterPane pane = new SplitterPane()
@@ -133,15 +111,10 @@ SplitterPane pane = new SplitterPane()
 {% highlight xaml %}
 
 <gridSplitter:SfGridSplitter>
-
-        <gridSplitter:SplitterPane
-            Size="1*"
-            MinimumSize="100"/>
-
-        <gridSplitter:SplitterPane
-            Size="2*"
-            MinimumSize="150"/>
-
+    <gridSplitter:SplitterPane Size="1*"
+                               MinimumSize="100"/>
+    <gridSplitter:SplitterPane Size="2*"
+                               MinimumSize="150"/>
 </gridSplitter:SfGridSplitter>
 
 {% endhighlight %}
@@ -164,20 +137,11 @@ When resizing, the pane cannot grow beyond the configured maximum size.
 {% tabs %}
 {% highlight xaml %}
 
-<gridSplitter:SplitterPane
-    Size="1*"
-    MaximumSize="300">
-
+<gridSplitter:SplitterPane MaximumSize="300">
     <Label Text="Maximum Size = 300"/>
-
 </gridSplitter:SplitterPane>
 
 {% endhighlight %}
-{% endtabs %}
-
-### Set maximum size programmatically
-
-{% tabs %}
 {% highlight c# %}
 
 SplitterPane pane = new SplitterPane()
@@ -194,15 +158,10 @@ SplitterPane pane = new SplitterPane()
 {% highlight xaml %}
 
 <gridSplitter:SfGridSplitter>
-
-        <gridSplitter:SplitterPane
-            Size="1*"
-            MaximumSize="250"/>
-
-        <gridSplitter:SplitterPane
-            Size="2*"
-            MaximumSize="400"/>
-
+        <gridSplitter:SplitterPane Size="1*"
+                                   MaximumSize="250"/>
+        <gridSplitter:SplitterPane Size="2*"
+                                   MaximumSize="400"/>
 </gridSplitter:SfGridSplitter>
 
 {% endhighlight %}
@@ -219,10 +178,9 @@ You can combine both properties to define a valid resizing range for a pane.
 {% tabs %}
 {% highlight xaml %}
 
-<gridSplitter:SplitterPane
-    Size="2*"
-    MinimumSize="100"
-    MaximumSize="400">
+<gridSplitter:SplitterPane Size="2*"
+                           MinimumSize="100"
+                           MaximumSize="400">
 
     <Label Text="Resizable between 100 and 400"/>
 
@@ -242,8 +200,7 @@ The `Size` property supports two-way updates. When a user resizes a pane, the up
 {% tabs %}
 {% highlight xaml %}
 
-<gridSplitter:SplitterPane
-    Size="{Binding PaneSize, Mode=TwoWay}" />
+<gridSplitter:SplitterPane Size="{Binding PaneSize, Mode=TwoWay}" />
 
 {% endhighlight %}
 {% endtabs %}
@@ -259,7 +216,7 @@ When a separator is dragged:
 * The size of the two adjacent panes is updated.
 * `MinimumSize` prevents panes from becoming smaller than the configured limit.
 * `MaximumSize` prevents panes from growing beyond the configured limit.
-* Other panes in the GridSplitter are not affected.
+* Other panes in the Grid Splitter are not affected.
 * Layout integrity is maintained automatically.
 
 ---
@@ -271,39 +228,24 @@ The following example demonstrates all sizing properties together.
 {% tabs %}
 {% highlight xaml %}
 
-<gridSplitter:SfGridSplitter
-    Orientation="Horizontal"
-    SeparatorSize="6">
-
-        <gridSplitter:SplitterPane
-            Size="1*"
-            MinimumSize="120"
-            MaximumSize="250"
-            Background="#E8DEF8">
-
-            <Label Text="Navigation Pane"/>
-
-        </gridSplitter:SplitterPane>
-
-        <gridSplitter:SplitterPane
-            Size="2*"
-            MinimumSize="250"
-            Background="#F7F2FA">
-
-            <Label Text="Content Pane"/>
-
-        </gridSplitter:SplitterPane>
-
-        <gridSplitter:SplitterPane
-            Size="1*"
-            MinimumSize="150"
-            MaximumSize="350"
-            Background="#D0BCFF">
-
-            <Label Text="Details Pane"/>
-
-        </gridSplitter:SplitterPane>
-
+<gridSplitter:SfGridSplitter >
+    <gridSplitter:SplitterPane Size="1*"
+                               MinimumSize="120"
+                               MaximumSize="250"
+                            Background="#E8DEF8">
+        <Label Text="Navigation Pane"/>
+    </gridSplitter:SplitterPane>
+    <gridSplitter:SplitterPane Size="2*"
+                            MinimumSize="250"
+                            Background="#F7F2FA">
+        <Label Text="Content Pane"/>
+    </gridSplitter:SplitterPane>
+    <gridSplitter:SplitterPane Size="1*" 
+                               MinimumSize="150" 
+                               MaximumSize="350"
+                               Background="#D0BCFF">
+        <Label Text="Details Pane"/>
+    </gridSplitter:SplitterPane>
 </gridSplitter:SfGridSplitter>
 
 {% endhighlight %}
@@ -314,4 +256,4 @@ In this example:
 * The panes are initially distributed using a **1:2:1** size ratio.
 * Each pane defines its own resizing limits.
 * Users can resize panes while respecting the configured minimum and maximum size constraints.
-* The GridSplitter automatically maintains a valid layout throughout the resize operation.
+* The Grid Splitter automatically maintains a valid layout throughout the resize operation.
