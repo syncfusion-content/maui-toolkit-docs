@@ -34,8 +34,19 @@ The `GridSplitterResizeStartedEventArgs` class contains the following members:
 {% tabs %}
 {% highlight xaml %}
 
-<gridSplitter:SfGridSplitter
-    ResizeStarted="OnResizeStarted"/>
+<gridSplitter:SfGridSplitter ResizeStarted="OnResizeStarted">
+
+    <gridSplitter:SplitterPane>
+        <Label Text="Pane 1" HorizontalTextAlignment="Center"
+               VerticalTextAlignment="Center" />
+    </gridSplitter:SplitterPane>
+
+    <gridSplitter:SplitterPane>
+        <Label Text="Pane 2" HorizontalTextAlignment="Center"
+               VerticalTextAlignment="Center" />
+    </gridSplitter:SplitterPane>
+
+</gridSplitter:SfGridSplitter>
 
 {% endhighlight %}
 
