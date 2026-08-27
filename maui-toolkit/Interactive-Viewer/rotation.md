@@ -24,7 +24,7 @@ The `Rotate` method enables rotating the content hosted in the Interactive Viewe
 
 {% endhighlight %}
 
-{% highlight C# %}
+{% highlight C# hl_lines="5" %}
 
 using Syncfusion.Maui.Toolkit.InteractiveViewer;
 
@@ -37,4 +37,3 @@ private void OnRotateImageClicked(object sender, EventArgs e)
 {% endtabs %}
 
 N> The `Rotate` method supports only 90-degree clockwise rotations. Custom rotation angles are not supported.
-
