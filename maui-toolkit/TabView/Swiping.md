@@ -39,14 +39,7 @@ Interference Between Child Controls and Tab View Swiping: When a child control w
 
 ## Swiping Sensitivity
 
-The `SwipingSensitivity` property of the SfTabView allows developers to control how sensitive the swipe gesture is when navigating between tabs. This helps prevent accidental tab changes during horizontal scrolling and enables a more consistent swipe experience across different devices and application scenarios.
-
-By adjusting the **SwipingSensitivity** value, you can control the minimum swipe distance required to switch tabs:
-
-- Lower values make tab switching more sensitive and responsive to shorter swipe gestures.
-- Higher values require longer swipe gestures, reducing accidental tab changes.
-
-N> The default value of `SwipingSensitivity` is 5.
+The `SwipingSensitivity` property of the Tab View allows developers to control how sensitive the swipe gesture is when navigating between tabs. This helps prevent accidental tab changes during horizontal scrolling and enables a more consistent swipe experience across different devices and application scenarios. The default value of `SwipingSensitivity` is 5.
 
 You can configure the swipe sensitivity as shown in the following code snippets:
 
@@ -55,7 +48,7 @@ You can configure the swipe sensitivity as shown in the following code snippets:
 {% highlight xaml %}
 
 <tabView:SfTabView EnableSwiping="True"
-                SwipingSensitivity="25" /> 
+                   SwipingSensitivity="25" /> 
 
 {% endhighlight %}
 
