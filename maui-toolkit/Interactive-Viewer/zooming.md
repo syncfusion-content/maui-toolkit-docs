@@ -3,13 +3,13 @@ layout: post
 title: Zoom in .NET MAUI Interactive Viewer | Syncfusion®
 description: Learn about zooming and panning actions on contents in Syncfusion® .NET MAUI Interactive Viewer control for enhanced content viewing.
 platform: maui-toolkit
-control: InteractiveViewer
+control: SfInteractiveViewer
 documentation: ug
 ---
 
 # Zoom and Pan in .NET MAUI Interactive Viewer
 
-The .NET MAUI Interactive Viewer provides intuitive zoom and pan support, allowing users to explore content in greater detail and navigate seamlessly across large or complex views.
+The `.NET MAUI Interactive Viewer` provides intuitive zoom and pan support, allowing users to explore content in greater detail and navigate seamlessly across large or complex views.
 
 ## Enable zoom
 
