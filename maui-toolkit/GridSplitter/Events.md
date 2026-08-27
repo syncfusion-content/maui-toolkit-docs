@@ -71,8 +71,19 @@ The `GridSplitterResizingEventArgs` class contains the following members:
 {% tabs %}
 {% highlight xaml %}
 
-<gridSplitter:SfGridSplitter
-    Resizing="OnResizing"/>
+<gridSplitter:SfGridSplitter Resizing="OnResizing">
+
+    <gridSplitter:SplitterPane>
+        <Label Text="Pane 1" HorizontalTextAlignment="Center"
+               VerticalTextAlignment="Center" />
+    </gridSplitter:SplitterPane>
+
+    <gridSplitter:SplitterPane>
+        <Label Text="Pane 2" HorizontalTextAlignment="Center"
+               VerticalTextAlignment="Center" />
+    </gridSplitter:SplitterPane>
+
+</gridSplitter:SfGridSplitter>
 
 {% endhighlight %}
 
@@ -108,8 +119,19 @@ The `GridSplitterResizeStoppedEventArgs` class contains the following members:
 {% tabs %}
 {% highlight xaml %}
 
-<gridSplitter:SfGridSplitter
-    ResizeStopped="OnResizeStopped"/>
+<gridSplitter:SfGridSplitter ResizeStopped="OnResizeStopped">
+
+    <gridSplitter:SplitterPane>
+        <Label Text="Pane 1" HorizontalTextAlignment="Center"
+               VerticalTextAlignment="Center" />
+    </gridSplitter:SplitterPane>
+
+    <gridSplitter:SplitterPane>
+        <Label Text="Pane 2" HorizontalTextAlignment="Center"
+               VerticalTextAlignment="Center" />
+    </gridSplitter:SplitterPane>
+
+</gridSplitter:SfGridSplitter>
 
 {% endhighlight %}
 
@@ -146,8 +168,19 @@ The `GridSplitterPaneCollapsingEventArgs` class contains the following members:
 {% tabs %}
 {% highlight xaml %}
 
-<gridSplitter:SfGridSplitter
-    Collapsing="OnCollapsing"/>
+<gridSplitter:SfGridSplitter Collapsing="OnCollapsing">
+
+    <gridSplitter:SplitterPane>
+        <Label Text="Pane 1" HorizontalTextAlignment="Center"
+               VerticalTextAlignment="Center" />
+    </gridSplitter:SplitterPane>
+
+    <gridSplitter:SplitterPane>
+        <Label Text="Pane 2" HorizontalTextAlignment="Center"
+               VerticalTextAlignment="Center" />
+    </gridSplitter:SplitterPane>
+
+</gridSplitter:SfGridSplitter>
 
 {% endhighlight %}
 
@@ -155,7 +188,7 @@ The `GridSplitterPaneCollapsingEventArgs` class contains the following members:
 
 private void OnCollapsing(object sender, GridSplitterPaneCollapsingEventArgs e)
 {
-        e.Cancel = true;
+    e.Cancel = true;
 }
 
 {% endhighlight %}
@@ -183,8 +216,19 @@ The `GridSplitterPaneCollapsedEventArgs` class contains the following members:
 {% tabs %}
 {% highlight xaml %}
 
-<gridSplitter:SfGridSplitter
-    Collapsed="OnCollapsed"/>
+<gridSplitter:SfGridSplitter Collapsed="OnCollapsed">
+
+    <gridSplitter:SplitterPane>
+        <Label Text="Pane 1" HorizontalTextAlignment="Center"
+               VerticalTextAlignment="Center" />
+    </gridSplitter:SplitterPane>
+
+    <gridSplitter:SplitterPane>
+        <Label Text="Pane 2" HorizontalTextAlignment="Center"
+               VerticalTextAlignment="Center" />
+    </gridSplitter:SplitterPane>
+
+</gridSplitter:SfGridSplitter>
 
 {% endhighlight %}
 
@@ -221,8 +265,19 @@ The `GridSplitterPaneExpandingEventArgs` class contains the following members:
 {% tabs %}
 {% highlight xaml %}
 
-<gridSplitter:SfGridSplitter
-    Expanding="OnExpanding"/>
+<gridSplitter:SfGridSplitter Expanding="OnExpanding">
+
+    <gridSplitter:SplitterPane>
+        <Label Text="Pane 1" HorizontalTextAlignment="Center"
+               VerticalTextAlignment="Center" />
+    </gridSplitter:SplitterPane>
+
+    <gridSplitter:SplitterPane>
+        <Label Text="Pane 2" HorizontalTextAlignment="Center"
+               VerticalTextAlignment="Center" />
+    </gridSplitter:SplitterPane>
+
+</gridSplitter:SfGridSplitter>
 
 {% endhighlight %}
 
@@ -258,8 +313,19 @@ The `GridSplitterPaneExpandedEventArgs` class contains the following members:
 {% tabs %}
 {% highlight xaml %}
 
-<gridSplitter:SfGridSplitter
-    Expanded="OnExpanded"/>
+<gridSplitter:SfGridSplitter Expanded="OnExpanded">
+
+    <gridSplitter:SplitterPane>
+        <Label Text="Pane 1" HorizontalTextAlignment="Center"
+               VerticalTextAlignment="Center" />
+    </gridSplitter:SplitterPane>
+
+    <gridSplitter:SplitterPane>
+        <Label Text="Pane 2" HorizontalTextAlignment="Center"
+               VerticalTextAlignment="Center" />
+    </gridSplitter:SplitterPane>
+
+</gridSplitter:SfGridSplitter>
 
 {% endhighlight %}
 
@@ -291,13 +357,55 @@ The following example registers all available Grid Splitter events.
     Expanding="GridSplitter_Expanding"
     Expanded="GridSplitter_Expanded">
 
-        <gridSplitter:SplitterPane
-            IsCollapsible="True"/>
+    <gridSplitter:SplitterPane IsCollapsible="True">
+        <Label Text="Pane 1" HorizontalTextAlignment="Center"
+               VerticalTextAlignment="Center" />
+    </gridSplitter:SplitterPane>
 
-        <gridSplitter:SplitterPane
-            IsCollapsible="True"/>
+    <gridSplitter:SplitterPane IsCollapsible="True">
+        <Label Text="Pane 2" HorizontalTextAlignment="Center"
+               VerticalTextAlignment="Center" />
+    </gridSplitter:SplitterPane>
 
 </gridSplitter:SfGridSplitter>
+
+{% endhighlight %}
+{% highlight c# %}
+
+private void GridSplitter_ResizeStarted(object sender, GridSplitterResizeStartedEventArgs e)
+{
+    e.Cancel = true;
+}
+
+private void GridSplitter_Resizing(object sender, GridSplitterResizingEventArgs e)
+{
+    Debug.WriteLine($"Resizing pane at index {e.Indexes}");
+}
+
+private void GridSplitter_ResizeStopped(object sender, GridSplitterResizeStoppedEventArgs e)
+{
+    Debug.WriteLine($"Resize completed for pane {e.Indexes}");
+}
+
+private void GridSplitter_Collapsing(object sender, GridSplitterPaneCollapsingEventArgs e)
+{
+    e.Cancel = true;
+}
+
+private void GridSplitter_Collapsed(object sender, GridSplitterPaneCollapsedEventArgs e)
+{
+    Debug.WriteLine($"Pane {e.Indexes} collapsed.");
+}
+
+private void GridSplitter_Expanding(object sender, GridSplitterPaneExpandingEventArgs e)
+{
+    Debug.WriteLine($"Expanding pane {e.Indexes}");
+}
+
+private void GridSplitter_Expanded(object sender, GridSplitterPaneExpandedEventArgs e)
+{
+    Debug.WriteLine($"Pane {e.Indexes} expanded.");
+}
 
 {% endhighlight %}
 {% endtabs %}

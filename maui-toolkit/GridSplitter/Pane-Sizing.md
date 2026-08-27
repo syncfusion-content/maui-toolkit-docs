@@ -29,21 +29,74 @@ The following example creates three panes with equal widths.
 <gridSplitter:SfGridSplitter>
 
     <gridSplitter:SplitterPane Size="1*">
-        <Label Text="Pane 1"/>
+        <Label Text="Pane 1"
+               HorizontalTextAlignment="Center"
+               VerticalTextAlignment="Center" />
     </gridSplitter:SplitterPane>
 
     <gridSplitter:SplitterPane Size="1*">
-        <Label Text="Pane 2"/>
+        <Label Text="Pane 2"
+               HorizontalTextAlignment="Center"
+               VerticalTextAlignment="Center" />
     </gridSplitter:SplitterPane>
 
     <gridSplitter:SplitterPane Size="1*">
-        <Label Text="Pane 3"/>
+        <Label Text="Pane 3"
+               HorizontalTextAlignment="Center"
+               VerticalTextAlignment="Center" />
     </gridSplitter:SplitterPane>
 
 </gridSplitter:SfGridSplitter>
 
 {% endhighlight %}
+{% highlight c# %}
+
+SfGridSplitter gridSplitter = new SfGridSplitter();
+
+SplitterPane pane1 = new SplitterPane
+{
+    Size = "1*",
+    Content = new Label
+    {
+        Text = "Pane 1",
+        HorizontalTextAlignment = TextAlignment.Center,
+        VerticalTextAlignment = TextAlignment.Center
+    }
+};
+
+SplitterPane pane2 = new SplitterPane
+{
+    Size = "1*",
+    Content = new Label
+    {
+        Text = "Pane 2",
+        HorizontalTextAlignment = TextAlignment.Center,
+        VerticalTextAlignment = TextAlignment.Center
+    }
+};
+
+SplitterPane pane3 = new SplitterPane
+{
+    Size = "1*",
+    Content = new Label
+    {
+        Text = "Pane 3",
+        HorizontalTextAlignment = TextAlignment.Center,
+        VerticalTextAlignment = TextAlignment.Center
+    }
+};
+
+gridSplitter.AddPane(pane1);
+gridSplitter.AddPane(pane2);
+gridSplitter.AddPane(pane3);
+
+Content = gridSplitter;
+
+{% endhighlight %}
 {% endtabs %}
+
+![.NET MAUI Grid Splitter Equal Sized Panes](Images/gridsplitter-equalsizedpanes.png)
+
 
 ### Proportional pane sizing
 
@@ -55,21 +108,71 @@ You can assign different size values to allocate space proportionally.
 <gridSplitter:SfGridSplitter>
 
     <gridSplitter:SplitterPane Size="1*">
-        <Label Text="Pane 1"/>
+        <Label Text="Pane 1" HorizontalTextAlignment="Center"
+               VerticalTextAlignment="Center" />
     </gridSplitter:SplitterPane>
 
     <gridSplitter:SplitterPane Size="2*">
-        <Label Text="Pane 2"/>
+        <Label Text="Pane 2" HorizontalTextAlignment="Center"
+               VerticalTextAlignment="Center" />
     </gridSplitter:SplitterPane>
 
     <gridSplitter:SplitterPane Size="3*">
-        <Label Text="Pane 3"/>
+        <Label Text="Pane 3" HorizontalTextAlignment="Center"
+               VerticalTextAlignment="Center" />
     </gridSplitter:SplitterPane>
 
 </gridSplitter:SfGridSplitter>
 
 {% endhighlight %}
+{% highlight c# %}
+
+SfGridSplitter gridSplitter = new SfGridSplitter();
+
+SplitterPane pane1 = new SplitterPane
+{
+    Size = "1*",
+    Content = new Label
+    {
+        Text = "Pane 1",
+        HorizontalTextAlignment = TextAlignment.Center,
+        VerticalTextAlignment = TextAlignment.Center
+    }
+};
+
+SplitterPane pane2 = new SplitterPane
+{
+    Size = "2*",
+    Content = new Label
+    {
+        Text = "Pane 2",
+        HorizontalTextAlignment = TextAlignment.Center,
+        VerticalTextAlignment = TextAlignment.Center
+    }
+};
+
+SplitterPane pane3 = new SplitterPane
+{
+    Size = "3*",
+    Content = new Label
+    {
+        Text = "Pane 3",
+        HorizontalTextAlignment = TextAlignment.Center,
+        VerticalTextAlignment = TextAlignment.Center
+    }
+};
+
+gridSplitter.AddPane(pane1);
+gridSplitter.AddPane(pane2);
+gridSplitter.AddPane(pane3);
+
+Content = gridSplitter;
+
+{% endhighlight %}
 {% endtabs %}
+
+![.NET MAUI Grid Splitter Proportional Pane Sizing](Images/gridsplitter-proportionalpanesizing.png)
+
 
 In this example, the panes are distributed in a ratio of 1*:2*:3*.
 
@@ -90,32 +193,51 @@ The following example prevents a pane from shrinking below 120 device-independen
 {% tabs %}
 {% highlight xaml %}
 
-<gridSplitter:SplitterPane MinimumSize="120">
-    <Label Text="Minimum Size = 120"/>
-</gridSplitter:SplitterPane>
+<gridSplitter:SfGridSplitter>
+
+    <gridSplitter:SplitterPane MinimumSize="120">
+        <Label Text="Minimum Size = 120" HorizontalTextAlignment="Center"
+               VerticalTextAlignment="Center" />
+    </gridSplitter:SplitterPane>
+
+    <gridSplitter:SplitterPane MinimumSize="120">
+        <Label Text="Additional Pane" HorizontalTextAlignment="Center"
+               VerticalTextAlignment="Center" />
+    </gridSplitter:SplitterPane>
+
+</gridSplitter:SfGridSplitter>
 
 {% endhighlight %}
 {% highlight c# %}
 
-SplitterPane pane = new SplitterPane()
+SfGridSplitter gridSplitter = new SfGridSplitter();
+
+SplitterPane pane1 = new SplitterPane
 {
-    MinimumSize = 120
+    MinimumSize = 120,
+    Content = new Label
+    {
+        Text = "Minimum Size = 120",
+        HorizontalTextAlignment = TextAlignment.Center,
+        VerticalTextAlignment = TextAlignment.Center
+    }
 };
 
-{% endhighlight %}
-{% endtabs %}
+SplitterPane pane2 = new SplitterPane
+{
+    MinimumSize = 120,
+    Content = new Label
+    {
+        Text = "Additional Pane",
+        HorizontalTextAlignment = TextAlignment.Center,
+        VerticalTextAlignment = TextAlignment.Center
+    }
+};
 
-### Multiple panes with minimum size constraints
+gridSplitter.AddPane(pane1);
+gridSplitter.AddPane(pane2);
 
-{% tabs %}
-{% highlight xaml %}
-
-<gridSplitter:SfGridSplitter>
-    <gridSplitter:SplitterPane Size="1*"
-                               MinimumSize="100"/>
-    <gridSplitter:SplitterPane Size="2*"
-                               MinimumSize="150"/>
-</gridSplitter:SfGridSplitter>
+Content = gridSplitter;
 
 {% endhighlight %}
 {% endtabs %}
@@ -137,32 +259,51 @@ When resizing, the pane cannot grow beyond the configured maximum size.
 {% tabs %}
 {% highlight xaml %}
 
-<gridSplitter:SplitterPane MaximumSize="300">
-    <Label Text="Maximum Size = 300"/>
-</gridSplitter:SplitterPane>
+<gridSplitter:SfGridSplitter>
+
+    <gridSplitter:SplitterPane MaximumSize="600">
+        <Label Text="Maximum Size = 600" HorizontalTextAlignment="Center"
+               VerticalTextAlignment="Center" />
+    </gridSplitter:SplitterPane>
+
+    <gridSplitter:SplitterPane MaximumSize="600">
+        <Label Text="Additional Pane" HorizontalTextAlignment="Center"
+               VerticalTextAlignment="Center" />
+    </gridSplitter:SplitterPane>
+
+</gridSplitter:SfGridSplitter>
 
 {% endhighlight %}
 {% highlight c# %}
 
-SplitterPane pane = new SplitterPane()
+SfGridSplitter gridSplitter = new SfGridSplitter();
+
+SplitterPane pane1 = new SplitterPane
 {
-    MaximumSize = 300
+    MaximumSize = 600,
+    Content = new Label
+    {
+        Text = "Maximum Size = 600",
+        HorizontalTextAlignment = TextAlignment.Center,
+        VerticalTextAlignment = TextAlignment.Center
+    }
 };
 
-{% endhighlight %}
-{% endtabs %}
+SplitterPane pane2 = new SplitterPane
+{
+    MaximumSize = 600,
+    Content = new Label
+    {
+        Text = "Additional Pane",
+        HorizontalTextAlignment = TextAlignment.Center,
+        VerticalTextAlignment = TextAlignment.Center
+    }
+};
 
-### Multiple panes with maximum size constraints
+gridSplitter.AddPane(pane1);
+gridSplitter.AddPane(pane2);
 
-{% tabs %}
-{% highlight xaml %}
-
-<gridSplitter:SfGridSplitter>
-        <gridSplitter:SplitterPane Size="1*"
-                                   MaximumSize="250"/>
-        <gridSplitter:SplitterPane Size="2*"
-                                   MaximumSize="400"/>
-</gridSplitter:SfGridSplitter>
+Content = gridSplitter;
 
 {% endhighlight %}
 {% endtabs %}
@@ -178,13 +319,53 @@ You can combine both properties to define a valid resizing range for a pane.
 {% tabs %}
 {% highlight xaml %}
 
-<gridSplitter:SplitterPane Size="2*"
-                           MinimumSize="100"
-                           MaximumSize="400">
+<gridSplitter:SfGridSplitter>
 
-    <Label Text="Resizable between 100 and 400"/>
+    <gridSplitter:SplitterPane Size="2*" MinimumSize="100" MaximumSize="400">
+        <Label Text="Resizable between 100 and 400" HorizontalTextAlignment="Center"
+               VerticalTextAlignment="Center" />
+    </gridSplitter:SplitterPane>
 
-</gridSplitter:SplitterPane>
+    <gridSplitter:SplitterPane Size="1*">
+        <Label Text="Additional Pane" HorizontalTextAlignment="Center"
+               VerticalTextAlignment="Center" />
+    </gridSplitter:SplitterPane>
+
+</gridSplitter:SfGridSplitter>
+
+{% endhighlight %}
+{% highlight c# %}
+
+SfGridSplitter gridSplitter = new SfGridSplitter();
+
+SplitterPane pane1 = new SplitterPane
+{
+    Size = "2*",
+    MinimumSize = 100,
+    MaximumSize = 400,
+    Content = new Label
+    {
+        Text = "Resizable between 100 and 400",
+        HorizontalTextAlignment = TextAlignment.Center,
+        VerticalTextAlignment = TextAlignment.Center
+    }
+};
+
+SplitterPane pane2 = new SplitterPane
+{
+    Size = "1*",
+    Content = new Label
+    {
+        Text = "Additional Pane",
+        HorizontalTextAlignment = TextAlignment.Center,
+        VerticalTextAlignment = TextAlignment.Center
+    }
+};
+
+gridSplitter.AddPane(pane1);
+gridSplitter.AddPane(pane2);
+
+Content = gridSplitter;
 
 {% endhighlight %}
 {% endtabs %}
@@ -228,28 +409,84 @@ The following example demonstrates all sizing properties together.
 {% tabs %}
 {% highlight xaml %}
 
-<gridSplitter:SfGridSplitter >
+<gridSplitter:SfGridSplitter>
+
     <gridSplitter:SplitterPane Size="1*"
-                               MinimumSize="120"
-                               MaximumSize="250"
-                            Background="#E8DEF8">
-        <Label Text="Navigation Pane"/>
+                           MinimumSize="120"
+                           MaximumSize="250"
+                           Background="#E8DEF8">
+        <Label Text="Navigation Pane" HorizontalTextAlignment="Center" 
+               VerticalTextAlignment="Center" />
     </gridSplitter:SplitterPane>
-    <gridSplitter:SplitterPane Size="2*"
-                            MinimumSize="250"
-                            Background="#F7F2FA">
-        <Label Text="Content Pane"/>
+
+    <gridSplitter:SplitterPane Size="2*" MinimumSize="250" Background="#F7F2FA">
+        <Label Text="Content Pane" HorizontalTextAlignment="Center"
+               VerticalTextAlignment="Center" />
     </gridSplitter:SplitterPane>
-    <gridSplitter:SplitterPane Size="1*" 
-                               MinimumSize="150" 
-                               MaximumSize="350"
-                               Background="#D0BCFF">
-        <Label Text="Details Pane"/>
+
+    <gridSplitter:SplitterPane Size="1*" MinimumSize="150" MaximumSize="350" Background="#D0BCFF">
+        <Label Text="Details Pane" HorizontalTextAlignment="Center"
+               VerticalTextAlignment="Center" />
     </gridSplitter:SplitterPane>
+
 </gridSplitter:SfGridSplitter>
 
 {% endhighlight %}
+{% highlight c# %}
+
+SfGridSplitter gridSplitter = new SfGridSplitter();
+
+SplitterPane navigationPane = new SplitterPane
+{
+    Size = "1*",
+    MinimumSize = 120,
+    MaximumSize = 250,
+    Background = Color.FromArgb("#E8DEF8"),
+    Content = new Label
+    {
+        Text = "Navigation Pane",
+        HorizontalTextAlignment = TextAlignment.Center,
+        VerticalTextAlignment = TextAlignment.Center
+    }
+};
+
+SplitterPane contentPane = new SplitterPane
+{
+    Size = "2*",
+    MinimumSize = 250,
+    Background = Color.FromArgb("#F7F2FA"),
+    Content = new Label
+    {
+        Text = "Content Pane",
+        HorizontalTextAlignment = TextAlignment.Center,
+        VerticalTextAlignment = TextAlignment.Center
+    }
+};
+
+SplitterPane detailsPane = new SplitterPane
+{
+    Size = "1*",
+    MinimumSize = 150,
+    MaximumSize = 350,
+    Background = Color.FromArgb("#D0BCFF"),
+    Content = new Label
+    {
+        Text = "Details Pane",
+        HorizontalTextAlignment = TextAlignment.Center,
+        VerticalTextAlignment = TextAlignment.Center
+    }
+};
+
+gridSplitter.AddPane(navigationPane);
+gridSplitter.AddPane(contentPane);
+gridSplitter.AddPane(detailsPane);
+
+Content = gridSplitter;
+
+{% endhighlight %}
 {% endtabs %}
+
+![.NET MAUI Grid Splitter Combined Sizing](Images/gridsplitter-combinedsizing.png)
 
 In this example:
 

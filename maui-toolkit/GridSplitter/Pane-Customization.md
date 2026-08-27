@@ -25,9 +25,7 @@ The `Content` property allows you to display any .NET MAUI view inside a pane. A
     <gridSplitter:SplitterPane>
         <gridSplitter:SplitterPane.Content>
             <VerticalStackLayout Padding="16" VerticalOptions="Center" HorizontalOptions="Center">
-                <Label Text="Customer Details" 
-                    FontSize="20"
-                    FontAttributes="Bold" />
+                <Label Text="Customer Details" FontSize="20" FontAttributes="Bold" />
                 <Label Text="View and manage customer information." />
             </VerticalStackLayout>
         </gridSplitter:SplitterPane.Content>
@@ -36,9 +34,7 @@ The `Content` property allows you to display any .NET MAUI view inside a pane. A
     <gridSplitter:SplitterPane>
         <gridSplitter:SplitterPane.Content>
             <VerticalStackLayout Padding="16" VerticalOptions="Center" HorizontalOptions="Center">
-                <Label Text="Order Information"
-                    FontSize="20"
-                    FontAttributes="Bold" />
+                <Label Text="Order Information" FontSize="20" FontAttributes="Bold" />
                 <Label Text="Track and manage customer orders." />
             </VerticalStackLayout>
         </gridSplitter:SplitterPane.Content>
@@ -122,14 +118,11 @@ The `Background` property customizes the pane background using a `Brush`.
 <gridSplitter:SfGridSplitter>
 
     <gridSplitter:SplitterPane Background="LightBlue">
-        <Label Text="Pane Content"
-               HorizontalTextAlignment="Center"
-               VerticalTextAlignment="Center" />
+        <Label Text="Pane Content" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" />
     </gridSplitter:SplitterPane>
 
     <gridSplitter:SplitterPane Background="LightGreen">
-        <Label Text="Additional Pane Content"
-               HorizontalTextAlignment="Center"
+        <Label Text="Additional Pane Content" HorizontalTextAlignment="Center"
                VerticalTextAlignment="Center" />
     </gridSplitter:SplitterPane>
 
@@ -179,40 +172,97 @@ Content = gridSplitter;
 
     <gridSplitter:SplitterPane>
         <gridSplitter:SplitterPane.Background>
-            <LinearGradientBrush StartPoint="0,0"
-                                 EndPoint="1,1">
-                <GradientStop Color="#6750A4"
-                              Offset="0.0" />
-                <GradientStop Color="#D0BCFF"
-                              Offset="1.0" />
+            <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                <GradientStop Color="#6750A4" Offset="0.0" />
+                <GradientStop Color="#D0BCFF" Offset="1.0" />
             </LinearGradientBrush>
         </gridSplitter:SplitterPane.Background>
 
-        <Label Text="Pane 1"
-               HorizontalTextAlignment="Center"
-               VerticalTextAlignment="Center" />
+        <Label Text="Pane 1" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" />
     </gridSplitter:SplitterPane>
 
     <gridSplitter:SplitterPane>
         <gridSplitter:SplitterPane.Background>
-            <LinearGradientBrush StartPoint="0,0"
-                                 EndPoint="1,1">
-                <GradientStop Color="#00897B"
-                              Offset="0.0" />
-                <GradientStop Color="#80CBC4"
-                              Offset="1.0" />
+            <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                <GradientStop Color="#00897B" Offset="0.0" />
+                <GradientStop Color="#80CBC4" Offset="1.0" />
             </LinearGradientBrush>
         </gridSplitter:SplitterPane.Background>
 
-        <Label Text="Pane 2"
-               HorizontalTextAlignment="Center"
-               VerticalTextAlignment="Center" />
+        <Label Text="Pane 2" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" />
     </gridSplitter:SplitterPane>
 
 </gridSplitter:SfGridSplitter>
 
 {% endhighlight %}
+{% highlight c# %}
+
+SfGridSplitter gridSplitter = new SfGridSplitter();
+
+SplitterPane pane1 = new SplitterPane
+{
+    Background = new LinearGradientBrush
+    {
+        StartPoint = new Point(0, 0),
+        EndPoint = new Point(1, 1),
+        GradientStops =
+        {
+            new GradientStop
+            {
+                Color = Color.FromArgb("#6750A4"),
+                Offset = 0.0f
+            },
+            new GradientStop
+            {
+                Color = Color.FromArgb("#D0BCFF"),
+                Offset = 1.0f
+            }
+        }
+    },
+    Content = new Label
+    {
+        Text = "Pane 1",
+        HorizontalTextAlignment = TextAlignment.Center,
+        VerticalTextAlignment = TextAlignment.Center
+    }
+};
+
+SplitterPane pane2 = new SplitterPane
+{
+    Background = new LinearGradientBrush
+    {
+        StartPoint = new Point(0, 0),
+        EndPoint = new Point(1, 1),
+        GradientStops =
+        {
+            new GradientStop
+            {
+                Color = Color.FromArgb("#00897B"),
+                Offset = 0.0f
+            },
+            new GradientStop
+            {
+                Color = Color.FromArgb("#80CBC4"),
+                Offset = 1.0f
+            }
+        }
+    },
+    Content = new Label
+    {
+        Text = "Pane 2",
+        HorizontalTextAlignment = TextAlignment.Center,
+        VerticalTextAlignment = TextAlignment.Center
+    }
+};
+
+gridSplitter.AddPane(pane1);
+gridSplitter.AddPane(pane2);
+
+Content = gridSplitter;
+
+{% endhighlight %}
 {% endtabs %}
+![.NET MAUI Grid Splitter Gradient Background](Images/gridsplitter-lineargradientpane.png)
 
 ---
 
@@ -232,14 +282,11 @@ When enabled, an expand/collapse icon is displayed on the associated separator.
 <gridSplitter:SfGridSplitter>
 
     <gridSplitter:SplitterPane IsCollapsible="True">
-        <Label Text="Collapsible Pane"
-               HorizontalTextAlignment="Center"
-               VerticalTextAlignment="Center" />
+        <Label Text="Collapsible Pane" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" />
     </gridSplitter:SplitterPane>
 
     <gridSplitter:SplitterPane IsCollapsible="True">
-        <Label Text="Additional Collapsible Pane"
-               HorizontalTextAlignment="Center"
+        <Label Text="Additional Collapsible Pane" HorizontalTextAlignment="Center"
                VerticalTextAlignment="Center" />
     </gridSplitter:SplitterPane>
 
@@ -292,21 +339,15 @@ In this example, the first two panes can be collapsed or expanded through their 
 <gridSplitter:SfGridSplitter>
 
     <gridSplitter:SplitterPane IsCollapsible="True">
-        <Label Text="Pane 1"
-               HorizontalTextAlignment="Center"
-               VerticalTextAlignment="Center" />
+        <Label Text="Pane 1" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" />
     </gridSplitter:SplitterPane>
 
     <gridSplitter:SplitterPane IsCollapsible="True">
-        <Label Text="Pane 2"
-               HorizontalTextAlignment="Center"
-               VerticalTextAlignment="Center" />
+        <Label Text="Pane 2" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" />
     </gridSplitter:SplitterPane>
 
     <gridSplitter:SplitterPane IsCollapsible="False">
-        <Label Text="Pane 3"
-               HorizontalTextAlignment="Center"
-               VerticalTextAlignment="Center" />
+        <Label Text="Pane 3" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" />
     </gridSplitter:SplitterPane>
 
 </gridSplitter:SfGridSplitter>
@@ -374,15 +415,11 @@ When this property is set to `false`, the separator associated with the pane ign
 <gridSplitter:SfGridSplitter>
 
     <gridSplitter:SplitterPane IsResizable="False">
-        <Label Text="Pane 1"
-               HorizontalTextAlignment="Center"
-               VerticalTextAlignment="Center" />
+        <Label Text="Pane 1" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" />
     </gridSplitter:SplitterPane>
 
     <gridSplitter:SplitterPane IsResizable="False">
-        <Label Text="Pane 2"
-               HorizontalTextAlignment="Center"
-               VerticalTextAlignment="Center" />
+        <Label Text="Pane 2" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" />
     </gridSplitter:SplitterPane>
 
 </gridSplitter:SfGridSplitter>
@@ -430,23 +467,67 @@ The following example shows a non-resizable navigation pane with a resizable con
 
 <gridSplitter:SfGridSplitter>
 
-    <gridSplitter:SplitterPane
-            IsResizable="False"
-            Background="#ECECEC">
-        <Label Text="Navigation"/>
-
+    <gridSplitter:SplitterPane IsResizable="False" Background="#ECECEC">
+        <Label Text="Navigation" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" />
     </gridSplitter:SplitterPane>
 
     <gridSplitter:SplitterPane>
-        <Label Text="Content Area"/>
+        <Label Text="Content Area" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" />
+    </gridSplitter:SplitterPane>
 
+    <gridSplitter:SplitterPane>
+        <Label Text="Details Pane" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" />
     </gridSplitter:SplitterPane>
 
 </gridSplitter:SfGridSplitter>
 
 {% endhighlight %}
+{% highlight c# %}
+
+SfGridSplitter gridSplitter = new SfGridSplitter();
+
+SplitterPane navigationPane = new SplitterPane
+{
+    IsResizable = false,
+    Background = Color.FromArgb("#ECECEC"),
+    Content = new Label
+    {
+        Text = "Navigation",
+        HorizontalTextAlignment = TextAlignment.Center,
+        VerticalTextAlignment = TextAlignment.Center
+    }
+};
+
+SplitterPane contentPane = new SplitterPane
+{
+    Content = new Label
+    {
+        Text = "Content Area",
+        HorizontalTextAlignment = TextAlignment.Center,
+        VerticalTextAlignment = TextAlignment.Center
+    }
+};
+
+SplitterPane detailsPane = new SplitterPane
+{
+    Content = new Label
+    {
+        Text = "Details Pane",
+        HorizontalTextAlignment = TextAlignment.Center,
+        VerticalTextAlignment = TextAlignment.Center
+    }
+};
+
+gridSplitter.AddPane(navigationPane);
+gridSplitter.AddPane(contentPane);
+gridSplitter.AddPane(detailsPane);
+
+Content = gridSplitter;
+
+{% endhighlight %}
 {% endtabs %}
 
+![.NET MAUI Grid Splitter fixed and resizable pane](Images/gridsplitter-fixedandresizablepane.png)
 This is useful when certain regions must maintain a fixed layout while allowing other panes to resize.
 
 ---
@@ -467,15 +548,11 @@ A collapsed pane occupies no layout space and can be expanded later either by us
 <gridSplitter:SfGridSplitter>
 
     <gridSplitter:SplitterPane IsCollapsed="True">
-        <Label Text="Initially Collapsed"
-               HorizontalTextAlignment="Center"
-               VerticalTextAlignment="Center" />
+        <Label Text="Initially Collapsed" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
     </gridSplitter:SplitterPane>
 
     <gridSplitter:SplitterPane>
-        <Label Text="Expandable Pane"
-               HorizontalTextAlignment="Center"
-               VerticalTextAlignment="Center" />
+        <Label Text="Expandable Pane" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" />
     </gridSplitter:SplitterPane>
 
 </gridSplitter:SfGridSplitter>
@@ -523,31 +600,23 @@ You can collapse or expand panes using the GridSplitter methods.
 {% tabs %}
 {% highlight xaml %}
 
-<VerticalStackLayout Spacing="12"
-                     Padding="16">
+<VerticalStackLayout Spacing="12" Padding="16">
 
-    <gridSplitter:SfGridSplitter x:Name="gridSplitter"
-                                 HeightRequest="300">
+    <gridSplitter:SfGridSplitter x:Name="gridSplitter" HeightRequest="300">
 
         <gridSplitter:SplitterPane>
-            <Label Text="Pane 1"
-                   HorizontalTextAlignment="Center"
-                   VerticalTextAlignment="Center" />
+            <Label Text="Pane 1" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" />
         </gridSplitter:SplitterPane>
 
         <gridSplitter:SplitterPane>
-            <Label Text="Pane 2"
-                   HorizontalTextAlignment="Center"
-                   VerticalTextAlignment="Center" />
+            <Label Text="Pane 2" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" />
         </gridSplitter:SplitterPane>
 
     </gridSplitter:SfGridSplitter>
 
-    <Button Text="Collapse Pane"
-            Clicked="CollapsePaneClicked" />
+    <Button Text="Collapse Pane" Clicked="CollapsePaneClicked" />
 
-    <Button Text="Expand Pane"
-            Clicked="ExpandPaneClicked" />
+    <Button Text="Expand Pane" Clicked="ExpandPaneClicked" />
 
 </VerticalStackLayout>
 
@@ -575,9 +644,57 @@ The `IsCollapsed` property supports two-way binding, allowing the pane state to 
 {% tabs %}
 {% highlight xaml %}
 
-<gridSplitter:SplitterPane
-    IsCollapsible="True"
-    IsCollapsed="{Binding IsPaneCollapsed, Mode=TwoWay}" />
+<Grid RowDefinitions="Auto, *">
+
+    <Switch IsToggled="{Binding IsPaneCollapsed, Mode=TwoWay}" />
+
+    <gridSplitter:SfGridSplitter Grid.Row="1">
+        <gridSplitter:SplitterPane IsCollapsible="True" IsCollapsed="{Binding IsPaneCollapsed, Mode=TwoWay}">
+            <Label Text="Pane 1" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
+        </gridSplitter:SplitterPane>
+
+        <gridSplitter:SplitterPane>
+            <Label Text="Pane 2" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
+        </gridSplitter:SplitterPane>
+    </gridSplitter:SfGridSplitter>
+
+</Grid>
+
+{% endhighlight %}
+{% highlight c# %}
+
+public partial class MainPage : ContentPage
+{
+    public MainPage()
+    {
+        InitializeComponent();
+        BindingContext = new ViewModel();
+
+    }
+}
+
+{% endhighlight %}
+{% highlight c# tabtitle="ViewModel" %}
+
+public class ViewModel : INotifyPropertyChanged
+{
+    private bool isPaneCollapsed;
+
+    public bool IsPaneCollapsed
+    {
+        get => isPaneCollapsed;
+        set
+        {
+            if (isPaneCollapsed != value)
+            {
+                isPaneCollapsed = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(IsPaneCollapsed)));
+            }
+        }
+    }
+
+    public event PropertyChangedEventHandler? PropertyChanged;
+}
 
 {% endhighlight %}
 {% endtabs %}
@@ -593,33 +710,17 @@ The following example demonstrates multiple pane customization options together.
 
 <gridSplitter:SfGridSplitter>
 
-        <gridSplitter:SplitterPane
-            Background="#E8DEF8"
-            IsCollapsible="True"
-            Size="1*">
+    <gridSplitter:SplitterPane Background="#E8DEF8" IsCollapsible="True" Size="1*">
+        <VerticalStackLayout Padding="16">
+            <Label Text="Navigation" FontAttributes="Bold"/>
+        </VerticalStackLayout>
+    </gridSplitter:SplitterPane>
 
-            <VerticalStackLayout Padding="16">
-
-                <Label Text="Navigation"
-                       FontAttributes="Bold"/>
-
-            </VerticalStackLayout>
-
-        </gridSplitter:SplitterPane>
-
-        <gridSplitter:SplitterPane
-            Background="#F7F2FA"
-            IsResizable="True"
-            Size="2*">
-
-            <VerticalStackLayout Padding="16">
-
-                <Label Text="Content Area"
-                       FontAttributes="Bold"/>
-
-            </VerticalStackLayout>
-
-        </gridSplitter:SplitterPane>
+    <gridSplitter:SplitterPane Background="#F7F2FA" IsResizable="True" Size="2*">
+        <VerticalStackLayout Padding="16">
+            <Label Text="Content Area" FontAttributes="Bold"/>
+        </VerticalStackLayout>
+    </gridSplitter:SplitterPane>
 
 </gridSplitter:SfGridSplitter>
 

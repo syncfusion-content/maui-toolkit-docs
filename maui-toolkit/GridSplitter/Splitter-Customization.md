@@ -30,12 +30,56 @@ By default, the Grid Splitter uses horizontal orientation.
 {% highlight xaml %}
 
 <gridSplitter:SfGridSplitter Orientation="Horizontal">
-    <gridSplitter:SplitterPane />
-    <gridSplitter:SplitterPane />
+
+    <gridSplitter:SplitterPane>
+        <Label Text="Navigation Pane" HorizontalTextAlignment="Center"
+               VerticalTextAlignment="Center" />
+    </gridSplitter:SplitterPane>
+
+    <gridSplitter:SplitterPane>
+        <Label Text="Content Pane" HorizontalTextAlignment="Center"
+               VerticalTextAlignment="Center" />
+    </gridSplitter:SplitterPane>
+
 </gridSplitter:SfGridSplitter>
 
 {% endhighlight %}
+{% highlight c# %}
+
+SfGridSplitter gridSplitter = new SfGridSplitter
+{
+    Orientation = GridSplitterOrientation.Horizontal
+};
+
+SplitterPane navigationPane = new SplitterPane
+{
+    Content = new Label
+    {
+        Text = "Navigation Pane",
+        HorizontalTextAlignment = TextAlignment.Center,
+        VerticalTextAlignment = TextAlignment.Center
+    }
+};
+
+SplitterPane contentPane = new SplitterPane
+{
+    Content = new Label
+    {
+        Text = "Content Pane",
+        HorizontalTextAlignment = TextAlignment.Center,
+        VerticalTextAlignment = TextAlignment.Center
+    }
+};
+
+gridSplitter.AddPane(navigationPane);
+gridSplitter.AddPane(contentPane);
+
+Content = gridSplitter;
+
+{% endhighlight %}
 {% endtabs %}
+
+![.NET MAUI Grid Splitter Horizontal Orientation](Images/gridsplitter-horizontalpane.png)
 
 ### Vertical orientation
 
@@ -45,12 +89,56 @@ The following example arranges panes vertically in Grid Splitter.
 {% highlight xaml %}
 
 <gridSplitter:SfGridSplitter Orientation="Vertical">
-    <gridSplitter:SplitterPane />
-    <gridSplitter:SplitterPane />
+
+    <gridSplitter:SplitterPane>
+        <Label Text="Top Pane" HorizontalTextAlignment="Center"
+               VerticalTextAlignment="Center" />
+    </gridSplitter:SplitterPane>
+
+    <gridSplitter:SplitterPane>
+        <Label Text="Bottom Pane" HorizontalTextAlignment="Center"
+               VerticalTextAlignment="Center" />
+    </gridSplitter:SplitterPane>
+
 </gridSplitter:SfGridSplitter>
 
 {% endhighlight %}
+{% highlight c# %}
+
+SfGridSplitter gridSplitter = new SfGridSplitter
+{
+    Orientation = GridSplitterOrientation.Vertical
+};
+
+SplitterPane topPane = new SplitterPane
+{
+    Content = new Label
+    {
+        Text = "Top Pane",
+        HorizontalTextAlignment = TextAlignment.Center,
+        VerticalTextAlignment = TextAlignment.Center
+    }
+};
+
+SplitterPane bottomPane = new SplitterPane
+{
+    Content = new Label
+    {
+        Text = "Bottom Pane",
+        HorizontalTextAlignment = TextAlignment.Center,
+        VerticalTextAlignment = TextAlignment.Center
+    }
+};
+
+gridSplitter.AddPane(topPane);
+gridSplitter.AddPane(bottomPane);
+
+Content = gridSplitter;
+
+{% endhighlight %}
 {% endtabs %}
+
+![.NET MAUI Grid Splitter Vertical orientation](Images/gridsplitter-background.png)
 
 ## SeparatorSize
 
@@ -59,13 +147,57 @@ The `SeparatorSize` property specifies the thickness of the separator displayed 
 {% tabs %}
 {% highlight xaml %}
 
-<gridSplitter:SfGridSplitter SeparatorSize="10">
-    <gridSplitter:SplitterPane />
-    <gridSplitter:SplitterPane />
+<gridSplitter:SfGridSplitter SeparatorSize="15">
+
+    <gridSplitter:SplitterPane>
+        <Label Text="Pane 1" HorizontalTextAlignment="Center"
+               VerticalTextAlignment="Center" />
+    </gridSplitter:SplitterPane>
+
+    <gridSplitter:SplitterPane>
+        <Label Text="Pane 2" HorizontalTextAlignment="Center"
+               VerticalTextAlignment="Center" />
+    </gridSplitter:SplitterPane>
+
 </gridSplitter:SfGridSplitter>
 
 {% endhighlight %}
+{% highlight c# %}
+
+SfGridSplitter gridSplitter = new SfGridSplitter
+{
+    SeparatorSize = 15
+};
+
+SplitterPane pane1 = new SplitterPane
+{
+    Content = new Label
+    {
+        Text = "Pane 1",
+        HorizontalTextAlignment = TextAlignment.Center,
+        VerticalTextAlignment = TextAlignment.Center
+    }
+};
+
+SplitterPane pane2 = new SplitterPane
+{
+    Content = new Label
+    {
+        Text = "Pane 2",
+        HorizontalTextAlignment = TextAlignment.Center,
+        VerticalTextAlignment = TextAlignment.Center
+    }
+};
+
+gridSplitter.AddPane(pane1);
+gridSplitter.AddPane(pane2);
+
+Content = gridSplitter;
+
+{% endhighlight %}
 {% endtabs %}
+
+![.NET MAUI Grid Splitter Separator Size](Images/gridsplitter-separatorsize.png)
 
 ## SeparatorBackground
 
@@ -74,13 +206,57 @@ The `SeparatorBackground` property allows you to customize the appearance of the
 {% tabs %}
 {% highlight xaml %}
 
-<gridSplitter:SfGridSplitter SeparatorBackground="LightGray">
-    <gridSplitter:SplitterPane />
-    <gridSplitter:SplitterPane />
+<gridSplitter:SfGridSplitter SeparatorBackground="LightBlue">
+
+    <gridSplitter:SplitterPane>
+        <Label Text="Pane 1" HorizontalTextAlignment="Center"
+               VerticalTextAlignment="Center" />
+    </gridSplitter:SplitterPane>
+
+    <gridSplitter:SplitterPane>
+        <Label Text="Pane 2" HorizontalTextAlignment="Center"
+               VerticalTextAlignment="Center" />
+    </gridSplitter:SplitterPane>
+
 </gridSplitter:SfGridSplitter>
 
 {% endhighlight %}
+{% highlight c# %}
+
+SfGridSplitter gridSplitter = new SfGridSplitter
+{
+    SeparatorBackground = Colors.LightBlue
+};
+
+SplitterPane pane1 = new SplitterPane
+{
+    Content = new Label
+    {
+        Text = "Pane 1",
+        HorizontalTextAlignment = TextAlignment.Center,
+        VerticalTextAlignment = TextAlignment.Center
+    }
+};
+
+SplitterPane pane2 = new SplitterPane
+{
+    Content = new Label
+    {
+        Text = "Pane 2",
+        HorizontalTextAlignment = TextAlignment.Center,
+        VerticalTextAlignment = TextAlignment.Center
+    }
+};
+
+gridSplitter.AddPane(pane1);
+gridSplitter.AddPane(pane2);
+
+Content = gridSplitter;
+
+{% endhighlight %}
 {% endtabs %}
+
+![.NET MAUI Grid Splitter Separator Background](Images/gridsplitter-separatorbackground.png)
 
 You can use any solid color, dynamic resource, or theme resource to style the separator.
 
@@ -103,12 +279,56 @@ The `ResizeIconColor` property customizes the color of the built-in resize indic
 {% highlight xaml %}
 
 <gridSplitter:SfGridSplitter ResizeIconColor="Blue">
-    <gridSplitter:SplitterPane />
-    <gridSplitter:SplitterPane />
+
+    <gridSplitter:SplitterPane>
+        <Label Text="Pane 1" HorizontalTextAlignment="Center"
+               VerticalTextAlignment="Center" />
+    </gridSplitter:SplitterPane>
+
+    <gridSplitter:SplitterPane>
+        <Label Text="Pane 2" HorizontalTextAlignment="Center"
+               VerticalTextAlignment="Center" />
+    </gridSplitter:SplitterPane>
+
 </gridSplitter:SfGridSplitter>
 
 {% endhighlight %}
+{% highlight c# %}
+
+SfGridSplitter gridSplitter = new SfGridSplitter
+{
+    ResizeIconColor = Colors.Blue
+};
+
+SplitterPane pane1 = new SplitterPane
+{
+    Content = new Label
+    {
+        Text = "Pane 1",
+        HorizontalTextAlignment = TextAlignment.Center,
+        VerticalTextAlignment = TextAlignment.Center
+    }
+};
+
+SplitterPane pane2 = new SplitterPane
+{
+    Content = new Label
+    {
+        Text = "Pane 2",
+        HorizontalTextAlignment = TextAlignment.Center,
+        VerticalTextAlignment = TextAlignment.Center
+    }
+};
+
+gridSplitter.AddPane(pane1);
+gridSplitter.AddPane(pane2);
+
+Content = gridSplitter;
+
+{% endhighlight %}
 {% endtabs %}
+
+![.NET MAUI Grid Splitter Resize Icon Color](Images/gridsplitter-resizeiconcolor.png)
 
 ## ExpandCollapseIconColor
 
@@ -120,12 +340,57 @@ The icon is displayed only when the associated pane has its `IsCollapsible` prop
 {% highlight xaml %}
 
 <gridSplitter:SfGridSplitter ExpandCollapseIconColor="Red">
-        <gridSplitter:SplitterPane IsCollapsible="True" />
-        <gridSplitter:SplitterPane />
+
+    <gridSplitter:SplitterPane IsCollapsible="True">
+        <Label Text="Collapsible Pane" HorizontalTextAlignment="Center"
+               VerticalTextAlignment="Center" />
+    </gridSplitter:SplitterPane>
+
+    <gridSplitter:SplitterPane>
+        <Label Text="Content Pane" HorizontalTextAlignment="Center"
+               VerticalTextAlignment="Center" />
+    </gridSplitter:SplitterPane>
+
 </gridSplitter:SfGridSplitter>
 
 {% endhighlight %}
+{% highlight c# %}
+
+SfGridSplitter gridSplitter = new SfGridSplitter
+{
+    ExpandCollapseIconColor = Colors.Red
+};
+
+SplitterPane collapsiblePane = new SplitterPane
+{
+    IsCollapsible = true,
+    Content = new Label
+    {
+        Text = "Collapsible Pane",
+        HorizontalTextAlignment = TextAlignment.Center,
+        VerticalTextAlignment = TextAlignment.Center
+    }
+};
+
+SplitterPane contentPane = new SplitterPane
+{
+    Content = new Label
+    {
+        Text = "Content Pane",
+        HorizontalTextAlignment = TextAlignment.Center,
+        VerticalTextAlignment = TextAlignment.Center
+    }
+};
+
+gridSplitter.AddPane(collapsiblePane);
+gridSplitter.AddPane(contentPane);
+
+Content = gridSplitter;
+
+{% endhighlight %}
 {% endtabs %}
+
+![.NET MAUI Grid Splitter Expand Collapse Icon Color](Images/gridsplitter-expandcollapseiconcolor.png)
 
 ## ResizeIconTemplate
 
@@ -136,7 +401,8 @@ The template is applied to all separators created by the GridSplitter.
 {% tabs %}
 {% highlight xaml %}
 
-<gridSplitter:SfGridSplitter>
+<gridSplitter:SfGridSplitter SeparatorSize="15">
+
     <gridSplitter:SfGridSplitter.ResizeIconTemplate>
         <DataTemplate>
             <Image Source="resize_handle.png"
@@ -145,41 +411,167 @@ The template is applied to all separators created by the GridSplitter.
         </DataTemplate>
     </gridSplitter:SfGridSplitter.ResizeIconTemplate>
 
-    <gridSplitter:SplitterPane />
-    <gridSplitter:SplitterPane />
+    <gridSplitter:SplitterPane>
+        <Label Text="Pane 1"
+               HorizontalTextAlignment="Center"
+               VerticalTextAlignment="Center" />
+    </gridSplitter:SplitterPane>
+
+    <gridSplitter:SplitterPane>
+        <Label Text="Pane 2"
+               HorizontalTextAlignment="Center"
+               VerticalTextAlignment="Center" />
+    </gridSplitter:SplitterPane>
 
 </gridSplitter:SfGridSplitter>
 
 {% endhighlight %}
+{% highlight c# %}
+
+DataTemplate resizeIconTemplate = new DataTemplate(() =>
+{
+    return new Image
+    {
+        Source = "resize_handle.png",
+        HeightRequest = 16,
+        WidthRequest = 16
+    };
+});
+
+SfGridSplitter gridSplitter = new SfGridSplitter
+{
+    SeparatorSize = 15,
+};
+
+SplitterPane pane1 = new SplitterPane
+{
+    Content = new Label
+    {
+        Text = "Pane 1",
+        HorizontalTextAlignment = TextAlignment.Center,
+        VerticalTextAlignment = TextAlignment.Center
+    }
+};
+
+SplitterPane pane2 = new SplitterPane
+{
+    Content = new Label
+    {
+        Text = "Pane 2",
+        HorizontalTextAlignment = TextAlignment.Center,
+        VerticalTextAlignment = TextAlignment.Center
+    }
+};
+
+gridSplitter.AddPane(pane1);
+gridSplitter.AddPane(pane2);
+gridSplitter.ResizeIconTemplate = resizeIconTemplate;
+Content = gridSplitter;
+
+{% endhighlight %}
 {% endtabs %}
+
+![.NET MAUI Grid Splitter Resize Icon Template](Images/gridsplitter-resizeicontemplate.png)
 
 ### Custom resize icon using shapes
 
 {% tabs %}
 {% highlight xaml %}
 
-<gridSplitter:SfGridSplitter>
+<gridSplitter:SfGridSplitter SeparatorSize="15">
+
     <gridSplitter:SfGridSplitter.ResizeIconTemplate>
         <DataTemplate>
-            <HorizontalStackLayout Spacing="2"
-                                   HorizontalOptions="Center"
+            <HorizontalStackLayout Spacing="2" HorizontalOptions="Center"
                                    VerticalOptions="Center">
-                <BoxView WidthRequest="2"
-                         HeightRequest="12"
-                         olor="Gray" />
-                <BoxView WidthRequest="2"
-                         HeightRequest="12"
-                         Color="Gray" />
-                <BoxView WidthRequest="2"
-                         HeightRequest="12"
-                         Color="Gray" />
+                <BoxView WidthRequest="2" HeightRequest="12" Color="Gray" />
+                <BoxView WidthRequest="2" HeightRequest="12" Color="Gray" />
+                <BoxView WidthRequest="2" HeightRequest="12" Color="Gray" />
             </HorizontalStackLayout>
         </DataTemplate>
     </gridSplitter:SfGridSplitter.ResizeIconTemplate>
+
+    <gridSplitter:SplitterPane>
+        <Label Text="Pane 1" HorizontalTextAlignment="Center"
+               VerticalTextAlignment="Center" />
+    </gridSplitter:SplitterPane>
+
+    <gridSplitter:SplitterPane>
+        <Label Text="Pane 2" HorizontalTextAlignment="Center"
+               VerticalTextAlignment="Center" />
+    </gridSplitter:SplitterPane>
+
 </gridSplitter:SfGridSplitter>
 
 {% endhighlight %}
+{% highlight c# %}
+
+DataTemplate resizeIconTemplate = new DataTemplate(() =>
+{
+    return new HorizontalStackLayout
+    {
+        Spacing = 2,
+        HorizontalOptions = LayoutOptions.Center,
+        VerticalOptions = LayoutOptions.Center,
+        Children =
+        {
+            new BoxView
+            {
+                WidthRequest = 2,
+                HeightRequest = 12,
+                Color = Colors.Gray
+            },
+            new BoxView
+            {
+                WidthRequest = 2,
+                HeightRequest = 12,
+                Color = Colors.Gray
+            },
+            new BoxView
+            {
+                WidthRequest = 2,
+                HeightRequest = 12,
+                Color = Colors.Gray
+            }
+        }
+    };
+});
+
+SfGridSplitter gridSplitter = new SfGridSplitter
+{
+    SeparatorSize = 15
+};
+
+SplitterPane pane1 = new SplitterPane
+{
+    Content = new Label
+    {
+        Text = "Pane 1",
+        HorizontalTextAlignment = TextAlignment.Center,
+        VerticalTextAlignment = TextAlignment.Center
+    }
+};
+
+SplitterPane pane2 = new SplitterPane
+{
+    Content = new Label
+    {
+        Text = "Pane 2",
+        HorizontalTextAlignment = TextAlignment.Center,
+        VerticalTextAlignment = TextAlignment.Center
+    }
+};
+
+gridSplitter.AddPane(pane1);
+gridSplitter.AddPane(pane2);
+gridSplitter.ResizeIconTemplate = resizeIconTemplate;
+
+Content = gridSplitter;
+
+{% endhighlight %}
 {% endtabs %}
+
+![.NET MAUI Grid Splitter Resize Icon Template using shapes](Images/gridsplitter-resizeicontemplateshape.png)
 
 ## Right-to-left (RTL)
 
@@ -196,16 +588,56 @@ When RTL is enabled:
 {% highlight xaml %}
 
 <gridSplitter:SfGridSplitter FlowDirection="RightToLeft">
-        <gridSplitter:SplitterPane>
-            <Label Text="Pane 1"/>
-        </gridSplitter:SplitterPane>
-        <gridSplitter:SplitterPane>
-            <Label Text="Pane 2"/>
-        </gridSplitter:SplitterPane>
+
+    <gridSplitter:SplitterPane>
+        <Label Text="Pane 1" HorizontalTextAlignment="Center"
+               VerticalTextAlignment="Center" />
+    </gridSplitter:SplitterPane>
+
+    <gridSplitter:SplitterPane>
+        <Label Text="Pane 2" HorizontalTextAlignment="Center"
+               VerticalTextAlignment="Center" />
+    </gridSplitter:SplitterPane>
+
 </gridSplitter:SfGridSplitter>
 
 {% endhighlight %}
+{% highlight c# %}
+
+SfGridSplitter gridSplitter = new SfGridSplitter
+{
+    FlowDirection = FlowDirection.RightToLeft
+};
+
+SplitterPane pane1 = new SplitterPane
+{
+    Content = new Label
+    {
+        Text = "Pane 1",
+        HorizontalTextAlignment = TextAlignment.Center,
+        VerticalTextAlignment = TextAlignment.Center
+    }
+};
+
+SplitterPane pane2 = new SplitterPane
+{
+    Content = new Label
+    {
+        Text = "Pane 2",
+        HorizontalTextAlignment = TextAlignment.Center,
+        VerticalTextAlignment = TextAlignment.Center
+    }
+};
+
+gridSplitter.AddPane(pane1);
+gridSplitter.AddPane(pane2);
+
+Content = gridSplitter;
+
+{% endhighlight %}
 {% endtabs %}
+
+![.NET MAUI Grid Splitter RTL](Images/gridsplitter-rtl.png)
 
 ## Combined customization example
 
@@ -214,20 +646,66 @@ The following example demonstrates several customization properties together.
 {% tabs %}
 {% highlight xaml %}
 
-<gridSplitter:SfGridSplitter Orientation="Horizontal"
-                             SeparatorSize="8" 
-                             SeparatorBackground="#E0E0E0" 
-                             ResizeIconColor="#6750A4" ExpandCollapseIconColor="#6750A4">
-        <gridSplitter:SplitterPane IsCollapsible="True"
-                                   Background="LightBlue">
-            <Label Text="Pane 1"/>
-        </gridSplitter:SplitterPane>
-        <gridSplitter:SplitterPane Background="LightGreen">
-            <Label Text="Pane 2"/>
-        </gridSplitter:SplitterPane>
+<gridSplitter:SfGridSplitter Orientation="Horizontal" SeparatorSize="8"
+                             SeparatorBackground="#E0E0E0"
+                             ResizeIconColor="#6750A4"
+                             ExpandCollapseIconColor="#6750A4">
+
+    <gridSplitter:SplitterPane IsCollapsible="True" Background="LightBlue">
+        <Label Text="Pane 1" HorizontalTextAlignment="Center"
+               VerticalTextAlignment="Center" />
+    </gridSplitter:SplitterPane>
+
+    <gridSplitter:SplitterPane Background="LightGreen">
+        <Label Text="Pane 2" HorizontalTextAlignment="Center"
+               VerticalTextAlignment="Center" />
+    </gridSplitter:SplitterPane>
+
 </gridSplitter:SfGridSplitter>
 
 {% endhighlight %}
+{% highlight c# %}
+
+SfGridSplitter gridSplitter = new SfGridSplitter
+{
+    Orientation = GridSplitterOrientation.Horizontal,
+    SeparatorSize = 8,
+    SeparatorBackground = Color.FromArgb("#E0E0E0"),
+    ResizeIconColor = Color.FromArgb("#6750A4"),
+    ExpandCollapseIconColor = Color.FromArgb("#6750A4")
+};
+
+SplitterPane pane1 = new SplitterPane
+{
+    IsCollapsible = true,
+    Background = Colors.LightBlue,
+    Content = new Label
+    {
+        Text = "Pane 1",
+        HorizontalTextAlignment = TextAlignment.Center,
+        VerticalTextAlignment = TextAlignment.Center
+    }
+};
+
+SplitterPane pane2 = new SplitterPane
+{
+    Background = Colors.LightGreen,
+    Content = new Label
+    {
+        Text = "Pane 2",
+        HorizontalTextAlignment = TextAlignment.Center,
+        VerticalTextAlignment = TextAlignment.Center
+    }
+};
+
+gridSplitter.AddPane(pane1);
+gridSplitter.AddPane(pane2);
+
+Content = gridSplitter;
+
+{% endhighlight %}
 {% endtabs %}
+
+![.NET MAUI Grid Splitter Combined Custmization](Images/gridsplitter-combination.png)
 
 In this example, the Grid Splitter uses a custom separator thickness, customized separator appearance, custom icon colors, and pane collapse support to create a personalized splitter layout.

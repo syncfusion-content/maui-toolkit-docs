@@ -20,16 +20,33 @@ The following example adds a new pane after the last existing pane.
 {% tabs %}
 {% highlight c# %}
 
-SplitterPane pane = new SplitterPane()
+SfGridSplitter gridSplitter = new SfGridSplitter();
+
+SplitterPane pane1 = new SplitterPane()
 {
     Size = "1*",
     Content = new Label()
     {
-        Text = "New Pane"
+        Text = "New Pane",
+        VerticalTextAlignment = TextAlignment.Center,
+        HorizontalTextAlignment = TextAlignment.Center
     }
 };
 
-gridSplitter.AddPane(pane);
+SplitterPane pane2 = new SplitterPane()
+{
+    Size = "1*",
+    Content = new Label()
+    {
+        Text = "New Pane",
+        VerticalTextAlignment = TextAlignment.Center,
+        HorizontalTextAlignment = TextAlignment.Center
+    }
+};
+
+gridSplitter.AddPane(pane1);
+gridSplitter.AddPane(pane2);
+Content = gridSplitter;
 
 {% endhighlight %}
 {% endtabs %}
@@ -48,7 +65,49 @@ The `RemovePane` method removes the pane at the specified index.
 {% tabs %}
 {% highlight c# %}
 
+SfGridSplitter gridSplitter = new SfGridSplitter();
+
+SplitterPane pane1 = new SplitterPane()
+{
+    Size = "1*",
+    Content = new Label()
+    {
+        Text = "Pane 1",
+        VerticalTextAlignment = TextAlignment.Center,
+        HorizontalTextAlignment = TextAlignment.Center
+    }
+};
+
+SplitterPane pane2 = new SplitterPane()
+{
+    Size = "1*",
+    Content = new Label()
+    {
+        Text = "Pane 2",
+        VerticalTextAlignment = TextAlignment.Center,
+        HorizontalTextAlignment = TextAlignment.Center
+    }
+};
+
+SplitterPane pane3 = new SplitterPane()
+{
+    Size = "1*",
+    Content = new Label()
+    {
+        Text = "Pane 3",
+        VerticalTextAlignment = TextAlignment.Center,
+        HorizontalTextAlignment = TextAlignment.Center
+    }
+};
+
+gridSplitter.AddPane(pane1);
+gridSplitter.AddPane(pane2);
+gridSplitter.AddPane(pane3);
+
+// Remove Pane
 gridSplitter.RemovePane(1);
+
+Content = gridSplitter;
 
 {% endhighlight %}
 {% endtabs %}
@@ -75,14 +134,32 @@ void CollapsePane(int index)
 {% tabs %}
 {% highlight c# %}
 
-SplitterPane navigationPane = new SplitterPane()
+SfGridSplitter gridSplitter = new SfGridSplitter();
+SplitterPane pane1 = new SplitterPane()
 {
-    IsCollapsible = true,
+    Size = "1*",
     Content = new Label()
     {
-        Text = "Navigation"
+        Text = "New Pane",
+        VerticalTextAlignment = TextAlignment.Center,
+        HorizontalTextAlignment = TextAlignment.Center
     }
 };
+
+SplitterPane pane2 = new SplitterPane()
+{
+    Size = "1*",
+    Content = new Label()
+    {
+        Text = "New Pane",
+        VerticalTextAlignment = TextAlignment.Center,
+        HorizontalTextAlignment = TextAlignment.Center
+    }
+};
+
+gridSplitter.AddPane(pane1);
+gridSplitter.AddPane(pane2);
+Content = gridSplitter;
 
 gridSplitter.CollapsePane(0);
 
@@ -104,11 +181,38 @@ The `ExpandPane` method restores a previously collapsed pane.
 {% tabs %}
 {% highlight c# %}
 
-gridSplitter.CollapsePane(1);
+SfGridSplitter gridSplitter = new SfGridSplitter();
+SplitterPane pane1 = new SplitterPane()
+{
+    Size = "1*",
+    Content = new Label()
+    {
+        Text = "New Pane",
+        VerticalTextAlignment = TextAlignment.Center,
+        HorizontalTextAlignment = TextAlignment.Center
+    }
+};
+
+SplitterPane pane2 = new SplitterPane()
+{
+    Size = "1*",
+    Content = new Label()
+    {
+        Text = "New Pane",
+        VerticalTextAlignment = TextAlignment.Center,
+        HorizontalTextAlignment = TextAlignment.Center
+    }
+};
+
+gridSplitter.AddPane(pane1);
+gridSplitter.AddPane(pane2);
+Content = gridSplitter;
+
+gridSplitter.CollapsePane(0);
 
 // Later
 
-gridSplitter.ExpandPane(1);
+gridSplitter.ExpandPane(0);
 
 {% endhighlight %}
 {% endtabs %}
@@ -126,23 +230,53 @@ gridSplitter.ExpandPane(1);
 The following example demonstrates dynamically modifying the Grid Splitter layout.
 
 {% tabs %}
+
+{% highlight xaml %}
+
+<VerticalStackLayout Spacing="12" Padding="16">
+
+    <gridSplitter:SfGridSplitter x:Name="gridSplitter" HeightRequest="300">
+        <gridSplitter:SfGridSplitter.SplitterPanes>
+            <gridSplitter:SplitterPane>
+                <Label Text="Pane 1" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" />
+            </gridSplitter:SplitterPane>
+
+            <gridSplitter:SplitterPane>
+                <Label Text="Pane 2" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" />
+            </gridSplitter:SplitterPane>
+
+            <gridSplitter:SplitterPane>
+                <Label Text="Pane 3" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" />
+            </gridSplitter:SplitterPane>
+        </gridSplitter:SfGridSplitter.SplitterPanes>
+    </gridSplitter:SfGridSplitter>
+
+    <Button Text="Add Pane" Clicked="AddPaneClicked" />
+
+    <Button Text="Remove Pane" Clicked="RemovePaneClicked" />
+
+</VerticalStackLayout>
+
+{% endhighlight %}
 {% highlight c# %}
 
-private void AddNewPane()
+private void AddPaneClicked(object sender, EventArgs e)
 {
     SplitterPane pane = new SplitterPane()
     {
-        Size = 1,
+        Size = "1*",
         Content = new Label()
         {
-            Text = "Dynamically Added Pane"
+            Text = "Dynamically Added Pane",
+            VerticalTextAlignment = TextAlignment.Center,
+            HorizontalTextAlignment = TextAlignment.Center
         }
     };
 
     gridSplitter.AddPane(pane);
 }
 
-private void RemoveExistingPane()
+private void RemovePaneClicked(object sender, EventArgs e)
 {
     gridSplitter.RemovePane(2);
 }
@@ -193,7 +327,9 @@ SplitterPane pane1 = new SplitterPane()
     IsCollapsible = true,
     Content = new Label()
     {
-        Text = "Pane 1"
+        Text = "Pane 1",
+        VerticalTextAlignment = TextAlignment.Center,
+        HorizontalTextAlignment = TextAlignment.Center,
     }
 };
 
@@ -202,7 +338,9 @@ SplitterPane pane2 = new SplitterPane()
     Size = "1*",
     Content = new Label()
     {
-        Text = "Pane 2"
+        Text = "Pane 2",
+        VerticalTextAlignment = TextAlignment.Center,
+        HorizontalTextAlignment = TextAlignment.Center,
     }
 };
 
@@ -210,14 +348,15 @@ splitter.SplitterPanes.Add(pane1);
 splitter.SplitterPanes.Add(pane2);
 
 // Add a pane.
-splitter.AddPane(
-    new SplitterPane()
+splitter.AddPane( new SplitterPane()
+{
+    Content = new Label()
     {
-        Content = new Label()
-        {
-            Text = "Pane 3"
-        }
-    });
+        Text = "Pane 3",
+        VerticalTextAlignment = TextAlignment.Center,
+        HorizontalTextAlignment = TextAlignment.Center,
+    }
+});
 
 // Collapse a pane.
 splitter.CollapsePane(0);
@@ -228,6 +367,7 @@ splitter.ExpandPane(0);
 // Remove a pane.
 splitter.RemovePane(2);
 
+Content = splitter;
 {% endhighlight %}
 {% endtabs %}
 

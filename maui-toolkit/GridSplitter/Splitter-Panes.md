@@ -35,7 +35,8 @@ The following example creates a GridSplitter with three panes.
         <gridSplitter:SplitterPane>
             <Label Text="Pane 3" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
         </gridSplitter:SplitterPane>
-    </gridSplitter:SfGridSplitter.SplitterPanes></gridSplitter:SfGridSplitter>
+    </gridSplitter:SfGridSplitter.SplitterPanes>
+</gridSplitter:SfGridSplitter>
 
 {% endhighlight %}
 
@@ -125,6 +126,41 @@ You can remove an existing pane using the `RemovePane` method.
 {% tabs %}
 {% highlight c# %}
 
+SfGridSplitter gridSplitter = new SfGridSplitter();
+
+SplitterPane pane1 = new SplitterPane()
+{
+    Content = new Label
+    {
+        Text = "New Pane1",
+        VerticalTextAlignment = TextAlignment.Center,
+        HorizontalTextAlignment = TextAlignment.Center,
+    }
+};
+SplitterPane pane2 = new SplitterPane()
+{
+    Content = new Label
+    {
+        Text = "New Pane2",
+        VerticalTextAlignment = TextAlignment.Center,
+        HorizontalTextAlignment = TextAlignment.Center,
+    }
+};
+SplitterPane pane2 = new SplitterPane()
+{
+    Content = new Label
+    {
+        Text = "New Pane3",
+        VerticalTextAlignment = TextAlignment.Center,
+        HorizontalTextAlignment = TextAlignment.Center,
+    }
+};
+gridSplitter.AddPane(pane1);
+gridSplitter.AddPane(pane2);
+gridSplitter.AddPane(pane3);
+Content = gridSplitter;
+
+// Remove pane
 gridSplitter.RemovePane(1);
 
 {% endhighlight %}
@@ -143,11 +179,8 @@ The following example creates a nested GridSplitter inside the second pane.
 
 <gridSplitter:SfGridSplitter>
 
-
-
     <gridSplitter:SplitterPane>
-        <Label Text="Navigation Pane"
-               HorizontalTextAlignment="Center"
+        <Label Text="Navigation Pane" HorizontalTextAlignment="Center"
                VerticalTextAlignment="Center" />
     </gridSplitter:SplitterPane>
 
@@ -156,13 +189,12 @@ The following example creates a nested GridSplitter inside the second pane.
         <gridSplitter:SfGridSplitter Orientation="Vertical">
 
             <gridSplitter:SplitterPane>
-                <Label Text="Top Content"
-                       HorizontalTextAlignment="Center"
-                       VerticalTextAlignment="Center" />            </gridSplitter:SplitterPane>
+                <Label Text="Top Content" HorizontalTextAlignment="Center"
+                       VerticalTextAlignment="Center" />            
+            </gridSplitter:SplitterPane>
 
             <gridSplitter:SplitterPane>
-                <Label Text="Bottom Content"
-                       HorizontalTextAlignment="Center"
+                <Label Text="Bottom Content" HorizontalTextAlignment="Center"
                        VerticalTextAlignment="Center" />
             </gridSplitter:SplitterPane>
         </gridSplitter:SfGridSplitter>
