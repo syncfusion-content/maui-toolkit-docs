@@ -9,7 +9,7 @@ documentation: ug
 
 # About Syncfusion® .NET MAUI Shimmer Control
 
-Syncfusion<sup>&reg;</sup> .NET MAUI Shimmer ([SfShimmer](https://www.syncfusion.com/maui-controls/maui-shimmer)) control can increase an application's responsiveness by displaying a shimmer effect while the content is loading or processing in the background.
+Syncfusion<sup>&reg;</sup> .NET MAUI Shimmer ([SfShimmer](https://www.syncfusion.com/maui-controls/maui-shimmer)) control can increase an application's responsiveness by displaying a Shimmer effect while the content is loading or processing in the background.
 
 ![Multiple Shimmer View in .NET MAUI.](images/overview/maui-multiple-shimmer-views.gif)
 
@@ -22,11 +22,11 @@ Syncfusion<sup>&reg;</sup> .NET MAUI Shimmer ([SfShimmer](https://www.syncfusion
 
 ## Key features
 
-- **Multiple shimmer view types** allows displaying predefined layouts such as persona or content placeholders for different scenarios.
+- **Multiple Shimmer view types** allows displaying predefined layouts such as persona or content placeholders for different scenarios.
 
 - **Wave direction customization** allows controlling animation flow direction for enhanced visual effects. 
 
-- **Custom shimmer view** allows defining custom shapes using different shape types such as rectangle or circle.
+- **Custom Shimmer view** allows defining custom shapes using different shape types such as rectangle or circle.
 
 ## Related controls
 
@@ -37,8 +37,8 @@ Syncfusion<sup>&reg;</sup> .NET MAUI Shimmer ([SfShimmer](https://www.syncfusion
 ## See Also
 
 - [Getting Started](https://help.syncfusion.com/maui-toolkit/shimmer/getting-started) shows a step‑by‑step guide to begin using the Shimmer control.  
-- [Customization](https://help.syncfusion.com/maui-toolkit/shimmer/customization) explains how to customize shimmer appearance and animations.  
-- [Views](https://help.syncfusion.com/maui-toolkit/shimmer/built-in-views) explores different shimmer view types and layouts.  
+- [Customization](https://help.syncfusion.com/maui-toolkit/shimmer/customization) explains how to customize Shimmer appearance and animations.  
+- [Views](https://help.syncfusion.com/maui-toolkit/shimmer/built-in-views) explores different Shimmer view types and layouts.  
 - [UI Kit](https://www.syncfusion.com/demos/maui#maui-ui-control) provides interactive demos and ready‑made UI examples.
 
 ## Resources
