@@ -134,6 +134,36 @@ sfNumericUpDown.UpDownButtonColor = Colors.Blue;
 
 ![UpDownButtonColor support in .NET MAUI Numeric UpDown](UpDownButton_images/UpDownButtonColor.png)
 
+## UpDown button size
+
+Customize the `Numeric UpDown` control button size by using the `UpDownButtonSize` property.
+
+{% tabs %}
+{% highlight XAML %}
+
+<editors:SfNumericUpDown HeightRequest="50"
+                         WidthRequest="200"
+                         HorizontalOptions="Center"
+                         VerticalOptions="Center"
+                         Value="123"
+                         UpDownButtonSize="35"/>
+                     
+{% endhighlight %}
+{% highlight c# %}
+
+SfNumericUpDown sfNumericUpDown = new SfNumericUpDown();
+sfNumericUpDown.HeightRequest= 50;
+sfNumericUpDown.WidthRequest = 200;
+sfNumericUpDown.HorizontalOptions = LayoutOptions.Center
+sfNumericUpDown.VerticalOptions = LayoutOptions.Center;
+sfNumericUpDown.Value = 123;
+sfNumericUpDown.UpDownButtonSize = 35;
+
+{% endhighlight %}
+{% endtabs %}
+
+![UpDownButtonColor support in .NET MAUI Numeric UpDown](UpDownButton_images/UpDownButtonSize.png)
+
 ## UpDown button template
 
 The `Numeric UpDown` control supports customization of the UpDownButton's appearance through the use of the [UpButtonTemplate](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericUpDown.SfNumericUpDown.html#Syncfusion_Maui_Toolkit_NumericUpDown_SfNumericUpDown_UpButtonTemplate) and [DownButtonTemplate](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericUpDown.SfNumericUpDown.html#Syncfusion_Maui_Toolkit_NumericUpDown_SfNumericUpDown_DownButtonTemplate) properties.
