@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Range in .NET MAUI Linear ProgressBar | Syncfusion®
-description: Learn about defining range with minimum and maximum values in Syncfusion® .NET MAUI Linear ProgressBar (SfLinearProgressBar) control.
+title: Range in .NET MAUI Linear Progress Bar | Syncfusion®
+description: Learn about defining range with minimum and maximum values in Syncfusion® .NET MAUI Linear Progress Bar (SfLinearProgressBar) control.
 platform: MAUI
 control: SfLinearProgressBar
 documentation: ug
 ---
 
-# Range in .NET MAUI Linear ProgressBar
+# Range in .NET MAUI Linear Progress Bar
 
 The Range represents the entire span of the linear progress bar and can be defined using the [`Minimum`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.ProgressBar.ProgressBarBase.html#Syncfusion_Maui_Toolkit_ProgressBar_ProgressBarBase_Minimum) and [`Maximum`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.ProgressBar.ProgressBarBase.html#Syncfusion_Maui_Toolkit_ProgressBar_ProgressBarBase_Maximum) properties. The default value of the range is 0 to 100.
 
@@ -36,4 +36,4 @@ this.Content = linearProgressBar;
 
 {% endtabs %} 
 
-![.NET MAUI Linear ProgressBar with range customization](images/define-range/range.png)
+![.NET MAUI Linear Progress Bar with range customization](images/define-range/range.png)

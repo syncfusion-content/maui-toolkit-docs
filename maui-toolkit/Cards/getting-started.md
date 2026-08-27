@@ -149,7 +149,7 @@ The following screenshot illustrates the result of the above code.
 
 ### Define the card layout
 
-Initialize a card layout with a card view using the provided code sample below.
+Initialize a Card layout with a Card view using the provided code sample below.
 
 {% tabs %}
 {% highlight xaml %}

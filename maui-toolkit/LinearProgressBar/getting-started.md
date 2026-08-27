@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started with .NET MAUI Linear ProgressBar | Syncfusion®
-description: Learn how to get started with the Syncfusion® .NET MAUI Linear ProgressBar control. Explore setup, features, examples, and customization options.
+title: Getting Started with .NET MAUI Linear Progress Bar | Syncfusion®
+description: Learn how to get started with the Syncfusion® .NET MAUI Linear Progress Bar control. Explore setup, features, examples, and customization options.
 platform: MAUI
 control: SfLinearProgressBar
 documentation: ug
 ---
 
-# Getting Started with .NET MAUI Linear ProgressBar
+# Getting Started with .NET MAUI Linear Progress Bar
 
 This section explains the steps required to add the linear progress bar control with the progress and its customizable elements such as indeterminate, segment, progress fill, and track fill. This section covers only the basic features needed to know and gets started with the Syncfusion<sup>&reg;</sup> linear progress bar. Follow the steps below to add a .NET MAUI Linear progress bar control to your project.
 
@@ -102,7 +102,7 @@ builder.ConfigureSyncfusionToolkit();
 {% endhighlight %}
 {% endtabs %}
 
-## Step 4: Import Linear ProgressBar namespace
+## Step 4: Import Linear Progress Bar namespace
 
 Add the following namespace in your XAML or C#.
 {% tabs %}
@@ -118,7 +118,7 @@ using Syncfusion.Maui.Toolkit.ProgressBar;
 {% endhighlight %}
 {% endtabs %}
 
-## Step 5: Add the Linear ProgressBar component
+## Step 5: Add the Linear Progress Bar component
 
 Create an instance for the linear progress bar control, and add it as content.
 
@@ -140,6 +140,6 @@ N> By default, the value of progress should be specified between 0 and 100. To d
 
 Run the project, and check if you get following output to make sure that the project has been configured properly to add the linear progress bar.
 
-![.NET MAUI Linear ProgressBar](images/getting-started/progress-bar.png)
+![.NET MAUI Linear Progress Bar](images/getting-started/progress-bar.png)
 
-You can download the Linear ProgressBar Getting Started sample from [here](https://github.com/SyncfusionExamples/getting-started-with-the-dotnet-maui-linear-progress-bar).
+You can download the Linear Progress Bar Getting Started sample from [here](https://github.com/SyncfusionExamples/getting-started-with-the-dotnet-maui-linear-progress-bar).

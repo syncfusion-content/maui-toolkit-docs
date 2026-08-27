@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Custom Content in .NET MAUI Circular ProgressBar | Syncfusion®
-description: Learn about adding custom views and content in Syncfusion® .NET MAUI Circular ProgressBar (SfCircularProgressBar) control.
+title: Custom Content in .NET MAUI Circular Progress Bar | Syncfusion®
+description: Learn about adding custom views and content in Syncfusion® .NET MAUI Circular Progress Bar (SfCircularProgressBar) control.
 platform: MAUI
 control: SfCircularProgressBar
 documentation: ug
 ---
 
-# Custom Content in .NET MAUI Circular ProgressBar
+# Custom Content in .NET MAUI Circular Progress Bar
 
 In the circular progress bar, add any view to the center using the [`Content`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.ProgressBar.SfCircularProgressBar.html#Syncfusion_Maui_Toolkit_ProgressBar_SfCircularProgressBar_Content) property. 
 
@@ -77,4 +77,4 @@ this.Content = circularProgressBar;
 
 {% endtabs %} 
 
-![.NET MAUI Circular ProgressBar with custom content](images/custom-content/content.png)
+![.NET MAUI Circular Progress Bar with custom content](images/custom-content/content.png)

@@ -11,7 +11,7 @@ documentation: ug
 
 ## ShowSwipedCard
 
-Enabling the [ShowSwipedCard](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Cards.SfCardLayout.html#Syncfusion_Maui_Toolkit_Cards_SfCardLayout_ShowSwipedCard) option allows the swiped cards to be displayed at the edge of the card layout.
+Enabling the [ShowSwipedCard](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Cards.SfCardLayout.html#Syncfusion_Maui_Toolkit_Cards_SfCardLayout_ShowSwipedCard) option allows the swiped Cards to be displayed at the edge of the Card layout.
 
 {% tabs %} 
 
@@ -37,7 +37,7 @@ SfCardLayout cardLayout = new SfCardLayout()
 
 ## VisibleIndex
 
-The [VisibleIndex](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Cards.SfCardLayout.html#Syncfusion_Maui_Toolkit_Cards_SfCardLayout_VisibleIndex) is utilized when providing the index of the card that is intended to be displayed at the front of the card layout.
+The [VisibleIndex](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Cards.SfCardLayout.html#Syncfusion_Maui_Toolkit_Cards_SfCardLayout_VisibleIndex) is utilized when providing the index of the Card that is intended to be displayed at the front of the Card layout.
 
 {% tabs %} 
 
@@ -133,7 +133,7 @@ N> This property will not work when adding the SfCardView as a child of SfCardLa
 
 ## Dismiss the card programmatically
 
-The [IsDismissed](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Cards.SfCardView.html#Syncfusion_Maui_Toolkit_Cards_SfCardView_IsDismissed) property enables you to retrieve the view state of the card, and also provides the capability for the user to programmatically modify the card's view state.
+The [IsDismissed](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Cards.SfCardView.html#Syncfusion_Maui_Toolkit_Cards_SfCardView_IsDismissed) property enables you to retrieve the view state of the Card, and also provides the capability for the user to programmatically modify the Card's view state.
 
 {% tabs %}
 {% highlight xaml tabtitle="MainPage.xaml" hl_lines="1" %}
@@ -165,7 +165,7 @@ public partial class MainPage : ContentPage
 
 ### SfCardLayout
 
-Initialize a card layout with a card view using the provided code sample below.
+Initialize a Card layout with a Card view using the provided code sample below.
 
 {% tabs %}
 {% highlight xaml tabtitle="MainPage.xaml" hl_lines="1 3 4 5 15" %}
@@ -258,9 +258,9 @@ N> This property will not work when adding the SfCardView as a child of SfCardLa
 
 ![MAUI SfCardView image](images/maui-card-swiptodismiss.gif)
 
-## Dismiss the card programmatically
+## Dismiss the Card programmatically
 
-The [IsDismissed](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Cards.SfCardView.html#Syncfusion_Maui_Toolkit_Cards_SfCardView_IsDismissed) property enables you to retrieve the view state of the card, and also provides the capability for the user to programmatically modify the card's view state.
+The [IsDismissed](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Cards.SfCardView.html#Syncfusion_Maui_Toolkit_Cards_SfCardView_IsDismissed) property enables you to retrieve the view state of the Card, and also provides the capability for the user to programmatically modify the Card's view state.
 
 {% tabs %}
 {% highlight xaml tabtitle="MainPage.xaml" hl_lines="1" %}
@@ -292,13 +292,13 @@ public partial class MainPage : ContentPage
 
 ## Customization in CardView
 
-Customization of the border color, thickness, and card corner radius can be achieved by the following properties.
+Customization of the border color, thickness, and Card corner radius can be achieved by the following properties.
 
-* [BorderColor](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Cards.SfCardView.html#Syncfusion_Maui_Toolkit_Cards_SfCardView_BorderColor) - Used to customize the card view border color.
+* [BorderColor](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Cards.SfCardView.html#Syncfusion_Maui_Toolkit_Cards_SfCardView_BorderColor) - Used to customize the Card view border color.
 
-* [BorderWidth](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Cards.SfCardView.html#Syncfusion_Maui_Toolkit_Cards_SfCardView_BorderWidth) - Used to customize the card view border thickness.
+* [BorderWidth](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Cards.SfCardView.html#Syncfusion_Maui_Toolkit_Cards_SfCardView_BorderWidth) - Used to customize the Card view border thickness.
 
-* [CornerRadius](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Cards.SfCardView.html#Syncfusion_Maui_Toolkit_Cards_SfCardView_CornerRadius) - Used to customize the card view corner radius.
+* [CornerRadius](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Cards.SfCardView.html#Syncfusion_Maui_Toolkit_Cards_SfCardView_CornerRadius) - Used to customize the Card view corner radius.
 
 {% tabs %} 
 
@@ -402,7 +402,7 @@ SfCardView cardView = new SfCardView()
 
 ### FadeOutOnSwiping
 
-The [FadeOutOnSwiping](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Cards.SfCardView.html#Syncfusion_Maui_Toolkit_Cards_SfCardView_FadeOutOnSwiping) option can be enabled when the card view is intended to fade in response to swiping.
+The [FadeOutOnSwiping](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Cards.SfCardView.html#Syncfusion_Maui_Toolkit_Cards_SfCardView_FadeOutOnSwiping) option can be enabled when the Card view is intended to fade in response to swiping.
 
 {% tabs %} 
 
