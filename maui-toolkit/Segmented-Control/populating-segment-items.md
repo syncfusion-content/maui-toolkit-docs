@@ -3,7 +3,7 @@ layout: post
 title: Create Segment Content in .NET MAUI Segmented Control | Syncfusion®
 description: Learn about populating segment items with text, icons, or a combination of both in the .NET MAUI Segmented Control.
 platform: maui-toolkit
-control: Segmented control
+control: Segmented Control
 documentation: ug
 ---
  
@@ -12,7 +12,7 @@ documentation: ug
 Depending on the application, different scenarios may require icons, text, or a combination of both for effective communication.
 
 ## Text
-Create segmented control with segments having the given text.
+Create Segmented Control with segments having the given text.
 
 {% tabs %}
 {% highlight XAML %}
@@ -66,10 +66,10 @@ public class ViewModel
 {% endhighlight %}
 {% endtabs %}
 
-![Display text in .NET MAUI Segmented control.](images/populating-segment-items/text.png)
+![Display text in .NET MAUI Segmented Control.](images/populating-segment-items/text.png)
 
 ## Image
-Create a segmented control with segments that contain the provided images by using the [SfSegmentItem](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SegmentedControl.SfSegmentItem.html) collection, which is bound to the [ItemsSource](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SegmentedControl.SfSegmentedControl.html#Syncfusion_Maui_Toolkit_SegmentedControl_SfSegmentedControl_ItemsSource) property.
+Create a Segmented Control with segments that contain the provided images by using the [SfSegmentItem](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SegmentedControl.SfSegmentItem.html) collection, which is bound to the [ItemsSource](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SegmentedControl.SfSegmentedControl.html#Syncfusion_Maui_Toolkit_SegmentedControl_SfSegmentedControl_ItemsSource) property.
 
 {% tabs %}
 {% highlight XAML %}
@@ -123,7 +123,7 @@ public class ViewModel
 {% endhighlight %}
 {% endtabs %}
 
-![Display image in .NET MAUI Segmented control.](images/populating-segment-items/image.png)
+![Display image in .NET MAUI Segmented Control.](images/populating-segment-items/image.png)
 
 ## Image with Text
 Display images and text in the segmented items of the control.
@@ -180,7 +180,7 @@ public class ViewModel
 {% endhighlight %}
 {% endtabs %}
 
-![Display image with text in .NET MAUI Segmented control.](images/populating-segment-items/image-text.png)
+![Display image with text in .NET MAUI Segmented Control.](images/populating-segment-items/image-text.png)
 
 ## Custom Font with Text
 Display custom font with text in the segmented items of the control.
@@ -239,4 +239,4 @@ public class ViewModel
 {% endhighlight %}
 {% endtabs %}
 
-![Display font with text in .NET MAUI Segmented control.](images/populating-segment-items/font-text.png)
+![Display font with text in .NET MAUI Segmented Control.](images/populating-segment-items/font-text.png)

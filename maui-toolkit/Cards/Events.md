@@ -11,17 +11,17 @@ documentation: ug
 
 ## Tapped
 
-The [`Tapped`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Cards.SfCardLayout.html#Syncfusion_Maui_Toolkit_Cards_SfCardLayout_Tapped) event is triggered when any card view is tapped. The associated argument contains the following information.
+The [`Tapped`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Cards.SfCardLayout.html#Syncfusion_Maui_Toolkit_Cards_SfCardLayout_Tapped) event is triggered when any Card view is tapped. The associated argument contains the following information.
 
-* [`CardView`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Cards.SfCardView.html) - Gets the details of a particular card view.
+* [`CardView`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Cards.SfCardView.html) - Gets the details of a particular Card view.
 
 ## VisibleIndexChanging
 
-The [`VisibleIndexChanging`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Cards.SfCardLayout.html#Syncfusion_Maui_Toolkit_Cards_SfCardLayout_VisibleIndexChanging)  event is triggered when the visible card index is changing. The associated argument contains the following information.
+The [`VisibleIndexChanging`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Cards.SfCardLayout.html#Syncfusion_Maui_Toolkit_Cards_SfCardLayout_VisibleIndexChanging)  event is triggered when the visible Card index is changing. The associated argument contains the following information.
 
-* [`OldIndex`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Cards.CardVisibleIndexChangingEventArgs.html#Syncfusion_Maui_Toolkit_Cards_CardVisibleIndexChangingEventArgs_OldIndex) - Gets the details of the previous index card.
+* [`OldIndex`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Cards.CardVisibleIndexChangingEventArgs.html#Syncfusion_Maui_Toolkit_Cards_CardVisibleIndexChangingEventArgs_OldIndex) - Gets the details of the previous index Card.
 
-* [`NewIndex`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Cards.CardVisibleIndexChangingEventArgs.html#Syncfusion_Maui_Toolkit_Cards_CardVisibleIndexChangingEventArgs_NewIndex) - Gets the details of the next possible index card.
+* [`NewIndex`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Cards.CardVisibleIndexChangingEventArgs.html#Syncfusion_Maui_Toolkit_Cards_CardVisibleIndexChangingEventArgs_NewIndex) - Gets the details of the next possible index Card.
 
 * [`Cancel`]() - Gets or sets a value indicating whether the event should be canceled.
 
@@ -68,11 +68,11 @@ private void VisibleIndexChanging(System.Object sender, Syncfusion.Maui.Toolkit.
 
 ## VisibleIndexChanged
 
-The [`VisibleIndexChanged`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Cards.SfCardLayout.html#Syncfusion_Maui_Toolkit_Cards_SfCardLayout_VisibleIndexChanged) event is triggered when the visible card index is changed. The associated argument contains the following information.
+The [`VisibleIndexChanged`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Cards.SfCardLayout.html#Syncfusion_Maui_Toolkit_Cards_SfCardLayout_VisibleIndexChanged) event is triggered when the visible Card index is changed. The associated argument contains the following information.
 
-* [`OldIndex`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Cards.CardVisibleIndexChangedEventArgs.html#Syncfusion_Maui_Toolkit_Cards_CardVisibleIndexChangedEventArgs_OldIndex) - Gets the details of the previous card.
+* [`OldIndex`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Cards.CardVisibleIndexChangedEventArgs.html#Syncfusion_Maui_Toolkit_Cards_CardVisibleIndexChangedEventArgs_OldIndex) - Gets the details of the previous Card.
 
-* [`NewIndex`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Cards.CardVisibleIndexChangedEventArgs.html#Syncfusion_Maui_Toolkit_Cards_CardVisibleIndexChangedEventArgs_NewIndex) - Gets the details of the current card.
+* [`NewIndex`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Cards.CardVisibleIndexChangedEventArgs.html#Syncfusion_Maui_Toolkit_Cards_CardVisibleIndexChangedEventArgs_NewIndex) - Gets the details of the current Card.
 
 {% tabs %}
 {% highlight xaml hl_lines="1" %}
@@ -112,9 +112,9 @@ private void VisibleIndexChanged(System.Object sender, Syncfusion.Maui.Toolkit.C
 
 ## Dismissing event
 
-The [`Dismissing`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Cards.SfCardView.html#Syncfusion_Maui_Toolkit_Cards_SfCardView_Dismissing) event fires when dismissing the card by swiping, with the `SwipeToDismiss` property enabled. The associated argument contains the following information.
+The [`Dismissing`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Cards.SfCardView.html#Syncfusion_Maui_Toolkit_Cards_SfCardView_Dismissing) event fires when dismissing the Card by swiping, with the `SwipeToDismiss` property enabled. The associated argument contains the following information.
 
-* [`DismissDirection`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Cards.CardDismissingEventArgs.html#Syncfusion_Maui_Toolkit_Cards_CardDismissingEventArgs_DismissDirection) - Gets a dismissing direction of the card view.
+* [`DismissDirection`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Cards.CardDismissingEventArgs.html#Syncfusion_Maui_Toolkit_Cards_CardDismissingEventArgs_DismissDirection) - Gets a dismissing direction of the Card view.
 
 * [`Cancel`]() - Gets or sets a value indicating whether the event should be canceled.
 
@@ -149,9 +149,9 @@ N> This event will not work when adding the `SfCardView` as a child of `SfCardLa
 
 ## Dismissed event
 
-The [`Dismissed`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Cards.SfCardView.html#Syncfusion_Maui_Toolkit_Cards_SfCardView_Dismissed) event fires when dismisses the card by swiping, with enables `SwipeToDismiss` property. The argument contains the following information.
+The [`Dismissed`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Cards.SfCardView.html#Syncfusion_Maui_Toolkit_Cards_SfCardView_Dismissed) event fires when dismisses the Card by swiping, with enables `SwipeToDismiss` property. The argument contains the following information.
 
-* [`DismissDirection`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Cards.CardDismissedEventArgs.html#Syncfusion_Maui_Toolkit_Cards_CardDismissedEventArgs_DismissDirection) - Gets a dismissed direction of the card view.
+* [`DismissDirection`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Cards.CardDismissedEventArgs.html#Syncfusion_Maui_Toolkit_Cards_CardDismissedEventArgs_DismissDirection) - Gets a dismissed direction of the Card view.
 
 {% tabs %}
 {% highlight xaml hl_lines="1" %}
