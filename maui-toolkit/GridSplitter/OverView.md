@@ -9,7 +9,7 @@ documentation: UG
 
 # About Syncfusion® .NET MAUI Grid Splitter Control
 
-The Syncfusion® [.NET MAUI Grid Splitter]() is a layout control that enables userslapse, and expand content panes at runtime. It provides an intuitive way to create flexible and responsive user interfaces by separating content into multiple resizable panes with interactive splitter separators.
+The Syncfusion® [.NET MAUI Grid Splitter]() is a layout control that enables users lapse, and expand content panes at runtime. It provides an intuitive way to create flexible and responsive user interfaces by separating content into multiple resizable panes with interactive splitter separators.
 
 The control supports both horizontal and vertical layouts, allowing developers to build dashboard-style interfaces, workspace layouts, editors, and business applications with adjustable content regions.
 

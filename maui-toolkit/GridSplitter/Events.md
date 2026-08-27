@@ -17,7 +17,7 @@ These events can be used to validate user actions, synchronize UI state, update 
 
 The `ResizeStarted` event occurs when a user begins dragging a separator to resize adjacent panes.
 
-This event is cancellable and allows you to prevent the resize operation before it starts.
+This event is cancelable and allows you to prevent the resize operation before it starts.
 
 ### Event arguments
 
@@ -162,7 +162,7 @@ private void OnResizeStopped(object sender, GridSplitterResizeStoppedEventArgs e
 
 The `Collapsing` event occurs before a pane is collapsed.
 
-This event is cancellable and allows you to prevent the collapse operation when required.
+This event is cancelable and allows you to prevent the collapse operation when required.
 
 ### Event arguments
 
@@ -259,7 +259,7 @@ private void OnCollapsed(object sender, GridSplitterPaneCollapsedEventArgs e)
 
 The `Expanding` event occurs before a collapsed pane is expanded.
 
-This event is cancellable and allows you to control whether the expand operation should proceed.
+This event is cancelable and allows you to control whether the expand operation should proceed.
 
 ### Event arguments
 

@@ -399,33 +399,6 @@ The `ResizeIconTemplate` property allows you to replace the default resize icon 
 The template is applied to all separators created by the GridSplitter.
 
 {% tabs %}
-{% highlight xaml %}
-
-<gridSplitter:SfGridSplitter SeparatorSize="15">
-
-    <gridSplitter:SfGridSplitter.ResizeIconTemplate>
-        <DataTemplate>
-            <Image Source="resize_handle.png"
-                   HeightRequest="16"
-                   WidthRequest="16" />
-        </DataTemplate>
-    </gridSplitter:SfGridSplitter.ResizeIconTemplate>
-
-    <gridSplitter:SplitterPane>
-        <Label Text="Pane 1"
-               HorizontalTextAlignment="Center"
-               VerticalTextAlignment="Center" />
-    </gridSplitter:SplitterPane>
-
-    <gridSplitter:SplitterPane>
-        <Label Text="Pane 2"
-               HorizontalTextAlignment="Center"
-               VerticalTextAlignment="Center" />
-    </gridSplitter:SplitterPane>
-
-</gridSplitter:SfGridSplitter>
-
-{% endhighlight %}
 {% highlight c# %}
 
 DataTemplate resizeIconTemplate = new DataTemplate(() =>
@@ -476,34 +449,6 @@ Content = gridSplitter;
 ### Custom resize icon using shapes
 
 {% tabs %}
-{% highlight xaml %}
-
-<gridSplitter:SfGridSplitter SeparatorSize="15">
-
-    <gridSplitter:SfGridSplitter.ResizeIconTemplate>
-        <DataTemplate>
-            <HorizontalStackLayout Spacing="2" HorizontalOptions="Center"
-                                   VerticalOptions="Center">
-                <BoxView WidthRequest="2" HeightRequest="12" Color="Gray" />
-                <BoxView WidthRequest="2" HeightRequest="12" Color="Gray" />
-                <BoxView WidthRequest="2" HeightRequest="12" Color="Gray" />
-            </HorizontalStackLayout>
-        </DataTemplate>
-    </gridSplitter:SfGridSplitter.ResizeIconTemplate>
-
-    <gridSplitter:SplitterPane>
-        <Label Text="Pane 1" HorizontalTextAlignment="Center"
-               VerticalTextAlignment="Center" />
-    </gridSplitter:SplitterPane>
-
-    <gridSplitter:SplitterPane>
-        <Label Text="Pane 2" HorizontalTextAlignment="Center"
-               VerticalTextAlignment="Center" />
-    </gridSplitter:SplitterPane>
-
-</gridSplitter:SfGridSplitter>
-
-{% endhighlight %}
 {% highlight c# %}
 
 DataTemplate resizeIconTemplate = new DataTemplate(() =>
