@@ -3,13 +3,13 @@ layout: post
 title: Getting Started with .NET MAUI Segmented Control | Syncfusion®
 description: Learn how to get started with the Syncfusion® .NET MAUI Segmented Control. Explore setup, features, examples, and customization options.
 platform: maui-toolkit
-control: Segmented control
+control: Segmented Control
 documentation: ug
 ---
 
 # Getting Started with .NET MAUI Segmented Control
 
-This section provides a quick overview of how to get started with the .NET MAUI Segmented control (SfSegmentedControl) for .NET MAUI and a walk-through to configure the .NET MAUI Segmented control in a real-time scenario. Follow the steps below to add .NET MAUI Segmented control to your project.
+This section provides a quick overview of how to get started with the .NET MAUI Segmented Control (SfSegmentedControl) for .NET MAUI and a walk-through to configure the .NET MAUI Segmented Control in a real-time scenario. Follow the steps below to add .NET MAUI Segmented Control to your project.
 
 {% tabcontents %}
 {% tabcontent Visual Studio %}
@@ -152,6 +152,6 @@ this.Content = segmentedControl;
 {% endhighlight %}
 {% endtabs %}
 
-![Getting started in .NET MAUI Segmented control.](images/getting-started/getting-started.png)
+![Getting started in .NET MAUI Segmented Control.](images/getting-started/getting-started.png)
 
 You can download the Segmented Control Getting Started sample from [here](https://github.com/SyncfusionExamples/net-maui-segmented-control-examples/tree/master/GettingStarted).

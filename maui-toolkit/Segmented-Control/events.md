@@ -3,7 +3,7 @@ layout: post
 title: Events in .NET MAUI Segmented Control | Syncfusion®
 description: Learn about Tapped and SelectionChanged events that allow interaction with the .NET MAUI Segmented Control.
 platform: maui-toolkit
-control: Segmented control
+control: Segmented Control
 documentation: ug
 ---
 
@@ -23,7 +23,7 @@ Below is a list of the arguments:
 
 ## SelectionChanged
 
-The [SelectionChanged](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SegmentedControl.SfSegmentedControl.html#Syncfusion_Maui_Toolkit_SegmentedControl_SfSegmentedControl_SelectionChanged) event is triggered once the segment is selected in the segmented control. The [SelectionChangedEventArgs](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SegmentedControl.SelectionChangedEventArgs.html) has the following values, which provide information for the `SelectionChanged` event.
+The [SelectionChanged](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SegmentedControl.SfSegmentedControl.html#Syncfusion_Maui_Toolkit_SegmentedControl_SfSegmentedControl_SelectionChanged) event is triggered once the segment is selected in the Segmented Control. The [SelectionChangedEventArgs](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SegmentedControl.SelectionChangedEventArgs.html) has the following values, which provide information for the `SelectionChanged` event.
 
 * OldIndex
 * NewIndex

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Built-in Views in .NET MAUI Shimmer | Syncfusion®
-description: Learn about built-in shimmer view types in Syncfusion® .NET MAUI Shimmer (SfShimmer) control for creating predefined loading placeholder layouts.
+description: Learn about built-in Shimmer view types in Syncfusion® .NET MAUI Shimmer (SfShimmer) control for creating predefined loading placeholder layouts.
 platform: maui-toolkit
 control: SfShimmer
 documentation: ug
@@ -11,11 +11,11 @@ documentation: ug
 
 ## Built-in types
 
-Syncfusion [.NET MAUI Shimmer](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Shimmer.SfShimmer.html) (SfShimmer) control provides seven built-in shimmer view types such as CirclePersona, SquarePersona, Profile, Article, Video, Feed, and Shopping.
+Syncfusion [.NET MAUI Shimmer](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Shimmer.SfShimmer.html) (SfShimmer) control provides seven built-in Shimmer view types such as CirclePersona, SquarePersona, Profile, Article, Video, Feed, and Shopping.
 
    ![Types of view in .NET MAUI Shimmer.](images/overview/maui-multiple-shimmer-views.gif)
 
-The built-in shimmer types can be used by setting the [Type](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Shimmer.SfShimmer.html#Syncfusion_Maui_Toolkit_Shimmer_SfShimmer_Type) of `SfShimmer`. By default, the [CirclePersona](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Shimmer.ShimmerType.html#Syncfusion_Maui_Toolkit_Shimmer_ShimmerType_CirclePersona) is initially rendered.
+The built-in Shimmer types can be used by setting the [Type](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Shimmer.SfShimmer.html#Syncfusion_Maui_Toolkit_Shimmer_SfShimmer_Type) of `SfShimmer`. By default, the [CirclePersona](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Shimmer.ShimmerType.html#Syncfusion_Maui_Toolkit_Shimmer_ShimmerType_CirclePersona) is initially rendered.
 
 {% tabs %}
 {% highlight xaml tabtitle="XAML" hl_lines="2" %}

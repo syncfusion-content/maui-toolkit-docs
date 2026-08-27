@@ -1,17 +1,17 @@
 ---
 layout: post
 title: About Syncfusion® .NET MAUI Segmented Control | Syncfusion®
-description: Learn about introduction of Syncfusion® Essential Studio .NET MAUI Segmented control and more details.
+description: Learn about introduction of Syncfusion® Essential Studio .NET MAUI Segmented Control and more details.
 platform: maui-toolkit
-control: Segmented control
+control: Segmented Control
 documentation: ug
 ---
  
 # About Syncfusion® .NET MAUI Segmented Control
 
-The Syncfusion<sup>&reg;</sup> [.NET MAUI Segmented control (SfSegmentedControl)](https://www.syncfusion.com/maui-controls/maui-segmented-control) provides options from a linear set of segments containing text, an icon, or both. Each segment is a discrete button, allowing you to select choices in a user-friendly manner.
+The Syncfusion<sup>&reg;</sup> [.NET MAUI Segmented Control (SfSegmentedControl)](https://www.syncfusion.com/maui-controls/maui-segmented-control) provides options from a linear set of segments containing text, an icon, or both. Each segment is a discrete button, allowing you to select choices in a user-friendly manner.
 
-![.NET MAUI segmented control overview ](images/overview/segment_overview.png)
+![.NET MAUI Segmented Control overview ](images/overview/segment_overview.png)
 
 ## Business use cases
 
@@ -65,7 +65,7 @@ The following table summarizes the globalization support available in this contr
 <th align="center">Keyboard navigation</th>
 </tr>
 <tr>
-<td><a href="/maui-toolkit/segmented-control/overview">Segmented Control</a></td>
+<td><a href="/maui-toolkit/segmented-control/overview" aria-label="MAUI Segmented Control overview">Segmented Control</a></td>
 <td align="center"><img src="../Images/full-support.svg" alt="full-support" width="16" /></td>
 <td align="center"><img src="../Images/full-support.svg" alt="full-support" width="16" /></td>
 <td align="center"><img src="../Images/not-applicable.svg" alt="not-applicable" width="16" /></td>
