@@ -1,13 +1,13 @@
 ---
 layout: post
-title: States in .NET MAUI Linear ProgressBar | Syncfusion®
-description: Learn about determinate and indeterminate states in Syncfusion® .NET MAUI Linear ProgressBar (SfLinearProgressBar) control.
+title: States in .NET MAUI Linear Progress Bar | Syncfusion®
+description: Learn about determinate and indeterminate states in Syncfusion® .NET MAUI Linear Progress Bar (SfLinearProgressBar) control.
 platform: MAUI
 control: SfLinearProgressBar
 documentation: ug
 ---
 
-# States in .NET MAUI Linear ProgressBar
+# States in .NET MAUI Linear Progress Bar
 
 Configure the states of the linear progress bar control depending on the usage.
 
@@ -36,7 +36,7 @@ this.Content = linearProgressBar;
 
 {% endtabs %} 
 
-![.NET MAUI Linear ProgressBar with buffer](images\states\linear-progressbar-indeterminate.gif)
+![.NET MAUI Linear Progress Bar with buffer](images\states\linear-progressbar-indeterminate.gif)
 
 ## Buffer
 
@@ -62,4 +62,4 @@ this.Content = linearProgressBar;
 
 {% endtabs %} 
 
-![.NET MAUI Linear ProgressBar with buffer](images\states\buffer.png)
+![.NET MAUI Linear Progress Bar with buffer](images\states\buffer.png)
