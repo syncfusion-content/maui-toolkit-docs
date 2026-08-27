@@ -1,0 +1,40 @@
+---
+layout: post
+title: Rotate in .NET MAUI Interactive Viewer | Syncfusion®
+description: Learn about rotation support in the Syncfusion® .NET MAUI Interactive Viewer control.
+platform: maui-toolkit
+control: SfInteractiveViewer
+documentation: ug
+---
+
+# Rotation in .NET MAUI Interactive Viewer
+
+The `Rotate` method enables rotating the content hosted in the Interactive Viewer control. Each invocation rotates the content by 90 degrees clockwise and cycles through the available orientations.
+
+{% tabs %}
+{% highlight XAML %}
+
+<Grid RowDefinitions="0.9*, 0.1*">
+    <toolkit:SfInteractiveViewer x:Name="interactiveViewer">
+        <Image Source="interactiveviewerimage.png" Aspect="AspectFit" />
+    </toolkit:SfInteractiveViewer>
+
+    <Button Text="Rotate" Grid.Row="1" Clicked="OnRotateImageClicked"/>
+</Grid>
+
+{% endhighlight %}
+
+{% highlight C# %}
+
+using Syncfusion.Maui.Toolkit.InteractiveViewer;
+
+private void OnRotateImageClicked(object sender, EventArgs e)
+{
+    this.interactiveViewer.Rotate();
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+N> The `Rotate` method supports only 90-degree clockwise rotations. Custom rotation angles are not supported.
+
