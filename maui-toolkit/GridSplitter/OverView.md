@@ -83,7 +83,7 @@ full-support
 - [Accordion](https://help.syncfusion.com/maui-toolkit/accordion/overview) for organizing expandable sections.
 - [Expander](https://help.syncfusion.com/maui-toolkit/expander/overview) for expandable and collapsible content.
 - [Navigation Drawer](https://help.syncfusion.com/maui-toolkit/navigationdrawer/overview) for side navigation layouts.
-- [Tab View](https://help.syncfusion.com/t/tabview/overview) for tab-based content organization.
+- [Tab View](https://help.syncfusion.com/maui-toolkit/tabview/overview) for tab-based content organization.
 
 ## See Also
 
