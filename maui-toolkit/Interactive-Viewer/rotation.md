@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Rotate in .NET MAUI Interactive Viewer | Syncfusion®
-description: Learn about rotation support in the Syncfusion® .NET MAUI Interactive Viewer control.
+description: Learn about rotation support in the Syncfusion® .NET MAUI Interactive Viewer control, including how to rotate content and improve viewing flexibility.
 platform: maui-toolkit
 control: SfInteractiveViewer
 documentation: ug
