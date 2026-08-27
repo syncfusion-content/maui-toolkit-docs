@@ -252,6 +252,4 @@ Read Blogs
 </a>
   </div>
 </div>
-
 </div>
-

@@ -89,7 +89,7 @@ Before proceeding, ensure the following are set up:
 Make sure to add the namespace.
  
 {% tabs %}
-{% highlight c# %}
+{% highlight C# %}
 using Syncfusion.Maui.Toolkit.Hosting;
 {% endhighlight %}
 {% endtabs %}
@@ -97,7 +97,7 @@ using Syncfusion.Maui.Toolkit.Hosting;
 Register the Syncfusion toolkit handler in your `CreateMauiApp` method of `MauiProgram.cs` file to use Syncfusion controls.
  
 {% tabs %}
-{% highlight c# %}
+{% highlight C# %}
 builder.ConfigureSyncfusionToolkit();
 {% endhighlight %}
 {% endtabs %}
@@ -106,12 +106,12 @@ builder.ConfigureSyncfusionToolkit();
 
 Add the following namespace in your XAML or C#.
 {% tabs %}
-{% highlight xaml %}
+{% highlight XAML %}
 
 xmlns:toolkit="clr-namespace:Syncfusion.Maui.Toolkit.InteractiveViewer;assembly=Syncfusion.Maui.Toolkit"
 
 {% endhighlight %}
-{% highlight c# %}
+{% highlight C# %}
 
 using Syncfusion.Maui.Toolkit.InteractiveViewer;
 
@@ -123,7 +123,7 @@ using Syncfusion.Maui.Toolkit.InteractiveViewer;
 Initialize the SfInteractiveViewer to display and interact with any .NET MAUI view.
 
 {% tabs %}
-{% highlight xaml hl_lines="2" %}
+{% highlight XAML hl_lines="2" %}
 
  <toolkit:SfInteractiveViewer>
      <Image Source="interactiveviewerimage.png" Aspect="AspectFit" />
