@@ -138,7 +138,7 @@ Content = gridSplitter;
 {% endhighlight %}
 {% endtabs %}
 
-![.NET MAUI Grid Splitter Vertical orientation](Images/gridsplitter-background.png)
+![.NET MAUI Grid Splitter Vertical orientation](Images/gridsplitter-verticalpane.png)
 
 ## SeparatorSize
 
