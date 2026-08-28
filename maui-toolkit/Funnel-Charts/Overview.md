@@ -9,7 +9,7 @@ documentation: ug
 
 # About Syncfusion® .NET MAUI Funnel Chart Control
 
-Syncfusion® [.NET MAUI Funnel Chart](https://www.syncfusion.com/maui-controls/maui-funnel-charts) (SfFunnelChart) is used to create the beautiful funnel segments to analyze the various stages in a process, which are used in high-quality .NET MAUI applications.
+Syncfusion® [.NET MAUI Funnel Chart](https://www.syncfusion.com/maui-controls/maui-funnel-charts) is used to create the beautiful funnel segments to analyze the various stages in a process, which are used in high-quality .NET MAUI applications.
 
 ![.NET MAUI funnel chart overview ](Overview_images/funnel_chart_overview.png)
 
