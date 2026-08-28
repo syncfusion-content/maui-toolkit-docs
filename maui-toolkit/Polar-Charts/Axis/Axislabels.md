@@ -73,7 +73,7 @@ The chart axis supports customizing the rendering position of the edge labels us
 | Value | Description |
 |--|--|
 | Center | Indicates that the edge label should appear at the center of its grid lines. |
-| Fit | Indicates that the edge labels should be fit within the area of `SfPolarChart`. |
+| Fit | Indicates that the edge labels should be fit within the area of .NET MAUI Polar Charts. |
 | Hide | Indicates that the edge labels will be hidden. |
 | Shift | Indicates that edge labels should be shifted to either left or right so that they come within the area of the chart. |
 
