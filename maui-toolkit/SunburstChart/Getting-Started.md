@@ -117,7 +117,7 @@ public static class MauiProgram
 {% endhighlight %}
 {% endtabs %}
 
-N> The `ConfigureSyncfusionToolkit()` call registers all Syncfusion controls, including `SfSunburstChart`. No separate Sunburst-specific registration is required.
+N> The `ConfigureSyncfusionToolkit()` call registers all Syncfusion controls, including .NET MAUI Sunburst Chart. No separate Sunburst-specific registration is required.
 
 ## Step 4: Create the Model and ViewModel
 
