@@ -74,7 +74,7 @@ The following table summarizes the per-feature globalization support available i
 <th align="center">Keyboard navigation</th>
 </tr>
 <tr>
-<td><a href="/maui-toolkit/spark-charts/overview">Spark Charts</a></td>
+<td><a href="/maui-toolkit/spark-charts/overview" aria-label="MAUI Toolkit Spark Charts Overview">Spark Charts</a></td>
 <td align="center"><img src="../Images/not-applicable.svg" alt="not-applicable" width="16" /></td>
 <td align="center"><img src="../Images/not-applicable.svg" alt="not-applicable" width="16" /></td>
 <td align="center"><img src="../Images/full-support.svg" alt="full-support" width="16" /></td>
