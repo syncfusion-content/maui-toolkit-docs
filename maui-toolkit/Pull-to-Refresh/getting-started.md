@@ -108,7 +108,7 @@ Add the following namespace in your XAML or C#.
 {% tabs %}
 {% highlight xaml %}
 
-xmlns:syncfusion=xmlns:syncfusion="clr-namespace:Syncfusion.Maui.Toolkit.PullToRefresh;assembly=Syncfusion.Maui.Toolkit"
+xmlns:pullToRefreshControl=xmlns:syncfusion="clr-namespace:Syncfusion.Maui.Toolkit.PullToRefresh;assembly=Syncfusion.Maui.Toolkit"
 
 {% endhighlight %}
 {% highlight c# %}
@@ -127,13 +127,13 @@ To show the progress indicator while updating the view, set `IsRefreshing` prope
 {% tabs %}
 {% highlight xaml %}
 
-<PullToRefreshControl:SfPullToRefresh x:Name="pullToRefresh">
-    <PullToRefreshControl:SfPullToRefresh.PullableContent>
+<pullToRefreshControl:SfPullToRefresh x:Name="pullToRefresh">
+    <pullToRefreshControl:SfPullToRefresh.PullableContent>
         <StackLayout>
             <Label Text="sample page" />
         </StackLayout>
-    </PullToRefreshControl:SfPullToRefresh.PullableContent>
-</PullToRefreshControl:SfPullToRefresh>
+    </pullToRefreshControl:SfPullToRefresh.PullableContent>
+</pullToRefreshControl:SfPullToRefresh>
 
 {% endhighlight %}
 {% highlight c# %}
