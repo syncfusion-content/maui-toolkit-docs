@@ -1,84 +1,70 @@
 ---
 layout: post
-title: Events in .NET MAUI InteractiveViewer | Syncfusion®
-description: Learn about available events in Syncfusion® .NET MAUI SfInteractiveViewer control. Explore event handling and interactive features.
+title: Events in .NET MAUI Interactive Viewer | Syncfusion®
+description: Learn about all events supported in Syncfusion® .NET MAUI Interactive Viewer control for content loading, zoom and pan interactions.
 platform: maui-toolkit
-control: InteractiveViewer
+control: SfInteractiveViewer
 documentation: ug
 ---
 
-# Events in MAUI InteractiveViewer
+# Events in .NET MAUI Interactive Viewer
 
-## ZoomFactorChanged
+The `SfInteractiveViewer` supports the `ZoomFactorChanged` and `ScrollChanged` events to interact with the .NET MAUI Interactive Viewer.
 
-The `ZoomFactorChanged` event is triggered after a zoom operation completes on the interactive viewer. The associated argument contains the following information.
+## Zoom factor changed event
+
+The `ZoomFactorChanged` event is triggered after a zoom operation is completed in the interactive viewer. The event arguments provide the following information.
 
 * `OldZoomFactor` - Gets the zoom factor before the zoom operation.
-
 * `NewZoomFactor` - Gets the zoom factor after the zoom operation.
 
 {% tabs %}
-{% highlight xaml hl_lines="1" %}
+{% highlight XAML hl_lines="2" %}
 
-<interactiveViewer:SfInteractiveViewer ZoomFactorChanged="OnZoomFactorChanged">
-    <Image Source="photo.png" />
-</interactiveViewer:SfInteractiveViewer>
+<toolkit:SfInteractiveViewer x:Name="interactiveViewer"
+                             ZoomFactorChanged="OnZoomFactorChanged">
+    <Image Source="interactiveviewerimage.png" Aspect="AspectFit" />
+</toolkit:SfInteractiveViewer>
 
 {% endhighlight %}
+{% highlight C# hl_lines="2 3 4 5 6" %}
 
-{% highlight c# %}
-
-...
-InitializeComponent();
-SfInteractiveViewer viewer = new SfInteractiveViewer();
-viewer.ZoomFactorChanged += OnZoomFactorChanged;
-viewer.Content = new Image { Source = "photo.png" };
-...
+using Syncfusion.Maui.Toolkit.InteractiveViewer;
 
 private void OnZoomFactorChanged(object sender, ZoomFactorChangedEventArgs e)
 {
-    // handle event action.
-    var oldZoom = e.OldZoomFactor;
-    var newZoom = e.NewZoomFactor;
+    double oldZoom = e.OldZoomFactor;
+    double newZoom = e.NewZoomFactor;
 }
-...
 
 {% endhighlight %}
 {% endtabs %}
 
-## ScrollChanged
+## Scroll changed event
 
-The `ScrollChanged` event is triggered when the pan position of the interactive viewer changes. The associated argument contains the following information.
+The `ScrollChanged` event is triggered when the pan position changes in the interactive viewer. The event arguments contain the following information.
 
 * `PanAxis` - Gets the directions in which panning is currently allowed.
-
 * `ZoomFactor` - Gets the current zoom factor applied to the content.
 
 {% tabs %}
-{% highlight xaml hl_lines="1" %}
+{% highlight XAML hl_lines="2" %}
 
-<interactiveViewer:SfInteractiveViewer ScrollChanged="OnScrollChanged">
-    <Image Source="photo.png" />
-</interactiveViewer:SfInteractiveViewer>
+<toolkit:SfInteractiveViewer x:Name="interactiveViewer"
+                             ScrollChanged="OnScrollChanged">
+    <Image Source="interactiveviewerimage.png" Aspect="AspectFit" />
+</toolkit:SfInteractiveViewer>
 
 {% endhighlight %}
+{% highlight C# hl_lines="2 3 4 5 6" %}
 
-{% highlight c# %}
-
-...
-InitializeComponent();
-SfInteractiveViewer viewer = new SfInteractiveViewer();
-viewer.ScrollChanged += OnScrollChanged;
-viewer.Content = new Image { Source = "photo.png" };
-...
+using Syncfusion.Maui.Toolkit.InteractiveViewer;
 
 private void OnScrollChanged(object sender, InteractiveScrollChangedEventArgs e)
 {
-    // handle event action.
-    var axis = e.PanAxis;
-    var zoom = e.ZoomFactor;
+    PanAxis panAxis = e.PanAxis;
+    double zoomFactor = e.ZoomFactor;
 }
-...
 
 {% endhighlight %}
 {% endtabs %}
