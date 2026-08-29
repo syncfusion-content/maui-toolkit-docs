@@ -1,13 +1,13 @@
 ---
 layout: post
-title: MVVM in .NET MAUI Popup control | Syncfusion
-description: Learn here all about MVVM support in the Syncfusion .NET MAUI Popup (SfPopup) control, its elements, and more.
+title: MVVM in .NET MAUI Popup control | Syncfusion®
+description: Learn here all about MVVM support in the Syncfusion® .NET MAUI Popup (SfPopup) control, its elements, and more.
 platform: maui-toolkit
 control: SfPopup
 documentation: ug
 ---
 
-# Working with MVVM in MAUI Popup (SfPopup)
+# Working with MVVM in MAUI Popup
 
 `SfPopup` can be used in the MVVM architecture applications easily. In the below example, the `SfPopup.IsOpen` property is bound to a property in the `ViewModel` based on which the popup is opened or closed. Refer to the following code example to display the popup in MVVM.
 

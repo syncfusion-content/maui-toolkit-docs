@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Popup Positioning in .NET MAUI Popup control | Syncfusion
-description: Learn all about Popup Positioning support in the Syncfusion .NET MAUI Popup (SfPopup) control, its elements, and more.
+title: Positioning the .NET MAUI Popup control | Syncfusion®
+description: Learn all about Popup Positioning support in the Syncfusion® .NET MAUI Popup (SfPopup) control, its elements, and more.
 platform: maui-toolkit
 control: SfPopup
 documentation: ug
 ---
 
-# Popup Positioning in MAUI Popup (SfPopup)
+# Positioning the MAUI Popup
 
 The `SfPopup` allows showing the popup content at various available positions.
 
