@@ -26,10 +26,10 @@ Before proceeding, ensure the following are set up:
 2. Name the project and choose a location. Click **Next**.
 3. Select the .NET framework version and click **Create**.
 
-## Step 2: Install the Syncfusion<sup>®</sup> .NET MAUI Sunburst Chart package
+## Step 2: Install the Syncfusion<sup>®</sup> .NET MAUI Toolkit
 
 1. In **Solution Explorer**, right-click the project and choose **Manage NuGet Packages**.
-2. Search for [Syncfusion.Maui.SunburstChart](https://www.nuget.org/packages/Syncfusion.Maui.SunburstChart/) and install the latest version.
+2. Search for [Syncfusion.Maui.Toolkit](https://www.nuget.org/packages/Syncfusion.Maui.Toolkit/) and install the latest version.
 3. Ensure the necessary dependencies are installed correctly, and the project is restored.
 
 {% endtabcontent %}
@@ -50,11 +50,11 @@ Before proceeding, ensure the following are set up:
 3. Select the project location, type the project name, and press **Enter**.
 4. Then choose **Create project**.
 
-## Step 2: Install the Syncfusion<sup>®</sup> .NET MAUI Sunburst Chart package
+## Step 2: Install the Syncfusion<sup>®</sup> .NET MAUI Toolkit
 
 1. Press <kbd>Ctrl</kbd> + <kbd>`</kbd> (backtick) to open the integrated terminal in Visual Studio Code.
 2. Ensure you're in the project root directory where your .csproj file is located.
-3. Run the command `dotnet add package Syncfusion.Maui.SunburstChart` to install the Syncfusion<sup>®</sup> .NET MAUI SunburstChart NuGet package.
+3. Run the command `dotnet add package Syncfusion.Maui.Toolkit` to install the Syncfusion<sup>®</sup> .NET MAUI Toolkit SunburstChart NuGet package.
 4. To ensure all dependencies are installed, run `dotnet restore`.
 
 {% endtabcontent %}
@@ -74,10 +74,10 @@ Before proceeding, ensure the following are set up:
 2. Enter the Project Name, Solution Name, and Location.
 3. Select the .NET framework version and click Create.
 
-## Step 2: Install the Syncfusion<sup>®</sup> .NET MAUI Sunburst Chart package
+## Step 2: Install the Syncfusion<sup>®</sup> .NET MAUI Toolkit
 
 1. In **Solution Explorer**, right-click the project and choose **Manage NuGet Packages**.
-2. Search for [Syncfusion.Maui.SunburstChart](https://www.nuget.org/packages/Syncfusion.Maui.SunburstChart/) and install the latest version.
+2. Search for [Syncfusion.Maui.Toolkit](https://www.nuget.org/packages/Syncfusion.Maui.Toolkit/) and install the latest version.
 3. Ensure the necessary dependencies are installed correctly and the project is restored. If not, open the Terminal in Rider and manually run: `dotnet restore`
 
 {% endtabcontent %}
@@ -90,7 +90,7 @@ The Syncfusion handler registration initializes the platform renderers required 
 {% tabs %}
 {% highlight c# %}
 
-using Syncfusion.Maui.Core.Hosting;
+using Syncfusion.Maui.Toolkit.Hosting;
 
 public static class MauiProgram
 {
@@ -99,7 +99,7 @@ public static class MauiProgram
         var builder = MauiApp.CreateBuilder();
         builder
             .UseMauiApp<App>()
-            .ConfigureSyncfusionCore()
+            .ConfigureSyncfusionToolkit()
             .ConfigureFonts(fonts =>
             {
                 fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
@@ -117,7 +117,7 @@ public static class MauiProgram
 {% endhighlight %}
 {% endtabs %}
 
-N> The `ConfigureSyncfusionCore()` call registers all Syncfusion controls, including `SfSunburstChart`. No separate Sunburst-specific registration is required.
+N> The `ConfigureSyncfusionToolkit()` call registers all Syncfusion controls, including .NET MAUI Sunburst Chart. No separate Sunburst-specific registration is required.
 
 ## Step 4: Create the Model and ViewModel
 
@@ -176,12 +176,12 @@ Add the following namespaces to your XAML or C#.
 {% tabs %}
 {% highlight xaml %}
 
-xmlns:sunburst="clr-namespace:Syncfusion.Maui.SunburstChart;assembly=Syncfusion.Maui.SunburstChart"
+xmlns:sunburst="clr-namespace:Syncfusion.Maui.Toolkit.SunburstChart;assembly=Syncfusion.Maui.Toolkit.SunburstChart"
 
 {% endhighlight %}
 {% highlight c# %}
 
-using Syncfusion.Maui.SunburstChart;
+using Syncfusion.Maui.Toolkit.SunburstChart;;
 
 {% endhighlight %}
 {% endtabs %}

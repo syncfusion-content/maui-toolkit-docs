@@ -24,7 +24,7 @@ Right arrow<br/><br/></td><td>Moves to the next item on the segmented control's 
 <tr>
 <td>
 Left arrow<br/><br/></td><td>
-Moves to the previous item on the segmented control's left side. It does not make any selection and only navigates to the previous item. If the focus border is on the first item, pressing the LeftArrow does nothing.<br/><br/></td></tr>
+Moves to the previous item on the Segmented Control's left side. It does not make any selection and only navigates to the previous item. If the focus border is on the first item, pressing the LeftArrow does nothing.<br/><br/></td></tr>
 <tr>
 <td>
 Enter<br/><br/></td><td>
