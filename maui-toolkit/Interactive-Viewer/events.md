@@ -27,7 +27,7 @@ The `ZoomFactorChanged` event is triggered after a zoom operation is completed i
 </toolkit:SfInteractiveViewer>
 
 {% endhighlight %}
-{% highlight C# hl_lines="2 3 4 5 6" %}
+{% highlight C# hl_lines="3 4 5 6 7" %}
 
 using Syncfusion.Maui.Toolkit.InteractiveViewer;
 
@@ -56,7 +56,7 @@ The `ScrollChanged` event is triggered when the pan position changes in the inte
 </toolkit:SfInteractiveViewer>
 
 {% endhighlight %}
-{% highlight C# hl_lines="2 3 4 5 6" %}
+{% highlight C# hl_lines="3 4 5 6 7" %}
 
 using Syncfusion.Maui.Toolkit.InteractiveViewer;
 
