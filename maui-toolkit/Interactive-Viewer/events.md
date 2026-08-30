@@ -9,7 +9,7 @@ documentation: ug
 
 # Events in .NET MAUI Interactive Viewer
 
-The `SfInteractiveViewer` supports the `ZoomFactorChanged` and `ScrollChanged` events to interact with the .NET MAUI Interactive Viewer.
+The `Interactive Viewer` supports the `ZoomFactorChanged` and `ScrollChanged` events to interact with the .NET MAUI Interactive Viewer.
 
 ## Zoom factor changed event
 
