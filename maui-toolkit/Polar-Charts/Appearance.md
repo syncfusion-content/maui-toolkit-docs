@@ -180,7 +180,7 @@ public class ViewModel
 
 ## Point Color Path
 
-The [SfPolarChart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfPolarChart.html) supports using the [PointColorPath]() property to assign different colors to each data point. By binding this property to a color field in the data source, each segment can be dynamically styled with its own color.
+The [SfPolarChart](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.SfPolarChart.html) supports using the `PointColorPath` property to assign different colors to each data point. By binding this property to a color field in the data source, each segment can be dynamically styled with its own color.
 
 The following code example demonstrates how to define a data model with a `PointColor` property and bind it to the chart series.
 

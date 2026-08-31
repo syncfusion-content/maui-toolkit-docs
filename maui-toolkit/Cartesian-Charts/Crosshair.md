@@ -14,9 +14,9 @@ Crosshair allows you to view exact values on the chart by showing vertical and h
 
 ## Enable Crosshair
 
-To enable the crosshair in the chart, create an instance of the [ChartCrosshairBehavior]() and set it to the [CrosshairBehavior]() property of [SfCartesianChart]().
+To enable the crosshair in the chart, create an instance of the `ChartCrosshairBehavior` and set it to the `CrosshairBehavior` property of `SfCartesianChart`.
 
-N> **Prerequisite:** Ensure that the required NuGet package is installed, the necessary namespaces are imported, and the **SfCartesianChart** control is properly configured in your application. For detailed setup and configuration instructions, refer to the **[Getting Started]()** guide.
+N> **Prerequisite:** Ensure that the required NuGet package is installed, the necessary namespaces are imported, and the **SfCartesianChart** control is properly configured in your application. For detailed setup and configuration instructions, refer to the **[Getting Started](https://help.syncfusion.com/maui-toolkit/cartesian-charts/getting-started)** guide.
 
 
 {% tabs %}
@@ -47,7 +47,7 @@ this.Content = chart;
 
 ## Show crosshair axis labels
 
-To view the axis labels, set the [ShowTrackballLabel]() property to `true` as shown in the following code snippet. The default value of the [ChartAxis.ShowTrackballLabel]() is `false`.
+To view the axis labels, set the `ShowTrackballLabel` property to `true` as shown in the following code snippet. The default value of the `ChartAxis.ShowTrackballLabel` is `false`.
 
 
 {% tabs %}
@@ -102,13 +102,13 @@ this.Content = chart;
 
 ## Horizontal and Vertical Line Customization
 
-When you add the [ChartCrosshairBehavior]() to a chart, horizontal and vertical lines appear. These lines can be customized individually using the [HorizontalLineStyle]() and [VerticalLineStyle]() properties.
+When you add the `ChartCrosshairBehavior` to a chart, horizontal and vertical lines appear. These lines can be customized individually using the `HorizontalLineStyle` and `VerticalLineStyle` properties.
 
 The appearance of the crosshair lines can be customized using the following properties. These properties apply to both the horizontal and vertical line styles.
 
-* [StrokeWidth](), of type `double`, used to change the stroke width of the line.
-* [Stroke](), of type `Brush`, used to change the stroke color of the line.
-* [StrokeDashArray](), of type `DoubleCollection`, specifies the dashes to be applied on the line.
+* `StrokeWidth`, of type `double`, used to change the stroke width of the line.
+* `Stroke`, of type `Brush`, used to change the stroke color of the line.
+* `StrokeDashArray`, of type `DoubleCollection`, specifies the dashes to be applied on the line.
 
 ### HorizontalLineStyle
 
@@ -218,18 +218,18 @@ this.Content = chart;
 
 ## Crosshair axis labels customization
 
-The [LabelStyle]() property allows you to customize the appearance of crosshair axis labels. These options are:
+The `LabelStyle` property allows you to customize the appearance of crosshair axis labels. These options are:
 
-* [Background](), of type `Brush`, used to change the label background color.
-* [Margin](), of type `Thickness`, used to change the margin of the label.
-* [TextColor](), of type `Color`, used to change the text color.
-* [StrokeWidth](), of type `double`, used to change the stroke thickness of the label.
-* [Stroke](), of type `Brush`, used to customize the border of the label.
-* [LabelFormat](), of type `string`, used to change the format of the label.
-* [FontFamily](), of type `string`, used to change the font family for the crosshair label.
-* [FontAttributes](), of type `FontAttributes`, used to change the font style for the crosshair label.
-* [FontSize](), of type `double`, used to change the font size for the crosshair label.
-* [CornerRadius](), of type `CornerRadius`, used to set the rounded corners for labels.
+* `Background`, of type `Brush`, used to change the label background color.
+* `Margin`, of type `Thickness`, used to change the margin of the label.
+* `TextColor`, of type `Color`, used to change the text color.
+* `StrokeWidth`, of type `double`, used to change the stroke thickness of the label.
+* `Stroke`, of type `Brush`, used to customize the border of the label.
+* `LabelFormat`, of type `string`, used to change the format of the label.
+* `FontFamily`, of type `string`, used to change the font family for the crosshair label.
+* `FontAttributes`, of type `FontAttributes`, used to change the font style for the crosshair label.
+* `FontSize`, of type `double`, used to change the font size for the crosshair label.
+* `CornerRadius`, of type `CornerRadius`, used to set the rounded corners for labels.
 
 
 {% tabs %}
