@@ -262,7 +262,7 @@ sfNumericUpDown.Maximum=10;
 
 ![AutoReverse support in .NET MAUI Numeric UpDown](UpDownButton_images/AutoReverseSupport.gif)
 
-# UpDown button size
+## UpDown button size
 
 Customize the `Numeric UpDown` control button size by using the `UpDownButtonSize` property.
 
