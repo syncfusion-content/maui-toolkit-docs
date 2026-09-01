@@ -164,6 +164,8 @@ sfNumericUpDown.UpDownButtonSize = 35;
 
 ![UpDownButtonColor support in .NET MAUI Numeric UpDown](UpDownButton_images/UpDownButtonSize.png)
 
+
+
 ## UpDown button template
 
 The `Numeric UpDown` control supports customization of the UpDownButton's appearance through the use of the [UpButtonTemplate](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericUpDown.SfNumericUpDown.html#Syncfusion_Maui_Toolkit_NumericUpDown_SfNumericUpDown_UpButtonTemplate) and [DownButtonTemplate](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericUpDown.SfNumericUpDown.html#Syncfusion_Maui_Toolkit_NumericUpDown_SfNumericUpDown_DownButtonTemplate) properties.
@@ -291,4 +293,3 @@ sfNumericUpDown.Maximum=10;
 {% endtabs %}
 
 ![AutoReverse support in .NET MAUI Numeric UpDown](UpDownButton_images/AutoReverseSupport.gif)
-
