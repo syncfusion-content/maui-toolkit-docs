@@ -38,4 +38,4 @@ private void OnRotateImageClicked(object sender, EventArgs e)
 
 N> The `Rotate` method supports only 90-degree clockwise rotations. Custom rotation angles are not supported.
 
-![Rotate-in.net-maui-interactive-viewer ](images\Rotate\Rotate-in.net-maui-interactive-viewer.gif)
+![Rotate-in.net-maui-interactive-viewer](images\Rotate\Rotate-in.net-maui-interactive-viewer.gif)

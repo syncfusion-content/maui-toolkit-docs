@@ -40,4 +40,4 @@ private void OnResetImageClicked(object sender, EventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-![Reset-in.net-maui-interactive-viewer ](images\Reset\Reset-in.net-maui-interactive-viewer.gif)
+![Reset-in.net-maui-interactive-viewer](images\Reset\Reset-in.net-maui-interactive-viewer.gif)
