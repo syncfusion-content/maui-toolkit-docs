@@ -11,6 +11,8 @@ documentation : ug
 
 The .NET MAUI Interactive Viewer provides intuitive navigation of visual content through zooming, panning, and rotating. It delivers a smooth viewing experience across desktop and mobile platforms, making it ideal for displaying large images, diagrams, and other graphical content.
 
+![overview-in.net-maui-interactive-viewer](images\overview\overview-in.net-maui-interactive-viewer.webp)
+
 ## Business use cases
 
 - Applications that require zooming, panning, and rotating of large images and graphical content.

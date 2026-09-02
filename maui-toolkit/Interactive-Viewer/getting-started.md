@@ -145,3 +145,5 @@ this.Content = interactiveViewer;
 
 {% endhighlight %}
 {% endtabs %}
+
+![interactive-viewer-in.net-maui](images\getting-started\interactive-viewer-in.net-maui.webp)
