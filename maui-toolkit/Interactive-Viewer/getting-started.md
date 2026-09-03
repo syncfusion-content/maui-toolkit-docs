@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started with .NET MAUI Interactive Viewer
 
-This section provides a quick overview of how to get started with the .NET MAUI Interactive Viewer (SfInteractiveViewer) and a walkthrough to configure the control in a real-time scenario. Follow the steps below to add the .NET MAUI Interactive Viewer control to your project.
+This section provides a quick overview of how to get started with the `.NET MAUI Interactive Viewer` (SfInteractiveViewer) and a walkthrough to configure the control in a real-time scenario. Follow the steps below to add the .NET MAUI Interactive Viewer control to your project.
 
 {% tabcontents %}
 {% tabcontent Visual Studio %}
@@ -130,7 +130,7 @@ Initialize the SfInteractiveViewer to display and interact with any .NET MAUI vi
  </toolkit:SfInteractiveViewer>
 
 {% endhighlight %}
-{% highlight C# hl_lines="3 4 5 6 7" %}
+{% highlight C# hl_lines="5 6 7 8 9" %}
 
 SfInteractiveViewer interactiveViewer = new SfInteractiveViewer()
 {
@@ -146,4 +146,4 @@ this.Content = interactiveViewer;
 {% endhighlight %}
 {% endtabs %}
 
-![interactive-viewer-in.net-maui](images\getting-started\interactive-viewer-in.net-maui.webp){:width="313" height="444" .lazy .shadow-effect}
+![interactive-viewer-in.net-maui](images\getting-started\interactive-viewer-in.net-maui.webp){:width="313" height="500" .lazy .shadow-effect}
