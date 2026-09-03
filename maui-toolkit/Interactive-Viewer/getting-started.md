@@ -130,7 +130,7 @@ Initialize the SfInteractiveViewer to display and interact with any .NET MAUI vi
  </toolkit:SfInteractiveViewer>
 
 {% endhighlight %}
-{% highlight C# hl_lines="5 6 7 8 9" %}
+{% highlight C# hl_lines="3 4 5 6 7" %}
 
 SfInteractiveViewer interactiveViewer = new SfInteractiveViewer()
 {
