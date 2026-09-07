@@ -18,7 +18,7 @@ When performing bulk or real-time updates such as adding, removing, or modifying
 
 ### Series-level suspend and resume
 
-Use `SuspendNotification` and `ResumeNotification` methods on a specific series instance when appending or updating data for that individual series. This suspends the series from updating until `ResumeNotification` is called.
+Use [SuspendNotification](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Charts.CartesianSeries.html?tabs=tabid-5%2Ctabid-9%2Ctabid-11%2Ctabid-7%2Ctabid-13%2Ctabid-1%2Ctabid-3%2Ctabid-16%2Ctabid-15#Syncfusion_Maui_Charts_CartesianSeries_SuspendNotification) and [ResumeNotification](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Charts.CartesianSeries.html?tabs=tabid-5%2Ctabid-9%2Ctabid-11%2Ctabid-7%2Ctabid-13%2Ctabid-1%2Ctabid-3%2Ctabid-16%2Ctabid-15#Syncfusion_Maui_Charts_CartesianSeries_ResumeNotification) methods on a specific series instance when appending or updating data for that individual series. This suspends the series from updating until `ResumeNotification` is called.
 
 {% tabs %}
 
@@ -57,7 +57,7 @@ series.ResumeNotification();
 
 ### Chart-level suspend and resume
 
-Use `SuspendSeriesNotification` and `ResumeSeriesNotification` methods on the chart instance when updating data across multiple series simultaneously. This suspends all series in the chart from updating until `ResumeSeriesNotification` is called.
+Use [SuspendNotification](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Charts.CartesianSeries.html?tabs=tabid-5%2Ctabid-9%2Ctabid-11%2Ctabid-7%2Ctabid-13%2Ctabid-1%2Ctabid-3%2Ctabid-16%2Ctabid-15#Syncfusion_Maui_Charts_CartesianSeries_SuspendNotification) and [ResumeNotification](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Charts.CartesianSeries.html?tabs=tabid-5%2Ctabid-9%2Ctabid-11%2Ctabid-7%2Ctabid-13%2Ctabid-1%2Ctabid-3%2Ctabid-16%2Ctabid-15#Syncfusion_Maui_Charts_CartesianSeries_ResumeNotification) methods on the chart instance when updating data across multiple series simultaneously. This suspends all series in the chart from updating until `ResumeSeriesNotification` is called.
 
 {% tabs %}
 

@@ -255,10 +255,10 @@ this.Content = chart;
 
 ## Floating legend
 
-The floating legend feature allows you to position the legend inside the chart area based on its defined placement. When `IsFloating` is set to true, the legend will start from the specified [Placement](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartLegend.html#Syncfusion_Maui_Toolkit_Charts_ChartLegend_Placement) (such as Top, Bottom, Left, or Right) and then move according to the offset values, enabling precise control over the legend’s location.
+The floating legend feature allows you to position the legend inside the chart area based on its defined placement. When [IsFloating](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartLegend.html#Syncfusion_Maui_Toolkit_Charts_ChartLegend_IsFloating) is set to true, the legend will start from the specified [Placement](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartLegend.html#Syncfusion_Maui_Toolkit_Charts_ChartLegend_Placement) (such as Top, Bottom, Left, or Right) and then move according to the offset values, enabling precise control over the legend’s location.
 
-* `OffsetX`: Specifies the horizontal distance (in px) from the defined placement position. A negative value moves the legend to the left. The default value is `0`.
-* `OffsetY`: Specifies the vertical distance (in px) from the defined placement position. A negative value moves the legend upward. The default value is `0`.
+* [OffsetX](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartLegend.html#Syncfusion_Maui_Toolkit_Charts_ChartLegend_OffsetX): Specifies the horizontal distance (in px) from the defined placement position. A negative value moves the legend to the left. The default value is `0`.
+* [OffsetY](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartLegend.html#Syncfusion_Maui_Toolkit_Charts_ChartLegend_OffsetY): Specifies the vertical distance (in px) from the defined placement position. A negative value moves the legend upward. The default value is `0`.
 
 {% tabs %}
 {% highlight xaml %}
