@@ -39,7 +39,7 @@ Interference Between Child Controls and Tab View Swiping: When a child control w
 
 ## Swiping Sensitivity
 
-The `SwipingSensitivity` property of the Tab View allows developers to control how sensitive the swipe gesture is when navigating between tabs. This helps prevent accidental tab changes during horizontal scrolling and enables a more consistent swipe experience across different devices and application scenarios. The default value of `SwipingSensitivity` is 5.
+The [SwipingSensitivity](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.TabView.SfTabView.html#Syncfusion_Maui_Toolkit_TabView_SfTabView_SwipingSensitivity) property of the Tab View allows developers to control how sensitive the swipe gesture is when navigating between tabs. This helps prevent accidental tab changes during horizontal scrolling and enables a more consistent swipe experience across different devices and application scenarios. The default value of `SwipingSensitivity` is 5.
 
 You can configure the swipe sensitivity as shown in the following code snippets:
 
