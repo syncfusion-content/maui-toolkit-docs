@@ -264,7 +264,7 @@ sfNumericUpDown.Maximum=10;
 
 ## UpDown button size
 
-Customize the `Numeric UpDown` control button size by using the `UpDownButtonSize` property.
+Customize the [Numeric UpDown](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericUpDown.SfNumericUpDown.html) control button size by using the [UpDownButtonSize](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.NumericUpDown.SfNumericUpDown.html#Syncfusion_Maui_Toolkit_NumericUpDown_SfNumericUpDown_UpDownButtonSize) property.
 
 {% tabs %}
 {% highlight XAML %}
