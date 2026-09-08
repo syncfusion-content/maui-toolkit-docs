@@ -146,4 +146,4 @@ this.Content = interactiveViewer;
 {% endhighlight %}
 {% endtabs %}
 
-![interactive-viewer-in.net-maui](images\getting-started\interactive-viewer-in.net-maui.webp){:width="313" height="500" .lazy .shadow-effect}
+![interactive-viewer-in.net-maui](images\getting-started\interactive-viewer-in.net-maui.webp){:width="313" height="550" .lazy .shadow-effect}
