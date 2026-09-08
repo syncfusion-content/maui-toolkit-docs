@@ -9,7 +9,7 @@ documentation : ug
 
 # About Syncfusion® .NET MAUI Interactive Viewer Control 
 
-The `.NET MAUI Interactive Viewer` provides intuitive navigation of visual content through zooming, panning, and rotating. It delivers a smooth viewing experience across desktop and mobile platforms, making it ideal for displaying large images, diagrams, and other graphical content.
+The  [`.NET MAUI Interactive Viewer`](https://www.syncfusion.com/maui-controls/maui-interactive-viewer) provides intuitive navigation of visual content through zooming, panning, and rotating. It delivers a smooth viewing experience across desktop and mobile platforms, making it ideal for displaying large images, diagrams, and other graphical content.
 
 ![overview-in.net-maui-interactive-viewer](images\overview\overview-in.net-maui-interactive-viewer.webp){:width="313" height="444" .lazy .shadow-effect}
 
@@ -35,10 +35,10 @@ The `.NET MAUI Interactive Viewer` provides intuitive navigation of visual conte
 
 ## See Also
 
-- Getting Started shows how to begin using the Interactive Viewer control step by step.
-- Zooming and Panning shows how to navigate visual content using zoom and pan interactions.
-- Rotate shows how to rotate visual content to different orientations.
-- Reset shows how to restore the viewer to its default state.
+- [Getting Started](https://help.syncfusion.com/maui-toolkit/Interactive-Viewer/getting-started) shows how to begin using the Interactive Viewer control step by step.
+- [Zooming and Panning](https://help.syncfusion.com/maui-toolkit/Interactive-Viewer/zooming) shows how to navigate visual content using zoom and pan interactions.
+- [Rotate](https://help.syncfusion.com/maui-toolkit/Interactive-Viewer/rotation) shows how to rotate visual content to different orientations.
+- [Reset](https://help.syncfusion.com/maui-toolkit/Interactive-Viewer/reset) shows how to restore the viewer to its default state.
 - [UI Kit](https://www.syncfusion.com/demos/maui#maui-ui-control) provides interactive demos and reference UI examples.
 
 ## Resources
