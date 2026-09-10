@@ -178,7 +178,7 @@ The  [`.NET MAUI Interactive Viewer`](https://www.syncfusion.com/maui-controls/m
     <h3 class="form-title">Feature Tour</h3>
 </div>
 <div class="form-description">Get a quick overview of key features and capabilities to kick start your journey.</div>
-<a href="https://www.syncfusion.com/maui-controls" class="explore-link">
+<a href="https://www.syncfusion.com/maui-controls/maui-interactive-viewer" class="explore-link">
 Explore Features
   <span class="card-icon card-arrow"></span>
 </a>
