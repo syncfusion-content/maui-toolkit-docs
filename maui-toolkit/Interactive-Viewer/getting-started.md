@@ -120,7 +120,7 @@ using Syncfusion.Maui.Toolkit.InteractiveViewer;
 
 ## Step 5: Add the Interactive Viewer component
 
-Initialize the SfInteractiveViewer to display and interact with any .NET MAUI view.
+Initialize the [`SfInteractiveViewer`](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.InteractiveViewer.SfInteractiveViewer.html) to display and interact with any .NET MAUI view.
 
 {% tabs %}
 {% highlight XAML hl_lines="2" %}
