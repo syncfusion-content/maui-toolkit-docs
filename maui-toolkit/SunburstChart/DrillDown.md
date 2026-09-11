@@ -124,7 +124,7 @@ this.Content = sunburst;
 The appearance of the drill-down toolbar in the Sunburst Chart can be customized using the following properties of the [SunburstToolbarSettings](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SunburstChart.SunburstToolbarSettings.html) class:
 
 * [IconBrush](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SunburstChart.SunburstToolbarSettings.html#Syncfusion_Maui_Toolkit_SunburstChart_SunburstToolbarSettings_IconBrush), of type `Brush`, indicates the brush used to style the icons within the drill-down toolbar.
-* [Background](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.SunburstChart.SunburstToolbarSettings.html#Syncfusion_Maui_SunburstChart_SunburstToolbarSettings_Background), of type `Brush`, indicates the background brush of the drill-down toolbar.
+* [Background](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.SunburstChart.SunburstToolbarSettings.html#Syncfusion_Maui_Toolkit_SunburstChart_SunburstToolbarSettings_Background), of type `Brush`, indicates the background brush of the drill-down toolbar.
 
 {% tabs %}
 
