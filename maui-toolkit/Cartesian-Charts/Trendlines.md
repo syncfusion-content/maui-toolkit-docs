@@ -535,7 +535,7 @@ this.Content = chart;
 
 Markers are visual indicators (like circles, squares, etc.) placed along the trendline to highlight specific data points. You can enable and customize markers using:
 
-* [ShowMarkers](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Charts.ChartTrendline.html?tabs=tabid-1#Syncfusion_Maui_Charts_ChartTrendline_ShowMarkers), of type `bool`, enables markers on the trendline.
+* [ShowMarkers](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartTrendline.html#Syncfusion_Maui_Toolkit_Charts_ChartTrendline_ShowMarkers), of type `bool`, enables markers on the trendline.
 * [MarkerSettings](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartTrendline.html#Syncfusion_Maui_Toolkit_Charts_ChartTrendline_MarkerSettings), of type [ChartMarkerSettings](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartMarkerSettings.html), customizes the appearance, size, shape, and color of markers.
 
 The [ChartMarkerSettings](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartMarkerSettings.html) class exposes the following properties:
