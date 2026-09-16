@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started with .NET MAUI Carousel
 
-This section guides you through setting up and configuring a [Carousel](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.CarouselView.SfCarousel.html) in your .NET MAUI application. Follow the steps below to add a basic Carousel to your project.
+This section guides you through setting up and configuring a [Carousel](https://www.syncfusion.com/maui-controls/maui-carousel) in your .NET MAUI application. Follow the steps below to add a basic Carousel to your project.
 
 {% tabcontents %}
 {% tabcontent Visual Studio %}
