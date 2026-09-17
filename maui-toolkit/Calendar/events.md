@@ -51,7 +51,7 @@ Whenever a calendar view is changed, the `SelectableDayPredicate` function must 
 
 ## SelectionChanged
 
-The [SelectionChanged](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Calendar.SfCalendar.html#Syncfusion_Maui_Toolkit_Calendar_SfCalendar_SelectionChanged) event is used to notify when the cell selection is changed onto the view in the [SfCalendar](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Scheduler.SfScheduler.html).
+The [SelectionChanged](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Calendar.SfCalendar.html#Syncfusion_Maui_Toolkit_Calendar_SfCalendar_SelectionChanged) event is used to notify when the cell selection is changed onto the view in the [SfCalendar](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Calendar.SfCalendar.html).
 
 * `Sender`: This contains the `SfCalendar` object.
 
@@ -119,7 +119,7 @@ private void OnCalendarTapped(object sender, CalendarTappedEventArgs e)
 
 ## DoubleTapped
 
-Whenever the [SfCalendar](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Scheduler.SfScheduler.html) elements are double-tapped onto the view, the [DoubleTapped](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Calendar.SfCalendar.html#Syncfusion_Maui_Toolkit_Calendar_SfCalendar_DoubleTapped) event occurs. The following are the list of arguments:
+Whenever the [SfCalendar](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Calendar.SfCalendar.html) elements are double-tapped onto the view, the [DoubleTapped](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Calendar.SfCalendar.html#Syncfusion_Maui_Toolkit_Calendar_SfCalendar_DoubleTapped) event occurs. The following are the list of arguments:
 
 * `Sender`: This contains the `SfCalendar` object.
 
@@ -153,7 +153,7 @@ private void OnCalendarDoubleTapped(object sender, CalendarDoubleTappedEventArgs
 
 ## LongPressed
 
-Whenever the [SfCalendar](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Scheduler.SfScheduler.html) elements are long-pressed onto the view, the [LongPressed](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Calendar.SfCalendar.html#Syncfusion_Maui_Toolkit_Calendar_SfCalendar_LongPressed) event is triggered. The following are the list of arguments:
+Whenever the [SfCalendar](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Calendar.SfCalendar.html) elements are long-pressed onto the view, the [LongPressed](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Calendar.SfCalendar.html#Syncfusion_Maui_Toolkit_Calendar_SfCalendar_LongPressed) event is triggered. The following are the list of arguments:
 
 * `Sender`: This contains the `SfCalendar` object.
 
