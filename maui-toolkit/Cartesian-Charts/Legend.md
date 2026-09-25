@@ -16,7 +16,7 @@ N> **Prerequisite:** Ensure that the required NuGet package is installed, the ne
 
 To learn how to add and customize the legend in .NET MAUI Cartesian Charts quickly, you can check the video below.
 
-{% youtube "https://youtu.be/5YG_kwZu6is" %}
+{% youtube "https://www.youtube.com/watch?v=5YG_kwZu6is&feature=youtu.be" %}
 
 ## Defining the legend
 To define the legend in the chart, initialize the [ChartLegend](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartLegend.html) class and assign it to the [Legend](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.Charts.ChartBase.html#Syncfusion_Maui_Toolkit_Charts_ChartBase_Legend) property.

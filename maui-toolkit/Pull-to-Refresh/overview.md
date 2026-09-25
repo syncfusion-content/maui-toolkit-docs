@@ -25,7 +25,7 @@ Syncfusion® [.NET MAUI PullToRefresh](https://www.syncfusion.com/maui-controls/
 - **Transition mode** allows configuring animation behavior between the pulling action and refresh indicator.  
 - **Pullable content** allows integrating controls such as ListView, DataGrid, and layouts within the refresh container.  
 - **Appearance customization** allows modifying properties such as stroke color, thickness, background, and size of the refresh indicator.  
-- **View templating** allows displaying custom UI elements during pulling and refreshing actions.
+- **View templating** allows displaying custom UI elements during pulling and refreshing actions.  
 
 ## Related controls
 
