@@ -490,7 +490,7 @@ namespace GettingStarted
 
 ![Displaying a .NET MAUI Popup with blur radius](Images/styles/maui-popup-with-blur-radius.png)
 
-### Change the close button icon
+## Change the close button icon
 
 You can change the close button icon of the `SfPopup`, please find the code example of the same below.
 
@@ -533,7 +533,7 @@ public partial class MainPage : ContentPage
 
 ![Displaying a .NET MAUI Popup with close button icon](Images/styles/maui-popup-with-close-button-icon.png)
 
-### Change the close button icon color
+## Change the close button icon color
 
 You can change the close button icon color of the [SfPopup](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Popup.SfPopup.html), please find the code example of the same below.
 
@@ -543,7 +543,7 @@ You can change the close button icon color of the [SfPopup](https://help.syncfus
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:PopupDemo"
-             xmlns:sfPopup="clr-namespace:Syncfusion.Maui.Popup;assembly=Syncfusion.Maui.Popup"
+             xmlns:sfPopup="clr-namespace:Syncfusion.Maui.Toolkit.Popup;assembly=Syncfusion.Maui.Toolkit"
              x:Class="PopupDemo.MainPage">
     <StackLayout>
         <Button x:Name="clickToShowPopup"
@@ -576,7 +576,7 @@ public partial class MainPage : ContentPage
 
 ![Displaying a .NET MAUI Popup with close button icon color](Images/styles/maui-popup-with-close-button-icon-color.png)
 
-### Set Shadow
+## Set Shadow
 
 The `SfPopup` allows you to add a shadow effect to the popup view. Refer to the code example below for reference.
 

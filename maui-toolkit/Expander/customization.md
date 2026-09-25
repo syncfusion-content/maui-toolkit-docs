@@ -14,8 +14,8 @@ The `SfExpander` allows you to customize the duration of the expanding and colla
 
 {% tabs %}
 {% highlight xaml hl_lines="2" %}
-    <syncfusion:SfExpander x:Name="expander" 
-                           AnimationDuration="250"/>
+<syncfusion:SfExpander x:Name="expander" 
+                       AnimationDuration="250"/>
 {% endhighlight %}
 {% highlight c# %}
     expander.AnimationDuration = 250;
@@ -28,11 +28,11 @@ The `SfExpander` allows you to customize the rate of change of parameters over t
 
 {% tabs %}
 {% highlight xaml hl_lines="2" %}
-    <syncfusion:SfExpander x:Name="expander"
-                           AnimationEasing="SinOut"/>       
+<syncfusion:SfExpander x:Name="expander"
+                       AnimationEasing="SinOut"/>       
 {% endhighlight %}
 {% highlight c# %}
-    expander.AnimationEasing = ExpanderAnimationEasing.SinOut;
+expander.AnimationEasing = ExpanderAnimationEasing.SinOut;
 {% endhighlight %}
 {% endtabs %}
 
@@ -42,11 +42,11 @@ The `SfExpander` allows users to programmatically expand or collapse its content
 
 {% tabs %}
 {% highlight xaml hl_lines="2" %}
-    <syncfusion:SfExpander x:Name="expander" 
-                           IsExpanded="True"/>        
+<syncfusion:SfExpander x:Name="expander" 
+                       IsExpanded="True"/>        
 {% endhighlight %}
 {% highlight c# %}
-    expander.IsExpanded = true;
+expander.IsExpanded = true;
 {% endhighlight %}
 {% endtabs %}
 
@@ -58,6 +58,22 @@ There are four built-in events in the SfExpander control namely:
 * `Expanded`
 * `Collapsing`
 * `Collapsed`
+
+The events are fired in sequence when the expander state changes:
+
+### Expand sequence
+
+1. `Expanding` is triggered before the expander starts expanding.
+2. If the action is not canceled, the expand animation runs.
+3. `Expanded` is triggered after the expander is fully expanded.
+
+### Collapse sequence
+
+1. `Collapsing` is triggered before the expander starts collapsing.
+2. If the action is not canceled, the collapse animation runs.
+3. `Collapsed` is triggered after the expander is fully collapsed.
+
+These events can be used together to validate user actions, prevent state changes, log activity, update UI elements, or execute custom business logic during the expand and collapse life cycle.
 
 ### Expanding Event
 
