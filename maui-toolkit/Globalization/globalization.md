@@ -102,7 +102,7 @@ Below is the summary of globalization capabilities supported by Syncfusion<sup>Â
 </tr>
 
 <tr>
-  <td><a href="/maui-toolkit/accordion/overview">Accordion</a></td>
+  <td><a href="/maui-toolkit/accordion/overview" aria-label="Accordion">Accordion</a></td>
   <td><img src="../Images/not-applicable.svg" alt="not-applicable" width="16" /></td>
   <td><img src="../Images/full-support.svg" alt="full-support" width="16" /></td>
   <td><img src="../Images/not-applicable.svg" alt="not-applicable" width="16" /></td>
@@ -111,7 +111,7 @@ Below is the summary of globalization capabilities supported by Syncfusion<sup>Â
 </tr>
 
 <tr>
-  <td><a href="/maui-toolkit/bottom-sheet/overview">BottomSheet</a></td>
+  <td><a href="/maui-toolkit/bottom-sheet/overview" aria-label="BottomSheet">BottomSheet</a></td>
   <td><img src="../Images/not-applicable.svg" alt="not-applicable" width="16"/></td>
   <td><img src="../Images/full-support.svg" alt="full-support" width="16"/></td>
   <td><img src="../Images/not-applicable.svg" alt="not-applicable" width="16"/></td>
@@ -120,7 +120,7 @@ Below is the summary of globalization capabilities supported by Syncfusion<sup>Â
 </tr>
 
 <tr>
-  <td><a href="/maui-toolkit/button/overview">Button</a></td>
+  <td><a href="/maui-toolkit/button/overview" aria-label="Button">Button</a></td>
   <td><img src="../Images/not-applicable.svg" alt="not-applicable" width="16"/></td>
   <td><img src="../Images/full-support.svg" alt="full-support" width="16"/></td>
   <td><img src="../Images/not-applicable.svg" alt="not-applicable" width="16"/></td>
@@ -129,7 +129,7 @@ Below is the summary of globalization capabilities supported by Syncfusion<sup>Â
 </tr>
 
 <tr>
-<td><a href="/maui-toolkit/calendar/overview">Calendar</a></td>
+<td><a href="/maui-toolkit/calendar/overview" aria-label="Calendar">Calendar</a></td>
 <td><img src="../Images/full-support.svg" alt="full-support" width="16" /></td>
 <td><img src="../Images/full-support.svg" alt="full-support" width="16" /></td>
 <td><img src="../Images/full-support.svg" alt="full-support" width="16" /></td>
@@ -138,7 +138,7 @@ Below is the summary of globalization capabilities supported by Syncfusion<sup>Â
 </tr> 
 
 <tr>
-<td><a href="/maui-toolkit/cards/overview">Cards</a></td>
+<td><a href="/maui-toolkit/cards/overview" aria-label="Cards">Cards</a></td>
 <td><img src="../Images/not-applicable.svg" alt="not-applicable" width="16" /></td>
 <td><img src="../Images/full-support.svg" alt="full-support" width="16" /></td>
 <td><img src="../Images/not-applicable.svg" alt="not-applicable" width="16" /></td>
@@ -147,7 +147,7 @@ Below is the summary of globalization capabilities supported by Syncfusion<sup>Â
 </tr> 
 
 <tr>
-<td><a href="/maui-toolkit/carousel-view/overview">Carousel</a></td>
+<td><a href="/maui-toolkit/carousel-view/overview" aria-label="Carousel">Carousel</a></td>
 <td><img src="../Images/not-applicable.svg" alt="not-applicable" width="16" /></td>
 <td><img src="../Images/full-support.svg" alt="full-support" width="16" /></td>
 <td><img src="../Images/not-applicable.svg" alt="not-applicable" width="16" /></td>
@@ -156,7 +156,7 @@ Below is the summary of globalization capabilities supported by Syncfusion<sup>Â
 </tr> 
 
 <tr>
-<td><a href="/maui-toolkit/cartesian-charts/overview">Cartesian Charts</a></td>
+<td><a href="/maui-toolkit/cartesian-charts/overview" aria-label="Cartesian Charts">Cartesian Charts</a></td>
 <td><img src="../Images/full-support.svg" alt="full-support" width="16" /></td>
 <td><img src="../Images/not-applicable.svg" alt="not-applicable" width="16" /></td>
 <td><img src="../Images/full-support.svg" alt="full-support" width="16" /></td>
@@ -165,7 +165,7 @@ Below is the summary of globalization capabilities supported by Syncfusion<sup>Â
 </tr>
 
 <tr>
-  <td><a href="/maui-toolkit/chips/overview">Chips</a></td>
+  <td><a href="/maui-toolkit/chips/overview" aria-label="Chips">Chips</a></td>
   <td><img src="../Images/not-applicable.svg" alt="not-applicable" width="16"/></td>
   <td><img src="../Images/full-support.svg" alt="full-support" width="16"/></td>
   <td><img src="../Images/not-applicable.svg" alt="not-applicable" width="16"/></td>
@@ -174,7 +174,7 @@ Below is the summary of globalization capabilities supported by Syncfusion<sup>Â
 </tr>
 
 <tr>
-<td><a href="/maui-toolkit/circular-charts/overview">Circular Charts</a></td>
+<td><a href="/maui-toolkit/circular-charts/overview" aria-label="Circular Charts">Circular Charts</a></td>
 <td><img src="../Images/full-support.svg" alt="full-support" width="16" /></td>
 <td><img src="../Images/not-applicable.svg" alt="not-applicable" width="16" /></td>
 <td><img src="../Images/full-support.svg" alt="full-support" width="16" /></td>
@@ -183,7 +183,7 @@ Below is the summary of globalization capabilities supported by Syncfusion<sup>Â
 </tr>
 
 <tr>
-<td><a href="/maui-toolkit/circularprogressbar/overview">Circular Progress Bar</a></td>
+<td><a href="/maui-toolkit/circularprogressbar/overview" aria-label="Circular Progress Bar">Circular Progress Bar</a></td>
 <td><img src="../Images/not-applicable.svg" alt="not-applicable" width="16" /></td>
 <td><img src="../Images/not-applicable.svg" alt="not-applicable" width="16" /></td>
 <td><img src="../Images/not-applicable.svg" alt="not-applicable" width="16" /></td>
@@ -192,7 +192,7 @@ Below is the summary of globalization capabilities supported by Syncfusion<sup>Â
 </tr> 
 
 <tr>
-<td><a href="/maui-toolkit/datepicker/overview">Date Picker</a></td>
+<td><a href="/maui-toolkit/datepicker/overview" aria-label="Date Picker">Date Picker</a></td>
 <td><img src="../Images/full-support.svg" alt="full-support" width="16" /></td>
 <td><img src="../Images/full-support.svg" alt="full-support" width="16" /></td>
 <td><img src="../Images/full-support.svg" alt="full-support" width="16" /></td>
@@ -201,7 +201,7 @@ Below is the summary of globalization capabilities supported by Syncfusion<sup>Â
 </tr> 
 
 <tr>
-<td><a href="/maui-toolkit/datetimepicker/overview">Date Time Picker</a></td>
+<td><a href="/maui-toolkit/datetimepicker/overview" aria-label="Date Time Picker">Date Time Picker</a></td>
 <td><img src="../Images/full-support.svg" alt="full-support" width="16" /></td>
 <td><img src="../Images/full-support.svg" alt="full-support" width="16" /></td>
 <td><img src="../Images/full-support.svg" alt="full-support" width="16" /></td>
@@ -210,7 +210,7 @@ Below is the summary of globalization capabilities supported by Syncfusion<sup>Â
 </tr> 
 
 <tr>
-<td><a href="/maui-toolkit/effects-view/overview">Effects View</a></td>
+<td><a href="/maui-toolkit/effects-view/overview" aria-label="Effects View">Effects View</a></td>
 <td><img src="../Images/not-applicable.svg" alt="not-applicable" width="16" /></td>
 <td><img src="../Images/not-applicable.svg" alt="not-applicable" width="16" /></td>
 <td><img src="../Images/not-applicable.svg" alt="not-applicable" width="16" /></td>
@@ -219,7 +219,7 @@ Below is the summary of globalization capabilities supported by Syncfusion<sup>Â
 </tr> 
 
 <tr>
-  <td><a href="/maui-toolkit/expander/overview">Expander</a></td>
+  <td><a href="/maui-toolkit/expander/overview" aria-label="Expander">Expander</a></td>
   <td><img src="../Images/not-applicable.svg" alt="not-applicable" width="16"/></td>
   <td><img src="../Images/full-support.svg" alt="full-support" width="16"/></td>
   <td><img src="../Images/not-applicable.svg" alt="not-applicable" width="16"/></td>
@@ -228,7 +228,7 @@ Below is the summary of globalization capabilities supported by Syncfusion<sup>Â
 </tr>
 
 <tr>
-<td><a href="/maui-toolkit/funnel-charts/overview">Funnel Charts</a></td>
+<td><a href="/maui-toolkit/funnel-charts/overview" aria-label="Funnel Charts">Funnel Charts</a></td>
 <td><img src="../Images/not-applicable.svg" alt="not-applicable" width="16" /></td>
 <td><img src="../Images/not-applicable.svg" alt="not-applicable" width="16" /></td>
 <td><img src="../Images/full-support.svg" alt="full-support" width="16" /></td>
@@ -237,7 +237,7 @@ Below is the summary of globalization capabilities supported by Syncfusion<sup>Â
 </tr>
 
 <tr>
-<td><a href="/maui-toolkit/linearprogressbar/overview">Linear Progress Bar</a></td>
+<td><a href="/maui-toolkit/linearprogressbar/overview" aria-label="Linear Progress Bar">Linear Progress Bar</a></td>
 <td><img src="../Images/not-applicable.svg" alt="not-applicable" width="16" /></td>
 <td><img src="../Images/not-applicable.svg" alt="not-applicable" width="16" /></td>
 <td><img src="../Images/not-applicable.svg" alt="not-applicable" width="16" /></td>
@@ -246,7 +246,7 @@ Below is the summary of globalization capabilities supported by Syncfusion<sup>Â
 </tr> 
 
 <tr>
-  <td><a href="/maui-toolkit/navigationdrawer/overview">Navigation Drawer</a></td>
+  <td><a href="/maui-toolkit/navigationdrawer/overview" aria-label="Navigation Drawer">Navigation Drawer</a></td>
   <td><img src="../Images/not-applicable.svg" alt="not-applicable" width="16"/></td>
   <td><img src="../Images/full-support.svg" alt="full-support" width="16"/></td>
   <td><img src="../Images/not-applicable.svg" alt="not-applicable" width="16"/></td>
@@ -255,7 +255,7 @@ Below is the summary of globalization capabilities supported by Syncfusion<sup>Â
 </tr>
 
 <tr>
-<td><a href="/maui-toolkit/numericentry/overview">Numeric Entry</a></td>
+<td><a href="/maui-toolkit/numericentry/overview" aria-label="Numeric Entry">Numeric Entry</a></td>
 <td><img src="../Images/full-support.svg" alt="full-support" width="16" /></td>
 <td><img src="../Images/full-support.svg" alt="full-support" width="16" /></td>
 <td><img src="../Images/not-applicable.svg" alt="not-applicable" width="16" /></td>
@@ -264,7 +264,7 @@ Below is the summary of globalization capabilities supported by Syncfusion<sup>Â
 </tr> 
 
 <tr>
-  <td><a href="/maui-toolkit/numericupdown/overview">NumericUpDown</a></td>
+  <td><a href="/maui-toolkit/numericupdown/overview" aria-label="NumericUpDown">NumericUpDown</a></td>
   <td><img src="../Images/full-support.svg" alt="full-support" width="16"/></td>
   <td><img src="../Images/full-support.svg" alt="full-support" width="16"/></td>
   <td><img src="../Images/not-applicable.svg" alt="not-applicable" width="16"/></td>
@@ -273,7 +273,7 @@ Below is the summary of globalization capabilities supported by Syncfusion<sup>Â
 </tr>
 
 <tr>
-  <td><a href="/maui-toolkit/otp-input/overview">OtpInput</a></td>
+  <td><a href="/maui-toolkit/otp-input/overview" aria-label="OtpInput">OtpInput</a></td>
   <td><img src="../Images/not-applicable.svg" alt="not-applicable" width="16"/></td>
   <td><img src="../Images/full-support.svg" alt="full-support" width="16"/></td>
   <td><img src="../Images/not-applicable.svg" alt="not-applicable" width="16"/></td>
@@ -282,7 +282,7 @@ Below is the summary of globalization capabilities supported by Syncfusion<sup>Â
 </tr>
 
 <tr>
-<td><a href="/maui-toolkit/picker/overview">Picker</a></td>
+<td><a href="/maui-toolkit/picker/overview" aria-label="Picker">Picker</a></td>
 <td><img src="../Images/full-support.svg" alt="full-support" width="16" /></td>
 <td><img src="../Images/full-support.svg" alt="full-support" width="16" /></td>
 <td><img src="../Images/not-applicable.svg" alt="not-applicable" width="16" /></td>
@@ -291,7 +291,7 @@ Below is the summary of globalization capabilities supported by Syncfusion<sup>Â
 </tr> 
 
 <tr>
-<td><a href="/maui-toolkit/polar-charts/overview">Polar Charts</a></td>
+<td><a href="/maui-toolkit/polar-charts/overview" aria-label="Polar Charts">Polar Charts</a></td>
 <td><img src="../Images/not-applicable.svg" alt="not-applicable" width="16" /></td>
 <td><img src="../Images/not-applicable.svg" alt="not-applicable" width="16" /></td>
 <td><img src="../Images/full-support.svg" alt="full-support" width="16" /></td>
@@ -300,7 +300,7 @@ Below is the summary of globalization capabilities supported by Syncfusion<sup>Â
 </tr>
 
 <tr>
-<td><a href="/maui-toolkit/popup/overview">Popup</a></td>
+<td><a href="/maui-toolkit/popup/overview" aria-label="Popup">Popup</a></td>
 <td><img src="../Images/full-support.svg" alt="full-support" width="16" /></td>
 <td><img src="../Images/full-support.svg" alt="full-support" width="16" /></td>
 <td><img src="../Images/not-applicable.svg" alt="not-applicable" width="16" /></td>
@@ -309,7 +309,7 @@ Below is the summary of globalization capabilities supported by Syncfusion<sup>Â
 </tr>
 
 <tr>
-<td><a href="/maui-toolkit/pull-to-refresh/overview">Pull To Refresh</a></td>
+<td><a href="/maui-toolkit/pull-to-refresh/overview" aria-label="Pull To Refresh">Pull To Refresh</a></td>
 <td><img src="../Images/not-applicable.svg" alt="not-applicable" width="16" /></td>
 <td><img src="../Images/not-applicable.svg" alt="not-applicable" width="16" /></td>
 <td><img src="../Images/not-applicable.svg" alt="not-applicable" width="16" /></td>
@@ -318,7 +318,7 @@ Below is the summary of globalization capabilities supported by Syncfusion<sup>Â
 </tr> 
 
 <tr>
-<td><a href="/maui-toolkit/pyramid-charts/overview">Pyramid Charts</a></td>
+<td><a href="/maui-toolkit/pyramid-charts/overview" aria-label="Pyramid Charts">Pyramid Charts</a></td>
 <td><img src="../Images/not-applicable.svg" alt="not-applicable" width="16" /></td>
 <td><img src="../Images/not-applicable.svg" alt="not-applicable" width="16" /></td>
 <td><img src="../Images/full-support.svg" alt="full-support" width="16" /></td>
@@ -327,7 +327,7 @@ Below is the summary of globalization capabilities supported by Syncfusion<sup>Â
 </tr>
 
 <tr>
-<td><a href="/maui-toolkit/segmented-control/overview">Segmented Control</a></td>
+<td><a href="/maui-toolkit/segmented-control/overview" aria-label="Segmented Control">Segmented Control</a></td>
 <td><img src="../Images/full-support.svg" alt="full-support" width="16" /></td>
 <td><img src="../Images/full-support.svg" alt="full-support" width="16" /></td>
 <td><img src="../Images/not-applicable.svg" alt="not-applicable" width="16" /></td>
@@ -336,7 +336,7 @@ Below is the summary of globalization capabilities supported by Syncfusion<sup>Â
 </tr> 
 
 <tr>
-<td><a href="/maui-toolkit/shimmer/overview">Shimmer</a></td>
+<td><a href="/maui-toolkit/shimmer/overview" aria-label="Shimmer">Shimmer</a></td>
 <td><img src="../Images/not-applicable.svg" alt="not-applicable" width="16" /></td>
 <td><img src="../Images/no-support.svg" alt="no-support" width="16" /></td>
 <td><img src="../Images/not-applicable.svg" alt="not-applicable" width="16" /></td>
@@ -345,7 +345,7 @@ Below is the summary of globalization capabilities supported by Syncfusion<sup>Â
 </tr> 
 
 <tr>
-<td><a href="/maui-toolkit/spark-charts/overview">Spark Charts</a></td>
+<td><a href="/maui-toolkit/spark-charts/overview" aria-label="Spark Charts">Spark Charts</a></td>
 <td><img src="../Images/not-applicable.svg" alt="not-applicable" width="16" /></td>
 <td><img src="../Images/not-applicable.svg" alt="not-applicable" width="16" /></td>
 <td><img src="../Images/full-support.svg" alt="full-support" width="16" /></td>
@@ -354,7 +354,7 @@ Below is the summary of globalization capabilities supported by Syncfusion<sup>Â
 </tr> 
 
 <tr>
-<td><a href="/maui-toolkit/sunburstchart/overview">Sunburst Chart</a></td>
+<td><a href="/maui-toolkit/sunburstchart/overview" aria-label="Sunburst Chart">Sunburst Chart</a></td>
 <td><img src="../Images/not-applicable.svg" alt="not-applicable" width="16" /></td>
 <td><img src="../Images/not-applicable.svg" alt="not-applicable" width="16" /></td>
 <td><img src="../Images/full-support.svg" alt="full-support" width="16" /></td>
@@ -363,7 +363,7 @@ Below is the summary of globalization capabilities supported by Syncfusion<sup>Â
 </tr>
 
 <tr>
-  <td><a href="/maui-toolkit/tabview/overview">Tab View</a></td>
+  <td><a href="/maui-toolkit/tabview/overview" aria-label="Tab View">Tab View</a></td>
   <td><img src="../Images/not-applicable.svg" alt="not-applicable" width="16"/></td>
   <td><img src="../Images/full-support.svg" alt="full-support" width="16"/></td>
   <td><img src="../Images/not-applicable.svg" alt="not-applicable" width="16"/></td>
@@ -372,7 +372,7 @@ Below is the summary of globalization capabilities supported by Syncfusion<sup>Â
 </tr>
 
 <tr>
-<td><a href="/maui-toolkit/textinputlayout/overview">Text Input Layout</a></td>
+<td><a href="/maui-toolkit/textinputlayout/overview" aria-label="Text Input Layout">Text Input Layout</a></td>
 <td><img src="../Images/not-applicable.svg" alt="not-applicable" width="16" /></td>
 <td><img src="../Images/full-support.svg" alt="full-support" width="16" /></td>
 <td><img src="../Images/not-applicable.svg" alt="not-applicable" width="16" /></td>
@@ -381,7 +381,7 @@ Below is the summary of globalization capabilities supported by Syncfusion<sup>Â
 </tr> 
 
 <tr>
-<td><a href="/maui-toolkit/timepicker/overview">Time Picker</a></td>
+<td><a href="/maui-toolkit/timepicker/overview" aria-label="Time Picker">Time Picker</a></td>
 <td><img src="../Images/full-support.svg" alt="full-support" width="16" /></td>
 <td><img src="../Images/full-support.svg" alt="full-support" width="16" /></td>
 <td><img src="../Images/full-support.svg" alt="full-support" width="16" /></td>
