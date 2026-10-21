@@ -211,7 +211,7 @@ We can customize the CapStyle property of the doughnut series based on its types
                           YBindingPath="SalesRate"
                           CapStyle="BothCurve"
                           InnerRadius="0.8"/>
-</chart:SfCircularChart>
+    </chart:SfCircularChart>
 
 {% endhighlight %}
 
