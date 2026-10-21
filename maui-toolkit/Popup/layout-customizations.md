@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Layout Customizations in .NET MAUI Popup control | Syncfusion
-description: Learn here all about Layout Customizations support in Syncfusion .NET MAUI Popup (SfPopup) control, its elements and more.
+title: Layout Customizations in .NET MAUI Popup control | Syncfusion®
+description: Learn here all about Layout Customizations support in Syncfusion® .NET MAUI Popup (SfPopup) control, its elements and more.
 platform: maui-toolkit
 control: SfPopup
 documentation: ug
 ---
 
-# Layout Customizations in MAUI Popup (SfPopup)
+# Layout Customizations in MAUI Popup
 
 ## Popup appearance mode for footer
 

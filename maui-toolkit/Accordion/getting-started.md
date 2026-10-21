@@ -7,7 +7,7 @@ control: SfAccordion
 documentation: ug
 ---
 
-# Getting Started with MAUI Accordion
+# Getting Started with .NET MAUI Accordion
 
 This section guides you through setting up and configuring a `Accordion` in your .NET MAUI application. Follow the steps below to add a basic Accordion to your project.
 

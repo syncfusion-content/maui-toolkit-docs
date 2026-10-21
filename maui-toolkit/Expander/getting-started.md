@@ -7,7 +7,7 @@ control: SfExpander
 documentation: ug
 ---
 
-# Getting Started with .NET MAUI Expander (SfExpander)
+# Getting Started with .NET MAUI Expander
 
 This section guides you through setting up and configuring a `Expander` in your .NET MAUI application. Follow the steps below to add a basic Expander to your project.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Events in .NET MAUI Accordion control | Syncfusion®
-description: Learn about events support in Syncfusion® Toolkit for .NET MAUI Accordion control, its elements and more.
+description: Learn here all about available events support in Syncfusion® Toolkit for .NET MAUI Accordion control, its elements and more.
 platform: maui-toolkit
 control: SfAccordion
 documentation: ug
 --- 
 
-# Accordion Events in .NET MAUI Accordion (SfAccordion)
+# Events in .NET MAUI Accordion
 
 There are four built-in events in the SfAccordion control namely:
 
@@ -16,7 +16,7 @@ There are four built-in events in the SfAccordion control namely:
 * `Collapsing`
 * `Collapsed`
 
-### Expanding Event
+## Expanding Event
 
 The `Expanding` event will be triggered when the accordion item is being expanded. It can cancel the expansion using `ExpandingAndCollapsingEventArgs`, which contains the following property:
 
@@ -39,7 +39,7 @@ private void accordion_Expanding(object sender, Syncfusion.Maui.Toolkit.Accordio
 {% endhighlight %}
 {% endtabs %}
 
-### Expanded Event
+## Expanded Event
 
 The `Expanded` event is triggered when an accordion item is fully expanded. You can execute your own code when this event occurs.
 
@@ -59,7 +59,7 @@ private void accordion_Expanded(object sender, Syncfusion.Maui.Toolkit.Accordion
 {% endhighlight %}
 {% endtabs %}
 
-### Collapsing Event
+## Collapsing Event
 
 The `Collapsing` event will be triggered when the expander control is being collapsed. You can cancel the collapsing using `ExpandingAndCollapsingEventArgs`, which contains the following property:
 
@@ -82,7 +82,7 @@ private void accordion_Collapsing(object sender, Syncfusion.Maui.Toolkit.Accordi
 {% endhighlight %}
 {% endtabs %}
 
-### Collapsed Event 
+## Collapsed Event 
 
 The `Collapsed` event is triggered when an accordion item is collapsed. You can execute your own code when this event occurs.
 
