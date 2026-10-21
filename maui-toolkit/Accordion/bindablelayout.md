@@ -7,7 +7,7 @@ control: SfAccordion
 documentation: ug
 ---
 
-# BindableLayout in .NET MAUI Accordion (SfAccordion)
+# BindableLayout in .NET MAUI Accordion
 
 The `SfAccordion` control allows the use of [.NET MAUI BindableLayout](https://learn.microsoft.com/en-us/dotnet/maui/user-interface/layouts/bindablelayout) to bind a data collection using `BindableLayout.ItemsSource` and `BindableLayout.ItemTemplate` properties.
 

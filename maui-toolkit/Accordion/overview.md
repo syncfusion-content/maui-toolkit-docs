@@ -2,7 +2,7 @@
 layout: post
 title: Overview | .NET MAUI Accordion Control | Syncfusion®
 platform: maui-toolkit
-description: Learn here about overall key features in Toolkit for .NET MAUI SfAccordion Control, its elements, and more.
+description: Learn here about overall key features in Toolkit for .NET MAUI Accordion (SfAccordion) Control, its elements, and more.
 control: SfAccrodion
 ---
 
@@ -67,7 +67,7 @@ The following table summarizes the globalization support available in this contr
 <th align="center">Keyboard navigation</th>
 </tr>
 <tr>
-<td><a href="/maui-toolkit/accordion/overview">Accordion</a></td>
+<td><a href="/maui-toolkit/accordion/overview" aria-label="Accordion Overview">Accordion</a></td>
 <td align="center"><img src="../Images/not-applicable.svg" alt="not-applicable" width="16" /></td>
 <td align="center"><img src="../Images/full-support.svg" alt="full-support" width="16" /></td>
 <td align="center"><img src="../Images/not-applicable.svg" alt="not-applicable" width="16" /></td>

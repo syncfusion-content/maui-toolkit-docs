@@ -7,7 +7,7 @@ control: SfAccordion
 documentation: ug
 ---
 
-# Appearance in Maui Accordion (SfAccordion)
+# Appearance in .NET MAUI Accordion
 
 The .NET MAUI Accordion comes with built-in support for customizing the appearance of the header.
 
