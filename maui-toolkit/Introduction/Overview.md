@@ -47,8 +47,8 @@ Whether you're building data-driven dashboards, enterprise apps, or feature-rich
 
 ## Supported .NET versions
 
-* .NET 9.0
 * .NET 10.0
+* .NET 11.0
 
 ## Controls List
 
