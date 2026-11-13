@@ -2,7 +2,7 @@
 layout: post
 title: Multi Drawer in .NET MAUI Navigation Drawer | Syncfusion®
 description: Configure primary and secondary drawers on the Syncfusion® .NET MAUI Navigation Drawer control to expose content on multiple sides.
-platform: MAUI
+platform: maui-toolkit
 control: SfNavigationDrawer
 documentation: UG
 ---
