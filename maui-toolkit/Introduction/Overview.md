@@ -208,13 +208,13 @@ line-height: 1;
 </a>
 </div>
 
-<div class="controlanchorlink"><a target="_self" href="https://help.syncfusion.com/maui-toolkit/otp-input/overview"><span class="sf-home-icon sf-icon-Otp-input"></span>OTP Input</a></div>
+<div class="controlanchorlink"><a target="_self" href="https://help.syncfusion.com/maui-toolkit/otp-input/overview" aria-label="OTP input Overview"><span class="sf-home-icon sf-icon-Otp-input"></span>OTP Input</a></div>
 
 <div><p class="category-topics">BUTTONS</p></div>
 
-<div class="controlanchorlink"><a target="_self" href="https://help.syncfusion.com/maui-toolkit/button/overview"><span class="sf-home-icon sf-icon-button"></span>Button</a></div>
-<div class="controlanchorlink"><a target="_self" href="https://help.syncfusion.com/maui-toolkit/chips/overview"><span class="sf-home-icon sf-icon-chips"></span>Chips</a></div>
-<div class="controlanchorlink"><a target="_self" href="https://help.syncfusion.com/maui-toolkit/segmented-control/overview"><span class="sf-home-icon sf-icon-segmented-button"></span>Segmented Control</a></div>
+<div class="controlanchorlink"><a target="_self" href="https://help.syncfusion.com/maui-toolkit/button/overview" aria-label="Button Overview"><span class="sf-home-icon sf-icon-button"></span>Button</a></div>
+<div class="controlanchorlink"><a target="_self" href="https://help.syncfusion.com/maui-toolkit/chips/overview" aria-label="Chips Overview"><span class="sf-home-icon sf-icon-chips"></span>Chips</a></div>
+<div class="controlanchorlink"><a target="_self" href="https://help.syncfusion.com/maui-toolkit/segmented-control/overview" aria-label="Segmented-Control Overview"><span class="sf-home-icon sf-icon-segmented-button"></span>Segmented Control</a></div>
 
 </td>
 
@@ -223,21 +223,21 @@ line-height: 1;
 
 <div><p class="category-topics">NAVIGATION</p></div>
 
-<div class="controlanchorlink"><a target="_self" href="https://help.syncfusion.com/maui-toolkit/bottom-sheet/overview"><span class="sf-home-icon sf-icon-bottom-sheet"></span>Bottom Sheet</a></div>
+<div class="controlanchorlink"><a target="_self" href="https://help.syncfusion.com/maui-toolkit/bottom-sheet/overview" aria-label="Bottom-Sheet Overview"><span class="sf-home-icon sf-icon-bottom-sheet"></span>Bottom Sheet</a></div>
 
-<div class="controlanchorlink"><a target="_self" href="https://help.syncfusion.com/maui-toolkit/navigationdrawer/overview"><span class="sf-home-icon sf-icon-navigation-drawer"></span>Navigation Drawer</a></div>
+<div class="controlanchorlink"><a target="_self" href="https://help.syncfusion.com/maui-toolkit/navigationdrawer/overview" aria-label="Navigation drawer Overview"><span class="sf-home-icon sf-icon-navigation-drawer"></span>Navigation Drawer</a></div>
 
-<div class="controlanchorlink"><a target="_self" href="https://help.syncfusion.com/maui-toolkit/tabview/overview"><span class="sf-home-icon sf-icon-tabs"></span>Tab View</a></div>
+<div class="controlanchorlink"><a target="_self" href="https://help.syncfusion.com/maui-toolkit/tabview/overview" aria-label="Tabview Overview"><span class="sf-home-icon sf-icon-tabs"></span>Tab View</a></div>
 
 <div><p class="category-topics">LAYOUT</p></div>
 
-<div class="controlanchorlink"><a target="_self" href="https://help.syncfusion.com/maui-toolkit/popup/overview"><span class="sf-home-icon sf-icon-popup"></span>Popup</a></div>
-<div class="controlanchorlink"><a target="_self" href="https://help.syncfusion.com/maui-toolkit/textinputlayout/overview"><span class="sf-home-icon sf-icon-text-input"></span>Text Input Layout</a></div>
-<div class="controlanchorlink"><a target="_self" href="https://help.syncfusion.com/maui-toolkit/expander/overview"><span class="sf-home-icon sf-icon-expander"></span>Expander</a></div>
+<div class="controlanchorlink"><a target="_self" href="https://help.syncfusion.com/maui-toolkit/popup/overview" aria-label="Popup Overview"><span class="sf-home-icon sf-icon-popup"></span>Popup</a></div>
+<div class="controlanchorlink"><a target="_self" href="https://help.syncfusion.com/maui-toolkit/textinputlayout/overview" aria-label="TextInputLayout Overview"><span class="sf-home-icon sf-icon-text-input"></span>Text Input Layout</a></div>
+<div class="controlanchorlink"><a target="_self" href="https://help.syncfusion.com/maui-toolkit/expander/overview" aria-label="Expander Overview"><span class="sf-home-icon sf-icon-expander"></span>Expander</a></div>
 
-<div class="controlanchorlink"><a target="_self" href="https://help.syncfusion.com/maui-toolkit/accordion/overview"><span class="sf-home-icon sf-icon-accordion"></span>Accordion</a></div>
-<div class="controlanchorlink"><a target="_self" href="https://help.syncfusion.com/maui-toolkit/carousel-view/overview"><span class="sf-home-icon sf-icon-carousel"></span>Carousel</a></div>
-<div class="controlanchorlink"><a target="_self" href="https://help.syncfusion.com/maui-toolkit/cards/overview"><span class="sf-home-icon sf-icon-cards"></span>Cards</a></div>
+<div class="controlanchorlink"><a target="_self" href="https://help.syncfusion.com/maui-toolkit/accordion/overview" aria-label="Accordion Overview"><span class="sf-home-icon sf-icon-accordion"></span>Accordion</a></div>
+<div class="controlanchorlink"><a target="_self" href="https://help.syncfusion.com/maui-toolkit/carousel-view/overview" aria-label="Carousel Overview"><span class="sf-home-icon sf-icon-carousel"></span>Carousel</a></div>
+<div class="controlanchorlink"><a target="_self" href="https://help.syncfusion.com/maui-toolkit/cards/overview" aria-label="Cards Overview"><span class="sf-home-icon sf-icon-cards"></span>Cards</a></div>
 
 
 <!--Miscellaneous-->
