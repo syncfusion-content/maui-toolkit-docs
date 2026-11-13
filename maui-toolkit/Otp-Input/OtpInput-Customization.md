@@ -188,6 +188,27 @@ SfOtpInput otpInput = new SfOtpInput()
 
 ![Stroke](images/stroke.png)
 
+## Stroke thickness
+
+You can customize the border thickness of focused and unfocused input fields independently using the `FocusedStrokeThickness` and `StrokeThickness` properties.
+
+{% tabs %}
+{% highlight xaml %}
+
+<otpInput:SfOtpInput FocusedStrokeThickness="3" UnfocusedStrokeThickness="1" />
+
+{% endhighlight %}
+{% highlight C# %}
+
+SfOtpInput otpInput = new SfOtpInput()
+{
+    FocusedStrokeThickness = 3,
+    UnfocusedStrokeThickness = 1
+};
+
+{% endhighlight %}
+{% endtabs %}
+
 ## Text color
 
 You can set the [TextColor](https://help.syncfusion.com/cr/maui-toolkit/Syncfusion.Maui.Toolkit.OtpInput.SfOtpInput.html#Syncfusion_Maui_Toolkit_OtpInput_SfOtpInput_TextColor) property to any color to customize the text appearance of the input fields. 
